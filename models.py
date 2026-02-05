@@ -215,7 +215,8 @@ def load_sample_data():
     import json
     
     with open('data/sample_schools.json', 'r', encoding='utf-8') as f:
-        schools = json.load(f)
+        data = json.load(f)
+        schools = data.get('schools', data)  # Support both formats
     
     conn = get_db_connection()
     cursor = conn.cursor()

@@ -10,7 +10,7 @@ from models import (
 )
 
 app = Flask(__name__)
-app.secret_key = 'dev-secret-key-change-in-production'
+app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
 
 # Ensure upload directory exists
 os.makedirs('static/images', exist_ok=True)
@@ -20,7 +20,7 @@ def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if 'user_id' not in session:
-            flash('Please log in to access this page.', 'warning')
+            flash('请先登录后再访问此页面。', 'warning')
             return redirect(url_for('login'))
         return f(*args, **kwargs)
     return decorated_function
@@ -57,7 +57,7 @@ def school_detail(school_id):
     """School detail page."""
     school = get_school_by_id(school_id)
     if not school:
-        flash('School not found.', 'error')
+        flash('学校不存在。', 'error')
         return redirect(url_for('index'))
     
     likes_count = get_likes_count(school_id)
@@ -77,16 +77,16 @@ def toggle_like(school_id):
     """Toggle like on a school."""
     school = get_school_by_id(school_id)
     if not school:
-        flash('School not found.', 'error')
+        flash('学校不存在。', 'error')
         return redirect(url_for('index'))
     
     existing_like = get_like(session['user_id'], school_id)
     if existing_like:
         unlike_school(session['user_id'], school_id)
-        flash(f'Removed like from {school["name"]}', 'info')
+        flash(f'已取消收藏 {school["name"]}', 'info')
     else:
         like_school(session['user_id'], school_id)
-        flash(f'Added like to {school["name"]}', 'success')
+        flash(f'已收藏 {school["name"]}', 'success')
     
     return redirect(url_for('school_detail', school_id=school_id))
 
@@ -106,15 +106,15 @@ def register():
         email = request.form['email']
         
         if not username or not password or not email:
-            flash('All fields are required.', 'error')
+            flash('所有字段都为必填项。', 'error')
             return redirect(url_for('register'))
         
         user_id = create_user(username, password, email)
         if user_id:
-            flash('Registration successful! Please log in.', 'success')
+            flash('注册成功！请登录。', 'success')
             return redirect(url_for('login'))
         else:
-            flash('Username or email already exists.', 'error')
+            flash('用户名或邮箱已被注册。', 'error')
             return redirect(url_for('register'))
     
     return render_template('register.html')
@@ -130,10 +130,10 @@ def login():
         if user:
             session['user_id'] = user['id']
             session['username'] = user['username']
-            flash(f'Welcome back, {user["username"]}!', 'success')
+            flash(f'欢迎回来，{user["username"]}！', 'success')
             return redirect(url_for('index'))
         else:
-            flash('Invalid username or password.', 'error')
+            flash('用户名或密码错误。', 'error')
             return redirect(url_for('login'))
     
     return render_template('login.html')
@@ -143,14 +143,14 @@ def logout():
     """User logout."""
     session.pop('user_id', None)
     session.pop('username', None)
-    flash('You have been logged out.', 'info')
+    flash('您已退出登录。', 'info')
     return redirect(url_for('index'))
 
 @app.route('/init-db')
 def init_database():
     """Initialize the database."""
     init_db()
-    flash('Database initialized successfully!', 'success')
+    flash('数据库初始化成功！', 'success')
     return redirect(url_for('index'))
 
 @app.route('/load-sample-data')
@@ -158,9 +158,9 @@ def load_sample():
     """Load sample data."""
     try:
         load_sample_data()
-        flash('Sample data loaded successfully!', 'success')
+        flash('示例数据加载成功！', 'success')
     except Exception as e:
-        flash(f'Error loading sample data: {e}', 'error')
+        flash(f'加载示例数据出错：{e}', 'error')
     return redirect(url_for('index'))
 
 @app.route('/images/<path:filename>')
@@ -181,4 +181,4 @@ def load_sample_data_command():
     load_sample_data()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True)

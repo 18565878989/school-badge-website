@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +11,14 @@
         <div class="container">
             <a href="{{ url_for('index') }}" class="logo">🎓 校徽网</a>
             <div class="nav-links">
-                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('index') }}">首页</a>
                 {% if session.get('user_id') %}
-                    <a href="{{ url_for('my_likes') }}">My Likes</a>
+                    <a href="{{ url_for('my_likes') }}">我的收藏</a>
                     <span class="username">{{ session.get('username') }}</span>
-                    <a href="{{ url_for('logout') }}">Logout</a>
+                    <a href="{{ url_for('logout') }}">退出</a>
                 {% else %}
-                    <a href="{{ url_for('login') }}">Login</a>
-                    <a href="{{ url_for('register') }}">Register</a>
+                    <a href="{{ url_for('login') }}">登录</a>
+                    <a href="{{ url_for('register') }}">注册</a>
                 {% endif %}
             </div>
         </div>

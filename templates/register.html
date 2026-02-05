@@ -1,37 +1,37 @@
 {% extends "base.html" %}
 
-{% block title %}Register - 校徽网{% endblock %}
+{% block title %}注册 - 校徽网{% endblock %}
 
 {% block content %}
 <div class="auth-container">
     <div class="auth-card">
-        <h1>Create Account</h1>
-        <p class="subtitle">Join 校徽网 to like and download school badges</p>
+        <h1>创建账号</h1>
+        <p class="subtitle">加入校徽网，收藏和下载校徽</p>
         
         <form method="POST" class="auth-form">
             <div class="form-group">
-                <label for="username">Username</label>
+                <label for="username">用户名</label>
                 <input type="text" id="username" name="username" required 
-                       placeholder="Choose a username" minlength="3">
+                       placeholder="请设置用户名（至少3位）" minlength="3">
             </div>
             
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">邮箱</label>
                 <input type="email" id="email" name="email" required 
-                       placeholder="Enter your email">
+                       placeholder="请输入邮箱地址">
             </div>
             
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password">密码</label>
                 <input type="password" id="password" name="password" required 
-                       placeholder="Create a password" minlength="6">
+                       placeholder="请设置密码（至少6位）" minlength="6">
             </div>
             
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <button type="submit" class="btn btn-primary btn-block">注册</button>
         </form>
         
         <p class="auth-link">
-            Already have an account? <a href="{{ url_for('login') }}">Log in</a>
+            已有账号？<a href="{{ url_for('login') }}">立即登录</a>
         </p>
     </div>
 </div>
