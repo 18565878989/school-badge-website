@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}{{ school.name }} - 校徽网{% endblock %}
+
+{% block content %}
+<div class="school-detail">
+    <a href="{{ url_for('index') }}" class="back-link">← Back to All Schools</a>
+    
+    <div class="detail-card">
+        <div class="badge-section">
+            {% if school.badge_url %}
+                <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="detail-badge">
+            {% else %}
+                <div class="detail-badge-placeholder">🎓</div>
+            {% endif %}
+            
+            <div class="action-buttons">
+                {% if session.get('user_id') %}
+                    <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
+                        <button type="submit" class="btn {% if user_liked %}btn-outline{% else %}btn-primary{% endif %}">
+                            {% if user_liked %}
+                                ❤️ Unlike
+                            {% else %}
+                                🤍 Like
+                            {% endif %}
+                        </button>
+                    </form>
+                {% endif %}
+                <button class="btn btn-secondary" onclick="downloadBadge()">⬇️ Download</button>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h1>{{ school.name }}</h1>
+            
+            <div class="meta-info">
+                <span class="level-badge level-{{ school.level }}">{{ school.level }}</span>
+                <span class="likes-count">❤️ {{ likes_count }} like{{ likes_count != 1 and 's' or '' }}</span>
+            </div>
+            
+            <div class="location-info">
+                <p><strong>📍 Location:</strong> {{ school.city }}, {{ school.country }}</p>
+                <p><strong>🗺️ Region:</strong> {{ school.region }}</p>
+            </div>
+            
+            {% if school.description %}
+                <div class="description">
+                    <h3>About</h3>
+                    <p>{{ school.description }}</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<script>
+function downloadBadge() {
+    // Create a temporary link to download the badge
+    const link = document.createElement('a');
+    link.href = '{{ school.badge_url or url_for("static", filename="images/placeholder.png") }}';
+    link.download = '{{ school.name }}_badge.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+{% endblock %}

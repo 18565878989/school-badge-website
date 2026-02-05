@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}Home - 校徽网{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>🎓 校徽网 - School Badge Collection</h1>
+    <p>Explore school badges from around the world</p>
+    
+    <form class="search-form" action="{{ url_for('index') }}" method="GET">
+        <input type="text" name="q" placeholder="Search schools by name, country, or city..." 
+               value="{{ search_query }}">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<div class="filters">
+    <div class="filter-group">
+        <label>Filter by Region:</label>
+        <select onchange="window.location.href=this.value">
+            <option value="{{ url_for('index') }}" {% if not selected_region %}selected{% endif %}>All Regions</option>
+            {% for region in regions %}
+                <option value="{{ url_for('index', region=region) }}" 
+                        {% if selected_region == region %}selected{% endif %}>
+                    {{ region }}
+                </option>
+            {% endfor %}
+        </select>
+    </div>
+    
+    <div class="filter-group">
+        <label>Filter by Level:</label>
+        <select onchange="window.location.href=this.value">
+            <option value="{{ url_for('index') }}" {% if not selected_level %}selected{% endif %}>All Levels</option>
+            <option value="{{ url_for('index', level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>University</option>
+            <option value="{{ url_for('index', level='middle') }}" {% if selected_level == 'middle' %}selected{% endif %}>Middle School</option>
+            <option value="{{ url_for('index', level='elementary') }}" {% if selected_level == 'elementary' %}selected{% endif %}>Elementary School</option>
+            <option value="{{ url_for('index', level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>Kindergarten</option>
+        </select>
+    </div>
+    
+    {% if selected_region or selected_level or search_query %}
+        <a href="{{ url_for('index') }}" class="clear-filters">Clear Filters</a>
+    {% endif %}
+</div>
+
+<div class="stats">
+    <p>Showing {{ schools|length }} school{{ schools|length != 1 and 's' or '' }}</p>
+</div>
+
+<div class="schools-grid">
+    {% for school in schools %}
+        <a href="{{ url_for('school_detail', school_id=school.id) }}" class="school-card">
+            <div class="badge-container">
+                {% if school.badge_url %}
+                    <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="badge-image">
+                {% else %}
+                    <div class="badge-placeholder">🎓</div>
+                {% endif %}
+            </div>
+            <div class="school-info">
+                <h3>{{ school.name }}</h3>
+                <p class="location">{{ school.country }}, {{ school.city }}</p>
+                <span class="level-badge level-{{ school.level }}">{{ school.level }}</span>
+            </div>
+        </a>
+    {% else %}
+        <div class="no-results">
+            <p>No schools found. Try adjusting your search or filters.</p>
+            <a href="{{ url_for('index') }}" class="btn">View All Schools</a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
