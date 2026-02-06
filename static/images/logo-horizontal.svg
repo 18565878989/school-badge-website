@@ -1,37 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
   <defs>
-    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#1A1A2E"/>
-      <stop offset="100%" style="stop-color:#0D0D1A"/>
+    <!-- Ink black gradient -->
+    <linearGradient id="inkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#0a0a0a"/>
     </linearGradient>
-    <linearGradient id="avocadoSkin" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#2D4A3D"/>
-      <stop offset="100%" style="stop-color:#1A2E25"/>
-    </linearGradient>
-    <linearGradient id="avocadoFlesh" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#9CCC65"/>
-      <stop offset="100%" style="stop-color:#7CB342"/>
+    <!-- Seal red -->
+    <linearGradient id="sealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C41E3A"/>
+      <stop offset="100%" style="stop-color:#8B0000"/>
     </linearGradient>
   </defs>
   
-  <!-- Shield - Flat design -->
-  <path d="M20 10 L75 10 C85 10 90 15 90 25 L90 60 C90 85 55 98 55 98 C55 98 20 85 20 60 L20 25 C20 15 25 10 35 10 Z" 
-        fill="url(#shieldGrad)"/>
+  <!-- Seal outer frame (印章效果) -->
+  <rect x="15" y="10" width="80" height="80" rx="4" 
+        fill="none" stroke="url(#sealGrad)" stroke-width="6"/>
   
-  <!-- Avocado - Centered, flat -->
-  <g transform="translate(25, 18)">
-    <!-- Body -->
-    <ellipse cx="30" cy="38" rx="26" ry="36" fill="url(#avocadoSkin)"/>
-    <ellipse cx="30" cy="40" rx="22" ry="30" fill="url(#avocadoFlesh)"/>
-    <!-- Seed -->
-    <circle cx="30" cy="52" r="10" fill="#5D4037"/>
-    <!-- Simple shine -->
-    <ellipse cx="22" cy="28" rx="6" ry="10" fill="#fff" opacity="0.1"/>
+  <!-- Inner seal frame -->
+  <rect x="22" y="17" width="66" height="66" rx="2" 
+        fill="url(#inkGrad)"/>
+  
+  <!-- Oracle bone style "学" (simplified) -->
+  <g transform="translate(32, 22)" stroke="#C41E3A" stroke-width="4" stroke-linecap="round" fill="none">
+    <!-- Top X shapes (算筹/知识) -->
+    <line x1="8" y1="12" x2="22" y2="12"/>
+    <line x1="8" y1="18" x2="22" y2="18"/>
+    <line x1="5" y1="12" x2="5" y2="18"/>
+    <line x1="25" y1="12" x2="25" y2="18"/>
+    
+    <!-- Child/子 character simplified -->
+    <path d="M15 28 L15 52 Q15 58 20 58 L20 50 Q20 48 22 48 Q24 48 24 50 L24 58 Q24 58 29 58" 
+          stroke="#C41E3A" stroke-width="4" fill="none"/>
+    <path d="M15 32 Q15 38 20 38 Q25 38 25 32" 
+          stroke="#C41E3A" stroke-width="3" fill="none"/>
+    
+    <!-- Hands holding -->
+    <path d="M8 44 Q5 48 8 52" stroke="#C41E3A" stroke-width="3" fill="none"/>
+    <path d="M32 44 Q35 48 32 52" stroke="#C41E3A" stroke-width="3" fill="none"/>
   </g>
   
   <!-- Text -->
-  <text x="105" y="48" font-family="'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif" 
-        font-size="40" font-weight="700" fill="#1A1A2E">校徽网</text>
-  <text x="108" y="72" font-family="-apple-system, BlinkMacSystemFont, sans-serif" 
-        font-size="10" fill="#666" letter-spacing="5">EMBLEM COLLECTION</text>
+  <text x="108" y="48" font-family="'PingFang SC', 'Microsoft YaHei', serif" 
+        font-size="40" font-weight="700" fill="#1a1a1a">校徽网</text>
+  <text x="110" y="72" font-family="-apple-system, BlinkMacSystemFont, serif" 
+        font-size="10" fill="#666" letter-spacing="4">SCHOOL BADGE COLLECTION</text>
 </svg>
