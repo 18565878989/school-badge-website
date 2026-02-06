@@ -30,6 +30,7 @@ TRANSLATIONS = {
         
         # School Card
         'founded': '建校年份',
+        'principal': '现任校长',
         'location': '位置',
         'region': '地区',
         
@@ -87,6 +88,7 @@ TRANSLATIONS = {
         
         # School Card
         'founded': 'Founded',
+        'principal': 'President / Principal',
         'location': 'Location',
         'region': 'Region',
         
@@ -144,6 +146,7 @@ TRANSLATIONS = {
         
         # School Card
         'founded': 'Fondé',
+        'principal': 'Directeur / Présidente',
         'location': 'Localisation',
         'region': 'Région',
         
@@ -201,6 +204,7 @@ TRANSLATIONS = {
         
         # School Card
         'founded': 'Gegründet',
+        'principal': 'Rektor / Direktorin',
         'location': 'Standort',
         'region': 'Region',
         
@@ -258,6 +262,7 @@ TRANSLATIONS = {
         
         # School Card
         'founded': '創立',
+        'principal': '学園長 / 校長',
         'location': '所在地',
         'region': '地域',
         

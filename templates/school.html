@@ -64,6 +64,12 @@
                     <p class="label">{{ _('location') }}</p>
                     <p class="value">{{ school.city }}, {{ school.country }}</p>
                 </div>
+                {% if school.principal %}
+                <div class="info-item">
+                    <p class="label">{{ _('principal') }}</p>
+                    <p class="value">{{ school.principal }}</p>
+                </div>
+                {% endif %}
                 {% if school.founded %}
                 <div class="info-item">
                     <p class="label">{{ _('founded') }}</p>

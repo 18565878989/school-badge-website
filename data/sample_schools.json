@@ -12,7 +12,8 @@
       "website": "https://www.harvard.edu",
       "badge_url": "/static/images/harvard.png",
       "motto": "Veritas (Truth)",
-      "founded": 1636
+      "founded": 1636,
+      "principal": "Claudine Gay"
     },
     {
       "id": 2,
@@ -26,7 +27,8 @@
       "website": "https://www.stanford.edu",
       "badge_url": "/static/images/stanford.png",
       "motto": "Die Luft der Freiheit weht (The wind of freedom blows)",
-      "founded": 1885
+      "founded": 1885,
+      "principal": "Jonathan Levin"
     },
     {
       "id": 3,
@@ -40,7 +42,8 @@
       "website": "https://www.mit.edu",
       "badge_url": "/static/images/mit.png",
       "motto": "Mens et Manus (Mind and Hand)",
-      "founded": 1861
+      "founded": 1861,
+      "principal": "Sally Kornbluth"
     },
     {
       "id": 4,
@@ -54,7 +57,8 @@
       "website": "https://www.cam.ac.uk",
       "badge_url": "/static/images/cambridge.png",
       "motto": "Hinc lucem et pocula sacra (From here, light and sacred draughts)",
-      "founded": 1209
+      "founded": 1209,
+      "principal": "Anthony Freeling"
     },
     {
       "id": 5,
@@ -68,7 +72,8 @@
       "website": "https://www.ox.ac.uk",
       "badge_url": "/static/images/oxford.png",
       "motto": "Dominus Illuminatio Mea (The Lord is my Light)",
-      "founded": 1096
+      "founded": 1096,
+      "principal": "Irene Tracey"
     },
     {
       "id": 6,
@@ -82,7 +87,8 @@
       "website": "https://www.tsinghua.edu.cn",
       "badge_url": "/static/images/tsinghua.png",
       "motto": "Self-discipline and Social-responsibility",
-      "founded": 1911
+      "founded": 1911,
+      "principal": "Qiu Yong"
     },
     {
       "id": 7,
@@ -96,7 +102,8 @@
       "website": "https://www.pku.edu.cn",
       "badge_url": "/static/images/peking.png",
       "motto": "Bo Yan Po Xin (Broaden horizons and seek knowledge)",
-      "founded": 1898
+      "founded": 1898,
+      "principal": "Gong Qizhong"
     },
     {
       "id": 8,
@@ -110,7 +117,8 @@
       "website": "https://www.u-tokyo.ac.jp",
       "badge_url": "/static/images/utokyo.png",
       "motto": "Regulation of Government",
-      "founded": 1877
+      "founded": 1877,
+      "principal": "Teruo Fujii"
     },
     {
       "id": 9,
@@ -124,7 +132,8 @@
       "website": "https://www.nus.edu.sg",
       "badge_url": "/static/images/nus.png",
       "motto": "Towards a Global Knowledge Enterprise",
-      "founded": 1905
+      "founded": 1905,
+      "principal": "Tan Eng Chye"
     },
     {
       "id": 10,
@@ -138,7 +147,8 @@
       "website": "https://ethz.ch",
       "badge_url": "/static/images/ethz.png",
       "motto": "Science for the Benefit of Humanity",
-      "founded": 1855
+      "founded": 1855,
+      "principal": "Gilbert H. M. Fridgen"
     },
     {
       "id": 11,
@@ -152,7 +162,8 @@
       "website": "https://www.yale.edu",
       "badge_url": "/static/images/yale.png",
       "motto": "Lux et Veritas (Light and Truth)",
-      "founded": 1701
+      "founded": 1701,
+      "principal": "Peter Salovey"
     },
     {
       "id": 12,
@@ -166,7 +177,8 @@
       "website": "https://www.princeton.edu",
       "badge_url": "/static/images/princeton.png",
       "motto": "Dei Sub Numine Viget (Under the Power of God, She Flourishes)",
-      "founded": 1746
+      "founded": 1746,
+      "principal": "Christopher L. Eisgruber"
     },
     {
       "id": 13,
@@ -180,7 +192,8 @@
       "website": "https://www.imperial.ac.uk",
       "badge_url": "/static/images/imperial.png",
       "motto": "Scientific Knowledge, Beneficial to Mankind",
-      "founded": 1907
+      "founded": 1907,
+      "principal": "Ian Walmsley"
     },
     {
       "id": 14,
@@ -194,7 +207,8 @@
       "website": "https://www.kyoto-u.ac.jp",
       "badge_url": "/static/images/kyoto.png",
       "motto": "Freedom of Academic Culture",
-      "founded": 1897
+      "founded": 1897,
+      "principal": "Nagahiro Minami"
     },
     {
       "id": 15,
@@ -208,7 +222,8 @@
       "website": "https://www.hkust.edu.hk",
       "badge_url": "/static/images/hkust.png",
       "motto": "Advancing Knowledge, Promoting Learning, and Nurturing Talents",
-      "founded": 1991
+      "founded": 1991,
+      "principal": "Nancy Y. Ip"
     },
     {
       "id": 16,
@@ -222,7 +237,8 @@
       "website": "https://www.unimelb.edu.au",
       "badge_url": "/static/images/melbourne.png",
       "motto": "Posterara Crescere (To Grow and Increase)",
-      "founded": 1853
+      "founded": 1853,
+      "principal": "Duncan Maskell"
     },
     {
       "id": 17,
@@ -236,7 +252,8 @@
       "website": "https://www.dgs.edu.hk",
       "badge_url": "/static/images/dgs-junior.png",
       "motto": "Finis Coronat Opus (The End Crowns the Work)",
-      "founded": 1860
+      "founded": 1860,
+      "principal": "Dr. Fanny M. Cheung"
     },
     {
       "id": 18,
@@ -250,7 +267,8 @@
       "website": "https://www.spcc.edu.hk",
       "badge_url": "/static/images/spcc.png",
       "motto": "Love and Service",
-      "founded": 1965
+      "founded": 1965,
+      "principal": "Chow Yei Ching"
     },
     {
       "id": 19,
@@ -264,7 +282,8 @@
       "website": "https://www.ststephens.edu.hk",
       "badge_url": "/static/images/ststephens-prep.png",
       "motto": "Faith, Hope, Love",
-      "founded": 1906
+      "founded": 1906,
+      "principal": "Dr. K. H. Lee"
     },
     {
       "id": 20,
@@ -278,7 +297,8 @@
       "website": "https://www.gse.harvard.edu/ppe",
       "badge_url": "/static/images/harvard-k.png",
       "motto": "Learn Through Play",
-      "founded": 1980
+      "founded": 1980,
+      "principal": "Dr. Shari L. M. O'Neill"
     }
   ]
 }
