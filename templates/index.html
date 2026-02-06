@@ -1,24 +1,23 @@
 {% extends "base.html" %}
 
-{% block title %}Home - 校徽网{% endblock %}
+{% block title %}校徽网 - {{ _('hero_title') }}{% endblock %}
 
 {% block content %}
 <div class="hero">
-    <h1>🎓 校徽网 - School Badge Collection</h1>
-    <p>Explore school badges from around the world</p>
+    <h1>{{ _('hero_title') }}</h1>
+    <p>{{ _('hero_subtitle') }}</p>
     
     <form class="search-form" action="{{ url_for('index') }}" method="GET">
-        <input type="text" name="q" placeholder="Search schools by name, country, or city..." 
+        <input type="text" name="q" placeholder="{{ _('search_placeholder') }}" 
                value="{{ search_query }}">
-        <button type="submit">Search</button>
+        <button type="submit" style="display:none;">Search</button>
     </form>
 </div>
 
 <div class="filters">
     <div class="filter-group">
-        <label>Filter by Region:</label>
         <select onchange="window.location.href=this.value">
-            <option value="{{ url_for('index') }}" {% if not selected_region %}selected{% endif %}>All Regions</option>
+            <option value="{{ url_for('index') }}" {% if not selected_region %}selected{% endif %}>{{ _('all_regions') }}</option>
             {% for region in regions %}
                 <option value="{{ url_for('index', region=region) }}" 
                         {% if selected_region == region %}selected{% endif %}>
@@ -29,24 +28,25 @@
     </div>
     
     <div class="filter-group">
-        <label>Filter by Level:</label>
         <select onchange="window.location.href=this.value">
-            <option value="{{ url_for('index') }}" {% if not selected_level %}selected{% endif %}>All Levels</option>
-            <option value="{{ url_for('index', level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>University</option>
-            <option value="{{ url_for('index', level='middle') }}" {% if selected_level == 'middle' %}selected{% endif %}>Middle School</option>
-            <option value="{{ url_for('index', level='elementary') }}" {% if selected_level == 'elementary' %}selected{% endif %}>Elementary School</option>
-            <option value="{{ url_for('index', level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>Kindergarten</option>
+            <option value="{{ url_for('index') }}" {% if not selected_level %}selected{% endif %}>{{ _('all_types') }}</option>
+            <option value="{{ url_for('index', level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>{{ _('university') }}</option>
+            <option value="{{ url_for('index', level='middle') }}" {% if selected_level == 'middle' %}selected{% endif %}>{{ _('middle_school') }}</option>
+            <option value="{{ url_for('index', level='elementary') }}" {% if selected_level == 'elementary' %}selected{% endif %}>{{ _('elementary_school') }}</option>
+            <option value="{{ url_for('index', level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>{{ _('kindergarten') }}</option>
         </select>
     </div>
     
     {% if selected_region or selected_level or search_query %}
-        <a href="{{ url_for('index') }}" class="clear-filters">Clear Filters</a>
+        <a href="{{ url_for('index') }}" class="clear-filters">{{ _('clear_filters') }}</a>
     {% endif %}
 </div>
 
+{% if schools|length > 0 %}
 <div class="stats">
-    <p>Showing {{ schools|length }} school{{ schools|length != 1 and 's' or '' }}</p>
+    {{ _('schools_count').format(schools|length) }}
 </div>
+{% endif %}
 
 <div class="schools-grid">
     {% for school in schools %}
@@ -60,14 +60,25 @@
             </div>
             <div class="school-info">
                 <h3>{{ school.name }}</h3>
-                <p class="location">{{ school.country }}, {{ school.city }}</p>
-                <span class="level-badge level-{{ school.level }}">{{ school.level }}</span>
+                {% if school.name_cn %}
+                    <p class="motto">{{ school.name_cn }}</p>
+                {% endif %}
+                {% if school.motto %}
+                    <p class="motto">"{{ school.motto }}"</p>
+                {% endif %}
+                <p class="location">{{ school.city }}, {{ school.country }}</p>
+                <span class="level-badge level-{{ school.level }}">
+                    {% if school.level == 'university' %}{{ _('university') }}
+                    {% elif school.level == 'middle' %}{{ _('middle_school') }}
+                    {% elif school.level == 'elementary' %}{{ _('elementary_school') }}
+                    {% else %}{{ _('kindergarten') }}{% endif %}
+                </span>
             </div>
         </a>
     {% else %}
         <div class="no-results">
-            <p>No schools found. Try adjusting your search or filters.</p>
-            <a href="{{ url_for('index') }}" class="btn">View All Schools</a>
+            <p>{{ _('no_schools') }}</p>
+            <a href="{{ url_for('index') }}" class="btn btn-primary">{{ _('view_all') }}</a>
         </div>
     {% endfor %}
 </div>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <defs>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1D1D1F"/>
+      <stop offset="100%" style="stop-color:#434344"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="50%" style="stop-color:#FDB931"/>
+      <stop offset="100%" style="stop-color:#DAA520"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon -->
+  <g transform="translate(16, 10)">
+    <path d="M44 8 L92 32 L92 64 C92 100 65 112 44 116 C23 112 -4 100 -4 64 L-4 32 Z" 
+          fill="url(#darkGrad)"/>
+    <circle cx="44" cy="58" r="22" fill="white" opacity="0.95"/>
+    <polygon points="44,42 52,54 66,54 55,64 59,78 44,70 29,78 33,64 22,54 36,54" 
+             fill="url(#goldGrad)"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="130" y="58" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" 
+        font-size="38" font-weight="700" fill="#1D1D1F" letter-spacing="-1">校徽网</text>
+  <text x="130" y="85" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" 
+        font-size="14" fill="#86868B" letter-spacing="2">SCHOOL BADGE COLLECTION</text>
+</svg>

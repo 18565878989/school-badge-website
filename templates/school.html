@@ -4,7 +4,9 @@
 
 {% block content %}
 <div class="school-detail">
-    <a href="{{ url_for('index') }}" class="back-link">← Back to All Schools</a>
+    <a href="{{ url_for('index') }}" class="back-link">
+        <span>←</span> {{ _('back') }}
+    </a>
     
     <div class="detail-card">
         <div class="badge-section">
@@ -19,33 +21,72 @@
                     <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
                         <button type="submit" class="btn {% if user_liked %}btn-outline{% else %}btn-primary{% endif %}">
                             {% if user_liked %}
-                                ❤️ Unlike
+                                ❤️ {{ _('liked') }}
                             {% else %}
-                                🤍 Like
+                                🤍 {{ _('like') }}
                             {% endif %}
                         </button>
                     </form>
                 {% endif %}
-                <button class="btn btn-secondary" onclick="downloadBadge()">⬇️ Download</button>
+                <button class="btn btn-secondary" onclick="downloadBadge()">⬇️ {{ _('download') }}</button>
             </div>
         </div>
         
         <div class="info-section">
             <h1>{{ school.name }}</h1>
+            {% if school.name_cn %}
+                <p class="name-cn">{{ school.name_cn }}</p>
+            {% endif %}
             
             <div class="meta-info">
-                <span class="level-badge level-{{ school.level }}">{{ school.level }}</span>
-                <span class="likes-count">❤️ {{ likes_count }} like{{ likes_count != 1 and 's' or '' }}</span>
+                <span class="level-badge level-{{ school.level }}">
+                    {% if school.level == 'university' %}{{ _('university') }}
+                    {% elif school.level == 'middle' %}{{ _('middle_school') }}
+                    {% elif school.level == 'elementary' %}{{ _('elementary_school') }}
+                    {% else %}{{ _('kindergarten') }}{% endif %}
+                </span>
+                <span class="likes-count">❤️ {{ _('likes_count').format(likes_count) }}</span>
             </div>
             
-            <div class="location-info">
-                <p><strong>📍 Location:</strong> {{ school.city }}, {{ school.country }}</p>
-                <p><strong>🗺️ Region:</strong> {{ school.region }}</p>
+            {% if school.motto %}
+            <div class="motto-section">
+                <p class="motto-label">{{ _('motto_label') }}</p>
+                <p class="motto-text">"{{ school.motto }}"</p>
             </div>
+            {% endif %}
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <p class="label">{{ _('region') }}</p>
+                    <p class="value">{{ school.region }}</p>
+                </div>
+                <div class="info-item">
+                    <p class="label">{{ _('location') }}</p>
+                    <p class="value">{{ school.city }}, {{ school.country }}</p>
+                </div>
+                {% if school.founded %}
+                <div class="info-item">
+                    <p class="label">{{ _('founded') }}</p>
+                    <p class="value">{{ school.founded }}</p>
+                </div>
+                {% endif %}
+                {% if school.website %}
+                <div class="info-item">
+                    <p class="label">{{ _('website') }}</p>
+                    <p class="value"><a href="{{ school.website }}" target="_blank" style="color: var(--primary); text-decoration: none;">{{ _('visit_website').split(' ')[1] }} →</a></p>
+                </div>
+                {% endif %}
+            </div>
+            
+            {% if school.website %}
+            <a href="{{ school.website }}" target="_blank" class="website-link">
+                🌐 {{ _('visit_website').format(school.name) }}
+            </a>
+            {% endif %}
             
             {% if school.description %}
                 <div class="description">
-                    <h3>About</h3>
+                    <h3>{{ _('description_title') }}</h3>
                     <p>{{ school.description }}</p>
                 </div>
             {% endif %}
@@ -55,7 +96,6 @@
 
 <script>
 function downloadBadge() {
-    // Create a temporary link to download the badge
     const link = document.createElement('a');
     link.href = '{{ school.badge_url or url_for("static", filename="images/placeholder.png") }}';
     link.download = '{{ school.name }}_badge.png';

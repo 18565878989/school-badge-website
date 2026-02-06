@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="{{ current_lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}校徽网 - School Badge Collection{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.svg') }}">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="{{ url_for('index') }}" class="logo">🎓 校徽网</a>
+            <a href="{{ url_for('index') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网" class="logo-img">
+            </a>
             <div class="nav-links">
-                <a href="{{ url_for('index') }}">首页</a>
+                <a href="{{ url_for('index') }}">{{ _('home') }}</a>
                 {% if session.get('user_id') %}
-                    <a href="{{ url_for('my_likes') }}">我的收藏</a>
+                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
                     <span class="username">{{ session.get('username') }}</span>
-                    <a href="{{ url_for('logout') }}">退出</a>
+                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
                 {% else %}
-                    <a href="{{ url_for('login') }}">登录</a>
-                    <a href="{{ url_for('register') }}">注册</a>
+                    <a href="{{ url_for('login') }}">{{ _('login') }}</a>
+                    <a href="{{ url_for('register') }}">{{ _('register') }}</a>
                 {% endif %}
+                
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <select onchange="window.location.href=this.value">
+                        {% for code, name in LANGUAGE_NAMES.items() %}
+                            <option value="{{ url_for('set_language', lang=code) }}" 
+                                    {% if current_lang == code %}selected{% endif %}>
+                                {{ name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
             </div>
         </div>
     </nav>
@@ -38,8 +53,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 校徽网 - School Badge Collection. Built with Flask.</p>
-            <p><a href="https://github.com/wangfeng/school-badge-website">GitHub</a></p>
+            <p>{{ _('copyright') }}</p>
         </div>
     </footer>
 

@@ -30,12 +30,16 @@ def init_db():
         CREATE TABLE IF NOT EXISTS schools (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL,
+            name_cn TEXT,
             region TEXT NOT NULL,
             country TEXT NOT NULL,
             city TEXT NOT NULL,
             level TEXT NOT NULL,
             description TEXT,
             badge_url TEXT,
+            website TEXT,
+            motto TEXT,
+            founded INTEGER,
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP
         )
     ''')

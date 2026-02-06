@@ -8,6 +8,7 @@ from models import (
     create_school, get_like, get_likes_count, like_school,
     unlike_school, get_user_liked_schools, load_sample_data
 )
+from i18n import _, LANGUAGE_NAMES, get_locale
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
@@ -20,10 +21,27 @@ def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if 'user_id' not in session:
-            flash('请先登录后再访问此页面。', 'warning')
+            flash(_('please_login'), 'warning')
             return redirect(url_for('login'))
         return f(*args, **kwargs)
     return decorated_function
+
+@app.context_processor
+def inject_globals():
+    """Inject global variables into templates."""
+    return {
+        '_': _,
+        'LANGUAGE_NAMES': LANGUAGE_NAMES,
+        'current_lang': get_locale()
+    }
+
+@app.route('/lang/<lang>')
+def set_language(lang):
+    """Set the language and redirect back."""
+    session['lang'] = lang
+    # Get the referrer to redirect back
+    referrer = request.headers.get('Referer', '/')
+    return redirect(referrer)
 
 @app.route('/')
 def index():
@@ -57,7 +75,7 @@ def school_detail(school_id):
     """School detail page."""
     school = get_school_by_id(school_id)
     if not school:
-        flash('学校不存在。', 'error')
+        flash(_('no_schools'), 'error')
         return redirect(url_for('index'))
     
     likes_count = get_likes_count(school_id)
@@ -77,16 +95,16 @@ def toggle_like(school_id):
     """Toggle like on a school."""
     school = get_school_by_id(school_id)
     if not school:
-        flash('学校不存在。', 'error')
+        flash(_('no_schools'), 'error')
         return redirect(url_for('index'))
     
     existing_like = get_like(session['user_id'], school_id)
     if existing_like:
         unlike_school(session['user_id'], school_id)
-        flash(f'已取消收藏 {school["name"]}', 'info')
+        flash(_('liked'), 'info')
     else:
         like_school(session['user_id'], school_id)
-        flash(f'已收藏 {school["name"]}', 'success')
+        flash(_('like'), 'success')
     
     return redirect(url_for('school_detail', school_id=school_id))
 
@@ -106,15 +124,15 @@ def register():
         email = request.form['email']
         
         if not username or not password or not email:
-            flash('所有字段都为必填项。', 'error')
+            flash(_('all_required'), 'error')
             return redirect(url_for('register'))
         
         user_id = create_user(username, password, email)
         if user_id:
-            flash('注册成功！请登录。', 'success')
+            flash(_('register_success'), 'success')
             return redirect(url_for('login'))
         else:
-            flash('用户名或邮箱已被注册。', 'error')
+            flash(_('username_exists'), 'error')
             return redirect(url_for('register'))
     
     return render_template('register.html')
@@ -130,10 +148,10 @@ def login():
         if user:
             session['user_id'] = user['id']
             session['username'] = user['username']
-            flash(f'欢迎回来，{user["username"]}！', 'success')
+            flash(_('welcome_back').format(user['username']), 'success')
             return redirect(url_for('index'))
         else:
-            flash('用户名或密码错误。', 'error')
+            flash(_('login_error'), 'error')
             return redirect(url_for('login'))
     
     return render_template('login.html')
@@ -143,14 +161,14 @@ def logout():
     """User logout."""
     session.pop('user_id', None)
     session.pop('username', None)
-    flash('您已退出登录。', 'info')
+    flash(_('logout_success'), 'info')
     return redirect(url_for('index'))
 
 @app.route('/init-db')
 def init_database():
     """Initialize the database."""
     init_db()
-    flash('数据库初始化成功！', 'success')
+    flash('Database initialized.', 'success')
     return redirect(url_for('index'))
 
 @app.route('/load-sample-data')
@@ -158,9 +176,9 @@ def load_sample():
     """Load sample data."""
     try:
         load_sample_data()
-        flash('示例数据加载成功！', 'success')
+        flash('Sample data loaded.', 'success')
     except Exception as e:
-        flash(f'加载示例数据出错：{e}', 'error')
+        flash(f'Error loading data: {e}', 'error')
     return redirect(url_for('index'))
 
 @app.route('/images/<path:filename>')
