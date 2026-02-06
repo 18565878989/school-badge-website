@@ -45,6 +45,13 @@
 {% if schools|length > 0 %}
 <div class="stats">
     {{ _('schools_count').format(schools|length) }}
+    {% if selected_region or selected_level or search_query %}
+        <span class="filter-info">
+            {% if selected_region %}· {{ selected_region }}{% endif %}
+            {% if selected_level %}· {{ _(selected_level) }}{% endif %}
+            {% if search_query %}· "{{ search_query }}"{% endif %}
+        </span>
+    {% endif %}
 </div>
 {% endif %}
 
@@ -82,4 +89,26 @@
         </div>
     {% endfor %}
 </div>
+
+{% if total_pages > 1 %}
+<div class="pagination">
+    {% if page > 1 %}
+        <a href="{{ url_for('index', page=page-1, region=selected_region, level=selected_level, q=search_query) }}" class="page-btn">‹ {{ _('prev') }}</a>
+    {% endif %}
+    
+    {% for p in range(1, total_pages + 1) %}
+        {% if p == page %}
+            <span class="page-current">{{ p }}</span>
+        {% elif p == 1 or p == total_pages or (p >= page - 2 and p <= page + 2) %}
+            <a href="{{ url_for('index', page=p, region=selected_region, level=selected_level, q=search_query) }}" class="page-num">{{ p }}</a>
+        {% elif p == page - 3 or p == page + 3 %}
+            <span class="page-ellipsis">...</span>
+        {% endif %}
+    {% endfor %}
+    
+    {% if page < total_pages %}
+        <a href="{{ url_for('index', page=page+1, region=selected_region, level=selected_level, q=search_query) }}" class="page-btn">{{ _('next') }} ›</a>
+    {% endif %}
+</div>
+{% endif %}
 {% endblock %}

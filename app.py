@@ -92,10 +92,12 @@ def set_language(lang):
 
 @app.route('/')
 def index():
-    """Homepage - list schools by region."""
+    """Homepage - list schools by region with pagination."""
     search_query = request.args.get('q', '')
     selected_region = request.args.get('region', '')
     selected_level = request.args.get('level', '')
+    page = request.args.get('page', 1, type=int)
+    per_page = 21  # 21 schools per page
     
     if search_query:
         schools = search_schools(search_query)
@@ -109,13 +111,23 @@ def index():
     regions = get_regions()
     levels = ['university', 'middle', 'elementary', 'kindergarten']
     
+    # Pagination
+    total = len(schools)
+    total_pages = (total + per_page - 1) // per_page
+    start = (page - 1) * per_page
+    end = start + per_page
+    paginated_schools = schools[start:end]
+    
     return render_template('index.html', 
-                         schools=schools, 
+                         schools=paginated_schools, 
                          regions=regions, 
                          levels=levels,
                          search_query=search_query,
                          selected_region=selected_region,
-                         selected_level=selected_level)
+                         selected_level=selected_level,
+                         page=page,
+                         total_pages=total_pages,
+                         total_schools=total)
 
 @app.route('/school/<int:school_id>')
 def school_detail(school_id):
