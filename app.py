@@ -1,7 +1,12 @@
-from flask import Flask, render_template, request, redirect, url_for, session, flash, send_from_directory
+from flask import Flask, render_template, request, redirect, url_for, session, flash, send_from_directory, jsonify
 import os
 from functools import wraps
-from werkzeug.security import generate_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
+import secrets
+import hashlib
+import hmac
+import time
+from urllib.parse import urlencode
 from models import (
     init_db, create_user, verify_password, get_user_by_id, is_admin,
     get_all_users, update_user_role, delete_user,
@@ -15,6 +20,31 @@ from i18n import _, LANGUAGE_NAMES, get_locale
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
+
+# OAuth Configuration - 需要在环境变量中设置
+OAUTH_CONFIG = {
+    'wechat': {
+        'appid': os.environ.get('WECHAT_APPID', ''),
+        'appsecret': os.environ.get('WECHAT_APPSECRET', ''),
+        'redirect_uri': os.environ.get('WECHAT_REDIRECT_URI', 'http://127.0.0.1:5001/auth/wechat/callback'),
+    },
+    'alipay': {
+        'appid': os.environ.get('ALIPAY_APPID', ''),
+        'appprivatekey': os.environ.get('ALIPAY_PRIVATE_KEY', ''),
+        'alipaypublickey': os.environ.get('ALIPAY_PUBLIC_KEY', ''),
+        'redirect_uri': os.environ.get('ALIPAY_REDIRECT_URI', 'http://127.0.0.1:5001/auth/alipay/callback'),
+    },
+    'twitter': {
+        'client_key': os.environ.get('TWITTER_CLIENT_KEY', ''),
+        'client_secret': os.environ.get('TWITTER_CLIENT_SECRET', ''),
+        'redirect_uri': os.environ.get('TWITTER_REDIRECT_URI', 'http://127.0.0.1:5001/auth/twitter/callback'),
+    },
+    'facebook': {
+        'appid': os.environ.get('FACEBOOK_APPID', ''),
+        'appsecret': os.environ.get('FACEBOOK_APPSECRET', ''),
+        'redirect_uri': os.environ.get('FACEBOOK_REDIRECT_URI', 'http://127.0.0.1:5001/auth/facebook/callback'),
+    }
+}
 
 # Ensure upload directory exists
 os.makedirs('static/images', exist_ok=True)
@@ -49,7 +79,8 @@ def inject_globals():
         '_': _,
         'LANGUAGE_NAMES': LANGUAGE_NAMES,
         'current_lang': get_locale(),
-        'is_admin': lambda: 'user_id' in session and is_admin(session.get('user_id'))
+        'is_admin': lambda: 'user_id' in session and is_admin(session.get('user_id')),
+        'oauth_configured': {k: bool(v.get('appid') or v.get('client_key')) for k, v in OAUTH_CONFIG.items()}
     }
 
 @app.route('/lang/<lang>')
@@ -131,6 +162,66 @@ def my_likes():
     liked_schools = get_user_liked_schools(session['user_id'])
     return render_template('my_likes.html', schools=liked_schools)
 
+# ==================== Login/Register Routes ====================
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    """User login."""
+    if request.method == 'POST':
+        login_type = request.form.get('type', 'password')
+        
+        if login_type == 'phone':
+            # Phone number login
+            phone = request.form.get('phone', '').strip()
+            code = request.form.get('code', '').strip()
+            
+            if not phone or not code:
+                flash(_('all_required'), 'error')
+                return redirect(url_for('login'))
+            
+            # Verify SMS code
+            if session.get('phone_login_code') != code or session.get('phone_login_phone') != phone:
+                flash('验证码错误或已过期', 'error')
+                return redirect(url_for('login'))
+            
+            # Find or create user by phone
+            conn = sqlite3.connect('database.db')
+            cursor = conn.cursor()
+            cursor.execute('SELECT * FROM users WHERE phone = ?', (phone,))
+            user = cursor.fetchone()
+            conn.close()
+            
+            if not user:
+                # Create new user with phone
+                user_id = create_user(f'user_{phone[-4:]}', '', '', phone=phone)
+                if not user_id:
+                    flash('登录失败', 'error')
+                    return redirect(url_for('login'))
+                user = get_user_by_id(user_id)
+            
+            session['user_id'] = user['id']
+            session['username'] = user['username']
+            session['role'] = user['role']
+            flash(_('welcome_back').format(user['username']), 'success')
+            return redirect(url_for('index'))
+        
+        else:
+            # Password login
+            username = request.form['username']
+            password = request.form['password']
+            
+            user = verify_password(username, password)
+            if user:
+                session['user_id'] = user['id']
+                session['username'] = user['username']
+                session['role'] = user['role']
+                flash(_('welcome_back').format(user['username']), 'success')
+                return redirect(url_for('index'))
+            else:
+                flash(_('login_error'), 'error')
+    
+    return render_template('login.html')
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     """User registration."""
@@ -138,40 +229,42 @@ def register():
         username = request.form['username']
         password = request.form['password']
         email = request.form['email']
+        phone = request.form.get('phone', '').strip()
         
         if not username or not password or not email:
             flash(_('all_required'), 'error')
             return redirect(url_for('register'))
         
-        user_id = create_user(username, password, email)
+        user_id = create_user(username, password, email, phone=phone if phone else None)
         if user_id:
             flash(_('register_success'), 'success')
             return redirect(url_for('login'))
         else:
             flash(_('username_exists'), 'error')
-            return redirect(url_for('register'))
     
     return render_template('register.html')
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    """User login."""
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        
-        user = verify_password(username, password)
-        if user:
-            session['user_id'] = user['id']
-            session['username'] = user['username']
-            session['role'] = user['role']
-            flash(_('welcome_back').format(user['username']), 'success')
-            return redirect(url_for('index'))
-        else:
-            flash(_('login_error'), 'error')
-            return redirect(url_for('login'))
+@app.route('/send-sms', methods=['POST'])
+def send_sms():
+    """Send SMS verification code."""
+    phone = request.form.get('phone', '').strip()
     
-    return render_template('login.html')
+    if not phone:
+        return jsonify({'success': False, 'error': '请输入手机号'})
+    
+    # Generate 6-digit code
+    code = ''.join([str(secrets.randbelow(10)) for _ in range(6)])
+    
+    # Store in session (in production, use SMS service)
+    session['phone_login_code'] = code
+    session['phone_login_phone'] = phone
+    session['phone_login_expire'] = time.time() + 300  # 5 minutes
+    
+    # TODO: Integrate with SMS service (Twilio, Aliyun, Tencent Cloud, etc.)
+    # For demo, just return success
+    print(f"📱 SMS Code for {phone}: {code}")
+    
+    return jsonify({'success': True, 'message': f'验证码已发送: {code}'})
 
 @app.route('/logout')
 def logout():
@@ -179,7 +272,132 @@ def logout():
     session.pop('user_id', None)
     session.pop('username', None)
     session.pop('role', None)
+    session.pop('oauth_provider', None)
     flash(_('logout_success'), 'info')
+    return redirect(url_for('index'))
+
+# ==================== OAuth Routes ====================
+
+def generate_oauth_url(provider, state):
+    """Generate OAuth authorization URL."""
+    config = OAUTH_CONFIG.get(provider, {})
+    
+    if provider == 'twitter':
+        base_url = 'https://twitter.com/i/oauth2/authorize'
+        params = {
+            'response_type': 'code',
+            'client_id': config.get('client_key', ''),
+            'redirect_uri': config.get('redirect_uri', ''),
+            'scope': 'users.read',
+            'state': state,
+            'code_challenge': 'challenge',
+            'code_challenge_method': 'plain'
+        }
+    elif provider == 'facebook':
+        base_url = 'https://www.facebook.com/v18.0/dialog/oauth'
+        params = {
+            'client_id': config.get('appid', ''),
+            'redirect_uri': config.get('redirect_uri', ''),
+            'state': state,
+            'scope': 'email,public_profile'
+        }
+    elif provider == 'wechat':
+        base_url = 'https://open.weixin.qq.com/connect/qrconnect'
+        params = {
+            'appid': config.get('appid', ''),
+            'redirect_uri': config.get('redirect_uri', ''),
+            'response_type': 'code',
+            'state': state,
+            'scope': 'snsapi_login'
+        }
+    elif provider == 'alipay':
+        base_url = 'https://openauth.alipay.com/oauth2/publicAppAuthorize.htm'
+        params = {
+            'app_id': config.get('appid', ''),
+            'redirect_uri': config.get('redirect_uri', ''),
+            'state': state,
+            'scope': 'auth_user'
+        }
+    else:
+        return None
+    
+    return f"{base_url}?{urlencode(params)}"
+
+@app.route('/auth/<provider>')
+def oauth_login(provider):
+    """Initiate OAuth login."""
+    if provider not in OAUTH_CONFIG:
+        flash('不支持的登录方式', 'error')
+        return redirect(url_for('login'))
+    
+    state = secrets.token_urlsafe(16)
+    session['oauth_state'] = state
+    session['oauth_provider'] = provider
+    
+    oauth_url = generate_oauth_url(provider, state)
+    
+    if oauth_url:
+        return redirect(oauth_url)
+    else:
+        flash('OAuth配置未完成，请联系管理员', 'error')
+        return redirect(url_for('login'))
+
+@app.route('/auth/<provider>/callback')
+def oauth_callback(provider):
+    """Handle OAuth callback."""
+    state = request.args.get('state', '')
+    code = request.args.get('code')
+    
+    # Verify state
+    if state != session.get('oauth_state'):
+        flash('OAuth验证失败', 'error')
+        return redirect(url_for('login'))
+    
+    # TODO: Exchange code for access token and get user info
+    # This requires actual API calls to each provider
+    
+    # For demo, create a mock user
+    provider_id = f"{provider}_{state[:8]}"
+    username = f"{provider}_{state[:6]}"
+    email = f"{username}@oauth.local"
+    
+    # Check if user exists
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM users WHERE oauth_provider = ? AND oauth_id = ?', (provider, provider_id))
+    user = cursor.fetchone()
+    
+    if not user:
+        # Create new user
+        try:
+            cursor.execute(
+                'INSERT INTO users (username, password_hash, email, oauth_provider, oauth_id) VALUES (?, ?, ?, ?, ?)',
+                (username, '', email, provider, provider_id)
+            )
+            user_id = cursor.lastrowid
+            conn.commit()
+        except:
+            # User might exist with same email
+            username = f"{provider}_{secrets.randbelow(10000)}"
+            cursor.execute(
+                'INSERT INTO users (username, password_hash, email, oauth_provider, oauth_id) VALUES (?, ?, ?, ?, ?)',
+                (username, '', email, provider, provider_id)
+            )
+            user_id = cursor.lastrowid
+            conn.commit()
+    else:
+        user_id = user[0]
+    
+    conn.close()
+    
+    user = get_user_by_id(user_id)
+    if user:
+        session['user_id'] = user['id']
+        session['username'] = user['username']
+        session['role'] = user['role']
+        session['oauth_provider'] = provider
+        flash(f'{provider.title()} 登录成功！', 'success')
+    
     return redirect(url_for('index'))
 
 # ==================== Admin Routes ====================
@@ -358,8 +576,8 @@ def init_database():
 def load_sample():
     """Load sample data."""
     try:
-        from models import load_sample_data as load
-        load()
+        from models import load_sample_data
+        load_sample_data()
         flash('Sample data loaded.', 'success')
     except Exception as e:
         flash(f'Error loading data: {e}', 'error')

@@ -14,14 +14,18 @@ def init_db():
     conn = get_db_connection()
     cursor = conn.cursor()
     
-    # Create users table with roles
+    # Create users table with roles and OAuth support
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             username TEXT UNIQUE NOT NULL,
-            password_hash TEXT NOT NULL,
+            password_hash TEXT,
             email TEXT UNIQUE NOT NULL,
+            phone TEXT UNIQUE,
             role TEXT DEFAULT 'user' CHECK(role IN ('admin', 'user')),
+            oauth_provider TEXT,
+            oauth_id TEXT,
+            avatar_url TEXT,
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP
         )
     ''')
@@ -90,15 +94,33 @@ def get_user_by_id(user_id):
     conn.close()
     return user
 
-def create_user(username, password, email, role='user'):
+def get_user_by_phone(phone):
+    """Get user by phone number."""
+    conn = get_db_connection()
+    user = conn.execute('SELECT * FROM users WHERE phone = ?', (phone,)).fetchone()
+    conn.close()
+    return user
+
+def get_user_by_oauth(provider, oauth_id):
+    """Get user by OAuth provider and ID."""
+    conn = get_db_connection()
+    user = conn.execute(
+        'SELECT * FROM users WHERE oauth_provider = ? AND oauth_id = ?', 
+        (provider, oauth_id)
+    ).fetchone()
+    conn.close()
+    return user
+
+def create_user(username, password, email, role='user', phone=None, oauth_provider=None, oauth_id=None, avatar_url=None):
     """Create a new user."""
-    password_hash = generate_password_hash(password)
+    password_hash = generate_password_hash(password) if password else ''
     conn = get_db_connection()
     cursor = conn.cursor()
     try:
         cursor.execute(
-            'INSERT INTO users (username, password_hash, email, role) VALUES (?, ?, ?, ?)',
-            (username, password_hash, email, role)
+            '''INSERT INTO users (username, password_hash, email, phone, role, oauth_provider, oauth_id, avatar_url) 
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?)''',
+            (username, password_hash, email, phone, role, oauth_provider, oauth_id, avatar_url)
         )
         conn.commit()
         user_id = cursor.lastrowid
@@ -111,9 +133,16 @@ def create_user(username, password, email, role='user'):
 def verify_password(username, password):
     """Verify user password."""
     user = get_user_by_username(username)
-    if user and check_password_hash(user['password_hash'], password):
+    if user and user['password_hash'] and check_password_hash(user['password_hash'], password):
         return user
     return None
+
+def verify_phone_code(phone, code):
+    """Verify phone SMS code."""
+    from flask import session
+    if session.get('phone_login_code') == code and session.get('phone_login_phone') == phone:
+        return True
+    return False
 
 def is_admin(user_id):
     """Check if user is admin."""
@@ -125,7 +154,7 @@ def is_admin(user_id):
 def get_all_users():
     """Get all users."""
     conn = get_db_connection()
-    users = conn.execute('SELECT id, username, email, role, created_at FROM users ORDER BY created_at DESC').fetchall()
+    users = conn.execute('SELECT id, username, email, phone, role, oauth_provider, avatar_url, created_at FROM users ORDER BY created_at DESC').fetchall()
     conn.close()
     return users
 
@@ -138,7 +167,15 @@ def update_user_role(user_id, new_role):
     cursor.execute('UPDATE users SET role = ? WHERE id = ?', (new_role, user_id))
     conn.commit()
     conn.close()
-    return True
+    return cursor.rowcount > 0
+
+def update_user_avatar(user_id, avatar_url):
+    """Update user avatar."""
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('UPDATE users SET avatar_url = ? WHERE id = ?', (avatar_url, user_id))
+    conn.commit()
+    conn.close()
 
 def delete_user(user_id):
     """Delete a user."""
@@ -337,7 +374,7 @@ def load_sample_data():
     
     with open('data/sample_schools.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
-        schools = data.get('schools', data)  # Support both formats
+        schools = data.get('schools', data)
     
     conn = get_db_connection()
     cursor = conn.cursor()

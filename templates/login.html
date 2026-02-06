@@ -1,32 +1,299 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}登录 - 校徽网{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.svg') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="{{ url_for('index') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="{{ url_for('index') }}">{{ _('home') }}</a>
+                <a href="{{ url_for('register') }}">{{ _('register') }}</a>
+                <div class="lang-switcher">
+                    <select onchange="window.location.href=this.value">
+                        {% for code, name in LANGUAGE_NAMES.items() %}
+                            <option value="{{ url_for('set_language', lang=code) }}" {% if current_lang == code %}selected{% endif %}>{{ name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-{% block title %}登录 - 校徽网{% endblock %}
-
-{% block content %}
-<div class="auth-container">
-    <div class="auth-card">
-        <h1>欢迎回来</h1>
-        <p class="subtitle">登录以查看您收藏的校徽</p>
-        
-        <form method="POST" class="auth-form">
-            <div class="form-group">
-                <label for="username">用户名</label>
-                <input type="text" id="username" name="username" required 
-                       placeholder="请输入用户名">
+    <main class="auth-container">
+        <div class="auth-card">
+            <div class="auth-tabs">
+                <button class="auth-tab active" onclick="showLoginTab('password')">{{ _('login') }}</button>
+                <button class="auth-tab" onclick="showLoginTab('phone')">📱 手机登录</button>
             </div>
             
-            <div class="form-group">
-                <label for="password">密码</label>
-                <input type="password" id="password" name="password" required 
-                       placeholder="请输入密码">
+            <!-- Password Login -->
+            <div id="login-password" class="auth-form">
+                <h1>{{ _('login') }}</h1>
+                <p class="subtitle">{{ _('welcome_back').format('') }}</p>
+                
+                <form method="POST">
+                    <input type="hidden" name="type" value="password">
+                    <div class="form-group">
+                        <label for="username">{{ _('username') }}</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">{{ _('password') }}</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">{{ _('login') }}</button>
+                </form>
+                
+                <p class="auth-link">
+                    {{ _('no_account') }} <a href="{{ url_for('register') }}">{{ _('register') }}</a>
+                </p>
             </div>
             
-            <button type="submit" class="btn btn-primary btn-block">登录</button>
-        </form>
+            <!-- Phone Login -->
+            <div id="login-phone" class="auth-form" style="display:none;">
+                <h1>手机号登录</h1>
+                <p class="subtitle">输入手机号获取验证码</p>
+                
+                <form method="POST" onsubmit="return sendSMSCode(event)">
+                    <input type="hidden" name="type" value="phone">
+                    <div class="form-group">
+                        <label>手机号</label>
+                        <div class="phone-input-group">
+                            <select name="region_code">
+                                <option value="+86">+86 中国</option>
+                                <option value="+852">+852 香港</option>
+                                <option value="+853">+853 澳门</option>
+                                <option value="+886">+886 台湾</option>
+                                <option value="+1">+1 美国/加拿大</option>
+                                <option value="+44">+44 英国</option>
+                                <option value="+81">+81 日本</option>
+                                <option value="+82">+82 韩国</option>
+                                <option value="+65">+65 新加坡</option>
+                                <option value="+61">+61 澳大利亚</option>
+                            </select>
+                            <input type="tel" name="phone" placeholder="请输入手机号" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>验证码</label>
+                        <div class="sms-input-group">
+                            <input type="text" name="code" placeholder="请输入验证码" required>
+                            <button type="button" class="btn btn-secondary" onclick="sendSMSCode(this)">获取验证码</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">登录</button>
+                </form>
+            </div>
+            
+            <!-- Social Login -->
+            <div class="social-login">
+                <p class="divider"><span>其他登录方式</span></p>
+                <div class="social-buttons">
+                    {% if oauth_configured.wechat %}
+                    <a href="{{ url_for('oauth_login', provider='wechat') }}" class="social-btn wechat">
+                        <span>微信</span>
+                    </a>
+                    {% else %}
+                    <button class="social-btn wechat disabled" disabled>
+                        <span>微信</span>
+                    </button>
+                    {% endif %}
+                    
+                    {% if oauth_configured.alipay %}
+                    <a href="{{ url_for('oauth_login', provider='alipay') }}" class="social-btn alipay">
+                        <span>支付宝</span>
+                    </a>
+                    {% else %}
+                    <button class="social-btn alipay disabled" disabled>
+                        <span>支付宝</span>
+                    </button>
+                    {% endif %}
+                    
+                    {% if oauth_configured.twitter %}
+                    <a href="{{ url_for('oauth_login', provider='twitter') }}" class="social-btn twitter">
+                        <span>X</span>
+                    </a>
+                    {% else %}
+                    <button class="social-btn twitter disabled" disabled>
+                        <span>X</span>
+                    </button>
+                    {% endif %}
+                    
+                    {% if oauth_configured.facebook %}
+                    <a href="{{ url_for('oauth_login', provider='facebook') }}" class="social-btn facebook">
+                        <span>Facebook</span>
+                    </a>
+                    {% else %}
+                    <button class="social-btn facebook disabled" disabled>
+                        <span>Facebook</span>
+                    </button>
+                    {% endif %}
+                </div>
+                <p class="oauth-notice">
+                    {% if not oauth_configured.wechat and not oauth_configured.alipay and not oauth_configured.twitter and not oauth_configured.facebook %}
+                    <small>第三方登录配置未完成，请联系管理员配置API密钥</small>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+    function showLoginTab(type) {
+        document.querySelectorAll('.auth-tab').forEach(tab => tab.classList.remove('active'));
+        document.querySelectorAll('.auth-form').forEach(form => form.style.display = 'none');
         
-        <p class="auth-link">
-            还没有账号？<a href="{{ url_for('register') }}">立即注册</a>
-        </p>
-    </div>
-</div>
-{% endblock %}
+        if (type === 'password') {
+            document.querySelectorAll('.auth-tab')[0].classList.add('active');
+            document.getElementById('login-password').style.display = 'block';
+        } else {
+            document.querySelectorAll('.auth-tab')[1].classList.add('active');
+            document.getElementById('login-phone').style.display = 'block';
+        }
+    }
+
+    function sendSMSCode(btn) {
+        event.preventDefault();
+        const phoneGroup = document.querySelector('.phone-input-group');
+        const phone = phoneGroup.querySelector('input').value;
+        const regionCode = phoneGroup.querySelector('select').value;
+        const fullPhone = regionCode + phone;
+        
+        if (!phone) {
+            alert('请输入手机号');
+            return false;
+        }
+        
+        const formData = new FormData();
+        formData.append('phone', fullPhone);
+        
+        fetch('/send-sms', {
+            method: 'POST',
+            body: formData
+        })
+        .then(r => r.json())
+        .then(data => {
+            if (data.success) {
+                btn.textContent = '已发送 (60s)';
+                btn.disabled = true;
+                alert('验证码: ' + data.message);
+                // Start countdown
+                let seconds = 60;
+                const timer = setInterval(() => {
+                    seconds--;
+                    if (seconds <= 0) {
+                        clearInterval(timer);
+                        btn.textContent = '获取验证码';
+                        btn.disabled = false;
+                    } else {
+                        btn.textContent = `已发送 (${seconds}s)`;
+                    }
+                }, 1000);
+            } else {
+                alert(data.error || '发送失败');
+            }
+        })
+        .catch(err => {
+            alert('发送失败: ' + err);
+        });
+        
+        return false;
+    }
+    </script>
+    
+    <style>
+    .auth-tabs {
+        display: flex;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 24px;
+    }
+    .auth-tab {
+        flex: 1;
+        padding: 16px;
+        background: none;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text-secondary);
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s;
+    }
+    .auth-tab.active {
+        color: var(--primary);
+        border-bottom-color: var(--primary);
+    }
+    .phone-input-group {
+        display: flex;
+        gap: 10px;
+    }
+    .phone-input-group select {
+        width: 120px;
+    }
+    .sms-input-group {
+        display: flex;
+        gap: 10px;
+    }
+    .sms-input-group input {
+        flex: 1;
+    }
+    .social-login {
+        margin-top: 32px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+    }
+    .divider {
+        text-align: center;
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+        margin-bottom: 16px;
+    }
+    .divider span {
+        background: #fff;
+        padding: 0 16px;
+    }
+    .social-buttons {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+    }
+    .social-btn {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 0.75rem;
+        font-weight: 600;
+        transition: all 0.2s;
+    }
+    .social-btn:hover:not(.disabled) {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .social-btn.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    .social-btn.wechat { background: #07C160; color: #fff; }
+    .social-btn.alipay { background: #1677FF; color: #fff; }
+    .social-btn.twitter { background: #000; color: #fff; }
+    .social-btn.facebook { background: #1877F2; color: #fff; }
+    .oauth-notice {
+        text-align: center;
+        margin-top: 12px;
+        color: var(--text-secondary);
+    }
+    </style>
+</body>
+</html>

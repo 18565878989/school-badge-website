@@ -1,38 +1,183 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}注册 - 校徽网{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.svg') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="{{ url_for('index') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="{{ url_for('index') }}">{{ _('home') }}</a>
+                <a href="{{ url_for('login') }}">{{ _('login') }}</a>
+                <div class="lang-switcher">
+                    <select onchange="window.location.href=this.value">
+                        {% for code, name in LANGUAGE_NAMES.items() %}
+                            <option value="{{ url_for('set_language', lang=code) }}" {% if current_lang == code %}selected{% endif %}>{{ name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-{% block title %}注册 - 校徽网{% endblock %}
+    <main class="auth-container">
+        <div class="auth-card">
+            <h1>{{ _('register') }}</h1>
+            <p class="subtitle">创建您的账户</p>
+            
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            
+            <form method="POST">
+                <div class="form-group">
+                    <label for="username">{{ _('username') }} *</label>
+                    <input type="text" id="username" name="username" required minlength="3" maxlength="20">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">{{ _('email') }} *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">手机号（可选）</label>
+                    <div class="phone-input-group">
+                        <select name="region_code">
+                            <option value="">国家/地区</option>
+                            <option value="+86">+86 中国大陆</option>
+                            <option value="+852">+852 香港</option>
+                            <option value="+853">+853 澳门</option>
+                            <option value="+886">+886 台湾</option>
+                            <option value="+1">+1 美国/加拿大</option>
+                            <option value="+44">+44 英国</option>
+                            <option value="+81">+81 日本</option>
+                            <option value="+82">+82 韩国</option>
+                            <option value="+65">+65 新加坡</option>
+                            <option value="+61">+61 澳大利亚</option>
+                            <option value="+33">+33 法国</option>
+                            <option value="+49">+49 德国</option>
+                            <option value="+61">+61 其他</option>
+                        </select>
+                        <input type="tel" id="phone" name="phone" placeholder="选填，方便找回密码">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">{{ _('password') }} *</label>
+                    <input type="password" id="password" name="password" required minlength="6">
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm_password">确认密码 *</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">{{ _('register') }}</button>
+            </form>
+            
+            <p class="auth-link">
+                {{ _('already_account') }} <a href="{{ url_for('login') }}">{{ _('login') }}</a>
+            </p>
+            
+            <!-- Social Login Options -->
+            <div class="social-login">
+                <p class="divider"><span>快速登录</span></p>
+                <div class="social-buttons">
+                    {% if oauth_configured.wechat %}
+                    <a href="{{ url_for('oauth_login', provider='wechat') }}" class="social-btn wechat">微信</a>
+                    {% endif %}
+                    
+                    {% if oauth_configured.alipay %}
+                    <a href="{{ url_for('oauth_login', provider='alipay') }}" class="social-btn alipay">支付宝</a>
+                    {% endif %}
+                    
+                    {% if oauth_configured.twitter %}
+                    <a href="{{ url_for('oauth_login', provider='twitter') }}" class="social-btn twitter">X</a>
+                    {% endif %}
+                    
+                    {% if oauth_configured.facebook %}
+                    <a href="{{ url_for('oauth_login', provider='facebook') }}" class="social-btn facebook">Facebook</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </main>
 
-{% block content %}
-<div class="auth-container">
-    <div class="auth-card">
-        <h1>创建账号</h1>
-        <p class="subtitle">加入校徽网，收藏和下载校徽</p>
-        
-        <form method="POST" class="auth-form">
-            <div class="form-group">
-                <label for="username">用户名</label>
-                <input type="text" id="username" name="username" required 
-                       placeholder="请设置用户名（至少3位）" minlength="3">
-            </div>
-            
-            <div class="form-group">
-                <label for="email">邮箱</label>
-                <input type="email" id="email" name="email" required 
-                       placeholder="请输入邮箱地址">
-            </div>
-            
-            <div class="form-group">
-                <label for="password">密码</label>
-                <input type="password" id="password" name="password" required 
-                       placeholder="请设置密码（至少6位）" minlength="6">
-            </div>
-            
-            <button type="submit" class="btn btn-primary btn-block">注册</button>
-        </form>
-        
-        <p class="auth-link">
-            已有账号？<a href="{{ url_for('login') }}">立即登录</a>
-        </p>
-    </div>
-</div>
-{% endblock %}
+    <script>
+    // Password confirmation validation
+    document.querySelector('form').addEventListener('submit', function(e) {
+        const password = document.getElementById('password').value;
+        const confirm = document.getElementById('confirm_password').value;
+        if (password !== confirm) {
+            e.preventDefault();
+            alert('两次输入的密码不一致');
+        }
+    });
+    </script>
+    
+    <style>
+    .phone-input-group {
+        display: flex;
+        gap: 10px;
+    }
+    .phone-input-group select {
+        width: 140px;
+    }
+    .phone-input-group input {
+        flex: 1;
+    }
+    .social-login {
+        margin-top: 32px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+    }
+    .divider {
+        text-align: center;
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+        margin-bottom: 16px;
+    }
+    .divider span {
+        background: #fff;
+        padding: 0 16px;
+    }
+    .social-buttons {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+    }
+    .social-btn {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 0.75rem;
+        font-weight: 600;
+        transition: all 0.2s;
+    }
+    .social-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .social-btn.wechat { background: #07C160; color: #fff; }
+    .social-btn.alipay { background: #1677FF; color: #fff; }
+    .social-btn.twitter { background: #000; color: #fff; }
+    .social-btn.facebook { background: #1877F2; color: #fff; }
+    </style>
+</body>
+</html>
