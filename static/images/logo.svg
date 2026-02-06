@@ -1,14 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#3B82F6"/>
-      <stop offset="100%" style="stop-color:#1E40AF"/>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D5A3D"/>
+      <stop offset="100%" style="stop-color:#1A3D28"/>
+    </linearGradient>
+    <linearGradient id="fleshGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7CB342"/>
+      <stop offset="100%" style="stop-color:#558B2F"/>
+    </linearGradient>
+    <linearGradient id="seedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8D6E63"/>
+      <stop offset="100%" style="stop-color:#5D4037"/>
     </linearGradient>
   </defs>
   
-  <!-- Shield -->
-  <path d="M15 5 L70 5 C80 5 85 12 85 22 L85 55 C85 85 50 98 50 98 C50 98 15 85 15 55 L15 22 C15 12 20 5 30 5 Z" fill="url(#grad)"/>
-  
-  <!-- Star -->
-  <polygon points="50,20 55,35 72,35 58,46 63,62 50,52 37,62 42,46 28,35 45,35" fill="#fff"/>
+  <!-- Avocado -->
+  <g transform="translate(14, 10)">
+    <!-- Skin -->
+    <ellipse cx="36" cy="40" rx="34" ry="40" fill="url(#skinGrad)"/>
+    <!-- Flesh -->
+    <ellipse cx="36" cy="42" rx="28" ry="34" fill="url(#fleshGrad)"/>
+    <!-- Seed -->
+    <circle cx="36" cy="52" r="13" fill="url(#seedGrad)"/>
+    <!-- Highlight -->
+    <ellipse cx="27" cy="28" rx="7" ry="10" fill="#fff" opacity="0.18"/>
+  </g>
 </svg>
