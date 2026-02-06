@@ -1,81 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <!-- Ocean Blue Gradient -->
-    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#007AFF;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#0055D4;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#003380;stop-opacity:1" />
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90D9"/>
+      <stop offset="100%" style="stop-color:#2563EB"/>
     </linearGradient>
-    
-    <!-- Earth Green Gradient -->
-    <linearGradient id="earthGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#34C759;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#10B981;stop-opacity:1" />
-    </linearGradient>
-    
-    <!-- Gold for Human/Education -->
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#FDB931;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
-    </linearGradient>
-    
-    <!-- White glow -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
     </filter>
   </defs>
   
-  <!-- Main Shield Shape - Ocean Blue -->
-  <path d="M256 32 L448 120 L448 260 C448 360 350 460 256 492 C162 460 64 360 64 260 L64 120 Z" 
-        fill="url(#oceanGrad)" />
-  
-  <!-- Inner Circle - Earth/Nature -->
-  <circle cx="256" cy="235" r="95" fill="#FFFFFF" opacity="0.95"/>
-  
-  <!-- Globe Lines - World/Earth -->
-  <g stroke="#007AFF" stroke-width="1.5" fill="none" opacity="0.3">
-    <ellipse cx="256" cy="235" rx="95" ry="45"/>
-    <ellipse cx="256" cy="235" rx="45" ry="95"/>
-    <line x1="256" y1="140" x2="256" y2="330"/>
-    <line x1="161" y1="235" x2="351" y2="235"/>
-  </g>
-  
-  <!-- Central Human Figure - Education/People -->
-  <g transform="translate(256, 235)">
-    <!-- Human silhouette head -->
-    <circle cx="0" cy="-25" r="18" fill="url(#goldGrad)"/>
-    
-    <!-- Body/Academic robe -->
-    <path d="M-22 5 Q-30 15 -28 40 L-15 55 L15 55 L28 40 Q30 15 22 5 Q0 0 -22 5" 
-          fill="url(#goldGrad)"/>
-    
-    <!-- Arms opening to world -->
-    <path d="M-22 8 Q-40 0 -50 -10" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" fill="none"/>
-    <path d="M22 8 Q40 0 50 -10" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" fill="none"/>
-  </g>
-  
-  <!-- Laurel/Wreath - Nature/Honor -->
-  <g transform="translate(256, 280)">
-    <!-- Left laurel -->
-    <path d="M-70 20 Q-85 35 -80 55 Q-70 45 -60 50 Q-70 35 -70 20" fill="url(#earthGrad)"/>
-    <path d="M-75 30 Q-90 45 -85 65 Q-75 55 -65 60 Q-80 45 -75 30" fill="url(#earthGrad)"/>
-    <path d="M-80 40 Q-95 55 -90 75 Q-80 65 -70 70 Q-90 55 -80 40" fill="url(#earthGrad)"/>
-    
-    <!-- Right laurel -->
-    <path d="M70 20 Q85 35 80 55 Q70 45 60 50 Q70 35 70 20" fill="url(#earthGrad)"/>
-    <path d="M75 30 Q90 45 85 65 Q75 55 65 60 Q80 45 75 30" fill="url(#earthGrad)"/>
-    <path d="M80 40 Q95 55 90 75 Q80 65 70 70 Q90 55 80 40" fill="url(#earthGrad)"/>
-  </g>
-  
-  <!-- Stars - Excellence -->
-  <g fill="#FFD700">
-    <polygon points="256,110 260,120 270,120 262,127 265,137 256,131 247,137 250,127 242,120 252,120" transform="scale(0.8)"/>
-    <polygon points="180,180 183,187 190,187 185,192 187,199 180,195 173,199 175,192 170,187 177,187" transform="scale(0.6)"/>
-    <polygon points="332,180 335,187 342,187 337,192 339,199 332,195 325,199 327,192 322,187 329,187" transform="scale(0.6)"/>
+  <!-- Badge Icon -->
+  <g transform="translate(20, 20)" filter="url(#shadow)">
+    <!-- Shield background -->
+    <rect x="0" y="0" width="60" height="60" rx="14" fill="url(#bgGrad)"/>
+    <!-- Stylized lines -->
+    <rect x="12" y="16" width="36" height="5" rx="2.5" fill="#fff"/>
+    <rect x="12" y="28" width="28" height="5" rx="2.5" fill="#fff" opacity="0.7"/>
+    <rect x="12" y="40" width="32" height="5" rx="2.5" fill="#fff" opacity="0.5"/>
   </g>
 </svg>
