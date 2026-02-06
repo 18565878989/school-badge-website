@@ -14,13 +14,14 @@ def init_db():
     conn = get_db_connection()
     cursor = conn.cursor()
     
-    # Create users table
+    # Create users table with roles
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             username TEXT UNIQUE NOT NULL,
             password_hash TEXT NOT NULL,
             email TEXT UNIQUE NOT NULL,
+            role TEXT DEFAULT 'user' CHECK(role IN ('admin', 'user')),
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP
         )
     ''')
@@ -59,6 +60,19 @@ def init_db():
         )
     ''')
     
+    # Create admin audit log
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS admin_logs (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            admin_id INTEGER NOT NULL,
+            action TEXT NOT NULL,
+            target_type TEXT,
+            target_id INTEGER,
+            details TEXT,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+    
     conn.commit()
     conn.close()
 
@@ -76,15 +90,15 @@ def get_user_by_id(user_id):
     conn.close()
     return user
 
-def create_user(username, password, email):
+def create_user(username, password, email, role='user'):
     """Create a new user."""
     password_hash = generate_password_hash(password)
     conn = get_db_connection()
     cursor = conn.cursor()
     try:
         cursor.execute(
-            'INSERT INTO users (username, password_hash, email) VALUES (?, ?, ?)',
-            (username, password_hash, email)
+            'INSERT INTO users (username, password_hash, email, role) VALUES (?, ?, ?, ?)',
+            (username, password_hash, email, role)
         )
         conn.commit()
         user_id = cursor.lastrowid
@@ -100,6 +114,43 @@ def verify_password(username, password):
     if user and check_password_hash(user['password_hash'], password):
         return user
     return None
+
+def is_admin(user_id):
+    """Check if user is admin."""
+    conn = get_db_connection()
+    user = conn.execute('SELECT role FROM users WHERE id = ?', (user_id,)).fetchone()
+    conn.close()
+    return user and user['role'] == 'admin'
+
+def get_all_users():
+    """Get all users."""
+    conn = get_db_connection()
+    users = conn.execute('SELECT id, username, email, role, created_at FROM users ORDER BY created_at DESC').fetchall()
+    conn.close()
+    return users
+
+def update_user_role(user_id, new_role):
+    """Update user role."""
+    if new_role not in ('admin', 'user'):
+        return False
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('UPDATE users SET role = ? WHERE id = ?', (new_role, user_id))
+    conn.commit()
+    conn.close()
+    return True
+
+def delete_user(user_id):
+    """Delete a user."""
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    # Delete user's likes first
+    cursor.execute('DELETE FROM likes WHERE user_id = ?', (user_id,))
+    # Delete user
+    cursor.execute('DELETE FROM users WHERE id = ?', (user_id,))
+    conn.commit()
+    conn.close()
+    return True
 
 def get_all_schools():
     """Get all schools."""
@@ -146,18 +197,82 @@ def get_regions():
     conn.close()
     return [r['region'] for r in regions]
 
-def create_school(name, region, country, city, level, description, badge_url=None):
+def create_school(name, name_cn=None, region=None, country=None, city=None, address=None, 
+                  level=None, description=None, badge_url=None, website=None, 
+                  motto=None, founded=None, principal=None):
     """Create a new school."""
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute(
-        'INSERT INTO schools (name, region, country, city, level, description, badge_url) VALUES (?, ?, ?, ?, ?, ?, ?)',
-        (name, region, country, city, level, description, badge_url)
-    )
+    cursor.execute('''
+        INSERT INTO schools (name, name_cn, region, country, city, address, level, description, badge_url, website, motto, founded, principal)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ''', (
+        name, name_cn, region, country, city, address, level, description, 
+        badge_url, website, motto, founded, principal
+    ))
     conn.commit()
     school_id = cursor.lastrowid
     conn.close()
     return school_id
+
+def update_school(school_id, **kwargs):
+    """Update a school."""
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    
+    fields = []
+    values = []
+    for key, value in kwargs.items():
+        if value is not None:
+            fields.append(f'{key} = ?')
+            values.append(value)
+    
+    if not fields:
+        conn.close()
+        return False
+    
+    values.append(school_id)
+    query = f'UPDATE schools SET {", ".join(fields)} WHERE id = ?'
+    cursor.execute(query, values)
+    conn.commit()
+    conn.close()
+    return cursor.rowcount > 0
+
+def delete_school(school_id):
+    """Delete a school."""
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    # Delete likes for this school
+    cursor.execute('DELETE FROM likes WHERE school_id = ?', (school_id,))
+    # Delete school
+    cursor.execute('DELETE FROM schools WHERE id = ?', (school_id,))
+    conn.commit()
+    conn.close()
+    return True
+
+def log_admin_action(admin_id, action, target_type=None, target_id=None, details=None):
+    """Log admin action."""
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute(
+        'INSERT INTO admin_logs (admin_id, action, target_type, target_id, details) VALUES (?, ?, ?, ?, ?)',
+        (admin_id, action, target_type, target_id, details)
+    )
+    conn.commit()
+    conn.close()
+
+def get_admin_logs(limit=100):
+    """Get admin logs."""
+    conn = get_db_connection()
+    logs = conn.execute('''
+        SELECT l.*, u.username 
+        FROM admin_logs l 
+        LEFT JOIN users u ON l.admin_id = u.id 
+        ORDER BY l.created_at DESC 
+        LIMIT ?
+    ''', (limit,)).fetchall()
+    conn.close()
+    return logs
 
 def get_like(user_id, school_id):
     """Check if user liked a school."""

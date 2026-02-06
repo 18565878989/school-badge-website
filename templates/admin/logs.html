@@ -1,0 +1,50 @@
+{% extends "admin/base.html" %}
+
+{% block title %}操作日志 - {{ _('admin_panel') }}{% endblock %}
+
+{% block content %}
+<div class="admin-header">
+    <h1>操作日志</h1>
+</div>
+
+<table class="admin-table" id="logsTable">
+    <thead>
+        <tr>
+            <th>时间</th>
+            <th>管理员</th>
+            <th>操作</th>
+            <th>目标类型</th>
+            <th>目标</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for log in logs %}
+        <tr>
+            <td>{{ log.created_at[:19] }}</td>
+            <td>{{ log.username or '系统' }}</td>
+            <td>
+                {% if 'CREATE' in log.action %}
+                    <span class="log-action log-create">创建</span>
+                {% elif 'UPDATE' in log.action %}
+                    <span class="log-action log-update">更新</span>
+                {% elif 'DELETE' in log.action %}
+                    <span class="log-action log-delete">删除</span>
+                {% elif 'PROMOTE' in log.action %}
+                    <span class="log-action log-promote">提升权限</span>
+                {% elif 'DEMOTE' in log.action %}
+                    <span class="log-action log-demote">降低权限</span>
+                {% else %}
+                    <span class="log-action">{{ log.action }}</span>
+                {% endif %}
+            </td>
+            <td>{{ log.target_type or '—' }}</td>
+            <td>{{ log.details or '—' }}</td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="5" class="empty">暂无操作日志</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

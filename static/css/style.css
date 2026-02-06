@@ -108,6 +108,11 @@ body {
     color: var(--text-secondary);
 }
 
+.admin-link {
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+}
+
 /* Main */
 main {
     padding-top: 88px;

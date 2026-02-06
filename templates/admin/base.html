@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ _('admin_panel') }} - 校徽网{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.svg') }}">
+</head>
+<body class="admin-body">
+    <nav class="navbar admin-navbar">
+        <div class="container">
+            <a href="{{ url_for('index') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="{{ url_for('index') }}">{{ _('home') }}</a>
+                {% if session.get('user_id') %}
+                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
+                    <span class="username">{{ session.get('username') }}</span>
+                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
+                {% endif %}
+                
+                <div class="lang-switcher">
+                    <select onchange="window.location.href=this.value">
+                        {% for code, name in LANGUAGE_NAMES.items() %}
+                            <option value="{{ url_for('set_language', lang=code) }}" 
+                                    {% if current_lang == code %}selected{% endif %}>
+                                {{ name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="admin-container">
+        <aside class="admin-sidebar">
+            <div class="admin-menu">
+                <a href="{{ url_for('admin_dashboard') }}" class="admin-menu-item {% if request.endpoint == 'admin_dashboard' %}active{% endif %}">
+                    <span class="menu-icon">📊</span>
+                    <span>{{ _('dashboard') }}</span>
+                </a>
+                <a href="{{ url_for('admin_schools') }}" class="admin-menu-item {% if 'school' in request.endpoint %}active{% endif %}">
+                    <span class="menu-icon">🏫</span>
+                    <span>{{ _('manage_schools') }}</span>
+                </a>
+                <a href="{{ url_for('admin_users') }}" class="admin-menu-item {% if 'user' in request.endpoint %}active{% endif %}">
+                    <span class="menu-icon">👥</span>
+                    <span>{{ _('manage_users') }}</span>
+                </a>
+                <a href="{{ url_for('admin_logs') }}" class="admin-menu-item {% if 'log' in request.endpoint %}active{% endif %}">
+                    <span class="menu-icon">📋</span>
+                    <span>操作日志</span>
+                </a>
+            </div>
+        </aside>
+        
+        <main class="admin-content">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

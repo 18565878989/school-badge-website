@@ -1,0 +1,100 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ school and _('edit_school') or _('add_school') }} - {{ _('admin_panel') }}{% endblock %}
+
+{% block content %}
+<div class="admin-header">
+    <h1>{{ school and _('edit_school') or _('add_school') }}</h1>
+</div>
+
+<form method="POST" class="admin-form">
+    <div class="form-grid">
+        <div class="form-group">
+            <label for="name">{{ _('school_name') }} *</label>
+            <input type="text" id="name" name="name" value="{{ school.name or '' }}" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="name_cn">{{ _('school_name_cn') }}</label>
+            <input type="text" id="name_cn" name="name_cn" value="{{ school.name_cn or '' }}">
+        </div>
+        
+        <div class="form-group">
+            <label for="region">{{ _('region') }} *</label>
+            <select id="region" name="region" required>
+                <option value="">请选择</option>
+                {% for region in regions %}
+                    <option value="{{ region }}" {% if school and school.region == region %}selected{% endif %}>
+                        {{ region }}
+                    </option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="country">{{ _('country') }} *</label>
+            <input type="text" id="country" name="country" value="{{ school.country or '' }}" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="city">{{ _('city') }} *</label>
+            <input type="text" id="city" name="city" value="{{ school.city or '' }}" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="address">{{ _('address') }}</label>
+            <input type="text" id="address" name="address" value="{{ school.address or '' }}">
+        </div>
+        
+        <div class="form-group">
+            <label for="level">{{ _('type') }} *</label>
+            <select id="level" name="level" required>
+                <option value="">请选择</option>
+                {% for level in levels %}
+                    <option value="{{ level }}" {% if school and school.level == level %}selected{% endif %}>
+                        {% if level == 'university' %}大学
+                        {% elif level == 'middle' %}中学
+                        {% elif level == 'elementary' %}小学
+                        {% else %}幼儿园{% endif %}
+                    </option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="founded">{{ _('founded_year') }}</label>
+            <input type="number" id="founded" name="founded" value="{{ school.founded or '' }}" min="1000" max="2100">
+        </div>
+        
+        <div class="form-group">
+            <label for="principal">{{ _('principal_name') }}</label>
+            <input type="text" id="principal" name="principal" value="{{ school.principal or '' }}">
+        </div>
+        
+        <div class="form-group">
+            <label for="website">{{ _('website') }}</label>
+            <input type="url" id="website" name="website" value="{{ school.website or '' }}" placeholder="https://...">
+        </div>
+        
+        <div class="form-group">
+            <label for="badge_url">{{ _('badge') }} URL</label>
+            <input type="url" id="badge_url" name="badge_url" value="{{ school.badge_url or '' }}" placeholder="/static/images/xxx.svg">
+        </div>
+    </div>
+    
+    <div class="form-group full-width">
+        <label for="motto">{{ _('motto') }}</label>
+        <input type="text" id="motto" name="motto" value="{{ school.motto or '' }}">
+    </div>
+    
+    <div class="form-group full-width">
+        <label for="description">{{ _('description') }}</label>
+        <textarea id="description" name="description" rows="4">{{ school.description or '' }}</textarea>
+    </div>
+    
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary">{{ _('save') }}</button>
+        <a href="{{ url_for('admin_schools') }}" class="btn btn-secondary">{{ _('cancel') }}</a>
+    </div>
+</form>
+{% endblock %}

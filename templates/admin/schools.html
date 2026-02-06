@@ -1,0 +1,99 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ _('manage_schools') }} - {{ _('admin_panel') }}{% endblock %}
+
+{% block content %}
+<div class="admin-header">
+    <h1>{{ _('manage_schools') }}</h1>
+    <a href="{{ url_for('admin_add_school') }}" class="btn btn-primary">
+        ➕ {{ _('add_school') }}
+    </a>
+</div>
+
+<div class="filter-bar">
+    <input type="text" id="searchSchools" placeholder="搜索学校..." onkeyup="filterTable()">
+    <select id="filterRegion" onchange="filterTable()">
+        <option value="">所有地区</option>
+        {% for region in ['North America', 'Europe', 'Asia', 'Oceania', 'Africa', 'South America'] %}
+            <option value="{{ region }}">{{ region }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<table class="admin-table" id="schoolsTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>校徽</th>
+            <th>学校名称</th>
+            <th>中文名</th>
+            <th>地区</th>
+            <th>类型</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for school in schools %}
+        <tr data-region="{{ school.region }}">
+            <td>{{ school.id }}</td>
+            <td>
+                {% if school.badge_url %}
+                    <img src="{{ school.badge_url }}" alt="{{ school.name }}" class="table-badge">
+                {% else %}
+                    <span class="no-badge">—</span>
+                {% endif %}
+            </td>
+            <td>
+                <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank">
+                    {{ school.name }}
+                </a>
+            </td>
+            <td>{{ school.name_cn or '—' }}</td>
+            <td>{{ school.region }}</td>
+            <td>
+                <span class="level-badge level-{{ school.level }}">
+                    {% if school.level == 'university' %}大学
+                    {% elif school.level == 'middle' %}中学
+                    {% elif school.level == 'elementary' %}小学
+                    {% else %}幼儿园{% endif %}
+                </span>
+            </td>
+            <td>
+                <div class="action-group">
+                    <a href="{{ url_for('admin_edit_school', school_id=school.id) }}" class="btn btn-sm btn-secondary">
+                        ✏️ {{ _('edit_school') }}
+                    </a>
+                    <a href="{{ url_for('admin_delete_school', school_id=school.id) }}" 
+                       class="btn btn-sm btn-danger"
+                       onclick="return confirm('{{ _('confirm_delete') }}')">
+                        🗑️ {{ _('delete') }}
+                    </a>
+                </div>
+            </td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="7" class="empty">暂无学校数据</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<script>
+function filterTable() {
+    const search = document.getElementById('searchSchools').value.toLowerCase();
+    const region = document.getElementById('filterRegion').value;
+    const rows = document.querySelectorAll('#schoolsTable tbody tr');
+    
+    rows.forEach(row => {
+        const name = row.cells[2]?.textContent.toLowerCase() || '';
+        const rowRegion = row.dataset.region || '';
+        
+        const matchesSearch = name.includes(search);
+        const matchesRegion = !region || rowRegion === region;
+        
+        row.style.display = (matchesSearch && matchesRegion) ? '' : 'none';
+    });
+}
+</script>
+{% endblock %}

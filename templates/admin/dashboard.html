@@ -1,0 +1,130 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ _('dashboard') }} - {{ _('admin_panel') }}{% endblock %}
+
+{% block content %}
+<div class="admin-header">
+    <h1>{{ _('welcome_admin') }}</h1>
+    <p>{{ _('admin_panel') }}</p>
+</div>
+
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-icon">🏫</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ stats.total_schools }}</p>
+            <p class="stat-label">{{ _('total_schools') }}</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon">👥</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ stats.total_users }}</p>
+            <p class="stat-label">{{ _('total_users') }}</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon">🌍</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ stats.total_regions }}</p>
+            <p class="stat-label">地区总数</p>
+        </div>
+    </div>
+</div>
+
+<div class="admin-sections">
+    <div class="admin-section">
+        <div class="section-header">
+            <h2>最近添加的学校</h2>
+            <a href="{{ url_for('admin_schools') }}" class="btn btn-primary btn-sm">查看全部</a>
+        </div>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>学校名称</th>
+                    <th>地区</th>
+                    <th>类型</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for school in recent_schools %}
+                <tr>
+                    <td>{{ school.id }}</td>
+                    <td>
+                        <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank">
+                            {{ school.name }}
+                        </a>
+                    </td>
+                    <td>{{ school.region }}</td>
+                    <td>
+                        <span class="level-badge level-{{ school.level }}">
+                            {% if school.level == 'university' %}大学
+                            {% elif school.level == 'middle' %}中学
+                            {% elif school.level == 'elementary' %}小学
+                            {% else %}幼儿园{% endif %}
+                        </span>
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="4" class="empty">暂无数据</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="admin-section">
+        <div class="section-header">
+            <h2>最近注册的用户</h2>
+            <a href="{{ url_for('admin_users') }}" class="btn btn-primary btn-sm">查看全部</a>
+        </div>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>用户名</th>
+                    <th>邮箱</th>
+                    <th>角色</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in recent_users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>
+                        {% if user.role == 'admin' %}
+                            <span class="badge badge-admin">管理员</span>
+                        {% else %}
+                            <span class="badge badge-user">用户</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="4" class="empty">暂无数据</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="quick-actions">
+    <h2>快捷操作</h2>
+    <div class="action-buttons">
+        <a href="{{ url_for('admin_add_school') }}" class="btn btn-primary">
+            ➕ {{ _('add_school') }}
+        </a>
+        <a href="{{ url_for('admin_users') }}" class="btn btn-secondary">
+            👥 {{ _('manage_users') }}
+        </a>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary" target="_blank">
+            🌐 {{ _('home') }}
+        </a>
+    </div>
+</div>
+{% endblock %}
