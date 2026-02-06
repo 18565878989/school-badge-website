@@ -115,7 +115,7 @@
                         loading="lazy" 
                         allowfullscreen
                         referrerpolicy="no-referrer-when-downgrade"
-                        src="https://www.google.com/maps/embed?hl={{ current_lang }}&q={{ school.address | urlencode }}&center={{ school.city }}&zoom=14&maptype=roadmap">
+                        src="https://www.google.com/maps/embed?hl={{ current_lang }}&q={{ (school.address ~ ', ' ~ school.city ~ ', ' ~ school.country) | urlencode }}&zoom=16&maptype=roadmap">
                     </iframe>
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query={{ school.address | urlencode }}" 
