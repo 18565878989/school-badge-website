@@ -43,6 +43,8 @@ TRANSLATIONS = {
         'motto_label': '校训',
         'website': '官方网站',
         'visit_website': '访问 {} 官网',
+        'view_on_maps': '在 Google Maps 中查看',
+        'map_location': '地图位置',
         'description_title': '学校简介',
         
         # Auth
@@ -101,6 +103,8 @@ TRANSLATIONS = {
         'motto_label': 'Motto',
         'website': 'Official Website',
         'visit_website': 'Visit {} Website',
+        'view_on_maps': 'View on Google Maps',
+        'map_location': 'Map Location',
         'description_title': 'About',
         
         # Auth
@@ -159,6 +163,8 @@ TRANSLATIONS = {
         'motto_label': 'Devise',
         'website': 'Site officiel',
         'visit_website': 'Visiter le site de {}',
+        'view_on_maps': 'Voir sur Google Maps',
+        'map_location': 'Emplacement sur la carte',
         'description_title': 'À propos',
         
         # Auth
@@ -217,6 +223,8 @@ TRANSLATIONS = {
         'motto_label': 'Wahlspruch',
         'website': 'Offizielle Website',
         'visit_website': '{} Website besuchen',
+        'view_on_maps': 'Auf Google Maps ansehen',
+        'map_location': 'Kartenstandort',
         'description_title': 'Über',
         
         # Auth
@@ -275,6 +283,8 @@ TRANSLATIONS = {
         'motto_label': '校訓',
         'website': '公式サイト',
         'visit_website': '{} 公式サイトを見る',
+        'view_on_maps': 'Google マップで見る',
+        'map_location': '地図位置',
         'description_title': '学校について',
         
         # Auth

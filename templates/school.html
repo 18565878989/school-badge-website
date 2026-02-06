@@ -96,6 +96,28 @@
                     <p>{{ school.description }}</p>
                 </div>
             {% endif %}
+            
+            <!-- Google Maps -->
+            {% if school.city and school.country %}
+            <div class="map-section">
+                <h3>🗺️ {{ _('map_location') }}</h3>
+                <div class="map-container">
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        style="border:0; border-radius: 12px;" 
+                        loading="lazy" 
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?hl=zh-CN&q={{ school.city }},{{ school.country }}&center={{ school.city }}&zoom=12&maptype=roadmap">
+                    </iframe>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&query={{ school.city }},{{ school.country }}" 
+                   target="_blank" class="map-link">
+                    📍 {{ _('view_on_maps') }} - {{ school.city }}, {{ school.country }}
+                </a>
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>

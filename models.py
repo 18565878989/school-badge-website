@@ -228,16 +228,21 @@ def load_sample_data():
     
     for school in schools:
         cursor.execute('''
-            INSERT OR IGNORE INTO schools (name, region, country, city, level, description, badge_url)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+            INSERT OR IGNORE INTO schools (name, name_cn, region, country, city, level, description, badge_url, website, motto, founded, principal)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             school['name'],
+            school.get('name_cn'),
             school['region'],
             school['country'],
             school['city'],
             school['level'],
             school.get('description', ''),
-            school.get('badge_url', None)
+            school.get('badge_url', None),
+            school.get('website', None),
+            school.get('motto', None),
+            school.get('founded', None),
+            school.get('principal', None)
         ))
     
     conn.commit()
