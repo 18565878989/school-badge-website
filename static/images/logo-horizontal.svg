@@ -1,28 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
   <defs>
-    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1D1D1F"/>
-      <stop offset="100%" style="stop-color:#434344"/>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007AFF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0055D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003380;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="earthGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#34C759;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10B981;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FFD700"/>
-      <stop offset="50%" style="stop-color:#FDB931"/>
-      <stop offset="100%" style="stop-color:#DAA520"/>
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
     </linearGradient>
   </defs>
   
   <!-- Icon -->
   <g transform="translate(16, 10)">
-    <path d="M44 8 L92 32 L92 64 C92 100 65 112 44 116 C23 112 -4 100 -4 64 L-4 32 Z" 
-          fill="url(#darkGrad)"/>
-    <circle cx="44" cy="58" r="22" fill="white" opacity="0.95"/>
-    <polygon points="44,42 52,54 66,54 55,64 59,78 44,70 29,78 33,64 22,54 36,54" 
-             fill="url(#goldGrad)"/>
+    <!-- Shield -->
+    <path d="M44 8 L92 28 L92 62 C92 92 70 112 44 116 C18 112 -4 92 -4 62 L-4 28 Z" 
+          fill="url(#oceanGrad)"/>
+    
+    <!-- Inner Circle -->
+    <circle cx="44" cy="55" r="22" fill="white" opacity="0.95"/>
+    
+    <!-- Globe Lines -->
+    <ellipse cx="44" cy="55" rx="22" ry="10" fill="none" stroke="#007AFF" stroke-width="1" opacity="0.3"/>
+    <line x1="44" y1="33" x2="44" y2="77" stroke="#007AFF" stroke-width="1" opacity="0.3"/>
+    <line x1="22" y1="55" x2="66" y2="55" stroke="#007AFF" stroke-width="1" opacity="0.3"/>
+    
+    <!-- Human -->
+    <circle cx="44" cy="45" r="5" fill="url(#goldGrad)"/>
+    <path d="M36 55 Q32 65 36 78 L44 82 L52 78 Q56 65 52 55 Q44 52 36 55" fill="url(#goldGrad)"/>
+    
+    <!-- Laurel -->
+    <path d="M20 70 Q10 80 15 92 Q20 85 25 88 Q20 80 20 70" fill="url(#earthGrad)"/>
+    <path d="M68 70 Q78 80 73 92 Q68 85 63 88 Q68 80 68 70" fill="url(#earthGrad)"/>
   </g>
   
   <!-- Text -->
   <text x="130" y="58" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" 
-        font-size="38" font-weight="700" fill="#1D1D1F" letter-spacing="-1">校徽网</text>
+        font-size="38" font-weight="700" fill="url(#oceanGrad)" letter-spacing="-1">校徽网</text>
   <text x="130" y="85" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" 
         font-size="14" fill="#86868B" letter-spacing="2">SCHOOL BADGE COLLECTION</text>
 </svg>
