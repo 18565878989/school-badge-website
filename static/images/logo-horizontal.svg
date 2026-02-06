@@ -1,36 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
   <defs>
     <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#2563EB"/>
-      <stop offset="100%" style="stop-color:#1E40AF"/>
+      <stop offset="0%" style="stop-color:#1E5AA8"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
     </linearGradient>
   </defs>
   
-  <!-- Shield outer ring - Blue -->
-  <path d="M20 10 L80 10 C90 10 95 15 95 25 L95 60 C95 85 55 98 55 98 C55 98 15 85 15 60 L15 25 C15 15 20 10 30 10 Z" 
-        fill="none" stroke="url(#blueGrad)" stroke-width="6"/>
-  
-  <!-- White background inside shield -->
-  <path d="M26 18 L74 18 C82 18 86 22 86 28 L86 58 C86 78 55 90 55 90 C55 90 24 78 24 58 L24 28 C24 22 28 18 36 18 Z" 
-        fill="#fff"/>
-  
-  <!-- Simplified 子 (child) - Blue -->
-  <g transform="translate(38, 32)" stroke="#2563EB" stroke-width="5" stroke-linecap="round" fill="none">
-    <!-- Head circle -->
-    <circle cx="17" cy="12" r="10" stroke-width="4"/>
+  <!-- Badge body - Circular with bottom point -->
+  <g transform="translate(20, 10)">
+    <!-- Outer ring -->
+    <circle cx="40" cy="40" r="42" fill="none" stroke="url(#blueGrad)" stroke-width="6"/>
     
-    <!-- Body/Legs -->
-    <path d="M17 22 L17 50 Q17 58 25 58 L25 50 Q25 46 30 46 Q35 46 35 50 L35 58" 
-          stroke-width="5"/>
+    <!-- Inner circle -->
+    <circle cx="40" cy="40" r="32" fill="none" stroke="url(#blueGrad)" stroke-width="2"/>
     
-    <!-- Arms -->
-    <path d="M8 32 Q5 38 8 44" stroke-width="4"/>
-    <path d="M26 32 Q29 38 26 44" stroke-width="4"/>
+    <!-- Bottom point (traditional badge) -->
+    <path d="M40 80 L35 70 L45 70 Z" fill="url(#blueGrad)"/>
+    
+    <!-- 子 character - stylized -->
+    <g transform="translate(23, 25)" stroke="#1E5AA8" stroke-width="5" stroke-linecap="round" fill="none">
+      <!-- Head -->
+      <circle cx="17" cy="12" r="9" stroke-width="4"/>
+      <!-- Body -->
+      <path d="M17 21 L17 42 Q17 48 23 48 L23 42 Q23 39 28 39 Q33 39 33 42 L33 48" stroke-width="4"/>
+      <!-- Arms -->
+      <path d="M8 30 Q5 35 8 40" stroke-width="3"/>
+      <path d="M26 30 Q29 35 26 40" stroke-width="3"/>
+    </g>
   </g>
   
   <!-- Text -->
-  <text x="108" y="48" font-family="'PingFang SC', 'Microsoft YaHei', serif" 
-        font-size="40" font-weight="700" fill="#1E40AF">校徽网</text>
-  <text x="110" y="72" font-family="-apple-system, BlinkMacSystemFont, serif" 
-        font-size="10" fill="#666" letter-spacing="5">SCHOOL BADGE COLLECTION</text>
+  <text x="85" y="48" font-family="'PingFang SC', 'Microsoft YaHei', serif" 
+        font-size="38" font-weight="700" fill="#1a1a1a">校徽网</text>
+  <text x="87" y="72" font-family="-apple-system, BlinkMacSystemFont, serif" 
+        font-size="10" fill="#666" letter-spacing="4">EMBLEM COLLECTION</text>
 </svg>
