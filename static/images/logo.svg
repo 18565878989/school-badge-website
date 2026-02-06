@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#3B82F6"/>
-      <stop offset="100%" style="stop-color:#1D4ED8"/>
+      <stop offset="100%" style="stop-color:#1E40AF"/>
     </linearGradient>
   </defs>
   
-  <!-- Badge Icon -->
-  <rect width="100" height="100" rx="20" fill="url(#grad)"/>
-  <path d="M25 70 L25 35 Q25 25 35 25 L65 25 Q75 25 75 35 L75 70 Q75 80 65 80 L35 25" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
-  <circle cx="70" cy="58" r="14" fill="#fff"/>
+  <!-- Shield -->
+  <path d="M15 5 L70 5 C80 5 85 12 85 22 L85 55 C85 85 50 98 50 98 C50 98 15 85 15 55 L15 22 C15 12 20 5 30 5 Z" fill="url(#grad)"/>
+  
+  <!-- Star -->
+  <polygon points="50,20 55,35 72,35 58,46 63,62 50,52 37,62 42,46 28,35 45,35" fill="#fff"/>
 </svg>

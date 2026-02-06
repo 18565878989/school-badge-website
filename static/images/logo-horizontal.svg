@@ -1,19 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#3B82F6"/>
-      <stop offset="100%" style="stop-color:#1D4ED8"/>
+      <stop offset="100%" style="stop-color:#1E40AF"/>
     </linearGradient>
   </defs>
   
-  <!-- Badge Icon -->
-  <g transform="translate(8, 12)">
-    <rect width="48" height="48" rx="8" fill="url(#grad)"/>
-    <path d="M14 32 L14 16 Q14 12 18 12 L30 12 Q34 12 34 16 L34 32 Q34 36 30 36 L18 12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="32" cy="28" r="6" fill="#fff"/>
-  </g>
+  <!-- Shield Icon -->
+  <path d="M20 8 L70 8 C75 8 78 12 78 18 L78 50 C78 80 50 95 50 95 C50 95 22 80 22 50 L22 18 C22 12 25 8 30 8 Z" fill="url(#grad)"/>
+  
+  <!-- Simple Star -->
+  <polygon points="50,22 54,34 67,34 57,42 61,55 50,48 39,55 43,42 33,34 46,34" fill="#fff"/>
   
   <!-- Text -->
-  <text x="68" y="48" font-family="'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif" font-size="38" font-weight="600" fill="#1e293b">校徽网</text>
-  <text x="68" y="72" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748b" letter-spacing="4">EMBLEM COLLECTION</text>
+  <text x="95" y="48" font-family="'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif" font-size="42" font-weight="700" fill="#0f172a">校徽网</text>
+  <text x="96" y="72" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#64748b" letter-spacing="5">EMBLEM COLLECTION</text>
 </svg>
