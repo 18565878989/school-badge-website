@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <path d="M100 10 L180 40 L180 120 C180 160 150 190 100 200 C50 190 20 160 20 120 L20 40 Z" fill="#6B3E8C"/>
+  <path d="M100 25 L165 50 L165 120 C165 150 140 180 100 190 C60 180 35 150 35 120 L35 50 Z" fill="#FFFFFF"/>
+  <!-- Cross -->
+  <rect x="92" y="60" width="16" height="60" fill="#6B3E8C" rx="3"/>
+  <rect x="75" y="75" width="50" height="16" fill="#6B3E8C" rx="3"/>
+  <text x="100" y="150" font-family="Georgia, serif" font-size="9" fill="#6B3E8C" text-anchor="middle">D.G.J.S.</text>
+</svg>
