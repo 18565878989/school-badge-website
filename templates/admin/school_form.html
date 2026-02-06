@@ -78,7 +78,12 @@
         
         <div class="form-group">
             <label for="badge_url">{{ _('badge') }} URL</label>
-            <input type="url" id="badge_url" name="badge_url" value="{{ school.badge_url or '' }}" placeholder="/static/images/xxx.svg">
+            <div class="badge-preview-container">
+                <input type="url" id="badge_url" name="badge_url" value="{{ school.badge_url or '' }}" placeholder="/static/images/xxx.svg">
+                {% if school and school.badge_url %}
+                <img src="{{ school.badge_url }}" alt="Badge Preview" class="badge-preview" id="badgePreview">
+                {% endif %}
+            </div>
         </div>
     </div>
     
@@ -97,4 +102,33 @@
         <a href="{{ url_for('admin_schools') }}" class="btn btn-secondary">{{ _('cancel') }}</a>
     </div>
 </form>
+
+<style>
+.badge-preview-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.badge-preview-container input {
+    flex: 1;
+}
+.badge-preview {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background: #f5f5f7;
+}
+</style>
+
+<script>
+document.getElementById('badge_url').addEventListener('input', function(e) {
+    const preview = document.getElementById('badgePreview');
+    if (preview && e.target.value) {
+        preview.src = e.target.value;
+        preview.style.display = 'inline-block';
+    }
+});
+</script>
 {% endblock %}
