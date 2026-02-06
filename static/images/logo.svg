@@ -1,20 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#0066CC"/>
-      <stop offset="100%" style="stop-color:#003366"/>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#0D0D1A"/>
+    </linearGradient>
+    <linearGradient id="avocadoSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D4A3D"/>
+      <stop offset="100%" style="stop-color:#1A2E25"/>
+    </linearGradient>
+    <linearGradient id="avocadoFlesh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9CCC65"/>
+      <stop offset="100%" style="stop-color:#7CB342"/>
     </linearGradient>
   </defs>
   
-  <!-- Badge shape -->
-  <path d="M15 5 L70 5 C78 5 85 12 85 22 L85 55 C85 85 50 98 50 98 C50 98 15 85 15 55 L15 22 C15 12 22 5 30 5 Z" 
-        fill="url(#blueGrad)"/>
+  <!-- Shield -->
+  <path d="M10 5 L75 5 C85 5 90 12 90 25 L90 60 C90 85 50 98 50 98 C50 98 10 85 10 60 L10 25 C10 12 15 5 25 5 Z" 
+        fill="url(#shieldGrad)"/>
   
-  <!-- Clean lines -->
-  <line x1="28" y1="30" x2="72" y2="30" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-  <line x1="22" y1="50" x2="78" y2="50" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-  <line x1="28" y1="70" x2="72" y2="70" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
-  
-  <!-- Accent -->
-  <circle cx="50" cy="82" r="6" fill="#FFD700"/>
+  <!-- Avocado -->
+  <g transform="translate(22, 18)">
+    <ellipse cx="28" cy="38" rx="24" ry="34" fill="url(#avocadoSkin)"/>
+    <ellipse cx="28" cy="40" rx="20" ry="28" fill="url(#avocadoFlesh)"/>
+    <circle cx="28" cy="52" r="9" fill="#5D4037"/>
+    <ellipse cx="21" cy="28" rx="5" ry="8" fill="#fff" opacity="0.1"/>
+  </g>
 </svg>

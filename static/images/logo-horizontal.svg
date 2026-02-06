@@ -1,29 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
   <defs>
-    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#0066CC"/>
-      <stop offset="100%" style="stop-color:#003366"/>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#0D0D1A"/>
+    </linearGradient>
+    <linearGradient id="avocadoSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D4A3D"/>
+      <stop offset="100%" style="stop-color:#1A2E25"/>
+    </linearGradient>
+    <linearGradient id="avocadoFlesh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9CCC65"/>
+      <stop offset="100%" style="stop-color:#7CB342"/>
     </linearGradient>
   </defs>
   
-  <!-- Simple modern emblem -->
-  <g transform="translate(30, 20)">
-    <!-- Badge shape -->
-    <path d="M40 0 L70 15 L70 55 C70 78 40 95 40 95 C40 95 10 78 10 55 L10 15 Z" 
-          fill="url(#blueGrad)"/>
-    
-    <!-- Clean horizontal lines -->
-    <line x1="20" y1="30" x2="60" y2="30" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-    <line x1="15" y1="45" x2="65" y2="45" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-    <line x1="20" y1="60" x2="60" y2="60" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-    
-    <!-- Small accent -->
-    <circle cx="40" cy="78" r="5" fill="#FFD700"/>
+  <!-- Shield - Flat design -->
+  <path d="M20 10 L75 10 C85 10 90 15 90 25 L90 60 C90 85 55 98 55 98 C55 98 20 85 20 60 L20 25 C20 15 25 10 35 10 Z" 
+        fill="url(#shieldGrad)"/>
+  
+  <!-- Avocado - Centered, flat -->
+  <g transform="translate(25, 18)">
+    <!-- Body -->
+    <ellipse cx="30" cy="38" rx="26" ry="36" fill="url(#avocadoSkin)"/>
+    <ellipse cx="30" cy="40" rx="22" ry="30" fill="url(#avocadoFlesh)"/>
+    <!-- Seed -->
+    <circle cx="30" cy="52" r="10" fill="#5D4037"/>
+    <!-- Simple shine -->
+    <ellipse cx="22" cy="28" rx="6" ry="10" fill="#fff" opacity="0.1"/>
   </g>
   
   <!-- Text -->
-  <text x="100" y="55" font-family="'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif" 
-        font-size="46" font-weight="700" fill="#1a1a1a">校徽网</text>
-  <text x="103" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" 
-        font-size="11" fill="#888" letter-spacing="6">EMBLEM COLLECTION</text>
+  <text x="105" y="48" font-family="'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif" 
+        font-size="40" font-weight="700" fill="#1A1A2E">校徽网</text>
+  <text x="108" y="72" font-family="-apple-system, BlinkMacSystemFont, sans-serif" 
+        font-size="10" fill="#666" letter-spacing="5">EMBLEM COLLECTION</text>
 </svg>
