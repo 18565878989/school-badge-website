@@ -6,23 +6,28 @@
     </linearGradient>
   </defs>
   
-  <!-- Badge body -->
-  <g transform="translate(9, 5)">
-    <!-- Outer ring -->
-    <circle cx="41" cy="45" r="40" fill="none" stroke="url(#blueGrad)" stroke-width="6"/>
+  <!-- Shield shape -->
+  <g transform="translate(8, 5)">
+    <!-- Main shield -->
+    <path d="M5 5 L70 5 C78 5 84 10 84 18 L84 55 C84 78 42 95 42 95 C42 95 0 78 0 55 L0 18 C0 10 6 5 14 5 Z" 
+          fill="none" stroke="url(#blueGrad)" stroke-width="5"/>
     
-    <!-- Inner circle -->
-    <circle cx="41" cy="45" r="30" fill="none" stroke="url(#blueGrad)" stroke-width="2"/>
+    <!-- Inner border -->
+    <path d="M10 10 L64 10 C70 10 75 13 75 19 L75 55 C75 72 42 86 42 86 C42 86 9 72 9 55 L9 19 C9 13 14 10 20 10 Z" 
+          fill="none" stroke="url(#blueGrad)" stroke-width="1.5"/>
     
-    <!-- Bottom point -->
-    <path d="M41 82 L36 73 L46 73 Z" fill="url(#blueGrad)"/>
+    <!-- Cross -->
+    <path d="M22 12 L62 12" stroke="url(#blueGrad)" stroke-width="3"/>
+    <path d="M42 2 L42 26" stroke="url(#blueGrad)" stroke-width="3"/>
     
-    <!-- 子 character -->
-    <g transform="translate(25, 32)" stroke="#1E5AA8" stroke-width="5" stroke-linecap="round" fill="none">
-      <circle cx="16" cy="11" r="9" stroke-width="4"/>
-      <path d="M16 20 L16 40 Q16 46 22 46 L22 40 Q22 37 27 37 Q32 37 32 40 L32 46" stroke-width="4"/>
-      <path d="M7 29 Q4 34 7 39" stroke-width="3"/>
-      <path d="M25 29 Q28 34 25 39" stroke-width="3"/>
+    <!-- Dynamic 子 character -->
+    <g transform="translate(16, 32)" stroke="#1E5AA8" stroke-width="4" stroke-linecap="round" fill="none">
+      <circle cx="26" cy="11" r="9" stroke-width="3.5"/>
+      <path d="M26 20 L26 40 Q26 48 32 50 L32 44 Q32 40 38 40 Q44 40 44 44 L44 50" stroke-width="4"/>
+      <path d="M14 28 Q10 34 14 42" stroke-width="3.5"/>
+      <path d="M38 28 Q42 34 38 42" stroke-width="3.5"/>
+      <path d="M26 48 L20 58" stroke-width="3.5"/>
+      <path d="M32 50 L40 58" stroke-width="3.5"/>
     </g>
   </g>
 </svg>

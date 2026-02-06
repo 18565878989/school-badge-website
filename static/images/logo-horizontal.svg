@@ -6,32 +6,42 @@
     </linearGradient>
   </defs>
   
-  <!-- Badge body - Circular with bottom point -->
-  <g transform="translate(20, 10)">
-    <!-- Outer ring -->
-    <circle cx="40" cy="40" r="42" fill="none" stroke="url(#blueGrad)" stroke-width="6"/>
+  <!-- Shield shape (DGS style) -->
+  <g transform="translate(15, 8)">
+    <!-- Main shield -->
+    <path d="M10 8 L70 8 C80 8 85 12 85 20 L85 55 C85 78 45 95 45 95 C45 95 5 78 5 55 L5 20 C5 12 10 8 20 8 Z" 
+          fill="none" stroke="url(#blueGrad)" stroke-width="5"/>
     
-    <!-- Inner circle -->
-    <circle cx="40" cy="40" r="32" fill="none" stroke="url(#blueGrad)" stroke-width="2"/>
+    <!-- Inner border -->
+    <path d="M15 14 L65 14 C72 14 76 17 76 22 L76 55 C76 72 45 86 45 86 C45 86 14 72 14 55 L14 22 C14 17 18 14 25 14 Z" 
+          fill="none" stroke="url(#blueGrad)" stroke-width="1.5"/>
     
-    <!-- Bottom point (traditional badge) -->
-    <path d="M40 80 L35 70 L45 70 Z" fill="url(#blueGrad)"/>
+    <!-- Cross top (DGS reference) -->
+    <path d="M25 18 L65 18" stroke="url(#blueGrad)" stroke-width="3"/>
+    <path d="M45 8 L45 30" stroke="url(#blueGrad)" stroke-width="3"/>
     
-    <!-- 子 character - stylized -->
-    <g transform="translate(23, 25)" stroke="#1E5AA8" stroke-width="5" stroke-linecap="round" fill="none">
-      <!-- Head -->
-      <circle cx="17" cy="12" r="9" stroke-width="4"/>
-      <!-- Body -->
-      <path d="M17 21 L17 42 Q17 48 23 48 L23 42 Q23 39 28 39 Q33 39 33 42 L33 48" stroke-width="4"/>
-      <!-- Arms -->
-      <path d="M8 30 Q5 35 8 40" stroke-width="3"/>
-      <path d="M26 30 Q29 35 26 40" stroke-width="3"/>
+    <!-- Dynamic 子 character - vivid pose -->
+    <g transform="translate(20, 35)" stroke="#1E5AA8" stroke-width="4" stroke-linecap="round" fill="none">
+      <!-- Head - slightly tilted for life -->
+      <circle cx="25" cy="10" r="10" stroke-width="3.5"/>
+      
+      <!-- Body - more dynamic -->
+      <path d="M25 20 L25 42 Q25 50 32 52 L32 45 Q32 42 38 42 Q44 42 44 45 L44 52" 
+            stroke-width="4"/>
+      
+      <!-- Arms - reaching out -->
+      <path d="M13 28 Q8 35 12 45" stroke-width="3.5"/>
+      <path d="M37 28 Q42 35 38 45" stroke-width="3.5"/>
+      
+      <!-- Legs - walking stance -->
+      <path d="M25 50 L18 62" stroke-width="3.5"/>
+      <path d="M32 52 L42 62" stroke-width="3.5"/>
     </g>
   </g>
   
   <!-- Text -->
-  <text x="85" y="48" font-family="'PingFang SC', 'Microsoft YaHei', serif" 
+  <text x="105" y="48" font-family="'PingFang SC', 'Microsoft YaHei', serif" 
         font-size="38" font-weight="700" fill="#1a1a1a">校徽网</text>
-  <text x="87" y="72" font-family="-apple-system, BlinkMacSystemFont, serif" 
+  <text x="108" y="72" font-family="-apple-system, BlinkMacSystemFont, serif" 
         font-size="10" fill="#666" letter-spacing="4">EMBLEM COLLECTION</text>
 </svg>
