@@ -1,34 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <linearGradient id="inkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a1a"/>
-      <stop offset="100%" style="stop-color:#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="sealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#C41E3A"/>
-      <stop offset="100%" style="stop-color:#8B0000"/>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563EB"/>
+      <stop offset="100%" style="stop-color:#1E40AF"/>
     </linearGradient>
   </defs>
   
-  <!-- Seal frame -->
-  <rect x="5" y="5" width="90" height="90" rx="6" 
-        fill="none" stroke="url(#sealGrad)" stroke-width="6"/>
+  <!-- Shield outer ring - Blue -->
+  <path d="M10 5 L75 5 C85 5 90 12 90 25 L90 60 C90 85 50 98 50 98 C50 98 10 85 10 60 L10 25 C10 12 15 5 25 5 Z" 
+        fill="none" stroke="url(#blueGrad)" stroke-width="5"/>
   
-  <!-- Inner black -->
-  <rect x="12" y="12" width="76" height="76" rx="3" fill="url(#inkGrad)"/>
+  <!-- White background inside -->
+  <path d="M16 13 L69 13 C76 13 80 17 80 24 L80 58 C80 78 50 90 50 90 C50 90 20 78 20 58 L20 24 C20 17 24 13 31 13 Z" 
+        fill="#fff"/>
   
-  <!-- Oracle bone "学" simplified -->
-  <g transform="translate(24, 20)" stroke="#C41E3A" stroke-width="5" stroke-linecap="round" fill="none">
+  <!-- Oracle bone 学 - Blue -->
+  <g transform="translate(28, 28)" stroke="#2563EB" stroke-width="4" stroke-linecap="round" fill="none">
     <!-- X marks -->
-    <line x1="10" y1="14" x2="26" y2="14"/>
-    <line x1="10" y1="22" x2="26" y2="22"/>
+    <line x1="5" y1="8" x2="21" y2="8"/>
+    <line x1="5" y1="14" x2="21" y2="14"/>
     
-    <!-- Simplified child -->
-    <path d="M18 34 L18 52 Q18 58 24 58 L24 50 Q24 48 28 48 Q32 48 32 50 L32 58" 
-          stroke="#C41E3A" stroke-width="5" fill="none"/>
+    <!-- Child -->
+    <path d="M13 22 L13 38 Q13 44 18 44 L18 38 Q18 36 21 36 Q24 36 24 38 L24 44" 
+          stroke-width="4"/>
+    <path d="M13 26 Q13 30 18 30 Q23 30 23 26" stroke-width="3"/>
     
     <!-- Hands -->
-    <path d="M8 42 Q4 48 8 54" stroke-width="4"/>
-    <path d="M42 42 Q46 48 42 54" stroke-width="4"/>
+    <path d="M4 32 Q2 36 4 40" stroke-width="3"/>
+    <path d="M32 32 Q34 36 32 40" stroke-width="3"/>
   </g>
 </svg>
