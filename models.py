@@ -34,6 +34,7 @@ def init_db():
             region TEXT NOT NULL,
             country TEXT NOT NULL,
             city TEXT NOT NULL,
+            address TEXT,
             level TEXT NOT NULL,
             description TEXT,
             badge_url TEXT,
@@ -228,14 +229,15 @@ def load_sample_data():
     
     for school in schools:
         cursor.execute('''
-            INSERT OR IGNORE INTO schools (name, name_cn, region, country, city, level, description, badge_url, website, motto, founded, principal)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            INSERT OR IGNORE INTO schools (name, name_cn, region, country, city, address, level, description, badge_url, website, motto, founded, principal)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             school['name'],
             school.get('name_cn'),
             school['region'],
             school['country'],
             school['city'],
+            school.get('address', ''),
             school['level'],
             school.get('description', ''),
             school.get('badge_url', None),

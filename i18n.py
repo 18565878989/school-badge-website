@@ -31,6 +31,7 @@ TRANSLATIONS = {
         # School Card
         'founded': '建校年份',
         'principal': '现任校长',
+        'address': '详细地址',
         'location': '位置',
         'region': '地区',
         
@@ -42,7 +43,8 @@ TRANSLATIONS = {
         'likes_count': '{} 人收藏',
         'motto_label': '校训',
         'website': '官方网站',
-        'visit_website': '访问 {} 官网',
+        'visit_website': '访问官网',
+        'visit_website_full': '访问 {} 官网',
         'view_on_maps': '在 Google Maps 中查看',
         'map_location': '地图位置',
         'description_title': '学校简介',
@@ -91,6 +93,7 @@ TRANSLATIONS = {
         # School Card
         'founded': 'Founded',
         'principal': 'President / Principal',
+        'address': 'Address',
         'location': 'Location',
         'region': 'Region',
         
@@ -102,7 +105,8 @@ TRANSLATIONS = {
         'likes_count': '{} likes',
         'motto_label': 'Motto',
         'website': 'Official Website',
-        'visit_website': 'Visit {} Website',
+        'visit_website': 'Visit Website',
+        'visit_website_full': 'Visit {} Website',
         'view_on_maps': 'View on Google Maps',
         'map_location': 'Map Location',
         'description_title': 'About',
@@ -151,6 +155,7 @@ TRANSLATIONS = {
         # School Card
         'founded': 'Fondé',
         'principal': 'Directeur / Présidente',
+        'address': 'Adresse',
         'location': 'Localisation',
         'region': 'Région',
         
@@ -162,7 +167,8 @@ TRANSLATIONS = {
         'likes_count': '{} mentions J\'aime',
         'motto_label': 'Devise',
         'website': 'Site officiel',
-        'visit_website': 'Visiter le site de {}',
+        'visit_website': 'Voir le site',
+        'visit_website_full': 'Visiter le site de {}',
         'view_on_maps': 'Voir sur Google Maps',
         'map_location': 'Emplacement sur la carte',
         'description_title': 'À propos',
@@ -211,6 +217,7 @@ TRANSLATIONS = {
         # School Card
         'founded': 'Gegründet',
         'principal': 'Rektor / Direktorin',
+        'address': 'Adresse',
         'location': 'Standort',
         'region': 'Region',
         
@@ -222,7 +229,8 @@ TRANSLATIONS = {
         'likes_count': '{} Likes',
         'motto_label': 'Wahlspruch',
         'website': 'Offizielle Website',
-        'visit_website': '{} Website besuchen',
+        'visit_website': 'Website besuchen',
+        'visit_website_full': '{} Website besuchen',
         'view_on_maps': 'Auf Google Maps ansehen',
         'map_location': 'Kartenstandort',
         'description_title': 'Über',
@@ -271,6 +279,7 @@ TRANSLATIONS = {
         # School Card
         'founded': '創立',
         'principal': '学園長 / 校長',
+        'address': '住所',
         'location': '所在地',
         'region': '地域',
         
@@ -282,7 +291,8 @@ TRANSLATIONS = {
         'likes_count': '{} 件のいいね',
         'motto_label': '校訓',
         'website': '公式サイト',
-        'visit_website': '{} 公式サイトを見る',
+        'visit_website': '公式サイトを見る',
+        'visit_website_full': '{} 公式サイトを見る',
         'view_on_maps': 'Google マップで見る',
         'map_location': '地図位置',
         'description_title': '学校について',

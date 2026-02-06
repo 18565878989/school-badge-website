@@ -64,6 +64,12 @@
                     <p class="label">{{ _('location') }}</p>
                     <p class="value">{{ school.city }}, {{ school.country }}</p>
                 </div>
+                {% if school.address %}
+                <div class="info-item">
+                    <p class="label">{{ _('address') }}</p>
+                    <p class="value">{{ school.address }}</p>
+                </div>
+                {% endif %}
                 {% if school.principal %}
                 <div class="info-item">
                     <p class="label">{{ _('principal') }}</p>
@@ -79,14 +85,14 @@
                 {% if school.website %}
                 <div class="info-item">
                     <p class="label">{{ _('website') }}</p>
-                    <p class="value"><a href="{{ school.website }}" target="_blank" style="color: var(--primary); text-decoration: none;">{{ _('visit_website').split(' ')[1] }} →</a></p>
+                    <p class="value"><a href="{{ school.website }}" target="_blank" class="website-text-link">🌐 {{ _('visit_website') }}</a></p>
                 </div>
                 {% endif %}
             </div>
             
             {% if school.website %}
             <a href="{{ school.website }}" target="_blank" class="website-link">
-                🌐 {{ _('visit_website').format(school.name) }}
+                🌐 {{ _('visit_website_full').format(school.name) }}
             </a>
             {% endif %}
             
@@ -98,7 +104,7 @@
             {% endif %}
             
             <!-- Google Maps -->
-            {% if school.city and school.country %}
+            {% if school.address %}
             <div class="map-section">
                 <h3>🗺️ {{ _('map_location') }}</h3>
                 <div class="map-container">
@@ -109,12 +115,12 @@
                         loading="lazy" 
                         allowfullscreen
                         referrerpolicy="no-referrer-when-downgrade"
-                        src="https://www.google.com/maps/embed?hl=zh-CN&q={{ school.city }},{{ school.country }}&center={{ school.city }}&zoom=12&maptype=roadmap">
+                        src="https://www.google.com/maps/embed?hl={{ current_lang }}&q={{ school.address | urlencode }}&center={{ school.city }}&zoom=14&maptype=roadmap">
                     </iframe>
                 </div>
-                <a href="https://www.google.com/maps/search/?api=1&query={{ school.city }},{{ school.country }}" 
+                <a href="https://www.google.com/maps/search/?api=1&query={{ school.address | urlencode }}" 
                    target="_blank" class="map-link">
-                    📍 {{ _('view_on_maps') }} - {{ school.city }}, {{ school.country }}
+                    📍 {{ _('view_on_maps') }} - {{ school.address }}
                 </a>
             </div>
             {% endif %}

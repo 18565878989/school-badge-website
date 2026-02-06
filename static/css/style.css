@@ -513,6 +513,18 @@ main {
     font-weight: 600;
 }
 
+.website-text-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.website-text-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
 .website-link {
     display: inline-flex;
     align-items: center;
