@@ -14,19 +14,17 @@
   <path d="M16 13 L69 13 C76 13 80 17 80 24 L80 58 C80 78 50 90 50 90 C50 90 20 78 20 58 L20 24 C20 17 24 13 31 13 Z" 
         fill="#fff"/>
   
-  <!-- Oracle bone 学 - Blue -->
-  <g transform="translate(28, 28)" stroke="#2563EB" stroke-width="4" stroke-linecap="round" fill="none">
-    <!-- X marks -->
-    <line x1="5" y1="8" x2="21" y2="8"/>
-    <line x1="5" y1="14" x2="21" y2="14"/>
+  <!-- Simplified 子 (child) - Blue -->
+  <g transform="translate(28, 26)" stroke="#2563EB" stroke-width="4" stroke-linecap="round" fill="none">
+    <!-- Head -->
+    <circle cx="22" cy="14" r="10" stroke-width="4"/>
     
-    <!-- Child -->
-    <path d="M13 22 L13 38 Q13 44 18 44 L18 38 Q18 36 21 36 Q24 36 24 38 L24 44" 
-          stroke-width="4"/>
-    <path d="M13 26 Q13 30 18 30 Q23 30 23 26" stroke-width="3"/>
+    <!-- Body -->
+    <path d="M22 24 L22 52 Q22 60 30 60 L30 52 Q30 48 36 48 Q42 48 42 52 L42 60" 
+          stroke-width="5"/>
     
-    <!-- Hands -->
-    <path d="M4 32 Q2 36 4 40" stroke-width="3"/>
-    <path d="M32 32 Q34 36 32 40" stroke-width="3"/>
+    <!-- Arms -->
+    <path d="M10 36 Q6 42 10 48" stroke-width="4"/>
+    <path d="M34 36 Q38 42 34 48" stroke-width="4"/>
   </g>
 </svg>
