@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Shield -->
+  <path d="M100 10 L180 40 L180 120 C180 160 150 190 100 200 C50 190 20 160 20 120 L20 40 Z" fill="#C4161C"/>
+  <path d="M100 25 L165 50 L165 120 C165 150 140 180 100 190 C60 180 35 150 35 120 L35 50 Z" fill="#FFFFFF"/>
+  
+  <!-- Peking University emblem -->
+  <circle cx="100" cy="90" r="35" fill="none" stroke="#C4161C" stroke-width="3"/>
+  <text x="100" y="85" font-family="SimSun, serif" font-size="24" fill="#C4161C" text-anchor="middle">北</text>
+  <text x="100" y="110" font-family="SimSun, serif" font-size="24" fill="#C4161C" text-anchor="middle">大</text>
+  
+  <!-- Text -->
+  <text x="100" y="160" font-family="SimHei, sans-serif" font-size="12" fill="#C4161C" text-anchor="middle">北京大学</text>
+</svg>

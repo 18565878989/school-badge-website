@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Circular seal -->
+  <circle cx="100" cy="100" r="95" fill="#8C1515"/>
+  <circle cx="100" cy="100" r="85" fill="#FFFFFF"/>
+  <circle cx="100" cy="100" r="75" fill="#8C1515"/>
+  
+  <!-- Oak tree trunk -->
+  <rect x="90" y="70" width="20" height="70" fill="#FFFFFF"/>
+  
+  <!-- Oak tree foliage -->
+  <ellipse cx="100" cy="60" rx="35" ry="30" fill="#FFFFFF"/>
+  <ellipse cx="75" cy="80" rx="25" ry="20" fill="#FFFFFF"/>
+  <ellipse cx="125" cy="80" rx="25" ry="20" fill="#FFFFFF"/>
+  <ellipse cx="85" cy="55" rx="20" ry="15" fill="#8C1515"/>
+  <ellipse cx="115" cy="55" rx="20" ry="15" fill="#8C1515"/>
+  
+  <!-- University text -->
+  <text x="100" y="150" font-family="Georgia, serif" font-size="10" fill="#FFFFFF" text-anchor="middle">STANFORD</text>
+  <text x="100" y="160" font-family="Georgia, serif" font-size="8" fill="#FFFFFF" text-anchor="middle">UNIVERSITY</text>
+</svg>

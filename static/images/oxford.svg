@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Shield -->
+  <path d="M100 10 L180 40 L180 120 C180 160 150 190 100 200 C50 190 20 160 20 120 L20 40 Z" fill="#002147"/>
+  <path d="M100 25 L165 50 L165 120 C165 150 140 180 100 190 C60 180 35 150 35 120 L35 50 Z" fill="#FFFFFF"/>
+  
+  <!-- Open book -->
+  <ellipse cx="100" cy="100" rx="50" ry="35" fill="#002147"/>
+  <ellipse cx="75" cy="100" rx="30" ry="25" fill="#FFFFFF"/>
+  <ellipse cx="125" cy="100" rx="30" ry="25" fill="#FFFFFF"/>
+  
+  <!-- Oxford text -->
+  <text x="100" y="155" font-family="Georgia, serif" font-size="12" fill="#002147" text-anchor="middle">OXFORD</text>
+  
+  <!-- Crown above -->
+  <path d="M80 65 L85 55 L95 65 L100 45 L105 65 L115 55 L120 65" fill="#FFD700" stroke="#FFD700" stroke-width="2"/>
+</svg>
