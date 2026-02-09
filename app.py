@@ -99,8 +99,11 @@ def index():
     page = request.args.get('page', 1, type=int)
     per_page = 21  # 21 schools per page
     
+    # 组合查询：支持搜索 + 地区 + 类型 同时筛选
     if search_query:
-        schools = search_schools(search_query)
+        schools = search_schools(search_query, selected_region, selected_level)
+    elif selected_region and selected_level:
+        schools = get_schools_by_region_and_level(selected_region, selected_level)
     elif selected_region:
         schools = get_schools_by_region(selected_region)
     elif selected_level:

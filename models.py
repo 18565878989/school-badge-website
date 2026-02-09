@@ -210,6 +210,16 @@ def get_schools_by_region(region):
     conn.close()
     return schools
 
+def get_schools_by_region_and_level(region, level):
+    """Get schools by region and level."""
+    conn = get_db_connection()
+    schools = conn.execute(
+        'SELECT * FROM schools WHERE region = ? AND level = ? ORDER BY name', 
+        (region, level)
+    ).fetchall()
+    conn.close()
+    return schools
+
 def get_schools_by_level(level):
     """Get schools by level."""
     conn = get_db_connection()
@@ -217,13 +227,24 @@ def get_schools_by_level(level):
     conn.close()
     return schools
 
-def search_schools(query):
-    """Search schools by name, country, or city."""
+def search_schools(query, region=None, level=None):
+    """Search schools by name, country, or city with optional filters."""
     conn = get_db_connection()
-    schools = conn.execute(
-        'SELECT * FROM schools WHERE name LIKE ? OR country LIKE ? OR city LIKE ? ORDER BY name',
-        (f'%{query}%', f'%{query}%', f'%{query}%')
-    ).fetchall()
+    
+    sql = 'SELECT * FROM schools WHERE (name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?)'
+    params = [f'%{query}%', f'%{query}%', f'%{query}%', f'%{query}%']
+    
+    if region:
+        sql += ' AND region = ?'
+        params.append(region)
+    
+    if level:
+        sql += ' AND level = ?'
+        params.append(level)
+    
+    sql += ' ORDER BY name'
+    
+    schools = conn.execute(sql, params).fetchall()
     conn.close()
     return schools
 
