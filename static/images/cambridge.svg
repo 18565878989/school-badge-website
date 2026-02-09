@@ -1,15 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Shield -->
-  <path d="M100 10 L180 40 L180 120 C180 160 150 190 100 200 C50 190 20 160 20 120 L20 40 Z" fill="#0055A4"/>
-  <path d="M100 25 L165 50 L165 120 C165 150 140 180 100 190 C60 180 35 150 35 120 L35 50 Z" fill="#FFFFFF"/>
-  
-  <!-- Open book -->
-  <path d="M50 80 Q100 70 150 80 L150 130 Q100 140 50 130 Z" fill="#0055A4"/>
-  <line x1="100" y1="75" x2="100" y2="135" stroke="#FFFFFF" stroke-width="3 lions"/>
-  
-  <!--/symbols simplified -->
-  <text x="100" y="160" font-family="Georgia, serif" font-size="12" fill="#0055A4" text-anchor="middle">CAMBRIDGE</text>
-  
-  <!-- Mottos -->
-  <text x="100" y="175" font-family="Georgia, serif" font-size="7" fill="#0055A4" text-anchor="middle">HINC LUCEM</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 剑桥校徽 - 深蓝色背景 -->
+  <circle cx="50" cy="50" r="48" fill="#00247D" stroke="#E1C16E" stroke-width="2"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#E1C16E" stroke-width="1" opacity="0.6"/>
+  <!-- 剑桥盾牌 -->
+  <path d="M30,30 L70,30 L70,55 L50,75 L30,55 Z" fill="none" stroke="#E1C16E" stroke-width="1.5"/>
+  <text x="50" y="50" text-anchor="middle" fill="#E1C16E" font-size="10" font-family="Arial" font-weight="bold">CAM</text>
+  <text x="50" y="68" text-anchor="middle" fill="#E1C16E" font-size="7" font-family="Arial">剑桥</text>
 </svg>

@@ -1,19 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Shield background -->
-  <path d="M100 10 L180 40 L180 120 C180 160 150 190 100 200 C50 190 20 160 20 120 L20 40 Z" fill="#8C1D40"/>
-  
-  <!-- Inner shield -->
-  <path d="M100 25 L165 50 L165 120 C165 150 140 180 100 190 C60 180 35 150 35 120 L35 50 Z" fill="#FFFFFF"/>
-  
-  <!-- Three books -->
-  <rect x="45" y="70" width="35" height="50" fill="#8C1D40" rx="2"/>
-  <rect x="82" y="70" width="35" height="50" fill="#8C1D40" rx="2"/>
-  <rect x="120" y="70" width="35" height="50" fill="#8C1D40" rx="2"/>
-  
-  <!-- Book spines -->
-  <line x1="62" y1="70" x2="62" y2="120" stroke="#FFFFFF" stroke-width="2"/>
-  <line x1="100" y1="70" x2="100" y2="120" stroke="#FFFFFF" stroke-width="2"/>
-  
-  <!-- VERITAS text -->
-  <text x="100" y="155" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#8C1D40" text-anchor="middle">VERITAS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 哈佛校徽 - 深红色背景 -->
+  <circle cx="50" cy="50" r="48" fill="#A41034" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+  <!-- 哈佛盾牌徽章 -->
+  <path d="M35,35 L65,35 L65,55 L50,70 L35,55 Z" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-size="10" font-family="Arial" font-weight="bold">HARVARD</text>
+  <text x="50" y="70" text-anchor="middle" fill="#FFFFFF" font-size="7" font-family="Arial">哈佛大学</text>
 </svg>

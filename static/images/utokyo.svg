@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <path d="M100 10 L180 40 L180 120 C180 160 150 190 100 200 C50 190 20 160 20 120 L20 40 Z" fill="#00043A"/>
-  <path d="M100 25 L165 50 L165 120 C165 150 140 180 100 190 C60 180 35 150 35 120 L35 50 Z" fill="#FFFFFF"/>
-  <text x="100" y="85" font-family="sans-serif" font-size="14" fill="#00043A" text-anchor="middle">東京大学</text>
-  <text x="100" y="130" font-family="sans-serif" font-size="8" fill="#00043A" text-anchor="middle">UNIVERSITY</text>
-  <text x="100" y="160" font-family="sans-serif" font-size="8" fill="#00043A" text-anchor="middle">OF TOKYO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 东京大学校徽 - 深红色背景 -->
+  <circle cx="50" cy="50" r="48" fill="#BC002D" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+  <!-- 东京大学校徽 - 十字加银杏 -->
+  <rect x="46" y="30" width="8" height="40" fill="#FFFFFF"/>
+  <rect x="30" y="46" width="40" height="8" fill="#FFFFFF"/>
+  <text x="50" y="72" text-anchor="middle" fill="#FFFFFF" font-size="8" font-family="Arial">UTOKYO</text>
 </svg>

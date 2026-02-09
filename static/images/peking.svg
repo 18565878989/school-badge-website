@@ -1,13 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Shield -->
-  <path d="M100 10 L180 40 L180 120 C180 160 150 190 100 200 C50 190 20 160 20 120 L20 40 Z" fill="#C4161C"/>
-  <path d="M100 25 L165 50 L165 120 C165 150 140 180 100 190 C60 180 35 150 35 120 L35 50 Z" fill="#FFFFFF"/>
-  
-  <!-- Peking University emblem -->
-  <circle cx="100" cy="90" r="35" fill="none" stroke="#C4161C" stroke-width="3"/>
-  <text x="100" y="85" font-family="SimSun, serif" font-size="24" fill="#C4161C" text-anchor="middle">北</text>
-  <text x="100" y="110" font-family="SimSun, serif" font-size="24" fill="#C4161C" text-anchor="middle">大</text>
-  
-  <!-- Text -->
-  <text x="100" y="160" font-family="SimHei, sans-serif" font-size="12" fill="#C4161C" text-anchor="middle">北京大学</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 北大校徽背景 - 传统的红+白 -->
+  <circle cx="50" cy="50" r="48" fill="#8B0000" stroke="#FFD700" stroke-width="2"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.6"/>
+  <!-- 北大标志性的"北"字印章风格 -->
+  <rect x="32" y="25" width="36" height="36" rx="2" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="50" y="48" text-anchor="middle" fill="#FFD700" font-size="24" font-family="SimHei, Arial">北</text>
+  <text x="50" y="72" text-anchor="middle" fill="#FFD700" font-size="8" font-family="Arial">PEKING</text>
 </svg>

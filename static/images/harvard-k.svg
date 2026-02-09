@@ -1,11 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <path d="M100 10 L180 40 L180 120 C180 160 150 190 100 200 C50 190 20 160 20 120 L20 40 Z" fill="#8C1D40"/>
-  <path d="M100 25 L165 50 L165 120 C165 150 140 180 100 190 C60 180 35 150 35 120 L35 50 Z" fill="#FFFFFF"/>
-  <!-- Books -->
-  <rect x="55" y="70" width="30" height="45" fill="#8C1D40" rx="2"/>
-  <rect x="85" y="70" width="30" height="45" fill="#8C1D40" rx="2"/>
-  <rect x="115" y="70" width="30" height="45" fill="#8C1D40" rx="2"/>
-  <!-- Star -->
-  <polygon points="100,125 104,135 115,135 107,142 110,153 100,146 90,153 93,142 85,135 96,135" fill="#FFD700"/>
-  <text x="100" y="165" font-family="Georgia, serif" font-size="8" fill="#8C1D40" text-anchor="middle">HARVARD</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 哈佛幼儿园 - 红色 -->
+  <circle cx="50" cy="50" r="48" fill="#A41034" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+  <text x="50" y="48" text-anchor="middle" fill="#FFFFFF" font-size="10" font-family="Arial" font-weight="bold">HARVARD-K</text>
+  <text x="50" y="65" text-anchor="middle" fill="#FFFFFF" font-size="7" font-family="Arial">哈佛幼</text>
 </svg>

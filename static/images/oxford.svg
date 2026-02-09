@@ -1,16 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Shield -->
-  <path d="M100 10 L180 40 L180 120 C180 160 150 190 100 200 C50 190 20 160 20 120 L20 40 Z" fill="#002147"/>
-  <path d="M100 25 L165 50 L165 120 C165 150 140 180 100 190 C60 180 35 150 35 120 L35 50 Z" fill="#FFFFFF"/>
-  
-  <!-- Open book -->
-  <ellipse cx="100" cy="100" rx="50" ry="35" fill="#002147"/>
-  <ellipse cx="75" cy="100" rx="30" ry="25" fill="#FFFFFF"/>
-  <ellipse cx="125" cy="100" rx="30" ry="25" fill="#FFFFFF"/>
-  
-  <!-- Oxford text -->
-  <text x="100" y="155" font-family="Georgia, serif" font-size="12" fill="#002147" text-anchor="middle">OXFORD</text>
-  
-  <!-- Crown above -->
-  <path d="M80 65 L85 55 L95 65 L100 45 L105 65 L115 55 L120 65" fill="#FFD700" stroke="#FFD700" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 牛津校徽 - 深蓝色背景 -->
+  <circle cx="50" cy="50" r="48" fill="#00247D" stroke="#CF142B" stroke-width="2"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#CF142B" stroke-width="1" opacity="0.6"/>
+  <!-- 牛津开放书籍 -->
+  <ellipse cx="50" cy="45" rx="20" ry="12" fill="none" stroke="#CF142B" stroke-width="1.5"/>
+  <line x1="30" y1="45" x2="70" y2="45" stroke="#CF142B" stroke-width="1"/>
+  <text x="50" y="68" text-anchor="middle" fill="#CF142B" font-size="8" font-family="Arial" font-weight="bold">OXFORD</text>
 </svg>

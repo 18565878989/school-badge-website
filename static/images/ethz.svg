@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <path d="M100 10 L180 40 L180 120 C180 160 150 190 100 200 C50 190 20 160 20 120 L20 40 Z" fill="#D52B1E"/>
-  <path d="M100 25 L165 50 L165 120 C165 150 140 180 100 190 C60 180 35 150 35 120 L35 50 Z" fill="#FFFFFF"/>
-  <text x="100" y="80" font-family="Arial, sans-serif" font-size="10" fill="#D52B1E" text-anchor="middle">ETH</text>
-  <text x="100" y="120" font-family="Arial, sans-serif" font-size="12" fill="#D52B1E" text-anchor="middle">ZÜRICH</text>
-  <text x="100" y="160" font-family="Arial, sans-serif" font-size="7" fill="#D52B1E" text-anchor="middle">SCIENCE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 苏黎世联邦理工 - 深蓝色 -->
+  <circle cx="50" cy="50" r="48" fill="#003366" stroke="#FF0000" stroke-width="2"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#FF0000" stroke-width="1" opacity="0.6"/>
+  <text x="50" y="48" text-anchor="middle" fill="#FFFFFF" font-size="10" font-family="Arial" font-weight="bold">ETH</text>
+  <text x="50" y="65" text-anchor="middle" fill="#FFFFFF" font-size="7" font-family="Arial">苏黎世</text>
 </svg>
