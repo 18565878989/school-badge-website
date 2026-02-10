@@ -55,6 +55,10 @@
                     <span class="menu-icon">📋</span>
                     <span>操作日志</span>
                 </a>
+                <a href="{{ url_for('admin_permissions') }}" class="admin-menu-item {% if 'permission' in request.endpoint %}active{% endif %}">
+                    <span class="menu-icon">🔐</span>
+                    <span>权限管理</span>
+                </a>
             </div>
         </aside>
         

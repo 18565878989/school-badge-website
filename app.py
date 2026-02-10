@@ -17,7 +17,11 @@ from models import (
     create_school, update_school, delete_school,
     get_like, get_likes_count, like_school,
     unlike_school, get_user_liked_schools,
-    log_admin_action, get_admin_logs
+    log_admin_action, get_admin_logs,
+    # Permission functions
+    get_user_permissions, has_permission, get_all_roles,
+    get_all_permissions, get_role_permissions_db, update_role_permissions,
+    get_users_with_roles, update_user_permissions, get_user_role
 )
 from i18n import _, LANGUAGE_NAMES, get_locale
 
@@ -607,6 +611,65 @@ def admin_logs():
     """View admin logs."""
     logs = get_admin_logs(100)
     return render_template('admin/logs.html', logs=logs)
+
+@app.route('/admin/permissions')
+@admin_required
+def admin_permissions():
+    """Permission management page."""
+    users = get_users_with_roles()
+    roles = get_all_roles()
+    all_perms = get_all_permissions()
+    
+    # 角色权限统计
+    role_stats = {}
+    for u in users:
+        role_stats[u['role']] = role_stats.get(u['role'], 0) + 1
+    
+    # 角色权限详情
+    role_perms = {}
+    for r in roles:
+        perms = get_role_permissions_db(r)
+        role_perms[r] = [p['code'] for p in perms]
+    
+    role_names = {
+        'admin': '管理员',
+        'editor': '编辑者',
+        'user': '普通用户',
+        'viewer': '访客'
+    }
+    
+    category_names = {
+        'schools': '学校管理',
+        'users': '用户管理',
+        'system': '系统管理'
+    }
+    
+    return render_template('admin/permissions.html',
+                         users=users,
+                         roles=roles,
+                         role_stats=role_stats,
+                         role_perms=role_perms,
+                         role_names=role_names,
+                         category_names=category_names)
+
+@app.route('/admin/role/<role>/permissions', methods=['POST'])
+@admin_required
+def admin_update_role_permissions(role):
+    """Update role permissions."""
+    data = request.get_json()
+    permissions = data.get('permissions', [])
+    update_role_permissions(role, permissions)
+    return jsonify({'success': True})
+
+@app.route('/admin/user/<int:user_id>/role', methods=['POST'])
+@admin_required
+def admin_update_user_role(user_id):
+    """Update user role."""
+    data = request.get_json()
+    role = data.get('role')
+    if update_user_role(user_id, role):
+        return jsonify({'success': True})
+    return jsonify({'success': False})
 
 @app.route('/init-db')
 def init_database():

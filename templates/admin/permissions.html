@@ -1,0 +1,425 @@
+{% extends "admin/base.html" %}
+
+{% block title %}权限管理 - 管理后台{% endblock %}
+
+{% block content %}
+<div class="admin-header">
+    <h1>权限管理</h1>
+    <a href="{{ url_for('admin_dashboard') }}" class="btn btn-secondary">
+        ← 返回仪表盘
+    </a>
+</div>
+
+<div class="permission-container">
+    <!-- 角色管理 -->
+    <div class="section">
+        <h2>角色管理</h2>
+        <div class="role-cards">
+            {% for role in roles %}
+            <div class="role-card role-{{ role }}">
+                <div class="role-header">
+                    <h3>{{ role_names.get(role, role) }}</h3>
+                    <span class="role-count">{{ role_stats.get(role, 0) }}人</span>
+                </div>
+                <div class="role-actions">
+                    <button class="btn btn-sm btn-primary" onclick="showRolePermissions('{{ role }}')">
+                        配置权限
+                    </button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- 用户权限列表 -->
+    <div class="section">
+        <h2>用户权限详情</h2>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>用户名</th>
+                    <th>邮箱</th>
+                    <th>角色</th>
+                    <th>数据范围</th>
+                    <th>登录次数</th>
+                    <th>最后登录</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>
+                        <select class="role-select" onchange="updateUserRole({{ user.id }}, this.value)">
+                            <option value="admin" {% if user.role == 'admin' %}selected{% endif %}>管理员</option>
+                            <option value="editor" {% if user.role == 'editor' %}selected{% endif %}>编辑者</option>
+                            <option value="user" {% if user.role == 'user' %}selected{% endif %}>普通用户</option>
+                            <option value="viewer" {% if user.role == 'viewer' %}selected{% endif %}>访客</option>
+                        </select>
+                    </td>
+                    <td>{{ user.data_scope or 'own' }}</td>
+                    <td>{{ user.login_count or 0 }}</td>
+                    <td>{{ user.last_login[:10] if user.last_login else '从未' }}</td>
+                    <td>
+                        <span class="status-badge {{ user.status or 'active' }}">
+                            {{ user.status or 'active' }}
+                        </span>
+                    </td>
+                    <td>
+                        <button class="btn btn-sm btn-secondary" onclick="editUserPermissions({{ user.id }})">
+                            详细权限
+                        </button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- 角色权限配置模态框 -->
+<div id="roleModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="modalTitle">配置角色权限</h2>
+            <button class="close-btn" onclick="closeModal('roleModal')">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="rolePermissionForm">
+                <input type="hidden" id="editRole" name="role">
+                
+                <div class="permission-groups">
+                    {% for category in ['schools', 'users', 'system'] %}
+                    <div class="perm-group">
+                        <h4>{{ category_names.get(category, category) }}</h4>
+                        <div class="perm-list" id="perms-{{ category }}">
+                            <!-- 权限列表将通过JS动态生成 -->
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('roleModal')">取消</button>
+                    <button type="submit" class="btn btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 用户权限配置模态框 -->
+<div id="userModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>用户详细权限</h2>
+            <button class="close-btn" onclick="closeModal('userModal')">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div id="userPermissionDetails">
+                <!-- 用户权限详情 -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// 角色权限数据
+const rolePermissions = {{ role_permissions | tojson }};
+
+// 权限分类名称
+const categoryNames = {
+    'schools': '学校管理',
+    'users': '用户管理',
+    'system': '系统管理'
+};
+
+// 权限名称
+const permissionNames = {
+    'view_schools': '查看学校',
+    'view_own_likes': '查看已收藏',
+    'like_schools': '收藏学校',
+    'edit_all_schools': '编辑所有学校',
+    'delete_all_schools': '删除所有学校',
+    'add_schools': '添加学校',
+    'view_users': '查看用户',
+    'edit_users': '编辑用户',
+    'manage_users': '管理用户权限',
+    'delete_users': '删除用户',
+    'view_logs': '查看日志',
+    'export_data': '导出数据',
+    'manage_roles': '管理角色',
+    'view_stats': '查看统计'
+};
+
+function showRolePermissions(role) {
+    document.getElementById('editRole').value = role;
+    document.getElementById('modalTitle').textContent = '配置 - ' + (roleNames[role] || role);
+    
+    // 显示各分类权限
+    ['schools', 'users', 'system'].forEach(cat => {
+        const container = document.getElementById('perms-' + cat);
+        container.innerHTML = '';
+        
+        Object.entries(permissionNames).forEach(([code, name]) => {
+            if (code.includes(cat.replace('s', '')) || (cat === 'system' && !code.includes('schools') && !code.includes('users'))) {
+                const checked = rolePermissions[role] && rolePermissions[role].includes(code) ? 'checked' : '';
+                container.innerHTML += `
+                    <label class="perm-item">
+                        <input type="checkbox" name="permissions" value="${code}" ${checked}>
+                        <span>${name}</span>
+                    </label>
+                `;
+            }
+        });
+    });
+    
+    document.getElementById('roleModal').style.display = 'block';
+}
+
+function editUserPermissions(userId) {
+    // 显示用户权限详情
+    document.getElementById('userModal').style.display = 'block';
+}
+
+function updateUserRole(userId, role) {
+    fetch('/admin/user/' + userId + '/role', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({role: role})
+    }).then(r => r.json()).then(d => {
+        if (d.success) location.reload();
+    });
+}
+
+// 表单提交
+document.getElementById('rolePermissionForm').onsubmit = function(e) {
+    e.preventDefault();
+    const role = document.getElementById('editRole').value;
+    const perms = [];
+    document.querySelectorAll('#rolePermissionForm input[name="permissions"]:checked').forEach(cb => {
+        perms.push(cb.value);
+    });
+    
+    fetch('/admin/role/' + role + '/permissions', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({permissions: perms})
+    }).then(r => r.json()).then(d => {
+        if (d.success) {
+            closeModal('roleModal');
+            location.reload();
+        }
+    });
+};
+
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+// 点击外部关闭
+window.onclick = function(e) {
+    if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+    }
+};
+</script>
+
+<style>
+.permission-container {
+    display: grid;
+    gap: 30px;
+}
+
+.section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.role-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.role-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.role-card.role-admin {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.role-card.role-editor {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.role-card.role-user {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.role-card.role-viewer {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.role-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.role-count {
+    background: rgba(255,255,255,0.2);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.role-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.role-actions .btn {
+    flex: 1;
+}
+
+.role-select {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.status-badge.active {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.status-badge.disabled {
+    background: #ffebee;
+    color: #c62828;
+}
+
+/* 模态框样式 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    margin: 50px auto;
+    padding: 0;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.modal-body {
+    padding: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.permission-groups {
+    display: grid;
+    gap: 20px;
+}
+
+.perm-group h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.perm-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+}
+
+.perm-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.perm-item:hover {
+    background: #eee;
+}
+
+.perm-item input {
+    cursor: pointer;
+}
+</style>
+{% endblock %}

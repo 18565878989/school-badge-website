@@ -151,6 +151,161 @@ def is_admin(user_id):
     conn.close()
     return user and user['role'] == 'admin'
 
+def get_user_role(user_id):
+    """Get user role."""
+    conn = get_db_connection()
+    user = conn.execute('SELECT role FROM users WHERE id = ?', (user_id,)).fetchone()
+    conn.close()
+    return user['role'] if user else None
+
+def get_user_permissions(user_id):
+    """Get user permissions as dict."""
+    import json
+    conn = get_db_connection()
+    user = conn.execute('SELECT permissions, role FROM users WHERE id = ?', (user_id,)).fetchone()
+    conn.close()
+    
+    if not user:
+        return {}
+    
+    # 返回用户自定义权限或角色默认权限
+    if user['permissions']:
+        try:
+            return json.loads(user['permissions'])
+        except:
+            return get_role_permissions(user['role'])
+    
+    return get_role_permissions(user['role'])
+
+def get_role_permissions(role):
+    """Get default permissions for a role."""
+    import json
+    conn = get_db_connection()
+    perms = conn.execute(
+        'SELECT permission_code, granted FROM role_permissions WHERE role = ?',
+        (role,)
+    ).fetchall()
+    conn.close()
+    
+    result = {}
+    for p in perms:
+        result[p['permission_code']] = bool(p['granted'])
+    return result
+
+def has_permission(user_id, permission_code):
+    """Check if user has specific permission."""
+    perms = get_user_permissions(user_id)
+    return perms.get(permission_code, False)
+
+def get_all_roles():
+    """Get all roles."""
+    conn = get_db_connection()
+    roles = conn.execute('SELECT DISTINCT role FROM users UNION SELECT DISTINCT role FROM role_permissions').fetchall()
+    conn.close()
+    return [r[0] for r in roles]
+
+def get_all_permissions():
+    """Get all permission definitions."""
+    conn = get_db_connection()
+    perms = conn.execute('SELECT * FROM permission_definitions WHERE is_active = 1 ORDER BY category, name').fetchall()
+    conn.close()
+    return [dict(p) for p in perms]
+
+def get_role_permissions_db(role):
+    """Get role permissions from database."""
+    conn = get_db_connection()
+    perms = conn.execute(
+        'SELECT pd.* FROM permission_definitions pd '
+        'JOIN role_permissions rp ON pd.code = rp.permission_code '
+        'WHERE rp.role = ? AND pd.is_active = 1',
+        (role,)
+    ).fetchall()
+    conn.close()
+    return [dict(p) for p in perms]
+
+def update_role_permissions(role, permissions):
+    """Update role permissions."""
+    import json
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    
+    # 删除旧权限
+    cursor.execute('DELETE FROM role_permissions WHERE role = ?', (role,))
+    
+    # 插入新权限
+    for perm_code, granted in permissions.items():
+        if granted:
+            cursor.execute(
+                'INSERT INTO role_permissions (role, permission_code, granted) VALUES (?, ?, 1)',
+                (role, perm_code)
+            )
+    
+    # 更新用户的自定义权限
+    user_perms = {"role_permissions": permissions}
+    cursor.execute('UPDATE users SET permissions = ? WHERE role = ?', (json.dumps(user_perms), role))
+    
+    conn.commit()
+    conn.close()
+
+def update_user_permissions(user_id, permissions):
+    """Update user custom permissions (override role)."""
+    import json
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    
+    # 保存用户自定义权限
+    cursor.execute('UPDATE users SET permissions = ? WHERE id = ?', (json.dumps(permissions), user_id))
+    
+    conn.commit()
+    conn.close()
+    return cursor.rowcount > 0
+
+def get_users_with_roles():
+    """Get all users with their roles."""
+    conn = get_db_connection()
+    users = conn.execute(
+        'SELECT id, username, email, role, permissions, data_scope, status, created_at, last_login, login_count '
+        'FROM users ORDER BY created_at DESC'
+    ).fetchall()
+    conn.close()
+    return [dict(u) for u in users]
+
+def create_user(username, password, email, role='user', phone=None, oauth_provider=None, oauth_id=None, avatar_url=None):
+    """Create a new user."""
+    import json
+    password_hash = generate_password_hash(password) if password else ''
+    data_scope = '["all"]' if role == 'admin' else '["own"]'
+    permissions = json.dumps(get_role_permissions(role))
+    
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    try:
+        cursor.execute(
+            '''INSERT INTO users (username, password_hash, email, phone, role, oauth_provider, oauth_id, avatar_url, permissions, data_scope) 
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
+            (username, password_hash, email, phone, role, oauth_provider, oauth_id, avatar_url, permissions, data_scope)
+        )
+        conn.commit()
+        user_id = cursor.lastrowid
+        conn.close()
+        return user_id
+    except sqlite3.IntegrityError:
+        conn.close()
+        return None
+
+def update_user_role(user_id, new_role, data_scope='["all"]'):
+    """Update user role and permissions."""
+    import json
+    permissions = json.dumps(get_role_permissions(new_role))
+    
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('UPDATE users SET role = ?, permissions = ?, data_scope = ? WHERE id = ?', 
+                  (new_role, permissions, data_scope, user_id))
+    conn.commit()
+    conn.close()
+    return cursor.rowcount > 0
+
 def get_all_users():
     """Get all users."""
     conn = get_db_connection()
