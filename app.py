@@ -473,7 +473,14 @@ def admin_dashboard():
 def admin_schools():
     """Manage schools."""
     schools = get_all_schools()
-    return render_template('admin/schools.html', schools=schools)
+    
+    # 按类型统计
+    level_stats = {}
+    for school in schools:
+        level = school['level']
+        level_stats[level] = level_stats.get(level, 0) + 1
+    
+    return render_template('admin/schools.html', schools=schools, level_stats=level_stats)
 
 @app.route('/admin/school/add', methods=['GET', 'POST'])
 @admin_required

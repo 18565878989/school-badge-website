@@ -23,6 +23,22 @@
         <div class="stat-label">香港学校</div>
     </div>
     <div class="stat-card">
+        <div class="stat-number">{{ level_stats.university if level_stats else 0 }}</div>
+        <div class="stat-label">大学</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">{{ level_stats.middle if level_stats else 0 }}</div>
+        <div class="stat-label">中学</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">{{ level_stats.elementary if level_stats else 0 }}</div>
+        <div class="stat-label">小学</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">{{ level_stats.kindergarten if level_stats else 0 }}</div>
+        <div class="stat-label">幼儿园</div>
+    </div>
+    <div class="stat-card">
         <div class="stat-number">{{ schools|selectattr('source', 'equalto', 'schooland.hk')|list|length }}</div>
         <div class="stat-label">schooland.hk</div>
     </div>
@@ -39,6 +55,13 @@
         {% for region in ['North America', 'Europe', 'Asia', 'Oceania', 'Africa', 'South America', 'Hong Kong'] %}
             <option value="{{ region }}">{{ region }}</option>
         {% endfor %}
+    </select>
+    <select id="filterLevel" onchange="filterTable()">
+        <option value="">所有类型</option>
+        <option value="university">大学</option>
+        <option value="middle">中学</option>
+        <option value="elementary">小学</option>
+        <option value="kindergarten">幼儿园</option>
     </select>
     <select id="filterSource" onchange="filterTable()">
         <option value="">所有来源</option>
@@ -63,7 +86,7 @@
     </thead>
     <tbody>
         {% for school in schools %}
-        <tr data-region="{{ school.region }}" data-source="{{ school.source or 'manual' }}">
+        <tr data-region="{{ school.region }}" data-level="{{ school.level }}" data-source="{{ school.source or 'manual' }}">
             <td>{{ school.id }}</td>
             <td>
                 {% if school.badge_url %}
@@ -129,6 +152,7 @@
 function filterTable() {
     const search = document.getElementById('searchSchools').value.toLowerCase();
     const region = document.getElementById('filterRegion').value;
+    const level = document.getElementById('filterLevel').value;
     const source = document.getElementById('filterSource').value;
     const rows = document.querySelectorAll('#schoolsTable tbody tr');
     
@@ -136,13 +160,15 @@ function filterTable() {
         const name = row.cells[2]?.textContent.toLowerCase() || '';
         const cnName = row.cells[3]?.textContent.toLowerCase() || '';
         const rowRegion = row.dataset.region || '';
+        const rowLevel = row.dataset.level || '';
         const rowSource = row.dataset.source || '';
         
         const matchesSearch = name.includes(search) || cnName.includes(search);
         const matchesRegion = !region || rowRegion === region;
+        const matchesLevel = !level || rowLevel === level;
         const matchesSource = !source || rowSource === source;
         
-        row.style.display = (matchesSearch && matchesRegion && matchesSource) ? '' : 'none';
+        row.style.display = (matchesSearch && matchesRegion && matchesLevel && matchesSource) ? '' : 'none';
     });
 }
 </script>
