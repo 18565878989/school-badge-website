@@ -255,18 +255,52 @@ def get_regions():
     conn.close()
     return [r['region'] for r in regions]
 
-def create_school(name, name_cn=None, region=None, country=None, city=None, address=None, 
-                  level=None, description=None, badge_url=None, website=None, 
-                  motto=None, founded=None, principal=None):
-    """Create a new school."""
+def get_schools_by_source(source):
+    """Get schools by data source."""
+    conn = get_db_connection()
+    schools = conn.execute('SELECT * FROM schools WHERE source = ? ORDER BY name', (source,)).fetchall()
+    conn.close()
+    return schools
+
+def get_schools_by_source_and_region(source, region):
+    """Get schools by source and region."""
+    conn = get_db_connection()
+    schools = conn.execute('SELECT * FROM schools WHERE source = ? AND region = ? ORDER BY name', (source, region)).fetchall()
+    conn.close()
+    return schools
+
+def get_source_stats():
+    """Get statistics by data source."""
+    conn = get_db_connection()
+    stats = conn.execute('SELECT source, COUNT(*) as count, MAX(updated_at) as last_updated FROM schools GROUP BY source ORDER BY count DESC').fetchall()
+    conn.close()
+    return [dict(s) for s in stats]
+
+def update_school_source(school_id, source):
+    """Update school data source."""
+    from datetime import datetime
     conn = get_db_connection()
     cursor = conn.cursor()
+    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    cursor.execute('UPDATE schools SET source = ?, updated_at = ? WHERE id = ?', (source, now, school_id))
+    conn.commit()
+    conn.close()
+    return cursor.rowcount > 0
+
+def create_school(name, name_cn=None, region=None, country=None, city=None, address=None, 
+                  level=None, description=None, badge_url=None, website=None, 
+                  motto=None, founded=None, principal=None, source='manual'):
+    """Create a new school."""
+    from datetime import datetime
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     cursor.execute('''
-        INSERT INTO schools (name, name_cn, region, country, city, address, level, description, badge_url, website, motto, founded, principal)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO schools (name, name_cn, region, country, city, address, level, description, badge_url, website, motto, founded, principal, source, created_at, updated_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ''', (
         name, name_cn, region, country, city, address, level, description, 
-        badge_url, website, motto, founded, principal
+        badge_url, website, motto, founded, principal, source, now, now
     ))
     conn.commit()
     school_id = cursor.lastrowid
@@ -275,17 +309,19 @@ def create_school(name, name_cn=None, region=None, country=None, city=None, addr
 
 def update_school(school_id, **kwargs):
     """Update a school."""
+    from datetime import datetime
     conn = get_db_connection()
     cursor = conn.cursor()
     
-    fields = []
-    values = []
+    fields = ['updated_at = ?']
+    values = [datetime.now().strftime('%Y-%m-%d %H:%M:%S')]
+    
     for key, value in kwargs.items():
-        if value is not None:
+        if value is not None and key not in ('id', 'created_at'):
             fields.append(f'{key} = ?')
             values.append(value)
     
-    if not fields:
+    if len(fields) == 1:  # 只有updated_at
         conn.close()
         return False
     

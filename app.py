@@ -12,6 +12,7 @@ from models import (
     get_all_users, update_user_role, delete_user,
     get_all_schools, get_school_by_id, get_regions,
     get_schools_by_region, get_schools_by_level, get_schools_by_region_and_level,
+    get_schools_by_source, get_source_stats, update_school_source,
     search_schools,
     create_school, update_school, delete_school,
     get_like, get_likes_count, like_school,
@@ -426,16 +427,41 @@ def admin_dashboard():
     schools = get_all_schools()
     users = get_all_users()
     regions = get_regions()
+    source_stats = get_source_stats()
+    
+    # 计算统计
+    hk_count = sum(1 for s in schools if s['region'] == 'Hong Kong')
+    schooland_count = sum(1 for s in schools if s['source'] == 'schooland.hk')
+    manual_count = sum(1 for s in schools if s['source'] != 'schooland.hk')
+    
+    # 获取最后更新时间
+    last_updated = None
+    for s in source_stats:
+        if s['source'] == 'schooland.hk' and s.get('last_updated'):
+            last_updated = s['last_updated'][:10]
+            break
+    if not last_updated:
+        for s in schools:
+            if s.get('updated_at'):
+                last_updated = s['updated_at'][:10]
+                break
     
     stats = {
         'total_schools': len(schools),
         'total_users': len(users),
-        'total_regions': len(regions)
+        'total_regions': len(regions),
+        'hk_schools': hk_count,
+        'schooland_count': schooland_count,
+        'manual_count': manual_count,
+        'last_updated': last_updated
     }
+    
+    # 按更新时间排序的学校
+    sorted_schools = sorted(schools, key=lambda x: x.get('updated_at') or x.get('created_at') or '', reverse=True)
     
     return render_template('admin/dashboard.html', 
                          stats=stats,
-                         recent_schools=schools[:5],
+                         recent_schools=sorted_schools[:5],
                          recent_users=users[:5])
 
 @app.route('/admin/schools')
