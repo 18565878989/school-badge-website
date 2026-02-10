@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5fb4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3584e4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景圆 -->
+  <circle cx="100" cy="100" r="95" fill="url(#bg)" />
+  <circle cx="100" cy="100" r="85" fill="none" stroke="white" stroke-width="3" opacity="0.3"/>
+  
+  <!-- 学校首字母 -->
+  <text x="100" y="115" 
+        font-family="Georgia, serif" 
+        font-size="80" 
+        font-weight="bold"
+        fill="white" 
+        text-anchor="middle"
+        opacity="0.95">S</text>
+  
+  <!-- 装饰边框 -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="white" stroke-width="2" opacity="0.5"/>
+  
+  <!-- 顶部装饰 -->
+  <path d="M60,30 Q100,10 140,30" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
+</svg>
