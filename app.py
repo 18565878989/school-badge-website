@@ -446,7 +446,7 @@ def admin_dashboard():
             break
     if not last_updated:
         for s in schools:
-            if s.get('updated_at'):
+            if s['updated_at']:
                 last_updated = s['updated_at'][:10]
                 break
     
@@ -461,7 +461,7 @@ def admin_dashboard():
     }
     
     # 按更新时间排序的学校
-    sorted_schools = sorted(schools, key=lambda x: x.get('updated_at') or x.get('created_at') or '', reverse=True)
+    sorted_schools = sorted(schools, key=lambda x: x['updated_at'] if x['updated_at'] else x['created_at'] if x['created_at'] else '', reverse=True)
     
     return render_template('admin/dashboard.html', 
                          stats=stats,
@@ -648,7 +648,7 @@ def admin_permissions():
                          users=users,
                          roles=roles,
                          role_stats=role_stats,
-                         role_perms=role_perms,
+                         role_permissions=role_perms,
                          role_names=role_names,
                          category_names=category_names)
 
