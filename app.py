@@ -480,7 +480,10 @@ def admin_schools():
         level = school['level']
         level_stats[level] = level_stats.get(level, 0) + 1
     
-    return render_template('admin/schools.html', schools=schools, level_stats=level_stats)
+    # 获取所有地区（用于筛选）
+    regions = sorted(set(s['region'] for s in schools if s.get('region')))
+    
+    return render_template('admin/schools.html', schools=schools, level_stats=level_stats, regions=regions)
 
 @app.route('/admin/school/add', methods=['GET', 'POST'])
 @admin_required

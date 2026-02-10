@@ -48,130 +48,434 @@
     </div>
 </div>
 
-<div class="filter-bar">
-    <input type="text" id="searchSchools" placeholder="搜索学校..." onkeyup="filterTable()">
-    <select id="filterRegion" onchange="filterTable()">
-        <option value="">所有地区</option>
-        {% for region in ['North America', 'Europe', 'Asia', 'Oceania', 'Africa', 'South America', 'Hong Kong'] %}
-            <option value="{{ region }}">{{ region }}</option>
-        {% endfor %}
-    </select>
-    <select id="filterLevel" onchange="filterTable()">
-        <option value="">所有类型</option>
-        <option value="university">大学</option>
-        <option value="middle">中学</option>
-        <option value="elementary">小学</option>
-        <option value="kindergarten">幼儿园</option>
-    </select>
-    <select id="filterSource" onchange="filterTable()">
-        <option value="">所有来源</option>
-        <option value="schooland.hk">schooland.hk</option>
-        <option value="manual">手动添加</option>
-    </select>
+<!-- 增强的搜索过滤区域 -->
+<div class="search-section">
+    <div class="search-row">
+        <div class="search-group">
+            <label>🔍 关键词搜索</label>
+            <input type="text" id="searchKeyword" placeholder="学校名称、中文名、地址..." onkeyup="filterTable()">
+        </div>
+        <div class="search-group">
+            <label>📍 地区</label>
+            <select id="filterRegion" onchange="filterTable()">
+                <option value="">全部地区</option>
+                {% for region in regions %}
+                    <option value="{{ region }}">{{ region }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="search-group">
+            <label>🏫 学校类型</label>
+            <select id="filterLevel" onchange="filterTable()">
+                <option value="">全部类型</option>
+                <option value="university">大学</option>
+                <option value="middle">中学</option>
+                <option value="primary">小学</option>
+                <option value="kindergarten">幼儿园</option>
+                <option value="elementary">特殊学校</option>
+            </select>
+        </div>
+        <div class="search-group">
+            <label>💰 办学类型</label>
+            <select id="filterFinance" onchange="filterTable()">
+                <option value="">全部类型</option>
+                <option value="Government">官立</option>
+                <option value="Aided">资助</option>
+                <option value="Direct">直资</option>
+                <option value="Private">私立</option>
+                <option value="ESF">英基</option>
+            </select>
+        </div>
+        <div class="search-group">
+            <label>👥 性别</label>
+            <select id="filterGender" onchange="filterTable()">
+                <option value="">全部</option>
+                <option value="CO-ED">男女校</option>
+                <option value="GIRLS">女校</option>
+                <option value="BOYS">男校</option>
+            </select>
+        </div>
+        <div class="search-group">
+            <label>📡 数据来源</label>
+            <select id="filterSource" onchange="filterTable()">
+                <option value="">全部来源</option>
+                <option value="edb">教育局EDB</option>
+                <option value="manual">手动添加</option>
+                <option value="batch3">批量导入</option>
+            </select>
+        </div>
+    </div>
+    <div class="filter-actions">
+        <span id="filterCount" class="filter-count">显示: 0 所学校</span>
+        <button onclick="resetFilters()" class="btn btn-secondary">🔄 重置筛选</button>
+        <button onclick="exportFiltered()" class="btn btn-secondary">📤 导出选中</button>
+    </div>
 </div>
 
 <table class="admin-table" id="schoolsTable">
     <thead>
         <tr>
+            <th width="40"><input type="checkbox" id="selectAll" onclick="toggleSelectAll()"></th>
             <th width="60">ID</th>
             <th width="60">校徽</th>
             <th>学校名称</th>
             <th>中文名</th>
-            <th width="100">地区</th>
-            <th width="80">类型</th>
-            <th width="120">数据来源</th>
-            <th width="100">更新时间</th>
-            <th width="120">操作</th>
+            <th width="90">地区</th>
+            <th width="70">类型</th>
+            <th width="70">办学</th>
+            <th width="70">性别</th>
+            <th width="100">数据来源</th>
+            <th width="90">更新时间</th>
+            <th width="100">操作</th>
         </tr>
     </thead>
     <tbody>
         {% for school in schools %}
-        <tr data-region="{{ school.region }}" data-level="{{ school.level }}" data-source="{{ school.source or 'manual' }}">
+        <tr data-region="{{ school.region or '' }}" 
+            data-level="{{ school.level or '' }}"
+            data-finance="{{ school.finance_type or '' }}"
+            data-gender="{{ school.gender or '' }}"
+            data-source="{{ school.source or 'manual' }}"
+            data-search="{{ (school.name or '')|lower }}|{{(school.name_cn or '')|lower }}|{{(school.address or '')|lower }}">
+            <td><input type="checkbox" class="school-checkbox" value="{{ school.id }}"></td>
             <td>{{ school.id }}</td>
             <td>
-                {% if school.badge_url %}
-                    <img src="{{ school.badge_url }}" alt="{{ school.name }}" class="table-badge">
+                {% if school.badge_url and school.badge_url != '/static/badges/default.svg' %}
+                    <img src="{{ school.badge_url }}" alt="{{ school.name }}" class="table-badge" loading="lazy">
                 {% else %}
                     <span class="no-badge">—</span>
                 {% endif %}
             </td>
             <td>
-                <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank" class="school-link">
-                    {{ school.name }}
+                <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank" class="school-link" title="{{ school.name }}">
+                    {{ school.name[:40] }}{% if school.name|length > 40 %}...{% endif %}
                 </a>
             </td>
             <td>{{ school.name_cn or '—' }}</td>
-            <td>{{ school.region }}</td>
+            <td>{{ school.region or '—' }}</td>
             <td>
                 <span class="level-badge level-{{ school.level }}">
                     {% if school.level == 'university' %}大学
                     {% elif school.level == 'middle' %}中学
-                    {% elif school.level == 'elementary' %}小学
-                    {% else %}幼儿园{% endif %}
+                    {% elif school.level == 'elementary' %}特殊
+                    {% elif school.level == 'primary' %}小学
+                    {% elif school.level == 'kindergarten' %}幼儿园
+                    {% else %}—{% endif %}
                 </span>
             </td>
             <td>
-                {% if school.source == 'schooland.hk' %}
-                    <span class="source-badge source-schooland">schooland.hk</span>
-                {% elif school.source %}
-                    <span class="source-badge source-{{ school.source }}">{{ school.source }}</span>
-                {% else %}
-                    <span class="source-badge source-manual">手动</span>
-                {% endif %}
-            </td>
-            <td>
-                {% if school.updated_at %}
-                    {{ school.updated_at[:10] }}
+                {% if school.finance_type %}
+                    <span class="finance-badge finance-{{ school.finance_type|lower }}">
+                        {% if school.finance_type == 'Government' %}官立
+                        {% elif school.finance_type == 'Aided' %}资助
+                        {% elif school.finance_type == 'Direct' %}直资
+                        {% elif school.finance_type == 'Private' %}私立
+                        {% elif school.finance_type == 'ESF' %}英基
+                        {% else %}{{ school.finance_type }}{% endif %}
+                    </span>
                 {% else %}
                     —
                 {% endif %}
             </td>
             <td>
+                {% if school.gender == 'CO-ED' %}男女
+                {% elif school.gender == 'GIRLS' %}女校
+                {% elif school.gender == 'BOYS' %}男校
+                {% else %}—{% endif %}
+            </td>
+            <td>
+                {% if school.source == 'edb' %}
+                    <span class="source-badge source-edb">EDB</span>
+                {% elif school.source == 'manual' %}
+                    <span class="source-badge source-manual">手动</span>
+                {% elif school.source == 'batch3' %}
+                    <span class="source-badge source-batch">批量</span>
+                {% else %}
+                    <span class="source-badge source-other">其他</span>
+                {% endif %}
+            </td>
+            <td>{{ school.updated_at[:10] if school.updated_at else '—' }}</td>
+            <td>
                 <div class="action-group">
-                    <a href="{{ url_for('admin_edit_school', school_id=school.id) }}" class="btn btn-sm btn-secondary" title="编辑">
-                        ✏️
-                    </a>
+                    <a href="{{ url_for('admin_edit_school', school_id=school.id) }}" class="btn btn-sm btn-secondary" title="编辑">✏️</a>
+                    <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank" class="btn btn-sm btn-secondary" title="查看">👁️</a>
                     <a href="{{ url_for('admin_delete_school', school_id=school.id) }}" 
                        class="btn btn-sm btn-danger"
-                       onclick="return confirm('确定删除?')"
-                       title="删除">
-                        🗑️
-                    </a>
+                       onclick="return confirm('确定删除这所学校?')"
+                       title="删除">🗑️</a>
                 </div>
             </td>
         </tr>
         {% else %}
         <tr>
-            <td colspan="9" class="empty">暂无学校数据</td>
+            <td colspan="12" class="empty">暂无学校数据</td>
         </tr>
         {% endfor %}
     </tbody>
 </table>
 
+<div class="table-footer">
+    <div class="pagination-info">
+        共 <span id="totalCount">{{ schools|length }}</span> 所学校， 
+        当前显示 <span id="visibleCount">0</span> 所
+    </div>
+</div>
+
 <script>
 function filterTable() {
-    const search = document.getElementById('searchSchools').value.toLowerCase();
+    const keyword = document.getElementById('searchKeyword').value.toLowerCase();
     const region = document.getElementById('filterRegion').value;
     const level = document.getElementById('filterLevel').value;
+    const finance = document.getElementById('filterFinance').value;
+    const gender = document.getElementById('filterGender').value;
     const source = document.getElementById('filterSource').value;
-    const rows = document.querySelectorAll('#schoolsTable tbody tr');
+    
+    const rows = document.querySelectorAll('#schoolsTable tbody tr[data-search]');
+    let visible = 0;
     
     rows.forEach(row => {
-        const name = row.cells[2]?.textContent.toLowerCase() || '';
-        const cnName = row.cells[3]?.textContent.toLowerCase() || '';
+        const searchText = row.dataset.search || '';
         const rowRegion = row.dataset.region || '';
         const rowLevel = row.dataset.level || '';
+        const rowFinance = row.dataset.finance || '';
+        const rowGender = row.dataset.gender || '';
         const rowSource = row.dataset.source || '';
         
-        const matchesSearch = name.includes(search) || cnName.includes(search);
+        const matchesKeyword = !keyword || searchText.includes(keyword);
         const matchesRegion = !region || rowRegion === region;
         const matchesLevel = !level || rowLevel === level;
+        const matchesFinance = !finance || rowFinance === finance;
+        const matchesGender = !gender || rowGender === gender;
         const matchesSource = !source || rowSource === source;
         
-        row.style.display = (matchesSearch && matchesRegion && matchesLevel && matchesSource) ? '' : 'none';
+        const visible_row = matchesKeyword && matchesRegion && matchesLevel && 
+                          matchesFinance && matchesGender && matchesSource;
+        
+        row.style.display = visible_row ? '' : 'none';
+        if (visible_row) visible++;
+    });
+    
+    document.getElementById('filterCount').textContent = `显示: ${visible} 所学校`;
+    document.getElementById('visibleCount').textContent = visible;
+    
+    // 更新全选复选框状态
+    updateSelectAllState();
+}
+
+function resetFilters() {
+    document.getElementById('searchKeyword').value = '';
+    document.getElementById('filterRegion').value = '';
+    document.getElementById('filterLevel').value = '';
+    document.getElementById('filterFinance').value = '';
+    document.getElementById('filterGender').value = '';
+    document.getElementById('filterSource').value = '';
+    filterTable();
+}
+
+function toggleSelectAll() {
+    const selectAll = document.getElementById('selectAll');
+    const checkboxes = document.querySelectorAll('.school-checkbox');
+    checkboxes.forEach(cb => {
+        cb.checked = selectAll.checked;
     });
 }
+
+function updateSelectAllState() {
+    const checkboxes = document.querySelectorAll('.school-checkbox');
+    const visibleCheckboxes = Array.from(checkboxes).filter(cb => {
+        return cb.closest('tr').style.display !== 'none';
+    });
+    const allChecked = visibleCheckboxes.length > 0 && visibleCheckboxes.every(cb => cb.checked);
+    document.getElementById('selectAll').checked = allChecked;
+}
+
+function exportFiltered() {
+    const visibleRows = document.querySelectorAll('#schoolsTable tbody tr[style=""]');
+    const ids = Array.from(visibleRows).map(row => {
+        return row.querySelector('.school-checkbox')?.value;
+    }).filter(Boolean);
+    
+    if (ids.length === 0) {
+        alert('没有选中的学校');
+        return;
+    }
+    
+    alert(`将导出 ${ids.length} 所学校的数据`);
+    // TODO: 实现导出功能
+}
+
+// 页面加载时初始化
+document.addEventListener('DOMContentLoaded', function() {
+    filterTable();
+});
 </script>
+
+<style>
+.search-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.search-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.search-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.search-group label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.search-group input,
+.search-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.filter-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.filter-count {
+    font-size: 14px;
+    color: #666;
+}
+
+.table-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+}
+
+.pagination-info {
+    font-size: 14px;
+    color: #666;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background: #f8f9fa;
+    padding: 12px 8px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    color: #666;
+    border-bottom: 2px solid #eee;
+}
+
+.admin-table td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.admin-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.level-university { background: #e3f2fd; color: #1976d2; }
+.level-middle { background: #e8f5e9; color: #388e3c; }
+.level-primary { background: #fff3e0; color: #f57c00; }
+.level-kindergarten { background: #fce4ec; color: #c2185b; }
+.level-elementary { background: #f3e5f5; color: #7b1fa2; }
+
+.finance-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.finance-government { background: #bbdefb; color: #1565c0; }
+.finance-aided { background: #c8e6c9; color: #2e7d32; }
+.finance-direct { background: #fff9c4; color: #f9a825; }
+.finance-private { background: #ffccbc; color: #d84315; }
+.finance-esf { background: #e1bee7; color: #7b1fa2; }
+
+.source-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.source-edb { background: #bbdefb; color: #1976d2; }
+.source-manual { background: #f5f5f5; color: #666; }
+.source-batch { background: #c8e6c9; color: #2e7d32; }
+
+.table-badge {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.action-group {
+    display: flex;
+    gap: 4px;
+}
+
+.btn-sm {
+    padding: 4px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.btn-secondary {
+    background: #f5f5f5;
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+    background: #e0e0e0;
+}
+
+.no-badge {
+    color: #999;
+    font-size: 18px;
+}
+
+.school-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.school-link:hover {
+    color: #667eea;
+}
+</style>
 
 <style>
 .stats-cards {
