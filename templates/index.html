@@ -42,9 +42,9 @@
     {% endif %}
 </div>
 
-{% if schools|length > 0 %}
+{% if total_schools > 0 %}
 <div class="stats">
-    {{ _('schools_count').format(schools|length) }}
+    {{ _('schools_count').format(total_schools) }}
     {% if selected_region or selected_level or search_query %}
         <span class="filter-info">
             {% if selected_region %}· {{ selected_region }}{% endif %}
