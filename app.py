@@ -8,7 +8,7 @@ import hmac
 import time
 from urllib.parse import urlencode
 from models import (
-    init_db, create_user, verify_password, get_user_by_id, is_admin,
+    init_db, create_user, verify_password, get_user_by_id, is_admin, get_db_connection,
     get_all_users, update_user_role, delete_user,
     get_all_schools, get_school_by_id, get_regions,
     get_schools_by_region, get_schools_by_level, get_schools_by_region_and_level,
@@ -571,6 +571,57 @@ def admin_users():
     users = get_all_users()
     return render_template('admin/users.html', users=users)
 
+@app.route('/admin/user/create', methods=['POST'])
+@admin_required
+def admin_create_user():
+    """Create a new user."""
+    data = request.get_json()
+    
+    username = data.get('username', '').strip()
+    email = data.get('email', '').strip()
+    password = data.get('password', '')
+    phone = data.get('phone', '').strip() or None
+    role = data.get('role', 'user')
+    
+    # 验证输入
+    if not username or len(username) < 3:
+        return jsonify({'success': False, 'message': '用户名至少需要3个字符'})
+    
+    if not email or '@' not in email:
+        return jsonify({'success': False, 'message': '请输入有效的邮箱'})
+    
+    if not password or len(password) < 6:
+        return jsonify({'success': False, 'message': '密码至少需要6个字符'})
+    
+    if role not in ['admin', 'editor', 'user', 'viewer']:
+        return jsonify({'success': False, 'message': '无效的角色'})
+    
+    # 检查用户名和邮箱是否已存在
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('SELECT id FROM users WHERE username = ? OR email = ?', (username, email))
+    if cursor.fetchone():
+        conn.close()
+        return jsonify({'success': False, 'message': '用户名或邮箱已存在'})
+    
+    # 创建用户
+    from werkzeug.security import generate_password_hash
+    password_hash = generate_password_hash(password)
+    
+    cursor.execute('''
+        INSERT INTO users (username, password_hash, email, phone, role, permissions, data_scope)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+    ''', (username, password_hash, email, phone, role, '{}', '["all"]' if role == 'admin' else '["own"]'))
+    
+    user_id = cursor.lastrowid
+    conn.commit()
+    conn.close()
+    
+    # 记录日志
+    log_admin_action(session['user_id'], 'CREATE_USER', 'user', user_id, username)
+    
+    return jsonify({'success': True, 'message': '用户创建成功'})
+
 @app.route('/admin/user/<int:user_id>/promote')
 @admin_required
 def admin_promote_user(user_id):
@@ -655,7 +706,7 @@ def admin_permissions():
                          users=users,
                          roles=roles,
                          role_stats=role_stats,
-                         role_permissions=role_perms,
+                         role_perms=role_perms,
                          role_names=role_names,
                          category_names=category_names)
 

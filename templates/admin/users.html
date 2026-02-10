@@ -5,6 +5,56 @@
 {% block content %}
 <div class="admin-header">
     <h1>{{ _('manage_users') }}</h1>
+    <button class="btn btn-primary" onclick="showCreateUserModal()">
+        ➕ 创建用户
+    </button>
+</div>
+
+<!-- 创建用户模态框 -->
+<div id="createUserModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>创建新用户</h2>
+            <button class="close-btn" onclick="closeModal('createUserModal')">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="createUserForm" onsubmit="createUser(event)">
+                <div class="form-group">
+                    <label for="newUsername">用户名 *</label>
+                    <input type="text" id="newUsername" name="username" required 
+                           placeholder="请输入用户名" minlength="3" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label for="newEmail">邮箱 *</label>
+                    <input type="email" id="newEmail" name="email" required 
+                           placeholder="请输入邮箱">
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">密码 *</label>
+                    <input type="password" id="newPassword" name="password" required 
+                           placeholder="请输入密码 (至少6位)" minlength="6">
+                </div>
+                <div class="form-group">
+                    <label for="newPhone">手机号</label>
+                    <input type="tel" id="newPhone" name="phone" 
+                           placeholder="请输入手机号">
+                </div>
+                <div class="form-group">
+                    <label for="newRole">角色</label>
+                    <select id="newRole" name="role">
+                        <option value="user">普通用户</option>
+                        <option value="editor">编辑者</option>
+                        <option value="viewer">访客</option>
+                        <option value="admin">管理员</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('createUserModal')">取消</button>
+                    <button type="submit" class="btn btn-primary">创建</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
 <table class="admin-table" id="usersTable">
@@ -13,6 +63,7 @@
             <th>ID</th>
             <th>用户名</th>
             <th>邮箱</th>
+            <th>手机号</th>
             <th>角色</th>
             <th>注册时间</th>
             <th>操作</th>
@@ -29,9 +80,14 @@
                 {% endif %}
             </td>
             <td>{{ user.email }}</td>
+            <td>{{ user.phone or '—' }}</td>
             <td>
                 {% if user.role == 'admin' %}
                     <span class="badge badge-admin">管理员</span>
+                {% elif user.role == 'editor' %}
+                    <span class="badge badge-editor">编辑者</span>
+                {% elif user.role == 'viewer' %}
+                    <span class="badge badge-viewer">访客</span>
                 {% else %}
                     <span class="badge badge-user">用户</span>
                 {% endif %}
@@ -61,9 +117,143 @@
         </tr>
         {% else %}
         <tr>
-            <td colspan="6" class="empty">暂无用户数据</td>
+            <td colspan="7" class="empty">暂无用户数据</td>
         </tr>
         {% endfor %}
     </tbody>
 </table>
+
+<script>
+function showCreateUserModal() {
+    document.getElementById('createUserModal').style.display = 'block';
+}
+
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function createUser(event) {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    
+    fetch('/admin/user/create', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(Object.fromEntries(formData))
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            closeModal('createUserModal');
+            alert('用户创建成功！');
+            location.reload();
+        } else {
+            alert('创建失败: ' + (data.message || '未知错误'));
+        }
+    })
+    .catch(error => {
+        alert('创建失败: ' + error);
+    });
+}
+
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+    }
+};
+</script>
+
+<style>
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    margin: 100px auto;
+    padding: 0;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.badge-editor {
+    background: #4facfe;
+    color: white;
+}
+
+.badge-viewer {
+    background: #fa709a;
+    color: white;
+}
+
+.action-group {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+</style>
 {% endblock %}

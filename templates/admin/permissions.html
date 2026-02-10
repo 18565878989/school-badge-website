@@ -21,6 +21,10 @@
                     <h3>{{ role_names.get(role, role) }}</h3>
                     <span class="role-count">{{ role_stats.get(role, 0) }}人</span>
                 </div>
+                <div class="role-perms-count">
+                    {% set perms = role_perms.get(role, []) %}
+                    {{ perms|length }} 项权限
+                </div>
                 <div class="role-actions">
                     <button class="btn btn-sm btn-primary" onclick="showRolePermissions('{{ role }}')">
                         配置权限
@@ -31,9 +35,44 @@
         </div>
     </div>
 
-    <!-- 用户权限列表 -->
+    <!-- 权限定义 -->
     <div class="section">
-        <h2>用户权限详情</h2>
+        <h2>权限定义</h2>
+        <div class="permission-list">
+            <div class="perm-category">
+                <h4>🏫 学校管理</h4>
+                <div class="perm-items">
+                    <span class="perm-tag">view_schools - 查看学校</span>
+                    <span class="perm-tag">like_schools - 收藏学校</span>
+                    <span class="perm-tag">add_schools - 添加学校</span>
+                    <span class="perm-tag">edit_all_schools - 编辑所有学校</span>
+                    <span class="perm-tag">delete_all_schools - 删除所有学校</span>
+                </div>
+            </div>
+            <div class="perm-category">
+                <h4>👥 用户管理</h4>
+                <div class="perm-items">
+                    <span class="perm-tag">view_users - 查看用户</span>
+                    <span class="perm-tag">edit_users - 编辑用户</span>
+                    <span class="perm-tag">manage_users - 管理用户权限</span>
+                    <span class="perm-tag">delete_users - 删除用户</span>
+                </div>
+            </div>
+            <div class="perm-category">
+                <h4>⚙️ 系统管理</h4>
+                <div class="perm-items">
+                    <span class="perm-tag">view_logs - 查看日志</span>
+                    <span class="perm-tag">export_data - 导出数据</span>
+                    <span class="perm-tag">manage_roles - 管理角色</span>
+                    <span class="perm-tag">view_stats - 查看统计</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 用户权限管理 -->
+    <div class="section">
+        <h2>用户权限管理</h2>
         <table class="admin-table">
             <thead>
                 <tr>
@@ -42,8 +81,7 @@
                     <th>邮箱</th>
                     <th>角色</th>
                     <th>数据范围</th>
-                    <th>登录次数</th>
-                    <th>最后登录</th>
+                    <th>登录</th>
                     <th>状态</th>
                     <th>操作</th>
                 </tr>
@@ -63,15 +101,14 @@
                         </select>
                     </td>
                     <td>{{ user.data_scope or 'own' }}</td>
-                    <td>{{ user.login_count or 0 }}</td>
-                    <td>{{ user.last_login[:10] if user.last_login else '从未' }}</td>
+                    <td>{{ user.login_count or 0 }}次</td>
                     <td>
                         <span class="status-badge {{ user.status or 'active' }}">
                             {{ user.status or 'active' }}
                         </span>
                     </td>
                     <td>
-                        <button class="btn btn-sm btn-secondary" onclick="editUserPermissions({{ user.id }})">
+                        <button class="btn btn-sm btn-secondary" onclick="showUserPermissions({{ user.id }}, '{{ user.username }}', '{{ user.role }}')">
                             详细权限
                         </button>
                     </td>
@@ -84,24 +121,85 @@
 
 <!-- 角色权限配置模态框 -->
 <div id="roleModal" class="modal">
-    <div class="modal-content">
+    <div class="modal-content modal-lg">
         <div class="modal-header">
-            <h2 id="modalTitle">配置角色权限</h2>
+            <h2 id="roleModalTitle">配置角色权限</h2>
             <button class="close-btn" onclick="closeModal('roleModal')">&times;</button>
         </div>
         <div class="modal-body">
-            <form id="rolePermissionForm">
+            <form id="rolePermissionForm" onsubmit="saveRolePermissions(event)">
                 <input type="hidden" id="editRole" name="role">
                 
                 <div class="permission-groups">
-                    {% for category in ['schools', 'users', 'system'] %}
                     <div class="perm-group">
-                        <h4>{{ category_names.get(category, category) }}</h4>
-                        <div class="perm-list" id="perms-{{ category }}">
-                            <!-- 权限列表将通过JS动态生成 -->
+                        <h4>🏫 学校管理权限</h4>
+                        <div class="perm-checkboxes" id="perms-schools">
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="view_schools">
+                                <span>查看学校</span>
+                            </label>
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="like_schools">
+                                <span>收藏学校</span>
+                            </label>
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="add_schools">
+                                <span>添加学校</span>
+                            </label>
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="edit_all_schools">
+                                <span>编辑所有学校</span>
+                            </label>
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="delete_all_schools">
+                                <span>删除所有学校</span>
+                            </label>
                         </div>
                     </div>
-                    {% endfor %}
+                    
+                    <div class="perm-group">
+                        <h4>👥 用户管理权限</h4>
+                        <div class="perm-checkboxes" id="perms-users">
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="view_users">
+                                <span>查看用户</span>
+                            </label>
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="edit_users">
+                                <span>编辑用户</span>
+                            </label>
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="manage_users">
+                                <span>管理用户权限</span>
+                            </label>
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="delete_users">
+                                <span>删除用户</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="perm-group">
+                        <h4>⚙️ 系统管理权限</h4>
+                        <div class="perm-checkboxes" id="perms-system">
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="view_logs">
+                                <span>查看日志</span>
+                            </label>
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="export_data">
+                                <span>导出数据</span>
+                            </label>
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="manage_roles">
+                                <span>管理角色</span>
+                            </label>
+                            <label class="perm-checkbox">
+                                <input type="checkbox" name="permissions" value="view_stats">
+                                <span>查看统计</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="modal-actions">
@@ -113,93 +211,50 @@
     </div>
 </div>
 
-<!-- 用户权限配置模态框 -->
+<!-- 用户权限详情模态框 -->
 <div id="userModal" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h2>用户详细权限</h2>
+            <h2 id="userModalTitle">用户权限详情</h2>
             <button class="close-btn" onclick="closeModal('userModal')">&times;</button>
         </div>
         <div class="modal-body">
-            <div id="userPermissionDetails">
-                <!-- 用户权限详情 -->
+            <div id="userPermissionDetails" class="user-perm-details">
+                <!-- 动态填充 -->
+            </div>
+            <div class="modal-actions">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('userModal')">关闭</button>
             </div>
         </div>
     </div>
 </div>
 
 <script>
-// 角色权限数据
-const rolePermissions = {{ role_permissions | tojson }};
-
-// 权限分类名称
-const categoryNames = {
-    'schools': '学校管理',
-    'users': '用户管理',
-    'system': '系统管理'
-};
-
-// 权限名称
-const permissionNames = {
-    'view_schools': '查看学校',
-    'view_own_likes': '查看已收藏',
-    'like_schools': '收藏学校',
-    'edit_all_schools': '编辑所有学校',
-    'delete_all_schools': '删除所有学校',
-    'add_schools': '添加学校',
-    'view_users': '查看用户',
-    'edit_users': '编辑用户',
-    'manage_users': '管理用户权限',
-    'delete_users': '删除用户',
-    'view_logs': '查看日志',
-    'export_data': '导出数据',
-    'manage_roles': '管理角色',
-    'view_stats': '查看统计'
-};
+// 角色权限数据 (从后端传入)
+const rolePermissionsData = {{ role_perms | tojson }};
 
 function showRolePermissions(role) {
     document.getElementById('editRole').value = role;
-    document.getElementById('modalTitle').textContent = '配置 - ' + (roleNames[role] || role);
+    document.getElementById('roleModalTitle').textContent = '配置 - ' + (roleNames[role] || role);
     
-    // 显示各分类权限
-    ['schools', 'users', 'system'].forEach(cat => {
-        const container = document.getElementById('perms-' + cat);
-        container.innerHTML = '';
-        
-        Object.entries(permissionNames).forEach(([code, name]) => {
-            if (code.includes(cat.replace('s', '')) || (cat === 'system' && !code.includes('schools') && !code.includes('users'))) {
-                const checked = rolePermissions[role] && rolePermissions[role].includes(code) ? 'checked' : '';
-                container.innerHTML += `
-                    <label class="perm-item">
-                        <input type="checkbox" name="permissions" value="${code}" ${checked}>
-                        <span>${name}</span>
-                    </label>
-                `;
-            }
-        });
+    // 重置所有checkbox
+    document.querySelectorAll('#rolePermissionForm input[name="permissions"]').forEach(cb => {
+        cb.checked = false;
+    });
+    
+    // 设置已选中的权限
+    const rolePerms = rolePermissionsData[role] || [];
+    document.querySelectorAll('#rolePermissionForm input[name="permissions"]').forEach(cb => {
+        if (rolePerms.includes(cb.value)) {
+            cb.checked = true;
+        }
     });
     
     document.getElementById('roleModal').style.display = 'block';
 }
 
-function editUserPermissions(userId) {
-    // 显示用户权限详情
-    document.getElementById('userModal').style.display = 'block';
-}
-
-function updateUserRole(userId, role) {
-    fetch('/admin/user/' + userId + '/role', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({role: role})
-    }).then(r => r.json()).then(d => {
-        if (d.success) location.reload();
-    });
-}
-
-// 表单提交
-document.getElementById('rolePermissionForm').onsubmit = function(e) {
-    e.preventDefault();
+function saveRolePermissions(event) {
+    event.preventDefault();
     const role = document.getElementById('editRole').value;
     const perms = [];
     document.querySelectorAll('#rolePermissionForm input[name="permissions"]:checked').forEach(cb => {
@@ -210,24 +265,102 @@ document.getElementById('rolePermissionForm').onsubmit = function(e) {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({permissions: perms})
-    }).then(r => r.json()).then(d => {
+    })
+    .then(r => r.json())
+    .then(d => {
         if (d.success) {
             closeModal('roleModal');
+            alert('权限保存成功！');
             location.reload();
+        } else {
+            alert('保存失败: ' + (d.message || '未知错误'));
+        }
+    })
+    .catch(e => {
+        alert('保存失败: ' + e);
+    });
+}
+
+function updateUserRole(userId, role) {
+    fetch('/admin/user/' + userId + '/role', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({role: role})
+    })
+    .then(r => r.json())
+    .then(d => {
+        if (d.success) {
+            location.reload();
+        } else {
+            alert('更新失败: ' + (d.message || '未知错误'));
         }
     });
-};
+}
+
+function showUserPermissions(userId, username, role) {
+    document.getElementById('userModalTitle').textContent = username + ' - 权限详情';
+    
+    // 获取用户权限
+    const rolePerms = rolePermissionsData[role] || [];
+    
+    // 按类别分组
+    const perms = {
+        schools: ['view_schools', 'like_schools', 'add_schools', 'edit_all_schools', 'delete_all_schools'],
+        users: ['view_users', 'edit_users', 'manage_users', 'delete_users'],
+        system: ['view_logs', 'export_data', 'manage_roles', 'view_stats']
+    };
+    
+    const permNames = {
+        'view_schools': '查看学校',
+        'like_schools': '收藏学校',
+        'add_schools': '添加学校',
+        'edit_all_schools': '编辑所有学校',
+        'delete_all_schools': '删除所有学校',
+        'view_users': '查看用户',
+        'edit_users': '编辑用户',
+        'manage_users': '管理用户权限',
+        'delete_users': '删除用户',
+        'view_logs': '查看日志',
+        'export_data': '导出数据',
+        'manage_roles': '管理角色',
+        'view_stats': '查看统计'
+    };
+    
+    let html = '';
+    html += '<div class="user-role-info">';
+    html += '<p><strong>当前角色:</strong> ' + (roleNames[role] || role) + '</p>';
+    html += '</div>';
+    
+    for (const [category, codes] of Object.entries(perms)) {
+        html += '<div class="perm-category-detail">';
+        html += '<h5>' + (category === 'schools' ? '🏫 学校管理' : category === 'users' ? '👥 用户管理' : '⚙️ 系统管理') + '</h5>';
+        html += '<div class="perm-list">';
+        
+        for (const code of codes) {
+            const has = rolePerms.includes(code);
+            html += '<span class="perm-item ' + (has ? 'has' : 'no') + '">';
+            html += (has ? '✅' : '❌') + ' ' + permNames[code];
+            html += '</span>';
+        }
+        
+        html += '</div></div>';
+    }
+    
+    document.getElementById('userPermissionDetails').innerHTML = html;
+    document.getElementById('userModal').style.display = 'block';
+}
 
 function closeModal(id) {
     document.getElementById(id).style.display = 'none';
 }
 
-// 点击外部关闭
-window.onclick = function(e) {
-    if (e.target.classList.contains('modal')) {
-        e.target.style.display = 'none';
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
     }
 };
+
+const roleNames = {{ role_names | tojson }};
 </script>
 
 <style>
@@ -282,7 +415,7 @@ window.onclick = function(e) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .role-header h3 {
@@ -297,6 +430,12 @@ window.onclick = function(e) {
     font-size: 12px;
 }
 
+.role-perms-count {
+    font-size: 12px;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
 .role-actions {
     display: flex;
     gap: 10px;
@@ -304,6 +443,36 @@ window.onclick = function(e) {
 
 .role-actions .btn {
     flex: 1;
+}
+
+.permission-list {
+    display: grid;
+    gap: 15px;
+}
+
+.perm-category {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.perm-category h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.perm-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.perm-tag {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
 }
 
 .role-select {
@@ -328,7 +497,7 @@ window.onclick = function(e) {
     color: #c62828;
 }
 
-/* 模态框样式 */
+/* 模态框 */
 .modal {
     display: none;
     position: fixed;
@@ -343,11 +512,14 @@ window.onclick = function(e) {
 .modal-content {
     background: white;
     margin: 50px auto;
-    padding: 0;
     width: 90%;
     max-width: 700px;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.modal-content.modal-lg {
+    max-width: 800px;
 }
 
 .modal-header {
@@ -394,17 +566,17 @@ window.onclick = function(e) {
 
 .perm-group h4 {
     margin: 0 0 10px 0;
-    color: #333;
     font-size: 14px;
+    color: #333;
 }
 
-.perm-list {
+.perm-checkboxes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
 }
 
-.perm-item {
+.perm-checkbox {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -414,12 +586,61 @@ window.onclick = function(e) {
     cursor: pointer;
 }
 
-.perm-item:hover {
+.perm-checkbox:hover {
     background: #eee;
 }
 
-.perm-item input {
+.perm-checkbox input {
     cursor: pointer;
+}
+
+/* 用户权限详情 */
+.user-perm-details {
+    display: grid;
+    gap: 15px;
+}
+
+.user-role-info {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.user-role-info p {
+    margin: 0;
+}
+
+.perm-category-detail {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.perm-category-detail h5 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.perm-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.perm-item {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.perm-item.has {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.perm-item.no {
+    background: #ffebee;
+    color: #c62828;
 }
 </style>
 {% endblock %}
