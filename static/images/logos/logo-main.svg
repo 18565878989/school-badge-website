@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e"/>
+      <stop offset="100%" style="stop-color:#283593"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="50%" style="stop-color:#ffc107"/>
+      <stop offset="100%" style="stop-color:#ffb300"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 圆形背景 -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGrad)"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="url(#goldGrad)" stroke-width="8"/>
+  
+  <!-- 书本图标 - 象征知识 -->
+  <g filter="url(#shadow)">
+    <!-- 书本主体 -->
+    <rect x="156" y="180" width="200" height="140" rx="8" fill="#fff"/>
+    <rect x="160" y="184" width="192" height="132" rx="6" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+    
+    <!-- 书脊 -->
+    <rect x="256" y="180" width="4" height="140" fill="url(#goldGrad)"/>
+    
+    <!-- 书页线条 -->
+    <line x1="180" y1="220" x2="332" y2="220" stroke="#1a237e" stroke-width="2"/>
+    <line x1="180" y1="250" x2="332" y2="250" stroke="#1a237e" stroke-width="2"/>
+    <line x1="180" y1="280" x2="332" y2="280" stroke="#1a237e" stroke-width="2"/>
+  </g>
+  
+  <!-- 盾牌 - 象征荣誉与保护 -->
+  <path d="M256 340 L360 360 L360 420 Q360 460 256 480 Q152 460 152 420 L152 360 Z" 
+        fill="url(#goldGrad)" filter="url(#shadow)"/>
+  <path d="M256 355 L335 372 L335 420 Q335 450 256 467 Q177 450 177 420 L177 372 Z" 
+        fill="#fff"/>
+  
+  <!-- 盾牌内部学校编号暗示 -->
+  <text x="256" y="420" text-anchor="middle" font-family="Georgia, serif" 
+        font-size="28" font-weight="bold" fill="url(#goldGrad)">SCHOOL</text>
+  
+  <!-- 顶部装饰 -->
+  <path d="M256 40 L280 80 L232 80 Z" fill="url(#goldGrad)"/>
+  <circle cx="256" cy="35" r="12" fill="url(#goldGrad)"/>
+  
+  <!-- 星星装饰 -->
+  <polygon points="180,100 185,115 200,115 188,125 193,140 180,130 167,140 172,125 160,115 175,115" fill="url(#goldGrad)"/>
+  <polygon points="332,100 337,115 352,115 340,125 345,140 332,130 319,140 324,125 312,115 327,115" fill="url(#goldGrad)"/>
+  
+  <!-- 绶带 -->
+  <path d="M100 380 Q80 400 100 420 L140 440 Q120 420 140 400 Z" fill="url(#goldGrad)" opacity="0.9"/>
+  <path d="M412 380 Q432 400 412 420 L372 440 Q392 420 372 400 Z" fill="url(#goldGrad)" opacity="0.9"/>
+  
+  <!-- 底部文字背景 -->
+  <rect x="106" y="450" width="300" height="50" rx="25" fill="#fff" opacity="0.95"/>
+  
+  <!-- 底部文字 -->
+  <text x="256" y="480" text-anchor="middle" font-family="'Microsoft YaHei', 'Heiti SC', sans-serif" 
+        font-size="22" font-weight="bold" fill="#1a237e">校徽网</text>
+  <text x="256" y="495" text-anchor="middle" font-family="Georgia, serif" 
+        font-size="12" fill="#666">SCHOOL BADGE</text>
+</svg>
