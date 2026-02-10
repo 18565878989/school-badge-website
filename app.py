@@ -11,6 +11,8 @@ from models import (
     init_db, create_user, verify_password, get_user_by_id, is_admin,
     get_all_users, update_user_role, delete_user,
     get_all_schools, get_school_by_id, get_regions,
+    get_schools_by_region, get_schools_by_level, get_schools_by_region_and_level,
+    search_schools,
     create_school, update_school, delete_school,
     get_like, get_likes_count, like_school,
     unlike_school, get_user_liked_schools,
