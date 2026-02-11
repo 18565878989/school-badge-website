@@ -3,605 +3,37 @@
 {% block title %}{{ school.name }} - 校徽网{% endblock %}
 
 {% block content %}
-<style>
-    /* Quick Nav - Consistent with Main Page */
-    .quick-nav {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-bottom: 24px;
-        flex-wrap: wrap;
-    }
-    
-    .quick-nav a {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        padding: 8px 16px;
-        background: var(--card-bg);
-        border-radius: 20px;
-        font-size: 0.85rem;
-        color: var(--text-secondary);
-        text-decoration: none;
-        font-weight: 500;
-        transition: all 0.2s ease;
-    }
-    
-    .quick-nav a:hover {
-        color: var(--primary);
-        background: rgba(30, 58, 95, 0.08);
-    }
-    
-    .quick-nav a svg {
-        width: 14px;
-        height: 14px;
-    }
-    
-    .quick-nav .separator {
-        color: var(--text-tertiary);
-        font-size: 0.8rem;
-    }
-    
-    /* School Detail - Beautiful Design */
-    .school-detail {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 0 80px;
-        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
-    }
-    
-    /* Main Card */
-    .detail-card {
-        background: var(--background);
-        border-radius: 24px;
-        overflow: hidden;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-        display: grid;
-        grid-template-columns: 420px 1fr;
-        transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
-    
-    .detail-card:hover {
-        box-shadow: 0 12px 48px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.04);
-        transform: translateY(-2px);
-    }
-    
-    /* Badge Section */
-    .badge-section {
-        position: relative;
-        aspect-ratio: 4/3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(180deg, #ffffff 0%, #fafafa 50%, #f5f5f5 100%);
-        padding: 60px;
-        overflow: hidden;
-    }
-    
-    .badge-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: 
-            radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-            radial-gradient(circle at 80% 20%, rgba(30, 58, 95, 0.05) 0%, transparent 50%);
-        pointer-events: none;
-    }
-    
-    .badge-section::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 80px;
-        background: linear-gradient(to top, rgba(0,0,0,0.03), transparent);
-    }
-    
-    .detail-badge {
-        max-width: 65%;
-        max-height: 65%;
-        object-fit: contain;
-        filter: drop-shadow(0 8px 32px rgba(30, 58, 95, 0.15));
-        transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-        position: relative;
-        z-index: 1;
-    }
-    
-    .detail-card:hover .detail-badge {
-        transform: scale(1.05) translateY(-4px);
-        filter: drop-shadow(0 16px 48px rgba(30, 58, 95, 0.2));
-    }
-    
-    .badge-placeholder {
-        width: 140px;
-        height: 140px;
-        background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
-        border-radius: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 3.5rem;
-        position: relative;
-        z-index: 1;
-    }
-    
-    /* Action Buttons */
-    .action-buttons {
-        position: absolute;
-        bottom: 24px;
-        left: 24px;
-        right: 24px;
-        display: flex;
-        gap: 12px;
-        z-index: 2;
-    }
-    
-    .action-buttons .btn {
-        flex: 1;
-        padding: 14px 24px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        border-radius: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-        backdrop-filter: blur(10px);
-        background: rgba(255,255,255,0.95);
-        border: 1px solid rgba(0,0,0,0.06);
-        box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-        cursor: pointer;
-    }
-    
-    .action-buttons .btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    }
-    
-    .action-buttons .btn svg {
-        width: 18px;
-        height: 18px;
-    }
-    
-    .btn-like {
-        color: var(--text);
-    }
-    
-    .btn-like.liked {
-        background: linear-gradient(135deg, var(--gold) 0%, #E8C860 100%) !important;
-        color: white !important;
-        border: none !important;
-    }
-    
-    .btn-download {
-        color: var(--text);
-    }
-    
-    /* Info Section */
-    .info-section {
-        padding: 40px;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    /* Level Badge */
-    .level-badge {
-        display: inline-flex;
-        padding: 8px 20px;
-        border-radius: 24px;
-        font-size: 0.75rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 12px rgba(30, 58, 95, 0.2);
-    }
-    
-    .level-university {
-        background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%);
-    }
-    
-    .level-middle {
-        background: linear-gradient(135deg, #5C3D6E 0%, #7B5D9E 100%);
-    }
-    
-    .level-elementary {
-        background: linear-gradient(135deg, #D4AF37 0%, #E8C860 100%);
-        color: #1a1a1a;
-    }
-    
-    .level-kindergarten {
-        background: linear-gradient(135deg, #2E8B57 0%, #3CB371 100%);
-    }
-    
-    /* School Name */
-    .school-header {
-        margin-bottom: 24px;
-    }
-    
-    .info-section h1 {
-        font-size: clamp(1.6rem, 3vw, 2.2rem);
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        line-height: 1.2;
-        color: #1a1a1a;
-        margin-bottom: 8px;
-    }
-    
-    .info-section .name-cn {
-        font-size: 1.1rem;
-        color: var(--text-secondary);
-        font-weight: 400;
-        letter-spacing: 0.02em;
-    }
-    
-    /* Meta Info */
-    .meta-info {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 28px;
-        flex-wrap: wrap;
-    }
-    
-    .likes-count {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 0.95rem;
-        color: var(--text-secondary);
-        padding: 10px 20px;
-        background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.04) 100%);
-        border-radius: 24px;
-        font-weight: 500;
-    }
-    
-    .likes-count svg {
-        width: 18px;
-        height: 18px;
-        color: var(--gold);
-    }
-    
-    /* Motto */
-    .motto-section {
-        padding: 28px 32px;
-        background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%);
-        color: white;
-        border-radius: 20px;
-        margin-bottom: 28px;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .motto-section::before {
-        content: '"';
-        position: absolute;
-        top: -10px;
-        left: 20px;
-        font-size: 6rem;
-        font-family: Georgia, serif;
-        opacity: 0.1;
-        line-height: 1;
-    }
-    
-    .motto-section::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 1px;
-        background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
-    }
-    
-    .motto-label {
-        font-size: 0.7rem;
-        text-transform: uppercase;
-        letter-spacing: 0.15em;
-        opacity: 0.7;
-        margin-bottom: 12px;
-        font-weight: 600;
-    }
-    
-    .motto-text {
-        font-size: 1.2rem;
-        font-style: italic;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
-    
-    /* Info Grid */
-    .info-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-        margin-bottom: 28px;
-    }
-    
-    .info-item {
-        padding: 24px;
-        background: linear-gradient(135deg, #fafafa 0%, #f5f5f7 100%);
-        border-radius: 16px;
-        transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
-    
-    .info-item:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 12px 32px rgba(0,0,0,0.06);
-        background: linear-gradient(135deg, #ffffff 0%, #f5f5f7 100%);
-    }
-    
-    .info-item .label {
-        font-size: 0.7rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        color: var(--text-secondary);
-        margin-bottom: 10px;
-        font-weight: 600;
-    }
-    
-    .info-item .value {
-        font-size: 0.95rem;
-        color: #1a1a1a;
-        font-weight: 500;
-        line-height: 1.5;
-    }
-    
-    .info-item a {
-        color: var(--primary);
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-    }
-    
-    .info-item a:hover {
-        color: var(--gold);
-    }
-    
-    .info-item a svg {
-        width: 14px;
-        height: 14px;
-    }
-    
-    /* Website Button */
-    .website-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 14px;
-        padding: 18px 32px;
-        background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%);
-        color: white;
-        border-radius: 24px;
-        font-weight: 600;
-        font-size: 1rem;
-        text-decoration: none;
-        margin-bottom: 28px;
-        transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-        box-shadow: 0 8px 24px rgba(30, 58, 95, 0.3);
-    }
-    
-    .website-link:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 16px 40px rgba(30, 58, 95, 0.4);
-        color: white;
-    }
-    
-    .website-link svg {
-        width: 20px;
-        height: 20px;
-    }
-    
-    /* Description */
-    .description {
-        margin-bottom: 28px;
-    }
-    
-    .description h3 {
-        font-size: 1.1rem;
-        font-weight: 700;
-        margin-bottom: 16px;
-        color: #1a1a1a;
-        letter-spacing: -0.01em;
-    }
-    
-    .description p {
-        color: var(--text-secondary);
-        line-height: 1.8;
-        font-size: 0.95rem;
-        padding: 24px 28px;
-        background: linear-gradient(135deg, #fafafa 0%, #f5f5f7 100%);
-        border-radius: 16px;
-    }
-    
-    /* Map Section */
-    .map-section {
-        padding: 28px;
-        background: linear-gradient(135deg, #fafafa 0%, #f5f5f7 100%);
-        border-radius: 20px;
-        margin-top: auto;
-    }
-    
-    .map-section h3 {
-        font-size: 1rem;
-        font-weight: 700;
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        color: #1a1a1a;
-    }
-    
-    .map-section h3 svg {
-        width: 22px;
-        height: 22px;
-        color: var(--primary);
-    }
-    
-    .map-container {
-        border-radius: 16px;
-        overflow: hidden;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-    }
-    
-    .map-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        color: var(--primary);
-        font-size: 0.95rem;
-        font-weight: 600;
-        text-decoration: none;
-        padding: 14px 24px;
-        background: white;
-        border-radius: 24px;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-    }
-    
-    .map-link:hover {
-        transform: translateX(6px);
-        color: var(--gold);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
-    
-    .map-link svg {
-        width: 18px;
-        height: 18px;
-    }
-    
-    /* Animation */
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
-    .detail-card {
-        animation: fadeInUp 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-    }
-    
-    /* Responsive */
-    @media (max-width: 1024px) {
-        .detail-card {
-            grid-template-columns: 1fr;
-        }
-        
-        .badge-section {
-            aspect-ratio: 16/10;
-            padding: 40px;
-        }
-        
-        .detail-badge {
-            max-width: 50%;
-            max-height: 50%;
-        }
-        
-        .action-buttons {
-            position: relative;
-            bottom: auto;
-            left: auto;
-            right: auto;
-            margin-top: 24px;
-            padding: 0 40px 40px;
-            background: linear-gradient(to top, rgba(0,0,0,0.03), transparent);
-        }
-        
-        .info-section {
-            padding: 32px;
-        }
-        
-        .info-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-    
-    @media (max-width: 600px) {
-        .school-detail {
-            padding: 0 0 40px;
-        }
-        
-        .quick-nav {
-            gap: 6px;
-        }
-        
-        .quick-nav a {
-            padding: 6px 12px;
-            font-size: 0.8rem;
-        }
-        
-        .info-section {
-            padding: 24px;
-        }
-        
-        .info-section h1 {
-            font-size: 1.5rem;
-        }
-        
-        .motto-section {
-            padding: 24px;
-        }
-        
-        .motto-text {
-            font-size: 1.1rem;
-        }
-        
-        .action-buttons {
-            padding: 0 24px 24px;
-        }
-        
-        .action-buttons .btn {
-            padding: 12px 16px;
-            font-size: 0.85rem;
-        }
-    }
-</style>
-
-<!-- Quick Nav - Consistent with Main Page -->
-<div class="quick-nav">
-    <a href="{{ url_for('index') }}">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<!-- Quick Nav -->
+<div class="filters" style="margin-bottom: 24px;">
+    <a href="{{ url_for('index') }}" class="filter-group" style="padding: 8px 16px; display: inline-flex; align-items: center; gap: 6px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
             <polyline points="9 22 9 12 15 12 15 22"/>
         </svg>
         {{ _('home') }}
     </a>
-    <span class="separator">/</span>
-    <a href="{{ url_for('campus_north_america') }}">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <span style="color: var(--text-tertiary); margin: 0 8px;">/</span>
+    <a href="{{ url_for('campus_north_america') }}" class="filter-group" style="padding: 8px 16px; display: inline-flex; align-items: center; gap: 6px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
             <circle cx="8.5" cy="8.5" r="1.5"/>
             <polyline points="21 15 16 10 5 21"/>
         </svg>
         {{ _('campus_gallery') }}
     </a>
-    <span class="separator">/</span>
+    <span style="color: var(--text-tertiary); margin: 0 8px;">/</span>
     {% if not session.get('user_id') %}
-        <a href="{{ url_for('login') }}">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <a href="{{ url_for('login') }}" class="filter-group" style="padding: 8px 16px; display: inline-flex; align-items: center; gap: 6px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
                 <polyline points="10 17 15 12 10 7"/>
                 <line x1="15" y1="12" x2="3" y2="12"/>
             </svg>
             {{ _('login') }}
         </a>
-        <span class="separator">/</span>
-        <a href="{{ url_for('register') }}">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <span style="color: var(--text-tertiary); margin: 0 8px;">/</span>
+        <a href="{{ url_for('register') }}" class="filter-group" style="padding: 8px 16px; display: inline-flex; align-items: center; gap: 6px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                 <circle cx="8.5" cy="7" r="4"/>
                 <line x1="20" y1="8" x2="20" y2="14"/>
@@ -610,15 +42,15 @@
             {{ _('register') }}
         </a>
     {% else %}
-        <a href="{{ url_for('my_likes') }}">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <a href="{{ url_for('my_likes') }}" class="filter-group" style="padding: 8px 16px; display: inline-flex; align-items: center; gap: 6px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
             </svg>
             {{ _('my_likes') }}
         </a>
-        <span class="separator">/</span>
-        <a href="{{ url_for('logout') }}">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <span style="color: var(--text-tertiary); margin: 0 8px;">/</span>
+        <a href="{{ url_for('logout') }}" class="filter-group" style="padding: 8px 16px; display: inline-flex; align-items: center; gap: 6px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
                 <polyline points="16 17 21 12 16 7"/>
                 <line x1="21" y1="12" x2="9" y2="12"/>
@@ -628,29 +60,30 @@
     {% endif %}
 </div>
 
-<!-- Main Card -->
-<div class="detail-card">
+<!-- Main Detail Card - Same as School Card -->
+<div class="school-card" style="display: grid; grid-template-columns: 380px 1fr; max-width: 1100px; margin: 0 auto;">
     <!-- Badge Section -->
-    <div class="badge-section">
+    <div class="badge-container" style="aspect-ratio: auto; height: auto; min-height: 320px;">
         {% if school.badge_url %}
-            <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="detail-badge">
+            <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="badge-image">
         {% else %}
-            <div class="badge-placeholder">🎓</div>
+            <div class="badge-placeholder" style="width: 120px; height: 120px; font-size: 3rem;">🎓</div>
         {% endif %}
         
-        <div class="action-buttons">
+        <!-- Like & Download Buttons -->
+        <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; display: flex; gap: 12px; z-index: 10;">
             {% if session.get('user_id') %}
-                <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
-                    <button type="submit" class="btn btn-like {% if user_liked %}liked{% endif %}">
-                        <svg viewBox="0 0 24 24" fill="{% if user_liked %}currentColor{% else %}none{% endif %}" stroke="currentColor" stroke-width="2">
+                <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST" style="flex: 1;">
+                    <button type="submit" class="btn {% if user_liked %}btn-primary{% else %}btn-secondary{% endif %}" style="width: 100%; padding: 12px 16px; border-radius: 20px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="{% if user_liked %}currentColor{% else %}none{% endif %}" stroke="currentColor" stroke-width="2">
                             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                         </svg>
                         {% if user_liked %}{{ _('liked') }}{% else %}{{ _('like') }}{% endif %}
                     </button>
                 </form>
             {% endif %}
-            <button class="btn btn-download" onclick="downloadBadge()">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <button onclick="downloadBadge()" class="btn btn-secondary" style="flex: 1; padding: 12px 16px; border-radius: 20px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                     <polyline points="7 10 12 15 17 10"/>
                     <line x1="12" y1="15" x2="12" y2="3"/>
@@ -661,9 +94,9 @@
     </div>
     
     <!-- Info Section -->
-    <div class="info-section">
+    <div class="school-info" style="padding: 32px;">
         <!-- Level Badge -->
-        <span class="level-badge level-{{ school.level }}">
+        <span class="level-badge level-{{ school.level }}" style="position: static; display: inline-block; margin-bottom: 16px;">
             {% if school.level == 'university' %}{{ _('university') }}
             {% elif school.level == 'middle' %}{{ _('middle_school') }}
             {% elif school.level == 'elementary' %}{{ _('elementary_school') }}
@@ -671,90 +104,94 @@
             {% else %}{{ school.level }}{% endif %}
         </span>
         
-        <div class="school-header">
-            <h1>{{ school.name }}</h1>
-            {% if school.name_cn %}
-                <p class="name-cn">{{ school.name_cn }}</p>
-            {% endif %}
-        </div>
+        <!-- School Name -->
+        <h3 style="font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: 600; letter-spacing: -0.01em; margin-bottom: 8px;">
+            {{ school.name }}
+        </h3>
+        {% if school.name_cn %}
+            <p class="motto" style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 20px;">{{ school.name_cn }}</p>
+        {% endif %}
         
-        <div class="meta-info">
-            <span class="likes-count">
-                <svg viewBox="0 0 24 24" fill="currentColor">
+        <!-- Meta Info -->
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+            <span class="likes-count" style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--text-secondary); padding: 8px 16px; background: var(--card-bg); border-radius: 20px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold);" stroke="none;">
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
                 {{ likes_count }} {{ _('likes') }}
             </span>
         </div>
         
+        <!-- Motto -->
         {% if school.motto %}
-        <div class="motto-section">
-            <p class="motto-label">{{ _('motto_label') }}</p>
-            <p class="motto-text">"{{ school.motto }}"</p>
+        <div class="motto-section" style="background: linear-gradient(135deg, #F5F5F7 0%, #FAFAFA 100%); padding: 24px; border-radius: 16px; margin-bottom: 24px; border-left: 4px solid var(--gold);">
+            <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('motto_label') }}</p>
+            <p style="font-size: 1.1rem; font-style: italic; color: var(--text); line-height: 1.5;">"{{ school.motto }}"</p>
         </div>
         {% endif %}
         
-        <div class="info-grid">
+        <!-- Info Grid -->
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 24px;">
             {% if school.region %}
-            <div class="info-item">
-                <p class="label">{{ _('region') }}</p>
-                <p class="value">{{ school.region }}</p>
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('region') }}</p>
+                <p style="font-size: 0.95rem; color: var(--text); font-weight: 500;">{{ school.region }}</p>
             </div>
             {% endif %}
             
             {% if school.country or school.city %}
-            <div class="info-item">
-                <p class="label">{{ _('location') }}</p>
-                <p class="value">{{ [school.city, school.country]|select|join(', ') }}</p>
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('location') }}</p>
+                <p style="font-size: 0.95rem; color: var(--text); font-weight: 500;">{{ [school.city, school.country]|select|join(', ') }}</p>
             </div>
             {% endif %}
             
             {% if school.district %}
-            <div class="info-item">
-                <p class="label">{{ _('district') }}</p>
-                <p class="value">{{ school.district }}</p>
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('district') }}</p>
+                <p style="font-size: 0.95rem; color: var(--text); font-weight: 500;">{{ school.district }}</p>
             </div>
             {% endif %}
             
             {% if school.address %}
-            <div class="info-item">
-                <p class="label">{{ _('address') }}</p>
-                <p class="value">{{ school.address }}</p>
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('address') }}</p>
+                <p style="font-size: 0.95rem; color: var(--text); font-weight: 500;">{{ school.address }}</p>
             </div>
             {% endif %}
             
             {% if school.supervisor %}
-            <div class="info-item">
-                <p class="label">{{ _('supervisor') }}</p>
-                <p class="value">{{ school.supervisor }}</p>
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('supervisor') }}</p>
+                <p style="font-size: 0.95rem; color: var(--text); font-weight: 500;">{{ school.supervisor }}</p>
             </div>
             {% endif %}
             
             {% if school.principal %}
-            <div class="info-item">
-                <p class="label">{{ _('principal') }}</p>
-                <p class="value">{{ school.principal }}</p>
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('principal') }}</p>
+                <p style="font-size: 0.95rem; color: var(--text); font-weight: 500;">{{ school.principal }}</p>
             </div>
             {% endif %}
             
             {% if school.phone %}
-            <div class="info-item">
-                <p class="label">{{ _('phone') }}</p>
-                <p class="value">{{ school.phone }}</p>
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('phone') }}</p>
+                <p style="font-size: 0.95rem; color: var(--text); font-weight: 500;">{{ school.phone }}</p>
             </div>
             {% endif %}
             
             {% if school.fax %}
-            <div class="info-item">
-                <p class="label">{{ _('fax') }}</p>
-                <p class="value">{{ school.fax }}</p>
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('fax') }}</p>
+                <p style="font-size: 0.95rem; color: var(--text); font-weight: 500;">{{ school.fax }}</p>
             </div>
             {% endif %}
             
             {% if school.gender %}
-            <div class="info-item">
-                <p class="label">{{ _('gender_type') }}</p>
-                <p class="value">
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('gender_type') }}</p>
+                <p style="font-size: 0.95rem; color: var(--text); font-weight: 500;">
                     {% if school.gender == 'CO-ED' %}{{ _('gender_coed') }}
                     {% elif school.gender == 'GIRLS' %}{{ _('gender_girls') }}
                     {% elif school.gender == 'BOYS' %}{{ _('gender_boys') }}
@@ -764,9 +201,9 @@
             {% endif %}
             
             {% if school.finance_type %}
-            <div class="info-item">
-                <p class="label">{{ _('finance_type') }}</p>
-                <p class="value">
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('finance_type') }}</p>
+                <p style="font-size: 0.95rem; color: var(--text); font-weight: 500;">
                     {% if school.finance_type == 'Government' %}{{ _('finance_government') }}
                     {% elif school.finance_type == 'Aided' %}{{ _('finance_aided') }}
                     {% elif school.finance_type == 'Direct' %}{{ _('finance_direct') }}
@@ -777,59 +214,32 @@
             </div>
             {% endif %}
             
-            {% if school.session_type %}
-            <div class="info-item">
-                <p class="label">{{ _('session_type') }}</p>
-                <p class="value">
-                    {% if school.session_type == 'WD' %}{{ _('session_wd') }}
-                    {% elif school.session_type == 'AM' %}{{ _('session_am') }}
-                    {% elif school.session_type == 'PM' %}{{ _('session_pm') }}
-                    {% else %}{{ school.session_type }}{% endif %}
-                </p>
-            </div>
-            {% endif %}
-            
             {% if school.founded %}
-            <div class="info-item">
-                <p class="label">{{ _('founded') }}</p>
-                <p class="value">{{ school.founded }}</p>
-            </div>
-            {% endif %}
-            
-            {% if school.school_code %}
-            <div class="info-item">
-                <p class="label">{{ _('school_code') }}</p>
-                <p class="value">{{ school.school_code }}</p>
-            </div>
-            {% endif %}
-            
-            {% if school.school_type %}
-            <div class="info-item">
-                <p class="label">{{ _('school_type') }}</p>
-                <p class="value">{{ school.school_type }}</p>
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('founded') }}</p>
+                <p style="font-size: 0.95rem; color: var(--text); font-weight: 500;">{{ school.founded }}</p>
             </div>
             {% endif %}
             
             {% if school.website %}
-            <div class="info-item">
-                <p class="label">{{ _('website') }}</p>
-                <p class="value">
-                    <a href="{{ school.website }}" target="_blank">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="2" y1="12" x2="22" y2="12"/>
-                            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-                        </svg>
-                        {{ _('visit_website') }}
-                    </a>
-                </p>
+            <div class="info-item" style="padding: 20px 24px; background: var(--card-bg); border-radius: 14px;">
+                <p class="label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">{{ _('website') }}</p>
+                <a href="{{ school.website }}" target="_blank" style="font-size: 0.95rem; color: var(--primary); font-weight: 500; display: flex; align-items: center; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                    </svg>
+                    {{ _('visit_website') }}
+                </a>
             </div>
             {% endif %}
         </div>
         
+        <!-- Website Button -->
         {% if school.website %}
-        <a href="{{ school.website }}" target="_blank" class="website-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <a href="{{ school.website }}" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 32px; border-radius: 24px; font-weight: 600; margin-bottom: 24px; width: fit-content;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="10"/>
                 <line x1="2" y1="12" x2="22" y2="12"/>
                 <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
@@ -838,28 +248,21 @@
         </a>
         {% endif %}
         
-        {% if school.description %}
-            <div class="description">
-                <h3>{{ _('description_title') }}</h3>
-                <p>{{ school.description }}</p>
-            </div>
-        {% endif %}
-        
         <!-- Google Maps -->
         {% if school.address %}
-        <div class="map-section">
-            <h3>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <div style="background: var(--card-bg); padding: 24px; border-radius: 16px;">
+            <h4 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary);" stroke-width="2">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
                     <circle cx="12" cy="10" r="3"/>
                 </svg>
                 {{ _('map_location') }}
-            </h3>
-            <div class="map-container">
+            </h4>
+            <div style="border-radius: 12px; overflow: hidden; margin-bottom: 16px;">
                 <iframe 
                     width="100%" 
-                    height="220" 
-                    style="border:0; border-radius: 16px;" 
+                    height="200" 
+                    style="border:0; display: block;" 
                     loading="lazy" 
                     allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade"
@@ -867,8 +270,8 @@
                 </iframe>
             </div>
             <a href="https://www.google.com/maps/search/?api=1&query={{ (school.address ~ ', ' ~ school.city ~ ', ' ~ school.country) | urlencode }}" 
-               target="_blank" class="map-link">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+               target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); font-size: 0.9rem; font-weight: 500; text-decoration: none;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                     <polyline points="15 3 21 3 21 9"/>
                     <line x1="10" y1="14" x2="21" y2="3"/>
