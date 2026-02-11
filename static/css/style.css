@@ -229,73 +229,214 @@ main {
     margin-bottom: 32px;
 }
 
-/* School Cards - Apple Style */
+/* ========================================
+   APPLE-STYLE SCHOOL CARDS
+   ======================================== */
 .schools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 32px;
+    padding: 24px 0 80px;
 }
 
 .school-card {
     background: var(--background);
-    border-radius: var(--radius);
+    border-radius: 20px;
     overflow: hidden;
     text-decoration: none;
     color: inherit;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-    border: 1px solid rgba(0,0,0,0.04);
-}
-
-.school-card:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-hover);
-}
-
-.badge-container {
-    height: 180px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.02);
+    transition: all 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(180deg, #FAFAFA 0%, var(--card-bg) 100%);
-    padding: 32px;
-}
-
-.badge-image {
-    max-width: 140px;
-    max-height: 140px;
-    object-fit: contain;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
-    transition: transform 0.3s ease;
-}
-
-.school-card:hover .badge-image {
-    transform: scale(1.08);
-}
-
-.school-info {
-    padding: 20px 24px 24px;
+    flex-direction: column;
     position: relative;
 }
 
+.school-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.04);
+}
+
+.badge-container {
+    position: relative;
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);
+    padding: 40px;
+    overflow: hidden;
+}
+
+.badge-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to top, rgba(0,0,0,0.04), transparent);
+}
+
+.badge-image {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.08));
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    position: relative;
+    z-index: 1;
+}
+
+.school-card:hover .badge-image {
+    transform: scale(1.12) rotate(1deg);
+}
+
+.school-info {
+    padding: 28px 32px 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: var(--background);
+}
+
 .school-info h3 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 6px;
+    line-height: 1.25;
     letter-spacing: -0.01em;
+    margin-bottom: 10px;
+    color: var(--text);
 }
 
 .school-info .motto {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: var(--text-secondary);
-    margin-bottom: 8px;
+    font-weight: 400;
     font-style: italic;
+    margin-bottom: 6px;
+    line-height: 1.4;
 }
 
-.location {
+.school-info .location {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     font-size: 0.85rem;
     color: var(--text-secondary);
-    margin-bottom: 12px;
+    margin-top: auto;
+    padding-top: 16px;
+}
+
+.location svg {
+    width: 14px;
+    height: 14px;
+    opacity: 0.7;
+}
+
+.level-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 2px 8px rgba(30, 58, 95, 0.25);
+    z-index: 2;
+}
+
+.level-university {
+    background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%);
+}
+
+.level-middle {
+    background: linear-gradient(135deg, #5C3D6E 0%, #7B5D9E 100%);
+}
+
+.level-elementary {
+    background: linear-gradient(135deg, #D4AF37 0%, #E8C860 100%);
+    color: var(--primary-dark);
+}
+
+.level-kindergarten {
+    background: linear-gradient(135deg, #2E8B57 0%, #3CB371 100%);
+}
+
+/* Country Flag */
+.country-flag {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    font-size: 1.8rem;
+    line-height: 1;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.1));
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.school-card:hover .country-flag {
+    transform: scale(1.2) rotate(-3deg);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.schools-grid .school-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.schools-grid .school-card:nth-child(1) { animation-delay: 0.06s; }
+.schools-grid .school-card:nth-child(2) { animation-delay: 0.09s; }
+.schools-grid .school-card:nth-child(3) { animation-delay: 0.12s; }
+.schools-grid .school-card:nth-child(4) { animation-delay: 0.15s; }
+.schools-grid .school-card:nth-child(5) { animation-delay: 0.18s; }
+.schools-grid .school-card:nth-child(6) { animation-delay: 0.21s; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .schools-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .school-card {
+        border-radius: 16px;
+    }
+    
+    .badge-container {
+        aspect-ratio: 16/10;
+        padding: 28px;
+    }
+    
+    .school-info {
+        padding: 24px;
+    }
+    
+    .level-badge {
+        top: 16px;
+        right: 16px;
+    }
+    
+    .country-flag {
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.5rem;
+    }
 }
 
 .level-badge {
