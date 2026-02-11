@@ -42,52 +42,28 @@
         font-size: 0.8rem;
     }
     
-    /* School Detail - Aligned with Main Page Design */
+    /* School Detail - Beautiful Design */
     .school-detail {
-        max-width: 1100px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 0 0 80px;
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
     }
     
-    /* Back Link - Consistent with Card Design */
-    .back-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--text-secondary);
-        font-size: 0.9rem;
-        text-decoration: none;
-        margin-bottom: 24px;
-        font-weight: 500;
-        transition: all 0.2s ease;
-        padding: 12px 20px;
-        background: var(--card-bg);
-        border-radius: 20px;
-    }
-    
-    .back-link:hover {
-        color: var(--gold);
-        transform: translateX(-4px);
-    }
-    
-    .back-link svg {
-        width: 16px;
-        height: 16px;
-    }
-    
-    /* Main Card - Same as School Card */
+    /* Main Card */
     .detail-card {
         background: var(--background);
-        border-radius: 20px;
+        border-radius: 24px;
         overflow: hidden;
-        box-shadow: 0 2px 20px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.02);
-        transition: all 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
+        box-shadow: 0 4px 24px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
         display: grid;
-        grid-template-columns: 380px 1fr;
+        grid-template-columns: 420px 1fr;
+        transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
     
     .detail-card:hover {
-        box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.04);
+        box-shadow: 0 12px 48px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.04);
+        transform: translateY(-2px);
     }
     
     /* Badge Section */
@@ -97,9 +73,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);
+        background: linear-gradient(180deg, #ffffff 0%, #fafafa 50%, #f5f5f5 100%);
         padding: 60px;
         overflow: hidden;
+    }
+    
+    .badge-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+            radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(30, 58, 95, 0.05) 0%, transparent 50%);
+        pointer-events: none;
     }
     
     .badge-section::after {
@@ -108,41 +97,44 @@
         bottom: 0;
         left: 0;
         right: 0;
-        height: 60px;
-        background: linear-gradient(to top, rgba(0,0,0,0.04), transparent);
+        height: 80px;
+        background: linear-gradient(to top, rgba(0,0,0,0.03), transparent);
     }
     
     .detail-badge {
-        max-width: 70%;
-        max-height: 70%;
+        max-width: 65%;
+        max-height: 65%;
         object-fit: contain;
-        filter: drop-shadow(0 4px 16px rgba(0,0,0,0.08));
-        transition: all 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
+        filter: drop-shadow(0 8px 32px rgba(30, 58, 95, 0.15));
+        transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        position: relative;
         z-index: 1;
     }
     
     .detail-card:hover .detail-badge {
-        transform: scale(1.08);
-        filter: drop-shadow(0 8px 24px rgba(0,0,0,0.12));
+        transform: scale(1.05) translateY(-4px);
+        filter: drop-shadow(0 16px 48px rgba(30, 58, 95, 0.2));
     }
     
     .badge-placeholder {
-        width: 120px;
-        height: 120px;
-        background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);
-        border-radius: 24px;
+        width: 140px;
+        height: 140px;
+        background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+        border-radius: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 3rem;
+        font-size: 3.5rem;
+        position: relative;
+        z-index: 1;
     }
     
     /* Action Buttons */
     .action-buttons {
         position: absolute;
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
+        bottom: 24px;
+        left: 24px;
+        right: 24px;
         display: flex;
         gap: 12px;
         z-index: 2;
@@ -150,29 +142,30 @@
     
     .action-buttons .btn {
         flex: 1;
-        padding: 12px 20px;
+        padding: 14px 24px;
         font-size: 0.9rem;
         font-weight: 600;
-        border-radius: 20px;
+        border-radius: 24px;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 8px;
-        transition: all 0.3s ease;
+        gap: 10px;
+        transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
         backdrop-filter: blur(10px);
-        background: rgba(255,255,255,0.9);
-        border: none;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        background: rgba(255,255,255,0.95);
+        border: 1px solid rgba(0,0,0,0.06);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        cursor: pointer;
     }
     
     .action-buttons .btn:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     }
     
     .action-buttons .btn svg {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
     }
     
     .btn-like {
@@ -180,8 +173,9 @@
     }
     
     .btn-like.liked {
-        background: var(--gold) !important;
+        background: linear-gradient(135deg, var(--gold) 0%, #E8C860 100%) !important;
         color: white !important;
+        border: none !important;
     }
     
     .btn-download {
@@ -190,7 +184,7 @@
     
     /* Info Section */
     .info-section {
-        padding: 32px 32px 32px;
+        padding: 40px;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -198,15 +192,15 @@
     
     /* Level Badge */
     .level-badge {
-        display: inline-block;
-        padding: 6px 14px;
-        border-radius: 20px;
-        font-size: 0.7rem;
-        font-weight: 600;
+        display: inline-flex;
+        padding: 8px 20px;
+        border-radius: 24px;
+        font-size: 0.75rem;
+        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.04em;
-        margin-bottom: 16px;
-        box-shadow: 0 2px 8px rgba(30, 58, 95, 0.25);
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(30, 58, 95, 0.2);
     }
     
     .level-university {
@@ -219,32 +213,32 @@
     
     .level-elementary {
         background: linear-gradient(135deg, #D4AF37 0%, #E8C860 100%);
-        color: var(--primary-dark);
+        color: #1a1a1a;
     }
     
     .level-kindergarten {
         background: linear-gradient(135deg, #2E8B57 0%, #3CB371 100%);
     }
     
-    /* School Header */
+    /* School Name */
     .school-header {
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
     
     .info-section h1 {
-        font-size: clamp(1.4rem, 3vw, 1.8rem);
-        font-weight: 600;
-        line-height: 1.25;
-        letter-spacing: -0.01em;
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+        color: #1a1a1a;
         margin-bottom: 8px;
-        color: var(--text);
     }
     
     .info-section .name-cn {
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: var(--text-secondary);
         font-weight: 400;
-        font-style: italic;
+        letter-spacing: 0.02em;
     }
     
     /* Meta Info */
@@ -252,50 +246,75 @@
         display: flex;
         align-items: center;
         gap: 16px;
-        margin-bottom: 24px;
+        margin-bottom: 28px;
         flex-wrap: wrap;
     }
     
     .likes-count {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
-        font-size: 0.9rem;
+        gap: 10px;
+        font-size: 0.95rem;
         color: var(--text-secondary);
-        padding: 8px 16px;
-        background: var(--card-bg);
-        border-radius: 20px;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.04) 100%);
+        border-radius: 24px;
+        font-weight: 500;
     }
     
     .likes-count svg {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
         color: var(--gold);
     }
     
     /* Motto */
     .motto-section {
-        padding: 20px 24px;
-        background: linear-gradient(135deg, #F5F5F7 0%, #FAFAFA 100%);
-        border-radius: 16px;
-        margin-bottom: 24px;
-        border-left: 4px solid var(--gold);
+        padding: 28px 32px;
+        background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%);
+        color: white;
+        border-radius: 20px;
+        margin-bottom: 28px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .motto-section::before {
+        content: '"';
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        font-size: 6rem;
+        font-family: Georgia, serif;
+        opacity: 0.1;
+        line-height: 1;
+    }
+    
+    .motto-section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
     }
     
     .motto-label {
         font-size: 0.7rem;
         text-transform: uppercase;
-        letter-spacing: 0.1em;
-        color: var(--text-secondary);
-        margin-bottom: 8px;
+        letter-spacing: 0.15em;
+        opacity: 0.7;
+        margin-bottom: 12px;
         font-weight: 600;
     }
     
     .motto-text {
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-style: italic;
-        color: var(--text);
+        font-weight: 500;
         line-height: 1.5;
+        letter-spacing: 0.02em;
     }
     
     /* Info Grid */
@@ -303,35 +322,36 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
-        margin-bottom: 24px;
+        margin-bottom: 28px;
     }
     
     .info-item {
-        padding: 20px 24px;
-        background: var(--card-bg);
+        padding: 24px;
+        background: linear-gradient(135deg, #fafafa 0%, #f5f5f7 100%);
         border-radius: 16px;
-        transition: all 0.3s ease;
+        transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
     
     .info-item:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+        background: linear-gradient(135deg, #ffffff 0%, #f5f5f7 100%);
     }
     
     .info-item .label {
         font-size: 0.7rem;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.1em;
         color: var(--text-secondary);
-        margin-bottom: 8px;
+        margin-bottom: 10px;
         font-weight: 600;
     }
     
     .info-item .value {
         font-size: 0.95rem;
-        color: var(--text);
+        color: #1a1a1a;
         font-weight: 500;
-        line-height: 1.4;
+        line-height: 1.5;
     }
     
     .info-item a {
@@ -356,109 +376,114 @@
     .website-link {
         display: inline-flex;
         align-items: center;
-        gap: 12px;
-        padding: 16px 32px;
-        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        gap: 14px;
+        padding: 18px 32px;
+        background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%);
         color: white;
-        border-radius: 20px;
+        border-radius: 24px;
         font-weight: 600;
+        font-size: 1rem;
         text-decoration: none;
-        margin-bottom: 24px;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 16px rgba(30, 58, 95, 0.25);
+        margin-bottom: 28px;
+        transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        box-shadow: 0 8px 24px rgba(30, 58, 95, 0.3);
     }
     
     .website-link:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 24px rgba(30, 58, 95, 0.35);
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(30, 58, 95, 0.4);
         color: white;
     }
     
     .website-link svg {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
     }
     
     /* Description */
     .description {
-        margin-bottom: 24px;
+        margin-bottom: 28px;
     }
     
     .description h3 {
-        font-size: 1rem;
-        font-weight: 600;
-        margin-bottom: 12px;
-        color: var(--text);
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #1a1a1a;
+        letter-spacing: -0.01em;
     }
     
     .description p {
         color: var(--text-secondary);
-        line-height: 1.7;
+        line-height: 1.8;
         font-size: 0.95rem;
-        padding: 20px 24px;
-        background: var(--card-bg);
+        padding: 24px 28px;
+        background: linear-gradient(135deg, #fafafa 0%, #f5f5f7 100%);
         border-radius: 16px;
     }
     
     /* Map Section */
     .map-section {
-        padding: 24px;
-        background: var(--card-bg);
-        border-radius: 16px;
+        padding: 28px;
+        background: linear-gradient(135deg, #fafafa 0%, #f5f5f7 100%);
+        border-radius: 20px;
         margin-top: auto;
     }
     
     .map-section h3 {
-        font-size: 0.9rem;
-        font-weight: 600;
-        margin-bottom: 16px;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 20px;
         display: flex;
         align-items: center;
-        gap: 8px;
-        color: var(--text);
+        gap: 12px;
+        color: #1a1a1a;
     }
     
     .map-section h3 svg {
-        width: 18px;
-        height: 18px;
+        width: 22px;
+        height: 22px;
         color: var(--primary);
     }
     
     .map-container {
-        border-radius: 12px;
+        border-radius: 16px;
         overflow: hidden;
-        margin-bottom: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     }
     
     .map-link {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
         color: var(--primary);
-        font-size: 0.9rem;
-        font-weight: 500;
+        font-size: 0.95rem;
+        font-weight: 600;
         text-decoration: none;
-        padding: 12px 20px;
-        background: var(--background);
-        border-radius: 20px;
-        transition: all 0.2s ease;
+        padding: 14px 24px;
+        background: white;
+        border-radius: 24px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
     }
     
     .map-link:hover {
+        transform: translateX(6px);
         color: var(--gold);
-        transform: translateX(4px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
     
     .map-link svg {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
     }
     
     /* Animation */
     @keyframes fadeInUp {
         from {
             opacity: 0;
-            transform: translateY(24px);
+            transform: translateY(30px);
         }
         to {
             opacity: 1;
@@ -467,17 +492,17 @@
     }
     
     .detail-card {
-        animation: fadeInUp 0.6s ease-out forwards;
+        animation: fadeInUp 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     }
     
     /* Responsive */
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
         .detail-card {
             grid-template-columns: 1fr;
         }
         
         .badge-section {
-            aspect-ratio: 16/9;
+            aspect-ratio: 16/10;
             padding: 40px;
         }
         
@@ -491,13 +516,57 @@
             bottom: auto;
             left: auto;
             right: auto;
-            margin-top: 20px;
-            padding: 0 20px 20px;
-            background: linear-gradient(to top, rgba(0,0,0,0.04), transparent);
+            margin-top: 24px;
+            padding: 0 40px 40px;
+            background: linear-gradient(to top, rgba(0,0,0,0.03), transparent);
+        }
+        
+        .info-section {
+            padding: 32px;
         }
         
         .info-grid {
             grid-template-columns: 1fr;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .school-detail {
+            padding: 0 0 40px;
+        }
+        
+        .quick-nav {
+            gap: 6px;
+        }
+        
+        .quick-nav a {
+            padding: 6px 12px;
+            font-size: 0.8rem;
+        }
+        
+        .info-section {
+            padding: 24px;
+        }
+        
+        .info-section h1 {
+            font-size: 1.5rem;
+        }
+        
+        .motto-section {
+            padding: 24px;
+        }
+        
+        .motto-text {
+            font-size: 1.1rem;
+        }
+        
+        .action-buttons {
+            padding: 0 24px 24px;
+        }
+        
+        .action-buttons .btn {
+            padding: 12px 16px;
+            font-size: 0.85rem;
         }
     }
 </style>
@@ -559,264 +628,255 @@
     {% endif %}
 </div>
 
-<div class="school-detail">
-    <a href="{{ url_for('index') }}" class="back-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="19" y1="12" x2="5" y2="12"/>
-            <polyline points="12 19 5 12 12 5"/>
-        </svg>
-        {{ _('back') }}
-    </a>
-    
-    <div class="detail-card">
-        <!-- Badge Section -->
-        <div class="badge-section">
-            {% if school.badge_url %}
-                <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="detail-badge">
-            {% else %}
-                <div class="badge-placeholder">🎓</div>
+<!-- Main Card -->
+<div class="detail-card">
+    <!-- Badge Section -->
+    <div class="badge-section">
+        {% if school.badge_url %}
+            <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="detail-badge">
+        {% else %}
+            <div class="badge-placeholder">🎓</div>
+        {% endif %}
+        
+        <div class="action-buttons">
+            {% if session.get('user_id') %}
+                <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
+                    <button type="submit" class="btn btn-like {% if user_liked %}liked{% endif %}">
+                        <svg viewBox="0 0 24 24" fill="{% if user_liked %}currentColor{% else %}none{% endif %}" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                        {% if user_liked %}{{ _('liked') }}{% else %}{{ _('like') }}{% endif %}
+                    </button>
+                </form>
             {% endif %}
-            
-            <div class="action-buttons">
-                {% if session.get('user_id') %}
-                    <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
-                        <button type="submit" class="btn btn-like {% if user_liked %}liked{% endif %}">
-                            <svg viewBox="0 0 24 24" fill="{% if user_liked %}currentColor{% else %}none{% endif %}" stroke="currentColor" stroke-width="2">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                            </svg>
-                            {% if user_liked %}{{ _('liked') }}{% else %}{{ _('like') }}{% endif %}
-                        </button>
-                    </form>
-                {% endif %}
-                <button class="btn btn-download" onclick="downloadBadge()">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                        <polyline points="7 10 12 15 17 10"/>
-                        <line x1="12" y1="15" x2="12" y2="3"/>
-                    </svg>
-                    {{ _('download') }}
-                </button>
-            </div>
+            <button class="btn btn-download" onclick="downloadBadge()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                {{ _('download') }}
+            </button>
+        </div>
+    </div>
+    
+    <!-- Info Section -->
+    <div class="info-section">
+        <!-- Level Badge -->
+        <span class="level-badge level-{{ school.level }}">
+            {% if school.level == 'university' %}{{ _('university') }}
+            {% elif school.level == 'middle' %}{{ _('middle_school') }}
+            {% elif school.level == 'elementary' %}{{ _('elementary_school') }}
+            {% elif school.level == 'kindergarten' %}{{ _('kindergarten') }}
+            {% else %}{{ school.level }}{% endif %}
+        </span>
+        
+        <div class="school-header">
+            <h1>{{ school.name }}</h1>
+            {% if school.name_cn %}
+                <p class="name-cn">{{ school.name_cn }}</p>
+            {% endif %}
         </div>
         
-        <!-- Info Section -->
-        <div class="info-section">
-            <!-- Level Badge -->
-            <span class="level-badge level-{{ school.level }}">
-                {% if school.level == 'university' %}{{ _('university') }}
-                {% elif school.level == 'middle' %}{{ _('middle_school') }}
-                {% elif school.level == 'elementary' %}{{ _('elementary_school') }}
-                {% elif school.level == 'kindergarten' %}{{ _('kindergarten') }}
-                {% else %}{{ school.level }}{% endif %}
+        <div class="meta-info">
+            <span class="likes-count">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                {{ likes_count }} {{ _('likes') }}
             </span>
-            
-            <div class="school-header">
-                <h1>{{ school.name }}</h1>
-                {% if school.name_cn %}
-                    <p class="name-cn">{{ school.name_cn }}</p>
-                {% endif %}
-            </div>
-            
-            <div class="meta-info">
-                <span class="likes-count">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    {{ likes_count }} {{ _('likes') }}
-                </span>
-            </div>
-            
-            {% if school.motto %}
-            <div class="motto-section">
-                <p class="motto-label">{{ _('motto_label') }}</p>
-                <p class="motto-text">"{{ school.motto }}"</p>
+        </div>
+        
+        {% if school.motto %}
+        <div class="motto-section">
+            <p class="motto-label">{{ _('motto_label') }}</p>
+            <p class="motto-text">"{{ school.motto }}"</p>
+        </div>
+        {% endif %}
+        
+        <div class="info-grid">
+            {% if school.region %}
+            <div class="info-item">
+                <p class="label">{{ _('region') }}</p>
+                <p class="value">{{ school.region }}</p>
             </div>
             {% endif %}
             
-            <div class="info-grid">
-                {% if school.region %}
-                <div class="info-item">
-                    <p class="label">{{ _('region') }}</p>
-                    <p class="value">{{ school.region }}</p>
-                </div>
-                {% endif %}
-                
-                {% if school.country or school.city %}
-                <div class="info-item">
-                    <p class="label">{{ _('location') }}</p>
-                    <p class="value">{{ [school.city, school.country]|select|join(', ') }}</p>
-                </div>
-                {% endif %}
-                
-                {% if school.district %}
-                <div class="info-item">
-                    <p class="label">{{ _('district') }}</p>
-                    <p class="value">{{ school.district }}</p>
-                </div>
-                {% endif %}
-                
-                {% if school.address %}
-                <div class="info-item">
-                    <p class="label">{{ _('address') }}</p>
-                    <p class="value">{{ school.address }}</p>
-                </div>
-                {% endif %}
-                
-                {% if school.supervisor %}
-                <div class="info-item">
-                    <p class="label">{{ _('supervisor') }}</p>
-                    <p class="value">{{ school.supervisor }}</p>
-                </div>
-                {% endif %}
-                
-                {% if school.principal %}
-                <div class="info-item">
-                    <p class="label">{{ _('principal') }}</p>
-                    <p class="value">{{ school.principal }}</p>
-                </div>
-                {% endif %}
-                
-                {% if school.phone %}
-                <div class="info-item">
-                    <p class="label">{{ _('phone') }}</p>
-                    <p class="value">{{ school.phone }}</p>
-                </div>
-                {% endif %}
-                
-                {% if school.fax %}
-                <div class="info-item">
-                    <p class="label">{{ _('fax') }}</p>
-                    <p class="value">{{ school.fax }}</p>
-                </div>
-                {% endif %}
-                
-                {% if school.gender %}
-                <div class="info-item">
-                    <p class="label">{{ _('gender_type') }}</p>
-                    <p class="value">
-                        {% if school.gender == 'CO-ED' %}{{ _('gender_coed') }}
-                        {% elif school.gender == 'GIRLS' %}{{ _('gender_girls') }}
-                        {% elif school.gender == 'BOYS' %}{{ _('gender_boys') }}
-                        {% else %}{{ school.gender }}{% endif %}
-                    </p>
-                </div>
-                {% endif %}
-                
-                {% if school.finance_type %}
-                <div class="info-item">
-                    <p class="label">{{ _('finance_type') }}</p>
-                    <p class="value">
-                        {% if school.finance_type == 'Government' %}{{ _('finance_government') }}
-                        {% elif school.finance_type == 'Aided' %}{{ _('finance_aided') }}
-                        {% elif school.finance_type == 'Direct' %}{{ _('finance_direct') }}
-                        {% elif school.finance_type == 'Private' %}{{ _('finance_private') }}
-                        {% elif school.finance_type == 'ESF' %}英基
-                        {% else %}{{ school.finance_type }}{% endif %}
-                    </p>
-                </div>
-                {% endif %}
-                
-                {% if school.session_type %}
-                <div class="info-item">
-                    <p class="label">{{ _('session_type') }}</p>
-                    <p class="value">
-                        {% if school.session_type == 'WD' %}{{ _('session_wd') }}
-                        {% elif school.session_type == 'AM' %}{{ _('session_am') }}
-                        {% elif school.session_type == 'PM' %}{{ _('session_pm') }}
-                        {% else %}{{ school.session_type }}{% endif %}
-                    </p>
-                </div>
-                {% endif %}
-                
-                {% if school.founded %}
-                <div class="info-item">
-                    <p class="label">{{ _('founded') }}</p>
-                    <p class="value">{{ school.founded }}</p>
-                </div>
-                {% endif %}
-                
-                {% if school.school_code %}
-                <div class="info-item">
-                    <p class="label">{{ _('school_code') }}</p>
-                    <p class="value">{{ school.school_code }}</p>
-                </div>
-                {% endif %}
-                
-                {% if school.school_type %}
-                <div class="info-item">
-                    <p class="label">{{ _('school_type') }}</p>
-                    <p class="value">{{ school.school_type }}</p>
-                </div>
-                {% endif %}
-                
-                {% if school.website %}
-                <div class="info-item">
-                    <p class="label">{{ _('website') }}</p>
-                    <p class="value">
-                        <a href="{{ school.website }}" target="_blank">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <line x1="2" y1="12" x2="22" y2="12"/>
-                                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-                            </svg>
-                            {{ _('visit_website') }}
-                        </a>
-                    </p>
-                </div>
-                {% endif %}
+            {% if school.country or school.city %}
+            <div class="info-item">
+                <p class="label">{{ _('location') }}</p>
+                <p class="value">{{ [school.city, school.country]|select|join(', ') }}</p>
             </div>
+            {% endif %}
+            
+            {% if school.district %}
+            <div class="info-item">
+                <p class="label">{{ _('district') }}</p>
+                <p class="value">{{ school.district }}</p>
+            </div>
+            {% endif %}
+            
+            {% if school.address %}
+            <div class="info-item">
+                <p class="label">{{ _('address') }}</p>
+                <p class="value">{{ school.address }}</p>
+            </div>
+            {% endif %}
+            
+            {% if school.supervisor %}
+            <div class="info-item">
+                <p class="label">{{ _('supervisor') }}</p>
+                <p class="value">{{ school.supervisor }}</p>
+            </div>
+            {% endif %}
+            
+            {% if school.principal %}
+            <div class="info-item">
+                <p class="label">{{ _('principal') }}</p>
+                <p class="value">{{ school.principal }}</p>
+            </div>
+            {% endif %}
+            
+            {% if school.phone %}
+            <div class="info-item">
+                <p class="label">{{ _('phone') }}</p>
+                <p class="value">{{ school.phone }}</p>
+            </div>
+            {% endif %}
+            
+            {% if school.fax %}
+            <div class="info-item">
+                <p class="label">{{ _('fax') }}</p>
+                <p class="value">{{ school.fax }}</p>
+            </div>
+            {% endif %}
+            
+            {% if school.gender %}
+            <div class="info-item">
+                <p class="label">{{ _('gender_type') }}</p>
+                <p class="value">
+                    {% if school.gender == 'CO-ED' %}{{ _('gender_coed') }}
+                    {% elif school.gender == 'GIRLS' %}{{ _('gender_girls') }}
+                    {% elif school.gender == 'BOYS' %}{{ _('gender_boys') }}
+                    {% else %}{{ school.gender }}{% endif %}
+                </p>
+            </div>
+            {% endif %}
+            
+            {% if school.finance_type %}
+            <div class="info-item">
+                <p class="label">{{ _('finance_type') }}</p>
+                <p class="value">
+                    {% if school.finance_type == 'Government' %}{{ _('finance_government') }}
+                    {% elif school.finance_type == 'Aided' %}{{ _('finance_aided') }}
+                    {% elif school.finance_type == 'Direct' %}{{ _('finance_direct') }}
+                    {% elif school.finance_type == 'Private' %}{{ _('finance_private') }}
+                    {% elif school.finance_type == 'ESF' %}英基
+                    {% else %}{{ school.finance_type }}{% endif %}
+                </p>
+            </div>
+            {% endif %}
+            
+            {% if school.session_type %}
+            <div class="info-item">
+                <p class="label">{{ _('session_type') }}</p>
+                <p class="value">
+                    {% if school.session_type == 'WD' %}{{ _('session_wd') }}
+                    {% elif school.session_type == 'AM' %}{{ _('session_am') }}
+                    {% elif school.session_type == 'PM' %}{{ _('session_pm') }}
+                    {% else %}{{ school.session_type }}{% endif %}
+                </p>
+            </div>
+            {% endif %}
+            
+            {% if school.founded %}
+            <div class="info-item">
+                <p class="label">{{ _('founded') }}</p>
+                <p class="value">{{ school.founded }}</p>
+            </div>
+            {% endif %}
+            
+            {% if school.school_code %}
+            <div class="info-item">
+                <p class="label">{{ _('school_code') }}</p>
+                <p class="value">{{ school.school_code }}</p>
+            </div>
+            {% endif %}
+            
+            {% if school.school_type %}
+            <div class="info-item">
+                <p class="label">{{ _('school_type') }}</p>
+                <p class="value">{{ school.school_type }}</p>
+            </div>
+            {% endif %}
             
             {% if school.website %}
-            <a href="{{ school.website }}" target="_blank" class="website-link">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"/>
-                    <line x1="2" y1="12" x2="22" y2="12"/>
-                    <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-                </svg>
-                {{ _('visit_website_full').format(school.name) }}
-            </a>
-            {% endif %}
-            
-            {% if school.description %}
-                <div class="description">
-                    <h3>{{ _('description_title') }}</h3>
-                    <p>{{ school.description }}</p>
-                </div>
-            {% endif %}
-            
-            <!-- Google Maps -->
-            {% if school.address %}
-            <div class="map-section">
-                <h3>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                        <circle cx="12" cy="10" r="3"/>
-                    </svg>
-                    {{ _('map_location') }}
-                </h3>
-                <div class="map-container">
-                    <iframe 
-                        width="100%" 
-                        height="200" 
-                        style="border:0; border-radius: 12px;" 
-                        loading="lazy" 
-                        allowfullscreen
-                        referrerpolicy="no-referrer-when-downgrade"
-                        src="https://www.google.com/maps/embed?hl={{ current_lang }}&q={{ (school.address ~ ', ' ~ school.city ~ ', ' ~ school.country) | urlencode }}&zoom=16&maptype=roadmap">
-                    </iframe>
-                </div>
-                <a href="https://www.google.com/maps/search/?api=1&query={{ (school.address ~ ', ' ~ school.city ~ ', ' ~ school.country) | urlencode }}" 
-                   target="_blank" class="map-link">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                        <polyline points="15 3 21 3 21 9"/>
-                        <line x1="10" y1="14" x2="21" y2="3"/>
-                    </svg>
-                    {{ _('view_on_maps') }} - {{ school.address }}
-                </a>
+            <div class="info-item">
+                <p class="label">{{ _('website') }}</p>
+                <p class="value">
+                    <a href="{{ school.website }}" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                        </svg>
+                        {{ _('visit_website') }}
+                    </a>
+                </p>
             </div>
             {% endif %}
         </div>
+        
+        {% if school.website %}
+        <a href="{{ school.website }}" target="_blank" class="website-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+            </svg>
+            {{ _('visit_website_full').format(school.name) }}
+        </a>
+        {% endif %}
+        
+        {% if school.description %}
+            <div class="description">
+                <h3>{{ _('description_title') }}</h3>
+                <p>{{ school.description }}</p>
+            </div>
+        {% endif %}
+        
+        <!-- Google Maps -->
+        {% if school.address %}
+        <div class="map-section">
+            <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                </svg>
+                {{ _('map_location') }}
+            </h3>
+            <div class="map-container">
+                <iframe 
+                    width="100%" 
+                    height="220" 
+                    style="border:0; border-radius: 16px;" 
+                    loading="lazy" 
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?hl={{ current_lang }}&q={{ (school.address ~ ', ' ~ school.city ~ ', ' ~ school.country) | urlencode }}&zoom=16&maptype=roadmap">
+                </iframe>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query={{ (school.address ~ ', ' ~ school.city ~ ', ' ~ school.country) | urlencode }}" 
+               target="_blank" class="map-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                {{ _('view_on_maps') }} - {{ school.address }}
+            </a>
+        </div>
+        {% endif %}
     </div>
 </div>
 
