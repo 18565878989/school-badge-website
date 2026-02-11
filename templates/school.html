@@ -138,7 +138,7 @@
             {% endif %}
             
             <!-- Info Cards Grid -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
                 {% if school.district %}
                 <div class="info-card" style="background: #f5f5f7; padding: 24px; border-radius: 16px; transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); cursor: default;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 32px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
                     <div style="width: 36px; height: 36px; background: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
