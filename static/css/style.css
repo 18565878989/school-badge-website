@@ -1,16 +1,18 @@
-/* Apple & Xiaomi Inspired Design */
+/* Premium Blue & Gold Theme */
 :root {
-    --primary: #007AFF;
-    --primary-dark: #0056CC;
+    --primary: #1E3A5F;
+    --primary-dark: #0D2137;
+    --gold: #D4AF37;
+    --gold-light: #C9A962;
     --text: #1D1D1F;
-    --text-secondary: #86868B;
+    --text-secondary: #6E7588;
     --background: #FFFFFF;
-    --card-bg: #F5F5F7;
-    --border: #D2D2D7;
-    --shadow: 0 4px 24px rgba(0,0,0,0.08);
-    --shadow-hover: 0 8px 32px rgba(0,0,0,0.12);
-    --radius: 20px;
-    --radius-sm: 12px;
+    --card-bg: #F8F9FA;
+    --border: rgba(30, 58, 95, 0.1);
+    --shadow: 0 4px 24px rgba(30, 58, 95, 0.08);
+    --shadow-hover: 0 8px 32px rgba(30, 58, 95, 0.12);
+    --radius: 16px;
+    --radius-sm: 10px;
 }
 
 * {
@@ -60,10 +62,11 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
+    gap: 12px;
 }
 
 .logo-img {
-    height: 42px;
+    height: 48px;
     width: auto;
 }
 
@@ -78,12 +81,22 @@ body {
     color: var(--text);
     text-decoration: none;
     font-weight: 500;
-    opacity: 0.8;
-    transition: opacity 0.2s;
+    opacity: 0.85;
+    transition: all 0.2s;
 }
 
 .nav-links a:hover {
     opacity: 1;
+    color: var(--gold);
+}
+
+.username {
+    font-weight: 500;
+    color: var(--text);
+}
+
+.admin-link {
+    color: var(--primary) !important;
 }
 
 /* Language Switcher */
@@ -128,9 +141,9 @@ main {
 .hero h1 {
     font-size: 3rem;
     font-weight: 700;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     margin-bottom: 12px;
-    background: linear-gradient(135deg, var(--text) 0%, var(--text-secondary) 100%);
+    background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -197,7 +210,7 @@ main {
 }
 
 .filter-group select:hover {
-    border-color: var(--primary);
+    border-color: var(--gold);
 }
 
 .clear-filters {
@@ -752,8 +765,8 @@ main {
 
 .page-btn:hover, .page-num:hover {
     background: #f5f5f7;
-    border-color: #2563EB;
-    color: #2563EB;
+    border-color: var(--gold);
+    color: var(--gold);
 }
 
 .page-current {

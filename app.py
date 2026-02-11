@@ -102,13 +102,51 @@ def index():
     """Homepage - list schools by region with pagination."""
     search_query = request.args.get('q', '')
     selected_region = request.args.get('region', '')
+    selected_country = request.args.get('country', '')
+    selected_city = request.args.get('city', '')
     selected_level = request.args.get('level', '')
     page = request.args.get('page', 1, type=int)
     per_page = 21  # 21 schools per page
     
-    # 组合查询：支持搜索 + 地区 + 类型 同时筛选
+    conn = get_db_connection()
+    
+    # 获取国家列表（仅当选择地区时显示）
+    countries = []
+    if selected_region:
+        countries = conn.execute("SELECT DISTINCT country FROM schools WHERE region = ? ORDER BY country", 
+                                  (selected_region,)).fetchall()
+        countries = [c[0] for c in countries]
+    
+    # 获取城市列表（仅当选择国家时显示）
+    cities = []
+    if selected_country:
+        cities = conn.execute("SELECT DISTINCT city FROM schools WHERE country = ? AND city IS NOT NULL AND city != '' ORDER BY city", 
+                              (selected_country,)).fetchall()
+        cities = [c[0] for c in cities]
+    
+    # 获取香港区域列表（仅当选择香港时显示）
+    hk_districts = []
+    if selected_country == 'Hong Kong':
+        hk_districts = conn.execute("SELECT DISTINCT district FROM schools WHERE country = 'Hong Kong' AND district IS NOT NULL AND district != '' ORDER BY district").fetchall()
+        hk_districts = [d[0] for d in hk_districts]
+    
+    selected_district = request.args.get('district', '')
+    
+    # 组合查询：支持搜索 + 地区 + 国家 + 城市 + 区域 + 类型 同时筛选
     if search_query:
         schools = search_schools(search_query, selected_region, selected_level)
+    elif selected_region and selected_country and selected_city:
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND city = ? ORDER BY name", 
+                               (selected_region, selected_country, selected_city)).fetchall()
+    elif selected_region and selected_country and selected_district:
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND district = ? ORDER BY name", 
+                               (selected_region, selected_country, selected_district)).fetchall()
+    elif selected_region and selected_country and selected_level:
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND level = ? ORDER BY name", 
+                               (selected_region, selected_country, selected_level)).fetchall()
+    elif selected_region and selected_country:
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? ORDER BY name", 
+                               (selected_region, selected_country)).fetchall()
     elif selected_region and selected_level:
         schools = get_schools_by_region_and_level(selected_region, selected_level)
     elif selected_region:
@@ -118,8 +156,11 @@ def index():
     else:
         schools = get_all_schools()
     
-    regions = get_regions()
+    # 地区选项列表
+    regions = ['Asia', 'North America', 'Europe', 'Oceania', 'Africa', 'South America']
     levels = ['university', 'middle', 'elementary', 'kindergarten']
+    
+    conn.close()
     
     # Pagination
     total = len(schools)
@@ -132,8 +173,14 @@ def index():
                          schools=paginated_schools, 
                          regions=regions, 
                          levels=levels,
+                         countries=countries,
+                         cities=cities,
+                         hk_districts=hk_districts,
                          search_query=search_query,
                          selected_region=selected_region,
+                         selected_country=selected_country,
+                         selected_city=selected_city,
+                         selected_district=selected_district,
                          selected_level=selected_level,
                          page=page,
                          total_pages=total_pages,

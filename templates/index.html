@@ -10,6 +10,21 @@
     <form class="search-form" action="{{ url_for('index') }}" method="GET">
         <input type="text" name="q" placeholder="{{ _('search_placeholder') }}" 
                value="{{ search_query }}">
+        {% if selected_region %}
+        <input type="hidden" name="region" value="{{ selected_region }}">
+        {% endif %}
+        {% if selected_country %}
+        <input type="hidden" name="country" value="{{ selected_country }}">
+        {% endif %}
+        {% if selected_city %}
+        <input type="hidden" name="city" value="{{ selected_city }}">
+        {% endif %}
+        {% if selected_district %}
+        <input type="hidden" name="district" value="{{ selected_district }}">
+        {% endif %}
+        {% if selected_level %}
+        <input type="hidden" name="level" value="{{ selected_level }}">
+        {% endif %}
         <button type="submit" style="display:none;">Search</button>
     </form>
 </div>
@@ -27,17 +42,67 @@
         </select>
     </div>
     
+    {% if countries %}
     <div class="filter-group">
         <select onchange="window.location.href=this.value">
-            <option value="{{ url_for('index') }}" {% if not selected_level %}selected{% endif %}>{{ _('all_types') }}</option>
-            <option value="{{ url_for('index', level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>{{ _('university') }}</option>
-            <option value="{{ url_for('index', level='middle') }}" {% if selected_level == 'middle' %}selected{% endif %}>{{ _('middle_school') }}</option>
-            <option value="{{ url_for('index', level='elementary') }}" {% if selected_level == 'elementary' %}selected{% endif %}>{{ _('elementary_school') }}</option>
-            <option value="{{ url_for('index', level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>{{ _('kindergarten') }}</option>
+            <option value="{{ url_for('index', region=selected_region) }}" {% if not selected_country %}selected{% endif %}>{{ _('all_countries') }}</option>
+            {% for country in countries %}
+                <option value="{{ url_for('index', region=selected_region, country=country) }}" 
+                        {% if selected_country == country %}selected{% endif %}>
+                    {{ country }}
+                </option>
+            {% endfor %}
+        </select>
+    </div>
+    {% endif %}
+    
+    {% if cities and not hk_districts %}
+    <div class="filter-group">
+        <select onchange="window.location.href=this.value">
+            <option value="{{ url_for('index', region=selected_region, country=selected_country) }}" {% if not selected_city %}selected{% endif %}>{{ _('all_cities') }}</option>
+            {% for city in cities %}
+                <option value="{{ url_for('index', region=selected_region, country=selected_country, city=city) }}" 
+                        {% if selected_city == city %}selected{% endif %}>
+                    {{ city }}
+                </option>
+            {% endfor %}
+        </select>
+    </div>
+    {% endif %}
+    
+    {% if hk_districts %}
+    <div class="filter-group">
+        <select onchange="window.location.href=this.value">
+            <option value="{{ url_for('index', region=selected_region, country=selected_country) }}" {% if not selected_district %}selected{% endif %}>{{ _('all_districts') }}</option>
+            {% for district in hk_districts %}
+                <option value="{{ url_for('index', region=selected_region, country=selected_country, district=district) }}" 
+                        {% if selected_district == district %}selected{% endif %}>
+                    {{ district }}
+                </option>
+            {% endfor %}
+        </select>
+    </div>
+    {% endif %}
+    
+    <div class="filter-group">
+        <select onchange="window.location.href=this.value">
+            {% if selected_country %}
+            <option value="{{ url_for('index', region=selected_region, country=selected_country) }}" {% if not selected_level %}selected{% endif %}>{{ _('all_types') }}</option>
+            <option value="{{ url_for('index', region=selected_region, country=selected_country, level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>{{ _('university') }}</option>
+            <option value="{{ url_for('index', region=selected_region, country=selected_country, level='middle') }}" {% if selected_level == 'middle' %}selected{% endif %}>{{ _('middle_school') }}</option>
+            <option value="{{ url_for('index', region=selected_region, country=selected_country, level='elementary') }}" {% if selected_level == 'elementary' %}selected{% endif %}>{{ _('elementary_school') }}</option>
+            <option value="{{ url_for('index', region=selected_region, country=selected_country, level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>{{ _('kindergarten') }}</option>
+            {% else %}
+            <option value="{{ url_for('index', region=selected_region) }}" {% if not selected_level %}selected{% endif %}>{{ _('all_types') }}</option>
+            <option value="{{ url_for('index', region=selected_region, level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>{{ _('university') }}</option>
+            <option value="{{ url_for('index', region=selected_region, level='middle') }}" {% if selected_level == 'middle' %}selected{% endif %}>{{ _('middle_school') }}</option>
+            <option value="{{ url_for('index', region=selected_region, level='elementary') }}" {% if selected_level == 'elementary' %}selected{% endif %}>{{ _('elementary_school') }}</option>
+            <option value="{{ url_for('index', region=selected_region, level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>{{ _('kindergarten') }}</option>
+            {% endif %}
         </select>
     </div>
     
-    {% if selected_region or selected_level or search_query %}
+    {% if selected_region or selected_country or selected_city or selected_district or selected_level or search_query %}
         <a href="{{ url_for('index') }}" class="clear-filters">{{ _('clear_filters') }}</a>
     {% endif %}
 </div>
@@ -45,9 +110,12 @@
 {% if total_schools > 0 %}
 <div class="stats">
     {{ _('schools_count').format(total_schools) }}
-    {% if selected_region or selected_level or search_query %}
+    {% if selected_region or selected_country or selected_city or selected_district or selected_level or search_query %}
         <span class="filter-info">
             {% if selected_region %}· {{ selected_region }}{% endif %}
+            {% if selected_country %}· {{ selected_country }}{% endif %}
+            {% if selected_city %}· {{ selected_city }}{% endif %}
+            {% if selected_district %}· {{ selected_district }}{% endif %}
             {% if selected_level %}· {{ _(selected_level) }}{% endif %}
             {% if search_query %}· "{{ search_query }}"{% endif %}
         </span>
@@ -93,21 +161,21 @@
 {% if total_pages > 1 %}
 <div class="pagination">
     {% if page > 1 %}
-        <a href="{{ url_for('index', page=page-1, region=selected_region, level=selected_level, q=search_query) }}" class="page-btn">‹ {{ _('prev') }}</a>
+        <a href="{{ url_for('index', page=page-1, region=selected_region, country=selected_country, district=selected_district, level=selected_level, q=search_query) }}" class="page-btn">‹ {{ _('prev') }}</a>
     {% endif %}
     
     {% for p in range(1, total_pages + 1) %}
         {% if p == page %}
             <span class="page-current">{{ p }}</span>
         {% elif p == 1 or p == total_pages or (p >= page - 2 and p <= page + 2) %}
-            <a href="{{ url_for('index', page=p, region=selected_region, level=selected_level, q=search_query) }}" class="page-num">{{ p }}</a>
+            <a href="{{ url_for('index', page=p, region=selected_region, country=selected_country, city=selected_city, district=selected_district, level=selected_level, q=search_query) }}" class="page-num">{{ p }}</a>
         {% elif p == page - 3 or p == page + 3 %}
             <span class="page-ellipsis">...</span>
         {% endif %}
     {% endfor %}
     
     {% if page < total_pages %}
-        <a href="{{ url_for('index', page=page+1, region=selected_region, level=selected_level, q=search_query) }}" class="page-btn">{{ _('next') }} ›</a>
+        <a href="{{ url_for('index', page=page+1, region=selected_region, country=selected_country, city=selected_city, district=selected_district, level=selected_level, q=search_query) }}" class="page-btn">{{ _('next') }} ›</a>
     {% endif %}
 </div>
 {% endif %}

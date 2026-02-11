@@ -1,0 +1,98 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- YouTube红渐变 -->
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF0000"/>
+      <stop offset="100%" style="stop-color:#990000"/>
+    </linearGradient>
+    
+    <!-- 金色渐变 -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C9A962"/>
+      <stop offset="50%" style="stop-color:#D4AF37"/>
+      <stop offset="100%" style="stop-color:#B8860B"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 红色盾形背景 -->
+  <path d="M200 20 
+           L340 80 
+           L340 200 
+           Q340 320 200 380 
+           Q60 320 60 200 
+           L60 80 
+           Z" 
+        fill="url(#redGrad)"/>
+  
+  <!-- 金色边框 -->
+  <path d="M200 35 
+           L325 90 
+           L325 200 
+           Q325 305 200 360 
+           Q75 305 75 200 
+           L75 90 
+           Z" 
+        fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+  
+  <!-- 主字母 SB -->
+  <g transform="translate(200, 195)">
+    <!-- S -->
+    <path d="M-45 -55 
+             Q-45 -75, 0 -75 
+             Q45 -75, 45 -55 
+             Q45 -35, 0 -35 
+             Q-45 -35, -45 -15 
+             Q-45 5, 0 5 
+             Q45 5, 45 25 
+             Q45 45, 0 45 
+             Q-45 45, -45 65 
+             Q-45 85, 0 85 
+             Q45 85, 45 105 
+             L40 100 
+             Q40 90, 0 90 
+             Q-40 90, -40 70 
+             Q-40 60, 0 60 
+             Q40 60, 40 40 
+             Q40 20, 0 20 
+             Q-40 20, -40 0 
+             Q-40 -10, 0 -10 
+             Q40 -10, 40 -30 
+             Q40 -50, 0 -50 
+             Q-40 -50, -40 -70 
+             Q-40 -80, 0 -80 
+             Q-45 -80, -45 -55 Z" 
+          fill="url(#goldGrad)"/>
+    
+    <!-- B -->
+    <path d="M55 -75 L55 105 L50 105 
+             Q20 105, 20 85 
+             Q20 65, 45 65 
+             Q70 65, 70 45 
+             Q70 25, 45 25 
+             Q20 25, 20 5 
+             Q20 -15, 45 -15 
+             Q70 -35, 70 -55 
+             Q70 -75, 45 -75 
+             Q20 -75, 20 -95 Z
+             M50 -55 L50 5 Q35 5, 35 -15 Q35 -35, 50 -35 Z
+             M50 35 L50 95 Q35 95, 35 75 Q35 55, 50 55 Z" 
+          fill="url(#goldGrad)"/>
+  </g>
+  
+  <!-- 顶部弧形文字 -->
+  <path id="topArc" d="M100 130 Q200 90 300 130" fill="none"/>
+  <text font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" font-weight="300" letter-spacing="6" fill="url(#goldGrad)">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">SCHOOL BADGE</textPath>
+  </text>
+  
+  <!-- 装饰线 -->
+  <line x1="130" y1="320" x2="270" y2="320" stroke="url(#goldGrad)" stroke-width="2"/>
+  
+  <!-- 年份 -->
+  <text x="200" y="350" text-anchor="middle" 
+        font-family="SF Pro Display, -apple-system, sans-serif" 
+        font-size="12" font-weight="300" letter-spacing="3" fill="#CC0000">
+    EST. 2024
+  </text>
+  
+</svg>
