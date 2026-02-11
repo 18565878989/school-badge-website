@@ -147,7 +147,39 @@
                 
                 <div class="filter-group">
                     <select onchange="window.location.href=this.value">
-                        {% if selected_country %}
+                        {% if selected_country and selected_district %}
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, district=selected_district) }}" {% if not selected_level %}selected{% endif %}>
+                            {{ _('all_types') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, district=selected_district, level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>
+                            {{ _('university') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, district=selected_district, level='middle') }}" {% if selected_level == 'middle' %}selected{% endif %}>
+                            {{ _('middle_school') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, district=selected_district, level='elementary') }}" {% if selected_level == 'elementary' %}selected{% endif %}>
+                            {{ _('elementary_school') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, district=selected_district, level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>
+                            {{ _('kindergarten') }}
+                        </option>
+                        {% elif selected_country and selected_city %}
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, city=selected_city) }}" {% if not selected_level %}selected{% endif %}>
+                            {{ _('all_types') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, city=selected_city, level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>
+                            {{ _('university') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, city=selected_city, level='middle') }}" {% if selected_level == 'middle' %}selected{% endif %}>
+                            {{ _('middle_school') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, city=selected_city, level='elementary') }}" {% if selected_level == 'elementary' %}selected{% endif %}>
+                            {{ _('elementary_school') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, city=selected_city, level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>
+                            {{ _('kindergarten') }}
+                        </option>
+                        {% elif selected_country %}
                         <option value="{{ url_for('index', region=selected_region, country=selected_country) }}" {% if not selected_level %}selected{% endif %}>
                             {{ _('all_types') }}
                         </option>
@@ -163,7 +195,7 @@
                         <option value="{{ url_for('index', region=selected_region, country=selected_country, level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>
                             {{ _('kindergarten') }}
                         </option>
-                        {% else %}
+                        {% elif selected_region %}
                         <option value="{{ url_for('index', region=selected_region) }}" {% if not selected_level %}selected{% endif %}>
                             {{ _('all_types') }}
                         </option>
@@ -177,6 +209,22 @@
                             {{ _('elementary_school') }}
                         </option>
                         <option value="{{ url_for('index', region=selected_region, level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>
+                            {{ _('kindergarten') }}
+                        </option>
+                        {% else %}
+                        <option value="{{ url_for('index') }}" {% if not selected_level %}selected{% endif %}>
+                            {{ _('all_types') }}
+                        </option>
+                        <option value="{{ url_for('index', level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>
+                            {{ _('university') }}
+                        </option>
+                        <option value="{{ url_for('index', level='middle') }}" {% if selected_level == 'middle' %}selected{% endif %}>
+                            {{ _('middle_school') }}
+                        </option>
+                        <option value="{{ url_for('index', level='elementary') }}" {% if selected_level == 'elementary' %}selected{% endif %}>
+                            {{ _('elementary_school') }}
+                        </option>
+                        <option value="{{ url_for('index', level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>
                             {{ _('kindergarten') }}
                         </option>
                         {% endif %}
