@@ -133,8 +133,8 @@ TRANSLATIONS = {
         'admin_panel': 'Admin Panel',
         
         # Home
-        'hero_title': 'Discover School Badges',
-        'hero_subtitle': 'Explore prestigious institutions worldwide',
+        'hero_title': 'Explore Global Universities',
+        'hero_subtitle': 'Discover prestigious institutions worldwide',
         'search_placeholder': 'Search by school name, city or country...',
         'all_regions': 'All Regions',
         'all_countries': 'All Countries',
@@ -250,8 +250,8 @@ TRANSLATIONS = {
         'admin_panel': 'Admin',
         
         # Home
-        'hero_title': 'Découvrez les écussons scolaires',
-        'hero_subtitle': 'Explorez les établissements prestigieux du monde entier',
+        'hero_title': 'Explorer les universités mondiales',
+        'hero_subtitle': 'Découvrez des établissements prestigieux du monde entier',
         'search_placeholder': 'Rechercher par nom, ville ou pays...',
         'all_regions': 'Toutes les régions',
         'all_countries': 'Tous les pays',
@@ -367,8 +367,8 @@ TRANSLATIONS = {
         'admin_panel': 'Admin',
         
         # Home
-        'hero_title': 'Entdecken Sie Schulwappen',
-        'hero_subtitle': 'Prestigeträchtige Institutionen weltweit erkunden',
+        'hero_title': 'Weltweite Universitäten erkunden',
+        'hero_subtitle': 'Entdecken Sie prestigeträchtige Institutionen weltweit',
         'search_placeholder': 'Suchen nach Name, Stadt oder Land...',
         'all_regions': 'Alle Regionen',
         'all_countries': 'Alle Länder',
@@ -484,7 +484,7 @@ TRANSLATIONS = {
         'admin_panel': '管理画面',
         
         # Home
-        'hero_title': '校章コレクション',
+        'hero_title': '世界の名門大学を探す',
         'hero_subtitle': '世界の名門校を探ろう',
         'search_placeholder': '学校名、都市、国で検索...',
         'all_regions': 'すべての地域',
