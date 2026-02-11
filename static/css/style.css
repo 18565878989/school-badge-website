@@ -114,17 +114,6 @@ body {
 .lang-switcher select:hover {
     border-color: var(--primary);
 }
-}
-
-.username {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-
-.admin-link {
-    color: var(--primary) !important;
-    font-weight: 600 !important;
-}
 
 /* Main */
 main {
