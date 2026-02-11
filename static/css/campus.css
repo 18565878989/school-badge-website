@@ -544,6 +544,71 @@ body {
 .level-elementary { background: linear-gradient(135deg, #D4AF37 0%, #E8C860 100%); color: var(--primary-dark); }
 .level-kindergarten { background: linear-gradient(135deg, #2E8B57 0%, #3CB371 100%); }
 
+/* Campus Photo Card - Special Style */
+.campus-photo-card {
+    cursor: pointer;
+}
+
+.campus-photo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.campus-photo-card .card-image {
+    aspect-ratio: 16/10;
+}
+
+.campus-photo-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.campus-photo-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.campus-photo-card .image-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.campus-photo-card:hover .image-overlay {
+    background: rgba(0,0,0,0.2);
+}
+
+.campus-photo-card .view-label {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 12px 24px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    color: var(--text);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s;
+}
+
+.campus-photo-card:hover .view-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Motto text style */
+.motto-text {
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
 /* No Results */
 .no-results {
     text-align: center;

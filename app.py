@@ -135,18 +135,30 @@ def index():
     # 组合查询：支持搜索 + 地区 + 国家 + 城市 + 区域 + 类型 同时筛选
     if search_query:
         schools = search_schools(search_query, selected_region, selected_level)
+    elif selected_country and selected_level and selected_region:
+        # 完整筛选：地区 + 国家 + 类型
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND level = ? ORDER BY name", 
+                               (selected_region, selected_country, selected_level)).fetchall()
     elif selected_region and selected_country and selected_city:
+        # 地区 + 国家 + 城市
         schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND city = ? ORDER BY name", 
                                (selected_region, selected_country, selected_city)).fetchall()
     elif selected_region and selected_country and selected_district:
+        # 地区 + 国家 + 区域
         schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND district = ? ORDER BY name", 
                                (selected_region, selected_country, selected_district)).fetchall()
-    elif selected_region and selected_country and selected_level:
-        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND level = ? ORDER BY name", 
-                               (selected_region, selected_country, selected_level)).fetchall()
     elif selected_region and selected_country:
+        # 地区 + 国家
         schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? ORDER BY name", 
                                (selected_region, selected_country)).fetchall()
+    elif selected_country and selected_level:
+        # 国家 + 类型（无地区时）
+        schools = conn.execute("SELECT * FROM schools WHERE country = ? AND level = ? ORDER BY name", 
+                               (selected_country, selected_level)).fetchall()
+    elif selected_country:
+        # 仅国家
+        schools = conn.execute("SELECT * FROM schools WHERE country = ? ORDER BY name", 
+                               (selected_country,)).fetchall()
     elif selected_region and selected_level:
         schools = get_schools_by_region_and_level(selected_region, selected_level)
     elif selected_region:
