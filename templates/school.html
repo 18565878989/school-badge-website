@@ -3,326 +3,9 @@
 {% block title %}{{ school.name }} - 校徽网{% endblock %}
 
 {% block content %}
-<style>
-    /* School Detail - Apple Style */
-    .school-detail {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 40px 24px;
-    }
-    
-    /* Back Link */
-    .back-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--text-secondary);
-        font-size: 0.95rem;
-        margin-bottom: 32px;
-        transition: color var(--transition-fast);
-    }
-    
-    .back-link:hover {
-        color: var(--primary);
-    }
-    
-    /* Main Card */
-    .detail-card {
-        background: var(--card-bg);
-        border-radius: var(--radius);
-        box-shadow: var(--shadow-md);
-        overflow: hidden;
-        display: grid;
-        grid-template-columns: 380px 1fr;
-        gap: 0;
-    }
-    
-    /* Badge Section */
-    .badge-section {
-        background: linear-gradient(180deg, var(--surface) 0%, var(--card-bg) 100%);
-        padding: 48px 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 32px;
-        border-right: 1px solid var(--border-light);
-    }
-    
-    .detail-badge {
-        width: 240px;
-        height: 240px;
-        object-fit: contain;
-        filter: drop-shadow(0 8px 24px rgba(0,0,0,0.12));
-        transition: transform var(--transition-normal);
-    }
-    
-    .detail-badge:hover {
-        transform: scale(1.05);
-    }
-    
-    .detail-badge-placeholder {
-        width: 160px;
-        height: 160px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: var(--surface);
-        border-radius: 24px;
-        font-size: 4rem;
-    }
-    
-    .action-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
-        max-width: 220px;
-    }
-    
-    .action-buttons .btn {
-        width: 100%;
-        padding: 14px 24px;
-        font-size: 1rem;
-    }
-    
-    /* Info Section */
-    .info-section {
-        padding: 48px 48px;
-    }
-    
-    .info-section h1 {
-        font-size: clamp(1.75rem, 3vw, 2.25rem);
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        color: var(--text);
-        margin-bottom: 8px;
-        line-height: 1.2;
-    }
-    
-    .name-cn {
-        font-size: 1.25rem;
-        color: var(--text-secondary);
-        margin-bottom: 20px;
-    }
-    
-    /* Meta Info */
-    .meta-info {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 28px;
-        flex-wrap: wrap;
-    }
-    
-    .level-badge {
-        display: inline-flex;
-        align-items: center;
-        padding: 8px 20px;
-        border-radius: 20px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        background: rgba(30, 58, 95, 0.1);
-        color: var(--primary);
-    }
-    
-    .likes-count {
-        color: var(--text-secondary);
-        font-size: 0.95rem;
-    }
-    
-    /* Motto */
-    .motto-section {
-        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-        color: white;
-        padding: 28px 32px;
-        border-radius: var(--radius-sm);
-        margin-bottom: 32px;
-    }
-    
-    .motto-label {
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        opacity: 0.8;
-        margin-bottom: 12px;
-    }
-    
-    .motto-text {
-        font-size: 1.35rem;
-        font-style: italic;
-        font-weight: 500;
-        line-height: 1.4;
-    }
-    
-    /* Info Grid */
-    .info-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 24px;
-        margin-bottom: 32px;
-    }
-    
-    .info-item {
-        padding: 16px 20px;
-        background: var(--surface);
-        border-radius: var(--radius-sm);
-        transition: all var(--transition-fast);
-    }
-    
-    .info-item:hover {
-        background: var(--bg-secondary);
-        transform: translateY(-2px);
-    }
-    
-    .info-item .label {
-        font-size: 0.75rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.03em;
-        color: var(--text-secondary);
-        margin-bottom: 6px;
-    }
-    
-    .info-item .value {
-        font-size: 0.95rem;
-        color: var(--text);
-        font-weight: 500;
-    }
-    
-    .info-item a {
-        color: var(--primary);
-        text-decoration: none;
-    }
-    
-    .info-item a:hover {
-        text-decoration: underline;
-    }
-    
-    /* Website Link */
-    .website-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 16px 28px;
-        background: var(--primary);
-        color: white;
-        border-radius: var(--radius-sm);
-        font-weight: 600;
-        text-decoration: none;
-        transition: all var(--transition-fast);
-        margin-bottom: 32px;
-    }
-    
-    .website-link:hover {
-        background: var(--primary-dark);
-        transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(30, 58, 95, 0.3);
-    }
-    
-    /* Description */
-    .description {
-        margin-bottom: 32px;
-    }
-    
-    .description h3 {
-        font-size: 1.1rem;
-        font-weight: 600;
-        margin-bottom: 12px;
-        color: var(--text);
-    }
-    
-    .description p {
-        color: var(--text-secondary);
-        line-height: 1.7;
-    }
-    
-    /* Map Section */
-    .map-section {
-        background: var(--surface);
-        border-radius: var(--radius);
-        padding: 24px;
-    }
-    
-    .map-section h3 {
-        font-size: 1rem;
-        font-weight: 600;
-        margin-bottom: 16px;
-        color: var(--text);
-    }
-    
-    .map-container {
-        border-radius: var(--radius-sm);
-        overflow: hidden;
-        margin-bottom: 16px;
-    }
-    
-    .map-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--primary);
-        font-size: 0.9rem;
-        font-weight: 500;
-        text-decoration: none;
-    }
-    
-    .map-link:hover {
-        text-decoration: underline;
-    }
-    
-    /* Responsive */
-    @media (max-width: 900px) {
-        .detail-card {
-            grid-template-columns: 1fr;
-        }
-        
-        .badge-section {
-            padding: 40px 24px;
-            border-right: none;
-            border-bottom: 1px solid var(--border-light);
-        }
-        
-        .detail-badge {
-            width: 180px;
-            height: 180px;
-        }
-        
-        .info-section {
-            padding: 32px 24px;
-        }
-        
-        .info-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-    
-    @media (max-width: 600px) {
-        .school-detail {
-            padding: 24px 16px;
-        }
-        
-        .info-grid {
-            grid-template-columns: 1fr;
-        }
-        
-        .action-buttons {
-            flex-direction: row;
-        }
-        
-        .action-buttons .btn {
-            flex: 1;
-        }
-    }
-</style>
-
 <div class="school-detail">
     <a href="{{ url_for('index') }}" class="back-link">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="19" y1="12" x2="5" y2="12"/>
-            <polyline points="12 19 5 12 12 5"/>
-        </svg>
-        {{ _('back') }}
+        <span>←</span> {{ _('back') }}
     </a>
     
     <div class="detail-card">
@@ -338,27 +21,14 @@
                     <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
                         <button type="submit" class="btn {% if user_liked %}btn-outline{% else %}btn-primary{% endif %}">
                             {% if user_liked %}
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                                </svg>
-                                {{ _('liked') }}
+                                ❤️ {{ _('liked') }}
                             {% else %}
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                                </svg>
-                                {{ _('like') }}
+                                🤍 {{ _('like') }}
                             {% endif %}
                         </button>
                     </form>
                 {% endif %}
-                <button class="btn btn-secondary" onclick="downloadBadge()">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                        <polyline points="7 10 12 15 17 10"/>
-                        <line x1="12" y1="15" x2="12" y2="3"/>
-                    </svg>
-                    {{ _('download') }}
-                </button>
+                <button class="btn btn-secondary" onclick="downloadBadge()">⬇️ {{ _('download') }}</button>
             </div>
         </div>
         
@@ -369,14 +39,13 @@
             {% endif %}
             
             <div class="meta-info">
-                <span class="level-badge">
+                <span class="level-badge level-{{ school.level }}">
                     {% if school.level == 'university' %}{{ _('university') }}
                     {% elif school.level == 'middle' %}{{ _('middle_school') }}
                     {% elif school.level == 'elementary' %}{{ _('elementary_school') }}
-                    {% elif school.level == 'kindergarten' %}{{ _('kindergarten') }}
-                    {% else %}{{ school.level }}{% endif %}
+                    {% else %}{{ _('kindergarten') }}{% endif %}
                 </span>
-                <span class="likes-count">❤️ {{ likes_count }} {{ _('likes') }}</span>
+                <span class="likes-count">❤️ {{ _('likes_count').format(likes_count) }}</span>
             </div>
             
             {% if school.motto %}
@@ -387,24 +56,20 @@
             {% endif %}
             
             <div class="info-grid">
-                {% if school.region %}
                 <div class="info-item">
                     <p class="label">{{ _('region') }}</p>
                     <p class="value">{{ school.region }}</p>
                 </div>
-                {% endif %}
                 {% if school.district %}
                 <div class="info-item">
                     <p class="label">{{ _('district') }}</p>
                     <p class="value">{{ school.district }}</p>
                 </div>
                 {% endif %}
-                {% if school.country or school.city %}
                 <div class="info-item">
                     <p class="label">{{ _('location') }}</p>
-                    <p class="value">{{ [school.city, school.country]|select|join(', ') }}</p>
+                    <p class="value">{{ school.city }}, {{ school.country }}</p>
                 </div>
-                {% endif %}
                 {% if school.address %}
                 <div class="info-item">
                     <p class="label">{{ _('address') }}</p>
@@ -454,7 +119,6 @@
                         {% elif school.finance_type == 'Aided' %}{{ _('finance_aided') }}
                         {% elif school.finance_type == 'Direct' %}{{ _('finance_direct') }}
                         {% elif school.finance_type == 'Private' %}{{ _('finance_private') }}
-                        {% elif school.finance_type == 'ESF' %}英基
                         {% else %}{{ school.finance_type }}{% endif %}
                     </p>
                 </div>
@@ -491,19 +155,14 @@
                 {% if school.website %}
                 <div class="info-item">
                     <p class="label">{{ _('website') }}</p>
-                    <p class="value"><a href="{{ school.website }}" target="_blank">🌐 {{ _('visit_website') }}</a></p>
+                    <p class="value"><a href="{{ school.website }}" target="_blank" class="website-text-link">🌐 {{ _('visit_website') }}</a></p>
                 </div>
                 {% endif %}
             </div>
             
             {% if school.website %}
             <a href="{{ school.website }}" target="_blank" class="website-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"/>
-                    <line x1="2" y1="12" x2="22" y2="12"/>
-                    <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-                </svg>
-                {{ _('visit_website_full').format(school.name) }}
+                🌐 {{ _('visit_website_full').format(school.name) }}
             </a>
             {% endif %}
             
@@ -521,7 +180,7 @@
                 <div class="map-container">
                     <iframe 
                         width="100%" 
-                        height="280" 
+                        height="300" 
                         style="border:0; border-radius: 12px;" 
                         loading="lazy" 
                         allowfullscreen
@@ -531,11 +190,7 @@
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query={{ (school.address ~ ', ' ~ school.city ~ ', ' ~ school.country) | urlencode }}" 
                    target="_blank" class="map-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                        <circle cx="12" cy="10" r="3"/>
-                    </svg>
-                    {{ _('view_on_maps') }} - {{ school.address }}
+                    📍 {{ _('view_on_maps') }} - {{ school.address }}
                 </a>
             </div>
             {% endif %}
