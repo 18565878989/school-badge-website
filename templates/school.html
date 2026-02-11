@@ -55,13 +55,13 @@
         <div style="display: flex; gap: 12px;">
             {% if session.get('user_id') %}
                 <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
-                    <button type="submit" class="btn {% if user_liked %}btn-primary{% else %}btn-secondary{% endif %}" style="display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 14px; font-weight: 600;">
+                    <button type="submit" class="btn {% if user_liked %}btn-primary{% else %}btn-secondary{% endif %}" style="display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 14px; font-weight: 600; transition: all 0.25s ease;" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="{% if user_liked %}currentColor{% else %}none{% endif %}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                         {% if user_liked %}{{ _('liked') }}{% else %}{{ _('like') }}{% endif %}
                     </button>
                 </form>
             {% endif %}
-            <button class="btn btn-secondary" onclick="downloadBadge()" style="display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 14px; font-weight: 600;">
+            <button class="btn btn-secondary" onclick="downloadBadge()" style="display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 14px; font-weight: 600; transition: all 0.25s ease;" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 {{ _('download') }}
             </button>
@@ -72,15 +72,15 @@
 <!-- Main Content -->
 <div style="max-width: 1200px; margin: 0 auto; padding: 24px 40px 60px;">
     <!-- Hero Card -->
-    <div style="background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%); border-radius: 32px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02), 0 0 0 1px rgba(0,0,0,0.04); display: grid; grid-template-columns: 400px 1fr;">
+    <div class="school-hero" style="background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%); border-radius: 32px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02), 0 0 0 1px rgba(0,0,0,0.04); display: grid; grid-template-columns: 400px 1fr; transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);">
         
         <!-- Badge Section -->
         <div style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%); padding: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
             <div style="position: absolute; top: 60px; right: 0; bottom: 60px; width: 1px; background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.08) 20%, rgba(0,0,0,0.08) 80%, transparent 100%);"></div>
             {% if school.badge_url %}
-                <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" style="width: 240px; height: 240px; object-fit: contain; filter: drop-shadow(0 8px 32px rgba(30, 58, 95, 0.12)); margin-bottom: 32px; transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);">
+                <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="badge-image" style="width: 240px; height: 240px; object-fit: contain; filter: drop-shadow(0 8px 32px rgba(30, 58, 95, 0.12)); margin-bottom: 32px; transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); cursor: pointer;" onmouseover="this.style.transform='scale(1.05) translateY(-4px)'; this.style.filter='drop-shadow(0 16px 48px rgba(30, 58, 95, 0.2))';" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.filter='drop-shadow(0 8px 32px rgba(30, 58, 95, 0.12))';">
             {% else %}
-                <div style="width: 200px; height: 200px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 48px; display: flex; align-items: center; justify-content: center; font-size: 5rem; margin-bottom: 32px;">🎓</div>
+                <div style="width: 200px; height: 200px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 48px; display: flex; align-items: center; justify-content: center; font-size: 5rem; margin-bottom: 32px; transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);">🎓</div>
             {% endif %}
         </div>
         
@@ -117,7 +117,7 @@
             <!-- Info Cards Grid -->
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
                 {% if school.district %}
-                <div style="background: #f5f5f7; padding: 24px; border-radius: 16px; transition: all 0.25s ease;">
+                <div class="info-card" style="background: #f5f5f7; padding: 24px; border-radius: 16px; transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); cursor: default;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 32px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
                     <div style="width: 36px; height: 36px; background: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
                         <svg viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2" style="width: 18px; height: 18px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
