@@ -33,9 +33,9 @@
     </div>
     
     <!-- School Title with Premium Logo -->
-    <div style="display: flex; align-items: center; gap: 20px;">
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
         <!-- Premium Logo Badge -->
-        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); border-radius: 18px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(30, 58, 95, 0.3); flex-shrink: 0;">
+        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); border-radius: 18px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(30, 58, 95, 0.3); flex-shrink: 0; min-width: 64px;">
             {% if school.badge_url %}
                 <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" style="width: 40px; height: 40px; object-fit: contain; filter: brightness(0) invert(1);">
             {% else %}
@@ -44,15 +44,15 @@
         </div>
         
         <!-- School Title Info -->
-        <div style="flex: 1;">
-            <h1 style="font-size: 1.6rem; font-weight: 700; color: var(--text); letter-spacing: -0.02em; margin-bottom: 4px;">{{ school.name }}</h1>
+        <div style="flex: 1; min-width: 200px;">
+            <h1 style="font-size: clamp(1.2rem, 4vw, 1.6rem); font-weight: 700; color: var(--text); letter-spacing: -0.02em; margin-bottom: 4px;">{{ school.name }}</h1>
             {% if school.name_cn %}
-                <p style="font-size: 0.95rem; color: var(--text-secondary);">{{ school.name_cn }}</p>
+                <p style="font-size: clamp(0.85rem, 2vw, 0.95rem); color: var(--text-secondary);">{{ school.name_cn }}</p>
             {% endif %}
         </div>
         
         <!-- Quick Actions -->
-        <div style="display: flex; gap: 12px;">
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
             {% if session.get('user_id') %}
                 <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
                     <button type="submit" class="btn {% if user_liked %}btn-primary{% else %}btn-secondary{% endif %}" style="display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 14px; font-weight: 600; transition: all 0.25s ease;" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
