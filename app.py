@@ -335,6 +335,20 @@ def send_sms():
     
     return jsonify({'success': True, 'message': f'验证码已发送: {code}'})
 
+@app.route('/campus/north-america')
+def campus_north_america():
+    """Campus gallery for North American universities."""
+    conn = get_db_connection()
+    schools = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'North America' AND level = 'university'
+        ORDER BY country, name
+    ''').fetchall()
+    conn.close()
+    return render_template('campus_north_america.html', schools=schools)
+
 @app.route('/logout')
 def logout():
     """User logout."""

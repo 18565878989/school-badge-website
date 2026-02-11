@@ -623,13 +623,13 @@ def import_eastern_schools():
             # 插入
             cursor.execute("""
                 INSERT INTO schools (
-                    name, name_cn, address, phone, fax, supervisor, principal,
+                    name, name_cn, region, country, city, address, phone, fax, supervisor, principal,
                     gender, level, finance_type, district, school_code, source,
                     created_at, updated_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
-                school['name'], school['name_cn'], school['address'],
-                school['phone'], school['fax'], school['supervisor'], school['principal'],
+                school['name'], school['name_cn'], 'Hong Kong', 'China', 'Hong Kong',
+                school['address'], school['phone'], school['fax'], school['supervisor'], school['principal'],
                 school['gender'], school['level'], school['finance_type'],
                 school['district'], school['school_code'], 'edb',
                 now, now

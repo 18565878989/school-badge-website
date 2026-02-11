@@ -15,8 +15,8 @@ TRANSLATIONS = {
         'admin_panel': '管理后台',
         
         # Home
-        'hero_title': '探索全球名校校徽',
-        'hero_subtitle': 'Discover School Badges from Around the World',
+        'hero_title': '探索全球名校',
+        'hero_subtitle': 'Discover prestigious institutions worldwide',
         'search_placeholder': '搜索学校名称、城市或国家...',
         'all_regions': '所有地区',
         'all_countries': '所有国家',
