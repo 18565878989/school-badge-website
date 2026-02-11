@@ -13,49 +13,49 @@
 </div>
 
 <!-- 数据统计卡片 -->
-<div class="stats-cards">
+<div class="stats-grid">
     <div class="stat-card">
-        <div class="stat-number">{{ schools|length }}</div>
+        <div class="stat-value">{{ schools|length }}</div>
         <div class="stat-label">学校总数</div>
     </div>
     <div class="stat-card">
-        <div class="stat-number">{{ schools|selectattr('region', 'equalto', 'Hong Kong')|list|length }}</div>
+        <div class="stat-value">{{ schools|selectattr('region', 'equalto', 'Hong Kong')|list|length }}</div>
         <div class="stat-label">香港学校</div>
     </div>
     <div class="stat-card">
-        <div class="stat-number">{{ level_stats.university if level_stats else 0 }}</div>
+        <div class="stat-value">{{ level_stats.university if level_stats else 0 }}</div>
         <div class="stat-label">大学</div>
     </div>
     <div class="stat-card">
-        <div class="stat-number">{{ level_stats.middle if level_stats else 0 }}</div>
+        <div class="stat-value">{{ level_stats.middle if level_stats else 0 }}</div>
         <div class="stat-label">中学</div>
     </div>
     <div class="stat-card">
-        <div class="stat-number">{{ level_stats.elementary if level_stats else 0 }}</div>
+        <div class="stat-value">{{ level_stats.elementary if level_stats else 0 }}</div>
         <div class="stat-label">小学</div>
     </div>
     <div class="stat-card">
-        <div class="stat-number">{{ level_stats.kindergarten if level_stats else 0 }}</div>
+        <div class="stat-value">{{ level_stats.kindergarten if level_stats else 0 }}</div>
         <div class="stat-label">幼儿园</div>
     </div>
     <div class="stat-card">
-        <div class="stat-number">{{ schools|selectattr('source', 'equalto', 'schooland.hk')|list|length }}</div>
+        <div class="stat-value">{{ schools|selectattr('source', 'equalto', 'schooland.hk')|list|length }}</div>
         <div class="stat-label">schooland.hk</div>
     </div>
     <div class="stat-card">
-        <div class="stat-number">{{ schools|selectattr('source', 'equalto', 'manual')|list|length }}</div>
+        <div class="stat-value">{{ schools|selectattr('source', 'equalto', 'manual')|list|length }}</div>
         <div class="stat-label">手动添加</div>
     </div>
 </div>
 
 <!-- 增强的搜索过滤区域 -->
-<div class="search-section">
-    <div class="search-row">
-        <div class="search-group">
+<div class="filter-bar">
+    <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px;">
+        <div class="filter-group">
             <label>🔍 关键词搜索</label>
             <input type="text" id="searchKeyword" placeholder="学校名称、中文名、地址..." onkeyup="filterTable()">
         </div>
-        <div class="search-group">
+        <div class="filter-group">
             <label>📍 地区</label>
             <select id="filterRegion" onchange="filterTable()">
                 <option value="">全部地区</option>
@@ -64,7 +64,7 @@
                 {% endfor %}
             </select>
         </div>
-        <div class="search-group">
+        <div class="filter-group">
             <label>🏫 学校类型</label>
             <select id="filterLevel" onchange="filterTable()">
                 <option value="">全部类型</option>
@@ -75,7 +75,7 @@
                 <option value="elementary">特殊学校</option>
             </select>
         </div>
-        <div class="search-group">
+        <div class="filter-group">
             <label>💰 办学类型</label>
             <select id="filterFinance" onchange="filterTable()">
                 <option value="">全部类型</option>
@@ -86,7 +86,7 @@
                 <option value="ESF">英基</option>
             </select>
         </div>
-        <div class="search-group">
+        <div class="filter-group">
             <label>👥 性别</label>
             <select id="filterGender" onchange="filterTable()">
                 <option value="">全部</option>
@@ -95,7 +95,7 @@
                 <option value="BOYS">男校</option>
             </select>
         </div>
-        <div class="search-group">
+        <div class="filter-group">
             <label>📡 数据来源</label>
             <select id="filterSource" onchange="filterTable()">
                 <option value="">全部来源</option>
@@ -105,8 +105,8 @@
             </select>
         </div>
     </div>
-    <div class="filter-actions">
-        <span id="filterCount" class="filter-count">显示: 0 所学校</span>
+    <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+        <span id="filterCount" style="font-size: 0.9rem; color: var(--text-secondary);">显示: 0 所学校</span>
         <button onclick="resetFilters()" class="btn btn-secondary">🔄 重置筛选</button>
         <button onclick="exportFiltered()" class="btn btn-secondary">📤 导出选中</button>
     </div>
