@@ -277,10 +277,6 @@
                         {% if school['name_cn'] %}
                         <p class="english-name">{{ school['name_cn'] }}</p>
                         {% endif %}
-                        {# 校园照片描述 #}
-                        {% if has_campus and school['campus_image_desc'] %}
-                        <p class="image-caption">{{ school['campus_image_desc'] }}</p>
-                        {% endif %}
                         {# 校训始终显示 #}
                         {% if school['motto'] %}
                         <p class="image-caption motto-text">"{{ school['motto'] }}"</p>
