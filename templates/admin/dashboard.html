@@ -5,41 +5,81 @@
 {% block content %}
 <div class="admin-header">
     <h1>{{ _('welcome_admin') }}</h1>
-    <p>{{ _('admin_panel') }}</p>
+    <p>Manage your school badge collection</p>
 </div>
 
+<!-- Stats Grid -->
 <div class="stats-grid">
     <div class="stat-card">
-        <div class="stat-icon">🏫</div>
+        <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+            </svg>
+        </div>
         <div class="stat-info">
             <p class="stat-value">{{ stats.total_schools }}</p>
             <p class="stat-label">{{ _('total_schools') }}</p>
         </div>
     </div>
+    
     <div class="stat-card">
-        <div class="stat-icon">👥</div>
+        <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#007AFF" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+        </div>
         <div class="stat-info">
             <p class="stat-value">{{ stats.total_users }}</p>
             <p class="stat-label">{{ _('total_users') }}</p>
         </div>
     </div>
+    
     <div class="stat-card">
-        <div class="stat-icon">🌍</div>
+        <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+            </svg>
+        </div>
         <div class="stat-info">
             <p class="stat-value">{{ stats.total_regions }}</p>
             <p class="stat-label">地区总数</p>
         </div>
     </div>
-    <div class="stat-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-        <div class="stat-icon">📊</div>
+    
+    <div class="stat-card">
+        <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+            </svg>
+        </div>
         <div class="stat-info">
             <p class="stat-value">{{ stats.hk_schools or 0 }}</p>
             <p class="stat-label">香港学校</p>
         </div>
     </div>
+    
+    <div class="stat-card">
+        <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#AF52DE" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+        </div>
+        <div class="stat-info">
+            <p class="stat-value">{{ stats.university_count or 0 }}</p>
+            <p class="stat-label">大学数量</p>
+        </div>
+    </div>
 </div>
 
-<!-- 数据来源统计 -->
+<!-- Data Source Stats -->
 <div class="stats-section">
     <h2>📊 数据来源统计</h2>
     <div class="source-stats">
@@ -61,11 +101,15 @@
     </div>
 </div>
 
+<!-- Admin Sections -->
 <div class="admin-sections">
+    <!-- Recent Schools -->
     <div class="admin-section">
         <div class="section-header">
             <h2>最近添加的学校</h2>
-            <a href="{{ url_for('admin_schools') }}" class="btn btn-primary btn-sm">查看全部</a>
+            <a href="{{ url_for('admin_schools') }}" class="btn btn-secondary btn-sm">
+                查看全部 →
+            </a>
         </div>
         <table class="admin-table">
             <thead>
@@ -74,7 +118,6 @@
                     <th>学校名称</th>
                     <th>地区</th>
                     <th>来源</th>
-                    <th>时间</th>
                 </tr>
             </thead>
             <tbody>
@@ -89,26 +132,33 @@
                     <td>{{ school.region }}</td>
                     <td>
                         {% if school.source == 'schooland.hk' %}
-                            <span class="source-badge source-schooland">schooland.hk</span>
+                            <span class="source-badge source-schooland">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                </svg>
+                                schooland.hk
+                            </span>
                         {% else %}
                             <span class="source-badge source-manual">手动</span>
                         {% endif %}
                     </td>
-                    <td>{{ school.updated_at[:10] if school.updated_at else school.created_at[:10] }}</td>
                 </tr>
                 {% else %}
                 <tr>
-                    <td colspan="5" class="empty">暂无数据</td>
+                    <td colspan="4" class="empty">暂无数据</td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div>
     
+    <!-- Recent Users -->
     <div class="admin-section">
         <div class="section-header">
             <h2>最近注册的用户</h2>
-            <a href="{{ url_for('admin_users') }}" class="btn btn-primary btn-sm">查看全部</a>
+            <a href="{{ url_for('admin_users') }}" class="btn btn-secondary btn-sm">
+                查看全部 →
+            </a>
         </div>
         <table class="admin-table">
             <thead>
@@ -143,108 +193,34 @@
     </div>
 </div>
 
+<!-- Quick Actions -->
 <div class="quick-actions">
-    <h2>快捷操作</h2>
+    <h2>⚡ 快捷操作</h2>
     <div class="action-buttons">
         <a href="{{ url_for('admin_add_school') }}" class="btn btn-primary">
-            ➕ {{ _('add_school') }}
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+            {{ _('add_school') }}
         </a>
         <a href="{{ url_for('admin_users') }}" class="btn btn-secondary">
-            👥 {{ _('manage_users') }}
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="8.5" cy="7" r="4"/>
+                <line x1="20" y1="8" x2="20" y2="14"/>
+                <line x1="23" y1="11" x2="17" y2="11"/>
+            </svg>
+            {{ _('manage_users') }}
         </a>
         <a href="{{ url_for('index') }}" class="btn btn-secondary" target="_blank">
-            🌐 {{ _('home') }}
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+            </svg>
+            {{ _('home') }}
         </a>
     </div>
 </div>
-
-<style>
-.stats-section {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.stats-section h2 {
-    margin: 0 0 15px 0;
-    font-size: 18px;
-    color: #333;
-}
-
-.source-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-.source-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.source-card:nth-child(2) {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.source-card:nth-child(3) {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-.source-name {
-    font-size: 14px;
-    opacity: 0.9;
-}
-
-.source-count {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 5px 0;
-}
-
-.source-label {
-    font-size: 12px;
-    opacity: 0.8;
-}
-
-.source-badge {
-    display: inline-block;
-    padding: 3px 8px;
-    border-radius: 4px;
-    font-size: 11px;
-}
-
-.source-schooland {
-    background: #e3f2fd;
-    color: #1976d2;
-}
-
-.source-manual {
-    background: #f5f5f5;
-    color: #666;
-}
-
-.admin-sections {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-}
-
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.section-header h2 {
-    margin: 0;
-    font-size: 18px;
-    color: #333;
-}
-</style>
 {% endblock %}
