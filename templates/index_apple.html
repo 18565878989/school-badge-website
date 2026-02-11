@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校徽网 - {{ _('hero_title') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="school-gallery">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="{{ url_for('index') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网">
+            </a>
+            <div class="nav-links">
+                <a href="{{ url_for('index') }}" class="active">{{ _('home') }}</a>
+                <a href="{{ url_for('campus_north_america') }}">{{ _('campus_gallery') }}</a>
+                {% if session.get('user_id') %}
+                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
+                    <span class="username">{{ session.get('username') }}</span>
+                    {% if is_admin() %}
+                        <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
+                    {% endif %}
+                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}">{{ _('login') }}</a>
+                    <a href="{{ url_for('register') }}">{{ _('register') }}</a>
+                {% endif %}
+                
+                <div class="lang-switcher">
+                    <select onchange="window.location.href=this.value">
+                        {% for code, name in LANGUAGE_NAMES.items() %}
+                            <option value="{{ url_for('set_language', lang=code) }}" 
+                                    {% if current_lang == code %}selected{% endif %}>
+                                {{ name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>{{ _('hero_title') }}</h1>
+            <p>{{ _('hero_subtitle') }}</p>
+        </div>
+    </section>
+
+    <!-- Search & Filters -->
+    <section class="search-section">
+        <div class="container">
+            <form class="search-form" action="{{ url_for('index') }}" method="GET">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                    <input type="text" name="q" placeholder="{{ _('search_placeholder') }}" 
+                           value="{{ search_query }}">
+                    {% if selected_region %}
+                        <input type="hidden" name="region" value="{{ selected_region }}">
+                    {% endif %}
+                    {% if selected_country %}
+                        <input type="hidden" name="country" value="{{ selected_country }}">
+                    {% endif %}
+                    {% if selected_city %}
+                        <input type="hidden" name="city" value="{{ selected_city }}">
+                    {% endif %}
+                    {% if selected_district %}
+                        <input type="hidden" name="district" value="{{ selected_district }}">
+                    {% endif %}
+                    {% if selected_level %}
+                        <input type="hidden" name="level" value="{{ selected_level }}">
+                    {% endif %}
+                </div>
+                <button type="submit" style="display:none;">Search</button>
+            </form>
+
+            <!-- Filters -->
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <select onchange="window.location.href=this.value">
+                        <option value="{{ url_for('index') }}" {% if not selected_region %}selected{% endif %}>
+                            {{ _('all_regions') }}
+                        </option>
+                        {% for region in regions %}
+                            <option value="{{ url_for('index', region=region) }}" 
+                                    {% if selected_region == region %}selected{% endif %}>
+                                {{ region }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
+                {% if countries %}
+                <div class="filter-group">
+                    <select onchange="window.location.href=this.value">
+                        <option value="{{ url_for('index', region=selected_region) }}" {% if not selected_country %}selected{% endif %}>
+                            {{ _('all_countries') }}
+                        </option>
+                        {% for country in countries %}
+                            <option value="{{ url_for('index', region=selected_region, country=country) }}" 
+                                    {% if selected_country == country %}selected{% endif %}>
+                                {{ country }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                {% endif %}
+                
+                {% if cities and not hk_districts %}
+                <div class="filter-group">
+                    <select onchange="window.location.href=this.value">
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country) }}" {% if not selected_city %}selected{% endif %}>
+                            {{ _('all_cities') }}
+                        </option>
+                        {% for city in cities %}
+                            <option value="{{ url_for('index', region=selected_region, country=selected_country, city=city) }}" 
+                                    {% if selected_city == city %}selected{% endif %}>
+                                {{ city }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                {% endif %}
+                
+                {% if hk_districts %}
+                <div class="filter-group">
+                    <select onchange="window.location.href=this.value">
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country) }}" {% if not selected_district %}selected{% endif %}>
+                            {{ _('all_districts') }}
+                        </option>
+                        {% for district in hk_districts %}
+                            <option value="{{ url_for('index', region=selected_region, country=selected_country, district=district) }}" 
+                                    {% if selected_district == district %}selected{% endif %}>
+                                {{ district }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                {% endif %}
+                
+                <div class="filter-group">
+                    <select onchange="window.location.href=this.value">
+                        {% if selected_country %}
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country) }}" {% if not selected_level %}selected{% endif %}>
+                            {{ _('all_types') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>
+                            {{ _('university') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, level='middle') }}" {% if selected_level == 'middle' %}selected{% endif %}>
+                            {{ _('middle_school') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, level='elementary') }}" {% if selected_level == 'elementary' %}selected{% endif %}>
+                            {{ _('elementary_school') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, country=selected_country, level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>
+                            {{ _('kindergarten') }}
+                        </option>
+                        {% else %}
+                        <option value="{{ url_for('index', region=selected_region) }}" {% if not selected_level %}selected{% endif %}>
+                            {{ _('all_types') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>
+                            {{ _('university') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, level='middle') }}" {% if selected_level == 'middle' %}selected{% endif %}>
+                            {{ _('middle_school') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, level='elementary') }}" {% if selected_level == 'elementary' %}selected{% endif %}>
+                            {{ _('elementary_school') }}
+                        </option>
+                        <option value="{{ url_for('index', region=selected_region, level='kindergarten') }}" {% if selected_level == 'kindergarten' %}selected{% endif %}>
+                            {{ _('kindergarten') }}
+                        </option>
+                        {% endif %}
+                    </select>
+                </div>
+                
+                {% if selected_region or selected_country or selected_city or selected_district or selected_level or search_query %}
+                    <a href="{{ url_for('index') }}" class="clear-filters">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                        {{ _('clear_filters') }}
+                    </a>
+                {% endif %}
+            </div>
+
+            {% if total_schools > 0 %}
+            <div class="stats-bar">
+                <span class="stats-count">{{ _('schools_count').format(total_schools) }}</span>
+                {% if selected_region or selected_country or selected_city or selected_district or selected_level or search_query %}
+                    <span class="filter-info">
+                        {% if selected_region %}· {{ selected_region }}{% endif %}
+                        {% if selected_country %}· {{ selected_country }}{% endif %}
+                        {% if selected_city %}· {{ selected_city }}{% endif %}
+                        {% if selected_district %}· {{ selected_district }}{% endif %}
+                        {% if selected_level %}· {{ _(selected_level) }}{% endif %}
+                        {% if search_query %}· "{{ search_query }}"{% endif %}
+                    </span>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="container">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <!-- School Cards Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            {% if total_schools > 0 %}
+            <div class="gallery-grid">
+                {% for school in schools %}
+                <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                    <div class="card-image">
+                        {% if school.badge_url %}
+                            <img src="{{ school.badge_url }}" 
+                                 alt="{{ school.name }} badge"
+                                 loading="lazy">
+                        {% else %}
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <rect fill="#f5f5f7" width="100" height="100"/>
+                                <path d="M45 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 17.5c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5 7.5 3.4 7.5 7.5-3.4 7.5-7.5 7.5zM70 65H30c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h40c2.8 0 5 2.2 5 5v2c0 2.8-2.2 5-5 5z" fill="#86868b"/>
+                            </svg>
+                        </div>
+                        {% endif %}
+                        <div class="card-badge">
+                            <span class="level-badge level-{{ school.level }}">
+                                {% if school.level == 'university' %}{{ _('university') }}
+                                {% elif school.level == 'middle' %}{{ _('middle_school') }}
+                                {% elif school.level == 'elementary' %}{{ _('elementary_school') }}
+                                {% else %}{{ _('kindergarten') }}{% endif %}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h2>{{ school.name }}</h2>
+                            <span class="location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                {{ school.city }}, {{ school.country }}
+                            </span>
+                        </div>
+                        {% if school.name_cn %}
+                        <p class="english-name">{{ school.name_cn }}</p>
+                        {% endif %}
+                        {% if school.motto %}
+                        <p class="image-caption">"{{ school.motto }}"</p>
+                        {% endif %}
+                        <div class="card-meta">
+                            {% if school.founded %}
+                            <span class="founded">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                {{ school.founded }}
+                            </span>
+                            {% endif %}
+                            <span class="country-flag">
+                                {% set country_flags = {
+                                    'China': '🇨🇳',
+                                    'Hong Kong': '🇭🇰',
+                                    'United Kingdom': '🇬🇧',
+                                    'United States': '🇺🇸',
+                                    'Canada': '🇨🇦',
+                                    'Australia': '🇦🇺',
+                                    'Japan': '🇯🇵',
+                                    'South Korea': '🇰🇷',
+                                    'Singapore': '🇸🇬',
+                                    'Malaysia': '🇲🇾',
+                                    'Germany': '🇩🇪',
+                                    'France': '🇫🇷',
+                                    'Italy': '🇮🇹',
+                                    'Spain': '🇪🇸',
+                                    'Netherlands': '🇳🇱',
+                                    'Switzerland': '🇨🇭',
+                                    'Sweden': '🇸🇪',
+                                    'Belgium': '🇧🇪',
+                                    'Austria': '🇦🇹',
+                                    'Denmark': '🇩🇰',
+                                    'Finland': '🇫🇮',
+                                    'Norway': '🇳🇴',
+                                    'Ireland': '🇮🇪',
+                                    'Poland': '🇵🇱',
+                                    'Russia': '🇷🇺',
+                                    'Ukraine': '🇺🇦',
+                                    'Czech Republic': '🇨🇿',
+                                    'Hungary': '🇭🇺',
+                                    'Greece': '🇬🇷',
+                                    'Portugal': '🇵🇹',
+                                    'New Zealand': '🇳🇿',
+                                    'Taiwan': '🇹🇼',
+                                    'India': '🇮🇳',
+                                    'Pakistan': '🇵🇰',
+                                    'Bangladesh': '🇧🇩',
+                                    'Thailand': '🇹🇭',
+                                    'Vietnam': '🇻🇳',
+                                    'Indonesia': '🇮🇩',
+                                    'Philippines': '🇵🇭',
+                                    'Brazil': '🇧🇷',
+                                    'Argentina': '🇦🇷',
+                                    'South Africa': '🇿🇦',
+                                    'Egypt': '🇪🇬'
+                                } %}
+                                {{ country_flags.get(school.country, '🏳') }}
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="no-results">
+                <div class="no-results-icon">🎓</div>
+                <h2>{{ _('no_schools') }}</h2>
+                <p>Try adjusting your filters or search query</p>
+                <a href="{{ url_for('index') }}" class="btn btn-primary">{{ _('view_all') }}</a>
+            </div>
+            {% endif %}
+
+            {% if total_pages > 1 %}
+            <div class="pagination">
+                {% if page > 1 %}
+                    <a href="{{ url_for('index', page=page-1, region=selected_region, country=selected_country, district=selected_district, level=selected_level, q=search_query) }}" class="page-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                        {{ _('prev') }}
+                    </a>
+                {% endif %}
+                
+                {% for p in range(1, total_pages + 1) %}
+                    {% if p == page %}
+                        <span class="page-current">{{ p }}</span>
+                    {% elif p == 1 or p == total_pages or (p >= page - 2 and p <= page + 2) %}
+                        <a href="{{ url_for('index', page=p, region=selected_region, country=selected_country, city=selected_city, district=selected_district, level=selected_level, q=search_query) }}" class="page-num">{{ p }}</a>
+                    {% elif p == page - 3 or p == page + 3 %}
+                        <span class="page-ellipsis">...</span>
+                    {% endif %}
+                {% endfor %}
+                
+                {% if page < total_pages %}
+                    <a href="{{ url_for('index', page=page+1, region=selected_region, country=selected_country, city=selected_city, district=selected_district, level=selected_level, q=search_query) }}" class="page-btn">
+                        {{ _('next') }}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </a>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </section>
+
+    {% if session.get('is_admin') %}
+    <a href="{{ url_for('admin_dashboard') }}" class="admin-float">{{ _('admin_panel') }}</a>
+    {% endif %}
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -169,7 +169,7 @@ def index():
     end = start + per_page
     paginated_schools = schools[start:end]
     
-    return render_template('index.html', 
+    return render_template('index_apple.html', 
                          schools=paginated_schools, 
                          regions=regions, 
                          levels=levels,
