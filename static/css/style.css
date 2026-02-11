@@ -275,6 +275,7 @@ main {
 
 .school-info {
     padding: 20px 24px 24px;
+    position: relative;
 }
 
 .school-info h3 {
@@ -325,6 +326,21 @@ main {
 .level-kindergarten {
     background: linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 100%);
     color: #BE185D;
+}
+
+/* Country Flag */
+.country-flag {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    font-size: 1.5rem;
+    line-height: 1;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    transition: transform 0.2s ease;
+}
+
+.school-card:hover .country-flag {
+    transform: scale(1.1);
 }
 
 /* Buttons */
