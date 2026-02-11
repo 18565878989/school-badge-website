@@ -8,10 +8,10 @@
     .school-detail {
         max-width: 1100px;
         margin: 0 auto;
-        padding: 120px 24px 80px;
+        padding: 40px 0 80px;
     }
     
-    /* Back Link - Minimal */
+    /* Back Link - Consistent with Navbar */
     .back-link {
         display: inline-flex;
         align-items: center;
@@ -20,13 +20,12 @@
         font-size: 0.9rem;
         text-decoration: none;
         margin-bottom: 32px;
-        transition: all 0.25s ease;
         font-weight: 500;
+        transition: all 0.2s ease;
     }
     
     .back-link:hover {
-        color: var(--primary);
-        gap: 12px;
+        color: var(--gold);
     }
     
     .back-link svg {
@@ -131,13 +130,13 @@
     }
     
     .btn-like.liked {
-        background: rgba(255, 59, 48, 0.1);
-        color: #FF3B30;
-        border: 2px solid #FF3B30;
+        background: rgba(212, 175, 55, 0.15);
+        color: var(--gold);
+        border: 2px solid var(--gold);
     }
     
     .btn-like.liked:hover {
-        background: #FF3B30;
+        background: var(--gold);
         color: white;
     }
     
@@ -213,7 +212,7 @@
     .likes-count svg {
         width: 18px;
         height: 18px;
-        color: #FF3B30;
+        color: var(--gold);
     }
     
     /* Motto Card */
