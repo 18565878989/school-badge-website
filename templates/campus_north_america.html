@@ -34,7 +34,7 @@
         <div class="container">
             <div class="gallery-grid">
                 {% for school in schools %}
-                <article class="campus-card" data-university="{{ school.name }}">
+                <article class="campus-card" data-university="{{ school.name }}" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'" style="cursor: pointer;">
                     <div class="card-image">
                         {% if school.campus_image %}
                         <img src="{{ school.campus_image }}" 
@@ -116,21 +116,20 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Lightbox functionality
-        const cards = document.querySelectorAll('.campus-card');
+        // Lightbox functionality - only for images, not cards
+        const images = document.querySelectorAll('.card-image img');
         const lightbox = document.getElementById('lightbox');
         const lightboxImage = document.getElementById('lightbox-image');
         const lightboxTitle = document.getElementById('lightbox-title');
         const lightboxDesc = document.getElementById('lightbox-desc');
         const closeBtn = document.querySelector('.close-btn');
 
-        cards.forEach(card => {
-            card.addEventListener('click', () => {
-                const img = card.querySelector('.card-image img');
-                if (img && img.src && !img.parentElement.classList.contains('image-placeholder')) {
+        images.forEach(img => {
+            img.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (img.src && !img.parentElement.classList.contains('image-placeholder')) {
                     lightboxImage.src = img.src;
-                    lightboxTitle.textContent = card.querySelector('h2').textContent;
-                    lightboxDesc.textContent = card.querySelector('.image-caption')?.textContent || '';
+                    lightboxTitle.textContent = img.alt || '';
                     lightbox.classList.add('active');
                     document.body.style.overflow = 'hidden';
                 }
