@@ -110,21 +110,21 @@
         <!-- Info Section -->
         <div style="padding: 52px; display: flex; flex-direction: column;">
             <!-- Stats Row -->
-            <div style="display: flex; gap: 40px; margin-bottom: 32px; padding-bottom: 28px; border-bottom: 1px solid rgba(0,0,0,0.06);">
-                <div style="display: flex; flex-direction: column;">
-                    <span style="font-size: 1.8rem; font-weight: 700; color: #1d1d1f; letter-spacing: -0.02em;">{{ likes_count }}</span>
-                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">{{ _('likes') }}</span>
+            <div style="display: flex; gap: 40px; margin-bottom: 32px; padding-bottom: 28px; border-bottom: 1px solid rgba(0,0,0,0.06); flex-wrap: wrap;">
+                <div style="display: flex; flex-direction: column; min-width: 80px;">
+                    <span style="font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 700; color: #1d1d1f; letter-spacing: -0.02em;">{{ likes_count }}</span>
+                    <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">{{ _('likes') }}</span>
                 </div>
                 {% if school.founded %}
-                <div style="display: flex; flex-direction: column;">
-                    <span style="font-size: 1.8rem; font-weight: 700; color: #1d1d1f; letter-spacing: -0.02em;">{{ school.founded }}</span>
-                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">{{ _('founded') }}</span>
+                <div style="display: flex; flex-direction: column; min-width: 80px;">
+                    <span style="font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 700; color: #1d1d1f; letter-spacing: -0.02em;">{{ school.founded }}</span>
+                    <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">{{ _('founded') }}</span>
                 </div>
                 {% endif %}
                 {% if school.region %}
-                <div style="display: flex; flex-direction: column;">
-                    <span style="font-size: 1.8rem; font-weight: 700; color: #1d1d1f; letter-spacing: -0.02em;">{{ school.region }}</span>
-                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">{{ _('region') }}</span>
+                <div style="display: flex; flex-direction: column; min-width: 80px;">
+                    <span style="font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 700; color: #1d1d1f; letter-spacing: -0.02em;">{{ school.region }}</span>
+                    <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">{{ _('region') }}</span>
                 </div>
                 {% endif %}
             </div>
@@ -278,7 +278,7 @@
             </div>
             
             {% if school.website %}
-            <a href="{{ school.website }}" target="_blank" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); color: white; border-radius: 20px; font-weight: 700; text-decoration: none; margin-top: 28px; box-shadow: 0 8px 24px rgba(30, 58, 95, 0.3); width: fit-content;">
+            <a href="{{ school.website }}" target="_blank" style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 32px; background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); color: white; border-radius: 20px; font-weight: 700; text-decoration: none; margin-top: 28px; box-shadow: 0 8px 24px rgba(30, 58, 95, 0.3); transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); width: fit-content;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 36px rgba(30, 58, 95, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(30, 58, 95, 0.3)';">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                 {{ _('visit_website_full').format(school.name) }}
             </a>
@@ -288,15 +288,15 @@
     
     <!-- Google Maps -->
     {% if school.address %}
-    <div style="background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02); margin-top: 40px;">
+    <div style="background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02); margin-top: 40px; transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);">
         <div style="display: flex; align-items: center; gap: 12px; padding: 24px 28px; border-bottom: 1px solid rgba(0,0,0,0.06); font-weight: 700; font-size: 1rem;">
             <svg viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2" style="width: 24px; height: 24px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             {{ school.address }}, {{ school.city }}, {{ school.country }}
         </div>
-        <div style="height: 320px;">
+        <div style="height: 320px; transition: height 0.3s ease;">
             <iframe width="100%" height="100%" style="border: 0;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?hl={{ current_lang }}&q={{ (school.address ~ ', ' ~ school.city ~ ', ' ~ school.country) | urlencode }}&zoom=16&maptype=roadmap"></iframe>
         </div>
-        <a href="https://www.google.com/maps/search/?api=1&query={{ (school.address ~ ', ' ~ school.city ~ ', ' ~ school.country) | urlencode }}" target="_blank" style="display: flex; align-items: center; gap: 8px; padding: 20px 28px; background: #f5f5f7; color: #1E3A5F; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: all 0.2s ease;">
+        <a href="https://www.google.com/maps/search/?api=1&query={{ (school.address ~ ', ' ~ school.city ~ ', ' ~ school.country) | urlencode }}" target="_blank" style="display: flex; align-items: center; gap: 8px; padding: 20px 28px; background: #f5f5f7; color: #1E3A5F; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: all 0.2s ease;" onmouseover="this.style.background='#eeeeee';" onmouseout="this.style.background='#f5f5f7';">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 18px; height: 18px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             {{ _('view_on_maps') }}
         </a>
@@ -305,13 +305,32 @@
 </div>
 
 <script>
-function downloadBadge() {
-    const link = document.createElement('a');
-    link.href = '{{ school.badge_url or url_for("static", filename="images/placeholder.png") }}';
-    link.download = '{{ school.name }}_badge.png';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
+// Add smooth scroll behavior
+document.documentElement.style.scrollBehavior = 'smooth';
+
+// Add fade-in animation on load
+window.addEventListener('DOMContentLoaded', function() {
+    const hero = document.querySelector('.school-hero');
+    if (hero) {
+        hero.style.opacity = '0';
+        hero.style.transform = 'translateY(20px)';
+        setTimeout(function() {
+            hero.style.transition = 'all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)';
+            hero.style.opacity = '1';
+            hero.style.transform = 'translateY(0)';
+        }, 100);
+    }
+    
+    const maps = document.querySelector('[style*="border-radius: 24px"]');
+    if (maps) {
+        maps.style.opacity = '0';
+        maps.style.transform = 'translateY(20px)';
+        setTimeout(function() {
+            maps.style.transition = 'all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)';
+            maps.style.opacity = '1';
+            maps.style.transform = 'translateY(0)';
+        }, 300);
+    }
+});
 </script>
 {% endblock %}
