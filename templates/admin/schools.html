@@ -3,221 +3,277 @@
 {% block title %}{{ _('manage_schools') }} - {{ _('admin_panel') }}{% endblock %}
 
 {% block content %}
-<div class="admin-header">
-    <h1>{{ _('manage_schools') }}</h1>
-    <div class="header-actions">
+<div class="admin-header animate-in">
+    <div>
+        <h1>{{ _('manage_schools') }}</h1>
+        <p>管理所有学校数据</p>
+    </div>
+    <div class="admin-header-actions">
         <a href="{{ url_for('admin_add_school') }}" class="btn btn-primary">
-            ➕ {{ _('add_school') }}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+            {{ _('add_school') }}
         </a>
     </div>
 </div>
 
-<!-- 数据统计卡片 -->
+<!-- Stats Grid -->
 <div class="stats-grid">
-    <div class="stat-card">
-        <div class="stat-value">{{ schools|length }}</div>
-        <div class="stat-label">学校总数</div>
+    <div class="stat-card animate-in">
+        <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+            </svg>
+        </div>
+        <div class="stat-info">
+            <p class="stat-value">{{ schools|length }}</p>
+            <p class="stat-label">学校总数</p>
+        </div>
     </div>
-    <div class="stat-card">
-        <div class="stat-value">{{ schools|selectattr('region', 'equalto', 'Hong Kong')|list|length }}</div>
-        <div class="stat-label">香港学校</div>
+    
+    <div class="stat-card animate-in">
+        <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+            </svg>
+        </div>
+        <div class="stat-info">
+            <p class="stat-value">{{ schools|selectattr('region', 'equalto', 'Hong Kong')|list|length }}</p>
+            <p class="stat-label">香港学校</p>
+        </div>
     </div>
-    <div class="stat-card">
-        <div class="stat-value">{{ level_stats.university if level_stats else 0 }}</div>
-        <div class="stat-label">大学</div>
+    
+    <div class="stat-card animate-in">
+        <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#007AFF" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+            </svg>
+        </div>
+        <div class="stat-info">
+            <p class="stat-value">{{ level_stats.university if level_stats else 0 }}</p>
+            <p class="stat-label">大学</p>
+        </div>
     </div>
-    <div class="stat-card">
-        <div class="stat-value">{{ level_stats.middle if level_stats else 0 }}</div>
-        <div class="stat-label">中学</div>
+    
+    <div class="stat-card animate-in">
+        <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+            </svg>
+        </div>
+        <div class="stat-info">
+            <p class="stat-value">{{ level_stats.middle if level_stats else 0 }}</p>
+            <p class="stat-label">中学</p>
+        </div>
     </div>
-    <div class="stat-card">
-        <div class="stat-value">{{ level_stats.elementary if level_stats else 0 }}</div>
-        <div class="stat-label">小学</div>
+    
+    <div class="stat-card animate-in">
+        <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#AF52DE" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+            </svg>
+        </div>
+        <div class="stat-info">
+            <p class="stat-value">{{ level_stats.primary if level_stats else 0 }}</p>
+            <p class="stat-label">小学</p>
+        </div>
     </div>
-    <div class="stat-card">
-        <div class="stat-value">{{ level_stats.kindergarten if level_stats else 0 }}</div>
-        <div class="stat-label">幼儿园</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-value">{{ schools|selectattr('source', 'equalto', 'schooland.hk')|list|length }}</div>
-        <div class="stat-label">schooland.hk</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-value">{{ schools|selectattr('source', 'equalto', 'manual')|list|length }}</div>
-        <div class="stat-label">手动添加</div>
+    
+    <div class="stat-card animate-in">
+        <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+        </div>
+        <div class="stat-info">
+            <p class="stat-value">{{ level_stats.kindergarten if level_stats else 0 }}</p>
+            <p class="stat-label">幼儿园</p>
+        </div>
     </div>
 </div>
 
-<!-- 增强的搜索过滤区域 -->
-<div class="filter-bar">
-    <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px;">
-        <div class="filter-group">
-            <label>🔍 关键词搜索</label>
-            <input type="text" id="searchKeyword" placeholder="学校名称、中文名、地址..." onkeyup="filterTable()">
-        </div>
-        <div class="filter-group">
-            <label>📍 地区</label>
-            <select id="filterRegion" onchange="filterTable()">
-                <option value="">全部地区</option>
-                {% for region in regions %}
-                    <option value="{{ region }}">{{ region }}</option>
+<!-- Filter Bar -->
+<div class="filter-bar animate-in">
+    <div class="filter-group">
+        <label>搜索</label>
+        <input type="text" id="searchKeyword" placeholder="学校名称、中文名..." onkeyup="filterTable()">
+    </div>
+    <div class="filter-group">
+        <label>地区</label>
+        <select id="filterRegion" onchange="filterTable()">
+            <option value="">全部地区</option>
+            {% for region in regions %}
+                <option value="{{ region }}">{{ region }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="filter-group">
+        <label>类型</label>
+        <select id="filterLevel" onchange="filterTable()">
+            <option value="">全部类型</option>
+            <option value="university">大学</option>
+            <option value="middle">中学</option>
+            <option value="primary">小学</option>
+            <option value="kindergarten">幼儿园</option>
+            <option value="elementary">特殊</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label>办学</label>
+        <select id="filterFinance" onchange="filterTable()">
+            <option value="">全部</option>
+            <option value="Government">官立</option>
+            <option value="Aided">资助</option>
+            <option value="Direct">直资</option>
+            <option value="Private">私立</option>
+            <option value="ESF">英基</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label>性别</label>
+        <select id="filterGender" onchange="filterTable()">
+            <option value="">全部</option>
+            <option value="CO-ED">男女校</option>
+            <option value="GIRLS">女校</option>
+            <option value="BOYS">男校</option>
+        </select>
+    </div>
+    <div class="filter-actions">
+        <span id="filterCount" class="filter-count">显示: {{ schools|length }} 所学校</span>
+        <button onclick="resetFilters()" class="btn btn-secondary btn-sm">重置</button>
+    </div>
+</div>
+
+<!-- Schools Table -->
+<div class="card animate-in">
+    <div class="table-container">
+        <table class="data-table" id="schoolsTable">
+            <thead>
+                <tr>
+                    <th width="50"><input type="checkbox" id="selectAll" onclick="toggleSelectAll()"></th>
+                    <th width="60">ID</th>
+                    <th width="60">校徽</th>
+                    <th>学校名称</th>
+                    <th>中文名</th>
+                    <th>地区</th>
+                    <th>类型</th>
+                    <th>办学</th>
+                    <th>性别</th>
+                    <th>来源</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for school in schools %}
+                <tr data-region="{{ school.region or '' }}" 
+                    data-level="{{ school.level or '' }}"
+                    data-finance="{{ school.finance_type or '' }}"
+                    data-gender="{{ school.gender or '' }}"
+                    data-source="{{ school.source or 'manual' }}"
+                    data-search="{{ (school.name or '')|lower }}|{{(school.name_cn or '')|lower }}">
+                    <td><input type="checkbox" class="school-checkbox" value="{{ school.id }}"></td>
+                    <td>{{ school.id }}</td>
+                    <td>
+                        {% if school.badge_url and school.badge_url != '/static/badges/default.svg' %}
+                            <img src="{{ school.badge_url }}" alt="{{ school.name }}" class="table-badge" loading="lazy">
+                        {% else %}
+                            <span style="color: var(--text-tertiary);">—</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank" style="font-weight: 500;">
+                            {{ school.name[:40] }}{% if school.name|length > 40 %}...{% endif %}
+                        </a>
+                    </td>
+                    <td>{{ school.name_cn or '—' }}</td>
+                    <td>{{ school.region or '—' }}</td>
+                    <td>
+                        <span class="badge badge-secondary">
+                            {% if school.level == 'university' %}大学
+                            {% elif school.level == 'middle' %}中学
+                            {% elif school.level == 'elementary' %}特殊
+                            {% elif school.level == 'primary' %}小学
+                            {% elif school.level == 'kindergarten' %}幼儿园
+                            {% else %}—{% endif %}
+                        </span>
+                    </td>
+                    <td>
+                        {% if school.finance_type %}
+                            <span class="badge badge-primary" style="font-size: 0.7rem;">
+                                {% if school.finance_type == 'Government' %}官立
+                                {% elif school.finance_type == 'Aided' %}资助
+                                {% elif school.finance_type == 'Direct' %}直资
+                                {% elif school.finance_type == 'Private' %}私立
+                                {% elif school.finance_type == 'ESF' %}英基
+                                {% else %}{{ school.finance_type }}{% endif %}
+                            </span>
+                        {% else %}
+                            <span style="color: var(--text-tertiary);">—</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if school.gender %}
+                            {% if school.gender == 'CO-ED' %}<span class="badge badge-success">男女</span>
+                            {% elif school.gender == 'GIRLS' %}<span class="badge badge-warning">女校</span>
+                            {% elif school.gender == 'BOYS' %}<span class="badge badge-primary">男校</span>
+                            {% else %}<span class="badge badge-secondary">{{ school.gender }}</span>{% endif %}
+                        {% else %}
+                            <span style="color: var(--text-tertiary);">—</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if school.source == 'schooland.hk' %}
+                            <span class="badge badge-primary">schooland.hk</span>
+                        {% else %}
+                            <span class="badge badge-success">手动</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <div class="action-group">
+                            <a href="{{ url_for('admin_edit_school', school_id=school.id) }}" class="btn btn-secondary btn-sm action-btn" title="编辑">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </a>
+                            <a href="{{ url_for('school_detail', school_id=school.id) }}" class="btn btn-secondary btn-sm action-btn" target="_blank" title="查看">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="11">
+                        <div class="empty-state">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                            </svg>
+                            <h3>暂无学校</h3>
+                            <p>还没有添加任何学校</p>
+                        </div>
+                    </td>
+                </tr>
                 {% endfor %}
-            </select>
-        </div>
-        <div class="filter-group">
-            <label>🏫 学校类型</label>
-            <select id="filterLevel" onchange="filterTable()">
-                <option value="">全部类型</option>
-                <option value="university">大学</option>
-                <option value="middle">中学</option>
-                <option value="primary">小学</option>
-                <option value="kindergarten">幼儿园</option>
-                <option value="elementary">特殊学校</option>
-            </select>
-        </div>
-        <div class="filter-group">
-            <label>💰 办学类型</label>
-            <select id="filterFinance" onchange="filterTable()">
-                <option value="">全部类型</option>
-                <option value="Government">官立</option>
-                <option value="Aided">资助</option>
-                <option value="Direct">直资</option>
-                <option value="Private">私立</option>
-                <option value="ESF">英基</option>
-            </select>
-        </div>
-        <div class="filter-group">
-            <label>👥 性别</label>
-            <select id="filterGender" onchange="filterTable()">
-                <option value="">全部</option>
-                <option value="CO-ED">男女校</option>
-                <option value="GIRLS">女校</option>
-                <option value="BOYS">男校</option>
-            </select>
-        </div>
-        <div class="filter-group">
-            <label>📡 数据来源</label>
-            <select id="filterSource" onchange="filterTable()">
-                <option value="">全部来源</option>
-                <option value="edb">教育局EDB</option>
-                <option value="manual">手动添加</option>
-                <option value="batch3">批量导入</option>
-            </select>
-        </div>
-    </div>
-    <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
-        <span id="filterCount" style="font-size: 0.9rem; color: var(--text-secondary);">显示: 0 所学校</span>
-        <button onclick="resetFilters()" class="btn btn-secondary">🔄 重置筛选</button>
-        <button onclick="exportFiltered()" class="btn btn-secondary">📤 导出选中</button>
-    </div>
-</div>
-
-<table class="admin-table" id="schoolsTable">
-    <thead>
-        <tr>
-            <th width="40"><input type="checkbox" id="selectAll" onclick="toggleSelectAll()"></th>
-            <th width="60">ID</th>
-            <th width="60">校徽</th>
-            <th>学校名称</th>
-            <th>中文名</th>
-            <th width="90">地区</th>
-            <th width="70">类型</th>
-            <th width="70">办学</th>
-            <th width="70">性别</th>
-            <th width="100">数据来源</th>
-            <th width="90">更新时间</th>
-            <th width="100">操作</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for school in schools %}
-        <tr data-region="{{ school.region or '' }}" 
-            data-level="{{ school.level or '' }}"
-            data-finance="{{ school.finance_type or '' }}"
-            data-gender="{{ school.gender or '' }}"
-            data-source="{{ school.source or 'manual' }}"
-            data-search="{{ (school.name or '')|lower }}|{{(school.name_cn or '')|lower }}|{{(school.address or '')|lower }}">
-            <td><input type="checkbox" class="school-checkbox" value="{{ school.id }}"></td>
-            <td>{{ school.id }}</td>
-            <td>
-                {% if school.badge_url and school.badge_url != '/static/badges/default.svg' %}
-                    <img src="{{ school.badge_url }}" alt="{{ school.name }}" class="table-badge" loading="lazy">
-                {% else %}
-                    <span class="no-badge">—</span>
-                {% endif %}
-            </td>
-            <td>
-                <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank" class="school-link" title="{{ school.name }}">
-                    {{ school.name[:40] }}{% if school.name|length > 40 %}...{% endif %}
-                </a>
-            </td>
-            <td>{{ school.name_cn or '—' }}</td>
-            <td>{{ school.region or '—' }}</td>
-            <td>
-                <span class="level-badge level-{{ school.level }}">
-                    {% if school.level == 'university' %}大学
-                    {% elif school.level == 'middle' %}中学
-                    {% elif school.level == 'elementary' %}特殊
-                    {% elif school.level == 'primary' %}小学
-                    {% elif school.level == 'kindergarten' %}幼儿园
-                    {% else %}—{% endif %}
-                </span>
-            </td>
-            <td>
-                {% if school.finance_type %}
-                    <span class="finance-badge finance-{{ school.finance_type|lower }}">
-                        {% if school.finance_type == 'Government' %}官立
-                        {% elif school.finance_type == 'Aided' %}资助
-                        {% elif school.finance_type == 'Direct' %}直资
-                        {% elif school.finance_type == 'Private' %}私立
-                        {% elif school.finance_type == 'ESF' %}英基
-                        {% else %}{{ school.finance_type }}{% endif %}
-                    </span>
-                {% else %}
-                    —
-                {% endif %}
-            </td>
-            <td>
-                {% if school.gender == 'CO-ED' %}男女
-                {% elif school.gender == 'GIRLS' %}女校
-                {% elif school.gender == 'BOYS' %}男校
-                {% else %}—{% endif %}
-            </td>
-            <td>
-                {% if school.source == 'edb' %}
-                    <span class="source-badge source-edb">EDB</span>
-                {% elif school.source == 'manual' %}
-                    <span class="source-badge source-manual">手动</span>
-                {% elif school.source == 'batch3' %}
-                    <span class="source-badge source-batch">批量</span>
-                {% else %}
-                    <span class="source-badge source-other">其他</span>
-                {% endif %}
-            </td>
-            <td>{{ school.updated_at[:10] if school.updated_at else '—' }}</td>
-            <td>
-                <div class="action-group">
-                    <a href="{{ url_for('admin_edit_school', school_id=school.id) }}" class="btn btn-sm btn-secondary" title="编辑">✏️</a>
-                    <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank" class="btn btn-sm btn-secondary" title="查看">👁️</a>
-                    <a href="{{ url_for('admin_delete_school', school_id=school.id) }}" 
-                       class="btn btn-sm btn-danger"
-                       onclick="return confirm('确定删除这所学校?')"
-                       title="删除">🗑️</a>
-                </div>
-            </td>
-        </tr>
-        {% else %}
-        <tr>
-            <td colspan="12" class="empty">暂无学校数据</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
-
-<div class="table-footer">
-    <div class="pagination-info">
-        共 <span id="totalCount">{{ schools|length }}</span> 所学校， 
-        当前显示 <span id="visibleCount">0</span> 所
+            </tbody>
+        </table>
     </div>
 </div>
 
@@ -228,38 +284,28 @@ function filterTable() {
     const level = document.getElementById('filterLevel').value;
     const finance = document.getElementById('filterFinance').value;
     const gender = document.getElementById('filterGender').value;
-    const source = document.getElementById('filterSource').value;
     
-    const rows = document.querySelectorAll('#schoolsTable tbody tr[data-search]');
-    let visible = 0;
+    const rows = document.querySelectorAll('#schoolsTable tbody tr');
+    let visibleCount = 0;
     
     rows.forEach(row => {
-        const searchText = row.dataset.search || '';
-        const rowRegion = row.dataset.region || '';
-        const rowLevel = row.dataset.level || '';
-        const rowFinance = row.dataset.finance || '';
-        const rowGender = row.dataset.gender || '';
-        const rowSource = row.dataset.source || '';
+        const searchMatch = !keyword || 
+            row.dataset.search.includes(keyword) ||
+            row.querySelector('td:nth-child(4)')?.textContent.toLowerCase().includes(keyword) ||
+            row.querySelector('td:nth-child(5)')?.textContent.toLowerCase().includes(keyword);
         
-        const matchesKeyword = !keyword || searchText.includes(keyword);
-        const matchesRegion = !region || rowRegion === region;
-        const matchesLevel = !level || rowLevel === level;
-        const matchesFinance = !finance || rowFinance === finance;
-        const matchesGender = !gender || rowGender === gender;
-        const matchesSource = !source || rowSource === source;
+        const regionMatch = !region || row.dataset.region === region;
+        const levelMatch = !level || row.dataset.level === level;
+        const financeMatch = !finance || row.dataset.finance === finance;
+        const genderMatch = !gender || row.dataset.gender === gender;
         
-        const visible_row = matchesKeyword && matchesRegion && matchesLevel && 
-                          matchesFinance && matchesGender && matchesSource;
+        const match = searchMatch && regionMatch && levelMatch && financeMatch && genderMatch;
+        row.style.display = match ? '' : 'none';
         
-        row.style.display = visible_row ? '' : 'none';
-        if (visible_row) visible++;
+        if (match) visibleCount++;
     });
     
-    document.getElementById('filterCount').textContent = `显示: ${visible} 所学校`;
-    document.getElementById('visibleCount').textContent = visible;
-    
-    // 更新全选复选框状态
-    updateSelectAllState();
+    document.getElementById('filterCount').textContent = `显示: ${visibleCount} 所学校`;
 }
 
 function resetFilters() {
@@ -268,329 +314,12 @@ function resetFilters() {
     document.getElementById('filterLevel').value = '';
     document.getElementById('filterFinance').value = '';
     document.getElementById('filterGender').value = '';
-    document.getElementById('filterSource').value = '';
     filterTable();
 }
 
 function toggleSelectAll() {
-    const selectAll = document.getElementById('selectAll');
-    const checkboxes = document.querySelectorAll('.school-checkbox');
-    checkboxes.forEach(cb => {
-        cb.checked = selectAll.checked;
-    });
+    const checkbox = document.getElementById('selectAll');
+    document.querySelectorAll('.school-checkbox').forEach(cb => cb.checked = checkbox.checked);
 }
-
-function updateSelectAllState() {
-    const checkboxes = document.querySelectorAll('.school-checkbox');
-    const visibleCheckboxes = Array.from(checkboxes).filter(cb => {
-        return cb.closest('tr').style.display !== 'none';
-    });
-    const allChecked = visibleCheckboxes.length > 0 && visibleCheckboxes.every(cb => cb.checked);
-    document.getElementById('selectAll').checked = allChecked;
-}
-
-function exportFiltered() {
-    const visibleRows = document.querySelectorAll('#schoolsTable tbody tr[style=""]');
-    const ids = Array.from(visibleRows).map(row => {
-        return row.querySelector('.school-checkbox')?.value;
-    }).filter(Boolean);
-    
-    if (ids.length === 0) {
-        alert('没有选中的学校');
-        return;
-    }
-    
-    alert(`将导出 ${ids.length} 所学校的数据`);
-    // TODO: 实现导出功能
-}
-
-// 页面加载时初始化
-document.addEventListener('DOMContentLoaded', function() {
-    filterTable();
-});
 </script>
-
-<style>
-.search-section {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.search-row {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-}
-
-.search-group {
-    flex: 1;
-    min-width: 150px;
-}
-
-.search-group label {
-    display: block;
-    font-size: 12px;
-    color: #666;
-    margin-bottom: 5px;
-}
-
-.search-group input,
-.search-group select {
-    width: 100%;
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.filter-actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding-top: 10px;
-    border-top: 1px solid #eee;
-}
-
-.filter-count {
-    font-size: 14px;
-    color: #666;
-}
-
-.table-footer {
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px 0;
-}
-
-.pagination-info {
-    font-size: 14px;
-    color: #666;
-}
-
-.admin-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.admin-table th {
-    background: #f8f9fa;
-    padding: 12px 8px;
-    text-align: left;
-    font-weight: 600;
-    font-size: 12px;
-    color: #666;
-    border-bottom: 2px solid #eee;
-}
-
-.admin-table td {
-    padding: 10px 8px;
-    border-bottom: 1px solid #eee;
-    font-size: 13px;
-}
-
-.admin-table tbody tr:hover {
-    background: #f8f9fa;
-}
-
-.level-badge {
-    display: inline-block;
-    padding: 3px 8px;
-    border-radius: 4px;
-    font-size: 11px;
-    font-weight: 500;
-}
-
-.level-university { background: #e3f2fd; color: #1976d2; }
-.level-middle { background: #e8f5e9; color: #388e3c; }
-.level-primary { background: #fff3e0; color: #f57c00; }
-.level-kindergarten { background: #fce4ec; color: #c2185b; }
-.level-elementary { background: #f3e5f5; color: #7b1fa2; }
-
-.finance-badge {
-    display: inline-block;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 10px;
-}
-
-.finance-government { background: #bbdefb; color: #1565c0; }
-.finance-aided { background: #c8e6c9; color: #2e7d32; }
-.finance-direct { background: #fff9c4; color: #f9a825; }
-.finance-private { background: #ffccbc; color: #d84315; }
-.finance-esf { background: #e1bee7; color: #7b1fa2; }
-
-.source-badge {
-    display: inline-block;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 10px;
-    font-weight: 500;
-}
-
-.source-edb { background: #bbdefb; color: #1976d2; }
-.source-manual { background: #f5f5f5; color: #666; }
-.source-batch { background: #c8e6c9; color: #2e7d32; }
-
-.table-badge {
-    width: 36px;
-    height: 36px;
-    object-fit: contain;
-    border-radius: 5px;
-}
-
-.action-group {
-    display: flex;
-    gap: 4px;
-}
-
-.btn-sm {
-    padding: 4px 6px;
-    font-size: 12px;
-    border-radius: 4px;
-}
-
-.btn-secondary {
-    background: #f5f5f5;
-    color: #666;
-    border: 1px solid #ddd;
-}
-
-.btn-secondary:hover {
-    background: #e0e0e0;
-}
-
-.no-badge {
-    color: #999;
-    font-size: 18px;
-}
-
-.school-link {
-    color: #333;
-    text-decoration: none;
-}
-
-.school-link:hover {
-    color: #667eea;
-}
-</style>
-
-<style>
-.stats-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 16px;
-    margin-bottom: 20px;
-}
-
-.stat-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.stat-card:nth-child(2) {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.stat-card:nth-child(3) {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-.stat-card:nth-child(4) {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-}
-
-.stat-number {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.stat-label {
-    font-size: 14px;
-    opacity: 0.9;
-    margin-top: 5px;
-}
-
-.filter-bar {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-.filter-bar input,
-.filter-bar select {
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.filter-bar input {
-    flex: 1;
-    min-width: 200px;
-}
-
-.table-badge {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    border-radius: 5px;
-}
-
-.school-link {
-    color: #333;
-    text-decoration: none;
-}
-
-.school-link:hover {
-    color: #667eea;
-}
-
-.source-badge {
-    display: inline-block;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.source-schooland {
-    background: #e3f2fd;
-    color: #1976d2;
-}
-
-.source-manual {
-    background: #f5f5f5;
-    color: #666;
-}
-
-.action-group {
-    display: flex;
-    gap: 5px;
-}
-
-.btn-sm {
-    padding: 4px 8px;
-    font-size: 12px;
-}
-
-.admin-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.admin-header h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-}
-</style>
 {% endblock %}

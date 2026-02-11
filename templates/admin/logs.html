@@ -3,48 +3,93 @@
 {% block title %}操作日志 - {{ _('admin_panel') }}{% endblock %}
 
 {% block content %}
-<div class="admin-header">
-    <h1>操作日志</h1>
+<div class="admin-header animate-in">
+    <div>
+        <h1>操作日志</h1>
+        <p>查看系统操作记录</p>
+    </div>
 </div>
 
-<table class="admin-table" id="logsTable">
-    <thead>
-        <tr>
-            <th>时间</th>
-            <th>管理员</th>
-            <th>操作</th>
-            <th>目标类型</th>
-            <th>目标</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for log in logs %}
-        <tr>
-            <td>{{ log.created_at[:19] }}</td>
-            <td>{{ log.username or '系统' }}</td>
-            <td>
-                {% if 'CREATE' in log.action %}
-                    <span class="log-action log-create">创建</span>
-                {% elif 'UPDATE' in log.action %}
-                    <span class="log-action log-update">更新</span>
-                {% elif 'DELETE' in log.action %}
-                    <span class="log-action log-delete">删除</span>
-                {% elif 'PROMOTE' in log.action %}
-                    <span class="log-action log-promote">提升权限</span>
-                {% elif 'DEMOTE' in log.action %}
-                    <span class="log-action log-demote">降低权限</span>
+<!-- Stats -->
+<div class="stats-grid" style="margin-bottom: 24px;">
+    <div class="stat-card animate-in">
+        <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <path d="M14 2v6h6"/>
+            </svg>
+        </div>
+        <div class="stat-info">
+            <p class="stat-value">{{ logs|length }}</p>
+            <p class="stat-label">日志总数</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logs Table -->
+<div class="card animate-in">
+    <div class="card-header">
+        <h2>操作记录</h2>
+    </div>
+    <div class="table-container">
+        <table class="data-table" id="logsTable">
+            <thead>
+                <tr>
+                    <th>时间</th>
+                    <th>管理员</th>
+                    <th>操作</th>
+                    <th>目标类型</th>
+                    <th>详情</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for log in logs %}
+                <tr>
+                    <td>{{ log.created_at[:19] }}</td>
+                    <td>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <div style="width: 28px; height: 28px; background: var(--bg-secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; color: var(--primary);">
+                                {{ (log.username or '系')[0].upper() }}
+                            </div>
+                            <span>{{ log.username or '系统' }}</span>
+                        </div>
+                    </td>
+                    <td>
+                        {% if 'CREATE' in log.action %}
+                            <span class="badge badge-success">创建</span>
+                        {% elif 'UPDATE' in log.action %}
+                            <span class="badge badge-primary">更新</span>
+                        {% elif 'DELETE' in log.action %}
+                            <span class="badge badge-danger">删除</span>
+                        {% elif 'PROMOTE' in log.action %}
+                            <span class="badge badge-warning">提升</span>
+                        {% elif 'DEMOTE' in log.action %}
+                            <span class="badge badge-secondary">降级</span>
+                        {% else %}
+                            <span class="badge badge-secondary">{{ log.action }}</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ log.target_type or '—' }}</td>
+                    <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                        {{ log.details or '—' }}
+                    </td>
+                </tr>
                 {% else %}
-                    <span class="log-action">{{ log.action }}</span>
-                {% endif %}
-            </td>
-            <td>{{ log.target_type or '—' }}</td>
-            <td>{{ log.details or '—' }}</td>
-        </tr>
-        {% else %}
-        <tr>
-            <td colspan="5" class="empty">暂无操作日志</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+                <tr>
+                    <td colspan="5">
+                        <div class="empty-state">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                            </svg>
+                            <h3>暂无日志</h3>
+                            <p>还没有操作记录</p>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
 {% endblock %}
