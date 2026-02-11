@@ -7,6 +7,7 @@ TRANSLATIONS = {
     'zh': {
         # Navigation
         'home': '首页',
+        'campus_gallery': '校园风光',
         'my_likes': '我的收藏',
         'login': '登录',
         'register': '注册',
@@ -123,6 +124,7 @@ TRANSLATIONS = {
     'en': {
         # Navigation
         'home': 'Home',
+        'campus_gallery': 'Campus Gallery',
         'my_likes': 'My Likes',
         'login': 'Login',
         'register': 'Register',
@@ -239,6 +241,7 @@ TRANSLATIONS = {
     'fr': {
         # Navigation
         'home': 'Accueil',
+        'campus_gallery': 'Galerie du campus',
         'my_likes': 'Mes favoris',
         'login': 'Connexion',
         'register': 'Inscription',
@@ -355,6 +358,7 @@ TRANSLATIONS = {
     'de': {
         # Navigation
         'home': 'Startseite',
+        'campus_gallery': 'Campus-Galerie',
         'my_likes': 'Meine Favoriten',
         'login': 'Anmelden',
         'register': 'Registrieren',
@@ -471,6 +475,7 @@ TRANSLATIONS = {
     'ja': {
         # Navigation
         'home': 'ホーム',
+        'campus_gallery': 'キャンパスギャラリー',
         'my_likes': 'マイリスト',
         'login': 'ログイン',
         'register': '登録',
