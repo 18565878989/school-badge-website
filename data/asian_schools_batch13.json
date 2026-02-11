@@ -1,0 +1,39 @@
+{
+  "batch": 13,
+  "description": "Asian Schools Batch 13 - Final batch for 100 schools goal",
+  "schools": [
+    {
+      "id": 10105,
+      "name": "Leiden University",
+      "name_cn": "莱顿大学",
+      "region": "Europe",
+      "country": "Netherlands",
+      "city": "Leiden",
+      "level": "university",
+      "website": "https://www.universiteitleiden.nl",
+      "founded": 1575
+    },
+    {
+      "id": 10106,
+      "name": "University of Amsterdam",
+      "name_cn": "阿姆斯特丹大学",
+      "region": "Europe",
+      "country": "Netherlands",
+      "city": "Amsterdam",
+      "level": "university",
+      "website": "https://www.uva.nl",
+      "founded": 1632
+    },
+    {
+      "id": 10107,
+      "name": "Wageningen University",
+      "name_cn": "瓦赫宁根大学",
+      "region": "Europe",
+      "country": "Netherlands",
+      "city": "Wageningen",
+      "level": "university",
+      "website": "https://www.wur.nl",
+      "founded": 1918
+    }
+  ]
+}

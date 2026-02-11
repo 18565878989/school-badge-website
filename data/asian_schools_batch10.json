@@ -1,0 +1,237 @@
+{
+  "batch": 10,
+  "description": "Asian Schools Batch 10 - More universities",
+  "schools": [
+    {
+      "id": 10042,
+      "name": "Kyoto University",
+      "name_cn": "京都大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Kyoto",
+      "level": "university",
+      "website": "https://www.kyoto-u.ac.jp",
+      "founded": 1897
+    },
+    {
+      "id": 10043,
+      "name": "Osaka University",
+      "name_cn": "大阪大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Osaka",
+      "level": "university",
+      "website": "https://www.osaka-u.ac.jp",
+      "founded": 1931
+    },
+    {
+      "id": 10044,
+      "name": "Tohoku University",
+      "name_cn": "东北大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Sendai",
+      "level": "university",
+      "website": "https://www.tohoku.ac.jp",
+      "founded": 1907
+    },
+    {
+      "id": 10045,
+      "name": "University of Tokyo",
+      "name_cn": "东京大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://www.u-tokyo.ac.jp",
+      "founded": 1877
+    },
+    {
+      "id": 10046,
+      "name": "Nagoya University",
+      "name_cn": "名古屋大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Nagoya",
+      "level": "university",
+      "website": "https://www.nagoya-u.ac.jp",
+      "founded": 1871
+    },
+    {
+      "id": 10047,
+      "name": "Hokkaido University",
+      "name_cn": "北海道大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Sapporo",
+      "level": "university",
+      "website": "https://www.hokudai.ac.jp",
+      "founded": 1876
+    },
+    {
+      "id": 10048,
+      "name": "Keio University",
+      "name_cn": "庆应义塾大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://www.keio.ac.jp",
+      "founded": 1858
+    },
+    {
+      "id": 10049,
+      "name": "Waseda University",
+      "name_cn": "早稻田大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://www.waseda.ac.jp",
+      "founded": 1882
+    },
+    {
+      "id": 10050,
+      "name": "Korea Advanced Institute of Science and Technology",
+      "name_cn": "韩国科学技术院",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Daejeon",
+      "level": "university",
+      "website": "https://www.kaist.ac.kr",
+      "founded": 1971
+    },
+    {
+      "id": 10051,
+      "name": "Pohang University of Science and Technology",
+      "name_cn": "浦项工科大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Pohang",
+      "level": "university",
+      "website": "https://www.postech.ac.kr",
+      "founded": 1986
+    },
+    {
+      "id": 10052,
+      "name": "Seoul National University",
+      "name_cn": "首尔国立大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://www.snu.ac.kr",
+      "founded": 1946
+    },
+    {
+      "id": 10053,
+      "name": "National Taiwan University",
+      "name_cn": "国立台湾大学",
+      "region": "Asia",
+      "country": "Taiwan",
+      "city": "Taipei",
+      "level": "university",
+      "website": "https://www.ntu.edu.tw",
+      "founded": 1928
+    },
+    {
+      "id": 10054,
+      "name": "National Chengchi University",
+      "name_cn": "国立政治大学",
+      "region": "Asia",
+      "country": "Taiwan",
+      "city": "Taipei",
+      "level": "university",
+      "website": "https://www.nccu.edu.tw",
+      "founded": 1927
+    },
+    {
+      "id": 10055,
+      "name": "National Tsing Hua University",
+      "name_cn": "国立清华大学",
+      "region": "Asia",
+      "country": "Taiwan",
+      "city": "Hsinchu",
+      "level": "university",
+      "website": "https://www.nthu.edu.tw",
+      "founded": 1911
+    },
+    {
+      "id": 10056,
+      "name": "National Chiao Tung University",
+      "name_cn": "国立交通大学",
+      "region": "Asia",
+      "country": "Taiwan",
+      "city": "Hsinchu",
+      "level": "university",
+      "website": "https://www.nctu.edu.tw",
+      "founded": 1896
+    },
+    {
+      "id": 10057,
+      "name": "National Cheng Kung University",
+      "name_cn": "国立成功大学",
+      "region": "Asia",
+      "country": "Taiwan",
+      "city": "Tainan",
+      "level": "university",
+      "website": "https://www.ncku.edu.tw",
+      "founded": 1931
+    },
+    {
+      "id": 10058,
+      "name": "Hong Kong University of Science and Technology",
+      "name_cn": "香港科技大学",
+      "region": "Asia",
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "level": "university",
+      "website": "https://www.hkust.edu.hk",
+      "founded": 1991
+    },
+    {
+      "id": 10059,
+      "name": "City University of Hong Kong",
+      "name_cn": "香港城市大学",
+      "region": "Asia",
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "level": "university",
+      "website": "https://www.cityu.edu.hk",
+      "founded": 1984
+    },
+    {
+      "id": 10060,
+      "name": "Hong Kong Polytechnic University",
+      "name_cn": "香港理工大学",
+      "region": "Asia",
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "level": "university",
+      "website": "https://www.polyu.edu.hk",
+      "founded": 1937
+    },
+    {
+      "id": 10061,
+      "name": "University of Hong Kong",
+      "name_cn": "香港大学",
+      "region": "Asia",
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "level": "university",
+      "website": "https://www.hku.hk",
+      "founded": 1911
+    },
+    {
+      "id": 10062,
+      "name": "Chinese University of Hong Kong",
+      "name_cn": "香港中文大学",
+      "region": "Asia",
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "level": "university",
+      "website": "https://www.cuhk.edu.hk",
+      "founded": 1963
+    }
+  ]
+}
