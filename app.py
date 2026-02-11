@@ -135,6 +135,14 @@ def index():
     # 组合查询：支持搜索 + 地区 + 国家 + 城市 + 区域 + 类型 同时筛选
     if search_query:
         schools = search_schools(search_query, selected_region, selected_level)
+    elif selected_country and selected_level and selected_region and selected_district:
+        # 完整筛选：地区 + 国家 + 区域 + 类型
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND district = ? AND level = ? ORDER BY name", 
+                               (selected_region, selected_country, selected_district, selected_level)).fetchall()
+    elif selected_country and selected_level and selected_region and selected_city:
+        # 完整筛选：地区 + 国家 + 城市 + 类型
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND city = ? AND level = ? ORDER BY name", 
+                               (selected_region, selected_country, selected_city, selected_level)).fetchall()
     elif selected_country and selected_level and selected_region:
         # 完整筛选：地区 + 国家 + 类型
         schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND level = ? ORDER BY name", 
