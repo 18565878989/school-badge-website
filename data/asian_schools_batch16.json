@@ -1,0 +1,237 @@
+{
+  "batch": 16,
+  "description": "Asian Schools Batch 16 - Central Asia universities",
+  "schools": [
+    {
+      "id": 10364,
+      "name": "Kabul University",
+      "name_cn": "喀布尔大学",
+      "region": "Asia",
+      "country": "Afghanistan",
+      "city": "Kabul",
+      "level": "university",
+      "website": "https://www.ku.edu.af",
+      "founded": 1932
+    },
+    {
+      "id": 10365,
+      "name": "American University of Afghanistan",
+      "name_cn": "阿富汗美国大学",
+      "region": "Asia",
+      "country": "Afghanistan",
+      "city": "Kabul",
+      "level": "university",
+      "website": "https://www.afghanuniversity.edu",
+      "founded": 2006
+    },
+    {
+      "id": 10366,
+      "name": "Kabul University of Medical Science",
+      "name_cn": "喀布尔医科大学",
+      "region": "Asia",
+      "country": "Afghanistan",
+      "city": "Kabul",
+      "level": "university",
+      "website": "https://www.kums.edu.af",
+      "founded": 2006
+    },
+    {
+      "id": 10367,
+      "name": "University of Karachi",
+      "name_cn": "卡拉奇大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Karachi",
+      "level": "university",
+      "website": "https://www.uok.edu.pk",
+      "founded": 1951
+    },
+    {
+      "id": 10368,
+      "name": "Punjab University",
+      "name_cn": "旁遮普大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://www.pu.edu.pk",
+      "founded": 1882
+    },
+    {
+      "id": 10369,
+      "name": "University of Engineering and Technology Lahore",
+      "name_cn": "拉合尔工程技术大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://www.uet.edu.pk",
+      "founded": 1921
+    },
+    {
+      "id": 10370,
+      "name": "Pakistan Institute of Engineering and Applied Sciences",
+      "name_cn": "巴基斯坦工程与应用科学学院",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Islamabad",
+      "level": "university",
+      "website": "https://www.pieas.edu.pk",
+      "founded": 1967
+    },
+    {
+      "id": 10371,
+      "name": "National University of Sciences and Technology Pakistan",
+      "name_cn": "巴基斯坦国家科技大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Islamabad",
+      "level": "university",
+      "website": "https://www.nust.edu.pk",
+      "founded": 1991
+    },
+    {
+      "id": 10372,
+      "name": "COMSATS University Islamabad",
+      "name_cn": "COMSATS伊斯兰堡大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Islamabad",
+      "level": "university",
+      "website": "https://www.ciitsh.edu.pk",
+      "founded": 1988
+    },
+    {
+      "id": 10373,
+      "name": "University of the Punjab",
+      "name_cn": "旁遮普大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://pu.edu.pk",
+      "founded": 1882
+    },
+    {
+      "id": 10374,
+      "name": "University of Central Punjab",
+      "name_cn": "旁遮普中央大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://www.ucp.edu.pk",
+      "founded": 1996
+    },
+    {
+      "id": 10375,
+      "name": "Lahore University of Management Sciences",
+      "name_cn": "拉合尔管理科学大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://www.lums.edu.pk",
+      "founded": 1987
+    },
+    {
+      "id": 10376,
+      "name": "National University of Computer and Emerging Sciences",
+      "name_cn": "国家计算机与新兴科学大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://www.nu.edu.pk",
+      "founded": 1982
+    },
+    {
+      "id": 10377,
+      "name": "Air University Islamabad",
+      "name_cn": "伊斯兰堡空军大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Islamabad",
+      "level": "university",
+      "website": "https://www.au.edu.pk",
+      "founded": 2002
+    },
+    {
+      "id": 10378,
+      "name": "Bahria University",
+      "name_cn": "巴哈里亚大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Islamabad",
+      "level": "university",
+      "website": "https://www.bahria.edu.pk",
+      "founded": 2000
+    },
+    {
+      "id": 10379,
+      "name": "Riphah International University",
+      "name_cn": "里法国际大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Islamabad",
+      "level": "university",
+      "website": "https://www.riphah.edu.pk",
+      "founded": 2002
+    },
+    {
+      "id": 10380,
+      "name": "Shaheed Zulfikar Ali Bhutto Institute of Science and Technology",
+      "name_cn": "沙希德·布托科学技术学院",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Karachi",
+      "level": "university",
+      "website": "https://www.szabist.edu.pk",
+      "founded": 1995
+    },
+    {
+      "id": 10381,
+      "name": "University of Lahore",
+      "name_cn": "拉合尔大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://www.uol.edu.pk",
+      "founded": 1987
+    },
+    {
+      "id": 10382,
+      "name": "Government College University Lahore",
+      "name_cn": "拉合尔政府学院大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://www.gcu.edu.pk",
+      "founded": 1932
+    },
+    {
+      "id": 10383,
+      "name": "Sultan Qaboos University",
+      "name_cn": "苏丹卡布斯大学",
+      "region": "Asia",
+      "country": "Oman",
+      "city": "Muscat",
+      "level": "university",
+      "website": "https://www.squ.edu.om",
+      "founded": 1986
+    },
+    {
+      "id": 10384,
+      "name": "Sultan Qaboos University College of Medicine",
+      "name_cn": "苏丹卡布斯大学医学院",
+      "region": "Asia",
+      "country": "Oman",
+      "city": "Muscat",
+      "level": "university",
+      "website": "https://www.squ.edu.om/college-of-medicine",
+      "founded": 1994
+    }
+  ]
+}

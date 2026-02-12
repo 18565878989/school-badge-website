@@ -1,0 +1,237 @@
+{
+  "batch": 32,
+  "description": "Asian Schools Batch 32 - West Asia & Central Asia (Turkey, Iran, Iraq, Israel, Palestine, Jordan, Lebanon, Cyprus)",
+  "schools": [
+    {
+      "id": 10753,
+      "name": "Boğaziçi University",
+      "name_cn": "博斯菲拉斯大学",
+      "region": "Asia",
+      "country": "Turkey",
+      "city": "Istanbul",
+      "level": "university",
+      "website": "https://boun.edu.tr",
+      "founded": 1863
+    },
+    {
+      "id": 10754,
+      "name": "Middle East Technical University",
+      "name_cn": "中东技术大学",
+      "region": "Asia",
+      "country": "Turkey",
+      "city": "Ankara",
+      "level": "university",
+      "website": "https://metu.edu.tr",
+      "founded": 1956
+    },
+    {
+      "id": 10755,
+      "name": "Istanbul Technical University",
+      "name_cn": "伊斯坦布尔技术大学",
+      "region": "Asia",
+      "country": "Turkey",
+      "city": "Istanbul",
+      "level": "university",
+      "website": "https://itu.edu.tr",
+      "founded": 1773
+    },
+    {
+      "id": 10756,
+      "name": "Koç University",
+      "name_cn": "科奇大学",
+      "region": "Asia",
+      "country": "Turkey",
+      "city": "Istanbul",
+      "level": "university",
+      "website": "https://ku.edu.tr",
+      "founded": 1993
+    },
+    {
+      "id": 10757,
+      "name": "Sabancı University",
+      "name_cn": "萨班奇大学",
+      "region": "Asia",
+      "country": "Turkey",
+      "city": "Istanbul",
+      "level": "university",
+      "website": "https://sabanciuniversity.edu.tr",
+      "founded": 1996
+    },
+    {
+      "id": 10758,
+      "name": "University of Tehran",
+      "name_cn": "德黑兰大学",
+      "region": "Asia",
+      "country": "Iran",
+      "city": "Tehran",
+      "level": "university",
+      "website": "https://ut.ac.ir",
+      "founded": 1934
+    },
+    {
+      "id": 10759,
+      "name": "Sharif University of Technology",
+      "name_cn": "谢里夫理工大学",
+      "region": "Asia",
+      "country": "Iran",
+      "city": "Tehran",
+      "level": "university",
+      "website": "https://sharif.edu",
+      "founded": 1966
+    },
+    {
+      "id": 10760,
+      "name": "Amirkabir University of Technology",
+      "name_cn": "阿米尔卡比尔理工大学",
+      "region": "Asia",
+      "country": "Iran",
+      "city": "Tehran",
+      "level": "university",
+      "website": "https://aut.ac.ir",
+      "founded": 1958
+    },
+    {
+      "id": 10761,
+      "name": "University of Baghdad",
+      "name_cn": "巴格达大学",
+      "region": "Asia",
+      "country": "Iraq",
+      "city": "Baghdad",
+      "level": "university",
+      "website": "https://uoabaghdad.edu.iq",
+      "founded": 1957
+    },
+    {
+      "id": 10762,
+      "name": "Mustansiriya University",
+      "name_cn": "穆斯坦西里亚大学",
+      "region": "Asia",
+      "country": "Iraq",
+      "city": "Baghdad",
+      "level": "university",
+      "website": "https://uomustansiriyah.edu.iq",
+      "founded": 1963
+    },
+    {
+      "id": 10763,
+      "name": "Hebrew University of Jerusalem",
+      "name_cn": "耶路撒冷希伯来大学",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Jerusalem",
+      "level": "university",
+      "website": "https://huji.ac.il",
+      "founded": 1918
+    },
+    {
+      "id": 10764,
+      "name": "Tel Aviv University",
+      "name_cn": "特拉维夫大学",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Tel Aviv",
+      "level": "university",
+      "website": "https://tau.ac.il",
+      "founded": 1956
+    },
+    {
+      "id": 10765,
+      "name": "Technion Israel Institute of Technology",
+      "name_cn": "以色列技术学院",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Haifa",
+      "level": "university",
+      "website": "https://technion.ac.il",
+      "founded": 1912
+    },
+    {
+      "id": 10766,
+      "name": "Weizmann Institute of Science",
+      "name_cn": "魏兹曼科学研究所",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Rehovot",
+      "level": "university",
+      "website": "https://weizmann.ac.il",
+      "founded": 1934
+    },
+    {
+      "id": 10767,
+      "name": "An-Najah National University",
+      "name_cn": "安纳贾国立大学",
+      "region": "Asia",
+      "country": "Palestine",
+      "city": "Nablus",
+      "level": "university",
+      "website": "https://najah.edu",
+      "founded": 1918
+    },
+    {
+      "id": 10768,
+      "name": "Birzeit University",
+      "name_cn": "比尔宰特大学",
+      "region": "Asia",
+      "country": "Palestine",
+      "city": "Birzeit",
+      "level": "university",
+      "website": "https://birzeit.edu",
+      "founded": 1924
+    },
+    {
+      "id": 10769,
+      "name": "Hashemite University",
+      "name_cn": "哈希姆大学",
+      "region": "Asia",
+      "country": "Jordan",
+      "city": "Zarqa",
+      "level": "university",
+      "website": "https://hu.edu.jo",
+      "founded": 1999
+    },
+    {
+      "id": 10770,
+      "name": "Princess Sumaya University for Technology",
+      "name_cn": "苏玛亚公主科技大学",
+      "region": "Asia",
+      "country": "Jordan",
+      "city": "Amman",
+      "level": "university",
+      "website": "https://psut.edu.jo",
+      "founded": 1999
+    },
+    {
+      "id": 10771,
+      "name": "Saint Joseph University",
+      "name_cn": "圣约瑟夫大学",
+      "region": "Asia",
+      "country": "Lebanon",
+      "city": "Beirut",
+      "level": "university",
+      "website": "https://usj.edu.lb",
+      "founded": 1875
+    },
+    {
+      "id": 10772,
+      "name": "Notre Dame University Lebanon",
+      "name_cn": "黎巴嫩圣母大学",
+      "region": "Asia",
+      "country": "Lebanon",
+      "city": "Zouk Mosbeh",
+      "level": "university",
+      "website": "https://ndu.edu.lb",
+      "founded": 1875
+    },
+    {
+      "id": 10773,
+      "name": "University of Cyprus",
+      "name_cn": "塞浦路斯大学",
+      "region": "Asia",
+      "country": "Cyprus",
+      "city": "Nicosia",
+      "level": "university",
+      "website": "https://ucy.ac.cy",
+      "founded": 1989
+    }
+  ]
+}

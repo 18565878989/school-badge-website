@@ -1,0 +1,237 @@
+{
+  "batch": 25,
+  "description": "Asian Schools Batch 25 - South Asia (India, Pakistan, Bangladesh, Sri Lanka)",
+  "schools": [
+    {
+      "id": 10527,
+      "name": "Indian Institute of Technology Bombay",
+      "name_cn": "印度理工学院孟买分校",
+      "region": "Asia",
+      "country": "India",
+      "city": "Mumbai",
+      "level": "university",
+      "website": "https://www.iitb.ac.in",
+      "founded": 1958
+    },
+    {
+      "id": 10528,
+      "name": "Indian Institute of Technology Delhi",
+      "name_cn": "印度理工学院德里分校",
+      "region": "Asia",
+      "country": "India",
+      "city": "New Delhi",
+      "level": "university",
+      "website": "https://home.iitd.ac.in",
+      "founded": 1961
+    },
+    {
+      "id": 10529,
+      "name": "Indian Institute of Science",
+      "name_cn": "印度科学学院",
+      "region": "Asia",
+      "country": "India",
+      "city": "Bangalore",
+      "level": "university",
+      "website": "https://www.iisc.ac.in",
+      "founded": 1909
+    },
+    {
+      "id": 10530,
+      "name": "Jawaharlal Nehru University",
+      "name_cn": "贾瓦哈拉尔·尼赫鲁大学",
+      "region": "Asia",
+      "country": "India",
+      "city": "New Delhi",
+      "level": "university",
+      "website": "https://www.jnu.ac.in",
+      "founded": 1969
+    },
+    {
+      "id": 10531,
+      "name": "University of Delhi",
+      "name_cn": "德里大学",
+      "region": "Asia",
+      "country": "India",
+      "city": "New Delhi",
+      "level": "university",
+      "website": "https://www.du.ac.in",
+      "founded": 1922
+    },
+    {
+      "id": 10532,
+      "name": "Banaras Hindu University",
+      "name_cn": "贝拿勒斯印度大学",
+      "region": "Asia",
+      "country": "India",
+      "city": "Varanasi",
+      "level": "university",
+      "website": "https://www.bhu.ac.in",
+      "founded": 1916
+    },
+    {
+      "id": 10533,
+      "name": "Anna University",
+      "name_cn": "安娜大学",
+      "region": "Asia",
+      "country": "India",
+      "city": "Chennai",
+      "level": "university",
+      "website": "https://www.annauniv.edu",
+      "founded": 1978
+    },
+    {
+      "id": 10534,
+      "name": "Jadavpur University",
+      "name_cn": "贾达普大学",
+      "region": "Asia",
+      "country": "India",
+      "city": "Kolkata",
+      "level": "university",
+      "website": "https://www.jadavpuruniversity.in",
+      "founded": 1955
+    },
+    {
+      "id": 10535,
+      "name": "University of Calcutta",
+      "name_cn": "加尔各答大学",
+      "region": "Asia",
+      "country": "India",
+      "city": "Kolkata",
+      "level": "university",
+      "website": "https://www.caluniv.ac.in",
+      "founded": 1857
+    },
+    {
+      "id": 10536,
+      "name": "Punjab Engineering College",
+      "name_cn": "旁遮普工程学院",
+      "region": "Asia",
+      "country": "India",
+      "city": "Chandigarh",
+      "level": "university",
+      "website": "https://pec.edu.in",
+      "founded": 1956
+    },
+    {
+      "id": 10537,
+      "name": "University of Karachi",
+      "name_cn": "卡拉奇大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Karachi",
+      "level": "university",
+      "website": "https://www.uok.edu.pk",
+      "founded": 1951
+    },
+    {
+      "id": 10538,
+      "name": "Lahore University of Management Sciences",
+      "name_cn": "拉合尔管理科学大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://www.lums.edu.pk",
+      "founded": 1987
+    },
+    {
+      "id": 10539,
+      "name": "National University of Sciences and Technology",
+      "name_cn": "国立科技大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Islamabad",
+      "level": "university",
+      "website": "https://www.nust.edu.pk",
+      "founded": 1991
+    },
+    {
+      "id": 10540,
+      "name": "Pakistan Institute of Engineering and Applied Sciences",
+      "name_cn": "巴基斯坦工程与应用科学学院",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Islamabad",
+      "level": "university",
+      "website": "https://www.pieas.edu.pk",
+      "founded": 1967
+    },
+    {
+      "id": 10541,
+      "name": "University of Engineering and Technology, Lahore",
+      "name_cn": "拉合尔工程与技术大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://www.uet.edu.pk",
+      "founded": 1921
+    },
+    {
+      "id": 10542,
+      "name": "University of Dhaka",
+      "name_cn": "达卡大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Dhaka",
+      "level": "university",
+      "website": "https://www.du.ac.bd",
+      "founded": 1921
+    },
+    {
+      "id": 10543,
+      "name": "Bangladesh University of Engineering and Technology",
+      "name_cn": "孟加拉工程技术大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Dhaka",
+      "level": "university",
+      "website": "https://www.buet.ac.bd",
+      "founded": 1962
+    },
+    {
+      "id": 10544,
+      "name": "Jahangirnagar University",
+      "name_cn": "贾汉吉尔诺尔大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Dhaka",
+      "level": "university",
+      "website": "https://www.juniv.edu",
+      "founded": 1970
+    },
+    {
+      "id": 10545,
+      "name": "Bangabandhu Sheikh Mujibur Rahman Science and Technology University",
+      "name_cn": "孟加拉国谢赫·穆吉布·拉赫曼科技大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Gopalganj",
+      "level": "university",
+      "website": "https://www.bsmrstu.edu.bd",
+      "founded": 1973
+    },
+    {
+      "id": 10546,
+      "name": "North South University",
+      "name_cn": "南北大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Dhaka",
+      "level": "university",
+      "website": "https://www.nsu.edu.bd",
+      "founded": 1992
+    },
+    {
+      "id": 10547,
+      "name": "University of Peradeniya",
+      "name_cn": "佩拉德尼亚大学",
+      "region": "Asia",
+      "country": "Sri Lanka",
+      "city": "Kandy",
+      "level": "university",
+      "website": "https://www.pdn.ac.lk",
+      "founded": 1942
+    }
+  ]
+}

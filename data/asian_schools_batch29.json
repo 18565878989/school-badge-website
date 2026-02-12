@@ -1,0 +1,237 @@
+{
+  "batch": 29,
+  "description": "Asian Schools Batch 29 - Middle East & Central Asia (Afghanistan, Yemen, Syria, Lebanon, Bangladesh, Sri Lanka, Kazakhstan, Uzbekistan, Turkmenistan, Kyrgyzstan, Tajikistan)",
+  "schools": [
+    {
+      "id": 10690,
+      "name": "Kabul University",
+      "name_cn": "喀布尔大学",
+      "region": "Asia",
+      "country": "Afghanistan",
+      "city": "Kabul",
+      "level": "university",
+      "website": "https://ku.edu.af",
+      "founded": 1931
+    },
+    {
+      "id": 10691,
+      "name": "American University of Afghanistan",
+      "name_cn": "阿富汗美国大学",
+      "region": "Asia",
+      "country": "Afghanistan",
+      "city": "Kabul",
+      "level": "university",
+      "website": "https://auaf.edu.af",
+      "founded": 2006
+    },
+    {
+      "id": 10692,
+      "name": "Sana'a University",
+      "name_cn": "萨那大学",
+      "region": "Asia",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "level": "university",
+      "website": "https://sana'a-university.edu.ye",
+      "founded": 1926
+    },
+    {
+      "id": 10693,
+      "name": "University of Science and Technology Yemen",
+      "name_cn": "也门科技大学",
+      "region": "Asia",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "level": "university",
+      "website": "https://ust.edu.ye",
+      "founded": 1994
+    },
+    {
+      "id": 10694,
+      "name": "Damascus University",
+      "name_cn": "大马士革大学",
+      "region": "Asia",
+      "country": "Syria",
+      "city": "Damascus",
+      "level": "university",
+      "website": "https://damasuniv.edu.sy",
+      "founded": 1923
+    },
+    {
+      "id": 10695,
+      "name": "University of Aleppo",
+      "name_cn": "阿勒颇大学",
+      "region": "Asia",
+      "country": "Syria",
+      "city": "Aleppo",
+      "level": "university",
+      "website": "https://aleppo-university.edu.sy",
+      "founded": 1946
+    },
+    {
+      "id": 10696,
+      "name": "Lebanese American University",
+      "name_cn": "黎巴嫩美国大学",
+      "region": "Asia",
+      "country": "Lebanon",
+      "city": "Beirut",
+      "level": "university",
+      "website": "https://lau.edu.lb",
+      "founded": 1924
+    },
+    {
+      "id": 10697,
+      "name": "American University of Beirut",
+      "name_cn": "贝鲁特美国大学",
+      "region": "Asia",
+      "country": "Lebanon",
+      "city": "Beirut",
+      "level": "university",
+      "website": "https://aub.edu.lb",
+      "founded": 1866
+    },
+    {
+      "id": 10698,
+      "name": "University of Dhaka",
+      "name_cn": "达卡大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Dhaka",
+      "level": "university",
+      "website": "https://du.ac.bd",
+      "founded": 1921
+    },
+    {
+      "id": 10699,
+      "name": "Bangladesh University of Engineering and Technology",
+      "name_cn": "孟加拉工程技术大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Dhaka",
+      "level": "university",
+      "website": "https://buet.ac.bd",
+      "founded": 1962
+    },
+    {
+      "id": 10700,
+      "name": "University of Moratuwa",
+      "name_cn": "莫拉图瓦大学",
+      "region": "Asia",
+      "country": "Sri Lanka",
+      "city": "Moratuwa",
+      "level": "university",
+      "website": "https://uom.lk",
+      "founded": 1942
+    },
+    {
+      "id": 10701,
+      "name": "University of Ceylon",
+      "name_cn": "锡兰大学",
+      "region": "Asia",
+      "country": "Sri Lanka",
+      "city": "Colombo",
+      "level": "university",
+      "website": "https://uc.cmb.ac.lk",
+      "founded": 1942
+    },
+    {
+      "id": 10702,
+      "name": "Al-Farabi Kazakh National University",
+      "name_cn": "哈萨克斯坦阿里·法拉比国立大学",
+      "region": "Asia",
+      "country": "Kazakhstan",
+      "city": "Almaty",
+      "level": "university",
+      "website": "https://kaznu.kz",
+      "founded": 1934
+    },
+    {
+      "id": 10703,
+      "name": "Kazakh National Women's Teacher Training University",
+      "name_cn": "哈萨克斯坦国立女子师范大学",
+      "region": "Asia",
+      "country": "Kazakhstan",
+      "city": "Almaty",
+      "level": "university",
+      "website": "https://kzhu.kz",
+      "founded": 1928
+    },
+    {
+      "id": 10704,
+      "name": "National University of Uzbekistan",
+      "name_cn": "乌兹别克斯坦国立大学",
+      "region": "Asia",
+      "country": "Uzbekistan",
+      "city": "Tashkent",
+      "level": "university",
+      "website": "https://nuu.uz",
+      "founded": 1918
+    },
+    {
+      "id": 10705,
+      "name": "Tashkent State Technical University",
+      "name_cn": "塔什干国立技术大学",
+      "region": "Asia",
+      "country": "Uzbekistan",
+      "city": "Tashkent",
+      "level": "university",
+      "website": "https://tstu.uz",
+      "founded": 1954
+    },
+    {
+      "id": 10706,
+      "name": "Turkmen State University",
+      "name_cn": "土库曼国立大学",
+      "region": "Asia",
+      "country": "Turkmenistan",
+      "city": "Ashgabat",
+      "level": "university",
+      "website": "https://tsu.edu.tm",
+      "founded": 1991
+    },
+    {
+      "id": 10707,
+      "name": "International Turkmen University",
+      "name_cn": "土库曼国际大学",
+      "region": "Asia",
+      "country": "Turkmenistan",
+      "city": "Ashgabat",
+      "level": "university",
+      "website": "https://tu.edu.tm",
+      "founded": 1999
+    },
+    {
+      "id": 10708,
+      "name": "American University of Central Asia",
+      "name_cn": "中亚美国大学",
+      "region": "Asia",
+      "country": "Kyrgyzstan",
+      "city": "Bishkek",
+      "level": "university",
+      "website": "https://auca.kg",
+      "founded": 1997
+    },
+    {
+      "id": 10709,
+      "name": "Kyrgyz National University",
+      "name_cn": "吉尔吉斯斯坦国立大学",
+      "region": "Asia",
+      "country": "Kyrgyzstan",
+      "city": "Bishkek",
+      "level": "university",
+      "website": "https://university.kg",
+      "founded": 1951
+    },
+    {
+      "id": 10710,
+      "name": "Kyrgyz-Turkish Manas University",
+      "name_cn": "吉尔吉斯土耳其玛纳斯大学",
+      "region": "Asia",
+      "country": "Kyrgyzstan",
+      "city": "Bishkek",
+      "level": "university",
+      "website": "https://manas.edu.kg",
+      "founded": 1998
+    }
+  ]
+}

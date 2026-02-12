@@ -1,0 +1,237 @@
+{
+  "batch": 20,
+  "description": "Asian Schools Batch 20 - East Asia & Middle East universities",
+  "schools": [
+    {
+      "id": 10443,
+      "name": "Tsinghua University",
+      "name_cn": "清华大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.tsinghua.edu.cn",
+      "founded": 1911
+    },
+    {
+      "id": 10444,
+      "name": "Peking University",
+      "name_cn": "北京大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.pku.edu.cn",
+      "founded": 1898
+    },
+    {
+      "id": 10445,
+      "name": "Fudan University",
+      "name_cn": "复旦大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Shanghai",
+      "level": "university",
+      "website": "https://www.fudan.edu.cn",
+      "founded": 1905
+    },
+    {
+      "id": 10446,
+      "name": "Shanghai Jiao Tong University",
+      "name_cn": "上海交通大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Shanghai",
+      "level": "university",
+      "website": "https://www.sjtu.edu.cn",
+      "founded": 1896
+    },
+    {
+      "id": 10447,
+      "name": "Zhejiang University",
+      "name_cn": "浙江大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Hangzhou",
+      "level": "university",
+      "website": "https://www.zju.edu.cn",
+      "founded": 1897
+    },
+    {
+      "id": 10448,
+      "name": "Nanjing University",
+      "name_cn": "南京大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Nanjing",
+      "level": "university",
+      "website": "https://www.nju.edu.cn",
+      "founded": 1902
+    },
+    {
+      "id": 10449,
+      "name": "Wuhan University",
+      "name_cn": "武汉大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Wuhan",
+      "level": "university",
+      "website": "https://www.whu.edu.cn",
+      "founded": 1893
+    },
+    {
+      "id": 10450,
+      "name": "Huazhong University of Science and Technology",
+      "name_cn": "华中科技大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Wuhan",
+      "level": "university",
+      "website": "https://www.hust.edu.cn",
+      "founded": 1952
+    },
+    {
+      "id": 10451,
+      "name": "Sichuan University",
+      "name_cn": "四川大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Chengdu",
+      "level": "university",
+      "website": "https://www.scu.edu.cn",
+      "founded": 1896
+    },
+    {
+      "id": 10452,
+      "name": "Sun Yat-sen University",
+      "name_cn": "中山大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Guangzhou",
+      "level": "university",
+      "website": "https://www.sysu.edu.cn",
+      "founded": 1924
+    },
+    {
+      "id": 10453,
+      "name": "Tongji University",
+      "name_cn": "同济大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Shanghai",
+      "level": "university",
+      "website": "https://www.tongji.edu.cn",
+      "founded": 1907
+    },
+    {
+      "id": 10454,
+      "name": "Beihang University",
+      "name_cn": "北京航空航天大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.buaa.edu.cn",
+      "founded": 1952
+    },
+    {
+      "id": 10455,
+      "name": "Beijing Normal University",
+      "name_cn": "北京师范大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.bnu.edu.cn",
+      "founded": 1902
+    },
+    {
+      "id": 10456,
+      "name": "Renmin University of China",
+      "name_cn": "中国人民大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.ruc.edu.cn",
+      "founded": 1937
+    },
+    {
+      "id": 10457,
+      "name": "Southeast University",
+      "name_cn": "东南大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Nanjing",
+      "level": "university",
+      "website": "https://www.seu.edu.cn",
+      "founded": 1902
+    },
+    {
+      "id": 10458,
+      "name": "Tianjin University",
+      "name_cn": "天津大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Tianjin",
+      "level": "university",
+      "website": "https://www.tju.edu.cn",
+      "founded": 1895
+    },
+    {
+      "id": 10459,
+      "name": "Dalian University of Technology",
+      "name_cn": "大连理工大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Dalian",
+      "level": "university",
+      "website": "https://www.dlut.edu.cn",
+      "founded": 1949
+    },
+    {
+      "id": 10460,
+      "name": "Korea University",
+      "name_cn": "高丽大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://www.korea.ac.kr",
+      "founded": 1905
+    },
+    {
+      "id": 10461,
+      "name": "Seoul National University",
+      "name_cn": "首尔国立大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://www.snu.ac.kr",
+      "founded": 1946
+    },
+    {
+      "id": 10462,
+      "name": "Yonsei University",
+      "name_cn": "延世大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://www.yonsei.ac.kr",
+      "founded": 1885
+    },
+    {
+      "id": 10463,
+      "name": "KAIST",
+      "name_cn": "韩国科学技术院",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Daejeon",
+      "level": "university",
+      "website": "https://www.kaist.ac.kr",
+      "founded": 1971
+    }
+  ]
+}

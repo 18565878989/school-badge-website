@@ -1,0 +1,237 @@
+{
+  "batch": 27,
+  "description": "Asian Schools Batch 27 - East Asia and Central Asia (China, Korea, Japan, Mongolia)",
+  "schools": [
+    {
+      "id": 10569,
+      "name": "Tsinghua University",
+      "name_cn": "清华大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.tsinghua.edu.cn",
+      "founded": 1911
+    },
+    {
+      "id": 10570,
+      "name": "Peking University",
+      "name_cn": "北京大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.pku.edu.cn",
+      "founded": 1898
+    },
+    {
+      "id": 10571,
+      "name": "Fudan University",
+      "name_cn": "复旦大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Shanghai",
+      "level": "university",
+      "website": "https://www.fudan.edu.cn",
+      "founded": 1905
+    },
+    {
+      "id": 10572,
+      "name": "Shanghai Jiao Tong University",
+      "name_cn": "上海交通大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Shanghai",
+      "level": "university",
+      "website": "https://www.sjtu.edu.cn",
+      "founded": 1896
+    },
+    {
+      "id": 10573,
+      "name": "Zhejiang University",
+      "name_cn": "浙江大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Hangzhou",
+      "level": "university",
+      "website": "https://www.zju.edu.cn",
+      "founded": 1897
+    },
+    {
+      "id": 10574,
+      "name": "Nanjing University",
+      "name_cn": "南京大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Nanjing",
+      "level": "university",
+      "website": "https://www.nju.edu.cn",
+      "founded": 1902
+    },
+    {
+      "id": 10575,
+      "name": "University of Science and Technology of China",
+      "name_cn": "中国科学技术大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Hefei",
+      "level": "university",
+      "website": "https://www.ustc.edu.cn",
+      "founded": 1958
+    },
+    {
+      "id": 10576,
+      "name": "Xi'an Jiaotong University",
+      "name_cn": "西安交通大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Xi'an",
+      "level": "university",
+      "website": "https://www.xjtu.edu.cn",
+      "founded": 1896
+    },
+    {
+      "id": 10577,
+      "name": "Harbin Institute of Technology",
+      "name_cn": "哈尔滨工业大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Harbin",
+      "level": "university",
+      "website": "https://www.hit.edu.cn",
+      "founded": 1920
+    },
+    {
+      "id": 10578,
+      "name": "Sun Yat-sen University",
+      "name_cn": "中山大学",
+      "region": "Asia",
+      "country": "China",
+      "city": "Guangzhou",
+      "level": "university",
+      "website": "https://www.sysu.edu.cn",
+      "founded": 1924
+    },
+    {
+      "id": 10579,
+      "name": "Korea Advanced Institute of Science and Technology",
+      "name_cn": "韩国科学技术院",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Daejeon",
+      "level": "university",
+      "website": "https://www.kaist.ac.kr",
+      "founded": 1971
+    },
+    {
+      "id": 10580,
+      "name": "Seoul National University",
+      "name_cn": "首尔国立大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://www.snu.ac.kr",
+      "founded": 1946
+    },
+    {
+      "id": 10581,
+      "name": "Yonsei University",
+      "name_cn": "延世大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://www.yonsei.ac.kr",
+      "founded": 1885
+    },
+    {
+      "id": 10582,
+      "name": "Korea University",
+      "name_cn": "高丽大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://www.korea.ac.kr",
+      "founded": 1905
+    },
+    {
+      "id": 10583,
+      "name": "Pohang University of Science and Technology",
+      "name_cn": "浦项工科大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Pohang",
+      "level": "university",
+      "website": "https://www.postech.ac.kr",
+      "founded": 1986
+    },
+    {
+      "id": 10584,
+      "name": "University of Tokyo",
+      "name_cn": "东京大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://www.u-tokyo.ac.jp",
+      "founded": 1877
+    },
+    {
+      "id": 10585,
+      "name": "Kyoto University",
+      "name_cn": "京都大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Kyoto",
+      "level": "university",
+      "website": "https://www.kyoto-u.ac.jp",
+      "founded": 1897
+    },
+    {
+      "id": 10586,
+      "name": "Osaka University",
+      "name_cn": "大阪大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Osaka",
+      "level": "university",
+      "website": "https://www.osaka-u.ac.jp",
+      "founded": 1931
+    },
+    {
+      "id": 10587,
+      "name": "Tohoku University",
+      "name_cn": "东北大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Sendai",
+      "level": "university",
+      "website": "https://www.tohoku.ac.jp",
+      "founded": 1907
+    },
+    {
+      "id": 10588,
+      "name": "Tokyo Institute of Technology",
+      "name_cn": "东京工业大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://www.titech.ac.jp",
+      "founded": 1881
+    },
+    {
+      "id": 10589,
+      "name": "National University of Mongolia",
+      "name_cn": "蒙古国立大学",
+      "region": "Asia",
+      "country": "Mongolia",
+      "city": "Ulaanbaatar",
+      "level": "university",
+      "website": "https://www.num.edu.mn",
+      "founded": 1942
+    }
+  ]
+}

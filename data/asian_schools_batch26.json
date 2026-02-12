@@ -1,0 +1,237 @@
+{
+  "batch": 26,
+  "description": "Asian Schools Batch 26 - Central Asia and West Asia (Kazakhstan, Uzbekistan, Turkey, etc.)",
+  "schools": [
+    {
+      "id": 10548,
+      "name": "Kazakh National University",
+      "name_cn": "哈萨克斯坦国立大学",
+      "region": "Asia",
+      "country": "Kazakhstan",
+      "city": "Almaty",
+      "level": "university",
+      "website": "https://www.kaznu.kz",
+      "founded": 1934
+    },
+    {
+      "id": 10549,
+      "name": "Al-Farabi Kazakh National University",
+      "name_cn": "阿尔-法拉比哈萨克斯坦国立大学",
+      "region": "Asia",
+      "country": "Kazakhstan",
+      "city": "Almaty",
+      "level": "university",
+      "website": "https://kaznu.kz",
+      "founded": 1934
+    },
+    {
+      "id": 10550,
+      "name": "Satbayev University",
+      "name_cn": "萨特巴耶夫大学",
+      "region": "Asia",
+      "country": "Kazakhstan",
+      "city": "Almaty",
+      "level": "university",
+      "website": "https://www.satbayev.university",
+      "founded": 1934
+    },
+    {
+      "id": 10551,
+      "name": "Uzbekistan National University",
+      "name_cn": "乌兹别克斯坦国立大学",
+      "region": "Asia",
+      "country": "Uzbekistan",
+      "city": "Tashkent",
+      "level": "university",
+      "website": "https://www.nuu.uz",
+      "founded": 1918
+    },
+    {
+      "id": 10552,
+      "name": "Tashkent State Technical University",
+      "name_cn": "塔什干国立技术大学",
+      "region": "Asia",
+      "country": "Uzbekistan",
+      "city": "Tashkent",
+      "level": "university",
+      "website": "https://www.tstu.uz",
+      "founded": 1954
+    },
+    {
+      "id": 10553,
+      "name": "Inha University in Tashkent",
+      "name_cn": "塔什干仁荷大学",
+      "region": "Asia",
+      "country": "Uzbekistan",
+      "city": "Tashkent",
+      "level": "university",
+      "website": "https://inha.uz",
+      "founded": 2014
+    },
+    {
+      "id": 10554,
+      "name": "Boğaziçi University",
+      "name_cn": "博斯菲亚大学",
+      "region": "Asia",
+      "country": "Turkey",
+      "city": "Istanbul",
+      "level": "university",
+      "website": "https://www.boun.edu.tr",
+      "founded": 1863
+    },
+    {
+      "id": 10555,
+      "name": "Koç University",
+      "name_cn": "科奇大学",
+      "region": "Asia",
+      "country": "Turkey",
+      "city": "Istanbul",
+      "level": "university",
+      "website": "https://www.ku.edu.tr",
+      "founded": 1993
+    },
+    {
+      "id": 10556,
+      "name": "Bilkent University",
+      "name_cn": "比尔肯特大学",
+      "region": "Asia",
+      "country": "Turkey",
+      "city": "Ankara",
+      "level": "university",
+      "website": "https://www.bilkent.edu.tr",
+      "founded": 1984
+    },
+    {
+      "id": 10557,
+      "name": "Middle East Technical University",
+      "name_cn": "中东技术大学",
+      "region": "Asia",
+      "country": "Turkey",
+      "city": "Ankara",
+      "level": "university",
+      "website": "https://www.metu.edu.tr",
+      "founded": 1956
+    },
+    {
+      "id": 10558,
+      "name": "Istanbul Technical University",
+      "name_cn": "伊斯坦布尔技术大学",
+      "region": "Asia",
+      "country": "Turkey",
+      "city": "Istanbul",
+      "level": "university",
+      "website": "https://www.itu.edu.tr",
+      "founded": 1773
+    },
+    {
+      "id": 10559,
+      "name": "Sabancı University",
+      "name_cn": "萨班奇大学",
+      "region": "Asia",
+      "country": "Turkey",
+      "city": "Istanbul",
+      "level": "university",
+      "website": "https://www.sabanciuniv.edu",
+      "founded": 1996
+    },
+    {
+      "id": 10560,
+      "name": "University of Tehran",
+      "name_cn": "德黑兰大学",
+      "region": "Asia",
+      "country": "Iran",
+      "city": "Tehran",
+      "level": "university",
+      "website": "https://www.ut.ac.ir",
+      "founded": 1934
+    },
+    {
+      "id": 10561,
+      "name": "Sharif University of Technology",
+      "name_cn": "谢里夫理工大学",
+      "region": "Asia",
+      "country": "Iran",
+      "city": "Tehran",
+      "level": "university",
+      "website": "https://www.sharif.edu",
+      "founded": 1966
+    },
+    {
+      "id": 10562,
+      "name": "Amirkabir University of Technology",
+      "name_cn": "阿米尔卡比尔理工大学",
+      "region": "Asia",
+      "country": "Iran",
+      "city": "Tehran",
+      "level": "university",
+      "website": "https://www.aut.ac.ir",
+      "founded": 1958
+    },
+    {
+      "id": 10563,
+      "name": "Iran University of Science and Technology",
+      "name_cn": "伊朗科学技术大学",
+      "region": "Asia",
+      "country": "Iran",
+      "city": "Tehran",
+      "level": "university",
+      "website": "https://www.iust.ac.ir",
+      "founded": 1929
+    },
+    {
+      "id": 10564,
+      "name": "Technion - Israel Institute of Technology",
+      "name_cn": "以色列理工学院",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Haifa",
+      "level": "university",
+      "website": "https://www.technion.ac.il",
+      "founded": 1912
+    },
+    {
+      "id": 10565,
+      "name": "Hebrew University of Jerusalem",
+      "name_cn": "耶路撒冷希伯来大学",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Jerusalem",
+      "level": "university",
+      "website": "https://new.huji.ac.il",
+      "founded": 1918
+    },
+    {
+      "id": 10566,
+      "name": "Tel Aviv University",
+      "name_cn": "特拉维夫大学",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Tel Aviv",
+      "level": "university",
+      "website": "https://www.tau.ac.il",
+      "founded": 1956
+    },
+    {
+      "id": 10567,
+      "name": "Weizmann Institute of Science",
+      "name_cn": "魏兹曼科学研究所",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Rehovot",
+      "level": "university",
+      "website": "https://www.weizmann.ac.il",
+      "founded": 1934
+    },
+    {
+      "id": 10568,
+      "name": "American University of Beirut",
+      "name_cn": "贝鲁特美国大学",
+      "region": "Asia",
+      "country": "Lebanon",
+      "city": "Beirut",
+      "level": "university",
+      "website": "https://www.aub.edu.lb",
+      "founded": 1866
+    }
+  ]
+}

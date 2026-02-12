@@ -1,0 +1,237 @@
+{
+  "batch": 33,
+  "description": "Asian Schools Batch 33 - Southeast Asia & South Asia (Myanmar, Laos, Cambodia, Bangladesh, Nepal, Bhutan, Maldives, Sri Lanka)",
+  "schools": [
+    {
+      "id": 10774,
+      "name": "Mandalay University",
+      "name_cn": "曼德勒大学",
+      "region": "Asia",
+      "country": "Myanmar",
+      "city": "Mandalay",
+      "level": "university",
+      "website": "https://mu.edu.mm",
+      "founded": 1964
+    },
+    {
+      "id": 10775,
+      "name": "Yangon Institute of Economics",
+      "name_cn": "仰光经济学院",
+      "region": "Asia",
+      "country": "Myanmar",
+      "city": "Yangon",
+      "level": "university",
+      "website": "https://yie.edu.mm",
+      "founded": 1964
+    },
+    {
+      "id": 10776,
+      "name": "National University of Laos",
+      "name_cn": "老挝国立大学",
+      "region": "Asia",
+      "country": "Laos",
+      "city": "Vientiane",
+      "level": "university",
+      "website": "https://nuol.edu.la",
+      "founded": 1995
+    },
+    {
+      "id": 10777,
+      "name": "Savannakhet University",
+      "name_cn": "沙湾拿吉大学",
+      "region": "Asia",
+      "country": "Laos",
+      "city": "Savannakhet",
+      "level": "university",
+      "website": "https://swu.edu.la",
+      "founded": 2008
+    },
+    {
+      "id": 10778,
+      "name": "Royal University of Phnom Penh",
+      "name_cn": "金边皇家大学",
+      "region": "Asia",
+      "country": "Cambodia",
+      "city": "Phnom Penh",
+      "level": "university",
+      "website": "https://rupp.edu.kh",
+      "founded": 1960
+    },
+    {
+      "id": 10779,
+      "name": "Royal University of Cambodia",
+      "name_cn": "柬埔寨皇家大学",
+      "region": "Asia",
+      "country": "Cambodia",
+      "city": "Phnom Penh",
+      "level": "university",
+      "website": "https://ruc.edu.kh",
+      "founded": 1960
+    },
+    {
+      "id": 10780,
+      "name": "University of Chittagong",
+      "name_cn": "吉大港大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Chittagong",
+      "level": "university",
+      "website": "https://cu.ac.bd",
+      "founded": 1966
+    },
+    {
+      "id": 10781,
+      "name": "Jahangirnagar University",
+      "name_cn": "贾汉吉尔诺加尔大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Savar",
+      "level": "university",
+      "website": "https://juniv.edu",
+      "founded": 1970
+    },
+    {
+      "id": 10782,
+      "name": "Bangladesh Agricultural University",
+      "name_cn": "孟加拉农业大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Mymensingh",
+      "level": "university",
+      "website": "https://bau.edu.bd",
+      "founded": 1961
+    },
+    {
+      "id": 10783,
+      "name": "Dhaka University of Engineering and Technology",
+      "name_cn": "达卡工程技术大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Gazipur",
+      "level": "university",
+      "website": "https://duet.ac.bd",
+      "founded": 1962
+    },
+    {
+      "id": 10784,
+      "name": "Pokhara University",
+      "name_cn": "博卡拉大学",
+      "region": "Asia",
+      "country": "Nepal",
+      "city": "Pokhara",
+      "level": "university",
+      "website": "https://pu.edu.np",
+      "founded": 1996
+    },
+    {
+      "id": 10785,
+      "name": "Kathmandu University",
+      "name_cn": "加德满都大学",
+      "region": "Asia",
+      "country": "Nepal",
+      "city": "Dhulikhel",
+      "level": "university",
+      "website": "https://ku.edu.np",
+      "founded": 1991
+    },
+    {
+      "id": 10786,
+      "name": "Patan Academy for Health Sciences",
+      "name_cn": "帕坦健康科学学院",
+      "region": "Asia",
+      "country": "Nepal",
+      "city": "Lalitpur",
+      "level": "university",
+      "website": "https://pahs.edu.np",
+      "founded": 2010
+    },
+    {
+      "id": 10787,
+      "name": "Royal University of Bhutan",
+      "name_cn": "不丹皇家大学",
+      "region": "Asia",
+      "country": "Bhutan",
+      "city": "Thimphu",
+      "level": "university",
+      "website": "https://rub.edu.bt",
+      "founded": 2003
+    },
+    {
+      "id": 10788,
+      "name": "College of Science and Technology",
+      "name_cn": "科学技术学院",
+      "region": "Asia",
+      "country": "Bhutan",
+      "city": "Thimphu",
+      "level": "university",
+      "website": "https://cst.edu.bt",
+      "founded": 2010
+    },
+    {
+      "id": 10789,
+      "name": "Maldives National University",
+      "name_cn": "马尔代夫国立大学",
+      "region": "Asia",
+      "country": "Maldives",
+      "city": "Malé",
+      "level": "university",
+      "website": "https://mnu.edu.mv",
+      "founded": 2011
+    },
+    {
+      "id": 10790,
+      "name": "Islamic University of Maldives",
+      "name_cn": "马尔代夫伊斯兰大学",
+      "region": "Asia",
+      "country": "Maldives",
+      "city": "Malé",
+      "level": "university",
+      "website": "https://ium.edu.mv",
+      "founded": 2015
+    },
+    {
+      "id": 10791,
+      "name": "University of Peradeniya",
+      "name_cn": "佩拉德尼亚大学",
+      "region": "Asia",
+      "country": "Sri Lanka",
+      "city": "Peradeniya",
+      "level": "university",
+      "website": "https://pdn.ac.lk",
+      "founded": 1942
+    },
+    {
+      "id": 10792,
+      "name": "University of Jaffna",
+      "name_cn": "贾夫纳大学",
+      "region": "Asia",
+      "country": "Sri Lanka",
+      "city": "Jaffna",
+      "level": "university",
+      "website": "https://univ.jfn.ac.lk",
+      "founded": 1974
+    },
+    {
+      "id": 10793,
+      "name": "Sri Jayewardenepura University",
+      "name_cn": "斯里贾亚瓦德纳普拉大学",
+      "region": "Asia",
+      "country": "Sri Lanka",
+      "city": "Nugegoda",
+      "level": "university",
+      "website": "https://sjp.ac.lk",
+      "founded": 1942
+    },
+    {
+      "id": 10794,
+      "name": "Open University of Sri Lanka",
+      "name_cn": "斯里兰卡开放大学",
+      "region": "asia",
+      "country": "Sri Lanka",
+      "city": "Nugegoda",
+      "level": "university",
+      "website": "https://ou.ac.lk",
+      "founded": 1980
+    }
+  ]
+}

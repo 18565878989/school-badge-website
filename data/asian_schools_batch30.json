@@ -1,0 +1,237 @@
+{
+  "batch": 30,
+  "description": "Asian Schools Batch 30 - South Asia & Southeast Asia (India, Pakistan, Indonesia, Malaysia, Singapore, Philippines, Thailand, Vietnam)",
+  "schools": [
+    {
+      "id": 10711,
+      "name": "Indian Institute of Technology Bombay",
+      "name_cn": "印度理工学院孟买分校",
+      "region": "Asia",
+      "country": "India",
+      "city": "Mumbai",
+      "level": "university",
+      "website": "https://iitb.ac.in",
+      "founded": 1958
+    },
+    {
+      "id": 10712,
+      "name": "Indian Institute of Technology Delhi",
+      "name_cn": "印度理工学院德里分校",
+      "region": "Asia",
+      "country": "India",
+      "city": "New Delhi",
+      "level": "university",
+      "website": "https://home.iitd.ac.in",
+      "founded": 1961
+    },
+    {
+      "id": 10713,
+      "name": "University of Calcutta",
+      "name_cn": "加尔各答大学",
+      "region": "Asia",
+      "country": "India",
+      "city": "Kolkata",
+      "level": "university",
+      "website": "https://caluniversity.ac.in",
+      "founded": 1857
+    },
+    {
+      "id": 10714,
+      "name": "Jammu University",
+      "name_cn": "查谟大学",
+      "region": "Asia",
+      "country": "India",
+      "city": "Jammu",
+      "level": "university",
+      "website": "https://www.jammuuniversity.ac.in",
+      "founded": 1948
+    },
+    {
+      "id": 10715,
+      "name": "University of Karachi",
+      "name_cn": "卡拉奇大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Karachi",
+      "level": "university",
+      "website": "https://uok.edu.pk",
+      "founded": 1951
+    },
+    {
+      "id": 10716,
+      "name": "Pakistan Institute of Engineering and Applied Sciences",
+      "name_cn": "巴基斯坦工程与应用科学学院",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Islamabad",
+      "level": "university",
+      "website": "https://pieas.edu.pk",
+      "founded": 1967
+    },
+    {
+      "id": 10717,
+      "name": "University of Engineering and Technology Lahore",
+      "name_cn": "拉合尔工程技术大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://uet.edu.pk",
+      "founded": 1921
+    },
+    {
+      "id": 10718,
+      "name": "Gadjah Mada University",
+      "name_cn": "加查马达大学",
+      "region": "Asia",
+      "country": "Indonesia",
+      "city": "Yogyakarta",
+      "level": "university",
+      "website": "https://ugm.ac.id",
+      "founded": 1949
+    },
+    {
+      "id": 10719,
+      "name": "University of Indonesia",
+      "name_cn": "印度尼西亚大学",
+      "region": "Asia",
+      "country": "Indonesia",
+      "city": "Depok",
+      "level": "university",
+      "website": "https://ui.ac.id",
+      "founded": 1849
+    },
+    {
+      "id": 10720,
+      "name": "Bandung Institute of Technology",
+      "name_cn": "万隆理工大学",
+      "region": "Asia",
+      "country": "Indonesia",
+      "city": "Bandung",
+      "level": "university",
+      "website": "https://itb.ac.id",
+      "founded": 1959
+    },
+    {
+      "id": 10721,
+      "name": "University of Malaya",
+      "name_cn": "马来亚大学",
+      "region": "Asia",
+      "country": "Malaysia",
+      "city": "Kuala Lumpur",
+      "level": "university",
+      "website": "https://um.edu.my",
+      "founded": 1949
+    },
+    {
+      "id": 10722,
+      "name": "National University of Malaysia",
+      "name_cn": "马来西亚国民大学",
+      "region": "Asia",
+      "country": "Malaysia",
+      "city": "Bangi",
+      "level": "university",
+      "website": "https://ukm.edu.my",
+      "founded": 1970
+    },
+    {
+      "id": 10723,
+      "name": "Nanyang Technological University",
+      "name_cn": "南洋理工大学",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://ntu.edu.sg",
+      "founded": 1981
+    },
+    {
+      "id": 10724,
+      "name": "Singapore Management University",
+      "name_cn": "新加坡管理大学",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://smu.edu.sg",
+      "founded": 2000
+    },
+    {
+      "id": 10725,
+      "name": "University of the Philippines Diliman",
+      "name_cn": "菲律宾大学迪利曼分校",
+      "region": "Asia",
+      "country": "Philippines",
+      "city": "Quezon City",
+      "level": "university",
+      "website": "https://upd.edu.ph",
+      "founded": 1949
+    },
+    {
+      "id": 10726,
+      "name": "Ateneo de Manila University",
+      "name_cn": "马尼拉雅典耀大学",
+      "region": "Asia",
+      "country": "Philippines",
+      "city": "Quezon City",
+      "level": "university",
+      "website": "https://ateneo.edu",
+      "founded": 1859
+    },
+    {
+      "id": 10727,
+      "name": "Chulalongkorn University",
+      "name_cn": "朱拉隆功大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://chula.ac.th",
+      "founded": 1917
+    },
+    {
+      "id": 10728,
+      "name": "Mahidol University",
+      "name_cn": "玛希隆大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Nakhon Pathom",
+      "level": "university",
+      "website": "https://mahidol.ac.th",
+      "founded": 1888
+    },
+    {
+      "id": 10729,
+      "name": "Vietnam National University",
+      "name_cn": "越南国立大学",
+      "region": "Asia",
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "level": "university",
+      "website": "https://vnu.edu.vn",
+      "founded": 1945
+    },
+    {
+      "id": 10730,
+      "name": "Ho Chi Minh City University of Technology",
+      "name_cn": "胡志明市技术大学",
+      "region": "Asia",
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "level": "university",
+      "website": "https://hcmut.edu.vn",
+      "founded": 1957
+    },
+    {
+      "id": 10731,
+      "name": "Royal University of Phnom Penh",
+      "name_cn": "金边皇家大学",
+      "region": "Asia",
+      "country": "Cambodia",
+      "city": "Phnom Penh",
+      "level": "university",
+      "website": "https://rupp.edu.kh",
+      "founded": 1960
+    }
+  ]
+}

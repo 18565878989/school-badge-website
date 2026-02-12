@@ -1,0 +1,50 @@
+{
+  "batch": 23,
+  "description": "Asian Schools Batch 23 - Final补充",
+  "schools": [
+    {
+      "id": 10502,
+      "name": "Singapore Management University",
+      "name_cn": "新加坡管理大学",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://www.smu.edu.sg",
+      "founded": 2000
+    },
+    {
+      "id": 10503,
+      "name": "Singapore University of Technology and Design",
+      "name_cn": "新加坡科技设计大学",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://www.sutd.edu.sg",
+      "founded": 2009
+    },
+    {
+      "id": 10504,
+      "name": "Singapore Institute of Technology",
+      "name_cn": "新加坡理工学院",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://www.singaporetech.edu.sg",
+      "founded": 2009
+    },
+    {
+      "id": 10505,
+      "name": "Yale-NUS College",
+      "name_cn": "耶鲁-新加坡国立大学学院",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://www.yale-nus.edu.sg",
+      "founded": 2011
+    }
+  ]
+}
