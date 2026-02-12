@@ -252,6 +252,15 @@ def my_likes():
     liked_schools = get_user_liked_schools(session['user_id'])
     return render_template('my_likes.html', schools=liked_schools, breadcrumb='likes')
 
+@app.route('/social')
+def social():
+    """Social hub page - share and discover schools."""
+    # Get popular schools by likes
+    cursor = get_db().execute('SELECT id, name, name_cn, city, country, badge_url, likes_count FROM schools ORDER BY likes_count DESC LIMIT 10')
+    popular_schools = [dict(row) for row in cursor.fetchall()]
+    
+    return render_template('social.html', popular_schools=popular_schools, breadcrumb='social')
+
 # ==================== Login/Register Routes ====================
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -369,6 +378,24 @@ def campus_north_america():
     ''').fetchall()
     conn.close()
     return render_template('campus_north_america.html', schools=schools)
+
+@app.route('/social')
+def social():
+    """Social hub page."""
+    conn = get_db_connection()
+    
+    # Get popular schools (mock data for demo)
+    popular_schools = [
+        {'id': 42, 'name': 'Zhejiang University', 'city': 'Hangzhou', 'country': 'China', 'likes_count': 2345, 'badge_url': '/static/images/zju.png'},
+        {'id': 7257, 'name': 'Tsinghua University', 'city': 'Beijing', 'country': 'China', 'likes_count': 2123, 'badge_url': None},
+        {'id': 7258, 'name': 'Peking University', 'city': 'Beijing', 'country': 'China', 'likes_count': 1987, 'badge_url': None},
+        {'id': 8001, 'name': 'Harvard University', 'city': 'Cambridge', 'country': 'United States', 'likes_count': 1876, 'badge_url': None},
+        {'id': 8002, 'name': 'Stanford University', 'city': 'Stanford', 'country': 'United States', 'likes_count': 1654, 'badge_url': None},
+        {'id': 8003, 'name': 'MIT', 'city': 'Cambridge', 'country': 'United States', 'likes_count': 1543, 'badge_url': None}
+    ]
+    
+    conn.close()
+    return render_template('social.html', popular_schools=popular_schools)
 
 @app.route('/logout')
 def logout():
