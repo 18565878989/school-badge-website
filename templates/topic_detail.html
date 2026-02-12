@@ -1,0 +1,146 @@
+{% extends "base_apple.html" %}
+
+{% block title %}{{ topic.title }} - 社交{% endblock %}
+
+{% block content %}
+<!-- Topic Detail - Apple Style -->
+<div style="max-width: 1000px; margin: 0 auto; padding: 40px 40px 80px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;">
+
+    <!-- Back Link -->
+    <a href="{{ url_for('social') }}" style="display: inline-flex; align-items: center; gap: 8px; color: #1E3A5F; text-decoration: none; font-weight: 500; margin-bottom: 24px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        返回社交版块
+    </a>
+
+    <!-- Topic -->
+    <div style="background: white; border-radius: 24px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
+        <!-- Header -->
+        <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 24px;">
+            <!-- Vote -->
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 60px;">
+                <button style="background: none; border: none; cursor: pointer; padding: 8px;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF3B30" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                </button>
+                <span style="font-size: 1.4rem; font-weight: 700; color: #1d1d1f;">{{ topic.likes_count }}</span>
+                <button style="background: none; border: none; cursor: pointer; padding: 8px;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#86868b" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+                </button>
+            </div>
+            
+            <!-- Content -->
+            <div style="flex: 1;">
+                <!-- Tags -->
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
+                    {% if topic.is_hot %}
+                    <span style="padding: 4px 12px; background: linear-gradient(135deg, #FF3B30 0%, #FF2D55 100%); color: white; border-radius: 8px; font-size: 0.75rem; font-weight: 600;">🔥 热门</span>
+                    {% endif %}
+                    {% if topic.tags %}
+                    {% for tag in topic.tags.split(',') %}
+                    <span style="padding: 4px 12px; background: #f5f5f7; color: #1E3A5F; border-radius: 8px; font-size: 0.75rem;">#{{ tag }}</span>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                
+                <!-- Title -->
+                <h1 style="font-size: 1.6rem; font-weight: 700; color: #1d1d1f; margin-bottom: 16px; line-height: 1.4;">{{ topic.title }}</h1>
+                
+                <!-- Author -->
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                    <div style="width: 44px; height: 44px; background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+                        {{ topic.author_name[0] }}
+                    </div>
+                    <div>
+                        <p style="font-weight: 600; color: #1d1d1f;">{{ topic.author_name }}</p>
+                        <p style="font-size: 0.85rem; color: #86868b;">{{ topic.created_at[:16] }}</p>
+                    </div>
+                </div>
+                
+                <!-- Body -->
+                <div style="font-size: 1.05rem; line-height: 1.8; color: #1d1d1f; margin-bottom: 24px;">
+                    {{ topic.content }}
+                </div>
+                
+                <!-- Actions -->
+                <div style="display: flex; align-items: center; gap: 24px; padding-top: 20px; border-top: 1px solid #f5f5f7;">
+                    <button style="display: flex; align-items: center; gap: 8px; background: none; border: none; color: #86868b; font-size: 0.95rem; cursor: pointer; padding: 8px 12px; border-radius: 10px; transition: all 0.2s;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        {{ topic.replies_count }} 回复
+                    </button>
+                    <button style="display: flex; align-items: center; gap: 8px; background: none; border: none; color: #86868b; font-size: 0.95rem; cursor: pointer; padding: 8px 12px; border-radius: 10px; transition: all 0.2s;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                        分享
+                    </button>
+                    <button style="display: flex; align-items: center; gap: 8px; background: none; border: none; color: #86868b; font-size: 0.95rem; cursor: pointer; padding: 8px 12px; border-radius: 10px; transition: all 0.2s;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                        收藏
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Replies -->
+    <div style="margin-bottom: 24px;">
+        <h2 style="font-size: 1.2rem; font-weight: 700; color: #1d1d1f; margin-bottom: 16px; display: flex; align-items: center; gap: 10px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            {{ topic.replies_count }} 条回复
+        </h2>
+        
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+            {% for reply in replies %}
+            <div style="display: flex; gap: 16px; background: white; border-radius: 20px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
+                <!-- Vote -->
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                    <button style="background: none; border: none; cursor: pointer; padding: 4px;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#86868b" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                    </button>
+                    <span style="font-size: 1rem; font-weight: 600; color: #1d1d1f;">{{ reply.likes_count }}</span>
+                    <button style="background: none; border: none; cursor: pointer; padding: 4px;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#86868b" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+                    </button>
+                </div>
+                
+                <!-- Content -->
+                <div style="flex: 1;">
+                    <!-- Author -->
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                        <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; color: #1E3A5F;">
+                            {{ reply.author_name[0] }}
+                        </div>
+                        <div>
+                            <p style="font-weight: 600; color: #1d1d1f; font-size: 0.95rem;">{{ reply.author_name }}</p>
+                            <p style="font-size: 0.8rem; color: #86868b;">{{ reply.created_at[:16] }}</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Body -->
+                    <p style="font-size: 1rem; line-height: 1.7; color: #1d1d1f;">{{ reply.content }}</p>
+                    
+                    <!-- Actions -->
+                    <div style="display: flex; align-items: center; gap: 16px; margin-top: 12px;">
+                        <button style="display: flex; align-items: center; gap: 6px; background: none; border: none; color: #86868b; font-size: 0.85rem; cursor: pointer;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            回复
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Reply Form -->
+    <div style="background: white; border-radius: 24px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
+        <h3 style="font-size: 1.1rem; font-weight: 700; color: #1d1d1f; margin-bottom: 16px;">发布回复</h3>
+        <form>
+            <textarea placeholder="写下你的回复..." rows="4" style="width: 100%; padding: 16px; border: 2px solid #f5f5f7; border-radius: 16px; font-size: 1rem; margin-bottom: 16px; resize: none; box-sizing: border-box; transition: border-color 0.2s;"></textarea>
+            <div style="display: flex; justify-content: flex-end;">
+                <button type="submit" style="display: flex; align-items: center; gap: 8px; padding: 14px 32px; background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); color: white; border: none; border-radius: 14px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.2s;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    发布回复
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

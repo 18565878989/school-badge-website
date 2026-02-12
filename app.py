@@ -370,6 +370,57 @@ def campus_north_america():
 
 @app.route('/social')
 def social():
+    """Social hub page - topics and discussions."""
+    conn = get_db_connection()
+    
+    # Get topics
+    tab = request.args.get('tab', 'hot')
+    if tab == 'hot':
+        cursor = conn.execute("""
+            SELECT t.*, u.username as author_name, s.name as school_name, s.badge_url as school_badge
+            FROM topics t
+            LEFT JOIN users u ON t.author_id = u.id
+            LEFT JOIN schools s ON t.school_id = s.id
+            ORDER BY t.is_hot DESC, t.likes_count DESC, t.created_at DESC
+            LIMIT 20
+        """)
+    else:
+        cursor = conn.execute("""
+            SELECT t.*, u.username as author_name, s.name as school_name, s.badge_url as school_badge
+            FROM topics t
+            LEFT JOIN users u ON t.author_id = u.id
+            LEFT JOIN schools s ON t.school_id = s.id
+            ORDER BY t.created_at DESC
+            LIMIT 20
+        """)
+    
+    topics = [dict(row) for row in cursor.fetchall()]
+    
+    # Get hot topics for sidebar
+    cursor = conn.execute("""
+        SELECT t.*, u.username as author_name
+        FROM topics t
+        LEFT JOIN users u ON t.author_id = u.id
+        WHERE t.is_hot = 1
+        ORDER BY t.likes_count DESC
+        LIMIT 5
+    """)
+    hot_topics = [dict(row) for row in cursor.fetchall()]
+    
+    # Get replies count
+    cursor = conn.execute('SELECT COUNT(*) FROM topic_replies')
+    replies_count = cursor.fetchone()[0]
+    
+    conn.close()
+    
+    return render_template('social.html', 
+                          topics=topics, 
+                          hot_topics=hot_topics,
+                          replies_count=replies_count,
+                          tab=tab,
+                          online_count=128,
+                          breadcrumb='social')
+def social():
     """Social hub page."""
     conn = get_db_connection()
     
@@ -880,3 +931,37 @@ def load_sample_data_command():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001, debug=True)
+
+@app.route('/topic/<int:topic_id>')
+def topic_detail(topic_id):
+    """Topic detail page with replies."""
+    conn = get_db_connection()
+    
+    # Get topic
+    cursor = conn.execute('''
+        SELECT t.*, u.username as author_name, s.name as school_name, s.badge_url as school_badge
+        FROM topics t
+        LEFT JOIN users u ON t.author_id = u.id
+        LEFT JOIN schools s ON t.school_id = s.id
+        WHERE t.id = ?
+    ''', (topic_id,))
+    topic = dict(cursor.fetchone())
+    
+    if not topic:
+        conn.close()
+        return redirect(url_for('social'))
+    
+    # Get replies
+    cursor = conn.execute('''
+        SELECT r.*, u.username as author_name
+        FROM topic_replies r
+        LEFT JOIN users u ON r.author_id = u.id
+        WHERE r.topic_id = ?
+        ORDER BY r.created_at ASC
+    ''', (topic_id,))
+    replies = [dict(row) for row in cursor.fetchall()]
+    
+    conn.close()
+    
+    return render_template('topic_detail.html', topic=topic, replies=replies, breadcrumb='social')
+
