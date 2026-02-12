@@ -1,0 +1,166 @@
+{% extends "base_apple.html" %}
+
+{% block title %}校徽演进历史 - 校徽网{% endblock %}
+
+{% block content %}
+<!-- Badge History Hub -->
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 40px 80px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;">
+
+    <!-- Hero -->
+    <div style="background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); border-radius: 32px; padding: 60px 48px; margin-bottom: 48px; text-align: center; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); border-radius: 50%;"></div>
+        <div style="position: absolute; bottom: -150px; left: -150px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%); border-radius: 50%;"></div>
+        
+        <h1 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; color: white; margin-bottom: 16px; letter-spacing: -0.02em;">校徽演进历史</h1>
+        <p style="font-size: 1.1rem; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">探索名校校徽的百年变迁，了解每所学校的文化传承与历史故事</p>
+    </div>
+
+    <!-- Region Tabs -->
+    <div style="display: flex; gap: 12px; margin-bottom: 32px; overflow-x: auto; padding-bottom: 12px;">
+        <a href="#" style="display: flex; align-items: center; gap: 8px; padding: 14px 28px; background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); color: white; border-radius: 16px; font-weight: 600; text-decoration: none; white-space: nowrap;">
+            🇨🇳 中国名校
+        </a>
+        <a href="#" style="display: flex; align-items: center; gap: 8px; padding: 14px 28px; background: #f5f5f7; color: #1d1d1f; border-radius: 16px; font-weight: 600; text-decoration: none; white-space: nowrap;">
+            🇺🇸 北美名校
+        </a>
+        <a href="#" style="display: flex; align-items: center; gap: 8px; padding: 14px 28px; background: #f5f5f7; color: #1d1d1f; border-radius: 16px; font-weight: 600; text-decoration: none; white-space: nowrap;">
+            🌏 亚洲名校
+        </a>
+    </div>
+
+    <!-- Featured Schools -->
+    <h2 style="font-size: 1.4rem; font-weight: 700; color: #1d1d1f; margin-bottom: 24px; display: flex; align-items: center; gap: 10px;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        精选校徽历史
+    </h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 24px; margin-bottom: 48px;">
+        <!-- Tsinghua -->
+        <a href="{{ url_for('badge_history', school_id=49) }}" style="display: block; background: white; border-radius: 24px; overflow: hidden; text-decoration: none; box-shadow: 0 4px 24px rgba(0,0,0,0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 48px rgba(0,0,0,0.12)';">
+            <div style="height: 120px; background: linear-gradient(135deg, #C41E3A 0%, #8B0000 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                <div style="width: 80px; height: 80px; background: white; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 2.5rem;">🎓</span>
+                </div>
+                <span style="position: absolute; top: 16px; right: 16px; padding: 6px 14px; background: rgba(255,255,255,0.2); color: white; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">6个版本</span>
+            </div>
+            <div style="padding: 24px;">
+                <h3 style="font-size: 1.2rem; font-weight: 700; color: #1d1d1f; margin-bottom: 8px;">清华大学</h3>
+                <p style="font-size: 0.9rem; color: #86868b; margin-bottom: 12px;">1911年至今 · 北京</p>
+                <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem; color: #6e7588;">
+                    <span style="display: flex; align-items: center; gap: 6px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        7条重大事件
+                    </span>
+                    <span style="display: flex; align-items: center; gap: 6px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        3个数字藏品
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Peking -->
+        <a href="{{ url_for('badge_history', school_id=11255) }}" style="display: block; background: white; border-radius: 24px; overflow: hidden; text-decoration: none; box-shadow: 0 4px 24px rgba(0,0,0,0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 48px rgba(0,0,0,0.12)';">
+            <div style="height: 120px; background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                <div style="width: 80px; height: 80px; background: white; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 2.5rem;">🎓</span>
+                </div>
+                <span style="position: absolute; top: 16px; right: 16px; padding: 6px 14px; background: rgba(255,255,255,0.2); color: white; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">7个版本</span>
+            </div>
+            <div style="padding: 24px;">
+                <h3 style="font-size: 1.2rem; font-weight: 700; color: #1d1d1f; margin-bottom: 8px;">北京大学</h3>
+                <p style="font-size: 0.9rem; color: #86868b; margin-bottom: 12px;">1898年至今 · 北京</p>
+                <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem; color: #6e7588;">
+                    <span style="display: flex; align-items: center; gap: 6px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        6条重大事件
+                    </span>
+                    <span style="display: flex; align-items: center; gap: 6px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        3个数字藏品
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Harvard -->
+        <a href="{{ url_for('badge_history', school_id=8001) }}" style="display: block; background: white; border-radius: 24px; overflow: hidden; text-decoration: none; box-shadow: 0 4px 24px rgba(0,0,0,0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 48px rgba(0,0,0,0.12)';">
+            <div style="height: 120px; background: linear-gradient(135deg, #A31F34 0%, #6D0F1F 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                <div style="width: 80px; height: 80px; background: white; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 2.5rem;">🎓</span>
+                </div>
+                <span style="position: absolute; top: 16px; right: 16px; padding: 6px 14px; background: rgba(255,255,255,0.2); color: white; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">6个版本</span>
+            </div>
+            <div style="padding: 24px;">
+                <h3 style="font-size: 1.2rem; font-weight: 700; color: #1d1d1f; margin-bottom: 8px;">Harvard University</h3>
+                <p style="font-size: 0.9rem; color: #86868b; margin-bottom: 12px;">1636年至今 · Cambridge, USA</p>
+                <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem; color: #6e7588;">
+                    <span style="display: flex; align-items: center; gap: 6px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        5条重大事件
+                    </span>
+                    <span style="display: flex; align-items: center; gap: 6px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        3个数字藏品
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Yale -->
+        <a href="{{ url_for('badge_history', school_id=8007) }}" style="display: block; background: white; border-radius: 24px; overflow: hidden; text-decoration: none; box-shadow: 0 4px 24px rgba(0,0,0,0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 48px rgba(0,0,0,0.12)';">
+            <div style="height: 120px; background: linear-gradient(135deg, #00356B 0%, #0D1B2A 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                <div style="width: 80px; height: 80px; background: white; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 2.5rem;">🎓</span>
+                </div>
+                <span style="position: absolute; top: 16px; right: 16px; padding: 6px 14px; background: rgba(255,255,255,0.2); color: white; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">6个版本</span>
+            </div>
+            <div style="padding: 24px;">
+                <h3 style="font-size: 1.2rem; font-weight: 700; color: #1d1d1f; margin-bottom: 8px;">Yale University</h3>
+                <p style="font-size: 0.9rem; color: #86868b; margin-bottom: 12px;">1701年至今 · New Haven, USA</p>
+                <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem; color: #6e7588;">
+                    <span style="display: flex; align-items: center; gap: 6px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        3条重大事件
+                    </span>
+                    <span style="display: flex; align-items: center; gap: 6px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        3个数字藏品
+                    </span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- More Schools -->
+    <h2 style="font-size: 1.4rem; font-weight: 700; color: #1d1d1f; margin-bottom: 24px; display: flex; align-items: center; gap: 10px;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        更多名校
+    </h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
+        {% for school in [
+            {'id': 11393, 'name': '复旦大学', 'city': '上海', 'badges': 6, 'events': 5},
+            {'id': 11273, 'name': '上海交通大学', 'city': '上海', 'badges': 6, 'events': 5},
+            {'id': 8002, 'name': 'Stanford', 'city': 'USA', 'badges': 5, 'events': 3},
+            {'id': 8003, 'name': 'MIT', 'city': 'USA', 'badges': 5, 'events': 2},
+            {'id': 8006, 'name': 'Princeton', 'city': 'USA', 'badges': 5, 'events': 2},
+            {'id': 9256, 'name': '南京大学', 'city': '南京', 'badges': 0, 'events': 7},
+            {'id': 9344, 'name': '武汉大学', 'city': '武汉', 'badges': 0, 'events': 6},
+        ] %}
+        <a href="{{ url_for('badge_history', school_id=school.id) }}" style="display: flex; align-items: center; gap: 16px; padding: 20px; background: white; border-radius: 16px; text-decoration: none; box-shadow: 0 2px 12px rgba(0,0,0,0.04); transition: all 0.2s ease;" onmouseover="this.style.transform='translateX(4px)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.08)';">
+            <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">🎓</div>
+            <div style="flex: 1;">
+                <h4 style="font-size: 1rem; font-weight: 600; color: #1d1d1f; margin-bottom: 4px;">{{ school.name }}</h4>
+                <p style="font-size: 0.85rem; color: #86868b;">{{ school.city }}</p>
+            </div>
+            <div style="text-align: right;">
+                <span style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: #f5f5f7; border-radius: 8px; font-size: 0.8rem; font-weight: 600; color: #1E3A5F;">
+                    {% if school.badges > 0 %}{{ school.badges }}版本{% else %}{{ school.events }}事件{% endif %}
+                </span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1046,3 +1046,26 @@ def badge_history(school_id):
                           products=products,
                           breadcrumb='history')
 
+
+@app.route('/badges')
+def badge_hub():
+    """Badge history hub page."""
+    conn = get_db_connection()
+    
+    # Get schools with badge history
+    cursor = conn.execute('''
+        SELECT DISTINCT s.id, s.name, s.name_cn, s.city, s.country, s.badge_url,
+               (SELECT COUNT(*) FROM badge_history bh WHERE bh.school_id = s.id) as badge_count,
+               (SELECT COUNT(*) FROM school_events se WHERE se.school_id = s.id) as event_count
+        FROM schools s
+        LEFT JOIN badge_history bh ON s.id = bh.school_id
+        LEFT JOIN school_events se ON s.id = se.school_id
+        WHERE bh.school_id IS NOT NULL OR se.school_id IS NOT NULL
+        ORDER BY badge_count DESC, event_count DESC
+        LIMIT 20
+    ''')
+    schools = [dict(row) for row in cursor.fetchall()]
+    
+    conn.close()
+    
+    return render_template('badge_hub.html', schools=schools, breadcrumb='badges')

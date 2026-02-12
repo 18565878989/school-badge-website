@@ -23,20 +23,25 @@
             
             {% if school.badge_url %}
                 <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
-                    <a href="{{ url_for('badge_history', school_id=school.id) }}">
-                        <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" style="width: 200px; height: 200px; object-fit: contain; filter: drop-shadow(0 8px 32px rgba(30, 58, 95, 0.12)); margin-bottom: 20px; border-radius: 20px; transition: all 0.3s ease;"
-                             onmouseover="this.style.transform='scale(1.05)'" 
-                             onmouseout="this.style.transform='scale(1)'">
+                    <div style="position: relative; margin-bottom: 20px;">
+                        <a href="{{ url_for('badge_history', school_id=school.id) }}">
+                            <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" style="width: 200px; height: 200px; object-fit: contain; filter: drop-shadow(0 8px 32px rgba(30, 58, 95, 0.12)); border-radius: 24px; transition: all 0.3s ease;"
+                                 onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 48px rgba(30,58,95,0.2)';"
+                                 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 32px rgba(30,58,95,0.12)';">
+                        </a>
+                        {% if badge_history|length > 1 %}
+                        <div style="position: absolute; -top-2; -right-2; display: flex; align-items: center; justify-content: center; min-width: 32px; height: 32px; background: linear-gradient(135deg, #FF3B30 0%, #FF2D55 100%); color: white; border-radius: 50%; font-size: 0.75rem; font-weight: 700; box-shadow: 0 4px 12px rgba(255,59,48,0.3);">
+                            {{ badge_history|length }}
+                        </div>
+                        {% endif %}
+                    </div>
+                    <a href="{{ url_for('badge_history', school_id=school.id) }}" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); color: white; border-radius: 16px; font-size: 0.9rem; font-weight: 600; text-decoration: none; box-shadow: 0 4px 16px rgba(30,58,95,0.3); transition: all 0.2s ease;"
+                       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 24px rgba(30,58,95,0.4)';"
+                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 16px rgba(30,58,95,0.3)';">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        📜 校徽演进历史
                     </a>
-                    <a href="{{ url_for('badge_history', school_id=school.id) }}" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); color: white; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-decoration: none; transition: all 0.2s ease;"
-                       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(30,58,95,0.3)';"
-                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        查看校徽演进历史
-                    </a>
-                    {% if badge_history|length > 1 %}
-                    <p style="font-size: 0.75rem; color: #86868b; margin-top: 8px;">{{ badge_history|length }} 个历史版本</p>
-                    {% endif %}
+                    <p style="font-size: 0.8rem; color: #86868b; margin-top: 12px;">点击查看校徽变迁与重大事件</p>
                 </div>
             {% else %}
                 <div style="width: 180px; height: 180px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 40px; display: flex; align-items: center; justify-content: center; font-size: 4rem; margin-bottom: 24px;">🎓</div>
