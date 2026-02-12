@@ -11,11 +11,28 @@
         <!-- Badge Section -->
         <div style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%); padding: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
             <div style="position: absolute; top: 60px; right: 0; bottom: 60px; width: 1px; background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.08) 20%, rgba(0,0,0,0.08) 80%, transparent 100%);"></div>
+            
             {% if school.badge_url %}
                 <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="badge-image" style="width: 240px; height: 240px; object-fit: contain; filter: drop-shadow(0 8px 32px rgba(30, 58, 95, 0.12)); margin-bottom: 32px; border-radius: 20px;">
             {% else %}
                 <div style="width: 200px; height: 200px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 48px; display: flex; align-items: center; justify-content: center; font-size: 5rem; margin-bottom: 32px;">🎓</div>
             {% endif %}
+            
+            <!-- Action Buttons under Badge -->
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+                {% if session.get('user_id') %}
+                    <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
+                        <button type="submit" class="btn {% if user_liked %}btn-primary{% else %}btn-secondary{% endif %}" style="display: flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 14px; font-weight: 600; min-width: 120px; justify-content: center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="{% if user_liked %}currentColor{% else %}none{% endif %}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            {% if user_liked %}{{ _('liked') }}{% else %}{{ _('like') }}{% endif %}
+                        </button>
+                    </form>
+                {% endif %}
+                <button class="btn btn-secondary" onclick="downloadBadge()" style="display: flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 14px; font-weight: 600; min-width: 120px; justify-content: center;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    {{ _('download') }}
+                </button>
+            </div>
         </div>
         
         <!-- Info Section -->
@@ -65,129 +82,199 @@
             </div>
             {% endif %}
             
-            <!-- Info Cards Grid -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+            <!-- Info Cards Grid - Complete School Details -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px;">
+                <!-- Location -->
+                {% if school.country or school.city %}
+                <div class="info-card" style="background: #f5f5f7; padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600;">位置</p>
+                    </div>
+                    <p style="font-size: 0.95rem; color: #1d1d1f; font-weight: 600;">
+                        {% if school.city %}{{ school.city }}{% endif %}{% if school.city and school.country %}, {% endif %}{% if school.country %}{{ school.country }}{% endif %}
+                    </p>
+                </div>
+                {% endif %}
+                
                 {% if school.district %}
-                <div class="info-card" style="background: #f5f5f7; padding: 24px; border-radius: 16px;">
-                    <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">{{ _('district') }}</p>
+                <div class="info-card" style="background: #f5f5f7; padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600;">{{ _('district') }}</p>
+                    </div>
                     <p style="font-size: 0.95rem; color: #1d1d1f; font-weight: 600;">{{ school.district }}</p>
                 </div>
                 {% endif %}
                 
                 {% if school.address %}
-                <div class="info-card" style="background: #f5f5f7; padding: 24px; border-radius: 16px;">
-                    <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">{{ _('address') }}</p>
-                    <p style="font-size: 0.95rem; color: #1d1d1f; font-weight: 600;">{{ school.address }}</p>
+                <div class="info-card" style="background: #f5f5f7; padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600;">详细地址</p>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #1d1d1f; font-weight: 600; line-height: 1.4;">{{ school.address }}</p>
                 </div>
                 {% endif %}
                 
                 {% if school.supervisor %}
-                <div class="info-card" style="background: #f5f5f7; padding: 24px; border-radius: 16px;">
-                    <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">{{ _('supervisor') }}</p>
+                <div class="info-card" style="background: #f5f5f7; padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600;">{{ _('supervisor') }}</p>
+                    </div>
                     <p style="font-size: 0.95rem; color: #1d1d1f; font-weight: 600;">{{ school.supervisor }}</p>
                 </div>
                 {% endif %}
                 
                 {% if school.principal %}
-                <div class="info-card" style="background: #f5f5f7; padding: 24px; border-radius: 16px;">
-                    <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">{{ _('principal') }}</p>
+                <div class="info-card" style="background: #f5f5f7; padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600;">{{ _('principal') }}</p>
+                    </div>
                     <p style="font-size: 0.95rem; color: #1d1d1f; font-weight: 600;">{{ school.principal }}</p>
                 </div>
                 {% endif %}
                 
                 {% if school.phone %}
-                <div class="info-card" style="background: #f5f5f7; padding: 24px; border-radius: 16px;">
-                    <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">{{ _('phone') }}</p>
+                <div class="info-card" style="background: #f5f5f7; padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600;">{{ _('phone') }}</p>
+                    </div>
                     <p style="font-size: 0.95rem; color: #1d1d1f; font-weight: 600;">{{ school.phone }}</p>
                 </div>
                 {% endif %}
                 
+                {% if school.fax %}
+                <div class="info-card" style="background: #f5f5f7; padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><path d="M6 8h12"/><path d="M6 12h12"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600;">传真</p>
+                    </div>
+                    <p style="font-size: 0.95rem; color: #1d1d1f; font-weight: 600;">{{ school.fax }}</p>
+                </div>
+                {% endif %}
+                
                 {% if school.gender %}
-                <div class="info-card" style="background: #f5f5f7; padding: 24px; border-radius: 16px;">
-                    <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">{{ _('gender_type') }}</p>
+                <div class="info-card" style="background: #f5f5f7; padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600;">{{ _('gender_type') }}</p>
+                    </div>
                     <p style="font-size: 0.95rem; color: #1d1d1f; font-weight: 600;">
-                        {% if school.gender == 'CO-ED' %}{{ _('gender_coed') }}
-                        {% elif school.gender == 'GIRLS' %}{{ _('gender_girls') }}
-                        {% elif school.gender == 'BOYS' %}{{ _('gender_boys') }}
-                        {% else %}{{ school.gender }}{% endif %}
+                        {% if school.gender == 'CO-ED' %}男女合校{% elif school.gender == 'GIRLS' %}女校{% elif school.gender == 'BOYS' %}男校{% else %}{{ school.gender }}{% endif %}
                     </p>
                 </div>
                 {% endif %}
                 
                 {% if school.finance_type %}
-                <div class="info-card" style="background: #f5f5f7; padding: 24px; border-radius: 16px;">
-                    <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">{{ _('finance_type') }}</p>
-                    <p style="font-size: 0.95rem; color: #1d1d1f; font-weight: 600;">
-                        {% if school.finance_type == 'Government' %}{{ _('finance_government') }}
-                        {% elif school.finance_type == 'Aided' %}{{ _('finance_aided') }}
-                        {% elif school.finance_type == 'Direct' %}{{ _('finance_direct') }}
-                        {% elif school.finance_type == 'Private' %}{{ _('finance_private') }}
-                        {% elif school.finance_type == 'ESF' %}英基
-                        {% else %}{{ school.finance_type }}{% endif %}
+                <div class="info-card" style="background: #f5f5f7; padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600;">办学类型</p>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #1d1d1f; font-weight: 600;">
+                        {% if school.finance_type == 'Government' %}官立{% elif school.finance_type == 'Aided' %}资助{% elif school.finance_type == 'Direct' %}直资{% elif school.finance_type == 'Private' %}私立{% elif school.finance_type == 'ESF' %}英基{% else %}{{ school.finance_type }}{% endif %}
                     </p>
                 </div>
                 {% endif %}
                 
+                {% if school.session_type %}
+                <div class="info-card" style="background: #f5f5f7; padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600;">授课时间</p>
+                    </div>
+                    <p style="font-size: 0.95rem; color: #1d1d1f; font-weight: 600;">
+                        {% if school.session_type == 'AM' %}上午校{% elif school.session_type == 'PM' %}下午校{% elif school.session_type == 'WD' %}全日制{% else %}{{ school.session_type }}{% endif %}
+                    </p>
+                </div>
+                {% endif %}
+                
+                {% if school.school_code %}
+                <div class="info-card" style="background: #f5f5f7; padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600;">学校编号</p>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #1d1d1f; font-weight: 600;">{{ school.school_code }}</p>
+                </div>
+                {% endif %}
+                
                 {% if school.website %}
-                <div class="info-card" style="background: #f5f5f7; padding: 24px; border-radius: 16px;">
-                    <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">{{ _('website') }}</p>
-                    <a href="{{ school.website }}" target="_blank" style="font-size: 0.95rem; color: #1E3A5F; font-weight: 600; text-decoration: none;">{{ _('visit_website') }}</a>
+                <div class="info-card" style="background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); padding: 20px; border-radius: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.8); font-weight: 600;">{{ _('website') }}</p>
+                    </div>
+                    <a href="{{ school.website }}" target="_blank" style="font-size: 0.9rem; color: white; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                        {{ _('visit_website') }}
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
                 </div>
                 {% endif %}
             </div>
         </div>
     </div>
     
-    <!-- Location Section - Clickable Google Maps -->
+    <!-- Location Section - Apple Maps Style -->
     <div style="margin-top: 32px;">
         {% if school.address or school.city or school.country %}
-        <a href="https://www.google.com/maps/search/{% if school.address %}{{ school.address | urlencode }}{% endif %}{% if school.city %},{{ school.city | urlencode }}{% endif %}{% if school.country %},{{ school.country | urlencode }}{% endif %}" target="_blank" style="display: block; background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%); border-radius: 24px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02); text-decoration: none;">
-            <!-- Map Preview -->
-            <div style="width: 100%; height: 180px; background: linear-gradient(135deg, #e8f4f8 0%, #d4e8ed 100%); display: flex; align-items: center; justify-content: center;">
-                <!-- Google Maps Icon -->
-                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" style="color: #4285F4;">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#4285F4"/>
-                    <circle cx="12" cy="9" r="2.5" fill="#EA4335"/>
-                </svg>
+        <a href="https://www.google.com/maps/search/{% if school.address %}{{ school.address | urlencode }}{% endif %}{% if school.city %},{{ school.city | urlencode }}{% endif %}{% if school.country %},{{ school.country | urlencode }}{% endif %}" target="_blank" style="display: block; background: #fff; border-radius: 28px; overflow: hidden; text-decoration: none; box-shadow: 0 8px 32px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s ease;">
+            <!-- Map Preview - World Map Background -->
+            <div style="position: relative; width: 100%; height: 200px; background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); overflow: hidden;">
+                <!-- Grid Overlay -->
+                <div style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 50px 50px;"></div>
+                
+                <!-- Location Pin -->
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center;">
+                    <div style="position: absolute; bottom: -20px; width: 40px; height: 10px; background: rgba(0,0,0,0.3); border-radius: 50%; filter: blur(8px);"></div>
+                    <div style="width: 48px; height: 48px; background: #fff; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 0 4px rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center;">
+                        <div style="transform: rotate(45deg); width: 20px; height: 20px; background: linear-gradient(135deg, #FF3B30 0%, #FF2D55 100%); border-radius: 50%; box-shadow: 0 2px 8px rgba(255,59,48,0.4);"></div>
+                    </div>
+                    <div style="position: absolute; width: 64px; height: 64px; border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;"></div>
+                </div>
+                
+                <!-- Gradient Overlay -->
+                <div style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(15,23,42,0.8) 100%);"></div>
             </div>
             
-            <!-- Info Overlay -->
-            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); padding: 60px 24px 20px;">
-                {% if school.address %}
-                <p style="color: #fff; font-size: 1rem; font-weight: 500; margin-bottom: 6px;">{{ school.address }}</p>
-                {% endif %}
-                {% if school.city or school.country %}
-                <p style="color: rgba(255,255,255,0.85); font-size: 0.9rem;">{{ school.city }}, {{ school.country }}</p>
-                {% endif %}
-            </div>
-            
-            <!-- Open Button -->
-            <div style="position: absolute; top: 16px; right: 16px; display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px; background: #fff; color: #1E3A5F; text-decoration: none; border-radius: 10px; font-size: 0.9rem; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Google 地图
+            <!-- Location Info -->
+            <div style="padding: 24px; display: flex; align-items: flex-start; gap: 16px;">
+                <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="1.5" style="color: #FF3B30;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3" fill="#FF3B30" stroke="none"/></svg>
+                </div>
+                
+                <div style="flex: 1; min-width: 0;">
+                    <h4 style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 8px;">位置信息</h4>
+                    {% if school.address %}
+                    <p style="font-size: 1rem; font-weight: 600; color: #1d1d1f; margin-bottom: 6px; line-height: 1.4;">{{ school.address }}</p>
+                    {% endif %}
+                    {% if school.city or school.country %}
+                    <p style="font-size: 0.95rem; color: #6e7588; display: flex; align-items: center; gap: 6px;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        {{ school.city }}, {{ school.country }}
+                    </p>
+                    {% endif %}
+                </div>
+                
+                <div style="display: flex; align-items: center; gap: 8px; padding: 12px 20px; background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); color: #fff; border-radius: 12px; font-size: 0.9rem; font-weight: 600; white-space: nowrap;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Google 地图
+                </div>
             </div>
         </a>
         {% endif %}
-        
-        <!-- Action Buttons -->
-        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px;">
-            {% if session.get('user_id') %}
-                <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
-                    <button type="submit" class="btn {% if user_liked %}btn-primary{% else %}btn-secondary{% endif %}" style="display: flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 14px; font-weight: 600;">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="{% if user_liked %}currentColor{% else %}none{% endif %}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                        {% if user_liked %}{{ _('liked') }}{% else %}{{ _('like') }}{% endif %}
-                    </button>
-                </form>
-            {% endif %}
-            <button class="btn btn-secondary" onclick="downloadBadge()" style="display: flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 14px; font-weight: 600;">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                {{ _('download') }}
-            </button>
-        </div>
     </div>
 </div>
 
 <script>
+@keyframes ping {
+    75%, 100% { transform: scale(2); opacity: 0; }
+}
+
 function downloadBadge() {
     const badgeUrl = document.querySelector('.badge-image')?.src;
     if (badgeUrl) {
