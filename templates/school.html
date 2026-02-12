@@ -13,7 +13,17 @@
             <div style="position: absolute; top: 60px; right: 0; bottom: 60px; width: 1px; background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.08) 20%, rgba(0,0,0,0.08) 80%, transparent 100%);"></div>
             
             {% if school.badge_url %}
-                <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="badge-image" style="width: 240px; height: 240px; object-fit: contain; filter: drop-shadow(0 8px 32px rgba(30, 58, 95, 0.12)); margin-bottom: 32px; border-radius: 20px;">
+                <a href="{{ url_for('badge_history', school_id=school.id) }}" style="display: block; text-decoration: none;">
+                    <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="badge-image" style="width: 240px; height: 240px; object-fit: contain; filter: drop-shadow(0 8px 32px rgba(30, 58, 95, 0.12)); margin-bottom: 32px; border-radius: 20px; transition: all 0.3s ease; cursor: pointer;" 
+                         onmouseover="this.style.transform='scale(1.05) rotate(2deg)'" 
+                         onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <div style="text-align: center;">
+                        <span style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); color: white; border-radius: 20px; font-size: 0.8rem; font-weight: 600; opacity: 0; transition: opacity 0.3s ease;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            查看校徽演进历史
+                        </span>
+                    </div>
+                </a>
             {% else %}
                 <div style="width: 200px; height: 200px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 48px; display: flex; align-items: center; justify-content: center; font-size: 5rem; margin-bottom: 32px;">🎓</div>
             {% endif %}

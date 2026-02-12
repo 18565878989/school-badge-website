@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash, send_from_directory, jsonify
+import sqlite3
 import os
 from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -964,4 +965,61 @@ def topic_detail(topic_id):
     conn.close()
     
     return render_template('topic_detail.html', topic=topic, replies=replies, breadcrumb='social')
+
+
+@app.route('/school/<int:school_id>/history')
+def badge_history(school_id):
+    """Show school badge evolution history."""
+    conn = get_db_connection()
+    conn.row_factory = sqlite3.Row
+    
+    # Get school info
+    cursor = conn.execute('SELECT * FROM schools WHERE id = ?', (school_id,))
+    school = dict(cursor.fetchone())
+    
+    if not school:
+        conn.close()
+        return redirect(url_for('index'))
+    
+    # Get badge history
+    cursor = conn.execute('''
+        SELECT * FROM badge_history 
+        WHERE school_id = ? 
+        ORDER BY year_start ASC
+    ''', (school_id,))
+    badge_history = [dict(row) for row in cursor.fetchall()]
+    
+    # Get school events
+    cursor = conn.execute('''
+        SELECT * FROM school_events 
+        WHERE school_id = ? 
+        ORDER BY year ASC
+    ''', (school_id,))
+    events = [dict(row) for row in cursor.fetchall()]
+    
+    # Get digital collectibles
+    cursor = conn.execute('''
+        SELECT * FROM digital_collectibles 
+        WHERE school_id = ? AND status = 'active'
+        ORDER BY price ASC
+    ''', (school_id,))
+    digital_collectibles = [dict(row) for row in cursor.fetchall()]
+    
+    # Get products
+    cursor = conn.execute('''
+        SELECT * FROM products 
+        WHERE school_id = ? AND status = 'active'
+        ORDER BY price ASC
+    ''', (school_id,))
+    products = [dict(row) for row in cursor.fetchall()]
+    
+    conn.close()
+    
+    return render_template('badge_history.html', 
+                          school=school,
+                          badge_history=badge_history,
+                          events=events,
+                          digital_collectibles=digital_collectibles,
+                          products=products,
+                          breadcrumb='history')
 
