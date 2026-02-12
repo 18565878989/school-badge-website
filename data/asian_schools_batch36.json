@@ -1,0 +1,237 @@
+{
+  "batch": 36,
+  "description": "Asian Schools Batch 36 - West Asia (Saudi Arabia, UAE, Qatar, Bahrain, Oman, Yemen)",
+  "schools": [
+    {
+      "id": 10837,
+      "name": "King Saud University",
+      "name_cn": "利雅得国王大学",
+      "region": "Asia",
+      "country": "Saudi Arabia",
+      "city": "Riyadh",
+      "level": "university",
+      "website": "https://ksu.edu.sa",
+      "founded": 1957
+    },
+    {
+      "id": 10838,
+      "name": "King Abdulaziz University",
+      "name_cn": "阿卜杜勒阿齐兹国王大学",
+      "region": "Asia",
+      "country": "Saudi Arabia",
+      "city": "Jeddah",
+      "level": "university",
+      "website": "https://kau.edu.sa",
+      "founded": 1967
+    },
+    {
+      "id": 10839,
+      "name": "King Abdullah University of Science and Technology",
+      "name_cn": "阿卜杜拉国王科技大学",
+      "region": "Asia",
+      "country": "Saudi Arabia",
+      "city": "Thuwal",
+      "level": "university",
+      "website": "https://kaust.edu.sa",
+      "founded": 2009
+    },
+    {
+      "id": 10840,
+      "name": "Imam Muhammad ibn Saud Islamic University",
+      "name_cn": "伊玛目穆罕默德 ibn 苏丹伊斯兰大学",
+      "region": "Asia",
+      "country": "Saudi Arabia",
+      "city": "Riyadh",
+      "level": "university",
+      "website": "https://imamu.edu.sa",
+      "founded": 1953
+    },
+    {
+      "id": 10841,
+      "name": "Umm Al-Qura University",
+      "name_cn": "乌姆古拉大学",
+      "region": "Asia",
+      "country": "Saudi Arabia",
+      "city": "Mecca",
+      "level": "university",
+      "website": "https://uqu.edu.sa",
+      "founded": 1949
+    },
+    {
+      "id": 10842,
+      "name": "United Arab Emirates University",
+      "name_cn": "阿联酋大学",
+      "region": "Asia",
+      "country": "United Arab Emirates",
+      "city": "Al Ain",
+      "level": "university",
+      "website": "https://uaeu.ac.ae",
+      "founded": 1976
+    },
+    {
+      "id": 10843,
+      "name": "Khalifa University",
+      "name_cn": "哈利法大学",
+      "region": "Asia",
+      "country": "United Arab Emirates",
+      "city": "Abu Dhabi",
+      "level": "university",
+      "website": "https://ku.ac.ae",
+      "founded": 2007
+    },
+    {
+      "id": 10844,
+      "name": "American University of Sharjah",
+      "name_cn": "沙迦美国大学",
+      "region": "Asia",
+      "country": "United Arab Emirates",
+      "city": "Sharjah",
+      "level": "university",
+      "website": "https://aus.edu",
+      "founded": 1997
+    },
+    {
+      "id": 10845,
+      "name": "Zayed University",
+      "name_cn": "扎耶德大学",
+      "region": "Asia",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "level": "university",
+      "website": "https://zu.ac.ae",
+      "founded": 1998
+    },
+    {
+      "id": 10846,
+      "name": "University of Dubai",
+      "name_cn": "迪拜大学",
+      "region": "Asia",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "level": "university",
+      "website": "https://ud.edu.ae",
+      "founded": 1995
+    },
+    {
+      "id": 10847,
+      "name": "Qatar University",
+      "name_cn": "卡塔尔大学",
+      "region": "Asia",
+      "country": "Qatar",
+      "city": "Doha",
+      "level": "university",
+      "website": "https://qu.edu.qa",
+      "founded": 1973
+    },
+    {
+      "id": 10848,
+      "name": "Hamad Bin Khalifa University",
+      "name_cn": "哈马德·本·哈利法大学",
+      "region": "Asia",
+      "country": "Qatar",
+      "city": "Doha",
+      "level": "university",
+      "website": "https://hbku.edu.qa",
+      "founded": 2010
+    },
+    {
+      "id": 10849,
+      "name": "Texas A&M University at Qatar",
+      "name_cn": "德州农工大学卡塔尔分校",
+      "region": "Asia",
+      "country": "Qatar",
+      "city": "Doha",
+      "level": "university",
+      "website": "https://qatar.tamu.edu",
+      "founded": 2003
+    },
+    {
+      "id": 10850,
+      "name": "Carnegie Mellon University in Qatar",
+      "name_cn": "卡耐基梅隆大学卡塔尔分校",
+      "region": "Asia",
+      "country": "Qatar",
+      "city": "Doha",
+      "level": "university",
+      "website": "https://qatar.cmu.edu",
+      "founded": 2004
+    },
+    {
+      "id": 10851,
+      "name": "Georgetown University School of Foreign Service Qatar",
+      "name_cn": "乔治城大学卡塔尔分校",
+      "region": "Asia",
+      "country": "Qatar",
+      "city": "Doha",
+      "level": "university",
+      "website": "https://sfs.qatar.georgetown.edu",
+      "founded": 2005
+    },
+    {
+      "id": 10852,
+      "name": "University of Bahrain",
+      "name_cn": "巴林大学",
+      "region": "Asia",
+      "country": "Bahrain",
+      "city": "Sakhir",
+      "level": "university",
+      "website": "https://ub.edu.bh",
+      "founded": 1986
+    },
+    {
+      "id": 10853,
+      "name": "Bahrain University",
+      "name_cn": "巴林王国大学",
+      "region": "Asia",
+      "country": "Bahrain",
+      "city": "Manama",
+      "level": "university",
+      "website": "https://bu.edu.bh",
+      "founded": 1978
+    },
+    {
+      "id": 10854,
+      "name": "Sultan Qaboos University",
+      "name_cn": "苏丹卡布斯大学",
+      "region": "Asia",
+      "country": "Oman",
+      "city": "Muscat",
+      "level": "university",
+      "website": "https://squ.edu.om",
+      "founded": 1986
+    },
+    {
+      "id": 10855,
+      "name": "German University of Technology in Oman",
+      "name_cn": "阿曼德国大学",
+      "region": "Asia",
+      "country": "Oman",
+      "city": "Muscat",
+      "level": "university",
+      "website": "https://gutech.edu.om",
+      "founded": 2007
+    },
+    {
+      "id": 10856,
+      "name": "Sana'a University",
+      "name_cn": "萨那大学",
+      "region": "Asia",
+      "country": "Yemen",
+      "city": "Sana'a",
+      "level": "university",
+      "website": "https://sanaa.edu.ye",
+      "founded": 1970
+    },
+    {
+      "id": 10857,
+      "name": "Aden University",
+      "name_cn": "亚丁大学",
+      "region": "Asia",
+      "country": "Yemen",
+      "city": "Aden",
+      "level": "university",
+      "website": "https://aden.edu.ye",
+      "founded": 1975
+    }
+  ]
+}

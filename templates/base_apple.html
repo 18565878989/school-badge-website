@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>校徽网 - {{ _('hero_title') }}</title>
+    <title>{% block title %}校徽网 - {{ _('hero_title') }}{% endblock %}</title>
     
-    <link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
     <link rel="icon" href="/static/images/favicon.svg">
     <link rel="apple-touch-icon" href="/static/images/favicon.svg">
     <link rel="shortcut icon" href="/static/images/favicon.svg">
     <meta name="theme-color" content="#FF3B30">
-    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
-    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="school-gallery">
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="{{ url_for('index') }}" class="logo">
                 <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网">
             </a>
             <div class="nav-links">
-                <a href="{{ url_for('index') }}" class="active">{{ _('home') }}</a>
+                <a href="{{ url_for('index') }}" class="{% if not breadcrumb %}active{% endif %}">{{ _('home') }}</a>
                 <a href="{{ url_for('campus_north_america') }}">{{ _('campus_gallery') }}</a>
                 {% if session.get('user_id') %}
                     <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
@@ -35,6 +34,8 @@
                     <a href="{{ url_for('login') }}">{{ _('login') }}</a>
                     <a href="{{ url_for('register') }}">{{ _('register') }}</a>
                 {% endif %}
+                
+                {% block breadcrumb %}{% endblock %}
                 
                 <div class="lang-switcher">
                     <select onchange="window.location.href=this.value">

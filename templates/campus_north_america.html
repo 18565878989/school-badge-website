@@ -24,7 +24,29 @@
             </a>
             <div class="nav-links">
                 <a href="{{ url_for('index') }}">{{ _('home') }}</a>
-                <a href="#" class="active">{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('campus_north_america') }}" class="active">{{ _('campus_gallery') }}</a>
+                {% if session.get('user_id') %}
+                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
+                    <span class="username">{{ session.get('username') }}</span>
+                    {% if is_admin() %}
+                        <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
+                    {% endif %}
+                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}">{{ _('login') }}</a>
+                    <a href="{{ url_for('register') }}">{{ _('register') }}</a>
+                {% endif %}
+                
+                <div class="lang-switcher">
+                    <select onchange="window.location.href=this.value">
+                        {% for code, name in LANGUAGE_NAMES.items() %}
+                            <option value="{{ url_for('set_language', lang=code) }}" 
+                                    {% if current_lang == code %}selected{% endif %}>
+                                {{ name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
             </div>
         </div>
     </nav>

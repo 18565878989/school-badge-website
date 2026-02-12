@@ -221,6 +221,7 @@ def school_detail(school_id):
         user_liked = get_like(session['user_id'], school_id) is not None
     
     return render_template('school.html', 
+                         breadcrumb='school',
                          school=school, 
                          likes_count=likes_count,
                          user_liked=user_liked)
@@ -249,7 +250,7 @@ def toggle_like(school_id):
 def my_likes():
     """Show user's liked schools."""
     liked_schools = get_user_liked_schools(session['user_id'])
-    return render_template('my_likes.html', schools=liked_schools)
+    return render_template('my_likes.html', schools=liked_schools, breadcrumb='likes')
 
 # ==================== Login/Register Routes ====================
 
@@ -562,7 +563,7 @@ def admin_schools():
         level_stats[level] = level_stats.get(level, 0) + 1
     
     # 获取所有地区（用于筛选）
-    regions = sorted(set(s['region'] for s in schools if s.get('region')))
+    regions = sorted(set(s['region'] for s in schools if s['region']))
     
     return render_template('admin/schools.html', schools=schools, level_stats=level_stats, regions=regions)
 

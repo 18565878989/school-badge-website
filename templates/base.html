@@ -30,7 +30,8 @@
                     <a href="{{ url_for('register') }}">{{ _('register') }}</a>
                 {% endif %}
                 
-                <!-- Language Switcher -->
+                {% block breadcrumb %}{% endblock %}
+                
                 <div class="lang-switcher">
                     <select onchange="window.location.href=this.value">
                         {% for code, name in LANGUAGE_NAMES.items() %}

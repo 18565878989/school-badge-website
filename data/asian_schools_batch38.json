@@ -1,0 +1,237 @@
+{
+  "batch": 38,
+  "description": "Asian Schools Batch 38 - Southeast Asia (Thailand, Vietnam, Indonesia, Philippines, Malaysia, Singapore)",
+  "schools": [
+    {
+      "id": 10879,
+      "name": "Chulalongkorn University",
+      "name_cn": "朱拉隆功大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://chula.ac.th",
+      "founded": 1917
+    },
+    {
+      "id": 10880,
+      "name": "Mahidol University",
+      "name_cn": "马希隆大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://mahidol.ac.th",
+      "founded": 1888
+    },
+    {
+      "id": 10881,
+      "name": "Chiang Mai University",
+      "name_cn": "清迈大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Chiang Mai",
+      "level": "university",
+      "website": "https://cmu.ac.th",
+      "founded": 1964
+    },
+    {
+      "id": 10882,
+      "name": "King Mongkut's University of Technology Thonburi",
+      "name_cn": "吞武里国王科技大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://kmutt.ac.th",
+      "founded": 1960
+    },
+    {
+      "id": 10883,
+      "name": "King Mongkut's Institute of Technology Ladkrabang",
+      "name_cn": "国王技术学院拉加邦分校",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://kmitl.ac.th",
+      "founded": 1960
+    },
+    {
+      "id": 10884,
+      "name": "Vietnam National University Hanoi",
+      "name_cn": "河内国家大学",
+      "region": "Asia",
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "level": "university",
+      "website": "https://vnu.edu.vn",
+      "founded": 1993
+    },
+    {
+      "id": 10885,
+      "name": "Vietnam National University Ho Chi Minh City",
+      "name_cn": "胡志明市国家大学",
+      "region": "Asia",
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "level": "university",
+      "website": "https://hcmiu.edu.vn",
+      "founded": 1995
+    },
+    {
+      "id": 10886,
+      "name": "Hanoi University of Science and Technology",
+      "name_cn": "河内理工大学",
+      "region": "Asia",
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "level": "university",
+      "website": "https://hust.edu.vn",
+      "founded": 1956
+    },
+    {
+      "id": 10887,
+      "name": "University of Indonesia",
+      "name_cn": "印度尼西亚大学",
+      "region": "Asia",
+      "country": "Indonesia",
+      "city": "Depok",
+      "level": "university",
+      "website": "https://ui.ac.id",
+      "founded": 1949
+    },
+    {
+      "id": 10888,
+      "name": "Bandung Institute of Technology",
+      "name_cn": "万隆理工大学",
+      "region": "Asia",
+      "country": "Indonesia",
+      "city": "Bandung",
+      "level": "university",
+      "website": "https://itb.ac.id",
+      "founded": 1959
+    },
+    {
+      "id": 10889,
+      "name": "Gadjah Mada University",
+      "name_cn": "加查马达大学",
+      "region": "Asia",
+      "country": "Indonesia",
+      "city": "Yogyakarta",
+      "level": "university",
+      "website": "https://ugm.ac.id",
+      "founded": 1949
+    },
+    {
+      "id": 10890,
+      "name": "University of the Philippines",
+      "name_cn": "菲律宾大学",
+      "region": "Asia",
+      "country": "Philippines",
+      "city": "Quezon City",
+      "level": "university",
+      "website": "https://up.edu.ph",
+      "founded": 1908
+    },
+    {
+      "id": 10891,
+      "name": "Ateneo de Manila University",
+      "name_cn": "马尼拉雅典耀大学",
+      "region": "Asia",
+      "country": "Philippines",
+      "city": "Quezon City",
+      "level": "university",
+      "website": "https://ateneo.edu",
+      "founded": 1859
+    },
+    {
+      "id": 10892,
+      "name": "De La Salle University",
+      "name_cn": "德拉萨大学",
+      "region": "Asia",
+      "country": "Philippines",
+      "city": "Manila",
+      "level": "university",
+      "website": "https://dlsu.edu.ph",
+      "founded": 1911
+    },
+    {
+      "id": 10893,
+      "name": "University of Malaya",
+      "name_cn": "马来亚大学",
+      "region": "Asia",
+      "country": "Malaysia",
+      "city": "Kuala Lumpur",
+      "level": "university",
+      "website": "https://um.edu.my",
+      "founded": 1949
+    },
+    {
+      "id": 10894,
+      "name": "Universiti Kebangsaan Malaysia",
+      "name_cn": "马来西亚国立大学",
+      "region": "Asia",
+      "country": "Malaysia",
+      "city": "Bangi",
+      "level": "university",
+      "website": "https://ukm.edu.my",
+      "founded": 1970
+    },
+    {
+      "id": 10895,
+      "name": "Universiti Putra Malaysia",
+      "name_cn": "马来西亚博特拉大学",
+      "region": "Asia",
+      "country": "Malaysia",
+      "city": "Seri Kembangan",
+      "level": "university",
+      "website": "https://upm.edu.my",
+      "founded": 1931
+    },
+    {
+      "id": 10896,
+      "name": "Universiti Sains Malaysia",
+      "name_cn": "马来西亚理科大学",
+      "region": "Asia",
+      "country": "Malaysia",
+      "city": "Penang",
+      "level": "university",
+      "website": "https://usm.my",
+      "founded": 1969
+    },
+    {
+      "id": 10897,
+      "name": "National University of Singapore",
+      "name_cn": "新加坡国立大学",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://nus.edu.sg",
+      "founded": 1905
+    },
+    {
+      "id": 10898,
+      "name": "Nanyang Technological University",
+      "name_cn": "南洋理工大学",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://ntu.edu.sg",
+      "founded": 1981
+    },
+    {
+      "id": 10899,
+      "name": "Singapore Management University",
+      "name_cn": "新加坡管理大学",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://smu.edu.sg",
+      "founded": 2000
+    }
+  ]
+}
