@@ -6,27 +6,27 @@
 <!-- Badge History - Apple Style -->
 <div style="max-width: 1200px; margin: 0 auto; padding: 40px 40px 80px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;">
 
-    <!-- Header -->
+    <!-- Back Link -->
     <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px;">
         <a href="{{ url_for('school_detail', school_id=school.id) }}" style="display: flex; align-items: center; gap: 8px; color: #1E3A5F; text-decoration: none; font-weight: 500;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            返回学校详情
+            返回 {{ school.name }}
         </a>
     </div>
 
-    <!-- School Info -->
+    <!-- School Header -->
     <div style="background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); border-radius: 28px; padding: 40px; margin-bottom: 40px; display: grid; grid-template-columns: auto 1fr auto; gap: 32px; align-items: center;">
         {% if school.badge_url %}
-            <img src="{{ school.badge_url }}" alt="{{ school.name }}" style="width: 120px; height: 120px; object-fit: contain; background: white; border-radius: 24px; padding: 16px;">
+            <img src="{{ school.badge_url }}" alt="{{ school.name }}" style="width: 100px; height: 100px; object-fit: contain; background: white; border-radius: 20px; padding: 12px;">
         {% else %}
-            <div style="width: 120px; height: 120px; background: rgba(255,255,255,0.2); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🎓</div>
+            <div style="width: 100px; height: 100px; background: rgba(255,255,255,0.2); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">🎓</div>
         {% endif %}
         <div>
-            <h1 style="font-size: 1.8rem; font-weight: 700; color: white; margin-bottom: 8px;">{{ school.name }}</h1>
+            <h1 style="font-size: 1.6rem; font-weight: 700; color: white; margin-bottom: 6px;">{{ school.name }}</h1>
             {% if school.name_cn %}
-                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.8);">{{ school.name_cn }}</p>
+                <p style="font-size: 1rem; color: rgba(255,255,255,0.8);">{{ school.name_cn }}</p>
             {% endif %}
-            <p style="font-size: 0.95rem; color: rgba(255,255,255,0.6); margin-top: 8px;">{{ school.city }}, {{ school.country }}</p>
+            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-top: 6px;">{{ school.city }}, {{ school.country }}</p>
         </div>
         <div style="text-align: right;">
             <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6);">校徽版本</p>
@@ -35,11 +35,11 @@
     </div>
 
     <!-- Timeline Navigation -->
-    <div style="display: flex; gap: 12px; margin-bottom: 32px; overflow-x: auto; padding-bottom: 12px;">
+    <div style="display: flex; gap: 12px; margin-bottom: 40px; overflow-x: auto; padding-bottom: 12px;">
         {% for badge in badge_history %}
-        <a href="#badge-{{ badge.id }}" style="display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 16px 24px; background: {% if loop.last %}linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%){% else %}#f5f5f7{% endif %}; border-radius: 16px; text-decoration: none; min-width: 100px; transition: all 0.2s ease; flex-shrink: 0;">
+        <a href="#badge-{{ badge.id }}" style="display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 16px 24px; background: {% if loop.last %}linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%){% else %}#f5f5f7{% endif %}; border-radius: 16px; text-decoration: none; min-width: 100px; flex-shrink: 0;">
             <span style="font-size: 0.75rem; color: {% if loop.last %}rgba(255,255,255,0.8){% else %}#86868b{% endif %};">{{ badge.year_start }}{% if badge.year_end %}-{{ badge.year_end }}{% else %}至今{% endif %}</span>
-            <span style="font-size: 1.1rem; font-weight: 600; color: {% if loop.last %}white{% else %}#1d1d1f{% endif %};">{{ badge.description[:6] }}</span>
+            <span style="font-size: 1rem; font-weight: 600; color: {% if loop.last %}white{% else %}#1d1d1f{% endif %};">{{ badge.description }}</span>
         </a>
         {% endfor %}
     </div>
@@ -56,15 +56,15 @@
             
             <!-- Content Card -->
             <div style="background: white; border-radius: 28px; padding: 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.06);">
-                <!-- Header -->
-                <div style="display: grid; grid-template-columns: 180px 1fr; gap: 32px; margin-bottom: 24px;">
+                <!-- Header with Badge -->
+                <div style="display: grid; grid-template-columns: 180px 1fr; gap: 32px; margin-bottom: 28px;">
                     <!-- Badge Image -->
                     <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 20px; padding: 24px; text-align: center;">
-                        <div style="width: 120px; height: 120px; margin: 0 auto 12px; background: white; border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                        <div style="width: 100px; height: 100px; margin: 0 auto 12px; background: white; border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
                             {% if loop.first %}
-                                <span style="font-size: 3rem;">🎓</span>
+                                <span style="font-size: 2.5rem;">🎓</span>
                             {% else %}
-                                <span style="font-size: 2.5rem;">🏛️</span>
+                                <span style="font-size: 2rem;">🏛️</span>
                             {% endif %}
                         </div>
                         <p style="font-size: 0.85rem; color: #86868b;">{{ badge.year_start }}{% if badge.year_end %}-{{ badge.year_end }}{% else %}至今{% endif %}</p>
@@ -73,13 +73,13 @@
                     <!-- Info -->
                     <div>
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-                            <h2 style="font-size: 1.4rem; font-weight: 700; color: #1d1d1f;">{{ badge.description }}</h2>
+                            <h2 style="font-size: 1.3rem; font-weight: 700; color: #1d1d1f;">{{ badge.description }}</h2>
                             {% if loop.last %}
                             <span style="padding: 6px 14px; background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); color: white; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">现用版本</span>
                             {% endif %}
                         </div>
                         
-                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;">
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 16px;">
                             <div>
                                 <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 4px;">设计理念</p>
                                 <p style="font-size: 0.95rem; color: #1d1d1f;">{{ badge.design_concept }}</p>
@@ -91,7 +91,7 @@
                         </div>
                         
                         {% if badge.changes %}
-                        <div style="margin-top: 16px; padding: 16px; background: #f5f5f7; border-radius: 12px;">
+                        <div style="padding: 16px; background: #f5f5f7; border-radius: 12px;">
                             <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 8px;">变更说明</p>
                             <p style="font-size: 0.9rem; color: #1d1d1f; line-height: 1.6;">{{ badge.changes }}</p>
                         </div>
@@ -99,19 +99,19 @@
                     </div>
                 </div>
                 
-                <!-- Events in this period -->
+                <!-- Events Timeline -->
                 {% set period_events = events|selectattr('year', '>=', badge.year_start)|selectattr('year', '<', badge.year_end or 9999)|list %}
                 {% if period_events %}
                 <div style="border-top: 1px solid #f5f5f7; padding-top: 24px;">
-                    <h3 style="font-size: 1rem; font-weight: 700; color: #1d1d1f; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: #1d1d1f; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                         重大事件
                     </h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
                         {% for event in period_events %}
                         <div style="padding: 16px; background: linear-gradient(135deg, #f8f9fa 0%, #f0f0f5 100%); border-radius: 14px; border-left: 4px solid #1E3A5F;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                                <span style="font-size: 1.1rem; font-weight: 700; color: #1E3A5F;">{{ event.year }}</span>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <span style="font-size: 1.2rem; font-weight: 700; color: #1E3A5F;">{{ event.year }}</span>
                                 <span style="padding: 4px 10px; background: rgba(30,58,95,0.1); color: #1E3A5F; border-radius: 8px; font-size: 0.7rem; font-weight: 600;">
                                     {% if event.event_type == 'founding' %}创立
                                     {% elif event.event_type == 'renaming' %}更名
@@ -120,13 +120,12 @@
                                     {% elif event.event_type == 'award' %}荣誉
                                     {% elif event.event_type == 'crisis' %}危机
                                     {% elif event.event_type == 'reform' %}改革
-                                    {% elif event.event_type == 'milestone' %}里程碑
-                                    {% endif %}
+                                    {% elif event.event_type == 'milestone' %}里程碑{% endif %}
                                 </span>
                             </div>
                             <p style="font-size: 0.95rem; font-weight: 600; color: #1d1d1f; margin-bottom: 6px;">{{ event.title }}</p>
-                            <p style="font-size: 0.85rem; color: #6e7588; line-height: 1.5; margin-bottom: 8px;">{{ event.description[:60] }}...</p>
-                            <p style="font-size: 0.8rem; color: #86868b;">时任校长: <strong>{{ event.principal_at_time }}</strong></p>
+                            <p style="font-size: 0.85rem; color: #6e7588; line-height: 1.5; margin-bottom: 10px;">{{ event.description }}</p>
+                            <p style="font-size: 0.8rem; color: #86868b;">时任校长: <strong style="color: #1d1d1f;">{{ event.principal_at_time }}</strong></p>
                         </div>
                         {% endfor %}
                     </div>
@@ -138,18 +137,19 @@
     </div>
 
     <!-- Collectibles Section -->
+    {% if digital_collectibles %}
     <div style="background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); border-radius: 28px; padding: 40px; margin-top: 40px;">
-        <h2 style="font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 8px;">数字藏品</h2>
+        <h2 style="font-size: 1.4rem; font-weight: 700; color: white; margin-bottom: 8px;">数字藏品</h2>
         <p style="font-size: 1rem; color: rgba(255,255,255,0.7); margin-bottom: 24px;">收藏校徽历史，记录校园文化</p>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
             {% for item in digital_collectibles %}
             <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 24px; border: 1px solid rgba(255,255,255,0.1);">
-                <div style="width: 100%; height: 160px; background: rgba(255,255,255,0.1); border-radius: 14px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center;">
+                <div style="width: 100%; height: 140px; background: rgba(255,255,255,0.1); border-radius: 14px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center;">
                     <span style="font-size: 3rem;">🖼️</span>
                 </div>
-                <h3 style="font-size: 1.1rem; font-weight: 600; color: white; margin-bottom: 8px;">{{ item.name }}</h3>
-                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-bottom: 12px;">{{ item.description[:50] }}...</p>
+                <h3 style="font-size: 1.05rem; font-weight: 600; color: white; margin-bottom: 8px;">{{ item.name }}</h3>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-bottom: 12px; line-height: 1.5;">{{ item.description }}</p>
                 <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1);">
                     <div>
                         <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5);">{{ item.edition }}</p>
@@ -161,16 +161,18 @@
             {% endfor %}
         </div>
     </div>
+    {% endif %}
 
     <!-- Products Section -->
+    {% if products %}
     <div style="margin-top: 40px;">
-        <h2 style="font-size: 1.5rem; font-weight: 700; color: #1d1d1f; margin-bottom: 8px;">实体商品</h2>
+        <h2 style="font-size: 1.4rem; font-weight: 700; color: #1d1d1f; margin-bottom: 8px;">实体商品</h2>
         <p style="font-size: 1rem; color: #86868b; margin-bottom: 24px;">把校徽带回家</p>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;">
             {% for product in products %}
             <div style="background: white; border-radius: 20px; padding: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: all 0.2s ease;">
-                <div style="width: 100%; height: 140px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 14px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center;">
+                <div style="width: 100%; height: 120px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 14px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center;">
                     <span style="font-size: 2.5rem;">
                         {% if product.product_type == 'tshirt' %}👕
                         {% elif product.product_type == 'mug' %}☕
@@ -180,15 +182,16 @@
                         {% else %}🎁{% endif %}
                     </span>
                 </div>
-                <h3 style="font-size: 1rem; font-weight: 600; color: #1d1d1f; margin-bottom: 8px;">{{ product.name }}</h3>
-                <p style="font-size: 0.85rem; color: #86868b; margin-bottom: 12px;">{{ product.description[:40] }}...</p>
+                <h3 style="font-size: 0.95rem; font-weight: 600; color: #1d1d1f; margin-bottom: 6px;">{{ product.name }}</h3>
+                <p style="font-size: 0.85rem; color: #86868b; margin-bottom: 12px; line-height: 1.4;">{{ product.description }}</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <p style="font-size: 1.1rem; font-weight: 700; color: #1E3A5F;">¥{{ product.price }}</p>
+                    <span style="font-size: 1.1rem; font-weight: 700; color: #1E3A5F;">¥{{ product.price }}</span>
                     <button style="padding: 8px 16px; background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); color: white; border: none; border-radius: 10px; font-size: 0.85rem; font-weight: 600; cursor: pointer;">购买</button>
                 </div>
             </div>
             {% endfor %}
         </div>
     </div>
+    {% endif %}
 </div>
 {% endblock %}

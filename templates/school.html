@@ -15,40 +15,46 @@
     </div>
 
     <!-- Hero Card -->
-    <div style="background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%); border-radius: 32px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02); display: grid; grid-template-columns: 400px 1fr;">
+    <div class="school-hero" style="background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%); border-radius: 32px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02); display: grid; grid-template-columns: 400px 1fr;">
         
         <!-- Badge Section -->
         <div style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%); padding: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
             <div style="position: absolute; top: 60px; right: 0; bottom: 60px; width: 1px; background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.08) 20%, rgba(0,0,0,0.08) 80%, transparent 100%);"></div>
             
             {% if school.badge_url %}
-            <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
-                <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" style="width: 200px; height: 200px; object-fit: contain; filter: drop-shadow(0 8px 32px rgba(30, 58, 95, 0.12)); margin-bottom: 24px; border-radius: 20px; cursor: pointer; transition: all 0.3s ease;" 
-                     onclick="toggleBadgeHistory()"
-                     onmouseover="this.style.transform='scale(1.05)'" 
-                     onmouseout="this.style.transform='scale(1)'">
-                <div style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 4px; padding: 6px 12px; background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); color: white; border-radius: 20px; font-size: 0.7rem; font-weight: 600; cursor: pointer; white-space: nowrap;" onclick="toggleBadgeHistory(); event.stopPropagation();">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    演进历史
+                <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
+                    <a href="{{ url_for('badge_history', school_id=school.id) }}">
+                        <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" style="width: 200px; height: 200px; object-fit: contain; filter: drop-shadow(0 8px 32px rgba(30, 58, 95, 0.12)); margin-bottom: 20px; border-radius: 20px; transition: all 0.3s ease;"
+                             onmouseover="this.style.transform='scale(1.05)'" 
+                             onmouseout="this.style.transform='scale(1)'">
+                    </a>
+                    <a href="{{ url_for('badge_history', school_id=school.id) }}" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); color: white; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-decoration: none; transition: all 0.2s ease;"
+                       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(30,58,95,0.3)';"
+                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        查看校徽演进历史
+                    </a>
+                    {% if badge_history|length > 1 %}
+                    <p style="font-size: 0.75rem; color: #86868b; margin-top: 8px;">{{ badge_history|length }} 个历史版本</p>
+                    {% endif %}
                 </div>
-            </div>
             {% else %}
-            <div style="width: 180px; height: 180px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 40px; display: flex; align-items: center; justify-content: center; font-size: 4rem; margin-bottom: 24px;">🎓</div>
+                <div style="width: 180px; height: 180px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 40px; display: flex; align-items: center; justify-content: center; font-size: 4rem; margin-bottom: 24px;">🎓</div>
             {% endif %}
             
             <!-- Action Buttons -->
-            <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 24px;">
                 {% if session.get('user_id') %}
-                <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
-                    <button type="submit" class="btn {% if user_liked %}btn-primary{% else %}btn-secondary{% endif %}" style="display: flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 14px; font-weight: 600; min-width: 120px; justify-content: center;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="{% if user_liked %}currentColor{% else %}none{% endif %}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                        {% if user_liked %}已收藏{% else %}收藏{% endif %}
-                    </button>
-                </form>
+                    <form action="{{ url_for('toggle_like', school_id=school.id) }}" method="POST">
+                        <button type="submit" class="btn {% if user_liked %}btn-primary{% else %}btn-secondary{% endif %}" style="display: flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 14px; font-weight: 600; min-width: 120px; justify-content: center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="{% if user_liked %}currentColor{% else %}none{% endif %}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            {% if user_liked %}{{ _('liked') }}{% else %}{{ _('like') }}{% endif %}
+                        </button>
+                    </form>
                 {% endif %}
                 <button class="btn btn-secondary" onclick="downloadBadge()" style="display: flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 14px; font-weight: 600; min-width: 120px; justify-content: center;">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    下载
+                    {{ _('download') }}
                 </button>
             </div>
         </div>
@@ -60,15 +66,15 @@
                 <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 8px;">
                     <h1 style="font-size: clamp(1.2rem, 3vw, 1.5rem); font-weight: 700; color: #1d1d1f; letter-spacing: -0.02em;">{{ school.name }}</h1>
                     <span style="display: inline-flex; align-items: center; padding: 6px 14px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); color: white;">
-                        {% if school.level == 'university' %}大学
-                        {% elif school.level == 'middle' %}中学
-                        {% elif school.level == 'elementary' %}小学
-                        {% elif school.level == 'kindergarten' %}幼儿园
+                        {% if school.level == 'university' %}{{ _('university') }}
+                        {% elif school.level == 'middle' %}{{ _('middle_school') }}
+                        {% elif school.level == 'elementary' %}{{ _('elementary_school') }}
+                        {% elif school.level == 'kindergarten' %}{{ _('kindergarten') }}
                         {% else %}{{ school.level }}{% endif %}
                     </span>
                 </div>
                 {% if school.name_cn %}
-                <p style="font-size: 1rem; color: #6e7588;">{{ school.name_cn }}</p>
+                    <p style="font-size: 1rem; color: #6e7588;">{{ school.name_cn }}</p>
                 {% endif %}
             </div>
             
@@ -76,25 +82,25 @@
             <div style="display: flex; gap: 40px; margin-bottom: 32px; padding-bottom: 28px; border-bottom: 1px solid rgba(0,0,0,0.06); flex-wrap: wrap;">
                 <div style="display: flex; flex-direction: column; min-width: 80px;">
                     <span style="font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 700; color: #1d1d1f; letter-spacing: -0.02em;">{{ likes_count }}</span>
-                    <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">收藏</span>
+                    <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">{{ _('likes') }}</span>
                 </div>
                 {% if school.founded %}
                 <div style="display: flex; flex-direction: column; min-width: 80px;">
                     <span style="font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 700; color: #1d1d1f; letter-spacing: -0.02em;">{{ school.founded }}</span>
-                    <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">建校</span>
+                    <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">{{ _('founded') }}</span>
                 </div>
                 {% endif %}
                 {% if school.region %}
                 <div style="display: flex; flex-direction: column; min-width: 80px;">
                     <span style="font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 700; color: #1d1d1f; letter-spacing: -0.02em;">{{ school.region }}</span>
-                    <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">地区</span>
+                    <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-top: 4px;">{{ _('region') }}</span>
                 </div>
                 {% endif %}
             </div>
             
             {% if school.motto %}
             <div style="background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); color: white; padding: 24px 28px; border-radius: 20px; margin-bottom: 28px;">
-                <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; opacity: 0.7; margin-bottom: 8px; font-weight: 600;">校训</p>
+                <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; opacity: 0.7; margin-bottom: 8px; font-weight: 600;">{{ _('motto_label') }}</p>
                 <p style="font-size: 1.1rem; font-style: italic; font-weight: 500; line-height: 1.5;">"{{ school.motto }}"</p>
             </div>
             {% endif %}
@@ -102,21 +108,21 @@
             <!-- Info Cards -->
             <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px;">
                 {% if school.city or school.country %}
-                <div style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
+                <div class="info-card" style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
                     <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">位置</p>
                     <p style="font-size: 0.9rem; color: #1d1d1f; font-weight: 600;">{% if school.city %}{{ school.city }}{% endif %}{% if school.city and school.country %}, {% endif %}{% if school.country %}{{ school.country }}{% endif %}</p>
                 </div>
                 {% endif %}
                 
                 {% if school.district %}
-                <div style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
+                <div class="info-card" style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
                     <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">区域</p>
                     <p style="font-size: 0.9rem; color: #1d1d1f; font-weight: 600;">{{ school.district }}</p>
                 </div>
                 {% endif %}
                 
                 {% if school.gender %}
-                <div style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
+                <div class="info-card" style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
                     <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">类型</p>
                     <p style="font-size: 0.9rem; color: #1d1d1f; font-weight: 600;">
                         {% if school.gender == 'CO-ED' %}男女合校{% elif school.gender == 'GIRLS' %}女校{% elif school.gender == 'BOYS' %}男校{% else %}{{ school.gender }}{% endif %}
@@ -125,7 +131,7 @@
                 {% endif %}
                 
                 {% if school.finance_type %}
-                <div style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
+                <div class="info-card" style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
                     <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">办学</p>
                     <p style="font-size: 0.9rem; color: #1d1d1f; font-weight: 600;">
                         {% if school.finance_type == 'Government' %}官立{% elif school.finance_type == 'Aided' %}资助{% elif school.finance_type == 'Direct' %}直资{% elif school.finance_type == 'Private' %}私立{% elif school.finance_type == 'ESF' %}英基{% else %}{{ school.finance_type }}{% endif %}
@@ -134,21 +140,21 @@
                 {% endif %}
                 
                 {% if school.principal %}
-                <div style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
+                <div class="info-card" style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
                     <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">校长</p>
                     <p style="font-size: 0.9rem; color: #1d1d1f; font-weight: 600;">{{ school.principal }}</p>
                 </div>
                 {% endif %}
                 
                 {% if school.school_code %}
-                <div style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
+                <div class="info-card" style="background: #f5f5f7; padding: 16px; border-radius: 14px;">
                     <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; margin-bottom: 6px; font-weight: 600;">编号</p>
                     <p style="font-size: 0.9rem; color: #1d1d1f; font-weight: 600;">{{ school.school_code }}</p>
                 </div>
                 {% endif %}
                 
                 {% if school.website %}
-                <div style="background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); padding: 16px; border-radius: 14px;">
+                <div class="info-card" style="background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); padding: 16px; border-radius: 14px;">
                     <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.8); margin-bottom: 6px; font-weight: 600;">官网</p>
                     <a href="{{ school.website }}" target="_blank" style="font-size: 0.9rem; color: white; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 6px;">
                         访问
@@ -157,126 +163,6 @@
                 </div>
                 {% endif %}
             </div>
-        </div>
-    </div>
-
-    <!-- Badge Evolution Section -->
-    <div id="badge-evolution-section" style="margin-top: 32px; display: none;">
-        <div style="background: white; border-radius: 24px; padding: 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.04);">
-            <!-- Header -->
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px;">
-                <div>
-                    <h2 style="font-size: 1.3rem; font-weight: 700; color: #1d1d1f; display: flex; align-items: center; gap: 10px;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        校徽演进历史
-                    </h2>
-                    <p style="font-size: 0.9rem; color: #86868b; margin-top: 4px;">{{ school.name }} 校徽的变迁历程</p>
-                </div>
-                <button onclick="toggleBadgeHistory()" style="background: none; border: none; cursor: pointer; padding: 8px;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#86868b" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                </button>
-            </div>
-            
-            <!-- Timeline -->
-            {% if badge_history %}
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
-                {% for badge in badge_history %}
-                <div style="background: linear-gradient(135deg, #f8f9fa 0%, #f0f0f5 100%); border-radius: 16px; padding: 20px; border-left: 4px solid #1E3A5F;">
-                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-                        <span style="font-size: 1.1rem; font-weight: 700; color: #1E3A5F;">{{ badge.year_start }}{% if badge.year_end %}-{{ badge.year_end }}{% else %}至今{% endif %}</span>
-                        {% if loop.last %}
-                        <span style="padding: 4px 10px; background: #1E3A5F; color: white; border-radius: 8px; font-size: 0.7rem; font-weight: 600;">现用</span>
-                        {% endif %}
-                    </div>
-                    <p style="font-size: 0.95rem; font-weight: 600; color: #1d1d1f; margin-bottom: 8px;">{{ badge.description }}</p>
-                    {% if badge.designer %}
-                    <p style="font-size: 0.8rem; color: #86868b;">设计: {{ badge.designer }}</p>
-                    {% endif %}
-                </div>
-                {% endfor %}
-            </div>
-            {% endif %}
-            
-            <!-- Events -->
-            {% if events %}
-            <div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid #f5f5f7;">
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: #1d1d1f; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                    重大事件
-                </h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px;">
-                    {% for event in events[:6] %}
-                    <div style="padding: 14px; background: #f5f5f7; border-radius: 12px;">
-                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
-                            <span style="font-size: 1rem; font-weight: 700; color: #1E3A5F;">{{ event.year }}</span>
-                            {% if event.event_type == 'founding' %}
-                            <span style="font-size: 0.7rem; padding: 4px 8px; background: rgba(30,58,95,0.1); color: #1E3A5F; border-radius: 6px;">创立</span>
-                            {% elif event.event_type == 'renaming' %}
-                            <span style="font-size: 0.7rem; padding: 4px 8px; background: rgba(30,58,95,0.1); color: #1E3A5F; border-radius: 6px;">更名</span>
-                            {% elif event.event_type == 'milestone' %}
-                            <span style="font-size: 0.7rem; padding: 4px 8px; background: rgba(30,58,95,0.1); color: #1E3A5F; border-radius: 6px;">里程碑</span>
-                            {% else %}
-                            <span style="font-size: 0.7rem; padding: 4px 8px; background: rgba(30,58,95,0.1); color: #1E3A5F; border-radius: 6px;">事件</span>
-                            {% endif %}
-                        </div>
-                        <p style="font-size: 0.9rem; font-weight: 600; color: #1d1d1f; margin-bottom: 4px;">{{ event.title }}</p>
-                        <p style="font-size: 0.8rem; color: #86868b;">校长: {{ event.principal_at_time }}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-            {% endif %}
-            
-            <!-- Collectibles & Products -->
-            {% if digital_collectibles or products %}
-            <div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid #f5f5f7; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-                {% if digital_collectibles %}
-                <div>
-                    <h3 style="font-size: 1rem; font-weight: 700; color: #1d1d1f; margin-bottom: 16px;">数字藏品</h3>
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        {% for item in digital_collectibles[:2] %}
-                        <div style="display: flex; align-items: center; gap: 14px; padding: 14px; background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); border-radius: 14px;">
-                            <div style="width: 48px; height: 48px; background: rgba(255,255,255,0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">🖼️</div>
-                            <div style="flex: 1;">
-                                <p style="font-size: 0.9rem; font-weight: 600; color: white;">{{ item.name }}</p>
-                                <p style="font-size: 0.8rem; color: rgba(255,255,255,0.7);">{{ item.edition }}</p>
-                            </div>
-                            <div style="text-align: right;">
-                                <p style="font-size: 1rem; font-weight: 700; color: white;">¥{{ item.price }}</p>
-                                <button style="padding: 6px 14px; background: white; color: #1E3A5F; border: none; border-radius: 8px; font-size: 0.75rem; font-weight: 600; cursor: pointer;">购买</button>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-                {% endif %}
-                
-                {% if products %}
-                <div>
-                    <h3 style="font-size: 1rem; font-weight: 700; color: #1d1d1f; margin-bottom: 16px;">周边商品</h3>
-                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
-                        {% for product in products[:3] %}
-                        <div style="text-align: center; padding: 16px 10px; background: #f5f5f7; border-radius: 12px;">
-                            {% if product.product_type == 'tshirt' %}
-                            <p style="font-size: 2rem; margin-bottom: 8px;">👕</p>
-                            {% elif product.product_type == 'mug' %}
-                            <p style="font-size: 2rem; margin-bottom: 8px;">☕</p>
-                            {% elif product.product_type == 'poster' or product.product_type == 'framed' %}
-                            <p style="font-size: 2rem; margin-bottom: 8px;">🖼️</p>
-                            {% elif product.product_type == 'badge_physical' %}
-                            <p style="font-size: 2rem; margin-bottom: 8px;">📛</p>
-                            {% else %}
-                            <p style="font-size: 2rem; margin-bottom: 8px;">🎁</p>
-                            {% endif %}
-                            <p style="font-size: 0.85rem; font-weight: 600; color: #1d1d1f; margin-bottom: 4px;">¥{{ product.price }}</p>
-                            <button style="padding: 6px 10px; background: #1E3A5F; color: white; border: none; border-radius: 8px; font-size: 0.7rem; cursor: pointer;">购买</button>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-                {% endif %}
-            </div>
-            {% endif %}
         </div>
     </div>
 
@@ -318,16 +204,6 @@
 </div>
 
 <script>
-function toggleBadgeHistory() {
-    const section = document.getElementById('badge-evolution-section');
-    if (section.style.display === 'none' || section.style.display === '') {
-        section.style.display = 'block';
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-        section.style.display = 'none';
-    }
-}
-
 function downloadBadge() {
     const badgeUrl = document.querySelector('img[alt*="badge"]')?.src;
     if (badgeUrl) {
@@ -338,4 +214,5 @@ function downloadBadge() {
     }
 }
 </script>
+
 {% endblock %}
