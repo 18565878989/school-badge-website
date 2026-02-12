@@ -1,0 +1,237 @@
+{
+  "batch": 40,
+  "description": "Asian Schools Batch 40 - Southeast Asia & South Asia",
+  "schools": [
+    {
+      "id": 10921,
+      "name": "Chulalongkorn University",
+      "name_cn": "朱拉隆功大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://chula.ac.th",
+      "founded": 1917
+    },
+    {
+      "id": 10922,
+      "name": "Mahidol University",
+      "name_cn": "玛希隆大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Nakhon Pathom",
+      "level": "university",
+      "website": "https://mahidol.ac.th",
+      "founded": 1888
+    },
+    {
+      "id": 10923,
+      "name": "Chiang Mai University",
+      "name_cn": "清迈大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Chiang Mai",
+      "level": "university",
+      "website": "https://cmu.ac.th",
+      "founded": 1964
+    },
+    {
+      "id": 10924,
+      "name": "Vietnam National University",
+      "name_cn": "越南国立大学",
+      "region": "Asia",
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "level": "university",
+      "website": "https://vnu.edu.vn",
+      "founded": 1906
+    },
+    {
+      "id": 10925,
+      "name": "Hanoi University of Science and Technology",
+      "name_cn": "河内理工大学",
+      "region": "Asia",
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "level": "university",
+      "website": "https://hust.edu.vn",
+      "founded": 1956
+    },
+    {
+      "id": 10926,
+      "name": "University of Malaya",
+      "name_cn": "马来亚大学",
+      "region": "Asia",
+      "country": "Malaysia",
+      "city": "Kuala Lumpur",
+      "level": "university",
+      "website": "https://um.edu.my",
+      "founded": 1949
+    },
+    {
+      "id": 10927,
+      "name": "National University of Singapore",
+      "name_cn": "新加坡国立大学",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://nus.edu.sg",
+      "founded": 1905
+    },
+    {
+      "id": 10928,
+      "name": "Nanyang Technological University",
+      "name_cn": "南洋理工大学",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://ntu.edu.sg",
+      "founded": 1981
+    },
+    {
+      "id": 10929,
+      "name": "Singapore Management University",
+      "name_cn": "新加坡管理大学",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://smu.edu.sg",
+      "founded": 2000
+    },
+    {
+      "id": 10930,
+      "name": "University of Indonesia",
+      "name_cn": "印度尼西亚大学",
+      "region": "Asia",
+      "country": "Indonesia",
+      "city": "Jakarta",
+      "level": "university",
+      "website": "https://ui.ac.id",
+      "founded": 1849
+    },
+    {
+      "id": 10931,
+      "name": "Gadjah Mada University",
+      "name_cn": "加查马达大学",
+      "region": "Asia",
+      "country": "Indonesia",
+      "city": "Yogyakarta",
+      "level": "university",
+      "website": "https://ugm.ac.id",
+      "founded": 1949
+    },
+    {
+      "id": 10932,
+      "name": "Bangladesh University of Engineering and Technology",
+      "name_cn": "孟加拉工程技术大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Dhaka",
+      "level": "university",
+      "website": "https://buet.ac.bd",
+      "founded": 1961
+    },
+    {
+      "id": 10933,
+      "name": "University of Dhaka",
+      "name_cn": "达卡大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Dhaka",
+      "level": "university",
+      "website": "https://univdhaka.edu",
+      "founded": 1921
+    },
+    {
+      "id": 10934,
+      "name": "Indian Institute of Technology Bombay",
+      "name_cn": "印度理工学院孟买分校",
+      "region": "Asia",
+      "country": "India",
+      "city": "Mumbai",
+      "level": "university",
+      "website": "https://iitb.ac.in",
+      "founded": 1958
+    },
+    {
+      "id": 10935,
+      "name": "Indian Institute of Technology Delhi",
+      "name_cn": "印度理工学院德里分校",
+      "region": "Asia",
+      "country": "India",
+      "city": "New Delhi",
+      "level": "university",
+      "website": "https://iitd.ac.in",
+      "founded": 1961
+    },
+    {
+      "id": 10936,
+      "name": "Jawaharlal Nehru University",
+      "name_cn": "贾瓦哈拉尔·尼赫鲁大学",
+      "region": "Asia",
+      "country": "India",
+      "city": "New Delhi",
+      "level": "university",
+      "website": "https://jnu.ac.in",
+      "founded": 1969
+    },
+    {
+      "id": 10937,
+      "name": "University of Delhi",
+      "name_cn": "德里大学",
+      "region": "Asia",
+      "country": "India",
+      "city": "New Delhi",
+      "level": "university",
+      "website": "https://du.ac.in",
+      "founded": 1922
+    },
+    {
+      "id": 10938,
+      "name": "Anna University",
+      "name_cn": "安娜大学",
+      "region": "Asia",
+      "country": "India",
+      "city": "Chennai",
+      "level": "university",
+      "website": "https://annauniv.edu",
+      "founded": 1978
+    },
+    {
+      "id": 10939,
+      "name": "University of Karachi",
+      "name_cn": "卡拉奇大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Karachi",
+      "level": "university",
+      "website": "https://uok.edu.pk",
+      "founded": 1951
+    },
+    {
+      "id": 10940,
+      "name": "Lahore University of Management Sciences",
+      "name_cn": "拉合尔管理科学大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "level": "university",
+      "website": "https://lums.edu.pk",
+      "founded": 1984
+    },
+    {
+      "id": 10941,
+      "name": "Quaid-i-Azam University",
+      "name_cn": "法蒂玛·真纳大学",
+      "region": "Asia",
+      "country": "Pakistan",
+      "city": "Islamabad",
+      "level": "university",
+      "website": "https://qau.edu.pk",
+      "founded": 1967
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "batch": 43,
+  "description": "Asian Schools Batch 43 - Final batch to complete 100 schools target",
+  "schools": [
+    {
+      "id": 11001,
+      "name": "American University of Beirut",
+      "name_cn": "贝鲁特美国大学",
+      "region": "Asia",
+      "country": "Lebanon",
+      "city": "Beirut",
+      "level": "university",
+      "website": "https://aub.edu.lb",
+      "founded": 1866
+    },
+    {
+      "id": 11002,
+      "name": "Hebrew University of Jerusalem",
+      "name_cn": "耶路撒冷希伯来大学",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Jerusalem",
+      "level": "university",
+      "website": "https://huji.ac.il",
+      "founded": 1918
+    },
+    {
+      "id": 11003,
+      "name": "Tel Aviv University",
+      "name_cn": "特拉维夫大学",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Tel Aviv",
+      "level": "university",
+      "website": "https://tau.ac.il",
+      "founded": 1956
+    },
+    {
+      "id": 11004,
+      "name": "Technion Israel Institute of Technology",
+      "name_cn": "以色列理工学院",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Haifa",
+      "level": "university",
+      "website": "https://technion.ac.il",
+      "founded": 1912
+    },
+    {
+      "id": 11005,
+      "name": "Weizmann Institute of Science",
+      "name_cn": "魏茨曼科学研究所",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Rehovot",
+      "level": "university",
+      "website": "https://weizmann.ac.il",
+      "founded": 1934
+    },
+    {
+      "id": 11006,
+      "name": "University of Jordan",
+      "name_cn": "约旦大学",
+      "region": "Asia",
+      "country": "Jordan",
+      "city": "Amman",
+      "level": "university",
+      "website": "https://ju.edu.jo",
+      "founded": 1962
+    },
+    {
+      "id": 11007,
+      "name": "King Abdullah University of Science and Technology",
+      "name_cn": "阿卜杜拉国王科技大学",
+      "region": "Asia",
+      "country": "Saudi Arabia",
+      "city": "Thuwal",
+      "level": "university",
+      "website": "https://kaust.edu.sa",
+      "founded": 2009
+    },
+    {
+      "id": 11008,
+      "name": "King Saud University",
+      "name_cn": "沙特国王大学",
+      "region": "Asia",
+      "country": "Saudi Arabia",
+      "city": "Riyadh",
+      "level": "university",
+      "website": "https://ksu.edu.sa",
+      "founded": 1957
+    },
+    {
+      "id": 11009,
+      "name": "Imam Abdulrahman Bin Faisal University",
+      "name_cn": "伊玛目阿卜杜拉曼大学",
+      "region": "Asia",
+      "country": "Saudi Arabia",
+      "city": "Dammam",
+      "level": "university",
+      "website": "https://iau.edu.sa",
+      "founded": 1975
+    },
+    {
+      "id": 11010,
+      "name": "United Arab Emirates University",
+      "name_cn": "阿联酋大学",
+      "region": "Asia",
+      "country": "United Arab Emirates",
+      "city": "Al Ain",
+      "level": "university",
+      "website": "https://uaeu.ac.ae",
+      "founded": 1976
+    },
+    {
+      "id": 11011,
+      "name": "Khalifa University",
+      "name_cn": "哈利法大学",
+      "region": "Asia",
+      "country": "United Arab Emirates",
+      "city": "Abu Dhabi",
+      "level": "university",
+      "website": "https://ku.ac.ae",
+      "founded": 2007
+    },
+    {
+      "id": 11012,
+      "name": "American University of Sharjah",
+      "name_cn": "沙迦美国大学",
+      "region": "Asia",
+      "country": "United Arab Emirates",
+      "city": "Sharjah",
+      "level": "university",
+      "website": "https://aus.edu",
+      "founded": 1997
+    },
+    {
+      "id": 11013,
+      "name": "Qatar University",
+      "name_cn": "卡塔尔大学",
+      "region": "Asia",
+      "country": "Qatar",
+      "city": "Doha",
+      "level": "university",
+      "website": "https://qu.edu.qa",
+      "founded": 1973
+    },
+    {
+      "id": 11014,
+      "name": "Hamad Bin Khalifa University",
+      "name_cn": "哈马德本哈利法大学",
+      "region": "Asia",
+      "country": "Qatar",
+      "city": "Doha",
+      "level": "university",
+      "website": "https://hbku.edu.qa",
+      "founded": 2010
+    },
+    {
+      "id": 11015,
+      "name": "University of Bahrain",
+      "name_cn": "巴林大学",
+      "region": "Asia",
+      "country": "Bahrain",
+      "city": "Sakhir",
+      "level": "university",
+      "website": "https://ub.edu.bh",
+      "founded": 1986
+    },
+    {
+      "id": 11016,
+      "name": "Sultan Qaboos University",
+      "name_cn": "苏丹卡布斯大学",
+      "region": "Asia",
+      "country": "Oman",
+      "city": "Muscat",
+      "level": "university",
+      "website": "https://squ.edu.om",
+      "founded": 1986
+    },
+    {
+      "id": 11017,
+      "name": "Kuwait University",
+      "name_cn": "科威特大学",
+      "region": "Asia",
+      "country": "Kuwait",
+      "city": "Kuwait City",
+      "level": "university",
+      "website": "https://ku.edu.kw",
+      "founded": 1966
+    },
+    {
+      "id": 11018,
+      "name": "American University of Kuwait",
+      "name_cn": "科威特美国大学",
+      "region": "Asia",
+      "country": "Kuwait",
+      "city": "Kuwait City",
+      "level": "university",
+      "website": "https://auk.edu.kw",
+      "founded": 1996
+    },
+    {
+      "id": 11019,
+      "name": "University of Science and Technology",
+      "name_cn": "科学技术大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Chittagong",
+      "level": "university",
+      "website": "https://ustb.ac.bd",
+      "founded": 2002
+    },
+    {
+      "id": 11020,
+      "name": "Ahsanullah University of Science and Technology",
+      "name_cn": "阿赫桑乌丁工程技术大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Dhaka",
+      "level": "university",
+      "website": "https://aust.edu",
+      "founded": 2002
+    }
+  ]
+}
