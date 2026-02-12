@@ -221,12 +221,35 @@ def school_detail(school_id):
     if 'user_id' in session:
         user_liked = get_like(session['user_id'], school_id) is not None
     
+    # Get badge evolution data
+    import sqlite3
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.row_factory = sqlite3.Row
+    
+    cursor.execute("SELECT * FROM badge_history WHERE school_id = ? ORDER BY year_start ASC", (school_id,))
+    badge_history = [dict(row) for row in cursor.fetchall()]
+    
+    cursor.execute("SELECT * FROM school_events WHERE school_id = ? ORDER BY year ASC", (school_id,))
+    events = [dict(row) for row in cursor.fetchall()]
+    
+    cursor.execute("SELECT * FROM digital_collectibles WHERE school_id = ? AND status = 'active' ORDER BY price ASC", (school_id,))
+    digital_collectibles = [dict(row) for row in cursor.fetchall()]
+    
+    cursor.execute("SELECT * FROM products WHERE school_id = ? AND status = 'active' ORDER BY price ASC", (school_id,))
+    products = [dict(row) for row in cursor.fetchall()]
+    
+    conn.close()
+    
     return render_template('school.html', 
                          breadcrumb='school',
                          school=school, 
                          likes_count=likes_count,
-                         user_liked=user_liked)
-
+                         user_liked=user_liked,
+                         badge_history=badge_history,
+                         events=events,
+                         digital_collectibles=digital_collectibles,
+                         products=products)
 @app.route('/like/<int:school_id>', methods=['POST'])
 @login_required
 def toggle_like(school_id):
