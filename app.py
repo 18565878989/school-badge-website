@@ -252,17 +252,6 @@ def my_likes():
     liked_schools = get_user_liked_schools(session['user_id'])
     return render_template('my_likes.html', schools=liked_schools, breadcrumb='likes')
 
-@app.route('/social')
-def social():
-    """Social hub page - share and discover schools."""
-    # Get popular schools by likes
-    cursor = get_db().execute('SELECT id, name, name_cn, city, country, badge_url, likes_count FROM schools ORDER BY likes_count DESC LIMIT 10')
-    popular_schools = [dict(row) for row in cursor.fetchall()]
-    
-    return render_template('social.html', popular_schools=popular_schools, breadcrumb='social')
-
-# ==================== Login/Register Routes ====================
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     """User login."""

@@ -445,6 +445,38 @@
         </div>
     </section>
 
+    <!-- Social Section - Apple Style -->
+    <section style="max-width: 1200px; margin: 60px auto; padding: 0 40px;">
+        <div style="background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); border-radius: 28px; padding: 48px; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;">
+            <div>
+                <h2 style="font-size: 1.8rem; font-weight: 700; color: white; margin-bottom: 12px;">分享 & 发现</h2>
+                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.8); margin-bottom: 24px;">与全球校友连接，分享你的学校故事，发现更多精彩校徽</p>
+                <a href="{{ url_for('social') }}" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: white; color: #1E3A5F; border-radius: 14px; font-weight: 600; text-decoration: none; transition: all 0.2s ease;">
+                    进入社交版块
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </a>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;">
+                <div style="background: rgba(255,255,255,0.15); border-radius: 16px; padding: 20px; text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: white;">6</div>
+                    <div style="font-size: 0.85rem; color: rgba(255,255,255,0.7);">热门学校</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.15); border-radius: 16px; padding: 20px; text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: white;">2779</div>
+                    <div style="font-size: 0.85rem; color: rgba(255,255,255,0.7);">总数学校</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.15); border-radius: 16px; padding: 20px; text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: white;">{{ '活跃' if session.get('user_id') else '访客' }}</div>
+                    <div style="font-size: 0.85rem; color: rgba(255,255,255,0.7);">你的状态</div>
+                </div>
+                <a href="{{ url_for('social') }}" style="background: rgba(255,255,255,0.2); border-radius: 16px; padding: 20px; text-align: center; text-decoration: none; transition: all 0.2s ease;">
+                    <div style="font-size: 1.5rem;">→</div>
+                    <div style="font-size: 0.85rem; color: white;">探索更多</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     {% if session.get('is_admin') %}
     <a href="{{ url_for('admin_dashboard') }}" class="admin-float">{{ _('admin_panel') }}</a>
     {% endif %}
