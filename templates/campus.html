@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('Campus Gallery') }} - {{ _('School Badge Network') }}</title>
+    
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="campus-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="{{ url_for('index') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网">
+            </a>
+            <div class="nav-links">
+                <a href="{{ url_for('index') }}">{{ _('home') }}</a>
+                <a href="{{ url_for('campus') }}" class="active">{{ _('campus_gallery') }}</a>
+                {% if session.get('user_id') %}
+                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
+                    <span class="username">{{ session.get('username') }}</span>
+                    {% if is_admin() %}
+                        <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
+                    {% endif %}
+                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}">{{ _('login') }}</a>
+                    <a href="{{ url_for('register') }}">{{ _('register') }}</a>
+                {% endif %}
+                
+                <div class="lang-switcher">
+                    <select onchange="window.location.href=this.value">
+                        {% for code, name in LANGUAGE_NAMES.items() %}
+                            <option value="{{ url_for('set_language', lang=code) }}" 
+                                    {% if current_lang == code %}selected{% endif %}>
+                                {{ name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-campus">
+        <div class="container">
+            <h1>{{ _('Campus Gallery') }}</h1>
+            <p>{{ _('Explore renowned universities from around the world') }}</p>
+        </div>
+    </section>
+
+    <!-- Region Tabs -->
+    <section class="tabs-section">
+        <div class="container">
+            <div class="region-tabs">
+                <button class="tab-btn active" data-region="north-america">
+                    <span class="tab-icon">🇺🇸</span>
+                    <span class="tab-name">{{ _('North America') }}</span>
+                    <span class="tab-count">{{ north_america|length }}</span>
+                </button>
+                <button class="tab-btn" data-region="asia">
+                    <span class="tab-icon">🏯</span>
+                    <span class="tab-name">{{ _('Asia') }}</span>
+                    <span class="tab-count">{{ asia|length }}</span>
+                </button>
+                <button class="tab-btn" data-region="europe">
+                    <span class="tab-icon">🇪🇺</span>
+                    <span class="tab-name">{{ _('Europe') }}</span>
+                    <span class="tab-count">{{ europe|length }}</span>
+                </button>
+                <button class="tab-btn" data-region="oceania">
+                    <span class="tab-icon">🦘</span>
+                    <span class="tab-name">{{ _('Oceania') }}</span>
+                    <span class="tab-count">{{ oceania|length }}</span>
+                </button>
+                <button class="tab-btn" data-region="south-america">
+                    <span class="tab-icon">🌎</span>
+                    <span class="tab-name">{{ _('South America') }}</span>
+                    <span class="tab-count">{{ south_america|length }}</span>
+                </button>
+                <button class="tab-btn" data-region="africa">
+                    <span class="tab-icon">🌍</span>
+                    <span class="tab-name">{{ _('Africa') }}</span>
+                    <span class="tab-count">{{ africa|length }}</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- North America -->
+            <div class="gallery-content active" id="north-america-content">
+                {% if north_america %}
+                <div class="gallery-grid">
+                    {% for school in north_america %}
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                        <div class="card-image">
+                            {% if school.campus_image %}
+                            <img src="{{ school.campus_image }}" 
+                                 alt="{{ school.name }}"
+                                 loading="lazy"
+                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% else %}
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 100 100" fill="none">
+                                    <rect fill="#f5f5f7" width="100" height="100"/>
+                                    <path d="M45 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 17.5c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5 7.5 3.4 7.5 7.5-3.4 7.5-7.5 7.5zM70 65H30c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h40c2.8 0 5 2.2 5 5v2c0 2.8-2.2 5-5 5z" fill="#86868b"/>
+                                </svg>
+                            </div>
+                            {% endif %}
+                            <div class="image-overlay">
+                                <span class="view-label">{{ _('View Campus') }}</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h2>{{ school.name_cn or school.name }}</h2>
+                                <span class="location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    {{ school.city }}, {{ school.country }}
+                                </span>
+                            </div>
+                            <p class="english-name">{{ school.name }}</p>
+                            <div class="card-meta">
+                                {% if school.founded %}
+                                <span class="founded">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    {{ school.founded }}
+                                </span>
+                                {% endif %}
+                                {% if school.motto %}
+                                <span class="motto" title="{{ school.motto }}">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                                    </svg>
+                                    {{ school.motto[:30] }}...
+                                </span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">🏛️</div>
+                    <h3>{{ _('Coming Soon') }}</h3>
+                    <p>{{ _('Campus photos for this region are being prepared.') }}</p>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Asia -->
+            <div class="gallery-content" id="asia-content">
+                {% if asia %}
+                <div class="gallery-grid">
+                    {% for school in asia %}
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                        <div class="card-image">
+                            {% if school.campus_image %}
+                            <img src="{{ school.campus_image }}" 
+                                 alt="{{ school.name }}"
+                                 loading="lazy"
+                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% else %}
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 100 100" fill="none">
+                                    <rect fill="#f5f5f7" width="100" height="100"/>
+                                    <path d="M45 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 17.5c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5 7.5 3.4 7.5 7.5-3.4 7.5-7.5 7.5zM70 65H30c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h40c2.8 0 5 2.2 5 5v2c0 2.8-2.2 5-5 5z" fill="#86868b"/>
+                                </svg>
+                            </div>
+                            {% endif %}
+                            <div class="image-overlay">
+                                <span class="view-label">{{ _('View Campus') }}</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h2>{{ school.name_cn or school.name }}</h2>
+                                <span class="location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    {{ school.city }}, {{ school.country }}
+                                </span>
+                            </div>
+                            <p class="english-name">{{ school.name }}</p>
+                            <div class="card-meta">
+                                {% if school.founded %}
+                                <span class="founded">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    {{ school.founded }}
+                                </span>
+                                {% endif %}
+                                {% if school.motto %}
+                                <span class="motto" title="{{ school.motto }}">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                                    </svg>
+                                    {{ school.motto[:30] }}...
+                                </span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">🏯</div>
+                    <h3>{{ _('Coming Soon') }}</h3>
+                    <p>{{ _('Campus photos for this region are being prepared.') }}</p>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Europe -->
+            <div class="gallery-content" id="europe-content">
+                {% if europe %}
+                <div class="gallery-grid">
+                    {% for school in europe %}
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                        <div class="card-image">
+                            {% if school.campus_image %}
+                            <img src="{{ school.campus_image }}" 
+                                 alt="{{ school.name }}"
+                                 loading="lazy"
+                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% else %}
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 100 100" fill="none">
+                                    <rect fill="#f5f5f7" width="100" height="100"/>
+                                    <path d="M45 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 17.5c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5 7.5 3.4 7.5 7.5-3.4 7.5-7.5 7.5zM70 65H30c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h40c2.8 0 5 2.2 5 5v2c0 2.8-2.2 5-5 5z" fill="#86868b"/>
+                                </svg>
+                            </div>
+                            {% endif %}
+                            <div class="image-overlay">
+                                <span class="view-label">{{ _('View Campus') }}</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h2>{{ school.name_cn or school.name }}</h2>
+                                <span class="location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    {{ school.city }}, {{ school.country }}
+                                </span>
+                            </div>
+                            <p class="english-name">{{ school.name }}</p>
+                            <div class="card-meta">
+                                {% if school.founded %}
+                                <span class="founded">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    {{ school.founded }}
+                                </span>
+                                {% endif %}
+                                {% if school.motto %}
+                                <span class="motto" title="{{ school.motto }}">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                                    </svg>
+                                    {{ school.motto[:30] }}...
+                                </span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">🏛️</div>
+                    <h3>{{ _('Coming Soon') }}</h3>
+                    <p>{{ _('Campus photos for this region are being prepared.') }}</p>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Oceania -->
+            <div class="gallery-content" id="oceania-content">
+                {% if oceania %}
+                <div class="gallery-grid">
+                    {% for school in oceania %}
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                        <div class="card-image">
+                            {% if school.campus_image %}
+                            <img src="{{ school.campus_image }}" 
+                                 alt="{{ school.name }}"
+                                 loading="lazy"
+                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% else %}
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 100 100" fill="none">
+                                    <rect fill="#f5f5f7" width="100" height="100"/>
+                                    <path d="M45 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 17.5c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5 7.5 3.4 7.5 7.5-3.4 7.5-7.5 7.5zM70 65H30c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h40c2.8 0 5 2.2 5 5v2c0 2.8-2.2 5-5 5z" fill="#86868b"/>
+                                </svg>
+                            </div>
+                            {% endif %}
+                            <div class="image-overlay">
+                                <span class="view-label">{{ _('View Campus') }}</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h2>{{ school.name_cn or school.name }}</h2>
+                                <span class="location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    {{ school.city }}, {{ school.country }}
+                                </span>
+                            </div>
+                            <p class="english-name">{{ school.name }}</p>
+                            <div class="card-meta">
+                                {% if school.founded %}
+                                <span class="founded">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    {{ school.founded }}
+                                </span>
+                                {% endif %}
+                                {% if school.motto %}
+                                <span class="motto" title="{{ school.motto }}">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                                    </svg>
+                                    {{ school.motto[:30] }}...
+                                </span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">🦘</div>
+                    <h3>{{ _('Coming Soon') }}</h3>
+                    <p>{{ _('Campus photos for this region are being prepared.') }}</p>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- South America -->
+            <div class="gallery-content" id="south-america-content">
+                {% if south_america %}
+                <div class="gallery-grid">
+                    {% for school in south_america %}
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                        <div class="card-image">
+                            {% if school.campus_image %}
+                            <img src="{{ school.campus_image }}" 
+                                 alt="{{ school.name }}"
+                                 loading="lazy"
+                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% else %}
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 100 100" fill="none">
+                                    <rect fill="#f5f5f7" width="100" height="100"/>
+                                    <path d="M45 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 17.5c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5 7.5 3.4 7.5 7.5-3.4 7.5-7.5 7.5zM70 65H30c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h40c2.8 0 5 2.2 5 5v2c0 2.8-2.2 5-5 5z" fill="#86868b"/>
+                                </svg>
+                            </div>
+                            {% endif %}
+                            <div class="image-overlay">
+                                <span class="view-label">{{ _('View Campus') }}</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h2>{{ school.name_cn or school.name }}</h2>
+                                <span class="location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    {{ school.city }}, {{ school.country }}
+                                </span>
+                            </div>
+                            <p class="english-name">{{ school.name }}</p>
+                            <div class="card-meta">
+                                {% if school.founded %}
+                                <span class="founded">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    {{ school.founded }}
+                                </span>
+                                {% endif %}
+                                {% if school.motto %}
+                                <span class="motto" title="{{ school.motto }}">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                                    </svg>
+                                    {{ school.motto[:30] }}...
+                                </span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">🌎</div>
+                    <h3>{{ _('Coming Soon') }}</h3>
+                    <p>{{ _('Campus photos for this region are being prepared.') }}</p>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Africa -->
+            <div class="gallery-content" id="africa-content">
+                {% if africa %}
+                <div class="gallery-grid">
+                    {% for school in africa %}
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                        <div class="card-image">
+                            {% if school.campus_image %}
+                            <img src="{{ school.campus_image }}" 
+                                 alt="{{ school.name }}"
+                                 loading="lazy"
+                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% else %}
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 100 100" fill="none">
+                                    <rect fill="#f5f5f7" width="100" height="100"/>
+                                    <path d="M45 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 17.5c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5 7.5 3.4 7.5 7.5-3.4 7.5-7.5 7.5zM70 65H30c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h40c2.8 0 5 2.2 5 5v2c0 2.8-2.2 5-5 5z" fill="#86868b"/>
+                                </svg>
+                            </div>
+                            {% endif %}
+                            <div class="image-overlay">
+                                <span class="view-label">{{ _('View Campus') }}</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h2>{{ school.name_cn or school.name }}</h2>
+                                <span class="location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    {{ school.city }}, {{ school.country }}
+                                </span>
+                            </div>
+                            <p class="english-name">{{ school.name }}</p>
+                            <div class="card-meta">
+                                {% if school.founded %}
+                                <span class="founded">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    {{ school.founded }}
+                                </span>
+                                {% endif %}
+                                {% if school.motto %}
+                                <span class="motto" title="{{ school.motto }}">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                                    </svg>
+                                    {{ school.motto[:30] }}...
+                                </span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">🌍</div>
+                    <h3>{{ _('Coming Soon') }}</h3>
+                    <p>{{ _('Campus photos for this region are being prepared.') }}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Tab switching
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const galleryContents = document.querySelectorAll('.gallery-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const region = btn.dataset.region;
+                
+                // Update active tab
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Show corresponding content
+                galleryContents.forEach(content => {
+                    content.classList.remove('active');
+                    if (content.id === region + '-content') {
+                        content.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        // URL parameter support
+        const urlParams = new URLSearchParams(window.location.search);
+        const region = urlParams.get('region');
+        if (region) {
+            const targetBtn = document.querySelector(`.tab-btn[data-region="${region}"]`);
+            if (targetBtn) {
+                targetBtn.click();
+            }
+        }
+    });
+    </script>
+</body>
+</html>

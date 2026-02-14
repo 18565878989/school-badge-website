@@ -999,3 +999,187 @@ body {
         padding: 120px 0 48px;
     }
 }
+
+/* ========================================
+   UNIFIED CAMPUS PAGE WITH TABS
+   ======================================== */
+
+/* Hero for Campus Page */
+.hero-campus {
+    background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%);
+    padding: 100px 0 60px;
+}
+
+.hero-campus h1 {
+    font-size: clamp(40px, 7vw, 64px);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.hero-campus p {
+    font-size: clamp(18px, 2.5vw, 22px);
+    color: rgba(255,255,255,0.8);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Tabs Section */
+.tabs-section {
+    background: var(--background);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    position: sticky;
+    top: 64px;
+    z-index: 100;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(255,255,255,0.85);
+}
+
+.region-tabs {
+    display: flex;
+    gap: 8px;
+    padding: 16px 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.region-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.tab-btn:hover {
+    background: rgba(30, 58, 95, 0.08);
+    transform: translateY(-1px);
+}
+
+.tab-btn.active {
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
+}
+
+.tab-icon {
+    font-size: 18px;
+}
+
+.tab-name {
+    font-weight: 500;
+}
+
+.tab-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    padding: 0 8px;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.08);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.tab-btn.active .tab-count {
+    background: rgba(255,255,255,0.25);
+}
+
+/* Gallery Content */
+.gallery-content {
+    display: none;
+    animation: fadeInUp 0.4s ease-out;
+}
+
+.gallery-content.active {
+    display: block;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Coming Soon */
+.coming-soon {
+    text-align: center;
+    padding: 120px 40px;
+    background: var(--surface);
+    border-radius: var(--radius);
+    margin: 40px 0;
+}
+
+.coming-soon-icon {
+    font-size: 80px;
+    margin-bottom: 24px;
+    opacity: 0.6;
+}
+
+.coming-soon h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.coming-soon p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Responsive Tabs */
+@media (max-width: 768px) {
+    .tabs-section {
+        top: 56px;
+    }
+    
+    .region-tabs {
+        padding: 12px 16px;
+        gap: 6px;
+    }
+    
+    .tab-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+    
+    .tab-icon {
+        font-size: 16px;
+    }
+    
+    .tab-count {
+        min-width: 20px;
+        height: 20px;
+        font-size: 11px;
+    }
+    
+    .hero-campus {
+        padding: 80px 0 40px;
+    }
+}

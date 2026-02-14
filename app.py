@@ -520,9 +520,75 @@ def campus_africa():
     return render_template('campus_africa.html', schools=schools)
 
 @app.route('/campus')
-def campus_gallery():
-    """Main campus gallery entry page."""
-    return render_template('campus_gallery.html')
+def campus():
+    """Unified campus gallery with region tabs."""
+    conn = get_db_connection()
+    
+    # Fetch schools for each region
+    north_america = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'North America' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
+        ORDER BY country, name
+    ''').fetchall()
+    
+    asia = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'Asia' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
+        ORDER BY country, name
+        LIMIT 50
+    ''').fetchall()
+    
+    europe = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'Europe' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
+        ORDER BY country, name
+    ''').fetchall()
+    
+    oceania = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'Oceania' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
+        ORDER BY country, name
+    ''').fetchall()
+    
+    south_america = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'South America' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
+        ORDER BY country, name
+    ''').fetchall()
+    
+    africa = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'Africa' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
+        ORDER BY country, name
+    ''').fetchall()
+    
+    conn.close()
+    
+    return render_template('campus.html',
+                         north_america=north_america,
+                         asia=asia,
+                         europe=europe,
+                         oceania=oceania,
+                         south_america=south_america,
+                         africa=africa)
 
 @app.route('/social')
 def social():
