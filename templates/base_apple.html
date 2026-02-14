@@ -22,7 +22,7 @@
             </a>
             <div class="nav-links">
                 <a href="{{ url_for('index') }}" class="{% if not breadcrumb %}active{% endif %}">{{ _('home') }}</a>
-                <a href="{{ url_for('campus_north_america') }}">{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('campus') }}">{{ _('campus_gallery') }}</a>
                 <a href="{{ url_for('social') }}" class="{% if breadcrumb == 'social' %}active{% endif %}">社交</a>
                 <div class="nav-dropdown">
                     <a href="#" class="nav-dropdown-toggle" style="display: flex; align-items: center; gap: 6px;">
