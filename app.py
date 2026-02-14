@@ -387,10 +387,142 @@ def campus_north_america():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'North America' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
         ORDER BY country, name
     ''').fetchall()
     conn.close()
     return render_template('campus_north_america.html', schools=schools)
+
+@app.route('/campus/europe')
+def campus_europe():
+    """Campus gallery for European universities."""
+    conn = get_db_connection()
+    schools = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'Europe' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
+        ORDER BY country, name
+    ''').fetchall()
+    
+    # If no schools with images, show all European universities
+    if not schools:
+        schools = conn.execute('''
+            SELECT id, name, name_cn, region, country, city, 
+                   founded, motto, campus_image, campus_image_desc
+            FROM schools 
+            WHERE region = 'Europe' AND level = 'university'
+            ORDER BY country, name
+            LIMIT 50
+        ''').fetchall()
+    
+    conn.close()
+    return render_template('campus_europe.html', schools=schools)
+
+@app.route('/campus/asia')
+def campus_asia():
+    """Campus gallery for Asian universities."""
+    conn = get_db_connection()
+    schools = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'Asia' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
+        ORDER BY country, name
+    ''').fetchall()
+    conn.close()
+    # If too many, limit to 50
+    if len(schools) > 50:
+        schools = schools[:50]
+    return render_template('campus_asia.html', schools=schools)
+
+@app.route('/campus/oceania')
+def campus_oceania():
+    """Campus gallery for Oceania universities."""
+    conn = get_db_connection()
+    schools = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'Oceania' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
+        ORDER BY country, name
+    ''').fetchall()
+    
+    # If no schools with images, show all Oceania universities
+    if not schools:
+        schools = conn.execute('''
+            SELECT id, name, name_cn, region, country, city, 
+                   founded, motto, campus_image, campus_image_desc
+            FROM schools 
+            WHERE region = 'Oceania' AND level = 'university'
+            ORDER BY country, name
+            LIMIT 50
+        ''').fetchall()
+    
+    conn.close()
+    return render_template('campus_oceania.html', schools=schools)
+
+@app.route('/campus/south-america')
+def campus_south_america():
+    """Campus gallery for South American universities."""
+    conn = get_db_connection()
+    schools = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'South America' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
+        ORDER BY country, name
+    ''').fetchall()
+    
+    # If no schools with images, show all South American universities
+    if not schools:
+        schools = conn.execute('''
+            SELECT id, name, name_cn, region, country, city, 
+                   founded, motto, campus_image, campus_image_desc
+            FROM schools 
+            WHERE region = 'South America' AND level = 'university'
+            ORDER BY country, name
+            LIMIT 50
+        ''').fetchall()
+    
+    conn.close()
+    return render_template('campus_south_america.html', schools=schools)
+
+@app.route('/campus/africa')
+def campus_africa():
+    """Campus gallery for African universities."""
+    conn = get_db_connection()
+    schools = conn.execute('''
+        SELECT id, name, name_cn, region, country, city, 
+               founded, motto, campus_image, campus_image_desc
+        FROM schools 
+        WHERE region = 'Africa' AND level = 'university'
+        AND campus_image IS NOT NULL AND campus_image != ''
+        ORDER BY country, name
+    ''').fetchall()
+    
+    # If no schools with images, show all African universities
+    if not schools:
+        schools = conn.execute('''
+            SELECT id, name, name_cn, region, country, city, 
+                   founded, motto, campus_image, campus_image_desc
+            FROM schools 
+            WHERE region = 'Africa' AND level = 'university'
+            ORDER BY country, name
+            LIMIT 50
+        ''').fetchall()
+    
+    conn.close()
+    return render_template('campus_africa.html', schools=schools)
+
+@app.route('/campus')
+def campus_gallery():
+    """Main campus gallery entry page."""
+    return render_template('campus_gallery.html')
 
 @app.route('/social')
 def social():

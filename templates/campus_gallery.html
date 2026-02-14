@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('Campus Gallery') }} - {{ _('School Badge Network') }}</title>
+    
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="campus-gallery">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="{{ url_for('index') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网">
+            </a>
+            <div class="nav-links">
+                <a href="{{ url_for('index') }}">{{ _('home') }}</a>
+                <a href="{{ url_for('campus_gallery') }}" class="active">{{ _('campus_gallery') }}</a>
+                {% if session.get('user_id') %}
+                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
+                    <span class="username">{{ session.get('username') }}</span>
+                    {% if is_admin() %}
+                        <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
+                    {% endif %}
+                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}">{{ _('login') }}</a>
+                    <a href="{{ url_for('register') }}">{{ _('register') }}</a>
+                {% endif %}
+                
+                <div class="lang-switcher">
+                    <select onchange="window.location.href=this.value">
+                        {% for code, name in LANGUAGE_NAMES.items() %}
+                            <option value="{{ url_for('set_language', lang=code) }}" 
+                                    {% if current_lang == code %}selected{% endif %}>
+                                {{ name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-regions">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="container">
+            <h1>{{ _('Campus Gallery') }}</h1>
+            <p>{{ _('Explore renowned universities from around the world') }}</p>
+        </div>
+    </section>
+
+    <!-- Regions Grid -->
+    <section class="regions-section">
+        <div class="container">
+            <div class="regions-grid">
+                <!-- North America -->
+                <a href="{{ url_for('campus_north_america') }}" class="region-card">
+                    <div class="region-bg na"></div>
+                    <div class="region-content">
+                        <div class="region-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4z" fill="#FF6B6B"/>
+                                <path d="M35 15h-6v-4h-4v4h-6v6h4v4h-4v6h6v-4h4v4h6v-6h-4v-4h4V15z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h2>{{ _('North America') }}</h2>
+                        <p class="region-count">{{ _('Featured Universities') }}</p>
+                        <span class="region-cta">{{ _('Explore') }} →</span>
+                    </div>
+                </a>
+
+                <!-- Europe -->
+                <a href="{{ url_for('campus_europe') }}" class="region-card">
+                    <div class="region-bg eu"></div>
+                    <div class="region-content">
+                        <div class="region-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="20" fill="#4ECDC4"/>
+                                <path d="M13 20h22M13 28h22M20 14v20" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h2>{{ _('Europe') }}</h2>
+                        <p class="region-count">{{ _('Featured Universities') }}</p>
+                        <span class="region-cta">{{ _('Explore') }} →</span>
+                    </div>
+                </a>
+
+                <!-- Asia -->
+                <a href="{{ url_for('campus_asia') }}" class="region-card">
+                    <div class="region-bg asia"></div>
+                    <div class="region-content">
+                        <div class="region-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="20" fill="#FFE66D"/>
+                                <circle cx="24" cy="18" r="6" fill="#FF6B6B"/>
+                                <path d="M14 34c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#FF6B6B" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <h2>{{ _('Asia') }}</h2>
+                        <p class="region-count">{{ _('Featured Universities') }}</p>
+                        <span class="region-cta">{{ _('Explore') }} →</span>
+                    </div>
+                </a>
+
+                <!-- Oceania -->
+                <a href="{{ url_for('campus_oceania') }}" class="region-card">
+                    <div class="region-bg oceania"></div>
+                    <div class="region-content">
+                        <div class="region-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <ellipse cx="24" cy="28" rx="16" ry="8" fill="#95E1D3"/>
+                                <path d="M24 8c-8 0-14 6-14 14 0 8 6 14 14 14s14-6 14-14c0-8-6-14-14-14z" fill="#5D9CEC"/>
+                            </svg>
+                        </div>
+                        <h2>{{ _('Oceania') }}</h2>
+                        <p class="region-count">{{ _('Featured Universities') }}</p>
+                        <span class="region-cta">{{ _('Explore') }} →</span>
+                    </div>
+                </a>
+
+                <!-- South America -->
+                <a href="{{ url_for('campus_south_america') }}" class="region-card">
+                    <div class="region-bg sa"></div>
+                    <div class="region-content">
+                        <div class="region-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 8l16 10v20l-16-10-16 10V18l16-10z" fill="#A8D8EA"/>
+                                <path d="M24 18v20M16 28h16" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h2>{{ _('South America') }}</h2>
+                        <p class="region-count">{{ _('Featured Universities') }}</p>
+                        <span class="region-cta">{{ _('Explore') }} →</span>
+                    </div>
+                </a>
+
+                <!-- Africa -->
+                <a href="{{ url_for('campus_africa') }}" class="region-card">
+                    <div class="region-bg africa"></div>
+                    <div class="region-content">
+                        <div class="region-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="20" fill="#D4A574"/>
+                                <circle cx="24" cy="18" r="12" fill="#8B4513"/>
+                            </svg>
+                        </div>
+                        <h2>{{ _('Africa') }}</h2>
+                        <p class="region-count">{{ _('Featured Universities') }}</p>
+                        <span class="region-cta">{{ _('Explore') }} →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 {{ _('School Badge Network') }}. {{ _('All rights reserved') }}.</p>
+        </div>
+    </footer>
+</body>
+</html>
