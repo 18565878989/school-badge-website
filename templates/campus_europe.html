@@ -20,7 +20,7 @@
             </a>
             <div class="nav-links">
                 <a href="{{ url_for('index') }}">{{ _('home') }}</a>
-                <a href="{{ url_for('campus_gallery') }}">{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('campus') }}">{{ _('campus_gallery') }}</a>
                 <a href="{{ url_for('social') }}">社交</a>
                 {% if session.get('user_id') %}
                     <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
@@ -127,7 +127,7 @@
                 <div class="no-results-icon">🏛️</div>
                 <h2>{{ _('Coming Soon') }}</h2>
                 <p>{{ _('European universities campus photos are being prepared.') }}</p>
-                <a href="{{ url_for('campus_gallery') }}" class="btn btn-primary">
+                <a href="{{ url_for('campus') }}" class="btn btn-primary">
                     {{ _('Back to Campus Gallery') }}
                 </a>
             </div>

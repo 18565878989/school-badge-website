@@ -20,7 +20,7 @@
             </a>
             <div class="nav-links">
                 <a href="{{ url_for('index') }}">{{ _('home') }}</a>
-                <a href="{{ url_for('campus_gallery') }}" class="active">{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('campus') }}" class="active">{{ _('campus_gallery') }}</a>
                 <a href="{{ url_for('social') }}">社交</a>
                 {% if session.get('user_id') %}
                     <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
@@ -64,7 +64,7 @@
         <div class="container">
             <div class="regions-grid">
                 <!-- North America -->
-                <a href="{{ url_for('campus_north_america') }}" class="region-card">
+                <a href="{{ url_for('campus') }}" class="region-card">
                     <div class="region-bg na"></div>
                     <div class="region-content">
                         <div class="region-icon">
