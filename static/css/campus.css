@@ -1006,41 +1006,40 @@ body {
 
 /* Hero for Campus Page */
 .hero-campus {
-    background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%);
-    padding: 100px 0 60px;
+    background: var(--surface);
+    padding: 80px 0 50px;
+    text-align: center;
 }
 
 .hero-campus h1 {
-    font-size: clamp(40px, 7vw, 64px);
+    font-size: clamp(36px, 6vw, 56px);
     font-weight: 700;
     letter-spacing: -0.03em;
-    color: white;
-    margin-bottom: 16px;
+    color: var(--text);
+    margin-bottom: 12px;
 }
 
 .hero-campus p {
-    font-size: clamp(18px, 2.5vw, 22px);
-    color: rgba(255,255,255,0.8);
-    max-width: 600px;
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--text-secondary);
+    max-width: 500px;
     margin: 0 auto;
 }
 
 /* Tabs Section */
 .tabs-section {
     background: var(--background);
-    border-bottom: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
     position: sticky;
     top: 64px;
     z-index: 100;
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    background: rgba(255,255,255,0.85);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .region-tabs {
     display: flex;
-    gap: 8px;
-    padding: 16px 0;
+    gap: 6px;
+    padding: 12px 0;
     overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -1053,33 +1052,32 @@ body {
 .tab-btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
+    gap: 6px;
+    padding: 8px 16px;
     border: none;
-    border-radius: 24px;
-    background: var(--surface);
-    color: var(--text);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--text-secondary);
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
     white-space: nowrap;
     flex-shrink: 0;
 }
 
 .tab-btn:hover {
-    background: rgba(30, 58, 95, 0.08);
-    transform: translateY(-1px);
+    background: var(--surface);
+    color: var(--text);
 }
 
 .tab-btn.active {
     background: var(--primary);
     color: white;
-    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
 }
 
 .tab-icon {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .tab-name {
@@ -1090,12 +1088,12 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 24px;
-    height: 24px;
-    padding: 0 8px;
-    border-radius: 12px;
-    background: rgba(0,0,0,0.08);
-    font-size: 12px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.06);
+    font-size: 11px;
     font-weight: 600;
 }
 
@@ -1106,7 +1104,7 @@ body {
 /* Gallery Content */
 .gallery-content {
     display: none;
-    animation: fadeInUp 0.4s ease-out;
+    animation: fadeInUp 0.35s ease-out;
 }
 
 .gallery-content.active {
@@ -1116,7 +1114,7 @@ body {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(15px);
     }
     to {
         opacity: 1;
@@ -1127,29 +1125,29 @@ body {
 /* Coming Soon */
 .coming-soon {
     text-align: center;
-    padding: 120px 40px;
+    padding: 100px 40px;
     background: var(--surface);
     border-radius: var(--radius);
     margin: 40px 0;
 }
 
 .coming-soon-icon {
-    font-size: 80px;
-    margin-bottom: 24px;
-    opacity: 0.6;
+    font-size: 64px;
+    margin-bottom: 20px;
+    opacity: 0.5;
 }
 
 .coming-soon h3 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .coming-soon p {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--text-secondary);
-    max-width: 400px;
+    max-width: 360px;
     margin: 0 auto;
 }
 
@@ -1160,26 +1158,27 @@ body {
     }
     
     .region-tabs {
-        padding: 12px 16px;
-        gap: 6px;
+        padding: 10px 16px;
+        gap: 4px;
     }
     
     .tab-btn {
-        padding: 8px 14px;
+        padding: 6px 12px;
         font-size: 13px;
     }
     
     .tab-icon {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .tab-count {
-        min-width: 20px;
-        height: 20px;
-        font-size: 11px;
+        min-width: 18px;
+        height: 18px;
+        font-size: 10px;
+        padding: 0 4px;
     }
     
     .hero-campus {
-        padding: 80px 0 40px;
+        padding: 60px 0 40px;
     }
 }
