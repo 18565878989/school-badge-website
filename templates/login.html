@@ -93,7 +93,7 @@
                         <label>验证码</label>
                         <div class="sms-input-group">
                             <input type="text" name="code" placeholder="请输入验证码" required>
-                            <button type="button" class="btn btn-secondary" onclick="sendSMSCode(this)">获取验证码</button>
+                            <button type="button" class="btn btn-secondary" onclick="sendSMSCode(this, event)">获取验证码</button>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">登录</button>
@@ -167,7 +167,7 @@
         }
     }
 
-    function sendSMSCode(btn) {
+    function sendSMSCode(btn, event) {
         event.preventDefault();
         const phoneGroup = document.querySelector('.phone-input-group');
         const phone = phoneGroup.querySelector('input').value;
@@ -182,6 +182,10 @@
         const formData = new FormData();
         formData.append('phone', fullPhone);
         
+        // Disable button to prevent double submit
+        btn.disabled = true;
+        btn.textContent = '发送中...';
+        
         fetch('/send-sms', {
             method: 'POST',
             body: formData
@@ -189,11 +193,10 @@
         .then(r => r.json())
         .then(data => {
             if (data.success) {
-                btn.textContent = '已发送 (60s)';
-                btn.disabled = true;
-                alert('验证码: ' + data.message);
                 // Start countdown
                 let seconds = 60;
+                btn.textContent = `已发送 (${seconds}s)`;
+                
                 const timer = setInterval(() => {
                     seconds--;
                     if (seconds <= 0) {
@@ -204,12 +207,19 @@
                         btn.textContent = `已发送 (${seconds}s)`;
                     }
                 }, 1000);
+                
+                // Store code in session (for demo purposes, show in alert)
+                console.log('SMS Code:', data.message.split(': ')[1]);
             } else {
                 alert(data.error || '发送失败');
+                btn.disabled = false;
+                btn.textContent = '获取验证码';
             }
         })
         .catch(err => {
             alert('发送失败: ' + err);
+            btn.disabled = false;
+            btn.textContent = '获取验证码';
         });
         
         return false;
