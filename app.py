@@ -1,3 +1,4 @@
+import urllib.parse
 from flask import Flask, render_template, request, redirect, url_for, session, flash, send_from_directory, jsonify
 import sqlite3
 import os
@@ -241,6 +242,31 @@ def school_detail(school_id):
     
     conn.close()
     
+    # Build map query string
+    school_dict = dict(school)
+    addr = school_dict.get('address', '')
+    name = school_dict.get('name', '')
+    city = school_dict.get('city', '')
+    country = school_dict.get('country', '')
+    
+    # Use address if available, else name, else district
+    if addr:
+        map_query = addr
+        # Only add country if not in address
+        if country and country.lower() not in addr.lower():
+            map_query += ',' + country
+    elif name:
+        map_query = name
+        # Add location info
+        if school_dict.get('district'):
+            map_query += ',' + school_dict.get('district')
+        elif city:
+            map_query += ',' + city
+        if country:
+            map_query += ',' + country
+    else:
+        map_query = ""
+    
     return render_template('school.html', 
                          breadcrumb='school',
                          school=school, 
@@ -249,7 +275,50 @@ def school_detail(school_id):
                          badge_history=badge_history,
                          events=events,
                          digital_collectibles=digital_collectibles,
-                         products=products)
+                         products=products,
+                         map_query=map_query)
+
+@app.route('/badge-history/<int:school_id>')
+def badge_history(school_id):
+    """Show badge history for a school."""
+    conn = sqlite3.connect('database.db')
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+    
+    # Get school info
+    cursor.execute("SELECT * FROM schools WHERE id = ?", (school_id,))
+    school = cursor.execute("SELECT * FROM schools WHERE id = ?", (school_id,)).fetchone()
+    
+    if not school:
+        conn.close()
+        flash('School not found', 'error')
+        return redirect(url_for('index'))
+    
+    # Get badge history
+    cursor.execute("SELECT * FROM badge_history WHERE school_id = ? ORDER BY year_start ASC", (school_id,))
+    badge_history = [dict(row) for row in cursor.fetchall()]
+    
+    # Get events
+    cursor.execute("SELECT * FROM school_events WHERE school_id = ? ORDER BY year ASC", (school_id,))
+    events = [dict(row) for row in cursor.fetchall()]
+    
+    # Get likes count
+    likes_count = cursor.execute("SELECT COUNT(*) FROM likes WHERE school_id = ?", (school_id,)).fetchone()[0]
+    
+    # Check if user liked
+    user_liked = False
+    if 'user_id' in session:
+        user_liked = cursor.execute("SELECT COUNT(*) FROM likes WHERE user_id = ? AND school_id = ?", (session['user_id'], school_id)).fetchone()[0] > 0
+    
+    conn.close()
+    
+    return render_template('badge_history.html', 
+                         school=school,
+                         badge_history=badge_history,
+                         events=events,
+                         likes_count=likes_count,
+                         user_liked=user_liked)
+
 @app.route('/like/<int:school_id>', methods=['POST'])
 @login_required
 def toggle_like(school_id):
@@ -861,11 +930,29 @@ def admin_schools():
 def admin_add_school():
     """Add new school."""
     if request.method == 'POST':
+        name = request.form.get('name')
+        name_cn = request.form.get('name_cn')
+        country = request.form.get('country')
+        
+        # 检查唯一性
+        conn = sqlite3.connect('database.db')
+        cursor = conn.cursor()
+        cursor.execute('''
+            SELECT id, name, name_cn, country FROM schools 
+            WHERE name = ? AND country = ? AND COALESCE(name_cn, '') = COALESCE(?, '')
+        ''', (name, country, name_cn))
+        existing = cursor.fetchone()
+        conn.close()
+        
+        if existing:
+            flash(f'学校已存在: {existing[1]} ({existing[2] or "N/A"}) - {existing[3]}', 'error')
+            return redirect(url_for('admin_add_school'))
+        
         data = {
-            'name': request.form.get('name'),
-            'name_cn': request.form.get('name_cn'),
+            'name': name,
+            'name_cn': name_cn,
             'region': request.form.get('region'),
-            'country': request.form.get('country'),
+            'country': country,
             'city': request.form.get('city'),
             'address': request.form.get('address'),
             'level': request.form.get('level'),
@@ -878,7 +965,7 @@ def admin_add_school():
         
         school_id = create_school(**data)
         if school_id:
-            log_admin_action(session['user_id'], 'CREATE_SCHOOL', 'school', school_id, data['name'])
+            log_admin_action(session['user_id'], 'CREATE_SCHOOL', 'school', school_id, name)
             flash(_('success'), 'success')
             return redirect(url_for('admin_schools'))
         else:
@@ -898,11 +985,29 @@ def admin_edit_school(school_id):
         return redirect(url_for('admin_schools'))
     
     if request.method == 'POST':
+        name = request.form.get('name')
+        name_cn = request.form.get('name_cn')
+        country = request.form.get('country')
+        
+        # 检查唯一性（排除当前编辑的学校）
+        conn = sqlite3.connect('database.db')
+        cursor = conn.cursor()
+        cursor.execute('''
+            SELECT id, name, name_cn, country FROM schools 
+            WHERE name = ? AND country = ? AND COALESCE(name_cn, '') = COALESCE(?, '') AND id != ?
+        ''', (name, country, name_cn, school_id))
+        existing = cursor.fetchone()
+        conn.close()
+        
+        if existing:
+            flash(f'学校已存在: {existing[1]} ({existing[2] or "N/A"}) - {existing[3]}', 'error')
+            return redirect(url_for('admin_edit_school', school_id=school_id))
+        
         data = {
-            'name': request.form.get('name'),
-            'name_cn': request.form.get('name_cn'),
+            'name': name,
+            'name_cn': name_cn,
             'region': request.form.get('region'),
-            'country': request.form.get('country'),
+            'country': country,
             'city': request.form.get('city'),
             'address': request.form.get('address'),
             'level': request.form.get('level'),
@@ -914,7 +1019,7 @@ def admin_edit_school(school_id):
         }
         
         if update_school(school_id, **data):
-            log_admin_action(session['user_id'], 'UPDATE_SCHOOL', 'school', school_id, data['name'])
+            log_admin_action(session['user_id'], 'UPDATE_SCHOOL', 'school', school_id, name)
             flash(_('success'), 'success')
             return redirect(url_for('admin_schools'))
         else:
@@ -1151,7 +1256,7 @@ def load_sample_data_command():
     from models import load_sample_data
     load_sample_data()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5001, debug=True)
 
 @app.route('/topic/<int:topic_id>')
@@ -1188,61 +1293,12 @@ def topic_detail(topic_id):
     return render_template('topic_detail.html', topic=topic, replies=replies, breadcrumb='social')
 
 
-@app.route('/school/<int:school_id>/history')
-def badge_history(school_id):
-    """Show school badge evolution history."""
-    conn = get_db_connection()
-    conn.row_factory = sqlite3.Row
-    
-    # Get school info
-    cursor = conn.execute('SELECT * FROM schools WHERE id = ?', (school_id,))
-    school = dict(cursor.fetchone())
-    
-    if not school:
-        conn.close()
-        return redirect(url_for('index'))
-    
-    # Get badge history
-    cursor = conn.execute('''
-        SELECT * FROM badge_history 
-        WHERE school_id = ? 
-        ORDER BY year_start ASC
-    ''', (school_id,))
-    badge_history = [dict(row) for row in cursor.fetchall()]
-    
-    # Get school events
-    cursor = conn.execute('''
-        SELECT * FROM school_events 
-        WHERE school_id = ? 
-        ORDER BY year ASC
-    ''', (school_id,))
-    events = [dict(row) for row in cursor.fetchall()]
-    
-    # Get digital collectibles
-    cursor = conn.execute('''
-        SELECT * FROM digital_collectibles 
-        WHERE school_id = ? AND status = 'active'
-        ORDER BY price ASC
-    ''', (school_id,))
-    digital_collectibles = [dict(row) for row in cursor.fetchall()]
-    
-    # Get products
-    cursor = conn.execute('''
-        SELECT * FROM products 
-        WHERE school_id = ? AND status = 'active'
-        ORDER BY price ASC
-    ''', (school_id,))
-    products = [dict(row) for row in cursor.fetchall()]
-    
-    conn.close()
-    
-    return render_template('badge_history.html', 
-                          school=school,
-                          badge_history=badge_history,
-                          events=events,
-                          digital_collectibles=digital_collectibles,
-                          products=products,
-                          breadcrumb='history')
+@app.route('/share')
+def share_page():
+    """分享页面"""
+    content_type = request.args.get('type', 'post')
+    content_id = request.args.get('id', '1')
+    return render_template('share.html', content_type=content_type, content_id=content_id)
 
 
 @app.route('/badges')
@@ -1263,7 +1319,1225 @@ def badge_hub():
         LIMIT 20
     ''')
     schools = [dict(row) for row in cursor.fetchall()]
-    
     conn.close()
     
     return render_template('badge_hub.html', schools=schools, breadcrumb='badges')
+
+    return render_template('badge_hub.html', schools=schools, breadcrumb='badges')
+
+# ==================== Share API ====================
+
+@app.route('/api/share/config')
+def get_share_config():
+    """获取分享配置（前端调用）"""
+    config = {
+        'wechat': {
+            'enabled': True,
+            'appId': os.environ.get('WECHAT_APP_ID', ''),
+            'methods': ['qr', 'link']
+        },
+        'weibo': {
+            'enabled': bool(os.environ.get('WEIBO_APP_KEY')),
+            'appKey': os.environ.get('WEIBO_APP_KEY', ''),
+        },
+        'douyin': {
+            'enabled': True,
+            'methods': ['link', 'poster']
+        },
+        'xiaohongshu': {
+            'enabled': True,
+            'methods': ['link', 'poster']
+        },
+        'twitter': {
+            'enabled': bool(os.environ.get('TWITTER_CLIENT_KEY')),
+            'methods': ['link']
+        },
+        'facebook': {
+            'enabled': bool(os.environ.get('FACEBOOK_APP_ID')),
+            'methods': ['link']
+        },
+        'whatsapp': {
+            'enabled': True,
+            'methods': ['link']
+        },
+        'copy_link': {
+            'enabled': True
+        }
+    }
+    return jsonify({'success': True, 'config': config})
+
+@app.route('/api/share/<content_type>/<int:content_id>')
+def get_share_info(content_type, content_id):
+    """获取分享信息"""
+    conn = get_db_connection()
+    
+    if content_type == 'post':
+        cursor = conn.execute('''
+            SELECT p.*, u.username as author_name, s.name as school_name
+            FROM posts p
+            LEFT JOIN users u ON p.author_id = u.id
+            LEFT JOIN schools s ON p.school_id = s.id
+            WHERE p.id = ?
+        ''', (content_id,))
+    elif content_type == 'school':
+        cursor = conn.execute('''
+            SELECT s.*, COUNT(DISTINCT p.id) as posts_count
+            FROM schools s
+            LEFT JOIN posts p ON s.id = p.school_id
+            WHERE s.id = ?
+            GROUP BY s.id
+        ''', (content_id,))
+    elif content_type == 'topic':
+        cursor = conn.execute('SELECT * FROM topics WHERE id = ?', (content_id,))
+    else:
+        return jsonify({'success': False, 'error': 'Invalid content type'}), 400
+    
+    item = dict(cursor.fetchone())
+    conn.close()
+    
+    if not item:
+        return jsonify({'success': False, 'error': 'Content not found'}), 404
+    
+    # 生成分享URL
+    base_url = request.host_url.rstrip('/')
+    share_url = f"{base_url}/{content_type}/{content_id}"
+    
+    # 获取标题和描述
+    if content_type == 'post':
+        title = item.get('content', '')[:100]
+        desc = f"来自 {item.get('author_name', '')} 的分享"
+        image = None
+    elif content_type == 'school':
+        title = item.get('name', '')
+        desc = f"{item.get('name_cn', '')} - {item.get('city', '')}"
+        image = item.get('badge_url')
+    else:
+        title = item.get('name', '') or item.get('title', '')
+        desc = item.get('description', '')
+        image = item.get('cover_image')
+    
+    return jsonify({
+        'success': True,
+        'data': {
+            'url': share_url,
+            'title': title,
+            'desc': desc,
+            'image': image,
+            'content_type': content_type,
+            'content_id': content_id
+        }
+    })
+
+@app.route('/api/share/record', methods=['POST'])
+def record_share():
+    """记录分享"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    data = request.get_json()
+    content_type = data.get('content_type')
+    content_id = data.get('content_id')
+    platform = data.get('platform')
+    share_url = data.get('share_url')
+    
+    if not all([content_type, content_id, platform]):
+        return jsonify({'success': False, 'error': 'Missing required fields'}), 400
+    
+    conn = get_db_connection()
+    cursor = conn.execute('''
+        INSERT INTO share_records (content_type, content_id, user_id, platform, share_url, click_count)
+        VALUES (?, ?, ?, ?, ?, 0)
+    ''', (content_type, content_id, session['user_id'], platform, share_url))
+    conn.commit()
+    share_id = cursor.lastrowid
+    conn.close()
+    
+    # 增加内容的分享数
+    if content_type == 'post':
+        conn = get_db_connection()
+        conn.execute('UPDATE posts SET shares_count = shares_count + 1 WHERE id = ?', (content_id,))
+        conn.commit()
+        conn.close()
+    
+    return jsonify({'success': True, 'share_id': share_id})
+
+# ==================== Posts API ====================
+
+@app.route('/api/posts')
+def get_posts():
+    """获取帖子列表"""
+    page = request.args.get('page', 1, type=int)
+    per_page = 20
+    tab = request.args.get('tab', 'hot')
+    school_id = request.args.get('school_id', type=int)
+    user_id = request.args.get('user_id', type=int)
+    
+    conn = get_db_connection()
+    
+    # 构建查询
+    where_clauses = ["status = 'published'"]
+    params = []
+    
+    if school_id:
+        where_clauses.append("school_id = ?")
+        params.append(school_id)
+    
+    if user_id:
+        where_clauses.append("author_id = ?")
+        params.append(user_id)
+    
+    where_sql = " AND ".join(where_clauses)
+    
+    if tab == 'hot':
+        order_by = "is_hot DESC, likes_count DESC, created_at DESC"
+    elif tab == 'latest':
+        order_by = "created_at DESC"
+    elif tab == 'essence':
+        where_sql += " AND is_essence = 1"
+        order_by = "likes_count DESC"
+    else:
+        order_by = "created_at DESC"
+    
+    offset = (page - 1) * per_page
+    
+    cursor = conn.execute(f'''
+        SELECT p.*, u.username as author_name, u.avatar_url as author_avatar,
+               s.name as school_name, s.badge_url as school_badge
+        FROM posts p
+        LEFT JOIN users u ON p.author_id = u.id
+        LEFT JOIN schools s ON p.school_id = s.id
+        WHERE {where_sql}
+        ORDER BY {order_by}
+        LIMIT ? OFFSET ?
+    ''', params + [per_page, offset])
+    
+    posts = [dict(row) for row in cursor.fetchall()]
+    
+    # 获取总数
+    cursor = conn.execute(f'SELECT COUNT(*) FROM posts WHERE {where_sql}', params)
+    total = cursor.fetchone()[0]
+    
+    conn.close()
+    
+    return jsonify({
+        'success': True,
+        'posts': posts,
+        'total': total,
+        'page': page,
+        'per_page': per_page,
+        'has_more': offset + len(posts) < total
+    })
+
+@app.route('/api/posts/<int:post_id>')
+def get_post(post_id):
+    """获取帖子详情"""
+    conn = get_db_connection()
+    
+    cursor = conn.execute('''
+        SELECT p.*, u.username as author_name, u.avatar_url as author_avatar,
+               s.name as school_name, s.badge_url as school_badge
+        FROM posts p
+        LEFT JOIN users u ON p.author_id = u.id
+        LEFT JOIN schools s ON p.school_id = s.id
+        WHERE p.id = ?
+    ''', (post_id,))
+    
+    post = dict(cursor.fetchone())
+    
+    if not post:
+        conn.close()
+        return jsonify({'success': False, 'error': 'Post not found'}), 404
+    
+    # 增加浏览数
+    conn.execute('UPDATE posts SET views_count = views_count + 1 WHERE id = ?', (post_id,))
+    conn.commit()
+    post['views_count'] += 1
+    
+    conn.close()
+    
+    return jsonify({'success': True, 'post': post})
+
+@app.route('/api/posts', methods=['POST'])
+def create_post():
+    """创建帖子"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    data = request.get_json()
+    content = data.get('content')
+    content_type = data.get('content_type', 'text')
+    media_urls = data.get('media_urls', [])
+    school_id = data.get('school_id')
+    tags = data.get('tags', [])
+    visibility = data.get('visibility', 'public')
+    
+    if not content:
+        return jsonify({'success': False, 'error': 'Content required'}), 400
+    
+    conn = get_db_connection()
+    cursor = conn.execute('''
+        INSERT INTO posts (author_id, school_id, content_type, content, media_urls, tags, visibility)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+    ''', (session['user_id'], school_id, content_type, content, 
+          ','.join(media_urls) if media_urls else None,
+          ','.join(tags) if tags else None,
+          visibility))
+    conn.commit()
+    post_id = cursor.lastrowid
+    
+    # 更新用户帖子数
+    conn.execute('UPDATE user_profiles SET posts_count = posts_count + 1 WHERE user_id = ?', 
+                 (session['user_id'],))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True, 'post_id': post_id})
+
+@app.route('/api/posts/<int:post_id>', methods=['PUT'])
+def update_post(post_id):
+    """更新帖子"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    # 检查权限
+    conn = get_db_connection()
+    cursor = conn.execute('SELECT author_id FROM posts WHERE id = ?', (post_id,))
+    post = cursor.fetchone()
+    
+    if not post:
+        conn.close()
+        return jsonify({'success': False, 'error': 'Post not found'}), 404
+    
+    if post['author_id'] != session['user_id'] and not is_admin(session.get('user_id')):
+        conn.close()
+        return jsonify({'success': False, 'error': 'Permission denied'}), 403
+    
+    data = request.get_json()
+    content = data.get('content')
+    media_urls = data.get('media_urls')
+    tags = data.get('tags')
+    
+    updates = []
+    params = []
+    
+    if content:
+        updates.append('content = ?')
+        params.append(content)
+    if media_urls is not None:
+        updates.append('media_urls = ?')
+        params.append(','.join(media_urls) if media_urls else None)
+    if tags is not None:
+        updates.append('tags = ?')
+        params.append(','.join(tags) if tags else None)
+    
+    if updates:
+        updates.append('updated_at = CURRENT_TIMESTAMP')
+        params.append(post_id)
+        conn.execute(f'UPDATE posts SET {", ".join(updates)} WHERE id = ?', params)
+        conn.commit()
+    
+    conn.close()
+    
+    return jsonify({'success': True})
+
+@app.route('/api/posts/<int:post_id>', methods=['DELETE'])
+def delete_post(post_id):
+    """删除帖子"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    conn = get_db_connection()
+    cursor = conn.execute('SELECT author_id FROM posts WHERE id = ?', (post_id,))
+    post = cursor.fetchone()
+    
+    if not post:
+        conn.close()
+        return jsonify({'success': False, 'error': 'Post not found'}), 404
+    
+    if post['author_id'] != session['user_id'] and not is_admin(session.get('user_id')):
+        conn.close()
+        return jsonify({'success': False, 'error': 'Permission denied'}), 403
+    
+    conn.execute('UPDATE posts SET status = ? WHERE id = ?', ('deleted', post_id))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True})
+
+# ==================== Like API ====================
+
+@app.route('/api/posts/<int:post_id>/like', methods=['POST'])
+def like_post(post_id):
+    """点赞帖子"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    conn = get_db_connection()
+    
+    # 检查是否已点赞
+    cursor = conn.execute('''
+        SELECT id FROM likes 
+        WHERE user_id = ? AND target_type = 'post' AND target_id = ?
+    ''', (session['user_id'], post_id))
+    
+    if cursor.fetchone():
+        conn.close()
+        return jsonify({'success': False, 'error': 'Already liked'}), 400
+    
+    # 添加点赞
+    conn.execute('''
+        INSERT INTO likes (user_id, target_type, target_id)
+        VALUES (?, 'post', ?)
+    ''', (session['user_id'], post_id))
+    
+    # 更新帖子点赞数
+    conn.execute('UPDATE posts SET likes_count = likes_count + 1 WHERE id = ?', (post_id,))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True})
+
+@app.route('/api/posts/<int:post_id>/like', methods=['DELETE'])
+def unlike_post(post_id):
+    """取消点赞"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    conn = get_db_connection()
+    
+    cursor = conn.execute('''
+        SELECT id FROM likes 
+        WHERE user_id = ? AND target_type = 'post' AND target_id = ?
+    ''', (session['user_id'], post_id))
+    
+    like = cursor.fetchone()
+    
+    if not like:
+        conn.close()
+        return jsonify({'success': False, 'error': 'Not liked yet'}), 400
+    
+    conn.execute('DELETE FROM likes WHERE id = ?', (like['id'],))
+    conn.execute('UPDATE posts SET likes_count = likes_count - 1 WHERE id = ?', (post_id,))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True})
+
+# ==================== Comments API ====================
+
+@app.route('/api/posts/<int:post_id>/comments')
+def get_comments(post_id):
+    """获取评论列表"""
+    conn = get_db_connection()
+    
+    cursor = conn.execute('''
+        SELECT c.*, u.username as author_name, u.avatar_url as author_avatar,
+               (SELECT username FROM users u2 
+                JOIN comments c2 ON c2.author_id = u2.id 
+                WHERE c2.id = c.parent_id) as reply_to_name
+        FROM comments c
+        LEFT JOIN users u ON c.author_id = u.id
+        WHERE c.post_id = ? AND c.is_approved = 1
+        ORDER BY c.created_at ASC
+    ''', (post_id,))
+    
+    comments = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    
+    return jsonify({'success': True, 'comments': comments})
+
+@app.route('/api/posts/<int:post_id>/comments', methods=['POST'])
+def create_comment(post_id):
+    """创建评论"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    data = request.get_json()
+    content = data.get('content')
+    parent_id = data.get('parent_id')
+    media_urls = data.get('media_urls', [])
+    
+    if not content:
+        return jsonify({'success': False, 'error': 'Content required'}), 400
+    
+    conn = get_db_connection()
+    cursor = conn.execute('''
+        INSERT INTO comments (post_id, parent_id, author_id, content, media_urls)
+        VALUES (?, ?, ?, ?, ?)
+    ''', (post_id, parent_id, session['user_id'], content, 
+          ','.join(media_urls) if media_urls else None))
+    conn.commit()
+    comment_id = cursor.lastrowid
+    
+    # 更新帖子评论数
+    conn.execute('UPDATE posts SET comments_count = comments_count + 1 WHERE id = ?', (post_id,))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True, 'comment_id': comment_id})
+
+# ==================== Follow API ====================
+
+@app.route('/api/users/<int:user_id>/follow', methods=['POST'])
+def follow_user(user_id):
+    """关注用户"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    if user_id == session['user_id']:
+        return jsonify({'success': False, 'error': 'Cannot follow yourself'}), 400
+    
+    conn = get_db_connection()
+    
+    # 检查是否已关注
+    cursor = conn.execute('''
+        SELECT id FROM follows WHERE follower_id = ? AND following_id = ?
+    ''', (session['user_id'], user_id))
+    
+    if cursor.fetchone():
+        conn.close()
+        return jsonify({'success': False, 'error': 'Already following'}), 400
+    
+    # 添加关注
+    conn.execute('''
+        INSERT INTO follows (follower_id, following_id)
+        VALUES (?, ?)
+    ''', (session['user_id'], user_id))
+    
+    # 更新关注数
+    conn.execute('UPDATE user_profiles SET following_count = following_count + 1 WHERE user_id = ?', 
+                 (session['user_id'],))
+    conn.execute('UPDATE user_profiles SET followers_count = followers_count + 1 WHERE user_id = ?', 
+                 (user_id,))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True})
+
+@app.route('/api/users/<int:user_id>/follow', methods=['DELETE'])
+def unfollow_user(user_id):
+    """取消关注"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    conn = get_db_connection()
+    
+    cursor = conn.execute('''
+        SELECT id FROM follows WHERE follower_id = ? AND following_id = ?
+    ''', (session['user_id'], user_id))
+    
+    follow = cursor.fetchone()
+    
+    if not follow:
+        conn.close()
+        return jsonify({'success': False, 'error': 'Not following'}), 400
+    
+    conn.execute('DELETE FROM follows WHERE id = ?', (follow['id'],))
+    conn.execute('UPDATE user_profiles SET following_count = following_count - 1 WHERE user_id = ?', 
+                 (session['user_id'],))
+    conn.execute('UPDATE user_profiles SET followers_count = followers_count - 1 WHERE user_id = ?', 
+                 (user_id,))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True})
+
+# ==================== Notifications API ====================
+
+@app.route('/api/notifications')
+def get_notifications():
+    """获取通知列表"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    conn = get_db_connection()
+    
+    cursor = conn.execute('''
+        SELECT * FROM notifications
+        WHERE user_id = ?
+        ORDER BY created_at DESC
+        LIMIT 50
+    ''', (session['user_id'],))
+    
+    notifications = [dict(row) for row in cursor.fetchall()]
+    
+    # 获取未读数
+    cursor = conn.execute('''
+        SELECT COUNT(*) FROM notifications 
+        WHERE user_id = ? AND is_read = 0
+    ''', (session['user_id'],))
+    unread_count = cursor.fetchone()[0]
+    
+    conn.close()
+    
+    return jsonify({'success': True, 'notifications': notifications, 'unread_count': unread_count})
+
+@app.route('/api/notifications/<int:notification_id>/read', methods=['POST'])
+def mark_notification_read(notification_id):
+    """标记通知为已读"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    conn = get_db_connection()
+    conn.execute('UPDATE notifications SET is_read = 1 WHERE id = ? AND user_id = ?', 
+                 (notification_id, session['user_id']))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True})
+
+@app.route('/api/notifications/read-all', methods=['POST'])
+def mark_all_notifications_read():
+    """标记所有通知为已读"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    conn = get_db_connection()
+    conn.execute('UPDATE notifications SET is_read = 1 WHERE user_id = ?', (session['user_id'],))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True})
+
+# ==================== Collections API ====================
+
+@app.route('/api/collections')
+def get_collections():
+    """获取收藏夹列表"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    conn = get_db_connection()
+    
+    cursor = conn.execute('''
+        SELECT c.*, 
+               (SELECT COUNT(*) FROM collection_items WHERE collection_id = c.id) as items_count
+        FROM collections c
+        WHERE c.user_id = ?
+        ORDER BY c.created_at DESC
+    ''', (session['user_id'],))
+    
+    collections = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    
+    return jsonify({'success': True, 'collections': collections})
+
+@app.route('/api/collections', methods=['POST'])
+def create_collection():
+    """创建收藏夹"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    data = request.get_json()
+    name = data.get('name')
+    description = data.get('description', '')
+    is_public = data.get('is_public', 0)
+    
+    if not name:
+        return jsonify({'success': False, 'error': 'Name required'}), 400
+    
+    conn = get_db_connection()
+    cursor = conn.execute('''
+        INSERT INTO collections (user_id, name, description, is_public)
+        VALUES (?, ?, ?, ?)
+    ''', (session['user_id'], name, description, is_public))
+    conn.commit()
+    collection_id = cursor.lastrowid
+    conn.close()
+    
+    return jsonify({'success': True, 'collection_id': collection_id})
+
+@app.route('/api/collections/<int:collection_id>/items', methods=['POST'])
+def add_to_collection(collection_id):
+    """添加内容到收藏夹"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    data = request.get_json()
+    content_type = data.get('content_type')
+    content_id = data.get('content_id')
+    
+    if not content_type or not content_id:
+        return jsonify({'success': False, 'error': 'Missing required fields'}), 400
+    
+    conn = get_db_connection()
+    
+    # 检查收藏夹归属
+    cursor = conn.execute('SELECT user_id FROM collections WHERE id = ?', (collection_id,))
+    collection = cursor.fetchone()
+    
+    if not collection or collection['user_id'] != session['user_id']:
+        conn.close()
+        return jsonify({'success': False, 'error': 'Collection not found'}), 404
+    
+    # 检查是否已收藏
+    cursor = conn.execute('''
+        SELECT id FROM collection_items 
+        WHERE collection_id = ? AND content_type = ? AND content_id = ?
+    ''', (collection_id, content_type, content_id))
+    
+    if cursor.fetchone():
+        conn.close()
+        return jsonify({'success': False, 'error': 'Already in collection'}), 400
+    
+    # 添加收藏
+    conn.execute('''
+        INSERT INTO collection_items (collection_id, content_type, content_id)
+        VALUES (?, ?, ?)
+    ''', (collection_id, content_type, content_id))
+    
+    # 更新收藏夹数量
+    conn.execute('UPDATE collections SET items_count = items_count + 1 WHERE id = ?', (collection_id,))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True})
+
+# ==================== Membership API ====================
+
+@app.route('/api/membership/levels')
+def get_membership_levels():
+    """获取会员等级列表"""
+    conn = get_db_connection()
+    cursor = conn.execute('''
+        SELECT * FROM membership_levels 
+        WHERE is_active = 1 
+        ORDER BY sort_order ASC
+    ''')
+    levels = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    
+    return jsonify({'success': True, 'levels': levels})
+
+@app.route('/api/membership/status')
+def get_membership_status():
+    """获取当前用户会员状态"""
+    if 'user_id' not in session:
+        return jsonify({'is_member': False, 'level': None})
+    
+    conn = get_db_connection()
+    cursor = conn.execute('''
+        SELECT m.*, ml.name as level_name, ml.name_cn as level_name_cn, ml.features
+        FROM memberships m
+        LEFT JOIN membership_levels ml ON m.level = ml.code
+        WHERE m.user_id = ? AND m.expire_date > date('now') AND m.level IS NOT NULL
+        ORDER BY m.expire_date DESC
+        LIMIT 1
+    ''', (session['user_id'],))
+    
+    membership = cursor.fetchone()
+    conn.close()
+    
+    if membership:
+        return jsonify({
+            'success': True,
+            'is_member': True,
+            'level': dict(membership)
+        })
+    else:
+        return jsonify({'success': True, 'is_member': False, 'level': None})
+
+@app.route('/api/membership/upgrade', methods=['POST'])
+def upgrade_membership():
+    """升级会员"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    data = request.get_json()
+    level_code = data.get('level')
+    duration = data.get('duration', 'monthly')  # monthly or yearly
+    
+    if not level_code:
+        return jsonify({'success': False, 'error': 'Level required'}), 400
+    
+    # 获取会员等级价格
+    conn = get_db_connection()
+    cursor = conn.execute('SELECT * FROM membership_levels WHERE code = ?', (level_code,))
+    level = cursor.fetchone()
+    
+    if not level:
+        conn.close()
+        return jsonify({'success': False, 'error': 'Invalid level'}), 400
+    
+    price = level['price_yearly'] if duration == 'yearly' else level['price_monthly']
+    
+    # 创建支付订单
+    order_no = f"MEM{int(time.time())}{session['user_id']}"
+    cursor = conn.execute('''
+        INSERT INTO payments (user_id, order_no, amount, product_type, status)
+        VALUES (?, ?, ?, 'membership', 'pending')
+    ''', (session['user_id'], order_no, price))
+    conn.commit()
+    payment_id = cursor.lastrowid
+    conn.close()
+    
+    # TODO: 调起支付流程
+    
+    return jsonify({
+        'success': True,
+        'payment_id': payment_id,
+        'order_no': order_no,
+        'amount': price,
+        'level': level_code,
+        'message': '订单已创建，请完成支付'
+    })
+
+# ==================== Payment API ====================
+
+@app.route('/api/payments/create', methods=['POST'])
+def create_payment():
+    """创建支付订单"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    data = request.get_json()
+    product_type = data.get('product_type')  # membership, product, etc.
+    product_id = data.get('product_id')
+    amount = data.get('amount')
+    payment_method = data.get('payment_method', 'wechat')
+    
+    if not amount or amount <= 0:
+        return jsonify({'success': False, 'error': 'Invalid amount'}), 400
+    
+    conn = get_db_connection()
+    order_no = f"PAY{int(time.time())}{session['user_id']}"
+    
+    cursor = conn.execute('''
+        INSERT INTO payments (user_id, order_no, amount, payment_method, product_type, product_id)
+        VALUES (?, ?, ?, ?, ?, ?)
+    ''', (session['user_id'], order_no, amount, payment_method, product_type, product_id))
+    conn.commit()
+    payment_id = cursor.lastrowid
+    conn.close()
+    
+    return jsonify({
+        'success': True,
+        'payment_id': payment_id,
+        'order_no': order_no,
+        'amount': amount,
+        'payment_method': payment_method
+    })
+
+@app.route('/api/payments/<order_no>/status')
+def get_payment_status(order_no):
+    """查询支付状态"""
+    conn = get_db_connection()
+    cursor = conn.execute('SELECT * FROM payments WHERE order_no = ?', (order_no,))
+    payment = cursor.fetchone()
+    conn.close()
+    
+    if not payment:
+        return jsonify({'success': False, 'error': 'Order not found'}), 404
+    
+    return jsonify({'success': True, 'payment': dict(payment)})
+
+# ==================== Ad Positions API ====================
+
+@app.route('/api/ads/positions')
+def get_ad_positions():
+    """获取广告位列表"""
+    conn = get_db_connection()
+    cursor = conn.execute('SELECT * FROM ad_positions WHERE is_active = 1 ORDER BY id')
+    positions = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    
+    return jsonify({'success': True, 'positions': positions})
+
+@app.route('/api/ads/<position_code>')
+def get_ads(position_code):
+    """获取广告位广告"""
+    conn = get_db_connection()
+    
+    # 获取广告位信息
+    cursor = conn.execute('SELECT * FROM ad_positions WHERE code = ? AND is_active = 1', (position_code,))
+    position = cursor.fetchone()
+    
+    if not position:
+        conn.close()
+        return jsonify({'success': False, 'error': 'Position not found'}), 404
+    
+    # 获取广告列表
+    cursor = conn.execute('''
+        SELECT a.*, ad.company_name as advertiser_name
+        FROM ads a
+        LEFT JOIN advertisers ad ON a.advertiser_id = ad.id
+        WHERE a.position_id = ? AND a.status = 'active' 
+        AND (a.start_date IS NULL OR a.start_date <= date('now'))
+        AND (a.end_date IS NULL OR a.end_date >= date('now'))
+        ORDER BY a.views_count DESC
+        LIMIT 5
+    ''', (position['id'],))
+    
+    ads = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    
+    return jsonify({
+        'success': True,
+        'position': dict(position),
+        'ads': ads
+    })
+
+@app.route('/api/ads/<int:ad_id>/click', methods=['POST'])
+def click_ad(ad_id):
+    """记录广告点击"""
+    conn = get_db_connection()
+    
+    # 更新点击数
+    conn.execute('UPDATE ads SET clicks_count = clicks_count + 1 WHERE id = ?', (ad_id,))
+    conn.commit()
+    
+    # 获取广告跳转链接
+    cursor = conn.execute('SELECT target_url FROM ads WHERE id = ?', (ad_id,))
+    ad = cursor.fetchone()
+    conn.close()
+    
+    if ad and ad['target_url']:
+        return jsonify({'success': True, 'url': ad['target_url']})
+    else:
+        return jsonify({'success': False, 'error': 'Ad not found'}), 404
+
+# ==================== Shop API ====================
+
+@app.route('/api/shop/products')
+def get_shop_products():
+    """获取商品列表"""
+    page = request.args.get('page', 1, type=int)
+    per_page = 20
+    category = request.args.get('category')
+    keyword = request.args.get('keyword')
+    
+    conn = get_db_connection()
+    
+    where_clauses = ["status = 'active'"]
+    params = []
+    
+    if category:
+        where_clauses.append("category = ?")
+        params.append(category)
+    
+    if keyword:
+        where_clauses.append("(name LIKE ? OR description LIKE ?)")
+        params.extend([f'%{keyword}%', f'%{keyword}%'])
+    
+    where_sql = " AND ".join(where_clauses)
+    offset = (page - 1) * per_page
+    
+    cursor = conn.execute(f'''
+        SELECT * FROM shop_products
+        WHERE {where_sql}
+        ORDER BY is_featured DESC, sold_count DESC, created_at DESC
+        LIMIT ? OFFSET ?
+    ''', params + [per_page, offset])
+    
+    products = [dict(row) for row in cursor.fetchall()]
+    
+    # 获取分类
+    cursor = conn.execute('''
+        SELECT category, COUNT(*) as count 
+        FROM shop_products 
+        WHERE status = 'active' 
+        GROUP BY category
+    ''')
+    categories = [dict(row) for row in cursor.fetchall()]
+    
+    conn.close()
+    
+    return jsonify({
+        'success': True,
+        'products': products,
+        'categories': categories
+    })
+
+@app.route('/api/shop/products/<int:product_id>')
+def get_shop_product(product_id):
+    """获取商品详情"""
+    conn = get_db_connection()
+    cursor = conn.execute('''
+        SELECT sp.*, u.username as seller_name
+        FROM shop_products sp
+        LEFT JOIN users u ON sp.seller_id = u.id
+        WHERE sp.id = ? AND sp.status = 'active'
+    ''', (product_id,))
+    product = cursor.fetchone()
+    conn.close()
+    
+    if not product:
+        return jsonify({'success': False, 'error': 'Product not found'}), 404
+    
+    return jsonify({'success': True, 'product': dict(product)})
+
+@app.route('/api/shop/cart')
+def get_cart():
+    """获取购物车"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    conn = get_db_connection()
+    cursor = conn.execute('''
+        SELECT c.*, sp.name, sp.price, sp.images, sp.stock
+        FROM carts c
+        JOIN shop_products sp ON c.product_id = sp.id
+        WHERE c.user_id = ?
+        ORDER BY c.created_at DESC
+    ''', (session['user_id'],))
+    
+    items = [dict(row) for row in cursor.fetchall()]
+    
+    # 计算总价
+    total = sum(item['price'] * item['quantity'] for item in items)
+    
+    conn.close()
+    
+    return jsonify({
+        'success': True,
+        'items': items,
+        'total': total,
+        'count': len(items)
+    })
+
+@app.route('/api/shop/cart', methods=['POST'])
+def add_to_cart():
+    """添加商品到购物车"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    data = request.get_json()
+    product_id = data.get('product_id')
+    quantity = data.get('quantity', 1)
+    
+    if not product_id:
+        return jsonify({'success': False, 'error': 'Product ID required'}), 400
+    
+    conn = get_db_connection()
+    
+    # 检查商品是否存在
+    cursor = conn.execute('SELECT stock, status FROM shop_products WHERE id = ?', (product_id,))
+    product = cursor.fetchone()
+    
+    if not product or product['status'] != 'active':
+        conn.close()
+        return jsonify({'success': False, 'error': 'Product not available'}), 400
+    
+    if product['stock'] < quantity:
+        conn.close()
+        return jsonify({'success': False, 'error': 'Insufficient stock'}), 400
+    
+    # 检查购物车是否已有
+    cursor = conn.execute('''
+        SELECT id, quantity FROM carts WHERE user_id = ? AND product_id = ?
+    ''', (session['user_id'], product_id))
+    cart_item = cursor.fetchone()
+    
+    if cart_item:
+        new_quantity = cart_item['quantity'] + quantity
+        if new_quantity > product['stock']:
+            conn.close()
+            return jsonify({'success': False, 'error': 'Insufficient stock'}), 400
+        conn.execute('UPDATE carts SET quantity = ? WHERE id = ?', (new_quantity, cart_item['id']))
+    else:
+        conn.execute('''
+            INSERT INTO carts (user_id, product_id, quantity)
+            VALUES (?, ?, ?)
+        ''', (session['user_id'], product_id, quantity))
+    
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True, 'message': 'Added to cart'})
+
+@app.route('/api/shop/cart/<int:cart_id>', methods=['DELETE'])
+def remove_from_cart(cart_id):
+    """从购物车移除"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    conn = get_db_connection()
+    conn.execute('DELETE FROM carts WHERE id = ? AND user_id = ?', (cart_id, session['user_id']))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({'success': True})
+
+@app.route('/api/shop/orders', methods=['POST'])
+def create_shop_order():
+    """创建商城订单"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    data = request.get_json()
+    items = data.get('items', [])
+    shipping_name = data.get('shipping_name')
+    shipping_phone = data.get('shipping_phone')
+    shipping_address = data.get('shipping_address')
+    note = data.get('note', '')
+    
+    if not items:
+        return jsonify({'success': False, 'error': 'No items'}), 400
+    
+    conn = get_db_connection()
+    
+    # 计算总价并验证库存
+    total_amount = 0
+    order_items = []
+    
+    for item in items:
+        cursor = conn.execute('SELECT * FROM shop_products WHERE id = ?', (item['product_id'],))
+        product = cursor.fetchone()
+        
+        if not product or product['status'] != 'active':
+            conn.close()
+            return jsonify({'success': False, 'error': f"Product {item['product_id']} not available"}), 400
+        
+        if product['stock'] < item['quantity']:
+            conn.close()
+            return jsonify({'success': False, 'error': f"Insufficient stock for {product['name']}"}), 400
+        
+        subtotal = product['price'] * item['quantity']
+        total_amount += subtotal
+        
+        order_items.append({
+            'product_id': product['id'],
+            'product_name': product['name'],
+            'product_image': product['images'].split(',')[0] if product['images'] else None,
+            'price': product['price'],
+            'quantity': item['quantity'],
+            'subtotal': subtotal
+        })
+    
+    # 创建订单
+    order_no = f"ORD{int(time.time())}{session['user_id']}"
+    cursor = conn.execute('''
+        INSERT INTO shop_orders (order_no, user_id, total_amount, actual_amount, 
+                                shipping_name, shipping_phone, shipping_address, note)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    ''', (order_no, session['user_id'], total_amount, total_amount,
+          shipping_name, shipping_phone, shipping_address, note))
+    conn.commit()
+    order_id = cursor.lastrowid
+    
+    # 创建订单明细
+    for item in order_items:
+        conn.execute('''
+            INSERT INTO shop_order_items (order_id, product_id, product_name, product_image, 
+                                         price, quantity, subtotal)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        ''', (order_id, item['product_id'], item['product_name'], item['product_image'],
+              item['price'], item['quantity'], item['subtotal']))
+        
+        # 减少库存
+        conn.execute('UPDATE shop_products SET stock = stock - ?, sold_count = sold_count + ? WHERE id = ?',
+                    (item['quantity'], item['quantity'], item['product_id']))
+    
+    # 清空购物车
+    conn.execute('DELETE FROM carts WHERE user_id = ?', (session['user_id'],))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({
+        'success': True,
+        'order_id': order_id,
+        'order_no': order_no,
+        'total_amount': total_amount
+    })
+
+@app.route('/api/shop/orders')
+def get_shop_orders():
+    """获取订单列表"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': 'Login required'}), 401
+    
+    conn = get_db_connection()
+    cursor = conn.execute('''
+        SELECT * FROM shop_orders
+        WHERE user_id = ?
+        ORDER BY created_at DESC
+        LIMIT 20
+    ''', (session['user_id'],))
+    
+    orders = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    
+    return jsonify({'success': True, 'orders': orders})
+
+# ==================== Statistics API ====================
+
+@app.route('/api/stats/overview')
+def get_stats_overview():
+    """获取数据概览"""
+    if not is_admin(session.get('user_id')):
+        return jsonify({'success': False, 'error': 'Admin required'}), 403
+    
+    conn = get_db_connection()
+    
+    # 用户统计
+    cursor = conn.execute('SELECT COUNT(*) FROM users')
+    total_users = cursor.fetchone()[0]
+    
+    # 会员统计
+    cursor = conn.execute('''
+        SELECT ml.name_cn, COUNT(m.id) as count
+        FROM membership_levels ml
+        LEFT JOIN memberships m ON ml.code = m.level
+        GROUP BY ml.code
+    ''')
+    membership_stats = [dict(row) for row in cursor.fetchall()]
+    
+    # 帖子统计
+    cursor = conn.execute("SELECT COUNT(*) FROM posts WHERE status = 'published'")
+    total_posts = cursor.fetchone()[0]
+    
+    # 评论统计
+    cursor = conn.execute('SELECT COUNT(*) FROM comments')
+    total_comments = cursor.fetchone()[0]
+    
+    # 分享统计
+    cursor = conn.execute('''
+        SELECT platform, COUNT(*) as count, SUM(click_count) as clicks
+        FROM share_records
+        GROUP BY platform
+    ''')
+    share_stats = [dict(row) for row in cursor.fetchall()]
+    
+    # 订单统计
+    cursor = conn.execute('''
+        SELECT COUNT(*), SUM(actual_amount) FROM shop_orders WHERE status = 'paid'
+    ''')
+    order_stats = dict(cursor.fetchone())
+    
+    conn.close()
+    
+    return jsonify({
+        'success': True,
+        'stats': {
+            'total_users': total_users,
+            'membership_stats': membership_stats,
+            'total_posts': total_posts,
+            'total_comments': total_comments,
+            'share_stats': share_stats,
+            'order_count': order_stats[0] or 0,
+            'order_amount': order_stats[1] or 0
+        }
+    })
+
+# ==================== Pages ====================
+
+@app.route('/membership')
+def membership_page():
+    """会员中心页面"""
+    return render_template('membership.html')
+
+@app.route('/shop')
+def shop_page():
+    """商城页面"""
+    return render_template('shop.html')
+
+@app.route('/social-v2')
+def social_v2_page():
+    """新版社交页面（Apple风格）"""
+    return render_template('social_v2.html')
+
+# Run without debug mode and without reloader
+if __name__ == '__main__':
+    # Disable debug mode explicitly
+    app.debug = False
+    app.run(host='0.0.0.0', port=5001, debug=False, use_reloader=False)

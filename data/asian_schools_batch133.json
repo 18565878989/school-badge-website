@@ -1,0 +1,54 @@
+{
+  "batch": 133,
+  "description": "Asian Schools Batch 133 - Additional Universities",
+  "date_added": "2026-02-19",
+  "schools_added": 2,
+  "total_asian_schools_in_db": 7166,
+  "schools": [
+    {
+      "id": 20383,
+      "name": "Chinese University of Hong Kong",
+      "name_cn": "香港中文大学",
+      "region": "Asia",
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "level": "university",
+      "website": "https://cuhk.edu.hk",
+      "founded": 1963,
+      "notes": "Added to batch 133"
+    },
+    {
+      "id": 20384,
+      "name": "Hong Kong University of Science and Technology",
+      "name_cn": "香港科技大学",
+      "region": "Asia",
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "level": "university",
+      "website": "https://hkust.edu.hk",
+      "founded": 1991,
+      "notes": "Added to batch 133"
+    }
+  ],
+  "skipped_schools": [
+    "Universitas Gadjah Mada - Already exists",
+    "Universitas Indonesia - Already exists",
+    "Universitas Brawijaya - Already exists",
+    "Korea Advanced Institute of Science and Technology - Already exists",
+    "Pohang University of Science and Technology - Already exists",
+    "Korea University - Already exists",
+    "Yonsei University - Already exists",
+    "Tsinghua University - Already exists",
+    "Peking University - Already exists",
+    "Fudan University - Already exists",
+    "Shanghai Jiao Tong University - Already exists",
+    "Zhejiang University - Already exists",
+    "University of Tokyo - Already exists",
+    "Kyoto University - Already exists",
+    "National University of Singapore - Already exists",
+    "Nanyang Technological University - Already exists",
+    "National Taiwan University - Already exists",
+    "Indian Institute of Technology Bombay - Already exists",
+    "Indian Institute of Technology Delhi - Already exists"
+  ]
+}

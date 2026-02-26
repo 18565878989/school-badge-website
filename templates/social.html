@@ -57,7 +57,7 @@
     <div style="display: grid; grid-template-columns: 1fr 340px; gap: 32px;">
         <div style="display: flex; flex-direction: column; gap: 16px;">
             {% for topic in topics %}
-            <a href="{{ url_for('topic_detail', topic_id=topic.id) }}" style="display: block; background: white; border-radius: 20px; padding: 24px; text-decoration: none; box-shadow: 0 2px 12px rgba(0,0,0,0.04); transition: all 0.2s ease;">
+            <a href="/topic/{{ topic.id }} }}" style="display: block; background: white; border-radius: 20px; padding: 24px; text-decoration: none; box-shadow: 0 2px 12px rgba(0,0,0,0.04); transition: all 0.2s ease;">
                 <div style="display: flex; gap: 16px;">
                     <!-- Vote -->
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 50px;">
@@ -134,7 +134,7 @@
                 </h3>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
                     {% for topic in hot_topics|default(topics[:3]) %}
-                    <a href="{{ url_for('topic_detail', topic_id=topic.id) }}" style="display: flex; align-items: flex-start; gap: 12px; text-decoration: none; padding: 12px; background: #f5f5f7; border-radius: 12px; transition: all 0.2s ease;">
+                    <a href="/topic/{{ topic.id }} }}" style="display: flex; align-items: flex-start; gap: 12px; text-decoration: none; padding: 12px; background: #f5f5f7; border-radius: 12px; transition: all 0.2s ease;">
                         <span style="font-size: 1.2rem; font-weight: 700; color: {% if loop.index == 1 %}#FF3B30{% elif loop.index == 2 %}#FF9500{% else %}#86868b{% endif %}; min-width: 24px;">{{ loop.index }}</span>
                         <div style="flex: 1; min-width: 0;">
                             <p style="font-size: 0.9rem; font-weight: 500; color: #1d1d1f; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{ topic.title }}</p>

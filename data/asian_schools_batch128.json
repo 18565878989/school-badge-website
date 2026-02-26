@@ -1,0 +1,237 @@
+{
+  "batch": 128,
+  "description": "Asian Schools Batch 128 - Science and Research Institutions",
+  "schools": [
+    {
+      "id": 20207,
+      "name": "Weizmann Institute of Science",
+      "name_cn": "魏茨曼科学研究所",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Rehovot",
+      "level": "university",
+      "website": "https://www.weizmann.ac.il",
+      "founded": 1934
+    },
+    {
+      "id": 20208,
+      "name": "Technion Israel Institute of Technology",
+      "name_cn": "以色列理工学院",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Haifa",
+      "level": "university",
+      "website": "https://www.technion.ac.il",
+      "founded": 1912
+    },
+    {
+      "id": 20209,
+      "name": "Israel Institute of Technology",
+      "name_cn": "以色列技术研究所",
+      "region": "Asia",
+      "country": "Israel",
+      "city": "Haifa",
+      "level": "university",
+      "website": "https://www.technion.ac.il",
+      "founded": 1912
+    },
+    {
+      "id": 20210,
+      "name": "Institute of Science and Technology Austria",
+      "name_cn": "奥地利科学技术研究所",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Klosterneuburg",
+      "level": "university",
+      "website": "https://ista.ac.at",
+      "founded": 2009
+    },
+    {
+      "id": 20211,
+      "name": "Okinawa Institute of Science and Technology",
+      "name_cn": "冲绳科学技术大学院大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Okinawa",
+      "level": "university",
+      "website": "https://www.oist.jp",
+      "founded": 2005
+    },
+    {
+      "id": 20212,
+      "name": "Institute for Basic Science Korea",
+      "name_cn": "韩国基础科学研究院",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Daejeon",
+      "level": "university",
+      "website": "https://www.ibs.re.kr",
+      "founded": 2011
+    },
+    {
+      "id": 20213,
+      "name": "Kavli Institute for the Physics and Mathematics of the Universe",
+      "name_cn": "卡弗里宇宙物理与数学研究所",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://www.ipmu.jp",
+      "founded": 2007
+    },
+    {
+      "id": 20214,
+      "name": "Institute of Mathematics Chinese Academy of Sciences",
+      "name_cn": "中国科学院数学研究所",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.math.ac.cn",
+      "founded": 1952
+    },
+    {
+      "id": 20215,
+      "name": "Institute of Physics Chinese Academy of Sciences",
+      "name_cn": "中国科学院物理研究所",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.iphy.ac.cn",
+      "founded": 1950
+    },
+    {
+      "id": 20216,
+      "name": "Institute of Chemistry Chinese Academy of Sciences",
+      "name_cn": "中国科学院化学研究所",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.ice.ac.cn",
+      "founded": 1956
+    },
+    {
+      "id": 20217,
+      "name": "Tata Institute of Fundamental Research",
+      "name_cn": "塔塔基础科学研究院",
+      "region": "Asia",
+      "country": "India",
+      "city": "Mumbai",
+      "level": "university",
+      "website": "https://www.tifr.res.in",
+      "founded": 1945
+    },
+    {
+      "id": 20218,
+      "name": "Institute of Mathematical Sciences India",
+      "name_cn": "印度数学科学研究院",
+      "region": "Asia",
+      "country": "India",
+      "city": "Chennai",
+      "level": "university",
+      "website": "https://www.imsc.res.in",
+      "founded": 1962
+    },
+    {
+      "id": 20219,
+      "name": "Harish-Chandra Research Institute",
+      "name_cn": "哈里什-钱德拉研究所",
+      "region": "Asia",
+      "country": "India",
+      "city": "Allahabad",
+      "level": "university",
+      "website": "https://www.hri.res.in",
+      "founded": 1965
+    },
+    {
+      "id": 20220,
+      "name": "National Institute for Materials Science",
+      "name_cn": "国立材料科学研究所",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tsukuba",
+      "level": "university",
+      "website": "https://www.nims.go.jp",
+      "founded": 1972
+    },
+    {
+      "id": 20221,
+      "name": "National Institute of Advanced Industrial Science and Technology",
+      "name_cn": "产业技术综合研究所",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://www.aist.go.jp",
+      "founded": 2001
+    },
+    {
+      "id": 20222,
+      "name": "Korea Institute of Science and Technology",
+      "name_cn": "韩国科学技术研究院",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Daejeon",
+      "level": "university",
+      "website": "https://www.kist.re.kr",
+      "founded": 1966
+    },
+    {
+      "id": 20223,
+      "name": "Institute of Materials Research and Engineering",
+      "name_cn": "材料研究与工程研究所",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://www.imre.a-star.edu.sg",
+      "founded": 1997
+    },
+    {
+      "id": 20224,
+      "name": "Singapore Institute of Technology",
+      "name_cn": "新加坡理工学院",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://www.singaporetech.edu.sg",
+      "founded": 2009
+    },
+    {
+      "id": 20225,
+      "name": "National University of Singapore School of Computing",
+      "name_cn": "新加坡国立大学计算学院",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://www.comp.nus.edu.sg",
+      "founded": 1998
+    },
+    {
+      "id": 20226,
+      "name": "Nanyang Technological University School of Physical and Mathematical Sciences",
+      "name_cn": "南洋理工大学物理与数学科学学院",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://www.spms.ntu.edu.sg",
+      "founded": 2005
+    },
+    {
+      "id": 20227,
+      "name": "Chinese Academy of Sciences Institute of Genetics and Developmental Biology",
+      "name_cn": "中国科学院遗传与发育生物学研究所",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.genetics.ac.cn",
+      "founded": 1959
+    }
+  ]
+}

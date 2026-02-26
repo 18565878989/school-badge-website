@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社交 - 校徽网</title>
+    <style>
+        :root {
+            --primary: #007AFF;
+            --secondary: #5856D6;
+            --success: #34C759;
+            --warning: #FF9500;
+            --danger: #FF3B30;
+            --gray-1: #F2F2F7;
+            --gray-2: #E5E5EA;
+            --gray-3: #D1D1D6;
+            --gray-4: #8E8E93;
+            --text-primary: #000000;
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #F2F2F7;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif; background: var(--bg-secondary); color: var(--text-primary); min-height: 100vh; }
+        
+        .nav-bar { position: fixed; top: 0; left: 0; right: 0; height: 44px; background: rgba(255,255,255,0.94); backdrop-filter: blur(20px); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; z-index: 1000; border-bottom: 0.5px solid var(--gray-2); }
+        .nav-title { font-size: 17px; font-weight: 600; }
+        .nav-icon { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 6px; transition: var(--transition); }
+        .nav-icon:active { background: var(--gray-1); }
+        
+        .tab-bar { position: fixed; bottom: 0; left: 0; right: 0; height: 83px; background: rgba(255,255,255,0.94); backdrop-filter: blur(20px); display: flex; justify-content: space-around; padding-top: 8px; border-top: 0.5px solid var(--gray-2); z-index: 1000; }
+        .tab-item { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 16px; cursor: pointer; }
+        .tab-item:active { transform: scale(0.95); }
+        .tab-icon { width: 24px; height: 24px; background: var(--gray-4); border-radius: 6px; }
+        .tab-item.active .tab-icon { background: var(--primary); }
+        .tab-label { font-size: 10px; color: var(--gray-4); font-weight: 500; }
+        .tab-item.active .tab-label { color: var(--primary); }
+        
+        .main-content { padding: 44px 0 83px; max-width: 600px; margin: 0 auto; }
+        
+        .stories-section { padding: 12px 16px; background: var(--bg-primary); margin-bottom: 8px; }
+        .stories-scroll { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; }
+        .stories-scroll::-webkit-scrollbar { display: none; }
+        .story-item { display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer; flex-shrink: 0; }
+        .story-avatar { width: 64px; height: 64px; border-radius: 50%; padding: 3px; background: linear-gradient(135deg, #FF9500, #FF2D55, #AF52DE, #5856D6, #007AFF); }
+        .story-avatar.inner { background: var(--bg-primary); padding: 2px; }
+        .story-avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+        .story-name { font-size: 12px; max-width: 64px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; }
+        
+        .post-card { background: var(--bg-primary); margin-bottom: 8px; padding: 16px; }
+        .post-card:active { background: var(--gray-1); }
+        .post-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .post-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--gray-2); overflow: hidden; }
+        .post-avatar img { width: 100%; height: 100%; object-fit: cover; }
+        .post-user-info { flex: 1; }
+        .post-username { font-size: 15px; font-weight: 600; }
+        .post-meta { display: flex; align-items: center; gap: 6px; }
+        .post-school, .post-time { font-size: 13px; color: var(--gray-4); }
+        .post-dot { width: 3px; height: 3px; background: var(--gray-4); border-radius: 50%; }
+        .post-more { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; }
+        .post-content { font-size: 15px; line-height: 1.6; margin-bottom: 12px; }
+        .post-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+        .post-tag { font-size: 13px; color: var(--primary); background: rgba(0,122,255,0.1); padding: 4px 10px; border-radius: 12px; }
+        .post-actions { display: flex; justify-content: space-around; padding-top: 12px; border-top: 0.5px solid var(--gray-1); }
+        .post-action { display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: var(--radius-sm); }
+        .post-action:active { background: var(--gray-1); }
+        .post-action-count { font-size: 13px; color: var(--gray-4); }
+        .post-action.liked { color: var(--danger); }
+        
+        .create-post-btn { position: fixed; bottom: 110px; right: 20px; width: 56px; height: 56px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(0,0,0,0.15); cursor: pointer; z-index: 999; }
+        .create-post-btn:active { transform: scale(0.95); }
+        .create-post-btn svg { width: 24px; height: 24px; fill: white; }
+        
+        .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); z-index: 2000; display: none; align-items: flex-end; justify-content: center; }
+        .modal-overlay.active { display: flex; }
+        .modal-content { width: 100%; max-width: 600px; background: var(--bg-primary); border-radius: var(--radius-lg) var(--radius-lg) 0 0; max-height: 90vh; }
+        .modal-header { display: flex; align-items: center; justify-content: space-between; padding: 16px; border-bottom: 0.5px solid var(--gray-1); }
+        .modal-title { font-size: 17px; font-weight: 600; }
+        .modal-close { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; }
+        .create-post-textarea { width: 100%; min-height: 120px; border: none; font-size: 17px; padding: 16px; resize: none; outline: none; }
+        .create-post-tools { display: flex; gap: 16px; padding: 12px 16px; border-top: 0.5px solid var(--gray-1); }
+        .create-post-tool { display: flex; align-items: center; gap: 6px; }
+        .create-post-tool svg { width: 20px; height: 20px; fill: var(--primary); }
+        .create-post-footer { padding: 12px 16px; border-top: 0.5px solid var(--gray-1); display: flex; justify-content: space-between; }
+        .create-post-visibility { display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: var(--gray-1); border-radius: var(--radius-sm); }
+        .create-post-submit { background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; }
+        
+        .page { display: none; }
+        .page.active { display: block; }
+        
+        @media (min-width: 768px) {
+            .main-content { border-left: 0.5px solid var(--gray-1); border-right: 0.5px solid var(--gray-1); }
+            .tab-bar, .nav-bar { max-width: 600px; left: 50%; transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title" id="navTitle">社交</div>
+        <div class="nav-actions">
+            <div class="nav-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></div>
+            <div class="nav-icon" onclick="switchTab('notifications')"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <div class="page active" id="homePage">
+            <div class="stories-section"><div class="stories-scroll" id="storiesScroll"></div></div>
+            <div id="postsList"></div>
+        </div>
+        <div class="page" id="notificationsPage"><div id="notificationsList"></div></div>
+        <div class="page" id="profilePage"><div style="padding: 60px 20px; text-align: center; color: var(--gray-4);">个人主页</div></div>
+        <div class="page" id="discoverPage"><div style="padding: 60px 20px; text-align: center; color: var(--gray-4);">发现更多</div></div>
+    </main>
+    <div class="create-post-btn" onclick="showCreatePost()"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+    <div class="tab-bar">
+        <div class="tab-item active" data-page="home" onclick="switchTab('home')"><div class="tab-icon"></div><span class="tab-label">首页</span></div>
+        <div class="tab-item" data-page="discover" onclick="switchTab('discover')"><div class="tab-icon"></div><span class="tab-label">发现</span></div>
+        <div class="tab-item" data-page="notifications" onclick="switchTab('notifications')"><div class="tab-icon"></div><span class="tab-label">消息</span></div>
+        <div class="tab-item" data-page="profile" onclick="switchTab('profile')"><div class="tab-icon"></div><span class="tab-label">我的</span></div>
+    </div>
+    <div class="modal-overlay" id="createPostModal">
+        <div class="modal-content">
+            <div class="modal-header"><div class="modal-close" onclick="hideCreatePost()"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></div><div class="modal-title">发布</div><div style="width:44px"></div></div>
+            <textarea class="create-post-textarea" id="postContent" placeholder="分享你的想法..."></textarea>
+            <div class="create-post-tools">
+                <div class="create-post-tool"><svg viewBox="0 0 24 24"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"></path><circle cx="8" cy="10" r="2"></circle></svg><span>图片</span></div>
+                <div class="create-post-tool"><svg viewBox="0 0 24 24"><path d="M3 21h18"></path><path d="M5 21V7l8-4v18"></path><path d="M19 21V11l-6-4"></path></svg><span>学校</span></div>
+                <div class="create-post-tool"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path></svg><span>话题</span></div>
+            </div>
+            <div class="create-post-footer">
+                <div class="create-post-visibility"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg><span>公开</span></div>
+                <button class="create-post-submit" onclick="submitPost()">发布</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let posts = [
+            {id:1, author:{name:'李明', school:'清华大学'}, content:'母校的校徽还是那么好看！怀念当年的青春时光~', tags:['清华','校徽'], likes:128, comments:32, shares:15, liked:false, time:'3分钟前'},
+            {id:2, author:{name:'张三', school:'北京大学'}, content:'有人知道北大校徽有什么含义吗？', tags:['北大'], likes:256, comments:89, shares:45, liked:true, time:'10分钟前'},
+            {id:3, author:{name:'王五', school:'浙江大学'}, content:'浙大紫金港校区太美了！', tags:['浙大','校园'], likes:89, comments:15, shares:8, liked:false, time:'30分钟前'}
+        ];
+        let stories = [{name:'清华校友'},{name:'北大校友'},{name:'浙大校友'},{name:'复旦校友'},{name:'上交校友'},{name:'南大校友'}];
+        
+        document.addEventListener('DOMContentLoaded', function(){ loadStories(); loadPosts(); loadNotifications(); });
+        
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-item').forEach(i=>i.classList.remove('active'));
+            document.querySelector(`.tab-item[data-page="${tab}"]`).classList.add('active');
+            document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+            document.getElementById(tab+'Page').classList.add('active');
+            document.getElementById('navTitle').textContent = {home:'社交',discover:'发现',notifications:'消息',profile:'我的'}[tab];
+        }
+        
+        function loadStories() {
+            document.getElementById('storiesScroll').innerHTML = stories.map((s,i) => `<div class="story-item"><div class="story-avatar"><div class="story-avatar inner"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23${['FF9500','FF2D55','AF52DE','5856D6','007AFF','5AC8FA'][i%6]}' width='100' height='100'/%3E%3Ctext x='50' y='60' text-anchor='middle' font-size='40' fill='white'%3E${s.name[0]}%3C/text%3E%3C/svg%3E"></div></div><div class="story-name">${s.name}</div></div>`).join('');
+        }
+        
+        function loadPosts() {
+            document.getElementById('postsList').innerHTML = posts.map(p => `<div class="post-card"><div class="post-header"><div class="post-avatar"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23007AFF' width='100' height='100'/%3E%3Ctext x='50' y='60' text-anchor='middle' font-size='40' fill='white'%3E${p.author.name[0]}%3C/text%3E%3C/svg%3E"></div><div class="post-user-info"><div class="post-username">${p.author.name}</div><div class="post-meta"><span class="post-school">${p.author.school}</span><span class="post-dot"></span><span class="post-time">${p.time}</span></div></div><div class="post-more">•••</div></div><div class="post-content">${p.content}</div><div class="post-tags">${p.tags.map(t=>`<span class="post-tag">#${t}</span>`).join('')}</div><div class="post-actions"><div class="post-action ${p.liked?'liked':''}"><span>❤️</span><span class="post-action-count">${p.likes}</span></div><div class="post-action"><span>💬</span><span class="post-action-count">${p.comments}</span></div><div class="post-action"><span>🔄</span><span class="post-action-count">${p.shares}</span></div></div></div>`).join('');
+        }
+        
+        function loadNotifications() {
+            document.getElementById('notificationsList').innerHTML = `<div class="post-card"><div style="display:flex;gap:12px;align-items:center;"><div style="width:44px;height:44px;border-radius:50%;background:var(--gray-2);display:flex;align-items:center;justify-content:center;">❤️</div><div><div style="font-size:15px;"><b>李明</b> 赞了你的帖子</div><div style="font-size:13px;color:var(--gray-4);">5分钟前</div></div></div></div><div class="post-card"><div style="display:flex;gap:12px;align-items:center;"><div style="width:44px;height:44px;border-radius:50%;background:var(--gray-2);display:flex;align-items:center;justify-content:center;">💬</div><div><div style="font-size:15px;"><b>王五</b> 评论了你的帖子</div><div style="font-size:13px;color:var(--gray-4);">10分钟前</div></div></div>`;
+        }
+        
+        function showCreatePost() { document.getElementById('createPostModal').classList.add('active'); }
+        function hideCreatePost() { document.getElementById('createPostModal').classList.remove('active'); }
+        function submitPost() { alert('发布成功！'); hideCreatePost(); }
+    </script>
+</body>
+</html>

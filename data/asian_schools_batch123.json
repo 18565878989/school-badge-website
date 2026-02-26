@@ -1,0 +1,237 @@
+{
+  "batch": 123,
+  "description": "Asian Schools Batch 123 - Specialized and technical institutions",
+  "schools": [
+    {
+      "id": 20102,
+      "name": "Bangladesh University of Engineering and Technology",
+      "name_cn": "孟加拉工程技术大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Dhaka",
+      "level": "university",
+      "website": "https://buet.ac.bd",
+      "founded": 1962
+    },
+    {
+      "id": 20103,
+      "name": "Rajshahi University of Engineering and Technology",
+      "name_cn": "拉杰沙汗工程技术大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Rajshahi",
+      "level": "university",
+      "website": "https://ruet.ac.bd",
+      "founded": 2010
+    },
+    {
+      "id": 20104,
+      "name": "Chittagong University of Engineering and Technology",
+      "name_cn": "吉大港工程技术大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Chittagong",
+      "level": "university",
+      "website": "https://cuet.ac.bd",
+      "founded": 2003
+    },
+    {
+      "id": 20105,
+      "name": "Khulna University of Engineering and Technology",
+      "name_cn": "库尔纳工程技术大学",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "city": "Khulna",
+      "level": "university",
+      "website": "https://kuet.ac.bd",
+      "founded": 2007
+    },
+    {
+      "id": 20106,
+      "name": "Institute of Technology, University of Tokyo",
+      "name_cn": "东京大学技术学院",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://www.t.u-tokyo.ac.jp",
+      "founded": 2011
+    },
+    {
+      "id": 20107,
+      "name": "Tokyo University of Science",
+      "name_cn": "东京理科大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://tus.ac.jp",
+      "founded": 1881
+    },
+    {
+      "id": 20108,
+      "name": "Tokyo University of Agriculture",
+      "name_cn": "东京农业大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://nodai.ac.jp",
+      "founded": 1891
+    },
+    {
+      "id": 20109,
+      "name": "Nihon University",
+      "name_cn": "日本大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://nihon-u.ac.jp",
+      "founded": 1889
+    },
+    {
+      "id": 20110,
+      "name": "Chung-Ang University",
+      "name_cn": "中央大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://cau.ac.kr",
+      "founded": 1918
+    },
+    {
+      "id": 20111,
+      "name": "Sungkyunkwan University",
+      "name_cn": "成均馆大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://skku.ac.kr",
+      "founded": 1398
+    },
+    {
+      "id": 20112,
+      "name": "Hanyang University",
+      "name_cn": "汉阳大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://hanyang.ac.kr",
+      "founded": 1939
+    },
+    {
+      "id": 20113,
+      "name": "Korea University",
+      "name_cn": "高丽大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://korea.ac.kr",
+      "founded": 1905
+    },
+    {
+      "id": 20114,
+      "name": "Seoul National University",
+      "name_cn": "首尔国立大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "level": "university",
+      "website": "https://snu.ac.kr",
+      "founded": 1946
+    },
+    {
+      "id": 20115,
+      "name": "Chulalongkorn University",
+      "name_cn": "朱拉隆功大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://chula.ac.th",
+      "founded": 1917
+    },
+    {
+      "id": 20116,
+      "name": "Mahidol University",
+      "name_cn": "马希窦大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://mahidol.ac.th",
+      "founded": 1888
+    },
+    {
+      "id": 20117,
+      "name": "Chiang Mai University",
+      "name_cn": "清迈大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Chiang Mai",
+      "level": "university",
+      "website": "https://cmu.ac.th",
+      "founded": 1964
+    },
+    {
+      "id": 20118,
+      "name": "Kasetsart University",
+      "name_cn": "农业大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://ku.ac.th",
+      "founded": 1943
+    },
+    {
+      "id": 20119,
+      "name": "Thammasat University",
+      "name_cn": "法政大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://tu.ac.th",
+      "founded": 1934
+    },
+    {
+      "id": 20120,
+      "name": "Prince of Songkla University",
+      "name_cn": "宋卡王子大学",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Songkhla",
+      "level": "university",
+      "website": "https://psu.ac.th",
+      "founded": 1967
+    },
+    {
+      "id": 20121,
+      "name": "Korea Maritime and Ocean University",
+      "name_cn": "韩国海洋大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Busan",
+      "level": "university",
+      "website": "https://kmou.ac.kr",
+      "founded": 1945
+    },
+    {
+      "id": 20122,
+      "name": "Pusan National University",
+      "name_cn": "釜山国立大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Busan",
+      "level": "university",
+      "website": "https://pusan.ac.kr",
+      "founded": 1946
+    }
+  ]
+}

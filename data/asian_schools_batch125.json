@@ -1,0 +1,237 @@
+{
+  "batch": 125,
+  "description": "Asian Schools Batch 125 - Engineering and Technology Universities",
+  "schools": [
+    {
+      "id": 20144,
+      "name": "Tokyo Institute of Technology",
+      "name_cn": "东京工业大学",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Tokyo",
+      "level": "university",
+      "website": "https://www.titech.ac.jp",
+      "founded": 1881
+    },
+    {
+      "id": 20145,
+      "name": "Kyoto University Graduate School of Engineering",
+      "name_cn": "京都大学工学研究科",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Kyoto",
+      "level": "university",
+      "website": "https://www.t.kyoto-u.ac.jp",
+      "founded": 1897
+    },
+    {
+      "id": 20146,
+      "name": "Osaka University Faculty of Engineering",
+      "name_cn": "大阪大学工学部",
+      "region": "Asia",
+      "country": "Japan",
+      "city": "Osaka",
+      "level": "university",
+      "website": "https://www.eng.osaka-u.ac.jp",
+      "founded": 1931
+    },
+    {
+      "id": 20147,
+      "name": "Korea Advanced Institute of Science and Technology",
+      "name_cn": "韩国科学技术院",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Daejeon",
+      "level": "university",
+      "website": "https://www.kaist.ac.kr",
+      "founded": 1971
+    },
+    {
+      "id": 20148,
+      "name": "Pohang University of Science and Technology",
+      "name_cn": "浦项工科大学",
+      "region": "Asia",
+      "country": "South Korea",
+      "city": "Pohang",
+      "level": "university",
+      "website": "https://www.postech.ac.kr",
+      "founded": 1986
+    },
+    {
+      "id": 20149,
+      "name": "Nanyang Technological University School of Electrical and Electronic Engineering",
+      "name_cn": "南洋理工大学电机与电子工程学院",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://www.ntu.edu.sg/eee",
+      "founded": 1981
+    },
+    {
+      "id": 20150,
+      "name": "National University of Singapore Faculty of Engineering",
+      "name_cn": "新加坡国立大学工程学院",
+      "region": "Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "level": "university",
+      "website": "https://eng.nus.edu.sg",
+      "founded": 1905
+    },
+    {
+      "id": 20151,
+      "name": "Tsinghua University School of Engineering",
+      "name_cn": "清华大学工程学院",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://www.tsinghua.edu.cn",
+      "founded": 1911
+    },
+    {
+      "id": 20152,
+      "name": "Peking University College of Engineering",
+      "name_cn": "北京大学工学院",
+      "region": "Asia",
+      "country": "China",
+      "city": "Beijing",
+      "level": "university",
+      "website": "https://coe.pku.edu.cn",
+      "founded": 1910
+    },
+    {
+      "id": 20153,
+      "name": "Shanghai Jiao Tong University School of Engineering",
+      "name_cn": "上海交通大学工程学院",
+      "region": "Asia",
+      "country": "China",
+      "city": "Shanghai",
+      "level": "university",
+      "website": "https://www.sjtu.edu.cn",
+      "founded": 1896
+    },
+    {
+      "id": 20154,
+      "name": "Zhejiang University College of Engineering",
+      "name_cn": "浙江大学工程学院",
+      "region": "Asia",
+      "country": "China",
+      "city": "Hangzhou",
+      "level": "university",
+      "website": "https://www.ccea.zju.edu.cn",
+      "founded": 1911
+    },
+    {
+      "id": 20155,
+      "name": "Hong Kong University of Science and Technology",
+      "name_cn": "香港科技大学",
+      "region": "Asia",
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "level": "university",
+      "website": "https://www.hkust.edu.hk",
+      "founded": 1991
+    },
+    {
+      "id": 20156,
+      "name": "City University of Hong Kong College of Engineering",
+      "name_cn": "香港城市大学工程学院",
+      "region": "Asia",
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "level": "university",
+      "website": "https://www.cityu.edu.hk/coe",
+      "founded": 1984
+    },
+    {
+      "id": 20157,
+      "name": "The Hong Kong Polytechnic University Faculty of Engineering",
+      "name_cn": "香港理工大学工程学院",
+      "region": "Asia",
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "level": "university",
+      "website": "https://www.polyu.edu.hk/feng",
+      "founded": 1937
+    },
+    {
+      "id": 20158,
+      "name": "Indian Institute of Technology Bombay Department of Engineering",
+      "name_cn": "印度理工学院孟买分校工程系",
+      "region": "Asia",
+      "country": "India",
+      "city": "Mumbai",
+      "level": "university",
+      "website": "https://www.iitb.ac.in",
+      "founded": 1958
+    },
+    {
+      "id": 20159,
+      "name": "Indian Institute of Technology Delhi Faculty of Engineering",
+      "name_cn": "印度理工学院德里分校工程学院",
+      "region": "Asia",
+      "country": "India",
+      "city": "New Delhi",
+      "level": "university",
+      "website": "https://home.iitd.ac.in",
+      "founded": 1961
+    },
+    {
+      "id": 20160,
+      "name": "Chulalongkorn University Faculty of Engineering",
+      "name_cn": "朱拉隆功大学工程学院",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://www.eng.chula.ac.th",
+      "founded": 1913
+    },
+    {
+      "id": 20161,
+      "name": "Mahidol University Faculty of Engineering",
+      "name_cn": "马希窦大学工程学院",
+      "region": "Asia",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "level": "university",
+      "website": "https://www.eng.mahidol.ac.th",
+      "founded": 1963
+    },
+    {
+      "id": 20162,
+      "name": "University of Malaya Faculty of Engineering",
+      "name_cn": "马来亚大学工程学院",
+      "region": "Asia",
+      "country": "Malaysia",
+      "city": "Kuala Lumpur",
+      "level": "university",
+      "website": "https://engineering.um.edu.my",
+      "founded": 1967
+    },
+    {
+      "id": 20163,
+      "name": "Universiti Teknologi Malaysia",
+      "name_cn": "马来西亚工艺大学",
+      "region": "Asia",
+      "country": "Malaysia",
+      "city": "Johor Bahru",
+      "level": "university",
+      "website": "https://www.utm.my",
+      "founded": 1975
+    },
+    {
+      "id": 20164,
+      "name": "Bandung Institute of Technology Faculty of Industrial Technology",
+      "name_cn": "万隆理工大学工业技术学院",
+      "region": "Asia",
+      "country": "Indonesia",
+      "city": "Bandung",
+      "level": "university",
+      "website": "https://www.itb.ac.id",
+      "founded": 1959
+    }
+  ]
+}
