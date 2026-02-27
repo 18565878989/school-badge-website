@@ -1256,9 +1256,6 @@ def load_sample_data_command():
     from models import load_sample_data
     load_sample_data()
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5001, debug=True)
-
 @app.route('/topic/<int:topic_id>')
 def topic_detail(topic_id):
     """Topic detail page with replies."""
