@@ -456,7 +456,7 @@ def campus_north_america():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'North America' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
     ''').fetchall()
     conn.close()
@@ -471,7 +471,7 @@ def campus_europe():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'Europe' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
     ''').fetchall()
     
@@ -483,7 +483,7 @@ def campus_europe():
             FROM schools 
             WHERE region = 'Europe' AND level = 'university'
             ORDER BY country, name
-            LIMIT 50
+            
         ''').fetchall()
     
     conn.close()
@@ -498,13 +498,10 @@ def campus_asia():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'Asia' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
     ''').fetchall()
     conn.close()
-    # If too many, limit to 50
-    if len(schools) > 50:
-        schools = schools[:50]
     return render_template('campus_asia.html', schools=schools)
 
 @app.route('/campus/oceania')
@@ -516,7 +513,7 @@ def campus_oceania():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'Oceania' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
     ''').fetchall()
     
@@ -528,7 +525,7 @@ def campus_oceania():
             FROM schools 
             WHERE region = 'Oceania' AND level = 'university'
             ORDER BY country, name
-            LIMIT 50
+            
         ''').fetchall()
     
     conn.close()
@@ -543,7 +540,7 @@ def campus_south_america():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'South America' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
     ''').fetchall()
     
@@ -555,7 +552,7 @@ def campus_south_america():
             FROM schools 
             WHERE region = 'South America' AND level = 'university'
             ORDER BY country, name
-            LIMIT 50
+            
         ''').fetchall()
     
     conn.close()
@@ -570,7 +567,7 @@ def campus_africa():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'Africa' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
     ''').fetchall()
     
@@ -582,7 +579,7 @@ def campus_africa():
             FROM schools 
             WHERE region = 'Africa' AND level = 'university'
             ORDER BY country, name
-            LIMIT 50
+            
         ''').fetchall()
     
     conn.close()
@@ -599,7 +596,7 @@ def campus():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'North America' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
     ''').fetchall()
     
@@ -608,9 +605,9 @@ def campus():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'Asia' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
-        LIMIT 50
+        
     ''').fetchall()
     
     europe = conn.execute('''
@@ -618,7 +615,7 @@ def campus():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'Europe' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
     ''').fetchall()
     
@@ -627,7 +624,7 @@ def campus():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'Oceania' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
     ''').fetchall()
     
@@ -636,7 +633,7 @@ def campus():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'South America' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
     ''').fetchall()
     
@@ -645,7 +642,7 @@ def campus():
                founded, motto, campus_image, campus_image_desc
         FROM schools 
         WHERE region = 'Africa' AND level = 'university'
-        AND campus_image IS NOT NULL AND campus_image != ''
+        AND campus_image IS NOT NULL AND campus_image != '' AND is_top_university = 1
         ORDER BY country, name
     ''').fetchall()
     
@@ -1853,7 +1850,7 @@ def get_notifications():
         SELECT * FROM notifications
         WHERE user_id = ?
         ORDER BY created_at DESC
-        LIMIT 50
+        
     ''', (session['user_id'],))
     
     notifications = [dict(row) for row in cursor.fetchall()]

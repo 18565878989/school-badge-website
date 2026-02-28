@@ -1,0 +1,4 @@
+# 北京大学校徽和校园风光定时抓取任务
+# 每天早上 6:00 自动执行
+
+0 6 * * * cd /Users/wangfeng/.openclaw/workspace/school-badge-website && /usr/bin/python3 /Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/daily_pku_update.py >> /Users/wangfeng/.openclaw/workspace/school-badge-website/logs/daily_pku_update.log 2>&1

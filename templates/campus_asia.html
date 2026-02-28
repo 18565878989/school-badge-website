@@ -64,11 +64,22 @@
                 {% for school in schools %}
                 <article class="campus-card" data-university="{{ school.name }}" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'" style="cursor: pointer;">
                     <div class="card-image">
-                        {% if school.campus_image %}
-                        <img src="{{ school.campus_image }}" 
-                             alt="{{ school.name }}"
-                             loading="lazy"
-                             onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                        {% set images = school.campus_image.split(',') if school.campus_image else [] %}
+                        {% if images %}
+                        <div class="multi-image-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; width: 100%; height: 100%;">
+                            {% for img in images[:4] %}
+                            <img src="{{ img }}" 
+                                 alt="{{ school.name }} - Image {{ loop.index }}"
+                                 loading="lazy"
+                                 style="width: 100%; height: 100%; object-fit: cover;"
+                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% endfor %}
+                        </div>
+                        {% if images|length > 4 %}
+                        <div class="more-images-badge" style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: white; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600;">
+                            +{{ images|length - 4 }} more
+                        </div>
+                        {% endif %}
                         {% else %}
                         <div class="image-placeholder">
                             <svg viewBox="0 0 100 100" fill="none">
@@ -78,7 +89,7 @@
                         </div>
                         {% endif %}
                         <div class="image-overlay">
-                            <span class="view-label">{{ _('View Campus') }}</span>
+                            <span class="view-label">{{ _('View Campus') }} ({{ images|length }} photos)</span>
                         </div>
                     </div>
                     <div class="card-content">
