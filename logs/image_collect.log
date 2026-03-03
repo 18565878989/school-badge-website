@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/image_collect.py", line 12, in <module>
+    from skills.image_collect import collect_badges, collect_campus
+ModuleNotFoundError: No module named 'skills.image_collect'
+[2026-03-03 18:13:39] ==================================================
+[2026-03-03 18:13:39] 图片收集任务开始
+[2026-03-03 18:13:39] ==================================================
+[2026-03-03 18:13:39] [1/2] 收集校徽...

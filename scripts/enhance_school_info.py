@@ -10,15 +10,25 @@ from urllib.parse import quote
 from bs4 import BeautifulSoup
 import time
 import re
+from datetime import datetime
 
 DB_PATH = Path(__file__).parent.parent / "database.db"
+LOG_FILE = '/Users/wangfeng/.openclaw/workspace/school-badge-website/logs/enhance_school_info.log'
+REPORT_FILE = '/Users/wangfeng/.openclaw/workspace/school-badge-website/logs/enhance_school_info_report.log'
+
+def log(msg):
+    """写入日志"""
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    log_msg = f"[{timestamp}] {msg}"
+    print(log_msg)
+    with open(LOG_FILE, 'a') as f:
+        f.write(log_msg + '\n')
 
 def get_schools_without_details(limit=20):
     """获取缺少详细信息的学校"""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    # 优先获取有网站但信息不完整的学校
     cursor.execute("""
         SELECT id, name, name_cn, country, website 
         FROM schools 
@@ -41,7 +51,7 @@ def parse_school_website(school_id, name, website):
         headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
         }
-        response = requests.get(website, headers=headers, timeout=10, verify=False)
+        response = requests.get(website, headers=headers, timeout=15, verify=False)
         soup = BeautifulSoup(response.text, 'html.parser')
         
         # 提取电话
@@ -57,18 +67,8 @@ def parse_school_website(school_id, name, website):
         if emails:
             info['email'] = emails[0]
         
-        # 提取地址 (简单处理)
-        address_keywords = ['地址', 'Address', 'location']
-        for kw in address_keywords:
-            elements = soup.find_all(string=re.compile(kw, re.I))
-            if elements:
-                parent = elements[0].parent
-                if parent:
-                    info['address'] = parent.get_text(strip=True)[:200]
-                    break
-        
     except Exception as e:
-        print(f"解析失败: {e}")
+        log(f"解析失败: {e}")
     
     return info
 
@@ -99,21 +99,25 @@ def update_school_info(school_id, info):
     conn.close()
     return True
 
-def enhance_school_details(limit=20):
-    """完善学校详细信息"""
-    schools = get_schools_without_details(limit)
+def main():
+    start_time = datetime.now()
+    log("=" * 50)
+    log("学校信息完善任务开始")
+    log("=" * 50)
     
-    print(f"开始完善学校信息，目标: {len(schools)} 所学校")
+    schools = get_schools_without_details(limit=20)
+    log(f"目标: {len(schools)} 所学校")
     
     updated = 0
+    updated_details = {'phone': 0, 'email': 0}
+    
     for school in schools:
         school_id, name, name_cn, country, website = school
         
         if not website:
             continue
         
-        print(f"处理: {name} ({country})")
-        print(f"  网站: {website}")
+        log(f"处理: {name} ({country})")
         
         # 解析网站
         info = parse_school_website(school_id, name_cn or name, website)
@@ -121,15 +125,42 @@ def enhance_school_details(limit=20):
         if info:
             update_school_info(school_id, info)
             updated += 1
-            print(f"  ✓ 更新: {info}")
+            for k in info.keys():
+                updated_details[k] = updated_details.get(k, 0) + 1
+            log(f"  ✓ 更新: {info}")
         else:
-            print(f"  ✗ 未找到新信息")
+            log(f"  ✗ 未找到新信息")
         
-        # 避免请求过快
         time.sleep(1)
     
-    print(f"\n完成! 成功更新 {updated}/{len(schools)} 所学校")
-    return updated
+    end_time = datetime.now()
+    duration = (end_time - start_time).seconds
+    
+    # 生成报告
+    log("=" * 50)
+    log("任务完成 - 执行报告")
+    log("=" * 50)
+    log(f"开始时间: {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
+    log(f"结束时间: {end_time.strftime('%Y-%m-%d %H:%M:%S')}")
+    log(f"执行时长: {duration} 秒")
+    log("-" * 50)
+    log(f"处理学校: {len(schools)}")
+    log(f"更新学校: {updated}")
+    for k, v in updated_details.items():
+        if v > 0:
+            log(f"  {k}: +{v}")
+    log("=" * 50)
+    
+    # 写入报告文件
+    with open(REPORT_FILE, 'a') as f:
+        f.write("\n" + "=" * 50 + "\n")
+        f.write(f"学校信息完善报告 - {end_time.strftime('%Y-%m-%d')}\n")
+        f.write("=" * 50 + "\n")
+        f.write(f"处理: {len(schools)} 所学校\n")
+        f.write(f"更新: {updated} 所学校\n")
+        for k, v in updated_details.items():
+            if v > 0:
+                f.write(f"  {k}: +{v}\n")
 
 if __name__ == "__main__":
-    enhance_school_details(limit=20)
+    main()

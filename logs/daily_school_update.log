@@ -98,3 +98,7 @@ Traceback (most recent call last):
   File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/daily_school_update.py", line 10, in <module>
     import requests
 ModuleNotFoundError: No module named 'requests'
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/daily_school_update.py", line 10, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
