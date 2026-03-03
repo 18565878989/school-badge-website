@@ -18,9 +18,14 @@ python -m skills.image-collect badges --limit 100
 python -m skills.image-collect campus --limit 50
 ```
 
-## 优先级
+## 收集策略
 
-1. 官方来源优先 (官网、Wikipedia)
-2. 高清质量优先
-3. 校园风光优先自然景观
-4. 减少人物照片
+1. **校徽**: 官方logo、高清质量
+2. **校园风光**: 
+   - 学校建筑（教学楼、图书馆、礼堂等）
+   - 学校活动（开学典礼、毕业典礼、体育活动等）
+   - 校园环境（操场、花园、校门等）
+3. **数据来源**:
+   - 学校官网
+   - Wikipedia
+   - 官方社交媒体
