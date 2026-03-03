@@ -1,0 +1,1636 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8"/>
+    <title>Page Not Found | Temasek Polytechnic</title>
+    
+    <meta name="description" content="Page Not Found"/>
+    <meta name="template" content="landing-page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    
+
+    
+        <meta name="content-page-ref" content="EKsazxJq7w9IK4tsru58yDL3PMcDLe3x63ZbdrP4hcUXcRbqtdJl2yGqrXuM4FJ9"/>
+<script defer="defer" type="text/javascript" src="/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js"></script>
+<link rel="preload" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    
+
+    
+
+    
+        
+    
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Temasek Polytechnic"/>
+    <meta property="og:title" content="Page Not Found | Temasek Polytechnic"/>
+    <meta property="og:description" content="Page Not Found"/>
+
+    
+    <meta property="og:image" content="https://www.tp.edu.sg/content/dam/tp-web/images/common/tplogo-course-search.png"/>
+
+<!--    <sly data-sly-test="true">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap">-->
+<!--    </sly>-->
+
+<!--    <sly data-sly-test="">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"-->
+<!--          integrity="" crossorigin="anonymous">-->
+<!--    </sly>-->
+    <link rel="preload" href="/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/fonts/open-sans-v44-latin_latin-ext_math_symbols_vietnamese-300.woff2" as="font" type="font/woff2" crossorigin/>
+     <link rel="preload" href="/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/fonts/open-sans-v44-latin_latin-ext_math_symbols_vietnamese-regular.woff2" as="font" type="font/woff2" crossorigin/>
+      <link rel="preload" href="/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/fonts/open-sans-v44-latin_latin-ext_math_symbols_vietnamese-700.woff2" as="font" type="font/woff2" crossorigin/>
+
+    <link rel="icon" type="image/png" href="/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/images/favicon.png?v=1542350946943"/>
+
+    
+
+        <!-- /* Adobe Analytics */ -->
+        <script src="/content/dam/tp-web/analytics/85bffacb2b59/d2f7b9809fc6/launch-58ff5e50ccaa.min.js"></script>
+        
+
+        <!--/* Wogaa analytic */ -->
+        
+        <script src="https://assets.wogaa.sg/scripts/wogaa.js"></script>
+        
+
+        
+
+        <!-- <script type="text/javascript" src="//assets.adobedtm.com/a63ef04a8a06d4763abe9b28a8d967e7e749d199/satelliteLib-db3891214175cc48594c242657d262be8297f3d8.js"></script> -->
+
+        <script type="text/javascript">
+            var cqTags = "";
+            var tagInformationType = [];
+            var tagSchool = [];
+            var tagCourseType = [];
+            var tagCluster = [];
+            var tagIndustry = [];
+            var tagFunding = [];
+            var tagCertification = [];
+            var tagSfsDomain = [];
+        </script>
+        
+        <script type="text/javascript">
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, '\\$&');
+                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+           try
+            {
+                var debugMode = getParameterByName("debugMode");
+            }
+            catch (error) {
+               console.debug(error);
+            }
+
+             digitalData = {
+                    page: {
+                        pageInfo: {
+                            pageTitle: "Page Not Found",
+                            pagePath: "", // Set to page path
+                            language: "en",
+                        },
+                        siteSection: {
+                            level1: "", // If the current page is homepage, set to Home. Otherwise set it to the title of level 1 page title
+                            level2: "", // Set it to level 2 page title
+                            level3: "", // Set it to level 3 page title
+                            level4: "", // Set it to level 4 spage title
+                            level5: "", // Set it to level 5 page title
+                            level6: "", // Set it to level 6 page title
+                            level7: "" //  Set it to level 7 page title
+                        },
+                        tags: {
+                            informationType: tagInformationType,
+                            courseType: tagCourseType,
+                            school: tagSchool,
+                            cluster: tagCluster,
+                            industry: tagIndustry,
+                            funding: tagFunding,
+                            certification: tagCertification,
+                            sfsDomain: tagSfsDomain
+                        }
+                    },
+                    siteInfo: {
+                        site: "tp",
+                    },
+                    error: {
+                        errorCode: "", // Set the error code displayed such as 404, 501
+                        errorMessage: "" // Set the error message display such as "Page not found", "Server Error"
+                    },
+                 form: {
+                     actions: {
+                         hasFormStarted: false
+                     }
+                 }
+             }
+            console.log(digitalData.page.tags.funding);
+        </script>
+
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169203649-1"></script>
+        
+            <script>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+
+                gtag('js', new Date());
+                gtag('config', "UA-169203649-1", {cookie_flags: 'secure;samesite=none'});
+
+                if (document.location.hostname == "www.tp.edu.sg") {
+                    !function (f, b, e, v, n, t, s) {
+                        if (f.fbq) {
+                            return;
+                        }
+                        n=f.fbq=function(){
+                            n.callMethod?
+                                n.callMethod.apply(n,arguments):n.queue.push(arguments)
+                        };
+
+                        if(!f._fbq)f._fbq=n;
+                        n.push=n;
+                        n.loaded=!0;
+                        n.version='2.0';
+                        n.queue=[];
+                        t=b.createElement(e);
+                        t.async=!0;
+                        t.src=v;
+                        s=b.getElementsByTagName(e)[0];
+
+                        s.parentNode.insertBefore(t,s)
+                    }(window, document,'script',
+
+                    'https://connect.facebook.net/en_US/fbevents.js');
+
+                    fbq('init', '197192057280666');
+                    fbq('track', 'PageView');
+                    fbq('track', 'ViewContent');
+
+                    _linkedin_partner_id = "296219";
+                    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+                    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+
+                    (function() {
+                        var s = document.getElementsByTagName("script")[0];
+                        var b = document.createElement("script");
+                        b.type = "text/javascript";
+                        b.async = true;
+                        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+                       s.parentNode.insertBefore(b, s);
+                    })();
+                }
+            </script>
+            <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=197192057280666&ev=PageView&noscript=1" alt="facebook"/>
+            </noscript>
+        
+    
+
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/tp-web/clientlibs/clientlib-base.lc-a9e484e4496d8b1823fb73ac96cf5683-lc.min.css" type="text/css">
+
+
+
+
+
+    
+    
+    
+
+    
+
+    
+    
+<script src="/etc.clientlibs/tp-web/clientlibs/clientlib-dependencies.lc-af4ccc4ff778c31594befa022b94a1b9-lc.min.js"></script>
+
+
+
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/tp-web/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/tp-web/clientlibs/clientlib-site.lc-cc4680b6bf88fed86a1549a6942251cd-lc.min.css" type="text/css">
+
+
+
+    
+
+
+
+    <!-- Global site tag (gtag.js) - Google Ads: 364978921 -->
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=DC-12053952"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', "DC-12053952", {cookie_flags: 'secure;samesite=none'});
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZS4167NRS"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JZS4167NRS');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11331448891"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11331448891');
+</script>
+
+
+    
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer', "GTM-WQF34CW");</script>
+        <!-- End Google Tag Manager -->
+    
+
+    
+    <!-- <link href="/content/dam/tp-web/css/style.css" rel="stylesheet"> -->
+    <script type="text/javascript">
+    window._monsido = window._monsido || {
+        token: "9qi8ejEAsWC_6JWJ9rfIKA",
+        statistics: {
+            enabled: true,
+            documentTracking: {
+                enabled: true,
+                documentCls: "monsido_download",
+                documentIgnoreCls: "monsido_ignore_download",
+                documentExt: ["pdf","xls","xlsx","doc","docx"],
+            },
+        },
+        heatmap: {
+            enabled: true,
+        },
+    };
+</script>
+<script type="text/javascript" async="" src="https://app-script.monsido.com/v2/monsido-script.js"></script>
+
+<script>
+!function (w, d, t) {
+w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+ttq.load('CAJGULJC77U32TPDRHB0');
+ttq.page();
+}(window, document, 'ttq');
+</script>
+    
+</head>
+   <body class="dark-theme">
+   <script type="text/javascript">
+       function getCookie(name) {
+           function escape(s) { return s.replace(/([.*+?\^$(){}|\[\]\/\\])/g, '\\$1'); }
+           var match = document.cookie.match(RegExp('(?:^|;\\s*)' + escape(name) + '=([^;]*)'));
+           return match ? match[1] : null;
+       }
+       var modeTheme = getCookie('mode-theme');
+       if (modeTheme == 'dark') {
+         document.body.classList.add('dark-theme');
+       } else if (modeTheme == 'light') {
+         document.body.classList.remove('dark-theme');
+       }
+   </script>
+   
+        
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQF34CW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        
+        
+        
+            
+
+
+    
+
+    
+    
+<div class="cmp-announcement-bar bg-white">
+	
+</div>
+
+    
+    
+
+
+
+<header class="cmp-main-header-v1" data-home-header="" data-session-expired="">
+  <nav class="navbar navbar-expand-lg header-navbar-top nav-desktop">
+    <div class="container">
+      <div class="header-navbar-top__container">
+        <div class="header-search">
+          <div class="header-search__container">
+            <div class="mb-header-search-click"></div>
+            <a href="/search.html" class="header-search-icon"><img src="/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/images/search-icon.png" alt="search-icon" height="20" width="20"/></a>
+            <div class="header-search-box">
+              <input class="" type="text" placeholder="What can we help you find?"/>
+            </div>
+          </div>
+        </div>
+        <a class="navbar-brand" href="/home.html">
+          <img class="logo-light-theme" src="/content/dam/tp-web/homepage-images/tplogo.svg" alt="Temasek Polytechnic" width="140" height="40"/>
+          <img class="logo-dark-theme" src="/content/dam/tp-web/homepage-images/tplogo-white.svg" alt="Temasek Polytechnic" height="40" width="140"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbarHeader">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/landing/students.html">Students</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/landing/adult-learners.html">Adult Learners</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/landing/alumni.html">Alumni</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/landing/parents.html">Parents</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/landing/educators.html">Educators</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/landing/industry-partners.html">Industry Partners</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="main-header-mobile-wrap">
+    <nav class="navbar navbar-expand-lg header-navbar-top nav-mobile">
+      <div class="container">
+        <div class="collapse navbar-collapse navbarHeader">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/landing/students.html">Students</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/landing/adult-learners.html">Adult Learners</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/landing/alumni.html">Alumni</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/landing/parents.html">Parents</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/landing/educators.html">Educators</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/landing/industry-partners.html">Industry Partners</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg header-navbar-bottom">
+      <div class="container">
+        <div class="collapse navbar-collapse navbarHeader">
+          <div class="navbar-collapse-wrap">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                
+                <span class="nav-link active">Schools &amp; Courses </span>
+                
+
+                <div class="sub-mainmenu-container">
+                  <div class="sub-mainmenu">
+                    <div class="sub-mainmenu__list">
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            <span class="sub-mainmenu-title">For Prospective Students
+                            </span>
+
+                            
+                            
+
+                            
+                            
+                              
+                              <a href="/schools-and-courses/students/schools.html" class="nav-link">All Academic Schools
+                              </a>
+                            
+                              
+                              <a href="/schools-and-courses/students/all-diploma-courses.html" class="nav-link">All Diploma Courses
+                              </a>
+                            
+                              
+                              <a href="/schools-and-courses/students/tp-fundamentals.html" class="nav-link">TP Fundamentals
+                              </a>
+                            
+                          
+                            
+                            <span class="sub-mainmenu-title">For Current Students
+                            </span>
+
+                            
+                            
+
+                            
+                            
+                              
+                              <a href="/schools-and-courses/for-current-students/academic-calendar.html" class="nav-link">Academic Calendar - Full-Time Diplomas
+                              </a>
+                            
+                              
+                              <a href="/schools-and-courses/for-current-students/university-preparatory-programme-upp.html" class="nav-link">University Preparatory Programme (UPP)
+                              </a>
+                            
+                              
+                              <a href="/schools-and-courses/for-current-students/student-services.html" class="nav-link">Student Services
+                              </a>
+                            
+                          
+                        </div>
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            <span class="sub-mainmenu-title">For Adult Learners
+                            </span>
+
+                            
+                            
+
+                            
+                            
+                              
+                              <a href="/schools-and-courses/adult-learners/all-courses.html" class="nav-link">All Courses
+                              </a>
+                            
+                              
+                              <a href="/schools-and-courses/adult-learners/academic-calendar.html" class="nav-link">Academic Calendar - Part-Time Diplomas &amp; Post Diplomas
+                              </a>
+                            
+                              
+                              <a href="/schools-and-courses/adult-learners/subscription-to-email-updates.html" class="nav-link">Subscription to Updates
+                              </a>
+                            
+                              
+                              <a href="/schools-and-courses/adult-learners/insights.html" class="nav-link">INSIGHTS - Creating tomorrow with Continuing Education
+                              </a>
+                            
+                          
+                        </div>
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            
+
+                            
+                            <a href="/schools-and-courses/cabs.html" class="sub-mainmenu-title">Centre for Applied Behavioural Sciences
+                            </a>
+
+                            
+                            
+                          
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </li>
+            
+              <li class="nav-item">
+                
+                <span class="nav-link active">Admissions &amp; Finance </span>
+                
+
+                <div class="sub-mainmenu-container">
+                  <div class="sub-mainmenu">
+                    <div class="sub-mainmenu__list">
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            <span class="sub-mainmenu-title">Application Guide For Prospective Students
+                            </span>
+
+                            
+                            
+
+                            
+                            
+                              
+                              <a href="/admissions-and-finance/application-guide-for-prospective-students/o-level-holders-jae-dae-eae.html" class="nav-link">O-Level Students &amp; Graduates (JAE|DAE|EAE)
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/application-guide-for-prospective-students/na-level-students-pfp.html" class="nav-link">N(A)-Level Students (PFP)
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/application-guide-for-prospective-students/ite-nitec-graduates-eae-jpae-dae.html" class="nav-link">ITE Students &amp; Graduates (EAE|JPAE|DAE)
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/application-guide-for-prospective-students/a-level-graduates-jae-dae.html" class="nav-link">A-Level Graduates (JAE|DAE)
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/application-guide-for-prospective-students/sporeans-prs-with-working-experience-eae.html" class="nav-link">Applicants with Relevant Working Experience (EAE/DAE)
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/application-guide-for-prospective-students/ip-ib-students-dae.html" class="nav-link">IP/IB Students (DAE)
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/application-guide-for-prospective-students/foreign-international-qualifications-dae.html" class="nav-link">Foreign International Qualifications (DAE-Foreign)
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/application-guide-for-prospective-students/part-time-ite-certificate-and-wsq-diploma-holders-dae.html" class="nav-link">Part-Time ITE Certificate &amp; WSQ Diploma Holders (DAE)
+                              </a>
+                            
+                          
+                        </div>
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            
+
+                            
+                            <a href="/admissions-and-finance/course-intake-aggregate-range.html" class="sub-mainmenu-title">Course Intake and Aggregate Range
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/admissions-and-finance/gce-o-level-aggregate-scores-computation.html" class="sub-mainmenu-title">&#39;O&#39; Level Aggregate Scores Computation
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/admissions-and-finance/course-acceptance-enrolment.html" class="sub-mainmenu-title">Course Acceptance and Enrolment
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/admissions-and-finance/student-services.html" class="sub-mainmenu-title">Student Services
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/admissions-and-finance/international-students.html" class="sub-mainmenu-title">International Students
+                            </a>
+
+                            
+                            
+                          
+                        </div>
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            
+
+                            
+                            <a href="/admissions-and-finance/fees-financial-matters.html" class="sub-mainmenu-title">Fees &amp; Financial Matters
+                            </a>
+
+                            
+                            
+                              
+                              <a href="/admissions-and-finance/fees-financial-matters/fees-payment-enquiries.html" class="nav-link">Fees Payment and Enquiries
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/fees-financial-matters/course-withdrawal-refund-guidelines.html" class="nav-link">Course Withdrawal &amp; Refund Guidelines
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/fees-financial-matters/tuition-grant-eligibility.html" class="nav-link">Tuition Grant Eligibility
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/fees-financial-matters/financial-assistance-schemes.html" class="nav-link">Financial Assistance Schemes
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/fees-financial-matters/scholarship-awards.html" class="nav-link">Scholarship &amp; Awards
+                              </a>
+                            
+                              
+                              <a href="/admissions-and-finance/fees-financial-matters/funding-for-adult-learners.html" class="nav-link">Funding for Adult Learners
+                              </a>
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/admissions-and-finance/application-guide-for-adult-learners.html" class="sub-mainmenu-title">Application Guide For Adult Learners
+                            </a>
+
+                            
+                            
+                          
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </li>
+            
+              <li class="nav-item">
+                
+                <span class="nav-link active">Life@TP </span>
+                
+
+                <div class="sub-mainmenu-container">
+                  <div class="sub-mainmenu">
+                    <div class="sub-mainmenu__list">
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            
+
+                            
+                            <a href="/life-at-tp/a-caring-campus.html" class="sub-mainmenu-title">A Caring Campus
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/life-at-tp/360-vr-tour-of-tp.html" class="sub-mainmenu-title">360-Virtual Campus Tour
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/life-at-tp/our-tp-pride.html" class="sub-mainmenu-title">Our TP Pride
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/life-at-tp/news.html" class="sub-mainmenu-title">News
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/life-at-tp/cca-events.html" class="sub-mainmenu-title">Our CCAs
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/life-at-tp/overseas-experience.html" class="sub-mainmenu-title">Student Overseas Experience
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/life-at-tp/virtual-campus.html" class="sub-mainmenu-title">Virtual Campus
+                            </a>
+
+                            
+                            
+                          
+                        </div>
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            
+
+                            
+                            <a href="/life-at-tp/special-educational-needs-sen-support.html" class="sub-mainmenu-title">Special Educational Needs (SEN) Support
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/life-at-tp/student-services.html" class="sub-mainmenu-title">Student Services
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/life-at-tp/career-services.html" class="sub-mainmenu-title">Career Services
+                            </a>
+
+                            
+                            
+                          
+                        </div>
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            <span class="sub-mainmenu-title">TP Students&#39; Digital Access &amp; IT Matters
+                            </span>
+
+                            
+                            
+
+                            
+                            
+                              
+                              <a href="/life-at-tp/tp-students-digital-access-it-matters/students-it-needs.html" class="nav-link">Student&#39;s IT Needs
+                              </a>
+                            
+                              
+                              <a href="/life-at-tp/tp-students-digital-access-it-matters/library.html" class="nav-link">Library
+                              </a>
+                            
+                              
+                              <a href="/life-at-tp/tp-students-digital-access-it-matters/ft-student-portal.html" class="nav-link">Full-time Student Portal
+                              </a>
+                            
+                              
+                              <a href="/life-at-tp/tp-students-digital-access-it-matters/pt-student-portal.html" class="nav-link">CET Student Portal
+                              </a>
+                            
+                              
+                              <a href="/life-at-tp/tp-students-digital-access-it-matters/cet-lecturer-portal.html" class="nav-link">CET Lecturer Portal
+                              </a>
+                            
+                              
+                              <a href="/life-at-tp/tp-students-digital-access-it-matters/polymall.html" class="nav-link">POLITEMall
+                              </a>
+                            
+                          
+                        </div>
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            
+
+                            
+                            <a href="/life-at-tp/temasek-leadership-programme.html" class="sub-mainmenu-title">Temasek Leadership Programme (TEMASEK LEAD)
+                            </a>
+
+                            
+                            
+                          
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </li>
+            
+              <li class="nav-item">
+                
+                <span class="nav-link active">Research &amp; Industry </span>
+                
+
+                <div class="sub-mainmenu-container">
+                  <div class="sub-mainmenu">
+                    <div class="sub-mainmenu__list">
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            
+
+                            
+                            <a href="/research-and-industry/centres-of-excellence.html" class="sub-mainmenu-title">Centres of Excellence
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/research-and-industry/research-technology.html" class="sub-mainmenu-title">Research &amp; Technology
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/research-and-industry/international-relations.html" class="sub-mainmenu-title">International Relations
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/research-and-industry/student-internship-programme.html" class="sub-mainmenu-title">Student Internship Programme
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/research-and-industry/temasek-skillsfuture-academy.html" class="sub-mainmenu-title">Temasek SkillsFuture Academy
+                            </a>
+
+                            
+                            
+                          
+                        </div>
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            
+
+                            
+                            <a href="/research-and-industry/national-centre-of-excellence-for-workplace-learning.html" class="sub-mainmenu-title">NACE@TP
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/research-and-industry/security-industry-institute.html" class="sub-mainmenu-title">Security Industry Institute
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/research-and-industry/innovation-and-entrepreneurship.html" class="sub-mainmenu-title">Innovation &amp; Entrepreneurship
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/research-and-industry/learning-academy.html" class="sub-mainmenu-title">Learning Academy
+                            </a>
+
+                            
+                            
+                          
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link active" href="/sustainability.html">Sustainability </a>
+                
+                
+
+                
+              </li>
+            
+              <li class="nav-item">
+                
+                <span class="nav-link active">About TP </span>
+                
+
+                <div class="sub-mainmenu-container">
+                  <div class="sub-mainmenu">
+                    <div class="sub-mainmenu__list">
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/corporate-profile.html" class="sub-mainmenu-title">Corporate Profile
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/creating-tomorrow.html" class="sub-mainmenu-title">Creating Tomorrow
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/board-of-governors.html" class="sub-mainmenu-title">Board of Governors
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/Senior-Management.html" class="sub-mainmenu-title">TP Senior Management
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/annual-report.html" class="sub-mainmenu-title">Annual Report
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/corporate-video.html" class="sub-mainmenu-title">Corporate Video
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/unevoc-centre.html" class="sub-mainmenu-title">UNEVOC Centre
+                            </a>
+
+                            
+                            
+                          
+                        </div>
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/media-centre.html" class="sub-mainmenu-title">Media Centre
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/tp-in-the-news.html" class="sub-mainmenu-title">TP in the News
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/campus-news.html" class="sub-mainmenu-title">Campus News
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/events.html" class="sub-mainmenu-title">Events
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/careers.html" class="sub-mainmenu-title">Careers
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/donate-and-collaborate.html" class="sub-mainmenu-title">Donate and Collaborate
+                            </a>
+
+                            
+                            
+                          
+                        </div>
+                      
+                        <div class="sub-mainmenu__list-column">
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/our-campus-map-facilities.html" class="sub-mainmenu-title">Our Campus Map &amp; Facilities
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/contact-us.html" class="sub-mainmenu-title">Contact Us
+                            </a>
+
+                            
+                            
+                              
+                              <a href="/about-tp/contact-us/Whistleblowing-Policy.html" class="nav-link">Whistleblowing Policy
+                              </a>
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/getting-to-tp.html" class="sub-mainmenu-title">Getting to TP
+                            </a>
+
+                            
+                            
+                          
+                            
+                            
+
+                            
+                            <a href="/about-tp/faq.html" class="sub-mainmenu-title">FAQ
+                            </a>
+
+                            
+                            
+                          
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link active" href="/career-kick-starter.html">Career Kickstarter </a>
+                
+                
+
+                
+              </li>
+            </ul>
+            <label class="tp-toggle-control" data-toggle-theme="">
+              <div id="input-switch-mode"></div>
+              <span class="control"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<script type="text/javascript">
+  var modeTheme = getCookie('mode-theme');
+  var inputSwitchMode = document.getElementById('input-switch-mode');
+  inputSwitchMode &&
+    (inputSwitchMode.className = document.body.classList.contains('dark-theme') ?
+      'checked' :
+      '');
+</script>
+
+    
+    <div class="tp--page-main-content" data-page-name="404">
+        
+        
+
+        <!-- Drag And Drop Content Component Part -->
+        <div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="banner aem-GridColumn aem-GridColumn--default--12">
+
+
+	
+	
+	
+
+	
+	
+
+</div>
+<div class="toolbar aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+	
+
+	<div class="tp--container ">
+
+		<div class="flex">
+
+			<div class="item breadcrumb">
+				
+
+<nav class="cmp-breadcrumb" aria-label="Breadcrumb">
+    <ol class="cmp-breadcrumb__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+        
+        <li class="cmp-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="/home.html" class="cmp-breadcrumb__item-link cmp-breadcrumb__item-link-after" itemprop="item">
+                <span itemprop="name">Creating Tomorrow</span>
+            </a>
+            
+            
+            
+            <meta itemprop="position" content="1"/>
+        </li>
+    
+        
+        <li class="cmp-breadcrumb__item cmp-breadcrumb__item--active data-course-name" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            
+                <span itemprop="name">Page Not Found</span>
+            
+            
+            
+            
+            <meta itemprop="position" content="2"/>
+        </li>
+    </ol>
+</nav>
+
+    
+
+			</div>
+
+			<div class="item item-toolbar flex flex-row-reverse p-0">
+				<a class="float-right ico-share" href="javascript:;" data-share="data-share-global">
+					<img height="22px" width="24px" src="/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/images/icon-share.svg" alt="icon-share"/>
+				</a>
+
+				
+				
+
+				<a class="float-right ico-toolbar" href="javascript:;" data-print="data-print-global">
+					<img height="22px" width="25px" src="/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/images/icon-print.svg" alt="icon-print"/>
+				</a>
+
+				<a class="float-right ico-plus" href="javascript:;" data-font-plus="data-font-plus-global">
+					<img height="24px" width="27px" src="/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/images/icon-font-plus.svg" alt="icon-font-plus"/>
+				</a>
+
+				<a class="float-right ico-minus" href="javascript:;" data-font-minus="data-font-minus-global">
+					<img class="" style="height: 24px;" src="/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/images/icon-font-minus.svg" alt="icon-font-minus"/>
+				</a>
+
+				
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- POPUP SHARE MODEL -->
+	<div class="bg-modal-poup bg-share-poup" data-popup-share>
+		<div id="share-popup" class="modal-contents modal-socials">
+			<a href="javascript:;" class="close-icon red" data-close-share></a>
+			<h1 class="title">SHARE</h1>
+			<div class="sub_title" data-page-tile>DIGITAL FILM & TELEVISION | SCHOOL OF DESIGN | TEMASEK POLYTECHNICS</div>
+
+			<p class="web" data-url-share>https://www.tp.edu.sg/404.html</p>
+
+			<div class="">
+				<ul class="unstyled footer-social-icons">
+					<div id="shareIconsFirst" class="social-groups"></div>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<!-- END POPUP SHARE MODEL -->
+
+
+ 
+ 
+<div class="cmp-announcement-bar bg-light-grey">
+	
+</div></div>
+<div class="embed aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-embed">
+    
+    <style type="text/css">
+    .text-not-found-custom input, .text-not-found-custom input[type=text] {
+        background-color: #f1f1f1;
+    }
+    .text-not-found-custom input {
+        border: 1px solid transparent;
+        padding: 10px;
+        font-size: 1pc;
+    }
+    .text-not-found-custom .tp--secondary-btn{
+        display: inline-block;
+    }
+    .text-not-found-custom .tp--secondary-btn .tp--button{
+        min-width: 100px;
+    }
+</style>
+
+<div class="text-not-found text-not-found-custom">
+    <div class="tp--container">
+        <h3>PAGE NOT FOUND</h3>
+        <p>Thank you for visiting the Temasek Polytechnic website. The information you are looking for could have been moved or changed.</p>
+        <p>Here are some options you may like to consider:</p>
+        
+        <p><a href="/">Return to TP Home</a></p>
+        <p><a href="/sitemap.html">Use Our Sitemap</a></p>
+        <p style="display: none;"><a id="search-page" href="/search.html">Search Page</a></p>
+
+        <p style="margin-top: 20.0px;">
+            Or try searching here:&nbsp;
+            <input id="not-found-page-search" onkeyup="myFunction(event)" type="text" name="keyword" style="width: 300.0px;">
+            <span class="tp--secondary-btn text-left">
+                <a href="" class="btn tp--button edit-tp--button" onclick="myClickFunction(event)">
+                    Search
+                </a>
+            </span>
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function myFunction(event) {
+        var value = document.getElementById("not-found-page-search").value;
+        var searchPage = document.getElementById("search-page").href;
+        var redirect_url = searchPage + "?keyword=" + value;
+
+        if (event.which == 13) {
+            window.open(redirect_url, "_self");
+        }
+    }
+    function myClickFunction(event) {
+        event.preventDefault();
+        var value = document.getElementById("not-found-page-search").value;
+        var searchPage = document.getElementById("search-page").href;
+        var redirect_url = searchPage + "?keyword=" + value;
+
+        window.open(redirect_url, "_self");
+    }
+</script>
+    
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+
+
+        <!-- Loader CSS -->
+        <div class="cover-spin" data-cover-spin></div>
+    </div>
+
+    
+    <!-- Ask TP Chatbot -->
+
+<div id="webchat" app-id="tp-ask-tp" app-name="Ask TP" app-color="#EF0C1D" app-icon="/content/dam/tp-web/images/vica/Avatar.webp" app-subtitle="" app-welcome-message="" app-base-font-size="16" app-position-right="25" app-position-bottom="155" app-enable-auto-complete="true" app-enable-recommendations="false" app-auto-launch="false" app-bot-response-trigger-event="false" app-quick-launch-event="welcome" app-foreground-color1="#FFFFFF" app-foreground-color-2="#2E2E2E" app-background-color2="#FFFFFF" app-canvas-background-color="#DCDCDC" app-button-border-color="#6BC1FF80" app-quick-reply-button-background-color="#ECECEC" app-auto-complete-background-color="#FFE0DC" app-auto-complete-foreground-color="#2E2E2E" app-auto-complete-hover-color="#FCBCC1" app-auto-complete-divider-color="#EF0C1D" app-recommendations-background-color="#FEE0E2" app-recommendations-foreground-color="#2E2E2E" app-recommendations-hover-color="#FCBCC1" app-launcher-animation-iteration="0" app-orchestrator-timeout="8000" app-font-family="DM Sans">
+</div>
+<script>
+    window.addEventListener('load', lateLoadChatFile);
+    function lateLoadChatFile() {
+        setTimeout(() => {
+            const bodyTag = document.getElementsByTagName("body")[0];
+
+            // Create link element to import chat.css file and append it on the body element
+            let linkTag = document.createElement("link");
+            linkTag.href = "https://webchat.vica.gov.sg/static/css/chat.css";
+            linkTag.type = "text/css";
+            linkTag.rel = "stylesheet";
+            linkTag.referrerPolicy = "origin";
+            bodyTag.appendChild(linkTag);
+
+            // Create script element to import chat.js file and append it on the body element
+            let scriptTag = document.createElement("script");
+            scriptTag.src = "https://webchat.vica.gov.sg/static/js/chat.js";
+            scriptTag.type = "text/javascript";
+            scriptTag.referrerPolicy = "origin";
+            scriptTag.defer = true;
+            bodyTag.appendChild(scriptTag);
+        }, 3000);
+    }
+</script>
+
+
+
+    
+    <div class="tp--back-to-top">
+        <img src="/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/images/to-top.png" alt="to-top"/>
+    </div>
+
+    <!-- Footer Cookie Policy Bar -->
+    <div class="cmp-t-and-c-cookie-bar">
+    <div class="tp--container">
+        <div class="cmp-t-and-c-cookie-box">
+            <p>We use cookies to offer you a better browsing experience. By continuing, you are agreeing to the use of cookies on your device as described in our&nbsp;<a href="/privacy-statement.html?opentarget=1">privacy statement</a>.<br>
+</p>
+
+            <div class="cmp-t-and-c-cookie-close">
+                Accept
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    <footer class="cmp-main-footer-v1">
+        
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                
+                    <div class="col-md-3">
+                        <h5><strong>GET IN TOUCH</strong></h5>
+                        <ul>
+                            
+                                <li><a href="/about-tp/media-centre.html">Media Centre</a></li>
+                            
+                                <li><a href="/about-tp/getting-to-tp.html">Getting To TP</a></li>
+                            
+                                <li><a href="/about-tp/our-campus-map-facilities.html">Campus Map</a></li>
+                            
+                                <li><a href="/contactus">Contact Us</a></li>
+                            
+                                <li><a href="/sitemap.html">Sitemap</a></li>
+                            
+                                <li><a href="/web-assets/forms/rate-this-website">Rate This Website</a></li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="col-md-3">
+                        <h5><strong>VISITOR&#39;S PROFILE</strong></h5>
+                        <ul>
+                            
+                                <li><a href="/landing/students.html">Students</a></li>
+                            
+                                <li><a href="/cet">Adult Learners</a></li>
+                            
+                                <li><a href="/alumni">Alumni</a></li>
+                            
+                                <li><a href="/landing/parents.html">Parents</a></li>
+                            
+                                <li><a href="/outreach">Educators</a></li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="col-md-3">
+                        <h5><strong>SCHOOLS</strong></h5>
+                        <ul>
+                            
+                                <li><a href="/asc">School of Applied Science</a></li>
+                            
+                                <li><a href="/bus">School of Business</a></li>
+                            
+                                <li><a href="/des">School of Design</a></li>
+                            
+                                <li><a href="/eng">School of Engineering</a></li>
+                            
+                                <li><a href="/humanitiesandsocialsciences">School of Humanities &amp; Social Sciences</a></li>
+                            
+                                <li><a href="/informaticsandit">School of Informatics &amp; IT</a></li>
+                            
+                                <li><a href="/centre-for-foundation-studies">Centre for Foundation Studies</a></li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="col-md-3">
+                        <h5><strong>QUICK LINKS</strong></h5>
+                        <ul>
+                            
+                                <li><a href="/lib">Library</a></li>
+                            
+                                <li><a href="/schools-and-courses/for-current-students/academic-calendar.html">Academic Calendar</a></li>
+                            
+                                <li><a href="/life-at-tp/cca-events.html">Co-Curricular Activities (CCA)</a></li>
+                            
+                                <li><a href="/admissions-and-finance/fees-financial-matters.html">Financial Matters</a></li>
+                            
+                                <li><a href="/student-life">Special Educational Needs (SEN) Support</a></li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="tp--container">
+            <div class="row">
+                <div class="col-md-9">
+                    <small>&copy; 2026 Temasek Polytechnic. All Rights Reserved.
+                         | <a href="https://www.tp.edu.sg/anti-scam-message.html">Anti-Scam Alert</a>
+                         | <a href="https://tech.gov.sg/report_vulnerability" target="_blank" rel="noopener noreferrer">Report Vulnerability</a>
+                         | <a href="/terms-of-use.html">Terms of Use</a>
+                         | <a href="/privacy-statement.html">Privacy Statement</a>
+                    </small>
+                </div>
+                <div class="col-md-3" style="text-align: right">
+                    <small>CREATING TOMORROW</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    </footer>
+
+
+            
+    
+    
+<script src="/etc.clientlibs/tp-web/clientlibs/clientlib-tracking.lc-e1167b87e40f4bce6726bb1cfd3f7006-lc.min.js"></script>
+<script src="/etc.clientlibs/tp-web/clientlibs/clientlib-site.lc-f43dbc5dce17fd8ab1eaac4445844bf0-lc.min.js"></script>
+
+
+
+    
+    <script src="/etc.clientlibs/tp-web/clientlibs/clientlib-tracking/resources/swiper-bundle.min.js"></script>
+    
+    
+<script src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js"></script>
+<script src="/etc.clientlibs/tp-web/clientlibs/clientlib-base.lc-0659a1155cb68d2729f8a53c66391df4-lc.min.js"></script>
+
+
+
+    
+    
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.lc-652a558c3774088b61b0530c184710d1-lc.min.js"></script>
+
+
+
+
+
+    
+
+    
+
+    
+    
+    
+
+        
+        
+        <script type="text/javascript">
+           try {
+              if (!(debugMode == "true"))
+                _satelliteTP.pageBottom();
+                _satellite.pageBottom();    
+            }
+            catch (error) {
+                console.debug(error);
+            }
+        </script>
+   <script type="text/javascript">
+_linkedin_partner_id = "4459945";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=4459945&fmt=gif"/>
+</noscript>
+    </body>
+</html>

@@ -1,0 +1,1563 @@
+<!doctype html>
+<html lang="en" x-data="{ showMobileNav: false }" :class="{ 'overflow-hidden': showMobileNav }">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> — ICHK</title>
+
+        <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "name": "",
+        "description": "",
+        "breadcrumb": "Home > ",
+        "datePublished": "",
+        "dateModified": "",
+        "author": {
+            "@type": "Organization",
+            "name": "International College Hong Kong",
+            "url": "/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "/assets/ICHK-Sec-Logo.svg"
+            }
+        }
+    }
+    
+</script>
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="application-name" content="">
+<meta name="theme-color" content="#0475b8">
+<meta name="generator" content="Statamic">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<meta name="google-site-verification" content="verification_token">
+
+
+
+
+<meta name="ICBM" content="22.150998, 113.569152">
+<meta name="geo.position" content="22.150998;113.569152">
+<meta name="geo.region" content="HK">
+<meta name="geo.placename" content="Hong Kong">
+
+
+<meta property="fb:app_id" content="123456789">
+<meta property="og:url" content="">
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="International College Hong Kong">
+<meta property="og:locale" content="">
+<meta property="article:author" content="">
+<meta property="og:image" content="">
+<meta property="og:image:alt" content="">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ICHK_edu">
+<meta name="twitter:creator" content="@ICHK_edu">
+<meta name="twitter:url" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:image:alt" content="">
+
+
+<meta itemprop="name" content="">
+<meta itemprop="image" content="">
+<meta name="description" itemprop="description" content="">
+
+
+<link rel="author" href="">
+<link rel="publisher" href="International College Hong Kong">
+<meta itemprop="name" content="">
+<meta itemprop="description" content="">
+<meta itemprop="image" content="">
+
+
+<link rel="manifest" href="/manifest.webmanifest">
+
+
+<meta name="apple-mobile-web-app-title" content="">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="white">
+
+
+<meta name="mobile-web-app-capable" content="yes">
+
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+
+
+
+        <link rel="icon" type="image/png" sizes="32x32" href="https://www.ichk.edu.hk/assets/favicon.png">
+        <link rel="canonical" href="">
+        <link rel="stylesheet" href="/css/tailwind.css?id=2e506367449093000c2598302164abab">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@400&display=block" rel="stylesheet"> 
+
+        <script async src="/js/lib/rough-notation.iife.js"></script>
+
+        
+    </head>
+    <body class="font-body"  >
+
+        <nav id="topMenu" class="fixed flex justify-between items-center w-full h-12 z-30 px-4 bg-white transition-position duration-1000 hidden shadow" >
+    
+    <a href="/" class="-ml-px my-2 ">
+        <img class="h-10" src="/assets/ICHK-Sec-Logo.svg" alt="International College Hong Kong" title="International College Hong Kong" aria-label="">
+    </a>
+
+    <ul id="navbar" class="hidden lg:grid grid-nav-columns justify-center items-center w-min lg:w-full mx-auto">
+                
+                        <li class="relative flex items-center text-sm hover:dynamic-text animated-underline transition-colors" x-data="{menuOpen: false}" @mouseover="menuOpen=true"  @mouseout="menuOpen=false">
+                <a href="/" class="px-6 mx-2 my-4 font-title text-center uppercase font-medium " onmouseover="updateColor(this, -1)" data-index="0">
+                    <span class="inner-item">Home</span>
+                </a>
+
+                <div x-cloak class="absolute top-0 left-1/2 -translate-x-1/2 z-50 mt-12" 
+        x-show="menuOpen" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-2 scale-100"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-2 scale-100"
+        >
+    
+</div>
+
+
+            </li>
+                        <li class="relative flex items-center text-sm hover:dynamic-text animated-underline transition-colors" x-data="{menuOpen: false}" @mouseover="menuOpen=true"  @mouseout="menuOpen=false">
+                <a href="/about" class="px-6 mx-2 my-4 font-title text-center uppercase font-medium " onmouseover="updateColor(this, 0)" data-index="1">
+                    <span class="inner-item">Our&nbsp;Story</span>
+                </a>
+
+                <div x-cloak class="absolute top-0 left-1/2 -translate-x-1/2 z-50 mt-12" 
+        x-show="menuOpen" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-2 scale-100"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-2 scale-100"
+        >
+            <ul id="menu1" class="pt-6 pb-5 shadow-lg drop-shadow-lg bg-white text-base">
+                    <li class="block">
+                <a href="/about" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Welcome to ICHK</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/about/guiding-statements" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Mission & Vision</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/wellbeing-and-community" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Our Community</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/about/accreditation-and-recognition" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Accreditation & Recognition</a>
+            </li>
+
+            
+        
+        </ul>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                RoughNotation.annotate(document.querySelector('#menu1'), {type: 'box', padding: -1.5, iterations: 1, color: "#ffffff", strokeWidth: 3, animate: false, animationDelay: 0, animationDuration: 0}).show();
+            });
+        
+        </script>
+    
+</div>
+
+
+            </li>
+                        <li class="relative flex items-center text-sm hover:dynamic-text animated-underline transition-colors" x-data="{menuOpen: false}" @mouseover="menuOpen=true"  @mouseout="menuOpen=false">
+                <a href="/learning" class="px-6 mx-2 my-4 font-title text-center uppercase font-medium " onmouseover="updateColor(this, 1)" data-index="2">
+                    <span class="inner-item">Learning</span>
+                </a>
+
+                <div x-cloak class="absolute top-0 left-1/2 -translate-x-1/2 z-50 mt-12" 
+        x-show="menuOpen" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-2 scale-100"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-2 scale-100"
+        >
+            <ul id="menu2" class="pt-6 pb-5 shadow-lg drop-shadow-lg bg-white text-base">
+                    <li class="block">
+                <a href="/learning" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Epistemic Apprenticeship</a>
+            </li>
+
+                        
+                <li class="flex justify-start items-center px-6 xl:px-8 gap-3">
+        <a href="/learning#years-7-9" class="hover:dynamic-text transition-colors font-medium block text-gray-700  hover:underline font-normal whitespace-nowrap">Years 7-9</a>
+    <span class="text-gray-300">•</span>        <a href="/learning#years-10-11" class="hover:dynamic-text transition-colors font-medium block text-gray-700  hover:underline font-normal whitespace-nowrap">10-11</a>
+    <span class="text-gray-300">•</span>        <a href="/learning#years-12-13" class="hover:dynamic-text transition-colors font-medium block text-gray-700  hover:underline font-normal whitespace-nowrap">12-13</a>
+        
+    
+</li>
+
+            </li>
+            
+                    <li class="block">
+                <a href="/innovation" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Curriculum X & Innovation</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/learning/learning-support" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Learning Support</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/innovation/outdoor-learning" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Outdoor Learning</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/academic" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Academic Results</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/learning/beyond" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Beyond the Curriculum</a>
+            </li>
+
+            
+        
+        </ul>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                RoughNotation.annotate(document.querySelector('#menu2'), {type: 'box', padding: -1.5, iterations: 1, color: "#ffffff", strokeWidth: 3, animate: false, animationDelay: 0, animationDuration: 0}).show();
+            });
+        
+        </script>
+    
+</div>
+
+
+            </li>
+                        <li class="relative flex items-center text-sm hover:dynamic-text animated-underline transition-colors" x-data="{menuOpen: false}" @mouseover="menuOpen=true"  @mouseout="menuOpen=false">
+                <a href="/news" class="px-6 mx-2 my-4 font-title text-center uppercase font-medium " onmouseover="updateColor(this, 2)" data-index="3">
+                    <span class="inner-item">School&nbsp;Life</span>
+                </a>
+
+                <div x-cloak class="absolute top-0 left-1/2 -translate-x-1/2 z-50 mt-12" 
+        x-show="menuOpen" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-2 scale-100"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-2 scale-100"
+        >
+            <ul id="menu3" class="pt-6 pb-5 shadow-lg drop-shadow-lg bg-white text-base">
+                    <li class="block">
+                <a href="/news" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">News & Events</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/calendar" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">School Calendar</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/resources/video-gallery" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Video Gallery</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/wellbeing-and-community/our-students" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Student Voices</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/wellbeing-and-community/parent-voices" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Parent Voices</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/wellbeing-and-community/our-teachers" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Our Teachers</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/resources" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Resources</a>
+            </li>
+
+            
+        
+        </ul>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                RoughNotation.annotate(document.querySelector('#menu3'), {type: 'box', padding: -1.5, iterations: 1, color: "#ffffff", strokeWidth: 3, animate: false, animationDelay: 0, animationDuration: 0}).show();
+            });
+        
+        </script>
+    
+</div>
+
+
+            </li>
+                        <li class="relative flex items-center text-sm hover:dynamic-text animated-underline transition-colors" x-data="{menuOpen: false}" @mouseover="menuOpen=true"  @mouseout="menuOpen=false">
+                <a href="/join" class="px-6 mx-2 my-4 font-title text-center uppercase font-medium " onmouseover="updateColor(this, 3)" data-index="4">
+                    <span class="inner-item">Join&nbsp;Us</span>
+                </a>
+
+                <div x-cloak class="absolute top-0 left-1/2 -translate-x-1/2 z-50 mt-12" 
+        x-show="menuOpen" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-2 scale-100"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-2 scale-100"
+        >
+            <ul id="menu4" class="pt-6 pb-5 shadow-lg drop-shadow-lg bg-white text-base">
+                    <li class="block">
+                <a href="/join" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Why ICHK?</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/join/admissions-info" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">How to Apply</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/join/admissions-info/#tuition-fees-2025-26" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Tuition & Fees</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/join/book-a-tour" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Book a Tour</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/join/working-with-us" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Working with Us</a>
+            </li>
+
+            
+        
+        </ul>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                RoughNotation.annotate(document.querySelector('#menu4'), {type: 'box', padding: -1.5, iterations: 1, color: "#ffffff", strokeWidth: 3, animate: false, animationDelay: 0, animationDuration: 0}).show();
+            });
+        
+        </script>
+    
+</div>
+
+
+            </li>
+                        <li class="relative flex items-center text-sm hover:dynamic-text animated-underline transition-colors" x-data="{menuOpen: false}" @mouseover="menuOpen=true"  @mouseout="menuOpen=false">
+                <a href="/contact" class="px-6 mx-2 my-4 font-title text-center uppercase font-medium " onmouseover="updateColor(this, 4)" data-index="5">
+                    <span class="inner-item">Contact</span>
+                </a>
+
+                <div x-cloak class="absolute top-0 left-1/2 -translate-x-1/2 z-50 mt-12" 
+        x-show="menuOpen" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-2 scale-100"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-2 scale-100"
+        >
+    
+</div>
+
+
+            </li>
+                    
+
+        
+    </ul>
+
+    <div class="">
+        <button name="Menu" aria-label="Menu" class="block focus:outline-none overflow-hidden p-3 "
+            @click="showMobileNav = !showMobileNav; showSearch = showMobileNav">
+
+            <svg class="-mt-px h-6 w-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path stroke-width="2" d="M1,4 H19 Z M1,10 H19 Z M1,16 H19  Z" stroke-linecap="square"/>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+
+                    <header aria-label="Page Header" class="container mx-auto flex items-stretch justify-between py-2 text-gray-900" >
+
+    <a href="/" class="-ml-px my-2 mr-24 lg:mr-0" onmouseover="updateColor(this, -1)">
+        <img class="h-24" src="/assets/ICHK-Sec-Logo.svg" alt="International College Hong Kong" title="International College Hong Kong" aria-label="">
+    </a>
+
+    <nav class="flex items-stretch justify-between" role="navigation" aria-label="Main Navigation">
+
+                    <div class="hidden lg:block relative h-full font-title animated-underline hover:dynamic-text transition-colors" x-data="{menuOpen: false}" @mouseover="menuOpen=true"  @mouseout="menuOpen=false">
+                    
+    <a class="cursor-pointer h-full flex items-center px-4 xl:px-6 font-title text-center uppercase font-medium  " href="/about" onmouseover="updateColor(this, 0)">
+        <span class="inner-item">
+            Our Story
+        </span>
+    </a>
+
+    <div x-cloak class="absolute top-0 left-1/2 -translate-x-1/2 z-50 mt-24" 
+        x-show="menuOpen" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-2 scale-100"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-2 scale-100"
+        >
+            <ul id="menu0" class="pt-6 pb-5 shadow-lg drop-shadow-lg bg-white text-base">
+                    <li class="block">
+                <a href="/about" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Welcome to ICHK</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/about/guiding-statements" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Mission & Vision</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/wellbeing-and-community" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Our Community</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/about/accreditation-and-recognition" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Accreditation & Recognition</a>
+            </li>
+
+            
+        
+        </ul>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                RoughNotation.annotate(document.querySelector('#menu0'), {type: 'box', padding: -1.5, iterations: 1, color: "#ffffff", strokeWidth: 3, animate: false, animationDelay: 0, animationDuration: 0}).show();
+            });
+        
+        </script>
+    
+</div>
+
+
+
+</div>
+
+
+                    <div class="hidden lg:block relative h-full font-title animated-underline hover:dynamic-text transition-colors" x-data="{menuOpen: false}" @mouseover="menuOpen=true"  @mouseout="menuOpen=false">
+                    
+    <a class="cursor-pointer h-full flex items-center px-4 xl:px-6 font-title text-center uppercase font-medium  " href="/learning" onmouseover="updateColor(this, 1)">
+        <span class="inner-item">
+            Learning
+        </span>
+    </a>
+
+    <div x-cloak class="absolute top-0 left-1/2 -translate-x-1/2 z-50 mt-24" 
+        x-show="menuOpen" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-2 scale-100"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-2 scale-100"
+        >
+            <ul id="menu1" class="pt-6 pb-5 shadow-lg drop-shadow-lg bg-white text-base">
+                    <li class="block">
+                <a href="/learning" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Epistemic Apprenticeship</a>
+            </li>
+
+                        
+                <li class="flex justify-start items-center px-6 xl:px-8 gap-3">
+        <a href="/learning#years-7-9" class="hover:dynamic-text transition-colors font-medium block text-gray-700  hover:underline font-normal whitespace-nowrap">Years 7-9</a>
+    <span class="text-gray-300">•</span>        <a href="/learning#years-10-11" class="hover:dynamic-text transition-colors font-medium block text-gray-700  hover:underline font-normal whitespace-nowrap">10-11</a>
+    <span class="text-gray-300">•</span>        <a href="/learning#years-12-13" class="hover:dynamic-text transition-colors font-medium block text-gray-700  hover:underline font-normal whitespace-nowrap">12-13</a>
+        
+    
+</li>
+
+            </li>
+            
+                    <li class="block">
+                <a href="/innovation" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Curriculum X & Innovation</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/learning/learning-support" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Learning Support</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/innovation/outdoor-learning" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Outdoor Learning</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/academic" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Academic Results</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/learning/beyond" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Beyond the Curriculum</a>
+            </li>
+
+            
+        
+        </ul>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                RoughNotation.annotate(document.querySelector('#menu1'), {type: 'box', padding: -1.5, iterations: 1, color: "#ffffff", strokeWidth: 3, animate: false, animationDelay: 0, animationDuration: 0}).show();
+            });
+        
+        </script>
+    
+</div>
+
+
+
+</div>
+
+
+                    <div class="hidden lg:block relative h-full font-title animated-underline hover:dynamic-text transition-colors" x-data="{menuOpen: false}" @mouseover="menuOpen=true"  @mouseout="menuOpen=false">
+                    
+    <a class="cursor-pointer h-full flex items-center px-4 xl:px-6 font-title text-center uppercase font-medium  " href="/news" onmouseover="updateColor(this, 2)">
+        <span class="inner-item">
+            School Life
+        </span>
+    </a>
+
+    <div x-cloak class="absolute top-0 left-1/2 -translate-x-1/2 z-50 mt-24" 
+        x-show="menuOpen" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-2 scale-100"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-2 scale-100"
+        >
+            <ul id="menu2" class="pt-6 pb-5 shadow-lg drop-shadow-lg bg-white text-base">
+                    <li class="block">
+                <a href="/news" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">News & Events</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/calendar" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">School Calendar</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/resources/video-gallery" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Video Gallery</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/wellbeing-and-community/our-students" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Student Voices</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/wellbeing-and-community/parent-voices" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Parent Voices</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/wellbeing-and-community/our-teachers" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Our Teachers</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/resources" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Resources</a>
+            </li>
+
+            
+        
+        </ul>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                RoughNotation.annotate(document.querySelector('#menu2'), {type: 'box', padding: -1.5, iterations: 1, color: "#ffffff", strokeWidth: 3, animate: false, animationDelay: 0, animationDuration: 0}).show();
+            });
+        
+        </script>
+    
+</div>
+
+
+
+</div>
+
+
+                    <div class="hidden lg:block relative h-full font-title animated-underline hover:dynamic-text transition-colors" x-data="{menuOpen: false}" @mouseover="menuOpen=true"  @mouseout="menuOpen=false">
+                    
+    <a class="cursor-pointer h-full flex items-center px-4 xl:px-6 font-title text-center uppercase font-medium  " href="/join" onmouseover="updateColor(this, 3)">
+        <span class="inner-item">
+            Join Us
+        </span>
+    </a>
+
+    <div x-cloak class="absolute top-0 left-1/2 -translate-x-1/2 z-50 mt-24" 
+        x-show="menuOpen" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-2 scale-100"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-2 scale-100"
+        >
+            <ul id="menu3" class="pt-6 pb-5 shadow-lg drop-shadow-lg bg-white text-base">
+                    <li class="block">
+                <a href="/join" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Why ICHK?</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/join/admissions-info" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">How to Apply</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/join/admissions-info/#tuition-fees-2025-26" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Tuition & Fees</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/join/book-a-tour" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Book a Tour</a>
+            </li>
+
+            
+                    <li class="block">
+                <a href="/join/working-with-us" class="hover:dynamic-text transition-colors font-medium block px-6 xl:px-8 my-3 text-gray-700  hover:underline font-normal whitespace-nowrap">Working with Us</a>
+            </li>
+
+            
+        
+        </ul>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                RoughNotation.annotate(document.querySelector('#menu3'), {type: 'box', padding: -1.5, iterations: 1, color: "#ffffff", strokeWidth: 3, animate: false, animationDelay: 0, animationDuration: 0}).show();
+            });
+        
+        </script>
+    
+</div>
+
+
+
+</div>
+
+
+                    <div class="hidden lg:block relative h-full font-title animated-underline hover:dynamic-text transition-colors" x-data="{menuOpen: false}" @mouseover="menuOpen=true"  @mouseout="menuOpen=false">
+                    
+    <a class="cursor-pointer h-full flex items-center px-4 xl:px-6 font-title text-center uppercase font-medium  " href="/contact" onmouseover="updateColor(this, 4)">
+        <span class="inner-item">
+            Contact
+        </span>
+    </a>
+
+    <div x-cloak class="absolute top-0 left-1/2 -translate-x-1/2 z-50 mt-24" 
+        x-show="menuOpen" 
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-2 scale-100"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-2 scale-100"
+        >
+    
+</div>
+
+
+
+</div>
+
+
+        
+
+        <button name="Menu" aria-label="Menu" class="block p-4  focus:outline-none overflow-hidden p-6 absolute top-0 right-0 mt-6 mr-4 lg:mr-6"
+            @click="showMobileNav = !showMobileNav; showSearch = showMobileNav">
+
+            <svg class="-mt-px h-8 w-8 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path stroke-width="2" d="M1,4 H19 Z M1,10 H19 Z M1,16 H19  Z" stroke-linecap="square"/>
+            </svg>
+        </button>
+
+    </nav>
+
+    <nav class="fixed top-0 right-0 z-50 w-screen sm:w-3/5 md:w-2/5 h-screen min-h-screen hidden overflow-y-scroll scrolling-touch bg-gray-100 shadow-dark" 
+    :class="{ 'hidden': !showMobileNav }" 
+    x-show="showMobileNav"
+    x-transition:enter="ease-out duration-150"
+    x-transition:enter-start="-mr-64"
+    x-transition:enter-end="mr-0"
+    x-transition:leave="ease-in duration-150"
+    x-transition:leave-start="mr-0"
+    x-transition:leave-end="-mr-64"    
+    style="transition-property: margin;"
+    role="navigation" aria-label="Mobile Navigation">
+
+    <button class="block text-white focus:outline-none overflow-hidden p-4 absolute top-0 right-0 mt-6 mr-2"
+        @click="showMobileNav = !showMobileNav;"
+        name="Close" aria-label="Close" >
+
+        <svg class="-mt-1 h-6 w-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path stroke-width="2" d="M2,2 L18 18 Z M18,2 L2 18 Z" stroke-linecap="square"/>
+        </svg>
+    </button>
+
+    <div class="w-full bg-ichk-navy text-white px-6 py-4">
+        <img class="h-16" src="/assets/ICHK-Sec-Logo-W.svg" alt="International College Hong Kong" title="International College Hong Kong" aria-label="">
+    </div>
+    
+    <ul class="w-full">
+
+        <li class="px-6 py-4 border-b text-gray-700">
+            <form action="/search" class="flex relative z-0" >
+
+    <input type="search" name="q" class="w-full flex-1 bg-gray-200 focus:shadow-outline focus:border-blue-400 border-transparent border-gray-300 rounded-sm leading-relaxed text-sm outline-none px-3 py-2 focus:bg-white" placeholder="Search" value="">
+
+    <button title="Submit" aria-label="Submit" type="submit" class="absolute right-0 h-full px-3 py-2 text-gray-600 cursor-pointer outline-none">
+        <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M87,81.3L69.1,63.4c9-11.7,8.1-28.6-2.7-39.3c-5.9-5.9-13.5-8.8-21.2-8.8s-15.3,2.9-21.2,8.8c-11.7,11.7-11.7,30.7,0,42.4  c5.9,5.9,13.5,8.8,21.2,8.8c6.4,0,12.8-2,18.1-6.1L81.3,87c0.8,0.8,1.8,1.2,2.9,1.2c1,0,2.1-0.4,2.9-1.2  C88.6,85.5,88.6,82.9,87,81.3z M45.3,67.2c-5.9,0-11.3-2.3-15.5-6.4c-8.5-8.5-8.5-22.4,0-31c4.1-4.1,9.6-6.4,15.5-6.4  s11.3,2.3,15.5,6.4s6.4,9.6,6.4,15.5c0,5.9-2.3,11.3-6.4,15.5S51.1,67.2,45.3,67.2z"/></svg>
+    </button>
+</form>
+
+        </li>
+
+        <li class="w-full px-1 py-4 border-b text-gray-700">
+            <div class="w-full flex justify-between text-center ">
+                                    <a href="https://gibbon.ichk.edu.hk" class="group block flex-1 flex flex-col items-center text-gray-500 hover:text-gray-700 text-xs" target="_blank">
+                        <picture>
+                            <source type="image/webp" srcset="/img/asset/YXNzZXRzL2Rlc2lnbi9HaWJib24tT3V0bGluZS5wbmc=?w=80&fm=webp&s=419ff3a816c3a59325a3acb264646281" />
+
+                                                        <img src="/img/asset/YXNzZXRzL2Rlc2lnbi9HaWJib24tT3V0bGluZS5wbmc=?w=40&s=dfa12f4f38785be2778fc62a2b8306f9" class="w-8 h-8 sm:w-10 sm:h-10 mb-1 opacity-50 group-hover:opacity-75" width="40" height="40" alt="Gibbon">
+                            
+                        </picture>
+                        <span>Gibbon</span>
+                    </a>
+                                    <a href="https://accounts.google.com/" class="group block flex-1 flex flex-col items-center text-gray-500 hover:text-gray-700 text-xs" target="_blank">
+                        <picture>
+                            <source type="image/webp" srcset="/img/asset/YXNzZXRzL2Rlc2lnbi9nb29nbGUtc3ltYm9sLnBuZw==?w=80&fm=webp&s=9e6551eb0c8396418dd8e83d19382243" />
+
+                                                        <img src="/img/asset/YXNzZXRzL2Rlc2lnbi9nb29nbGUtc3ltYm9sLnBuZw==?w=40&s=1cdc33e7257518f12805648d14979d8d" class="w-8 h-8 sm:w-10 sm:h-10 mb-1 opacity-50 group-hover:opacity-75" width="40" height="40" alt="Google Apps">
+                            
+                        </picture>
+                        <span>Google Apps</span>
+                    </a>
+                                    <a href="/calendar" class="group block flex-1 flex flex-col items-center text-gray-500 hover:text-gray-700 text-xs" >
+                        <picture>
+                            <source type="image/webp" srcset="/img/asset/YXNzZXRzL2Rlc2lnbi9nb29nbGUtY2FsZW5kYXIucG5n?w=80&fm=webp&s=3469f0b0c8b2beadd68e60b8dec95898" />
+
+                                                        <img src="/img/asset/YXNzZXRzL2Rlc2lnbi9nb29nbGUtY2FsZW5kYXIucG5n?w=40&s=312c00606581d1ff6b01cff528611bd4" class="w-8 h-8 sm:w-10 sm:h-10 mb-1 opacity-50 group-hover:opacity-75" width="40" height="40" alt="Calendar">
+                            
+                        </picture>
+                        <span>Calendar</span>
+                    </a>
+                                    <a href="/news" class="group block flex-1 flex flex-col items-center text-gray-500 hover:text-gray-700 text-xs" >
+                        <picture>
+                            <source type="image/webp" srcset="/img/asset/YXNzZXRzL2Rlc2lnbi9uZXdzcGFwZXIucG5n?w=80&fm=webp&s=776836a115a53371fcae372484669c9e" />
+
+                                                        <img src="/img/asset/YXNzZXRzL2Rlc2lnbi9uZXdzcGFwZXIucG5n?w=40&s=5d49430df76037e57d8be8845c54c22a" class="w-8 h-8 sm:w-10 sm:h-10 mb-1 opacity-50 group-hover:opacity-75" width="40" height="40" alt="News">
+                            
+                        </picture>
+                        <span>News</span>
+                    </a>
+                                    <a href="/resources" class="group block flex-1 flex flex-col items-center text-gray-500 hover:text-gray-700 text-xs" >
+                        <picture>
+                            <source type="image/webp" srcset="/img/asset/YXNzZXRzL2Rlc2lnbi9mb2xkZXIucG5n?w=80&fm=webp&s=3aa26daa21f96509721c0d9600f027a4" />
+
+                                                        <img src="/img/asset/YXNzZXRzL2Rlc2lnbi9mb2xkZXIucG5n?w=40&s=ab8ddb538fa0102207461494a9ca7963" class="w-8 h-8 sm:w-10 sm:h-10 mb-1 opacity-50 group-hover:opacity-75" width="40" height="40" alt="Resources">
+                            
+                        </picture>
+                        <span>Resources</span>
+                    </a>
+                
+            </div>
+        </li>
+
+        
+                        <li class="border-b " x-data="{ showChildren: false }" >
+
+            <div class="w-full flex items-center flex-between">
+                <a href="/" class="group block h-12 ml-6 py-3 text-gray-700 hover:text-primary leading-tight font-semibold text-lg">
+                    <span class="inner-item group-hover:underline">Home</span>
+                                    </a>
+
+                            </div>
+                
+                        </li>
+                    
+                        <li class="border-b " x-data="{ showChildren: false }" >
+
+            <div class="w-full flex items-center flex-between">
+                <a href="/about" class="group block h-12 ml-6 py-3 text-gray-700 hover:text-primary leading-tight font-semibold text-lg">
+                    <span class="inner-item group-hover:underline">Our Story</span>
+                                    </a>
+
+                                <button name="Expand" aria-label="Expand"  
+                        class="flex-1 py-3 px-6 text-gray-700 flex justify-end"
+                        @click="showChildren = !showChildren"
+                        >
+
+                    <svg x-bind:class="{'-rotate-90': showChildren, 'rotate-90': !showChildren }" class="w-5 h-5 fill-current stroke-current transform rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" >
+                        <polyline stroke-width="2" points="6 2, 14 10, 6 18" fill="none"></polyline>
+                    </svg>
+                </button>
+                            </div>
+                
+                            <ul class="bg-white py-2 pl-6 border-t"
+                    x-bind:class="{ 'hidden': !showChildren }" 
+                    x-show="showChildren"
+                    x-transition:enter="ease-out duration-100"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100" >
+                                            <li>
+                        <a href="/about/history" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">History of ICHK</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/about/guiding-statements" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Mission & Vision</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/about/partnerships" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Partnerships</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/about/board-of-governors" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Board of Governors</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/about/accreditation-and-recognition" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Accreditation & Recognition</span>
+
+                                                    </a>
+                        </li>
+                    
+                </ul>
+                        </li>
+                    
+                        <li class="border-b " x-data="{ showChildren: false }" >
+
+            <div class="w-full flex items-center flex-between">
+                <a href="/learning" class="group block h-12 ml-6 py-3 text-gray-700 hover:text-primary leading-tight font-semibold text-lg">
+                    <span class="inner-item group-hover:underline">Learning</span>
+                                    </a>
+
+                                <button name="Expand" aria-label="Expand"  
+                        class="flex-1 py-3 px-6 text-gray-700 flex justify-end"
+                        @click="showChildren = !showChildren"
+                        >
+
+                    <svg x-bind:class="{'-rotate-90': showChildren, 'rotate-90': !showChildren }" class="w-5 h-5 fill-current stroke-current transform rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" >
+                        <polyline stroke-width="2" points="6 2, 14 10, 6 18" fill="none"></polyline>
+                    </svg>
+                </button>
+                            </div>
+                
+                            <ul class="bg-white py-2 pl-6 border-t"
+                    x-bind:class="{ 'hidden': !showChildren }" 
+                    x-show="showChildren"
+                    x-transition:enter="ease-out duration-100"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100" >
+                                            <li>
+                        <a href="/learning/english" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">English</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/learning/humanities" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Humanities</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/learning/maths" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Maths</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/learning/science" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Science</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/learning/languages" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Languages</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/learning/expressive-arts" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">The Arts (Art, Drama, Music, Media)</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/learning/information-technology" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Information Technology</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/learning/physical-education" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Physical Education</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/learning/learning-support" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Learning Support</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/learning/beyond" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Beyond the Curriculum</span>
+
+                                                    </a>
+                        </li>
+                    
+                </ul>
+                        </li>
+                    
+                        <li class="border-b " x-data="{ showChildren: false }" >
+
+            <div class="w-full flex items-center flex-between">
+                <a href="/innovation" class="group block h-12 ml-6 py-3 text-gray-700 hover:text-primary leading-tight font-semibold text-lg">
+                    <span class="inner-item group-hover:underline">Innovation</span>
+                                    </a>
+
+                                <button name="Expand" aria-label="Expand"  
+                        class="flex-1 py-3 px-6 text-gray-700 flex justify-end"
+                        @click="showChildren = !showChildren"
+                        >
+
+                    <svg x-bind:class="{'-rotate-90': showChildren, 'rotate-90': !showChildren }" class="w-5 h-5 fill-current stroke-current transform rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" >
+                        <polyline stroke-width="2" points="6 2, 14 10, 6 18" fill="none"></polyline>
+                    </svg>
+                </button>
+                            </div>
+                
+                            <ul class="bg-white py-2 pl-6 border-t"
+                    x-bind:class="{ 'hidden': !showChildren }" 
+                    x-show="showChildren"
+                    x-transition:enter="ease-out duration-100"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100" >
+                                            <li>
+                        <a href="/innovation/human-technologies" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Human Technologies</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/innovation/outdoor-learning" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Outdoor Learning</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/innovation/deep-learning" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Deep Learning</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/innovation/free-learning" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Free Learning</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/innovation/flexible-learning" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Flexible Learning</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/innovation/enrichment-and-flow" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Enrichment & Flow</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/innovation/transitions" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Transitions</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/innovation/5-plus-1" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">5+1 Model</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/innovation/plus1centre" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">+1 Centre</span>
+
+                                                    </a>
+                        </li>
+                    
+                </ul>
+                        </li>
+                    
+                        <li class="border-b " x-data="{ showChildren: false }" >
+
+            <div class="w-full flex items-center flex-between">
+                <a href="/academic" class="group block h-12 ml-6 py-3 text-gray-700 hover:text-primary leading-tight font-semibold text-lg">
+                    <span class="inner-item group-hover:underline">Academic Results</span>
+                                    </a>
+
+                            </div>
+                
+                        </li>
+                    
+                        <li class="border-b " x-data="{ showChildren: false }" >
+
+            <div class="w-full flex items-center flex-between">
+                <a href="/wellbeing-and-community" class="group block h-12 ml-6 py-3 text-gray-700 hover:text-primary leading-tight font-semibold text-lg">
+                    <span class="inner-item group-hover:underline">Wellbeing & Community</span>
+                                    </a>
+
+                                <button name="Expand" aria-label="Expand"  
+                        class="flex-1 py-3 px-6 text-gray-700 flex justify-end"
+                        @click="showChildren = !showChildren"
+                        >
+
+                    <svg x-bind:class="{'-rotate-90': showChildren, 'rotate-90': !showChildren }" class="w-5 h-5 fill-current stroke-current transform rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" >
+                        <polyline stroke-width="2" points="6 2, 14 10, 6 18" fill="none"></polyline>
+                    </svg>
+                </button>
+                            </div>
+                
+                            <ul class="bg-white py-2 pl-6 border-t"
+                    x-bind:class="{ 'hidden': !showChildren }" 
+                    x-show="showChildren"
+                    x-transition:enter="ease-out duration-100"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100" >
+                                            <li>
+                        <a href="/wellbeing-and-community/our-students" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Our Students</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/wellbeing-and-community/our-teachers" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Our Teachers</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/wellbeing-and-community/our-graduates" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Our Graduates</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/wellbeing-and-community/parent-voices" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Parent Voices</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/wellbeing-and-community/sustainability" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Sustainability</span>
+
+                                                    </a>
+                        </li>
+                    
+                </ul>
+                        </li>
+                    
+                        <li class="border-b " x-data="{ showChildren: false }" >
+
+            <div class="w-full flex items-center flex-between">
+                <a href="/news" class="group block h-12 ml-6 py-3 text-gray-700 hover:text-primary leading-tight font-semibold text-lg">
+                    <span class="inner-item group-hover:underline">News</span>
+                                    </a>
+
+                            </div>
+                
+                        </li>
+                    
+                        <li class="border-b " x-data="{ showChildren: false }" >
+
+            <div class="w-full flex items-center flex-between">
+                <a href="/resources" class="group block h-12 ml-6 py-3 text-gray-700 hover:text-primary leading-tight font-semibold text-lg">
+                    <span class="inner-item group-hover:underline">Resources</span>
+                                    </a>
+
+                                <button name="Expand" aria-label="Expand"  
+                        class="flex-1 py-3 px-6 text-gray-700 flex justify-end"
+                        @click="showChildren = !showChildren"
+                        >
+
+                    <svg x-bind:class="{'-rotate-90': showChildren, 'rotate-90': !showChildren }" class="w-5 h-5 fill-current stroke-current transform rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" >
+                        <polyline stroke-width="2" points="6 2, 14 10, 6 18" fill="none"></polyline>
+                    </svg>
+                </button>
+                            </div>
+                
+                            <ul class="bg-white py-2 pl-6 border-t"
+                    x-bind:class="{ 'hidden': !showChildren }" 
+                    x-show="showChildren"
+                    x-transition:enter="ease-out duration-100"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100" >
+                                            <li>
+                        <a href="/resources/parent-resources" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Parent Resources</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/resources/school-resources" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">School Resources</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/resources/video-gallery" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Video Gallery</span>
+
+                                                    </a>
+                        </li>
+                    
+                </ul>
+                        </li>
+                    
+                        <li class="border-b " x-data="{ showChildren: false }" >
+
+            <div class="w-full flex items-center flex-between">
+                <a href="/join" class="group block h-12 ml-6 py-3 text-gray-700 hover:text-primary leading-tight font-semibold text-lg">
+                    <span class="inner-item group-hover:underline">Join Us</span>
+                                    </a>
+
+                                <button name="Expand" aria-label="Expand"  
+                        class="flex-1 py-3 px-6 text-gray-700 flex justify-end"
+                        @click="showChildren = !showChildren"
+                        >
+
+                    <svg x-bind:class="{'-rotate-90': showChildren, 'rotate-90': !showChildren }" class="w-5 h-5 fill-current stroke-current transform rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" >
+                        <polyline stroke-width="2" points="6 2, 14 10, 6 18" fill="none"></polyline>
+                    </svg>
+                </button>
+                            </div>
+                
+                            <ul class="bg-white py-2 pl-6 border-t"
+                    x-bind:class="{ 'hidden': !showChildren }" 
+                    x-show="showChildren"
+                    x-transition:enter="ease-out duration-100"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100" >
+                                            <li>
+                        <a href="/join/apply-now" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Apply Now</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/join/book-a-tour" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Book a Tour</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/join/ask-a-question" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Ask a Question</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/join/admissions-info" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Admissions Info</span>
+
+                                                    </a>
+                        </li>
+                                            <li>
+                        <a href="/join/working-with-us" class="group block py-2 text-base text-gray-700 hover:text-primary leading-tight font-normal">
+                            <span class="inner-item group-hover:underline">Working with Us</span>
+
+                                                    </a>
+                        </li>
+                    
+                </ul>
+                        </li>
+                    
+                        <li class="border-b " x-data="{ showChildren: false }" >
+
+            <div class="w-full flex items-center flex-between">
+                <a href="/contact" class="group block h-12 ml-6 py-3 text-gray-700 hover:text-primary leading-tight font-semibold text-lg">
+                    <span class="inner-item group-hover:underline">Contact Us</span>
+                                    </a>
+
+                            </div>
+                
+                        </li>
+                    
+                        <li class="border-b " x-data="{ showChildren: false }" >
+
+            <div class="w-full flex items-center flex-between">
+                <a href="/sitemap" class="group block h-12 ml-6 py-3 text-gray-700 hover:text-primary leading-tight font-semibold text-lg">
+                    <span class="inner-item group-hover:underline">Sitemap</span>
+                                    </a>
+
+                            </div>
+                
+                        </li>
+                    
+    </ul>
+
+</nav>
+
+
+</header>
+
+
+
+        
+        
+        <article role="article" aria-label="Page" class="container mx-auto text-lg ">
+
+    
+    <header class="mt-12 mb-24 ">
+
+        <div class="float-right">
+
+            <a href="#" onclick="history.go(-1)" class="animated-underline flex items-center px-4 font-subtitle text-gray-400 hover:text-primary text-3xl" >
+                
+                <svg class="h-32 mr-4 stroke-current cursor-pointer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 432 160" style="enable-background:new 0 0 432 160;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                </style>
+                    <path class="st0" d="M9.3,27.8c8,18.8,19.3,55.5,45.7,51.4c26-4.1,46.7-38.5,67.6-52.3c61.7-40.8,96.5,50.1,121.7,91.5
+                        c7.2,11.9,24.8,44.8,43.7,35.9c19.8-9.4,32.7-95.2,9.9-103.6c-15.7-5.7-9.1,19.7-0.4,25c29.4,18,87.1-14.8,113.5-25.9"/>
+                    <path class="st0" d="M409.4,73.5c1.4-14,12.7-21.9,16.6-34.8c-10.2,1.3-30.9,3.1-40.6-1.7"/>
+                </svg>
+                <span class="inner-item -mt-16">
+                    Take me<br/>back!
+                </span>
+            </a>
+
+            
+        </div>
+        <h1 class="font-title font-bold text-5xl text-ichk-blue">
+            Oops! 
+        </h1>
+    
+        <p class="mt-2 text-base text-gray-400">
+            404 - Page Not Found
+        </p>
+    </header>
+
+    <section class="mb-32">
+        <div class="mt-12 text-sm sm:text-base text-gray-600 auto-format-text">
+           <p>We couldn&#039;t find the page you&#039;re looking for. We&#039;ve recently launched a whole new website, so it&#039;s possible the page you&#039;re looking for has moved. Please use the search below to help you locate it. </p><h4>Looking for Primary &amp; Kindergarten?</h4><p><a rel="noopener" target="_blank" href="https://ichkhly.edu.hk">ICHK Hong Lok Yuen</a> is now located on a different website, which you can find here: <a rel="noopener" target="_blank" href="https://ichkhly.edu.hk">https://ichkhly.edu.hk</a></p>
+        </div>
+
+        <div class="my-12 text-sm sm:text-base text-gray-600">
+            <form action="/search" class="flex relative z-0" >
+
+    <input type="search" name="q" class="w-full flex-1 bg-gray-200 focus:shadow-outline focus:border-blue-400 border-transparent border-gray-300 rounded-sm leading-relaxed text-sm outline-none px-3 py-2 " placeholder="Search" value="">
+
+    <button title="Submit" aria-label="Submit" type="submit" class="absolute right-0 h-full px-3 py-2 text-gray-600 cursor-pointer outline-none">
+        <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M87,81.3L69.1,63.4c9-11.7,8.1-28.6-2.7-39.3c-5.9-5.9-13.5-8.8-21.2-8.8s-15.3,2.9-21.2,8.8c-11.7,11.7-11.7,30.7,0,42.4  c5.9,5.9,13.5,8.8,21.2,8.8c6.4,0,12.8-2,18.1-6.1L81.3,87c0.8,0.8,1.8,1.2,2.9,1.2c1,0,2.1-0.4,2.9-1.2  C88.6,85.5,88.6,82.9,87,81.3z M45.3,67.2c-5.9,0-11.3-2.3-15.5-6.4c-8.5-8.5-8.5-22.4,0-31c4.1-4.1,9.6-6.4,15.5-6.4  s11.3,2.3,15.5,6.4s6.4,9.6,6.4,15.5c0,5.9-2.3,11.3-6.4,15.5S51.1,67.2,45.3,67.2z"/></svg>
+    </button>
+</form>
+
+        </div>
+
+        <p class="mt-12 text-sm sm:text-base text-gray-600 mt-4 auto-format-text">
+            You can view our complete <a href="/sitemap">sitemap</a>, or <a href="/contact">contact us</a> if you need help finding an answer or resource.
+        </p>
+        
+    </section>
+    
+
+</article>
+
+
+                    <footer aria-label="Page Footer" class="mt-24 bg-gray-100">
+
+    <div class="container mx-auto flex flex-col sm:flex-row items-start pt-10 pb-12 gap-8 text-primary">
+        
+        
+
+        <nav role="Footer Menu" class="w-full grid grid-cols-2 lg:grid-cols-4 gap-8 flex-1 sm:-mr-12">
+                <div class="">
+            <ul class="animated-underline group w-fit"><!-- animated-bracket -->
+                <li class="w-fit mb-3">
+                    <a href="/about" class="text-base font-bold text-gray-500 group-hover:text-primary">
+                        <span class="inner-item">
+                            Our Story
+                        </span>
+                    </a>
+                </li>
+
+                                <li class="mb-1">
+                    <a href="/learning" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Learning
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/innovation" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Innovation
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/innovation/outdoor-learning" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Outdoor Learning
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/academic" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Academic Results
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/wellbeing-and-community" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Wellbeing & Community
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+                <div class="">
+            <ul class="animated-underline group w-fit"><!-- animated-bracket -->
+                <li class="w-fit mb-3">
+                    <a href="/about" class="text-base font-bold text-gray-500 group-hover:text-primary">
+                        <span class="inner-item">
+                            Our School
+                        </span>
+                    </a>
+                </li>
+
+                                <li class="mb-1">
+                    <a href="/wellbeing-and-community/our-teachers" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Our Teachers
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/wellbeing-and-community/our-graduates" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Our Graduates
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/about/accreditation-and-recognition" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Accreditation
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/about/board-of-governors" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Board of Governors
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/about/history" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        History of ICHK
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+                <div class="">
+            <ul class="animated-underline group w-fit"><!-- animated-bracket -->
+                <li class="w-fit mb-3">
+                    <a href="/join" class="text-base font-bold text-gray-500 group-hover:text-primary">
+                        <span class="inner-item">
+                            Join Us
+                        </span>
+                    </a>
+                </li>
+
+                                <li class="mb-1">
+                    <a href="/join/apply-now" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Apply Now
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/join/book-a-tour" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Book a Tour
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/join/ask-a-question" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Ask a Question
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/join/admissions-info" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Admissions Info
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/join/working-with-us" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Working with Us
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+                <div class="">
+            <ul class="animated-underline group w-fit"><!-- animated-bracket -->
+                <li class="w-fit mb-3">
+                    <a href="" class="text-base font-bold text-gray-500 group-hover:text-primary">
+                        <span class="inner-item">
+                            Quicklinks
+                        </span>
+                    </a>
+                </li>
+
+                                <li class="mb-1">
+                    <a href="/news" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        News
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/resources" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Resources
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/calendar" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Calendar
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="https://gibbon.ichk.edu.hk/" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Gibbon
+                    </a>
+                </li>
+                                <li class="mb-1">
+                    <a href="/contact" class="text-sm text-gray-500 hover:underline hover:text-primary">
+                        Contact Us
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+        </nav>
+
+        <div class="sm:w-1/4 sm:ml-6 text-gray-700">
+            <!-- <div class="mb-3 font-bold text-gray-500 group-hover:text-primary">
+                Search
+            </div> -->
+
+            <form action="/search" class="flex relative z-0" >
+
+    <input type="search" name="q" class="w-full flex-1 bg-gray-200 focus:shadow-outline focus:border-blue-400 border-transparent border-gray-300 rounded-sm leading-relaxed text-sm outline-none px-3 py-2 focus:bg-white" placeholder="Search" value="">
+
+    <button title="Submit" aria-label="Submit" type="submit" class="absolute right-0 h-full px-3 py-2 text-gray-600 cursor-pointer outline-none">
+        <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M87,81.3L69.1,63.4c9-11.7,8.1-28.6-2.7-39.3c-5.9-5.9-13.5-8.8-21.2-8.8s-15.3,2.9-21.2,8.8c-11.7,11.7-11.7,30.7,0,42.4  c5.9,5.9,13.5,8.8,21.2,8.8c6.4,0,12.8-2,18.1-6.1L81.3,87c0.8,0.8,1.8,1.2,2.9,1.2c1,0,2.1-0.4,2.9-1.2  C88.6,85.5,88.6,82.9,87,81.3z M45.3,67.2c-5.9,0-11.3-2.3-15.5-6.4c-8.5-8.5-8.5-22.4,0-31c4.1-4.1,9.6-6.4,15.5-6.4  s11.3,2.3,15.5,6.4s6.4,9.6,6.4,15.5c0,5.9-2.3,11.3-6.4,15.5S51.1,67.2,45.3,67.2z"/></svg>
+    </button>
+</form>
+
+
+            <p class="mt-6 text-gray-500 text-sm">
+                At ICHK learning is at the heart of everything we do: students, teachers, administrators, leaders, individually and collectively learning together.
+            </p>
+
+            <!-- <p class="mt-6 text-gray-500 text-xs -mx-2">
+                <span class="mx-2">Connect:</span>
+                <a href="https://www.facebook.com/ICHK.ICHKHongLokYuen" class="mx-2">Facebook</a> |
+                <a href="https://www.youtube.com/channel/UCmnO0w-8BIOgj_J0tuQEIeQ" class="mx-2">YouTube</a> |
+                <a href="https://www.linkedin.com/company/ichk" class="mx-2">LinkedIn</a>
+            </p> -->
+
+            
+        </div>
+
+    </div>
+
+</footer>
+
+<div class=" w-full bg-secondary text-white text-xxs text-center sm:text-left">
+
+    <div class="container mx-auto flex flex-wrap py-3 gap-3 justify-between items-center">
+        <div class="w-full sm:w-auto opacity-50 -mx-2">
+            <a href="/sitemap" class="mx-2 hover:text-white">Sitemap</a> |
+            <a href="/privacy" class="mx-2 hover:text-white">Privacy Policy</a> |
+            <a href="/credits" class="mx-2 hover:text-white">Credits</a>
+        </div>
+        <div class="w-full sm:w-auto opacity-50">
+            Copyright © 2026 ICHK https://www.ichk.edu.hk, All Rights Reserved
+        </div>
+        
+    </div>
+
+</div>
+
+        
+        
+        <script>
+    const root = document.querySelector(':root');
+    const colors = ['#013577', '#0473b9', '#009ca3', '#3f9e66', '#f68f19', '#ec2f51'];
+    
+    // Create a function for setting a variable value
+    function updateColor(target, index) {
+        index = (index + 1) % colors.length;
+        root.style.setProperty('--header-background', colors[index]);
+    }
+</script>
+
+<script defer src="/js/site.js?id=172ea80a73037a03db0ee961eb7256bf"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-68625214K1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-68625214K1');
+</script>
+
+    </body>
+</html>

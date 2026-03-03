@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>宣道幼稚園</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+
+            <link rel="icon" href="https://www.ktak.edu.hk/wp-content/uploads/2025/07/宣道幼稚園logo-removebg-125X32.png">
+        <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="referrer" content="origin-when-crossorigin">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/js/jquery.dotdotdot.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/js/moment.js"></script>
+            <script type="text/javascript" src="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/js/zh-hk.js"></script>
+        <script type="text/javascript" src="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700|Varela+Round" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/css/gallery-images-cust-t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/css/t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/css/t5_page_color.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/css/t5_s10.css"/>
+    <script type="text/javascript" src="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/js/t5.js"></script>
+    <script type="text/javascript" src="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/js/back_to_top.js"></script>
+
+    <link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ktak.edu.hk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.ktak.edu.hk/wp-includes/css/dist/block-library/style.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-style-css'  href='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-style-css'  href='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='blueimp-style-css'  href='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/css/blueimp-gallery.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/css/custom-style.css?ver=5.1.19' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_LATEST_NEWS_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"500722dd59","page_url":"https:\/\/www.ktak.edu.hk\/latest-new\/","eClassURL":"https:\/\/ktak.eclass.hk"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-latest-news-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ENOTICE_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"22cf2fecd4","page_url":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-enotice-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_CALENDAR_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"c20aa0a368","school_type":"KIS","LANG":{"SCHOOL_EVENT":"\u5b78\u6821\u4e8b\u9805","ACADEMIC_EVENT":"\u6559\u5b78\u4e8b\u9805","GROUP_EVENT":"\u5c0f\u7d44\u4e8b\u9805","PUBLIC_HOLIDAY_EVENT":"\u516c\u773e\u5047\u671f","SCHOOL_HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f","HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-calendar-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_DIGITAL_CHANNELS_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"31b3f35f60","TYPE_CATEGORY":"1","TYPE_ALBUM":"2","TYPE_HIGHLIGHT":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-digital-channels-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ACADEMIC_YEAR_TERM_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"13c2666189"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-academic-year-term-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_SUBJECT_GROUP_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"44c1353f84"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-subject-group-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_YEAR_CLASS_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"5b833ac491"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-year-class-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"34b453ffaa","school_type":"KIS"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-homework-api.js?ver=2.0.0'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/jquery.dotdotdot.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/owl.carousel.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-video.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-youtube.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-vimeo.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/jquery.blueimp-gallery.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/twbs-pagination/jquery.twbsPagination.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/gallery-images-cust/assets/gallery-images-cust.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/assets/js/basic-script.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-slideshow.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-calendar.js?ver=5.1.19'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.ktak.edu.hk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.19" />
+
+<link rel="stylesheet" href="https://www.ktak.edu.hk/wp-content/plugins/count-per-day/counter.css" type="text/css" />
+
+</head>
+
+<body class="home blog zh">
+
+<header id="header" class="t_image">
+    <div class="container">
+        <div class="row">
+            <div id="schLogo" class="col-xs-12 col-md-6 col-lg-7">
+                <div class="schLogoContainer">
+                    <a href="https://www.ktak.edu.hk/">
+                        <img src="https://www.ktak.edu.hk/wp-content/uploads/2025/07/宣道幼稚園logo-removebg-1SMALL77X100.png" alt="schoolLogo" class="schLogo"/>
+                        <div class="schName">
+                            <span class="schName_ch">宣道幼稚園</span>
+                            <span class="schName_en">The Alliance Kindergarten</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button id="mmBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="login" class="col-md-6 col-lg-5">
+        <form id="loginForm" action="https://ktak.eclass.hk/login.php" method="POST" target="_blank">
+        <a href="https://ktak.eclass.hk" target="_blank"><img
+                    src="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/images/eclassLogo.png" alt="schoolLogo" class="logo"/></a>
+        <div class="input">
+            <input name="UserLogin" class="form-control" type="text" placeholder="登入名稱"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+            <input name="UserPassword" class="form-control" type="password" placeholder="密碼"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+        </div>
+        <a class="btn_login" href="https://ktak.eclass.hk/login.php" onclick="$('#loginForm').submit(); return false;"></a>
+
+            </form>
+    </div>        </div>
+    </div>
+</header>
+
+<nav class="navbar" id="mainMenu">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                    <li class="dropdown page_item page_item_has_children c03">
+        <a href="https://www.ktak.edu.hk/%e5%ad%b8%e6%a0%a1%e8%b3%87%e6%96%99/" class="" style="">
+                            <img src="https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/005.png" />
+                        學校資料        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e5%ad%b8%e6%a0%a1%e8%b3%87%e6%96%99/%e8%be%a6%e5%ad%b8%e5%9c%98%e9%ab%94/" class="" style="">
+                        辦學團體        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e5%ad%b8%e6%a0%a1%e8%b3%87%e6%96%99/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/" class="" style="">
+                        授課時間        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e5%ad%b8%e6%a0%a1%e8%b3%87%e6%96%99/%e6%a0%a1%e6%9c%8d%e6%a8%a3%e5%bc%8f/" class="" style="">
+                        校服樣式        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.ktak.edu.hk/%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b/" class="" style="">
+                            <img src="https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/023.png" />
+                        課程介紹        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b/%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b/" class="" style="">
+                        課程簡介        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b/%e8%8b%b1%e8%aa%9e%e8%a8%88%e5%8a%83/" class="" style="">
+                        英語計劃        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b/%e6%99%ae%e9%80%9a%e8%a9%b1%e5%ad%b8%e7%bf%92/" class="" style="">
+                        普通話學習        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b/%e5%93%81%e5%be%b7%e3%80%81%e9%9d%88%e8%82%b2%e6%95%99%e8%82%b2/" class="" style="">
+                        品德、靈育教育        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b/%e6%a0%a1%e5%85%a7%e6%b4%bb%e5%8b%95/" class="" style="">
+                        校內活動        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ktak.edu.hk/%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b/%e6%88%b6%e5%a4%96%e5%8f%83%e8%a7%80%e6%b4%bb%e5%8b%95/" class="" style="">
+                        戶外參觀活動        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b/%e6%88%b6%e5%a4%96%e5%8f%83%e8%a7%80%e6%b4%bb%e5%8b%95/k1-%e5%b9%bc%e5%85%92%e7%8f%ad/" class="" style="">
+                        K1 幼兒班        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b/%e6%88%b6%e5%a4%96%e5%8f%83%e8%a7%80%e6%b4%bb%e5%8b%95/k2-%e4%bd%8e%e7%8f%ad/" class="" style="">
+                        K2 低班        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b/%e6%88%b6%e5%a4%96%e5%8f%83%e8%a7%80%e6%b4%bb%e5%8b%95/k3-%e9%ab%98%e7%8f%ad/" class="" style="">
+                        K3 高班        </a>
+
+            </li>
+                </ul>
+            </li>
+                </ul>
+            </li>
+        <li class="page_item c11">
+        <a href="https://www.ktak.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/" class="" style="">
+                            <img src="https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/002.png" />
+                        校舍        </a>
+
+            </li>
+        <li class="page_item c10">
+        <a href="https://www.ktak.edu.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/" class="" style="">
+                            <img src="https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/042.png" />
+                        家校合作        </a>
+
+            </li>
+        <li class="page_item c01">
+        <a href="https://www.ktak.edu.hk/%e9%9b%bb%e5%ad%90%e7%9b%b8%e7%b0%bf/" class="" style="">
+                            <img src="https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/048.png" />
+                        升小派位        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.ktak.edu.hk/%e6%94%b6%e7%94%9f%e7%b0%a1%e4%bb%8b/" class="" style="">
+                            <img src="https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/016.png" />
+                        收生簡介        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ktak.edu.hk/%e6%94%b6%e7%94%9f%e7%b0%a1%e4%bb%8b/%e7%b6%b2%e4%b8%8a%e5%a0%b1%e5%90%8d%e7%b3%bb%e7%b5%b1/" class="" style="">
+                        網上報名系統        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item c14">
+        <a href="https://www.ktak.edu.hk/%e7%9b%b8%e9%97%9c%e6%a9%9f%e6%a7%8b/" class="" style="">
+                            <img src="https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/040.png" />
+                        相關機構        </a>
+
+            </li>
+                                        <li class="login page_item">
+                        <a href="https://ktak.eclass.hk" target="_blank">eClass 登入</a>
+                    </li>
+                
+                <li class="lang page_item" style="display: none;">
+                    <a href="">English</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div id="headerSpace"></div>
+<div id="slideshowArea">
+    <div id="slideshowWrap">
+        <div id="gallery-carousel-69a53231d871c" class=" huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2025/08/宣-道-幼-稚-園-1280x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/24-1280x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/3-1280x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/8-1280x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/10-1280x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/11-1280x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/12-1280x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/13-1280x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/14-1280x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/15-1280x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>
+    <div class="container">
+        <div class="row">
+
+            <div id="latestNews" class="col-xs-12">
+    <h1 class="title">最新消息 | Latest news</h1>
+            <a href="https://www.ktak.edu.hk/latest-new/" class="moreBtn">更多</a>
+    
+    <div class="newsFrame">
+                    <ul id="newsList">
+                                    <a href="https://www.ktak.edu.hk/latest-new/%e5%81%87%e6%9c%9f/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                假期                                                            </h2>
+                                                                                    <span class="newsDate">2026-01-01</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ktak.edu.hk/latest-new/%e6%a0%a1%e5%85%a7%e6%a8%a1%e6%93%ac%e5%b9%b4%e5%ae%b5%e6%b4%bb%e5%8b%95/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                校內模擬年宵活動                                                            </h2>
+                                                                                    <span class="newsDate">2026-01-01</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ktak.edu.hk/latest-new/%e4%b8%8a%e5%ad%b8%e6%9c%9f%e5%ae%b6%e9%95%b7%e6%95%99%e5%b8%ab%e9%9d%a2%e8%ab%87%e6%97%a5/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                上學期家長教師面談日                                                            </h2>
+                                                                                    <span class="newsDate">2026-01-01</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ktak.edu.hk/latest-new/%e5%91%a8%e6%97%a5%e5%ae%b6%e9%95%b7%e7%8f%ad%e5%8f%8aktac-kids/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                周日家長班及KTAC Kids                                                            </h2>
+                                                                                    <span class="newsDate">2026-01-01</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ktak.edu.hk/latest-new/%e7%94%9f%e6%97%a5%e6%9c%83/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                生日會                                                            </h2>
+                                                                                    <span class="newsDate">2026-01-01</span>
+                        </li>
+                    </a>
+                            </ul>
+            </div>
+
+</div>
+
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            
+            
+<div id="calendar" class="col-xs-12">
+    <h1 class="title">學校行事曆 | Calendar</h1>
+
+
+
+    <div class="calendarWrap">
+        <div class="calendarFrame">
+            <div class="loading" v-show="isLoading">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <div class="year_month" v-show="!isLoading" style="display:none;">
+                <a class="btn_lastmonth" @click="changeSelectedMonth(-1)"></a>
+                <span class="year">{{ currentSelectedDate.format('YYYY') }}</span>
+                <span class="month">{{ currentSelectedDate.format('MMMM') }}</span>
+                <a class="btn_nextmonth" @click="changeSelectedMonth(1)"></a>
+            </div>
+            <ul v-show="!isLoading" style="display:none;">
+                <li class="cal_head">日</li>
+                <li class="cal_head">一</li>
+                <li class="cal_head">二</li>
+                <li class="cal_head">三</li>
+                <li class="cal_head">四</li>
+                <li class="cal_head">五</li>
+                <li class="cal_head">六</li>
+
+                <li class="blank_date" v-for="n in blankDayCount">
+                    <div></div>
+                </li>
+
+                <template v-for="day in monthDayCount">
+                    <li :class="getDayClass(day)">
+                        <div><a @click="showDayDetails(day)">
+                            <span class="date">{{day}}</span>
+                            <span class="cycle" v-if="getDayCycle(day)">{{getDayCycle(day)}}</span>
+                        </a></div>
+                    </li>
+                </template>
+
+                <p class="spacer"></p>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="calendarDetails" tabindex="-1" role="dialog" aria-labelledby="calendarDetails"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" v-html="selectedEvent.dateHtml"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="icon"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tbl_events">
+                        <tr v-for="event in selectedEvent.events">
+                            <td :class="event.CssClass">{{ event.TypeText }}</td>
+                            <td>{{ event.Title }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+
+
+    <div id="photoSlideShow">
+        <div class="container">
+            <div class="row">
+
+                
+<div id="photoSlideShowWrap" class="modules-fullWidth">
+    <div id="gallery-carousel-69a53231dda75" class="autoWidth huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/23-681x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/7-681x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/22-681x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/16-681x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/17-681x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/18-681x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/9-681x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/19-681x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/20-681x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ktak.edu.hk/wp-content/uploads/2026/01/21-681x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="modules-break"></div>
+
+<div id="usefulLinks">
+    <div class="container">
+        <div class="row">
+            <div class="modules-fullWidth" id="usefulLinksWrap">
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.ktac.org/" target="_blank">
+                                <img src="https://www.ktak.edu.hk/wp-content/uploads/2025/07/ktac_logo.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ktak.edu.hk/wp-content/uploads/2025/07/ktac_logo.png 330w, https://www.ktak.edu.hk/wp-content/uploads/2025/07/ktac_logo-300x61.png 300w, https://www.ktak.edu.hk/wp-content/uploads/2025/07/ktac_logo-180x37.png 180w" sizes="(max-width: 330px) 100vw, 330px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.apskt.edu.hk/" target="_blank">
+                                <img src="https://www.ktak.edu.hk/wp-content/uploads/2025/07/logo.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ktak.edu.hk/wp-content/uploads/2025/07/logo.png 544w, https://www.ktak.edu.hk/wp-content/uploads/2025/07/logo-300x63.png 300w, https://www.ktak.edu.hk/wp-content/uploads/2025/07/logo-180x38.png 180w" sizes="(max-width: 544px) 100vw, 544px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.edb.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://www.ktak.edu.hk/wp-content/uploads/2019/02/edb.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ktak.edu.hk/wp-content/uploads/2019/02/edb.jpg 600w, https://www.ktak.edu.hk/wp-content/uploads/2019/02/edb-300x99.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.chp.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://www.ktak.edu.hk/wp-content/uploads/2019/02/logo_chp_tc.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ktak.edu.hk/wp-content/uploads/2019/02/logo_chp_tc.png 335w, https://www.ktak.edu.hk/wp-content/uploads/2019/02/logo_chp_tc-300x79.png 300w" sizes="(max-width: 335px) 100vw, 335px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.hko.gov.hk/contentc.htm" target="_blank">
+                                <img src="https://www.ktak.edu.hk/wp-content/uploads/2018/08/hko.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.eclass.com.hk/eclass-faq-stu/" target="_blank">
+                                <img src="https://www.ktak.edu.hk/wp-content/uploads/2022/05/slide_eclass_faq_stu_bg.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ktak.edu.hk/wp-content/uploads/2022/05/slide_eclass_faq_stu_bg.png 2500w, https://www.ktak.edu.hk/wp-content/uploads/2022/05/slide_eclass_faq_stu_bg-300x103.png 300w, https://www.ktak.edu.hk/wp-content/uploads/2022/05/slide_eclass_faq_stu_bg-768x264.png 768w, https://www.ktak.edu.hk/wp-content/uploads/2022/05/slide_eclass_faq_stu_bg-1024x352.png 1024w, https://www.ktak.edu.hk/wp-content/uploads/2022/05/slide_eclass_faq_stu_bg-180x62.png 180w, https://www.ktak.edu.hk/wp-content/uploads/2022/05/slide_eclass_faq_stu_bg-773x266.png 773w, https://www.ktak.edu.hk/wp-content/uploads/2022/05/slide_eclass_faq_stu_bg-1453x500.png 1453w" sizes="(max-width: 2500px) 100vw, 2500px" />                            </a>
+                                            </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modules-break"></div>
+<div id="backToTop" onclick="topFunction()" style="display: none;">
+    <div>
+    </div>
+</div>
+
+<footer class="t_image">
+    <div id="schInfo">
+        <div class="container">
+            <div class="row">
+                <div class="schName_ch col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">宣道幼稚園</div>
+                <div class="schName_en col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">The Alliance Kindergarten</div>
+                <div class="infoList col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
+                                            <span class="address">
+                            九龍蘭開夏道2號1樓-2樓部份                            <a class="map" href="https://maps.app.goo.gl/arjTHbJgBVnwGgHt6" target="_blank"></a>
+                        </span>
+                    
+                                            <span class="tel">3443 0200</span>
+                    
+                    
+                                            <span class="mail"><a href="mailto:ktallikg@ktac.org">ktallikg@ktac.org</a></span>
+                    
+                                            <span class="web"><a href="https://www.ktak.edu.hk"
+                                             target="_blank">https://www.ktak.edu.hk</a></span>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <span class="col-xs-12 col-sm-6">版權所有 &copy; 宣道幼稚園</span>
+                <span class="col-xs-12 col-sm-6">Powered by <a href="http://www.eclass.com.hk/" target="_blank"><span
+                                class="logo"/></span></a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    /* Moved into homepage-homework.js
+    $(function () {
+        $('.datetimepicker').datetimepicker({
+            format: 'YYYY-MM-DD',
+            ignoreReadonly: true,
+            locale: 'zh-HK'
+        });
+    });
+    $('.datetimepicker-time').datetimepicker({
+        sideBySide: true
+    });
+    $(function () {
+        $('.datetimepicker').datetimepicker();
+
+        $('.datetimepicker-addon').on('click', function () {
+            $(this).prev('input.datetimepicker').data('DateTimePicker').toggle();
+        });
+    });
+    */
+    $(function () {
+        // Add slideDown animation to Bootstrap dropdown when expanding.
+        $('.dropdown').on('show.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+        });
+
+        // Add slideUp animation to Bootstrap dropdown when collapsing.
+        $('.dropdown').on('hide.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+        });
+    });
+</script>
+<script type="text/javascript" src="https://www.ktak.edu.hk/wp-content/themes/theme5_style_1/js/bootstrap_fix.js"></script>
+<div id="mmBg" class="mmOpen bg"></div>
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-preload-range="0">
+        <div class="slides"></div>
+
+        <div class="photoInfo">
+            <h3 class="title"></h3>
+            <p class="description"></p>
+            <span class="more"><a class="showMoreDescription" href="javascript:void(0);">（Show More…）</a></span>
+        </div>
+
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="popup" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+
+        <ol class="indicator"></ol>
+        <div class="indicatorControl">
+	    	<span class="leftBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+	    	</span>
+            <span class="rightBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+			</span>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://www.ktak.edu.hk/wp-includes/js/wp-embed.min.js?ver=5.1.19'></script>
+</body>
+</html>

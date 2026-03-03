@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ESF Quarry Bay School | IB School PYP | ESF Hong Kong</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="description" content="ESF Quarry Bay School ensures children thrive. Our IB PYP curriculum encourages inquiry, preparing students for successful transitions to secondary school." />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="ESF Quarry Bay  School,International School Hong Kong, English Schools Foundation,IB School Hong Kong" />
+<meta property="og:description" content="ESF Quarry Bay School ensures children thrive. Our IB PYP curriculum encourages inquiry, preparing students for successful transitions to secondary school." />
+<meta property="og:image" content="http://qbs.esf.edu.hk/cache/img/173f8e0bc51abee612fb68428899d4dd.jpg" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:secure_url" content="https://qbs.esf.edu.hk/cache/img/173f8e0bc51abee612fb68428899d4dd.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta name="viewport" content="width=device-width" />
+	<link rel="canonical" href="https://qbs.esf.edu.hk/en/" /> 
+				<link rel="alternate" href="/zh/" hreflang="zh-hk" />
+				<link rel="shortcut icon" href="/img/favicon.png" />
+	<link rel="apple-touch-icon" href="/img/iphone-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="/img/iphone-icon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/css/editor.css" />
+	<link rel="stylesheet" type="text/css" href="/en/cache/css/068e798cbe5b2125d895c477c1461619.css" />
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/jquery-migrate.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/jquery.Slider.js"></script>
+	<script type="text/javascript" src="/js/jquery.slideSubmit.js"></script>
+	<script type="text/javascript" src="/js/jquery.table.js"></script>
+	<script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="/js/validator.class.js"></script>
+	<script type="text/javascript" src="/en/cache/js/lang.js"></script>
+	<script type="text/javascript" src="/js/function.js"></script>
+	<script type="text/javascript" src="/js/init.js"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="/js/html5izer_placeholder.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="/js/html5.js"></script>
+	<![endif]-->
+	<style>
+		.colour1,
+		a.colour1,
+		.editor a.colour1,
+		#content #history-page .years .year.current,
+		#content #history-page .years .year:hover,
+		#content #history-page .select-input,
+		#content .page-wrapper .page-container #data-list .data-item.open>.title,
+		#content #enquiry .form-container .row .checkbox-cotnainer .checkbox:after {
+			color: #002c73 !important;
+		}
+		.colour2,
+		a.colour2,
+		.editor a.colour2,
+		#content section .tab-select .select-input,
+		#content #section3 .wrapper .tabs .tab.current,
+		#content #section3 .wrapper .tabs .tab:hover,
+		#content #section6 .wrapper .tabs .tab.current,
+		#content #section6 .wrapper .tabs .tab:hover,
+		#content #landing section.type3 .tabs .tab.current,
+		#content #landing section.type3 .tabs .tab:hover,
+		#content .page-wrapper #submenu ul li a:hover,
+		#content .page-wrapper .page-container #tabs .tab.current,
+		#content .page-wrapper .page-container #tabs .tab:hover,
+		#content .page-wrapper .page-container #tabs .select-input,
+		#content .page-wrapper .page-container .tab-select .select-input {
+			color: #890032 !important;
+		}
+		.colour3,
+		a.colour3,
+		.editor a.colour3 {
+			color: #e6e6f0 !important;
+		}
+		.colour4,
+		a.colour4,
+		.editor a.colour4 {
+			color: #6cace4 !important;
+		}
+		.bg-colour1,
+		.editor ul.colour1 li:before,
+		.editor ol.colour1 li:before,
+		.pager a.selected,
+		.pager a:hover,
+		#content #enquiry .form-container .row .radio-container2 .radio.checked,
+		#content #enquiry .form-container .row .radio-container2 .radio:after,
+		#content #enquiry .form-container .row .radio-container .radio:after,
+		#content #sitemap li:before {
+			background-color: #002c73 !important;
+		}
+		.bg-colour2,
+		.editor ul.colour2 li:before,
+		.editor ol.colour2 li:before,
+		#floating a[href]:hover {
+			background-color: #890032 !important;
+		}
+		.bg-colour3 {
+			background-color: #e6e6f0 !important;
+		}
+		.bg-colour4 {
+			background-color: #6cace4 !important;
+		}
+		.br-colour1,
+		#content #section7 .record-slider .slider-container .post:hover {
+			border-color: #002c73 !important;
+		}
+		.br-colour2 {
+			border-color: #890032 !important;
+		}
+		.br-colour3 {
+			border-color: #e6e6f0 !important;
+		}
+		.br-colour4 {
+			border-color: #6cace4 !important;
+		}
+	</style>
+	<script type="text/javascript">
+											if(window.location.protocol.toLowerCase().indexOf('https:') == -1)
+											{
+												window.location.href = 'https://'+ window.location.host + window.location.pathname;
+											}
+									     </script>	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2E19XHVJQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H2E19XHVJQ');
+</script></head>
+<body>
+	<header>
+		<div class="container">
+			<a href="/en/" class="logo">
+				<img src="/cache/img/79a34d0e62fbf94555903ac8bc949e55.png" alt="ESF Quarry Bay School" loading="lazy" height="180" />			</a>
+			<div class="menu-container">
+				<div class="top-container">
+					<nav class="lang">
+						<ul>
+							<li><a href="/zh/">繁體</a></li>						</ul>
+					</nav>
+					<div class="divider"></div>
+					<a href="/en/" class="home"></a>
+					<div class="search">
+						<button></button>
+						<div class="search-container">
+							<form action="/en/search/">
+								<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />								<button type="submit"></button>							</form>
+							<button class="close"></button>
+						</div>
+					</div>
+										<nav class="social">
+				 		<ul>
+				 							 			<li>
+				 				<a href="https://www.instagram.com/esfqbs/" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 			<li>
+				 				<a href="https://www.facebook.com/esfqbs" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3e297d1.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 			<li>
+				 				<a href="https://x.com/esfqbs/" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/671fbfba98135.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 		</ul>
+				 	</nav>
+				 						<div class="search-responsive">
+						<form action="/en/search/">
+							<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />							<button type="submit"></button>						</form>
+					</div>
+										<div class="divider"></div>
+									 							<a href="https://qbs.lg.esf.edu.hk/" target="_blank" class="alt-btn">Students & Parents</a>
+				 										 		<a href="https://qbs.esf.edu.hk/en/visit_us" class="btn">Visit Us</a>
+									</div>
+				<div class="bottom-container">
+					<nav class="menu">
+						<ul>
+																						<li>
+									<a href="/en/about_us/">About Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/about_us/">About Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/about_us/marketing_family/">ESF Family</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/principalswelcome/">Principal's Welcome</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/what_we_stand_for/">What We Stand For</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/school_history/">School History</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/campus_find_us/">Campus & Find Us</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_education/">Outstanding Education</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_education/">Outstanding Education</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_education/our_approach/">Our Approach</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/curriculum/">Curriculum</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/specialist_provision/">Specialist Provision</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/student_support_wellbeing/">Student Support & Wellbeing</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/parent_partnership/">Parent Partnership</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_experiences/extra_curricular_activities/">Extra Curricular Activities</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/outdoor_learning/">Outdoor Learning</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/action_student_leadership/">Action & Student Leadership</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/speakers_visitors/">Speakers & Visitors</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_people/">Outstanding People</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_people/">Outstanding People</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_people/leadership_team/">Leadership Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/our_team/">Our Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/student_voice/">Student Voice</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/parent_teacher_association/">Parent Teacher Association</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/school_council/">School Council</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/testimonials/">Alumni & Testimonials</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/admissions/">Admissions</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/admissions/">Admissions</a>
+													</li>
+																																			</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/WorkWithUs/">Work With Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/WorkWithUs/">Work With Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/WorkWithUs/Join-us/">Join the QBS Community</a>
+														</li>
+																											<li>
+															<a href="/en/WorkWithUs/Hiring_facilities/">Hiring QBS Premises</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+													</ul>
+					</nav>
+				</div>	
+			</div>
+			<button class="nav-btn"></button>
+		</div>
+	</header>
+	<section id="content">		
+		<script type="text/javascript">
+    var timeout = [];
+
+    $(window).load(function() {
+		let animate = function() {
+			let height = $(window).scrollTop() + Math.round($(window).height() * 0.6);
+			$('#content > section').each(function() {
+				if(!$(this).hasClass('animate') && height > $(this).offset().top)
+				{
+					$(this).addClass('animate');
+                    if($(this).attr('id') == 'section2') {
+						$('li > div', '#section2').each(function(index) {
+							let item = $(this);
+							setTimeout(function() {
+								item.addClass('animate');
+							}, index * 200);
+						});
+					}
+				}
+			});
+		};
+		$(window).on('scroll', animate);
+		animate();
+	});
+</script>
+<div id="banner">
+    <div class="banner-container">
+                                                <div class="banner-item">
+                    <div class="wrapper">
+                        <img src="/cache/img/6c47d11fc38ea37c05924e5221f43491.png" alt="" loading="lazy" width="1904" height="1200" class="trans" />                        <video id="video" width="1904" height="1200" preload="none" playsinline webkit-playsinline muted loop>
+                            <source src="/upload/banner/1/banner/671e28fa9f73a.mp4" type="video/mp4">
+                        </video>
+                        <div class="mask"></div>
+                        <div class="container">
+                            <button class="play"></button>
+                        </div>
+                    </div>
+                                    </div>
+                        </div>
+    <div class="container">
+                <div class="scroll-icon"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let pager_click = false;
+
+            $('#banner').Slider({
+                slides: '.banner-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true,
+                pager: '.banner-pager',
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    $.each(timeout, function(index, value) {
+                        clearTimeout(value);
+                    });
+                    let videos = $('video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    $('button', slider).removeClass('play').addClass('pause');
+                    if($('.slider.current video', slider).length) {
+                                                        video = document.querySelector('#banner .slider.current video');
+                                video.play();
+                                            }
+                    else if(!pager_click) {
+                        timeout = setTimeout(function() {
+                            slider.Slider('next');
+                        }, 5000);
+                    }
+                },
+                afterResize: function(slider, slides, current_page, total_page) {
+                    if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                                            let videos = $('video', slider);
+                        videos.each(function(i, video) {
+                            video.addEventListener('ended', videoEnd, false);
+                        });
+                        if($('.slider.current video', slider).length) {
+                                                                video = document.querySelector('#banner .slider.current video');
+                                    video.play();
+                                    $('.slider.current button', slider).removeClass('play').addClass('pause');
+                                                    }
+                        else {
+                            timeout = setTimeout(function() {
+                                slider.Slider('next');
+                            }, 5000);
+                        }
+                                        if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                }
+            });
+            
+            $('.banner-item video', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                let button = $(this).parent().find('button');
+                if(button.hasClass('pause')) {
+                    video.pause();
+                    button.removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    button.removeClass('play').addClass('pause');
+                }
+            });
+            $('.banner-item button', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                if($(this).hasClass('pause')) {
+                    video.pause();
+                    $(this).removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    $(this).removeClass('play').addClass('pause');
+                }
+            });
+
+            $('body').on('click', '#banner .banner-pager a', function() {
+                pager_click = true;
+            });
+
+            function videoEnd(e) {
+                if(!pager_click) {
+                    $('#banner').Slider('next');
+                }
+                else {
+                    $('#banner .slider.current button').removeClass('pause').addClass('play');
+                }
+            }
+        });
+    </script>
+</div>
+<section id="section1">
+    <div class="container">
+                    <div class="left">
+                <article class="editor"><p><img src="/upload/page/35/self/675bd19f39500.png" alt="Self Photos / Files - Mission title-En" width="2300" height="1380" /></p></article>
+            </div>
+                            <div class="right">
+                <article class="editor"><p><img class="round-border" src="/upload/page/35/self/672d666655b0e.jpg" alt="" width="1500" height="1125" /></p>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour1"><a href="https://qbs.esf.edu.hk/en/about_us/what_we_stand_for/" target="_blank" rel="noopener"><span style="color: #ffffff;">Discover Our Vision</span></a></p></article>
+            </div>
+                            <div class="responsive">
+                <article class="editor"><p><img src="/upload/page/35/self/675bd19f39500.png" alt="Self Photos / Files - Mission title-En" width="2300" height="1380" /></p>
+<p><img class="round-border" src="/upload/page/35/self/672d666655b0e.jpg" alt="" width="1500" height="1125" /></p>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour1"><a href="https://qbs.esf.edu.hk/en/about_us/" target="_blank" rel="noopener"><span style="color: #ffffff;">Discover Our Vision</span></a></p>
+<p>&nbsp;</p></article>
+            </div>
+            </div>
+</section>
+<section id="section2">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What can Quarry Bay School offer your family?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="wrapper bg-colour2">
+        <div class="container">
+            <ul>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/19c606604184f5e978d044939bbd9460.png" alt="ESF_Logomark_BW_RGB" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">ESF Network</h3>
+                            <div class="overlay bg-colour1">
+                                <p>As part of the English Schools Foundation (ESF), our students are supported by the largest English-medium international school organisation in Hong Kong, providing them the resources and opportunities not found outside of ESF Schools.</p>
+                                                                    <a  href="https://qbs.esf.edu.hk/en/about_us/marketing_family/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/dfaf54533baa7729f2a2cbc2d81d133d.png" alt="World-class Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">World-class Education</h3>
+                            <div class="overlay bg-colour1">
+                                <p>At ESF schools, we provide a world-class education that is renowned for its academic excellence and rigorous curriculum. Our dedicated teachers and staff ensure that every student receives the best possible learning experience.</p>
+                                                                    <a  href="https://qbs.esf.edu.hk/en/outstanding_education/curriculum/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/9f8e7d1205e4cf7f44918ac11d9d0d80.png" alt="Comprehensive Student Support" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Comprehensive Student Support</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our schools offer comprehensive support systems, including personalised guidance, pastoral care, and counselling services, to help students thrive academically, emotionally, and socially.</p>
+                                                                    <a  href="https://qbs.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/16e0c2b8b8d8e688933904666d02b278.png" alt="Strong School-Family Connection" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Strong School-Family Connection</h3>
+                            <div class="overlay bg-colour1">
+                                <p>We believe in fostering a strong partnership between schools and families. We actively encourage parental involvement and maintain open lines of communication to ensure that parents are fully engaged in their child's educational journey.</p>
+                                                                    <a  href="https://qbs.esf.edu.hk/en/outstanding_education/parent_partnership/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/7222b2dd0f4d682a4bc2a134ba455236.png" alt="Well-rounded Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Well-rounded Education</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Alongside academic excellence, our well-rounded education cultivates talents, interests, and character through diverse co-curricular activities in sports, arts, music, and community service.</p>
+                                                                    <a  href="https://qbs.esf.edu.hk/en/outstanding_education/our_approach/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/a9b58c8b652622bb740ad013be2b7f09.png" alt="Multicultural Environment" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Multicultural Environment</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our schools embrace diversity and create a multicultural environment where students from different backgrounds come together to learn and grow. We celebrate cultural differences, promote inclusivity, and prepare students to thrive in a globalised world.</p>
+                                                                    <a  href="https://qbs.esf.edu.hk/en/about_us/what_we_stand_for/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('h3', '#section2').each(function() {
+                let img = $(this).parent().children('img');
+                if(img.length) {
+                    $(this).css('top', img.offset().top + img.height() + 25 - $(this).parent().offset().top);
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section3">
+    <img src="/cache/img/bb3192b32072c698cf158816c67923f5.jpg" alt="IMG_3333" loading="lazy" width="1722" height="1294" />    <div class="wrapper">
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Primary Years Programme (PYP)</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="tabs">
+                            <button class="tab current" data-id="1">Years 1 - 6</button>
+                    </div>
+                            <div class="tab-content current" data-id="1">
+                                <article class="editor"><p><span style="font-weight: 400;">As an IB World School, we're proud to offer the Primary Years Programme (PYP) - a transformative curriculum that nurtures the whole child. Through transdisciplinary learning, our students develop the knowledge, skills, and mindset to become globally-minded, principled contributors committed to shaping a better world.</span></p></article>
+                                    <a href="https://qbs.esf.edu.hk/en/outstanding_education/curriculum/">
+                        <span>Find out more</span>
+                    </a>
+                            </div>
+                <script type="text/javascript">
+            $(document).ready(function() {
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+
+                $('.tab', '#section3').click(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $(this).addClass('current');
+                    $('.tab-content[data-id=' + $(this).data('id') + ']', '#section3').addClass('current');
+                    $('select', '#section3').val($(this).data('id')).selectbox('refresh');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+
+                $('.tab-select', '#section3').change(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $('.tab[data-id=' + $(this).val() + ']').addClass('current');
+                    $('.tab-content[data-id=' + $(this).val() + ']', '#section3').addClass('current');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+            });
+        </script>
+    </div>
+</section>
+<section id="section4" data-total="4">
+    <div class="container">
+        <div class="bg bg-colour4"></div>
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Life at Quarry Bay School</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="record-slider">
+            <div class="slider-container">
+                                    <div class="record-item">
+                        <img src="/cache/img/6e7d82c1b60d9b778091a2aef2ec2613.jpg" alt="IMG_4882" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Diversity, Equity and Inclusion</span>
+                            </h3>
+                            <p>At QBS, we cultivate an equitable, inclusive environment where every individual is valued and empowered to reach their full potential. As a leading international school, we are steadfastly committed to continuously improving our diversity, equity, and inclusion practices to shape compassionate global citizens.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/88ea6c89b0ff186c41dd0062c6acea1c.jpg" alt="IMG_5548" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Sports</span>
+                            </h3>
+                            <p>Well-being is intrinsically linked to all aspects of a student’s experience at school and beyond. It encompasses physical, emotional, cognitive, spiritual and social health and development, and contributes to an understanding of self, to developing and maintaining relationships with others, and to participation in an active, healthy lifestyle.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/35a94d25825d08f8bad27873f551a65d.jpg" alt="IMG_3617" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Environment and  Sustainability</span>
+                            </h3>
+                            <p>At QBS, sustainability is at the core of everything we do. We are committed to fostering a place where working and learning go hand-in-hand with environmental stewardship. Through the seamless integration of sustainable practices across our campus, we strive to lead by example and cultivate environmental awareness within our wider community.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_experiences/outdoor_learning">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/f247b38e905a6409ac490e2be155135c.jpg" alt="20240226-0275" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Student Leadership</span>
+                            </h3>
+                            <p>The QBS student leadership program empowers Year 6 students to develop leadership, responsibility, and teamwork skills, enabling them to make a positive impact within the school community while embodying our core values and IB learner profile.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_people/student_voice/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/6e7d82c1b60d9b778091a2aef2ec2613.jpg" alt="IMG_4882" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Diversity, Equity and Inclusion</span>
+                            </h3>
+                            <p>At QBS, we cultivate an equitable, inclusive environment where every individual is valued and empowered to reach their full potential. As a leading international school, we are steadfastly committed to continuously improving our diversity, equity, and inclusion practices to shape compassionate global citizens.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/88ea6c89b0ff186c41dd0062c6acea1c.jpg" alt="IMG_5548" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Sports</span>
+                            </h3>
+                            <p>Well-being is intrinsically linked to all aspects of a student’s experience at school and beyond. It encompasses physical, emotional, cognitive, spiritual and social health and development, and contributes to an understanding of self, to developing and maintaining relationships with others, and to participation in an active, healthy lifestyle.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/35a94d25825d08f8bad27873f551a65d.jpg" alt="IMG_3617" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Environment and  Sustainability</span>
+                            </h3>
+                            <p>At QBS, sustainability is at the core of everything we do. We are committed to fostering a place where working and learning go hand-in-hand with environmental stewardship. Through the seamless integration of sustainable practices across our campus, we strive to lead by example and cultivate environmental awareness within our wider community.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_experiences/outdoor_learning">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/f247b38e905a6409ac490e2be155135c.jpg" alt="20240226-0275" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Student Leadership</span>
+                            </h3>
+                            <p>The QBS student leadership program empowers Year 6 students to develop leadership, responsibility, and teamwork skills, enabling them to make a positive impact within the school community while embodying our core values and IB learner profile.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_people/student_voice/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/6e7d82c1b60d9b778091a2aef2ec2613.jpg" alt="IMG_4882" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Diversity, Equity and Inclusion</span>
+                            </h3>
+                            <p>At QBS, we cultivate an equitable, inclusive environment where every individual is valued and empowered to reach their full potential. As a leading international school, we are steadfastly committed to continuously improving our diversity, equity, and inclusion practices to shape compassionate global citizens.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/88ea6c89b0ff186c41dd0062c6acea1c.jpg" alt="IMG_5548" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Sports</span>
+                            </h3>
+                            <p>Well-being is intrinsically linked to all aspects of a student’s experience at school and beyond. It encompasses physical, emotional, cognitive, spiritual and social health and development, and contributes to an understanding of self, to developing and maintaining relationships with others, and to participation in an active, healthy lifestyle.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/35a94d25825d08f8bad27873f551a65d.jpg" alt="IMG_3617" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Environment and  Sustainability</span>
+                            </h3>
+                            <p>At QBS, sustainability is at the core of everything we do. We are committed to fostering a place where working and learning go hand-in-hand with environmental stewardship. Through the seamless integration of sustainable practices across our campus, we strive to lead by example and cultivate environmental awareness within our wider community.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_experiences/outdoor_learning">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/f247b38e905a6409ac490e2be155135c.jpg" alt="20240226-0275" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Student Leadership</span>
+                            </h3>
+                            <p>The QBS student leadership program empowers Year 6 students to develop leadership, responsibility, and teamwork skills, enabling them to make a positive impact within the school community while embodying our core values and IB learner profile.</p>
+                                                            <a href="https://qbs.esf.edu.hk/en/outstanding_people/student_voice/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                            </div>
+            <div class="btns">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section4').data('total'));
+            let slider_loop = ori_total >= 3 ? true : false;
+            $('#section4').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total * 2);
+                    }
+                    else {
+                        slider.Slider('jump', total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section6">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">Testimonials</h2>
+            <span class="bg-colour1"></span>
+        </div>
+        <div class="wrapper">
+            <div class="tabs">
+                                    <button class="tab current" data-id="1">Students</button>
+                                    <button class="tab" data-id="2">Parents</button>
+                                    <button class="tab" data-id="3">Alumni</button>
+                            </div>
+            <select class="tab-select" name="tab"><option value="1">Students</option><option value="2">Parents</option><option value="3">Alumni</option></select>                            <div class="tab-content current" data-id="1">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/6fdd5da06b481e18ac269004adcd1cdd.png" alt="Testimonial-Boy" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 2</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I think Quarry Bay School is a great place to be because the teachers are very kind and help us a lot. Lessons are fun and we get to work together with our friends.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I think Quarry Bay School is a great place to be because the teachers are very kind and help us a lot. Lessons are fun and we get to work together with our friends.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Joshua M - Y6 Student, Class of 2021</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/203fa44e5899422e95306753a6f5fa92.png" alt="Testimonial-Girl" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 2</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I absolutely loved being a part of Quarry Bay School. The vast array of learning opportunities available here was truly remarkable, and I always felt supported when I needed extra help. My fondest memory is the joy of talking and playing with my friends during recess in the vibrant school playground.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I absolutely loved being a part of Quarry Bay School. The vast array of learning opportunities available here was truly remarkable, and I always felt supported when I needed extra help. My fondest memory is the joy of talking and playing with my friends during recess in the vibrant school playground.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Grace M - Y6 Student, Class of 2024</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="2">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/45b3d5d1de58b2d7776ab6c2154698cf.png" alt="Testimonial-Woman" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 2</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">As a parent of 3 children in Quarry Bay School, I believe QBS offers the best of both worlds, an international yet local community. With a down-to-earth feel, QBS is a school where academics go hand in hand with happiness, lots of love and enthusiasm and a passion for learning in a variety of ways. QBS is a school that brings out the best in my children no matter their differences and personalities.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">As a parent of 3 children in Quarry Bay School, I believe QBS offers the best of both worlds, an international yet local community. With a down-to-earth feel, QBS is a school where academics go hand in hand with happiness, lots of love and enthusiasm and a passion for learning in a variety of ways. QBS is a school that brings out the best in my children no matter their differences and personalities.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Franka K. - QBS parent</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/3d7fc8aea63a8142370a0fa05840ad79.png" alt="Testimonial-Man" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 2</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I've had the privilege of being part of the Quarry Bay School (QBS) community twice - first as a student and now as a parent for over 7 years. The excellent leadership team, the teachers and staff are friendly, enthusiastic, and caring towards every student. Both of my children have been very happy at QBS, learning in a positive environment and developing meaningful friendships. I highly recommend QBS to other parents.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I've had the privilege of being part of the Quarry Bay School (QBS) community twice - first as a student and now as a parent for over 7 years. The excellent leadership team, the teachers and staff are friendly, enthusiastic, and caring towards every student. Both of my children have been very happy at QBS, learning in a positive environment and developing meaningful friendships. I highly recommend QBS to other parents.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Andrew Y. - QBS parent</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="3">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f658b10579dd16bb5c0779aaba41390c.png" alt="Testimonial-Woman" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 2</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">As a former Quarry Bay School student from 2012-2015, I was thrilled to work at the school for a year. I'm deeply passionate about QBS's core values and the caring, supportive community that empowers the student body. QBS is a highly creative school that encourages self-expression across all subjects. I love being a part of this positive environment surrounded by a friendly, social community. QBS provides students with diverse opportunities that enhance their overall school experience. During my time as a student, I was heavily involved in sports, representing the school in various internal and external events. I believe student participation in school activities is crucial for building confidence, developing social skills, and forming strong relationships.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">As a former Quarry Bay School student from 2012-2015, I was thrilled to work at the school for a year. I'm deeply passionate about QBS's core values and the caring, supportive community that empowers the student body. QBS is a highly creative school that encourages self-expression across all subjects. I love being a part of this positive environment surrounded by a friendly, social community. QBS provides students with diverse opportunities that enhance their overall school experience. During my time as a student, I was heavily involved in sports, representing the school in various internal and external events. I believe student participation in school activities is crucial for building confidence, developing social skills, and forming strong relationships.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Hannah M. - Class of 2015</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/a665f93b2a562ef4cbf6352168f774d7.png" alt="Testimonial-Woman" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 2</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Quarry Bay School manages to combine high expectations and academic rigour with some of the softer skills that will be so necessary for our children's future. Children here are happy, curious and kind. Most important of all, they love learning and enjoy coming to school. Parents, children and teachers all play a part in the supportive school community which creates a great sense of belonging.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Quarry Bay School manages to combine high expectations and academic rigour with some of the softer skills that will be so necessary for our children's future. Children here are happy, curious and kind. Most important of all, they love learning and enjoy coming to school. Parents, children and teachers all play a part in the supportive school community which creates a great sense of belonging.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Sarah M. - Ex teacher and parent</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+            
+            $('.tab', '#section6').click(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $(this).addClass('current');
+                $('.tab-content[data-id=' + $(this).data('id') + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' + ($(this).index() + 1) + ')', '#section6').addClass('current');
+                chkContentHeight();
+            });
+
+            $('.tab-select', '#section6').change(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $('.tab[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-content[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' +  ($('.tab.current', '#section6').index() + 1) + ')', '#section6').addClass('current');
+                $('.select .select-container div', '#section6').show();
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+                chkContentHeight();
+            });
+
+            $('.record-slider', '#section6').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true
+            });
+
+            function chkContentHeight() {
+                $('p.description', '#section6').each(function() {
+                    if($(this).height() > 160) {
+                        $(this).parent().addClass('more');
+                    }
+                });
+            }
+            chkContentHeight();
+
+            $('.record-item article button.view-more', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-less').show();
+                $(this).parent().find('.description').hide();
+                $(this).parent().find('.content').show();
+            });
+            $('.record-item article button.view-less', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-more').show();
+                $(this).parent().find('.description').show();
+                $(this).parent().find('.content').hide();
+            });
+        });
+    </script>
+</section>
+<section id="section7" data-total="10">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What's New at QBS?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="record-slider">
+        <div class="slider-container">
+                            <div class="post-item">
+                    <div class="post" data-id="132">
+                        <time>25/02/2026</time>
+                        <h3>Our Year 6 students took a giant leap into the future this week! As part of their How We Organise Ourselves unit of inquiry, students and parents teamed up to play the Global Goal Games.<br><br>This immersive card-based simulation transported our learners to the year 2030, challenging them to navigate the "real world" and meet the Sustainable Development Goals (SDGs). From ending poverty to protecting our planet, the stakes couldn't have been higher!<br><br>A huge thank you to the parents who joined us in this mission. Together, we’re making sure we leave a better planet than we found it!<br><br>#esfqbs #globalgoalsgame #Year6 #IBPYP #futureleaders #learningthroughplay</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/2c1d5ced849bd15c0533a9631f91be0b.jpg" alt="641851166_18109254148778564_7445000107337861855_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="131">
+                        <time>20/02/2026</time>
+                        <h3>Wishing everyone a Happy Year of the Horse! May your year be filled with:<br><br>✨ Prosperity that keeps pace with your hard work.<br>✨ Success that knows no hurdles.<br>✨ Joy at every turn.<br><br>Kung Hei Fat Choi - 恭喜发财<br><br>#esfqbs #YearOfTheHorse #cny2026</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/e59daec224c9646073e5efac5bdb2b42.jpg" alt="637048586_18108778843778564_1708267830784499789_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="130">
+                        <time>13/02/2026</time>
+                        <h3>We had an absolutely unforgettable last day before our Chinese New Year break, filled with energy, tradition, and incredible talent. The campus was buzzing from start to finish!<br><br>🧧 Wishing our entire community a prosperous, healthy, and happy Chinese New Year! Enjoy the well-deserved break.<br><br>#esfqbs #cny2026 #yearofthehorse2026</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/8ebf8e9bb02d966d561a5a8425800615.jpg" alt="629614397_18108157192778564_1369367854375969058_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="129">
+                        <time>12/02/2026</time>
+                        <h3>The annual Chinese New Year collaboration between Chinese International School (@cishk) and Quarry Bay School once again brought our two school communities together to welcome the Year of the Horse. This tradition featured a joint visual arts project sharing ongoing appreciation for how art unites us across borders and backgrounds. <br>The opening ceremony was a joyful occasion attended by students from both schools, along with Ms Gardon, Principal of Chinese International School, Mr Cogbill, Vice Principal of Quarry Bay School, and the visual arts teachers. <br><br>#esfqbs #cishk #artscollaboration #cny2026 #yearofthehorse</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/87cb834a0506c373237e02126498a24b.jpg" alt="626293469_18108071209778564_7526821970157933333_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="128">
+                        <time>10/02/2026</time>
+                        <h3>✨ Flashback to an unforgettable Centenary Fair! ✨<br><br>A massive thank you to our amazing PTA Coordinator and her tireless team of volunteers. <br><br>This event showed the strength of the QBS community. From the stage to the stalls, it was an evening to remember.<br><br>To everyone who baked, performed, volunteered, entertained or simply showed up to share the joy—thank you for making our school such a vibrant place.<br><br>#esfqbs #QBSCentenaryFair #qbspta #CommunitySpirit #weareqbs</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/55e66dcfeb2d0c54ccc3068a6229d89f.jpg" alt="626257514_18107924851778564_6610700546792938729_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="127">
+                        <time>05/02/2026</time>
+                        <h3>QBS is transforming as we get ready for the PTA Centenary Fair tomorrow! We are buzzing with excitement to celebrate 100 years of community, history, and fun. <br><br>A massive shout-out to our incredible PTA and parent volunteers who have been working tirelessly behind the scenes to make this magic happen. <br><br>See you all tomorrow—let’s make history together!<br><br>#esfqbs #centenialfair #communityevent</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d20dfdcdbaea04446e2da680251c7db1.jpg" alt="625896646_18107487526778564_1079919448185570595_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="126">
+                        <time>29/01/2026</time>
+                        <h3>QBS got a hands-on look at the vibrant world of Cantonese Opera today. <br>Our students learned how instruments and percussion set the heartbeat of the play, the symbolism behind accessories and costumes, and most importantly, they witnessed the immense rigour required to master the "four basic skills": singing, acting, delivery of spoken lines, and martial arts.<br>We now have a new appreciation for the hard work and heart that keep this beautiful tradition alive.<br><br>A huge thank you to One Table Two Chairs Charitable Foundation for sharing their passion and showing us that behind every graceful gesture lies years of dedicated practice!<br><br>#esfqbs #cantoneseopera #1table2chairs #learningthrougharts #culturalheritage</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/ebddc20c90718daee97a766d8fcbfb0d.jpg" alt="624686241_18106648972778564_7527765642478338137_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="125">
+                        <time>22/01/2026</time>
+                        <h3>QBS were thrilled to welcome UK-based artist Caroline Cleave today as our Artist in Residence. Caroline spent an inspiring session with our Year 5 students, guiding them in creating beautiful, individually unique koi carp. Her warmth and expertise were a hit with the students, who loved the opportunity to learn from such a talented professional.<br><br>This visit was extra special for our community, as Caroline is the sister of our own Principal. It was a privilege to have her share her artistic passion with us, and we are incredibly proud of the stunning work our students produced under her mentorship. <br><br>Thank you, Caroline!<br><br>#esfqbs #artistinresidence #learningthrougharts</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/cadf9fd870ea331f5975312f89194bb8.jpg" alt="619265003_18106002823778564_6086421426463481758_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="124">
+                        <time>15/01/2026</time>
+                        <h3>Big congrats to Karisse and Avery for winning the HKPSSA Table Tennis Championship today! The skill level, focus, and sportsmanship they displayed were truly impressive. A huge thank you to all the participants and volunteers who made the event run smoothly.<br>#esfqbs #hkpssatabletennischampionship #learningthroughsport #weareqbs</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d235a7a734fc4d71bf0469f5738b8cde.jpg" alt="613492380_18105367420778564_3859264923145846269_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="123">
+                        <time>09/01/2026</time>
+                        <h3>This Saturday, 10 January, marks the official anniversary of our 1926 opening. <br>Today, we held a special birthday assembly, and all year groups participated in various activities and challenges based on the number 100. <br>Earlier in the week, students also collaborated to create a spectacular piece of aerial photography spelling out 'QBS 100.' <br><br>Happy Birthday, QBS! Stay tuned, as more celebration events will be announced soon.<br><br>#esfqbs #celebrating100years #happybirthdayQBS #weareqbs #qbs100</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/73f11d70abb18e7970e5c79746becf6a.jpg" alt="610740348_18104861113778564_8655851017989591434_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="132">
+                        <time>25/02/2026</time>
+                        <h3>Our Year 6 students took a giant leap into the future this week! As part of their How We Organise Ourselves unit of inquiry, students and parents teamed up to play the Global Goal Games.<br><br>This immersive card-based simulation transported our learners to the year 2030, challenging them to navigate the "real world" and meet the Sustainable Development Goals (SDGs). From ending poverty to protecting our planet, the stakes couldn't have been higher!<br><br>A huge thank you to the parents who joined us in this mission. Together, we’re making sure we leave a better planet than we found it!<br><br>#esfqbs #globalgoalsgame #Year6 #IBPYP #futureleaders #learningthroughplay</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/2c1d5ced849bd15c0533a9631f91be0b.jpg" alt="641851166_18109254148778564_7445000107337861855_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="131">
+                        <time>20/02/2026</time>
+                        <h3>Wishing everyone a Happy Year of the Horse! May your year be filled with:<br><br>✨ Prosperity that keeps pace with your hard work.<br>✨ Success that knows no hurdles.<br>✨ Joy at every turn.<br><br>Kung Hei Fat Choi - 恭喜发财<br><br>#esfqbs #YearOfTheHorse #cny2026</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/e59daec224c9646073e5efac5bdb2b42.jpg" alt="637048586_18108778843778564_1708267830784499789_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="130">
+                        <time>13/02/2026</time>
+                        <h3>We had an absolutely unforgettable last day before our Chinese New Year break, filled with energy, tradition, and incredible talent. The campus was buzzing from start to finish!<br><br>🧧 Wishing our entire community a prosperous, healthy, and happy Chinese New Year! Enjoy the well-deserved break.<br><br>#esfqbs #cny2026 #yearofthehorse2026</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/8ebf8e9bb02d966d561a5a8425800615.jpg" alt="629614397_18108157192778564_1369367854375969058_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="129">
+                        <time>12/02/2026</time>
+                        <h3>The annual Chinese New Year collaboration between Chinese International School (@cishk) and Quarry Bay School once again brought our two school communities together to welcome the Year of the Horse. This tradition featured a joint visual arts project sharing ongoing appreciation for how art unites us across borders and backgrounds. <br>The opening ceremony was a joyful occasion attended by students from both schools, along with Ms Gardon, Principal of Chinese International School, Mr Cogbill, Vice Principal of Quarry Bay School, and the visual arts teachers. <br><br>#esfqbs #cishk #artscollaboration #cny2026 #yearofthehorse</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/87cb834a0506c373237e02126498a24b.jpg" alt="626293469_18108071209778564_7526821970157933333_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="128">
+                        <time>10/02/2026</time>
+                        <h3>✨ Flashback to an unforgettable Centenary Fair! ✨<br><br>A massive thank you to our amazing PTA Coordinator and her tireless team of volunteers. <br><br>This event showed the strength of the QBS community. From the stage to the stalls, it was an evening to remember.<br><br>To everyone who baked, performed, volunteered, entertained or simply showed up to share the joy—thank you for making our school such a vibrant place.<br><br>#esfqbs #QBSCentenaryFair #qbspta #CommunitySpirit #weareqbs</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/55e66dcfeb2d0c54ccc3068a6229d89f.jpg" alt="626257514_18107924851778564_6610700546792938729_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="127">
+                        <time>05/02/2026</time>
+                        <h3>QBS is transforming as we get ready for the PTA Centenary Fair tomorrow! We are buzzing with excitement to celebrate 100 years of community, history, and fun. <br><br>A massive shout-out to our incredible PTA and parent volunteers who have been working tirelessly behind the scenes to make this magic happen. <br><br>See you all tomorrow—let’s make history together!<br><br>#esfqbs #centenialfair #communityevent</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d20dfdcdbaea04446e2da680251c7db1.jpg" alt="625896646_18107487526778564_1079919448185570595_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="126">
+                        <time>29/01/2026</time>
+                        <h3>QBS got a hands-on look at the vibrant world of Cantonese Opera today. <br>Our students learned how instruments and percussion set the heartbeat of the play, the symbolism behind accessories and costumes, and most importantly, they witnessed the immense rigour required to master the "four basic skills": singing, acting, delivery of spoken lines, and martial arts.<br>We now have a new appreciation for the hard work and heart that keep this beautiful tradition alive.<br><br>A huge thank you to One Table Two Chairs Charitable Foundation for sharing their passion and showing us that behind every graceful gesture lies years of dedicated practice!<br><br>#esfqbs #cantoneseopera #1table2chairs #learningthrougharts #culturalheritage</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/ebddc20c90718daee97a766d8fcbfb0d.jpg" alt="624686241_18106648972778564_7527765642478338137_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="125">
+                        <time>22/01/2026</time>
+                        <h3>QBS were thrilled to welcome UK-based artist Caroline Cleave today as our Artist in Residence. Caroline spent an inspiring session with our Year 5 students, guiding them in creating beautiful, individually unique koi carp. Her warmth and expertise were a hit with the students, who loved the opportunity to learn from such a talented professional.<br><br>This visit was extra special for our community, as Caroline is the sister of our own Principal. It was a privilege to have her share her artistic passion with us, and we are incredibly proud of the stunning work our students produced under her mentorship. <br><br>Thank you, Caroline!<br><br>#esfqbs #artistinresidence #learningthrougharts</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/cadf9fd870ea331f5975312f89194bb8.jpg" alt="619265003_18106002823778564_6086421426463481758_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="124">
+                        <time>15/01/2026</time>
+                        <h3>Big congrats to Karisse and Avery for winning the HKPSSA Table Tennis Championship today! The skill level, focus, and sportsmanship they displayed were truly impressive. A huge thank you to all the participants and volunteers who made the event run smoothly.<br>#esfqbs #hkpssatabletennischampionship #learningthroughsport #weareqbs</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d235a7a734fc4d71bf0469f5738b8cde.jpg" alt="613492380_18105367420778564_3859264923145846269_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="123">
+                        <time>09/01/2026</time>
+                        <h3>This Saturday, 10 January, marks the official anniversary of our 1926 opening. <br>Today, we held a special birthday assembly, and all year groups participated in various activities and challenges based on the number 100. <br>Earlier in the week, students also collaborated to create a spectacular piece of aerial photography spelling out 'QBS 100.' <br><br>Happy Birthday, QBS! Stay tuned, as more celebration events will be announced soon.<br><br>#esfqbs #celebrating100years #happybirthdayQBS #weareqbs #qbs100</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/73f11d70abb18e7970e5c79746becf6a.jpg" alt="610740348_18104861113778564_8655851017989591434_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="132">
+                        <time>25/02/2026</time>
+                        <h3>Our Year 6 students took a giant leap into the future this week! As part of their How We Organise Ourselves unit of inquiry, students and parents teamed up to play the Global Goal Games.<br><br>This immersive card-based simulation transported our learners to the year 2030, challenging them to navigate the "real world" and meet the Sustainable Development Goals (SDGs). From ending poverty to protecting our planet, the stakes couldn't have been higher!<br><br>A huge thank you to the parents who joined us in this mission. Together, we’re making sure we leave a better planet than we found it!<br><br>#esfqbs #globalgoalsgame #Year6 #IBPYP #futureleaders #learningthroughplay</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/2c1d5ced849bd15c0533a9631f91be0b.jpg" alt="641851166_18109254148778564_7445000107337861855_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="131">
+                        <time>20/02/2026</time>
+                        <h3>Wishing everyone a Happy Year of the Horse! May your year be filled with:<br><br>✨ Prosperity that keeps pace with your hard work.<br>✨ Success that knows no hurdles.<br>✨ Joy at every turn.<br><br>Kung Hei Fat Choi - 恭喜发财<br><br>#esfqbs #YearOfTheHorse #cny2026</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/e59daec224c9646073e5efac5bdb2b42.jpg" alt="637048586_18108778843778564_1708267830784499789_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="130">
+                        <time>13/02/2026</time>
+                        <h3>We had an absolutely unforgettable last day before our Chinese New Year break, filled with energy, tradition, and incredible talent. The campus was buzzing from start to finish!<br><br>🧧 Wishing our entire community a prosperous, healthy, and happy Chinese New Year! Enjoy the well-deserved break.<br><br>#esfqbs #cny2026 #yearofthehorse2026</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/8ebf8e9bb02d966d561a5a8425800615.jpg" alt="629614397_18108157192778564_1369367854375969058_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="129">
+                        <time>12/02/2026</time>
+                        <h3>The annual Chinese New Year collaboration between Chinese International School (@cishk) and Quarry Bay School once again brought our two school communities together to welcome the Year of the Horse. This tradition featured a joint visual arts project sharing ongoing appreciation for how art unites us across borders and backgrounds. <br>The opening ceremony was a joyful occasion attended by students from both schools, along with Ms Gardon, Principal of Chinese International School, Mr Cogbill, Vice Principal of Quarry Bay School, and the visual arts teachers. <br><br>#esfqbs #cishk #artscollaboration #cny2026 #yearofthehorse</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/87cb834a0506c373237e02126498a24b.jpg" alt="626293469_18108071209778564_7526821970157933333_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="128">
+                        <time>10/02/2026</time>
+                        <h3>✨ Flashback to an unforgettable Centenary Fair! ✨<br><br>A massive thank you to our amazing PTA Coordinator and her tireless team of volunteers. <br><br>This event showed the strength of the QBS community. From the stage to the stalls, it was an evening to remember.<br><br>To everyone who baked, performed, volunteered, entertained or simply showed up to share the joy—thank you for making our school such a vibrant place.<br><br>#esfqbs #QBSCentenaryFair #qbspta #CommunitySpirit #weareqbs</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/55e66dcfeb2d0c54ccc3068a6229d89f.jpg" alt="626257514_18107924851778564_6610700546792938729_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="127">
+                        <time>05/02/2026</time>
+                        <h3>QBS is transforming as we get ready for the PTA Centenary Fair tomorrow! We are buzzing with excitement to celebrate 100 years of community, history, and fun. <br><br>A massive shout-out to our incredible PTA and parent volunteers who have been working tirelessly behind the scenes to make this magic happen. <br><br>See you all tomorrow—let’s make history together!<br><br>#esfqbs #centenialfair #communityevent</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d20dfdcdbaea04446e2da680251c7db1.jpg" alt="625896646_18107487526778564_1079919448185570595_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="126">
+                        <time>29/01/2026</time>
+                        <h3>QBS got a hands-on look at the vibrant world of Cantonese Opera today. <br>Our students learned how instruments and percussion set the heartbeat of the play, the symbolism behind accessories and costumes, and most importantly, they witnessed the immense rigour required to master the "four basic skills": singing, acting, delivery of spoken lines, and martial arts.<br>We now have a new appreciation for the hard work and heart that keep this beautiful tradition alive.<br><br>A huge thank you to One Table Two Chairs Charitable Foundation for sharing their passion and showing us that behind every graceful gesture lies years of dedicated practice!<br><br>#esfqbs #cantoneseopera #1table2chairs #learningthrougharts #culturalheritage</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/ebddc20c90718daee97a766d8fcbfb0d.jpg" alt="624686241_18106648972778564_7527765642478338137_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="125">
+                        <time>22/01/2026</time>
+                        <h3>QBS were thrilled to welcome UK-based artist Caroline Cleave today as our Artist in Residence. Caroline spent an inspiring session with our Year 5 students, guiding them in creating beautiful, individually unique koi carp. Her warmth and expertise were a hit with the students, who loved the opportunity to learn from such a talented professional.<br><br>This visit was extra special for our community, as Caroline is the sister of our own Principal. It was a privilege to have her share her artistic passion with us, and we are incredibly proud of the stunning work our students produced under her mentorship. <br><br>Thank you, Caroline!<br><br>#esfqbs #artistinresidence #learningthrougharts</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/cadf9fd870ea331f5975312f89194bb8.jpg" alt="619265003_18106002823778564_6086421426463481758_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="124">
+                        <time>15/01/2026</time>
+                        <h3>Big congrats to Karisse and Avery for winning the HKPSSA Table Tennis Championship today! The skill level, focus, and sportsmanship they displayed were truly impressive. A huge thank you to all the participants and volunteers who made the event run smoothly.<br>#esfqbs #hkpssatabletennischampionship #learningthroughsport #weareqbs</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d235a7a734fc4d71bf0469f5738b8cde.jpg" alt="613492380_18105367420778564_3859264923145846269_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="123">
+                        <time>09/01/2026</time>
+                        <h3>This Saturday, 10 January, marks the official anniversary of our 1926 opening. <br>Today, we held a special birthday assembly, and all year groups participated in various activities and challenges based on the number 100. <br>Earlier in the week, students also collaborated to create a spectacular piece of aerial photography spelling out 'QBS 100.' <br><br>Happy Birthday, QBS! Stay tuned, as more celebration events will be announced soon.<br><br>#esfqbs #celebrating100years #happybirthdayQBS #weareqbs #qbs100</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/73f11d70abb18e7970e5c79746becf6a.jpg" alt="610740348_18104861113778564_8655851017989591434_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                    </div>
+        <div class="btns">
+            <button class="prev"></button>
+            <button class="next"></button>
+        </div>
+    </div>
+            <div class="lightbox" data-id="132">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>25/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Our Year 6 students took a giant leap into the future this week! As part of their How We Organise Ourselves unit of inquiry, students and parents teamed up to play the Global Goal Games.<br><br>This immersive card-based simulation transported our learners to the year 2030, challenging them to navigate the "real world" and meet the Sustainable Development Goals (SDGs). From ending poverty to protecting our planet, the stakes couldn't have been higher!<br><br>A huge thank you to the parents who joined us in this mission. Together, we’re making sure we leave a better planet than we found it!<br><br>#esfqbs #globalgoalsgame #Year6 #IBPYP #futureleaders #learningthroughplay</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/2c1d5ced849bd15c0533a9631f91be0b.jpg" alt="641851166_18109254148778564_7445000107337861855_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c140ec92345ed220c191d062c53dbba6.jpg" alt="641174041_18109254145778564_6409711647097417556_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DVLHMkmEmVB/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DVLHMkmEmVB/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="131">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>20/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Wishing everyone a Happy Year of the Horse! May your year be filled with:<br><br>✨ Prosperity that keeps pace with your hard work.<br>✨ Success that knows no hurdles.<br>✨ Joy at every turn.<br><br>Kung Hei Fat Choi - 恭喜发财<br><br>#esfqbs #YearOfTheHorse #cny2026</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e59daec224c9646073e5efac5bdb2b42.jpg" alt="637048586_18108778843778564_1708267830784499789_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DU9h6b-Eizp/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DU9h6b-Eizp/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="130">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>13/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>We had an absolutely unforgettable last day before our Chinese New Year break, filled with energy, tradition, and incredible talent. The campus was buzzing from start to finish!<br><br>🧧 Wishing our entire community a prosperous, healthy, and happy Chinese New Year! Enjoy the well-deserved break.<br><br>#esfqbs #cny2026 #yearofthehorse2026</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8ebf8e9bb02d966d561a5a8425800615.jpg" alt="629614397_18108157192778564_1369367854375969058_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/64ac7a5e08a48481c52f2f12b1663f4c.jpg" alt="626300617_18108157204778564_2987302885825042320_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b13798c86ff3f741eaad6212ec86e98f.jpg" alt="626275906_18108157240778564_3741045388894492028_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/9c41036f2a54900f3b8c196b75b5d1cd.jpg" alt="630682944_18108157222778564_1972593267518016043_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/4098ee1fab9eef92fb7c8ad400e3d774.jpg" alt="626287165_18108157231778564_8769861531925469912_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/eec49dc68842b14928b8c871ce70f37d.jpg" alt="626274111_18108157213778564_8517646418489277113_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/a176877a0d052672a1de63646df4f49c.jpg" alt="626286019_18108157183778564_1424271627883143402_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/66486177bd91782db0ed4688f3eb61d4.jpg" alt="626287047_18108157162778564_2402978150262116711_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/94594dd4d5a542dff569271c46f54400.jpg" alt="626277974_18108157174778564_3136763230695533342_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DUsFVPEko4t/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DUsFVPEko4t/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="129">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>12/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>The annual Chinese New Year collaboration between Chinese International School (@cishk) and Quarry Bay School once again brought our two school communities together to welcome the Year of the Horse. This tradition featured a joint visual arts project sharing ongoing appreciation for how art unites us across borders and backgrounds. <br>The opening ceremony was a joyful occasion attended by students from both schools, along with Ms Gardon, Principal of Chinese International School, Mr Cogbill, Vice Principal of Quarry Bay School, and the visual arts teachers. <br><br>#esfqbs #cishk #artscollaboration #cny2026 #yearofthehorse</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/87cb834a0506c373237e02126498a24b.jpg" alt="626293469_18108071209778564_7526821970157933333_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/33ae9a8c1139ada18ddb05feec479fec.jpg" alt="626264823_18108071200778564_3161887098113068761_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DUpXz0bEu-0/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DUpXz0bEu-0/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="128">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>10/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>✨ Flashback to an unforgettable Centenary Fair! ✨<br><br>A massive thank you to our amazing PTA Coordinator and her tireless team of volunteers. <br><br>This event showed the strength of the QBS community. From the stage to the stalls, it was an evening to remember.<br><br>To everyone who baked, performed, volunteered, entertained or simply showed up to share the joy—thank you for making our school such a vibrant place.<br><br>#esfqbs #QBSCentenaryFair #qbspta #CommunitySpirit #weareqbs</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/55e66dcfeb2d0c54ccc3068a6229d89f.jpg" alt="626257514_18107924851778564_6610700546792938729_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/841ff7f01f7d296413a0554cb4f0f74f.jpg" alt="626226210_18107924857778564_8597707147187151008_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3f54ccb1934835fb7707ce2f3f73ba59.jpg" alt="632296417_18107924860778564_269797480524134209_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b3e5ea932bc87c26b398a637d6f6e99d.jpg" alt="632567567_18107924848778564_6744995476182200337_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/9bba993be5e558a4d0573e7e4ecc2d81.jpg" alt="626259351_18107924845778564_6274567563302842598_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/edc882b9ba77de7f69f534d0987aff1a.jpg" alt="626263455_18107924812778564_2901995985593428633_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/494234069b5115bcff5da78aaeb3f8b5.jpg" alt="626288541_18107924854778564_9016161635088828957_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ce146d782d64b73920210fc9de062c91.jpg" alt="632298812_18107924842778564_7888779862072041622_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/7b54c99b83325321e3a4715da4922f4c.jpg" alt="626271184_18107924839778564_2083603358093562873_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/0ea386b31f7ca3137474334b4cac98a8.jpg" alt="626298603_18107924815778564_5185301155730696263_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DUkjQEukial/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DUkjQEukial/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="127">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>05/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>QBS is transforming as we get ready for the PTA Centenary Fair tomorrow! We are buzzing with excitement to celebrate 100 years of community, history, and fun. <br><br>A massive shout-out to our incredible PTA and parent volunteers who have been working tirelessly behind the scenes to make this magic happen. <br><br>See you all tomorrow—let’s make history together!<br><br>#esfqbs #centenialfair #communityevent</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/d20dfdcdbaea04446e2da680251c7db1.jpg" alt="625896646_18107487526778564_1079919448185570595_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/a7ad1815af8ef8f074586f62a6d37402.jpg" alt="625343055_18107487517778564_1220834088901226548_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DUXpB5vkusD/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DUXpB5vkusD/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="126">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>29/01/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>QBS got a hands-on look at the vibrant world of Cantonese Opera today. <br>Our students learned how instruments and percussion set the heartbeat of the play, the symbolism behind accessories and costumes, and most importantly, they witnessed the immense rigour required to master the "four basic skills": singing, acting, delivery of spoken lines, and martial arts.<br>We now have a new appreciation for the hard work and heart that keep this beautiful tradition alive.<br><br>A huge thank you to One Table Two Chairs Charitable Foundation for sharing their passion and showing us that behind every graceful gesture lies years of dedicated practice!<br><br>#esfqbs #cantoneseopera #1table2chairs #learningthrougharts #culturalheritage</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ebddc20c90718daee97a766d8fcbfb0d.jpg" alt="624686241_18106648972778564_7527765642478338137_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/833fc1aa1e1e37d253e3eae183c164e6.jpg" alt="622306566_18106648954778564_7606013904770591304_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f32f1f4db6c4157362b2b399bbc34b73.jpg" alt="623757677_18106648969778564_4541520190620038150_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DUFkl8yktYe/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DUFkl8yktYe/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="125">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>22/01/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>QBS were thrilled to welcome UK-based artist Caroline Cleave today as our Artist in Residence. Caroline spent an inspiring session with our Year 5 students, guiding them in creating beautiful, individually unique koi carp. Her warmth and expertise were a hit with the students, who loved the opportunity to learn from such a talented professional.<br><br>This visit was extra special for our community, as Caroline is the sister of our own Principal. It was a privilege to have her share her artistic passion with us, and we are incredibly proud of the stunning work our students produced under her mentorship. <br><br>Thank you, Caroline!<br><br>#esfqbs #artistinresidence #learningthrougharts</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/cadf9fd870ea331f5975312f89194bb8.jpg" alt="619265003_18106002823778564_6086421426463481758_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DTzlZZKEvCu/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DTzlZZKEvCu/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="124">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>15/01/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Big congrats to Karisse and Avery for winning the HKPSSA Table Tennis Championship today! The skill level, focus, and sportsmanship they displayed were truly impressive. A huge thank you to all the participants and volunteers who made the event run smoothly.<br>#esfqbs #hkpssatabletennischampionship #learningthroughsport #weareqbs</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/d235a7a734fc4d71bf0469f5738b8cde.jpg" alt="613492380_18105367420778564_3859264923145846269_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DThsBw-kjEd/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DThsBw-kjEd/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="123">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>09/01/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>This Saturday, 10 January, marks the official anniversary of our 1926 opening. <br>Today, we held a special birthday assembly, and all year groups participated in various activities and challenges based on the number 100. <br>Earlier in the week, students also collaborated to create a spectacular piece of aerial photography spelling out 'QBS 100.' <br><br>Happy Birthday, QBS! Stay tuned, as more celebration events will be announced soon.<br><br>#esfqbs #celebrating100years #happybirthdayQBS #weareqbs #qbs100</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <a href="https://www.instagram.com/reel/DTSQGh2iHUw/" target="_blank" rel="nofollow">
+                                                    <img src="/cache/img/73f11d70abb18e7970e5c79746becf6a.jpg" alt="610740348_18104861113778564_8655851017989591434_n" loading="lazy" width="682" height="682" />                                                </a>
+                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/reel/DTSQGh2iHUw/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/reel/DTSQGh2iHUw/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section7').data('total'));
+            let slider_loop = ori_total >= 5 ? true : false;
+            $('.record-slider', '#section7').Slider({
+                slides: '.post-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total + 1);
+                    }
+                }
+            });
+
+            $('.post', '#section7').click(function() {
+                $('.lightbox[data-id=' + $(this).data('id') + ']').addClass('show');
+                disableScroll();
+            });
+
+            $('.lightbox .gallery', '#section7').Slider({
+                slides: '.gallery-item',
+                fixedSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    let videos = $('.slider video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    slider.parent().find('.slider-pager').html(current_page + ' / ' + total_page);
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(total_page > 1) {
+                        slider.parent().find('.slider-pager').html('1 / ' + total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+	</section>
+	<footer>
+		<div class="top-container">
+			<div class="container">
+				<div class="up-container">
+											<a href="/en/" class="logo">
+							<img src="/cache/img/1b92eb66e06815da78048c8d16b7e053.png" alt="ESF Quarry Bay School-rw" loading="lazy" height="140" />						</a>
+																<nav class="social">
+							<ul>
+																<li>
+									<a href="https://www.instagram.com/esfqbs/" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="40" height="40" />
+									</a>
+								</li>
+																<li>
+									<a href="https://www.facebook.com/esfqbs" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3e297d1.svg" width="40" height="40" />
+									</a>
+								</li>
+																<li>
+									<a href="https://x.com/esfqbs/" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/671fbfba98135.svg" width="40" height="40" />
+									</a>
+								</li>
+															</ul>
+						</nav>
+				 					</div>
+				<div class="down-container">
+					<div class="left-container">
+													<a href="https://maps.app.goo.gl/F1JnNbeXgh2PH4WL9" target="_blank" rel="nofollow" class="map">
+								<img src="/cache/img/e002d46fdf80f5f58d9a55c9dc461ae9.png" alt="擷取" loading="lazy" width="714" height="536" />							</a>
+												<div class="contact">
+							<h2>Contact Information</h2>
+																								<a href="https://qbs.esf.edu.hk/en/admissions/contact_admissions/" class="tel">(+852) 2566 4242</a>
+																<div></div>
+														 							<a href="mailto:office@qbs.edu.hk" class="email">office@qbs.edu.hk</a>
+														 							<p class="address">6 Hau Yuen Path, Braemar Hill, North Point 香港北角寶馬山校園徑六號</p>
+													</div>
+												<div class="subscribe">
+							<form action="/en/subscribe/" method="post">
+								<h2>Connect with Us</h2>
+																	<input type="text" autoComplete="off" placeHolder="Your email address" maxLength="128" class="text" name="email" value="" />									<div class="submit">
+										<a class="handler">Submit</a>
+										<span>Slide to Right</span>
+									</div>
+									<input type="hidden" name="back" value="/en/" />															</form>
+						</div>
+						<script type="text/javascript">
+							$(document).ready(function() {
+								$('form', '.subscribe').validate({
+									autoScroll: false,
+									setting: [
+										[ 'email', {
+											method: [
+												[ 'req' ],					
+												[ 'email' ]					
+											]
+										} ]
+									],
+									onError: function(form) {
+										form.slideSubmit('revert');
+									}
+								}).slideSubmit();
+
+															});
+						</script>
+											</div>
+					<div class="right-container">
+												<nav class="menu2">
+							<ul>
+								<li>
+									<h2>Navigation</h2>
+								</li>
+																	<li>
+										<a href="https://qbs.esf.edu.hk/en/about_us/">About Us</a>
+									</li>
+																	<li>
+										<a href="https://qbs.esf.edu.hk/en/outstanding_education/">Outstanding Education</a>
+									</li>
+																	<li>
+										<a href="https://qbs.esf.edu.hk/en/outstanding_experiences/">Outstanding Experiences</a>
+									</li>
+																	<li>
+										<a href="https://qbs.esf.edu.hk/en/outstanding_people/">Outstanding People</a>
+									</li>
+																	<li>
+										<a href="https://qbs.esf.edu.hk/en/admissions/admissions_overview/">Admissions</a>
+									</li>
+																	<li>
+										<a href="https://qbs.esf.edu.hk/en/WorkWithUs/">Work With Us</a>
+									</li>
+															</ul>
+						</nav>
+																		<nav class="menu3">
+							<ul>
+								<li>
+									<h2>Quick Links</h2>
+								</li>
+																	<li>
+										<a href="https://join-us.esf.edu.hk/" target="_blank" rel="nofollow">About ESF</a>
+									</li>
+																	<li>
+										<a href="https://www.esfexplore.org.hk/" target="_blank" rel="nofollow">ESF Explore</a>
+									</li>
+																	<li>
+										<a href="https://qbs.esf.edu.hk/upload/files/1/file/68ba45cfbe556.pdf">School Calendar</a>
+									</li>
+															</ul>
+						</nav>
+											</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-container">			
+			<div class="container">
+				<div class="wrapper">
+					<p class="copyright">Copyright © English Schools Foundation. Powered by <a href="//www.anglia.com.hk" target="_blank">ANGLIA</a>.</p>
+					<a href="/en/sitemap/" class="sitemap">Sitemap</a>
+				</div>
+								<nav class="logo">
+			 		<ul>
+			 						 			<li>
+			 				<a>
+								<img src="/upload/files/1/logo4/660fd31d2b17e.png" height="131" />
+							</a>
+			 			</li>
+			 						 		</ul>
+			 	</nav>
+							</div>
+		</div>
+	</footer>
+	<button id="back-to-top"></button>
+			<div id="floating">
+							<a class="logo">
+					<img src="/cache/img/09d1f49bf4206ec2812b1986046ae12e.jpg" alt="Quarry Bay logo" loading="lazy" width="62" height="53" />				</a>
+																				<a class="bg-colour1"  href="https://join-us.esf.edu.hk/admissions-primary-secondary/" target="_blank" rel="nofollow">
+													<img src="/upload/shortcut/1/icon/660fd9ba6ff5d.svg" width="60" height="60" />
+												<span>Apply</span>
+					</a>
+														<a class="bg-colour1"  href="https://qbs.esf.edu.hk/en/admissions/contact_admissions/">
+													<img src="/upload/shortcut/2/icon/660fd9ca7b6eb.svg" width="60" height="60" />
+												<span>Call</span>
+					</a>
+														<a class="bg-colour1"  href="https://qbs.esf.edu.hk/en/enquiry/?SchoolCode=QBS">
+													<img src="/upload/shortcut/3/icon/660fd9db298ad.svg" width="60" height="60" />
+												<span>Enquire</span>
+					</a>
+									</div>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#floating').addClass('animate');
+			});
+		</script>
+				<div id="accept-cookies">
+			<article class="editor"><p>Welcome and please be advised that ESF uses cookies. By accessing an ESF, ESL or PTA web site and other online ESF services, such as ESF&rsquo;s mobile app, users agree that ESF can store and access cookies, IP addresses and use other methods in order to collect website usage data, and improve user&rsquo;s online experience. By continuing to access this web site, users agree to the use of cookies, which is handled in accordance to the ESF Data Privacy Policy. Information collected via cookies is handled in accordance with the ESF Personal Data Handling Policy and its related Personal Information Collection Statements (&ldquo;PICS&rdquo;). A copy of the PICS can be found on the ESF web site.</p></article>
+			<div class="buttons">
+				<button type="" class="accept">Accept</button>			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('button', '#accept-cookies').click(function() {
+					$('#accept-cookies').remove();
+					$.ajax({
+						url: genurl('cookies', 'main'),
+						type: 'post',
+						data: {
+							accept: 'y'
+						},
+						success: function(response) {
+						},
+						async: false
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

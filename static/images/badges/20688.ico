@@ -1,0 +1,111 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+        <title>Error</title>
+
+        <link rel="icon" type="image/png" sizes="32x24" href="/_res/postech/kor/img/common/favicon.ico">
+
+		<link rel="stylesheet" href="https://t1.daumcdn.net/kakaomapweb/place/jscss/roughmap/07708ab0/roughmapLander.css">
+		<link href="/_res/postech/_share/css/base.css?39768" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://use.typekit.net/fjy7ngo.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<link href="https://postech.ac.kr/_res/postech/kor/css/sub-common.css?42932" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/_res/postech/kor/css/error.content.css?13432" />
+		<link rel="stylesheet" type="text/css" href="/_res/postech/eng/css/error_footer.content.css?13523" />
+
+		
+		
+			<link href="/_res/postech/eng/css/style.css?29297" rel="stylesheet" type="text/css" />
+		
+
+
+    </head>
+
+    <body class="">
+
+		<div class="wrapper">
+			<div class="container">
+				<div id="cms-content">
+
+					<div class="content_wrap error_box">
+						<div class="error_wrap">
+							<h2>요청하신 페이지를 표시할 수 없습니다.</h2>
+							<p>주소를 다시 확인하거나, 잠시 후 다시 시도해 주세요.</p>
+							<div class="btn_box">
+								<a class="link_btn col1 bg" href="https://www.postech.ac.kr/kor">
+									<span>대표 홈페이지 바로가기</span>
+								</a>
+								<a class="link_btn col2 bg" href="javascript:history.go(-1);">
+									<span>이전 페이지로 돌아가기</span>
+								</a>
+							</div>
+						</div>
+						<div class="error_type_txt">404</div>
+					</div>
+				</div>
+
+				<div data-cms-content="/eng/_content/error_footer">
+					<footer>
+					  <div class="logo_wrap"><a class="logo" href="/eng"></a>
+					    <p><span>COPYRIGHT 2025 Pohang University of Science and Technology.&nbsp;</span><span>ALL RIGHTS RESERVED.</span></p>
+					  </div>
+					</footer>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+
+
+
+
+</html>
+

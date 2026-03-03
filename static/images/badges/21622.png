@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+              
+    
+    <head>
+        <meta charset="UTF-8"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>University of Hawaii System</title>
+        <meta content="The official website for the University of Hawaiʻi System. Explore 10 campuses, degrees, admissions, research, and a commitment to Hawaiian culture." name="description"/>
+        
+        
+        
+        
+<link href="https://hawaii.edu/its/template/cascade_system/2024/_files/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://hawaii.edu/its/template/cascade_system/2024/_files/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.bunny.net" />
+<link rel="preconnect" href="https://fonts.bunny.net" />
+<link href="https://fonts.bunny.net/css?family=source-sans-3:200,300,400,500,600,700,800,900|source-sans-pro:200,300,400,600,700,900|source-serif-4:200,300,400,500,600,700,800,900|source-serif-pro:200,300,400,600,700,900" rel="stylesheet" />
+<link rel="stylesheet" href="https://hawaii.edu/its/template/cascade_system/2024/_files/css/site.css" />
+<link rel="stylesheet" href="https://hawaii.edu/its/template/cascade_system/2024/_files/css/custom.css" />
+<link rel="stylesheet" href="https://hawaii.edu/its/template/cascade_system/2024/_files/css/dev-custom.css" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://hawaii.edu/its/template/cascade_system/2024/_files/favicon/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://hawaii.edu/its/template/cascade_system/2024/_files/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://hawaii.edu/its/template/cascade_system/2024/_files/favicon/favicon-16x16.png" />
+<link rel="manifest" href="https://hawaii.edu/its/template/cascade_system/2024/_files/favicon/site.webmanifest" />
+<link rel="stylesheet" href="https://hawaii.edu/its/template/cascade_system/2024/_files/plugins/splide/css/splide.min.css" />
+<link rel="stylesheet" href="https://hawaii.edu/its/template/cascade_system/2024/_files/plugins/splide/extensions/css/splide-extension-video.min.css" />
+<link rel="stylesheet" href="https://hawaii.edu/its/template/cascade_system/2024/_files/css/gallery/tobii.min.css" />
+<link rel="stylesheet" href="https://hawaii.edu/its/template/cascade_system/2024/_files/css/gallery/gallery.css" />
+<script src="https://hawaii.edu/its/template/cascade_system/2024/_files/plugins/splide/js/splide.min.js"></script>
+<script src="https://hawaii.edu/its/template/cascade_system/2024/_files/plugins/splide/extensions/js/splide-extension-video.min.js"></script>
+<script src="https://hawaii.edu/its/template/cascade_system/2024/_files/js/news.js"></script>
+<script src="https://hawaii.edu/its/template/cascade_system/2024/_files/js/system-main/chart.umd.min.js"></script>
+        
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHKNLQ9E5J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HHKNLQ9E5J');
+</script>    </head>
+	
+<body>
+<a aria-label="Skip to main content" class="skip-main" href="#main">Skip to main content</a>
+
+	  
+	
+    
+    
+    
+	 
+
+
+    <header class="relative bg-white" x-data="nav">
+        <div class="bg-black lg:block">
+        	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="py-2">
+                    <div class="flex items-center justify-between brand-bar">
+                        <div class="text-left w-full system-header-links">
+                                                                                                            <a href="https://hawaii.edu/index.php" class="system-header-logo-link pe-5"><span class="sr-only">UH Logo</span><img src="https://hawaii.edu/its/template/cascade_system/2024/_files/images/colleges/system-nameplate-white.svg" alt="UH Logo" class="h-16 w-auto fill-current"/></a>                                                                                                    <a href="https://www.hawaii.edu/apply" target="_parent" class="text-lg text-left uppercase text-white hover:text-gold-600 px-2">Apply </a> 
+                                                                                                    <a href="https://www.hawaii.edu/about-uh/" target="_parent" class="text-lg text-left uppercase text-white hover:text-gold-600 px-2">Visit</a> 
+                                                                                                    <a href="https://give.uhfoundation.org/campaigns/63435/donations/new?a=11793378" target="_parent" class="text-lg text-left uppercase text-white hover:text-gold-600 px-2">Give</a> 
+                                                                                                    <a href="https://hawaii.edu/dir" target="_parent" class="text-lg text-left uppercase text-white hover:text-gold-600 px-2">Directory</a> 
+                                                    </div>
+        <div class="w-full">
+        <ul class="social-links">
+        
+                            <li class="inline-block mr-1">
+        <a href="https://twitter.com/UHawaiiNews" target="_parent" aria-label="UH on Twitter">
+            <i class="fa-brands fa-x-twitter" style="color: white;"></i>
+        </a>
+    </li>
+                            <li class="inline-block mr-1">
+        <a href="https://www.facebook.com/universityofhawaii/" target="_blank" aria-label="UH on Facebook">
+            <i class="fa-brands fa-facebook" style="color: white;"></i>
+        </a>
+    </li>
+                            <li class="inline-block mr-1">
+        <a href="https://www.instagram.com/uhawaiinews/" target="_parent" aria-label="UH on Instagram">
+            <i class="fa-brands fa-instagram" style="color: white;"></i>
+        </a>
+    </li>
+                            <li class="inline-block mr-1">
+        <a href="https://www.youtube.com/user/uhmagazine" target="_parent" aria-label="UH on YouTube">
+            <i class="fa-brands fa-youtube" style="color: white;"></i>
+        </a>
+    </li>
+                            <li class="inline-block mr-1">
+        <a href="https://www.linkedin.com/school/uhawaiinews/" target="_parent" aria-label="UH on LinkedIn">
+            <i class="fa-brands fa-linkedin" style="color: white;"></i>
+        </a>
+    </li>
+                            <li class="inline-block mr-1">
+        <a href="https://www.flickr.com/photos/uhawaii" target="_parent" aria-label="UH on Flickr">
+            <i class="fa-brands fa-flickr" style="color: white;"></i>
+        </a>
+    </li>
+                            <li class="inline-block mr-1">
+        <a href="http://feeds.feedburner.com/UHawaiiNews" target="_parent" aria-label="UH RSS">
+            <i class="fas fa-rss" style="color: white;"></i>
+        </a>
+    </li>
+                                    <li class="hidden lg:inline-block">
+                            <button id="search-button" aria-expanded="false" aria-controls="header-search" aria-label="Search this site">
+                                <i class="fa-solid fa-magnifying-glass" id="search-button-icon" aria-hidden="true" style="color: white;"></i>
+                            </button>
+                        </li>
+                        <li class="hidden lg:inline-block">
+                            				        <form id="header-search" action="https://www.hawaii.edu/search/" role="search" class="hidden">
+    				                                    <input name="cx" value="37366ddc30cdd4147" type="hidden" />
+                                <input name="q" type="hidden" value="site:www.hawaii.edu" />
+                                <label for="desktopSearch" class="sr-only" aria-label="Search">Search</label>
+                                <div class="relative text-gray-900 focus-within:text-gray-600" role="search" aria-label="Desktop Search">
+                                    <input type="text" name="q" id="desktopSearch" class="block w-full border border-transparent bg-white py-0 pr-10 pl-3 leading-5 text-gray-900 placeholder-gray-900 focus:border-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gold-500 sm:text-sm" placeholder="SEARCH" />
+                                    <button type="submit" name="sa" value="Search website" class="button small flat pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                                        <svg class="h-5 w-5 fill-current" x-description="Heroicon name: mini/magnifying-glass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        	  							<path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"></path>
+        							    </svg>
+        							</button>
+                                </div>
+                            </form>
+    				    </li>
+    			    </ul>
+    			</div>
+			</div>
+		</div>
+	</div>
+</div>
+   <div class="pointer-events-none absolute inset-0 z-30 shadow" aria-hidden="true"></div>
+		<div class="z-20">
+	 		<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-4 lg:justify-start md:space-x-10 lg:px-8">
+				    				<div>
+    		  			<a href="https://hawaii.edu/index" target="_parent" class="flex">
+    						<span class="sr-only">UH-Hawaiian-Slogan-seal.svg</span>
+							<img src="https://hawaii.edu/_files/images/UH-Hawaiian-Slogan-seal.svg" alt="UH-Hawaiian-Slogan-seal.svg" class="h-16 w-auto fill-current" />
+    		  			</a>
+    				</div>
+			    				<div class="-my-2 -mr-2 lg:hidden">
+		  			<button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false" x-on:click="mobileNav = true">
+						<span class="sr-only">Open menu</span>
+						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+			  				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+						</svg>
+		  			</button>
+				</div>
+								<div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end" x-cloak>
+																																																																																																																																	  			<nav 
+						class="flex space-x-8" 
+						x-data="{ nav1: false, nav2: false, nav3: false, nav4: false}" 
+						role="navigation" 
+						aria-label="Primary Navigation"
+					>
+											<div class="relative ">
+													<button 
+								type="button" 
+								class="py-6 group inline-flex items-center justify-center text-lg font-normal uppercase text-gray-900 hover:text-color-gold-600" 
+								:class="{ 'text-gold-600' : nav1 }" 
+								aria-expanded="false" 
+								x-on:mouseover="nav1 = true"
+								x-on:mouseleave="nav1 = false"
+								x-on:click="nav1 = !nav1"
+							>
+								<span>Academics</span>
+								<svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" :class="{ 'text-gold-600' : nav1 }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+									<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+								</svg>
+							</button>
+							<div 
+								class="absolute left-1/2 z-30 w-screen max-w-fit -translate-x-1/2 transform px-2 sm:px-0" style="min-width: 300px; width: 100%;"
+								x-show="nav1" 
+								x-on:mouseover="nav1 = true"
+								x-on:mouseleave="nav1 = false"
+							>
+								<div class="overflow-hidden">
+									<div class="relative grid gap-3 bg-white px-5 py-6 sm:gap-4 sm:p-8">
+																			                        										<a href="https://hawaii.edu/degrees-and-programs/index" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Degrees &amp; Programs
+										</a>
+																			                        										<a href="https://hawaii.edu/academic-calendar/index" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Academic Calendar
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/learning-centers" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Continuing Education
+										</a>
+																			        										<a href="https://research.hawaii.edu/" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Research
+										</a>
+																			        										<a href="https://www.hawaii.edu/hawaiipapaokeao/" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Hawaiian Place of Learning
+										</a>
+																		</div>
+								</div>
+							</div>
+												</div>
+											<div class="relative ">
+													<button 
+								type="button" 
+								class="py-6 group inline-flex items-center justify-center text-lg font-normal uppercase text-gray-900 hover:text-color-gold-600" 
+								:class="{ 'text-gold-600' : nav2 }" 
+								aria-expanded="false" 
+								x-on:mouseover="nav2 = true"
+								x-on:mouseleave="nav2 = false"
+								x-on:click="nav2 = !nav2"
+							>
+								<span>Admissions</span>
+								<svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" :class="{ 'text-gold-600' : nav2 }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+									<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+								</svg>
+							</button>
+							<div 
+								class="absolute left-1/2 z-30 w-screen max-w-fit -translate-x-1/2 transform px-2 sm:px-0" style="min-width: 300px; width: 100%;"
+								x-show="nav2" 
+								x-on:mouseover="nav2 = true"
+								x-on:mouseleave="nav2 = false"
+							>
+								<div class="overflow-hidden">
+									<div class="relative grid gap-3 bg-white px-5 py-6 sm:gap-4 sm:p-8">
+																			                        										<a href="https://hawaii.edu/apply/index" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Apply
+										</a>
+																			                        										<a href="https://hawaii.edu/degrees-and-programs/index" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Degrees &amp; Programs
+										</a>
+																			                        										<a href="https://hawaii.edu/costs/tuition-and-fees" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Costs &amp; Aid
+										</a>
+																			                        										<a href="https://hawaii.edu/health-clearance/index" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Health Clearance
+										</a>
+																			                        										<a href="https://hawaii.edu/apply/admitted-students/index" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Admitted Students
+										</a>
+																			        										<a href="https://www.hawaii.edu/transfer/" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											System Transfer
+										</a>
+																		</div>
+								</div>
+							</div>
+												</div>
+											<div class="relative ">
+													<button 
+								type="button" 
+								class="py-6 group inline-flex items-center justify-center text-lg font-normal uppercase text-gray-900 hover:text-color-gold-600" 
+								:class="{ 'text-gold-600' : nav3 }" 
+								aria-expanded="false" 
+								x-on:mouseover="nav3 = true"
+								x-on:mouseleave="nav3 = false"
+								x-on:click="nav3 = !nav3"
+							>
+								<span>Campuses</span>
+								<svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" :class="{ 'text-gold-600' : nav3 }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+									<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+								</svg>
+							</button>
+							<div 
+								class="absolute left-1/2 z-30 w-screen max-w-fit -translate-x-1/2 transform px-2 sm:px-0" style="min-width: 300px; width: 100%;"
+								x-show="nav3" 
+								x-on:mouseover="nav3 = true"
+								x-on:mouseleave="nav3 = false"
+							>
+								<div class="overflow-hidden">
+									<div class="relative grid gap-3 bg-white px-5 py-6 sm:gap-4 sm:p-8">
+																			                        										<a href="https://hawaii.edu/about/index" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Overview
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/manoa" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											UH M&#257;noa
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/hilo" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											UH Hilo
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/westoahu" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											UH West O&#8216;ahu
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/hawaii" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Hawai&#8216;i CC
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/honolulu" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Honolulu CC
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/kapiolani" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Kapi&#8216;olani CC
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/kauai" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Kaua&#8216;i CC
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/leeward" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Leeward CC
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/maui" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											UH Maui College
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/windward" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Windward CC
+										</a>
+																			                        										<a href="https://hawaii.edu/campuses/learning-centers" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Centers &amp; Continuing Education
+										</a>
+																		</div>
+								</div>
+							</div>
+												</div>
+											<div class="relative ">
+													<button 
+								type="button" 
+								class="py-6 group inline-flex items-center justify-center text-lg font-normal uppercase text-gray-900 hover:text-color-gold-600" 
+								:class="{ 'text-gold-600' : nav4 }" 
+								aria-expanded="false" 
+								x-on:mouseover="nav4 = true"
+								x-on:mouseleave="nav4 = false"
+								x-on:click="nav4 = !nav4"
+							>
+								<span>About</span>
+								<svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" :class="{ 'text-gold-600' : nav4 }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+									<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+								</svg>
+							</button>
+							<div 
+								class="absolute left-1/2 z-30 w-screen max-w-fit -translate-x-1/2 transform px-2 sm:px-0" style="min-width: 300px; width: 100%;"
+								x-show="nav4" 
+								x-on:mouseover="nav4 = true"
+								x-on:mouseleave="nav4 = false"
+							>
+								<div class="overflow-hidden">
+									<div class="relative grid gap-3 bg-white px-5 py-6 sm:gap-4 sm:p-8">
+																			                        										<a href="https://hawaii.edu/about/index" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											About UH
+										</a>
+																			        										<a href="https://www.hawaii.edu/strategic-plan/" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Strategic Plan
+										</a>
+																			        										<a href="https://www.hawaii.edu/policy/" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Policies
+										</a>
+																			        										<a href="https://www.hawaii.edu/titleix/" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Title IX
+										</a>
+																			                        										<a href="https://hawaii.edu/about/leadership" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Leadership
+										</a>
+																			        										<a href="https://hawaii.edu/bor" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Board of Regents
+										</a>
+																			        										<a href="https://www.hawaii.edu/offices/" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											System Offices A-Z
+										</a>
+																			        										<a href="https://www.hawaii.edu/news" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											UH News
+										</a>
+																			                        										<a href="https://hawaii.edu/emergency/index" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Emergency
+										</a>
+																			        										<a href="https://www.hawaii.edu/federal-updates/" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Federal Policy Updates
+										</a>
+																			        										<a href="https://www.hawaii.edu/alumni" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											Alumni Relations
+										</a>
+																			        										<a href="https://www.hawaii.edu/leadership/president-search/" class="-m-3 block rounded-md p-3 text-left transition duration-150 ease-in-out hover:text-gold-600" target="_parent" >
+											UH President Search
+										</a>
+																		</div>
+								</div>
+							</div>
+												</div>
+							  			</nav>
+				</div>
+					  		</div>
+		</div>
+		<div class="absolute inset-x-0 top-0 z-30 origin-top-right transform transition lg:hidden" x-show="mobileNav" x-transition:enter="duration-200 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" x-cloak>
+	  		<div class="divide-y-2 divide-gray-50 bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+				<div class="px-5 pt-5 pb-6 sm:pb-8">
+		  			<div class="flex items-center justify-between">
+						<div>
+							<span class="sr-only">UH-Hawaiian-Slogan-seal.svg</span>
+							<img src="https://hawaii.edu/_files/images/UH-Hawaiian-Slogan-seal.svg" alt="UH-Hawaiian-Slogan-seal.svg" class="h-16 w-auto fill-current" />
+						</div>
+						<div class="-mr-2">
+			  				<button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" x-on:click="mobileNav = !mobileNav">
+								<span class="sr-only">Close menu</span>
+								<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+				  					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+								</svg>
+			  				</button>
+						</div>
+		  			</div>
+					<div class="mt-6 sm:mt-8 w-full" role="search" aria-label="Mobile Search">
+					        					<form id="header-search" action="https://www.hawaii.edu/search/" role="search">
+    					                            <label for="mobileSearch" class="sr-only" aria-label="Mobile Search">Search</label>
+                                <div class="relative text-gray-300 focus-within:text-gray-200" role="search" aria-label="Search">
+                                    <input type="text" name="q" id="mobileSearch" class="block w-full border border-transparent bg-white py-2 pr-10 pl-3 leading-5 text-gray-900 placeholder-gray-900 focus:border-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gold-500 sm:text-sm" placeholder="SEARCH" />
+                                    <button type="submit" name="sa" value="Search website" class="button small flat pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                                        <svg class="h-5 w-5 fill-current" x-description="Heroicon name: mini/magnifying-glass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        	  							<path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"></path>
+        							    </svg>
+        							</button>
+                                </div>
+                        </form>
+					</div>
+							  			<div class="mt-6 sm:mt-8">
+						<nav role="navigation" aria-label="Mobile Navigation">
+																																																																																																																																																																												  				<div class="grid grid-cols-1 gap-4" x-data="{ nav1Mobile: false, nav2Mobile: false, nav3Mobile: false, nav4Mobile: false}">
+																								<button 
+										class="text-base text-center font-normal uppercase text-gray-900" 
+										x-on:click="nav1Mobile = !nav1Mobile"
+									>
+											Academics
+										</button>
+									<div 
+										class="w-full transform duration-300 ease-in-out px-2 sm:px-0" 
+										x-show="nav1Mobile" 
+										x-on:mouseleave="nav1Mobile = false">
+										<div class="overflow-hidden">
+											<div class="relative grid gap-3 px-5 sm:gap-4 sm:p-8">
+																							                        												<a href="https://hawaii.edu/degrees-and-programs/index" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Degrees &amp; Programs
+												</a>
+																							                        												<a href="https://hawaii.edu/academic-calendar/index" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Academic Calendar
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/learning-centers" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Continuing Education
+												</a>
+																							        												<a href="https://research.hawaii.edu/" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Research
+												</a>
+																							        												<a href="https://www.hawaii.edu/hawaiipapaokeao/" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Hawaiian Place of Learning
+												</a>
+																						</div>
+										</div>
+									</div>
+																																<button 
+										class="text-base text-center font-normal uppercase text-gray-900" 
+										x-on:click="nav2Mobile = !nav2Mobile"
+									>
+											Admissions
+										</button>
+									<div 
+										class="w-full transform duration-300 ease-in-out px-2 sm:px-0" 
+										x-show="nav2Mobile" 
+										x-on:mouseleave="nav2Mobile = false">
+										<div class="overflow-hidden">
+											<div class="relative grid gap-3 px-5 sm:gap-4 sm:p-8">
+																							                        												<a href="https://hawaii.edu/apply/index" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Apply
+												</a>
+																							                        												<a href="https://hawaii.edu/degrees-and-programs/index" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Degrees &amp; Programs
+												</a>
+																							                        												<a href="https://hawaii.edu/costs/tuition-and-fees" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Costs &amp; Aid
+												</a>
+																							                        												<a href="https://hawaii.edu/health-clearance/index" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Health Clearance
+												</a>
+																							                        												<a href="https://hawaii.edu/apply/admitted-students/index" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Admitted Students
+												</a>
+																							        												<a href="https://www.hawaii.edu/transfer/" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													System Transfer
+												</a>
+																						</div>
+										</div>
+									</div>
+																																<button 
+										class="text-base text-center font-normal uppercase text-gray-900" 
+										x-on:click="nav3Mobile = !nav3Mobile"
+									>
+											Campuses
+										</button>
+									<div 
+										class="w-full transform duration-300 ease-in-out px-2 sm:px-0" 
+										x-show="nav3Mobile" 
+										x-on:mouseleave="nav3Mobile = false">
+										<div class="overflow-hidden">
+											<div class="relative grid gap-3 px-5 sm:gap-4 sm:p-8">
+																							                        												<a href="https://hawaii.edu/about/index" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Overview
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/manoa" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													UH M&#257;noa
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/hilo" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													UH Hilo
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/westoahu" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													UH West O&#8216;ahu
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/hawaii" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Hawai&#8216;i CC
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/honolulu" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Honolulu CC
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/kapiolani" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Kapi&#8216;olani CC
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/kauai" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Kaua&#8216;i CC
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/leeward" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Leeward CC
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/maui" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													UH Maui College
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/windward" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Windward CC
+												</a>
+																							                        												<a href="https://hawaii.edu/campuses/learning-centers" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Centers &amp; Continuing Education
+												</a>
+																						</div>
+										</div>
+									</div>
+																																<button 
+										class="text-base text-center font-normal uppercase text-gray-900" 
+										x-on:click="nav4Mobile = !nav4Mobile"
+									>
+											About
+										</button>
+									<div 
+										class="w-full transform duration-300 ease-in-out px-2 sm:px-0" 
+										x-show="nav4Mobile" 
+										x-on:mouseleave="nav4Mobile = false">
+										<div class="overflow-hidden">
+											<div class="relative grid gap-3 px-5 sm:gap-4 sm:p-8">
+																							                        												<a href="https://hawaii.edu/about/index" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													About UH
+												</a>
+																							        												<a href="https://www.hawaii.edu/strategic-plan/" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Strategic Plan
+												</a>
+																							        												<a href="https://www.hawaii.edu/policy/" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Policies
+												</a>
+																							        												<a href="https://www.hawaii.edu/titleix/" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Title IX
+												</a>
+																							                        												<a href="https://hawaii.edu/about/leadership" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Leadership
+												</a>
+																							        												<a href="https://hawaii.edu/bor" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Board of Regents
+												</a>
+																							        												<a href="https://www.hawaii.edu/offices/" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													System Offices A-Z
+												</a>
+																							        												<a href="https://www.hawaii.edu/news" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													UH News
+												</a>
+																							                        												<a href="https://hawaii.edu/emergency/index" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Emergency
+												</a>
+																							        												<a href="https://www.hawaii.edu/federal-updates/" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Federal Policy Updates
+												</a>
+																							        												<a href="https://www.hawaii.edu/alumni" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													Alumni Relations
+												</a>
+																							        												<a href="https://www.hawaii.edu/leadership/president-search/" class="-m-3 block rounded-md p-3 text-center transition duration-150 ease-in-out text-gold-600 hover:underline" target="_parent" >
+													UH President Search
+												</a>
+																						</div>
+										</div>
+									</div>
+																						</div>
+						</nav>
+		  			</div>
+		  							</div>
+	  		</div>
+		</div>
+	</div>
+</header>
+ 
+  
+	
+	
+	
+	          <main aria-label="Main Content" class="mainContent prose md:prose-lg lg:prose-xl max-w-none" id="main" role="main" tabindex="-1">
+                <section class="hero home not-prose">
+		<div class="splide" style="--banner-height: 475px;">
+			<div class="splide__track">
+				<ul class="splide__list">
+				    				        			                					<li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=TCiy8ZF_z-s">
+    						<img alt="slider-1-test.jpg" src="_files/images/banners/slider-1-test.jpg"/>
+    						                                        						        						        						        						        						        						        						        						        						<div class="hero-content hero-gradient" style=" margin-left: auto; margin-right: 0; text-align: right;--hero-align: right; --hero-color: #ffffffcc; --hero-img: url('_files/images/banners/slider-1-test.jpg');">
+        							<div class="hero-text">
+        							            								    <h1 class="hero-right" style="color: #444444;">
+        								         								        There's a<br/>place for you!
+        								                                                                <a class=" card p-4 flex flex-col overflow-hidden transition duration-300 hover:bg-gold-500 bg-gold-600 btn-primary justify-center text-center items-center hero-button readMore font-semibold" href="campuses/index" target="_parent">Explore Locations <i aria-hidden="true" class="fa-solid fa-chevron-right"></i></a>
+	                    					                    					    </h1>
+                    					        							</div>
+        						</div>
+        						    						    					</li>
+									        			                					<li class="splide__slide">
+    						<img alt="slider-1-test.jpg" src="_files/images/banners/cc-students.jpg"/>
+    						                                        						        						        						        						        						        						        						        						        						        						<div class="hero-content hero-gradient" style="align-items: start; margin-left: 0; margin-right: auto; text-align: left;--hero-align: left; --hero-color: #ffffffcc; --hero-img: url('_files/images/banners/cc-students.jpg');">
+        							<div class="hero-text">
+        							            								    <p class="hero-left" style="color: #444444;">
+        								         								        UH Community College System among the country's best
+        								                                                <a class=" card p-4 flex flex-col overflow-hidden transition duration-300 hover:bg-gold-500 bg-gold-600 btn-primary justify-center text-center items-center hero-button readMore font-semibold" href="https://www.hawaii.edu/news/2024/08/22/uh-cc-among-the-countrys-best/" target="_parent">Read More <i aria-hidden="true" class="fa-solid fa-chevron-right"></i></a>
+	                    					        								    </p>
+        								        							</div>
+        						</div>
+        						    						    					</li>
+									        			                					<li class="splide__slide">
+    						<img alt="" src="_files/images/banners/UHFcampaign.jpg"/>
+    						                                        						        						        						        						        						        						        						        						        						        						<div class="hero-content hero-gradient" style="align-items: start; margin-left: auto; margin-right: 0; text-align: right;--hero-align: right; --hero-color: #ffffffcc; --hero-img: url('_files/images/banners/UHFcampaign.jpg');">
+        							<div class="hero-text">
+        							            								    <p class="hero-right" style="color: #444444;">
+        								         								        For UH <br/>For Hawaiʻi
+        								                                                <a class=" card p-4 flex flex-col overflow-hidden transition duration-300 hover:bg-gold-500 bg-gold-600 btn-primary justify-center text-center items-center hero-button readMore font-semibold" href="https://www.uhfoundation.org/give" target="_parent">Support UH <i aria-hidden="true" class="fa-solid fa-chevron-right"></i></a>
+	                    					        								    </p>
+        								        							</div>
+        						</div>
+        						    						    					</li>
+									</ul>
+			</div>
+		</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const splide = new Splide('.splide', {
+					cover: true,
+					type: 'loop',
+					autoPlay: true,
+					pauseOnHover: true,
+					height: '475px',
+					width: '100%',
+					arrows: true,
+					video: {
+						loop: true,
+						autoplay: false,
+						disableOverlayUI: false,
+						hideControls: false,
+						mute: true,
+					}
+				});
+				splide.mount(window.splide.Extensions);
+			});
+		</script>
+	</section>
+                                                                                                
+            
+    	
+		
+				
+		    	<section class="interested ">
+		<div class="mx-auto max-w-7xl px-4 md:px-20 lg:px-8">
+		    
+                        
+						<div class="mx-auto grid max-w-full gap-5 grid-cols-1 lg:grid-cols-5 justify-items-center items-center">
+									                        					
+	                
+
+					<div class="card h-full w-full flex flex-col overflow-hidden transition duration-300 hover:text-gold-500 text-black text-center justify-center">
+					    						<a class="block p-2 mx-auto" href="campuses/index" target="_parent">
+												    							    <img alt="Hawaiian Islnds" class="h-20 w-auto mx-auto " src="_files/icons/islands.svg"/>
+							 							        							<div class="mt-0 lg:mt-4 uppercase text-lg md:text-2xl lg:text-xl text-center font-semibold text-black">
+								Find Your Place
+							</div>
+												</a>
+																	</div>
+									                        					
+	                
+
+					<div class="card h-full w-full flex flex-col overflow-hidden transition duration-300 hover:text-gold-500 text-black text-center justify-center">
+					    						<a class="block p-2 mx-auto" href="degrees-and-programs/index" target="_parent">
+												    							    <img alt="Mortar Board" class="h-20 w-auto mx-auto " src="_files/icons/gradcap.svg"/>
+							 							        							<div class="mt-0 lg:mt-4 uppercase text-lg md:text-2xl lg:text-xl text-center font-semibold text-black">
+								DEGREES &amp; PROGRAMS
+							</div>
+												</a>
+																	</div>
+									                        					
+	                
+
+					<div class="card h-full w-full flex flex-col overflow-hidden transition duration-300 hover:text-gold-500 text-black text-center justify-center">
+					    						<a class="block p-2 mx-auto" href="apply/index" target="_parent">
+												    							    <img alt="Apply" class="h-20 w-auto mx-auto " src="_files/icons/apply.svg"/>
+							 							        							<div class="mt-0 lg:mt-4 uppercase text-lg md:text-2xl lg:text-xl text-center font-semibold text-black">
+								APPLY
+							</div>
+												</a>
+																	</div>
+									                        					
+	                
+
+					<div class="card h-full w-full flex flex-col overflow-hidden transition duration-300 hover:text-gold-500 text-black text-center justify-center">
+					    						<a class="block p-2 mx-auto" href="costs/financial-aid" target="_parent">
+												    							    <img alt="Financial Aid" class="h-20 w-auto mx-auto " src="_files/icons/financial-aid.svg"/>
+							 							        							<div class="mt-0 lg:mt-4 uppercase text-lg md:text-2xl lg:text-xl text-center font-semibold text-black">
+								FINANCIAL AID
+							</div>
+												</a>
+																	</div>
+									        					
+	                
+
+					<div class="card h-full w-full flex flex-col overflow-hidden transition duration-300 hover:text-gold-500 text-black text-center justify-center">
+					    						<a class="block p-2 mx-auto" href="https://give.uhfoundation.org/campaigns/63435/donations/new?a=11793378" target="_blank">
+												    							    <img alt="Donate" class="h-20 w-auto mx-auto " src="_files/icons/gift.svg"/>
+							 							        							<div class="mt-0 lg:mt-4 uppercase text-lg md:text-2xl lg:text-xl text-center font-semibold text-black">
+								MAKE A GIFT
+							</div>
+												</a>
+																	</div>
+							</div>
+			        					</div>
+	</section>
+ 
+                                                                                                                
+        
+            
+        
+        
+                
+                    	
+		            
+        <div class="featured-videos cards-gradient" style="background: url('_files/images/banners/ocean-bg.jpg') no-repeat fixed; color: #2d2d2d; background-size: cover; --gradient-color: #ffffffb3;">
+        <div class="container cards-container ">
+                        <div class="row">
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QSY052cwM7g?si=m93sDZWEG0kzeKq8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                                <div class="col-md-6 not-prose">
+                                                                        <h2 class="text-2xl md:text-3xl" style="margin-top:0px;color: #2d2d2d">A Year of Momentum</h2> 
+                                                                                                                    <p>The University of <span lang="haw">Hawai&#699;i</span>: Over a century of service&#8212;and a 2025 that launched a new era of achievement and transformative change.</p>
+                                                </div>
+                            </div>
+        </div>
+    </div>
+ 
+                                                                                                                
+                    
+            
+        
+        
+        <a class="banner-cta-link w-100" href="https://www.hawaii.edu/federal-updates/" style="color: #fff; background-color: #000000; " target="_parent">
+    <div>
+        <div class="banner-cta py-3" style="background-color: #000000; ">
+                        <div class="banner-cta-content">
+                                            <p><strong><span class="fs-5">Learn more about Federal Policy Updates &amp; Resources &gt;</span></strong></p>
+                        </div>
+                    </div>
+    </div>
+</a>
+ 
+                                                                                                                
+            
+    	
+		  	
+ 	
+ 	            
+     	    
+    	<section class="news bg-gray-100">
+		<div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
+    		    			        		                			<h2 class="text-gold-600 text-center font-semibold text-2xl md:text-3xl" id="row-4">
+            				UH News &amp; Recent Updates 
+            			</h2>
+            		    			    			<div class="newsWrapper mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3" data-news-type="homepage">
+    				        			                 			                 	                                 	                    
+        				 	<div class="article group flex flex-col overflow-hidden no-underline text-gray-900 decoration-gray-900">
+        				 		<div class="flex-shrink-0">
+        				 			<img alt="Hawaii Hall" class="h-auto w-full object-cover" src="_files/images/news/manoa-hawaii-hall-gnrc-2025.jpg"/>
+        				 		</div>
+        				 		<div class="flex flex-1 flex-col justify-between bg-white p-6">
+        				 			<div class="flex-1">
+        				 				<div class="content news-content">
+        				 					<p class="title text-xl font-semibold text-gray-900 group-hover:decoration-gold-500 news-content-title">
+        				 					    <a href="https://www.hawaii.edu/news/2026/02/25/uh-launches-search-to-re-establish-uh-manoa-chancellor/" title="UH launches search to re-establish UH Mānoa chancellor position">
+        				 					        
+        				 					        UH launches search to re-establish UH Mānoa chancellor position
+        				 					    </a>
+        				 				    </p>
+        				 				                				 				    <p>
+            				 				        The chancellor will provide strategic leadership across academic affairs, research, student success, enrollment and administrative operations.
+            				 				    </p>
+        				 				            				 				    <a href="https://www.hawaii.edu/news/2026/02/25/uh-launches-search-to-re-establish-uh-manoa-chancellor/" title="UH launches search to re-establish UH Mānoa chancellor position">Read Article <i aria-hidden="true" class="fa-solid fa-chevron-right"></i></a>
+        				 				</div>
+        				 			</div>
+        				 		</div>
+        				 	</div>
+        				     				         			                 			                 	                                 	                    
+        				 	<div class="article group flex flex-col overflow-hidden no-underline text-gray-900 decoration-gray-900">
+        				 		<div class="flex-shrink-0">
+        				 			<img alt="Tsuru holding ice cream " class="h-auto w-full object-cover" src="_files/images/news/leeward-wvapdc-tsuru-1.jpg"/>
+        				 		</div>
+        				 		<div class="flex flex-1 flex-col justify-between bg-white p-6">
+        				 			<div class="flex-1">
+        				 				<div class="content news-content">
+        				 					<p class="title text-xl font-semibold text-gray-900 group-hover:decoration-gold-500 news-content-title">
+        				 					    <a href="https://www.hawaii.edu/news/2026/02/24/teen-ice-cream-entrepreneur/" title="Teen ice cream entrepreneur chases dreams in Leeward CC food business program">
+        				 					        
+        				 					        Teen ice cream entrepreneur chases dreams in Leeward CC food business program
+        				 					    </a>
+        				 				    </p>
+        				 				                				 				    <p>
+            				 				        The Wahiawā Value-Added Product Development Center is helping Pearl City High School senior Kenny Tsuru taste sweet success with his Kenny Boy Ice Cream.
+            				 				    </p>
+        				 				            				 				    <a href="https://www.hawaii.edu/news/2026/02/24/teen-ice-cream-entrepreneur/" title="Teen ice cream entrepreneur chases dreams in Leeward CC food business program">Read Article <i aria-hidden="true" class="fa-solid fa-chevron-right"></i></a>
+        				 				</div>
+        				 			</div>
+        				 		</div>
+        				 	</div>
+        				     				     				 <div class="flex flex-col overflow-hidden">
+    				 	<div class="text-2xl font-semibold">More News</div>
+    				 	<ul class="moreArticles list-disc mt-0">
+    				 	        				 	            				 	            				 	                				 	                				 	            <li class="mb-2">
+            				 		        <a href="https://www.hawaii.edu/news/2026/02/27/international-graduate-student-conference/" target="_blank">
+            				 		            Student scholars shape global dialogue at milestone conference
+            				 	            </a>
+            				            </li>
+            				                    				 	                				 	            <li class="mb-2">
+            				 		        <a href="https://www.hawaii.edu/news/2026/02/26/ball-method-national-landmark/" target="_blank">
+            				 		            ‘Ball Method’ declared national historic landmark at Alice Ball celebration
+            				 	            </a>
+            				            </li>
+            				                    				 	                				 	            <li class="mb-2">
+            				 		        <a href="https://www.hawaii.edu/news/2026/02/25/image-of-the-week-patrick-star-tree/" target="_blank">
+            				 		            Image of the Week: ‘Patrick Star’ tree
+            				 	            </a>
+            				            </li>
+            				                    				 	                				 	            <li class="mb-2">
+            				 		        <a href="https://www.hawaii.edu/news/2026/02/24/hawaiian-word-of-the-week-nahunaiki/" target="_blank">
+            				 		            Hawaiian Word of the Week: Nahunaiki
+            				 	            </a>
+            				            </li>
+            				                    				 	                				 	            <li class="mb-2">
+            				 		        <a href="https://www.hawaii.edu/news/2026/02/23/banner-transition-website/" target="_blank">
+            				 		            UH Banner Transition website serves as central hub for updates
+            				 	            </a>
+            				            </li>
+            				                        				                        				 	       				 	        				 	</ul>
+    				 	    				 	            				 	    				 	    				 	<div class="card p-4 flex flex-col overflow-hidden transition duration-300 hover:bg-gold-500 bg-gold-600 news-btn items-center">
+        				 	<a class="readMore mt-2 mb-0 font-semibold" href="https://www.hawaii.edu/news/" target="_blank">
+        				 	    Visit UH News <i aria-hidden="true" class="fa-solid fa-chevron-right"></i>
+        				 	</a>
+    				 	</div>
+    				 </div>
+    			</div>
+					</div>
+	</section>
+ 
+                                                                                                                
+            
+                        	            
+            
+        <div class="background-cta my-3" style="background-image: url('_files/icons/forUH-forHawaii3.svg');">
+        <a class="btn btn-primary background-cta-btn" href="https://give.uhfoundation.org/campaigns/63435/donations/new?a=11793378" target="_parent">
+            Support UH  <i aria-hidden="true" class="fa-solid fa-chevron-right"></i>
+        </a>
+    </div>
+ 
+                                                                                        
+
+
+                        
+    	        
+    	
+	    
+            	    			
+		    	    <section class="cards bg-white-100" id="ten-campuses">
+        	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 cards-container">
+        	    <div class="not-prose">
+        	                	                            			                            	<h2 class="text-center font-semibold text-2xl md:text-3xl" id="row-6">
+                    		    View Our Ten UH Campuses
+                		    </h2>
+            		            		            		</div>
+        		    <div class="text-center py-5 wysiwyg center-list-formatting" style="--tw-prose-body: #fff;">
+        		                        		                    		    </div>
+        		<div class="mt-4 max-w-full">
+    			        			            			            <div class="flex flex-wrap -mx-2 justify-center">
+    			            			        						    	        	        				<div class="w-full md:w-1/5 lg:w-1/5 p-2 d-flex">
+		<a aria-label="University of Hawaii at Mānoa" class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-manoa-500 hover:bg-manoa-600" href="https://manoa.hawaii.edu/" target="_blank">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="MĀNOA" class="sm:block h-48 w-full object-cover" src="_files/images/cards/manoa.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-white">UH Mānoa</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																	    			            			        						    	        	        				<div class="w-full md:w-1/5 lg:w-1/5 p-2 d-flex">
+		<a aria-label="University of Hawaii at Hilo" class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-hilo-500 hover:bg-hilo-600" href="https://hilo.hawaii.edu" target="_blank">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="HILO" class="sm:block h-48 w-full object-cover" src="_files/images/cards/uhh.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-white">UH HILO</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																	    			            			        						    	        	        				<div class="w-full md:w-1/5 lg:w-1/5 p-2 d-flex">
+		<a aria-label="University of Hawaii at West O‘ahu" class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-west-500 hover:bg-west-600" href="https://westoahu.hawaii.edu/" target="_blank">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="WEST O‘AHU" class="sm:block h-48 w-full object-cover" src="_files/images/cards/westoahu.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-white">UH WEST O‘AHU</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																	    			            			        						    	        	        				<div class="w-full md:w-1/5 lg:w-1/5 p-2 d-flex">
+		<a aria-label="Hawai'i Community College" class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-maroon-flush-500 hover:bg-maroon-flush-600" href="https://hawaii.hawaii.edu" target="_blank">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="Hawaii" class="sm:block h-48 w-full object-cover" src="_files/images/cards/Hawaii_index.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-white">Hawai'i CC</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																	    			            			        						    	        	        				<div class="w-full md:w-1/5 lg:w-1/5 p-2 d-flex">
+		<a aria-label="Honolulu Community College" class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-blue-chill-500 hover:bg-blue-chill-600" href="https://www.honolulu.hawaii.edu/" target="_blank">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="Honolulu" class="sm:block h-48 w-full object-cover" src="_files/images/cards/HonCC_index.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-white">Honolulu CC</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																	    			            			        						    	        	        				<div class="w-full md:w-1/5 lg:w-1/5 p-2 d-flex">
+		<a aria-label="Kapi'olani Community College" class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-tory-blue-500 hover:bg-tory-blue-600" href="https://www.kapiolani.hawaii.edu/" target="_blank">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="KAPIOLANI" class="sm:block h-48 w-full object-cover" src="_files/images/cards/kapi-olani.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-white">KAPI'OLANI CC</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																	    			            			        						    	        	        				<div class="w-full md:w-1/5 lg:w-1/5 p-2 d-flex">
+		<a aria-label="Kaua'i Community College" class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-deluge-500 hover:bg-deluge-600" href="https://www.kauai.hawaii.edu/" target="_blank">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="KAUAI" class="sm:block h-48 w-full object-cover" src="_files/images/cards/Kauai_index.JPG"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-white">KAUA'I CC</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																	    			            			        						    	        	        				<div class="w-full md:w-1/5 lg:w-1/5 p-2 d-flex">
+		<a aria-label="Leeward Community College" class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-indigo-500 hover:bg-indigo-600" href="https://www.leeward.hawaii.edu/" target="_blank">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="LEEWARD" class="sm:block h-48 w-full object-cover" src="_files/images/cards/Leeward_index.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-white">LEEWARD CC</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																	    			            			        						    	        	        				<div class="w-full md:w-1/5 lg:w-1/5 p-2 d-flex">
+		<a aria-label="Maui College" class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-venice-blue-500 hover:bg-venice-blue-600" href="https://maui.hawaii.edu/" target="_blank">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="MAUI" class="sm:block h-48 w-full object-cover" src="_files/images/cards/maui.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-white">UH MAUI COLLEGE</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																	    			            			        						    	        	        				<div class="w-full md:w-1/5 lg:w-1/5 p-2 d-flex">
+		<a aria-label="Windward Community College" class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-sushi-500 hover:bg-sushi-600" href="https://windward.hawaii.edu/" target="_blank">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="WINDWARD" class="sm:block h-48 w-full object-cover" src="_files/images/cards/Keahiakahoe-walk-wcc.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-white">WINDWARD CC</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																		    </div>
+														    </div>
+			    		    </div>
+	    </section>
+ 
+                                                                                                    
+    	    
+    	
+	    
+            	    			
+		    	    <section class="cards bg-gray-100">
+        	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 cards-container">
+        	    <div class="not-prose">
+        	                	                            			                            	<h2 class="text-center font-semibold text-2xl md:text-3xl" id="row-7">
+                    		    Like No Place on Earth
+                		    </h2>
+            		            		            		</div>
+        		    <div class="text-center py-5 wysiwyg center-list-formatting" style="--tw-prose-body: text-white;">
+        		                        		                    		    </div>
+        		<div class="mt-4 max-w-full">
+    			        			            			            <div class="flex flex-wrap -mx-2 justify-center">
+    			            			        						    	        	        				<div class="w-full md:w-1/3 lg:w-1/3 p-2 d-flex">
+		<a class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-white-500 hover:bg-white-600" href="https://www.hawaii.edu/hawaiipapaokeao/" target="_parent">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="WINDWARD" class="sm:block h-48 w-full object-cover" src="_files/images/colleges/hawaiianlearning.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-black">Native Hawaiian Place of Learning</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																	    			            			        						    	        	        				<div class="w-full md:w-1/3 lg:w-1/3 p-2 d-flex">
+		<a class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-white-500 hover:bg-white-600" href="https://www.hawaii.edu/research/" target="_parent">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="WINDWARD" class="sm:block h-48 w-full object-cover" src="_files/images/cards/research.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-black">UH Research</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																	    			            			        						    	        	        				<div class="w-full md:w-1/3 lg:w-1/3 p-2 d-flex">
+		<a class="h-full w-full flex flex-col justify-center item-center overflow-hidden transition duration-300 bg-white-500 hover:bg-white-600" href="http://www.hawaii.edu/sustainability/" target="_parent">
+			<div class="flex justify-center item-center flex-shrink-0">
+				<img alt="WINDWARD" class="sm:block h-48 w-full object-cover" src="_files/images/cards/sustainability.jpg"/>
+			</div>
+			<div class="flex flex-1 flex-col justify-between p-3 text-center">
+				<div class="flex-1">
+					<div class="text-lg font-semibold font-sans uppercase text-black">UH Sustainability</div>
+				</div>
+			</div>
+		</a>
+	</div>
+																		    </div>
+														    </div>
+			    		    </div>
+	    </section>
+ 
+                        </main>
+
+
+	  
+	
+
+    
+	<footer class="footer bg-black text-white overflow-hidden" aria-labelledby="footer-heading">
+		<div id="footer-heading" class="sr-only">Footer</div>
+		<div class="mx-auto max-w-7xl py-12 px-5 sm:px-6 lg:px-8">
+			<div class="mb-8 footer-logo">
+				                        				<a href="https://hawaii.edu/index.php" target="_parent">
+					<img src="https://hawaii.edu/its/template/cascade_system/2024/_files/images/colleges/horizontal/system.svg" class="h-20 w-auto" alt="system.svg" />
+				</a>
+			</div>
+			<div class="row gap-6 md:gap-8 footer-content">
+				<div class="col-md-3 footer-meta">
+			    			                        
+<ul class="social-links-f mb-4">
+			                		<li class="inline-block mr-1">
+			<a class="text-white w-5 h-5 flex justify-center items-center transition duration-300" href="https://twitter.com/UHawaiiNews" target="_parent" aria-label="UH on Twitter">
+				<i class="fa-brands fa-x-twitter fa-lg"></i>
+			</a>
+		</li>
+			                		<li class="inline-block mr-1">
+			<a class="text-white w-5 h-5 flex justify-center items-center transition duration-300" href="https://www.facebook.com/universityofhawaii/" target="_blank" aria-label="UH on Facebook">
+				<i class="fa-brands fa-facebook fa-lg"></i>
+			</a>
+		</li>
+			                		<li class="inline-block mr-1">
+			<a class="text-white w-5 h-5 flex justify-center items-center transition duration-300" href="https://www.instagram.com/uhawaiinews/" target="_parent" aria-label="UH on Instagram">
+				<i class="fa-brands fa-instagram fa-lg"></i>
+			</a>
+		</li>
+			                		<li class="inline-block mr-1">
+			<a class="text-white w-5 h-5 flex justify-center items-center transition duration-300" href="https://www.youtube.com/user/uhmagazine" target="_parent" aria-label="UH on YouTube">
+				<i class="fa-brands fa-youtube fa-lg"></i>
+			</a>
+		</li>
+			                		<li class="inline-block mr-1">
+			<a class="text-white w-5 h-5 flex justify-center items-center transition duration-300" href="https://www.linkedin.com/school/uhawaiinews/" target="_parent" aria-label="UH on LinkedIn">
+				<i class="fa-brands fa-linkedin fa-lg"></i>
+			</a>
+		</li>
+			                		<li class="inline-block mr-1">
+			<a class="text-white w-5 h-5 flex justify-center items-center transition duration-300" href="https://www.flickr.com/photos/uhawaii" target="_parent" aria-label="UH on Flickr">
+				<i class="fa-brands fa-flickr fa-lg"></i>
+			</a>
+		</li>
+			                		<li class="inline-block mr-1">
+			<a class="text-white w-5 h-5 flex justify-center items-center transition duration-300" href="http://feeds.feedburner.com/UHawaiiNews" target="_parent" aria-label="UH RSS">
+				<i class="fas fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+                                                    <p><span>2444 Dole Street</span><br/><span>Honolulu, HI 96822</span></p>
+                            </div>
+            <div class="col-md-8">
+                <div class="row">
+                                                                
+											<div class="col-md-6">
+					<ul>
+													        							<li>
+								<a href="https://www.hawaii.edu/access/" class="hover:underline" target="_blank" >
+									Accessibility At UH
+								</a>
+							</li>
+													        							<li>
+								<a href="https://www.hawaii.edu/academic-calendar/" class="hover:underline" target="_parent" >
+									Academic Calendar
+								</a>
+							</li>
+													        							<li>
+								<a href="https://www.hawaii.edu/calendar/" class="hover:underline" target="_parent" >
+									Events Calendar
+								</a>
+							</li>
+													        							<li>
+								<a href="https://www.hawaii.edu/directory" class="hover:underline" target="_parent" >
+									Directory
+								</a>
+							</li>
+													        							<li>
+								<a href="https://www.hawaii.edu/emergency/" class="hover:underline" target="_parent" >
+									Emergency Information
+								</a>
+							</li>
+													        							<li>
+								<a href="https://www.hawaii.edu/titleix" class="hover:underline" target="_parent" >
+									Title IX/EEO Resources
+								</a>
+							</li>
+													        							<li>
+								<a href="https://www.hawaii.edu/news/" class="hover:underline" target="_parent" >
+									UH News
+								</a>
+							</li>
+													        							<li>
+								<a href="https://www.governmentjobs.com/careers/hawaiiedu" class="hover:underline" target="_parent" >
+									Work at UH
+								</a>
+							</li>
+											</ul>
+				</div>
+												<div class="col-md-6">
+					<ul>
+													                        							<li>
+								<a href="https://hawaii.edu/accessibility-statement/index.php" class="hover:underline" target="_parent" >
+									Accessibility Statement
+								</a>
+							</li>
+													        							<li>
+								<a href="https://www.hawaii.edu/contact" class="hover:underline" target="_parent" >
+									Contact UH
+								</a>
+							</li>
+													        							<li>
+								<a href="https://myuh.hawaii.edu/" class="hover:underline" target="_parent" >
+									MyUH
+								</a>
+							</li>
+													        							<li>
+								<a href="https://get.adobe.com/reader/" class="hover:underline" target="_parent" >
+									Get Adobe Acrobat Reader
+								</a>
+							</li>
+													        							<li>
+								<a href="https://www.hawaii.edu/privacy" class="hover:underline" target="_blank" >
+									Privacy Statement
+								</a>
+							</li>
+											</ul>
+				</div>
+							</div>
+		</div>
+	</div>
+</div>
+						    <div id="languageBarSelection" class="lang-bar">
+        		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        			<div class="py-3">
+        				<ul class="text-center" role="list" aria-label="Translation Links">
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="English" data-lang="English">
+        							English
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="Gagana Samoa " data-lang="Gagana Samoa ">
+        							Gagana Samoa 
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="Kapasen Chuuk " data-lang="Kapasen Chuuk ">
+        							Kapasen Chuuk 
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="Lea faka-Tonga - Tongan" data-lang="Lea faka-Tonga - Tongan">
+        							Lea faka-Tonga - Tongan
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="Ti&#7871;ng Vi&#7879;t " data-lang="Ti&#7871;ng Vi&#7879;t ">
+        							Ti&#7871;ng Vi&#7879;t 
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;" data-lang="&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;">
+        							&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="Ilokano" data-lang="Ilokano">
+        							Ilokano
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="Tagalog" data-lang="Tagalog">
+        							Tagalog
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="Cebuano" data-lang="Cebuano">
+        							Cebuano
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="Kajin Maj&#244;l " data-lang="Kajin Maj&#244;l ">
+        							Kajin Maj&#244;l 
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="&#31616;&#20307;&#20013;&#25991;" data-lang="&#31616;&#20307;&#20013;&#25991;">
+        							&#31616;&#20307;&#20013;&#25991;
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="&#32321;&#39636;&#20013;&#25991;" data-lang="&#32321;&#39636;&#20013;&#25991;">
+        							&#32321;&#39636;&#20013;&#25991;
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="&#26085;&#26412;&#35486;" data-lang="&#26085;&#26412;&#35486;">
+        							&#26085;&#26412;&#35486;
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="&#54620;&#44397;&#50612;" data-lang="&#54620;&#44397;&#50612;">
+        							&#54620;&#44397;&#50612;
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="Espa&#241;ol" data-lang="Espa&#241;ol">
+        							Espa&#241;ol
+        						</button>
+        					</li>
+        				        					<li class="inline-block" role="listitem">
+        						<button class="px-2 font-medium hover:underline" aria-label="&#699;&#332;lelo Hawai&#699;i " data-lang="&#699;&#332;lelo Hawai&#699;i ">
+        							&#699;&#332;lelo Hawai&#699;i 
+        						</button>
+        					</li>
+        				        				</ul>
+        			</div>
+        		</div>
+        	</div>
+    		        		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="English" id="language_desc_English" aria-label="English">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>You may have the right to an interpreter at no cost to you, except for programs or areas where English proficiency is required for participation. <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSnMk8idA89NkyRsDU1NCwCvMdU2GEKHtZgr3mM3cPb7sEqA/viewform?usp=sharing" rel="noopener" target="_blank">Request form here.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="Gagana Samoa " id="language_desc_Gagana Samoa " aria-label="Gagana Samoa ">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>E ono iai lou &#257;ia tatau mo se faamatala upu e te l&#275; totogia, vagan&#257; ai polokalame po&#8217;o mataupu e manaomia ai na o latou e lelei le Faa-Igilisi e auai. <a href="https://forms.gle/4aYsHbupLPDdUHZx6" rel="noopener" target="_blank">Talosaga fomu iinei.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="Kapasen Chuuk " id="language_desc_Kapasen Chuuk " aria-label="Kapasen Chuuk ">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>A tongeni wor omw pwuung ngeni emon chon awewe fos/chiaku esapw kame ngonuk, tiwenon chok ren ekkewe prokram ika neni ikewe ia sinap non fosun <a href="https://forms.gle/LA4PYNN8JEJK72rT7" rel="noopener" target="_blank">Merika a auchea omw kopwe fiti.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="Lea faka-Tonga - Tongan" id="language_desc_Lea faka-Tonga - Tongan" aria-label="Lea faka-Tonga - Tongan">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p><span>'Oku &#8216;i ai ho&#8217;o totonu ki ha fakatonulea ta&#8217;etotongi kia koe, tukukehe &#8216;a e ngaahi polokalama pe ngaahi &#8216;&#275;lia &#8216;oku fiema&#8217;u &#8216;a e poto he lea Faka-Pilit&#257;nia ke kau ki a&#943; K&#257;taki&#160;<a aria-label="This links to a google form to request an interpreter" href="https://docs.google.com/forms/d/e/1FAIpQLScueAEFsbkHW0kOngVJfKcNkniQyhBU2kZMJLqzyPgF5rYiJA/viewform" rel="noopener" target="_blank">'o click heni.</a></span></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="Ti&#7871;ng Vi&#7879;t " id="language_desc_Ti&#7871;ng Vi&#7879;t " aria-label="Ti&#7871;ng Vi&#7879;t ">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>B&#7841;n c&#243; quy&#7873;n nh&#7901; s&#7921; h&#7895; tr&#7907; t&#7915; th&#244;ng d&#7883;ch vi&#234;n mi&#7877;n ph&#237;, ngo&#7841;i tr&#7915; ch&#432;&#417;ng tr&#236;nh ho&#7863;c khu v&#7921;c y&#234;u c&#7847;u ph&#7843;i c&#243; tr&#236;nh &#273;&#7897; ti&#7871;ng Anh &#273;&#7875; tham gia. <a href="https://forms.gle/T6hGSaQfKs1Ner2u6" rel="noopener" target="_blank">M&#7851;u y&#234;u c&#7847;u t&#7841;i &#273;&#226;y.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;" id="language_desc_&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;" aria-label="&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>&#3588;&#3640;&#3603;&#3629;&#3634;&#3592;&#3617;&#3637;&#3626;&#3636;&#3607;&#3608;&#3636;&#3660;&#3651;&#3609;&#3585;&#3634;&#3619;&#3617;&#3637;&#3621;&#3656;&#3634;&#3617;&#3650;&#3604;&#3618;&#3652;&#3617;&#3656;&#3617;&#3637;&#3588;&#3656;&#3634;&#3651;&#3594;&#3657;&#3592;&#3656;&#3634;&#3618;&#3651;&#3604; &#3654; &#3585;&#3633;&#3610;&#3588;&#3640;&#3603; &#3618;&#3585;&#3648;&#3623;&#3657;&#3609;&#3650;&#3611;&#3619;&#3649;&#3585;&#3619;&#3617;&#3627;&#3619;&#3639;&#3629;&#3614;&#3639;&#3657;&#3609;&#3607;&#3637;&#3656;&#3607;&#3637;&#3656;&#3605;&#3657;&#3629;&#3591;&#3651;&#3594;&#3657;&#3588;&#3623;&#3634;&#3617;&#3626;&#3634;&#3617;&#3634;&#3619;&#3606;&#3607;&#3634;&#3591;&#3616;&#3634;&#3625;&#3634;&#3629;&#3633;&#3591;&#3585;&#3620;&#3625;&#3651;&#3609;&#3585;&#3634;&#3619;&#3648;&#3586;&#3657;&#3634;&#3619;&#3656;&#3623;&#3617;. <a href="https://forms.gle/gpqqQ6ar8KSuzeDk7" rel="noopener" target="_blank">&#3649;&#3610;&#3610;&#3615;&#3629;&#3619;&#3660;&#3617;&#3586;&#3629;&#3652;&#3604;&#3657;&#3607;&#3637;&#3656;&#3609;&#3637;&#3656;.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="Ilokano" id="language_desc_Ilokano" aria-label="Ilokano">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>Mabalin nga addaan ka ti karbengan nga makaala ti tagaipatarus nga awan gastos kanyam, malaksid para kadagiti programa wenno dissu nu ayanna nga ti kinalaing iti Ingles ket kasapulan para ti pannakipaset. <a href="https://forms.gle/N2woHbhFDo6DEfVR7" rel="noopener" target="_blank">Agkiddaw iti porma ditoy.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="Tagalog" id="language_desc_Tagalog" aria-label="Tagalog">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>May karapatan kang magkaroon ng interpreter nang walang bayad, maliban kung para sa mga programa&#160;o larangan kung saan kinakailangan ang kahusayan sa English para sa paglahok. <a href="https://forms.gle/VALL9LCawBB4xQVt7" rel="noopener" target="_blank">Request form dito.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="Cebuano" id="language_desc_Cebuano" aria-label="Cebuano">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>Lagmit nga duna kay katungod sa usa ka interpreter nga walay bayad, gawas sa mga programa o area diin ang kahanas sa English gikinahanglan para sa pag-apil. <a href="https://forms.gle/Frf9qDhzNERzFcpW8" rel="noopener" target="_blank">Pangayo nga porma dinhi.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="Kajin Maj&#244;l " id="language_desc_Kajin Maj&#244;l " aria-label="Kajin Maj&#244;l ">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>Emaro&#241; w&#245;r a&#7747; ji&#7747;we im maro&#241; bwe en w&#245;r juon a&#7747; riukok kw&#245;jjab k&#245;&#316;&#316;&#227; o&#7751;&#227;n, ijellokun w&#245;t &#241;an b&#361;rookraa&#7747; ak w&#227;ween kan me juon ej aikuj je&#316;&#227; K<a href="https://forms.gle/DnRMQ4w2m89muGkv9" rel="noopener" target="_blank">ajin P&#227;lle bwe en maro&#241; p&#227;d im b&#245;k ku&#7751;aa&#7747; ie.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="&#31616;&#20307;&#20013;&#25991;" id="language_desc_&#31616;&#20307;&#20013;&#25991;" aria-label="&#31616;&#20307;&#20013;&#25991;">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>&#24744;&#21487;&#33021;&#26377;&#26435;&#33719;&#24471;&#20813;&#36153;&#30340;&#21475;&#35793;&#26381;&#21153;&#65292;&#20294;&#38656;&#35201;&#33521;&#35821;&#27700;&#24179;&#25165;&#33021;&#21442;&#19982;&#30340;&#39033;&#30446;&#25110;&#39046;&#22495;&#38500;&#22806;&#12290;<a href="https://forms.gle/DMytNWbMRuesyc6B8" rel="noopener" target="_blank"><span>&#30003;</span>&#35831;&#34920;&#22312;&#36825;&#37324;<span>&#12290;</span></a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="&#32321;&#39636;&#20013;&#25991;" id="language_desc_&#32321;&#39636;&#20013;&#25991;" aria-label="&#32321;&#39636;&#20013;&#25991;">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>&#24744;&#21487;&#20197;&#20813;&#36027;&#35531;&#19968;&#21517;&#21475;&#35695;&#21729;&#65292;&#20294;&#38656;&#35201;&#33521;&#35486;&#27700;&#28310;&#25165;&#33021;&#21443;&#33287;&#30340;&#38917;&#30446;&#25110;&#38936;&#22495;&#38500;&#22806;&#12290;<a href="https://forms.gle/MBRdutXBXeKJemQ17" rel="noopener" target="_blank"><span>&#30003;&#35531;&#34920;&#22312;&#36889;&#35041;</span></a><span>&#12290;</span></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="&#26085;&#26412;&#35486;" id="language_desc_&#26085;&#26412;&#35486;" aria-label="&#26085;&#26412;&#35486;">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>&#12354;&#12394;&#12383;&#12399;&#36890;&#35379;&#12434;&#36027;&#29992;&#36000;&#25285;&#12394;&#12375;&#12395;&#38972;&#12416;&#27177;&#21033;&#12364;&#12354;&#12426;&#12414;&#12377;&#12364;&#12289;&#21442;&#21152;&#12377;&#12427;&#12383;&#12417;&#12395;&#33521;&#35486;&#21147;&#12364;&#24517;&#35201;&#12394;&#12503;&#12525;&#12464;&#12521;&#12512;&#12414;&#12383;&#12399;&#20998;&#37326;&#12399;&#38500;&#12365;&#12414;&#12377;&#12290;<a href="https://forms.gle/SNyGGZ6TvyMFAhNp7" rel="noopener" target="_blank"><span>&#12522;&#12463;&#12456;&#12473;&#12488;&#12501;&#12457;&#12540;&#12512;&#12399;&#12371;&#12385;&#12425;</span></a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="&#54620;&#44397;&#50612;" id="language_desc_&#54620;&#44397;&#50612;" aria-label="&#54620;&#44397;&#50612;">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>&#52280;&#50668; &#49884; &#50689;&#50612; &#45733;&#47141;&#51060; &#54596;&#50836;&#54620; &#54532;&#47196;&#44536;&#47016;&#160; <span>&#46608;&#45716; &#50689;&#50669;&#51012; &#51228;&#50808;&#54616;&#44256;</span>, <span>&#47924;&#47308;&#47196; &#53685;&#50669;&#49324;&#47484; </span>&#50836;&#52397;&#54616;&#49892; &#44428;&#47532;&#44032; &#51080;&#49845;&#45768;&#45796;. <a href="https://forms.gle/JJsfXi98CH9S8crF6" rel="noopener" target="_blank">&#50668;&#44592;&#50640;&#49436; &#50577;&#49885; &#50836;&#52397;.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="Espa&#241;ol" id="language_desc_Espa&#241;ol" aria-label="Espa&#241;ol">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>Podr&#225; recibir de forma gratuita los servicios de un int&#233;rprete, salvo para los programas o las &#225;reas en las cuales se requieran conocimientos avanzados de ingl&#233;s para participar. <a href="https://forms.gle/Ee5sgabh5QyRzdsE8" rel="noopener" target="_blank">Solicitud de formulario aqu&#237;.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	            		<div class="languageBarDescription py-3 duration-300 transition-all ease-in-out hidden lang-bar" data-lang="&#699;&#332;lelo Hawai&#699;i " id="language_desc_&#699;&#332;lelo Hawai&#699;i " aria-label="&#699;&#332;lelo Hawai&#699;i ">
+        			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        				<div class="flex justify-between items-center">
+        					                                <p>He pono n&#333; kou i mea unuhi &#8216;&#333;lelo nou me ke k&#257;ki &#8216;ole, koe no n&#257; polokalamu a i &#8216;ole n&#257; kumu e pono ai ka m&#257;kaukau ma ka &#8216;&#333;lelo Pelek&#257;nia no ke komo &#8216;ana i ka hana. <a href="https://forms.gle/LkWFEhqoY8Ly5ySHA" rel="noopener" target="_blank">Palapala noi maanei.</a></p>
+                    					<button type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 closeLanguageBar">
+        						<span class="sr-only">Close</span>
+        						<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        						</svg>
+        					</button>
+        				</div>
+        			</div>
+        		</div>
+    	        	<script>
+    		if(document.readyState != 'loading') {
+    			languageRun();
+    		} else if (document.addEventListener) {
+    			document.addEventListener('DOMContentLoaded', languageRun);
+    		} else {
+    			document.attachEvent('onreadystatechange', function () {
+    				if(document.readState == 'complete') {
+    					languageRun();
+    				}
+    			})
+    		}
+    
+    		function languageRun() {
+    			let langButtons = document.querySelectorAll('#languageBarSelection button');
+    			let langBarCloseButtons = document.querySelectorAll('.closeLanguageBar');
+    			let langBars = document.querySelectorAll('.languageBarDescription');
+    			langButtons.forEach(button => {
+    				button.addEventListener('click', event => {
+    					hideAllLanguareBars(langBars);
+    					let buttonLang = button.getAttribute('data-lang');
+    					let langBar = document.querySelector('.languageBarDescription[data-lang="' + buttonLang + '"]');
+    					if(langBar.classList.contains('hidden')) {
+    						langBar.classList.add('show');
+    						langBar.classList.remove('hidden');
+    					}
+    				});
+    			});
+    
+    			langBarCloseButtons.forEach(closeButton => {
+    				closeButton.addEventListener('click', event => {
+    					hideAllLanguareBars(langBars);
+    				});
+    			});
+    		}
+    
+    		/**
+    		* Hide Languare Bars
+    		*/
+    		function hideAllLanguareBars(bars) {
+    			bars.forEach(bar => {
+    				if(bar.classList.contains('show')) {
+    					bar.classList.add('hidden');
+    					bar.classList.remove('show');
+    				}
+    			});
+    		}
+    	</script>
+    			<div class="policy-bar py-6 text-center bg-dark-gray-100">
+		    An <a class="tw-underline" href="https://www.hawaii.edu/offices/eeo/policies/">equal opportunity institution</a>. Use of this site implies consent with our <a href="https://www.hawaii.edu/policy/docs/temp/ep2.210.pdf">Usage Policy</a>. &#169; 2026&#160;<a href="https://www.hawaii.edu/">University of Hawai'i</a>
+		</div>
+	</footer>                                            	  
+ 
+ 
+    
+<script src="https://hawaii.edu/its/template/cascade_system/2024/_files/js/sidenav.js"></script>
+<script src="https://hawaii.edu/its/template/cascade_system/2024/_files/js/news-events.js"></script>
+<script src="https://hawaii.edu/its/template/cascade_system/2024/_files/js/menu-search.js"></script>
+<script src="https://hawaii.edu/its/template/cascade_system/2024/_files/js/site.js" defer="defer"></script>
+<script src="https://hawaii.edu/its/template/cascade_system/2024/_files/js/gallery/tobii.min.js"></script>
+<script src="https://hawaii.edu/its/template/cascade_system/2024/_files/js/gallery/gallery.js"></script>
+ 
+	
+	
+	
+</body>
+
+</html>

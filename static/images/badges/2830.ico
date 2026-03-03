@@ -1,0 +1,728 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/style.css?v=1671705394">
+<link rel="stylesheet" href="../css/style_adj.css?v=1669188525">
+<link rel="stylesheet" href="../css/aos.css">
+<!-- carousel CSS -->
+<link rel="stylesheet" href="../css/owl.carousel.css">
+<link rel="stylesheet" href="../css/owl.theme.default.css">
+
+<!-- calendar CSS -->
+<link rel="stylesheet" href="../css/fullcalendar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="../images/favicon-icon.png">
+<title>S.K.H. Wei Lun Primary School</title>
+</head>
+
+<body>
+    <div class="container-fluid top-banner">
+    <div class="top-banner-bg">
+        <div class="top-banner-bg-img">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="top-logo"><a href="index.php"><img src="../images/logo.png"   class="img-fluid" alt=""></a></div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="top-right-menu">
+                            <ul>
+                                                                        <li data-aos="fade-up" data-aos-delay="200"><a href="https://eclass.skhweilun.edu.hk/templates/"  target="_blank" ><img src="../attachment/logo/1655871477WL89b.png" class="img-fluid"></a></li>
+                                                                                <li data-aos="fade-up" data-aos-delay="200"><a href="content.php?wid=367" ><img src="../attachment/logo/1655871512sg4ir.png" class="img-fluid"></a></li>
+                                                                                <li data-aos="fade-up" data-aos-delay="200"><a href="content.php?wid=349" ><img src="../attachment/logo/1655871524OgEBw.png" class="img-fluid"></a></li>
+                                                                        <!-- <li data-aos="fade-up" data-aos-delay="200"><img src="../images/header-icon-img-1.png" class="img-fluid"  alt=""></li>
+                                <li data-aos="fade-up" data-aos-delay="300"><img src="../images/header-icon-img-2.png" class="img-fluid"  alt=""></li>
+                                <li data-aos="fade-up" data-aos-delay="400"><img src="../images/header-icon-img-3.png" class="img-fluid"  alt=""></li>
+                                <li data-aos="fade-up" data-aos-delay="500"><img src="../images/header-icon-img-4.png" class="img-fluid"  alt=""></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu wrapper-menu">
+        <div class="menu-bar">
+            <div class="container">
+                <nav class="nav_area">
+                    <label class="toggle" onclick="if (!window.__cfRLUnblockHandlers) return false; " data-cf-modified-28dc4508c96b3729c671c405-=""><i class="fa fa-bars"></i></label>
+                    <ul class="menu">
+                        <li class=""><a href="index.php"  >首頁</a></li>
+                                <li class=" menu-item-has-children "><a href="content.php?wid=497"  >關於偉倫</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                    <ul class="sub-menu">
+                                                                                    <li class=" menu-item-has-children "><a href="content.php?wid=505" >校長的話</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                                                                            <ul class="sub-menu">
+                                                                                                            <li><a href="content.php?wid=505" >2025年9月</a></li>
+                                                                                                                <li><a href="content.php?wid=503" >2025年7月</a></li>
+                                                                                                                <li><a href="content.php?wid=497" >2024年10月</a></li>
+                                                                                                                <li><a href="content.php?wid=489" >2024年7月</a></li>
+                                                                                                                <li><a href="content.php?wid=483" >2023年9月</a></li>
+                                                                                                        </ul>
+                                                </li>                                            <li class=" menu-item-has-children "><a href="content.php?wid=163" >學校歷史</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                                                                            <ul class="sub-menu">
+                                                                                                            <li><a href="content.php?wid=473" >30周年校慶</a></li>
+                                                                                                        </ul>
+                                                </li>                                            <li class=""><a href="content.php?wid=165" >辦學宗旨</a>                                            </li>                                            <li class=""><a href="content.php?wid=167" >學校願景</a>                                            </li>                                            <li class=""><a href="content.php?wid=169" >學校教育目標</a>                                            </li>                                            <li class=""><a href="content.php?wid=171" >校訓校歌</a>                                            </li>                                            <li class=""><a href="content.php?wid=173" >學校組織</a>                                            </li>                                            <li class=""><a href="content.php?wid=175" >校園設施</a>                                            </li>                                            <li class=""><a href="content.php?wid=177" >學校發展</a>                                            </li>                                            <li class=" menu-item-has-children "><a href="content.php?wid=181" >家長須知</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                                                                            <ul class="sub-menu">
+                                                                                                            <li><a href="content.php?wid=181" >家長與校方聯絡</a></li>
+                                                                                                                <li><a href="content.php?wid=183" >更改放學接送模式及早退須知</a></li>
+                                                                                                                <li><a href="content.php?wid=185" >請假早退需知</a></li>
+                                                                                                                <li><a href="content.php?wid=187" >放學安排</a></li>
+                                                                                                                <li><a href="content.php?wid=189" >校服規格及儀表準則</a></li>
+                                                                                                                <li><a href="content.php?wid=191" >關於熱帶氣旋，持續大雨及雷暴事宜</a></li>
+                                                                                                                <li><a href="content.php?wid=193" >校園預防傳染病措施安排</a></li>
+                                                                                                                <li><a href="content.php?wid=195" >學童交通守則</a></li>
+                                                                                                                <li><a href="content.php?wid=197" >午膳安排</a></li>
+                                                                                                                <li><a href="content.php?wid=199" >繳交款項須知</a></li>
+                                                                                                        </ul>
+                                                </li>                                            <li class=""><a href="content.php?wid=479" >學校處理投訴指引</a>                                            </li>                                            <li class=""><a href="content.php?wid=365" >招標/招聘</a>                                            </li>                                    </ul>
+                                    </li>
+                                <li class=" menu-item-has-children "><a href="content.php?wid=125"  >學與教</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                    <ul class="sub-menu">
+                                                                                    <li class=""><a href="content.php?wid=125" >課程發展</a>                                            </li>                                            <li class=" menu-item-has-children "><a href="content.php?wid=139" >學科</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                                                                            <ul class="sub-menu">
+                                                                                                            <li><a href="content.php?wid=139" >中文</a></li>
+                                                                                                                <li><a href="content.php?wid=141" >English</a></li>
+                                                                                                                <li><a href="content.php?wid=143" >數學</a></li>
+                                                                                                                <li><a href="content.php?wid=145" >常識、人文與科學</a></li>
+                                                                                                                <li><a href="content.php?wid=149" >音樂</a></li>
+                                                                                                                <li><a href="content.php?wid=153" >體育</a></li>
+                                                                                                                <li><a href="content.php?wid=147" >視覺藝術</a></li>
+                                                                                                                <li><a href="content.php?wid=151" >普通話</a></li>
+                                                                                                                <li><a href="content.php?wid=155" >電腦</a></li>
+                                                                                                                <li><a href="content.php?wid=157" >閱讀推展組</a></li>
+                                                                                                                <li><a href="content.php?wid=501" >聖經科</a></li>
+                                                                                                        </ul>
+                                                </li>                                            <li class=""><a href="content.php?wid=491" >WOW 課程</a>                                            </li>                                            <li class=""><a href="content.php?wid=493" >跨課程閱讀計劃</a>                                            </li>                                            <li class=""><a href="content.php?wid=495" >體驗式學習活動</a>                                            </li>                                            <li class=""><a href="content.php?wid=131" >交流活動</a>                                            </li>                                            <li class=""><a href="content.php?wid=137" >教育營</a>                                            </li>                                            <li class=""><a href="content.php?wid=159" >教師專業發展</a>                                            </li>                                    </ul>
+                                    </li>
+                                <li class=" menu-item-has-children "><a href="content.php?wid=77"  >校風與學生支援</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                    <ul class="sub-menu">
+                                                                                    <li class=""><a href="content.php?wid=77" >服務團隊</a>                                            </li>                                            <li class=""><a href="content.php?wid=79" >學生學習支援組</a>                                            </li>                                            <li class=""><a href="content.php?wid=81" >學生成長組</a>                                            </li>                                            <li class=""><a href="content.php?wid=129" >資優教育組</a>                                            </li>                                            <li class=""><a href="content.php?wid=83" >宗教組</a>                                            </li>                                            <li class=""><a href="content.php?wid=485" >德育、公民及國民教育組</a>                                            </li>                                            <li class=""><a href="content.php?wid=85" >健康校園</a>                                            </li>                                            <li class=""><a href="content.php?wid=349" >非華語學生支援</a>                                            </li>                                    </ul>
+                                    </li>
+                                <li class=" menu-item-has-children "><a href="content.php?wid=63"  >學生表現</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                    <ul class="sub-menu">
+                                                                                    <li class=""><a href="content.php?wid=63" >全方位學習</a>                                            </li>                                            <li class=" menu-item-has-children "><a href="content.php?wid=57" >升中資訊</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                                                                            <ul class="sub-menu">
+                                                                                                            <li><a href="content.php?wid=499" >中學資訊日</a></li>
+                                                                                                        </ul>
+                                                </li>                                            <li class=""><a href="album.php?wid=53&cid=5" >我們的驕傲</a>                                            </li>                                            <li class=""><a href="album.php?wid=65&cid=1" >校園生活照片</a>                                            </li>                                            <li class=" menu-item-has-children "><a href="news.php?wid=59&cid=5" >學生作品園地</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                                                                            <ul class="sub-menu">
+                                                                                                            <li><a href="news.php?wid=67&cid=7" >中文科</a></li>
+                                                                                                                <li><a href="news.php?wid=69&cid=9" >英文科</a></li>
+                                                                                                                <li><a href="news.php?wid=75&cid=15" >常識科</a></li>
+                                                                                                                <li><a href="news.php?wid=73&cid=13" >視覺藝術科</a></li>
+                                                                                                                <li><a href="news.php?wid=469&cid=17" >電腦科</a></li>
+                                                                                                        </ul>
+                                                </li>                                    </ul>
+                                    </li>
+                                <li class=" menu-item-has-children "><a href="content.php?wid=45"  >家長教師會</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                    <ul class="sub-menu">
+                                                                                    <li class=""><a href="content.php?wid=45" >家教會委員</a>                                            </li>                                            <li class=""><a href="content.php?wid=47" >會章</a>                                            </li>                                            <li class=""><a href="content.php?wid=51" >家長義工服務項目</a>                                            </li>                                            <li class=""><a href="content.php?wid=411" >家長自學園地</a>                                            </li>                                    </ul>
+                                    </li>
+                                <li class=" menu-item-has-children "><a href="content.php?wid=37"  >偉倫家族</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>                                    <ul class="sub-menu">
+                                                                                    <li class=""><a href="content.php?wid=39" >教師團隊</a>                                            </li>                                            <li class=""><a href="content.php?wid=41" >畢業同學</a>                                            </li>                                            <li class=""><a href="content.php?wid=375" >校友會</a>                                            </li>                                    </ul>
+                                    </li>
+                                <li class=""><a href="content.php?wid=15"  >聯絡我們</a></li>
+                                                        <!-- <li class="menu-item-has-children"><a href="">首頁 </a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul class="sub-menu">
+                                <li><a href="#">Sub Menu 1</a></li>
+                                <li><a href="#">Sub Menu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href=""> 關於偉倫</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul class="sub-menu">
+                                <li class="menu-item-has-children"><a href="#">News</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                    <ul class="sub-menu">
+                                        <li><a href="news.php">News List</a></li>
+                                        <li><a href="news_detail.php">News Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="#">Album</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                    <ul class="sub-menu">
+                                        <li><a href="album.php">Album List</a></li>
+                                        <li><a href="album_detail.php">Album Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="calendar.php">Calendar</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="">學與教</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul class="sub-menu">
+                                <li><a href="#">Sub Menu 1</a></li>
+                                <li><a href="#">Sub Menu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="#">校風與學生支援</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul class="sub-menu">
+                                <li><a href="#">Sub Menu 1</a></li>
+                                <li><a href="#">Sub Menu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="news.php">學生表現 </a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul class="sub-menu">
+                                <li><a href="news.php">Sub Menu 1</a></li>
+                                <li><a href="news_detail.php">Sub Menu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href=""> 家長教師會 </a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul class="sub-menu">
+                                <li><a href="#">Sub Menu 1</a></li>
+                                <li><a href="#">Sub Menu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="album.php"> 偉倫家族 </a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul class="sub-menu">
+                                <li><a href="album.php">Sub Menu 1</a></li>
+                                <li><a href="album_detail.php">Sub Menu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href=""> 聯絡我們</a><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul class="sub-menu">
+                                <li><a href="#">Sub Menu 1</a></li>
+                                <li><a href="#">Sub Menu 2</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>    <div class="container-fluid home-banner-section">
+        <div class="container">
+            <div class="row sliderhome-rows">
+                <div class="owl-carousel owl-theme" id="sliderhome">
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/17338774687UNEY.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1733877460Cqq1t.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1733877424TSHet.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1737105213gJ7DA.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1737105100aForg.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1737105165TiuJr.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1737105185szFLe.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1737105194V7ybE.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1737105203zYM1i.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1733878312dA1M1.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1737105222lI9GH.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1733879278QMLVk.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1733879285OeZG9.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1737346501MWBml.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1737346389CWo1v.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1737346398eZy9H.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1737346409AITKo.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1739154968C2eu2.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1750142969Szf4B.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1750143087F2mq8.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1750143095YBObx.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                                    <div class="item">
+                                    <div class="baner-imgs"><img src="../attachment/banner/1751957996Kf72l.png" class="img-fluid">                                                                            </div>
+                                </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid section-details other-wrapper">
+        <div class="container">
+                                <div class="row rowss">
+                        <div class="comments-box" data-aos="fade-up" data-aos-delay="300">
+                            <h3><img src="../images/comments-icon.png" class="img-fluid" alt="">
+                                <marquee style="width: calc(100% - 60px);" class="d-inline-flex">凡事不可自私自利，不可貪圖虛榮；只要心存謙卑，各人看別人比自己強。（腓立比書2:3）</marquee>
+                            </h3>
+                        </div>
+                    </div>
+                        <div class="row">
+                <div class="col-md-9" data-aos="fade-up">
+                    <div class="row align-items-center">
+                        <div class="col-md-10">
+                            <div class="top-heading-info">
+                                <h3>校園生活相</h3>
+                                <div class="rtrtr"><img src="../images/03.png" class="img-fluid" alt=""> </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="heading-info-btn"><a href="album.php?cid=1">更多+</a></div>
+                        </div>
+                    </div>
+                    <div class="row rowss">
+                        <div class="owl-carousel owl-theme" id="sliderhome-album">
+                                                                <div class="item">
+                                        <div class="itemrows">
+                                            <a href="album_detail.php?id=1895&cid=1">
+                                                <div class="photo-album-box">
+                                                    <div class="album-img" <img src="../images/alpha_800x600.png" class="img-fluid" alt="">><img src="../images/alpha_800x600.png" class="img-fluid" alt="">
+                                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                                    </div>
+                                                    <div class="album-box-title">
+                                                        <h3>251120_偉倫全運會</h3>
+                                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">2025-11-25</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                                                <div class="item">
+                                        <div class="itemrows">
+                                            <a href="album_detail.php?id=1897&cid=1">
+                                                <div class="photo-album-box">
+                                                    <div class="album-img" style="background: url(../attachment/album/17685341870CJbN.jpg) center center no-repeat; background-size: contain;"><img src="../images/alpha_800x600.png" class="img-fluid" alt="">
+                                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                                    </div>
+                                                    <div class="album-box-title">
+                                                        <h3>251121_偉倫全運會之姐妹學校</h3>
+                                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">2025-11-21</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                                                <div class="item">
+                                        <div class="itemrows">
+                                            <a href="album_detail.php?id=1889&cid=1">
+                                                <div class="photo-album-box">
+                                                    <div class="album-img" style="background: url(../attachment/album/1768532481Xw53K.jpg) center center no-repeat; background-size: contain;"><img src="../images/alpha_800x600.png" class="img-fluid" alt="">
+                                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                                    </div>
+                                                    <div class="album-box-title">
+                                                        <h3>25年11月份_早會</h3>
+                                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">2025-11-20</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                                                <div class="item">
+                                        <div class="itemrows">
+                                            <a href="album_detail.php?id=1893&cid=1">
+                                                <div class="photo-album-box">
+                                                    <div class="album-img" style="background: url(../attachment/album/1768533029uw7qB.jpg) center center no-repeat; background-size: contain;"><img src="../images/alpha_800x600.png" class="img-fluid" alt="">
+                                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                                    </div>
+                                                    <div class="album-box-title">
+                                                        <h3>251106星光舞台</h3>
+                                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">2025-11-06</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                                                <div class="item">
+                                        <div class="itemrows">
+                                            <a href="album_detail.php?id=1885&cid=1">
+                                                <div class="photo-album-box">
+                                                    <div class="album-img" style="background: url(../attachment/album/1763943574C7OCL.jpg) center center no-repeat; background-size: contain;"><img src="../images/alpha_800x600.png" class="img-fluid" alt="">
+                                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                                    </div>
+                                                    <div class="album-box-title">
+                                                        <h3>20251104 四年級科學活動</h3>
+                                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">2025-11-04</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                                                <div class="item">
+                                        <div class="itemrows">
+                                            <a href="album_detail.php?id=1877&cid=1">
+                                                <div class="photo-album-box">
+                                                    <div class="album-img" style="background: url(../attachment/album/1763942666YXHqU.jpg) center center no-repeat; background-size: contain;"><img src="../images/alpha_800x600.png" class="img-fluid" alt="">
+                                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                                    </div>
+                                                    <div class="album-box-title">
+                                                        <h3>2025-2026 小一適應日</h3>
+                                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">2025-10-29</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                                                <div class="item">
+                                        <div class="itemrows">
+                                            <a href="album_detail.php?id=1863&cid=1">
+                                                <div class="photo-album-box">
+                                                    <div class="album-img" style="background: url(../attachment/album/17627295188EEIV.jpg) center center no-repeat; background-size: contain;"><img src="../images/alpha_800x600.png" class="img-fluid" alt="">
+                                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                                    </div>
+                                                    <div class="album-box-title">
+                                                        <h3>生日會(9-11月)</h3>
+                                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">2025-10-14</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                                                <div class="item">
+                                        <div class="itemrows">
+                                            <a href="album_detail.php?id=1891&cid=1">
+                                                <div class="photo-album-box">
+                                                    <div class="album-img" style="background: url(../attachment/album/1768532965SSHUa.jpg) center center no-repeat; background-size: contain;"><img src="../images/alpha_800x600.png" class="img-fluid" alt="">
+                                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                                    </div>
+                                                    <div class="album-box-title">
+                                                        <h3>251010星光舞台啟動禮</h3>
+                                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">2025-10-10</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                                        <!-- <div class="item">
+                            <div class="itemrows">
+                                <div class="photo-album-box">
+                                    <div class="album-img"><img src="../images/photo-album-img-2.jpg" class="img-fluid" alt="">
+                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="album-box-title">
+                                        <h3>Photo Album title</h3>
+                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">12-03-2022</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="itemrows">
+                                <div class="photo-album-box">
+                                    <div class="album-img"><img src="../images/photo-album-img-3.jpg" class="img-fluid" alt="">
+                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="album-box-title">
+                                        <h3>Photo Album title</h3>
+                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">12-03-2022</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="itemrows">
+                                <div class="photo-album-box">
+                                    <div class="album-img"><img src="../images/photo-album-img-2.jpg" class="img-fluid" alt="">
+                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="album-box-title">
+                                        <h3>Photo Album title</h3>
+                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">12-03-2022</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="itemrows">
+                                <div class="photo-album-box">
+                                    <div class="album-img"><img src="../images/photo-album-img-3.jpg" class="img-fluid" alt="">
+                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="album-box-title">
+                                        <h3>Photo Album title</h3>
+                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">12-03-2022</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                            <!-- <div class="item">
+                            <div class="itemrows">
+                                <div class="photo-album-box">
+                                    <div class="album-img"><img src="../images/photo-album-img-2.jpg" class="img-fluid" alt="">
+                                        <div class="album-img-pp"><img src="../images/photo-album-img-bb.png" class="img-fluid" alt=""></div>
+                                    </div>
+                                    <div class="album-box-title">
+                                        <h3>Photo Album title</h3>
+                                        <h4><img src="../images/clock-img.png" class="img-fluid" alt="">12-03-2022</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="top-text news-home-wrapper-box">
+                        <ul>
+                            <li onclick="if (!window.__cfRLUnblockHandlers) return false; $(&quot;#pride_list&quot;).hide(); $(&quot;#news_list&quot;).show();" style="cursor: pointer;" id="news_tab" data-cf-modified-28dc4508c96b3729c671c405-=""><img src="../images/01.png" class="img-fluid" alt="">最新消息</li>
+                            <li onclick="if (!window.__cfRLUnblockHandlers) return false; $(&quot;#news_list&quot;).hide(); $(&quot;#pride_list&quot;).show();" style="cursor: pointer;" id="pride_tab" class="heading2" data-cf-modified-28dc4508c96b3729c671c405-=""><img src="../images/02.png" class="img-fluid" alt="">我們的驕傲</li>
+                        </ul>
+                    </div>
+                                        <div class="homepage-news-title" id="news_list">
+                        <ul>
+                                                                <li class=""><i class="fa fa-caret-right" aria-hidden="true"></i><span>2025-11-24</span> <a href='news_detail.php?id=197' style='text-decoration: none;color:black' >申請2026年 小一入學自行分配學位結果及註冊注意事項Primary One Admission 2026 Results of Allocation of Discretionary Places & Admission Registration</a></li>
+                                                                <li class=""><i class="fa fa-caret-right" aria-hidden="true"></i><span>2025-09-17</span> <a href='news_detail.php?id=187' style='text-decoration: none;color:black' >2026-2027年度小一「自行分配學位」申請須知  Notes for 2026-2027 P1 Admission for Discretionary place</a></li>
+                                                                <li class=" rowlast "><i class="fa fa-caret-right" aria-hidden="true"></i><span>2025-06-06</span> <a href='news_detail.php?id=185' style='text-decoration: none;color:black' >申請2025-2026年度小一候補生程序 P1 Spare Places Application</a></li>
+                                                        <!-- <li><i class="fa fa-caret-right" aria-hidden="true"></i><span>12-04-2022</span> News title news title news</li>
+                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><span>12-04-2022</span> News title news title news</li>
+                        <li class="rowlast"><i class="fa fa-caret-right" aria-hidden="true"></i><span>12-04-2022</span> News title news title news</li> -->
+                        </ul>
+                        <div class="h-btn"><a href="news.php?cid=1">更多＋</a></div>
+                    </div>
+                    <div class="homepage-news-title" style="display: none;" id="pride_list">
+                        <ul>
+                                                                <li class=""><i class="fa fa-caret-right" aria-hidden="true"></i><span>2025-11-20</span> <a href='album_detail.php?id=1871&cid=5' style='text-decoration: none;color:black'>20251120 頒獎</a></li>
+                                                                <li class=""><i class="fa fa-caret-right" aria-hidden="true"></i><span>2025-11-14</span> <a href='album_detail.php?id=1869&cid=5' style='text-decoration: none;color:black'>20251114 頒獎</a></li>
+                                                                <li class=" rowlast "><i class="fa fa-caret-right" aria-hidden="true"></i><span>2025-11-08</span> <a href='album_detail.php?id=1867&cid=5' style='text-decoration: none;color:black'>VEX IQ 沙角杯</a></li>
+                                                        <!-- <li><i class="fa fa-caret-right" aria-hidden="true"></i><span>12-04-2022</span> News title news title news</li>
+                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><span>12-04-2022</span> News title news title news</li>
+                        <li class="rowlast"><i class="fa fa-caret-right" aria-hidden="true"></i><span>12-04-2022</span> News title news title news</li> -->
+                        </ul>
+                        <div class="h-btn"><a href="album.php?cid=5">更多＋</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row rowss">
+                <div class="logo-info">
+                    <ul>
+                        <li><a href="content.php?wid=413" ><img src="../attachment/quick_link/1655717583Qkoiv.png" class="img-fluid"></a></li>                        <li><a href="content.php?wid=415"  target="_blank" ><img src="../attachment/quick_link/1655717609bWkyF.png" class="img-fluid"></a></li>                        <li><a href="http://dhk.hkskh.org/incarnation/index.aspx"  target="_blank" ><img src="../attachment/quick_link/1655717640CB2Y6.png" class="img-fluid"></a></li>                        <li><a href="https://hkskheducation.org/"  target="_blank" ><img src="../attachment/quick_link/1736211391WmY1C.jpg" class="img-fluid"></a></li>                        <li><a href="content.php?wid=411" ><img src="../attachment/quick_link/1666925676ULh2c.png" class="img-fluid"></a></li>                        <li><a href="content.php?wid=57" ><img src="../attachment/quick_link/1655717692zejAN.png" class="img-fluid"></a></li>                        <li><a href="content.php?wid=365" ><img src="../attachment/quick_link/1655717724fE0TY.png" class="img-fluid"></a></li>                        <li><a href="content.php?wid=373" ><img src="../attachment/quick_link/1655717739WFbou.png" class="img-fluid"></a></li>                        <li><a href="content.php?wid=159" ><img src="../attachment/quick_link/1655717766LRZ0x.png" class="img-fluid"></a></li>                        <li><a href="content.php?wid=375" ><img src="../attachment/quick_link/1655717778uU0XY.png" class="img-fluid"></a></li>                        <li><a href="https://www.skhweilun.edu.hk/attachment/calendar/A03_2025-2026_V1.pdf"  target="_blank" ><img src="../attachment/quick_link/1655717793QjNJh.png" class="img-fluid"></a></li>                        <li><a href="https://www.edb.gov.hk/tc/"  target="_blank" ><img src="../attachment/quick_link/1655717810lhetP.png" class="img-fluid"></a></li>                                                                                                <!-- <li><img src="../images/logo-img-1.png" class="img-fluid"  alt=""></li>
+                    <li><img src="../images/logo-img-2.png" class="img-fluid"  alt=""></li>
+                    <li><img src="../images/logo-img-3.png" class="img-fluid"  alt=""></li>
+                    <li><img src="../images/logo-img-4.png" class="img-fluid"  alt=""></li>
+                    <li><img src="../images/logo-img-5.png" class="img-fluid"  alt=""></li>
+                    <li><img src="../images/logo-img-6.png" class="img-fluid"  alt=""></li>
+                    <li><img src="../images/logo-img-7.png" class="img-fluid"  alt=""></li>
+                    <li><img src="../images/logo-img-8.png" class="img-fluid"  alt=""></li>
+                    <li><img src="../images/logo-img-9.png" class="img-fluid"  alt=""></li>
+                    <li><img src="../images/logo-img-11.png" class="img-fluid"  alt=""></li>
+                    <li><img src="../images/logo-img-12.png" class="img-fluid"  alt=""></li>
+                    <li><img src="../images/logo-img-13.png" class="img-fluid"  alt=""></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="girls-img-wrapper home-girls" data-aos="fade-right" data-aos-delay="300"><img src="../images/girls-img.png" class="img-fluid" alt=""></div>
+            <div class="boys-img-wrapper" data-aos="fade-up"><img src="../images/boys-img-white.png" class="img-fluid" alt=""></div>
+        </div>
+    </div>
+    <div class="container-fluid footer-top-section home-section">
+  <div class="bal-img"><img src="../images/footer-top-img.png" class="img-fluid"  alt=""></div>
+</div>
+<div class="container-fluid footer-section">
+  
+    <div class="row">
+    
+          <div class="col-md-3">
+            <div class="footer-info">
+              <ul  class='ml-3'>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i>香港大嶼山愉景灣第十三區</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-info">
+              <ul class='ml-3'>
+                <li><i class="fa fa-volume-control-phone" aria-hidden="true"></i><a href="tel:+85229878608"><span>電話：2987 8608</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-info">
+              <ul  class='ml-3'>
+                <li><i class="fa fa-fax" aria-hidden="true"></i><a href="#"><span>傳真：2987 1978</span></a></li>
+              </ul>
+            </div>
+          </div>
+      
+      <div class="col-md-3">
+        <div class="footer-info">
+          <ul  class='ml-3'>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="/cdn-cgi/l/email-protection#98ebf3f0effdf1f4edf6d8ebf3f0effdf1f4edf6b6fdfcedb6f0f3"><span><span class="__cf_email__" data-cfemail="bccfd7d4cbd9d5d0c9d2fccfd7d4cbd9d5d0c9d292d9d8c992d4d7">[email&#160;protected]</span></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ 
+  <div class="copyright-section">
+    <div class="container">
+      <div class="copyright">
+        <p>© S.K.H. Wei Lun Primary School. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="28dc4508c96b3729c671c405-text/javascript"></script>
+    <script src="../js/bootstrap.js" type="28dc4508c96b3729c671c405-text/javascript"></script>
+    <script src="../js/aos.js" type="28dc4508c96b3729c671c405-text/javascript"></script>
+    <script src="../js/owl.carousel.js" type="28dc4508c96b3729c671c405-text/javascript"></script>
+    <script src="../js/main.js" type="28dc4508c96b3729c671c405-text/javascript"></script>
+    <script src="../js/main3.js" type="28dc4508c96b3729c671c405-text/javascript"></script>
+    <script type="28dc4508c96b3729c671c405-text/javascript">
+        jQuery(document).ready(function() {
+            AOS.init({
+                duration: 1200,
+                easing: "ease-out-cubic",
+                delay: 200,
+                once: 1
+            });
+        });
+    </script>
+    <script type="28dc4508c96b3729c671c405-text/javascript">
+        $('#sliderhome').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+    <script type="28dc4508c96b3729c671c405-text/javascript">
+        $('#sliderhome-album').owlCarousel({
+            loop: true,
+            margin: 10,
+            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+            nav: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+    <script type="28dc4508c96b3729c671c405-text/javascript">
+        jQuery(document).ready(function() {
+            jQuery(".toggle").click(function() {
+                jQuery("ul.menu").toggleClass('open');
+            });
+            jQuery('html').click(function() {
+                if (jQuery('ul.menu').hasClass('open')) {
+                    jQuery('ul.menu').removeClass('open');
+                }
+            });
+            // replace mobile-nav with your entire nav container
+            jQuery('.nav_area').click(function(e) {
+                e.stopPropagation();
+            });
+            jQuery(window).load(function() {
+                jQuery('li.menu-item-has-children  > span').click(function() {
+                    jQuery(this).next('.sub-menu').slideToggle('500');
+                    jQuery(this).closest('li').siblings().find('ul').hide();
+                    jQuery(this).toggleClass('close-icon');
+                    jQuery(this).closest('li').siblings().find('span').removeClass('close-icon');
+                });
+            });
+
+            jQuery('.sidebar-title').click(function() {
+                jQuery(".sidemenu").slideToggle();
+            });
+
+            jQuery('ul.sidemenu1 li').click(function() {
+                jQuery("ul.side-sub-menu").slideToggle("slow");
+            });
+
+        });
+    </script>
+    <script type="28dc4508c96b3729c671c405-text/javascript">
+        $(document).ready(function() {
+            $(".toggle-submenu").click(function() {
+                jQuery(this).next('.submenu-side').slideToggle('500');
+
+            });
+        });
+    </script>
+
+                <button id="urgentMsgButton" style="font-size: 11px; display:none;">Message</button>
+            <div id="urgentMsgContentDiv" style="display: none;" class="cms_content">
+                <!-- <img class='btn_msg_close' src="../image/btn_close.png" style='position: fixed; top: 20%; right: calc(50% - 200px); cursor: pointer;'> -->
+                <div style="margin: 20px; "><p><img alt="" src="/attachment/upload/files/Register%20Online.jpeg" style="width: 2146px; height: 1487px;" /></p></div>
+            </div>
+            </div>
+            <script src="../layer/layer.js" type="28dc4508c96b3729c671c405-text/javascript"></script>
+            <script type="28dc4508c96b3729c671c405-text/javascript">
+                // $(function(){
+                $(document).ready(function() {
+                    // var X = $(this).offset().top;
+                    // var Y = $(this).offset().left;
+                    $("#urgentMsgButton").click(function() {
+                        layer.open({
+
+                            closeBtn: 1, //【0，1，2】 1和2是两种风格 0代表不显示关闭按钮
+                            shade: 0.8, //遮罩透明度
+                            shadeClose: true, //点击遮罩区域关闭
+                            anim: 5, //动画效果，渐显
+
+                            // area: ['700p50%', '80%x'],
+                            area: ['100%'],
+                            // area: ['500px', '300px'],
+                            // area: ['100%'],
+                            fixed: true, //不固定,即鼠标滚动时，层是否固定在可视区域
+                            // left: "800px",
+                            skin: 'layui-layer-lan',
+                            // bgcolor: 'rgb(35, 60, 202)',
+                            // border : [10 , 0.3 , true],
+                            // offset: '10%',s
+                            offset: "10%",
+                            // title:[
+                            // '标题',
+                            // 'font-size:48px;color:red;border:1px solid red;'
+                            // ],
+                            title: "中華文化日 Chinese Cultural Day",
+                            move: false,
+                            type: 1,
+                            resize: false,
+                            content: $("#urgentMsgContentDiv")
+                            // word-wrap: break-word;
+
+                        });
+                    });
+                    $("#urgentMsgButton").delay(500).trigger("click");
+
+                    $('#urgentMsgContentDiv .btn_msg_close').click(function() {
+                        $(".layui-layer").hide();
+                        $(".layui-layer-shade").hide();
+                    });
+                    // $("#layui-layer1").css("left", "20%");
+                });
+                // })
+            </script>
+    
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="28dc4508c96b3729c671c405-|49" defer></script></body>
+
+</html>

@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>La Salle Primary School</title>
+												<meta charset="UTF-8">
+		<meta name="description" content="La Salle Primary School's mission is to give a human and Christian education to the young, paying particular attention to the needy.School Motto: Fides et Opera ">
+		<meta name="keywords" content="La Salle Primary School's mission is to give a human and Christian education to the young, paying particular attention to the needy.School Motto: Fides et Opera ">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<!--<meta name="viewport" content="width=1440">-->
+		<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css?t=20180831" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>	
+		<script src="js/common.js"></script>
+		<script src="js/jquery.cycle2.min.js"></script>
+		<script src="js/jquery.cycle2.swipe.min.js"></script>
+
+		
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWDBXW912W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CWDBXW912W');
+</script>
+		<style>
+			
+			.banner-board.top_right {
+				top: 80px;
+				bottom: auto;
+			}
+			.banner-board.bottom_right  {
+				bottom: 80px;
+			}
+			.banner-board.top_left {
+				top: 80px;
+				/* left: 40px; */
+				left: calc((100% - 1400px)/2);
+				right:0px;
+				bottom: auto;
+			}
+			.banner-board.bottom_left  {
+				bottom: 80px;
+				left: calc((100% - 1400px)/2);
+				right:0px;
+			}
+			@media only screen and (max-width: 1400px) {
+				
+				.banner-board.top_left {
+				
+					left: 40px;
+				
+				}
+				
+				.banner-board.bottom_left  {
+			
+					left: 40px;
+				
+				}
+			
+			}
+		</style>
+		<script>
+			hit=0;
+			hit2=0;
+			
+	var news_title = [];
+	var news_date = [];
+	var news_img = [];
+	var news_msg = [];
+	var news_link = [];
+																news_title[0] = "Christmas Play";
+		news_date[0] = "Thursday, 18th December, 2025";
+					news_img[0] = "1768364326_t.png";
+				news_msg[0] = "";
+		news_link[0] = "photo.php?pid=352";
+																	news_title[1] = "Christmas Liturgy";
+		news_date[1] = "Wednesday, 17th December, 2025";
+					news_img[1] = "1768364248_t.png";
+				news_msg[1] = "";
+		news_link[1] = "photo.php?pid=351";
+																	news_title[2] = "2025-2026 Good Student Award Scheme (Stage 1)";
+		news_date[2] = "Friday, 12th December, 2025";
+					news_img[2] = "1767675586_t.jpg";
+				news_msg[2] = "";
+		news_link[2] = "photo.php?pid=349";
+																	news_title[3] = "School Opening Mass";
+		news_date[3] = "Friday, 19th September, 2025";
+					news_img[3] = "1761001433_t.jpg";
+				news_msg[3] = "";
+		news_link[3] = "photo.php?pid=345";
+																	news_title[4] = "School Opening Assembly";
+		news_date[4] = "Wednesday, 3rd September, 2025";
+					news_img[4] = "1761002817_t.jpg";
+				news_msg[4] = "";
+		news_link[4] = "photo.php?pid=347";
+																	news_title[5] = "Good Student Award Scheme (Stage 3)";
+		news_date[5] = "Friday, 11th July, 2025";
+					news_img[5] = "1752464935_t.png";
+				news_msg[5] = "";
+		news_link[5] = "photo.php?pid=333";
+																	news_title[6] = "2024-2025 Third Term Subject Prizes";
+		news_date[6] = "Friday, 11th July, 2025";
+					news_img[6] = "1757487573_t.jpg";
+				news_msg[6] = "";
+		news_link[6] = "photo.php?pid=343";
+																	news_title[7] = "2024-2025 Graduation Ceremony";
+		news_date[7] = "Friday, 4th July, 2025";
+					news_img[7] = "1757404119_t.jpg";
+				news_msg[7] = "";
+		news_link[7] = "photo.php?pid=338";
+																	news_title[8] = "End-of-Term Mass";
+		news_date[8] = "Wednesday, 2nd July, 2025";
+					news_img[8] = "1752465503_t.jpg";
+				news_msg[8] = "";
+		news_link[8] = "photo.php?pid=335";
+																	news_title[9] = "Annual Concert";
+		news_date[9] = "Friday, 27th June, 2025";
+					news_img[9] = "1757401261_t.jpg";
+				news_msg[9] = "";
+		news_link[9] = "photo.php?pid=337";
+																	news_title[10] = "2024-2025 Second Term Subject Prizes";
+		news_date[10] = "Monday, 26th May, 2025";
+					news_img[10] = "1748399680_t.png";
+				news_msg[10] = "";
+		news_link[10] = "photo.php?pid=327";
+																	news_title[11] = "Good Student Award Scheme (Stage 2)";
+		news_date[11] = "Friday, 2nd May, 2025";
+					news_img[11] = "1749003303_t.png";
+				news_msg[11] = "";
+		news_link[11] = "photo.php?pid=331";
+						/* news_title = ["title1","title2","title3","title4","title5","title6","title7","title8","title9","title10"];
+			news_date = ["Tuesday, March 28, 2017 1","Tuesday, March 28, 2017 2","Tuesday, March 28, 2017 3","Tuesday, March 28, 2017 4","Tuesday, March 28, 2017 5","Tuesday, March 28, 2017 6","Tuesday, March 28, 2017 7","Tuesday, March 28, 2017 8","Tuesday, March 28, 2017 9","Tuesday, March 28, 2017 10"];
+			news_msg = ["At vero eos et accusam et iusto odiom lione molestias excepteur sint occa ecat illcupidit at non dignissim qui bland...1",
+						"At vero eos et accusam et iusto odiom lione molestias excepteur sint occa ecat illcupidit at non dignissim qui bland...2",
+						"At vero eos et accusam et iusto odiom lione molestias excepteur sint occa ecat illcupidit at non dignissim qui bland...3",
+						"At vero eos et accusam et iusto odiom lione molestias excepteur sint occa ecat illcupidit at non dignissim qui bland...4",
+						"At vero eos et accusam et iusto odiom lione molestias excepteur sint occa ecat illcupidit at non dignissim qui bland...5",
+						"At vero eos et accusam et iusto odiom lione molestias excepteur sint occa ecat illcupidit at non dignissim qui bland...6",
+						"At vero eos et accusam et iusto odiom lione molestias excepteur sint occa ecat illcupidit at non dignissim qui bland...7",
+						"At vero eos et accusam et iusto odiom lione molestias excepteur sint occa ecat illcupidit at non dignissim qui bland...8",
+						"At vero eos et accusam et iusto odiom lione molestias excepteur sint occa ecat illcupidit at non dignissim qui bland...9",
+						"At vero eos et accusam et iusto odiom lione molestias excepteur sint occa ecat illcupidit at non dignissim qui bland...10"];
+			news_img = ["news1.png",
+						"news2.png",
+						"news3.png",
+						"news3.png",
+						"news2.png",
+						"news1.png",
+						"news1.png",
+						"news2.png",
+						"news3.png",
+						"news3.png"];			 */
+			banner_title = ["Motto of this week1","Motto of this week2"];
+			banner_msg = ["That thy alms may be in secret, and thy Father who seeth in secret will repay thee.1","That thy alms may be in secret, and thy Father who seeth in secret will repay thee.2"];
+			banner_tab = ["Matthew 6:4-1","Matthew 6:4-2"];
+			
+			
+			$(function(){	
+				slider1();
+				slider2();
+				news();
+				$(window).resize();
+			});
+			
+			$(window).load(function() {
+				equal_height();
+				$(window).resize();
+			});
+			
+			
+			
+			function equal_height() {
+				$(window).resize(function() {
+					if($(window).width()>=1024-getScrollBarWidth()) {
+						/* height follow the biggest one*/
+						len=$(".nd:not(.quicklink)").length;
+						$(".nd").height("auto");
+						width_array = [];
+						for(i=0;i<len;i++) {
+							width_array.push( $(".nd:not(.quicklink):eq("+i+")").height() );
+						}
+						max_width=Math.max.apply(null,width_array);
+						$(".nd:not(.quicklink)").height(max_width);
+						
+						len=$(".news-title-b").length;
+						$(".news-title-b").height("auto");
+						width_array = [];
+						for(i=0;i<=len;i++) {
+							width_array.push( $(".news-title-b:eq("+i+")").height() );
+						}
+						max_width=Math.max.apply(null,width_array);
+						$(".news-title-b").height(max_width);
+						
+						
+						/* height follow the biggest one End*/
+					} 
+					if($(window).width()>750-getScrollBarWidth() && $(window).width()<1024-getScrollBarWidth()) {
+						/* height follow the biggest one*/
+						len=$(".news-div").length;
+						$(".news-div").height("auto");
+						width_array = [];
+						for(i=0;i<len;i++) {
+							width_array.push( $(".news-div:eq("+i+")").height() );
+						}
+						max_width=Math.max.apply(null,width_array);
+						$(".news-div").height(max_width);
+						/* height follow the biggest one End*/
+						
+						len=$(".news-title-b").length;
+						$(".news-title-b").height("auto");
+						width_array = [];
+						for(i=0;i<len;i++) {
+							width_array.push( $(".news-title-b:eq("+i+")").height() );
+						}
+						max_width=Math.max.apply(null,width_array);
+						$(".news-title-b").height(max_width);
+						
+						
+						$(".quicklink").height("auto");
+					}
+					if($(window).width()<=750-getScrollBarWidth()) {
+						$(".nd").height("auto");
+					}
+				});
+			}
+			
+			function slider1() {
+				/* $('.slider1').cycle('pause'); */
+				/* initial text */
+				$(".slider1-title").html(banner_title[0]);
+				$(".slider1-msg").html(banner_msg[0]);
+				$(".slider1-tab").html(banner_tab[0]);
+				$(".slider1 span:eq(0)").addClass("cycle-pager-active");
+				
+				$('.slider1').on('cycle-update-view', function (e, optionHash, slideOptionsHash, currSlideEl) {
+					hit2++;
+					if(hit2 % 2 == 1) { return false; }
+					
+					i=$(".slider1 .cycle-slide-active").attr("data");
+					$(".slider1-title").html(banner_title[i]);
+					$(".slider1-msg").html(banner_msg[i]);
+					$(".slider1-tab").html(banner_tab[i]);
+				});
+			}
+			
+			function slider2() {
+				/* initial text */
+				$(".bannerb-box2 .bannerb-title").html($(".cycle-slide-active .bannerb-title").html());
+				$(".bannerb-box2 .bannerb-msg").html($(".cycle-slide-active .bannerb-msg").html());
+				$(".bannerb-box2 .bannerb-pager span:eq(0)").addClass("cycle-pager-active");
+				
+				$('.slider2').on('cycle-update-view', function (e, optionHash, slideOptionsHash, currSlideEl) {
+					hit++;
+					if(hit % 2 == 1) { return false; }
+					$(".bannerb-box2 .bannerb-title").html($(".cycle-slide-active .bannerb-title").html());
+					$(".bannerb-box2 .bannerb-msg").html($(".cycle-slide-active .bannerb-msg").html());
+				});
+			}
+			
+			function news() {
+				$(".news-page").html("");
+				html='<span class="news-circle">•</span>';
+				num_of_page=3;
+				news_len=news_title.length;
+				
+				for(i=0;i<news_len/num_of_page;i++) {
+					$(".news-page").html($(".news-page").html()+html);
+				}
+				$(".news-circle").eq(0).addClass("news-circle-active");
+						
+				$(window).resize(function() {					
+					if($(window).width()>=1024-getScrollBarWidth()) {
+						num_of_page=3;
+					}
+					if($(window).width()<1023-getScrollBarWidth() && $(window).width()>750-getScrollBarWidth()) {			
+						num_of_page=2;
+					}
+					if($(window).width()<=750-getScrollBarWidth()) {			
+						num_of_page=1;
+					}
+					
+					/* resize set to first content */
+					for(i=0;i<num_of_page;i++) {
+						if(news_img[i]) {
+							$(".news-img").eq(i).attr("src","../files/event/thumbnail/"+news_img[i]);
+							$(".news-title-b").eq(i).html(news_title[i]);
+							$(".news-date").eq(i).html(news_date[i]);
+							$(".news-msg").eq(i).html(news_msg[i]);
+							if(news_link[i] != ""){
+								$(".news-plus a").eq(i).attr("href",""+news_link[i]+"");
+								$('.news-div').eq(i).attr('onClick','location.href="'+news_link[i]+'"');
+							}else{
+								$(".news-plus a").eq(i).css("display","none");	
+							}
+							//$(".news-plus a").eq(i).attr("href",""+news_link[i]+"");
+						} else {
+							$(".news-div").eq(i).hide();
+						}
+					}
+					/* resize set to first content */
+					
+					$(".news-page").html("");
+					for(i=0;i<news_len/num_of_page;i++) {
+						$(".news-page").html($(".news-page").html()+html);
+					}
+					$(".news-pages1 .news-circle").eq(0).addClass("news-circle-active");
+					$(".news-pages2 .news-circle").eq(0).addClass("news-circle-active");
+					
+					$(".news-pages1 .news-circle").click(function() {
+						index=$(".news-pages1 .news-circle").index(this);
+						$(".news-pages1 .news-circle").removeClass("news-circle-active");
+						$(".news-pages1 .news-circle").eq(index).addClass("news-circle-active");
+						cur_news=index*num_of_page;
+						
+						$(".news-div-container").fadeOut(function() {
+							$(".news-div").css("display","inline-block");
+							for(i=0;i<num_of_page;i++,cur_news++) {
+								if(news_img[cur_news]) {
+									$(".news-img").eq(i).attr("src","../files/event/thumbnail/"+news_img[cur_news]);
+									$(".news-title-b").eq(i).html(news_title[cur_news]);
+									$(".news-date").eq(i).html(news_date[cur_news]);
+									$(".news-msg").eq(i).html(news_msg[cur_news]);
+									if(news_link[cur_news] != ""){
+										$(".news-plus a").eq(i).attr("href",""+news_link[cur_news]+"");
+									}else{
+										$(".news-plus a").eq(i).css("display","none");	
+									}
+									$('.news-div').eq(i).attr('onClick','location.href="'+news_link[cur_news]+'"');
+								} else {
+									$(".news-div").eq(i).hide();
+								}
+							}
+							$(".news-div-container").fadeIn();
+						});
+					});
+					
+					$(".news-pages2 .news-circle").click(function() {
+						index=$(".news-pages2 .news-circle").index(this);
+						$(".news-pages2 .news-circle").removeClass("news-circle-active");
+						$(".news-pages2 .news-circle").eq(index).addClass("news-circle-active");
+						cur_news=index*num_of_page;
+						
+						$(".news-div-container").fadeOut(function() {
+							$(".news-div").css("display","inline-block");
+							for(i=0;i<num_of_page;i++,cur_news++) {
+								if(news_img[cur_news]) {
+									$(".news-img").eq(i).attr("src","../files/event/thumbnail/"+news_img[cur_news]);
+									$(".news-title-b").eq(i).html(news_title[cur_news]);
+									$(".news-date").eq(i).html(news_date[cur_news]);
+									$(".news-msg").eq(i).html(news_msg[cur_news]);
+									if(news_link[cur_news] != ""){
+										$(".news-plus a").eq(i).attr("href",""+news_link[cur_news]+"");
+									}else{
+										$(".news-plus a").eq(i).css("display","none");	
+									}
+									//$(".news-plus a").eq(i).attr("href",""+news_link[cur_news]+"");
+									$('.news-div').eq(i).attr('onClick','location.href="'+news_link[cur_news]+'"');
+								} else {
+									$(".news-div").eq(i).hide();
+								}
+							}
+							$(".news-div-container").fadeIn();
+						});
+					});
+				});
+				
+				/*previous,next button*/
+				cur_news2=0;
+				$(".news-previous").addClass("visibility");
+				
+				$(".news-previous").click(function() {
+					cur_news2--;
+					if(news_img[cur_news2]) {
+						$(".news-img").eq(0).attr("src","../files/event/thumbnail/"+news_img[cur_news2]);
+						$(".news-title-b").eq(0).html(news_title[cur_news2]);
+						$(".news-date").eq(0).html(news_date[cur_news2]);
+						$(".news-msg").eq(0).html(news_msg[cur_news2]);
+						$(".news-next").removeClass("visibility");
+						$(".news-div").eq(0).attr('onClick','location.href="'+news_link[cur_news2]+'"');
+					}
+					
+					if(!news_img[cur_news2-1]) {
+						$(".news-previous").addClass("visibility");
+					}
+				});
+				
+				$(".news-next").click(function() {
+					cur_news2++;
+					if(news_img[cur_news2]) {
+						$(".news-img").eq(0).attr("src","../files/event/thumbnail/"+news_img[cur_news2]);
+						$(".news-title-b").eq(0).html(news_title[cur_news2]);
+						$(".news-date").eq(0).html(news_date[cur_news2]);
+						$(".news-msg").eq(0).html(news_msg[cur_news2]);
+						$(".news-previous").removeClass("visibility");
+						$(".news-div").eq(0).attr('onClick','location.href="'+news_link[cur_news2]+'"');
+					}
+					
+					if(!news_img[cur_news2+1]) {
+						$(".news-next").addClass("visibility");
+					}
+				});
+				
+				$(window).resize(function() {
+					cur_news2=0;
+					$(".news-previous").addClass("visibility");
+				});
+			}
+			
+			
+		</script>
+		<script>
+			
+				$(document).ready(function(){
+					hit=0;
+					
+					/* $('.slider_mobile').on('cycle-update-view', function (e, optionHash, slideOptionsHash, currSlideEl) { */
+						
+						/* var caption = 'Image ' + (optionHash.currSlide + 1) + ' of ' + optionHash.slideCount;
+						$('#caption').html(caption); */
+						/* if(hit==0) {
+							hit++;
+							return false;
+						}
+						data1=$(".slider_mobile .cycle-slide-active").attr("data_c");
+						if(data1 != ""){
+							$(".slider1-wrapper").css("display","block");
+							$(".slider11-msg").html(data1);
+						}else{
+							$(".slider1-wrapper").css("display","none");
+						} */
+					/* }); */
+				});
+
+			
+		</script>
+	</head>
+	<body>
+				<div class="rmenu">
+			<div class="rmenu-login">
+				Google Classroom
+				<a href="https://classroom.google.com/" target="_blank">
+					<div class="rmenu-login-arrow">
+						<img src="images/arrow.png" class="rmenu-login-arrow-img"/>
+					</div>
+				</a>
+			</div>
+			<div class="rmenu-menu">
+				<ul class="rmenu-ul">
+																						<li><a href="javascript:void(0)" class="rmenu-a">About Us</a></li>	
+																		<div class="rmenu-submenu-container rmenu-submenu-container0" >
+							<div class="rmenu-tri"></div>
+																																			<ul class="rmenu-ul2">
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="subpage.php?cat=1&sub_cat_id=1" class="rmenu-a" >Welcome</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																	</ul>
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="subpage.php?cat=1&sub_cat_id=2" class="rmenu-a" >Our Profile</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																	</ul>
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="subpage.php?cat=1&sub_cat_id=3" class="rmenu-a" >Our History</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																	</ul>
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="School_Plan_Reports.php" class="rmenu-a" >School Plans &amp; Reports</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																	</ul>
+															</ul>
+						</div>
+																		
+																	<li><a href="javascript:void(0)" class="rmenu-a">Administration</a></li>	
+																		<div class="rmenu-submenu-container rmenu-submenu-container1" >
+							<div class="rmenu-tri"></div>
+																																			<ul class="rmenu-ul2">
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="subpage.php?cat=2&sub_cat_id=5" class="rmenu-a" >The Incorporated Management Committee</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																	</ul>
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="subpage.php?cat=2&sub_cat_id=6" class="rmenu-a" >Our Staff</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																	</ul>
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="http://www.lspspta.com/" class="rmenu-a" target='_blank'>Parent-Teacher Association</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																	</ul>
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="subpage.php?cat=2&sub_cat_id=16" class="rmenu-a" >Admissions</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																	</ul>
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="https://la-salle.edu.hk/files/crisis%20mgmt/Guidelines_for_Handling_School_Complaints_July_2025.pdf" class="rmenu-a" target='_blank'>Guidelines for Handling School Complaints</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																	</ul>
+															</ul>
+						</div>
+																		
+																	<li><a href="javascript:void(0)" class="rmenu-a">Student Life</a></li>	
+																		<div class="rmenu-submenu-container rmenu-submenu-container2" >
+							<div class="rmenu-tri"></div>
+																																			<ul class="rmenu-ul2">
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="#" class="rmenu-a" >Curriculum</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=4" class="rmenu-a" >Curriculum Overview</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=3" class="rmenu-a" >Chinese Language</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=6" class="rmenu-a" >English Language</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=7" class="rmenu-a" >Free Reading (Library)</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=8" class="rmenu-a" >General Studies</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=10" class="rmenu-a" >Mathematics</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=9" class="rmenu-a" >Digital Studies</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=13" class="rmenu-a" >Putonghua</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=12" class="rmenu-a" >Physical Education</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=14" class="rmenu-a" >Religious Knowledge</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=15" class="rmenu-a" >Science</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=11" class="rmenu-a" >Music</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=16" class="rmenu-a" >Visual Arts</a>
+											</div>
+										</li>
+																																																																<li>
+											<div class="rmenu-div">
+												<a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=5" class="rmenu-a" >Extra-curricular Activities</a>
+											</div>
+										</li>
+																	</ul>
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="life_long_learning.php" class="rmenu-a" >Lifelong Learning</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																	</ul>
+																<li>
+																																																																																										<div class="rmenu-div">
+										<a href="photo.php" class="rmenu-a" >Photo Gallery</a>
+									</div>
+								</li>
+																								<ul class="submenu" >
+																	</ul>
+															</ul>
+						</div>
+																		
+																		<li><a href="Events.php" class="rmenu-a">News &amp; Events</a></li>
+							<div class="rmenu-submenu-container rmenu-submenu-container3">
+								
+							</div>
+																		
+									</ul>
+			</div>
+			
+			<ul class="rmenu-ul3">
+				<li><a href="index.php" class="rmenu-a">Home</a></li>
+				<li><a href="School_Calendar.php" class="rmenu-a">School Calendar</a></li>
+				<!-- <li><a href="Publication.php" class="rmenu-a">Publication</a></li> -->
+				<li><a href="sitemap.php" class="rmenu-a">Sitemap</a></li>
+				<li><a href="Contact_us.php" class="rmenu-a">Contact Us</a></li>
+				<li><a href="javascript:changeLang('en', 'tc')" class="rmenu-a tc">中文</a></li>
+			</ul>
+		</div>		<div class="mainContainer">										
+						<div class="content menu">
+				<div class="common-wrapper2 menu-wrapper">
+					<div class="menu-container">
+						<ul class="menu-ul">
+							<li><a href="index.php" class="menu-a">Home</a></li>
+							<li><a href="School_Calendar.php" class="menu-a">School Calendar</a></li>
+							<!-- <li><a href="Publication.php" class="menu-a">Publications</a></li> -->
+							<li><a href="sitemap.php" class="menu-a">Sitemap</a></li>
+							<li><a href="Contact_us.php" class="menu-a">Contact Us</a></li>
+							<li><a href="javascript:changeLang('en', 'tc')" class="menu-a tc">中文</a></li>
+						</ul>
+					</div>
+					
+					<div class="google_class-container">
+						<div class="google_class-text"><a href="https://classroom.google.com/u/0/h" class="google_class-text-a" target="_blank">Google Classroom</a></div>
+					</div>
+
+					<div class="logo"><a href="index.php"><img src="images/school_logo.svg" class="logo-img"/></a></div>
+					<div class="rmenu-con"><img src="images/rmenu.png" class="rmenu-img"/></div>
+				</div>
+			</div>			
+			<div class="content banner">
+				<div class="cycle-slideshow slider1" data-cycle-timeout="4000" data-cycle-manual-speed="100" data-cycle-fx="fadeout"  data-cycle-slides="> .banner-img-div">
+					<div class="cycle-prev"><img src="images/previous.png"/></div>
+					<div class="cycle-next"><img src="images/next.png"/></div>
+																												<div class="banner-img-div" >
+							<div class="banner-img-div-inside">	
+																																<div class="banner-board  banner-board-right top_right">
+									We aspire to be the best primary school in Hong Kong.								</div>
+																<img src="../files/htbanner/1500983184_2.jpg" class="banner-img" data-capiton="We aspire to be the best primary school in Hong Kong."/>
+							</div>
+						</div>
+																							<div class="banner-img-div" >
+							<div class="banner-img-div-inside">	
+																																																	<div class="banner-board banner-board-purple banner-board-right bottom_right">
+									Encourage respect for the individual.								</div>
+																<img src="../files/htbanner/1503641996_2.jpg" class="banner-img" data-capiton="Encourage respect for the individual."/>
+							</div>
+						</div>
+																							<div class="banner-img-div" >
+							<div class="banner-img-div-inside">	
+																																																	<div class="banner-board banner-board-purple banner-board-right bottom_right">
+									To give a human and Christian education to the young, paying particular attention to the needy.								</div>
+																<img src="../files/htbanner/1502877624_2.jpg" class="banner-img" data-capiton="To give a human and Christian education to the young, paying particular attention to the needy."/>
+							</div>
+						</div>
+																							<div class="banner-img-div" >
+							<div class="banner-img-div-inside">	
+																																																	<div class="banner-board banner-board-purple banner-board-right top_left">
+									La Salle is something more.								</div>
+																<img src="../files/htbanner/1503642009_2.jpg" class="banner-img" data-capiton="La Salle is something more."/>
+							</div>
+						</div>
+										<div class="cycle-pager"></div>
+				</div>
+				<div class="cycle-slideshow slider_mobile" data-cycle-timeout="4000" data-cycle-manual-speed="100" data-cycle-fx="fadeout"  data-cycle-slides="> .banner-img-div">
+					<div class="cycle-prev"><img src="images/previous.png"/></div>
+					<div class="cycle-next"><img src="images/next.png"/></div>
+																												<div class="banner-img-div" data_c="We aspire to be the best primary school in Hong Kong." >
+							<div class="banner-img-div-inside">	
+								<img src="../files/htbanner/1503550177_3.jpg" class="banner-img"/>
+							</div>
+						</div>
+																							<div class="banner-img-div" data_c="Encourage respect for the individual." >
+							<div class="banner-img-div-inside">	
+								<img src="../files/htbanner/1503641996_3.jpg" class="banner-img"/>
+							</div>
+						</div>
+																							<div class="banner-img-div" data_c="To give a human and Christian education to the young, paying particular attention to the needy." >
+							<div class="banner-img-div-inside">	
+								<img src="../files/htbanner/1503550149_3.jpg" class="banner-img"/>
+							</div>
+						</div>
+																							<div class="banner-img-div" data_c="La Salle is something more." >
+							<div class="banner-img-div-inside">	
+								<img src="../files/htbanner/1503642009_3.jpg" class="banner-img"/>
+							</div>
+						</div>
+										<div class="cycle-pager"></div>
+				</div>
+												<!-- <div class="slider1-wrapper" style="display:none;"> 
+					<div class="slider1-box">
+						<div class="slider11-msg">La Salle is something more.</div>
+					</div>
+				</div>-->
+								
+				
+			</div>
+			
+						<div class="content menu2">
+				<div class="common-wrapper2">
+					<div class="menu2-container">
+						<a href="index.php"><img src="images/school_logo.svg" class="school-logo"/></a>
+						<div class="menu2-div-container">
+																															<div class="menu2-div"><div class="menu2-text">About Us</div></div>
+																																<div class="menu2-div"><div class="menu2-text">Administration</div></div>
+																																<div class="menu2-div"><div class="menu2-text">Student Life</div></div>
+																																<a href="Events.php"><div class="menu2-div"><div class="menu2-text">News & Events</div></div></a>
+																					</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content menu2-body">
+				<div class="common-wrapper2">
+					<!--submenu-->
+					<div class="menu2-menu">
+												<div class="menu2-menu-left">
+							<img src="../files/cat/1501050506_icon.jpg" class="submenu-pic"/>
+						</div>
+						
+						
+						<div class="menu2-menu-right">
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a href="subpage.php?cat=1&sub_cat_id=1" class="menu2-a">										<div class="menu2-menu-pic"><img src="../files/subcat/1501043761_icon.jpg"/></div>
+										<div class="menu2-menu-title">Welcome</div>
+									</a>
+								</div>
+							</div>
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a href="subpage.php?cat=1&sub_cat_id=2" class="menu2-a">										<div class="menu2-menu-pic"><img src="../files/subcat/1501043712_icon.jpg"/></div>
+										<div class="menu2-menu-title">Our Profile</div>
+									</a>
+								</div>
+							</div>
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a href="subpage.php?cat=1&sub_cat_id=3" class="menu2-a">										<div class="menu2-menu-pic"><img src="../files/subcat/1501044384_icon.jpg"/></div>
+										<div class="menu2-menu-title">Our History</div>
+									</a>
+								</div>
+							</div>
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a href="School_Plan_Reports.php" class="menu2-a">										<div class="menu2-menu-pic"><img src="../files/subcat/1501043664_icon.jpg"/></div>
+										<div class="menu2-menu-title">School Plans &amp; Reports</div>
+									</a>
+								</div>
+							</div>
+														
+							
+							<div class="subsubmenu-container">
+							</div>
+						</div>
+					</div>
+					
+					<div class="menu2-menu">
+												<div class="menu2-menu-left">
+							<img src="../files/cat/1501065039_icon.jpg" class="submenu-pic"/>
+						</div>
+						
+						
+						<div class="menu2-menu-right">
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a href="subpage.php?cat=2&sub_cat_id=5" class="menu2-a" >										<div class="menu2-menu-pic"><img src="../files/subcat/1502345862_icon.jpg"/></div>
+										<div class="menu2-menu-title">The Incorporated Management Committee</div>
+									</a>
+								</div>
+							</div>
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a href="subpage.php?cat=2&sub_cat_id=6" class="menu2-a" >										<div class="menu2-menu-pic"><img src="../files/subcat/1502782795_icon.jpg"/></div>
+										<div class="menu2-menu-title">Our Staff</div>
+									</a>
+								</div>
+							</div>
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a href="http://www.lspspta.com/" class="menu2-a" target='_blank'>										<div class="menu2-menu-pic"><img src="../files/subcat/1500869410_icon.jpg"/></div>
+										<div class="menu2-menu-title">Parent-Teacher Association</div>
+									</a>
+								</div>
+							</div>
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a href="subpage.php?cat=2&sub_cat_id=16" class="menu2-a" >										<div class="menu2-menu-pic"><img src="../files/subcat/1600659407_icon.jpg"/></div>
+										<div class="menu2-menu-title">Admissions</div>
+									</a>
+								</div>
+							</div>
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a href="https://la-salle.edu.hk/files/crisis%20mgmt/Guidelines_for_Handling_School_Complaints_July_2025.pdf" class="menu2-a" target='_blank'>										<div class="menu2-menu-pic"><img src="../files/subcat/1766383641_icon.jpg"/></div>
+										<div class="menu2-menu-title">Guidelines for Handling School Complaints</div>
+									</a>
+								</div>
+							</div>
+														
+							<div class="subsubmenu-container">
+							</div>
+						</div>
+					</div>
+					
+					<div class="menu2-menu">
+												<div class="menu2-menu-left">
+							<img src="../files/cat/1501056488_icon.jpg" class="submenu-pic"/>
+						</div>
+						
+						
+						<div class="menu2-menu-right">
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a class="menu2-a" onclick="openSubMenu('subsubmenu1',$(this))">										<div class="menu2-menu-pic"><img src="../files/subcat/1500869976_icon.jpg"/></div>
+										<div class="menu2-menu-title">Curriculum</div>
+									</a>
+								</div>
+							</div>
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a href="life_long_learning.php" class="menu2-a" >										<div class="menu2-menu-pic"><img src="../files/subcat/1501066335_icon.jpg"/></div>
+										<div class="menu2-menu-title">Lifelong Learning</div>
+									</a>
+								</div>
+							</div>
+																																																																													<div class="menu2-menu-mid">
+								<div class="menu2-menu-div">
+									<a href="photo.php" class="menu2-a" >										<div class="menu2-menu-pic"><img src="../files/subcat/1502341339_icon.jpg"/></div>
+										<div class="menu2-menu-title">Photo Gallery</div>
+									</a>
+								</div>
+							</div>
+							
+							<div class="subsubmenu-container">
+							</div>
+						</div>
+					</div>
+					
+					<!-- subsubmenu -->
+					<div class="subsubmenu-container2">
+																			<div class="menu2-menu-mid2 subsubmenu1 sb2">
+								<div class="menu2-menu-msg">
+									
+																																																																																																		<div class="menu2-item-list2">
+																						<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=4"  class="menu2-a">Curriculum Overview</a></div>
+																																																																																																													<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=3"  class="menu2-a">Chinese Language</a></div>
+																																																																																																													<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=6"  class="menu2-a">English Language</a></div>
+																																																																																																													<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=7"  class="menu2-a">Free Reading (Library)</a></div>
+																																																																																																													<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=8"  class="menu2-a">General Studies</a></div>
+																							</div>
+																																																																																																														<div class="menu2-item-list2">
+																						<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=10"  class="menu2-a">Mathematics</a></div>
+																																																																																																													<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=9"  class="menu2-a">Digital Studies</a></div>
+																																																																																																													<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=13"  class="menu2-a">Putonghua</a></div>
+																																																																																																													<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=12"  class="menu2-a">Physical Education</a></div>
+																																																																																																													<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=14"  class="menu2-a">Religious Knowledge</a></div>
+																							</div>
+																																																																																																														<div class="menu2-item-list2">
+																						<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=15"  class="menu2-a">Science</a></div>
+																																																																																																													<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=11"  class="menu2-a">Music</a></div>
+																																																																																																													<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=16"  class="menu2-a">Visual Arts</a></div>
+																																																																																																													<div class="menu2-item"><a href="thirdpage.php?cat=3&sub_cat_id=9&third_cat_id=5"  class="menu2-a">Extra-curricular Activities</a></div>
+																																										</div>									
+								</div>
+							</div>
+																		</div>
+				</div>
+			</div>
+			
+			<div class="content common-margin">
+			</div>			
+			<div class="content news">
+				<div class="common-wrapper">
+					<div class="news-container">
+						<div class="news-title-container">
+							<div class="news-title">News &amp; Events</div>
+														<div class="news-page news-pages1">
+								<span class="news-circle news-circle-active">•</span>
+								<span class="news-circle">•</span>
+								<span class="news-circle">•</span>
+							</div>
+													</div>
+						<div class="news-div-container">
+							<div class="news-button news-previous">
+								<div class="">
+								<a class="previous2 round">&#8249;</a>
+								</div>
+							</div>
+							<div class="news-button news-next">	
+								<div class="">
+								<a class="next2 round">&#8250;</a>
+								</div>
+							</div>
+							<div class="news-div nd news1">
+								<img src="#" class="news-img news1"/>
+								<div class="news-title-b">&nbsp;</div>
+								<div class="news-date">&nbsp;</div>
+								<div class="news-msg">
+									&nbsp;
+								</div>
+								<div class="news-plus">
+									<a href="#"><img src="images/plus.png" class="news-plus-img"/></a>
+								</div>
+							</div>
+							
+							<div class="news-div nd news2">
+								<img src="#" class="news-img news2"/>
+								<div class="news-title-b">&nbsp;</div>
+								<div class="news-date">&nbsp;</div>
+								<div class="news-msg">
+									&nbsp;
+								</div>
+								<div class="news-plus">
+									<a href="#"><img src="images/plus.png" class="news-plus-img"/></a>
+								</div>
+							</div>
+							
+							<div class="news-div nd news3">
+								<img src="#" class="news-img news3"/>
+								<div class="news-title-b">&nbsp;</div>
+								<div class="news-date">&nbsp;</div>
+								<div class="news-msg">
+									&nbsp;
+								</div>
+								<div class="news-plus">
+									<a href="#"><img src="images/plus.png" class="news-plus-img"/></a>
+								</div>
+							</div>
+						</div>
+						<div class="news-page news-pages2">
+							<span class="news-circle news-circle-active">•</span>
+							<span class="news-circle">•</span>
+							<span class="news-circle">•</span>
+						</div>
+					</div>
+					
+					<div class="quicklink nd">
+						<div class="quicklink-title">Quick Links</div>
+																										<div class="quicklink-item"><a  href="life_long_learning.php" class="quicklink-item-a">Teacher and Student Portal</a></div>
+																				<div class="quicklink-item"><a  href="https://la-salle.edu.hk/en/School_Uniform.php" class="quicklink-item-a">Uniform Requirements</a></div>
+																				<div class="quicklink-item"><a  href="https://www.la-salle.edu.hk/en/providers.php" class="quicklink-item-a">Service Providers</a></div>
+																				<div class="quicklink-item"><a  href="letters_from_principal.php" class="quicklink-item-a">Letters from Principal</a></div>
+																				<div class="quicklink-item"><a target='_blank' href="https://la-salle.edu.hk/files/weather/Severe_Weather_Arrangements_English_2025.pdf" class="quicklink-item-a">Severe Weather Arrangements</a></div>
+																				<div class="quicklink-item"><a  href="photo.php" class="quicklink-item-a">Photo Gallery</a></div>
+																				<div class="quicklink-item"><a target='_blank' href="https://www.lspspta.com/?lang=en" class="quicklink-item-a">LSPS PTA Portal</a></div>
+																				<div class="quicklink-item"><a target='_blank' href="http://www.lasalle.org.hk/" class="quicklink-item-a">Lasallian Family</a></div>
+											</div>
+					
+				</div>
+			</div>
+									
+			
+						<div class="content footer">
+				<div class="footer-copyright"><a href="https://la-salle.edu.hk/en/copyright.php" style="color: white !important;" target="_blank" >Copyright</a> &copy; 2026 La Salle Primary School.<br class="copyright-br"/> All Rights Reserved.</div>
+			</div>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-105742888-1', 'auto');
+			  ga('send', 'pageview');
+
+			</script>		</div>
+	</body>
+</html>

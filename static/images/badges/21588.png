@@ -1,0 +1,1349 @@
+<!doctype html>
+<html lang="pt-pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	
+	<!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script> -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-55SD8WNBBM"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		} 
+		gtag('js', new Date());
+
+		gtag('config', 'G-55SD8WNBBM'); 
+	</script>
+	<script>
+		// tinymce.init({
+		// 	selector: 'textarea:not(.wpforms-field-medium)', // change this value according to your HTML
+		// 	setup: function(editor) {
+		// 		editor.ui.registry.addButton('mybutton', {
+		// 			text: 'Insert Element',
+		// 			onAction: function() {
+		// 				editor.insertContent('<p>This is new content inserted by a button</p>');
+		// 			}
+		// 		});
+		// 	},
+		// 	toolbar: 'mybutton'
+		// });
+	</script>
+	<!-- Matomo -->
+	<script>
+		var _paq = window._paq = window._paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u = "https://stats.webview.pt/";
+			_paq.push(['setTrackerUrl', u + 'matomo.php']);
+			_paq.push(['setSiteId', '129']);
+			var d = document,
+				g = d.createElement('script'),
+				s = d.getElementsByTagName('script')[0];
+			g.async = true;
+			g.src = u + 'matomo.js';
+			s.parentNode.insertBefore(g, s);
+		})();
+	</script>
+	<!-- End Matomo Code -->
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="cb5ac954-73e6-46ed-84c5-0e4ac4ef4c61" data-blockingmode="auto" type="text/javascript"></script>
+	<title>UNL</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" hreflang="en" href="https://www.unl.pt/en/" />
+<link rel="alternate" hreflang="pt-pt" href="https://www.unl.pt/" />
+<link rel="alternate" hreflang="x-default" href="https://www.unl.pt/" />
+<link rel='dns-prefetch' href='//www.unl.pt' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel="alternate" type="application/rss+xml" title="UNL &raquo; Feed" href="https://www.unl.pt/feed/" />
+<link rel="alternate" type="application/rss+xml" title="UNL &raquo; Feed de comentários" href="https://www.unl.pt/comments/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.unl.pt\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel='stylesheet' id='acy_front_messages_css-css' href='https://www.unl.pt/wp-content/plugins/acymailing/media/css/front/messages.min.css?v=1717762352&#038;ver=6.8.3' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.unl.pt/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpml-legacy-horizontal-list-0-css' href='https://www.unl.pt/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.min.css?ver=1' media='all' />
+<style id='wpml-legacy-horizontal-list-0-inline-css'>
+.wpml-ls-sidebars-languages a, .wpml-ls-sidebars-languages .wpml-ls-sub-menu a, .wpml-ls-sidebars-languages .wpml-ls-sub-menu a:link, .wpml-ls-sidebars-languages li:not(.wpml-ls-current-language) .wpml-ls-link, .wpml-ls-sidebars-languages li:not(.wpml-ls-current-language) .wpml-ls-link:link {color:#00ad2f;}.wpml-ls-sidebars-languages .wpml-ls-sub-menu a:hover,.wpml-ls-sidebars-languages .wpml-ls-sub-menu a:focus, .wpml-ls-sidebars-languages .wpml-ls-sub-menu a:link:hover, .wpml-ls-sidebars-languages .wpml-ls-sub-menu a:link:focus {color:#00ad2f;}.wpml-ls-sidebars-languages .wpml-ls-current-language > a {color:#00ad2f;}.wpml-ls-sidebars-languages .wpml-ls-current-language:hover>a, .wpml-ls-sidebars-languages .wpml-ls-current-language>a:focus {color:#00ad2f;}
+</style>
+<link rel='stylesheet' id='dashicons-css' href='https://www.unl.pt/wp-includes/css/dashicons.min.css?ver=6.8.3' media='all' />
+<link rel='stylesheet' id='unl-style-css' href='https://www.unl.pt/wp-content/themes/unl/style.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='flickity-css' href='https://www.unl.pt/wp-content/themes/unl/css/flickity.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='fullcalendar-css' href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css?ver=5.10.1' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='https://www.unl.pt/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.css?ver=6.8.3' media='screen' />
+<style id='fancybox-inline-css'>
+#fancybox-outer{background:#ffffff}#fancybox-content{background:#ffffff;border-color:#ffffff;color:#000000;}#fancybox-title,#fancybox-title-float-main{color:#fff}
+</style>
+<script id="acy_front_messages_js-js-before">
+var ACYM_AJAX_START = "https://www.unl.pt/wp-admin/admin-ajax.php";
+            var ACYM_AJAX_PARAMS = "?action=acymailing_router&noheader=1&nocache=1772431440";
+            var ACYM_AJAX = ACYM_AJAX_START + ACYM_AJAX_PARAMS;
+</script>
+<script src="https://www.unl.pt/wp-content/plugins/acymailing/media/js/front/messages.min.js?v=1717762352&amp;ver=6.8.3" id="acy_front_messages_js-js"></script>
+<script id="wpml-cookie-js-extra">
+var wpml_cookies = {"wp-wpml_current_language":{"value":"pt-pt","expires":1,"path":"\/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"pt-pt","expires":1,"path":"\/"}};
+</script>
+<script src="https://www.unl.pt/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=482900" id="wpml-cookie-js" defer data-wp-strategy="defer"></script>
+<script src="https://www.unl.pt/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://www.unl.pt/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://www.unl.pt/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.unl.pt/wp-json/wp/v2/pages/6" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.unl.pt/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.3" />
+<link rel="canonical" href="https://www.unl.pt/" />
+<link rel='shortlink' href='https://www.unl.pt/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.unl.pt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.unl.pt%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.unl.pt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.unl.pt%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.8.2 stt:1,41;" />
+		<style type="text/css">
+					.site-title,
+			.site-description {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+				}
+					</style>
+		<meta name="redi-version" content="1.2.7" /><link rel="icon" href="https://www.unl.pt/wp-content/uploads/2024/01/cropped-favicon-nova-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.unl.pt/wp-content/uploads/2024/01/cropped-favicon-nova-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.unl.pt/wp-content/uploads/2024/01/cropped-favicon-nova-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.unl.pt/wp-content/uploads/2024/01/cropped-favicon-nova-270x270.png" />
+<style type="text/css">@charset "UTF-8";/** THIS FILE IS AUTOMATICALLY GENERATED - DO NOT MAKE MANUAL EDITS! **//** Custom CSS should be added to Mega Menu > Menu Themes > Custom Styling **/.mega-menu-last-modified-1726586227 {content: "Tuesday 17th September 2024 15:17:07 UTC";}#mega-menu-wrap-menu-1, #mega-menu-wrap-menu-1 #mega-menu-menu-1, #mega-menu-wrap-menu-1 #mega-menu-menu-1 ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-row, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-column, #mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 span.mega-menu-badge {transition: none;border-radius: 0;box-shadow: none;background: none;border: 0;bottom: auto;box-sizing: border-box;clip: auto;color: white;display: block;float: none;font-family: inherit;font-size: 14px;height: auto;left: auto;line-height: 1.7;list-style-type: none;margin: 0;min-height: auto;max-height: none;min-width: auto;max-width: none;opacity: 1;outline: none;overflow: visible;padding: 0;position: relative;pointer-events: auto;right: auto;text-align: left;text-decoration: none;text-indent: 0;text-transform: none;transform: none;top: auto;vertical-align: baseline;visibility: inherit;width: auto;word-wrap: break-word;white-space: normal;}#mega-menu-wrap-menu-1:before, #mega-menu-wrap-menu-1:after, #mega-menu-wrap-menu-1 #mega-menu-menu-1:before, #mega-menu-wrap-menu-1 #mega-menu-menu-1:after, #mega-menu-wrap-menu-1 #mega-menu-menu-1 ul.mega-sub-menu:before, #mega-menu-wrap-menu-1 #mega-menu-menu-1 ul.mega-sub-menu:after, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item:before, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item:after, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-row:before, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-row:after, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-column:before, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-column:after, #mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link:before, #mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link:after, #mega-menu-wrap-menu-1 #mega-menu-menu-1 span.mega-menu-badge:before, #mega-menu-wrap-menu-1 #mega-menu-menu-1 span.mega-menu-badge:after {display: none;}#mega-menu-wrap-menu-1 {border-radius: 0;}@media only screen and (min-width: 1201px) {#mega-menu-wrap-menu-1 {background: rgba(255, 255, 255, 0.407);}}#mega-menu-wrap-menu-1.mega-keyboard-navigation .mega-menu-toggle:focus, #mega-menu-wrap-menu-1.mega-keyboard-navigation .mega-toggle-block:focus, #mega-menu-wrap-menu-1.mega-keyboard-navigation .mega-toggle-block a:focus, #mega-menu-wrap-menu-1.mega-keyboard-navigation .mega-toggle-block .mega-search input[type=text]:focus, #mega-menu-wrap-menu-1.mega-keyboard-navigation .mega-toggle-block button.mega-toggle-animated:focus, #mega-menu-wrap-menu-1.mega-keyboard-navigation #mega-menu-menu-1 a:focus, #mega-menu-wrap-menu-1.mega-keyboard-navigation #mega-menu-menu-1 span:focus, #mega-menu-wrap-menu-1.mega-keyboard-navigation #mega-menu-menu-1 input:focus, #mega-menu-wrap-menu-1.mega-keyboard-navigation #mega-menu-menu-1 li.mega-menu-item a.mega-menu-link:focus, #mega-menu-wrap-menu-1.mega-keyboard-navigation #mega-menu-menu-1 form.mega-search-open:has(input[type=text]:focus) {outline-style: solid;outline-width: 3px;outline-color: #109cde;outline-offset: -3px;}#mega-menu-wrap-menu-1.mega-keyboard-navigation .mega-toggle-block button.mega-toggle-animated:focus {outline-offset: 2px;}#mega-menu-wrap-menu-1.mega-keyboard-navigation > li.mega-menu-item > a.mega-menu-link:focus {background: rgba(0, 0, 0, 0);color: black;font-weight: bold;text-decoration: none;border-color: #fff;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1.mega-keyboard-navigation > li.mega-menu-item > a.mega-menu-link:focus {color: #ffffff;background: #333;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 {text-align: left;padding: 0px 0px 0px 0px;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link {cursor: pointer;display: inline;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link .mega-description-group {vertical-align: middle;display: inline-block;transition: none;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link .mega-description-group .mega-menu-title, #mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link .mega-description-group .mega-menu-description {transition: none;line-height: 1.5;display: block;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link .mega-description-group .mega-menu-description {font-style: italic;font-size: 0.8em;text-transform: none;font-weight: normal;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu li.mega-menu-item.mega-icon-left.mega-has-description.mega-has-icon > a.mega-menu-link {display: flex;align-items: center;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu li.mega-menu-item.mega-icon-left.mega-has-description.mega-has-icon > a.mega-menu-link:before {flex: 0 0 auto;align-self: flex-start;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-tabbed.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item.mega-icon-left.mega-has-description.mega-has-icon > a.mega-menu-link {display: block;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-icon-top > a.mega-menu-link {display: table-cell;vertical-align: middle;line-height: initial;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-icon-top > a.mega-menu-link:before {display: block;margin: 0 0 6px 0;text-align: center;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-icon-top > a.mega-menu-link > span.mega-title-below {display: inline-block;transition: none;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-icon-top > a.mega-menu-link {display: block;line-height: 40px;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-icon-top > a.mega-menu-link:before {display: inline-block;margin: 0 6px 0 0;text-align: left;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-icon-right > a.mega-menu-link:before {float: right;margin: 0 0 0 6px;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-animating > ul.mega-sub-menu {pointer-events: none;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-disable-link > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu li.mega-disable-link > a.mega-menu-link {cursor: inherit;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item-has-children.mega-disable-link > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > li.mega-menu-item-has-children.mega-disable-link > a.mega-menu-link {cursor: pointer;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 p {margin-bottom: 10px;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 input, #mega-menu-wrap-menu-1 #mega-menu-menu-1 img {max-width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item > ul.mega-sub-menu {display: block;visibility: hidden;opacity: 1;pointer-events: auto;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item > ul.mega-sub-menu {display: none;visibility: visible;opacity: 1;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu.mega-menu-item.mega-toggle-on ul.mega-sub-menu {display: block;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu.mega-menu-item.mega-toggle-on li.mega-hide-sub-menu-on-mobile > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-hide-sub-menu-on-mobile > ul.mega-sub-menu {display: none;}}@media only screen and (min-width: 1201px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade"] li.mega-menu-item > ul.mega-sub-menu {opacity: 0;transition: opacity 200ms ease-in, visibility 200ms ease-in;}#mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade"].mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade"].mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade"] li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {opacity: 1;}#mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {opacity: 0;transform: translate(0, 10px);transition: opacity 200ms ease-in, transform 200ms ease-in, visibility 200ms ease-in;}#mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade_up"].mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade_up"].mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade_up"] li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {opacity: 1;transform: translate(0, 0);}#mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="slide_up"] li.mega-menu-item.mega-menu-megamenu > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="slide_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {transform: translate(0, 10px);transition: transform 200ms ease-in, visibility 200ms ease-in;}#mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="slide_up"].mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="slide_up"].mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="slide_up"] li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1[data-effect="slide_up"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {transform: translate(0, 0);}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu li.mega-collapse-children > ul.mega-sub-menu {display: none;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu li.mega-collapse-children.mega-toggle-on > ul.mega-sub-menu {display: block;}#mega-menu-wrap-menu-1 #mega-menu-menu-1.mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1.mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu {visibility: visible;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu ul.mega-sub-menu {visibility: inherit;opacity: 1;display: block;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu li.mega-1-columns > ul.mega-sub-menu > li.mega-menu-item {float: left;width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu li.mega-2-columns > ul.mega-sub-menu > li.mega-menu-item {float: left;width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu li.mega-3-columns > ul.mega-sub-menu > li.mega-menu-item {float: left;width: 33.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu li.mega-4-columns > ul.mega-sub-menu > li.mega-menu-item {float: left;width: 25%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu li.mega-5-columns > ul.mega-sub-menu > li.mega-menu-item {float: left;width: 20%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu li.mega-6-columns > ul.mega-sub-menu > li.mega-menu-item {float: left;width: 16.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item a[class^="dashicons"]:before {font-family: dashicons;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item a.mega-menu-link:before {display: inline-block;font: inherit;font-family: dashicons;position: static;margin: 0 6px 0 0px;vertical-align: top;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;color: inherit;background: transparent;height: auto;width: auto;top: auto;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-hide-text a.mega-menu-link:before {margin: 0;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-hide-text li.mega-menu-item a.mega-menu-link:before {margin: 0 6px 0 0;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-align-bottom-left.mega-toggle-on > a.mega-menu-link {border-radius: 0;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-align-bottom-right > ul.mega-sub-menu {right: 0;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-align-bottom-right.mega-toggle-on > a.mega-menu-link {border-radius: 0;}@media only screen and (min-width: 1201px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu.mega-menu-item {position: static;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item {margin: 0 0px 0 0;display: inline-block;height: auto;vertical-align: middle;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-item-align-right {float: right;}@media only screen and (min-width: 1201px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-item-align-right {margin: 0 0 0 0px;}}@media only screen and (min-width: 1201px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-item-align-float-left {float: left;}}@media only screen and (min-width: 1201px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link:focus {background: rgba(0, 0, 0, 0);color: black;font-weight: bold;text-decoration: none;border-color: #fff;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {background: rgba(0, 0, 0, 0);color: black;font-weight: bold;text-decoration: none;border-color: #fff;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {color: #ffffff;background: #333;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {background: rgba(0, 0, 0, 0);color: black;font-weight: bold;text-decoration: none;border-color: #fff;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {color: #ffffff;background: #333;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {line-height: 25px;height: 25px;padding: 0px 5px 0px 5px;vertical-align: baseline;width: auto;display: block;color: black;text-transform: uppercase;text-decoration: none;text-align: left;background: rgba(0, 0, 0, 0);border: 0;border-radius: 0;font-family: inherit;font-size: 16px;font-weight: normal;outline: none;}@media only screen and (min-width: 1201px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-multi-line > a.mega-menu-link {line-height: inherit;display: table-cell;vertical-align: middle;}}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-multi-line > a.mega-menu-link br {display: none;}}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item {display: list-item;margin: 0;clear: both;border: 0;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-item-align-right {float: none;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {border-radius: 0;border: 0;margin: 0;line-height: 40px;height: 40px;padding: 0 10px;background: transparent;text-align: left;color: #ffffff;font-size: 14px;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row {width: 100%;float: left;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row .mega-menu-column {float: left;min-height: 1px;}@media only screen and (min-width: 1201px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-1 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-2 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-2-of-2 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-3 {width: 33.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-2-of-3 {width: 66.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-3-of-3 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-4 {width: 25%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-2-of-4 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-3-of-4 {width: 75%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-4-of-4 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-5 {width: 20%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-2-of-5 {width: 40%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-3-of-5 {width: 60%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-4-of-5 {width: 80%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-5-of-5 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-6 {width: 16.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-2-of-6 {width: 33.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-3-of-6 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-4-of-6 {width: 66.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-5-of-6 {width: 83.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-6-of-6 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-7 {width: 14.2857142857%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-2-of-7 {width: 28.5714285714%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-3-of-7 {width: 42.8571428571%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-4-of-7 {width: 57.1428571429%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-5-of-7 {width: 71.4285714286%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-6-of-7 {width: 85.7142857143%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-7-of-7 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-8 {width: 12.5%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-2-of-8 {width: 25%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-3-of-8 {width: 37.5%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-4-of-8 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-5-of-8 {width: 62.5%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-6-of-8 {width: 75%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-7-of-8 {width: 87.5%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-8-of-8 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-9 {width: 11.1111111111%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-2-of-9 {width: 22.2222222222%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-3-of-9 {width: 33.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-4-of-9 {width: 44.4444444444%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-5-of-9 {width: 55.5555555556%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-6-of-9 {width: 66.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-7-of-9 {width: 77.7777777778%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-8-of-9 {width: 88.8888888889%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-9-of-9 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-10 {width: 10%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-2-of-10 {width: 20%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-3-of-10 {width: 30%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-4-of-10 {width: 40%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-5-of-10 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-6-of-10 {width: 60%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-7-of-10 {width: 70%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-8-of-10 {width: 80%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-9-of-10 {width: 90%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-10-of-10 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-11 {width: 9.0909090909%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-2-of-11 {width: 18.1818181818%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-3-of-11 {width: 27.2727272727%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-4-of-11 {width: 36.3636363636%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-5-of-11 {width: 45.4545454545%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-6-of-11 {width: 54.5454545455%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-7-of-11 {width: 63.6363636364%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-8-of-11 {width: 72.7272727273%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-9-of-11 {width: 81.8181818182%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-10-of-11 {width: 90.9090909091%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-11-of-11 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-12 {width: 8.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-2-of-12 {width: 16.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-3-of-12 {width: 25%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-4-of-12 {width: 33.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-5-of-12 {width: 41.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-6-of-12 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-7-of-12 {width: 58.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-8-of-12 {width: 66.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-9-of-12 {width: 75%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-10-of-12 {width: 83.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-11-of-12 {width: 91.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-12-of-12 {width: 100%;}}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-column {width: 100%;clear: both;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row .mega-menu-column > ul.mega-sub-menu > li.mega-menu-item {padding: 5px 15px 5px 15px;width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu {z-index: 999;border-radius: 0;background: black;border-top: 1px solid rgba(255, 255, 255, 0.407);border-left: 0px solid rgba(255, 255, 255, 0.407);border-right: 0px solid rgba(255, 255, 255, 0.407);border-bottom: 0px solid rgba(255, 255, 255, 0.407);padding: 24px 0px 24px 0px;position: absolute;width: 100%;max-width: none;left: 0;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu {float: left;position: static;width: 100%;}}@media only screen and (min-width: 1201px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-1 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-2 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-2-of-2 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-3 {width: 33.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-2-of-3 {width: 66.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-3-of-3 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-4 {width: 25%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-2-of-4 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-3-of-4 {width: 75%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-4-of-4 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-5 {width: 20%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-2-of-5 {width: 40%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-3-of-5 {width: 60%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-4-of-5 {width: 80%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-5-of-5 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-6 {width: 16.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-2-of-6 {width: 33.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-3-of-6 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-4-of-6 {width: 66.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-5-of-6 {width: 83.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-6-of-6 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-7 {width: 14.2857142857%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-2-of-7 {width: 28.5714285714%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-3-of-7 {width: 42.8571428571%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-4-of-7 {width: 57.1428571429%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-5-of-7 {width: 71.4285714286%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-6-of-7 {width: 85.7142857143%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-7-of-7 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-8 {width: 12.5%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-2-of-8 {width: 25%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-3-of-8 {width: 37.5%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-4-of-8 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-5-of-8 {width: 62.5%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-6-of-8 {width: 75%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-7-of-8 {width: 87.5%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-8-of-8 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-9 {width: 11.1111111111%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-2-of-9 {width: 22.2222222222%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-3-of-9 {width: 33.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-4-of-9 {width: 44.4444444444%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-5-of-9 {width: 55.5555555556%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-6-of-9 {width: 66.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-7-of-9 {width: 77.7777777778%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-8-of-9 {width: 88.8888888889%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-9-of-9 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-10 {width: 10%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-2-of-10 {width: 20%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-3-of-10 {width: 30%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-4-of-10 {width: 40%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-5-of-10 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-6-of-10 {width: 60%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-7-of-10 {width: 70%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-8-of-10 {width: 80%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-9-of-10 {width: 90%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-10-of-10 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-11 {width: 9.0909090909%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-2-of-11 {width: 18.1818181818%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-3-of-11 {width: 27.2727272727%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-4-of-11 {width: 36.3636363636%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-5-of-11 {width: 45.4545454545%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-6-of-11 {width: 54.5454545455%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-7-of-11 {width: 63.6363636364%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-8-of-11 {width: 72.7272727273%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-9-of-11 {width: 81.8181818182%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-10-of-11 {width: 90.9090909091%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-11-of-11 {width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-12 {width: 8.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-2-of-12 {width: 16.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-3-of-12 {width: 25%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-4-of-12 {width: 33.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-5-of-12 {width: 41.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-6-of-12 {width: 50%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-7-of-12 {width: 58.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-8-of-12 {width: 66.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-9-of-12 {width: 75%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-10-of-12 {width: 83.3333333333%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-11-of-12 {width: 91.6666666667%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-12-of-12 {width: 100%;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu .mega-description-group .mega-menu-description {margin: 5px 0;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item ul.mega-sub-menu {clear: both;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item ul.mega-sub-menu li.mega-menu-item ul.mega-sub-menu {margin-left: 10px;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu ul.mega-sub-menu ul.mega-sub-menu {margin-left: 10px;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item {color: white;font-family: inherit;font-size: 14px;display: block;float: left;clear: none;padding: 5px 15px 5px 15px;vertical-align: top;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item.mega-menu-clear, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item.mega-menu-clear {clear: left;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title {color: white;font-family: inherit;font-size: 16px;text-transform: none;text-decoration: none;font-weight: bold;text-align: left;margin: 0px 0px 0px 0px;padding: 0px 0px 2px 0px;vertical-align: top;display: block;visibility: inherit;border: 0;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title:hover {border-color: rgba(0, 0, 0, 0);}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {color: white;/* Mega Menu > Menu Themes > Mega Menus > Second Level Menu Items */font-family: inherit;font-size: 14px;text-transform: uppercase;text-decoration: none;font-weight: bold;text-align: left;margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;vertical-align: top;display: block;border: 0;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover {border-color: rgba(0, 0, 0, 0);}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus {color: white;/* Mega Menu > Menu Themes > Mega Menus > Second Level Menu Items (Hover) */font-weight: bold;text-decoration: none;background: rgba(0, 0, 0, 0);}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover > span.mega-title-below, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus > span.mega-title-below, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover > span.mega-title-below, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus > span.mega-title-below {text-decoration: none;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link {color: white;/* Mega Menu > Menu Themes > Mega Menus > Third Level Menu Items */font-family: inherit;font-size: 14px;text-transform: none;text-decoration: none;font-weight: normal;text-align: left;margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;vertical-align: top;display: block;border: 0;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link:hover {border-color: rgba(0, 0, 0, 0);}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item.mega-icon-left.mega-has-description.mega-has-icon > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item.mega-icon-left.mega-has-description.mega-has-icon > a.mega-menu-link {display: flex;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link:focus, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link:focus {color: white;/* Mega Menu > Menu Themes > Mega Menus > Third Level Menu Items (Hover) */font-weight: bold;text-decoration: none;background: rgba(0, 0, 0, 0);}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu {border: 0;padding: 10px;border-radius: 0;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item {width: 100%;clear: both;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu.mega-no-headers > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu.mega-no-headers > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {color: white;font-family: inherit;font-size: 14px;text-transform: none;text-decoration: none;font-weight: normal;margin: 0;border: 0;padding: 0px 0px 0px 0px;vertical-align: top;display: block;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu.mega-no-headers > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu.mega-no-headers > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu.mega-no-headers > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu.mega-no-headers > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus {color: white;font-weight: bold;text-decoration: none;background: rgba(0, 0, 0, 0);}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu {z-index: 999;position: absolute;width: 250px;max-width: none;padding: 0px 0px 0px 0px;border: 0;background: #f1f1f1;border-radius: 0;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu {float: left;position: static;width: 100%;padding: 0;border: 0;border-radius: 0;}}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item {clear: both;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {display: block;background: #f1f1f1;color: #666;font-family: inherit;font-size: 14px;font-weight: normal;padding: 0px 10px 0px 10px;line-height: 35px;text-decoration: none;text-transform: none;vertical-align: baseline;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:first-child > a.mega-menu-link {border-top-left-radius: 0px;border-top-right-radius: 0px;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:first-child > a.mega-menu-link {border-top-left-radius: 0;border-top-right-radius: 0;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:last-child > a.mega-menu-link {border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:last-child > a.mega-menu-link {border-bottom-right-radius: 0;border-bottom-left-radius: 0;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:focus {background: #dddddd;font-weight: normal;text-decoration: none;color: #666;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item ul.mega-sub-menu {position: absolute;left: 100%;top: 0;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item ul.mega-sub-menu {position: static;left: 0;width: 100%;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item ul.mega-sub-menu a.mega-menu-link {padding-left: 20px;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item ul.mega-sub-menu ul.mega-sub-menu a.mega-menu-link {padding-left: 30px;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator {display: inline-block;width: auto;background: transparent;position: relative;pointer-events: auto;left: auto;min-width: auto;font-size: inherit;padding: 0;margin: 0 0 0 6px;height: auto;line-height: inherit;color: inherit;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator:after {content: "";font-family: dashicons;font-weight: normal;display: inline-block;margin: 0;vertical-align: top;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;transform: rotate(0);color: inherit;position: relative;background: transparent;height: auto;width: auto;right: auto;line-height: inherit;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item-has-children li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator {float: right;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item-has-children.mega-collapse-children.mega-toggle-on > a.mega-menu-link > span.mega-indicator:after {content: "";}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator {float: right;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item-has-children.mega-toggle-on > a.mega-menu-link > span.mega-indicator:after {content: "";}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item-has-children.mega-hide-sub-menu-on-mobile > a.mega-menu-link > span.mega-indicator {display: none;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-megamenu:not(.mega-menu-tabbed) li.mega-menu-item-has-children:not(.mega-collapse-children) > a.mega-menu-link > span.mega-indicator, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item-has-children.mega-hide-arrow > a.mega-menu-link > span.mega-indicator {display: none;}@media only screen and (min-width: 1201px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-flyout li.mega-menu-item a.mega-menu-link > span.mega-indicator:after {content: "";}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link {text-align: right;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link > span.mega-indicator {float: left;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link > span.mega-indicator:after {content: "";margin: 0 6px 0 0;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link:before {float: right;margin: 0 0 0 6px;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-flyout.mega-align-bottom-right ul.mega-sub-menu li.mega-menu-item ul.mega-sub-menu {left: -100%;top: 0;}}#mega-menu-wrap-menu-1 #mega-menu-menu-1 li[class^="mega-lang-item"] > a.mega-menu-link > img {display: inline;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link > img.wpml-ls-flag, #mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link > img.iclflag {display: inline;margin-right: 8px;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-hide-on-mobile, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-hide-on-mobile, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item.mega-hide-on-mobile {display: none;}}@media only screen and (min-width: 1201px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-hide-on-desktop, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-hide-on-desktop, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item.mega-hide-on-desktop {display: none;}}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1:after {content: "";display: table;clear: both;}}#mega-menu-wrap-menu-1 .mega-menu-toggle {display: none;z-index: 1;cursor: pointer;background: rgba(255, 255, 255, 0.1);border-radius: 2px 2px 2px 2px;line-height: 40px;height: 40px;text-align: left;user-select: none;-webkit-tap-highlight-color: transparent;outline: none;white-space: nowrap;}#mega-menu-wrap-menu-1 .mega-menu-toggle img {max-width: 100%;padding: 0;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 .mega-menu-toggle {display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;}}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-left, #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-center, #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-right {display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-ms-flex-preferred-size: 33.33%;-webkit-flex-basis: 33.33%;flex-basis: 33.33%;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-left {-webkit-box-flex: 1;-ms-flex: 1;-webkit-flex: 1;flex: 1;-webkit-box-pack: start;-ms-flex-pack: start;-webkit-justify-content: flex-start;justify-content: flex-start;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-left .mega-toggle-block {margin-left: 6px;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-left .mega-toggle-block:only-child {margin-right: 6px;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-center {-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-center .mega-toggle-block {margin-left: 3px;margin-right: 3px;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-right {-webkit-box-flex: 1;-ms-flex: 1;-webkit-flex: 1;flex: 1;-webkit-box-pack: end;-ms-flex-pack: end;-webkit-justify-content: flex-end;justify-content: flex-end;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block {margin-right: 6px;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block:only-child {margin-left: 6px;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block {display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;height: 100%;outline: 0;-webkit-align-self: center;-ms-flex-item-align: center;align-self: center;-ms-flex-negative: 0;-webkit-flex-shrink: 0;flex-shrink: 0;}@media only screen and (max-width: 1200px) {#mega-menu-wrap-menu-1 .mega-menu-toggle + #mega-menu-menu-1 {background: #222;padding: 0px 0px 0px 0px;display: none;}#mega-menu-wrap-menu-1 .mega-menu-toggle.mega-menu-open + #mega-menu-menu-1 {display: block;}}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 {cursor: pointer;/*! * Hamburgers * @description Tasty CSS-animated hamburgers * @author Jonathan Suh @jonsuh * @site https://jonsuh.com/hamburgers * @link https://github.com/jonsuh/hamburgers */}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated {padding: 0;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;cursor: pointer;transition-property: opacity, filter;transition-duration: 0.15s;transition-timing-function: linear;font: inherit;color: inherit;text-transform: none;background-color: transparent;border: 0;margin: 0;overflow: visible;transform: scale(0.8);align-self: center;outline: 0;background: none;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-box {width: 40px;height: 24px;display: inline-block;position: relative;outline: 0;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner {display: block;top: 50%;margin-top: -2px;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner, #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::before, #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::after {width: 40px;height: 4px;background-color: black;border-radius: 4px;position: absolute;transition-property: transform;transition-duration: 0.15s;transition-timing-function: ease;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::before, #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::after {content: "";display: block;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::before {top: -10px;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::after {bottom: -10px;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-slider .mega-toggle-animated-inner {top: 2px;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-slider .mega-toggle-animated-inner::before {top: 10px;transition-property: transform, opacity;transition-timing-function: ease;transition-duration: 0.15s;}#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-slider .mega-toggle-animated-inner::after {top: 20px;}#mega-menu-wrap-menu-1 .mega-menu-toggle.mega-menu-open .mega-toggle-block-1 .mega-toggle-animated-slider .mega-toggle-animated-inner {transform: translate3d(0, 10px, 0) rotate(45deg);}#mega-menu-wrap-menu-1 .mega-menu-toggle.mega-menu-open .mega-toggle-block-1 .mega-toggle-animated-slider .mega-toggle-animated-inner::before {transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);opacity: 0;}#mega-menu-wrap-menu-1 .mega-menu-toggle.mega-menu-open .mega-toggle-block-1 .mega-toggle-animated-slider .mega-toggle-animated-inner::after {transform: translate3d(0, -20px, 0) rotate(-90deg);}/** Push menu onto new line **/#mega-menu-wrap-menu-1 {clear: both;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.bg-gradient-green {background: var(--gradient-green) !important;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.bg-gradient-green:hover {background: var(--green) !important;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.bg-gradient-green a:hover {background: transparent !important;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.c-white a {color: var(--white) !important;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.radius-25 {border-radius: 25px;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.c-green a {color: var(--green) !important;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.border-green {border: 1px solid var(--green) !important;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.border-green:hover {background: var(--green) !important;color: var(--white) !important;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.border-green:hover a {color: var(--white) !important;background: transparent !important;}#mega-menu-wrap-menu-1 #mega-menu-menu-1 .mega-sub-menu {top: calc(100% + 15px) !important;}@media (min-width: 768px) {#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > .mega-sub-menu {padding-right: 3rem !important;padding-left: 3rem !important;}}.mega-menu-item-type-widget.widget_text::after {content: "";position: absolute;width: 1px;height: 100%;background-color: var(--white-opacity);top: 0;left: -2rem;}.wp-block {}</style>
+</head>
+
+<body class="home wp-singular page-template-default page page-id-6 wp-custom-logo wp-theme-unl mega-menu-menu-1">
+		<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+
+		<!-- <header id="masthead" class="site-header container-fluid position-absolute top-0 bg-white"> -->
+		<header id="masthead" class="site-header container-fluid top-0 bg-white fixed-header">
+			<!-- <div class="row top-header px-2 px-md-5 py-2">
+				</div> -->
+
+
+			<div class="row header px-2 mx-md-5 py-4 align-items-center">
+				<!--Logotipo-->
+				<div class="site-branding col-6 col-md-2">
+					<a href="https://www.unl.pt/" class="custom-logo-link" rel="home" aria-current="page"><img width="1231" height="533" src="https://www.unl.pt/wp-content/uploads/2024/12/logo-NOVA.png" class="custom-logo" alt="UNL - logótipo" decoding="async" fetchpriority="high" srcset="https://www.unl.pt/wp-content/uploads/2024/12/logo-NOVA.png 1231w, https://www.unl.pt/wp-content/uploads/2024/12/logo-NOVA-300x130.png 300w, https://www.unl.pt/wp-content/uploads/2024/12/logo-NOVA-1024x443.png 1024w, https://www.unl.pt/wp-content/uploads/2024/12/logo-NOVA-768x333.png 768w" sizes="(max-width: 1231px) 100vw, 1231px" /></a>						<p class="site-title d-none"><a href="https://www.unl.pt/" rel="home">UNL</a></p>
+									</div>
+
+				<!--Menus-->
+				<div class="col-6 col-md-10">
+					<div class="row align-content-between justify-content-end">
+						<!--Search-->
+						<div class="col col-xl-12 text-end d-none d-xl-flex justify-content-end align-items-center">
+							<!--Links Search area-->
+							<div class="menus-search d-none d-xl-inline-flex align-items-center flex-wrap me-4">
+																	<a class="c-dark-green text-decoration-none mx-3 position-relative links" href="/eventos/">Acontece</a>
+									<a class="c-dark-green text-decoration-none mx-3 position-relative links" href="/contactos/">Contactos</a>
+								
+								<!-- <span class="languages d-flex ms-3">
+									<a class="c-dark-green text-decoration-none" href="#">PT</a>
+									<span class="d-block mx-1 c-dark-green">|</span>
+									<a class="c-dark-green text-decoration-none" href="#">EN</a>
+								</span> -->
+
+								<span id="icl_lang_sel_widget-2" class="languages d-flex ms-3">
+<div class="wpml-ls-sidebars-languages wpml-ls wpml-ls-legacy-list-horizontal">
+	<ul role="menu"><li class="wpml-ls-slot-languages wpml-ls-item wpml-ls-item-en wpml-ls-first-item wpml-ls-item-legacy-list-horizontal" role="none">
+				<a href="https://www.unl.pt/en/" class="wpml-ls-link" role="menuitem"  aria-label="Switch to EN(EN)" title="Switch to EN(EN)" >
+                    <span class="wpml-ls-native" lang="en">EN</span></a>
+			</li><li class="wpml-ls-slot-languages wpml-ls-item wpml-ls-item-pt-pt wpml-ls-current-language wpml-ls-last-item wpml-ls-item-legacy-list-horizontal" role="none">
+				<a href="https://www.unl.pt/" class="wpml-ls-link" role="menuitem" >
+                    <span class="wpml-ls-native" role="menuitem">PT</span></a>
+			</li></ul>
+</div>
+</span>
+							</div>
+							<form class="position-relative d-none d-xl-block" action="https://www.unl.pt/" method="get">
+								<img class="position-absolute top-50" style="left: 1.5rem; transform: translate(-50%, -50%);" src="https://www.unl.pt/wp-content/uploads/2023/12/Lupa.svg" alt="O que procura?">
+								<input type="text" name="s" style="background: #F4F8FC; border-color: #F4F8FC;" placeholder="O que procura?" class="px-4 h-50 ps-5" id="search" value="" />
+							</form>
+						</div>
+						<!--Menu-->
+						<div class="col col-xl-12 pt-4 d-flex d-xl-block align-items-center justify-content-end">
+							<div class="row">
+								<div class="col-12  d-flex justify-content-end d-xl-none">
+									<span id="icl_lang_sel_widget-2" class="languages d-flex ms-3">
+<div class="wpml-ls-sidebars-languages wpml-ls wpml-ls-legacy-list-horizontal">
+	<ul role="menu"><li class="wpml-ls-slot-languages wpml-ls-item wpml-ls-item-en wpml-ls-first-item wpml-ls-item-legacy-list-horizontal" role="none">
+				<a href="https://www.unl.pt/en/" class="wpml-ls-link" role="menuitem"  aria-label="Switch to EN(EN)" title="Switch to EN(EN)" >
+                    <span class="wpml-ls-native" lang="en">EN</span></a>
+			</li><li class="wpml-ls-slot-languages wpml-ls-item wpml-ls-item-pt-pt wpml-ls-current-language wpml-ls-last-item wpml-ls-item-legacy-list-horizontal" role="none">
+				<a href="https://www.unl.pt/" class="wpml-ls-link" role="menuitem" >
+                    <span class="wpml-ls-native" role="menuitem">PT</span></a>
+			</li></ul>
+</div>
+</span>								</div>
+								<div class="col-12 d-flex justify-content-end ">
+									<div class="search-icon d-xl-none me-3">
+										<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+											<circle cx="13" cy="13" r="12" stroke="black" stroke-width="2" />
+											<path d="M31 31L25 25" stroke="black" stroke-width="2" />
+										</svg>
+									</div>
+									<nav id="site-navigation" class="main-navigation">
+										<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
+										<div id="mega-menu-wrap-menu-1" class="mega-menu-wrap"><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class='mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-1' id='mega-toggle-block-1'><button aria-label="" class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+                  <span class="mega-toggle-animated-box">
+                    <span class="mega-toggle-animated-inner"></span>
+                  </span>
+                </button></div></div></div><ul id="mega-menu-menu-1" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-panel-width="#masthead" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="1200" data-unbind="true" data-mobile-state="collapse_all" data-mobile-direction="vertical" data-hover-intent-timeout="300" data-hover-intent-interval="100"><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-menu-grid mega-align-bottom-left mega-menu-grid mega-menu-item-9420" id="mega-menu-item-9420"><a class="mega-menu-link" href="#" aria-expanded="false" tabindex="0">Nova<span class="mega-indicator" aria-hidden="true"></span></a>
+<ul class="mega-sub-menu" role='presentation'>
+<li class="mega-menu-row" id="mega-menu-9420-0">
+	<ul class="mega-sub-menu" style='--columns:12' role='presentation'>
+<li class="mega-menu-column mega-menu-columns-4-of-12 mega-hide-on-mobile" style="--columns:12; --span:4" id="mega-menu-9420-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_media_image mega-menu-item-media_image-8" id="mega-menu-item-media_image-8"><h4 class="mega-block-title">Qualidade</h4><a href="/qualidade/"><img width="300" height="166" src="https://www.unl.pt/wp-content/uploads/2024/07/qualidade-2.jpg" class="image wp-image-29145  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" title="Qualidade" decoding="async" /></a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" style="--columns:12; --span:4" id="mega-menu-9420-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-79" id="mega-menu-item-79"><a class="mega-menu-link" href="https://www.unl.pt/sobre/">Sobre</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-11293" id="mega-menu-item-11293"><a class="mega-menu-link" href="https://www.unl.pt/estrutura-e-funcionamento/">Estrutura e Funcionamento</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-11277" id="mega-menu-item-11277"><a class="mega-menu-link" href="https://www.unl.pt/internacional/">Internacional</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-1854" id="mega-menu-item-1854"><a class="mega-menu-link" href="https://www.unl.pt/qualidade/">Qualidade</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-9451" id="mega-menu-item-9451"><a class="mega-menu-link" href="https://www.unl.pt/inovacao-organizacional/">Inovação Organizacional</a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" style="--columns:12; --span:4" id="mega-menu-9420-0-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-item-text-6" id="mega-menu-item-text-6"><h4 class="mega-block-title">Links relacionados</h4>			<div class="textwidget"><div class="textwidget">
+<p><a href="/sobre/historia/">História</a></p>
+<p><a href="/sobre/missao-e-valores/">Missão e Valores</a></p>
+<p><a href="/sobre/honoris-causa/">Honoris Causa</a></p>
+</div>
+</div>
+		</li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-menu-grid mega-align-bottom-left mega-menu-grid mega-menu-item-9421" id="mega-menu-item-9421"><a class="mega-menu-link" href="#" aria-expanded="false" tabindex="0">Ensino<span class="mega-indicator" aria-hidden="true"></span></a>
+<ul class="mega-sub-menu" role='presentation'>
+<li class="mega-menu-row" id="mega-menu-9421-0">
+	<ul class="mega-sub-menu" style='--columns:12' role='presentation'>
+<li class="mega-menu-column mega-menu-columns-4-of-12 mega-hide-on-mobile" style="--columns:12; --span:4" id="mega-menu-9421-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_media_image mega-menu-item-media_image-9" id="mega-menu-item-media_image-9"><h4 class="mega-block-title">Empregabilidade</h4><a href="/ensino/empregabilidade-2/"><img width="300" height="166" src="https://www.unl.pt/wp-content/uploads/2024/07/empregabilidade-2.jpg" class="image wp-image-29147  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" decoding="async" /></a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" style="--columns:12; --span:4" id="mega-menu-9421-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-5325" id="mega-menu-item-5325"><a class="mega-menu-link" href="https://www.unl.pt/ensino/">Sobre</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-10240" id="mega-menu-item-10240"><a class="mega-menu-link" href="https://www.unl.pt/ensino/cursos/">Cursos</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-5328" id="mega-menu-item-5328"><a class="mega-menu-link" href="https://www.unl.pt/estudantes-internacionais/">Estudantes Internacionais</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-38184" id="mega-menu-item-38184"><a class="mega-menu-link" href="https://www.unl.pt/sustainability-for-all/">Sustainability for All</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-34584" id="mega-menu-item-34584"><a class="mega-menu-link" href="https://www.unl.pt/nova-open-academy/">NOVA Open Academy</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-5326" id="mega-menu-item-5326"><a class="mega-menu-link" href="https://www.unl.pt/ensino/escola-doutoral/">Escola Doutoral</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-11634" id="mega-menu-item-11634"><a class="mega-menu-link" href="https://www.unl.pt/ensino/formacao-em-empreendedorismo/">Formação em Empreendedorismo</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-11633" id="mega-menu-item-11633"><a class="mega-menu-link" href="https://www.unl.pt/ensino/inovacao-pedagogica/">Inovação Pedagógica</a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" style="--columns:12; --span:4" id="mega-menu-9421-0-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-item-text-7" id="mega-menu-item-text-7"><h4 class="mega-block-title">Links relacionados</h4>			<div class="textwidget"><p><a href="/ensino/empregabilidade-2/">Empregabilidade</a></p>
+<p><a href="/ensino/nova-young-talent-awards/">NOVA Young Talent Awards</a></p>
+</div>
+		</li>		</ul>
+</li>	</ul>
+</li><li class="mega-menu-row" id="mega-menu-9421-2">
+	<ul class="mega-sub-menu" style='--columns:12' role='presentation'>
+<li class="mega-menu-column mega-menu-columns-3-of-12" style="--columns:12; --span:3" id="mega-menu-9421-2-0"></li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-menu-grid mega-align-bottom-left mega-menu-grid mega-menu-item-28489" id="mega-menu-item-28489"><a class="mega-menu-link" href="#" aria-expanded="false" tabindex="0">Investigação<span class="mega-indicator" aria-hidden="true"></span></a>
+<ul class="mega-sub-menu" role='presentation'>
+<li class="mega-menu-row" id="mega-menu-28489-0">
+	<ul class="mega-sub-menu" style='--columns:12' role='presentation'>
+<li class="mega-menu-column mega-menu-columns-4-of-12 mega-hide-on-mobile" style="--columns:12; --span:4" id="mega-menu-28489-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_media_image mega-menu-item-media_image-14" id="mega-menu-item-media_image-14"><h4 class="mega-block-title">Investigação</h4><a href="/investigacao/"><img width="300" height="166" src="https://www.unl.pt/wp-content/uploads/2024/05/investigacao-300x166.png" class="image wp-image-11460  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.unl.pt/wp-content/uploads/2024/05/investigacao-300x166.png 300w, https://www.unl.pt/wp-content/uploads/2024/05/investigacao.png 416w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" style="--columns:12; --span:4" id="mega-menu-28489-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-11511" id="mega-menu-item-11511"><a class="mega-menu-link" href="https://www.unl.pt/investigacao/">Sobre</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-17555" id="mega-menu-item-17555"><a class="mega-menu-link" href="https://www.unl.pt/interdisciplinaridade/">Interdisciplinaridade</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-11512" id="mega-menu-item-11512"><a class="mega-menu-link" href="https://www.unl.pt/investigacao/impacto/">Impacto</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-11473" id="mega-menu-item-11473"><a class="mega-menu-link" href="https://www.unl.pt/investigacao/apoio-a-investigacao/">Apoio à Investigação</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-11477" id="mega-menu-item-11477"><a class="mega-menu-link" href="https://www.unl.pt/investigacao/politicas-e-regulamentos/">Políticas e Regulamentos</a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12 mega-hide-on-mobile" style="--columns:12; --span:4" id="mega-menu-28489-0-2"></li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-menu-grid mega-align-bottom-left mega-menu-grid mega-menu-item-88" id="mega-menu-item-88"><a class="mega-menu-link" href="#" aria-expanded="false" tabindex="0">Inovação<span class="mega-indicator" aria-hidden="true"></span></a>
+<ul class="mega-sub-menu" role='presentation'>
+<li class="mega-menu-row" id="mega-menu-88-0">
+	<ul class="mega-sub-menu" style='--columns:12' role='presentation'>
+<li class="mega-menu-column mega-menu-columns-4-of-12 mega-hide-on-mobile" style="--columns:12; --span:4" id="mega-menu-88-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_media_image mega-menu-item-media_image-12" id="mega-menu-item-media_image-12"><h4 class="mega-block-title">Ecossistema de inovação</h4><img width="300" height="166" src="https://www.unl.pt/wp-content/uploads/2024/01/inovacao-1-300x166.jpg" class="image wp-image-9441  attachment-medium size-medium" alt="Inovação" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.unl.pt/wp-content/uploads/2024/01/inovacao-1-300x166.jpg 300w, https://www.unl.pt/wp-content/uploads/2024/01/inovacao-1.jpg 416w" sizes="(max-width: 300px) 100vw, 300px" /></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" style="--columns:12; --span:4" id="mega-menu-88-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-9450" id="mega-menu-item-9450"><a class="mega-menu-link" href="https://www.unl.pt/inovacao/">Sobre</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-9453" id="mega-menu-item-9453"><a class="mega-menu-link" href="https://www.unl.pt/inovacao/portal-inovacao/">Portal Inovação</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-9452" id="mega-menu-item-9452"><a class="mega-menu-link" href="https://www.unl.pt/inovacao/inovacao-socioterritorial/">Inovação Socioterritorial</a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" style="--columns:12; --span:4" id="mega-menu-88-0-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-item-text-9" id="mega-menu-item-text-9"><h4 class="mega-block-title">Links relacionados</h4>			<div class="textwidget"></div>
+		</li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-menu-grid mega-align-bottom-left mega-menu-grid mega-menu-item-9422" id="mega-menu-item-9422"><a class="mega-menu-link" href="#" aria-expanded="false" tabindex="0">Desafios 360<span class="mega-indicator" aria-hidden="true"></span></a>
+<ul class="mega-sub-menu" role='presentation'>
+<li class="mega-menu-row" id="mega-menu-9422-0">
+	<ul class="mega-sub-menu" style='--columns:12' role='presentation'>
+<li class="mega-menu-column mega-menu-columns-4-of-12 mega-hide-on-mobile" style="--columns:12; --span:4" id="mega-menu-9422-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_media_image mega-menu-item-media_image-10" id="mega-menu-item-media_image-10"><a href="/desafios-360/turismo/"><img width="300" height="166" src="https://www.unl.pt/wp-content/uploads/2024/06/Propostas-06-300x166.png" class="image wp-image-12320  attachment-medium size-medium" alt="Desafios 360" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.unl.pt/wp-content/uploads/2024/06/Propostas-06-300x166.png 300w, https://www.unl.pt/wp-content/uploads/2024/06/Propostas-06-1024x566.png 1024w, https://www.unl.pt/wp-content/uploads/2024/06/Propostas-06-768x425.png 768w, https://www.unl.pt/wp-content/uploads/2024/06/Propostas-06-1536x849.png 1536w, https://www.unl.pt/wp-content/uploads/2024/06/Propostas-06.png 1734w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" style="--columns:12; --span:4" id="mega-menu-9422-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-40654" id="mega-menu-item-40654"><a class="mega-menu-link" href="https://www.unl.pt/sustentabilidade/">Sustentabilidade</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-9337" id="mega-menu-item-9337"><a class="mega-menu-link" href="https://www.unl.pt/novasaude/">NovaSaúde</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-9336" id="mega-menu-item-9336"><a class="mega-menu-link" href="https://www.unl.pt/turismo-e-hospitalidade/">Turismo e Hospitalidade</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-48228" id="mega-menu-item-48228"><a class="mega-menu-link" href="https://www.unl.pt/nova-aerospace/">NOVA Aerospace</a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" style="--columns:12; --span:4" id="mega-menu-9422-0-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-9515" id="mega-menu-item-9515"><a class="mega-menu-link" href="https://www.unl.pt/arte-e-tecnologia/">Arte e Tecnologia</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-9335" id="mega-menu-item-9335"><a class="mega-menu-link" href="https://www.unl.pt/nimsb/">NIMSB</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-9334" id="mega-menu-item-9334"><a class="mega-menu-link" href="https://www.unl.pt/campus-sul/">Campus Sul</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-9514" id="mega-menu-item-9514"><a class="mega-menu-link" href="https://www.unl.pt/eutopia/">EUTOPIA</a></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-menu-grid mega-align-bottom-left mega-menu-grid mega-menu-item-9423" id="mega-menu-item-9423"><a class="mega-menu-link" href="#" aria-expanded="false" tabindex="0">Vida na NOVA<span class="mega-indicator" aria-hidden="true"></span></a>
+<ul class="mega-sub-menu" role='presentation'>
+<li class="mega-menu-row" id="mega-menu-9423-0">
+	<ul class="mega-sub-menu" style='--columns:12' role='presentation'>
+<li class="mega-menu-column mega-menu-columns-4-of-12 mega-hide-on-mobile" style="--columns:12; --span:4" id="mega-menu-9423-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_media_image mega-menu-item-media_image-11" id="mega-menu-item-media_image-11"><h4 class="mega-block-title">Voluntariado</h4><a href="https://sas.unl.pt/desenvolvimentohumano/voluntariado/" target="_blank"><img width="300" height="166" src="https://www.unl.pt/wp-content/uploads/2024/01/volunt-300x166.jpg" class="image wp-image-9391  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" title="Voluntariado" decoding="async" srcset="https://www.unl.pt/wp-content/uploads/2024/01/volunt-300x166.jpg 300w, https://www.unl.pt/wp-content/uploads/2024/01/volunt.jpg 416w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" style="--columns:12; --span:4" id="mega-menu-9423-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-5330" id="mega-menu-item-5330"><a class="mega-menu-link" href="https://www.unl.pt/onde-estamos/">Onde Estamos</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-5329" id="mega-menu-item-5329"><a class="mega-menu-link" href="https://www.unl.pt/cultura/">Cultura</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-41474" id="mega-menu-item-41474"><a class="mega-menu-link" href="https://www.unl.pt/nova-talks-sala-de-imprensa/">NOVA Talks Sala de Imprensa</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-5336" id="mega-menu-item-5336"><a class="mega-menu-link" href="https://www.unl.pt/acao-social/">Ação Social</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-43587" id="mega-menu-item-43587"><a class="mega-menu-link" href="https://www.unl.pt/bandua/">BANDUA</a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" style="--columns:12; --span:4" id="mega-menu-9423-0-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-item-text-8" id="mega-menu-item-text-8"><h4 class="mega-block-title">Links relacionados</h4>			<div class="textwidget"><div class="textwidget">
+<p><a href="https://sas.unl.pt/alimentacao/" target="_blank" rel="noopener">Alimentação</a></p>
+<p><a href="https://sas.unl.pt/desporto/" target="_blank" rel="noopener">Desporto</a></p>
+<p><a href="https://sas.unl.pt/apoio-a-infancia/" target="_blank" rel="noopener">Gabinete de Apoio à Infância</a></p>
+</div>
+</div>
+		</li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-mt-4 mega-mt-md-0 mega-mb-3 mega-mb-xl-0 mega-me-2 mega-border mega-c-green mega-border-green mega-py-2 mega-px-2 mega-radius-25 mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-11967 mt-4 mt-md-0 mb-3 mb-xl-0 me-2 border c-green border-green py-2 px-2 radius-25" id="mega-menu-item-11967"><a class="mega-menu-link" href="https://www.unl.pt/escolas/" tabindex="0">Escolas</a></li><li class="mega-mb-3 mega-mb-xl-0 mega-bg-gradient-green mega-c-white mega-py-2 mega-px-2 mega-radius-25 mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-19 mb-3 mb-xl-0 bg-gradient-green c-white py-2 px-2 radius-25" id="mega-menu-item-19"><a class="mega-menu-link" href="/ensino/cursos/" tabindex="0">QUERO ESTUDAR NA NOVA</a></li></ul></div>									</nav><!-- #site-navigation -->
+								</div>
+							</div>
+
+													</div>
+					</div>
+				</div>
+				<div class="row bottoes-mobile align-items-center d-xl-none mt-3">
+					<div class="col-5 col-sm-6">
+													<p class="mb-0 mb-xl-0 border c-green border-green py-2 px-3 radius-25 text-center"><a class="mega-menu-link text-uppercase" href="/escolas/" tabindex="0">Escolas</a></p>
+											</div>
+					<div class="col-7 col-sm-6">
+													<p class="mb-0 mb-xl-0 bg-gradient-green c-white py-2 px-3 radius-25 text-center"><a class="mega-menu-link text-uppercase" href="/ensino/cursos/" tabindex="0">QUERO ESTUDAR NA NOVA</a></p>
+						 
+					</div>
+				</div>
+			</div>
+
+
+			<div class="search-mobile d-xl-none position-absolute">
+				<form class="position-relative" action="https://www.unl.pt/" method="get">
+					<img class="position-absolute top-50" style="left: 1.5rem; transform: translate(-50%, -50%);" src="/wp-content/uploads/2023/12/Lupa.svg" alt="O que procura?">
+					<input type="text" name="s" style="background: #F4F8FC; border-color: #F4F8FC;" placeholder="O que procura?" class="px-4 h-50 ps-5" id="search-mobile" value="" />
+				</form>
+			</div>
+		</header><!-- #masthead -->
+
+
+		<div class="popup-modal">
+			<div class="container-modal">
+				<div class="close-modal">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="15" cy="15" r="15" fill="white" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M19.2426 12.1725C19.6332 11.782 19.6332 11.1488 19.2426 10.7583C18.8521 10.3677 18.219 10.3677 17.8284 10.7583L15 13.5867L12.1716 10.7583C11.781 10.3677 11.1479 10.3677 10.7574 10.7583C10.3668 11.1488 10.3668 11.782 10.7574 12.1725L13.5858 15.0009L10.7574 17.8293C10.3668 18.2199 10.3668 18.853 10.7574 19.2435C11.1479 19.6341 11.781 19.6341 12.1716 19.2435L15 16.4151L17.8284 19.2435C18.219 19.6341 18.8521 19.6341 19.2426 19.2435C19.6332 18.853 19.6332 18.2199 19.2426 17.8293L16.4142 15.0009L19.2426 12.1725Z" fill="#00AD2F" />
+					</svg>
+				</div>
+				<div class="cotent-modal"></div>
+			</div>
+		</div>
+<main id="primary" class="site-main">
+
+	<!--Breadcrumb-->
+		
+	
+<article id="post-6" class="container-fluid post-6 page type-page status-publish has-post-thumbnail hentry">
+
+	<!--Page Title-->
+	
+
+	<!--Page Content-->
+	
+	<!--Page Thumbnail-->
+	
+</article>
+
+
+    <div  class="container-fluid container-fluid-slider g-0  dark text-light  ">
+        
+
+
+        
+                    
+                
+                
+                    <style>
+                        @media screen and (max-width: 768px) {
+
+                            body.page-id-6 .slider-1 {
+                                background-image: url('https://www.unl.pt/wp-content/uploads/2026/02/E19_podcast_mobile-banner-site.jpg') !important;
+                                background-size: contain !important;
+				display: flex !important; 
+				align-items: end !important;
+                            }
+                        }
+                    </style>
+
+                
+                <div class="row slider slider-1 g-0 py-5 align-items-center w-100" style="background-image: url(https://www.unl.pt/wp-content/uploads/2026/02/E19_podcast_bannersite-scaled.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;background-color: transparent; ">
+                    <div class="col-12 ">
+                        <div class="container">
+                            <div class="row text-light">
+                                                                    <div class="col-12 col-md-6 p-5">
+                                        <h3>À conversa sobre liderança na Saúde, com Fernando Leal da Costa (ENSP NOVA) e Isabel Craveiro (IHMT-NOVA). Oiça aqui!</h3>
+                                        <a style="position: relative; z-index: 2;" class="btn-slider d-table bg-white c-green py-2 px-4 radius-25 text-decoration-none" href="https://www.unl.pt/novasaude/nova-saude/novasaude-talks/">Ver mais</a>                                    </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                
+                
+                    <style>
+                        @media screen and (max-width: 768px) {
+
+                            body.page-id-6 .slider-2 {
+                                background-image: url('https://www.unl.pt/wp-content/uploads/2026/02/065-1-scaled.jpg') !important;
+                                background-size: contain !important;
+				display: flex !important; 
+				align-items: end !important;
+                            }
+                        }
+                    </style>
+
+                
+                <div class="row slider slider-2 g-0 py-5 align-items-center w-100" style="background-image: url(https://www.unl.pt/wp-content/uploads/2026/02/065-1-scaled.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;background-color: transparent; ">
+                    <div class="col-12 ">
+                        <div class="container">
+                            <div class="row text-light">
+                                                                    <div class="col-12 col-md-6 p-5">
+                                        <h3>“Mais do que um momento académico, que seja um gesto público de confiança na democracia e no conhecimento”</h3>
+                                        <a style="position: relative; z-index: 2;" class="btn-slider d-table bg-white c-green py-2 px-4 radius-25 text-decoration-none" href="https://www.unl.pt/noticias/nova/havera-democracia-universidade-e-razao-critica-mais-do-que-um-momento-academico-que-seja-um-gesto-publico-de-confianca-na-democracia-e-no-conhecimento/">Ver mais</a>                                    </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+        </div>
+            </div>
+
+    <div id='notcias' class="container-fluid container-fluid-artigos py-5 light-blue">
+        <div  class="container artigos-container ">
+        
+
+
+<!--Row destaque-->
+    <div class="row pb-5 align-items-streth w-100 justify-content-between">
+
+        <!--Coluna Temas-->
+        <div class="col-12 col-temas d-flex flex-wrap align-items-center justify-content-between">
+                            <div class="section-title mb-3 d-flex flex-wrap align-items-center">
+                    <h2 class="text-uppercase c-dark-green fs-4" style="font-weight: 900;">Notícias</h2>
+                    <!-- <a href="">Array
+(
+)
+</a> -->
+                    <a style="position: relative; z-index: 2; color: #fff !important; " class="d-table bg-gradient-green c-white py-2 px-4 radius-25 text-decoration-none" href="https://www.unl.pt/wpcategory/noticias/">Mais Notícias</a>
+                </div>
+                        <div class="terms d-inline-flex flex-wrap align-items-center justify-content-end">
+                                    <p class="c-gray mb-3 me-4 w-mob-100">Pesquisar por</p>
+                                            <a class="text-center px-3 py-2 d-block mb-3 mx-2 border radius-25 text-decoration-none tag-list fw-normal" href="https://www.unl.pt/nova/ensino/"><strong>Ensino</strong></a>
+                                            <a class="text-center px-3 py-2 d-block mb-3 mx-2 border radius-25 text-decoration-none tag-list fw-normal" href="https://www.unl.pt/nova/inovacao/"><strong>Inovação</strong></a>
+                                            <a class="text-center px-3 py-2 d-block mb-3 mx-2 border radius-25 text-decoration-none tag-list fw-normal" href="https://www.unl.pt/nova/internacional/"><strong>Internacional</strong></a>
+                                            <a class="text-center px-3 py-2 d-block mb-3 mx-2 border radius-25 text-decoration-none tag-list fw-normal" href="https://www.unl.pt/nova/investigacao/"><strong>Investigação</strong></a>
+                                            <a class="text-center px-3 py-2 d-block mb-3 mx-2 border radius-25 text-decoration-none tag-list fw-normal" href="https://www.unl.pt/nova/sustentabilidade/"><strong>Sustentabilidade</strong></a>
+                                            <a class="text-center px-3 py-2 d-block mb-3 mx-2 border radius-25 text-decoration-none tag-list fw-normal" href="https://www.unl.pt/nova/vida-na-nova/"><strong>Vida na NOVA</strong></a>
+                                                </div>
+        </div>
+    </div>
+
+
+
+<!--Row list-->
+    <div class="row list-posts">
+        
+            
+
+            <!-- <div class="col-12 col-md-6 col-xl-3 col-list mb-4" data-aos="zoom-out-right" data-aos-delay="100" data-aos-duration="1000"> -->
+            <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                <div class="inner-post post-list">
+                    <div class="inner-radius overflow-hidden">
+                        <div class="thumbnail">
+                                                            <a href="https://www.unl.pt/noticias/nova/nova-alcanca-resultado-historico-nas-marie-sklodowska-curie-postdoctoral-fellowships-2025/"><img width="310" height="185" src="https://www.unl.pt/wp-content/uploads/2026/02/280425_MSCA_Marie-Curie-2_noticia-1-310x185.jpg" class="attachment-artigos size-artigos wp-post-image" alt="" decoding="async" /></a>
+                             
+
+                        </div>
+                        <div class="content-box p-3">
+                            <h2 style="line-height: .8;" class="mb-4 article-title">
+
+                                                                    <a class="c-black post-list-title fw-bold fs-6 text-decoration-none" href="https://www.unl.pt/noticias/nova/nova-alcanca-resultado-historico-nas-marie-sklodowska-curie-postdoctoral-fellowships-2025/">NOVA alcança resultado histórico nas Marie Skłodowska-Curie Postdoctoral Fellowships 2025</a>
+                                
+                            </h2>
+                                                                                         <a class="d-table text-decoration-none mt-3 c-green" href="https://www.unl.pt/noticias/nova/nova-alcanca-resultado-historico-nas-marie-sklodowska-curie-postdoctoral-fellowships-2025/">Ler mais</a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+
+            <!-- <div class="col-12 col-md-6 col-xl-3 col-list mb-4" data-aos="zoom-out-right" data-aos-delay="200" data-aos-duration="1000"> -->
+            <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                <div class="inner-post post-list">
+                    <div class="inner-radius overflow-hidden">
+                        <div class="thumbnail">
+                                                            <a href="https://www.unl.pt/noticias/nova/concurso-seed-funding-do-eutopia_health-distingue-dois-projetos-da-nova/"><img width="310" height="185" src="https://www.unl.pt/wp-content/uploads/2026/02/Eutopia_noticia_site_240226-310x185.png" class="attachment-artigos size-artigos wp-post-image" alt="" decoding="async" /></a>
+                             
+
+                        </div>
+                        <div class="content-box p-3">
+                            <h2 style="line-height: .8;" class="mb-4 article-title">
+
+                                                                    <a class="c-black post-list-title fw-bold fs-6 text-decoration-none" href="https://www.unl.pt/noticias/nova/concurso-seed-funding-do-eutopia_health-distingue-dois-projetos-da-nova/">Concurso Seed Funding do EUTOPIA_HEALTH distingue dois projetos da NOVA</a>
+                                
+                            </h2>
+                                                                                         <a class="d-table text-decoration-none mt-3 c-green" href="https://www.unl.pt/noticias/nova/concurso-seed-funding-do-eutopia_health-distingue-dois-projetos-da-nova/">Ler mais</a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+
+            <!-- <div class="col-12 col-md-6 col-xl-3 col-list mb-4" data-aos="zoom-out-right" data-aos-delay="300" data-aos-duration="1000"> -->
+            <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                <div class="inner-post post-list">
+                    <div class="inner-radius overflow-hidden">
+                        <div class="thumbnail">
+                                                            <a href="https://www.unl.pt/noticias/nova/nova-e-sociedade-ponto-verde-desafiam-comunidade-academica-a-acelerar-solucoes-para-a-economia-circular/"><img width="310" height="185" src="https://www.unl.pt/wp-content/uploads/2026/02/CIRCULAR_inNOVA5Btion5D2.0_noticia-310x185.jpg" class="attachment-artigos size-artigos wp-post-image" alt="" decoding="async" /></a>
+                             
+
+                        </div>
+                        <div class="content-box p-3">
+                            <h2 style="line-height: .8;" class="mb-4 article-title">
+
+                                                                    <a class="c-black post-list-title fw-bold fs-6 text-decoration-none" href="https://www.unl.pt/noticias/nova/nova-e-sociedade-ponto-verde-desafiam-comunidade-academica-a-acelerar-solucoes-para-a-economia-circular/">NOVA e Sociedade Ponto Verde desafiam comunidade académica a acelerar soluções para a economia circular </a>
+                                
+                            </h2>
+                                                                                         <a class="d-table text-decoration-none mt-3 c-green" href="https://www.unl.pt/noticias/nova/nova-e-sociedade-ponto-verde-desafiam-comunidade-academica-a-acelerar-solucoes-para-a-economia-circular/">Ler mais</a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+
+            <!-- <div class="col-12 col-md-6 col-xl-3 col-list mb-4" data-aos="zoom-out-right" data-aos-delay="400" data-aos-duration="1000"> -->
+            <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                <div class="inner-post post-list">
+                    <div class="inner-radius overflow-hidden">
+                        <div class="thumbnail">
+                                                            <a href="https://www.unl.pt/noticias/nova/ai-estao-os-open-days-da-nova-2026/"><img width="310" height="185" src="https://www.unl.pt/wp-content/uploads/2026/02/OpenDays26_noticia_geral-05-310x185.jpg" class="attachment-artigos size-artigos wp-post-image" alt="" decoding="async" loading="lazy" /></a>
+                             
+
+                        </div>
+                        <div class="content-box p-3">
+                            <h2 style="line-height: .8;" class="mb-4 article-title">
+
+                                                                    <a class="c-black post-list-title fw-bold fs-6 text-decoration-none" href="https://www.unl.pt/noticias/nova/ai-estao-os-open-days-da-nova-2026/">Aí estão os Dias Abertos da NOVA 2026: a oportunidade perfeita para conhecer a oferta de cada escola</a>
+                                
+                            </h2>
+                                                                                         <a class="d-table text-decoration-none mt-3 c-green" href="https://www.unl.pt/noticias/nova/ai-estao-os-open-days-da-nova-2026/">Ler mais</a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+        </div>
+
+<div class="container-fluid container-fluid-call container-fluid-banner py-5 text-light">
+    <div class="container container-banner">
+
+        
+        <!-- Titulo -->
+                    <div class="row">
+                <div class="section-title mb-5 col-12 d-flex flex-wrap align-items-center">
+                    <h2 class="text-uppercase c-dark-green fs-4" style="font-weight: 900; color: var(--dark-green);">NOVA NO MUNDO</h2>
+                    <a style="position: relative; z-index: 2; color: #fff; " class="d-table bg-gradient-green c-white py-2 px-4 radius-25 text-decoration-none" href="https://www.unl.pt/noticias/nova/nova-conquista-duas-bolsas-erc-proof-of-concept-para-acelerar-terapias-para-doencas-neurologicas/">Ler mais</a>
+                </div>
+            </div>
+        
+        <!--Call to Actions Repeater-->
+        <div class="row">
+            
+                                    <div class="banner-col banner-col-video position-relative col-12 p-0 p-md-5" style="height:400px;">
+                                            <div class="content position-relative c-light" style="max-width: 600px; z-index: 2;">
+                            <!-- <h2 class="title-g"></h2> -->
+                                                                                        <!-- <div class="bottom-destaque botoes mt-5 d-flex justify-content-between mt-4 align-items-end">
+                                    <a href="" class="btn-more px-5 py-3 d-block border border-white c-white text-decoration-none fw-bold radius-25"></a>
+                                </div> -->
+                                                    </div>
+
+                                                    <!-- <div class="banner-col col-12"> -->
+                            <div class="video" style="position:absolute; top:0; left: 0; width: 100%; min-height:400px;"><video class="top-0 start-0 desktop" style="position:absolute;top:0;left:0;width:100%;height:100%;" muted autoplay loop><source src="https://www.unl.pt/wp-content/uploads/2026/01/NOVA-in-the-World_220126.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg"></video> <video class="top-0 start-0 mobile" style="position:absolute;top:0;left:0;width:100%;height:100%;" muted autoplay loop playsinline webkit-playsinline><source src="https://www.unl.pt/wp-content/uploads/2026/01/NOVA-in-the-World_Mobile_PT_260126.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg"></video> </div>                            <!-- </div> -->
+                                                </div>
+                                        </div>
+
+
+        </div>
+    </div>
+
+    <!-- 
+<div><iframe src="https://player.vimeo.com/video/905272127?h=a01c2ab0cf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="“São os inúmeros os desafios de quem vive com falência intestinal”"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
+    <!--Related posts ids-->
+    
+
+    <div class="container-fluid container-fluid-call container-fluid-call pt-5 light">
+
+        <div class="container container-call call-container">
+
+            <!--Section Title-->
+                            <div class="row">
+                    <div class="section-title mb-5 col-12 d-flex flex-wrap align-items-center">
+                        <h2 class="text-uppercase c-dark-green fs-4" style="font-weight: 900;">Acontece</h2>
+                        <a style="position: relative; z-index: 2; color: #fff; " class="d-table bg-gradient-green c-white py-2 px-4 radius-25 text-decoration-none" href="https://www.unl.pt/eventos/">Mais eventos</a>
+                    </div>
+                </div>
+                        <!--Row destaque-->
+                            <div class="row list-posts">
+
+                    <!--Row lista-->
+                    
+                        
+                        <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                            <div class="inner-post post-list eventos" style="height: 100%;">
+                                <div class="inner-radius overflow-hidden" style="height: 100%;">
+                                    <!--Event Image-->
+                                    <div class="thumbnail">
+                                                                                    <a href="https://www.unl.pt/eventos/orquestra-classica-metropolitana-o-aluno-e-o-professor-a-guerra-e-a-liberdade/"><img width="310" height="185" src="https://www.unl.pt/wp-content/uploads/2026/02/3-post-X_1024x512-OAlunoeoProf5BOSM5D-fev26-310x185.jpg" class="attachment-artigos size-artigos wp-post-image" alt="" decoding="async" loading="lazy" /></a>
+                                        
+                                    </div>
+
+                                    <div class="content-box p-2 p-sm-3" style="height: 100%;">
+
+                                        <div class="event-content-head d-flex align-items-start">
+                                            <!--Event Date-->
+                                                                                            <p class="event-date-box mb-2 w-100 position-relative d-flex p-2 bg-green me-3" style="max-width: 46px;">
+                                                                                                <span class="start d-flex flex-column bg-green me-3">
+                                                    <span class="day fw-bolder fs-4 c-white text-center">27</span>
+                                                    <span class="month c-white text-center" style="font-size: .8rem;">Fev</span>
+                                                    <span class="year c-white text-center" style="font-size: .8rem;">2026</span>
+                                                </span>
+                                                                                                </p>
+                                                <!--Event Title-->
+                                                <h2 style="line-height: .7;">
+                                                                                                            <a class="c-black post-list-title fs-6 text-decoration-none fw-bold" href="https://www.unl.pt/eventos/orquestra-classica-metropolitana-o-aluno-e-o-professor-a-guerra-e-a-liberdade/">Orquestra Clássica Metropolitana: O Aluno e o Professor / A Guerra e a Liberdade</a>
+                                                                                                    </h2>
+                                        </div>
+
+                                                                                    <div class="local d-inline-flex mt-4 align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15" fill="none">
+                                                    <path d="M10.3891 10.1924C9.35342 11.2064 6.5 14 6.5 14C6.5 14 3.72312 11.2813 2.61091 10.1924C0.463029 8.0895 0.463029 4.68005 2.61091 2.57716C4.7588 0.474279 8.2412 0.474279 10.3891 2.57716C12.537 4.68005 12.537 8.0895 10.3891 10.1924Z" stroke="#00AD2F" stroke-width="0.842105" stroke-linecap="round" stroke-linejoin="bevel" />
+                                                    <path d="M8.5625 6.38478C8.5625 7.5 7.63909 8.40407 6.5 8.40407C5.36091 8.40407 4.4375 7.5 4.4375 6.38478C4.4375 5.26955 5.36091 4.36549 6.5 4.36549C7.63909 4.36549 8.5625 5.26955 8.5625 6.38478Z" stroke="#00AD2F" stroke-width="0.842105" stroke-linecap="round" stroke-linejoin="bevel" />
+                                                </svg>
+                                                <p class="mb-0 ms-2 fs-6 c-gray">Reitoria - Campus de Campolide</p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    
+                        
+                        <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                            <div class="inner-post post-list eventos" style="height: 100%;">
+                                <div class="inner-radius overflow-hidden" style="height: 100%;">
+                                    <!--Event Image-->
+                                    <div class="thumbnail">
+                                                                                    <a href="https://www.unl.pt/eventos/ouvir-duas-vezes-a-orquestra-pela-orquestra-metropolitana-de-lisboa/"><img width="310" height="185" src="https://www.unl.pt/wp-content/uploads/2026/01/3-post-X_1024x512-Ouvir2X_AOrquestra-fev26-310x185.jpg" class="attachment-artigos size-artigos wp-post-image" alt="" decoding="async" loading="lazy" /></a>
+                                        
+                                    </div>
+
+                                    <div class="content-box p-2 p-sm-3" style="height: 100%;">
+
+                                        <div class="event-content-head d-flex align-items-start">
+                                            <!--Event Date-->
+                                                                                            <p class="event-date-box mb-2 w-100 position-relative d-flex p-2 bg-green me-3" style="max-width: 46px;">
+                                                                                                <span class="start d-flex flex-column bg-green me-3">
+                                                    <span class="day fw-bolder fs-4 c-white text-center">28</span>
+                                                    <span class="month c-white text-center" style="font-size: .8rem;">Fev</span>
+                                                    <span class="year c-white text-center" style="font-size: .8rem;">2026</span>
+                                                </span>
+                                                                                                </p>
+                                                <!--Event Title-->
+                                                <h2 style="line-height: .7;">
+                                                                                                            <a class="c-black post-list-title fs-6 text-decoration-none fw-bold" href="https://www.unl.pt/eventos/ouvir-duas-vezes-a-orquestra-pela-orquestra-metropolitana-de-lisboa/">Ouvir Duas Vezes – A Orquestra | Orquestra Metropolitana de Lisboa</a>
+                                                                                                    </h2>
+                                        </div>
+
+                                                                                    <div class="local d-inline-flex mt-4 align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15" fill="none">
+                                                    <path d="M10.3891 10.1924C9.35342 11.2064 6.5 14 6.5 14C6.5 14 3.72312 11.2813 2.61091 10.1924C0.463029 8.0895 0.463029 4.68005 2.61091 2.57716C4.7588 0.474279 8.2412 0.474279 10.3891 2.57716C12.537 4.68005 12.537 8.0895 10.3891 10.1924Z" stroke="#00AD2F" stroke-width="0.842105" stroke-linecap="round" stroke-linejoin="bevel" />
+                                                    <path d="M8.5625 6.38478C8.5625 7.5 7.63909 8.40407 6.5 8.40407C5.36091 8.40407 4.4375 7.5 4.4375 6.38478C4.4375 5.26955 5.36091 4.36549 6.5 4.36549C7.63909 4.36549 8.5625 5.26955 8.5625 6.38478Z" stroke="#00AD2F" stroke-width="0.842105" stroke-linecap="round" stroke-linejoin="bevel" />
+                                                </svg>
+                                                <p class="mb-0 ms-2 fs-6 c-gray">Reitoria - Campus de Campolide</p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    
+                        
+                        <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                            <div class="inner-post post-list eventos" style="height: 100%;">
+                                <div class="inner-radius overflow-hidden" style="height: 100%;">
+                                    <!--Event Image-->
+                                    <div class="thumbnail">
+                                                                                    <a href="https://www.unl.pt/eventos/save-the-date-conferencia-direitos-humanos-das-mulheres-uma-perspetiva-interseccional-e-anti-colonial/"><img width="310" height="185" src="https://www.unl.pt/wp-content/uploads/2026/02/2-2-310x185.jpg" class="attachment-artigos size-artigos wp-post-image" alt="" decoding="async" loading="lazy" /></a>
+                                        
+                                    </div>
+
+                                    <div class="content-box p-2 p-sm-3" style="height: 100%;">
+
+                                        <div class="event-content-head d-flex align-items-start">
+                                            <!--Event Date-->
+                                                                                            <p class="event-date-box mb-2 w-100 position-relative d-flex p-2 bg-green me-3" style="max-width: 46px;">
+                                                                                                <span class="start d-flex flex-column bg-green me-3">
+                                                    <span class="day fw-bolder fs-4 c-white text-center">05</span>
+                                                    <span class="month c-white text-center" style="font-size: .8rem;">Mar</span>
+                                                    <span class="year c-white text-center" style="font-size: .8rem;">2026</span>
+                                                </span>
+                                                                                                </p>
+                                                <!--Event Title-->
+                                                <h2 style="line-height: .7;">
+                                                                                                            <a class="c-black post-list-title fs-6 text-decoration-none fw-bold" href="https://www.unl.pt/eventos/save-the-date-conferencia-direitos-humanos-das-mulheres-uma-perspetiva-interseccional-e-anti-colonial/">SAVE THE DATE: Conferência “Direitos Humanos das Mulheres: uma perspetiva interseccional e anti-colonial”</a>
+                                                                                                    </h2>
+                                        </div>
+
+                                                                                    <div class="local d-inline-flex mt-4 align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15" fill="none">
+                                                    <path d="M10.3891 10.1924C9.35342 11.2064 6.5 14 6.5 14C6.5 14 3.72312 11.2813 2.61091 10.1924C0.463029 8.0895 0.463029 4.68005 2.61091 2.57716C4.7588 0.474279 8.2412 0.474279 10.3891 2.57716C12.537 4.68005 12.537 8.0895 10.3891 10.1924Z" stroke="#00AD2F" stroke-width="0.842105" stroke-linecap="round" stroke-linejoin="bevel" />
+                                                    <path d="M8.5625 6.38478C8.5625 7.5 7.63909 8.40407 6.5 8.40407C5.36091 8.40407 4.4375 7.5 4.4375 6.38478C4.4375 5.26955 5.36091 4.36549 6.5 4.36549C7.63909 4.36549 8.5625 5.26955 8.5625 6.38478Z" stroke="#00AD2F" stroke-width="0.842105" stroke-linecap="round" stroke-linejoin="bevel" />
+                                                </svg>
+                                                <p class="mb-0 ms-2 fs-6 c-gray">Reitoria - Campus de Campolide</p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    
+                        
+                        <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                            <div class="inner-post post-list eventos" style="height: 100%;">
+                                <div class="inner-radius overflow-hidden" style="height: 100%;">
+                                    <!--Event Image-->
+                                    <div class="thumbnail">
+                                                                                    <a href="https://www.unl.pt/eventos/nova-na-futuralia-2026-a-escolha-do-futuro-comeca-aqui/"><img width="310" height="185" src="https://www.unl.pt/wp-content/uploads/2026/02/FUTURALIA_2026_noticia-alunos-310x185.jpg" class="attachment-artigos size-artigos wp-post-image" alt="" decoding="async" loading="lazy" /></a>
+                                        
+                                    </div>
+
+                                    <div class="content-box p-2 p-sm-3" style="height: 100%;">
+
+                                        <div class="event-content-head d-flex align-items-start">
+                                            <!--Event Date-->
+                                                                                            <p class="event-date-box two-days mb-2 w-100 position-relative d-flex p-2 bg-green me-3" style="max-width: 95px;">
+                                                                                                <span class="start d-flex flex-column bg-green me-3">
+                                                    <span class="day fw-bolder fs-4 c-white text-center">11</span>
+                                                    <span class="month c-white text-center" style="font-size: .8rem;">Mar</span>
+                                                    <span class="year c-white text-center" style="font-size: .8rem;">2026</span>
+                                                </span>
+                                                                                                    <span class="end d-flex flex-column bg-green">
+                                                        <span class="day fw-bolder fs-4 c-white text-center">14</span>
+                                                        <span class="month c-white text-center" style="font-size: .8rem;">Mar</span>
+                                                        <span class="year c-white text-center" style="font-size: .8rem;">2026</span>
+                                                    </span>
+                                                                                                </p>
+                                                <!--Event Title-->
+                                                <h2 style="line-height: .7;">
+                                                                                                            <a class="c-black post-list-title fs-6 text-decoration-none fw-bold" href="https://www.unl.pt/eventos/nova-na-futuralia-2026-a-escolha-do-futuro-comeca-aqui/">NOVA na Futurália 2026: a escolha do futuro começa aqui  </a>
+                                                                                                    </h2>
+                                        </div>
+
+                                                                                    <div class="local d-inline-flex mt-4 align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15" fill="none">
+                                                    <path d="M10.3891 10.1924C9.35342 11.2064 6.5 14 6.5 14C6.5 14 3.72312 11.2813 2.61091 10.1924C0.463029 8.0895 0.463029 4.68005 2.61091 2.57716C4.7588 0.474279 8.2412 0.474279 10.3891 2.57716C12.537 4.68005 12.537 8.0895 10.3891 10.1924Z" stroke="#00AD2F" stroke-width="0.842105" stroke-linecap="round" stroke-linejoin="bevel" />
+                                                    <path d="M8.5625 6.38478C8.5625 7.5 7.63909 8.40407 6.5 8.40407C5.36091 8.40407 4.4375 7.5 4.4375 6.38478C4.4375 5.26955 5.36091 4.36549 6.5 4.36549C7.63909 4.36549 8.5625 5.26955 8.5625 6.38478Z" stroke="#00AD2F" stroke-width="0.842105" stroke-linecap="round" stroke-linejoin="bevel" />
+                                                </svg>
+                                                <p class="mb-0 ms-2 fs-6 c-gray">FIL - Feira Internacional de Lisboa </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                                    </div>
+                    </div>
+    </div>
+
+ 
+    <!--Related posts ids-->
+    
+
+    <div class="container-fluid container-fluid-call container-fluid-call pt-5 light-blue">
+
+        <div class="container container-call call-container">
+
+            <!--Section Title-->
+                            <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-5">
+                            <h2 class="text-uppercase c-dark-green fs-4" style="font-weight: 900;">Descubra</h2>
+                        </div>
+                    </div>
+                </div>
+                        <!--Row destaque-->
+                            <div class="row list-posts">
+
+                    <!--Row lista-->
+                    
+                        
+                        <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                            <div class="inner-post post-list" style="height: 100%;">
+                                <div class="inner-radius overflow-hidden" style="height: 100%;">
+                                    <div class="thumbnail">
+                                                                                    <a href="https://www.unl.pt/bandua/" ><img src="https://www.unl.pt/wp-content/uploads/2025/10/Bandua-miniatura-03.png" alt="BANDUA"></a>
+                                                                            </div>
+                                    <div class="content-box p-3" style="height: 100%;">
+                                        <h2 style="line-height: .8;" class="mb-4">
+                                                                                            <a class="c-black post-list-title fw-bold fs-6 text-decoration-none" href="https://www.unl.pt/bandua/" >BANDUA</a>
+                                                                                    </h2>
+
+                                        <p>Programa que visa reforçar o bem-estar de toda a comunidade académica. Enquadrado no Programa Nacional de Promoção da Saúde Mental no Ensino Superior, é desenvolvido pela plataforma NOVA Saúde.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                            <div class="inner-post post-list" style="height: 100%;">
+                                <div class="inner-radius overflow-hidden" style="height: 100%;">
+                                    <div class="thumbnail">
+                                                                                    <a href="https://www.unl.pt/inovacao/inovacao-socioterritorial/alojamento-estudantil/" ><img src="https://www.unl.pt/wp-content/uploads/2025/10/REDE-14-noticia-scaled.png" alt="Alojamento Estudantil"></a>
+                                                                            </div>
+                                    <div class="content-box p-3" style="height: 100%;">
+                                        <h2 style="line-height: .8;" class="mb-4">
+                                                                                            <a class="c-black post-list-title fw-bold fs-6 text-decoration-none" href="https://www.unl.pt/inovacao/inovacao-socioterritorial/alojamento-estudantil/" >Alojamento Estudantil</a>
+                                                                                    </h2>
+
+                                        A Rede 1/4 é uma iniciativa sem fins lucrativos que junta quem tem quartos disponíveis com quem precisa de um para viver e estudar.                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                            <div class="inner-post post-list" style="height: 100%;">
+                                <div class="inner-radius overflow-hidden" style="height: 100%;">
+                                    <div class="thumbnail">
+                                                                                    <a href="https://www.unl.pt/noticias/nova/conheca-aqui-o-pulsar/" ><img src="https://www.unl.pt/wp-content/uploads/2026/02/Pulsar_Artboard-1-copy-2-scaled-e1770729484623.jpg" alt="Conheça aqui o PULSAR"></a>
+                                                                            </div>
+                                    <div class="content-box p-3" style="height: 100%;">
+                                        <h2 style="line-height: .8;" class="mb-4">
+                                                                                            <a class="c-black post-list-title fw-bold fs-6 text-decoration-none" href="https://www.unl.pt/noticias/nova/conheca-aqui-o-pulsar/" >Conheça aqui o PULSAR</a>
+                                                                                    </h2>
+
+                                        PULSAR é um ciclo permanente de conferências, fóruns públicos e iniciativas editoriais da Universidade NOVA de Lisboa, dedicado à reflexão e à intervenção participativa sobre o papel da universidade nas grandes questões contemporâneas.                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="col-12 col-md-6 col-xl-3 col-list mb-4">
+                            <div class="inner-post post-list" style="height: 100%;">
+                                <div class="inner-radius overflow-hidden" style="height: 100%;">
+                                    <div class="thumbnail">
+                                                                                    <a href="https://eutopia-university.eu/" target="_blank"><img src="https://www.unl.pt/wp-content/uploads/2025/04/formatos_Eutopia_miniatura_copy_2.png" alt="EUTOPIA"></a>
+                                                                            </div>
+                                    <div class="content-box p-3" style="height: 100%;">
+                                        <h2 style="line-height: .8;" class="mb-4">
+                                                                                            <a class="c-black post-list-title fw-bold fs-6 text-decoration-none" href="https://eutopia-university.eu/" target="_blank">EUTOPIA</a>
+                                                                                    </h2>
+
+                                        <p>A EUTOPIA é uma aliança de dez universidades europeias que partilham valores e agendas comuns, e que agem conjuntamente no sentido de criar uma grande comunidade diversa e inclusiva.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+ 
+<div class=" container-fluid container-fluid-col container-fluid-col pb-5">
+    <div class="container container-col col-container">
+        
+        <!--Call to Actions Repeater-->
+                    <div class="row col-repeater">
+                                    <!--Variables-->
+                                        <!-- <div class="col-12 col-sm-6 col-xl-auto py-4 px-5" > -->
+                    <div id="numeros"  class="  template-numbers-random  col-12 col-md-6 mx-auto d-flex flex-wrap align-content-center col-xl-10 light  pt-4 pb-4" >
+                        
+                            <!--Type Text-->
+                            
+                                                                                                                                    
+                                                                    <div class="row row-title w-100">
+                                        <div class="section-title mb-5 col-12">
+                                            <h3 class="text-uppercase fs-4 " style="font-weight: 900;">Números</h3>
+                                        </div>
+                                    </div>
+                                
+                                <div class="row numbers justify-content-between w-100 random">
+                                    <!-- <div class="col-12"><hr></div> -->
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-1" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number " akhi="52">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Anos de história</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-2" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="1803">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Docentes e Investigadores</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-3" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="12">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Laboratórios Colaborativos</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-4" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="272">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Ciclos de Estudo acreditados</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-5" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="5620">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Estudantes estrangeiros</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-6" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="4950">0</span><span class="s-symbol">+</span></div>
+                                                <div class="numbers-description">Estudantes com formação em empreendedorismo por ano</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-7" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="47">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Licenciaturas  <br/> <strong>+1</strong> Mestrado Integrado</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-8" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="149">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Mestrados</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-9" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="75">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Doutoramentos</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-10" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="282">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Docentes e investigadores estrangeiros</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-11" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="3626">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Publicações em 2024</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-12" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="318">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Start-ups</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-13" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number " akhi="4107">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Candidaturas em 1ª opção</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-14" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number " akhi="7559">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Diplomados</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-15" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number " akhi="1095">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Parcerias de mobilidade</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-16" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="12">0</span><span class="s-symbol">+</span></div>
+                                                <div class="numbers-description">Laboratórios Colaborativos</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-17" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number " akhi="9">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Escolas</div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-18" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="53">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Edifícios </div>
+                                            
+                                        </div>
+
+                                    
+                                        <!--Variables-->
+                                        
+
+                                                                                <!-- <div class="col-6 col-md-3"> -->
+                                                                                <div id="number-col-19" class="col-12 col-sm-6 mb-4 col-md-3 col-number-random col-number">
+                                        <!-- <div id="number-col-" class="col-12 col-sm-6 mb-4 col-number"> -->
+                                            
+                                                                                            <div class="number d-inline-flex align-items-center"><span class="s-number  order-2" akhi="1">0</span><span class="s-symbol"></span></div>
+                                                <div class="numbers-description">Campus no Cairo </div>
+                                            
+                                        </div>
+
+                                                                    </div>
+
+
+                                <!--Type Relation-->
+                            
+                                                                </div>
+                                                </div>
+                
+
+            </div>
+    </div>
+</main><!-- #main -->
+
+<script>
+  AOS.init();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js' crossorigin defer></script>
+<!-- Accessibility Code for "www.unl.pt" -->
+<script>
+/*
+Want to customize your button? visit our documentation page:
+https://login.equalweb.com/custom-button
+*/
+window.interdeal = {
+    get sitekey (){ return "5697ad2611bf705567ffb9a7ff31592b"} ,
+    get domains(){
+        return {
+            "js": "https://cdn.equalweb.com/",
+            "acc": "https://access.equalweb.com/"
+        }
+    },
+    "Position": "left",
+    "Menulang": "PT-PT",
+    "draggable": true,
+    "btnStyle": {
+        "vPosition": [
+            "50%",
+            "20"
+        ],
+        "margin": [
+            "0",
+            "0"
+        ],
+        "scale": [
+            "0.5",
+            "0.5"
+        ],
+        "color": {
+            "main": "#2e850f",
+            "second": "#ffffff"
+        },
+        "icon": {
+            "outline": false,
+            "outlineColor": "#ffffff",
+            "type":  1 ,
+            "shape": "circle"
+        }
+    },
+                                  
+};
+
+(function(doc, head, body){
+    var coreCall             = doc.createElement('script');
+    coreCall.src             = interdeal.domains.js + 'core/5.2.0/accessibility.js';
+    coreCall.defer           = true;
+    coreCall.integrity       = 'sha512-fHF4rKIzByr1XeM6stpnVdiHrJUOZsKN2/Pm0jikdTQ9uZddgq15F92kUptMnyYmjIVNKeMIa67HRFnBNTOXsQ==';
+    coreCall.crossOrigin     = 'anonymous';
+    coreCall.setAttribute('data-cfasync', true );
+    body? body.appendChild(coreCall) : head.appendChild(coreCall);
+})(document, document.head, document.body);
+</script>
+
+<footer id="colophon" class="site-footer container-fluid bg-black text-light">
+	<div class="row px-2 px-md-5 py-5">
+					<div class="col-12 col-xl-3 mb-4">
+				<p><img loading="lazy" decoding="async" class="alignnone wp-image-26 size-full" src="https://www.unl.pt/wp-content/uploads/2023/09/Group-39.svg" alt="" width="110" height="107" /></p>
+<p>Campus de Campolide<br />
+1099-085 Lisboa</p>
+<p><a href="https://goo.gl/maps/CpFCdQDquVeTMath9" target="_blank" rel="noopener">Google Maps</a></p>
+<p>Tel.: +351 213 715 600<br />
+Fax.: +351 213 715 614<br />
+E-mail: <a href="mailto:reitoria@unl.pt">reitoria@unl.pt</a></p>
+<div class="d-inline-flex"><a class="m-2 ms-0 d-block" href="https://www.facebook.com/UniversidadeNOVAdeLisboa" target="_blank" rel="noopener"><img decoding="async" class="alignnone size-full wp-image-11892" src="https://www.unl.pt/wp-content/uploads/2024/06/nova-fb.svg" alt="" /></a><br />
+<a class="m-2 d-block" href="https://x.com/i/flow/login?redirect_after_login=%2FNovaUnl" target="_blank" rel="noopener"><img decoding="async" class="alignnone size-full wp-image-11888" src="https://www.unl.pt/wp-content/uploads/2024/06/nova-x.svg" alt="" /></a><br />
+<a class="m-2 d-block" href="https://www.instagram.com/universidade_nova_lisboa/" target="_blank" rel="noopener"><img decoding="async" class="alignnone size-full wp-image-11891" src="https://www.unl.pt/wp-content/uploads/2024/06/nova-instagram.svg" alt="" /></a><br />
+<a class="m-2 d-block" href="https://www.youtube.com/user/unlnovatv" target="_blank" rel="noopener"><img decoding="async" class="alignnone size-full wp-image-11890" src="https://www.unl.pt/wp-content/uploads/2024/06/nova-youtube.svg" alt="" /></a><br />
+<a class="m-2 d-block" href="https://www.linkedin.com/school/universidade-nova-de-lisboa/" target="_blank" rel="noopener"><img decoding="async" class="alignnone size-full wp-image-11889" src="https://www.unl.pt/wp-content/uploads/2024/06/nova-linkedin.svg" alt="" /></a><br />
+<a class="m-2 d-block" href="https://www.unl.pt/" target="_blank" rel="noopener"><img decoding="async" class="alignnone size-full wp-image-11889" src="https://www.unl.pt/wp-content/uploads/2024/06/nova-rss.svg" alt="" /></a></div>
+			</div>
+				<div class="col-12 col-xl-9 mb-4">
+			<div class="menu-footer-menu-container"><ul id="footer-menu" class="menu"><li id="menu-item-2699" class="not-link menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2699"><a>Sobre</a>
+<ul class="sub-menu">
+	<li id="menu-item-12294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12294"><a href="https://www.unl.pt/sobre/missao-e-valores/">Igualdade e Inclusão</a></li>
+	<li id="menu-item-11785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11785"><a href="https://www.unl.pt/qualidade/">Portal NOVA SIMAQ</a></li>
+	<li id="menu-item-11786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11786"><a href="https://www.unl.pt/contactos/">Contactos</a></li>
+	<li id="menu-item-11787" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11787"><a target="_blank" href="/wp-content/uploads/2024/06/Manual-de-Identidade-NOVA_Dez_2020.pdf">Manual da Marca</a></li>
+	<li id="menu-item-11788" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11788"><a target="_blank" href="https://whistleblowersoftware.com/secure/canal_de_denuncia_UNL">Portal de Denúncias</a></li>
+	<li id="menu-item-28627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28627"><a href="https://www.unl.pt/documentos-de-gestao-e-legislacao/">Documentos de Gestão e Legislação</a></li>
+	<li id="menu-item-11783" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11783"><a href="https://www.unl.pt/politica-de-privacidade/">Política de Privacidade</a></li>
+</ul>
+</li>
+<li id="menu-item-2722" class="not-link menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2722"><a>Para</a>
+<ul class="sub-menu">
+	<li id="menu-item-11766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11766"><a href="https://www.unl.pt/atuais-estudantes/">Atuais Estudantes</a></li>
+	<li id="menu-item-11794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11794"><a href="https://www.unl.pt/docentes-investigadores/">Docentes e Investigadores</a></li>
+	<li id="menu-item-11793" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11793"><a href="https://www.unl.pt/nao-docentes/">Não Docentes Não Investigadores</a></li>
+</ul>
+</li>
+<li id="menu-item-11415" class="not-link not-label menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11415"><a>Outros</a>
+<ul class="sub-menu">
+	<li id="menu-item-11771" class="bg-gradient-green c-white py-2 px-3 radius-25 menu-item menu-item-type-post_type menu-item-object-page menu-item-11771"><a href="https://www.unl.pt/subscricao-de-newsletter/">SUBSCRIÇÃO DE NEWSLETTER</a></li>
+	<li id="menu-item-11836" class="bg-gradient-green c-white py-2 px-3 radius-25 menu-item menu-item-type-post_type menu-item-object-page menu-item-11836"><a href="https://www.unl.pt/quero-trabalhar-na-nova/">QUERO TRABALHAR NA NOVA</a></li>
+	<li id="menu-item-2772" class="bg-gradient-green c-white py-2 px-3 radius-25 menu-item menu-item-type-custom menu-item-object-custom menu-item-2772"><a href="/ensino/cursos/">QUERO ESTUDAR NA NOVA</a></li>
+</ul>
+</li>
+</ul></div>		</div>
+	</div>
+	<hr>
+	<div class="row px-2 px-md-5 py-3 justify-content-between footer-copy">
+		<div class="col-12 col-md-5"><p class="mb-3 mb-sm-0" style="font-size: .9rem; color: rgba(255,255,255,.5); ">Copyright ©  2026  - Universidade Nova de Lisboa - All rights reserved</p></div>
+		<div class="col-12 col-md-7 copy-menu mb-4 mb-md-0">
+			<div class="menu-copyright-menu-container"><ul id="copyright-menu" class="menu"><li id="menu-item-11652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11652"><a href="https://www.unl.pt/contactos/">Contactos Gerais</a></li>
+<li id="menu-item-11897" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11897"><a href="https://www.unl.pt/termos-de-utilizacao-e-politica-de-privacidade/">Termos e Condições</a></li>
+</ul></div>		</div>
+	</div>
+</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/unl\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script src="https://www.unl.pt/wp-content/themes/unl/js/navigation.js?ver=1.0.0" id="unl-navigation-js"></script>
+<script src="https://www.unl.pt/wp-content/themes/unl/js/flickity.pkgd.min.js?ver=1.0.0" id="flickity-js"></script>
+<script src="https://www.unl.pt/wp-content/themes/unl/js/jquery.equalheight.min.js?ver=1.0.0" id="equalheight-js"></script>
+<script src="https://www.unl.pt/wp-content/themes/unl/js/jquery.inview.min.js?ver=1.0.0" id="inview-js"></script>
+<script src="https://www.unl.pt/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script src="https://www.unl.pt/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.3" id="jquery-ui-mouse-js"></script>
+<script src="https://www.unl.pt/wp-includes/js/jquery/ui/sortable.min.js?ver=1.13.3" id="jquery-ui-sortable-js"></script>
+<script src="https://www.unl.pt/wp-content/themes/unl/js/js.js?ver=1.0.0" id="js-js"></script>
+<script src="https://www.unl.pt/wp-content/themes/unl/js/graficos.js?ver=1.0.0" id="graficos-js"></script>
+<script src="https://www.unl.pt/wp-content/themes/unl/js/calendar.js?ver=1.0.0" id="calendar-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js?ver=5.10.1" id="fullcalendar-js"></script>
+<script src="https://www.unl.pt/wp-content/themes/unl/js/calendar.js?ver=1.0" id="fullcalendar-init-js"></script>
+<script src="https://www.unl.pt/wp-content/plugins/easy-fancybox/vendor/purify.min.js?ver=6.8.3" id="fancybox-purify-js"></script>
+<script id="jquery-fancybox-js-extra">
+var efb_i18n = {"close":"Close","next":"Next","prev":"Previous","startSlideshow":"Start slideshow","toggleSize":"Toggle size"};
+</script>
+<script src="https://www.unl.pt/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.js?ver=6.8.3" id="jquery-fancybox-js"></script>
+<script id="jquery-fancybox-js-after">
+var fb_timeout, fb_opts={'autoScale':true,'showCloseButton':true,'width':560,'height':340,'margin':20,'pixelRatio':'false','padding':10,'centerOnScroll':false,'enableEscapeButton':true,'speedIn':300,'speedOut':300,'overlayShow':true,'hideOnOverlayClick':true,'overlayColor':'#000','overlayOpacity':0.6,'minViewportWidth':320,'minVpHeight':320,'disableCoreLightbox':'true','enableBlockControls':'true','fancybox_openBlockControls':'true' };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery([".nolightbox","a.wp-block-file__button","a.pin-it-button","a[href*='pinterest.com\/pin\/create']","a[href*='facebook.com\/share']","a[href*='twitter.com\/share']"].join(',')).addClass('nofancybox');
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+/* IMG */
+						var unlinkedImageBlocks=jQuery(".wp-block-image > img:not(.nofancybox,figure.nofancybox>img)");
+						unlinkedImageBlocks.wrap(function() {
+							var href = jQuery( this ).attr( "src" );
+							return "<a href='" + href + "'></a>";
+						});
+var fb_IMG_select=jQuery('a[href*=".jpg" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".jpg" i]:not(.nofancybox),a[href*=".png" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".png" i]:not(.nofancybox),a[href*=".webp" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".webp" i]:not(.nofancybox),a[href*=".jpeg" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".jpeg" i]:not(.nofancybox)');
+fb_IMG_select.addClass('fancybox image');
+var fb_IMG_sections=jQuery('.gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery,.ngg-galleryoverview,.ngg-imagebrowser,.nextgen_pro_blog_gallery,.nextgen_pro_film,.nextgen_pro_horizontal_filmstrip,.ngg-pro-masonry-wrapper,.ngg-pro-mosaic-container,.nextgen_pro_sidescroll,.nextgen_pro_slideshow,.nextgen_pro_thumbnail_grid,.tiled-gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,.fancybox>a').each(function(){jQuery(this).fancybox(jQuery.extend(true,{},fb_opts,{'transition':'elastic','transitionIn':'elastic','transitionOut':'elastic','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false,'mouseWheel':'true','changeSpeed':250,'changeFade':300}))});
+};};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+</script>
+<script src="https://www.unl.pt/wp-content/plugins/easy-fancybox/vendor/jquery.easing.min.js?ver=1.4.1" id="jquery-easing-js"></script>
+<script src="https://www.unl.pt/wp-includes/js/hoverIntent.min.js?ver=1.10.2" id="hoverIntent-js"></script>
+<script src="https://www.unl.pt/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=3.6.2" id="megamenu-js"></script>
+
+</body>
+
+</html>

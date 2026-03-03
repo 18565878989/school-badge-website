@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>お客様がアクセスしようとしたページがみつかりませんでした。</title>
+    <link href="/404/contents.css" rel="stylesheet" type="text/css" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="/assets/images/common/favicon.ico" />
+  </head>
+  <body>
+    <div id="logo">
+      <a href="https://kohitsujiyouchien.com/"><img src="/assets/images/common/logo-h.png" alt="こひつじ幼稚園" width="320" height="auto" /></a>
+    </div>
+    <h1>お客様がアクセスしようとしたページがみつかりませんでした。</h1>
+    <p>「こひつじ幼稚園」 ウェブサイトをご利用いただき、ありがとうございます。</p>
+    <p>お客様がアクセスしようとしたページは削除されたか、 もともと存在しないアドレスである可能性が考えられます。</p>
+    <p>ブラウザの「更新」「再度読み込み」などのボタンを使用して再度ページの読み込みを行っても、このページが表示される場合は、お手数ですが次のいずれかの方法でお求めのページをお探しください。</p>
+    <ul>
+      <li>サイト内の情報を一覧できる<a href="https://kohitsujiyouchien.com/sitemap/">サイトマップ</a>をご覧ください</li>
+      <li>「こひつじ幼稚園」の<a href="/index.php">トップページ</a>より、お探しください</li>
+      <li>ブラウザに表示されているアドレスを再度ご確認ください</li>
+    </ul>
+    <div id="foot">
+      <a href="/index.php">トップページへ戻る</a>
+    </div>
+  </body>
+</html>

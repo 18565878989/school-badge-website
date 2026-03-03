@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ESF Kowloon Junior School | IB School PYP | ESF Hong Kong</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="description" content="ESF Kowloon Junior School offers an inspiring learning environment. Our IB PYP curriculum fosters inquiry, preparing students for secondary school." />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="ESF Kowloon Junior School,International School Hong Kong, English Schools Foundation,IB School Hong Kong" />
+<meta property="og:description" content="ESF Kowloon Junior School offers an inspiring learning environment. Our IB PYP curriculum fosters inquiry, preparing students for secondary school." />
+<meta property="og:image" content="http://kjs.esf.edu.hk/cache/img/2ce1d4cfaa321dd15de347b264d4e320.jpg" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:secure_url" content="https://kjs.esf.edu.hk/cache/img/2ce1d4cfaa321dd15de347b264d4e320.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta name="viewport" content="width=device-width" />
+	<link rel="canonical" href="https://kjs.esf.edu.hk/en/" /> 
+				<link rel="alternate" href="/zh/" hreflang="zh-hk" />
+				<link rel="shortcut icon" href="/img/favicon.png" />
+	<link rel="apple-touch-icon" href="/img/iphone-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="/img/iphone-icon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/css/editor.css" />
+	<link rel="stylesheet" type="text/css" href="/en/cache/css/068e798cbe5b2125d895c477c1461619.css" />
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/jquery-migrate.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/jquery.Slider.js"></script>
+	<script type="text/javascript" src="/js/jquery.slideSubmit.js"></script>
+	<script type="text/javascript" src="/js/jquery.table.js"></script>
+	<script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="/js/validator.class.js"></script>
+	<script type="text/javascript" src="/en/cache/js/lang.js"></script>
+	<script type="text/javascript" src="/js/function.js"></script>
+	<script type="text/javascript" src="/js/init.js"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="/js/html5izer_placeholder.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="/js/html5.js"></script>
+	<![endif]-->
+	<style>
+		.colour1,
+		a.colour1,
+		.editor a.colour1,
+		#content #history-page .years .year.current,
+		#content #history-page .years .year:hover,
+		#content #history-page .select-input,
+		#content .page-wrapper .page-container #data-list .data-item.open>.title,
+		#content #enquiry .form-container .row .checkbox-cotnainer .checkbox:after {
+			color: #33375b !important;
+		}
+		.colour2,
+		a.colour2,
+		.editor a.colour2,
+		#content section .tab-select .select-input,
+		#content #section3 .wrapper .tabs .tab.current,
+		#content #section3 .wrapper .tabs .tab:hover,
+		#content #section6 .wrapper .tabs .tab.current,
+		#content #section6 .wrapper .tabs .tab:hover,
+		#content #landing section.type3 .tabs .tab.current,
+		#content #landing section.type3 .tabs .tab:hover,
+		#content .page-wrapper #submenu ul li a:hover,
+		#content .page-wrapper .page-container #tabs .tab.current,
+		#content .page-wrapper .page-container #tabs .tab:hover,
+		#content .page-wrapper .page-container #tabs .select-input,
+		#content .page-wrapper .page-container .tab-select .select-input {
+			color: #131954 !important;
+		}
+		.colour3,
+		a.colour3,
+		.editor a.colour3 {
+			color: #bbc2db !important;
+		}
+		.colour4,
+		a.colour4,
+		.editor a.colour4 {
+			color: #efe3c6 !important;
+		}
+		.bg-colour1,
+		.editor ul.colour1 li:before,
+		.editor ol.colour1 li:before,
+		.pager a.selected,
+		.pager a:hover,
+		#content #enquiry .form-container .row .radio-container2 .radio.checked,
+		#content #enquiry .form-container .row .radio-container2 .radio:after,
+		#content #enquiry .form-container .row .radio-container .radio:after,
+		#content #sitemap li:before {
+			background-color: #33375b !important;
+		}
+		.bg-colour2,
+		.editor ul.colour2 li:before,
+		.editor ol.colour2 li:before,
+		#floating a[href]:hover {
+			background-color: #131954 !important;
+		}
+		.bg-colour3 {
+			background-color: #bbc2db !important;
+		}
+		.bg-colour4 {
+			background-color: #efe3c6 !important;
+		}
+		.br-colour1,
+		#content #section7 .record-slider .slider-container .post:hover {
+			border-color: #33375b !important;
+		}
+		.br-colour2 {
+			border-color: #131954 !important;
+		}
+		.br-colour3 {
+			border-color: #bbc2db !important;
+		}
+		.br-colour4 {
+			border-color: #efe3c6 !important;
+		}
+	</style>
+	<script type="text/javascript">
+											if(window.location.protocol.toLowerCase().indexOf('https:') == -1)
+											{
+												window.location.href = 'https://'+ window.location.host + window.location.pathname;
+											}
+									     </script>	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FLST8TZZ5T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FLST8TZZ5T');
+</script></head>
+<body>
+	<header>
+		<div class="container">
+			<a href="/en/" class="logo">
+				<img src="/cache/img/d804fc76bf133b5be28d672c97de3364.png" alt="ESF Kowloon Junior School" loading="lazy" height="180" />			</a>
+			<div class="menu-container">
+				<div class="top-container">
+					<nav class="lang">
+						<ul>
+							<li><a href="/zh/">繁體</a></li>						</ul>
+					</nav>
+					<div class="divider"></div>
+					<a href="/en/" class="home"></a>
+					<div class="search">
+						<button></button>
+						<div class="search-container">
+							<form action="/en/search/">
+								<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />								<button type="submit"></button>							</form>
+							<button class="close"></button>
+						</div>
+					</div>
+										<div class="search-responsive">
+						<form action="/en/search/">
+							<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />							<button type="submit"></button>						</form>
+					</div>
+										<div class="divider"></div>
+									 							<a href="https://kjs.esf.edu.hk/parent/" target="_blank" class="alt-btn">Students & Parents</a>
+				 										 		<a href="https://kjs.esf.edu.hk/en/visit_us" class="btn">Visit Us</a>
+									</div>
+				<div class="bottom-container">
+					<nav class="menu">
+						<ul>
+																						<li>
+									<a href="/en/about_us/">About Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/about_us/">About Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/about_us/marketing_family/">ESF Family</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/principals_welcome/">Principal's Welcome</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/what_we_stand_for/">What We Stand For</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/school_history/">School History</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/campus_find_us/">Campus & Find Us</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_education/">Outstanding Education</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_education/">Outstanding Education</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_education/our_approach/">Our Approach</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/curriculum/">Curriculum</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/student_support/">Student Support</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/student_wellbeing/">Student Wellbeing</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/parent_partnership/">Parent Partnership</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/specialist_provision/">Specialist Provision</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/sustainability/">Sustainability</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_experiences/extra_curricular_activities/">Extra Curricular Activities</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/residentialcamps/">Residential Camps</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/action_student_leadership/">Action & Student Leadership</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_people/">Outstanding People</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_people/">Outstanding People</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_people/leadership_team/">Leadership Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/our_team/">Our Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/parent_teacher_association/">Parent Teacher Association</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/school_council/">School Council</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/testimonials/">Testimonials</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/admissions/">Admissions</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/admissions/">Admissions</a>
+													</li>
+																																																			<li>
+															<a href="/en/admissions/school_tour/">School Tour</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/WorkWithUs/">Work With Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/WorkWithUs/">Work With Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/WorkWithUs/vacancies/">Job Vacancies</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+													</ul>
+					</nav>
+				</div>	
+			</div>
+			<button class="nav-btn"></button>
+		</div>
+	</header>
+	<section id="content">		
+		<script type="text/javascript">
+    var timeout = [];
+
+    $(window).load(function() {
+		let animate = function() {
+			let height = $(window).scrollTop() + Math.round($(window).height() * 0.6);
+			$('#content > section').each(function() {
+				if(!$(this).hasClass('animate') && height > $(this).offset().top)
+				{
+					$(this).addClass('animate');
+                    if($(this).attr('id') == 'section2') {
+						$('li > div', '#section2').each(function(index) {
+							let item = $(this);
+							setTimeout(function() {
+								item.addClass('animate');
+							}, index * 200);
+						});
+					}
+				}
+			});
+		};
+		$(window).on('scroll', animate);
+		animate();
+	});
+</script>
+<div id="banner">
+    <div class="banner-container">
+                                                <div class="banner-item">
+                    <div class="wrapper">
+                        <img src="/cache/img/a11c7ef11927d7062d19b53de5c5806e.png" alt="" loading="lazy" width="1904" height="1200" class="trans" />                        <video id="video" width="1904" height="1200" preload="none" playsinline webkit-playsinline muted loop>
+                            <source src="/upload/banner/2/banner/677dcb84ed558.mp4" type="video/mp4">
+                        </video>
+                        <div class="mask"></div>
+                        <div class="container">
+                            <button class="play"></button>
+                        </div>
+                    </div>
+                                    </div>
+                        </div>
+    <div class="container">
+                <div class="scroll-icon"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let pager_click = false;
+
+            $('#banner').Slider({
+                slides: '.banner-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true,
+                pager: '.banner-pager',
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    $.each(timeout, function(index, value) {
+                        clearTimeout(value);
+                    });
+                    let videos = $('video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    $('button', slider).removeClass('play').addClass('pause');
+                    if($('.slider.current video', slider).length) {
+                                                        video = document.querySelector('#banner .slider.current video');
+                                video.play();
+                                            }
+                    else if(!pager_click) {
+                        timeout = setTimeout(function() {
+                            slider.Slider('next');
+                        }, 5000);
+                    }
+                },
+                afterResize: function(slider, slides, current_page, total_page) {
+                    if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                                            let videos = $('video', slider);
+                        videos.each(function(i, video) {
+                            video.addEventListener('ended', videoEnd, false);
+                        });
+                        if($('.slider.current video', slider).length) {
+                                                                video = document.querySelector('#banner .slider.current video');
+                                    video.play();
+                                    $('.slider.current button', slider).removeClass('play').addClass('pause');
+                                                    }
+                        else {
+                            timeout = setTimeout(function() {
+                                slider.Slider('next');
+                            }, 5000);
+                        }
+                                        if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                }
+            });
+            
+            $('.banner-item video', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                let button = $(this).parent().find('button');
+                if(button.hasClass('pause')) {
+                    video.pause();
+                    button.removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    button.removeClass('play').addClass('pause');
+                }
+            });
+            $('.banner-item button', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                if($(this).hasClass('pause')) {
+                    video.pause();
+                    $(this).removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    $(this).removeClass('play').addClass('pause');
+                }
+            });
+
+            $('body').on('click', '#banner .banner-pager a', function() {
+                pager_click = true;
+            });
+
+            function videoEnd(e) {
+                if(!pager_click) {
+                    $('#banner').Slider('next');
+                }
+                else {
+                    $('#banner .slider.current button').removeClass('pause').addClass('play');
+                }
+            }
+        });
+    </script>
+</div>
+<section id="section1">
+    <div class="container">
+                    <div class="left">
+                <article class="editor"><h3 class="homepage-title"><span style="font-size: 56px;"><em><span style="color: #34495e;"><strong>"Success For Every Child"</strong></span></em></span></h3>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-weight: 400;">Our mission is to provide a joyful, supportive and stimulating learning environment where successful learners achieve through a wide range of learning opportunities and have positive wellbeing.</span></p>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour1"><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://kjs.esf.edu.hk/en/about_us/what_we_stand_for/">Discover Our Vision</a></span></p>
+<p>&nbsp;</p></article>
+            </div>
+                            <div class="right">
+                <article class="editor"><p>&nbsp;</p>
+<p><span style="font-weight: 400;"><img class="round-border" src="https://kjs.esf.edu.hk/upload/page/35/self/672c66690a675.jpg" alt="" width="694" height="462" /></span></p></article>
+            </div>
+                            <div class="responsive">
+                <article class="editor"><h3 class="homepage-title"><span style="font-size: 56px;"><em><span style="color: #34495e;"><strong>"Success For Every Child"</strong></span></em></span></h3>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Our mission is to provide a joyful, supportive and stimulating learning environment where successful learners achieve through a wide range of learning opportunities and have positive wellbeing.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;"><img class="round-border" src="https://kjs.esf.edu.hk/upload/page/35/self/672c66690a675.jpg" alt="" width="693" height="461" /></span></p>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour2"><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://kjs.esf.edu.hk/en/about_us/what_we_stand_for/">Discover Our Vision</a></span></p>
+<p>&nbsp;</p></article>
+            </div>
+            </div>
+</section>
+<section id="section2">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What can Kowloon Junior School offer your family?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="wrapper bg-colour2">
+        <div class="container">
+            <ul>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/ae731b9a6a7568d0ad9cacf4b9f21310.png" alt="ESF_Logomark_BW_RGB" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">ESF Network</h3>
+                            <div class="overlay bg-colour1">
+                                <p>As part of the English Schools Foundation(ESF), our students are supported by the largest English-medium international school organisation in Hong Kong, providing them the resources and opportunities not found outside of ESF Schools.</p>
+                                                                    <a  href="https://kjs.esf.edu.hk/en/about_us/marketing_family/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/65d27cdd0c97f2956decb2338b2d61c3.png" alt="Strong School-Family Connection" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Strong School-Family Connection</h3>
+                            <div class="overlay bg-colour1">
+                                <p>We believe in fostering a strong partnership between schools and families.</p>
+                                                                    <a  href="https://kjs.esf.edu.hk/en/outstanding_education/parent_partnership/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/45e336d06c4c9c81a2cc7f1465ef972a.png" alt="Comprehensive Student Support" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Comprehensive Student Support</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our schools offer comprehensive support systems, including personalised guidance, pastoral care, and counselling services, to help students thrive academically, emotionally, and socially.</p>
+                                                                    <a  href="https://kjs.esf.edu.hk/en/outstanding_education/student_support/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/611db28e3c7f0971780cba7a772abb86.png" alt="Well-rounded Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Well-rounded Education</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Alongside academic excellence, our well-rounded education cultivates talents, interests, and character through diverse co-curricular activities in sports, arts, music, and community service.</p>
+                                                                    <a  href="https://kjs.esf.edu.hk/en/outstanding_education/our_approach/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/caa99d79f7b5abe6e3f8d68f565892d5.png" alt="Real-world Experience" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Student Agency and Action</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Nurturing student agency and action empowers learners to take ownership, apply knowledge, and become agents of positive change in their communities.</p>
+                                                                    <a  href="https://kjs.esf.edu.hk/en/outstanding_experiences/action_student_leadership/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/6f534ca374045b8d4a16dce7d3e9a49a.png" alt="World-class Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Student Well-Being</h3>
+                            <div class="overlay bg-colour1">
+                                <p>We foster students' social-emotional learning through assemblies, classroom integration, and cultivating respectful school relationships - empowering well-being and academic achievement.</p>
+                                                                    <a  href="https://kjs.esf.edu.hk/en/outstanding_education/student_wellbeing/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('h3', '#section2').each(function() {
+                let img = $(this).parent().children('img');
+                if(img.length) {
+                    $(this).css('top', img.offset().top + img.height() + 25 - $(this).parent().offset().top);
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section3">
+    <img src="/cache/img/d77e934da77bf6c60e8374fb0d8d736b.png" alt="PYP (1) copy" loading="lazy" width="1722" height="1294" />    <div class="wrapper">
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Primary Years Programme (PYP)</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="tabs">
+                            <button class="tab current" data-id="1"></button>
+                    </div>
+                            <div class="tab-content current" data-id="1">
+                                <article class="editor"><p><span style="font-weight: 400;">Kowloon Junior School is an IB World School committed to educating open-minded seekers, supporting individual student needs, and developing the whole child's skills, attitudes, and global perspectives. The IB curriculum emphasises transdisciplinary learning, research, communication, and critical thinking to foster respect, responsibility, and meaningful action.</span></p></article>
+                                    <a href="https://kjs.esf.edu.hk/en/outstanding_education/curriculum/">
+                        <span>Find out more</span>
+                    </a>
+                            </div>
+                <script type="text/javascript">
+            $(document).ready(function() {
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+
+                $('.tab', '#section3').click(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $(this).addClass('current');
+                    $('.tab-content[data-id=' + $(this).data('id') + ']', '#section3').addClass('current');
+                    $('select', '#section3').val($(this).data('id')).selectbox('refresh');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+
+                $('.tab-select', '#section3').change(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $('.tab[data-id=' + $(this).val() + ']').addClass('current');
+                    $('.tab-content[data-id=' + $(this).val() + ']', '#section3').addClass('current');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+            });
+        </script>
+    </div>
+</section>
+<section id="section4" data-total="4">
+    <div class="container">
+        <div class="bg bg-colour4"></div>
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">KJS Experience</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="record-slider">
+            <div class="slider-container">
+                                    <div class="record-item">
+                        <img src="/cache/img/9cf760ffb5700b0cfe91056c2cb665f0.jpg" alt="Z62_0803" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Student Council</span>
+                            </h3>
+                            <p>The Student Council at Kowloon Junior  School serves as a vital platform for student leadership development. This inclusive opportunity provides students with opportunities to engage in meaningful discussions, express their perspectives, and contribute to the enhancement of our school community.</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_experiences/action_student_leadership/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/b97cc59e01f6466d30710f8cc6fa4cac.jpg" alt="NDC_0781" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Sports</span>
+                            </h3>
+                            <p>Our vibrant sports programme offers a gateway to unleashing the champion within every student. From football to basketball, netball to swimming, we provide a diverse range of sports to ignite their passion and nurture their skills.</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_education/specialist_provision/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/c5736aad291da839ea728a25a46d45eb.jpg" alt="Residential Camps" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Residential Camps</span>
+                            </h3>
+                            <p>Students will engage in a wide range of activities, like kayaking, coasteering, gorge trekking, hiking, raft building etc</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_experiences/residentialcamps/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/9243bc549c5e3060154a0e697a2e8a43.jpg" alt="Arts copy" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Arts</span>
+                            </h3>
+                            <p>KJS students can explore the captivating world of expressive and visual arts. Imagination is ignited as our students embark on transformative journeys, discovering the power of self-expression through various artistic mediums.</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_education/specialist_provision/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/9cf760ffb5700b0cfe91056c2cb665f0.jpg" alt="Z62_0803" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Student Council</span>
+                            </h3>
+                            <p>The Student Council at Kowloon Junior  School serves as a vital platform for student leadership development. This inclusive opportunity provides students with opportunities to engage in meaningful discussions, express their perspectives, and contribute to the enhancement of our school community.</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_experiences/action_student_leadership/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/b97cc59e01f6466d30710f8cc6fa4cac.jpg" alt="NDC_0781" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Sports</span>
+                            </h3>
+                            <p>Our vibrant sports programme offers a gateway to unleashing the champion within every student. From football to basketball, netball to swimming, we provide a diverse range of sports to ignite their passion and nurture their skills.</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_education/specialist_provision/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/c5736aad291da839ea728a25a46d45eb.jpg" alt="Residential Camps" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Residential Camps</span>
+                            </h3>
+                            <p>Students will engage in a wide range of activities, like kayaking, coasteering, gorge trekking, hiking, raft building etc</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_experiences/residentialcamps/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/9243bc549c5e3060154a0e697a2e8a43.jpg" alt="Arts copy" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Arts</span>
+                            </h3>
+                            <p>KJS students can explore the captivating world of expressive and visual arts. Imagination is ignited as our students embark on transformative journeys, discovering the power of self-expression through various artistic mediums.</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_education/specialist_provision/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/9cf760ffb5700b0cfe91056c2cb665f0.jpg" alt="Z62_0803" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Student Council</span>
+                            </h3>
+                            <p>The Student Council at Kowloon Junior  School serves as a vital platform for student leadership development. This inclusive opportunity provides students with opportunities to engage in meaningful discussions, express their perspectives, and contribute to the enhancement of our school community.</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_experiences/action_student_leadership/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/b97cc59e01f6466d30710f8cc6fa4cac.jpg" alt="NDC_0781" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Sports</span>
+                            </h3>
+                            <p>Our vibrant sports programme offers a gateway to unleashing the champion within every student. From football to basketball, netball to swimming, we provide a diverse range of sports to ignite their passion and nurture their skills.</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_education/specialist_provision/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/c5736aad291da839ea728a25a46d45eb.jpg" alt="Residential Camps" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Residential Camps</span>
+                            </h3>
+                            <p>Students will engage in a wide range of activities, like kayaking, coasteering, gorge trekking, hiking, raft building etc</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_experiences/residentialcamps/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/9243bc549c5e3060154a0e697a2e8a43.jpg" alt="Arts copy" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Arts</span>
+                            </h3>
+                            <p>KJS students can explore the captivating world of expressive and visual arts. Imagination is ignited as our students embark on transformative journeys, discovering the power of self-expression through various artistic mediums.</p>
+                                                            <a href="https://kjs.esf.edu.hk/en/outstanding_education/specialist_provision/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                            </div>
+            <div class="btns">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section4').data('total'));
+            let slider_loop = ori_total >= 3 ? true : false;
+            $('#section4').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total * 2);
+                    }
+                    else {
+                        slider.Slider('jump', total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section6">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">Testimonials</h2>
+            <span class="bg-colour1"></span>
+        </div>
+        <div class="wrapper">
+            <div class="tabs">
+                                    <button class="tab current" data-id="1">Students</button>
+                                    <button class="tab" data-id="2">Parents</button>
+                                    <button class="tab" data-id="3">Alumni</button>
+                            </div>
+            <select class="tab-select" name="tab"><option value="1">Students</option><option value="2">Parents</option><option value="3">Alumni</option></select>                            <div class="tab-content current" data-id="1">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/2424c7a2839edc77c01dc71adbcc057b.png" alt="CHAN_Yau Ning_Y6" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I love KJS because it is a wonderful school that fosters a positive learning environment. Our teachers are incredibly supportive and always available to help us when we need it. I've noticed significant improvements in my learning, thanks to the engaging curriculum and collaborative atmosphere. Overall, KJS inspires me to reach my full potential every day!</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I love KJS because it is a wonderful school that fosters a positive learning environment. Our teachers are incredibly supportive and always available to help us when we need it. I've noticed significant improvements in my learning, thanks to the engaging curriculum and collaborative atmosphere. Overall, KJS inspires me to reach my full potential every day!</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Yau Yau - Year 6</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/b77086b3fb13ba5402552320ae26bb63.png" alt="JAIN_Fida_6AC" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I love KJS because it is a positive learning environment. Our teachers and staff are incredibly supportive and always there when you need help. KJS is a really fun place to learn. KJS inspires me everyday to be the best person I can be!</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I love KJS because it is a positive learning environment. Our teachers and staff are incredibly supportive and always there when you need help. KJS is a really fun place to learn. KJS inspires me everyday to be the best person I can be!</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Fida - Year 6</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/7e33aa1fcffb6ff5a72369a6b00fee5a.png" alt="Mishka - Year 6" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">KJS gives its students lots of opportunities to sign up for different after school activities and clubs to foster our interests. The teachers are amazing because they encourage us to experience and learn new things. KJS also respects my unique culture and makes me feel valued for who I am. I love being a student at KJS!</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">KJS gives its students lots of opportunities to sign up for different after school activities and clubs to foster our interests. The teachers are amazing because they encourage us to experience and learn new things. KJS also respects my unique culture and makes me feel valued for who I am. I love being a student at KJS!</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Mishka - Year 6</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="2">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/35360e56ff467308a9690961dac6cb40.jpg" alt="Anna" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">We couldn’t be happier with KJS! The school’s support for each child goes beyond academics—they truly care about the well-being and growth of every student. My kids have thrived here, building confidence and learning based on their own strengths. The teachers are incredible, using modern tools and methods, and the facilities are amazing; seeing what even Year 1 students have access to is impressive! With no homework, our kids still come out well-prepared, independent, and confident. We love the KJS community—it’s a safe, positive place where kids are nurtured to be their best. Highly recommended!</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">We couldn’t be happier with KJS! The school’s support for each child goes beyond academics—they truly care about the well-being and growth of every student. My kids have thrived here, building confidence and learning based on their own strengths. The teachers are incredible, using modern tools and methods, and the facilities are amazing; seeing what even Year 1 students have access to is impressive! With no homework, our kids still come out well-prepared, independent, and confident. We love the KJS community—it’s a safe, positive place where kids are nurtured to be their best. Highly recommended!</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Anna - Mother of Sasha, 2022 Graduate, and Slava, Y6 Student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="3">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/d1765565a26a5d2ec74089b73d41f541.png" alt="Bernita, Arabelle" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">ESF serves as a foundational pillar of our family's educational journey. My cousins and I take great pride in being graduates of ESF. Among us, Gladwin and Billy share a special bond with Arabelle, having attended KJS themselves, where they created countless cherished memories.<br><br> KJS and ESF have not only nurtured our growth but also inspired us to become well-rounded individuals. We were encouraged to explore our potentials and given opportunities to pursue our passions, eventually allowing us to grow up and make meaningful contributions to our society.<br><br> I hope Arabelle will carry forward this esteemed tradition, becoming both a contributor to and a beneficiary of the world class ESF educational experience.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">ESF serves as a foundational pillar of our family's educational journey. My cousins and I take great pride in being graduates of ESF. Among us, Gladwin and Billy share a special bond with Arabelle, having attended KJS themselves, where they created countless cherished memories.<br><br> KJS and ESF have not only nurtured our growth but also inspired us to become well-rounded individuals. We were encouraged to explore our potentials and given opportunities to pursue our passions, eventually allowing us to grow up and make meaningful contributions to our society.<br><br> I hope Arabelle will carry forward this esteemed tradition, becoming both a contributor to and a beneficiary of the world class ESF educational experience.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Billy– Medical Graduate, 2011 Graduate, Arabelle- Year 5 KJS student, Bernita- Hong Kong Qualified Lawyer, Gladwin- Registered Medical Practitioner, 2010 Graduate</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/8232a210652bcd9fbe338ca0e043c0c0.jpg" alt="Simon Garner, Nov 2024, Hong Kong Peak" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I would simply say that Kowloon Junior School definitely prepared me well for my secondary boarding school education in England, after leaving KJS at the age of 11 in 1965. Even after 60+ years, I still remember my KJS class teacher in 1963 – Ms. Fung – who had a very positive impact on me. It was wonderful to re-visit KJS again for the first time in 2024, almost 60 years since I “graduated” in 1965. Thank you, KJS.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I would simply say that Kowloon Junior School definitely prepared me well for my secondary boarding school education in England, after leaving KJS at the age of 11 in 1965. Even after 60+ years, I still remember my KJS class teacher in 1963 – Ms. Fung – who had a very positive impact on me. It was wonderful to re-visit KJS again for the first time in 2024, almost 60 years since I “graduated” in 1965. Thank you, KJS.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Simon- 1965 Graduate</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/c3d64fdccf680d412fae324ea1c280a9.png" alt="圖片 1" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Three KJS Alumni—Sunil, Anil, and Vishal—have maintained a lifelong friendship since graduating in 1995, supporting each other through various life paths. Their bond has transcended generations, as their sons, Jai, Sahil, and Aveer, now share the same enriching experiences at ESF Kowloon Junior School. These boys are not only building their own camaraderie but also embodying the values of friendship and loyalty instilled by their fathers. Their story is a testament to the lasting connections formed at KJS which continued through KGV showing how the relationships nurtured in school can shape future generations.<br><br>Thanks for the great times, then and now!</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Three KJS Alumni—Sunil, Anil, and Vishal—have maintained a lifelong friendship since graduating in 1995, supporting each other through various life paths. Their bond has transcended generations, as their sons, Jai, Sahil, and Aveer, now share the same enriching experiences at ESF Kowloon Junior School. These boys are not only building their own camaraderie but also embodying the values of friendship and loyalty instilled by their fathers. Their story is a testament to the lasting connections formed at KJS which continued through KGV showing how the relationships nurtured in school can shape future generations.<br><br>Thanks for the great times, then and now!</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Anil and Sahil Chandiramani, Sunil and Jai Detaramani and Vishal and Aveer Daswani.</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+            
+            $('.tab', '#section6').click(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $(this).addClass('current');
+                $('.tab-content[data-id=' + $(this).data('id') + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' + ($(this).index() + 1) + ')', '#section6').addClass('current');
+                chkContentHeight();
+            });
+
+            $('.tab-select', '#section6').change(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $('.tab[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-content[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' +  ($('.tab.current', '#section6').index() + 1) + ')', '#section6').addClass('current');
+                $('.select .select-container div', '#section6').show();
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+                chkContentHeight();
+            });
+
+            $('.record-slider', '#section6').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true
+            });
+
+            function chkContentHeight() {
+                $('p.description', '#section6').each(function() {
+                    if($(this).height() > 160) {
+                        $(this).parent().addClass('more');
+                    }
+                });
+            }
+            chkContentHeight();
+
+            $('.record-item article button.view-more', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-less').show();
+                $(this).parent().find('.description').hide();
+                $(this).parent().find('.content').show();
+            });
+            $('.record-item article button.view-less', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-more').show();
+                $(this).parent().find('.description').show();
+                $(this).parent().find('.content').hide();
+            });
+        });
+    </script>
+</section>
+	</section>
+	<footer>
+		<div class="top-container">
+			<div class="container">
+				<div class="up-container">
+											<a href="/en/" class="logo">
+							<img src="/cache/img/ebbbc3fdd6d5f32030dfdd7dbfd128ef.png" alt="ESF Kowloon Junior School-rw" loading="lazy" height="140" />						</a>
+														</div>
+				<div class="down-container">
+					<div class="left-container">
+													<a href="https://maps.app.goo.gl/nDPtEXxxvmwiWiwt7" target="_blank" rel="nofollow" class="map">
+								<img src="/cache/img/a7a221ddff38d80fd77c0258a2409300.png" alt="擷取" loading="lazy" width="714" height="536" />							</a>
+												<div class="contact">
+							<h2>Contact Information</h2>
+																								<a href="https://kjs.esf.edu.hk/en/admissions/contact_admissions/" class="tel">(+852) 3765 8700</a>
+																<div></div>
+														 							<a href="mailto:office@kjs.edu.hk" class="email">office@kjs.edu.hk</a>
+														 							<p class="address">20 Perth Street, Ho Man Tin, Hong Kong 香港九龍何文田巴富街20號</p>
+													</div>
+											</div>
+					<div class="right-container">
+												<nav class="menu2">
+							<ul>
+								<li>
+									<h2>Navigation</h2>
+								</li>
+																	<li>
+										<a href="https://kjs.esf.edu.hk/en/about_us/">About Us</a>
+									</li>
+																	<li>
+										<a href="https://kjs.esf.edu.hk/en/outstanding_education/">Outstanding Education</a>
+									</li>
+																	<li>
+										<a href="https://kjs.esf.edu.hk/en/outstanding_experiences/">Outstanding Experiences</a>
+									</li>
+																	<li>
+										<a href="https://kjs.esf.edu.hk/en/outstanding_people/">Outstanding People</a>
+									</li>
+																	<li>
+										<a href="https://kjs.esf.edu.hk/en/admissions/">Admissions</a>
+									</li>
+																	<li>
+										<a href="https://kjs.esf.edu.hk/en/WorkWithUs/">Work With Us</a>
+									</li>
+															</ul>
+						</nav>
+																		<nav class="menu3">
+							<ul>
+								<li>
+									<h2>Quick Links</h2>
+								</li>
+																	<li>
+										<a href="https://join-us.esf.edu.hk/" target="_blank" rel="nofollow">About ESF</a>
+									</li>
+																	<li>
+										<a href="https://www.esfexplore.org.hk/" target="_blank" rel="nofollow">ESF Explore</a>
+									</li>
+																	<li>
+										<a href="https://kjs.esf.edu.hk/upload/files/1/file/67bc2e991f071.pdf">School Calendar</a>
+									</li>
+															</ul>
+						</nav>
+											</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-container">			
+			<div class="container">
+				<div class="wrapper">
+					<p class="copyright">Copyright © English Schools Foundation. Powered by <a href="//www.anglia.com.hk" target="_blank">ANGLIA</a>.</p>
+					<a href="/en/sitemap/" class="sitemap">Sitemap</a>
+				</div>
+								<nav class="logo">
+			 		<ul>
+			 						 			<li>
+			 				<a href="https://www.ibo.org/" target="_blank" rel="nofollow">
+								<img src="/upload/files/1/logo4/660fd31d2b17e.png" height="131" />
+							</a>
+			 			</li>
+			 						 			<li>
+			 				<a href="https://tass-asia.org/tass-member-schools/" target="_blank" rel="nofollow">
+								<img src="/upload/files/1/logo4/678f0d0cbe869.png" height="131" />
+							</a>
+			 			</li>
+			 						 		</ul>
+			 	</nav>
+							</div>
+		</div>
+	</footer>
+	<button id="back-to-top"></button>
+			<div id="floating">
+							<a class="logo">
+					<img src="/cache/img/b5ac691841825f8849ba051986d754c7.png" alt="Kowloon-Junior" loading="lazy" width="62" height="53" />				</a>
+																				<a class="bg-colour1"  href="https://join-us.esf.edu.hk/admissions-primary-secondary/" target="_blank" rel="nofollow">
+													<img src="/upload/shortcut/1/icon/660fd9ba6ff5d.svg" width="60" height="60" />
+												<span>Apply</span>
+					</a>
+														<a class="bg-colour1"  href="https://kjs.esf.edu.hk/en/admissions/contact_admissions/">
+													<img src="/upload/shortcut/2/icon/660fd9ca7b6eb.svg" width="60" height="60" />
+												<span>Call</span>
+					</a>
+														<a class="bg-colour1"  href="https://kjs.esf.edu.hk/en/enquiry/?SchoolCode=KJS">
+													<img src="/upload/shortcut/3/icon/660fd9db298ad.svg" width="60" height="60" />
+												<span>Enquire</span>
+					</a>
+									</div>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#floating').addClass('animate');
+			});
+		</script>
+				<div id="accept-cookies">
+			<article class="editor"><p>Welcome and please be advised that ESF uses cookies. By accessing an ESF, ESL or PTA web site and other online ESF services, such as ESF&rsquo;s mobile app, users agree that ESF can store and access cookies, IP addresses and use other methods in order to collect website usage data, and improve user&rsquo;s online experience. By continuing to access this web site, users agree to the use of cookies, which is handled in accordance to the ESF Data Privacy Policy. Information collected via cookies is handled in accordance with the ESF Personal Data Handling Policy and its related Personal Information Collection Statements (&ldquo;PICS&rdquo;). A copy of the PICS can be found on the ESF web site.</p></article>
+			<div class="buttons">
+				<button type="" class="accept">Accept</button>			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('button', '#accept-cookies').click(function() {
+					$('#accept-cookies').remove();
+					$.ajax({
+						url: genurl('cookies', 'main'),
+						type: 'post',
+						data: {
+							accept: 'y'
+						},
+						success: function(response) {
+						},
+						async: false
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

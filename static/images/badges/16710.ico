@@ -1,0 +1,93 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/_res/_common/img/favicon.ico">
+
+        <title>Error</title>
+
+
+        <!-- CSS -->
+        <link href="/_res/_common/css/animate.css/animate.min.css" rel="stylesheet">
+        <link href="/_res/_common/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/_res/_common/css/meterial/app.meterial1.css" rel="stylesheet">
+        <link href="/_res/_common/css/meterial/app.meterial2.css" rel="stylesheet">
+	    	<link rel="stylesheet" href="/_res/_common/css/han-font.css">
+	    <link rel="stylesheet" href="/_res/_common/fonts/font-awesome/css/font-awesome.min.css" />
+		<script src="/_res/_common/js/jquery/jquery-latest.min.js"></script>
+		<style>
+			body {
+			  font-family: "nanumgothic", "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+			  min-height: 600px;
+			}
+
+		.msg { font-size: 14px; position: absolute;}
+		.four-zero h2 { font-size: 100px; }
+        .jini { font-size: 27px; position: absolute; right: 30px; bottom: 10px; }
+        .jini .sm { font-size: 14px; }
+        .four-zero small { margin-top:20px;  font-size: 16px; }
+		</style>
+    </head>
+
+    <body class="four-zero-content">
+        <div class="four-zero">
+            <h2>404</h2>
+            <small>페이지를 찾을 수 없습니다.</small>
+            <footer>
+
+				
+
+				
+					<a href="javascript:history.go(-1);" title="이전페이지로 이동"><i class="fa fa-arrow-left"></i></a>
+                
+
+
+                <a href="/index.do" title="메인페이지로 이동"><i class="fa fa-home"></i></a>
+            </footer>
+        </div>
+        <span class="jini">JiniWorks <span class="sm">Web contents management system</span></span>
+	</body>
+
+</html>
+

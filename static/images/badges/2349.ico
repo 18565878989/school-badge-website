@@ -1,0 +1,64 @@
+<html><body>
+		<h1>Server Error</h1>
+		<div>Array
+(
+    [code] => 404
+    [type] => CHttpException
+    [errorCode] => 0
+    [message] => Unable to resolve the request "favicon.ico".
+    [file] => /var/www/yii-1-1-21/framework/web/CWebApplication.php
+    [line] => 286
+    [trace] => #0 /var/www/yii-1-1-21/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii-1-1-21/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/ywca/index.php(14): CApplication->run()
+#3 {main}
+    [traces] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/yii-1-1-21/framework/web/CWebApplication.php
+                    [line] => 141
+                    [function] => runController
+                    [class] => CWebApplication
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => favicon.ico
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/yii-1-1-21/framework/base/CApplication.php
+                    [line] => 185
+                    [function] => processRequest
+                    [class] => CWebApplication
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/ywca/index.php
+                    [line] => 14
+                    [function] => run
+                    [class] => CApplication
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)
+</div>
+		<script type='text/javascript'>
+			//setTimeout(function(){ location.href='/'; }, 3000); //3 seconds
+		</script>
+		</body></html>

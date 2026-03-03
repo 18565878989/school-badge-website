@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#" lang="bg">
+<head>
+    <meta charset="utf-8" />
+    <title>Университет за национално и световно стопанство - Начало - УНСС</title>
+    <meta name="description" content="УНСС е университет №1 в България. Университетът за национално и световно стопанство (УНСС) е най-голямото и най-старото висше икономическо училище в България и Югоизточна Европа, с 90-годишна история. УНСС е призван да формира високообразовани личности, които да водят обществото към един по-съвършен и хуманен свят." />
+    <meta name="keywords" content="УНСС, UNWE, UNSS, икономика, администрация и управление, политически науки, социология, журналистика, медии, обществени комуникации и информационни науки, финанси, счетоводство, финансов контрол, приложна информатика, статистика, иконометрия, икономика и управление, английски език, право, инфраструктура, маркетинг, търговия, човешки ресурси, международни икономически отношения, бизнес администрация, интелектуална собственост, творчески индустрии, туризъм, логистика, предприемачество, Асистент,  Аула Максима, Бакалаври, Прием, Кандидатстване, Библиотека, Вестник на УНСС, Голяма Конферентна зала, Диплома, Дистанционно обучение, задочно обучение, Докторанти, Държавни изпити и защити, Единен Приемен Изпит (ЕПИ), Електронен ЕПИ, ЕлЕПИ, ЕПИ, ЕРАЗЪМ, Е-ресурси, Зала Тържествена, Записване, Издания на УНСС, Изпити, Изпитна сесия, Икономически и социални алтернативи, Интензивни езикови курсове ЕРАЗЪМ, Кандидатстване за общежития, Кандидат-студенти, Кандидатстудентска кампания, Каталог, Класиране, Класиране в общежития, Конгресен център УНСС, Конкурси за академични длъжности и научни степени, Конференция, Курсове, Курсове за дистанционно обучение, Магистри – дистанционно обучение, Магистри – редовно обучение, Малка Конферентна зала, Материална база, Международна дейност, Международни, Международни организации, Международни прояви, Новини, Междууниверситетски договори, Междууниверситетски център за развитие на кариерата, кариера, бизнес, Мобилност, Мобилност на студенти, Моята мобилност, Направления и специалности, Наука, Научна, Научна дейност, Научни издания, Научни институти и центрове, Научни конференции и прояви, Научни трудове, Научноизследователска Дейност, Нормативни документи, Образование, Обучение, Общежития, Общежития и столове, Обществени поръчки и търгове, Онлайн обучаваща система, Онлайн обучение, Планов прием, Полезни връзки, Почетни звания на УНСС, Правилник за прием, Предстоящи конкурси, Преподаване, Преподаватели, Преподавателска мобилност, Програма  JOSZEF, Програма CEEPUS, Програма ЕРАЗЪМ, Програмен съвет, Проекти, Професор, Професори, Разписание, Реализиране, Редовно и дистанционно обучение, Ректор, Ректорски съвет, Следдипломен, Следдипломна, Специалности, Специалности в ОКС „Магистър” – дистанционно обучение, Специалности в ОКС „Магистър” – редовно обучение, Спорт и отдих, Спортен комплекс „Бонсист”, Стипендии, Столове на УНСС, Структура, Студент, Студенти, Студенти в неравностойно положение, Студентска мобилност, Студентски организации, Студентски съвет, Студентско общежитие, Събития, Съвместни магистърски програми, Такси, Такси за обучение, Тест за икономисти, Тестови център, Треньори, Удостоени с почетни звания на УНСС, Уеб студент, Университет, Университетски, Университетски форум, УНСС форум, Условия за кандидатстване, Успехи, Учебен график, Учебен отдел, Учебно-оздравителна база „Равда”, Форми и организация, Форум, Център по интелектуална собственост, Членство в организации, Чуждестранни студенти" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=1.0">
+    <!--[if lt IE 9]>
+    <script>
+      var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+        "figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+        "progress,section,time,video").split(',');
+      for (var i = 0; i < e.length; i++) {
+        document.createElement(e[i]);
+      }
+    </script>
+    <![endif]-->
+    
+        <link href="https://common2.unwe.bg/wwwroot/css/site.min.css?t=20260302080914" rel="stylesheet" type="text/css" />
+    
+
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <style type="text/css">
+        .congratsblock {
+            padding: 24px 56px;
+            background-image: linear-gradient(#EEE59E,#E6D86E);
+            font-size: 18px;
+            color: #760e26;
+        }
+
+            .congratsblock a {
+                text-decoration: underline;
+            }
+
+            .congratsblock .fa-video-camera {
+                animation: wild 1s infinite;
+            }
+
+        .countdown-frame {
+            width: 320px;
+            height: 120px;
+            position: absolute;
+            top: 20px;
+            left: 120px;
+        }
+
+        @media (max-width: 1600px) {
+            .countdown-frame {
+                width: 320px;
+                height: 120px;
+                position: absolute;
+                top: 20px;
+                left: 40px;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .countdown-frame {
+                width: 320px;
+                height: 120px;
+                position: absolute;
+                top: 20px;
+                left: 60px;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .congratsblock {
+                padding: 12px 28px;
+            }
+
+                .congratsblock .btn-primary {
+                    white-space: normal;
+                }
+
+            .countdown-frame {
+                width: 100%;
+                height: 120px;
+                position: absolute;
+                top: 36px;
+                left: 0;
+            }
+        }
+    </style>
+        <link href="/Uploads/Main/Customization/_Main.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB8QF2ZZWH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HB8QF2ZZWH');
+    </script>
+    <link rel="alternate" type="application/rss+xml" title="УНСС - Новини" href="/bg/news/feed" />
+    <link rel="alternate" type="application/rss+xml" title="УНСС - Предстоящо" href="/bg/events/feed" />
+    <link rel="alternate" type="application/rss+xml" title="УНСС - Страници" href="/bg/pages/feed" />
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    
+        <link hreflang="en" href="https://www.unwe.bg/en/" rel="alternate" />
+        <meta property="og:locale" content="bg_BG" />
+        <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:title" content="Университет за национално и световно стопанство :: Икономика, Администрация и управление, Право, Обществени комуникации и информационни науки, Приложна информатика, комуникации и иконометрия, Политически науки, Социология" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Университет за национално и световно стопанство :: Икономика, Администрация и управление, Право, Обществени комуникации и информационни науки, Приложна информатика, комуникации и иконометрия, Политически науки, Социология" />
+    <meta property="og:description" content="УНСС е университет №1 в България. Университетът за национално и световно стопанство (УНСС) е най-голямото и най-старото висше икономическо училище в България и Югоизточна Европа, с 90-годишна история. УНСС е призван да формира високообразовани личности, които да водят обществото към един по-съвършен и хуманен свят." />
+<style type="text/css">
+    footer {
+        padding-bottom: 20px !important;
+    }
+
+    .btn-footer {
+        text-align: center;
+        color: #760e26;
+        font-weight: bold;
+        padding: 15px;
+        font-size: 16px;
+        position: relative;
+        top: 17px;
+    }
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <header>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-cheader">
+            <a class="navbar-brand" href="https://www.unwe.bg/bg/">
+                <picture>
+                    <source srcset="https://common2.unwe.bg//wwwroot/images/logo-long-bg.png" media="(min-width: 1240px)">
+                    <img srcset="https://common2.unwe.bg//wwwroot/images/logo-short-bg.png" alt="UNWE">
+                </picture>
+            </a>
+            <a href="/bg/search" class="smlink navbar-toggle" aria-label="Търсене"><i class="glyphicon glyphicon-search"></i></a>
+            <a href="/bg/home/contacts" class="smlink navbar-toggle contact-btn"><img src="https://common2.unwe.bg//wwwroot/images/icons/contact.png" alt="Контакти" /></a>
+            <a href="https://www.unwe.bg/en/" class="smlink navbar-toggle lang-btn" aria-label="Switch to English">EN</a>
+            <a href="#" class="smlink navbar-toggle menu-button" aria-label="Бързи връзки"><i class="glyphicon glyphicon-flash"></i></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Включване на навигация</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+        </div>
+            <div class="main-menu collapse navbar-collapse navbar-ex1-collapse scrollable">
+                <ul class="nav navbar-nav">
+                        <li>
+                            <a href="https://www.unwe.bg/bg/pages/12905/за-унсс.html"
+                               style="">За УНСС</a>
+                                <ul>
+                                        <li><a href="https://www.unwe.bg/bg/pages/11778/нашият-университет.html">Нашият Университет</a></li>
+                                        <li><a href="/bg/structure">Структура</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/14936/управление-на-качеството.html">Управление на качеството</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/82/акредитация.html">Акредитация</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/64377/рейтингови-класации.html">Рейтингови класации</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/11782/почетни-звания.html">Почетни звания</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/21831/%d0%b6%d0%b8%d0%b2%d0%b0-%d0%bf%d0%b0%d0%bc%d0%b5%d1%82.html">Жива памет</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/structure/render/474">Омбудсман</a></li>
+                                        <li><a href="https://www.unwe.bg/trustees ">Съвет на настоятелите</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/64376/социална-отговорност.html">Социална отговорност</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/83/дарители.html">Дарители</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/3451/контакти.html">Контакти</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/news/mediaindex">УНСС в медиите</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.unwe.bg/bg/pages/12900/прием.html"
+                               style="">Прием</a>
+                                <ul>
+                                        <li><a href="http://priem.unwe.bg/">Бакалаври</a></li>
+                                        <li><a href="http://magistri.unwe.bg/">Магистри</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/3063/докторанти.html">Докторанти</a></li>
+                                        <li><a href="http://ips.bg/">Продължаващо обучение</a></li>
+                                        <li><a href="https://www.unwe.bg/aiub/">Асоциация на икономическите училища в България</a></li>
+                                        <li><a href="https://alsb.bg/">Асоциация на езиковите училища в България</a></li>
+                                        <li><a href="/bg/pages/8468/kandidatstudentski.html">Кандидатстудентски състезания и конкурси</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.unwe.bg/bg/pages/11853/обучение.html"
+                               style="">Обучение</a>
+                                <ul>
+                                        <li><a href="https://www.unwe.bg/bg/pages/11796/бакалаври.html">Бакалаври</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/11797/магистри.html">Магистри</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/11832/докторанти.html">Докторанти</a></li>
+                                        <li><a href="https://www.unwe.bg/international">Чуждестранни студенти</a></li>
+                                        <li><a href="http://www.ips.bg">Продължаващо обучение</a></li>
+                                        <li><a href="http://szpo.unwe.bg/bg/pages/9806/%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B8-%D1%84%D0%B0%D0%B7%D0%B0-i-2016-2017-%D0%B3-.html">Практики</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/4535/кредитиране.html">Кредитиране</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/11790/катедри.html">Катедри</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.unwe.bg/bg/pages/12903/наука.html"
+                               style="">Наука</a>
+                                <ul>
+                                        <li><a href="https://www.unwe.bg/bg/pages/176/организация-и-управление.html">Организация и управление</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/19803/отворена-наука.html">Отворена наука</a></li>
+                                        <li><a href="https://technologytransfer.unwe.bg/">Технологичен трансфер</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/11792/институти.html">Институти</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/11793/центрове.html">Центрове</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/181/проекти.html">Проекти</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/22759/университетски-грантове.html">Университетски грантове</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/198/научни-издания.html">Научни издания</a></li>
+                                        <li><a href="https://konkursi.unwe.bg">Конкурси за заемане на академична длъжност</a></li>
+                                        <li><a href="https://konkursi.unwe.bg">Придобиване на научни степени</a></li>
+                                        <li><a href="https://www.unwe.bg/habilitation/bg/structure/staff?management=1">Съвет по хабилитация</a></li>
+                                        <li><a href="https://www.unwe.bg/kkizad/bg/structure/staff?management=1">Комисия по количествените изисквания за заемане на академични длъжности в УНСС</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/conferences/events?location=1">Предстоящи научни форуми</a></li>
+                                        <li><a href="/Uploads/Main/d514e_BG - European Charter for Researchers and Code of Conduct for the Recruitment of Researchers1.pdf">Европейската харта за научните изследователи</a></li>
+                                        <li><a href="/bg/pages/2864/нобелова-награда-по-икономика.html">Нобелисти по икономика</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.unwe.bg/bg/pages/30697/international.html"
+                               style="font-weight:700;">INTERNATIONAL</a>
+                                <ul>
+                                        <li><a href="https://www.unwe.bg/bg/pages/30614/double-degree-programmes.html">Double Degree Programmes</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/30706/international-students.html">International Students</a></li>
+                                        <li><a href="https://www.unwe.bg/mobility/en/pages/25434/erasmus-programme.html">Erasmus +</a></li>
+                                        <li><a href="https://www.engageuniversity.eu/">ENGAGE.EU</a></li>
+                                        <li><a href="https://sdsn.bg/bg/">SDSN</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/30690/university-ratings.html">University Ratings</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/30709/international-partners.html">International Partners</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/30691/projects.html">Projects</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/30692/memberships.html">Memberships</a></li>
+                                        <li><a href="https://www.unwe.bg/en/">News</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/41068/walk-around-the-unwe.html">Walk around the UNWE</a></li>
+                                        <li><a href="https://www.unwe.bg/en/structure/render/679">Contacts</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.unwe.bg/bg/pages/63978/105унсс.html"
+                               style="font-weight:700;">105УНСС</a>
+                                <ul>
+                                        <li><a href="https://www.unwe.bg/bg/pages/64285/слово-на-ректора.html">Слово на ректора</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/64286/тържествени-приветствия.html">Тържествени приветствия</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/63983/поздравителни-адреси.html">Поздравителни адреси</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/63981/видеопоздрави.html">Видеопоздрави</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/63979/новини.html">Новини</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/81/унсс-1.html">УНСС №1</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/61405/стена-на-славата.html">Стена на славата</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/26101/доктор-хонорис-кауза.html">Доктор хонорис кауза</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/79/история.html">История</a></li>
+                                        <li><a href="https://www.unwe.bg/bg/pages/21831/жива-памет.html">Жива памет</a></li>
+                                </ul>
+                        </li>
+
+                    
+                    
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/bg/pages/18678/онлайн-услуги-за-студенти.html">Онлайн услуги за студенти</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/mobility">Мобилност</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/international">Чуждестранни студенти</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/library">Библиотека</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/bg/pages/11905/периодични-издания.html">Периодични издания</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="/bg/pages/11874/график-и-условия.html">Студентски общежития</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://departments.unwe.bg/sport">Спорт</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="http://iccd.unwe.bg">Кариерно развитие</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="http://sc.unwe.bg">Студентски съвет</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/bg/news/64920/унсс-партньор-по-проект-от-висше-образование-към-заетост-стажове-с-възнаграждени.html">Студентски практики</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/bg/pages/30691/projects.html">Проекти</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/bg/structure/render/503">Почивна база - Равда</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/bg/pages/1173/разписание.html">Разписание</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/bg/pages/21490/вестник-на-унсс.html">Вестник на УНСС</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/kartaunss/newmap.html">Навигация</a></li>
+                        <li class="visible-xs-block secondary-inline"><a href="https://www.unwe.bg/complaints">Жалби</a></li>
+                                            <li class="visible-xs-block quicklinks-inline"><a href="http://priem.unwe.bg/">Кандидат-студенти</a></li>
+                        <li class="visible-xs-block quicklinks-inline"><a href="http://magistri.unwe.bg">Кандидат-магистри</a></li>
+                        <li class="visible-xs-block quicklinks-inline"><a href="https://student.unwe.bg/">Уеб студент</a></li>
+                        <li class="visible-xs-block quicklinks-inline"><a href="https://p.unwe.bg">Вход за преподаватели</a></li>
+                        <li class="visible-xs-block quicklinks-inline"><a href="https://www.unwe.bg/bg/pages/1173/%d1%80%d0%b0%d0%b7%d0%bf%d0%b8%d1%81%d0%b0%d0%bd%d0%b8%d0%b5.html">Разписание</a></li>
+                        <li class="visible-xs-block quicklinks-inline"><a href="https://www.unwe.bg/bg/pages/3380/%d0%b8%d0%b7%d0%bf%d0%b8%d1%82%d0%bd%d0%b0-%d1%81%d0%b5%d1%81%d0%b8%d1%8f-%d1%81%d0%be%d1%84%d0%b8%d1%8f.html">Изпитна сесия</a></li>
+                        <li class="visible-xs-block quicklinks-inline"><a href="http://moodle.unwe.bg">Онлайн обучение - редовно</a></li>
+                        <li class="visible-xs-block quicklinks-inline"><a href="http://m-learning.unwe.bg">Онлайн обучение - дистанционно</a></li>
+                        <li class="visible-xs-block quicklinks-inline"><a href="https://outlook.office365.com/owa/?realm=unwe.bg&amp;vd=mail">Университетска поща</a></li>
+
+                    <li class="visible-xs-block topbuttons-inline"><a href="https://www.unwe.bg/en/">English</a></li>
+                    <li class="visible-xs-block topbuttons-inline"><a href="/bg/search">Търсене</a></li>
+                    <li class="visible-xs-block topbuttons-inline"><a href="/bg/home/contacts">Контакти</a></li>
+                    <li class="visible-xs-block signin-inline"><a href="/bg/students">Студенти</a></li>
+                    <li class="visible-xs-block signin-inline"><a href="https://p.unwe.bg">Преподаватели</a></li>
+                </ul>
+            </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <!-- top-box -->
+    <div class="top-box hidden-sm hidden-xs">
+        <div class="col-sm-12 col-xs-1">
+            <a href="/bg/home/contacts" class="lang-switcher btn btn-transparent contact-button"><img src="https://common2.unwe.bg//wwwroot/images/icons/contact.png" alt="" /><span> Контакти</span></a>
+            <a href="https://www.unwe.bg/en/" class="lang-switcher btn btn-transparent">EN</a>
+                <a href="#" class="lang-switcher btn btn-transparent menu-button"><i class="glyphicon glyphicon-flash"></i><span> Бързи връзки</span></a>
+            <a href="/bg/search" class="lang-switcher btn btn-transparent hidden-lg" aria-label="Търсене"><i class="glyphicon glyphicon-search"></i></a>
+            <a href="https://bit.ly/3g6G0wm" class="lang-switcher btn btn-transparent ">360&deg;</a>
+        </div>
+        <div class="col-sm-12 col-xs-2 search-box">
+            <form action="/bg/search" method="get" class="form-horizontal">
+                <div class="input-group">
+                    <input type="search" name="q" class="form-control input" aria-label="Текст за търсене" />
+                    <span class="input-group-btn"><button type="submit" class="btn btn-transparent" aria-label="Търсене"><i class="glyphicon glyphicon-search"></i></button></span>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-12 col-xs-7 role-navigation">
+            <a href="/bg/students" class="col-xs-5 role-link">Студенти</a>
+            <a href="https://p.unwe.bg" class="col-xs-7 role-link">Преподаватели</a>
+        </div>
+    </div>
+    <!-- /top-box -->
+        <div class="menu-wrap"><div id="right-menu">
+    <ul>
+            <li>
+
+                <a href="http://priem.unwe.bg/">Кандидат-студенти</a>
+
+            </li>
+            <li>
+
+                <a href="http://magistri.unwe.bg">Кандидат-магистри</a>
+
+            </li>
+            <li>
+
+                <a href="https://student.unwe.bg/">Уеб студент</a>
+
+            </li>
+            <li>
+
+                <a href="https://p.unwe.bg">Вход за преподаватели</a>
+
+            </li>
+            <li>
+
+                <a href="https://www.unwe.bg/bg/pages/1173/%d1%80%d0%b0%d0%b7%d0%bf%d0%b8%d1%81%d0%b0%d0%bd%d0%b8%d0%b5.html">Разписание</a>
+
+            </li>
+            <li>
+
+                <a href="https://www.unwe.bg/bg/pages/3380/%d0%b8%d0%b7%d0%bf%d0%b8%d1%82%d0%bd%d0%b0-%d1%81%d0%b5%d1%81%d0%b8%d1%8f-%d1%81%d0%be%d1%84%d0%b8%d1%8f.html">Изпитна сесия</a>
+
+            </li>
+            <li>
+
+                <a href="http://moodle.unwe.bg">Онлайн обучение - редовно</a>
+
+            </li>
+            <li>
+
+                <a href="http://m-learning.unwe.bg">Онлайн обучение - дистанционно</a>
+
+            </li>
+            <li>
+
+                <a href="https://outlook.office365.com/owa/?realm=unwe.bg&amp;vd=mail">Университетска поща</a>
+
+            </li>
+    </ul>
+</div> <button class="close-button" id="close-button">Close Menu</button></div>
+</header>
+        
+<!-- carousel -->
+<div class="row unwe-carousel">
+    <div class="col-sm-12">
+        
+
+<div id="unwe-carousel" class="carousel slide" data-ride="carousel" data-interval="15000">
+    <ol class="carousel-indicators">
+            <li data-target="#unwe-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#unwe-carousel" data-slide-to="1" class=""></li>
+            <li data-target="#unwe-carousel" data-slide-to="2" class=""></li>
+            <li data-target="#unwe-carousel" data-slide-to="3" class=""></li>
+            <li data-target="#unwe-carousel" data-slide-to="4" class=""></li>
+            <li data-target="#unwe-carousel" data-slide-to="5" class=""></li>
+    </ol>
+
+    <div class="carousel-inner">
+            <div class="item active" >
+                    <img src="/Uploads/Main/Carousel/баба.марта.2026-50.jpg" alt="-" />
+                <div class="container">
+                </div>
+            </div>
+            <div class="item " onclick="window.open('https://www.unwe.bg/Uploads/Main/4aaab_%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%B4%D0%B0%D1%82%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8.%D0%BD%D0%B0%D1%80%D1%8A%D1%87%D0%BD%D0%B8%D0%BA.2026-10.jpg', '_blank')">
+                    <img src="/Uploads/Main/Carousel/прием.кандидат.студ.изпит.математика.1920х700-2026-60.gif" alt="-" />
+                <div class="container">
+                </div>
+            </div>
+            <div class="item " onclick="window.open('https://www.unwe.bg/bg/events/76510/конкурс-за-участие-на-студенти-и-докторанти-в-мобилност-по-програма-еразъм-през-.html', '_blank')">
+                    <img src="/Uploads/Main/Carousel/конкурс.еразъм.студенти.2026-2027.сайт.1920х700-10.png" alt="Повече информация ТУК" />
+                <div class="container">
+                        <div class="carousel-caption">
+                            <h1 style="margin-top:4px"><a href="https://www.unwe.bg/bg/events/76510/конкурс-за-участие-на-студенти-и-докторанти-в-мобилност-по-програма-еразъм-през-.html">Повече информация ТУК</a></h1>
+                            <p>
+                                
+                            </p>
+                        </div>
+                </div>
+            </div>
+            <div class="item " onclick="window.open('https://www.unwe.bg/bg/pages/19020/%d0%ba%d0%be%d0%bd%d0%ba%d1%83%d1%80%d1%81-%d0%b7%d0%b0-%d0%b4%d0%be%d0%ba%d1%82%d0%be%d1%80%d0%b0%d0%bd%d1%82%d1%83%d1%80%d0%b0.html', '_blank')">
+                    <img src="/Uploads/Main/Carousel/конкурс.докторатура.2025-2026.1920х700-10.gif" alt="-" />
+                <div class="container">
+                </div>
+            </div>
+            <div class="item " onclick="window.open('https://magistri.unwe.bg/', '_blank')">
+                    <img src="/Uploads/Main/Carousel/доп.прием.магистри.летен.семестър.2025-2026-20.png" alt="Повече информация ТУК" />
+                <div class="container">
+                        <div class="carousel-caption">
+                            <h1 style="margin-top:4px"><a href="https://magistri.unwe.bg/">Повече информация ТУК</a></h1>
+                            <p>
+                                
+                            </p>
+                        </div>
+                </div>
+            </div>
+            <div class="item " onclick="window.open('https://www.unwe.bg/bg/news/64920/%D1%83%D0%BD%D1%81%D1%81-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%8C%D0%BE%D1%80-%D0%BF%D0%BE-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%BE%D1%82-%D0%B2%D0%B8%D1%81%D1%88%D0%B5-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D1%8A%D0%BC-%D0%B7%D0%B0%D0%B5%D1%82%D0%BE%D1%81%D1%82-%D1%81%D1%82%D0%B0%D0%B6%D0%BE%D0%B2%D0%B5-%D1%81-%D0%B2%D1%8A%D0%B7%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8.html', '_blank')">
+                    <img src="/Uploads/Main/Carousel/платени.практики.1920х700.2025-30.jpg" alt="-" />
+                <div class="container">
+                </div>
+            </div>
+
+        <a class="left carousel-control" href="#unwe-carousel" data-slide="prev" aria-label="Предишен слайд"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#unwe-carousel" data-slide="next" aria-label="Следващ слайд"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    <div class="scroll-down"><div class="wheel"><i class="fa fa-angle-down"></i></div></div>
+</div>
+    </div>
+    <div class="row secondary-menu">
+        <nav class="col-xs-3 col-lg-12">
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/bg/pages/18678/онлайн-услуги-за-студенти.html">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/working.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Онлайн услуги за студенти</div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/mobility">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/erasmus_icon.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Мобилност</div>
+                    </a>
+                </div>
+        </nav>
+        <nav class="col-xs-3 col-lg-12">
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/international">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/international.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Чуждестранни студенти</div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/library">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/library.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Библиотека</div>
+                    </a>
+                </div>
+        </nav>
+        <nav class="col-xs-3 col-lg-12">
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/bg/pages/11905/периодични-издания.html">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/journals.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Периодични издания</div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-6">
+                    <a href="/bg/pages/11874/график-и-условия.html">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/dorms.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Студентски общежития</div>
+                    </a>
+                </div>
+        </nav>
+        <nav class="col-xs-3 col-lg-12">
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://departments.unwe.bg/sport">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/sport.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Спорт</div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-6">
+                    <a href="http://iccd.unwe.bg">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/career.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Кариерно развитие</div>
+                    </a>
+                </div>
+        </nav>
+        <nav class="col-xs-3 col-lg-12">
+                <div class="col-xs-6 col-lg-6">
+                    <a href="http://sc.unwe.bg">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/logo_studsavet.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Студентски съвет</div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/bg/news/64920/унсс-партньор-по-проект-от-висше-образование-към-заетост-стажове-с-възнаграждени.html">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/practice.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Студентски практики</div>
+                    </a>
+                </div>
+        </nav>
+        <nav class="col-xs-3 col-lg-12">
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/bg/pages/30691/projects.html">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/projects.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Проекти</div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/bg/structure/render/503">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/sun.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Почивна база - Равда</div>
+                    </a>
+                </div>
+        </nav>
+        <nav class="col-xs-3 col-lg-12">
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/bg/pages/1173/разписание.html">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/council.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Разписание</div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/bg/pages/21490/вестник-на-унсс.html">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/journals.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Вестник на УНСС</div>
+                    </a>
+                </div>
+        </nav>
+        <nav class="col-xs-3 col-lg-12">
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/kartaunss/newmap.html">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/dorms.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Навигация</div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-6">
+                    <a href="https://www.unwe.bg/complaints">
+                        <img src="https://common2.unwe.bg//wwwroot/images/alt-alt-icons/document.png" alt="" />
+                        <div class="circle"></div>
+                        <div>Жалби</div>
+                    </a>
+                </div>
+        </nav>
+
+</div>
+
+</div>
+<!-- / carousel-->
+<!--info - area-->
+<div class="row info-area">
+    <div class="row">
+            <div class="row congratsblock">
+                    <div><h4 style="text-align: justify;"><span><span class="fa fa-exclamation-circle"></span><a href="https://magistri.unwe.bg/" target="_blank">&nbsp;</a><a href="https://www.unwe.bg/bg/news/76535/%d0%b2%d0%b0%d0%b6%d0%bd%d0%be-%d0%b7%d0%b0-%d0%bf%d1%80%d0%b8%d0%b5%d0%bc%d0%b0-%d0%bd%d0%b0-%d0%ba%d0%b0%d0%bd%d0%b4%d0%b8%d0%b4%d0%b0%d1%82-%d1%81%d1%82%d1%83%d0%b4%d0%b5%d0%bd%d1%82%d0%b8%d1%82%d0%b5-%d0%bf%d0%be-%d0%b8%d0%ba%d0%be%d0%bd%d0%be%d0%bc%d0%b8%d0%ba%d0%b0-%d0%b8-%d0%b0%d0%b4%d0%bc%d0%b8%d0%bd%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%86%d0%b8%d1%8f-%d0%b8-%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5.html" target="_blank"><strong>Важно за приема на кандидат-студентите по икономика и администрация и управление в УНСС. Повече информация ТУК</strong></a>.</span></h4></div>
+                    <div><h4 style="text-align: justify;"><strong><span class="fa fa-exclamation-circle"></span><a href="https://magistri.unwe.bg/" target="_blank">&nbsp;</a><a href="https://www.unwe.bg/bg/pages/19020/%d0%ba%d0%be%d0%bd%d0%ba%d1%83%d1%80%d1%81-%d0%b7%d0%b0-%d0%b4%d0%be%d0%ba%d1%82%d0%be%d1%80%d0%b0%d0%bd%d1%82%d1%83%d1%80%d0%b0.html" target="_blank">Конкурс за докторантура за учебната 2025/2026 година. Повече информация ТУК.</a></strong></h4></div>
+                    <div><h4 style="text-align: justify;"><span class="fa fa-exclamation-circle"></span><a href="https://magistri.unwe.bg/" target="_blank"><strong>&nbsp;Допълнителен прием за магистри за летен семестър на учебната 2025/2026 година. Повече информация ТУК.</strong></a></h4></div>
+                    <div><h4 style="text-align: justify;"><strong><span class="fa fa-exclamation-circle"></span>&nbsp;<a href="https://www.unwe.bg/bg/news/64920/%D1%83%D0%BD%D1%81%D1%81-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%8C%D0%BE%D1%80-%D0%BF%D0%BE-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%BE%D1%82-%D0%B2%D0%B8%D1%81%D1%88%D0%B5-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D1%8A%D0%BC-%D0%B7%D0%B0%D0%B5%D1%82%D0%BE%D1%81%D1%82-%D1%81%D1%82%D0%B0%D0%B6%D0%BE%D0%B2%D0%B5-%D1%81-%D0%B2%D1%8A%D0%B7%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8.html" target="_blank">Кандидатствайте за платена студентска практика ТУК.</a></strong></h4></div>
+                    <div><h4 style="text-align: justify;"><span class="fa fa-exclamation-circle"></span><strong><a href="https://www.unwe.bg/bg/pages/19189/%d1%81%d1%80%d0%be%d0%ba%d0%be%d0%b2%d0%b5-%d0%b7%d0%b0-%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d0%b2%d0%b0%d0%bd%d0%b5.html" target="_blank">&nbsp;</a><a href="https://www.unwe.bg/bg/pages/76412/%d1%81%d1%80%d0%be%d0%ba%d0%be%d0%b2%d0%b5-%d0%b7%d0%b0-%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d0%b2%d0%b0%d0%bd%d0%b5-%d0%b7%d0%b0-%d0%bb%d0%b5%d1%82%d0%b5%d0%bd-%d1%81%d0%b5%d0%bc%d0%b5%d1%81%d1%82%d1%8a%d1%80-%d0%bd%d0%b0-%d1%83%d1%87%d0%b5%d0%b1%d0%bd%d0%b0%d1%82%d0%b0-2025-2026-%d0%b3%d0%be%d0%b4%d0%b8%d0%bd%d0%b0.html" target="_blank">Срокът за записване за летен семестър на учебната 2025/2026 г. за всички студенти е от 26 януари до 27 февруари 2026 г. Повече информация ТУК.</a></strong></h4></div>
+                    <div><h4 style="text-align: justify;"><span class="fa fa-exclamation-circle"></span><a href="https://magistri.unwe.bg/" target="_blank">&nbsp;</a><a href="https://www.unwe.bg/bg/pages/19288/%d0%b7%d0%b0%d1%8f%d0%b2%d0%ba%d0%b8-%d0%b7%d0%b0-%d0%b8%d0%b7%d0%b1%d0%b8%d1%80%d0%b0%d0%b5%d0%bc%d0%b8-%d0%b4%d0%b8%d1%81%d1%86%d0%b8%d0%bf%d0%bb%d0%b8%d0%bd%d0%b8.html" target="_blank"><strong>Важно! Онлайн подаване на заявки за избираеми учебни дисциплини, изучавани във втори курс, от студентите от първи курс в ОКС &bdquo;бакалавър&ldquo;, редовна и дистанционна форма на обучение. Повече информация ТУК.</strong></a></h4></div>
+                    <div><h4 style="text-align: justify;"><span class="fa fa-exclamation-circle"></span>&nbsp;<a href="https://www.unwe.bg/bg/pages/19288/%d0%b7%d0%b0%d1%8f%d0%b2%d0%ba%d0%b8-%d0%b7%d0%b0-%d0%b8%d0%b7%d0%b1%d0%b8%d1%80%d0%b0%d0%b5%d0%bc%d0%b8-%d0%b4%d0%b8%d1%81%d1%86%d0%b8%d0%bf%d0%bb%d0%b8%d0%bd%d0%b8.html" target="_blank"><strong>Важно! Онлайн подаване на заявки за втори чужд език, изучаван в трети и четвърти курс, от студентите от втори курс в ОКС &bdquo;бакалавър&ldquo;, редовна форма на обучение.&nbsp;Повече информация ТУК.</strong></a></h4></div>
+            </div>
+    <div class="row">
+        <div class="col-sm-5">
+
+            <div class="panel panel-default news">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <a href="/bg/news">
+                    Новини
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    <div class="panel-body">
+            <a class="news-sm " href="/bg/news/76813/%d0%b7%d0%b0-%d1%81%d0%b5%d0%b4%d0%bc%d0%b8%d1%86%d0%b0-%d1%83%d0%bd%d1%81%d1%81-%d0%bf%d1%80%d0%be%d0%b2%d0%b5%d0%b4%d0%b5-%d1%81%d1%80%d0%b5%d1%89%d0%b8-%d1%81-%d0%ba%d0%b0%d0%bd%d0%b4%d0%b8%d0%b4%d0%b0%d1%82-%d1%81%d1%82%d1%83%d0%b4%d0%b5%d0%bd%d1%82%d0%b8-%d0%b2-%d0%ba%d1%8e%d1%81%d1%82%d0%b5%d0%bd%d0%b4%d0%b8%d0%bb-%d0%bf%d0%bb%d0%b5%d0%b2%d0%b5%d0%bd-%d1%82%d1%80%d0%be%d1%8f%d0%bd-%d1%81%d0%b0%d0%bd%d0%b4%d0%b0.html">
+                <img src="/bg/news/image/76813" aria-describedby="news-title-76813" alt="" />
+                <div class="news-title">
+                    <h3 id="news-title-76813">За седмица УНСС проведе срещи с кандидат-студенти в Кюстендил, Плевен, Троян, Сандански, Петрич и Етрополе</h3>
+                    <p>27.2.2026 г. 17:25:00</p>
+                </div>
+            </a>
+            <a class="news-sm " href="/bg/news/76806/%d0%b7%d0%b0%d0%bf%d0%be%d1%87%d0%bd%d0%b0-%d0%b1%d0%b8%d0%b7%d0%bd%d0%b5%d1%81-%d0%b0%d0%ba%d0%b0%d0%b4%d0%b5%d0%bc%d0%b8%d1%8f%d1%82%d0%b0-nextgen-vol-2-%d0%bd%d0%b0-%d0%bf%d0%be%d1%89%d0%b5%d0%bd%d1%81%d0%ba%d0%b0-%d0%b1%d0%b0%d0%bd%d0%ba%d0%b0-%d0%b7%d0%b0-%d1%81%d1%82%d1%83%d0%b4%d0%b5%d0%bd%d1%82%d0%b8%d1%82%d0%b5-%d0%bd%d0%b0-%d0%bd%d0%b0%d1%88%d0%b8%d1%8f.html">
+                <img src="/bg/news/image/76806" aria-describedby="news-title-76806" alt="" />
+                <div class="news-title">
+                    <h3 id="news-title-76806">Започна Бизнес академията NextGen Vol. 2 на Пощенска банка за студентите на нашия университет</h3>
+                    <p>27.2.2026 г. 14:04:40</p>
+                </div>
+            </a>
+            <a class="news-sm " href="/bg/news/76812/%d1%83%d0%bd%d0%b8%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d1%82%d0%b5%d1%82%d1%8a%d1%82-%d0%bf%d0%be%d0%b4%d0%bf%d0%b8%d1%81%d0%b0-%d0%bc%d0%b5%d0%bc%d0%be%d1%80%d0%b0%d0%bd%d0%b4%d1%83%d0%bc-%d0%b7%d0%b0-%d1%81%d1%8a%d1%82%d1%80%d1%83%d0%b4%d0%bd%d0%b8%d1%87%d0%b5%d1%81%d1%82%d0%b2%d0%be-%d1%81-hewlett-packard-enterprise.html">
+                <img src="/bg/news/image/76812" aria-describedby="news-title-76812" alt="" />
+                <div class="news-title">
+                    <h3 id="news-title-76812">Университетът подписа меморандум за сътрудничество с Hewlett Packard Enterprise</h3>
+                    <p>27.2.2026 г. 13:20:00</p>
+                </div>
+            </a>
+            <a class="news-sm " href="/bg/news/76808/%d1%81%d0%b5%d1%80%d1%82%d0%b8%d1%84%d0%b8%d0%ba%d0%b0%d1%82%d0%b8-%d0%be%d1%82%d0%b1%d0%b5%d0%bb%d1%8f%d0%b7%d0%b0%d1%85%d0%b0-%d0%ba%d1%80%d0%b0%d1%8f-%d0%bd%d0%b0-%d0%bf%d1%80%d0%be%d0%bb%d0%b5%d1%82%d0%bd%d0%be%d1%82%d0%be-%d0%b1%d0%b8%d0%b7%d0%bd%d0%b5%d1%81-%d0%ba%d0%b0%d1%84%d0%b5-%d1%81-%d1%83%d0%bd%d0%b8%d0%ba%d1%80%d0%b5%d0%b4%d0%b8%d1%82-%d0%b1%d1%83%d0%bb%d0%b1%d0%b0%d0%bd%d0%ba-.html">
+                <img src="/bg/news/image/76808" aria-describedby="news-title-76808" alt="" />
+                <div class="news-title">
+                    <h3 id="news-title-76808">Сертификати отбелязаха края на пролетното „Бизнес кафе с УниКредит Булбанк“</h3>
+                    <p>27.2.2026 г. 12:10:00</p>
+                </div>
+            </a>
+            <a class="news-sm " href="/bg/news/76809/%d1%81%d0%bf%d0%be%d1%80%d0%b0%d0%b7%d1%83%d0%bc%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81-%d1%87%d0%b0%d1%81%d1%82%d0%bd%d0%be%d1%82%d0%be-%d1%81%d1%82%d1%83%d0%b4%d0%b5%d0%bd%d1%82%d1%81%d0%ba%d0%be-%d0%be%d0%b1%d1%89%d0%b5%d0%b6%d0%b8%d1%82%d0%b8%d0%b5-unidorm-%d0%b4%d0%b0%d0%b2%d0%b0-10-%d0%be%d1%82%d1%81%d1%82%d1%8a%d0%bf%d0%ba%d0%b0-%d0%bd%d0%b0-%d1%81%d1%82%d1%83%d0%b4%d0%b5%d0%bd%d1%82.html">
+                <img src="/bg/news/image/76809" aria-describedby="news-title-76809" alt="" />
+                <div class="news-title">
+                    <h3 id="news-title-76809">Споразумение с частното студентско общежитие UniDorm дава 10% отстъпка на студентите от УНСС</h3>
+                    <p>27.2.2026 г. 11:25:00</p>
+                </div>
+            </a>
+            <a class="news-sm " href="/bg/news/76804/%d1%82%d1%80%d0%b5%d1%82%d0%b8-%d0%b5%d1%82%d0%b0%d0%bf-%d0%bd%d0%b0-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82-%d0%bb%d0%b5%d0%b2-%d0%b8%d0%bd%d1%81-%d0%ba%d0%b0%d1%80%d0%b8%d0%b5%d1%80%d0%b0-360-%d1%81%d0%b5-%d0%bf%d1%80%d0%be%d0%b2%d0%b5%d0%b4%d0%b5-%d0%b2-%d1%83%d0%bd%d0%b8%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d1%82%d0%b5%d1%82%d0%b0.html">
+                <img src="/bg/news/image/76804" aria-describedby="news-title-76804" alt="" />
+                <div class="news-title">
+                    <h3 id="news-title-76804">Трети етап на проект „ЛЕВ ИНС Кариера 360“ се проведе в Университета</h3>
+                    <p>27.2.2026 г. 10:45:51</p>
+                </div>
+            </a>
+    </div>
+        <div class="panel-footer">
+            <a href="/bg/news" class="btn btn-sm btn-default">още Новини <i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+</div>
+            
+        </div>
+        <div class="col-sm-5">
+            <div class="panel panel-default events">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <a href="/bg/events">
+                    Предстоящо
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    <div class="panel-body">
+            <div class="event-group">
+                <div class="event-date">
+                    <span class="day">9</span>
+                    <span class="month">март</span>
+                </div>
+                <a class="event-item featured" href="https://konkursi.unwe.bg/AnnouncedCompetitions/AcDetails">
+                    <h3>Конкурси за заемане на академични длъжности</h3>
+                </a>
+            </div>
+            <div class="event-group">
+                <div class="event-date">
+                    <span class="day">29</span>
+                    <span class="month">април</span>
+                </div>
+                <a class="event-item featured" href="/Uploads/Main/b4f53_График.мед.документи.ФВС.2026-30.pdf">
+                    <h3>График за записване за освобождаване или пренасочване на студенти за лечебна физкултура</h3>
+                        <div class="time-location">
+                            <span class="time">
+                                
+                                
+                            </span>
+                            /
+                            СК „Бонсист“, Заседателна зала
+                        </div>
+                </a>
+            </div>
+            <div class="event-group">
+                <div class="event-date">
+                    <span class="day">26</span>
+                    <span class="month">януари</span>
+                </div>
+                <a class="event-item " href="/bg/events/76462/%d0%ba%d0%b0%d0%bd%d0%b4%d0%b8%d0%b4%d0%b0%d1%82%d1%81%d1%82%d0%b2%d0%b0%d0%b9%d1%82%d0%b5-%d0%b7%d0%b0-%d0%b5%d0%b4%d0%bd%d0%be%d0%b3%d0%be%d0%b4%d0%b8%d1%88%d0%b5%d0%bd-%d0%bf%d0%bb%d0%b0%d1%82%d0%b5%d0%bd-%d1%81%d1%82%d0%b0%d0%b6-%d0%bf%d0%be-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%b0-pan-european-seal-2026-20.html">
+                    <h3>Кандидатствайте за едногодишен платен стаж по програма Pan-European Seal 2026/2027</h3>
+                </a>
+            </div>
+            <div class="event-group">
+                <div class="event-date">
+                    <span class="day">5</span>
+                    <span class="month">март</span>
+                </div>
+                <a class="event-item " href="/bg/events/76680/%d1%85%d0%b0%d0%ba%d0%b0%d1%82%d0%be%d0%bd-%d0%b7%d0%b0-%d0%ba%d1%80%d1%8a%d0%b3%d0%be%d0%b2%d0%b0-%d0%b8%d0%ba%d0%be%d0%bd%d0%be%d0%bc%d0%b8%d0%ba%d0%b0.html">
+                    <h3>Хакатон за кръгова икономика</h3>
+                        <div class="time-location">
+                            <span class="time">
+                                
+                                
+                            </span>
+                            
+                            Библиотека на УНСС, преподавателска читалня
+                        </div>
+                </a>
+            </div>
+            <div class="event-group">
+                <div class="event-date">
+                    <span class="day">10</span>
+                    <span class="month">март</span>
+                </div>
+                <a class="event-item " href="https://prokurori.bg/index.php/news/show/asotsiatsiyata-na-prokurorite-v-balgariya-organizira-natsionalno-sastezanie-po-nakazatelno.html">
+                    <h3>Асоциацията на прокурорите в България организира Национално състезание по наказателно право</h3>
+                </a>
+            </div>
+            <div class="event-group">
+                <div class="event-date">
+                    <span class="day">10</span>
+                    <span class="month">март</span>
+                </div>
+                <a class="event-item " href="https://www.engageuniversity.eu/collaboration-circle-transversal-skills-and-ai-in-recruiter-candidate-recruitment-facilitator-relations/?fbclid=IwY2xjawP_ug1leHRuA2FlbQIxMABicmlkETFwOEZrUnBreE1ibXBUbXY0c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHiiq3LGPrNMud-4C66de-8af_AfgKSqPoOV6gatZ_ueRs3eHStPr1M65-_nV_aem_L4Jhu027cXQlzMf0g094vw">
+                    <h3>ENGAGE.EU Collaboration Circle: Transversal Skills and AI in Recruiter-Candidate-Recruitment Facilitator Relations</h3>
+                </a>
+            </div>
+            <div class="event-group">
+                <div class="event-date">
+                    <span class="day">10</span>
+                    <span class="month">март</span>
+                </div>
+                <a class="event-item " href="/bg/events/76802/%d0%bc%d0%b0%d0%b9%d1%81%d1%82%d0%be%d1%80%d1%81%d0%ba%d0%b8-%d0%ba%d0%bb%d0%b0%d1%81-%d1%84%d0%be%d1%80%d0%bc%d1%83%d0%bb%d0%b0%d1%82%d0%b0-%d0%bd%d0%b0-%d1%83%d1%81%d0%bf%d0%b5%d1%88%d0%bd%d0%b8%d1%82%d0%b5-%d0%bf%d1%80%d0%be%d0%b4%d0%b0%d0%b6%d0%b1%d0%b8-%d1%81%d1%8a%d0%b2%d0%bc%d0%b5%d1%81%d1%82%d0%bd%d0%b0-%d0%b8%d0%bd%d0%b8%d1%86%d0%b8%d0%b0%d1%82%d0%b8%d0%b2%d0%b0-%d0%bd%d0%b0-vivacom-.html">
+                    <h3>Майсторски клас „Формулата на успешните продажби“ - съвместна инициатива на Vivacom и УНСС</h3>
+                        <div class="time-location">
+                            <span class="time">
+                                09:30
+                                
+                            </span>
+                            /
+                            Библиотека на УНСС, преподавателска читалня
+                        </div>
+                </a>
+            </div>
+    </div>
+        <div class="panel-footer">
+            <a href="/bg/events" class="btn btn-sm btn-default">още Предстоящо <i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+</div>
+
+        </div>
+        <div class="col-sm-2">
+		 <div style="display: flex;justify-content:center;padding-top: 20px;">
+                    <a href="https://www.unwe.bg/Uploads/Main/thumbnail_%D0%9A%D0%BE%D0%BB%D1%86%D0%B5%D0%BD%D1%82%D1%8A%D1%80.%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%BE.%D0%B2%D1%80%D0%B5%D0%BC%D0%B5.2025-30.jpg" target="_blank">
+                        <img src="https://www.unwe.bg/Uploads/Main/aff4a_%D0%9A%D0%BE%D0%BB%D1%86%D0%B5%D0%BD%D1%82%D1%8A%D1%80%202024-1%20(1).gif" alt="Кандидатствай сега!" />
+                    </a>
+                </div>
+                <div style="display: flex;justify-content:center;padding-top: 20px;">
+                    <a href="https://webpriem.unwe.bg" target="_blank">
+                        <img src="/Uploads/Main/d7e2e_Онлайн.кандидатстване.бутон.2024-10.gif" alt="Кандидатствай сега!" />
+                    </a>
+                </div>
+                <div style="display: flex;justify-content:center;padding-top: 20px;">
+                    <a href="https://mpriem.unwe.bg" target="_blank">
+                        <img src="https://www.unwe.bg/Uploads/Main/4b837_%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD.%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%B4%D0%B0%D1%82%D1%81%D1%82%D0%B2%D0%B0%D0%BD%D0%B5.%D0%B1%D1%83%D1%82%D0%BE%D0%BD.2024-20%20(1).gif" alt="Кандидатствай сега!" />
+                    </a>
+                </div>
+            <div class="charts make-it-unique">
+
+        <div>
+            <a href="/bg/pages/11854/направления-и-специалности.html">
+                <img src="/Uploads/images/icons/b-bachelor.png" alt="53 бакалавърски специалности" />
+                <h3>53 <span class="title-small">бакалавърски специалности</span></h3>
+            </a>
+        </div>
+        <div>
+            <a href="https://magistri.unwe.bg/bg/pages/13976/specialities.html">
+                <img src="/Uploads/images/icons/b-masters.png" alt="90 магистърски специалности" />
+                <h3>90 <span class="title-small">магистърски специалности</span></h3>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.unwe.bg/bg/pages/134/акредитирани-докторантски-програми.html">
+                <img src="/Uploads/images/icons/b-doctor.png" alt="45 докторски програми" />
+                <h3>45 <span class="title-small">докторски програми</span></h3>
+            </a>
+        </div>
+        <div>
+            <a href="/bg/pages/5902/партньори-на-унсс.html">
+                <img src="/Uploads/images/icons/b-localpartners.png" alt="221 партньори в страната" />
+                <h3>221 <span class="title-small">партньори в страната</span></h3>
+            </a>
+        </div>
+        <div>
+            <a href="/bg/pages/204/университети.html">
+                <img src="/Uploads/images/icons/b-intpartners.png" alt="187 партньори в чужбина" />
+                <h3>187 <span class="title-small">партньори в чужбина</span></h3>
+            </a>
+        </div>
+</div>
+
+        </div>
+
+    </div>
+    </div>
+</div>
+<!-- /info-area -->
+<!-- gray-area -->
+<style>
+    .gray-area {
+        display: flex;
+        flex-direction: row;
+    }
+    .cus {
+        width: 12%;
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+    }
+</style>
+<div class="gray-area">
+    <div class="cus">
+        
+<div class="right-box">
+    <div class="boxwrap">
+            <h3>Обществена информация</h3>
+        <ul class="clearfix">
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/bg/pages/11900/%d0%b2%d1%8a%d1%82%d1%80%d0%b5%d1%88%d0%bd%d0%b8-%d0%b0%d0%ba%d1%82%d0%be%d0%b2%d0%b5.html">Вътрешни актове</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="https://www.unwe.bg/bg/pages/22457/вътрешни-актове-на-унсс.html">Вътрешни актове на УНСС</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="https://www.unwe.bg/bg/pages/22456/вътрешни-актове-на-издателския-съвет-на-унсс.html">Вътрешни актове на Издателския съвет на УНСС</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/Uploads/Main/ce84f_GODISHEN.doklad.na.rektora_2020 - 2021.pdf">Отчетни документи</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/bg/pages/250/%d0%b1%d1%8e%d0%b4%d0%b6%d0%b5%d1%82.html">Бюджет</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="https://jobs.unwe.bg">Работа в УНСС</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="http://www.focus-monitoring.net/">Медиите за УНСС</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/bg/pages/13732/%d0%b7%d0%b0%d1%89%d0%b8%d1%82%d0%b0-%d0%bd%d0%b0-%d0%bb%d0%b8%d1%87%d0%bd%d0%b8%d1%82%d0%b5-%d0%b4%d0%b0%d0%bd%d0%bd%d0%b8.html"><b>Защита на личните данни (GDPR)</b></a></li>
+        </ul>
+            <img src="/uploads/images/icons/b-docs.png" aria-hidden="true" alt="" class="decoration" />
+    </div>
+</div>
+    </div>
+    <div class="cus">
+        
+<div class="right-box">
+    <div class="boxwrap">
+            <h3>Профил на купувача</h3>
+        <ul class="clearfix">
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="https://zop2.unwe.bg">Профил на купувача</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="https://zop2.unwe.bg/Folder?categoryId=19">Търгове в УНСС</a></li>
+        </ul>
+            <img src="/uploads/images/icons/b-procurement.png" aria-hidden="true" alt="" class="decoration" />
+    </div>
+</div>
+    </div>
+    <div class="cus">
+        
+<div class="right-box">
+    <div class="boxwrap">
+            <h3 class="large"><a href="https://www.unwe.bg/aiub">Асоциaция на икономическите училища в България</a></h3>
+        <ul class="clearfix">
+        </ul>
+            <img src="/uploads/images/icons/b-aiub.png" aria-hidden="true" alt="" class="decoration" />
+    </div>
+</div>
+    </div>
+    <div class="cus">
+        
+<div class="right-box">
+    <div class="boxwrap">
+            <h3 class="large"><a href="https://alsb.bg/">Асоциация на езиковите училища в България</a></h3>
+        <ul class="clearfix">
+        </ul>
+            <img src="/uploads/images/icons/b-aflb.png" aria-hidden="true" alt="" class="decoration" />
+    </div>
+</div>
+    </div>
+    <!--<div class="cus">
+        
+<div class="right-box">
+    <div class="boxwrap">
+            <h3>Издателски комплекс</h3>
+        <ul class="clearfix">
+        </ul>
+            <img src="/uploads/images/icons/b-publishing.png" aria-hidden="true" alt="" class="decoration" />
+    </div>
+</div>
+    </div>-->
+    <div class="cus">
+        
+<div class="right-box">
+    <div class="boxwrap">
+            <h3 class="large"><a href="/bg/pages/11898/%d1%81%d1%82%d1%83%d0%b4%d0%b5%d0%bd%d1%82%d1%81%d0%ba%d0%b8-%d0%be%d1%80%d0%b3%d0%b0%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d0%b8.html">Студентски организации</a></h3>
+        <ul class="clearfix">
+        </ul>
+            <img src="/uploads/images/icons/b-studorg.png" aria-hidden="true" alt="" class="decoration" />
+    </div>
+</div>
+    </div>
+    <div class="cus">
+        
+<div class="right-box">
+    <div class="boxwrap">
+            <h3 class="large"><a href="https://www.unwe.bg/bg/pages/13501/13501.html">Център за компетентност &quot;Дигитализация на икономиката в среда на големи данни&quot;</a></h3>
+        <ul class="clearfix">
+        </ul>
+            <img src="/uploads/images/icons/b-bigdata.png" aria-hidden="true" alt="" class="decoration" />
+    </div>
+</div>
+    </div>
+    <div class="cus">
+        
+<div class="right-box">
+    <div class="boxwrap">
+            <h3 class="large"><a href="/bg/pages/18031/%d1%81%d0%be%d1%86%d0%b8%d0%b0%d0%bb%d0%bd%d0%b0-%d0%be%d1%82%d0%b3%d0%be%d0%b2%d0%be%d1%80%d0%bd%d0%be%d1%81%d1%82-%d0%bd%d0%b0-%d1%83%d0%bd%d1%81%d1%81.html">Социална отговорност на УНСС</a></h3>
+        <ul class="clearfix">
+        </ul>
+            <img src="/uploads/images/icons/b-socresp.png" aria-hidden="true" alt="" class="decoration" />
+    </div>
+</div>
+    </div>
+</div>
+
+<!-- /gray-area -->
+
+
+        
+        <a class="btn-footer"
+           href="/bg/home/footer?backButton=False">
+            Карта на сайта
+        </a>
+
+
+        
+    </div>
+    <script src="https://common2.unwe.bg/wwwroot/js/site.min.js?t=20260302"></script>
+    
+    
+
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+    
+</body>
+</html>
+

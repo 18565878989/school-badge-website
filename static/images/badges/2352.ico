@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><link rel="icon" href=""/><title>Mighty Oaks International Nursery &amp; Kindergarten | At Mighty Oaks, we are an international nursery and kindergarten that nurtures young minds through a trilingual education (English, Putonghua, and Cantonese) designed for children aged 8 months to 6 years. Our programs include playgroup, nursery, kindergarten, and exciting seasonal camps, all centered on a play-based curriculum and character-building activities. With an award winning campus in Kennedy Town, we provide a safe, stimulating, and inclusive environment where every child thrives emotionally, socially, and intellectually. Join us to empower your child on their journey from little acorns to mighty oaks!</title><meta http-equiv="Content-Language" content="en"/><meta name="keywords" content=""/><meta name="title" property="og:title" content="Mighty Oaks International Nursery &amp; Kindergarten | At Mighty Oaks, we are an international nursery and kindergarten that nurtures young minds through a trilingual education (English, Putonghua, and Cantonese) designed for children aged 8 months to 6 years. Our programs include playgroup, nursery, kindergarten, and exciting seasonal camps, all centered on a play-based curriculum and character-building activities. With an award winning campus in Kennedy Town, we provide a safe, stimulating, and inclusive environment where every child thrives emotionally, socially, and intellectually. Join us to empower your child on their journey from little acorns to mighty oaks!"/><meta name="twitter:title" content="Mighty Oaks International Nursery &amp; Kindergarten | At Mighty Oaks, we are an international nursery and kindergarten that nurtures young minds through a trilingual education (English, Putonghua, and Cantonese) designed for children aged 8 months to 6 years. Our programs include playgroup, nursery, kindergarten, and exciting seasonal camps, all centered on a play-based curriculum and character-building activities. With an award winning campus in Kennedy Town, we provide a safe, stimulating, and inclusive environment where every child thrives emotionally, socially, and intellectually. Join us to empower your child on their journey from little acorns to mighty oaks!"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary"/><meta property="og:url" content="https://www.mightyoaks.edu.hk/favicon.ico"/><meta name="description" property="og:description" content=""/><meta name="twitter:description" content=""/><meta name="google-site-verification" content="idq2MgDU66QZ4rjWsnvSlgZdrbOk6I3iI9uXzpDRGhs"/><meta name="google-site-verification" content="jSjJx0dbYxTXOJDe_RajuPL5bgL017LtBBvJlAq_ZkU"/><script>
+  const currentPath = window.location.pathname;
+
+  // Redirect for specific event pages
+  if (
+    currentPath.startsWith('/eng/event/') ||
+    currentPath.startsWith('/cht/event/') ||
+    currentPath.startsWith('/acorn/event/') ||
+    currentPath.startsWith('/acorn/events/') ||
+    currentPath.startsWith('/acorn/en/event/')
+  ) {
+    window.location.href = 'https://www.mightyoaks.edu.hk/events';
+  }
+
+  // Redirect for programme pages
+  if (currentPath.startsWith('/eng/programme/')) {
+    window.location.href = 'https://www.mightyoaks.edu.hk/programmes';
+  }
+
+  // Redirect for admission pages
+  if (currentPath === '/cht/admission/nursery_and_kindergarten') {
+    window.location.href = 'https://www.mightyoaks.edu.hk/admission';
+  }
+
+  // Redirect for legacy feed/comments
+  if (currentPath === '/acorn/comments/feed/') {
+    window.location.href = 'https://www.mightyoaks.edu.hk/blog';
+  }
+
+  // Redirect for legacy pages
+  if (
+    currentPath === '/eng/mighty_oaks_club/background' ||
+    currentPath === '/eng/our_environment'
+  ) {
+    window.location.href = 'https://www.mightyoaks.edu.hk/about';
+  }
+
+  // Old paths list
+  const oldPaths = [
+    "/summer-camp",
+    "/programs?location=ACORN_PLAYHOUSE_WCH",
+    "/acorn/en/event/",
+    "/cht/event/",
+    "/eng/event/",
+    "/acorn/event/",
+    "/eng/programme/",
+    "/acorn/events/",
+    "/acorn/event/gmw2-growing-acorn-18-24-å€‹æœˆ-æ˜¥å­£/all/",
+    "/school-placement",
+    "/events-updates?category=Upcoming_Events",
+    "/chi/admission/www.acornplayhouse.com",
+    "/cht/programme/playgroup",
+    "/cht/event/what-to-look-for-on-a-school-open-day",
+    "/events-updates?category=Past_Events",
+    "/events-updates?category=BLOG",
+    "/privacy-statement",
+    "/eng/admission/www.acornplayhouse.com",
+    "/eng/event/a-step-by-step-guide-to-toilet-training",
+    "/birthday-parties",
+    "/acorn/en/",
+    "/privacy",
+    "/acorn/www.acornplayhouse.com",
+    "/programs?location=ACORN_PLAYGROUP_KT",
+    "/our-team",
+    "/acorn/en/comments/www.acornplayhouse.com",
+    "/partner-with-us",
+    "/eng/event/eco-friendly-diy-activities-to-do-with-your-childr",
+    "/acorn/event/btt1-baby-acorn-12-18-å€‹æœˆ/www.acornplayhouse.com",
+    "/eng/event/schedule-a-private-school-tour-now-",
+    "/eng/event/teaching-children-to-forgive-setting-an-example-for-your-little-one-this-easte",
+    "/cht/admission/playgroup",
+    "/eng/event/summer-camp-2022",
+    "/acorn/en/comments/feed/",
+    "/eng/admission/playgroup",
+    "/cht/event/how-to-prepare-your-child-with-pre-writing-skills",
+    "/eng/event/book-of-the-month-loves-planting",
+    "/eng/event/mighty-oaks-open-house-on-11th-june-saturday-",
+    "/acorn/event/2022-2023-christmas-camp-è–èª•ç‡Ÿ/?ical=1",
+    "/chi/admission/playgroup",
+    "/acorn/en/feed/",
+    "/cht/event/summer-camp-2022?fbclid=IwAR2zhXd-oSbSDxdwZjGw5LeXdMsV3Y0L4DNP8fcYN4N_M9tTxLmByRhUasM",
+    "/acorn/event/gmw2-growing-acorn-18-24-å€‹æœˆ/www.acornplayhouse.com",
+    "/acorn/event/bs1-baby-acorn-12-18-å€‹æœˆ/www.acornplayhouse.com",
+    "/cht/event/gift-our-special-playgroup-experience-this-christmas-season-",
+    "/cht/",
+    "/acorn/feed/",
+    "/acorn/event/www.acornplayhouse.com",
+    "/acorn/events/2022-08-24/?shortcode=50158732",
+    "/acorn/events/month/?shortcode=50158732&ical=1",
+    "/acorn/events/2022-09-01/?shortcode=50158732",
+    "/home/Website/source/public/www.acornplayhouse.com",
+    "/acorn/event/bs1-baby-acorn-12-18-å€‹æœˆ/2022-08-27/",
+    "/acorn/event/btt1-baby-acorn-12-18-å€‹æœˆ/all/",
+    "/acorn/events/2022-08-27/?shortcode=50158732",
+    "/acorn/events/2022-08-26/?shortcode=50158732",
+    "/acorn/events/2022-08-25/?shortcode=50158732",
+    "/acorn/events/2022-08-31/?shortcode=50158732",
+    "/acorn/event/gmw2-growing-acorn-18-24-å€‹æœˆ/2022-08-24/",
+    "/acorn/event/bs1-baby-acorn-12-18-å€‹æœˆ/2022-08-20/",
+    "/acorn/event/growing-acorn-18-24-å€‹æœˆ/2022-09-03/",
+    "/acorn/event/btt1-baby-acorn-12-18-å€‹æœˆ/2022-08-23/",
+    "/enrol-now-programme?id=3",
+    "/eng/event/www.acornplayhouse.com",
+    "/acorn/event/btt1-baby-acorn-12-18-å€‹æœˆ-æ˜¥å­£/www.acornplayhouse.com",
+    "/eng/programme/playgroup",
+    "/home/Website/source/public/locales",
+    "/acorn/event/btt1-baby-acorn-12-18-å€‹æœˆ-æ˜¥å­£/2023-01-03/",
+    "/cht/event/www.acornplayhouse.com",
+    "/eng/event/what-it-takes-to-make-children-life-long-readers",
+    "/terms-and-conditions",
+    "/cht/event/look-at-our-reading-champions",
+    "/eng/programme/www.acornplayhouse.com",
+    "/blog/www.acornplayhouse.com",
+    "/enrol-now-programme?id=1",
+    "/programs?location=MIGHTY_OAKS_WCH",
+    "/programs?location=ACORN_PLAYGROUND_KT",
+    "/eng/programme/curriculum",
+    "/programs",
+    "/www.acornplayhouse.com",
+    "/acorn/en/event/www.acornplayhouse.com",
+    "/enrol-now-programme?id=2"
+  ];
+
+  // Redirect logic for old paths
+  if (oldPaths.includes(currentPath)) {
+    window.location.href = "https://www.mightyoaks.edu.hk/programmes";
+  }
+
+  // Special redirects
+  const redirects = [
+    "/kennedy-town-campus",
+    "/acorn/en/event",
+    "/cht/admission/scholarship",
+    "/cht/event",
+    "/eng/event",
+    "/eng/programme",
+    "/acorn/events",
+    "/career"
+  ];
+
+  if (redirects.includes(currentPath)) {
+    window.location.href = "https://www.mightyoaks.edu.hk/blog/how-mighty-oaks--play-based-curriculum-paves-the-way-to-prestigious-schools";
+  }
+
+</script><meta name="robots" content="all"/><meta http-equiv="content-language" content="en"/><meta name="next-head-count" content="18"/><link rel="preload" href="/_next/static/css/3a3eb9bc00ba47b4.css" as="style"/><link rel="stylesheet" href="/_next/static/css/3a3eb9bc00ba47b4.css" data-n-g=""/><link rel="preload" href="/_next/static/css/6ad5f70cb56137d7.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6ad5f70cb56137d7.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-929c6a893706df1f.js" defer=""></script><script src="/_next/static/chunks/framework-d805b48c0466ba30.js" defer=""></script><script src="/_next/static/chunks/main-0d62aa53050125b8.js" defer=""></script><script src="/_next/static/chunks/pages/_app-e4dda47183cac0dc.js" defer=""></script><script src="/_next/static/chunks/3891-ba9ce22084ea548f.js" defer=""></script><script src="/_next/static/chunks/1942-79c9cae7f9a2d8e6.js" defer=""></script><script src="/_next/static/chunks/pages/%5B%5B...slug%5D%5D-625d848c42cf764e.js" defer=""></script><script src="/_next/static/1_63G1jq3OvxkhRv1P6p5/_buildManifest.js" defer=""></script><script src="/_next/static/1_63G1jq3OvxkhRv1P6p5/_ssgManifest.js" defer=""></script></head><body class="overflow-x-hidden"><div id="__next" data-reactroot=""><style>
+    #nprogress {
+      pointer-events: none;
+    }
+    #nprogress .bar {
+      background: #5A6FA0;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+    }
+    #nprogress .peg {
+      display: block;
+      position: absolute;
+      right: 0px;
+      width: 100px;
+      height: 100%;
+      box-shadow: 0 0 10px #5A6FA0, 0 0 5px #5A6FA0;
+      opacity: 1;
+      -webkit-transform: rotate(3deg) translate(0px, -4px);
+      -ms-transform: rotate(3deg) translate(0px, -4px);
+      transform: rotate(3deg) translate(0px, -4px);
+    }
+    #nprogress .spinner {
+      display: block;
+      position: fixed;
+      z-index: 1031;
+      top: 15px;
+      right: 15px;
+    }
+    #nprogress .spinner-icon {
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+      border: solid 2px transparent;
+      border-top-color: #5A6FA0;
+      border-left-color: #5A6FA0;
+      border-radius: 50%;
+      -webkit-animation: nprogresss-spinner 400ms linear infinite;
+      animation: nprogress-spinner 400ms linear infinite;
+    }
+    .nprogress-custom-parent {
+      overflow: hidden;
+      position: relative;
+    }
+    .nprogress-custom-parent #nprogress .spinner,
+    .nprogress-custom-parent #nprogress .bar {
+      position: absolute;
+    }
+    @-webkit-keyframes nprogress-spinner {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    @keyframes nprogress-spinner {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style><div id="main-body" class="flex flex-col h-full overflow-y-auto overflow-x-hidden smooth-scroll transition-all"><header id="website-header" class="!z-[2000] transition-colors duration-300" style="background-color:#FFFFFF;color:#000000"><div class="relative z-10 grid items-center lg:gap-6 xl:gap-10 mx-auto pt-8 pb-8 px-6 lg:px-12" style="grid-template-columns:auto auto auto"><div class="flex items-center gap-10 col-span-2"><a target="_self" href="/"><div class="flex items-center justify-center text-left whitespace-normal flex-col text-center" style="max-width:144px;gap:24px 16px"><img class="hidden lg:block transition-all object-contain" src="https://cdn.durable.co/branding/1ekOqk1sCczay3CyPrnnnMZ4gKZjVJHirFaLBAdvmjvW5WnoNqg5Eml8ktLYJpu8.png" alt="" style="height:72px"/><img class="lg:hidden transition-all object-contain" src="https://cdn.durable.co/branding/1ekOqk1sCczay3CyPrnnnMZ4gKZjVJHirFaLBAdvmjvW5WnoNqg5Eml8ktLYJpu8.png" alt="" style="height:72px"/></div></a></div><div class="hidden lg:flex item-center justify-end gap-10"><ul class="lg:flex items-center gap-x-4 gap-y-2 flex-wrap justify-end hidden"><li><a target="_blank" href="https://facebook.com/mightyoaksedu"><div class="flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24" class="w-7 h-7" style="color:#000000"><path fill-rule="evenodd" d="M10.4375 21.8784C5.65941 21.1274 2 16.9877 2 12 2 6.48086 6.48086 2 12 2c5.5191 0 10 4.48086 10 10 0 4.9877-3.6594 9.1274-8.4375 9.8784v-6.9878h2.3301L16.3359 12h-2.7734v-1.8758c0-.79084.3874-1.5617 1.6296-1.5617h1.261V6.10156s-1.1443-.19531-2.2385-.19531c-2.2842 0-3.7771 1.38438-3.7771 3.89063V12H7.89844v2.8906h2.53906v6.9878Z" clip-rule="evenodd"></path></svg></div></a></li><li><a target="_blank" href="https://instagram.com/mightyoakshk"><div class="flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24" class="w-7 h-7" style="color:#000000"><path fill-rule="evenodd" d="M12 2c5.5191 0 10 4.48086 10 10 0 5.5191-4.4809 10-10 10-5.51914 0-10-4.4809-10-10C2 6.48086 6.48086 2 12 2Zm0 3.75c-1.6974 0-1.9102.00719-2.57688.03762-.66523.03035-1.11957.13601-1.51714.29051-.41098.15972-.75953.37343-1.107.72089-.34746.34746-.56117.69602-.72089 1.107-.1545.39753-.26012.85187-.29051 1.5171C5.75719 10.0898 5.75 10.3026 5.75 12s.00719 1.9102.03758 2.5769c.03039.6652.13601 1.1195.29051 1.5171.15972.411.37343.7595.72089 1.107.34747.3475.69602.5612 1.107.7209.39757.1545.85191.2601 1.51714.2905.66668.0304.87948.0376 2.57688.0376s1.9102-.0072 2.5769-.0376c.6652-.0304 1.1195-.136 1.5171-.2905.411-.1597.7595-.3734 1.107-.7209.3475-.3475.5612-.696.7209-1.107.1545-.3976.2601-.8519.2905-1.5171.0304-.6667.0376-.8795.0376-2.5769 0-1.6974-.0072-1.9102-.0376-2.57688-.0304-.66523-.136-1.11957-.2905-1.5171-.1597-.41098-.3734-.75954-.7209-1.107s-.696-.56117-1.107-.72089c-.3976-.1545-.8519-.26016-1.5171-.29051C13.9102 5.75719 13.6974 5.75 12 5.75Zm0 1.12613c1.6688 0 1.8665.00637 2.5255.03645.6094.02781.9403.12961 1.1606.21519.2917.11336.4999.24883.7186.46754.2187.21867.3542.42692.4675.71864.0856.22023.1874.55113.2152 1.1605.0301.65905.0365.85675.0365 2.52555s-.0064 1.8665-.0365 2.5255c-.0278.6094-.1296.9403-.2152 1.1606-.1133.2917-.2488.4999-.4675.7186-.2187.2187-.4269.3542-.7186.4675-.2203.0856-.5512.1874-1.1606.2152-.6589.0301-.8566.0365-2.5255.0365s-1.8666-.0064-2.52555-.0365c-.60937-.0278-.94027-.1296-1.1605-.2152-.29176-.1133-.49997-.2488-.71868-.4675-.21871-.2187-.35414-.4269-.4675-.7186-.08558-.2203-.18742-.5512-.21523-1.1606-.03008-.659-.03641-.8567-.03641-2.5255s.00633-1.8665.03641-2.52555c.02781-.60937.12965-.94027.21523-1.1605.11336-.29172.24879-.49997.4675-.71864.21871-.21871.42692-.35418.71868-.46754.22023-.08558.55113-.18738 1.1605-.21519.65905-.03008.85675-.03645 2.52555-.03645Zm0 1.91442c-1.7725 0-3.20945 1.43695-3.20945 3.20945S10.2275 15.2095 12 15.2095s3.2095-1.437 3.2095-3.2095c0-1.7725-1.437-3.20945-3.2095-3.20945Zm0 5.29275c-1.1506 0-2.08332-.9327-2.08332-2.0833 0-1.1506.93272-2.08332 2.08332-2.08332S14.0833 10.8494 14.0833 12 13.1506 14.0833 12 14.0833Zm4.0863-5.41955c0 .41422-.3358.74996-.7501.74996-.4141 0-.7499-.33574-.7499-.74996s.3358-.75.7499-.75c.4143 0 .7501.33578.7501.75Z" clip-rule="evenodd"></path></svg></div></a></li><li><a target="_blank" href="https://wa.me/92495799"><div class="flex justify-center items-center"><div class="flex-shrink-0 relative w-7 h-7"><div class="absolute w-full h-full" style="background-color:#000000;-webkit-mask-image:url(&quot;https://static.thenounproject.com/png/5245973-200.png&quot;);mask-image:url(&quot;https://static.thenounproject.com/png/5245973-200.png&quot;);-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain"></div></div></div></a></li><li><a target="_blank" href="https://www.xiaohongshu.com/user/profile/62f9c04c000000001e01d6ff?xhsshare=CopyLink&amp;appuid=5d134e13000000001601e6eb&amp;apptime=1686896897"><div class="flex justify-center items-center"><div class="flex-shrink-0 relative w-7 h-7"><div class="absolute w-full h-full" style="background-color:#000000;-webkit-mask-image:url(&quot;https://static.thenounproject.com/png/1300-200.png&quot;);mask-image:url(&quot;https://static.thenounproject.com/png/1300-200.png&quot;);-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain"></div></div></div></a></li></ul></div><div class="ml-auto lg:hidden"><button class="inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition-colors duration-300" style="color:#000000"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="block h-5 w-5"><path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"></path></svg></button></div></div></header><div class="min-h-150 flex-shrink-0 flex-grow"></div><div class="min-h-150 flex-shrink-0 flex-grow"></div><div class="Toastify"></div><div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"en","url_structure":"sub_domain","languages":["en","zh-CN","zh-TW"],"wrapper_selector":".gtranslate_wrapper"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer=""></script></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"_nextI18Next":{"initialI18nStore":{"en":{"common":{"404":{"button":"Back to home page","subtitle":"The link may be broken, or the page may have been removed. Check to see if the link you're trying to open is correct.","title":"This page isn't available"},"500":{"button":"Back to home page","subtitle":"We are working on fixing the problem. Be back soon.","title":"Sorry, unexpected error"},"back":"Back","by":"By","contactUs":"Contact us","footer":{"madeWith":"Made with"},"home":"Home","loading":"Loading...","next":"Next","notFound":"Nothing found","previous":"Previous","search":"Search","weekdays":{"friday":"Friday","monday":"Monday","saturday":"Saturday","sunday":"Sunday","thursday":"Thursday","tuesday":"Tuesday","wednesday":"Wednesday"},"weekdaysShort":{"friday":"Fri","monday":"Mon","saturday":"Sat","sunday":"Sun","thursday":"Thu","tuesday":"Tue","wednesday":"Wed"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"hour":"Hour","minute":"Minute","hours":"Hours","minutes":"Minutes","and":"And"}}},"initialLocale":"en","ns":["common"],"userConfig":{"i18n":{"defaultLocale":"en","locales":["de","en","es","fr","it","nl","pt"],"localeDetection":false},"localePath":"/home/Website/source/public/locales","default":{"i18n":{"defaultLocale":"en","locales":["de","en","es","fr","it","nl","pt"],"localeDetection":false},"localePath":"/home/Website/source/public/locales"}}},"page":null,"website":{"_id":"67ecb720622df1a34dc3aef4","isTemplate":false,"logo":{"_id":"67fe400f8ece1fd339eaee73","author":"","authorLink":"","type":"library","url":"https://cdn.durable.co/branding/1ekOqk1sCczay3CyPrnnnMZ4gKZjVJHirFaLBAdvmjvW5WnoNqg5Eml8ktLYJpu8.png","key":"branding/1ekOqk1sCczay3CyPrnnnMZ4gKZjVJHirFaLBAdvmjvW5WnoNqg5Eml8ktLYJpu8.png","Business":"67ecb71e622df1a34dc3aeb0","createdAt":"2025-04-15T11:16:31.671Z","brandingToWebsite":false,"__v":0},"favicon":null,"primaryColor":"#F5ECE1","secondaryColor":"#815f87","colorPalette":{"Palette":null,"colors":[{"color":"#FCFAF6","accent":"#5A6FA0"},{"color":"#F3eaa1","accent":"#5A6FA0"},{"color":"#c6eeed","accent":"#326295"},{"color":"#40c1bb","accent":"#FFFFFF"}]},"cornerRadius":"no-rounded","fonts":{"source":"custom","head":{"_id":"661e635c161e8db1de306d4a","name":"General Sans","weight":700,"family":"'General Sans', sans-serif","active":true,"source":"fontshare"},"body":{"_id":"661e635c161e8db1de306d4a","name":"General Sans","weight":700,"family":"'General Sans', sans-serif","active":true,"source":"fontshare"},"custom":{"head":{"name":"Poppins","family":"'Poppins', sans-serif","weight":"400","style":"normal","variants":["100","100italic","200","200italic","300","300italic","400","400italic","500","500italic","600","600italic","700","700italic","800","800italic","900","900italic"],"id":"Poppins"},"body":{"name":"Quicksand","family":"'Quicksand', sans-serif","weight":"400","style":"normal","variants":["300","400","500","600","700"],"id":"Quicksand"}}},"button":null,"buttons":{"style1":{"cornerRadius":8,"type":"solid"},"style2":{"cornerRadius":8,"type":"outline"}},"status":"public","redirect":"to-www","widgets":[{"WebsiteBlock":"64ee349bf1c45fc9ddde8f2e","type":"whatsapp_button","idx":0,"generating":"block","editorUrl":"https://www.commoninja.com/whatsapp-button/wl/editor/view/3eacf351-1b51-44f2-a9d5-4ed26fa710f8?wlToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNlbGxlcklkIjoiMzRlNDc2YTQtYmU2OS00MmE2LWIwMTAtNDJmN2U5OWY0MzAxIiwidGVuYW50SWQiOiJkdXJhYmxlLTY3ZWNiNzIwNjIyZGYxYTM0ZGMzYWVmNCIsImlhdCI6MTc0NDgwMzU4Mn0.99Fvn0g4Lgl3q8zTaU4a5uWJkUkm4W3FZ1TKXjMMNrc\u0026wlPlatform=durable","embedCode":{"html":"\u003cdiv class=\"commonninja_component pid-3eacf351-1b51-44f2-a9d5-4ed26fa710f8\"\u003e\u003c/div\u003e","script":"\u003cscript src=\"https://cdn.commoninja.com/sdk/latest/commonninja.js\" defer\u003e\u003c/script\u003e"},"externalId":"3eacf351-1b51-44f2-a9d5-4ed26fa710f8"}],"searchIndexing":true,"domain":"mightyoaks.edu.hk","subdomain":"mightyoaksinternationalnurserykindergarten","externalDomain":"mightyoaks.edu.hk","customDomain":"","durableDomain":"durablesites.com","Business":{"_id":"67ecb71e622df1a34dc3aeb0","name":"Mighty Oaks International Nursery \u0026 Kindergarten","type":{"Type":"615f610338d3cef456b5a678","name":"At Mighty Oaks, we are an international nursery and kindergarten that nurtures young minds through a trilingual education (English, Putonghua, and Cantonese) designed for children aged 8 months to 6 years. Our programs include playgroup, nursery, kindergarten, and exciting seasonal camps, all centered on a play-based curriculum and character-building activities. With an award winning campus in Kennedy Town, we provide a safe, stimulating, and inclusive environment where every child thrives emotionally, socially, and intellectually. Join us to empower your child on their journey from little acorns to mighty oaks!"},"stripeDetails":{"subscriptionStatus":"active","paymentsEnabled":false},"settings":{"ai":{"language":"en"}},"language":"en"},"seo":{"title":"","description":"","keywords":"","headCode":"\u003cmeta name=\"google-site-verification\" content=\"idq2MgDU66QZ4rjWsnvSlgZdrbOk6I3iI9uXzpDRGhs\" /\u003e\n\u003cmeta name=\"google-site-verification\" content=\"jSjJx0dbYxTXOJDe_RajuPL5bgL017LtBBvJlAq_ZkU\" /\u003e\n\u003cscript\u003e\n  const currentPath = window.location.pathname;\n\n  // Redirect for specific event pages\n  if (\n    currentPath.startsWith('/eng/event/') ||\n    currentPath.startsWith('/cht/event/') ||\n    currentPath.startsWith('/acorn/event/') ||\n    currentPath.startsWith('/acorn/events/') ||\n    currentPath.startsWith('/acorn/en/event/')\n  ) {\n    window.location.href = 'https://www.mightyoaks.edu.hk/events';\n  }\n\n  // Redirect for programme pages\n  if (currentPath.startsWith('/eng/programme/')) {\n    window.location.href = 'https://www.mightyoaks.edu.hk/programmes';\n  }\n\n  // Redirect for admission pages\n  if (currentPath === '/cht/admission/nursery_and_kindergarten') {\n    window.location.href = 'https://www.mightyoaks.edu.hk/admission';\n  }\n\n  // Redirect for legacy feed/comments\n  if (currentPath === '/acorn/comments/feed/') {\n    window.location.href = 'https://www.mightyoaks.edu.hk/blog';\n  }\n\n  // Redirect for legacy pages\n  if (\n    currentPath === '/eng/mighty_oaks_club/background' ||\n    currentPath === '/eng/our_environment'\n  ) {\n    window.location.href = 'https://www.mightyoaks.edu.hk/about';\n  }\n\n  // Old paths list\n  const oldPaths = [\n    \"/summer-camp\",\n    \"/programs?location=ACORN_PLAYHOUSE_WCH\",\n    \"/acorn/en/event/\",\n    \"/cht/event/\",\n    \"/eng/event/\",\n    \"/acorn/event/\",\n    \"/eng/programme/\",\n    \"/acorn/events/\",\n    \"/acorn/event/gmw2-growing-acorn-18-24-å€‹æœˆ-æ˜¥å­£/all/\",\n    \"/school-placement\",\n    \"/events-updates?category=Upcoming_Events\",\n    \"/chi/admission/www.acornplayhouse.com\",\n    \"/cht/programme/playgroup\",\n    \"/cht/event/what-to-look-for-on-a-school-open-day\",\n    \"/events-updates?category=Past_Events\",\n    \"/events-updates?category=BLOG\",\n    \"/privacy-statement\",\n    \"/eng/admission/www.acornplayhouse.com\",\n    \"/eng/event/a-step-by-step-guide-to-toilet-training\",\n    \"/birthday-parties\",\n    \"/acorn/en/\",\n    \"/privacy\",\n    \"/acorn/www.acornplayhouse.com\",\n    \"/programs?location=ACORN_PLAYGROUP_KT\",\n    \"/our-team\",\n    \"/acorn/en/comments/www.acornplayhouse.com\",\n    \"/partner-with-us\",\n    \"/eng/event/eco-friendly-diy-activities-to-do-with-your-childr\",\n    \"/acorn/event/btt1-baby-acorn-12-18-å€‹æœˆ/www.acornplayhouse.com\",\n    \"/eng/event/schedule-a-private-school-tour-now-\",\n    \"/eng/event/teaching-children-to-forgive-setting-an-example-for-your-little-one-this-easte\",\n    \"/cht/admission/playgroup\",\n    \"/eng/event/summer-camp-2022\",\n    \"/acorn/en/comments/feed/\",\n    \"/eng/admission/playgroup\",\n    \"/cht/event/how-to-prepare-your-child-with-pre-writing-skills\",\n    \"/eng/event/book-of-the-month-loves-planting\",\n    \"/eng/event/mighty-oaks-open-house-on-11th-june-saturday-\",\n    \"/acorn/event/2022-2023-christmas-camp-è–èª•ç‡Ÿ/?ical=1\",\n    \"/chi/admission/playgroup\",\n    \"/acorn/en/feed/\",\n    \"/cht/event/summer-camp-2022?fbclid=IwAR2zhXd-oSbSDxdwZjGw5LeXdMsV3Y0L4DNP8fcYN4N_M9tTxLmByRhUasM\",\n    \"/acorn/event/gmw2-growing-acorn-18-24-å€‹æœˆ/www.acornplayhouse.com\",\n    \"/acorn/event/bs1-baby-acorn-12-18-å€‹æœˆ/www.acornplayhouse.com\",\n    \"/cht/event/gift-our-special-playgroup-experience-this-christmas-season-\",\n    \"/cht/\",\n    \"/acorn/feed/\",\n    \"/acorn/event/www.acornplayhouse.com\",\n    \"/acorn/events/2022-08-24/?shortcode=50158732\",\n    \"/acorn/events/month/?shortcode=50158732\u0026ical=1\",\n    \"/acorn/events/2022-09-01/?shortcode=50158732\",\n    \"/home/Website/source/public/www.acornplayhouse.com\",\n    \"/acorn/event/bs1-baby-acorn-12-18-å€‹æœˆ/2022-08-27/\",\n    \"/acorn/event/btt1-baby-acorn-12-18-å€‹æœˆ/all/\",\n    \"/acorn/events/2022-08-27/?shortcode=50158732\",\n    \"/acorn/events/2022-08-26/?shortcode=50158732\",\n    \"/acorn/events/2022-08-25/?shortcode=50158732\",\n    \"/acorn/events/2022-08-31/?shortcode=50158732\",\n    \"/acorn/event/gmw2-growing-acorn-18-24-å€‹æœˆ/2022-08-24/\",\n    \"/acorn/event/bs1-baby-acorn-12-18-å€‹æœˆ/2022-08-20/\",\n    \"/acorn/event/growing-acorn-18-24-å€‹æœˆ/2022-09-03/\",\n    \"/acorn/event/btt1-baby-acorn-12-18-å€‹æœˆ/2022-08-23/\",\n    \"/enrol-now-programme?id=3\",\n    \"/eng/event/www.acornplayhouse.com\",\n    \"/acorn/event/btt1-baby-acorn-12-18-å€‹æœˆ-æ˜¥å­£/www.acornplayhouse.com\",\n    \"/eng/programme/playgroup\",\n    \"/home/Website/source/public/locales\",\n    \"/acorn/event/btt1-baby-acorn-12-18-å€‹æœˆ-æ˜¥å­£/2023-01-03/\",\n    \"/cht/event/www.acornplayhouse.com\",\n    \"/eng/event/what-it-takes-to-make-children-life-long-readers\",\n    \"/terms-and-conditions\",\n    \"/cht/event/look-at-our-reading-champions\",\n    \"/eng/programme/www.acornplayhouse.com\",\n    \"/blog/www.acornplayhouse.com\",\n    \"/enrol-now-programme?id=1\",\n    \"/programs?location=MIGHTY_OAKS_WCH\",\n    \"/programs?location=ACORN_PLAYGROUND_KT\",\n    \"/eng/programme/curriculum\",\n    \"/programs\",\n    \"/www.acornplayhouse.com\",\n    \"/acorn/en/event/www.acornplayhouse.com\",\n    \"/enrol-now-programme?id=2\"\n  ];\n\n  // Redirect logic for old paths\n  if (oldPaths.includes(currentPath)) {\n    window.location.href = \"https://www.mightyoaks.edu.hk/programmes\";\n  }\n\n  // Special redirects\n  const redirects = [\n    \"/kennedy-town-campus\",\n    \"/acorn/en/event\",\n    \"/cht/admission/scholarship\",\n    \"/cht/event\",\n    \"/eng/event\",\n    \"/eng/programme\",\n    \"/acorn/events\",\n    \"/career\"\n  ];\n\n  if (redirects.includes(currentPath)) {\n    window.location.href = \"https://www.mightyoaks.edu.hk/blog/how-mighty-oaks--play-based-curriculum-paves-the-way-to-prestigious-schools\";\n  }\n\n\u003c/script\u003e\n","footerCode":"\u003cdiv class=\"gtranslate_wrapper\"\u003e\u003c/div\u003e\n\u003cscript\u003ewindow.gtranslateSettings = {\"default_language\":\"en\",\"url_structure\":\"sub_domain\",\"languages\":[\"en\",\"zh-CN\",\"zh-TW\"],\"wrapper_selector\":\".gtranslate_wrapper\"}\u003c/script\u003e\n\u003cscript src=\"https://cdn.gtranslate.net/widgets/latest/float.js\" defer\u003e\u003c/script\u003e","Image":null},"emailProvider":null,"paletteMigratedAt":null,"social":[{"type":"facebook","link":"mightyoaksedu","idx":0},{"type":"instagram","link":"mightyoakshk"},{"type":"custom","link":"https://wa.me/92495799","icon":{"_id":"67fe048f2bfa355c7a438fd6","author":"verry poernomo","authorLink":"https://thenounproject.com/term/whatsapp/5245973?utm_source=Durable.co\u0026utm_medium=referral","type":"icon","preview":"https://static.thenounproject.com/png/5245973-200.png","url":"https://static.thenounproject.com/png/5245973-200.png","Business":"67ecb71e622df1a34dc3aeb0","createdAt":"2025-04-15T07:02:39.024Z","description":"whatsapp","brandingToWebsite":false,"__v":0},"name":"Whatsapp","idx":2},{"type":"custom","link":"https://www.xiaohongshu.com/user/profile/62f9c04c000000001e01d6ff?xhsshare=CopyLink\u0026appuid=5d134e13000000001601e6eb\u0026apptime=1686896897","icon":{"_id":"67fe10028ece1fd339e89f27","author":"John Caserta","authorLink":"https://thenounproject.com/term/book/1300?utm_source=Durable.co\u0026utm_medium=referral","type":"icon","preview":"https://static.thenounproject.com/png/1300-200.png","url":"https://static.thenounproject.com/png/1300-200.png","Business":"67ecb71e622df1a34dc3aeb0","createdAt":"2025-04-15T07:51:30.427Z","description":"Book","brandingToWebsite":false,"__v":0},"name":"XiaoHongShu"}],"socialSettings":{"size":"medium","shape":"none","style":"solid"},"embedContactConfig":{"fontSize":16,"font":"628fe251e7a2152e12ee4d53","button":{"label":"Send","padding":"medium","style":"solid","borderRadius":6,"backgroundColor":"#4338C9"},"field":{"borderRadius":6,"padding":"medium","backgroundColor":"#ffffff","showPhone":false,"showCompany":false},"customFields":[],"backgroundColor":"#ffffff"},"header":{"siteName":"Mighty Oaks International Nursery \u0026 Kindergarten","logo":{"type":"image","showText":true,"showIcon":false,"source":"branding","media":{"_id":"67fe52578ece1fd339ecc7fb","author":"","authorLink":"","type":"library","url":"https://cdn.durable.co/logos/1drt6saN56oUbuy2hH1y8xphfF87GdHmzHyl0RitvKpMNthOZmVLS4fgfkFTEK2e.png","key":"logos/1drt6saN56oUbuy2hH1y8xphfF87GdHmzHyl0RitvKpMNthOZmVLS4fgfkFTEK2e.png","Business":"67ecb71e622df1a34dc3aeb0","createdAt":"2025-04-15T12:34:31.330Z","brandingToWebsite":false,"__v":0},"height":{"desktop":96,"mobile":40},"variant":"secondary","branding":{"logo":{"text":"Mighty Oaks International Nursery \u0026 Kindergarten","showText":true,"showIcon":false,"custom":{"enabled":true,"primary":{"light":{"_id":"67fe40268ece1fd339eaef19","author":"","authorLink":"","type":"library","url":"https://cdn.durable.co/branding/35HvNPHXGvgkLmfUxl2SdkIYaUDcO8uCsb9zdFQTEaGuXl3uEdtExKApktJa41IB.png","key":"branding/35HvNPHXGvgkLmfUxl2SdkIYaUDcO8uCsb9zdFQTEaGuXl3uEdtExKApktJa41IB.png","Business":"67ecb71e622df1a34dc3aeb0","createdAt":"2025-04-15T11:16:54.140Z","brandingToWebsite":false,"__v":0},"dark":{"_id":"67fe3ff52bfa355c7a46c060","author":"","authorLink":"","type":"library","url":"https://cdn.durable.co/branding/2TVaHVX45hklREvhMBVQ7ABowcHLDpBLA4s9pb2e2bujTZnbJjadYD2n62ZkxbaE.jpg","key":"branding/2TVaHVX45hklREvhMBVQ7ABowcHLDpBLA4s9pb2e2bujTZnbJjadYD2n62ZkxbaE.jpg","Business":"67ecb71e622df1a34dc3aeb0","createdAt":"2025-04-15T11:16:05.919Z","brandingToWebsite":false,"__v":0}},"secondary":{"light":{"_id":"67fe400f8ece1fd339eaee73","author":"","authorLink":"","type":"library","url":"https://cdn.durable.co/branding/1ekOqk1sCczay3CyPrnnnMZ4gKZjVJHirFaLBAdvmjvW5WnoNqg5Eml8ktLYJpu8.png","key":"branding/1ekOqk1sCczay3CyPrnnnMZ4gKZjVJHirFaLBAdvmjvW5WnoNqg5Eml8ktLYJpu8.png","Business":"67ecb71e622df1a34dc3aeb0","createdAt":"2025-04-15T11:16:31.671Z","brandingToWebsite":false,"__v":0}}},"source":"branding"},"fonts":{"source":"pairing","head":{"explanation":"","name":"Hanken Grotesk","family":"'Hanken Grotesk', sans-serif","weight":"700","style":"normal","lineHeight":1,"size":1,"upperCase":false,"variants":["700"],"source":"google"},"body":{"explanation":"","name":"Hanken Grotesk","family":"'Hanken Grotesk', sans-serif","weight":"700","style":"normal","lineHeight":1,"size":1,"variants":["700"],"source":"google"}},"scale":{"mobile":"2","desktop":"1.8"}}},"showSocial":true,"style":"logo-left-menu-left","navStyle":"default","fullWidth":true,"sticky":false,"buttons":{"enabled":true,"items":[{"label":"Acorn Playhouse Wong Chuk Hang","link":"https://acornplayhouse.com/","type":"url","newPage":true,"style":{"name":"style1"}}]},"spacing":{"top":"large","bottom":"large","minHeight":"min-h-60"},"menu":{"collapse":false,"placement":"left","icon":"default"},"layers":{"palette":"color1","overlay":{"type":"solid"},"image":{"enabled":false}}},"footer":{"siteName":"Mighty Oaks International Nursery \u0026 Kindergarten","logoFrom":null,"logo":{"type":"image","showText":true,"showIcon":false,"source":"upload","media":{"_id":"689ab3f2fbac50db23b50fc9","author":"","authorLink":"","type":"library","url":"https://cdn.durable.co/logos/21ve2b8dYLTXoCfq6RsGPXecenqOl76nqdWFS9O7yqItmGMuTla0dz44HoYn7fx6.png","key":"logos/21ve2b8dYLTXoCfq6RsGPXecenqOl76nqdWFS9O7yqItmGMuTla0dz44HoYn7fx6.png","Business":"67ecb71e622df1a34dc3aeb0","createdAt":"2025-08-12T03:24:34.861Z","brandingToWebsite":false,"__v":0},"height":{"desktop":200,"mobile":64},"variant":"secondary","branding":{"fonts":{"source":"pairing","head":{"explanation":"","name":"Hanken Grotesk","family":"'Hanken Grotesk', sans-serif","weight":"700","style":"normal","lineHeight":1,"size":1,"upperCase":false,"variants":["700"],"source":"google"},"body":{"explanation":"","name":"Hanken Grotesk","family":"'Hanken Grotesk', sans-serif","weight":"700","style":"normal","lineHeight":1,"size":1,"variants":["700"],"source":"google"}},"logo":{"text":"Mighty Oaks International Nursery \u0026 Kindergarten","showText":true,"showIcon":false,"custom":{"enabled":true,"primary":{"light":{"_id":"67fe40268ece1fd339eaef19","author":"","authorLink":"","type":"library","url":"https://cdn.durable.co/branding/35HvNPHXGvgkLmfUxl2SdkIYaUDcO8uCsb9zdFQTEaGuXl3uEdtExKApktJa41IB.png","key":"branding/35HvNPHXGvgkLmfUxl2SdkIYaUDcO8uCsb9zdFQTEaGuXl3uEdtExKApktJa41IB.png","Business":"67ecb71e622df1a34dc3aeb0","createdAt":"2025-04-15T11:16:54.140Z","brandingToWebsite":false,"__v":0},"dark":{"_id":"67fe3ff52bfa355c7a46c060","author":"","authorLink":"","type":"library","url":"https://cdn.durable.co/branding/2TVaHVX45hklREvhMBVQ7ABowcHLDpBLA4s9pb2e2bujTZnbJjadYD2n62ZkxbaE.jpg","key":"branding/2TVaHVX45hklREvhMBVQ7ABowcHLDpBLA4s9pb2e2bujTZnbJjadYD2n62ZkxbaE.jpg","Business":"67ecb71e622df1a34dc3aeb0","createdAt":"2025-04-15T11:16:05.919Z","brandingToWebsite":false,"__v":0}},"secondary":{"light":{"_id":"67fe400f8ece1fd339eaee73","author":"","authorLink":"","type":"library","url":"https://cdn.durable.co/branding/1ekOqk1sCczay3CyPrnnnMZ4gKZjVJHirFaLBAdvmjvW5WnoNqg5Eml8ktLYJpu8.png","key":"branding/1ekOqk1sCczay3CyPrnnnMZ4gKZjVJHirFaLBAdvmjvW5WnoNqg5Eml8ktLYJpu8.png","Business":"67ecb71e622df1a34dc3aeb0","createdAt":"2025-04-15T11:16:31.671Z","brandingToWebsite":false,"__v":0}}},"source":"branding"},"variant":"secondary"}},"style":"simple-center","additionalDetails":"\u003cp\u003eMighty Oaks International Nursery and Kindergarten has been shaping excellence since 2015, offering award‑winning trilingual education in English, Cantonese, and Putonghua, with a strong focus on character development and whole‑child learning.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eThis year marks the 10‑year anniversary of our campus!\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eVisit our sister campus, \u003ca title=\"Acorn Playhouse\" href=\"https://www.mightyoaks.edu.hk/wong-chuk-hang-campus\"\u003eAcorn Playhouse\u003c/a\u003e, in Wong Chuk Hang, where community and joyful learning meet.\u003c/strong\u003e\u003c/p\u003e","showSocial":false,"madeWithDurable":true,"button":{"label":"Contact us","link":"https://wa.me/92495799","type":"url","newPage":true,"style":{"name":"style1"}},"spacing":{"top":"large","bottom":"large","minHeight":"min-h-60"},"layers":{"palette":"color2","image":{"enabled":false},"overlay":{"type":"solid","direction":null}},"showAddress":false},"onboardingSurveyCompleted":false,"version":4,"generate":false,"generatedAt":"2025-04-02T04:05:24.341Z","domainSetAt":null,"allowRendering":true,"showLogo":false,"language":"en","rawDomain":"www.mightyoaks.edu.hk"},"apiUrl":"https://api.durable.co","captchaKey":"6Leu0w4eAAAAAN0DPcebVt2LMLmRMOIocTcPheC0","ipAddress":"182.239.89.105","pt":null},"__N_SSP":true},"page":"/[[...slug]]","query":{"slug":["favicon.ico"]},"buildId":"1_63G1jq3OvxkhRv1P6p5","isFallback":false,"gssp":true,"locale":"en","locales":["en","de","es","fr","it","nl","pt"],"defaultLocale":"en","scriptLoader":[]}</script></body></html>

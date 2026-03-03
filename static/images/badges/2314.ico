@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ESF Glenealy School | IB School PYP | ESF Hong Kong</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="description" content="ESF Glenealy School focuses on children’s learning and wellbeing. Our IB PYP curriculum supports all needs, ensuring a smooth transition to secondary school." />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="ESF Glenealy School,International School Hong Kong, English Schools Foundation,IB School Hong Kong" />
+<meta property="og:description" content="ESF Glenealy School focuses on children’s learning and wellbeing. Our IB PYP curriculum supports all needs, ensuring a smooth transition to secondary school." />
+<meta property="og:image" content="http://glenealy.esf.edu.hk/cache/img/c82080333396bd03fed090870bff6ac5.jpg" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:secure_url" content="https://glenealy.esf.edu.hk/cache/img/c82080333396bd03fed090870bff6ac5.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta name="viewport" content="width=device-width" />
+	<link rel="canonical" href="https://glenealy.esf.edu.hk/en/" /> 
+				<link rel="alternate" href="/zh/" hreflang="zh-hk" />
+				<link rel="shortcut icon" href="/img/favicon.png" />
+	<link rel="apple-touch-icon" href="/img/iphone-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="/img/iphone-icon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/css/editor.css" />
+	<link rel="stylesheet" type="text/css" href="/en/cache/css/068e798cbe5b2125d895c477c1461619.css" />
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/jquery-migrate.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/jquery.Slider.js"></script>
+	<script type="text/javascript" src="/js/jquery.slideSubmit.js"></script>
+	<script type="text/javascript" src="/js/jquery.table.js"></script>
+	<script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="/js/validator.class.js"></script>
+	<script type="text/javascript" src="/en/cache/js/lang.js"></script>
+	<script type="text/javascript" src="/js/function.js"></script>
+	<script type="text/javascript" src="/js/init.js"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="/js/html5izer_placeholder.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="/js/html5.js"></script>
+	<![endif]-->
+	<style>
+		.colour1,
+		a.colour1,
+		.editor a.colour1,
+		#content #history-page .years .year.current,
+		#content #history-page .years .year:hover,
+		#content #history-page .select-input,
+		#content .page-wrapper .page-container #data-list .data-item.open>.title,
+		#content #enquiry .form-container .row .checkbox-cotnainer .checkbox:after {
+			color: #e2b503 !important;
+		}
+		.colour2,
+		a.colour2,
+		.editor a.colour2,
+		#content section .tab-select .select-input,
+		#content #section3 .wrapper .tabs .tab.current,
+		#content #section3 .wrapper .tabs .tab:hover,
+		#content #section6 .wrapper .tabs .tab.current,
+		#content #section6 .wrapper .tabs .tab:hover,
+		#content #landing section.type3 .tabs .tab.current,
+		#content #landing section.type3 .tabs .tab:hover,
+		#content .page-wrapper #submenu ul li a:hover,
+		#content .page-wrapper .page-container #tabs .tab.current,
+		#content .page-wrapper .page-container #tabs .tab:hover,
+		#content .page-wrapper .page-container #tabs .select-input,
+		#content .page-wrapper .page-container .tab-select .select-input {
+			color: #003e78 !important;
+		}
+		.colour3,
+		a.colour3,
+		.editor a.colour3 {
+			color: #ddf3ff !important;
+		}
+		.colour4,
+		a.colour4,
+		.editor a.colour4 {
+			color: #fffadd !important;
+		}
+		.bg-colour1,
+		.editor ul.colour1 li:before,
+		.editor ol.colour1 li:before,
+		.pager a.selected,
+		.pager a:hover,
+		#content #enquiry .form-container .row .radio-container2 .radio.checked,
+		#content #enquiry .form-container .row .radio-container2 .radio:after,
+		#content #enquiry .form-container .row .radio-container .radio:after,
+		#content #sitemap li:before {
+			background-color: #e2b503 !important;
+		}
+		.bg-colour2,
+		.editor ul.colour2 li:before,
+		.editor ol.colour2 li:before,
+		#floating a[href]:hover {
+			background-color: #003e78 !important;
+		}
+		.bg-colour3 {
+			background-color: #ddf3ff !important;
+		}
+		.bg-colour4 {
+			background-color: #fffadd !important;
+		}
+		.br-colour1,
+		#content #section7 .record-slider .slider-container .post:hover {
+			border-color: #e2b503 !important;
+		}
+		.br-colour2 {
+			border-color: #003e78 !important;
+		}
+		.br-colour3 {
+			border-color: #ddf3ff !important;
+		}
+		.br-colour4 {
+			border-color: #fffadd !important;
+		}
+	</style>
+	<script type="text/javascript">
+											if(window.location.protocol.toLowerCase().indexOf('https:') == -1)
+											{
+												window.location.href = 'https://'+ window.location.host + window.location.pathname;
+											}
+									     </script>	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80RB75PQW6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-80RB75PQW6');
+</script></head>
+<body>
+	<header>
+		<div class="container">
+			<a href="/en/" class="logo">
+				<img src="/cache/img/be1ce98cf5dc158cddd9d01a7bc6bf0a.png" alt="ESF Glenealy School" loading="lazy" height="180" />			</a>
+			<div class="menu-container">
+				<div class="top-container">
+					<nav class="lang">
+						<ul>
+							<li><a href="/zh/">繁體</a></li>						</ul>
+					</nav>
+					<div class="divider"></div>
+					<a href="/en/" class="home"></a>
+					<div class="search">
+						<button></button>
+						<div class="search-container">
+							<form action="/en/search/">
+								<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />								<button type="submit"></button>							</form>
+							<button class="close"></button>
+						</div>
+					</div>
+										<nav class="social">
+				 		<ul>
+				 							 			<li>
+				 				<a href="https://www.instagram.com/esfglenealy/" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 			<li>
+				 				<a href="https://www.facebook.com/ESFGlenealy" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3e297d1.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 		</ul>
+				 	</nav>
+				 						<div class="search-responsive">
+						<form action="/en/search/">
+							<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />							<button type="submit"></button>						</form>
+					</div>
+										<div class="divider"></div>
+									 							<a href="https://glenealy.esf.edu.hk/parent/" target="_blank" class="alt-btn">Students & Parents</a>
+				 										 		<a href="https://glenealy.esf.edu.hk/en/visit_us" class="btn">Visit Us</a>
+									</div>
+				<div class="bottom-container">
+					<nav class="menu">
+						<ul>
+																						<li>
+									<a href="/en/about_us/">About Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/about_us/">About Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/about_us/marketing_family/">ESF Family</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/principals_welcome/">Principal's Welcome</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/what_we_stand_for/">What We Stand For</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/school_history/">School History</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/campus_find_us/">Campus & Find Us</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_education/">Outstanding Education</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_education/">Outstanding Education</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_education/our_approach/">Our Approach</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/curriculum/">Curriculum</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/student_support_wellbeing/">Student Support & Wellbeing</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/parent_partnership/">Parent Partnership</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/specialist_provision/">Specialist Provision</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_experiences/extra_curricular_activities/">Extra-Curricular Activities</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/outdoor_learning/">Outdoor Learning</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/action_student_leadership/">Action & Student Leadership</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/speakers_visitors/">Speakers & Visitors</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_people/">Outstanding People</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_people/">Outstanding People</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_people/leadership_team/">Leadership Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/our_team/">Our Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/parent_teacher_association/">Parent Teacher Association</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/school_council/">School Council</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/testimonials/">Testimonials</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/admissions/">Admissions</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/admissions/">Admissions</a>
+													</li>
+																																			</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/WorkWithUs/">Work With Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/WorkWithUs/">Work With Us</a>
+													</li>
+																																			</ul>
+										</div>
+																	</li>
+													</ul>
+					</nav>
+				</div>	
+			</div>
+			<button class="nav-btn"></button>
+		</div>
+	</header>
+	<section id="content">		
+		<script type="text/javascript">
+    var timeout = [];
+
+    $(window).load(function() {
+		let animate = function() {
+			let height = $(window).scrollTop() + Math.round($(window).height() * 0.6);
+			$('#content > section').each(function() {
+				if(!$(this).hasClass('animate') && height > $(this).offset().top)
+				{
+					$(this).addClass('animate');
+                    if($(this).attr('id') == 'section2') {
+						$('li > div', '#section2').each(function(index) {
+							let item = $(this);
+							setTimeout(function() {
+								item.addClass('animate');
+							}, index * 200);
+						});
+					}
+				}
+			});
+		};
+		$(window).on('scroll', animate);
+		animate();
+	});
+</script>
+<div id="banner">
+    <div class="banner-container">
+                                                <div class="banner-item">
+                    <div class="wrapper">
+                        <img src="/cache/img/a00d9fd0a9cd9c037b5878db7d68eba4.png" alt="" loading="lazy" width="1904" height="1200" class="trans" />                        <video id="video" width="1904" height="1200" preload="none" playsinline webkit-playsinline muted loop>
+                            <source src="/upload/banner/1/banner/677f3d8339d6a.mp4" type="video/mp4">
+                        </video>
+                        <div class="mask"></div>
+                        <div class="container">
+                            <button class="play"></button>
+                        </div>
+                    </div>
+                                    </div>
+                        </div>
+    <div class="container">
+                <div class="scroll-icon"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let pager_click = false;
+
+            $('#banner').Slider({
+                slides: '.banner-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true,
+                pager: '.banner-pager',
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    $.each(timeout, function(index, value) {
+                        clearTimeout(value);
+                    });
+                    let videos = $('video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    $('button', slider).removeClass('play').addClass('pause');
+                    if($('.slider.current video', slider).length) {
+                                                        video = document.querySelector('#banner .slider.current video');
+                                video.play();
+                                            }
+                    else if(!pager_click) {
+                        timeout = setTimeout(function() {
+                            slider.Slider('next');
+                        }, 5000);
+                    }
+                },
+                afterResize: function(slider, slides, current_page, total_page) {
+                    if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                                            let videos = $('video', slider);
+                        videos.each(function(i, video) {
+                            video.addEventListener('ended', videoEnd, false);
+                        });
+                        if($('.slider.current video', slider).length) {
+                                                                video = document.querySelector('#banner .slider.current video');
+                                    video.play();
+                                    $('.slider.current button', slider).removeClass('play').addClass('pause');
+                                                    }
+                        else {
+                            timeout = setTimeout(function() {
+                                slider.Slider('next');
+                            }, 5000);
+                        }
+                                        if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                }
+            });
+            
+            $('.banner-item video', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                let button = $(this).parent().find('button');
+                if(button.hasClass('pause')) {
+                    video.pause();
+                    button.removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    button.removeClass('play').addClass('pause');
+                }
+            });
+            $('.banner-item button', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                if($(this).hasClass('pause')) {
+                    video.pause();
+                    $(this).removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    $(this).removeClass('play').addClass('pause');
+                }
+            });
+
+            $('body').on('click', '#banner .banner-pager a', function() {
+                pager_click = true;
+            });
+
+            function videoEnd(e) {
+                if(!pager_click) {
+                    $('#banner').Slider('next');
+                }
+                else {
+                    $('#banner .slider.current button').removeClass('pause').addClass('play');
+                }
+            }
+        });
+    </script>
+</div>
+<section id="section1">
+    <div class="container">
+                    <div class="left">
+                <article class="editor"><h3 class="homepage-title title"><span class="colour2"><strong>Our vision</strong><span style="font-weight: 400;"> is for every child to be the best that they can be.</span></span></h3>
+<p>&nbsp;</p>
+<p class="rounded_border_title"><a href="https://glenealy
+	.esf.edu.hk/en/about_us/what_we_stand_for/">Discover our Vision</a></p>
+<p>&nbsp;</p></article>
+            </div>
+                            <div class="right">
+                <article class="editor"><p><img class="round-border" src="/upload/page/35/self/677df5862f19a.jpg" alt="Self Photos / Files - Playground" width="1060" height="1000" /></p></article>
+            </div>
+                            <div class="responsive">
+                <article class="editor"><h3 class="homepage-title title"><span class="colour2"><strong>Our vision</strong><span style="font-weight: 400;"> is for every child to be the best that they can be.</span></span></h3>
+<p>&nbsp;</p>
+<p><img class="round-border" src="/upload/page/35/self/677df5862f19a.jpg" alt="Self Photos / Files - Playground" width="1063" height="1000" /></p>
+<p>&nbsp;</p>
+<p class="rounded_border_title"><a href="https://glenealy
+	.esf.edu.hk/en/about_us/what_we_stand_for/">Discover our Vision</a></p></article>
+            </div>
+            </div>
+</section>
+<section id="section2">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What can Glenealy School offer your family?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="wrapper bg-colour2">
+        <div class="container">
+            <ul>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/364eac103622cdee7b3b84e7bf4eb905.png" alt="ESF_Logomark_BW_RGB" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">ESF Network</h3>
+                            <div class="overlay bg-colour1">
+                                <p>As part of the English Schools Foundation(ESF), our students are supported by the largest English-medium international school organisation in Hong Kong, providing them the resources and opportunities not found outside of ESF Schools.</p>
+                                                                    <a  href="https://glenealy
+	.esf.edu.hk/en/about_us/marketing_family/" target="_blank" rel="nofollow">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/71dbfac2f9bd0040c409f92947828659.png" alt="Real-world Experience" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Positive & Nurturing Relationships</h3>
+                            <div class="overlay bg-colour1">
+                                <p>A key motivation at Glenealy School is to cultivate a sense of belonging among all members of our community. Through our curriculum, our social experiences and our community events, we aim to facilitate open engagement with shared human values and experiences.</p>
+                                                                    <a  href="https://glenealy
+	.esf.edu.hk/en/outstanding_education/student_support_wellbeing/" target="_blank" rel="nofollow">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/19abd475835f988aa1105176cf23b6c4.png" alt="World-class Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Progressive & Innovative Learning Experiences</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our pedagogical practices are used to engage children in exploring the environment around them, make connections to their world and encourage them to take action.</p>
+                                                                    <a  href="https://glenealy
+	.esf.edu.hk/en/outstanding_education/curriculum/" target="_blank" rel="nofollow">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/18b19fd95a93a1c210663cd1e52cb9aa.png" alt="Well-rounded Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Student Centred Learning Environment</h3>
+                            <div class="overlay bg-colour1">
+                                <p>To nurture curious, connected collaborators, we cultivate an overall educational approach that inspires learning both inside and beyond the classroom, fostering a sense of belonging, trust, and creativity. By promoting inclusivity and connection, we create a supportive community where every student feels valued and empowered to contribute.</p>
+                                                                    <a  href="https://glenealy
+	.esf.edu.hk/en/outstanding_education/our_approach/" target="_blank" rel="nofollow">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/7b47326cc2f8d0fe249280217dd9c7a5.png" alt="Comprehensive Student Support" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Extensive Extra Curricular Programme</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our extensive ECA programme unlocks diverse learning beyond the classroom - from performances to tournaments, enriching students with over 70 engaging experiences each year.</p>
+                                                                    <a  href="https://glenealy
+	.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/" target="_blank" rel="nofollow">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/adc45c176736f3a4b34b2d18cf03172e.png" alt="Strong Community Network" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Strong Community Partnerships</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Learning grows the more children, peers, adults & the community are connected to it. We are dedicated to cultivating strong community engagement through partnerships that forge community spirit.</p>
+                                                                    <a  href="https://glenealy
+	.esf.edu.hk/en/outstanding_education/parent_partnership/" target="_blank" rel="nofollow">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('h3', '#section2').each(function() {
+                let img = $(this).parent().children('img');
+                if(img.length) {
+                    $(this).css('top', img.offset().top + img.height() + 25 - $(this).parent().offset().top);
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section3">
+    <img src="/cache/img/7695575adfc8c2ae02b3caaa1e8e4a2f.jpg" alt="Untitled design" loading="lazy" width="1722" height="1294" />    <div class="wrapper">
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Primary Years Programme (PYP)</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="tabs">
+                            <button class="tab current" data-id="1"></button>
+                    </div>
+                            <div class="tab-content current" data-id="1">
+                                <article class="editor"><p><span style="font-weight: 400;">Glenealy School is proud to offer a Primary Years Programme (PYP) curriculum that provides progressive and innovative learning experiences for your children. Our curriculum is grounded in the principles of an International Baccalaureate (IB) education, which emphasizes holistic development and cultivating lifelong learners.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">At Glenealy School, our PYP Programme aims to empower your children to become lifelong learners, critical thinkers, and compassionate global citizens. We invite you to join us in this exciting journey as partners in your child's education.</span></p></article>
+                                    <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_education/curriculum/" target="_blank" rel="nofollow">
+                        <span>Find out more</span>
+                    </a>
+                            </div>
+                <script type="text/javascript">
+            $(document).ready(function() {
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+
+                $('.tab', '#section3').click(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $(this).addClass('current');
+                    $('.tab-content[data-id=' + $(this).data('id') + ']', '#section3').addClass('current');
+                    $('select', '#section3').val($(this).data('id')).selectbox('refresh');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+
+                $('.tab-select', '#section3').change(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $('.tab[data-id=' + $(this).val() + ']').addClass('current');
+                    $('.tab-content[data-id=' + $(this).val() + ']', '#section3').addClass('current');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+            });
+        </script>
+    </div>
+</section>
+<section id="section4" data-total="5">
+    <div class="container">
+        <div class="bg bg-colour4"></div>
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Life at Glenealy School</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="record-slider">
+            <div class="slider-container">
+                                    <div class="record-item">
+                        <img src="/cache/img/efacf087264c1e09587c9be5e22cffee.jpeg" alt="IMG_5220" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Diversity Equity Inclusivity (DEI)</span>
+                            </h3>
+                            <p>At Glenealy, we wholeheartedly celebrate diversity, equity, and inclusion, actively embracing the evolving needs of our community. Our goal is to create learning environments where every child feels a sense of belonging and is empowered to thrive.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/about_us/what_we_stand_for/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/e70ae8521db1e376d7736a9d47632be6.jpg" alt="20241107_112620" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Outdoor Learning</span>
+                            </h3>
+                            <p>We immerse our students in the beauty of the natural environment through engaging field trips, outdoor learning, and projects that cultivate a sense of environmental stewardship from an early age. Our adventure camps and cultural immersion trips provide transformative experiences that enhance teamwork, promote personal growth, and broaden global perspectives. These unforgettable opportunities are truly highlights of the Glenealy experience.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_experiences/outdoor_learning/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/cfd666d4c2bb5211b947cce304593eed.jpg" alt="IMG_1613" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Student Leadership</span>
+                            </h3>
+                            <p>We empower our students through leadership opportunities that allow them to express their ideas and drive positive change within our community. Our House Leaders organize events that promote teamwork and school spirit, while Student Ambassadors help connect new students and families. This engagement fosters a sense of ownership and belonging, inspiring everyone to actively participate in school life.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_people/student_voice/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/7235769076ec92b8c9595052c381c50f.jpg" alt="8dec86a7-6337-4351-a561-0659b0d82255" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Extra-Curricular Activities</span>
+                            </h3>
+                            <p>Our dynamic after-school program and sports teams provide over 100 diverse experiences, designed to develop skills, nurture talents, and foster collaboration with other schools. These enriching opportunities not only enhance individual growth but also promote teamwork and community engagement.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/3ee0dd1925fdc335b8ab5e704dda666b.jpg" alt="20241025_134055" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>The Arts</span>
+                            </h3>
+                            <p>We celebrate the vibrant world of creativity through both visual and performing arts. Our students are encouraged to explore and express their artistic talents in diverse ways, including painting, sculpture, music, dance, and theatre. This varied approach allows them to discover their passions and develop their unique voices in a supportive environment.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_education/specialist_provision/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/efacf087264c1e09587c9be5e22cffee.jpeg" alt="IMG_5220" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Diversity Equity Inclusivity (DEI)</span>
+                            </h3>
+                            <p>At Glenealy, we wholeheartedly celebrate diversity, equity, and inclusion, actively embracing the evolving needs of our community. Our goal is to create learning environments where every child feels a sense of belonging and is empowered to thrive.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/about_us/what_we_stand_for/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/e70ae8521db1e376d7736a9d47632be6.jpg" alt="20241107_112620" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Outdoor Learning</span>
+                            </h3>
+                            <p>We immerse our students in the beauty of the natural environment through engaging field trips, outdoor learning, and projects that cultivate a sense of environmental stewardship from an early age. Our adventure camps and cultural immersion trips provide transformative experiences that enhance teamwork, promote personal growth, and broaden global perspectives. These unforgettable opportunities are truly highlights of the Glenealy experience.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_experiences/outdoor_learning/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/cfd666d4c2bb5211b947cce304593eed.jpg" alt="IMG_1613" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Student Leadership</span>
+                            </h3>
+                            <p>We empower our students through leadership opportunities that allow them to express their ideas and drive positive change within our community. Our House Leaders organize events that promote teamwork and school spirit, while Student Ambassadors help connect new students and families. This engagement fosters a sense of ownership and belonging, inspiring everyone to actively participate in school life.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_people/student_voice/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/7235769076ec92b8c9595052c381c50f.jpg" alt="8dec86a7-6337-4351-a561-0659b0d82255" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Extra-Curricular Activities</span>
+                            </h3>
+                            <p>Our dynamic after-school program and sports teams provide over 100 diverse experiences, designed to develop skills, nurture talents, and foster collaboration with other schools. These enriching opportunities not only enhance individual growth but also promote teamwork and community engagement.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/3ee0dd1925fdc335b8ab5e704dda666b.jpg" alt="20241025_134055" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>The Arts</span>
+                            </h3>
+                            <p>We celebrate the vibrant world of creativity through both visual and performing arts. Our students are encouraged to explore and express their artistic talents in diverse ways, including painting, sculpture, music, dance, and theatre. This varied approach allows them to discover their passions and develop their unique voices in a supportive environment.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_education/specialist_provision/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/efacf087264c1e09587c9be5e22cffee.jpeg" alt="IMG_5220" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Diversity Equity Inclusivity (DEI)</span>
+                            </h3>
+                            <p>At Glenealy, we wholeheartedly celebrate diversity, equity, and inclusion, actively embracing the evolving needs of our community. Our goal is to create learning environments where every child feels a sense of belonging and is empowered to thrive.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/about_us/what_we_stand_for/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/e70ae8521db1e376d7736a9d47632be6.jpg" alt="20241107_112620" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Outdoor Learning</span>
+                            </h3>
+                            <p>We immerse our students in the beauty of the natural environment through engaging field trips, outdoor learning, and projects that cultivate a sense of environmental stewardship from an early age. Our adventure camps and cultural immersion trips provide transformative experiences that enhance teamwork, promote personal growth, and broaden global perspectives. These unforgettable opportunities are truly highlights of the Glenealy experience.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_experiences/outdoor_learning/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/cfd666d4c2bb5211b947cce304593eed.jpg" alt="IMG_1613" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Student Leadership</span>
+                            </h3>
+                            <p>We empower our students through leadership opportunities that allow them to express their ideas and drive positive change within our community. Our House Leaders organize events that promote teamwork and school spirit, while Student Ambassadors help connect new students and families. This engagement fosters a sense of ownership and belonging, inspiring everyone to actively participate in school life.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_people/student_voice/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/7235769076ec92b8c9595052c381c50f.jpg" alt="8dec86a7-6337-4351-a561-0659b0d82255" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Extra-Curricular Activities</span>
+                            </h3>
+                            <p>Our dynamic after-school program and sports teams provide over 100 diverse experiences, designed to develop skills, nurture talents, and foster collaboration with other schools. These enriching opportunities not only enhance individual growth but also promote teamwork and community engagement.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/3ee0dd1925fdc335b8ab5e704dda666b.jpg" alt="20241025_134055" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>The Arts</span>
+                            </h3>
+                            <p>We celebrate the vibrant world of creativity through both visual and performing arts. Our students are encouraged to explore and express their artistic talents in diverse ways, including painting, sculpture, music, dance, and theatre. This varied approach allows them to discover their passions and develop their unique voices in a supportive environment.</p>
+                                                            <a href="https://glenealy
+	.esf.edu.hk/en/outstanding_education/specialist_provision/" target="_blank" rel="nofollow">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                            </div>
+            <div class="btns">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section4').data('total'));
+            let slider_loop = ori_total >= 3 ? true : false;
+            $('#section4').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total * 2);
+                    }
+                    else {
+                        slider.Slider('jump', total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section6">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">Testimonials</h2>
+            <span class="bg-colour1"></span>
+        </div>
+        <div class="wrapper">
+            <div class="tabs">
+                                    <button class="tab current" data-id="1">Students</button>
+                                    <button class="tab" data-id="2">Parents</button>
+                                    <button class="tab" data-id="3">Alumni</button>
+                            </div>
+            <select class="tab-select" name="tab"><option value="1">Students</option><option value="2">Parents</option><option value="3">Alumni</option></select>                            <div class="tab-content current" data-id="1">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f6bcbc19df52da1bfc63b3243d09f580.jpg" alt="Student 1" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">"I'm happy at Glenealy school because I can learn math and the Unit of Inquiry."</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">"I'm happy at Glenealy school because I can learn math and the Unit of Inquiry."</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Mashrabah - Student - Year 2</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/83b1ab8b21989c3670525ba7a561c9a8.jpg" alt="Student 3" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">“My favourite thing about Glenealy is playing football at lunchtime with my friends, and p.e class. I also love the Long-Distance running ECA.”</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">“My favourite thing about Glenealy is playing football at lunchtime with my friends, and p.e class. I also love the Long-Distance running ECA.”</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Tom - Student - Year 4</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/40f3e57c7a78471941ebc284e6e17135.jpg" alt="Student 2" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">“I love Glenealy because I feel like I belong. Everyone here is welcome and treated the same way.”</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">“I love Glenealy because I feel like I belong. Everyone here is welcome and treated the same way.”</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Emily - Student - Year 6</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="2">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/13d08bbd292fd7de3cc907da197d40ab.jpg" alt="Parent 1" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">“As a new parent at Glenealy, I’ve felt welcomed from the start. The teachers are approachable, and school events and the parent-teacher association make it easy to connect with other families. It didn’t take long to feel part of the community, and I’m confident my children are receiving a well-rounded education.”</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">“As a new parent at Glenealy, I’ve felt welcomed from the start. The teachers are approachable, and school events and the parent-teacher association make it easy to connect with other families. It didn’t take long to feel part of the community, and I’m confident my children are receiving a well-rounded education.”</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Alison Rooney, Mother of Maisie and Hugh, Year 3 and Year 1 students</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/253a880a2e88e2cbbaa3a927c550eeff.jpg" alt="Parent 2" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">“We enjoy walking to school with both our children every day and bumping into their friends along the way - witnessing their growth and friendships established! Glenealy creates a loving and close community where our children feel happy, safe and engaged which we think is crucial to their development as a whole person.”</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">“We enjoy walking to school with both our children every day and bumping into their friends along the way - witnessing their growth and friendships established! Glenealy creates a loving and close community where our children feel happy, safe and engaged which we think is crucial to their development as a whole person.”</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Tammy & Justin Cheng - Parents of Jake and Janelle, Year 5 and Year 3 students</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/06f75eae97fb65ad2ad93c1d2497b3d7.jpg" alt="Parent 3" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">“We asked our kids why they love school so much and these are some of the responses they give: “Teachers are kind and they teach kids to be kind and caring”; “We’re learning new things everyday and it’s fun learning”. Our kids are very proud to be a part of ESF Glenealy, they wake up, every morning, full of energy and looking forward to going to school. This is such a great experience as parents.”</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">“We asked our kids why they love school so much and these are some of the responses they give: “Teachers are kind and they teach kids to be kind and caring”; “We’re learning new things everyday and it’s fun learning”. Our kids are very proud to be a part of ESF Glenealy, they wake up, every morning, full of energy and looking forward to going to school. This is such a great experience as parents.”</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Juan Ramon Barcelona, Father of Bruno, Year 4</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/12fff1bb8b1070e09bc95010156e4e75.jpeg" alt="WhatsApp Image 2024-12-12 at 16.09.46 (1)" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>4 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">What attracted us to Glenealy was its small size and it being a local community school. Walking our children to school and meeting other families along the way is a great way to get to know the students and their families. With only 2 classes per year the children (and parents) get to know each other very well and this helps foster a great sense of belonging and friendship.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">What attracted us to Glenealy was its small size and it being a local community school. Walking our children to school and meeting other families along the way is a great way to get to know the students and their families. With only 2 classes per year the children (and parents) get to know each other very well and this helps foster a great sense of belonging and friendship.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Catherine Lawrenson, Mother of George and Sylvie, Year 3 and Year 5 students and Samuel and Louis, Glenealy Alumni</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="3">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/920a52bbd23576205ffcde1a65d6c558.jpg" alt="Liz" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">"33 years doing what I loved the most, and now in the twilight of my years, with the help of social media and the internet, find myself shrouded in memories and still, even now at 82, teaching the children of children I taught in Glenealy. Now living in Surrey UK, I can sit and revel in the number of Hong Kong visitors who found time to visit me and to listen to the many ‘Life after Glenealy <br>stories.’<br>My aim in those early years was simply to arouse a thirst for music and drama and through fun and performance, promote confidence in communication. We now see ex Glenealians, leaders in their chosen fields all around the world, standing up and making themselves heard.<br>Long may it continue.<br>My very best wishes to the Principal, teachers, educational assistants, pupils and wonderful site staff. So many happy memories!"</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">"33 years doing what I loved the most, and now in the twilight of my years, with the help of social media and the internet, find myself shrouded in memories and still, even now at 82, teaching the children of children I taught in Glenealy. Now living in Surrey UK, I can sit and revel in the number of Hong Kong visitors who found time to visit me and to listen to the many ‘Life after Glenealy <br>stories.’<br>My aim in those early years was simply to arouse a thirst for music and drama and through fun and performance, promote confidence in communication. We now see ex Glenealians, leaders in their chosen fields all around the world, standing up and making themselves heard.<br>Long may it continue.<br>My very best wishes to the Principal, teachers, educational assistants, pupils and wonderful site staff. So many happy memories!"</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Liz Ryan - Vice Principal and Music Teacher from 1970 to 2003</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/1dea6095177e323871a1c17ac221b965.jpg" alt="Alumuni 1" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">"Attending Glenealy Junior School in the late '70s to early '80s was formative and memorable. Miss Handyside, both feared and respected, set high standards that shaped our work ethic and values. Her discipline created a strong foundation, while the friendships and unique school spirit made those years unforgettable."</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">"Attending Glenealy Junior School in the late '70s to early '80s was formative and memorable. Miss Handyside, both feared and respected, set high standards that shaped our work ethic and values. Her discipline created a strong foundation, while the friendships and unique school spirit made those years unforgettable."</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Marie-Louise Li - Class of 1983</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/cb31545a29bb83a3697926b722ab14ab.jpg" alt="eb" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">“As a Glenealy alumnus, it’s exciting to have sent all three of my children to the school at which I grew up, while at the same time experiencing how in the intervening years, Glenealy has transformed from strength to strength, still providing a solid foundation where each child can thrive.”</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">“As a Glenealy alumnus, it’s exciting to have sent all three of my children to the school at which I grew up, while at the same time experiencing how in the intervening years, Glenealy has transformed from strength to strength, still providing a solid foundation where each child can thrive.”</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Ali Ebrahim, class of ‘93</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+            
+            $('.tab', '#section6').click(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $(this).addClass('current');
+                $('.tab-content[data-id=' + $(this).data('id') + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' + ($(this).index() + 1) + ')', '#section6').addClass('current');
+                chkContentHeight();
+            });
+
+            $('.tab-select', '#section6').change(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $('.tab[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-content[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' +  ($('.tab.current', '#section6').index() + 1) + ')', '#section6').addClass('current');
+                $('.select .select-container div', '#section6').show();
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+                chkContentHeight();
+            });
+
+            $('.record-slider', '#section6').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true
+            });
+
+            function chkContentHeight() {
+                $('p.description', '#section6').each(function() {
+                    if($(this).height() > 160) {
+                        $(this).parent().addClass('more');
+                    }
+                });
+            }
+            chkContentHeight();
+
+            $('.record-item article button.view-more', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-less').show();
+                $(this).parent().find('.description').hide();
+                $(this).parent().find('.content').show();
+            });
+            $('.record-item article button.view-less', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-more').show();
+                $(this).parent().find('.description').show();
+                $(this).parent().find('.content').hide();
+            });
+        });
+    </script>
+</section>
+<section id="section7" data-total="10">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What’s new at Glenealy School?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="record-slider">
+        <div class="slider-container">
+                            <div class="post-item">
+                    <div class="post" data-id="309">
+                        <time>28/02/2026</time>
+                        <h3>From whipping up colorful playdough to baking delicious pineapple buns, children have been busy creating culinary magic in the kitchen! 🍍🥖✨</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/265e68042ad45b9b715d08d0f961eacf.jpg" alt="641702720_910351538030996_6496494222532044447_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="308">
+                        <time>27/02/2026</time>
+                        <h3>Today’s assembly featured piano performances, awards for our young writers and long‑distance runners, and an update from Year 5 on their How the World Works inquiry. We also introduced safety as our word of the week, shared plans for next week’s Book Week, and learnt that Robinson and Kennedy are now tied for first after the House Quiz!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/e8220636c6ff1e0ffac2f003904089ed.jpg" alt="643910273_909590751440408_8696829778297544185_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="307">
+                        <time>27/02/2026</time>
+                        <h3>🌟 We always cherish the opportunity to connect with our families! Today, we were thrilled to learn about the rich heritage of Mexican culture from one of our students' grandparents. Thank you for sharing your stories with us! 🇲🇽❤️</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d463332f4874da481f79b6ec79c27fbe.jpg" alt="641385816_909318771467606_9016785085309010205_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="306">
+                        <time>26/02/2026</time>
+                        <h3>Today saw the Glenealy Rugby players representing us as they played against The Peak School. There were lots of try’s and wins for the Glenealy teams. Gooooo Glenealy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3f68e8c4f87ac28f6241fa9ce49c648e.jpg" alt="643728158_908828984849918_5946442768495495426_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="305">
+                        <time>25/02/2026</time>
+                        <h3>Another day, another series of hockey matches for the Glenealy hockey players. Todays games against FIS were at a more sociable time, but bore the same fabulous results as yesterdays games, with plenty of goals scored and wins for Glenealy.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7b2c58b45af04fe625981f91b650ff56.jpg" alt="641613422_908141181585365_7574797082738763521_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="304">
+                        <time>24/02/2026</time>
+                        <h3>It was an early start for the Glenealy hockey players today as they gathered at 6.45am to play a series of games against Kennedy School. Getting out of bed early was definitely worth it as they showed off their talents and won virtually all their games. Goooooo Glenealy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/393c09d2551542cfc580125670b6e4e2.jpg" alt="641375145_907006581698825_4598559352404162563_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="303">
+                        <time>17/02/2026</time>
+                        <h3>🐴🏮Wishing our community and friends a joyful and prosperous Year of the Horse! 🏮🐴</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1ef933e41a0695990af6a3b153c90d40.jpg" alt="635152831_901235455609271_8493610950265949920_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="302">
+                        <time>12/02/2026</time>
+                        <h3>Think About it Thursday!<br><br>Can you solve our Year of the Horse themed puzzle??<br><br>Grab your family and test them out. Remember to write down your strategies to show your thinking.<br><br>Happy Year of the Horse!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/5bd66e87969a0ef3f5f30f55535dc597.jpg" alt="631251519_897281706004646_4302657027835760860_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="301">
+                        <time>11/02/2026</time>
+                        <h3>What an amazing afternoon of running we had on Tuesday when the Glenealy long-distance runners hosted a race against FIS & Kennedy School. There were so many amazing runs from our 60 strong team. Gooooo Glenealy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/c4603f95470c049a3011aa459d3bf3eb.jpg" alt="631122951_896371006095716_6124653088490981747_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="300">
+                        <time>11/02/2026</time>
+                        <h3>Congratulations to the 20 Glenealy Hockey players who represented us today at the HKPSSA Inter-School Hockey Tournament. They all played fabulously! Special mention to Maria Master, Guy Levy & Jayden Ho, who received MVP awards.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1a3dada2a7bb3c696bb438e9a68bbfe3.jpg" alt="630705126_896360036096813_4556781763323083272_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="309">
+                        <time>28/02/2026</time>
+                        <h3>From whipping up colorful playdough to baking delicious pineapple buns, children have been busy creating culinary magic in the kitchen! 🍍🥖✨</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/265e68042ad45b9b715d08d0f961eacf.jpg" alt="641702720_910351538030996_6496494222532044447_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="308">
+                        <time>27/02/2026</time>
+                        <h3>Today’s assembly featured piano performances, awards for our young writers and long‑distance runners, and an update from Year 5 on their How the World Works inquiry. We also introduced safety as our word of the week, shared plans for next week’s Book Week, and learnt that Robinson and Kennedy are now tied for first after the House Quiz!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/e8220636c6ff1e0ffac2f003904089ed.jpg" alt="643910273_909590751440408_8696829778297544185_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="307">
+                        <time>27/02/2026</time>
+                        <h3>🌟 We always cherish the opportunity to connect with our families! Today, we were thrilled to learn about the rich heritage of Mexican culture from one of our students' grandparents. Thank you for sharing your stories with us! 🇲🇽❤️</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d463332f4874da481f79b6ec79c27fbe.jpg" alt="641385816_909318771467606_9016785085309010205_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="306">
+                        <time>26/02/2026</time>
+                        <h3>Today saw the Glenealy Rugby players representing us as they played against The Peak School. There were lots of try’s and wins for the Glenealy teams. Gooooo Glenealy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3f68e8c4f87ac28f6241fa9ce49c648e.jpg" alt="643728158_908828984849918_5946442768495495426_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="305">
+                        <time>25/02/2026</time>
+                        <h3>Another day, another series of hockey matches for the Glenealy hockey players. Todays games against FIS were at a more sociable time, but bore the same fabulous results as yesterdays games, with plenty of goals scored and wins for Glenealy.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7b2c58b45af04fe625981f91b650ff56.jpg" alt="641613422_908141181585365_7574797082738763521_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="304">
+                        <time>24/02/2026</time>
+                        <h3>It was an early start for the Glenealy hockey players today as they gathered at 6.45am to play a series of games against Kennedy School. Getting out of bed early was definitely worth it as they showed off their talents and won virtually all their games. Goooooo Glenealy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/393c09d2551542cfc580125670b6e4e2.jpg" alt="641375145_907006581698825_4598559352404162563_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="303">
+                        <time>17/02/2026</time>
+                        <h3>🐴🏮Wishing our community and friends a joyful and prosperous Year of the Horse! 🏮🐴</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1ef933e41a0695990af6a3b153c90d40.jpg" alt="635152831_901235455609271_8493610950265949920_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="302">
+                        <time>12/02/2026</time>
+                        <h3>Think About it Thursday!<br><br>Can you solve our Year of the Horse themed puzzle??<br><br>Grab your family and test them out. Remember to write down your strategies to show your thinking.<br><br>Happy Year of the Horse!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/5bd66e87969a0ef3f5f30f55535dc597.jpg" alt="631251519_897281706004646_4302657027835760860_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="301">
+                        <time>11/02/2026</time>
+                        <h3>What an amazing afternoon of running we had on Tuesday when the Glenealy long-distance runners hosted a race against FIS & Kennedy School. There were so many amazing runs from our 60 strong team. Gooooo Glenealy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/c4603f95470c049a3011aa459d3bf3eb.jpg" alt="631122951_896371006095716_6124653088490981747_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="300">
+                        <time>11/02/2026</time>
+                        <h3>Congratulations to the 20 Glenealy Hockey players who represented us today at the HKPSSA Inter-School Hockey Tournament. They all played fabulously! Special mention to Maria Master, Guy Levy & Jayden Ho, who received MVP awards.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1a3dada2a7bb3c696bb438e9a68bbfe3.jpg" alt="630705126_896360036096813_4556781763323083272_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="309">
+                        <time>28/02/2026</time>
+                        <h3>From whipping up colorful playdough to baking delicious pineapple buns, children have been busy creating culinary magic in the kitchen! 🍍🥖✨</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/265e68042ad45b9b715d08d0f961eacf.jpg" alt="641702720_910351538030996_6496494222532044447_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="308">
+                        <time>27/02/2026</time>
+                        <h3>Today’s assembly featured piano performances, awards for our young writers and long‑distance runners, and an update from Year 5 on their How the World Works inquiry. We also introduced safety as our word of the week, shared plans for next week’s Book Week, and learnt that Robinson and Kennedy are now tied for first after the House Quiz!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/e8220636c6ff1e0ffac2f003904089ed.jpg" alt="643910273_909590751440408_8696829778297544185_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="307">
+                        <time>27/02/2026</time>
+                        <h3>🌟 We always cherish the opportunity to connect with our families! Today, we were thrilled to learn about the rich heritage of Mexican culture from one of our students' grandparents. Thank you for sharing your stories with us! 🇲🇽❤️</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d463332f4874da481f79b6ec79c27fbe.jpg" alt="641385816_909318771467606_9016785085309010205_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="306">
+                        <time>26/02/2026</time>
+                        <h3>Today saw the Glenealy Rugby players representing us as they played against The Peak School. There were lots of try’s and wins for the Glenealy teams. Gooooo Glenealy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3f68e8c4f87ac28f6241fa9ce49c648e.jpg" alt="643728158_908828984849918_5946442768495495426_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="305">
+                        <time>25/02/2026</time>
+                        <h3>Another day, another series of hockey matches for the Glenealy hockey players. Todays games against FIS were at a more sociable time, but bore the same fabulous results as yesterdays games, with plenty of goals scored and wins for Glenealy.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7b2c58b45af04fe625981f91b650ff56.jpg" alt="641613422_908141181585365_7574797082738763521_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="304">
+                        <time>24/02/2026</time>
+                        <h3>It was an early start for the Glenealy hockey players today as they gathered at 6.45am to play a series of games against Kennedy School. Getting out of bed early was definitely worth it as they showed off their talents and won virtually all their games. Goooooo Glenealy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/393c09d2551542cfc580125670b6e4e2.jpg" alt="641375145_907006581698825_4598559352404162563_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="303">
+                        <time>17/02/2026</time>
+                        <h3>🐴🏮Wishing our community and friends a joyful and prosperous Year of the Horse! 🏮🐴</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1ef933e41a0695990af6a3b153c90d40.jpg" alt="635152831_901235455609271_8493610950265949920_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="302">
+                        <time>12/02/2026</time>
+                        <h3>Think About it Thursday!<br><br>Can you solve our Year of the Horse themed puzzle??<br><br>Grab your family and test them out. Remember to write down your strategies to show your thinking.<br><br>Happy Year of the Horse!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/5bd66e87969a0ef3f5f30f55535dc597.jpg" alt="631251519_897281706004646_4302657027835760860_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="301">
+                        <time>11/02/2026</time>
+                        <h3>What an amazing afternoon of running we had on Tuesday when the Glenealy long-distance runners hosted a race against FIS & Kennedy School. There were so many amazing runs from our 60 strong team. Gooooo Glenealy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/c4603f95470c049a3011aa459d3bf3eb.jpg" alt="631122951_896371006095716_6124653088490981747_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="300">
+                        <time>11/02/2026</time>
+                        <h3>Congratulations to the 20 Glenealy Hockey players who represented us today at the HKPSSA Inter-School Hockey Tournament. They all played fabulously! Special mention to Maria Master, Guy Levy & Jayden Ho, who received MVP awards.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1a3dada2a7bb3c696bb438e9a68bbfe3.jpg" alt="630705126_896360036096813_4556781763323083272_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                    </div>
+        <div class="btns">
+            <button class="prev"></button>
+            <button class="next"></button>
+        </div>
+    </div>
+            <div class="lightbox" data-id="309">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>28/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>From whipping up colorful playdough to baking delicious pineapple buns, children have been busy creating culinary magic in the kitchen! 🍍🥖✨</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/265e68042ad45b9b715d08d0f961eacf.jpg" alt="641702720_910351538030996_6496494222532044447_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/76b9cf2d97b1c268e19de1a4fe7a6d8f.jpg" alt="642314069_910351568030993_2503106555540952831_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3e4a34ebada105760def137e31e7dc60.jpg" alt="642471172_910351558030994_74828416791186300_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e49352a627bbd77aadd169b6f7103bf9.jpg" alt="642751595_910351564697660_2397158008767821404_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/513f2559b25928103b0e92172a23c1d9.jpg" alt="643839463_910351561364327_8268496646225406052_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/2f49ca3aa9eba0b558674e5350be506b.jpg" alt="643899134_910351571364326_3078693674528324886_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/105403421850777_910351628030987" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/105403421850777_910351628030987" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="308">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>27/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Today’s assembly featured piano performances, awards for our young writers and long‑distance runners, and an update from Year 5 on their How the World Works inquiry. We also introduced safety as our word of the week, shared plans for next week’s Book Week, and learnt that Robinson and Kennedy are now tied for first after the House Quiz!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e8220636c6ff1e0ffac2f003904089ed.jpg" alt="643910273_909590751440408_8696829778297544185_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ce5c1b009f9cab8b06d4869944ee809d.jpg" alt="642285835_909590784773738_7590766298964096885_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/bc26755c386f191690dbd28566b2a743.jpg" alt="642763465_909590814773735_388612322094318171_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e0fdc4eb97fcd2269a8f750791facfa2.jpg" alt="642344849_909590841440399_104565486208984352_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/105403421850777_909590858107064" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/105403421850777_909590858107064" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="307">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>27/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🌟 We always cherish the opportunity to connect with our families! Today, we were thrilled to learn about the rich heritage of Mexican culture from one of our students' grandparents. Thank you for sharing your stories with us! 🇲🇽❤️</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/d463332f4874da481f79b6ec79c27fbe.jpg" alt="641385816_909318771467606_9016785085309010205_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/105403421850777_909318801467603" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/105403421850777_909318801467603" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="306">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>26/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Today saw the Glenealy Rugby players representing us as they played against The Peak School. There were lots of try’s and wins for the Glenealy teams. Gooooo Glenealy!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3f68e8c4f87ac28f6241fa9ce49c648e.jpg" alt="643728158_908828984849918_5946442768495495426_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/1af046fed52eeb0c038510d51a2af9b7.jpg" alt="643418492_908829014849915_2180093316423724216_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/598c100fb056bfdeb98d69ffed6e9cb7.jpg" alt="643408598_908829101516573_6097458064481739044_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/a65ee6026b1e749adcff8bbe5a48274b.jpg" alt="643719530_908829141516569_8377446068980991579_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b0cbc9c71ed827dd54e0be78e160866a.jpg" alt="643787248_908829174849899_3234706482276680875_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/4f7e99567be59461bc66b623d437f114.jpg" alt="641643918_908829228183227_6094104995912509438_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/105403421850777_908828974849919" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/105403421850777_908828974849919" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="305">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>25/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Another day, another series of hockey matches for the Glenealy hockey players. Todays games against FIS were at a more sociable time, but bore the same fabulous results as yesterdays games, with plenty of goals scored and wins for Glenealy.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/7b2c58b45af04fe625981f91b650ff56.jpg" alt="641613422_908141181585365_7574797082738763521_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/1167865fcdb209bf8aa0ae7f5caa1ef2.jpg" alt="643548580_908141198252030_4600923636602052392_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/9833b7d480a657b299625e7c905ce3b0.jpg" alt="638495446_908141104918706_8595955168499680942_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/cc0bb5e8597d3949e8a780535fbfe16b.jpg" alt="642217415_908141244918692_3659394891332733983_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/105403421850777_908141171585366" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/105403421850777_908141171585366" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="304">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>24/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>It was an early start for the Glenealy hockey players today as they gathered at 6.45am to play a series of games against Kennedy School. Getting out of bed early was definitely worth it as they showed off their talents and won virtually all their games. Goooooo Glenealy!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/393c09d2551542cfc580125670b6e4e2.jpg" alt="641375145_907006581698825_4598559352404162563_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b7a072cfd16c27d7557ba7ff821b903f.jpg" alt="641425753_907006938365456_6972915906313820552_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b93c8da556253b735bc77b16e6d2b6ab.jpg" alt="637372446_907006878365462_1562569221413554621_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/cdd3d29efcbd7b0236086c46f9eeea8a.jpg" alt="641170575_907006775032139_6314256566362756913_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/105403421850777_907007028365447" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/105403421850777_907007028365447" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="303">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>17/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🐴🏮Wishing our community and friends a joyful and prosperous Year of the Horse! 🏮🐴</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/1ef933e41a0695990af6a3b153c90d40.jpg" alt="635152831_901235455609271_8493610950265949920_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/03815746d006d2e7fc983f5473c03964.jpg" alt="634157035_901235392275944_6390580947842895832_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/90d2f1a974c605c86218777992e61802.jpg" alt="632792530_901235325609284_1293953861982503172_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/74537424cc030031b675ad1aad0a3eb9.jpg" alt="634677703_901235188942631_1228661519652624354_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/72db2a915edf53b24d264117b91506ab.jpg" alt="635170750_901235312275952_4713610094611139238_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/4de79dba085ebfd24d5ed1eb99808eb1.jpg" alt="636988934_901235335609283_119390419182876511_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/cb7a88889d7b61b25ecc08cd2b99c32b.jpg" alt="632748182_901235362275947_2653437090096485253_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/de611dbcfd2a86cf593bdf2dbbad6f0e.jpg" alt="637177899_901235428942607_425199340236776534_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ba24c2244a183d6686fd42f0deed82fc.jpg" alt="637407286_901235278942622_7073670691797150794_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/9c4022d202ff4ba038f9d02650dfe36c.jpg" alt="633726034_901235322275951_8054598195069211252_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/105403421850777_901235485609268" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/105403421850777_901235485609268" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="302">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>12/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Think About it Thursday!<br><br>Can you solve our Year of the Horse themed puzzle??<br><br>Grab your family and test them out. Remember to write down your strategies to show your thinking.<br><br>Happy Year of the Horse!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/5bd66e87969a0ef3f5f30f55535dc597.jpg" alt="631251519_897281706004646_4302657027835760860_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/105403421850777_897281699337980" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/105403421850777_897281699337980" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="301">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>11/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>What an amazing afternoon of running we had on Tuesday when the Glenealy long-distance runners hosted a race against FIS & Kennedy School. There were so many amazing runs from our 60 strong team. Gooooo Glenealy!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c4603f95470c049a3011aa459d3bf3eb.jpg" alt="631122951_896371006095716_6124653088490981747_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3cce3248b7d84dce814a4ed24aa0af6d.jpg" alt="629820865_896370949429055_6599314294022866831_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/7ecad8e7274e2dca9ecf574ea2142418.jpg" alt="632331935_896371012762382_9120449146394245671_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/dbf68231413e0bba8404246bba86e45b.jpg" alt="631201619_896370979429052_7350336916127519791_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/fc2f9390c321aea9deb0bbdef973feb7.jpg" alt="630339956_896370986095718_6084223061569799806_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/105403421850777_896371206095696" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/105403421850777_896371206095696" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="300">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>11/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Congratulations to the 20 Glenealy Hockey players who represented us today at the HKPSSA Inter-School Hockey Tournament. They all played fabulously! Special mention to Maria Master, Guy Levy & Jayden Ho, who received MVP awards.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/1a3dada2a7bb3c696bb438e9a68bbfe3.jpg" alt="630705126_896360036096813_4556781763323083272_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8a612433c3dffecb214a129d3c7805eb.jpg" alt="631534878_896360012763482_5306365738282621278_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f0db18c877e2bf7f22384421987f87ff.jpg" alt="630953383_896360072763476_3892516531277551405_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8ee2cffc7b4d11a0e7cf26e53bdc4e7b.jpg" alt="633296505_896360076096809_7705847880711928915_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/105403421850777_896360289430121" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/105403421850777_896360289430121" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section7').data('total'));
+            let slider_loop = ori_total >= 5 ? true : false;
+            $('.record-slider', '#section7').Slider({
+                slides: '.post-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total + 1);
+                    }
+                }
+            });
+
+            $('.post', '#section7').click(function() {
+                $('.lightbox[data-id=' + $(this).data('id') + ']').addClass('show');
+                disableScroll();
+            });
+
+            $('.lightbox .gallery', '#section7').Slider({
+                slides: '.gallery-item',
+                fixedSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    let videos = $('.slider video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    slider.parent().find('.slider-pager').html(current_page + ' / ' + total_page);
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(total_page > 1) {
+                        slider.parent().find('.slider-pager').html('1 / ' + total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+	</section>
+	<footer>
+		<div class="top-container">
+			<div class="container">
+				<div class="up-container">
+											<a href="/en/" class="logo">
+							<img src="/cache/img/b4cbd472f56599e881bb5a3dddfc99cf.png" alt="ESF Glenealy School-rw" loading="lazy" height="140" />						</a>
+																<nav class="social">
+							<ul>
+																<li>
+									<a href="https://www.instagram.com/esfglenealy/" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="40" height="40" />
+									</a>
+								</li>
+																<li>
+									<a href="https://www.facebook.com/ESFGlenealy" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3e297d1.svg" width="40" height="40" />
+									</a>
+								</li>
+															</ul>
+						</nav>
+				 					</div>
+				<div class="down-container">
+					<div class="left-container">
+													<a href="https://maps.app.goo.gl/Vpnjpan5t6ptLtHq6" target="_blank" rel="nofollow" class="map">
+								<img src="/cache/img/977ed910c7033baf64007b2f73ff8267.png" alt="擷取" loading="lazy" width="714" height="536" />							</a>
+												<div class="contact">
+							<h2>Contact Information</h2>
+																								<a href="https://glenealy.esf.edu.hk/en/admissions/contact_admissions/" class="tel">(+852) 2522 1919</a>
+																<div></div>
+														 							<a href="mailto:enquiry@glenealy.edu.hk" class="email">enquiry@glenealy.edu.hk</a>
+														 							<p class="address">7 Hornsey Road, Mid Levels, Hong Kong 香港半山香雪道7號</p>
+													</div>
+												<div class="subscribe">
+							<form action="/en/subscribe/" method="post">
+								<h2>Connect with Us</h2>
+																	<input type="text" autoComplete="off" placeHolder="Your email address" maxLength="128" class="text" name="email" value="" />									<div class="submit">
+										<a class="handler">Submit</a>
+										<span>Slide to Right</span>
+									</div>
+									<input type="hidden" name="back" value="/en/" />															</form>
+						</div>
+						<script type="text/javascript">
+							$(document).ready(function() {
+								$('form', '.subscribe').validate({
+									autoScroll: false,
+									setting: [
+										[ 'email', {
+											method: [
+												[ 'req' ],					
+												[ 'email' ]					
+											]
+										} ]
+									],
+									onError: function(form) {
+										form.slideSubmit('revert');
+									}
+								}).slideSubmit();
+
+															});
+						</script>
+											</div>
+					<div class="right-container">
+												<nav class="menu2">
+							<ul>
+								<li>
+									<h2>Navigation</h2>
+								</li>
+																	<li>
+										<a href="https://glenealy
+	.esf.edu.hk/en/about_us/" target="_blank" rel="nofollow">About Us</a>
+									</li>
+																	<li>
+										<a href="https://glenealy
+	.esf.edu.hk/en/outstanding_education/" target="_blank" rel="nofollow">Outstanding Education</a>
+									</li>
+																	<li>
+										<a href="https://glenealy
+	.esf.edu.hk/en/outstanding_experiences/" target="_blank" rel="nofollow">Outstanding Experiences</a>
+									</li>
+																	<li>
+										<a href="https://glenealy
+	.esf.edu.hk/en/outstanding_people/" target="_blank" rel="nofollow">Outstanding People</a>
+									</li>
+																	<li>
+										<a href="https://glenealy
+	.esf.edu.hk/en/admissions/" target="_blank" rel="nofollow">Admissions</a>
+									</li>
+																	<li>
+										<a href="https://glenealy
+	.esf.edu.hk/en/WorkWithUs/" target="_blank" rel="nofollow">Work With Us</a>
+									</li>
+															</ul>
+						</nav>
+																		<nav class="menu3">
+							<ul>
+								<li>
+									<h2>Quick Links</h2>
+								</li>
+																	<li>
+										<a href="https://join-us.esf.edu.hk/" target="_blank" rel="nofollow">About ESF</a>
+									</li>
+																	<li>
+										<a href="https://www.esfexplore.org.hk/" target="_blank" rel="nofollow">ESF Explore</a>
+									</li>
+																	<li>
+										<a href="https://gloodle.glenealy.edu.hk/pluginfile.php/15220/course/section/3621/GS Calendar 2025-26 V1.pdf" target="_blank" rel="nofollow">School Calendar</a>
+									</li>
+															</ul>
+						</nav>
+											</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-container">			
+			<div class="container">
+				<div class="wrapper">
+					<p class="copyright">Copyright © English Schools Foundation. Powered by <a href="//www.anglia.com.hk" target="_blank">ANGLIA</a>.</p>
+					<a href="/en/sitemap/" class="sitemap">Sitemap</a>
+				</div>
+								<nav class="logo">
+			 		<ul>
+			 						 			<li>
+			 				<a>
+								<img src="/upload/files/1/logo4/660fd31d2b17e.png" height="131" />
+							</a>
+			 			</li>
+			 						 		</ul>
+			 	</nav>
+							</div>
+		</div>
+	</footer>
+	<button id="back-to-top"></button>
+			<div id="floating">
+							<a class="logo">
+					<img src="/cache/img/28e86a04233b72944f02fd29e0d3dcb1.jpg" alt="GS" loading="lazy" width="62" height="53" />				</a>
+																				<a class="bg-colour1"  href="https://join-us.esf.edu.hk/admissions-primary-secondary/" target="_blank" rel="nofollow">
+													<img src="/upload/shortcut/1/icon/660fd9ba6ff5d.svg" width="60" height="60" />
+												<span>Apply</span>
+					</a>
+														<a class="bg-colour1"  href="https://glenealy
+	.esf.edu.hk/en/admissions/contact_admissions/" target="_blank" rel="nofollow">
+													<img src="/upload/shortcut/2/icon/660fd9ca7b6eb.svg" width="60" height="60" />
+												<span>Call</span>
+					</a>
+														<a class="bg-colour1"  href="https://glenealy.esf.edu.hk/en/enquiry/?SchoolCode=GS">
+													<img src="/upload/shortcut/3/icon/660fd9db298ad.svg" width="60" height="60" />
+												<span>Enquire</span>
+					</a>
+									</div>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#floating').addClass('animate');
+			});
+		</script>
+				<div id="accept-cookies">
+			<article class="editor"><p>Welcome and please be advised that ESF uses cookies. By accessing an ESF, ESL or PTA web site and other online ESF services, such as ESF&rsquo;s mobile app, users agree that ESF can store and access cookies, IP addresses and use other methods in order to collect website usage data, and improve user&rsquo;s online experience. By continuing to access this web site, users agree to the use of cookies, which is handled in accordance to the ESF Data Privacy Policy. Information collected via cookies is handled in accordance with the ESF Personal Data Handling Policy and its related Personal Information Collection Statements (&ldquo;PICS&rdquo;). A copy of the PICS can be found on the ESF web site.</p></article>
+			<div class="buttons">
+				<button type="" class="accept">Accept</button>			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('button', '#accept-cookies').click(function() {
+					$('#accept-cookies').remove();
+					$.ajax({
+						url: genurl('cookies', 'main'),
+						type: 'post',
+						data: {
+							accept: 'y'
+						},
+						success: function(response) {
+						},
+						async: false
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

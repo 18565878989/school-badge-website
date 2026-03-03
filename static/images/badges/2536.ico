@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.min.css?v=1772418706" />
+<link rel="stylesheet" type="text/css" href="/css/main-style.css?v=1772418706" />
+<link rel="stylesheet" type="text/css" href="/css/menu.css" />
+<link rel="stylesheet" type="text/css" href="/css/overview-style.css" />
+<link rel="stylesheet" type="text/css" href="/css/calendar.css" />
+<link rel="stylesheet" type="text/css" href="/css/fontawesome/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/animate.css" />
+<script type="text/javascript" src="/assets/adc8439d/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap/bootstrap.min.js?v=1772418706"></script>
+<title>北角聖彼得堂幼稚園 - Error</title>
+
+    <style>
+
+        .main-menu {
+            display: flex;
+            padding: 0px;
+        }
+
+        .menu-item:hover {
+            background-color: lightblue;
+        }
+
+        .menu-item {
+            flex: 1;
+            list-style: none;
+            background-color: whitesmoke;
+            max-width: 150px;
+            position: relative;
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            list-style: none;
+            padding: 0;
+            min-width: 100%;
+            top: 0;
+        }
+
+        .menu-item:hover > .sub-menu {
+            display: block;
+        }
+
+        .sub-menu-category {
+            margin-left: 0;
+            margin-top: 0;
+            top: unset;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="">
+<div id="mobileHeader" class="d-block d-md-none mobile-menu-bg">
+    <div class="align-items-left" style="height: 100%;">
+        <nav id="sidebar-wrapper" class="mobile-menu-hide  w-100" role="navigation">
+            <div class="row justify-content-between" >
+                <div class="d-flex align-items-center">
+                    <i id="btn_menu" class="menuBtn fas fa-bars" style="color:white "></i>
+                    <h4 class="mobile-header-text">目錄</h4>
+                </div>
+
+                                    <div class="mobile_socialMediaButtons">
+                                                    <a href="https://www.facebook.com/profile.php?id=61579443215001&sk=about" target="_blank">
+                                <svg version="1.1" id="fi_733547" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                                <path style="fill:#1976D2;" d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h384c35.296,0,64-28.704,64-64V64
+                                        C512,28.704,483.296,0,448,0z"></path>
+                                    <path style="fill:#FAFAFA;" d="M432,256h-80v-64c0-17.664,14.336-16,32-16h32V96h-64l0,0c-53.024,0-96,42.976-96,96v64h-64v80h64
+                                        v176h96V336h48L432,256z"></path>
+                                        </svg>
+                            </a>
+                                                                            <a href="https://www.instagram.com/stpnpkg/" target="_blank">
+                                <img src="/images/icon_instagram.png">
+                            </a>
+                                            </div>
+                
+
+            </div>
+        </nav>
+    </div>
+</div>
+</div>
+
+
+<div id="mobile_side_menu" class="position-fixed mobile-menu-hide" style="display: none;z-index: 9999">
+    
+<style>
+    .side_menu_item {
+        padding: 16px;
+        border-bottom: 2px dashed white!important;
+    }
+
+    .menu-text {
+
+    }
+</style>
+
+<div id="mobile_menu" class="menu-text position-fixed shadow-default d-block mobile-menu-hide">
+    <div class="side_menu_item">
+        <a class="menu-text" href="/">
+            <span class="oi oi-home home-icon"></span> 首頁 Main Page        </a>
+    </div>
+    
+                <div class="menu-text">
+                        <div class="side_menu_item menu-text" onclick="" data-target="#sub_69a4f69262d11" data-toggle="collapse" aria-controls="sub_69a4f69262d11" aria-expanded="false">
+                <a>
+                    關於我們 About Us <span class="oi oi-caret-bottom small"></span>&nbsp ▼
+                </a>
+            </div>
+
+            <div class="menu-bg-lv-2 collapse" id="sub_69a4f69262d11" data-parent="#mobile_menu">
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69262e38" aria-controls="sub_69a4f69262e38" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E6%A0%A1%E7%9B%A3%E7%9A%84%E8%A9%B1">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    校監的話
+Message from the Supervisor                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69262f80" aria-controls="sub_69a4f69262f80" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E6%A0%A1%E9%95%B7%E7%9A%84%E8%A9%B1">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    校長的話
+Message from the Principal                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- end looping pages-->
+
+            </div>
+        </div>
+        
+                <div class="menu-text">
+                        <div class="side_menu_item menu-text" onclick="" data-target="#sub_69a4f692630e6" data-toggle="collapse" aria-controls="sub_69a4f692630e6" aria-expanded="false">
+                <a>
+                    校園生活  School Life <span class="oi oi-caret-bottom small"></span>&nbsp ▼
+                </a>
+            </div>
+
+            <div class="menu-bg-lv-2 collapse" id="sub_69a4f692630e6" data-parent="#mobile_menu">
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f6926321d" aria-controls="sub_69a4f6926321d" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" href="/uploads/files/%E5%86%B0%E7%B3%96%E9%99%B3%E7%9A%AE%E7%87%89%E6%AA%B8%E6%AA%AC2.mp4"
+                                   target="_self">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    冰糖陳皮燉檸檬                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69263346" aria-controls="sub_69a4f69263346" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E7%B3%BB%E5%88%97">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    開心校園系列                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f6926346e" aria-controls="sub_69a4f6926346e" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E7%B3%BB%E5%88%97%E2%80%93%E5%86%8D%E9%80%A0%E7%B4%99">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    開心校園系列–再造紙                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f6926358c" aria-controls="sub_69a4f6926358c" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E4%B8%AD%E8%8F%AF%E6%96%87%E5%8C%96%E5%AD%B8%E7%BF%92%E6%B4%BB%E5%8B%95">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    中華文化學習活動                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f692636b8" aria-controls="sub_69a4f692636b8" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E8%B6%B3%E7%90%83%E6%B4%BB%E5%8B%95">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    開心校園影片–足球活動                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f692637dc" aria-controls="sub_69a4f692637dc" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E9%BB%9E%E5%BF%83%E8%A3%BD%E4%BD%9C">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    開心校園影片-點心製作                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f692638fc" aria-controls="sub_69a4f692638fc" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E5%8A%9F%E5%A4%AB">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    開心校園影片-功夫                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69263a15" aria-controls="sub_69a4f69263a15" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87%E2%80%93%E5%82%B3%E7%B5%B1%E5%B0%8F%E7%8E%A9%E6%84%8F">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    開心校園影片–傳統小玩意                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69263b56" aria-controls="sub_69a4f69263b56" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E6%8C%AA%E4%BA%9E%E6%96%B9%E8%88%9F%E8%8A%B1%E5%9C%92">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    開心校園影片-挪亞方舟花園                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69263c71" aria-controls="sub_69a4f69263c71" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E5%B0%8E%E8%B3%9E%E5%9C%98">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    開心校園影片-導賞團                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69263d89" aria-controls="sub_69a4f69263d89" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E8%B5%B0%E5%87%BA%E8%AA%B2%E5%AE%A4%E6%B4%BB%E5%8B%95-%E6%A8%A1%E6%93%AC%E7%8E%A9%E5%85%B7%E5%BA%97%E5%93%A1">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    開心校園影片-走出課室活動-模擬玩具店員                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69263ebc" aria-controls="sub_69a4f69263ebc" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E3%80%8C%E8%AA%B2%E5%AE%A4%E5%A4%96%E9%80%B2%E8%A1%8C%E7%9A%84%E9%AB%94+%E9%A9%97%E5%BC%8F%E5%AD%B8%E7%BF%92%E6%B4%BB%E5%8B%95%E5%A4%A9%E5%9C%B0%E3%80%8D">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    「課室外進行的體驗式學習活動天地」                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69263fdb" aria-controls="sub_69a4f69263fdb" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" href="https://stpnpkg.schoolteam.hk/zh_tw/photoAlbums/index?year=2018"
+                                   target="_self">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    生活花絮相片                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f692640fb" aria-controls="sub_69a4f692640fb" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%BD%8A%E4%BE%86%E6%8E%A2%E7%B4%A2%E7%A7%91%E5%AD%B8%E9%A4%A8">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    齊來探索科學館                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69264226" aria-controls="sub_69a4f69264226" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E4%B8%AD%E7%A7%8B%E7%AF%80%E5%BF%AB%E6%A8%82%21">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    中秋節快樂!                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69264350" aria-controls="sub_69a4f69264350" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%99%BD%E5%85%89%E7%AC%91%E5%AE%B9%E5%B0%8F%E6%A8%82%E5%9C%92">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    陽光笑容小樂園                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f6926446c" aria-controls="sub_69a4f6926446c" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E5%AD%B8%E6%A0%A1%E6%B4%BB%E5%8B%95">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    學校活動                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69264584" aria-controls="sub_69a4f69264584" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%AB%98%E7%8F%AD%E8%A6%AA%E5%AD%90%E9%9B%BB%E5%BD%B1%E6%AC%A3%E8%B3%9E%E6%9C%83">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    高班親子電影欣賞會                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f692646c4" aria-controls="sub_69a4f692646c4" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E5%8F%83%E8%A7%80%E9%A6%99%E6%B8%AF%E5%85%92%E7%AB%A5%E6%8E%A2%E7%B4%A2%E5%8D%9A%E7%89%A9%E9%A4%A8">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    參觀香港兒童探索博物館                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f692647ea" aria-controls="sub_69a4f692647ea" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E7%A5%9D%E5%A4%A7%E5%AE%B6%E6%96%B0%E5%B9%B4%E5%BF%AB%E6%A8%82%EF%BC%81%E7%A6%8F%E6%9D%AF%E6%BB%BF%E6%BA%A2%EF%BC%81%E8%BA%AB%E9%AB%94%E5%81%A5%E5%BA%B7%EF%BC%81">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    祝大家新年快樂！福杯滿溢！身體健康！喜樂平安！                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- end looping pages-->
+
+            </div>
+        </div>
+        
+                <div class="menu-text">
+                        <div class="side_menu_item menu-text" onclick="" data-target="#sub_69a4f69264916" data-toggle="collapse" aria-controls="sub_69a4f69264916" aria-expanded="false">
+                <a>
+                    校園資訊 Campus Info <span class="oi oi-caret-bottom small"></span>&nbsp ▼
+                </a>
+            </div>
+
+            <div class="menu-bg-lv-2 collapse" id="sub_69a4f69264916" data-parent="#mobile_menu">
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69264a39" aria-controls="sub_69a4f69264a39" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E5%AD%B8%E6%A0%A1%E6%94%AF%E6%8F%B4">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    學校支援
+School Supporting                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69264b5f" aria-controls="sub_69a4f69264b5f" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E6%96%87%E7%AB%A0%E5%88%86%E4%BA%AB">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    文章分享
+Articles                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69264c7d" aria-controls="sub_69a4f69264c7d" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E8%A1%8C%E4%BA%8B%E6%9B%86">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    行事曆
+Calendar                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69264d96" aria-controls="sub_69a4f69264d96" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E6%A0%A1%E5%9C%92%E8%A8%AD%E6%96%BD+">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    校園設施
+School Equipment                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69264ec9" aria-controls="sub_69a4f69264ec9" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E7%95%A2%E6%A5%AD%E7%94%9F%E6%88%90%E5%B0%B1">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    畢業生成就
+Achievements of Our Alumni                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- end looping pages-->
+
+            </div>
+        </div>
+        
+                <div class="side_menu_item">
+            <a class="menu-text" href="/zh_tw/site/view?name=%E5%A0%B1%E5%90%8D%E6%96%B9%E6%B3%95+" target="_self">
+                報名方法 Admissions            </a>
+        </div>
+        
+                <div class="menu-text">
+                        <div class="side_menu_item menu-text" onclick="" data-target="#sub_69a4f692651a8" data-toggle="collapse" aria-controls="sub_69a4f692651a8" aria-expanded="false">
+                <a>
+                    學校資料 School Info <span class="oi oi-caret-bottom small"></span>&nbsp ▼
+                </a>
+            </div>
+
+            <div class="menu-bg-lv-2 collapse" id="sub_69a4f692651a8" data-parent="#mobile_menu">
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f692652db" aria-controls="sub_69a4f692652db" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E7%B0%A1%E4%BB%8B">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    簡介
+Introduction                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f6926540d" aria-controls="sub_69a4f6926540d" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E4%B8%8A%E8%AA%B2%E6%99%82%E9%96%93%E5%8F%8A%E5%AD%B8%E8%B2%BB">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    上課時間及學費
+Time Schedule and School Fee                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69265540" aria-controls="sub_69a4f69265540" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E9%A2%B1%E9%A2%A8%E5%8F%8A%E9%A2%A8%E9%9B%A8%E5%AE%89%E6%8E%92+">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    颱風及風雨安排
+Typhoon Arrangement                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69265692" aria-controls="sub_69a4f69265692" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E8%A1%8C%E6%94%BF%E6%9E%B6%E6%A7%8B">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    行政架構
+Administration Structure                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- end looping pages-->
+
+            </div>
+        </div>
+        
+                <div class="menu-text">
+                        <div class="side_menu_item menu-text" onclick="" data-target="#sub_69a4f692657d6" data-toggle="collapse" aria-controls="sub_69a4f692657d6" aria-expanded="false">
+                <a>
+                    家長園地 Parents Zone <span class="oi oi-caret-bottom small"></span>&nbsp ▼
+                </a>
+            </div>
+
+            <div class="menu-bg-lv-2 collapse" id="sub_69a4f692657d6" data-parent="#mobile_menu">
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f692658f4" aria-controls="sub_69a4f692658f4" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" href="https://www.chsc.hk/show_content.php?lang_id=2&c_id=2526&category_id=-1"
+                                   target="_self">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    【健康成長路】幼兒家長網上講座系列（四）：「教出好動力的孩子」                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69265a28" aria-controls="sub_69a4f69265a28" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" href="https://www.parent.edu.hk/smart-parent-net/topics"
+                                   target="_self">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    家長智NET-專題-邏輯後果                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69265b3f" aria-controls="sub_69a4f69265b3f" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E5%AE%B6%E9%95%B7%E8%B3%87%E8%A8%8A">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    家長資訊 Parents information
+                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69265c58" aria-controls="sub_69a4f69265c58" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=%E5%AE%B6%E9%95%B7%E6%96%87%E7%AB%A0%E5%88%86%E4%BA%AB">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    家長文章分享                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69265d6e" aria-controls="sub_69a4f69265d6e" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" target="_self" href="/zh_tw/site/view?name=2024-2025%E5%B9%B4%E5%BA%A6%E6%A0%A1%E8%A8%8A">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    2024-2025年度校訊                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69265e9a" aria-controls="sub_69a4f69265e9a" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" href="https://www.edb.gov.hk/tc/student-parents/parents-related/ebulletin-for-parents/2025-2026/20250917.html"
+                                   target="_self">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    學生及家長應留意天氣變化                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f69265fa8" aria-controls="sub_69a4f69265fa8" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" href="https://www.parent.edu.hk/smart-parent-net/topics/article/video-understandemotion"
+                                   target="_self">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    家長教室：社交劇場 - 認識情緒                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f692660c4" aria-controls="sub_69a4f692660c4" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" href="https://www.parent.edu.hk/smart-parent-net/topics/article/video-2025kgtalk-3"
+                                   target="_self">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    【同理．童理】幼兒家長講座系列「與孩子好好溝通」：如何成為高EQ的家長？                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- looping pages-->
+
+                    <div class="subMenuTab">
+
+                                                <div class="side_menu_item" data-toggle="collapse"  data-target="#sub_69a4f692661ef" aria-controls="sub_69a4f692661ef" aria-expanded="false">
+                                                            <a class="menu-text menu-text-lv2" href="https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/front.html"
+                                   target="_self">
+                                    <span class="side_menu_ident">&nbsp</span>
+                                    幼稚園幼兒班（K1）收生安排
+Admission Arrangements for Nursery (K1) Classes in Kindergartens                                </a>
+                                                    </div>
+                                            </div>
+
+                 <!-- end looping pages-->
+
+            </div>
+        </div>
+        
+                <div class="side_menu_item">
+            <a class="menu-text" href="/zh_tw/site/view?name=%E8%81%AF%E7%B5%A1%E6%88%91%E5%80%91+" target="_self">
+                聯絡我們 Contact Us            </a>
+        </div>
+        </div></div>
+<div id="modal" class="position-fixed mobile-menu-hide"
+     style="display: none;top: 0;left: 0;width: 100vw; height: 100vh;z-index: 9000; background-color: rgba(0,0,0,0.49)"></div>
+
+
+<script>
+    function mobile_side_menu() {
+        var isShow = false;
+        var modal = $('#modal');
+        var side_menu = $('#mobile_side_menu');
+        var mobile_menu = $('#mobile_menu');
+        var btn_menu = $('#btn_menu');
+
+        $('#btn_menu, #modal').click(function () {
+            isShow = !isShow;
+            btn_menu.toggleClass('oi-menu oi-x');
+            if (isShow) {
+                modal.fadeIn(400);
+                side_menu.show();
+                mobile_menu.animate({
+                    left: 0
+                }, 400);
+            } else {
+                mobile_menu.animate({
+                    left: -1 * mobile_menu.width(),
+                }, {
+                    complete: function () {
+                        side_menu.hide();
+                        modal.fadeOut(400);
+                    }
+                });
+            }
+        });
+
+
+        // modal.click(function () {
+        //     modal.hide();
+        //     side_menu.hide();
+        // })
+    }
+</script>
+
+<div id="page">
+    <div class="page-container ">
+        <div class="background" style="background-image: url('/images/bg.jpg');">
+
+            <div id="header" class="">
+                <div class="sch-info">
+                    <style>
+    .sitemap {
+        text-align: left;
+    }
+</style>
+
+
+<div id="header-info" class="w-100 position-relative">
+            <div class="position-absolute socialMediaButtons">
+                            <a href="https://www.facebook.com/profile.php?id=61579443215001&sk=about" target="_blank">
+                    <svg version="1.1" id="fi_733547" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <path style="fill:#1976D2;" d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h384c35.296,0,64-28.704,64-64V64
+            C512,28.704,483.296,0,448,0z"></path>
+                        <path style="fill:#FAFAFA;" d="M432,256h-80v-64c0-17.664,14.336-16,32-16h32V96h-64l0,0c-53.024,0-96,42.976-96,96v64h-64v80h64
+            v176h96V336h48L432,256z"></path>
+            </svg>
+                </a>
+                                        <a href="https://www.instagram.com/stpnpkg/" target="_blank">
+                    <img src="/images/icon_instagram.png">
+                </a>
+                    </div>
+        <div class="row m-0 p-0 pt-1 justify-content-center">
+        <div class="col-6" style="text-align: center;">
+            北角聖彼得堂幼稚園        </div>
+    </div>
+    <div class="row m-0 justify-content-center">
+        <div class="pl-2 pr-3 tele">
+            電話： 2570 4963        </div>
+        <div class="pl-2 pr-3 fax">
+            傳真： 2570 8298        </div>
+        <div class="pl-2 pr-3 add">
+            地址： 香港北角炮台山道23號        </div>
+        <div class="pl-2 pr-3 email">
+            電郵： <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="90e3e0f5e4f3f8fbf9d0fef5e4e6f9f7f1e4ffe2bef3fffd">[email&#160;protected]</a>        </div>
+    </div>
+</div>
+                </div>
+                <a href="/zh_tw/site/index">
+                    <div class="header-bg-mobile d-block d-sm-none"
+                         style="background-image: url('/images/banner_northpoint_mobile.jpg');
+                                 height: 100%;
+                                 background-repeat: no-repeat;
+                                 background-size: contain">
+                    </div>
+                    <div class="header-bg-web d-none d-sm-block"
+                         style="background-image: url('/images/banner_northpoint.png');
+                                 background-repeat: no-repeat;
+                                 background-size: contain">
+                    </div>
+                </a>
+                <div id="main-menu" class=" d-md-flex" style="
+                        background-image: url('/images/menu_cloud.png');">
+                    <ul class="main-menu" id="yw0">
+<li class="menu-item menu-item-category "><span class="menu-item-label" style="background-image: url(&#039;/uploads/images/da720749355faad184c7e34e43fa0e91_1566208316.png&#039;);"></span>
+<ul class="sub-menu sub-menu-category">
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E6%A0%A1%E7%9B%A3%E7%9A%84%E8%A9%B1">校監的話<br />
+Message from the Supervisor</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E6%A0%A1%E9%95%B7%E7%9A%84%E8%A9%B1">校長的話<br />
+Message from the Principal</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-category "><span class="menu-item-label" style="background-image: url(&#039;/uploads/images/0d59a73729bf4a0f07467ea3588f4d09_1566208325.png&#039;);"></span>
+<ul class="sub-menu sub-menu-category">
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/uploads/files/%E5%86%B0%E7%B3%96%E9%99%B3%E7%9A%AE%E7%87%89%E6%AA%B8%E6%AA%AC2.mp4">冰糖陳皮燉檸檬</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E7%B3%BB%E5%88%97">開心校園系列</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E7%B3%BB%E5%88%97%E2%80%93%E5%86%8D%E9%80%A0%E7%B4%99">開心校園系列–再造紙</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E4%B8%AD%E8%8F%AF%E6%96%87%E5%8C%96%E5%AD%B8%E7%BF%92%E6%B4%BB%E5%8B%95">中華文化學習活動</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E8%B6%B3%E7%90%83%E6%B4%BB%E5%8B%95">開心校園影片–足球活動</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E9%BB%9E%E5%BF%83%E8%A3%BD%E4%BD%9C">開心校園影片-點心製作</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E5%8A%9F%E5%A4%AB">開心校園影片-功夫</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87%E2%80%93%E5%82%B3%E7%B5%B1%E5%B0%8F%E7%8E%A9%E6%84%8F">開心校園影片–傳統小玩意</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E6%8C%AA%E4%BA%9E%E6%96%B9%E8%88%9F%E8%8A%B1%E5%9C%92">開心校園影片-挪亞方舟花園</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E5%B0%8E%E8%B3%9E%E5%9C%98">開心校園影片-導賞團</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%96%8B%E5%BF%83%E6%A0%A1%E5%9C%92%E5%BD%B1%E7%89%87-%E8%B5%B0%E5%87%BA%E8%AA%B2%E5%AE%A4%E6%B4%BB%E5%8B%95-%E6%A8%A1%E6%93%AC%E7%8E%A9%E5%85%B7%E5%BA%97%E5%93%A1">開心校園影片-走出課室活動-模擬玩具店員</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E3%80%8C%E8%AA%B2%E5%AE%A4%E5%A4%96%E9%80%B2%E8%A1%8C%E7%9A%84%E9%AB%94+%E9%A9%97%E5%BC%8F%E5%AD%B8%E7%BF%92%E6%B4%BB%E5%8B%95%E5%A4%A9%E5%9C%B0%E3%80%8D">「課室外進行的體驗式學習活動天地」</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="https://stpnpkg.schoolteam.hk/zh_tw/photoAlbums/index?year=2018">生活花絮相片</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%BD%8A%E4%BE%86%E6%8E%A2%E7%B4%A2%E7%A7%91%E5%AD%B8%E9%A4%A8">齊來探索科學館</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E4%B8%AD%E7%A7%8B%E7%AF%80%E5%BF%AB%E6%A8%82%21">中秋節快樂!</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%99%BD%E5%85%89%E7%AC%91%E5%AE%B9%E5%B0%8F%E6%A8%82%E5%9C%92">陽光笑容小樂園</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E5%AD%B8%E6%A0%A1%E6%B4%BB%E5%8B%95">學校活動</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%AB%98%E7%8F%AD%E8%A6%AA%E5%AD%90%E9%9B%BB%E5%BD%B1%E6%AC%A3%E8%B3%9E%E6%9C%83">高班親子電影欣賞會</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E5%8F%83%E8%A7%80%E9%A6%99%E6%B8%AF%E5%85%92%E7%AB%A5%E6%8E%A2%E7%B4%A2%E5%8D%9A%E7%89%A9%E9%A4%A8">參觀香港兒童探索博物館</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E7%A5%9D%E5%A4%A7%E5%AE%B6%E6%96%B0%E5%B9%B4%E5%BF%AB%E6%A8%82%EF%BC%81%E7%A6%8F%E6%9D%AF%E6%BB%BF%E6%BA%A2%EF%BC%81%E8%BA%AB%E9%AB%94%E5%81%A5%E5%BA%B7%EF%BC%81">祝大家新年快樂！福杯滿溢！身體健康！喜樂平安！</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-category "><span class="menu-item-label" style="background-image: url(&#039;/uploads/images/bcc86215660b7453c3396b102f8d4225_1566208332.png&#039;);"></span>
+<ul class="sub-menu sub-menu-category">
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E5%AD%B8%E6%A0%A1%E6%94%AF%E6%8F%B4">學校支援<br />
+School Supporting</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E6%96%87%E7%AB%A0%E5%88%86%E4%BA%AB">文章分享<br />
+Articles</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E8%A1%8C%E4%BA%8B%E6%9B%86">行事曆<br />
+Calendar</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E6%A0%A1%E5%9C%92%E8%A8%AD%E6%96%BD+">校園設施<br />
+School Equipment</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E7%95%A2%E6%A5%AD%E7%94%9F%E6%88%90%E5%B0%B1">畢業生成就<br />
+Achievements of Our Alumni</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-category "><a target="_self" class="menu-item-label" style="background-image: url(&#039;/uploads/images/4b516bec421b6b59da00a1d1187df911_1571990336.png&#039;);" href="/zh_tw/site/view?name=%E5%A0%B1%E5%90%8D%E6%96%B9%E6%B3%95+"></a></li>
+<li class="menu-item menu-item-category "><span class="menu-item-label" style="background-image: url(&#039;/uploads/images/8e479b75cfdb28a796a9b7fd4123db0d_1566208406.png&#039;);"></span>
+<ul class="sub-menu sub-menu-category">
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E7%B0%A1%E4%BB%8B">簡介<br />
+Introduction</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E4%B8%8A%E8%AA%B2%E6%99%82%E9%96%93%E5%8F%8A%E5%AD%B8%E8%B2%BB">上課時間及學費<br />
+Time Schedule and School Fee</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E9%A2%B1%E9%A2%A8%E5%8F%8A%E9%A2%A8%E9%9B%A8%E5%AE%89%E6%8E%92+">颱風及風雨安排<br />
+Typhoon Arrangement</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E8%A1%8C%E6%94%BF%E6%9E%B6%E6%A7%8B">行政架構<br />
+Administration Structure</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-category "><span class="menu-item-label" style="background-image: url(&#039;/uploads/images/ba3d769dd402c6027d252c32ad07f1c1_1669519888.png&#039;);"></span>
+<ul class="sub-menu sub-menu-category">
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="https://www.chsc.hk/show_content.php?lang_id=2&amp;c_id=2526&amp;category_id=-1">【健康成長路】幼兒家長網上講座系列（四）：「教出好動力的孩子」</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="https://www.parent.edu.hk/smart-parent-net/topics">家長智NET-專題-邏輯後果</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E5%AE%B6%E9%95%B7%E8%B3%87%E8%A8%8A">家長資訊 Parents information<br />
+</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=%E5%AE%B6%E9%95%B7%E6%96%87%E7%AB%A0%E5%88%86%E4%BA%AB">家長文章分享</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="/zh_tw/site/view?name=2024-2025%E5%B9%B4%E5%BA%A6%E6%A0%A1%E8%A8%8A">2024-2025年度校訊</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="https://www.edb.gov.hk/tc/student-parents/parents-related/ebulletin-for-parents/2025-2026/20250917.html">學生及家長應留意天氣變化</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="https://www.parent.edu.hk/smart-parent-net/topics/article/video-understandemotion">家長教室：社交劇場 - 認識情緒</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="https://www.parent.edu.hk/smart-parent-net/topics/article/video-2025kgtalk-3">【同理．童理】幼兒家長講座系列「與孩子好好溝通」：如何成為高EQ的家長？</a></li>
+<li class="menu-item menu-item-page"><a target="_self" class="menu-item-label" href="https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/front.html">幼稚園幼兒班（K1）收生安排<br />
+Admission Arrangements for Nursery (K1) Classes in Kindergartens</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-category "><a target="_self" class="menu-item-label" style="background-image: url(&#039;/uploads/images/b3cdec2a22bcd5d328f3c4358373e922_1566208440.png&#039;);" href="/zh_tw/site/view?name=%E8%81%AF%E7%B5%A1%E6%88%91%E5%80%91+"></a></li>
+</ul>                </div>
+
+            </div><!-- header -->
+
+            <div id="content">
+	
+<h2>Error 404</h2>
+
+<div class="error">
+Unable to resolve the request &quot;favicon.ico&quot;.</div></div><!-- content -->
+
+            <div class="">
+                <style>
+    .sitemap {
+        text-align: left;
+    }
+</style>
+
+<div id="footer">
+    <div style="background-image: url('/images/footer.png');" class="footer-img">
+    </div>
+
+
+    <div class="copy-right-info w-100">
+        <div class="row" >
+            <div class="col-12 col-sm-4 pr-2 pl-2">
+                北角聖彼得堂幼稚園            </div>
+            <div class="col-12 col-sm-4 pr-2 pl-2">
+                電話: 2570 4963            </div>
+            <div class="col-12 col-sm-4 pr-2 pl-2">
+                傳真: 2570 8298            </div>
+            <div class="col-12 col-sm-6 pr-2 pl-2">
+                地址: 香港北角炮台山道23號            </div>
+            <div class="col-12 col-sm-6 pr-2 pl-2">
+                電郵: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c9bab9acbdaaa1a2a089a7acbdbfa0aea8bda6bbe7aaa6a4">[email&#160;protected]</a>            </div>
+        </div>
+        <div class="col-12" style="text-align: center;">
+            Copyright &copy; 2026 by St.Peter' s Church Kindergarten. All Rights Reserved. Powered by <a
+                    href="http://www.schoolteam.com.hk" target="_blank">SchoolTeam</a>.
+        </div>
+    </div>
+</div>            </div>
+        </div><!-- page -->
+    </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+mobile_side_menu();
+});
+/*]]>*/
+</script>
+</body>
+</html>
+
+<script type="text/javascript">
+    $('.sub-menu li').on('mouseover', function () {
+        var color = "hsl(" + 330 * Math.random() + ',' +
+            (60 + 70 * Math.random()) + '%,' +
+            (85 + 10 * Math.random()) + '%,' + '' +
+            '0.95)';
+
+        this.style['background'] = color;
+
+    }).mouseleave(function () {
+        this.style['background'] = 'white';
+    });
+</script>

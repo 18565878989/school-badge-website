@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>404 Page not found</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- 404 CSS -->
+    <!-- <link rel="stylesheet" href="//www.ie.edu/error/404/css/style.css"> -->
+    <link rel="stylesheet" href="https://www.ie.edu//error/404/css/style.css">
+    <link rel="shortcut icon" href="https://static.ie.edu/IT/logos/favicon/favicon-16x16.png" type="image/png">
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid top"></div><!-- /.container-fluid -->
+      <div class="container-fluid branding">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-sm-12">
+            <img src= "https://static.ie.edu/IT/logos/IE_UNIVERSITY_RGB-hz.svg" width="150" height="48,58" alt="IE University">
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>Error 404 &middot; Page not found</h2>
+            <p class="lead my-5 font-italic">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-md-4 offset-md-2 my-1">
+            <a class="d-inline-block btn btn-primary w-100" href="https://www.ie.edu/">Visit our homepage</a>
+          </div><!-- /.col -->
+          <div class="col-md-4 my-1">
+            <a class="d-inline-block btn btn-secondary w-100" href="mailto:ayuda@ie.edu">Contact us</a>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </main>
+    <aside>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-sm-12">
+            <h4 class="my-4">We recommend</h4>
+          </div><!-- /.col-10 -->
+        </div><!-- /.row -->
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-sm-12">
+            <h5 class="my-3">Direct access</h5>
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <ul class="list-unstyled">
+                  <li><a href="https://www.ie.edu/financial-aid/" target="_blank">Financial Aid <!-- <i class="fa fa-external-link" aria-hidden="true"></i> --></a></li>
+                  <li><a href="https://www.ie.edu/talent-careers/" target="_blank">Talent &amp; Careers</a></li>
+                  <li><a href="https://www.ie.edu/alumni/" target="_blank">Alumni</a></li>
+                  <li><a href="https://www.ie.edu/corporate-relations/" target="_blank">Corporate Relations</a></li>
+                </ul>
+              </div><!-- /.col -->
+              <div class="col-md-4 col-sm-12">
+                <ul class="list-unstyled">
+                  <li><a href="https://store.ie.edu/" target="_blank">IE Store</a></li>
+                  <li><a href="https://library.ie.edu/" target="_blank">Library</a></li>
+                  <li><a href="https://iepublishing.ie.edu/es/" target="_blank">IE Publishing </a></li>
+                  <li><a href="https://ieknowledge.ie.edu/" target="_blank">IE Knowledge</a></li>
+                </ul>
+              </div><!-- /.col -->
+              <div class="col-md-4 col-sm-12">
+                <ul class="list-unstyled">
+                  <li><a href="https://www.ie.edu/business-school/the-school/our-recognitions/" target="_blank">Rankings</a></li>
+                  <li><a href="https://www.ie.edu/student-services/" target="_blank">Student Services</a></li>
+                  <li><a href="https://www.ie.edu/ie-foundation/" target="_blank">IE Foundation</a></li>
+                  <li><a href="https://campuslife.ie.edu/" target="_blank">Campus Life</a></li>
+                </ul>
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.col-5 -->
+          <!-- <div class="col-md-5 col-sm-12">
+            <h5 class="my-3">Highlights</h5>
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <ul class="list-unstyled">
+                  <li><a href="//www.ie.edu/business-school/the-school/rankings-recognition/" target="_blank">Rankings</a></li>
+                  <li><a href="//www.ie.edu/student-services/" target="_blank">Student Services</a></li>
+                  <li><a href="//www.ie.edu/ie-foundation/" target="_blank">IE Foundation</a></li>
+                  <li><a href="//clubs.ie.edu/iecampuslife/home/" target="_blank">IE Campus Life</a></li>
+                </ul>
+              </div><!-- /.col -->
+              <!-- <div class="col-md-6 col-sm-12">
+                <ul class="list-unstyled">
+
+                </ul>
+              </div><!-- /.col -->
+
+            </div><!-- /.row -->
+          </div><!-- /.col-5 -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </aside>
+    <footer>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-sm-12">
+            <h4 class="my-4">IE - Reinventing Higher Education</h4>
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <ul class="list-unstyled">
+                  <li><a href="https://www.ie.edu/university/" target="_blank">IE University <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.ie.edu/business-school/" target="_blank">IE Business School <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.ie.edu/law-school/" target="_blank">IE Law School <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.ie.edu/school-architecture-design/" target="_blank">IE School Of Architecture And Design <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                </ul>
+              </div><!-- ./col-4 -->
+              <div class="col-md-4 col-sm-12">
+                <ul class="list-unstyled">
+                  <li><a href="https://www.ie.edu/school-human-sciences-technology/" target="_blank">IE School Of Human Sciences And Technology <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.ie.edu/school-global-public-affairs/" target="_blank">IE School of Global and Public Affairs <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.ie.edu/exponential-learning/" target="_blank">IE Exponential Learning <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.ie.edu/ie-foundation/" target="_blank">IE Foundation <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                </ul>
+              </div><!-- ./col-4 -->
+            </div><!-- /.row -->
+            <div class="row">
+              <!-- /.col-2 -->
+              <div class="col-md-10">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://www.ie.edu/legal-notice/" target="_blank">Legal notice</a></li>
+                  <li class="list-inline-item"><a href="https://www.ie.edu/privacy-policy/" target="_blank">Privacy policy</a></li>
+                  <li class="list-inline-item"><a href="https://www.ie.edu/cookie-policy/" target="_blank">Cookie policy</a></li>
+                  <li class="list-inline-item"><a href="https://www.ie.edu/international-offices/" target="_blank">International offices</a></li>
+                  <li class="list-inline-item"><a href="https://www.ie.edu/IE/site/php/en/contact.php" target="_blank">Contact</a></li>
+                </ul>
+              </div><!-- /.col-8 -->
+
+            </div><!-- /.row -->
+
+            <!-- /.row -->
+            <div class="row">
+
+              <div class="col-md-4 col-sm-12">
+                <ul class="list-inline">
+                  <li class="list-inline-item rrssico"><a href="https://www.facebook.com/iebusinessschool" title="Facebook - IE Business School" target="_blank" tabindex="1"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="list-inline-item rrssico"><a href="https://twitter.com/iebusiness" title="Twitter - IE Business School" target="_blank" tabindex="2"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="list-inline-item rrssico"><a href="https://www.youtube.com/user/IEBusinessSchool" title="Youtube - IE Business School" target="_blank" tabindex="3"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="list-inline-item rrssico"><a href="https://www.linkedin.com/company/740718" title="Linkedin - IE Business School" target="_blank" tabindex="4"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="list-inline-item rrssico"><a href="https://www.instagram.com/iebusiness/" title="Instagram - IE Business School" target="_blank" tabindex="5"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="list-inline-item rrssico"><a href="https://www.snapchat.com/add/IE-Life" title="Snapchat - IE Life" target="_blank" tabindex="6"><i class="fa fa-snapchat-ghost fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+              </div><!-- /.col-8 -->
+              <div class="col-md-2 col-sm-12 mt-5">
+                &copy; IE 2021
+              </div><!-- /.col-2 -->
+              <div class="col-md-5 col-sm-12 text-md-right">
+                <img src="https://static.ie.edu/IT/logos/IE_UNIVERSITY_NEGATIVO-hz.svg" width="148" height="57" alt="IE University">
+              </div><!-- /.col-2 -->
+            </div><!-- /.row -->
+
+          </div><!-- /.col-10 -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

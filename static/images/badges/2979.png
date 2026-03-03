@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='max-image-preview:large' />
+<title>Page not found &#8211; St. Johannes College</title>
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel="alternate" type="application/rss+xml" title="St. Johannes College &raquo; Feed" href="https://st-johannes.edu.hk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="St. Johannes College &raquo; Comments Feed" href="https://st-johannes.edu.hk/comments/feed/" />
+		<style>
+			.lazyload,
+			.lazyloading {
+				max-width: 100%;
+			}
+		</style>
+		        <script type="text/javascript">
+        (function() {
+            document.addEventListener('DOMContentLoaded', function() {
+                var containers = document.querySelectorAll('.wp-lightbox-container');
+
+                for (var i = 0; i < containers.length; i++) {
+                    var container = containers[i];
+
+                    var wpElements = container.querySelectorAll('[data-wp-on], [data-wp-interactive], [data-wp-init], [data-wp-context], img, button');
+
+                    for (var j = 0; j < wpElements.length; j++) {
+                        var el = wpElements[j];
+                        var attributes = el.attributes;
+
+                        for (var k = attributes.length - 1; k >= 0; k--) {
+                            var attr = attributes[k];
+                            if (attr.name.indexOf('data-wp-') === 0) {
+                                el.removeAttribute(attr.name);
+                            }
+                        }
+                    }
+
+                    var buttons = container.querySelectorAll('button');
+                    for (var j = 0; j < buttons.length; j++) {
+                        buttons[j].remove();
+                    }
+                }
+
+                var allWpImages = document.querySelectorAll('img[data-wp-on], img[data-wp-interactive], img[data-wp-init]');
+                for (var i = 0; i < allWpImages.length; i++) {
+                    var img = allWpImages[i];
+                    var attributes = img.attributes;
+
+                    for (var j = attributes.length - 1; j >= 0; j--) {
+                        var attr = attributes[j];
+                        if (attr.name.indexOf('data-wp-') === 0) {
+                            img.removeAttribute(attr.name);
+                        }
+                    }
+                }
+
+                var standaloneButtons = document.querySelectorAll('button.lightbox-trigger, button[data-wp-on], button[data-wp-interactive]');
+                for (var i = 0; i < standaloneButtons.length; i++) {
+                    standaloneButtons[i].remove();
+                }
+            });
+
+            document.addEventListener('click', function(e) {
+                var target = e.target;
+
+                if (target.hasAttribute('data-wp-on') ||
+                    target.hasAttribute('data-wp-interactive') ||
+                    target.classList.contains('lightbox-trigger') ||
+                    target.hasAttribute('data-wp-init')) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    e.stopImmediatePropagation();
+                    return false;
+                }
+
+                if (target.tagName === 'FIGURE' && target.classList.contains('wp-lightbox-container')) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    e.stopImmediatePropagation();
+                    return false;
+                }
+
+                if (target.tagName === 'A' && target.querySelector('img[data-wp-on], img[data-wp-interactive]')) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    e.stopImmediatePropagation();
+                    return false;
+                }
+            }, true);
+        })();
+        </script>
+        		<!-- This site uses the Google Analytics by MonsterInsights plugin v10.0.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-N6YNYMVGRB"  data-cfasync="false" data-wpfc-render="false" async></script>
+			<script data-cfasync="false" data-wpfc-render="false">
+				var mi_version = '10.0.2';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/st-johannes.edu.hk\/apple-touch-icon.png\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-N6YNYMVGRB',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-N6YNYMVGRB', {"forceSSL":"true","link_attribution":"true","page_path":'\/404.html?page=' + document.location.pathname + document.location.search + '&from=' + document.referrer} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+							<!-- / Google Analytics by MonsterInsights -->
+		<style id='superb-addons-variable-fallbacks-inline-css'>
+:root{--wp--preset--color--primary:#1f7cec;--wp--preset--color--primary-hover:#3993ff;--wp--preset--color--base:#fff;--wp--preset--color--featured:#0a284b;--wp--preset--color--contrast-light:#fff;--wp--preset--color--contrast-dark:#000;--wp--preset--color--mono-1:#0d3c74;--wp--preset--color--mono-2:#64748b;--wp--preset--color--mono-3:#e2e8f0;--wp--preset--color--mono-4:#f8fafc;--wp--preset--spacing--superbspacing-xxsmall:clamp(5px,1vw,10px);--wp--preset--spacing--superbspacing-xsmall:clamp(10px,2vw,20px);--wp--preset--spacing--superbspacing-small:clamp(20px,4vw,40px);--wp--preset--spacing--superbspacing-medium:clamp(30px,6vw,60px);--wp--preset--spacing--superbspacing-large:clamp(40px,8vw,80px);--wp--preset--spacing--superbspacing-xlarge:clamp(50px,10vw,100px);--wp--preset--spacing--superbspacing-xxlarge:clamp(60px,12vw,120px);--wp--preset--font-size--superbfont-tiny:clamp(10px,0.625rem + ((1vw - 3.2px) * 0.227),12px);--wp--preset--font-size--superbfont-xxsmall:clamp(12px,0.75rem + ((1vw - 3.2px) * 0.227),14px);--wp--preset--font-size--superbfont-xsmall:clamp(16px,1rem + ((1vw - 3.2px) * 1),16px);--wp--preset--font-size--superbfont-small:clamp(16px,1rem + ((1vw - 3.2px) * 0.227),18px);--wp--preset--font-size--superbfont-medium:clamp(18px,1.125rem + ((1vw - 3.2px) * 0.227),20px);--wp--preset--font-size--superbfont-large:clamp(24px,1.5rem + ((1vw - 3.2px) * 0.909),32px);--wp--preset--font-size--superbfont-xlarge:clamp(32px,2rem + ((1vw - 3.2px) * 1.818),48px);--wp--preset--font-size--superbfont-xxlarge:clamp(40px,2.5rem + ((1vw - 3.2px) * 2.727),64px)}.has-primary-color{color:var(--wp--preset--color--primary)!important}.has-primary-hover-color{color:var(--wp--preset--color--primary-hover)!important}.has-base-color{color:var(--wp--preset--color--base)!important}.has-featured-color{color:var(--wp--preset--color--featured)!important}.has-contrast-light-color{color:var(--wp--preset--color--contrast-light)!important}.has-contrast-dark-color{color:var(--wp--preset--color--contrast-dark)!important}.has-mono-1-color{color:var(--wp--preset--color--mono-1)!important}.has-mono-2-color{color:var(--wp--preset--color--mono-2)!important}.has-mono-3-color{color:var(--wp--preset--color--mono-3)!important}.has-mono-4-color{color:var(--wp--preset--color--mono-4)!important}.has-primary-background-color{background-color:var(--wp--preset--color--primary)!important}.has-primary-hover-background-color{background-color:var(--wp--preset--color--primary-hover)!important}.has-base-background-color{background-color:var(--wp--preset--color--base)!important}.has-featured-background-color{background-color:var(--wp--preset--color--featured)!important}.has-contrast-light-background-color{background-color:var(--wp--preset--color--contrast-light)!important}.has-contrast-dark-background-color{background-color:var(--wp--preset--color--contrast-dark)!important}.has-mono-1-background-color{background-color:var(--wp--preset--color--mono-1)!important}.has-mono-2-background-color{background-color:var(--wp--preset--color--mono-2)!important}.has-mono-3-background-color{background-color:var(--wp--preset--color--mono-3)!important}.has-mono-4-background-color{background-color:var(--wp--preset--color--mono-4)!important}.has-superbfont-tiny-font-size{font-size:var(--wp--preset--font-size--superbfont-tiny)!important}.has-superbfont-xxsmall-font-size{font-size:var(--wp--preset--font-size--superbfont-xxsmall)!important}.has-superbfont-xsmall-font-size{font-size:var(--wp--preset--font-size--superbfont-xsmall)!important}.has-superbfont-small-font-size{font-size:var(--wp--preset--font-size--superbfont-small)!important}.has-superbfont-medium-font-size{font-size:var(--wp--preset--font-size--superbfont-medium)!important}.has-superbfont-large-font-size{font-size:var(--wp--preset--font-size--superbfont-large)!important}.has-superbfont-xlarge-font-size{font-size:var(--wp--preset--font-size--superbfont-xlarge)!important}.has-superbfont-xxlarge-font-size{font-size:var(--wp--preset--font-size--superbfont-xxlarge)!important}
+/*# sourceURL=superb-addons-variable-fallbacks-inline-css */
+</style>
+<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-block-template-part-theme-inline-css'>
+:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+/*# sourceURL=https://st-johannes.edu.hk/wp-includes/blocks/template-part/theme.min.css */
+</style>
+<style id='wp-block-spacer-inline-css'>
+.wp-block-spacer{clear:both}
+/*# sourceURL=https://st-johannes.edu.hk/wp-includes/blocks/spacer/style.min.css */
+</style>
+<style id='wp-block-heading-inline-css'>
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://st-johannes.edu.hk/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://st-johannes.edu.hk/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id='wp-block-search-inline-css'>
+.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{height:1.25em;min-height:24px;min-width:24px;width:1.25em;fill:currentColor;vertical-align:text-bottom}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__button{box-sizing:border-box;display:flex;flex-shrink:0;justify-content:center;margin-left:0;max-width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{min-width:0!important;transition-property:width}.wp-block-search.wp-block-search__button-only .wp-block-search__input{flex-basis:100%;transition-duration:.3s}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden,.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper{overflow:hidden}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__input{border-left-width:0!important;border-right-width:0!important;flex-basis:0;flex-grow:0;margin:0;min-width:0!important;padding-left:0!important;padding-right:0!important;width:0!important}:where(.wp-block-search__input){appearance:none;border:1px solid #949494;flex-grow:1;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin-left:0;margin-right:0;min-width:3rem;padding:8px;text-decoration:unset!important;text-transform:inherit}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){background-color:#fff;border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:none}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}.wp-block-search.aligncenter .wp-block-search__inside-wrapper{margin:auto}.wp-block[data-align=right] .wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{float:right}
+/*# sourceURL=https://st-johannes.edu.hk/wp-includes/blocks/search/style.min.css */
+</style>
+<style id='wp-block-search-theme-inline-css'>
+.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}
+/*# sourceURL=https://st-johannes.edu.hk/wp-includes/blocks/search/theme.min.css */
+</style>
+<style id='wp-block-group-inline-css'>
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+.wp-block-group.is-style-superbaddons-card{background-color:var(--wp--preset--color--contrast-light);border-color:var(--wp--preset--color--mono-3);border-radius:10px;border-style:solid;border-width:1px;box-shadow:0 1px 2px 0 rgba(0,0,0,.05);color:var(--wp--preset--color--contrast-dark);padding:var(--wp--preset--spacing--superbspacing-small)}
+/*# sourceURL=wp-block-group-inline-css */
+</style>
+<style id='wp-block-group-theme-inline-css'>
+:where(.wp-block-group.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://st-johannes.edu.hk/wp-includes/blocks/group/theme.min.css */
+</style>
+<link rel='stylesheet' id='sbr_styles-css' href='https://st-johannes.edu.hk/wp-content/plugins/reviews-feed/assets/css/sbr-styles.min.css?ver=2.4.0' media='all' />
+<link rel='stylesheet' id='sbi_styles-css' href='https://st-johannes.edu.hk/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.10.0' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<link rel='stylesheet' id='hashabr-block-style-css' href='https://st-johannes.edu.hk/wp-content/plugins/hashbar-wp-notification-bar/assets/css/block-style-index.css?ver=1.8.0' media='all' />
+<link rel='stylesheet' id='hashbar-frontend-css' href='https://st-johannes.edu.hk/wp-content/plugins/hashbar-wp-notification-bar/assets/css/frontend.css?ver=1.8.0' media='all' />
+<link rel='stylesheet' id='wp-components-css' href='https://st-johannes.edu.hk/wp-includes/css/dist/components/style.min.css?ver=6.9.1' media='all' />
+<link rel='stylesheet' id='wp-preferences-css' href='https://st-johannes.edu.hk/wp-includes/css/dist/preferences/style.min.css?ver=6.9.1' media='all' />
+<link rel='stylesheet' id='wp-block-editor-css' href='https://st-johannes.edu.hk/wp-includes/css/dist/block-editor/style.min.css?ver=6.9.1' media='all' />
+<link rel='stylesheet' id='popup-maker-block-library-style-css' href='https://st-johannes.edu.hk/wp-content/plugins/popup-maker/dist/packages/block-library-style.css?ver=dbea705cfafe089d65f1' media='all' />
+<link rel='stylesheet' id='idea-flow-patterns-css' href='https://st-johannes.edu.hk/wp-content/themes/idea-flow/assets/css/patterns.css?ver=1770056026' media='all' />
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #389fd9;--wp--preset--color--mono-2: #424850;--wp--preset--color--contrast-light: #ffffff;--wp--preset--color--contrast-dark: #16365d;--wp--preset--color--base: #ffffff;--wp--preset--color--mono-1: #16365d;--wp--preset--color--featured: #16365d;--wp--preset--color--mono-3: #fcee21;--wp--preset--color--mono-4: #e6f5ff;--wp--preset--color--primary-hover: #bb92c3;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--custom-sjc-blues: linear-gradient(135deg,rgb(22,54,93) 2%,rgb(56,159,217) 100%);--wp--preset--gradient--custom-sjc-01: linear-gradient(135deg,rgb(56,159,217) 0%,rgb(252,238,33) 100%);--wp--preset--gradient--custom-sjc-02: linear-gradient(90deg,rgb(252,238,33) 0%,rgb(187,146,195) 100%);--wp--preset--gradient--custom-sjc-03: linear-gradient(135deg,rgb(187,146,195) 0%,rgb(56,159,217) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.682), 20px);--wp--preset--font-size--large: clamp(22.041px, 1.378rem + ((1vw - 3.2px) * 1.586), 36px);--wp--preset--font-size--x-large: clamp(25.014px, 1.563rem + ((1vw - 3.2px) * 1.93), 42px);--wp--preset--font-size--superbfont-tiny: clamp(10px, 0.625rem + ((1vw - 3.2px) * 0.227), 12px);--wp--preset--font-size--superbfont-xxsmall: clamp(12px, 0.75rem + ((1vw - 3.2px) * 0.227), 14px);--wp--preset--font-size--superbfont-xsmall: clamp(16px, 1rem + ((1vw - 3.2px) * 1), 16px);--wp--preset--font-size--superbfont-small: clamp(16px, 1rem + ((1vw - 3.2px) * 0.227), 18px);--wp--preset--font-size--superbfont-medium: clamp(18px, 1.125rem + ((1vw - 3.2px) * 0.227), 20px);--wp--preset--font-size--superbfont-large: clamp(24px, 1.5rem + ((1vw - 3.2px) * 0.909), 32px);--wp--preset--font-size--superbfont-xlarge: clamp(32px, 2rem + ((1vw - 3.2px) * 1.818), 48px);--wp--preset--font-size--superbfont-xxlarge: clamp(40px, 2.5rem + ((1vw - 3.2px) * 2.727), 64px);--wp--preset--font-family--fontprimary: "Figtree", sans-serif;--wp--preset--font-family--fontsecondary: 'Figtree', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--spacing--superbspacing-xxsmall: clamp(5px, 1vw, 10px);--wp--preset--spacing--superbspacing-xsmall: clamp(10px, 2vw, 20px);--wp--preset--spacing--superbspacing-small: clamp(20px, 4vw, 40px);--wp--preset--spacing--superbspacing-medium: clamp(30px, 6vw, 60px);--wp--preset--spacing--superbspacing-large: clamp(40px, 8vw, 80px);--wp--preset--spacing--superbspacing-xlarge: clamp(50px, 10vw, 100px);--wp--preset--spacing--superbspacing-xxlarge: clamp(60px, 12vw, 120px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 1200px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.5rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.5rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.5rem;}:root :where(.is-layout-grid){gap: 1.5rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--fontprimary);font-size: var(--wp--preset--font-size--medium);line-height: 150%;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: 0px;--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: 0px;}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--primary);font-family: var(--wp--preset--font-family--fontprimary);font-style: normal;font-weight: 600;text-decoration: none;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):focus){text-decoration: underline;}h1, h2, h3, h4, h5, h6{color: var(--wp--preset--color--contrast-dark);line-height: 1.4;}h1{color: var(--wp--preset--color--mono-1);font-size: var(--wp--preset--font-size--superbfont-xlarge);line-height: 1.2;}h2{font-size: var(--wp--preset--font-size--x-large);line-height: 1.2;}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--medium);}h6{font-size: var(--wp--preset--font-size--medium);}:root :where(.wp-element-button, .wp-block-button__link){background: var(--wp--preset--gradient--custom-sjc-03);background-color: var(--wp--preset--color--primary);border-radius: 100px;border-width: 0;color: var(--wp--preset--color--contrast-light);font-family: inherit;font-size: var(--wp--preset--font-size--superbfont-small);font-style: inherit;font-weight: 600;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}:root :where(.wp-element-button:visited, .wp-block-button__link:visited){color: var(--wp--preset--color--contrast-light);}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: var(--wp--preset--color--primary-hover);color: var(--wp--preset--color--contrast-light);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){background-color: var(--wp--preset--color--primary-hover);color: var(--wp--preset--color--contrast-light);}:root :where(.wp-element-button:active, .wp-block-button__link:active){background-color: var(--wp--preset--color--primary-hover);color: var(--wp--preset--color--contrast-light);}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-family: var(--wp--preset--font-family--fontprimary);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-mono-2-color{color: var(--wp--preset--color--mono-2) !important;}.has-contrast-light-color{color: var(--wp--preset--color--contrast-light) !important;}.has-contrast-dark-color{color: var(--wp--preset--color--contrast-dark) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-mono-1-color{color: var(--wp--preset--color--mono-1) !important;}.has-featured-color{color: var(--wp--preset--color--featured) !important;}.has-mono-3-color{color: var(--wp--preset--color--mono-3) !important;}.has-mono-4-color{color: var(--wp--preset--color--mono-4) !important;}.has-primary-hover-color{color: var(--wp--preset--color--primary-hover) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-mono-2-background-color{background-color: var(--wp--preset--color--mono-2) !important;}.has-contrast-light-background-color{background-color: var(--wp--preset--color--contrast-light) !important;}.has-contrast-dark-background-color{background-color: var(--wp--preset--color--contrast-dark) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-mono-1-background-color{background-color: var(--wp--preset--color--mono-1) !important;}.has-featured-background-color{background-color: var(--wp--preset--color--featured) !important;}.has-mono-3-background-color{background-color: var(--wp--preset--color--mono-3) !important;}.has-mono-4-background-color{background-color: var(--wp--preset--color--mono-4) !important;}.has-primary-hover-background-color{background-color: var(--wp--preset--color--primary-hover) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-mono-2-border-color{border-color: var(--wp--preset--color--mono-2) !important;}.has-contrast-light-border-color{border-color: var(--wp--preset--color--contrast-light) !important;}.has-contrast-dark-border-color{border-color: var(--wp--preset--color--contrast-dark) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-mono-1-border-color{border-color: var(--wp--preset--color--mono-1) !important;}.has-featured-border-color{border-color: var(--wp--preset--color--featured) !important;}.has-mono-3-border-color{border-color: var(--wp--preset--color--mono-3) !important;}.has-mono-4-border-color{border-color: var(--wp--preset--color--mono-4) !important;}.has-primary-hover-border-color{border-color: var(--wp--preset--color--primary-hover) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-custom-sjc-blues-gradient-background{background: var(--wp--preset--gradient--custom-sjc-blues) !important;}.has-custom-sjc-01-gradient-background{background: var(--wp--preset--gradient--custom-sjc-01) !important;}.has-custom-sjc-02-gradient-background{background: var(--wp--preset--gradient--custom-sjc-02) !important;}.has-custom-sjc-03-gradient-background{background: var(--wp--preset--gradient--custom-sjc-03) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-superbfont-tiny-font-size{font-size: var(--wp--preset--font-size--superbfont-tiny) !important;}.has-superbfont-xxsmall-font-size{font-size: var(--wp--preset--font-size--superbfont-xxsmall) !important;}.has-superbfont-xsmall-font-size{font-size: var(--wp--preset--font-size--superbfont-xsmall) !important;}.has-superbfont-small-font-size{font-size: var(--wp--preset--font-size--superbfont-small) !important;}.has-superbfont-medium-font-size{font-size: var(--wp--preset--font-size--superbfont-medium) !important;}.has-superbfont-large-font-size{font-size: var(--wp--preset--font-size--superbfont-large) !important;}.has-superbfont-xlarge-font-size{font-size: var(--wp--preset--font-size--superbfont-xlarge) !important;}.has-superbfont-xxlarge-font-size{font-size: var(--wp--preset--font-size--superbfont-xxlarge) !important;}.has-fontprimary-font-family{font-family: var(--wp--preset--font-family--fontprimary) !important;}.has-fontsecondary-font-family{font-family: var(--wp--preset--font-family--fontsecondary) !important;}
+:root :where(.wp-block-heading){color: var(--wp--preset--color--mono-1);font-weight: 600;}
+:root :where(p){font-size: var(--wp--preset--font-size--xsmall);line-height: 1.4;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<style id='core-block-supports-inline-css'>
+.wp-elements-1627320a64acf1f565931dc6f68527be a:where(:not(.wp-element-button)){color:var(--wp--preset--color--mono-2);}.wp-container-core-group-is-layout-a9f84cde > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:700px;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-group-is-layout-a9f84cde > .alignwide{max-width:700px;}.wp-container-core-group-is-layout-a9f84cde .alignfull{max-width:none;}.wp-container-core-group-is-layout-60bfb2b4 > .alignfull{margin-right:calc(var(--wp--preset--spacing--superbspacing-medium) * -1);margin-left:calc(var(--wp--preset--spacing--superbspacing-medium) * -1);}
+/*# sourceURL=core-block-supports-inline-css */
+</style>
+<style id='wp-block-template-skip-link-inline-css'>
+
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+/*# sourceURL=wp-block-template-skip-link-inline-css */
+</style>
+<link rel='stylesheet' id='ctf_styles-css' href='https://st-johannes.edu.hk/wp-content/plugins/custom-twitter-feeds/css/ctf-styles.min.css?ver=2.3.1' media='all' />
+<link rel='stylesheet' id='superb-addons-patterns-css' href='https://st-johannes.edu.hk/wp-content/plugins/superb-blocks/assets/css/patterns.min.css?ver=3.7.1' media='all' />
+<link rel='stylesheet' id='superb-addons-enhancements-css' href='https://st-johannes.edu.hk/wp-content/plugins/superb-blocks/assets/css/enhancements.min.css?ver=3.7.1' media='all' />
+<link rel='stylesheet' id='superb-addons-custom-full-css-css' href='https://st-johannes.edu.hk/wp-content/uploads/superb-addons/custom-css/full.css?ver=1724347229' media='all' />
+<link rel='stylesheet' id='cff-css' href='https://st-johannes.edu.hk/wp-content/plugins/custom-facebook-feed/assets/css/cff-style.min.css?ver=4.3.4' media='all' />
+<link rel='stylesheet' id='sb-font-awesome-css' href='https://st-johannes.edu.hk/wp-content/plugins/custom-facebook-feed/assets/css/font-awesome.min.css?ver=4.7.0' media='all' />
+<link rel='stylesheet' id='ml-lightgallery-css-css' href='https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css?ver=2.7.1' media='all' />
+<link rel='stylesheet' id='ml-lightbox-public-css-css' href='https://st-johannes.edu.hk/wp-content/plugins/ml-slider-lightbox/assets/css/ml-lightbox-public.css?ver=2.22.0' media='all' />
+<style id='ml-lightbox-public-css-inline-css'>
+
+            :root {
+                --ml-lightbox-arrow-color: #ffffff !important;
+                --ml-lightbox-arrow-hover-color: #000000 !important;
+                --ml-lightbox-close-icon-color: #ffffff !important;
+                --ml-lightbox-close-icon-hover-color: #000000 !important;
+                --ml-lightbox-toolbar-icon-color: #ffffff !important;
+                --ml-lightbox-toolbar-icon-hover-color: #000000 !important;
+            }
+
+            .lg-backdrop {
+                background-color: #000000 !important;
+                opacity: 0.9 !important;
+            }
+
+            .lg-outer .lg-thumb-outer {
+                background-color: #000000 !important;
+                opacity: 0.9 !important;
+            }
+
+            .lg-outer .lg-prev,
+            .lg-outer .lg-next {
+                background-color: #000000 !important;
+                color: var(--ml-lightbox-arrow-color) !important;
+            }
+
+            .lg-outer .lg-prev:hover,
+            .lg-outer .lg-next:hover {
+                background-color: #f0f0f0 !important;
+                color: var(--ml-lightbox-arrow-hover-color) !important;
+            }
+
+            .lg-outer .lg-toolbar > .lg-icon:not(.lg-close),
+            .lg-outer .lg-counter {
+                background-color: #000000 !important;
+                color: var(--ml-lightbox-toolbar-icon-color) !important;
+            }
+
+            .lg-outer .lg-toolbar > .lg-icon:not(.lg-close):hover,
+            .lg-outer .lg-counter:hover {
+                background-color: #f0f0f0 !important;
+                color: var(--ml-lightbox-toolbar-icon-hover-color) !important;
+            }
+
+            .lg-outer .lg-close {
+                background-color: #000000 !important;
+                color: var(--ml-lightbox-close-icon-color) !important;
+            }
+
+            .lg-outer .lg-close:hover {
+                background-color: #f0f0f0 !important;
+                color: var(--ml-lightbox-close-icon-hover-color) !important;
+            }
+
+            .ml-lightbox-button,
+            .widget .ml-lightbox-enabled a.ml-lightbox-button {
+                background-color: #000000 !important;
+                color: #ffffff !important;
+            }
+
+            .ml-lightbox-button:hover,
+            .ml-lightbox-button:focus {
+                background-color: #f0f0f0 !important;
+                color: #000000 !important;
+            }
+            .ml-lightbox-button,
+            .widget .ml-lightbox-enabled a.ml-lightbox-button {
+                top: 10px !important;
+                left: auto !important;
+                right: 10px !important;
+                bottom: auto !important;
+            }
+
+        
+/*# sourceURL=ml-lightbox-public-css-inline-css */
+</style>
+<!--n2css--><!--n2js--><script src="https://st-johannes.edu.hk/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=10.0.2" id="monsterinsights-frontend-script-js" async data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" id='monsterinsights-frontend-script-js-extra'>var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/st-johannes.edu.hk","hash_tracking":"false","v4_id":"G-N6YNYMVGRB"};</script>
+<script src="https://st-johannes.edu.hk/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://st-johannes.edu.hk/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="hashbar-frontend-js-extra">
+var hashbar_localize = {"dont_show_bar_after_close":"","notification_display_time":"400","bar_keep_closed":"","cookies_expire_time":"","cookies_expire_type":""};
+//# sourceURL=hashbar-frontend-js-extra
+</script>
+<script src="https://st-johannes.edu.hk/wp-content/plugins/hashbar-wp-notification-bar/assets/js/frontend.js?ver=1.8.0" id="hashbar-frontend-js"></script>
+<script src="https://st-johannes.edu.hk/wp-content/plugins/hashbar-wp-notification-bar/assets/js/js.cookie.min.js?ver=1.8.0" id="js-cookie-js"></script>
+<link rel="https://api.w.org/" href="https://st-johannes.edu.hk/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://st-johannes.edu.hk/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9.1" />
+		<script>
+			document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+		</script>
+				<style>
+			.no-js img.lazyload {
+				display: none;
+			}
+
+			figure.wp-block-image img.lazyloading {
+				min-width: 150px;
+			}
+
+			.lazyload,
+			.lazyloading {
+				--smush-placeholder-width: 100px;
+				--smush-placeholder-aspect-ratio: 1/1;
+				width: var(--smush-image-width, var(--smush-placeholder-width)) !important;
+				aspect-ratio: var(--smush-image-aspect-ratio, var(--smush-placeholder-aspect-ratio)) !important;
+			}
+
+						.lazyload, .lazyloading {
+				opacity: 0;
+			}
+
+			.lazyloaded {
+				opacity: 1;
+				transition: opacity 400ms;
+				transition-delay: 0ms;
+			}
+
+					</style>
+		<style class='wp-fonts-local'>
+@font-face{font-family:Figtree;font-style:normal;font-weight:400;font-display:fallback;src:url('https://st-johannes.edu.hk/wp-content/themes/idea-flow/assets/fonts/figree/Figtree-VariableFont_wght.ttf') format('truetype');font-stretch:normal;}
+@font-face{font-family:Figtree;font-style:semibold;font-weight:600;font-display:fallback;src:url('https://st-johannes.edu.hk/wp-content/themes/idea-flow/assets/fonts/figree/Figtree-VariableFont_wght.ttf') format('truetype');font-stretch:normal;}
+@font-face{font-family:Figtree;font-style:bold;font-weight:600;font-display:fallback;src:url('https://st-johannes.edu.hk/wp-content/themes/idea-flow/assets/fonts/figree/Figtree-VariableFont_wght.ttf') format('truetype');font-stretch:normal;}
+@font-face{font-family:Figtree;font-style:normal;font-weight:400;font-display:fallback;src:url('https://st-johannes.edu.hk/wp-content/themes/idea-flow/assets/fonts/figree/Figtree-VariableFont_wght.ttf') format('truetype');font-stretch:normal;}
+@font-face{font-family:Figtree;font-style:bold;font-weight:600;font-display:fallback;src:url('https://st-johannes.edu.hk/wp-content/themes/idea-flow/assets/fonts/figree/Figtree-VariableFont_wght.ttf') format('truetype');font-stretch:normal;}
+</style>
+<style id="uagb-style-frontend-0">.uag-blocks-common-selector{z-index:var(--z-index-desktop) !important}@media (max-width: 976px){.uag-blocks-common-selector{z-index:var(--z-index-tablet) !important}}@media (max-width: 767px){.uag-blocks-common-selector{z-index:var(--z-index-mobile) !important}}
+</style><link rel="icon" href="https://st-johannes.edu.hk/wp-content/uploads/2024/06/cropped-SJC-icon-32x32.jpeg" sizes="32x32" />
+<link rel="icon" href="https://st-johannes.edu.hk/wp-content/uploads/2024/06/cropped-SJC-icon-192x192.jpeg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://st-johannes.edu.hk/wp-content/uploads/2024/06/cropped-SJC-icon-180x180.jpeg" />
+<meta name="msapplication-TileImage" content="https://st-johannes.edu.hk/wp-content/uploads/2024/06/cropped-SJC-icon-270x270.jpeg" />
+</head>
+
+<body class="error404 wp-custom-logo wp-embed-responsive wp-theme-idea-flow ml-lightbox-excluded metaslider-plugin">
+
+<div class="wp-site-blocks"><header class="wp-block-template-part"><style>
+    /* =================================================================
+       PART A: 基礎設定與終結者樣式 (維持不變)
+       ================================================================= */
+    #wpadminbar { display: none !important; }
+    html { margin-top: 0 !important; }
+    
+    header:not(#sjc-main-header) {
+        display: none !important; visibility: hidden !important;
+        opacity: 0 !important; height: 0 !important; pointer-events: none !important;
+    }
+
+    body, html {
+        margin: 0 !important; padding: 0 !important;
+        overflow-x: hidden !important; background-color: #ffffff !important;
+    }
+
+    /* =================================================================
+       PART B: SJC Header 核心設計 (深藍色版)
+       ================================================================= */
+    :root {
+        --sjc-blue: #002147;        
+        --harrow-gold: #C5A059;     
+        --text-dark: #333333;
+        --menu-width: 280px;
+    }
+
+    #sjc-main-header {
+        position: fixed !important; top: 0 !important; left: 0 !important;
+        width: 100% !important; z-index: 2147483647;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background: transparent;
+        transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    /* Top Bar */
+    .sjc-top-bar {
+        background-color: var(--sjc-blue);
+        height: 45px; width: 100%;
+        display: flex; justify-content: space-between; align-items: center;
+        transition: height 0.4s ease, opacity 0.4s ease; overflow: hidden;
+    }
+    .sjc-bar-left { padding-left: 40px; min-width: 50px; }
+    .sjc-bar-right { height: 100%; display: flex; align-items: center; }
+    
+    /* Search Box */
+    .sjc-search-form {
+        height: 100%; display: flex; align-items: center;
+        background-color: var(--harrow-gold); padding: 0 25px;
+    }
+    .sjc-search-input {
+        background: transparent; border: none; color: white;
+        font-size: 0.9rem; width: 60px; outline: none; transition: width 0.4s;
+    }
+    .sjc-search-input::placeholder { color: rgba(255,255,255,0.7); }
+    .sjc-search-input:focus { width: 160px; }
+    .sjc-search-button {
+        background: none; border: none; padding: 0; cursor: pointer; display: flex;
+    }
+    .sjc-search-icon { width: 18px; height: 18px; fill: white; }
+
+    /* =================================================================
+       Logo Flag - 初始狀態
+       ================================================================= */
+    .sjc-logo-flag {
+        position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+        z-index: 100; background-color: var(--sjc-blue);
+        width: 140px; 
+        padding-top: 15px; 
+        padding-bottom: 25px;
+        border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        display: flex; justify-content: center; align-items: center;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .sjc-logo-img {
+        width: auto; 
+        height: 140px;
+        filter: brightness(0) invert(1);
+        drop-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: all 0.4s ease;
+    }
+
+    /* Navigation Container */
+    .sjc-nav-container {
+        width: 100%; height: 100px;
+        display: flex; align-items: center; justify-content: center;
+        background: linear-gradient(to bottom, rgba(0,33,71,0.5) 0%, rgba(0,33,71,0) 100%);
+        transition: all 0.4s ease;
+        position: relative; /* 為了讓手機選單相對定位 */
+    }
+    .sjc-menu-items {
+        display: flex; width: 100%; max-width: 1800px;
+        justify-content: space-between; padding: 0 20px;
+    }
+
+    /* 平衡間距 */
+    .nav-left, .nav-right { display: flex; gap: 50px; flex: 1; align-items: center; }
+    .nav-left { justify-content: flex-end; padding-right: 140px; }
+    .nav-right { justify-content: flex-start; padding-left: 140px; }
+
+    /* =================================================================
+       PART C: 選單樣式
+       ================================================================= */
+    
+    .sjc-menu-item {
+        position: relative; 
+        display: flex; align-items: center; height: 100px; 
+        cursor: pointer;
+    }
+
+    /* 主導航連結 */
+    .sjc-link {
+        color: #ffffff !important; 
+        text-decoration: none; 
+        font-size: 0.95rem; 
+        font-weight: 700 !important; 
+        text-transform: uppercase; 
+        letter-spacing: 1.5px;
+        text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+        transition: color 0.3s, transform 0.3s;
+        padding: 10px 0;
+        white-space: nowrap;
+    }
+    .sjc-menu-item:hover .sjc-link { 
+        color: var(--harrow-gold) !important; 
+        transform: translateY(-2px);
+    }
+
+    /* Direction & Contact 特殊樣式 */
+    .sjc-contact-link {
+        font-size: 0.8rem !important;
+        letter-spacing: 0.5px !important;
+    }
+
+    /* --- 下拉選單容器 --- */
+    #sjc-main-header .sjc-dropdown {
+        position: absolute; 
+        top: 80%; left: 50%; transform: translateX(-50%);
+        min-width: var(--menu-width);
+        background-color: var(--sjc-blue) !important; 
+        border-top: 4px solid var(--harrow-gold) !important; 
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.25), 0 5px 15px rgba(0,0,0,0.15);
+        padding: 10px 0;
+        opacity: 0; visibility: hidden;
+        transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+        z-index: 200; overflow: hidden;
+    }
+
+    .sjc-menu-item::after {
+        content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 30px;
+    }
+    
+    #sjc-main-header .sjc-menu-item:hover .sjc-dropdown { 
+        opacity: 1 !important; visibility: visible !important; top: 80px;
+    }
+
+    /* --- 下拉選單選項 --- */
+    #sjc-main-header .sjc-dropdown a {
+        display: block; 
+        padding: 16px 30px;
+        color: #ffffff !important; 
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: 500 !important;
+        text-transform: none; text-shadow: none; letter-spacing: 0.5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        background-color: transparent !important;
+        transition: all 0.25s ease;
+        white-space: nowrap;
+    }
+    #sjc-main-header .sjc-dropdown a:last-child { border-bottom: none !important; }
+
+    #sjc-main-header .sjc-dropdown a:hover {
+        background-color: var(--harrow-gold) !important; 
+        color: #ffffff !important; 
+        padding-left: 38px;
+    }
+
+    /* =================================================================
+       PART D: 按鈕與圖示組
+       ================================================================= */
+    
+    .sjc-apply-btn {
+        background-color: var(--sjc-blue); 
+        color: #ffffff !important;
+        padding: 12px 25px;
+        border-radius: 50px;
+        border: 1px solid rgba(255,255,255,0.3);
+        font-weight: 800 !important; font-size: 0.9rem;
+        text-transform: uppercase; text-decoration: none; letter-spacing: 1px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        white-space: nowrap; text-shadow: none !important;
+        margin-right: 15px; 
+    }
+    .sjc-apply-btn:hover {
+        background-color: var(--harrow-gold); border-color: var(--harrow-gold);
+        transform: translateY(-3px);
+        box-shadow: 0 7px 20px rgba(197, 160, 89, 0.4);
+    }
+
+    .sjc-icons-group {
+        display: flex; align-items: center; gap: 8px; 
+    }
+
+    .sjc-icon-btn {
+        display: flex; align-items: center; justify-content: center;
+        width: 38px; height: 38px; 
+        border-radius: 50%;
+        border: 2px solid rgba(255,255,255,0.6); 
+        background: transparent;
+        transition: all 0.3s ease; 
+        text-decoration: none !important;
+    }
+    
+    .sjc-icon-svg { 
+        width: 18px; height: 18px; 
+        fill: white; 
+        transition: fill 0.3s ease; 
+    }
+    
+    .sjc-icon-btn:hover {
+        background-color: var(--harrow-gold); 
+        border-color: var(--harrow-gold);
+        transform: rotate(15deg) scale(1.1);
+    }
+
+    /* =================================================================
+       PART E: 滾動特效 (Scrolled State)
+       ================================================================= */
+    
+    #sjc-main-header.is-scrolled .sjc-top-bar { height: 0; opacity: 0; padding: 0; }
+    
+    #sjc-main-header.is-scrolled { background-color: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    #sjc-main-header.is-scrolled .sjc-nav-container { height: 80px; background: transparent; }
+
+    #sjc-main-header.is-scrolled .sjc-logo-flag { 
+        width: 130px;        
+        height: 120px;         
+        padding: 0 0 10px 0;   
+        background-color: #ffffff; 
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+        border-radius: 0 0 12px 12px; 
+        top: 0; 
+    }
+    
+    #sjc-main-header.is-scrolled .sjc-logo-img { 
+        width: auto; 
+        height: 100px; 
+        filter: none; 
+        drop-shadow: none;
+    }
+    
+    #sjc-main-header.is-scrolled .sjc-link { color: var(--sjc-blue) !important; text-shadow: none; }
+    #sjc-main-header.is-scrolled .sjc-menu-item { height: 80px; }
+    #sjc-main-header.is-scrolled .sjc-menu-item:hover .sjc-dropdown { top: 70px; }
+    
+    #sjc-main-header.is-scrolled .nav-left { padding-right: 80px; gap: 30px; }
+    #sjc-main-header.is-scrolled .nav-right { padding-left: 80px; gap: 30px; }
+
+    #sjc-main-header.is-scrolled .sjc-apply-btn { 
+        background-color: var(--sjc-blue); color: white !important; border: none;
+    }
+    #sjc-main-header.is-scrolled .sjc-apply-btn:hover { background-color: var(--harrow-gold); }
+    
+    #sjc-main-header.is-scrolled .sjc-icon-btn { border-color: var(--sjc-blue); }
+    #sjc-main-header.is-scrolled .sjc-icon-svg { fill: var(--sjc-blue); }
+    
+    #sjc-main-header.is-scrolled .sjc-icon-btn:hover { 
+        background-color: var(--harrow-gold); border-color: var(--harrow-gold); 
+    }
+    #sjc-main-header.is-scrolled .sjc-icon-btn:hover .sjc-icon-svg { fill: white; }
+
+    /* =================================================================
+       PART F: 手機與平板響應式設計 (Mobile Responsive)
+       ================================================================= */
+       
+    /* 漢堡選單按鈕預設隱藏 (置左於上方) */
+    .sjc-mobile-toggle {
+        display: none; position: absolute; left: 20px; 
+        top: 22.5px; /* 初始置中於 45px 高的藍色 Top Bar */
+        transform: translateY(-50%);
+        background: transparent; border: none; cursor: pointer; z-index: 2100;
+        transition: top 0.4s ease; /* 加入平滑位移的動畫 */
+    }
+    .sjc-mobile-toggle svg {
+        width: 35px; height: 35px; fill: white; transition: fill 0.3s ease;
+    }
+    
+    /* 當畫面滾動，藍色 Bar 消失時，按鈕自動往下移並變色 */
+    #sjc-main-header.is-scrolled .sjc-mobile-toggle {
+        top: 40px; /* 置中於 80px 高的白色選單列 */
+    }
+    #sjc-main-header.is-scrolled .sjc-mobile-toggle svg { 
+        fill: var(--sjc-blue); 
+    }
+
+    /* 當螢幕小於 1024px 時觸發手機版面 */
+    @media (max-width: 1024px) {
+        .sjc-mobile-toggle { display: block; } /* 顯示漢堡選單 */
+        
+        /* 縮小手機版 Logo */
+        .sjc-logo-flag { width: 100px; height: 110px; padding-bottom: 15px; }
+        .sjc-logo-img { height: 80px; }
+        #sjc-main-header.is-scrolled .sjc-logo-flag { width: 90px; height: 95px; }
+        #sjc-main-header.is-scrolled .sjc-logo-img { height: 75px; }
+
+        /* 重構選單容器為垂直排列 */
+        .sjc-menu-items {
+            display: none; /* 預設收合 */
+            flex-direction: column; position: absolute; top: 100px; left: 0; width: 100%;
+            background-color: var(--sjc-blue); padding: 20px 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: none;
+        }
+        /* 滾動時的手機選單背景變色與高度修正 */
+        #sjc-main-header.is-scrolled .sjc-menu-items { background-color: #ffffff; top: 80px; }
+        
+        /* 當 JS 加上打開的 class 時顯示 */
+        .sjc-menu-items.is-mobile-open { display: flex; }
+
+        /* 取消左右佈局的 padding，改為置中 */
+        .nav-left, .nav-right {
+            flex-direction: column; gap: 0; padding: 0; width: 100%; align-items: center;
+        }
+
+        /* ★★★ 新增：確保滾動時，手機版也不受電腦版間距影響，維持置中 ★★★ */
+        #sjc-main-header.is-scrolled .nav-left,
+        #sjc-main-header.is-scrolled .nav-right {
+            padding: 0; gap: 0;
+        }
+        
+        /* 選單項目高度自適應 */
+        .sjc-menu-item { height: auto; width: 100%; flex-direction: column; padding: 5px 0; }
+        #sjc-main-header.is-scrolled .sjc-menu-item { height: auto; }
+        
+        /* 選單文字 */
+        .sjc-link { font-size: 1.1rem; padding: 15px 0; }
+        
+        /* 手機版下拉選單改為垂直展開 */
+        #sjc-main-header .sjc-dropdown {
+            position: static; opacity: 1; visibility: visible; display: none;
+            width: 100%; box-shadow: none; border-top: none !important;
+            background-color: rgba(0,0,0,0.2) !important; transform: none; border-radius: 0;
+        }
+        #sjc-main-header.is-scrolled .sjc-dropdown { background-color: rgba(0,33,71,0.05) !important; }
+        
+        /* 觸碰時展開子選單 */
+        #sjc-main-header .sjc-menu-item:hover .sjc-dropdown,
+        #sjc-main-header .sjc-menu-item:active .sjc-dropdown { display: block; }
+        
+        #sjc-main-header .sjc-dropdown a { text-align: center; white-space: normal; }
+        #sjc-main-header.is-scrolled .sjc-dropdown a { color: var(--sjc-blue) !important; font-weight: 600 !important; }
+
+        /* 按鈕與圖示微調 */
+        .sjc-apply-btn { margin: 20px 0; }
+        .sjc-icons-group { margin-bottom: 20px; justify-content: center; }
+    }
+</style>
+
+<div id="sjc-main-header">
+    
+    <button class="sjc-mobile-toggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+    </button>
+
+    <div class="sjc-top-bar">
+        <div class="sjc-bar-left"></div> 
+        <div class="sjc-bar-right">
+            <form role="search" method="get" class="sjc-search-form" action="/">
+                <input type="text" class="sjc-search-input" placeholder="Search..." value="" name="s">
+                <button type="submit" class="sjc-search-button">
+                    <svg class="sjc-search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="sjc-logo-flag">
+        <a href="https://st-johannes.edu.hk/">
+            <img decoding="async" src="https://st-johannes.edu.hk/wp-content/uploads/2024/06/SJC.png" class="sjc-logo-img" alt="SJC Logo">
+        </a>
+    </div>
+
+    <div class="sjc-nav-container">
+        <div class="sjc-menu-items">
+            
+            <nav class="nav-left">
+                <div class="sjc-menu-item">
+                    <a href="#" class="sjc-link">The School</a>
+                    <div class="sjc-dropdown">
+                        <a href="https://st-johannes.edu.hk/principals-welcome/">Principal’s Welcome</a>
+                        <a href="https://st-johannes.edu.hk/mission/">Mission, Motto and Values</a>
+                    </div>
+                </div>
+
+                <div class="sjc-menu-item">
+                    <a href="#" class="sjc-link">SJC Learning</a>
+                    <div class="sjc-dropdown">
+                        <a href="https://st-johannes.edu.hk/pre-nursery/">Pre-Nursery</a>
+                        <a href="https://st-johannes.edu.hk/kindergarten/">Kindergarten</a>
+                        <a href="https://st-johannes.edu.hk/primary/">Primary</a>
+                    </div>
+                </div>
+
+                <div class="sjc-menu-item">
+                    <a href="#" class="sjc-link">SJC Life</a>
+                    <div class="sjc-dropdown">
+                        <a href="https://st-johannes.edu.hk/policies/">Policies</a>
+                        <a href="https://st-johannes.edu.hk/achievements/">Student Achievements</a>
+                        <a href="https://st-johannes.edu.hk/testimonials/">Testimonials</a>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="nav-right">
+                
+                <div class="sjc-menu-item">
+                    <a href="#" class="sjc-link">Admissions</a>
+                    <div class="sjc-dropdown">
+                        <a href="https://st-johannes.edu.hk/applying-to-sjc/">Applying to SJC</a>
+                        <a href="https://st-johannes.edu.hk/tuition/">Tuition &#038; Fees</a>
+                        <a href="https://st-johannes.edu.hk/allocation-results/">Allocation Results</a>
+                        <a href="https://st-johannes.edu.hk/faq/">Frequently Asked Questions</a>
+                    </div>
+                </div>
+
+                <div class="sjc-menu-item">
+                    <a href="https://st-johannes.edu.hk/contact/" class="sjc-link sjc-contact-link">Direction &#038; Contact</a>
+                </div>
+
+                <a href="https://st-johannes.edu.hk/applying-to-sjc/#admissions" class="sjc-apply-btn">Apply Now</a>
+
+                <div class="sjc-icons-group">
+                    <a href="https://www.facebook.com/sjchongkong" class="sjc-icon-btn" title="Facebook" target="_blank">
+                        <svg class="sjc-icon-svg" viewBox="0 0 24 24">
+                            <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.17 6 13.75 6c1.24 0 2.53.22 2.53.22v2.78h-1.42c-1.38 0-1.8.86-1.8 1.74V12h3.13l-.5 3h-2.63v6.8c4.56-.93 8-4.96 8-9.8z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/sjchongkong/" class="sjc-icon-btn" title="Instagram" target="_blank">
+                        <svg class="sjc-icon-svg" viewBox="0 0 24 24">
+                            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.youtube.com/@st-johannes-college" class="sjc-icon-btn" title="YouTube" target="_blank">
+                        <svg class="sjc-icon-svg" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://st-johannes.edu.hk/calendar/" class="sjc-icon-btn" title="School Calendar">
+                        <svg class="sjc-icon-svg" viewBox="0 0 24 24">
+                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        // 更新滾動狀態
+        function updateScroll() {
+            var header = document.getElementById('sjc-main-header');
+            if (header) {
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > 50) {
+                    header.classList.add('is-scrolled');
+                } else {
+                    header.classList.remove('is-scrolled');
+                }
+            }
+        }
+        window.addEventListener('scroll', updateScroll);
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var header = document.getElementById('sjc-main-header');
+            if (header && document.body) { document.body.prepend(header); }
+
+            // 手機版漢堡選單的開關邏輯
+            var mobileToggle = document.querySelector('.sjc-mobile-toggle');
+            var menuItems = document.querySelector('.sjc-menu-items');
+            if (mobileToggle && menuItems) {
+                mobileToggle.addEventListener('click', function() {
+                    menuItems.classList.toggle('is-mobile-open');
+                });
+            }
+
+            function terminateBadElements() {
+                var candidates = document.querySelectorAll('h1, h2, h3, .page-title, .entry-title');
+                candidates.forEach(function(el) {
+                    if (el.textContent && el.textContent.includes('Protected:')) {
+                        var container = el.closest('header, .page-header, .page-header-bg, .superb-hero, section');
+                        if (container && container.id !== 'sjc-main-header') {
+                            container.style.display = 'none'; 
+                        } else {
+                            el.style.display = 'none'; 
+                            if(el.parentElement) el.parentElement.style.display = 'none';
+                        }
+                    }
+                });
+                var headers = document.getElementsByTagName('header');
+                for (var i = 0; i < headers.length; i++) {
+                    if (headers[i].id !== 'sjc-main-header') { headers[i].style.display = 'none'; }
+                }
+                var oldNavs = document.querySelectorAll('.superb-navigation, .main-navigation, #site-navigation');
+                oldNavs.forEach(function(nav) { nav.style.display = 'none'; });
+            }
+
+            var intervalId = setInterval(terminateBadElements, 100);
+            setTimeout(function() { clearInterval(intervalId); }, 3000);
+            terminateBadElements();
+        });
+    })();
+</script></header>
+
+
+<main class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-60bfb2b4 wp-block-group-is-layout-constrained" style="margin-bottom:var(--wp--preset--spacing--superbspacing-medium);padding-top:var(--wp--preset--spacing--superbspacing-xxlarge);padding-right:var(--wp--preset--spacing--superbspacing-medium);padding-bottom:var(--wp--preset--spacing--superbspacing-xxlarge);padding-left:var(--wp--preset--spacing--superbspacing-medium)">
+<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h1 class="wp-block-heading has-text-align-center has-superbfont-xlarge-font-size">404 - Page Not Found</h1>
+
+
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-container-core-group-is-layout-a9f84cde wp-block-group-is-layout-constrained" style="margin-top:5px">
+<p class="has-text-align-center has-mono-2-color has-text-color has-link-color wp-elements-1627320a64acf1f565931dc6f68527be" style="margin-top:var(--wp--preset--spacing--superbspacing-xsmall);margin-bottom:var(--wp--preset--spacing--superbspacing-small)">Search below to find what you're looking for.</p>
+
+
+<div class="wp-block-template-part">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><form role="search" method="get" action="https://st-johannes.edu.hk/" class="wp-block-search__button-inside wp-block-search__text-button aligncenter wp-block-search"    ><label class="wp-block-search__label screen-reader-text" for="wp-block-search__input-1" >Search</label><div class="wp-block-search__inside-wrapper"  style="width: 100%;border-radius: calc(10px + 4px)"><input class="wp-block-search__input has-superbfont-xsmall-font-size" id="wp-block-search__input-1" placeholder="Search..." value="" type="search" name="s" required  style="border-radius: 10px"/><button aria-label="Search" class="wp-block-search__button has-superbfont-xsmall-font-size wp-element-button" type="submit"  style="border-radius: 10px">Search</button></div></form></div>
+</div></div>
+
+
+
+<div style="height:var(--wp--preset--spacing--70)" aria-hidden="true" class="wp-block-spacer"></div>
+</main>
+
+
+<footer class="wp-block-template-part"><style>
+    /* =================================================================
+       PART A: 核心樣式與全寬設定
+       ================================================================= */
+    
+    :root {
+        --sjc-footer-bg: #0d2546; /* 深海軍藍 */
+        --sjc-footer-text: #ffffff; /* 強制純白文字 */
+        --sjc-gold: #C5A059;
+        --sjc-blue-accent: #2D8FCE;
+    }
+
+    body, html {
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* 隱藏原本主題的 Footer */
+    footer:not(#sjc-main-footer), .site-footer, #colophon, .superb-footer, .elementor-location-footer {
+        display: none !important;
+    }
+
+    /* ★ 關鍵修復：確保 Footer 內部所有元素寬高計算包含 padding，避免手機版撐破螢幕 */
+    #sjc-main-footer, #sjc-main-footer * {
+        box-sizing: border-box;
+    }
+
+    /* SJC Footer 主容器 */
+    #sjc-main-footer {
+        background-color: var(--sjc-footer-bg) !important;
+        color: var(--sjc-footer-text) !important;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding: 50px 0 30px 0;
+        position: relative;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        border-top: 5px solid var(--sjc-gold);
+        
+        /* ★ 關鍵修復：將 100vw 改為 100%，防止手機出現橫向捲軸 */
+        width: 100% !important; 
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        left: 0 !important;
+        z-index: 999;
+    }
+
+    /* 使用 Flexbox 替代 Grid，解決欄位消失問題 */
+    .sjc-footer-container {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        flex-wrap: wrap; /* 允許換行 */
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    /* =================================================================
+       PART B: 各欄位設定 (Flexbox)
+       ================================================================= */
+
+    /* 1. 品牌欄位 (Logo) - 佔比較寬 */
+    .sjc-footer-brand {
+        flex: 2 1 350px; /* 彈性寬度，最小 350px */
+        padding-right: 20px;
+    }
+
+    /* 2. 連結欄位 - 佔比較窄 */
+    .sjc-footer-links {
+        flex: 1 1 180px; /* 彈性寬度，最小 180px */
+    }
+
+    /* 3. 校區資訊欄位 */
+    .sjc-footer-campus {
+        flex: 1 1 220px; /* 彈性寬度，最小 220px */
+    }
+
+    /* =================================================================
+       PART C: Logo 與內容樣式
+       ================================================================= */
+
+    .sjc-logo-link {
+        display: inline-block;
+        text-decoration: none;
+        transition: opacity 0.3s;
+    }
+    .sjc-logo-link:hover { opacity: 0.8; }
+
+    .sjc-footer-logo {
+        /* Logo 大小與間距設定 */
+        max-width: 330px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px; /* 縮小間距 */
+        display: block;
+        
+        /* 白色濾鏡 */
+        filter: brightness(0) invert(1);
+        -webkit-filter: brightness(0) invert(1);
+        opacity: 0.95; 
+    }
+
+    .sjc-footer-desc {
+        font-size: 0.9rem;
+        color: #e0e6ed !important;
+        margin-bottom: 25px;
+        margin-top: 0;
+        line-height: 1.5;
+        max-width: 400px; /* 限制文字寬度讓閱讀更舒適 */
+    }
+
+    /* =================================================================
+       PART D: 修復社群圖示與文字顏色
+       ================================================================= */
+
+    .sjc-social-links { display: flex; gap: 15px; }
+    
+    .sjc-social-icon {
+        width: 36px; height: 36px; border-radius: 50%;
+        border: 1px solid rgba(255,255,255,0.3);
+        display: flex; align-items: center; justify-content: center;
+        transition: all 0.3s ease;
+        background: transparent;
+    }
+    
+    /* 強制圖示顏色為白色 */
+    .sjc-social-icon svg { 
+        width: 18px; 
+        height: 18px; 
+        fill: #ffffff !important; 
+        display: block;
+    }
+    
+    .sjc-social-icon:hover {
+        background-color: var(--sjc-gold); 
+        border-color: var(--sjc-gold); 
+        transform: translateY(-3px);
+    }
+
+    /* 標題樣式 */
+    .sjc-footer-heading {
+        color: var(--sjc-gold) !important; 
+        font-size: 1.1rem; 
+        font-weight: 700;
+        text-transform: uppercase; 
+        letter-spacing: 1px; 
+        margin-top: 0;
+        margin-bottom: 20px;
+        position: relative; 
+        display: inline-block;
+    }
+    .sjc-footer-heading::after {
+        content: ''; position: absolute; left: 0; bottom: -8px;
+        width: 30px; height: 2px; background-color: var(--sjc-blue-accent);
+    }
+
+    /* 連結列表 */
+    .sjc-footer-links ul { list-style: none; padding: 0; margin: 0; }
+    .sjc-footer-links li { margin-bottom: 12px; }
+    .sjc-footer-links a {
+        color: #ffffff !important; /* 強制白色 */
+        text-decoration: none !important;
+        transition: color 0.3s ease, padding-left 0.3s ease; 
+        display: inline-block;
+        font-size: 0.95rem;
+    }
+    .sjc-footer-links a:hover { color: var(--sjc-gold) !important; padding-left: 5px; }
+
+    /* 聯絡資訊 */
+    .sjc-campus-info { display: flex; flex-direction: column; gap: 15px; }
+    .sjc-contact-item { display: flex; align-items: flex-start; gap: 12px; font-size: 0.9rem; }
+    
+    .sjc-contact-icon {
+        min-width: 18px; width: 18px; height: 18px; 
+        fill: var(--sjc-gold) !important; /* 強制金色 */
+        margin-top: 3px;
+    }
+    
+    .sjc-contact-text, .sjc-contact-text a {
+        color: #ffffff !important; /* 強制白色 */
+        text-decoration: none;
+        line-height: 1.5;
+        word-break: break-word; /* 避免長 Email 或網址超出手機螢幕 */
+    }
+    .sjc-contact-text a:hover { color: var(--sjc-gold) !important; }
+
+    /* 底部版權列 */
+    .sjc-footer-bottom {
+        max-width: 1300px; 
+        margin: 0 auto; 
+        margin-top: 50px; 
+        padding-top: 20px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+        padding-left: 40px; padding-right: 40px;
+        font-size: 0.85rem; 
+        color: rgba(255,255,255,0.6) !important;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .sjc-bottom-links a {
+        color: rgba(255,255,255,0.6) !important; 
+        text-decoration: none; 
+        margin-left: 20px; 
+        transition: color 0.3s;
+    }
+    .sjc-bottom-links a:hover { color: white !important; }
+
+    /* =================================================================
+       RWD 手機與平板版調整
+       ================================================================= */
+       
+    @media (max-width: 1024px) {
+        .sjc-footer-brand { flex: 1 1 100%; text-align: center; padding-right: 0; margin-bottom: 20px; }
+        .sjc-footer-logo { margin: 0 auto 15px; }
+        .sjc-footer-desc { margin: 0 auto 25px; }
+        .sjc-social-links { justify-content: center; }
+        .sjc-footer-links, .sjc-footer-campus { text-align: left; }
+    }
+    
+    @media (max-width: 768px) {
+        .sjc-footer-container { 
+            padding: 0 25px; 
+            flex-direction: column; /* 強制垂直堆疊避免擠壓 */
+            gap: 40px; 
+        }
+        .sjc-footer-brand { margin-bottom: 0; }
+        .sjc-footer-logo { max-width: 260px; }
+        
+        .sjc-footer-bottom { 
+            flex-direction: column; 
+            text-align: center; 
+            padding-left: 20px; /* 縮小兩側邊距 */
+            padding-right: 20px;
+        }
+        .sjc-bottom-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .sjc-bottom-links a { margin: 5px 10px; } /* 調整間距避免折行時太擠 */
+    }
+
+    @media (max-width: 480px) {
+        #sjc-main-footer { padding: 40px 0 20px 0; }
+        .sjc-footer-container { padding: 0 20px; gap: 30px; }
+        .sjc-footer-logo { max-width: 220px; } /* 極小螢幕進一步縮小 Logo */
+        .sjc-contact-item { font-size: 0.85rem; }
+    }
+</style>
+
+<footer id="sjc-main-footer">
+    <div class="sjc-footer-container">
+        
+        <div class="sjc-footer-brand">
+            <a href="https://st-johannes.edu.hk/" class="sjc-logo-link">
+                <img decoding="async" src="https://st-johannes.edu.hk/wp-content/uploads/2024/08/SJC-Logo.png" alt="St. Johannes College" class="sjc-footer-logo">
+            </a>
+            
+            <p class="sjc-footer-desc">
+                Founded in 1962, St. Johannes College offers a holistic and stimulating educational experience for students in Hong Kong, guided by Catholic values and academic excellence.
+            </p>
+            <div class="sjc-social-links">
+                <a href="https://www.facebook.com/sjchongkong/" class="sjc-social-icon" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/sjchongkong/" class="sjc-social-icon" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></path></svg>
+                </a>
+                <a href="https://www.youtube.com/@st-johannes-college" class="sjc-social-icon" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></path></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="sjc-footer-links">
+            <h4 class="sjc-footer-heading">Quick Links</h4>
+            <ul>
+                <li><a href="https://st-johannes.edu.hk/applying-to-sjc/#admissions">Admissions</a></li>
+                <li><a href="https://st-johannes.edu.hk/calendar/">School Calendar</a></li>
+                <li><a href="https://st-johannes.edu.hk/achievements/">News &#038; Events</a></li>
+                <li><a href="https://st-johannes.edu.hk/contact/">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="sjc-footer-campus">
+            <h4 class="sjc-footer-heading">Kindergarten</h4>
+            <div class="sjc-campus-info">
+                <div class="sjc-contact-item">
+                    <svg class="sjc-contact-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <span class="sjc-contact-text">109 Waterloo Road, Kowloon Tong, Hong Kong</span>
+                </div>
+                <div class="sjc-contact-item">
+                    <svg class="sjc-contact-icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span class="sjc-contact-text"><a href="tel:+85223362926">+852 2336 2926</a></span>
+                </div>
+                <div class="sjc-contact-item">
+                    <svg class="sjc-contact-icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <span class="sjc-contact-text"><a href="mailto:kg@st-johannes.edu.hk">kg@st-johannes.edu.hk</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sjc-footer-campus">
+            <h4 class="sjc-footer-heading">Primary</h4>
+            <div class="sjc-campus-info">
+                <div class="sjc-contact-item">
+                    <svg class="sjc-contact-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <span class="sjc-contact-text">143 Waterloo Road, Kowloon Tong, Hong Kong</span>
+                </div>
+                <div class="sjc-contact-item">
+                    <svg class="sjc-contact-icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span class="sjc-contact-text"><a href="tel:+85223362933">+852 2336 2933</a></span>
+                </div>
+                <div class="sjc-contact-item">
+                    <svg class="sjc-contact-icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <span class="sjc-contact-text"><a href="mailto:pri@st-johannes.edu.hk">pri@st-johannes.edu.hk</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sjc-footer-bottom">
+        <div class="sjc-copyright">&copy; 2026 St. Johannes College. All Rights Reserved.</div>
+        <div class="sjc-bottom-links">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var footer = document.getElementById('sjc-main-footer');
+        if (footer && document.body) {
+            document.body.appendChild(footer);
+        }
+        var oldFooters = document.querySelectorAll('footer:not(#sjc-main-footer), .site-footer, #colophon, .superb-footer, .elementor-location-footer');
+        oldFooters.forEach(function(el) { el.style.display = 'none'; });
+    });
+</script></footer></div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/idea-flow/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<!-- Custom Facebook Feed JS -->
+<script type="text/javascript">var cffajaxurl = "https://st-johannes.edu.hk/wp-admin/admin-ajax.php";
+var cfflinkhashtags = "true";
+</script>
+<!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://st-johannes.edu.hk/wp-admin/admin-ajax.php";
+</script>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.id = 'wp-skip-link';
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerText = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+//# sourceURL=wp-block-template-skip-link-js-after
+</script>
+<script id="hashbar-analytics-js-extra">
+var hashbar_analytical = {"ajaxurl":"https://st-johannes.edu.hk/wp-admin/admin-ajax.php","nonce_key":"78a7203230","enable_analytics":""};
+//# sourceURL=hashbar-analytics-js-extra
+</script>
+<script src="https://st-johannes.edu.hk/wp-content/plugins/hashbar-wp-notification-bar/assets/js/analytics.js?ver=1.8.0" id="hashbar-analytics-js"></script>
+<script src="https://st-johannes.edu.hk/wp-content/plugins/custom-facebook-feed/assets/js/cff-scripts.min.js?ver=4.3.4" id="cffscripts-js"></script>
+<script src="https://st-johannes.edu.hk/wp-content/plugins/ml-slider-lightbox/assets/js/lightgallery.min.js?ver=2.22.0" id="ml-lightgallery-js-js"></script>
+<script id="ml-lightgallery-clean-js-extra">
+var mlLightboxSettings = {"slider_settings":{"839":{"lightbox_enabled":false},"869":{"lightbox_enabled":false},"939":{"lightbox_enabled":false},"1015":{"lightbox_enabled":false},"2074":{"lightbox_enabled":false},"5950":{"lightbox_enabled":false},"6163":{"lightbox_enabled":false},"7391":{"lightbox_enabled":false},"7689":{"lightbox_enabled":false},"10986":{"lightbox_enabled":false},"11420":{"lightbox_enabled":false},"11724":{"lightbox_enabled":false},"12111":{"lightbox_enabled":false},"12457":{"lightbox_enabled":false},"12557":{"lightbox_enabled":false},"14566":{"lightbox_enabled":false}},"metaslider_options":{"show_arrows":true,"show_thumbnails":true,"show_lightbox_button":true,"show_captions":true},"enable_on_content":"1","enable_on_widgets":"","enable_galleries":"","enable_featured_images":"","enable_videos":"","override_enlarge_on_click":"1","override_link_to_image_file":"1","button_text":"Open in Lightbox","minimum_image_width":"200","minimum_image_height":"200","page_excluded":"1","manual_excluded":"","license_key":"E8BD65E9-797F-4DB9-B91D-7D1ECDCA7252"};
+//# sourceURL=ml-lightgallery-clean-js-extra
+</script>
+<script src="https://st-johannes.edu.hk/wp-content/plugins/ml-slider-lightbox/assets/js/ml-lightgallery-init.js?ver=2.22.0" id="ml-lightgallery-clean-js"></script>
+<script id="smush-lazy-load-js-before">
+var smushLazyLoadOptions = {"autoResizingEnabled":false,"autoResizeOptions":{"precision":5,"skipAutoWidth":true}};
+//# sourceURL=smush-lazy-load-js-before
+</script>
+<script src="https://st-johannes.edu.hk/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.24.0" id="smush-lazy-load-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://st-johannes.edu.hk/wp-includes/js/wp-emoji-release.min.js?ver=6.9.1"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://st-johannes.edu.hk/wp-includes/js/wp-emoji-loader.min.js
+</script>
+</body>
+</html>

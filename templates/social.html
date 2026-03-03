@@ -163,14 +163,57 @@
             <!-- Create Topic -->
             <div id="create-topic" style="background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); border-radius: 24px; padding: 24px;">
                 <h3 style="font-size: 1.1rem; font-weight: 700; color: white; margin-bottom: 16px;">发布话题</h3>
-                <form>
-                    <input type="text" placeholder="话题标题" style="width: 100%; padding: 14px 16px; border: none; border-radius: 12px; font-size: 0.95rem; margin-bottom: 12px; box-sizing: border-box;">
-                    <textarea placeholder="分享你的想法、经验或问题..." rows="4" style="width: 100%; padding: 14px 16px; border: none; border-radius: 12px; font-size: 0.95rem; margin-bottom: 12px; resize: none; box-sizing: border-box;"></textarea>
+                <form id="create-topic-form">
+                    <input type="text" id="topic-title" placeholder="话题标题" style="width: 100%; padding: 14px 16px; border: none; border-radius: 12px; font-size: 0.95rem; margin-bottom: 12px; box-sizing: border-box;">
+                    <textarea id="topic-content" placeholder="分享你的想法、经验或问题..." rows="4" style="width: 100%; padding: 14px 16px; border: none; border-radius: 12px; font-size: 0.95rem; margin-bottom: 12px; resize: none; box-sizing: border-box;"></textarea>
                     <div style="display: flex; gap: 8px;">
-                        <button type="button" style="flex: 1; padding: 12px; background: rgba(255,255,255,0.2); color: white; border: none; border-radius: 12px; font-size: 0.9rem; font-weight: 600; cursor: pointer;">添加标签</button>
+                        <select id="topic-type" style="flex: 1; padding: 12px; background: rgba(255,255,255,0.2); color: white; border: none; border-radius: 12px; font-size: 0.9rem;">
+                            <option value="discussion" style="color: black;">讨论</option>
+                            <option value="question" style="color: black;">问答</option>
+                            <option value="share" style="color: black;">分享</option>
+                            <option value="news" style="color: black;">资讯</option>
+                        </select>
                         <button type="submit" style="flex: 1; padding: 12px; background: white; color: #1E3A5F; border: none; border-radius: 12px; font-size: 0.9rem; font-weight: 600; cursor: pointer;">发布</button>
                     </div>
+                    <div id="topic-message" style="margin-top: 10px; color: white; font-size: 0.9rem;"></div>
                 </form>
+                <script>
+                document.getElementById('create-topic-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var title = document.getElementById('topic-title').value;
+                    var content = document.getElementById('topic-content').value;
+                    var topic_type = document.getElementById('topic-type').value;
+                    
+                    if (title.length < 5) {
+                        document.getElementById('topic-message').textContent = '标题至少5个字符';
+                        return;
+                    }
+                    if (content.length < 10) {
+                        document.getElementById('topic-message').textContent = '内容至少10个字符';
+                        return;
+                    }
+                    
+                    fetch('/create_topic', {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                        body: 'title=' + encodeURIComponent(title) + '&content=' + encodeURIComponent(content) + '&topic_type=' + encodeURIComponent(topic_type)
+                    })
+                    .then(r => r.json())
+                    .then(data => {
+                        if (data.success) {
+                            document.getElementById('topic-message').textContent = '发布成功！';
+                            document.getElementById('topic-title').value = '';
+                            document.getElementById('topic-content').value = '';
+                            setTimeout(function(){ location.reload(); }, 1000);
+                        } else {
+                            document.getElementById('topic-message').textContent = data.message || '发布失败';
+                        }
+                    })
+                    .catch(err => {
+                        document.getElementById('topic-message').textContent = '请先登录后再发布';
+                    });
+                });
+                </script>
             </div>
         </div>
     </div>

@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ESF Island School | Hong Kong IB School | ESF Hong Kong</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="description" content="ESF Island School nurtures diverse learners in a bilingual environment. We offer IBMYP, IGCSE, and IB programmes for an evolving world." />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="ESF Island School,International School Hong Kong, English Schools Foundation,IB School Hong Kong" />
+<meta property="og:description" content="ESF Island School nurtures diverse learners in a bilingual environment. We offer IBMYP, IGCSE, and IB programmes for an evolving world." />
+<meta property="og:image" content="http://island.esf.edu.hk/cache/img/b58e725f5a3b494fa91240e4470d0c04.jpg" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:secure_url" content="https://island.esf.edu.hk/cache/img/b58e725f5a3b494fa91240e4470d0c04.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta name="viewport" content="width=device-width" />
+	<link rel="canonical" href="https://island.esf.edu.hk/en/" /> 
+				<link rel="alternate" href="/zh/" hreflang="zh-hk" />
+				<link rel="shortcut icon" href="/img/favicon.png" />
+	<link rel="apple-touch-icon" href="/img/iphone-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="/img/iphone-icon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/css/editor.css" />
+	<link rel="stylesheet" type="text/css" href="/en/cache/css/068e798cbe5b2125d895c477c1461619.css" />
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/jquery-migrate.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/jquery.Slider.js"></script>
+	<script type="text/javascript" src="/js/jquery.slideSubmit.js"></script>
+	<script type="text/javascript" src="/js/jquery.table.js"></script>
+	<script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="/js/validator.class.js"></script>
+	<script type="text/javascript" src="/en/cache/js/lang.js"></script>
+	<script type="text/javascript" src="/js/function.js"></script>
+	<script type="text/javascript" src="/js/init.js"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="/js/html5izer_placeholder.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="/js/html5.js"></script>
+	<![endif]-->
+	<style>
+		.colour1,
+		a.colour1,
+		.editor a.colour1,
+		#content #history-page .years .year.current,
+		#content #history-page .years .year:hover,
+		#content #history-page .select-input,
+		#content .page-wrapper .page-container #data-list .data-item.open>.title,
+		#content #enquiry .form-container .row .checkbox-cotnainer .checkbox:after {
+			color: #323f87 !important;
+		}
+		.colour2,
+		a.colour2,
+		.editor a.colour2,
+		#content section .tab-select .select-input,
+		#content #section3 .wrapper .tabs .tab.current,
+		#content #section3 .wrapper .tabs .tab:hover,
+		#content #section6 .wrapper .tabs .tab.current,
+		#content #section6 .wrapper .tabs .tab:hover,
+		#content #landing section.type3 .tabs .tab.current,
+		#content #landing section.type3 .tabs .tab:hover,
+		#content .page-wrapper #submenu ul li a:hover,
+		#content .page-wrapper .page-container #tabs .tab.current,
+		#content .page-wrapper .page-container #tabs .tab:hover,
+		#content .page-wrapper .page-container #tabs .select-input,
+		#content .page-wrapper .page-container .tab-select .select-input {
+			color: #db4949 !important;
+		}
+		.colour3,
+		a.colour3,
+		.editor a.colour3 {
+			color: #ffc9c9 !important;
+		}
+		.colour4,
+		a.colour4,
+		.editor a.colour4 {
+			color: #cbd7eb !important;
+		}
+		.bg-colour1,
+		.editor ul.colour1 li:before,
+		.editor ol.colour1 li:before,
+		.pager a.selected,
+		.pager a:hover,
+		#content #enquiry .form-container .row .radio-container2 .radio.checked,
+		#content #enquiry .form-container .row .radio-container2 .radio:after,
+		#content #enquiry .form-container .row .radio-container .radio:after,
+		#content #sitemap li:before {
+			background-color: #323f87 !important;
+		}
+		.bg-colour2,
+		.editor ul.colour2 li:before,
+		.editor ol.colour2 li:before,
+		#floating a[href]:hover {
+			background-color: #db4949 !important;
+		}
+		.bg-colour3 {
+			background-color: #ffc9c9 !important;
+		}
+		.bg-colour4 {
+			background-color: #cbd7eb !important;
+		}
+		.br-colour1,
+		#content #section7 .record-slider .slider-container .post:hover {
+			border-color: #323f87 !important;
+		}
+		.br-colour2 {
+			border-color: #db4949 !important;
+		}
+		.br-colour3 {
+			border-color: #ffc9c9 !important;
+		}
+		.br-colour4 {
+			border-color: #cbd7eb !important;
+		}
+	</style>
+	<script type="text/javascript">
+											if(window.location.protocol.toLowerCase().indexOf('https:') == -1)
+											{
+												window.location.href = 'https://'+ window.location.host + window.location.pathname;
+											}
+									     </script>	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTGW8TMX2P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CTGW8TMX2P');
+</script></head>
+<body>
+	<header>
+		<div class="container">
+			<a href="/en/" class="logo">
+				<img src="/cache/img/c76ef7e591338a7497496341a889bc75.png" alt="ESF Island School" loading="lazy" height="180" />			</a>
+			<div class="menu-container">
+				<div class="top-container">
+					<nav class="lang">
+						<ul>
+							<li><a href="/zh/">繁體</a></li>						</ul>
+					</nav>
+					<div class="divider"></div>
+					<a href="/en/" class="home"></a>
+					<div class="search">
+						<button></button>
+						<div class="search-container">
+							<form action="/en/search/">
+								<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />								<button type="submit"></button>							</form>
+							<button class="close"></button>
+						</div>
+					</div>
+										<nav class="social">
+				 		<ul>
+				 							 			<li>
+				 				<a href="https://www.instagram.com/islandschoolhk/" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 			<li>
+				 				<a href="https://www.facebook.com/islandschool" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3e297d1.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 			<li>
+				 				<a href="https://www.youtube.com/channel/UConw2sLSwws0KRVU0G-eE3A" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd429f31c.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 		</ul>
+				 	</nav>
+				 						<div class="search-responsive">
+						<form action="/en/search/">
+							<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />							<button type="submit"></button>						</form>
+					</div>
+										<div class="divider"></div>
+									 							<a href="https://island.esf.edu.hk/parent/" target="_blank" class="alt-btn">Students & Parents</a>
+				 										 		<a href="https://island.esf.edu.hk/en/visit_us" class="btn">Visit Us</a>
+									</div>
+				<div class="bottom-container">
+					<nav class="menu">
+						<ul>
+																						<li>
+									<a href="/en/about_us/">About Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/about_us/">About Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/about_us/principals_welcome/">Principal's Welcome</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/ESF_family/">ESF Family</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/our_history/">Our History</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/what_we_stand_for/">What We Stand For</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/campus_find_us/">Campus & Find Us</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_education/">Outstanding Education</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_education/">Outstanding Education</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_education/our_approach/">Our Approach</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/curriculum/">Curriculum</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/student_support_and_wellbeing/">Student Support & Wellbeing </a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/laptops/">Learning Technology</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/student_success/">Educational Outcomes</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/university_destinations/">University Destinations</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_experiences/our_houses/">Our Houses</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/school_activities/">Extra-Curricular Activities</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/experiential_learning/">Quest Week</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/community_service/">Service Learning</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/student_leadership/">Student Leadership</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_people/">Outstanding People</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_people/">Outstanding People</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_people/leadership_team/">Leadership Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/our_team/">Our Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/parent-teacher-student_association/">Parent Teacher Association</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/school_council/">School Council</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/schooltrust/">Island School Trust</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/alumni2/">Alumni</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/admissions/">Admissions</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/admissions/">Admissions</a>
+													</li>
+																																			</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/WorkWithUs/">Work With Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/WorkWithUs/">Work With Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/WorkWithUs/work_with_us/">Work With Us</a>
+														</li>
+																											<li>
+															<a href="/en/WorkWithUs/hiring_facilities/">Hiring Facilities</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+													</ul>
+					</nav>
+				</div>	
+			</div>
+			<button class="nav-btn"></button>
+		</div>
+	</header>
+	<section id="content">		
+		<script type="text/javascript">
+    var timeout = [];
+
+    $(window).load(function() {
+		let animate = function() {
+			let height = $(window).scrollTop() + Math.round($(window).height() * 0.6);
+			$('#content > section').each(function() {
+				if(!$(this).hasClass('animate') && height > $(this).offset().top)
+				{
+					$(this).addClass('animate');
+                    if($(this).attr('id') == 'section2') {
+						$('li > div', '#section2').each(function(index) {
+							let item = $(this);
+							setTimeout(function() {
+								item.addClass('animate');
+							}, index * 200);
+						});
+					}
+				}
+			});
+		};
+		$(window).on('scroll', animate);
+		animate();
+	});
+</script>
+<div id="banner">
+    <div class="banner-container">
+                                                <div class="banner-item">
+                    <div class="wrapper">
+                        <img src="/cache/img/de2fee22e53e4c9450b32d05fe6006e1.png" alt="" loading="lazy" width="1904" height="1200" class="trans" />                        <video id="video" width="1904" height="1200" preload="none" playsinline webkit-playsinline muted loop>
+                            <source src="/upload/banner/1/banner/671fb6aa58234.mp4" type="video/mp4">
+                        </video>
+                        <div class="mask"></div>
+                        <div class="container">
+                            <button class="play"></button>
+                        </div>
+                    </div>
+                                    </div>
+                        </div>
+    <div class="container">
+                <div class="scroll-icon"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let pager_click = false;
+
+            $('#banner').Slider({
+                slides: '.banner-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true,
+                pager: '.banner-pager',
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    $.each(timeout, function(index, value) {
+                        clearTimeout(value);
+                    });
+                    let videos = $('video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    $('button', slider).removeClass('play').addClass('pause');
+                    if($('.slider.current video', slider).length) {
+                                                        video = document.querySelector('#banner .slider.current video');
+                                video.play();
+                                            }
+                    else if(!pager_click) {
+                        timeout = setTimeout(function() {
+                            slider.Slider('next');
+                        }, 5000);
+                    }
+                },
+                afterResize: function(slider, slides, current_page, total_page) {
+                    if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                                            let videos = $('video', slider);
+                        videos.each(function(i, video) {
+                            video.addEventListener('ended', videoEnd, false);
+                        });
+                        if($('.slider.current video', slider).length) {
+                                                                video = document.querySelector('#banner .slider.current video');
+                                    video.play();
+                                    $('.slider.current button', slider).removeClass('play').addClass('pause');
+                                                    }
+                        else {
+                            timeout = setTimeout(function() {
+                                slider.Slider('next');
+                            }, 5000);
+                        }
+                                        if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                }
+            });
+            
+            $('.banner-item video', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                let button = $(this).parent().find('button');
+                if(button.hasClass('pause')) {
+                    video.pause();
+                    button.removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    button.removeClass('play').addClass('pause');
+                }
+            });
+            $('.banner-item button', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                if($(this).hasClass('pause')) {
+                    video.pause();
+                    $(this).removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    $(this).removeClass('play').addClass('pause');
+                }
+            });
+
+            $('body').on('click', '#banner .banner-pager a', function() {
+                pager_click = true;
+            });
+
+            function videoEnd(e) {
+                if(!pager_click) {
+                    $('#banner').Slider('next');
+                }
+                else {
+                    $('#banner .slider.current button').removeClass('pause').addClass('play');
+                }
+            }
+        });
+    </script>
+</div>
+<section id="section1">
+    <div class="container">
+                    <div class="left">
+                <article class="editor"><h3 class="homepage-title title"><span style="font-size: 45px;">Responsibility, </span><span style="font-size: 45px;">Individuality, Spirit and Excellence</span></h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></article>
+            </div>
+                            <div class="right">
+                <article class="editor"><p><span style="font-weight: 400;"><img class="round-border" src="/upload/files/1/file/67317e18b469c.jpg" alt="Public Photos / Files - NAM_1472" width="699" height="466" /></span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Island School creates a nurturing, bilingual environment that fosters diverse, independent learners with strong values, creativity, and the skills to succeed in an evolving world.</span></p>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour1"><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://island.esf.edu.hk/en/about_us/vision_and_mission/">Find out more</a></span></p></article>
+            </div>
+                            <div class="responsive">
+                <article class="editor"><h3 class="homepage-title title"><span style="font-size: 36px;">Responsibility, Individuality, Spirit and Excellence</span></h3>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Island School creates a nurturing, bilingual environment that fosters diverse, independent learners with strong values, creativity, and the skills to succeed in an evolving world.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;"><img class="round-border" src="/upload/files/1/file/67317e18b469c.jpg" alt="Public Photos / Files - NAM_1472" width="699" height="466" /></span></p>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour1"><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://island.esf.edu.hk/en/about_us/vision_and_mission/">Find out more</a></span></p></article>
+            </div>
+            </div>
+</section>
+<section id="section2">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What can IS offer your family?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="wrapper bg-colour2">
+        <div class="container">
+            <ul>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/6ea119547312c3de49fc9e83a1eebd72.png" alt="World-class Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">The Futures Curriculum</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our Futures curriculum develops your child's key skills - Character, Citizenship, Collaboration, Communication, Creativity, and Critical Thinking - through engaging Elements and Explorations.</p>
+                                                                    <a  href="https://island.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/a9fdab0924217fbc4b59d9ddc3733b2d.png" alt="SIS offers icon-2" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Student Support</h3>
+                            <div class="overlay bg-colour1">
+                                <p>At Island School, we nurture your child's holistic development through comprehensive pastoral care, counselling, and learning support to help them thrive.</p>
+                                                                    <a  href="https://island.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/f2373c3f3e2c0f5dadeb127abd4368cb.png" alt="Real-world Experience" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Fostering Global Citizenship</h3>
+                            <div class="overlay bg-colour1">
+                                <p>At Island School, we empower your child to become a global citizen and future leader through a values-driven education focused on excellence, responsibility, and individuality.</p>
+                                                                    <a  href="https://island.esf.edu.hk/en/outstanding_experiences/experiential_learning/">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/55ed86d7a2d412a4f5950840ae67f03f.png" alt="Strong School-Family Connection" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Inclusive and Diverse</h3>
+                            <div class="overlay bg-colour1">
+                                <p>At Island School, we champion inclusivity, celebrating diversity and empowering your child to become a compassionate, open-minded global citizen.</p>
+                                                                    <a  href="https://island.esf.edu.hk/en/outstanding_people/parent-teacher-student_association/">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/d5a5381383e69334176b4fffddb5ebb3.png" alt="Incredible Results" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Greater Heights of Achievement</h3>
+                            <div class="overlay bg-colour1">
+                                <p>At Island School, we provide a nurturing environment where your child can excel, with a 98% IBDP pass rate and 34% achieving over 40 points.</p>
+                                                                    <a  href="https://island.esf.edu.hk/en/outstanding_education/student_success/">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/25275dc86f564b8d43cada22a67d8766.png" alt="SIS offers icon-6" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">ESF Network</h3>
+                            <div class="overlay bg-colour1">
+                                <p>As part of the English Schools Foundation(ESF), our students are supported by the largest English-medium international school organisation in Hong Kong, providing them the resources and opportunities not found outside of ESF Schools.</p>
+                                                                    <a  href="https://island.esf.edu.hk/en/about_us/ESF_family/">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('h3', '#section2').each(function() {
+                let img = $(this).parent().children('img');
+                if(img.length) {
+                    $(this).css('top', img.offset().top + img.height() + 25 - $(this).parent().offset().top);
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section3">
+    <img src="/cache/img/a52b0d108e00cfbf6332b9ce48cd9eee.jpg" alt="islandschool_esf_7684" loading="lazy" width="1722" height="1294" />    <div class="wrapper">
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">International Curriculum</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="tabs">
+                            <button class="tab current" data-id="1">Years 7-9</button>
+                            <button class="tab" data-id="2">Years 10-11</button>
+                            <button class="tab" data-id="3">Years 12-13</button>
+                    </div>
+        <select class="tab-select" name="tab"><option value="1">Years 7-9</option><option value="2">Years 10-11</option><option value="3">Years 12-13</option></select>                    <div class="tab-content current" data-id="1">
+                                    <div class="title">
+                        <span class="bg-colour1"></span>
+                        <h3 class="colour1">Years 7-9 Curriculum</h3>
+                    </div>
+                                <article class="editor"><p>Our curriculum engages your child, nurturing their love of learning to develop responsible, creative, analytical thinkers. We follow the <strong>IB Middle Years Programme (MYP)</strong>, offering a wide range of subjects until Year 9, allowing your child to discover new strengths and interests that will inform their iGCSE choices.</p></article>
+                                    <a href="https://island.esf.edu.hk/en/outstanding_education/academic_curriculum/curriculum_overview/years-7-9/">
+                        <span>Learn More</span>
+                    </a>
+                            </div>
+                    <div class="tab-content" data-id="2">
+                                    <div class="title">
+                        <span class="bg-colour1"></span>
+                        <h3 class="colour1">Years 10-11 Curriculum</h3>
+                    </div>
+                                <article class="editor"><p><span style="font-weight: 400;">In Years 10-11, our <strong>iGCSE</strong> curriculum prepares your child academically, while the Futures Curriculum develops their skills and interests, equipping them for the pathways available in Years 12-13 and beyond.</span></p></article>
+                                    <a href="https://island.esf.edu.hk/en/outstanding_education/academic_curriculum/curriculum_overview/years-10-11/">
+                        <span>Learn More</span>
+                    </a>
+                            </div>
+                    <div class="tab-content" data-id="3">
+                                    <div class="title">
+                        <span class="bg-colour1"></span>
+                        <h3 class="colour1">Years 12-13 Curriculum</h3>
+                    </div>
+                                <article class="editor"><p><span style="font-weight: 400;">In Years 12-13, your child can pursue the <strong>IB Diploma</strong> or <strong>IB Careers Programme</strong>. Beyond academics, they'll lead diverse school initiatives, from humanitarian to artistic, as Student Council members, House Prefects, and Ambassadors - shaping the school community.</span></p></article>
+                                    <a href="https://island.esf.edu.hk/en/outstanding_education/academic_curriculum/curriculum_overview/years-12-13/">
+                        <span>Learn More</span>
+                    </a>
+                            </div>
+                <script type="text/javascript">
+            $(document).ready(function() {
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+
+                $('.tab', '#section3').click(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $(this).addClass('current');
+                    $('.tab-content[data-id=' + $(this).data('id') + ']', '#section3').addClass('current');
+                    $('select', '#section3').val($(this).data('id')).selectbox('refresh');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+
+                $('.tab-select', '#section3').change(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $('.tab[data-id=' + $(this).val() + ']').addClass('current');
+                    $('.tab-content[data-id=' + $(this).val() + ']', '#section3').addClass('current');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+            });
+        </script>
+    </div>
+</section>
+<section id="section4" data-total="4">
+    <div class="container">
+        <div class="bg bg-colour4"></div>
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Student Support</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="record-slider">
+            <div class="slider-container">
+                                    <div class="record-item">
+                        <img src="/cache/img/d8f16e694258e6d71dcfb80d47c605e2.jpg" alt="IMG_9746 (1)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>WELL-BEING</span>
+                            </h3>
+                            <p>At Island School, your child's wellbeing is our top priority. From exploring identity and self-esteem in Years 7-8, to specialised lessons on relationships, drugs, and life skills, we equip your child with the knowledge and tools to manage their lives. Wellbeing is embedded in our curriculum and community.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/4390014a1729267f8b5830377229239c.jpg" alt="IMG_3391-1 (1)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>FAMILY SUPPORT STRUCTURE</span>
+                            </h3>
+                            <p>We encourage open communication between parents and our dedicated Guidance Team to ensure your child's wellbeing. Our counsellors provide confidential support, and our child protection policies prioritise your child's safety and right to learn in a nurturing environment.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/0f2a78c919918824baf927c31a16975c.jpg" alt="IMG_4330" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>TUTORS</span>
+                            </h3>
+                            <p>At Island School, our tutors go beyond just teaching - they mentor and motivate your child to reach their full potential. Through their expertise and dedication, our tutors create a supportive environment where your child feels empowered to ask questions, clarify doubts, and receive tailored guidance for academic success.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_people/our_team/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/bb87f196c7a3478edfccfd0d15d02157.jpg" alt="IMG_8000-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>THRIVE PROGRAMME</span>
+                            </h3>
+                            <p>At Island School, we embrace wellbeing as a core part of your child's education, helping them thrive and build resilience. Our Thrive program, guided by our school values, nurtures your child's physical, social, cognitive, and emotional wellbeing - ensuring their holistic development and ability to overcome challenges.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/experiential_learning/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/d8f16e694258e6d71dcfb80d47c605e2.jpg" alt="IMG_9746 (1)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>WELL-BEING</span>
+                            </h3>
+                            <p>At Island School, your child's wellbeing is our top priority. From exploring identity and self-esteem in Years 7-8, to specialised lessons on relationships, drugs, and life skills, we equip your child with the knowledge and tools to manage their lives. Wellbeing is embedded in our curriculum and community.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/4390014a1729267f8b5830377229239c.jpg" alt="IMG_3391-1 (1)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>FAMILY SUPPORT STRUCTURE</span>
+                            </h3>
+                            <p>We encourage open communication between parents and our dedicated Guidance Team to ensure your child's wellbeing. Our counsellors provide confidential support, and our child protection policies prioritise your child's safety and right to learn in a nurturing environment.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/0f2a78c919918824baf927c31a16975c.jpg" alt="IMG_4330" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>TUTORS</span>
+                            </h3>
+                            <p>At Island School, our tutors go beyond just teaching - they mentor and motivate your child to reach their full potential. Through their expertise and dedication, our tutors create a supportive environment where your child feels empowered to ask questions, clarify doubts, and receive tailored guidance for academic success.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_people/our_team/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/bb87f196c7a3478edfccfd0d15d02157.jpg" alt="IMG_8000-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>THRIVE PROGRAMME</span>
+                            </h3>
+                            <p>At Island School, we embrace wellbeing as a core part of your child's education, helping them thrive and build resilience. Our Thrive program, guided by our school values, nurtures your child's physical, social, cognitive, and emotional wellbeing - ensuring their holistic development and ability to overcome challenges.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/experiential_learning/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/d8f16e694258e6d71dcfb80d47c605e2.jpg" alt="IMG_9746 (1)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>WELL-BEING</span>
+                            </h3>
+                            <p>At Island School, your child's wellbeing is our top priority. From exploring identity and self-esteem in Years 7-8, to specialised lessons on relationships, drugs, and life skills, we equip your child with the knowledge and tools to manage their lives. Wellbeing is embedded in our curriculum and community.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/4390014a1729267f8b5830377229239c.jpg" alt="IMG_3391-1 (1)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>FAMILY SUPPORT STRUCTURE</span>
+                            </h3>
+                            <p>We encourage open communication between parents and our dedicated Guidance Team to ensure your child's wellbeing. Our counsellors provide confidential support, and our child protection policies prioritise your child's safety and right to learn in a nurturing environment.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/0f2a78c919918824baf927c31a16975c.jpg" alt="IMG_4330" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>TUTORS</span>
+                            </h3>
+                            <p>At Island School, our tutors go beyond just teaching - they mentor and motivate your child to reach their full potential. Through their expertise and dedication, our tutors create a supportive environment where your child feels empowered to ask questions, clarify doubts, and receive tailored guidance for academic success.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_people/our_team/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/bb87f196c7a3478edfccfd0d15d02157.jpg" alt="IMG_8000-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>THRIVE PROGRAMME</span>
+                            </h3>
+                            <p>At Island School, we embrace wellbeing as a core part of your child's education, helping them thrive and build resilience. Our Thrive program, guided by our school values, nurtures your child's physical, social, cognitive, and emotional wellbeing - ensuring their holistic development and ability to overcome challenges.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/experiential_learning/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                            </div>
+            <div class="btns">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section4').data('total'));
+            let slider_loop = ori_total >= 3 ? true : false;
+            $('#section4').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total * 2);
+                    }
+                    else {
+                        slider.Slider('jump', total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section5" data-total="6">
+    <div class="container">
+        <div class="bg bg-colour3"></div>
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Life at IS</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="record-slider">
+            <div class="slider-container">
+                                    <div class="record-item">
+                        <img src="/cache/img/c29ffb6f990f6e7b1c1ab98d19667007.jpg" alt="IMG_3718-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPORTS</span>
+                            </h3>
+                            <p>We inspire your child to lead active, healthy lives through our inclusive sports program and community celebrations.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/school_activities/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/3c2450015481d71e225cd538d3cf27e3.jpg" alt="IMG_0936-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ACTIVITIES</span>
+                            </h3>
+                            <p>We wholeheartedly embrace creativity, providing your child abundant opportunities to explore the performing, visual, and creative arts.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/school_activities/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/270ff0971c9a2b66152c2ddb6e5dbc6d.jpg" alt="IMG_5113edit" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>INTERHOUSE</span>
+                            </h3>
+                            <p>We welcome your child into one of our six Houses, fostering friendships and engaging in diverse activities.
+that promote a sense of belonging and ownership.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/our_houses/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/504ed84ccb5cae2d7e6d4889869fecfa.png" alt="Untitled design (5)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>STUDENT LEADERSHIP</span>
+                            </h3>
+                            <p>We encourage your child to pursue their passions and drive change through student-led activities and initiatives, helping them build essential soft skills as leaders and make a meaningful impact in their areas of interest.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/student_leadership/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/d6770bd1966c419d57c96850f21fbca1.png" alt="Untitled design (6)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>QUEST WEEK</span>
+                            </h3>
+                            <p>Quest Week takes learning outside of the walls of the classroom. Students are encouraged to make connections and build relationships, whilst also being pushed outside of their comfort zones.
+Our aim is to inspire students to become global citizens who nurture respectful relationships, are curious about the world around them, and are committed to making lasting change.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/school_activities/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/0e333b3159ee543ea7d9b32dca6cf5b3.jpg" alt="IMG_8489-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>COMMUNITY ENGAGEMENT</span>
+                            </h3>
+                            <p>At Island School, we foster your child's community spirit and responsibility through required coursework and impactful community projects.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/community_service/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/c29ffb6f990f6e7b1c1ab98d19667007.jpg" alt="IMG_3718-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPORTS</span>
+                            </h3>
+                            <p>We inspire your child to lead active, healthy lives through our inclusive sports program and community celebrations.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/school_activities/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/3c2450015481d71e225cd538d3cf27e3.jpg" alt="IMG_0936-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ACTIVITIES</span>
+                            </h3>
+                            <p>We wholeheartedly embrace creativity, providing your child abundant opportunities to explore the performing, visual, and creative arts.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/school_activities/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/270ff0971c9a2b66152c2ddb6e5dbc6d.jpg" alt="IMG_5113edit" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>INTERHOUSE</span>
+                            </h3>
+                            <p>We welcome your child into one of our six Houses, fostering friendships and engaging in diverse activities.
+that promote a sense of belonging and ownership.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/our_houses/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/504ed84ccb5cae2d7e6d4889869fecfa.png" alt="Untitled design (5)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>STUDENT LEADERSHIP</span>
+                            </h3>
+                            <p>We encourage your child to pursue their passions and drive change through student-led activities and initiatives, helping them build essential soft skills as leaders and make a meaningful impact in their areas of interest.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/student_leadership/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/d6770bd1966c419d57c96850f21fbca1.png" alt="Untitled design (6)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>QUEST WEEK</span>
+                            </h3>
+                            <p>Quest Week takes learning outside of the walls of the classroom. Students are encouraged to make connections and build relationships, whilst also being pushed outside of their comfort zones.
+Our aim is to inspire students to become global citizens who nurture respectful relationships, are curious about the world around them, and are committed to making lasting change.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/school_activities/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/0e333b3159ee543ea7d9b32dca6cf5b3.jpg" alt="IMG_8489-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>COMMUNITY ENGAGEMENT</span>
+                            </h3>
+                            <p>At Island School, we foster your child's community spirit and responsibility through required coursework and impactful community projects.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/community_service/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/c29ffb6f990f6e7b1c1ab98d19667007.jpg" alt="IMG_3718-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPORTS</span>
+                            </h3>
+                            <p>We inspire your child to lead active, healthy lives through our inclusive sports program and community celebrations.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/school_activities/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/3c2450015481d71e225cd538d3cf27e3.jpg" alt="IMG_0936-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ACTIVITIES</span>
+                            </h3>
+                            <p>We wholeheartedly embrace creativity, providing your child abundant opportunities to explore the performing, visual, and creative arts.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/school_activities/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/270ff0971c9a2b66152c2ddb6e5dbc6d.jpg" alt="IMG_5113edit" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>INTERHOUSE</span>
+                            </h3>
+                            <p>We welcome your child into one of our six Houses, fostering friendships and engaging in diverse activities.
+that promote a sense of belonging and ownership.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/our_houses/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/504ed84ccb5cae2d7e6d4889869fecfa.png" alt="Untitled design (5)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>STUDENT LEADERSHIP</span>
+                            </h3>
+                            <p>We encourage your child to pursue their passions and drive change through student-led activities and initiatives, helping them build essential soft skills as leaders and make a meaningful impact in their areas of interest.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/student_leadership/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/d6770bd1966c419d57c96850f21fbca1.png" alt="Untitled design (6)" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>QUEST WEEK</span>
+                            </h3>
+                            <p>Quest Week takes learning outside of the walls of the classroom. Students are encouraged to make connections and build relationships, whilst also being pushed outside of their comfort zones.
+Our aim is to inspire students to become global citizens who nurture respectful relationships, are curious about the world around them, and are committed to making lasting change.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/school_activities/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/0e333b3159ee543ea7d9b32dca6cf5b3.jpg" alt="IMG_8489-1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>COMMUNITY ENGAGEMENT</span>
+                            </h3>
+                            <p>At Island School, we foster your child's community spirit and responsibility through required coursework and impactful community projects.</p>
+                                                            <a href="https://island.esf.edu.hk/en/outstanding_experiences/community_service/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                            </div>
+            <div class="btns">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section5').data('total'));
+            let slider_loop = ori_total >= 3 ? true : false;
+            $('#section5').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total + 1);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section6">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">Testimonials</h2>
+            <span class="bg-colour1"></span>
+        </div>
+        <div class="wrapper">
+            <div class="tabs">
+                                    <button class="tab current" data-id="1">Students</button>
+                                    <button class="tab" data-id="2">Parents</button>
+                                    <button class="tab" data-id="3">Alumni</button>
+                            </div>
+            <select class="tab-select" name="tab"><option value="1">Students</option><option value="2">Parents</option><option value="3">Alumni</option></select>                            <div class="tab-content current" data-id="1">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f4679ca16210b1e779935706fdc6e179.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Over the 5 years (and counting!) I've attended Island School, the community has grown to become a second home to me, a feeling that is bolstered not just by the excellent teaching faculty and state-of-the-art facilities, but also a peer community that enables all Islanders to grow and evolve in their respective fields.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Over the 5 years (and counting!) I've attended Island School, the community has grown to become a second home to me, a feeling that is bolstered not just by the excellent teaching faculty and state-of-the-art facilities, but also a peer community that enables all Islanders to grow and evolve in their respective fields.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Vijay, Year 12 student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f4679ca16210b1e779935706fdc6e179.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Island School is my second family and home. Its tight-knit community sincerely helped shape my conceptual understanding of the world around me on a global, national, and local scale—without such a unique collection of experiences, I certainly would not be the person I am today. The encouragement from teachers and peers for students to pursue excellence in their areas of work is unparalleled and pushes students in their growth as well as development, whether they realise it or not.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Island School is my second family and home. Its tight-knit community sincerely helped shape my conceptual understanding of the world around me on a global, national, and local scale—without such a unique collection of experiences, I certainly would not be the person I am today. The encouragement from teachers and peers for students to pursue excellence in their areas of work is unparalleled and pushes students in their growth as well as development, whether they realise it or not.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Alexandra, Head Student of 2024</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f4679ca16210b1e779935706fdc6e179.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Island School has nurtured and transformed me both as an individual as well as academically. The learning environment and community, plentiful of opportunities, has allowed me to develop a passion for STEM, community service and leadership to further inspire others.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Island School has nurtured and transformed me both as an individual as well as academically. The learning environment and community, plentiful of opportunities, has allowed me to develop a passion for STEM, community service and leadership to further inspire others.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Arnav, Head Student of 2024</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f4679ca16210b1e779935706fdc6e179.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>4 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Island School has made my high school experience incredibly memorable. I was given the opportunity to engage in a range of extracurricular activities that allowed me to explore my interests and step out of my comfort zone, which helped enhance my communication skills and overall confidence. Most importantly, the sense of community allowed me to form valuable friendships and meaningful connections.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Island School has made my high school experience incredibly memorable. I was given the opportunity to engage in a range of extracurricular activities that allowed me to explore my interests and step out of my comfort zone, which helped enhance my communication skills and overall confidence. Most importantly, the sense of community allowed me to form valuable friendships and meaningful connections.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Katrina, Head Student of 2024</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="2">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f4679ca16210b1e779935706fdc6e179.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Every time I visit Island School I’m impressed by the positive vibe I feel on campus. There is always a sense of excitement, activity and joy. And someone will always say ‘hello’ - be it a student, a teacher or staff. This welcoming feeling extends across the school, providing a nurturing environment for my kids to grow up in with a healthy balance between academic achievement and focus on important social, sporting and life skills.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Every time I visit Island School I’m impressed by the positive vibe I feel on campus. There is always a sense of excitement, activity and joy. And someone will always say ‘hello’ - be it a student, a teacher or staff. This welcoming feeling extends across the school, providing a nurturing environment for my kids to grow up in with a healthy balance between academic achievement and focus on important social, sporting and life skills.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Father of Leo (Year 10 student) and Zoe (Year 8 student)</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f4679ca16210b1e779935706fdc6e179.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Choosing Island School was the right decision for our son Daanyal. Over his 7 years there, he thrived in their inquisitive, progressive environment. The school fostered Daanyal's independent, mature thinking, with steadfast teacher support every step of the way. We appreciated how the school involved us parents and made us feel part of Daanyal's balanced growth. Island School empowered him to explore opportunities beyond campus and truly embraced his unique identity. We're thankful for the nurturing, student-centred experience that guided Daanyal's development.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Choosing Island School was the right decision for our son Daanyal. Over his 7 years there, he thrived in their inquisitive, progressive environment. The school fostered Daanyal's independent, mature thinking, with steadfast teacher support every step of the way. We appreciated how the school involved us parents and made us feel part of Daanyal's balanced growth. Island School empowered him to explore opportunities beyond campus and truly embraced his unique identity. We're thankful for the nurturing, student-centred experience that guided Daanyal's development.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Mother of Daanyal, Class of 2020</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f4679ca16210b1e779935706fdc6e179.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Island School celebrates student individuality in a diverse, inclusive community. Beyond academics, the school offers rich opportunities to excel in sports, arts, and their unique "Elements" program. This allows students to explore passions and gain well-rounded skills. Dedicated teachers and staff create a caring, supportive environment with proper pastoral care. The active PTA fosters a strong community spirit.<br><br>I am truly grateful for the wonderful educational experience my children are receiving at Island School, which helps them to become world citizens.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Island School celebrates student individuality in a diverse, inclusive community. Beyond academics, the school offers rich opportunities to excel in sports, arts, and their unique "Elements" program. This allows students to explore passions and gain well-rounded skills. Dedicated teachers and staff create a caring, supportive environment with proper pastoral care. The active PTA fosters a strong community spirit.<br><br>I am truly grateful for the wonderful educational experience my children are receiving at Island School, which helps them to become world citizens.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Mother of Hannah (Class of 2024) and Hava (Year 12 student)</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="3">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f4679ca16210b1e779935706fdc6e179.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">My teachers and friends were incredible support systems that I couldn't have completed this journey without. It was the heartfelt conversations, reassuring smiles, warm laughs, and the immense unity I felt with them that propelled me through both my tribulations and triumphs. Thank you, Island School—I couldn't be more grateful.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">My teachers and friends were incredible support systems that I couldn't have completed this journey without. It was the heartfelt conversations, reassuring smiles, warm laughs, and the immense unity I felt with them that propelled me through both my tribulations and triumphs. Thank you, Island School—I couldn't be more grateful.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Angela, Class of 2023</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f4679ca16210b1e779935706fdc6e179.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Being an Islander has been an incredible privilege and a source of immense pride for me. I could not have achieved what I did without the unwavering support and encouragement of my teachers and friends, who always challenged me to transcend my limits and pursue my aspirations. I’m deeply grateful for the invaluable guidance and companionship they have given me throughout my journey.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Being an Islander has been an incredible privilege and a source of immense pride for me. I could not have achieved what I did without the unwavering support and encouragement of my teachers and friends, who always challenged me to transcend my limits and pursue my aspirations. I’m deeply grateful for the invaluable guidance and companionship they have given me throughout my journey.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Sam, Class of 2023</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/f4679ca16210b1e779935706fdc6e179.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">While school memories may mean the tangible architecture of the pre-redevelopment campus for many Islanders each from a different House (go Da Vinci!) the intangible spirit and bonds are common to all Islanders.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">While school memories may mean the tangible architecture of the pre-redevelopment campus for many Islanders each from a different House (go Da Vinci!) the intangible spirit and bonds are common to all Islanders.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Christopher, Class of 1999</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+            
+            $('.tab', '#section6').click(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $(this).addClass('current');
+                $('.tab-content[data-id=' + $(this).data('id') + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' + ($(this).index() + 1) + ')', '#section6').addClass('current');
+                chkContentHeight();
+            });
+
+            $('.tab-select', '#section6').change(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $('.tab[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-content[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' +  ($('.tab.current', '#section6').index() + 1) + ')', '#section6').addClass('current');
+                $('.select .select-container div', '#section6').show();
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+                chkContentHeight();
+            });
+
+            $('.record-slider', '#section6').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true
+            });
+
+            function chkContentHeight() {
+                $('p.description', '#section6').each(function() {
+                    if($(this).height() > 160) {
+                        $(this).parent().addClass('more');
+                    }
+                });
+            }
+            chkContentHeight();
+
+            $('.record-item article button.view-more', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-less').show();
+                $(this).parent().find('.description').hide();
+                $(this).parent().find('.content').show();
+            });
+            $('.record-item article button.view-less', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-more').show();
+                $(this).parent().find('.description').show();
+                $(this).parent().find('.content').hide();
+            });
+        });
+    </script>
+</section>
+<section id="section7" data-total="10">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What's New at IS?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="record-slider">
+        <div class="slider-container">
+                            <div class="post-item">
+                    <div class="post" data-id="107">
+                        <time>26/02/2026</time>
+                        <h3>Two talented students from Island School have been shortlisted for the prestigious Hong Kong Students Sovereign Art Foundation Prize! Sophie and Aahana, both from Year 12 have had their artworks selected.<br>This is a fantastic achievement and we encourage you to show your support by voting for their artworks below. Voting starts on the February 25th and ends on the March 29th.<br>Their work will be showcased at the prestigious art fair Art Central during Hong Kong's Art Week from March 25th - 29th, 2026.<br><br>Vote here:<br>https://www.sovereignartfoundation.com/sp-hongkong</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/f465138a0ac3db0f59d9185d1d7efade.jpg" alt="642091899_18448447195105991_3518194231387342843_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="106">
+                        <time>16/02/2026</time>
+                        <h3>Last week, we enjoyed Lunar New Year celebrations with parents, teachers, and students dancing in the courtyard. During our Lunar New Year assembly, we celebrated with student performances, face-changing acts, and a spectacular lion dance. <br><br>Happy New Year of the Horse, and Kung Hei Fat Choi!<br><br>Please note that the original music in this video has been modified for copyright reasons.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/238156c0d32ac7bcd64f2eab7ef1e6df.jpg" alt="633020393_18446882914105991_256582562127964703_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="105">
+                        <time>06/02/2026</time>
+                        <h3>After months of hard work, Harry Potter and the Cursed Child enchanted the stage at Borrett Theatre with four magical performances from February 3 to 5. Our talented students brought this beloved story to life, supported by an amazing production team.<br><br>A heartfelt thank you to everyone who attended and to Mr. McCracken, Ms. Kawano and Mrs. Lacey Vittachi for their incredible leadership and creativity, along with our dedicated technicians.<br><br>We look forward to more exciting events after the Lunar New Year Break, including our Spring Concert and IB Visual Arts Exhibition!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/437086f594cb1e207c454fd1f532cb83.jpg" alt="629459805_18444307390105991_1940315492246552702_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="104">
+                        <time>06/02/2026</time>
+                        <h3>Einstein House successfully held their annual charity week from February 3-6, featuring a bake sale, Dress Purple Day, a Valentine’s Day delivery service, and live music in the courtyard where students dedicated songs to their valentines or expressed gratitude.<br><br>Since 1997, Einstein House has proudly supported Katja House, an organisation dedicated to helping underprivileged children in Kathmandu and rural Nepal.<br><br>Thank you to everyone who participated and contributed to this meaningful event!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/b92eb51b68fc674110c4bbd0a94956fb.jpg" alt="629462739_18444294715105991_5118738470692541295_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="103">
+                        <time>30/01/2026</time>
+                        <h3>On Friday, January 23rd, Island School hosted the postponed Winter Fair, and it was a lively and bustling event! Students showcased their talents in the courtyard and Performance Space, while the Sports Hall was filled with exciting games.<br>A huge thank you to all the parents and staff who volunteered their time and resources—your enthusiasm brought the fair to life!<br>Finally, thank you to everyone who attended. Your participation made it a memorable day and showcased the Island School spirit. See you all next year!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/53be46087ac877a83b83008584195121.jpg" alt="623095075_18442257733105991_1765430024700538140_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="102">
+                        <time>30/01/2026</time>
+                        <h3>On 23 January 2026, Islanders gathered for the annual Whole School Walk in support of the Island School Trust, which assists children in less privileged situations in Hong Kong and abroad.<br>Students showed off their creativity by dressing up as their favourite Disney characters and completing one of three trails: Bowen Road, the Harbour Front, or The Peak loop.<br>Congratulations to everyone who participated and donated.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d6c4051cab1a22915c14159a1d6d46fa.jpg" alt="625033430_18442255771105991_6400713494797977215_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="101">
+                        <time>23/01/2026</time>
+                        <h3>On January 20th, we were thrilled to celebrate the resounding success of the Year 11 Social Action Exhibition. Since the start of this academic year, students have been immersed in group social action projects as part of their Global Perspectives IGCSE. This initiative, held under our Explorations programme, focuses on developing core competencies essential to future success in higher education and the modern workforce. By tackling key global issues firsthand, our students are truly evolving into informed global citizens.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/4a7bb0bfd537aee04e6ae4359f57cf35.jpg" alt="621812329_18441034756105991_5174160940938780986_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="100">
+                        <time>29/12/2025</time>
+                        <h3>An ESF Christmas story that melted hearts: Meet Cassidy, a student from ESF Glenealy School with proud Fijian and Scottish heritage. Cassidy dreamed of becoming a vet one day.<br><br>Her Christmas letter found its way to a mystery person at ESF Island School, Kanna — and what happened next was pure holiday magic.<br><br>This is what the ESF community is all about — sharing love, laughter, and friendship across our schools. Wishing everyone a wonderful Christmas break.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0ce3540460ae8d446d092719ff61465c.jpg" alt="608206300_18437790721105991_5853909472722121340_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="99">
+                        <time>17/12/2025</time>
+                        <h3>As we wrap up another incredible term at Island School, the last day before the Christmas holidays is always a highlight!<br><br>This year, the BTEC Dance Group wowed us with their fantastic performance, and we enjoyed amazing acts from Jayden, the winner of STARS, who sang his winning song "It Had Better Be Tonight," along with Amoures performing "A Sky Full of Stars."<br><br>Keeping with tradition, our teachers and Year 13 students took the stage to sing "Hark! The Herald Angels Sing" and "We Three Kings." Before long, the whole school was jumping, hugging, and singing along to Slade's "Merry Christmas Everybody."<br><br>Wishing everyone a joyful holiday season! We can't wait to see you all in 2026!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/cea3f1386af2ef9d4d1e41b9119fc14d.jpg" alt="601776471_18436278583105991_5899271246645852885_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="98">
+                        <time>17/12/2025</time>
+                        <h3>This year's Christmas celebrations at Island School were a delightful festive occasion, held from December 9-12! The holiday spirit was alive, with Christmas music playing and karaoke during breaks. Activities included the PTA Plush Sale, Elements Marketplace, Christmas cookie decoration, and the Senior Phase Christmas Quiz, where Fleming house emerged as the winner.<br>Funds raised from all the events will go toward supporting the Tai Po Relief Fund.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/9228718c152cb0fb4f4999f5784e3acc.jpg" alt="601438282_18436278121105991_8616789884568789357_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="107">
+                        <time>26/02/2026</time>
+                        <h3>Two talented students from Island School have been shortlisted for the prestigious Hong Kong Students Sovereign Art Foundation Prize! Sophie and Aahana, both from Year 12 have had their artworks selected.<br>This is a fantastic achievement and we encourage you to show your support by voting for their artworks below. Voting starts on the February 25th and ends on the March 29th.<br>Their work will be showcased at the prestigious art fair Art Central during Hong Kong's Art Week from March 25th - 29th, 2026.<br><br>Vote here:<br>https://www.sovereignartfoundation.com/sp-hongkong</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/f465138a0ac3db0f59d9185d1d7efade.jpg" alt="642091899_18448447195105991_3518194231387342843_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="106">
+                        <time>16/02/2026</time>
+                        <h3>Last week, we enjoyed Lunar New Year celebrations with parents, teachers, and students dancing in the courtyard. During our Lunar New Year assembly, we celebrated with student performances, face-changing acts, and a spectacular lion dance. <br><br>Happy New Year of the Horse, and Kung Hei Fat Choi!<br><br>Please note that the original music in this video has been modified for copyright reasons.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/238156c0d32ac7bcd64f2eab7ef1e6df.jpg" alt="633020393_18446882914105991_256582562127964703_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="105">
+                        <time>06/02/2026</time>
+                        <h3>After months of hard work, Harry Potter and the Cursed Child enchanted the stage at Borrett Theatre with four magical performances from February 3 to 5. Our talented students brought this beloved story to life, supported by an amazing production team.<br><br>A heartfelt thank you to everyone who attended and to Mr. McCracken, Ms. Kawano and Mrs. Lacey Vittachi for their incredible leadership and creativity, along with our dedicated technicians.<br><br>We look forward to more exciting events after the Lunar New Year Break, including our Spring Concert and IB Visual Arts Exhibition!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/437086f594cb1e207c454fd1f532cb83.jpg" alt="629459805_18444307390105991_1940315492246552702_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="104">
+                        <time>06/02/2026</time>
+                        <h3>Einstein House successfully held their annual charity week from February 3-6, featuring a bake sale, Dress Purple Day, a Valentine’s Day delivery service, and live music in the courtyard where students dedicated songs to their valentines or expressed gratitude.<br><br>Since 1997, Einstein House has proudly supported Katja House, an organisation dedicated to helping underprivileged children in Kathmandu and rural Nepal.<br><br>Thank you to everyone who participated and contributed to this meaningful event!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/b92eb51b68fc674110c4bbd0a94956fb.jpg" alt="629462739_18444294715105991_5118738470692541295_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="103">
+                        <time>30/01/2026</time>
+                        <h3>On Friday, January 23rd, Island School hosted the postponed Winter Fair, and it was a lively and bustling event! Students showcased their talents in the courtyard and Performance Space, while the Sports Hall was filled with exciting games.<br>A huge thank you to all the parents and staff who volunteered their time and resources—your enthusiasm brought the fair to life!<br>Finally, thank you to everyone who attended. Your participation made it a memorable day and showcased the Island School spirit. See you all next year!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/53be46087ac877a83b83008584195121.jpg" alt="623095075_18442257733105991_1765430024700538140_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="102">
+                        <time>30/01/2026</time>
+                        <h3>On 23 January 2026, Islanders gathered for the annual Whole School Walk in support of the Island School Trust, which assists children in less privileged situations in Hong Kong and abroad.<br>Students showed off their creativity by dressing up as their favourite Disney characters and completing one of three trails: Bowen Road, the Harbour Front, or The Peak loop.<br>Congratulations to everyone who participated and donated.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d6c4051cab1a22915c14159a1d6d46fa.jpg" alt="625033430_18442255771105991_6400713494797977215_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="101">
+                        <time>23/01/2026</time>
+                        <h3>On January 20th, we were thrilled to celebrate the resounding success of the Year 11 Social Action Exhibition. Since the start of this academic year, students have been immersed in group social action projects as part of their Global Perspectives IGCSE. This initiative, held under our Explorations programme, focuses on developing core competencies essential to future success in higher education and the modern workforce. By tackling key global issues firsthand, our students are truly evolving into informed global citizens.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/4a7bb0bfd537aee04e6ae4359f57cf35.jpg" alt="621812329_18441034756105991_5174160940938780986_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="100">
+                        <time>29/12/2025</time>
+                        <h3>An ESF Christmas story that melted hearts: Meet Cassidy, a student from ESF Glenealy School with proud Fijian and Scottish heritage. Cassidy dreamed of becoming a vet one day.<br><br>Her Christmas letter found its way to a mystery person at ESF Island School, Kanna — and what happened next was pure holiday magic.<br><br>This is what the ESF community is all about — sharing love, laughter, and friendship across our schools. Wishing everyone a wonderful Christmas break.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0ce3540460ae8d446d092719ff61465c.jpg" alt="608206300_18437790721105991_5853909472722121340_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="99">
+                        <time>17/12/2025</time>
+                        <h3>As we wrap up another incredible term at Island School, the last day before the Christmas holidays is always a highlight!<br><br>This year, the BTEC Dance Group wowed us with their fantastic performance, and we enjoyed amazing acts from Jayden, the winner of STARS, who sang his winning song "It Had Better Be Tonight," along with Amoures performing "A Sky Full of Stars."<br><br>Keeping with tradition, our teachers and Year 13 students took the stage to sing "Hark! The Herald Angels Sing" and "We Three Kings." Before long, the whole school was jumping, hugging, and singing along to Slade's "Merry Christmas Everybody."<br><br>Wishing everyone a joyful holiday season! We can't wait to see you all in 2026!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/cea3f1386af2ef9d4d1e41b9119fc14d.jpg" alt="601776471_18436278583105991_5899271246645852885_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="98">
+                        <time>17/12/2025</time>
+                        <h3>This year's Christmas celebrations at Island School were a delightful festive occasion, held from December 9-12! The holiday spirit was alive, with Christmas music playing and karaoke during breaks. Activities included the PTA Plush Sale, Elements Marketplace, Christmas cookie decoration, and the Senior Phase Christmas Quiz, where Fleming house emerged as the winner.<br>Funds raised from all the events will go toward supporting the Tai Po Relief Fund.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/9228718c152cb0fb4f4999f5784e3acc.jpg" alt="601438282_18436278121105991_8616789884568789357_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="107">
+                        <time>26/02/2026</time>
+                        <h3>Two talented students from Island School have been shortlisted for the prestigious Hong Kong Students Sovereign Art Foundation Prize! Sophie and Aahana, both from Year 12 have had their artworks selected.<br>This is a fantastic achievement and we encourage you to show your support by voting for their artworks below. Voting starts on the February 25th and ends on the March 29th.<br>Their work will be showcased at the prestigious art fair Art Central during Hong Kong's Art Week from March 25th - 29th, 2026.<br><br>Vote here:<br>https://www.sovereignartfoundation.com/sp-hongkong</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/f465138a0ac3db0f59d9185d1d7efade.jpg" alt="642091899_18448447195105991_3518194231387342843_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="106">
+                        <time>16/02/2026</time>
+                        <h3>Last week, we enjoyed Lunar New Year celebrations with parents, teachers, and students dancing in the courtyard. During our Lunar New Year assembly, we celebrated with student performances, face-changing acts, and a spectacular lion dance. <br><br>Happy New Year of the Horse, and Kung Hei Fat Choi!<br><br>Please note that the original music in this video has been modified for copyright reasons.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/238156c0d32ac7bcd64f2eab7ef1e6df.jpg" alt="633020393_18446882914105991_256582562127964703_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="105">
+                        <time>06/02/2026</time>
+                        <h3>After months of hard work, Harry Potter and the Cursed Child enchanted the stage at Borrett Theatre with four magical performances from February 3 to 5. Our talented students brought this beloved story to life, supported by an amazing production team.<br><br>A heartfelt thank you to everyone who attended and to Mr. McCracken, Ms. Kawano and Mrs. Lacey Vittachi for their incredible leadership and creativity, along with our dedicated technicians.<br><br>We look forward to more exciting events after the Lunar New Year Break, including our Spring Concert and IB Visual Arts Exhibition!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/437086f594cb1e207c454fd1f532cb83.jpg" alt="629459805_18444307390105991_1940315492246552702_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="104">
+                        <time>06/02/2026</time>
+                        <h3>Einstein House successfully held their annual charity week from February 3-6, featuring a bake sale, Dress Purple Day, a Valentine’s Day delivery service, and live music in the courtyard where students dedicated songs to their valentines or expressed gratitude.<br><br>Since 1997, Einstein House has proudly supported Katja House, an organisation dedicated to helping underprivileged children in Kathmandu and rural Nepal.<br><br>Thank you to everyone who participated and contributed to this meaningful event!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/b92eb51b68fc674110c4bbd0a94956fb.jpg" alt="629462739_18444294715105991_5118738470692541295_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="103">
+                        <time>30/01/2026</time>
+                        <h3>On Friday, January 23rd, Island School hosted the postponed Winter Fair, and it was a lively and bustling event! Students showcased their talents in the courtyard and Performance Space, while the Sports Hall was filled with exciting games.<br>A huge thank you to all the parents and staff who volunteered their time and resources—your enthusiasm brought the fair to life!<br>Finally, thank you to everyone who attended. Your participation made it a memorable day and showcased the Island School spirit. See you all next year!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/53be46087ac877a83b83008584195121.jpg" alt="623095075_18442257733105991_1765430024700538140_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="102">
+                        <time>30/01/2026</time>
+                        <h3>On 23 January 2026, Islanders gathered for the annual Whole School Walk in support of the Island School Trust, which assists children in less privileged situations in Hong Kong and abroad.<br>Students showed off their creativity by dressing up as their favourite Disney characters and completing one of three trails: Bowen Road, the Harbour Front, or The Peak loop.<br>Congratulations to everyone who participated and donated.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/d6c4051cab1a22915c14159a1d6d46fa.jpg" alt="625033430_18442255771105991_6400713494797977215_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="101">
+                        <time>23/01/2026</time>
+                        <h3>On January 20th, we were thrilled to celebrate the resounding success of the Year 11 Social Action Exhibition. Since the start of this academic year, students have been immersed in group social action projects as part of their Global Perspectives IGCSE. This initiative, held under our Explorations programme, focuses on developing core competencies essential to future success in higher education and the modern workforce. By tackling key global issues firsthand, our students are truly evolving into informed global citizens.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/4a7bb0bfd537aee04e6ae4359f57cf35.jpg" alt="621812329_18441034756105991_5174160940938780986_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="100">
+                        <time>29/12/2025</time>
+                        <h3>An ESF Christmas story that melted hearts: Meet Cassidy, a student from ESF Glenealy School with proud Fijian and Scottish heritage. Cassidy dreamed of becoming a vet one day.<br><br>Her Christmas letter found its way to a mystery person at ESF Island School, Kanna — and what happened next was pure holiday magic.<br><br>This is what the ESF community is all about — sharing love, laughter, and friendship across our schools. Wishing everyone a wonderful Christmas break.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0ce3540460ae8d446d092719ff61465c.jpg" alt="608206300_18437790721105991_5853909472722121340_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="99">
+                        <time>17/12/2025</time>
+                        <h3>As we wrap up another incredible term at Island School, the last day before the Christmas holidays is always a highlight!<br><br>This year, the BTEC Dance Group wowed us with their fantastic performance, and we enjoyed amazing acts from Jayden, the winner of STARS, who sang his winning song "It Had Better Be Tonight," along with Amoures performing "A Sky Full of Stars."<br><br>Keeping with tradition, our teachers and Year 13 students took the stage to sing "Hark! The Herald Angels Sing" and "We Three Kings." Before long, the whole school was jumping, hugging, and singing along to Slade's "Merry Christmas Everybody."<br><br>Wishing everyone a joyful holiday season! We can't wait to see you all in 2026!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/cea3f1386af2ef9d4d1e41b9119fc14d.jpg" alt="601776471_18436278583105991_5899271246645852885_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="98">
+                        <time>17/12/2025</time>
+                        <h3>This year's Christmas celebrations at Island School were a delightful festive occasion, held from December 9-12! The holiday spirit was alive, with Christmas music playing and karaoke during breaks. Activities included the PTA Plush Sale, Elements Marketplace, Christmas cookie decoration, and the Senior Phase Christmas Quiz, where Fleming house emerged as the winner.<br>Funds raised from all the events will go toward supporting the Tai Po Relief Fund.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/9228718c152cb0fb4f4999f5784e3acc.jpg" alt="601438282_18436278121105991_8616789884568789357_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                    </div>
+        <div class="btns">
+            <button class="prev"></button>
+            <button class="next"></button>
+        </div>
+    </div>
+            <div class="lightbox" data-id="107">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>26/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Two talented students from Island School have been shortlisted for the prestigious Hong Kong Students Sovereign Art Foundation Prize! Sophie and Aahana, both from Year 12 have had their artworks selected.<br>This is a fantastic achievement and we encourage you to show your support by voting for their artworks below. Voting starts on the February 25th and ends on the March 29th.<br>Their work will be showcased at the prestigious art fair Art Central during Hong Kong's Art Week from March 25th - 29th, 2026.<br><br>Vote here:<br>https://www.sovereignartfoundation.com/sp-hongkong</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f465138a0ac3db0f59d9185d1d7efade.jpg" alt="642091899_18448447195105991_3518194231387342843_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DVM8AEfk94f/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DVM8AEfk94f/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="106">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>16/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Last week, we enjoyed Lunar New Year celebrations with parents, teachers, and students dancing in the courtyard. During our Lunar New Year assembly, we celebrated with student performances, face-changing acts, and a spectacular lion dance. <br><br>Happy New Year of the Horse, and Kung Hei Fat Choi!<br><br>Please note that the original music in this video has been modified for copyright reasons.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <a href="https://www.instagram.com/reel/DUzpz08DM7v/" target="_blank" rel="nofollow">
+                                                    <img src="/cache/img/238156c0d32ac7bcd64f2eab7ef1e6df.jpg" alt="633020393_18446882914105991_256582562127964703_n" loading="lazy" width="682" height="682" />                                                </a>
+                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/reel/DUzpz08DM7v/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/reel/DUzpz08DM7v/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="105">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>06/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>After months of hard work, Harry Potter and the Cursed Child enchanted the stage at Borrett Theatre with four magical performances from February 3 to 5. Our talented students brought this beloved story to life, supported by an amazing production team.<br><br>A heartfelt thank you to everyone who attended and to Mr. McCracken, Ms. Kawano and Mrs. Lacey Vittachi for their incredible leadership and creativity, along with our dedicated technicians.<br><br>We look forward to more exciting events after the Lunar New Year Break, including our Spring Concert and IB Visual Arts Exhibition!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/437086f594cb1e207c454fd1f532cb83.jpg" alt="629459805_18444307390105991_1940315492246552702_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8739e4012845ff23ef90f7216a0087b7.jpg" alt="630003490_18444307363105991_7868835627574794141_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/38752c100ec2e11d58ca9921dce96a5e.jpg" alt="629365460_18444307399105991_1306310082383255780_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/788c73c84e05d22f5d54a99d3377ae82.jpg" alt="629350114_18444307360105991_477214723753839034_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/d4cbf27ba818c521581d8caa72e6d521.jpg" alt="629435829_18444307387105991_9172264836705237458_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/a794a66db8e11f0f4c2653ab5ec4aaf7.jpg" alt="629296627_18444307351105991_8420811754049645653_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/49edffb2635d59deb8b67c1b18173f76.jpg" alt="629825136_18444307366105991_496500423249338078_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/579d790fcc029092eca46f2f6f3281fc.jpg" alt="629997537_18444307414105991_5162954766543186987_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/d741986a701c616446c82603ac74768b.jpg" alt="630196508_18444307417105991_4843984678790363336_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ceb7751121bb2ace7294bcd543aaf760.jpg" alt="629984188_18444307420105991_6528940401075217597_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DUZ9C4gExbw/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DUZ9C4gExbw/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="104">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>06/02/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Einstein House successfully held their annual charity week from February 3-6, featuring a bake sale, Dress Purple Day, a Valentine’s Day delivery service, and live music in the courtyard where students dedicated songs to their valentines or expressed gratitude.<br><br>Since 1997, Einstein House has proudly supported Katja House, an organisation dedicated to helping underprivileged children in Kathmandu and rural Nepal.<br><br>Thank you to everyone who participated and contributed to this meaningful event!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b92eb51b68fc674110c4bbd0a94956fb.jpg" alt="629462739_18444294715105991_5118738470692541295_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/a9fef56dd3c9559a93163e64d6d4daaf.jpg" alt="629337794_18444294640105991_1209567864058802058_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/bbca1118f7129b588492c3c09337a87a.jpg" alt="629377086_18444294700105991_2475053361105867259_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/88daf98153f42faf66b311eefde1353f.jpg" alt="629478952_18444294691105991_41042467813858840_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/021a36f6aff88e7c8b1a3899e8c6be78.jpg" alt="629930562_18444294706105991_1565881866756858698_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/4e3a5ea3a06f619ee1c8c001ebac1bd2.jpg" alt="629521364_18444294679105991_8631286464009137126_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/0f79a09e0eb3e5b4dd9c9179b24e0b90.jpg" alt="629849091_18444294697105991_1240497317942692242_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e4dc791633a8f91bf7335653dcafa3fe.jpg" alt="629630794_18444294703105991_8646156541201539354_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/a1600c050ff45f8083879a53431cb491.jpg" alt="629462729_18444294694105991_3755637312096777566_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DUZ7u9iE9DF/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DUZ7u9iE9DF/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="103">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>30/01/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>On Friday, January 23rd, Island School hosted the postponed Winter Fair, and it was a lively and bustling event! Students showcased their talents in the courtyard and Performance Space, while the Sports Hall was filled with exciting games.<br>A huge thank you to all the parents and staff who volunteered their time and resources—your enthusiasm brought the fair to life!<br>Finally, thank you to everyone who attended. Your participation made it a memorable day and showcased the Island School spirit. See you all next year!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/53be46087ac877a83b83008584195121.jpg" alt="623095075_18442257733105991_1765430024700538140_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/86e11142c611db2576bdedb8b61f1f4f.jpg" alt="623888366_18442257790105991_254710729407349021_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/6c66a78b1e0ac0e0622aa84752720454.jpg" alt="624201682_18442257772105991_7596557119887139820_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3a5458a161176076ae19b36b050010ad.jpg" alt="625001493_18442257742105991_4498619108140776144_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8b371b2e1f5fd9d63f9dbae0f7debd25.jpg" alt="625037392_18442257730105991_7459281637238924327_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/458055c43214495548c68468789061e9.jpg" alt="623449791_18442257760105991_329908848534876489_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/35058876e0b99714eed447e87bf162af.jpg" alt="624786810_18442257787105991_8158804214859234690_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b4bdf65d0bded093df7782313b6f4bff.jpg" alt="625102705_18442257766105991_702343779361543879_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/5aefad5c0a61abc03f1431ae6db717c6.jpg" alt="624422712_18442257757105991_6441811870354919126_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/af1e48ad7e1a84d4f5bf64d557180de6.jpg" alt="624090222_18442257709105991_1910527497243481066_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DUIPB2TE2UG/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DUIPB2TE2UG/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="102">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>30/01/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>On 23 January 2026, Islanders gathered for the annual Whole School Walk in support of the Island School Trust, which assists children in less privileged situations in Hong Kong and abroad.<br>Students showed off their creativity by dressing up as their favourite Disney characters and completing one of three trails: Bowen Road, the Harbour Front, or The Peak loop.<br>Congratulations to everyone who participated and donated.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/d6c4051cab1a22915c14159a1d6d46fa.jpg" alt="625033430_18442255771105991_6400713494797977215_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/68cc2519f28b35c39e5d2ed8687ce663.jpg" alt="623820333_18442255750105991_1151106592564339365_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c0c6aef786912f567932dae69e4a37c3.jpg" alt="624757334_18442255795105991_407470888844459844_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/7ddc2aa9b56510974fb52ca38eebe181.jpg" alt="624191117_18442255744105991_7721005145525098386_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f0f34ca2ca68a69e4d364d8deaf1d0e1.jpg" alt="625005782_18442255780105991_3717507320486934897_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/df78bdd02d2c980ecd4c4be8f8ee4bbf.jpg" alt="624672782_18442255741105991_7810168337306659735_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/21d9b16f04efd96d50f3f09cced06a82.jpg" alt="624145289_18442255747105991_8159584783758514808_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/a0b3f708f098e2253c5972735be80a0e.jpg" alt="625484222_18442255783105991_6427023850032556356_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/87e251920366da2c4a0b9d3b1ecd9b07.jpg" alt="624237242_18442255786105991_7616202536882751294_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DUIMY0XE-RQ/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DUIMY0XE-RQ/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="101">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>23/01/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>On January 20th, we were thrilled to celebrate the resounding success of the Year 11 Social Action Exhibition. Since the start of this academic year, students have been immersed in group social action projects as part of their Global Perspectives IGCSE. This initiative, held under our Explorations programme, focuses on developing core competencies essential to future success in higher education and the modern workforce. By tackling key global issues firsthand, our students are truly evolving into informed global citizens.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/4a7bb0bfd537aee04e6ae4359f57cf35.jpg" alt="621812329_18441034756105991_5174160940938780986_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/5d76e7fe7c6244075cb8f2ca83f18999.jpg" alt="620475234_18441034795105991_2029966710596611383_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c8bc15843cff8dcf8dd90cb4f5a29e8c.jpg" alt="621729577_18441034792105991_5855051352186023431_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/cead401a154f4aacd95cc3bfa77f6039.jpg" alt="621804396_18441034798105991_2030396031891272250_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f559c251cdfe582dcc4f1eef394d7f61.jpg" alt="621812832_18441034807105991_2385638997590113067_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/0dc45a3b16040160c663745523bed1ce.jpg" alt="621752948_18441034768105991_61987053387746481_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3a43f60dbd504dad96f580fcdf090779.jpg" alt="621777881_18441034810105991_2703979245748476000_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/af77abffee14bff058cfa54c2a7d86ce.jpg" alt="621736478_18441034828105991_15667312415580729_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e64f1f07ceda7d1d2d29058b4933ca1d.jpg" alt="621793275_18441034825105991_2418800489012603755_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DT16ueDE_sg/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DT16ueDE_sg/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="100">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>29/12/2025</time>
+                    <div class="lightbox-content">
+                                                    <h3>An ESF Christmas story that melted hearts: Meet Cassidy, a student from ESF Glenealy School with proud Fijian and Scottish heritage. Cassidy dreamed of becoming a vet one day.<br><br>Her Christmas letter found its way to a mystery person at ESF Island School, Kanna — and what happened next was pure holiday magic.<br><br>This is what the ESF community is all about — sharing love, laughter, and friendship across our schools. Wishing everyone a wonderful Christmas break.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <a href="https://www.instagram.com/reel/DS1jgSyjDR0/" target="_blank" rel="nofollow">
+                                                    <img src="/cache/img/0ce3540460ae8d446d092719ff61465c.jpg" alt="608206300_18437790721105991_5853909472722121340_n" loading="lazy" width="682" height="682" />                                                </a>
+                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/reel/DS1jgSyjDR0/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/reel/DS1jgSyjDR0/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="99">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>17/12/2025</time>
+                    <div class="lightbox-content">
+                                                    <h3>As we wrap up another incredible term at Island School, the last day before the Christmas holidays is always a highlight!<br><br>This year, the BTEC Dance Group wowed us with their fantastic performance, and we enjoyed amazing acts from Jayden, the winner of STARS, who sang his winning song "It Had Better Be Tonight," along with Amoures performing "A Sky Full of Stars."<br><br>Keeping with tradition, our teachers and Year 13 students took the stage to sing "Hark! The Herald Angels Sing" and "We Three Kings." Before long, the whole school was jumping, hugging, and singing along to Slade's "Merry Christmas Everybody."<br><br>Wishing everyone a joyful holiday season! We can't wait to see you all in 2026!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <a href="https://www.instagram.com/reel/DSWXTlHDB6z/" target="_blank" rel="nofollow">
+                                                    <img src="/cache/img/cea3f1386af2ef9d4d1e41b9119fc14d.jpg" alt="601776471_18436278583105991_5899271246645852885_n" loading="lazy" width="682" height="682" />                                                </a>
+                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/reel/DSWXTlHDB6z/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/reel/DSWXTlHDB6z/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="98">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>17/12/2025</time>
+                    <div class="lightbox-content">
+                                                    <h3>This year's Christmas celebrations at Island School were a delightful festive occasion, held from December 9-12! The holiday spirit was alive, with Christmas music playing and karaoke during breaks. Activities included the PTA Plush Sale, Elements Marketplace, Christmas cookie decoration, and the Senior Phase Christmas Quiz, where Fleming house emerged as the winner.<br>Funds raised from all the events will go toward supporting the Tai Po Relief Fund.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/9228718c152cb0fb4f4999f5784e3acc.jpg" alt="601438282_18436278121105991_8616789884568789357_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/dc3132307c04dded9cb5804c13a637dc.jpg" alt="601718173_18436278103105991_9183796729305310562_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/d56e73c545f8a61f49312316f11710ee.jpg" alt="601556163_18436278064105991_7343911012741110230_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/1cdea770869341471e18d364b7a14dee.jpg" alt="601989068_18436278100105991_1910365288042656389_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/9109e9378cecee22c9d1fb8ba55196fb.jpg" alt="601745929_18436278142105991_3681792096769772511_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3177ed1dba3e776f2c125f9868deae3e.jpg" alt="601744025_18436278133105991_5415388836393644255_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/dabacd0227d81cde8786c1f2c0e9ebd5.jpg" alt="601494828_18436278091105991_1242411966703068842_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/2dd647e6bde36b350814aed030a9e76c.jpg" alt="601946855_18436278130105991_2916079400505081544_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/71d3b64c23d301427db68093d538ed94.jpg" alt="601543957_18436278106105991_1797610123646056325_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8fbc1d90981bc2e319d1ae10305d01e1.jpg" alt="602585586_18436278145105991_9184707821575981174_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DSWWtq-k8ML/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DSWWtq-k8ML/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section7').data('total'));
+            let slider_loop = ori_total >= 5 ? true : false;
+            $('.record-slider', '#section7').Slider({
+                slides: '.post-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total + 1);
+                    }
+                }
+            });
+
+            $('.post', '#section7').click(function() {
+                $('.lightbox[data-id=' + $(this).data('id') + ']').addClass('show');
+                disableScroll();
+            });
+
+            $('.lightbox .gallery', '#section7').Slider({
+                slides: '.gallery-item',
+                fixedSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    let videos = $('.slider video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    slider.parent().find('.slider-pager').html(current_page + ' / ' + total_page);
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(total_page > 1) {
+                        slider.parent().find('.slider-pager').html('1 / ' + total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+	</section>
+	<footer>
+		<div class="top-container">
+			<div class="container">
+				<div class="up-container">
+											<a href="/en/" class="logo">
+							<img src="/cache/img/450c83f70c2b17288a5a1f60102300c9.png" alt="ESF Island School-rw" loading="lazy" height="140" />						</a>
+																<nav class="social">
+							<ul>
+																<li>
+									<a href="https://www.instagram.com/islandschoolhk/" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="40" height="40" />
+									</a>
+								</li>
+																<li>
+									<a href="https://www.facebook.com/islandschool" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3e297d1.svg" width="40" height="40" />
+									</a>
+								</li>
+																<li>
+									<a href="https://www.youtube.com/channel/UConw2sLSwws0KRVU0G-eE3A" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd429f31c.svg" width="40" height="40" />
+									</a>
+								</li>
+															</ul>
+						</nav>
+				 					</div>
+				<div class="down-container">
+					<div class="left-container">
+													<a href="https://maps.app.goo.gl/R2HJWG2v6YfT4N7V8" target="_blank" rel="nofollow" class="map">
+								<img src="/cache/img/ca7d7ff62cc5bb971c5271d3248d648c.png" alt="擷取" loading="lazy" width="714" height="536" />							</a>
+												<div class="contact">
+							<h2>Contact Information</h2>
+																								<a href="tel:85225247135" class="tel">(+852) 2524 7135</a>
+																<div></div>
+														 							<a href="mailto:school@online.island.edu.hk" class="email">school@online.island.edu.hk</a>
+														 							<p class="address">20 Borrett Road, Mid-levels, Hong Kong 香港半山波老道20號</p>
+													</div>
+												<div class="subscribe">
+							<form action="/en/subscribe/" method="post">
+								<h2>Connect with Us</h2>
+																	<input type="text" autoComplete="off" placeHolder="Your email address" maxLength="128" class="text" name="email" value="" />									<div class="submit">
+										<a class="handler">Submit</a>
+										<span>Slide to Right</span>
+									</div>
+									<input type="hidden" name="back" value="/en/" />															</form>
+						</div>
+						<script type="text/javascript">
+							$(document).ready(function() {
+								$('form', '.subscribe').validate({
+									autoScroll: false,
+									setting: [
+										[ 'email', {
+											method: [
+												[ 'req' ],					
+												[ 'email' ]					
+											]
+										} ]
+									],
+									onError: function(form) {
+										form.slideSubmit('revert');
+									}
+								}).slideSubmit();
+
+															});
+						</script>
+											</div>
+					<div class="right-container">
+												<nav class="menu2">
+							<ul>
+								<li>
+									<h2>Navigation</h2>
+								</li>
+																	<li>
+										<a href="https://island.esf.edu.hk/en/about_us/principals_welcome/">About Us</a>
+									</li>
+																	<li>
+										<a href="https://island.esf.edu.hk/en/outstanding_education/academic_curriculum/academic_pathway/">Outstanding Education</a>
+									</li>
+																	<li>
+										<a href="https://island.esf.edu.hk/en/outstanding_experiences/campus/">Outstanding Experiences</a>
+									</li>
+																	<li>
+										<a href="https://island.esf.edu.hk/en/outstanding_people/leadership_team/">Outstanding People</a>
+									</li>
+																	<li>
+										<a href="https://island.esf.edu.hk/en/admissions/admissions_overview/">Admissions</a>
+									</li>
+																	<li>
+										<a href="https://island.esf.edu.hk/en/WorkWithUs/">Work With Us</a>
+									</li>
+															</ul>
+						</nav>
+																		<nav class="menu3">
+							<ul>
+								<li>
+									<h2>Quick Links</h2>
+								</li>
+																	<li>
+										<a href="https://join-us.esf.edu.hk/" target="_blank" rel="nofollow">About ESF</a>
+									</li>
+																	<li>
+										<a href="https://www.esfexplore.org.hk/" target="_blank" rel="nofollow">ESF Explore</a>
+									</li>
+																	<li>
+										<a href="https://island.esf.edu.hk/upload/files/1/file/67bc370b680ff.pdf">School Calendar</a>
+									</li>
+															</ul>
+						</nav>
+											</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-container">			
+			<div class="container">
+				<div class="wrapper">
+					<p class="copyright">Copyright © English Schools Foundation. Powered by <a href="//www.anglia.com.hk" target="_blank">ANGLIA</a>.</p>
+					<a href="/en/sitemap/" class="sitemap">Sitemap</a>
+				</div>
+								<nav class="logo">
+			 		<ul>
+			 						 			<li>
+			 				<a>
+								<img src="/upload/files/1/logo4/660fd31b94804.png" height="131" />
+							</a>
+			 			</li>
+			 						 			<li>
+			 				<a>
+								<img src="/upload/files/1/logo4/660fd31d2b17e.png" height="131" />
+							</a>
+			 			</li>
+			 						 			<li>
+			 				<a>
+								<img src="/upload/files/1/logo4/660fd31f274d4.png" height="131" />
+							</a>
+			 			</li>
+			 						 		</ul>
+			 	</nav>
+							</div>
+		</div>
+	</footer>
+	<button id="back-to-top"></button>
+			<div id="floating">
+							<a class="logo">
+					<img src="/cache/img/fa5d37d65949dd2b78b4fde0e268a17e.png" alt="Island School Logo" loading="lazy" width="62" height="53" />				</a>
+																				<a class="bg-colour1"  href="https://join-us.esf.edu.hk/admissions-primary-secondary/" target="_blank" rel="nofollow">
+													<img src="/upload/shortcut/1/icon/660fd9ba6ff5d.svg" width="60" height="60" />
+												<span>Apply</span>
+					</a>
+														<a class="bg-colour1"  href="https://island.esf.edu.hk/en/admissions/contact_admissions/">
+													<img src="/upload/shortcut/2/icon/660fd9ca7b6eb.svg" width="60" height="60" />
+												<span>Call</span>
+					</a>
+														<a class="bg-colour1"  href="https://island.esf.edu.hk/en/enquiry/?SchoolCode=IS">
+													<img src="/upload/shortcut/3/icon/6777b67b9a0b2.svg" width="60" height="60" />
+												<span>Enquire</span>
+					</a>
+									</div>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#floating').addClass('animate');
+			});
+		</script>
+				<div id="accept-cookies">
+			<article class="editor"><p>Welcome and please be advised that ESF uses cookies. By accessing an ESF, ESL or PTA web site and other online ESF services, such as ESF&rsquo;s mobile app, users agree that ESF can store and access cookies, IP addresses and use other methods in order to collect website usage data, and improve user&rsquo;s online experience. By continuing to access this web site, users agree to the use of cookies, which is handled in accordance to the ESF Data Privacy Policy. Information collected via cookies is handled in accordance with the ESF Personal Data Handling Policy and its related Personal Information Collection Statements (&ldquo;PICS&rdquo;). A copy of the PICS can be found on the ESF web site.</p></article>
+			<div class="buttons">
+				<button type="" class="accept">Accept</button>			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('button', '#accept-cookies').click(function() {
+					$('#accept-cookies').remove();
+					$.ajax({
+						url: genurl('cookies', 'main'),
+						type: 'post',
+						data: {
+							accept: 'y'
+						},
+						success: function(response) {
+						},
+						async: false
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

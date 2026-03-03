@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Page Not Found - University of Galway</title>
+<!--pre-body-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="icon" href="//www.universityofgalway.ie/media/nuigalwayie/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="//www.universityofgalway.ie/media/nuigalwayie/favicon.ico" type="image/x-icon" /><!-- favicon-->
+<style>
+@import url(//www.universityofgalway.ie/cdn/css/nuig.css);
+@import url(//www.universityofgalway.ie/cdn/css/mammoth-style.css);
+@import url(//www.universityofgalway.ie/cdn/css/t4-hacks-2022.css);
+</style>
+<script src="//www.universityofgalway.ie/cdn/share/js/compiled.js"></script>
+<script src="//www.universityofgalway.ie/cdn/share/js/jquery/plugins/jquery.cycle2.js"></script>
+<script src="//www.universityofgalway.ie/cdn/share/js/jquery/plugins/jquery.cycle2.caption2.js"></script>
+<script src="//www.universityofgalway.ie/cdn/share/js/jquery/plugins/jquery.cycle2.swipe.js"></script>
+<script src="//www.universityofgalway.ie/cdn/js/jquery.dataTables.min.js"></script>
+<script src="//www.universityofgalway.ie/cdn/js/dataTables.tableTools.min.js"></script>
+<script type="text/javascript" src="/media/nuigalwayie/styleassets/js/table-sorter.min.js"></script> <!--table sort-->
+<script type="text/javascript" src="/media/nuigalwayie/styleassets/js/quick-search.js"></script> <!--quick search-->
+<link rel="stylesheet" type="text/css" media="screen" href="/media/nuigalwayie/styleassets/css/jquery.fancybox-1.3.4.css" title=""/> <!--Fancybox--> 
+<script type="text/javascript" src="/media/nuigalwayie/styleassets/js/jquery.fancybox-1.3.4.pack.js"></script> <!--jquery.fancybox-1.3.4.pack-->
+<link rel="stylesheet" type="text/css" media="screen" href="/media/nuigalwayie/styleassets/css/jquery.jcarousel.css" title=""/> <!--jCarousel-->
+<link rel="stylesheet" type="text/css" media="screen" href="/media/nuigalwayie/styleassets/css/skin.css" title=""/> <!--Gallery skin-->
+<script type="text/javascript" src="/media/nuigalwayie/styleassets/js/jquery.jcarousel.pack.js"></script> <!--jCarousel pack -->
+<script src="//ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js"  djConfig="parseOnLoad:true"></script>
+<script src="//www.universityofgalway.ie/cdn/js/t4-hacks-2022.js"></script>
+<script src="//www.universityofgalway.ie/cdn/js/local-2022.js"></script>
+<script src="//www.universityofgalway.ie/cdn/js/reciteme.js" defer></script>
+
+<!-- Google Tag Manager --> 
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('consent', 'default', {
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500,
+  });
+
+if (consentAnalytics || consentMarketing) {
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MHWNFC9');
+}
+</script> 
+<!-- End Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6" />
+<!--end-pre-body--> <!--header (pre body)-->
+<meta name="keywords" content="" /><!--DC.Abstract-->
+<meta name="description" content="" /><!--DC.Author-->
+</head>
+<body class="default  channel_id_8 section_id_102936 landingPage custom courseDetailPage">
+<!--post-body-pre-breadcrumb-->
+<div id="site">
+    <div id="siteWrapper">
+        <div id="keyboardNav" style="height: 1px; overflow:hidden;">
+           <a id="j2c" tabindex="0" href="#pageContentWrapper">Jump to Content</a> &nbsp;
+           <a id="j2s" tabindex="0" style="display: none" href="#side-nav">Jump to Side Navigation Bar</a>
+        </div>
+        <!-- cookie manager -->
+<div id="cookie-info" class="cookie-info" style="display:none;">
+        <div class="cookie-text cookie-wrapper">
+            <!--div id="closebox"><a href="javascript:toggleCookieInfo();" aria-label="Close Cookie Manager Popup">&times;</a></div-->
+            <h3>Manage Cookies</h3>
+<form action="#" method="post">
+<strong>Allow University of Galway to use Cookies for:</strong>
+<div class="centered">
+<span class="nowrap"><label for="func">Functionality:</label>&nbsp;<input type="checkbox" id="func" name="func">&nbsp;&nbsp;</span>
+<span class="nowrap"><label for="pref">Your preferences:</label>&nbsp;<input type="checkbox" id="pref" name="pref">&nbsp;&nbsp;</span>
+<span class="nowrap"><label for="anal">Analytics:</label>&nbsp;<input type="checkbox" id="anal" name="anal">&nbsp;&nbsp;</span>
+<span class="nowrap"><label for="ads">Ads:</label>&nbsp;<input type="checkbox" id="ads" name="ads"></span>
+<br><button class="ticked" id="consentAll" type="submit">Allow All</button>
+<button type="button" class="bw" id="consentNone">Allow None</button>
+<button type="button" class="green" id="consentSome">Allow Selected</button>
+</div>
+</form>
+<p>Some features need <abbr title="Tiny text files, saved on your device">cookies</abbr> to work properly. Cookies also let us (a) remember your preferences, (b) collect <em>anonymous</em> usage statistics, and (c) see how well our online ads are working.</p>
+<p>No personal data is stored on these cookies but, under EU law, we still need to ask you this every 6 months.
+To learn more about our use of cookies, view our <a href="//www.nuigalway.ie/footer-links/privacy.html#cookies">Privacy Policy</a>.</p>
+        </div><!--end of wrapper-->
+    </div>
+<!-- end of cookie manager --> <!-- Cookie Mgr -->
+        <div id="header" role="banner">
+            <div id="headerWrapper">
+                <div id="logo">
+                    <div id="logoWrapper">
+                        <a href="//www.universityofgalway.ie/?ref=logo" title="Go to the University of Galway homepage"><span>University of Galway</span></a>
+                    </div>
+                </div>
+                <div id="search" role="search">
+                    <div id="searchWrapper">
+                        <div class="searchbox">
+                            <div class="searchboxWrapper">
+                                <form id="srchfrm" method="get" onSubmit="javascript:nuigSearch();">
+                                    <input class="text" type="text" name="q" aria-label="Search Words" title="Your search phrase" placeholder="SEARCH" />
+                                    <button class="search" aria-label="Search this site" type="submit" name="submit"><span>Search</span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom"><span></span></div>
+            </div>
+        </div>
+        <div id="revealNavigationButton">
+            <div id="darkOverlay"></div>
+            <a class="reveal" href="#primaryNavigation"><span>Menu</span></a>
+        </div>
+        <div id="navigation" role="navigation" aria-label="university">
+            <div id="navigationWrapper">
+                <div id="primaryNavigation">
+                    <div id="primaryNavigationWrapper">
+                        <div class="content">
+                            <ul>
+                                <li class="first has_child node_id_1033">
+                                    <a href="//www.universityofgalway.ie/courses/" class="first has_child node_id_1033"><span>Courses</span></a>
+                                    <div class="dropdown for_node_id_1033">
+                                        <div class="menu">
+                                            <ul><li><a href="/courses/undergraduate-courses/">Undergraduate Courses</a></li><li><a href="/courses/taught-postgraduate-courses/">Postgraduate Taught Courses</a></li><li><a href="/courses/adult-and-continuing-education-courses/">Professional, Part-time and Evening Courses</a></li><li><a href="/courses/research-postgraduate-programmes/">PhDs and Research Masters</a></li><li><a href="/onlinelearning/">Online Courses</a></li><li><a href="/courses/micro-credentials/">Micro-credentials</a></li><li><a href="/courses/how-to-apply/">How to Apply</a></li><li><a href="/courses/fees-and-funding/fees.html">Fees & Funding</a></li><li><a href="/courses/modes-of-study/">Modes of Study</a></li><li><a href="/courses/open-days/">Open Days</a></li><li><a href="/scholarships/">Scholarships</a></li><li><a href="/rpl/">Recognition of Prior Learning</a></li></ul>
+                                        </div>
+                                        <div class="info">
+                                            <div class="thumb">
+                                                <span class="thumb_wrap"><span class="thumb_wrap_inner"><img src="//www.universityofgalway.ie/cdn/images/dropdown-thumb-1.jpg" alt="Tree Aley"/></span></span>
+                                            </div>
+                                            <div class="text">
+                                                <h4>Courses</h4>
+                                                <p>
+                                                    Choosing a course is one of the most important decisions you'll ever make! View our courses and see what our students and lecturers have to say about the courses you are interested in at the links below.
+                                                </p>
+                                                <p>
+                                                    <a href="//www.universityofgalway.ie/courses/"><strong>View Courses</strong></a>
+                                                </p>
+                                            </div>
+                                            <div class="bottom"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="middle has_child node_id_1034">
+                                    <a href="//www.universityofgalway.ie/university-life/" class="middle has_child node_id_1034"><span>University Life</span></a>
+                                    <div class="dropdown for_node_id_1034">
+                                        <div class="menu">
+                                            <ul><li><a href="/student-life/accommodation/">Accommodation Advisory Service</a></li><li><a href="/student-life/campus-activities/">Campus Activities</a></li><li><a href="/student-life/student-support/">Student Support</a></li><li><a href="/student-life/study-abroad/">Study Abroad</a></li><li><a href="/global-galway/">Global Galway</a></li><li><a href="https://www.universityofgalway.ie/mature/">Mature Students</a></li><li><a href="/student-life/students-with-disabilities/">Students with Disabilities</a></li><li><a href="/sap/">Student Ambassador Programme</a></li><li><a href="/forparents/">For Parents and Guardians</a></li><li><a href="/student-life/access/">Access Student Information</a></li><li><a href="/student-life/galwaylife/">Life in Galway</a></li></ul>
+                                        </div>
+                                        <div class="info">
+                                            <div class="thumb">
+                                                <span class="thumb_wrap"><span class="thumb_wrap_inner"><img src="//www.universityofgalway.ie/cdn/images/dropdown-thumb-2.jpg" alt="Bridge"/></span></span>
+                                            </div>
+                                            <div class="text">
+                                                <h4>University Life</h4>
+                                                <p>
+                                                    Each year more than 4,000 choose University of Galway as their University of choice. Find out what life at University of Galway is all about here.
+                                                </p>
+                                                <p>
+                                                    <a href="//www.universityofgalway.ie/university-life/"><strong>Read about life at University of Galway</strong></a>
+                                                </p>
+                                            </div>
+                                            <div class="bottom"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="middle has_child node_id_23">
+                                    <a href="//www.universityofgalway.ie/about-us/" class="middle has_child node_id_23"><span>About University&nbsp;of&nbsp;Galway</span></a>
+                                    <div class="dropdown for_node_id_23">
+                                        <div class="menu">
+                                            <ul><li><a href="/about-us/news-and-events/">News & Events</a></li><li><a href="/strategy2030/">Strategy 2025-2030</a></li><li><a href="/about-us/jobs/">Jobs</a></li><li><a href="/about-us/press/">Press</a></li><li><a href="https://impact.universityofgalway.ie/" target="_blank">Cois Coiribe (Publication)</a></li><li><a href="/about-us/contact-us/">Contact Us</a></li><li><a href="/about-us/university-management/">University Leadership</a></li><li><a href="http://www.nuigalway.ie/sustainability">Sustainability</a></li><li><a href="/about-us/online-shop/">Gift Shop</a></li><li><a href="/about-us/open-day/">Open Day</a></li><li><a href="/medtech/">Medtech</a></li><li><a href="/journey/">Journey</a></li></ul>
+                                        </div>
+                                        <div class="info">
+                                            <div class="thumb">
+                                                <span class="thumb_wrap"><span class="thumb_wrap_inner"><img src="//www.universityofgalway.ie/cdn/images/dropdown-thumb-3.jpg" alt="Lake"/></span></span>
+                                            </div>
+                                            <div class="text">
+                                                <h4>About University&nbsp;of&nbsp;Galway</h4>
+                                                <p>
+                                                    Since 1845, University of Galway has been sharing the highest quality teaching and research with Ireland and the world. Find out what makes our University so special – from our distinguished history to the latest news and campus developments.
+                                                </p>
+                                                <p>
+                                                    <a href="//www.universityofgalway.ie/about-us/"><strong>About University of Galway</strong></a>
+                                                </p>
+                                            </div>
+                                            <div class="bottom"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="middle has_child node_id_1118">
+                                    <a href="//www.universityofgalway.ie/colleges-and-schools/" class="middle has_child node_id_1118"><span>Colleges &&nbsp;Schools</span></a>
+                                    <div class="dropdown for_node_id_1118">
+                                        <div class="menu">
+                                            <ul><li><a href="/adult-learning/">Adult Learning and Professional Development</a></li><li><a href="/colleges-and-schools/arts-social-sciences-and-celtic-studies/">College of Arts, Social Sciences, & Celtic Studies</a></li><li><a href="/business-public-policy-law/">College of Business, Public Policy and Law</a></li><li><a href="/medicine-nursing-and-health-sciences/">College of Medicine, Nursing & Health Sciences</a></li><li><a href="/science-engineering/">College of Science and Engineering</a></li></ul>
+                                        </div>
+                                        <div class="info">
+                                            <div class="thumb">
+                                                <span class="thumb_wrap"><span class="thumb_wrap_inner"><img src="//www.universityofgalway.ie/cdn/images/dropdown-thumb-4.jpg" alt="Building"/></span></span>
+                                            </div>
+                                            <div class="text">
+                                                <h4>Colleges &&nbsp;Schools</h4>
+                                                <p>
+                                                    University of Galway has earned international recognition as a research-led university with a commitment to top quality teaching across a range of key areas of expertise.
+                                                </p>
+                                                <p>
+                                                    <a href="//www.universityofgalway.ie/colleges-and-schools/"><strong>Colleges and Schools</strong></a>
+                                                </p>
+                                            </div>
+                                            <div class="bottom"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="middle has_child node_id_1039">
+                                    <a href="//www.universityofgalway.ie/our-research/" class="middle has_child node_id_1039"><span>Research&nbsp;& Innovation</span></a>
+                                    <div class="dropdown for_node_id_1039">
+                                        <div class="menu">
+                                            <ul><li><a href="/our-research/listings/">Research Areas</a></li><li><a href="/our-research/facilities/">Facilities</a></li><li><a href="/research-office/">Research Office</a></li><li><a href="/innovation/">Innovation Office</a></li><li><a href="https://research.universityofgalway.ie/" target="_blank">Research Portal</a></li><li><a href="/rdc/">Researcher Development Centre</a></li><li><a href="/researchcommunityportal/">Research Community Portal (Internal)</a></li><li><a href="/our-research/hrexcellenceinresearch/">HR Excellence in Research </a></li><li><a href="/our-research/researchcentresinstitutesandunits/">Research centres, institutes, and units</a></li></ul>
+                                        </div>
+                                        <div class="info">
+                                            <div class="thumb">
+                                                <span class="thumb_wrap"><span class="thumb_wrap_inner"><img src="//www.universityofgalway.ie/cdn/images/dropdown-thumb-5.jpg" alt="Buildings"/></span></span>
+                                            </div>
+                                            <div class="text">
+                                                <h4>Research & Innovation</h4>
+                                                <p>
+                                                    University of Galway’s vibrant research community take on some of the most pressing challenges of our times.
+                                                </p>
+                                                <p>
+                                                    <a href="//www.universityofgalway.ie/our-research/" aria-label="Research Overview"><strong>Overview</strong></a>
+                                                </p>
+                                            </div>
+                                            <div class="bottom"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="middle has_child node_id_1040">
+                                    <a href="//www.universityofgalway.ie/business-industry/" class="middle has_child node_id_1040"><span>Business &&nbsp;Industry</span></a>
+                                    <div class="dropdown for_node_id_1040">
+                                        <div class="menu">
+                                            <ul><li><a href="/innovation/">Innovation Office</a></li><li><a href="/career-development-centre/servicesforemployers/">Career Development Centre (for Employers)</a></li><li><a href="/innovation/business-innovation-centre/">Business Innovation Centre</a></li><li><a href="/events/">Conference & Event Centre</a></li></ul>
+                                        </div>
+                                        <div class="info">
+                                            <div class="thumb">
+                                                <span class="thumb_wrap"><span class="thumb_wrap_inner"><img src="//www.universityofgalway.ie/cdn/images/dropdown-thumb-6.jpg" alt="Building"/></span></span>
+                                            </div>
+                                            <div class="text">
+                                                <h4>Guiding Breakthrough Research at University of Galway</h4>
+                                                <p>
+                                                    We explore and facilitate commercial opportunities for the research community at University of Galway, as well as facilitating industry partnership.
+                                                </p>
+                                                <p>
+                                                    <a href="//www.universityofgalway.ie/business-industry/" aria-label="Business and Industry Overview"><strong>Overview</strong></a>
+                                                </p>
+                                            </div>
+                                            <div class="bottom"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="middle has_child node_id_1041">
+                                    <a href="//www.universityofgalway.ie/alumni-friends/" class="middle has_child node_id_1041"><span>Alumni&nbsp;& Friends</span></a>
+                                    <div class="dropdown for_node_id_1041">
+                                        <div class="menu">
+                                            <ul><li><a href="/alumni-friends/alumni-services/">Alumni Services</a></li><li><a href="/alumni-friends/alumniawards/">Alumni Awards</a></li><li><a href="/alumni-friends/coiscoiribe.html">Cois Coiribe </a></li><li><a href="/alumni-friends/get-in-touch/">News from our Social Channels</a></li><li><a href="/alumni-friends/updateyourdetails/">Update Your Details</a></li><li><a href="/alumni-friends/reunions/">Reunions</a></li><li><a href="/alumni-friends/upcomingalumnievents/">Upcoming Alumni Events</a></li><li><a href="/alumni-friends/previousalumnievents/">Previous Alumni Events</a></li><li><a href="/about-us/news-and-events/">University News</a></li><li><a href="/alumni-friends/galwayuniversityfoundation/">Galway University Foundation</a></li><li><a href="/alumni-friends/messagefromthepresident/">Message from the President</a></li><li><a href="/alumni-friends/contactus/">Contact us</a></li></ul>
+                                        </div>
+                                        <div class="info">
+                                            <div class="thumb">
+                                                <span class="thumb_wrap"><span class="thumb_wrap_inner"><img src="//www.universityofgalway.ie/cdn/images/alumni.jpg" alt="Graduates"/></span></span>
+                                            </div>
+                                            <div class="text">
+                                                <h4>Alumni & Friends</h4>
+                                                <p>
+                                                    There are 128,000 University of Galway alumni worldwide. Stay connected to your alumni community! Join our social networks and update your details online.
+                                                </p>
+                                                <p>
+                                                    <a href="//www.universityofgalway.ie/alumni-friends/" aria-label="Alumni Overview"><strong>Overview</strong></a>
+                                                </p>
+                                            </div>
+                                            <div class="bottom"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last has_child node_id_1042">
+                                    <a href="//www.universityofgalway.ie/community-engagement/" class="last has_child node_id_1042"><span>Community Engagement</span></a>
+                                    <div class="dropdown for_node_id_1042">
+                                        <div class="menu">
+                                            <ul><li><a href="/community-engagement/about-engagement/">About Engagement</a></li><li><a href="/community-engagement/learning-with-community/">Learning with Community</a></li><li><a href="/community-engagement/community-partnerships/">Community Partnerships</a></li><li><a href="/community-engagement/outreach/">Outreach</a></li><li><a href="/community-engagement/universityofsanctuary/">University of Sanctuary</a></li></ul>
+                                        </div>
+                                        <div class="info">
+                                            <div class="thumb">
+                                                <span class="thumb_wrap"><span class="thumb_wrap_inner"><img src="//www.universityofgalway.ie/cdn/images/dropdown-thumb-8.jpg" alt="Building"/></span></span>
+                                            </div>
+                                            <div class="text">
+                                                <h4>Community Engagement</h4>
+                                                <p>
+                                                    At University of Galway, we believe that the best learning takes place when you apply what you learn in a real world context. That's why many of our courses include work placements or community projects.
+                                                </p>
+                                                <p>
+                                                    <a href="//www.universityofgalway.ie/community-engagement/"><strong>Real Learning</strong></a>
+                                                </p>
+                                            </div>
+                                            <div class="bottom"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="bottom"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="globalNavigation">
+                    <div id="globalNavigationWrapper">
+                        <h3><span>Gateway Pages</span></h3>
+                        <ul>
+                            <li class='first'>
+                                <a href="//www.universityofgalway.ie/prospective-students/" class="first"><span>Prospective Students</span></a>
+                            </li>
+                            <li class='middle'>
+                                <a href="//www.universityofgalway.ie/current-students/" class="middle"><span>Current Students</span></a>
+                            </li>
+                            <li class='middle'>
+                                <a href="//www.universityofgalway.ie/visitors/" class="middle"><span>Visitors</span></a>
+                            </li>
+                            <li class='last'>
+                                <a href="//www.ollscoilnagaillimhe.ie/" class="middle"><span>Ollscoil na Gaillimhe</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="utilityNavigation" role="navigation" aria-label="quick links">
+                    <div id="utilityNavigationWrapper">
+                        <h3>Quicklinks</h3>
+                        <ul>
+                            <li class="translation">
+                                <a id="translateLink" href="//www.ollscoilnagaillimhe.ie/">Ollscoil na Gaillimhe</a>
+                            </li>
+                            <li class="library">
+                                <a href="//library.universityofgalway.ie/">Library</a>
+                            </li>
+                            <li class="accessibility"><a id="enableRecite" href="javascript:loadService();" aria-label="Recite Me Website Accessibility and Language bar">
+<img src="https://www.universityofgalway.ie/media/nuigalwayie/styleassets/images/icons/accessibility.png" alt="" aria-label="accessibility symbol"/>Accessibility & Language</a>
+<!--
+                                <a href="#" onclick="$('li.accessibility > div.dropdown').toggle();" aria-label="Website Text Options"><span class="smaller">A</span><span class="bigger">A</span></a>
+
+                                  <div class="dropdown">
+                                    <ul>
+                                        <li><a href="#" class="normal" aria-label="Normal sized text" onclick="$('body').removeClass('larger contrast'); return false;"><span class="letter">A</span>Normal</a></li>
+                                        <li><a href="#" class="larger" aria-label="Larger sized text" onclick="$('body').removeClass('contrast').addClass('larger'); return false;"><span class="letter">A</span>Larger</a></li>
+                                        <li class="last"><a href="#" class="contrast" aria-label="high contrast view" onclick="$('body').removeClass('larger').addClass('contrast'); return false;"><span class="letter">A</span>High Contrast</a></li>
+                                    </ul>
+                                </div>  
+-->
+                            </li>
+                            <li class="quick_links"><a href="#" onclick="$('li.quick_links > div.dropdown').toggle();" aria-label="Dropdown menu for Students and Staff">Students & Staff</a>
+                                <div class="dropdown">
+                                    <div class="columnOne">
+                                        <h4>Students</h4>
+                                        <ul>
+                                            <li><a href="//www.universityofgalway.ie/registration/">Registration</a></li>
+                                            <li><a href="https://universityofgalway.instructure.com">Canvas</a></li>
+                                            <li><a href="https://outlook.office.com/">Office 365 (Email)</a></li>
+                                            <li><a href="//www.universityofgalway.ie/student-registry-helpdesk/">Student Registry Helpdesk</a></li>
+                                            <li><a href="//www.universityofgalway.ie/courses/fees-and-funding/">Fees & Grants</a></li>
+                                            <li><a href="//www.universityofgalway.ie/exams/">Exams</a></li>
+                                            <li><a href="//www.universityofgalway.ie/exams/timetable-advice/examtimetable/">Exam Timetables</a></li>
+                                            <li><a href="//library.universityofgalway.ie/">Library</a></li>
+                                            <li><a href="//www.universityofgalway.ie/academic-skills/">Academic Skills Hub</a></li>
+                                            <li><a href="//www.universityofgalway.ie/student-services/">Student Services</a></li>
+                                            <li><a href="//www.universityofgalway.ie/buildings/service-helpdesk/parking-get-to-around/">Parking</a></li>
+                                            <li><a href="//www.universityofgalway.ie/cki/">Student Volunteering</a></li>
+                                            <li><a href="//www.su.nuigalway.ie/">Students' Union</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="columnTwo">
+                                        <h4>Staff</h4>
+                                        <ul>
+                                            <li><a href="https://outlook.office.com/">Office 365 (Email)</a></li>
+                                            <li><a href="https://agresso.nuigalway.ie/">Financial System (Agresso)</a></li>
+                                            <li><a href="//www.universityofgalway.ie/registry/">Academic Records</a></li>
+                                            <li><a href="https://www.universityofgalway.ie/researchcommunityportal/">Research Community Portal</a></li>
+                                            <li><a href="//www.universityofgalway.ie/hr/">Human Resources</a></li>
+                                            <li><a href="//www.universityofgalway.ie/registry/academic-term-dates/">Academic Terms Dates</a></li>
+                                            <li><a href="//www.universityofgalway.ie/celt/">CELT</a></li>
+                                            <li><a href="//www.universityofgalway.ie/information-solutions-and-services/">Information Solutions & Services (IT Services)</a></li>
+                                            <li><a href="//www.universityofgalway.ie/buildings/">Buildings & Estates</a></li>
+                                            <li><a href="//servicedesk.nuigalway.ie/">Service Desk</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rowBottom">
+                                        <ul>
+                                            <li><a href="//www.universityofgalway.ie/students/">Students</a></li>
+                                            <li><a href="//www.universityofgalway.ie/staff/">Staff</a></li>
+                                            <li class="last"><a href="//www.universityofgalway.ie/colleges-and-schools/">Colleges & Schools</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" role="main">
+            <div id="contentWrapper">
+                <!-- beginning of: node_id_1034 (templates/node/page/default.html) -->
+                <div id="node_id_1034" class="node node_group-page ">
+                    <div class="node-page-default">
+                        <div class="page fibonacci-2-1 ">
+                            <div class="pageHeader">
+                                <div class="pageHeaderWrapper">
+                                    <div class="content">
+                                        <div class="breadcrumb number_of_items_1">
+                                            <a href="/" title="University of Galway Home"><span>Home</span></a>
+                                            <span class="path_delimiter last">&#x25bb;</span>
+<!--end-post-body-pre-breadcrumb-->  <!-- pre breadcrumb -->
+<script>var newAddr="https://www.universityofgalway.ie/hardiman-scholarships/eligibility/"; if (newAddr != "") { $('#translateLink').text('LEAGAN GAEILGE');$('#translateLink').attr('href', ''+newAddr);}</script> <!-- change language toggle -->
+<a href="/errorpages/">Error Pages</a><span class="path_delimiter "><span class="chevron">&#x25bb;</span></span><a href="/404.php">Page Not Found</a>  <!-- Breadcrumb -->
+</div>
+
+			<h1 class="pageTitle"><span>Page Not Found</span></h1>
+			<div class="description">
+				<!-- navigation object : Meta DC.Description -->Error 404
+			</div>
+<!--post-breadcrumb-pre-leftnav-->
+		</div>
+	</div>
+</div>
+	<div id="pageWrapper">
+
+		<div id="pageSide">
+			<div id="pageSideWrapper">
+
+				<div id="secondaryNavigation" role="navigation" aria-label="subsite">
+					<div id="secondaryNavigationWrapper">
+						<div id="rootMenuItem">
+							<a href="#" data-original-text="Expand all"><span>Expand all</span></a>
+						</div>
+<!--end-post-breadcrumb-pre-leftnav--> <!--header (post breadcrumb)-->
+<ul id="side-nav"><li><span class="currentbranch0"><a href="/404.php">Page Not Found</a></span></li><li><a href="/403.php">Access Forbidden</a></li><li><a href="/500.php">Internal Server Error</a></li></ul> <!-- menu - level 3 -->
+<!--post-leftnav-->
+					</div>
+				</div>
+				
+				<div id="pageSideContent" role="complementary">
+					<div id="pageSideContentWrapper">
+						
+					</div>
+				</div>
+								
+			</div>
+		</div>
+
+		<div id="pageContent">
+			<div id="pageContentWrapper">
+<!--end-post-leftnav--> <!--header (post menu)-->
+<div class="column-content">
+<h2>Sorry - We cannot find the web page you were looking for.</h2>
+<p>Please use the <a href="javascript:go2srch()" id="srchbox" title="Jump to the search box" name="srchbox">Search box</a>, on the top-right of this page, to find the information you were looking for.</p>
+</div><span name="d.en.386818"></span>
+<div class="column-content">
+<p>We apologise for any inconvenience.</p>
+<hr />
+<h2>Reasons why this can happen</h2>
+<p>We've probably re-organised the information on this website to make it easier to use, or because a unit within the University has been re-organised / renamed.</p>
+<p>Unfortunately, changes like this can cause</p>
+<ul>
+<li>browser bookmarks</li>
+<li>links on other websites (including Google)</li>
+<li>and web addresses you type into the browser</li>
+</ul>
+<p>to go at a non-existent page.&nbsp; When you click on them, you'll see this message.&nbsp; <br />You can also see this page if you mis-type a web address.</p>
+<p>This error has been recorded by the web server - we hope to resolve the issue, if we can, in the near future.</p>
+</div><script>
+function go2srch() {
+    document.querySelector('#srchfrm > input').style.backgroundColor = "#ffff99";
+    document.querySelector('#srchfrm > input').focus();
+}
+</script></div>
+		</div>
+		
+		<div id="pageRightColumn">
+			<div id="pageRightColumnWrapper">
+				<!-- sidebar nav object html/sidebar-->
+			</div>
+		</div>
+
+ <!-- Downloads -->
+<!--footer-->
+		<div class="bottom"><span></span></div>
+
+	</div>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+<!-- end of: node_id_1034 (templates/node/page/default.html) -->
+			</div>
+		</div>
+
+		<div id="footer" role="contentinfo" aria-label="footer">
+			<div id="footerWrapper">
+
+				<div id="footerInfo">
+	<div id="footerInfoWrapper" class="columnLayout">
+
+		<div class="columnOne ofThree">
+			<div class="columnWrapper">
+
+				<h3><span>About University of Galway</span></h3>
+
+				<p>
+                  Founded in 1845, we've been inspiring students for <span id="uniAge">over 175</span> years. University of Galway has earned international recognition as a research-led university with a commitment to top quality teaching.<br><br>
+				</p>
+
+				<span class="fundsLogoWrapper">
+					<img src="//www.universityofgalway.ie/cdn/images/eu_funds_badge.gif" alt="Co-Funded by the Irish Government and the EU"/>
+				</span>
+			</div>
+		</div>
+<script>
+let today=new Date(); $('span#uniAge').html(today.getFullYear() - 1845);
+</script>
+		<div class="columnTwo ofThree">
+			<div class="columnWrapper">
+
+				<h3><span>CONTACT</span></h3>
+
+				<p>
+					University of Galway,<br/>
+					University Road,<br/>
+					Galway, Ireland<br/>
+H91 TK33<br/>
+					T.  +353 91 524411
+				</p>
+
+				<p class="contactIcons">
+					<a class="pin" aria-label="Get Directions" href="//www.universityofgalway.ie/about-us/contact-us/where-to-find-us.html">Get Directions</a>
+					<a class="email" aria-label="Email us" href="//www.universityofgalway.ie/about-us/contact-us/">Send Us an Email</a>
+				</p>
+
+			</div>
+		</div>
+			
+		<div class="columnThree ofThree">
+			<div class="columnWrapper">
+
+				<h3><span>Connect</span></h3>
+
+				<p class="socialIcons">
+					<!--a class="twitter" href="https://twitter.com/uniofgalway" aria-label="Twitter Link" target="_blank"><span>Twitter</span></a-->
+                                        <a class="instagram" href="https://www.instagram.com/universityofgalway/" aria-label="Instagram Link" target="_blank"><span>Instagram</span></a>
+					<a class="facebook" href=" https://www.facebook.com/universityofgalway" aria-label="Facebook Link" target="_blank"><span>Facebook</span></a>
+					<a class="youtube" href="https://www.youtube.com/c/universityofgalway" aria-label="YouTube Link" target="_blank"><span>YouTube</span></a>
+					<a class="linkedin" href="https://www.linkedin.com/school/universityofgalway" aria-label="LinkedIn Link" target="_blank"><span>LinkedIn</span></a>
+					<a class="rss" href="//www.universityofgalway.ie/rss/" aria-label="RSS Link"><span>RSS</span></a>
+				</p>
+</p>
+<style>
+/* space icons out a little because 1 was removed, above*/
+p.socialIcons > a {
+    margin-left: 8px;
+}
+</style>
+				<p class="minimap">
+					<a href="//www.universityofgalway.ie/about-us/contact-us/where-to-find-us.html" aria-label="Location Link"><img src="//www.universityofgalway.ie/cdn/images/footer_map.jpg" alt="Galway Mini Map"/></a>
+				</p>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+				<div id="copyright">
+					<div id="copyrightWrapper">
+                                        <p><span>
+<a href="//www.universityofgalway.ie/sanctuary/"><img role="link" title="University of Sanctuary" alt="University of Sanctuary" src="//www.universityofgalway.ie/cdn/images/sanctuary-small.png" /></a>
+<a href="//www.universityofgalway.ie/genderequality/athenaswan/"><img role="link" class="athenaswan" title="Athena Swan Silver Award" alt="Athena Swan Silver Award" src="//www.universityofgalway.ie/cdn/images/AS_Silver-Award.jpg"></a>
+<a href="//www.universityofgalway.ie/our-research/hrexcellenceinresearch/"><img role="link" title="HR Excellence in Research" alt="HR Excellence in Research" src="//www.universityofgalway.ie/cdn/images/hr.png" /></a>
+<a href="//www.universityofgalway.ie/about-us/news-and-events/news-archive/2019/april/nui-galway-awarded-green-flag-campus-award.html"><img role="link" title="Green Campus" alt="Green Campus" src="//www.universityofgalway.ie/cdn/images/green-campus.png" /></a>
+<a href="https://www.universityofgalway.ie/sustainability/aboutus/awards/"><img role="link" title="Galway Chamber Sustainability Award" alt="Galway Chamber Sustainability Award" src="//www.universityofgalway.ie/cdn/images/galway-chamber-award.png" /></a>
+<a href="https://www.universityofgalway.ie/sustainability/the-sustainable-development-goals-(sdgs)/"><img role="link" title="Sustainable Development Goals Ambassador 2024-2025" alt="Sustainable Development Ambassador" src="//www.universityofgalway.ie/cdn/images/SDG-ambassador-77x60.gif" /></a>
+                                        </span></p>
+                                        <p>&copy; <span id="copyrightYear">2023</span> University of Galway. <span class="rightclick">All Rights
+ Reserved.<span class="hidden"> Server <!--#include virtual="/server_number.inc" --></span></span><br>University of Galway is a registered charity. RCN 20002107</p>
+					</div>
+				</div>
+<script>
+var todaysDate = new Date; 
+$('#copyrightYear').html(todaysDate.getFullYear());
+</script>
+				<div id="footerNavigation">
+					<div id="footerNavigationWrapper">
+						
+<ul>
+<li class='first node_id_26'>
+		<a href="//www.universityofgalway.ie/footer-links/disclaimer.html" class="first node_id_26"><span>Disclaimer</span></a>
+	
+	
+	
+	
+</li>
+<li class='middle node_id_1031'>
+		<a href="//www.universityofgalway.ie/footer-links/privacy.html" class="middle node_id_1031"><span>Privacy & Cookies</span></a>
+	
+	
+	
+	
+</li>
+<li class='middle node_id_1037'>
+		<a href="//www.universityofgalway.ie/footer-links/copyright.html" class="middle node_id_1037"><span>Copyright</span></a>
+	
+	
+	
+	
+</li>
+<li class='middle node_id_20'>
+		<a href="//www.universityofgalway.ie/about-us/contact-us/" class="middle node_id_20"><span>Contact & Enquiries</span></a>
+	
+	
+	
+	
+</li>
+<li class='last node_id_1026'>
+		<a href="//www.universityofgalway.ie/footer-links/accessibility.html" class="middle node_id_1026"><span>Accessibility</span></a>
+	
+	
+	
+	
+</li>
+
+</ul>
+
+
+					</div>
+				</div>						
+
+			</div>
+		</div>
+
+		<div class="bottom"><span></span></div>
+
+	</div>
+</div>
+
+<!--Start google code-->
+<script>
+// Google: Consent Mode
+  //update Google's consent mode settings with the user's preferences
+  mktVal = analVal = 'denied';
+  if (consentMarketing) mktVal = 'granted';
+  if (consentAnalytics) analVal = 'granted';
+  gtag('consent', 'update', {
+    ad_user_data: mktVal,
+    ad_personalization: mktVal,
+    ad_storage: mktVal,
+    analytics_storage: analVal
+  });
+// end of Google Consent Mode setup
+
+//Google tag manager (needed by analytics and google ad tracking
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TTT667Z');
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe title="site analytics" aria-hidden="true" src=https://www.googletagmanager.com/ns.html?id=GTM-TTT667Z
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!--End google code--> <!-- GA -->
+
+ <!-- Page Last Modified: 09/01/2026 03:40:54 -->
+
+</body>
+</html>
+<!--end-footer--> <!-- Footer -->

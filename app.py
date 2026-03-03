@@ -8,6 +8,7 @@ import secrets
 import hashlib
 import hmac
 import time
+from datetime import datetime
 from urllib.parse import urlencode
 from models import (
     init_db, create_user, verify_password, get_user_by_id, is_admin, get_db_connection,
@@ -1469,18 +1470,21 @@ def get_posts():
     conn = get_db_connection()
     
     # 构建查询
-    where_clauses = ["status = 'published'"]
+    where_clauses = ["p.status = 'published'"]
     params = []
     
     if school_id:
-        where_clauses.append("school_id = ?")
+        where_clauses.append("p.school_id = ?")
         params.append(school_id)
     
     if user_id:
-        where_clauses.append("author_id = ?")
+        where_clauses.append("p.author_id = ?")
         params.append(user_id)
     
     where_sql = " AND ".join(where_clauses)
+    
+    # For COUNT query (without prefix)
+    count_where_sql = where_sql.replace("p.", "")
     
     if tab == 'hot':
         order_by = "is_hot DESC, likes_count DESC, created_at DESC"
@@ -1508,7 +1512,7 @@ def get_posts():
     posts = [dict(row) for row in cursor.fetchall()]
     
     # 获取总数
-    cursor = conn.execute(f'SELECT COUNT(*) FROM posts WHERE {where_sql}', params)
+    cursor = conn.execute(f'SELECT COUNT(*) FROM posts WHERE {count_where_sql}', params)
     total = cursor.fetchone()[0]
     
     conn.close()
@@ -2229,7 +2233,7 @@ def get_shop_products():
     cursor = conn.execute('''
         SELECT category, COUNT(*) as count 
         FROM shop_products 
-        WHERE status = 'active' 
+        WHERE p.status = 'active' 
         GROUP BY category
     ''')
     categories = [dict(row) for row in cursor.fetchall()]
@@ -2494,7 +2498,7 @@ def get_stats_overview():
     
     # 订单统计
     cursor = conn.execute('''
-        SELECT COUNT(*), SUM(actual_amount) FROM shop_orders WHERE status = 'paid'
+        SELECT COUNT(*), SUM(actual_amount) FROM shop_orders WHERE p.status = 'paid'
     ''')
     order_stats = dict(cursor.fetchone())
     
@@ -2536,3 +2540,106 @@ if __name__ == '__main__':
     app.debug = False
     port = int(os.environ.get('PORT', 5001))
     app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
+
+# 社交版块 - 发布话题
+@app.route('/create_topic', methods=['POST'])
+def create_topic():
+    """创建新话题"""
+    if not session.get('user_id'):
+        return jsonify({'success': False, 'message': '请先登录'})
+    
+    title = request.form.get('title', '').strip()
+    content = request.form.get('content', '').strip()
+    topic_type = request.form.get('topic_type', 'discussion')
+    tags = request.form.get('tags', '')
+    
+    if not title or len(title) < 5:
+        return jsonify({'success': False, 'message': '标题至少5个字符'})
+    
+    if not content or len(content) < 10:
+        return jsonify({'success': False, 'message': '内容至少10个字符'})
+    
+    conn = get_db_connection()
+    try:
+        cursor = conn.execute(
+            "INSERT INTO topics (title, content, author_id, topic_type, tags, created_at) VALUES (?, ?, ?, ?, ?, ?)",
+            (title, content, session['user_id'], topic_type, tags, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        )
+        conn.commit()
+        topic_id = cursor.lastrowid
+        
+        return jsonify({'success': True, 'message': '发布成功', 'topic_id': topic_id})
+    except Exception as e:
+        return jsonify({'success': False, 'message': str(e)})
+    finally:
+        conn.close()
+
+# 社交版块 - 发布回复
+@app.route('/topic/<int:topic_id>/reply', methods=['POST'])
+def create_reply(topic_id):
+    """回复话题"""
+    if not session.get('user_id'):
+        return jsonify({'success': False, 'message': '请先登录'})
+    
+    content = request.form.get('content', '').strip()
+    
+    if not content or len(content) < 5:
+        return jsonify({'success': False, 'message': '回复内容至少5个字符'})
+    
+    conn = get_db_connection()
+    try:
+        # 检查话题是否存在
+        cursor = conn.execute("SELECT id FROM topics WHERE id = ?", (topic_id,))
+        if not cursor.fetchone():
+            return jsonify({'success': False, 'message': '话题不存在'})
+        
+        # 添加回复
+        cursor = conn.execute(
+            "INSERT INTO topic_replies (topic_id, author_id, content, created_at) VALUES (?, ?, ?, ?)",
+            (topic_id, session['user_id'], content, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        )
+        conn.commit()
+        
+        # 更新话题回复数
+        conn.execute("UPDATE topics SET replies_count = replies_count + 1 WHERE id = ?", (topic_id,))
+        conn.commit()
+        
+        return jsonify({'success': True, 'message': '回复成功'})
+    except Exception as e:
+        return jsonify({'success': False, 'message': str(e)})
+    finally:
+        conn.close()
+
+# 社交版块 - 点赞话题
+@app.route('/topic/<int:topic_id>/like', methods=['POST'])
+def like_topic(topic_id):
+    """点赞话题"""
+    if not session.get('user_id'):
+        return jsonify({'success': False, 'message': '请先登录'})
+    
+    conn = get_db_connection()
+    try:
+        # 检查是否已点赞
+        cursor = conn.execute(
+            "SELECT id FROM topic_likes WHERE topic_id = ? AND user_id = ?",
+            (topic_id, session['user_id'])
+        )
+        if cursor.fetchone():
+            return jsonify({'success': False, 'message': '已点赞'})
+        
+        # 添加点赞
+        conn.execute(
+            "INSERT INTO topic_likes (topic_id, user_id, created_at) VALUES (?, ?, ?)",
+            (topic_id, session['user_id'], datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        )
+        conn.commit()
+        
+        # 更新话题点赞数
+        conn.execute("UPDATE topics SET likes_count = likes_count + 1 WHERE id = ?", (topic_id,))
+        conn.commit()
+        
+        return jsonify({'success': True, 'message': '点赞成功'})
+    except Exception as e:
+        return jsonify({'success': False, 'message': str(e)})
+    finally:
+        conn.close()

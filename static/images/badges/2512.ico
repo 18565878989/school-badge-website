@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html class="lang-en" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/shared/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/shared/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/shared/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/shared/img/favicon/site.webmanifest">
+  <link rel="shortcut icon" href="/assets/shared/img/favicon/favicon.ico">
+  <meta name="msapplication-config" content="/assets/shared/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#da532c">
+	<title>找不到頁面 Page Not Found 404</title>
+	<link rel="stylesheet" href="/assets/themes/main/css/style.css" media="all">
+	<style>
+
+    @media screen and (max-width: 1199px) {
+    }
+    @media screen and (max-width: 991px) {
+    }
+    @media screen and (max-width: 767px) {
+    }
+    </style>
+</head>
+
+
+<body>
+<header class="page-head" style="padding: 18px 0; border-bottom:2px solid #0A92CC;">
+	<div class="container">
+		<div class="page-head__left">
+			<a class="page-logo" href="/">
+				<img class="page-logo__img" src="/assets/shared/img/logo_1x.png" srcset="/assets/shared/img/logo_2x.png 2x, /assets/shared/img/logo_3x.png 3x" alt="HKUGA College">
+			</a>
+		</div>
+	</div>
+</header>
+	<div class="container mb-5" style="padding-top: 150px;">
+
+	
+		<h1 style="font-size:42px;text-align: center;font-weight: bold;color: #0A92CC;">非常抱歉... <span style="color: #f76911">找不到相符的頁面</span></h1>
+		<hr>
+		<div style="text-align: center;font-size: 28px;">
+			<p>你點擊進來的連結可能不正確</p>
+			<div class="mt-3">
+				<a href="javascript:history.back();" class="error-btn mt-4">返回</a>
+				<a href="/" class="error-btn mt-4">首頁</a>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+</html>

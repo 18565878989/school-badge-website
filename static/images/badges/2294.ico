@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>     <html class="no-js ie8 ie9 lang-en" lang="en"> <![endif]-->
+<!--[if lt IE 10]>     <html class="no-js ie9 lang-en" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js lang-en" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicon/manifest.json">
+    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <base href="/">
+    <!--[if lt IE 9]>
+        <script src="/assets/js/theorigo/base_href_fix.js" type="text/javascript"></script>
+    <![endif]-->
+    <title>Page Not Found - St. Paul&#039;s Co-educational College</title>
+    <link rel="stylesheet" href="/assets/css/projectbase.css" media="all">
+    <link rel="stylesheet" href="/assets/css/print.css" media="print">
+    <script src="/assets/js/lib/default.min.js"></script>
+    <script>
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-31186469-1', 'auto', {
+            'name': 'tracker1'
+        });
+        ga('tracker1.require', 'eventTracker');
+        ga('tracker1.require', 'outboundLinkTracker');
+        ga('tracker1.require', 'urlChangeTracker');
+        ga('tracker1.send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src='/assets/lib/autotrack.js'></script>
+    <!--[if lt IE 9]>
+        <script src="/assets/js/lib/html5shiv.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <style type="text/css">
+        @media screen and (min-width: 992px) {
+            .header--shrinked {
+                padding-top: 0;
+            }
+            .header--shrinked .page-logo {
+                margin: 18px 0 14px;
+            }
+            .header--shrinked .page-logo img {
+                height: 71px;
+            }
+            .header--shrinked .tools {
+                margin-top: 30px;
+            }
+            .header--shrinked header {
+                position: relative;
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                height: 155px;
+                top: auto;
+            }
+            .page-foot {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="head-top">
+                <div class="container container--head">
+                    <a class="page-logo" href="">
+                        <img src="/assets/img/logo-1x.jpg" srcset="/assets/img/logo-1x.jpg 1x, /assets/img/logo-2x.jpg 2x" alt="SPCC Logo">
+                    </a>
+
+                    <ul class="tools">
+                        <li class="tools__item link hidden-sm hidden-xs">
+                            <a class="link__item" href="http://www.spccps.edu.hk/eng/" target="_blank">Primary School</a>
+                        </li>
+                        <li class="tools__item link hidden-sm hidden-xs">
+                            <a class="link__item" href="http://learning.spcc.edu.hk/templates/" target="_blank">eClass</a>
+                        </li>
+                        <li class="tools__item search">
+                            <svg class="icon icon--search" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                <path fill="#222E88" d="M20 17.602h-1.281l-.477-.483c1.602-1.759 2.555-4.157 2.555-6.72 0-5.759-4.641-10.399-10.4-10.399-5.757 0-10.397 4.64-10.397 10.397 0 5.759 4.64 10.399 10.397 10.399 2.563 0 4.962-.952 6.72-2.555l.484.478v1.281l8 8 2.399-2.398-8-8zm-9.603 0c-3.999 0-7.193-3.203-7.193-7.204 0-4 3.194-7.193 7.193-7.193 4 0 7.205 3.193 7.205 7.193s-3.205 7.204-7.205 7.204z"></path>
+                            </svg>
+                            <form class="search__form" method="get" action="/search">
+                                <input class="search__box" type="text" name="q" placeholder="Search" title="Search">
+                                <input class="search__submit btn visible-sm visible-xs" type="submit" title="Keyword Search" value="Go">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="page-content page-content--inner" id="main" style="min-height: 400px; background-position: right center;">
+            <a class="sr-only" id="web-access" href="/style#">Start main content</a>
+
+            <div class="container context" style="-moz-animation: fadeInUp 1s; -webkit-animation: fadeInUp 1s;animation: fadeInUp 1s;">
+                <h1 style="text-align: center; margin: 20px auto 10px; max-width: none; font-weight: 400;">Error 404</h1>
+
+                <div class="inner-content container" style="min-height: 320px;">
+                    <div class="ckec">
+                        <br>
+                        <h2 class="hidden-xs" style="text-align: center; font-size: 3rem;">We Apologise... Page Not Found</h2>
+                        <h3 class="hidden-xs" style="text-align: center; font-size: 1.5rem;">很抱歉，找不到相符的頁面。</h3>
+                        <h2 class="visible-xs" style="text-align: center; font-size: 1.5rem; margin-top: 0;">We Apologise... <span style="display: block;text-align: center; font-size: 2.2rem; margin-top: 0;">Page Not Found</span></h2>
+                        <h3 class="visible-xs" style="text-align: center; font-size: 1rem;">很抱歉，找不到相符的頁面。</h3>
+                        <hr>
+                        <h2 class="hidden-xs" style="text-align: center; font-size: 2rem;">The page you are looking for does not exist.</h2>
+                        <h2 class="visible-xs" style="text-align: center; font-size: 1.4rem;">The page you are looking for does not exist.</h2>
+                        <br>
+                        <br>
+                        <div class="btn-container" style="text-align: center">
+                            <a class="btn btn--rte" href="javascript:history.back();"><span class="btn__inner">Back</span></a>
+                            <a class="btn btn--rte" href="/"><span class="btn__inner">Home</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="page-foot">
+            <div class="container">
+                <div class="btn-top-box">
+                    <button class="btn--top js-top" type="button">
+                        <svg class="icon icon--arrow-top" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="60" height="31.5" viewBox="0 0 60 31.5">
+                            <path fill="#9197C4" d="M60 29.066l-29.999-29.066-30.001 29.066 2.646 2.066 27.355-26.5 27.353 26.868 2.646-2.434z" />
+                        </svg><span class="sr-only">Back to top</span></button>
+                </div>
+            </div>
+            <div class="container-foot">
+                <div class="foot-logos">
+                    <ul class="list-unstyled">
+                        <li class="foot-logos__item">
+                            <a href="/academic/curriculum/ibdp"><img src="/assets/img/footer-logo-world-sch-1x.png" srcset="/assets/img/footer-logo-world-sch-1x.png 1x, /assets/img/footer-logo-world-sch-2x.png 2x" alt="IBDP" /></a>
+                        </li>
+                        <li class="foot-logos__item">
+                            <a href="/connect/global-partners/round-square-spcc"><img src="/assets/img/footer-logo-round-sq-1x.jpg" srcset="/assets/img/footer-logo-round-sq-1x.jpg 1x, /assets/img/footer-logo-round-sq-2x.jpg 2x" alt="ROUND SQUARE AT SPCC" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="foot-txt list-unstyled">
+                    <li class="foot-txt__item">
+                        <a class="foot-txt__link" href="/connect/giving-to-spcc">Support Us</a>
+                    </li>
+                    <li class="foot-txt__item">
+                        <a class="foot-txt__link" href="/sitemap">Sitemap</a>
+                    </li>
+                    <li class="foot-txt__item">
+                        <a class="foot-txt__link" href="/jobs-and-tenders">Jobs &amp; Tenders</a>
+                    </li>
+                    <li class="foot-txt__item">
+                        <a class="foot-txt__link" href="/find-us">Find Us</a>
+                    </li>
+                    <li class="foot-txt__item"><span class="copyright">Copyright © 2017 St. Paul&#039;s Co-educational College. All Rights Reserved.</span></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="/assets/js/lib/plugins.min.js"></script>
+    <script src="/assets/js/main.min.js"></script>
+</body>
+
+</html>
