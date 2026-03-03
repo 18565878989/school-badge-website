@@ -2643,3 +2643,209 @@ def like_topic(topic_id):
         return jsonify({'success': False, 'message': str(e)})
     finally:
         conn.close()
+
+
+# ============================================================
+# AI 助手 API
+# ============================================================
+
+@app.route('/api/assistant/<assistant_type>')
+def assistant_api(assistant_type):
+    """AI 助手 API"""
+    from assistants import get_assistant, AVAILABLE_ASSISTANTS, get_all_assistants
+    
+    # 如果是列表请求
+    if request.args.get('list'):
+        return jsonify(get_all_assistants())
+    
+    # 获取参数
+    action = request.args.get('action', 'identify' if assistant_type == 'badge' else 'recommend' if assistant_type == 'travel' else 'answer')
+    
+    try:
+        assistant = get_assistant(assistant_type)
+        
+        if assistant_type == 'badge':
+            # 校徽鉴定师
+            keywords = request.args.get('keywords')
+            image_url = request.args.get('image_url')
+            result = assistant.identify(keywords=keywords, image_url=image_url)
+        
+        elif assistant_type == 'travel':
+            # 旅行规划师
+            region = request.args.get('region')
+            country = request.args.get('country')
+            interest = request.args.get('interest')
+            days = int(request.args.get('days', 3))
+            result = assistant.recommend(region=region, country=country, interest=interest, days=days)
+        
+        elif assistant_type == 'history':
+            # 历史讲解员
+            question = request.args.get('q', request.args.get('question', ''))
+            school_name = request.args.get('school')
+            result = assistant.answer(question=question, school_name=school_name)
+        
+        elif assistant_type == 'compare':
+            # 学校对比
+            s1_id = request.args.get('school1_id')
+            s2_id = request.args.get('school2_id')
+            s1_name = request.args.get('school1')
+            s2_name = request.args.get('school2')
+            result = assistant.compare(school1_id=s1_id, school2_id=s2_id, school1_name=s1_name, school2_name=s2_name)
+        
+        elif assistant_type == 'recommend':
+            # 智能推荐
+            prefs = {
+                "region": request.args.get('region'),
+                "country": request.args.get('country'),
+                "level": request.args.get('level')
+            }
+            result = assistant.recommend_for_user(user_preferences=prefs)
+        
+        elif assistant_type == 'quiz':
+            # 问答
+            question = request.args.get('q', request.args.get('question', ''))
+            result = assistant.answer_question(question)
+        
+        else:
+            return jsonify({'error': '未知的助手类型'})
+        
+        assistant.close()
+        return jsonify(result)
+    
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
+
+@app.route('/assistants')
+def assistants_page():
+    """AI 助手页面"""
+    return render_template('assistants.html')
+
+
+# ============================================================
+# Skills API
+# ============================================================
+
+@app.route('/api/skills')
+def skills_api():
+    """Skills 列表"""
+    skills = [
+        {
+            "name": "school-import",
+            "description": "批量导入学校数据",
+            "commands": ["python -m skills.school-import --file data.json"]
+        },
+        {
+            "name": "data-cleanup",
+            "description": "数据清理与去重",
+            "commands": ["python -m skills.data-cleanup dedup", "python -m skills.data-cleanup fix-region"]
+        },
+        {
+            "name": "stats-analyze",
+            "description": "统计分析报告",
+            "commands": ["python -m skills.stats-analyze"]
+        }
+    ]
+    return jsonify(skills)
+
+
+# ============================================================
+# Claude 对话 API
+# ============================================================
+
+@app.route('/api/chat', methods=['POST'])
+def chat_api():
+    """Claude API 对话"""
+    from assistants.claude_chat import ClaudeChatAssistant
+    
+    data = request.get_json() or {}
+    message = data.get('message', '')
+    user_id = session.get('user_id', 'anonymous')
+    
+    # 获取学校上下文
+    school_id = data.get('school_id')
+    school_context = None
+    
+    if school_id:
+        from models import get_school_by_id
+        school = get_school_by_id(school_id)
+        if school:
+            school_context = school
+    
+    if not message:
+        return jsonify({'error': '请输入消息'})
+    
+    assistant = ClaudeChatAssistant()
+    result = assistant.chat(message, user_id, school_context)
+    
+    return jsonify(result)
+
+
+@app.route('/api/chat/clear', methods=['POST'])
+def chat_clear():
+    """清除对话历史"""
+    from assistants.claude_chat import ClaudeChatAssistant
+    
+    user_id = session.get('user_id', 'anonymous')
+    assistant = ClaudeChatAssistant()
+    result = assistant.clear_history(user_id)
+    
+    return jsonify(result)
+
+
+# ============================================================
+# TTS 语音 API
+# ============================================================
+
+@app.route('/api/tts', methods=['POST'])
+def tts_api():
+    """TTS 语音生成"""
+    from assistants.tts_helper import TTSAssistant
+    
+    data = request.get_json() or {}
+    text = data.get('text', '')
+    voice = data.get('voice', 'Bella')
+    
+    if not text:
+        return jsonify({'error': '请输入文本'})
+    
+    from assistants.tts_helper import VoiceHelper
+    result = VoiceHelper.speak_with_voice(text, voice)
+    
+    return jsonify(result)
+
+
+# ============================================================
+# 收藏推荐 API
+# ============================================================
+
+@app.route('/api/recommend/favorites', methods=['GET'])
+def favorite_recommend_api():
+    """基于收藏的智能推荐"""
+    from assistants.favorite_recommend import FavoriteRecommendAssistant
+    
+    user_id = session.get('user_id')
+    if not user_id:
+        return jsonify({'error': '请先登录', 'need_login': True})
+    
+    limit = int(request.args.get('limit', 10))
+    
+    assistant = FavoriteRecommendAssistant()
+    result = assistant.recommend_based_on_favorites(user_id, limit)
+    assistant.close()
+    
+    return jsonify(result)
+
+
+@app.route('/api/similar/<int:school_id>', methods=['GET'])
+def similar_schools_api(school_id):
+    """获取相似学校"""
+    from assistants.favorite_recommend import FavoriteRecommendAssistant
+    
+    limit = int(request.args.get('limit', 5))
+    
+    assistant = FavoriteRecommendAssistant()
+    result = assistant.get_similar_schools(school_id, limit)
+    assistant.close()
+    
+    return jsonify(result)

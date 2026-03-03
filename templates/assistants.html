@@ -1,0 +1,568 @@
+{% extends "base.html" %}
+
+{% block title %}AI 校徽小助手 - 校徽网{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
+
+<style>
+/* Hero Section - Apple Style */
+.hero-assistants {
+    padding: 160px 0 80px;
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-assistants::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 50% 50%, rgba(30, 58, 95, 0.03) 0%, transparent 50%);
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-2%, -2%); }
+}
+
+.hero-assistants h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.hero-assistants h1 .emoji {
+    display: inline-block;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.hero-assistants p {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Section */
+.section {
+    padding: 80px 0;
+    background: var(--background);
+}
+
+.section:nth-child(even) {
+    background: var(--surface);
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.section-header p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* Cards Grid */
+.assistant-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+/* Apple Card Style */
+.assistant-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.assistant-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Card Header with Gradient */
+.card-header-apple {
+    padding: 28px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-header-apple::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+}
+
+.card-header-apple .avatar {
+    width: 52px;
+    height: 52px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.card-header-apple .info {
+    position: relative;
+    z-index: 1;
+}
+
+.card-header-apple .info h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.card-header-apple .info p {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.75);
+}
+
+/* Card Body */
+.card-body-apple {
+    padding: 24px;
+}
+
+/* Form Inputs */
+.card-form-apple {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-form-apple input {
+    padding: 14px 16px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    background: #fafafa;
+}
+
+.card-form-apple input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(30, 58, 95, 0.1);
+}
+
+/* Buttons */
+.btn-apple {
+    padding: 14px 20px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-apple:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(30, 58, 95, 0.25);
+}
+
+/* Result Box */
+.result-box {
+    margin-top: 16px;
+    padding: 18px;
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    display: none;
+}
+
+.result-box.show {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.result-box p {
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Result School Item */
+.result-school {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    background: #fff;
+    border-radius: 12px;
+    margin-top: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.result-school img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: #f5f5f7;
+}
+
+.result-school strong {
+    color: var(--primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Loading */
+.loading {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-top: 2px solid var(--gold);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 80px 0;
+    background: var(--surface);
+}
+
+.skills-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.skill-item-apple {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.skill-item-apple:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.skill-item-apple h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-item-apple p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.skill-code-apple {
+    background: var(--primary-dark);
+    color: #fff;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-family: 'SF Mono', Monaco, Menlo, monospace;
+    font-size: 0.8rem;
+    overflow-x: auto;
+    letter-spacing: -0.02em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-assistants {
+        padding: 120px 0 60px;
+    }
+    
+    .assistant-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+}
+</style>
+
+<!-- Hero Section -->
+<section class="hero-assistants">
+    <div class="container">
+        <h1><span class="emoji">🤖</span> AI 校徽小助手</h1>
+        <p>三个小助手帮你探索学校世界，了解学校历史，规划参观路线</p>
+    </div>
+</section>
+
+<!-- AI Assistants Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>🐱 AI 助手</h2>
+            <p>选择下方助手，开始探索学校之旅</p>
+        </div>
+        
+        <div class="assistant-cards">
+            <!-- 校徽鉴定师 -->
+            <article class="assistant-card">
+                <div class="card-header-apple">
+                    <div class="avatar">🐱</div>
+                    <div class="info">
+                        <h3>校徽鉴定师</h3>
+                        <p>识别校徽图片，查找学校</p>
+                    </div>
+                </div>
+                <div class="card-body-apple">
+                    <form class="card-form-apple" onsubmit="callAssistant('badge', this); return false;">
+                        <input type="text" name="keywords" placeholder="输入学校名称或关键词...">
+                        <button type="submit" class="btn-apple">🔍 识别校徽</button>
+                    </form>
+                    <div class="result-box" id="result-badge"></div>
+                </div>
+            </article>
+            
+            <!-- 旅行规划师 -->
+            <article class="assistant-card">
+                <div class="card-header-apple">
+                    <div class="avatar">🌍</div>
+                    <div class="info">
+                        <h3>旅行规划师</h3>
+                        <p>推荐学校参观路线</p>
+                    </div>
+                </div>
+                <div class="card-body-apple">
+                    <form class="card-form-apple" onsubmit="callAssistant('travel', this); return false;">
+                        <input type="text" name="region" placeholder="地区 (如: Asia, Europe)">
+                        <input type="number" name="days" placeholder="天数" value="3">
+                        <button type="submit" class="btn-apple">🗺️ 规划路线</button>
+                    </form>
+                    <div class="result-box" id="result-travel"></div>
+                </div>
+            </article>
+            
+            <!-- 历史讲解员 -->
+            <article class="assistant-card">
+                <div class="card-header-apple">
+                    <div class="avatar">📚</div>
+                    <div class="info">
+                        <h3>历史讲解员</h3>
+                        <p>讲述学校历史故事</p>
+                    </div>
+                </div>
+                <div class="card-body-apple">
+                    <form class="card-form-apple" onsubmit="callAssistant('history', this); return false;">
+                        <input type="text" name="question" placeholder="你想了解什么？">
+                        <input type="text" name="school" placeholder="学校名称 (可选)">
+                        <button type="submit" class="btn-apple">📖 讲述历史</button>
+                    </form>
+                    <div class="result-box" id="result-history"></div>
+                </div>
+            </article>
+            
+            <!-- 学校对比 -->
+            <article class="assistant-card">
+                <div class="card-header-apple">
+                    <div class="avatar">⚖️</div>
+                    <div class="info">
+                        <h3>学校对比</h3>
+                        <p>对比两所学校信息</p>
+                    </div>
+                </div>
+                <div class="card-body-apple">
+                    <form class="card-form-apple" onsubmit="callAssistant('compare', this); return false;">
+                        <input type="text" name="school1" placeholder="第一所学校">
+                        <input type="text" name="school2" placeholder="第二所学校">
+                        <button type="submit" class="btn-apple">⚖️ 开始对比</button>
+                    </form>
+                    <div class="result-box" id="result-compare"></div>
+                </div>
+            </article>
+            
+            <!-- 智能推荐 -->
+            <article class="assistant-card">
+                <div class="card-header-apple">
+                    <div class="avatar">✨</div>
+                    <div class="info">
+                        <h3>智能推荐</h3>
+                        <p>根据偏好推荐学校</p>
+                    </div>
+                </div>
+                <div class="card-body-apple">
+                    <form class="card-form-apple" onsubmit="callAssistant('recommend', this); return false;">
+                        <input type="text" name="region" placeholder="地区 (可选)">
+                        <input type="text" name="level" placeholder="类型 (可选)">
+                        <button type="submit" class="btn-apple">✨ 为我推荐</button>
+                    </form>
+                    <div class="result-box" id="result-recommend"></div>
+                </div>
+            </article>
+            
+            <!-- 问答助手 -->
+            <article class="assistant-card">
+                <div class="card-header-apple">
+                    <div class="avatar">❓</div>
+                    <div class="info">
+                        <h3>学校问答</h3>
+                        <p>回答关于学校的问题</p>
+                    </div>
+                </div>
+                <div class="card-body-apple">
+                    <form class="card-form-apple" onsubmit="callAssistant('quiz', this); return false;">
+                        <input type="text" name="question" placeholder="问我一个问题...">
+                        <button type="submit" class="btn-apple">❓ 回答问题</button>
+                    </form>
+                    <div class="result-box" id="result-quiz"></div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>📦 Skills 技能系统</h2>
+            <p>命令行工具，批量处理学校数据</p>
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-item-apple">
+                <h4>📥 school-import</h4>
+                <p>批量导入学校数据到数据库</p>
+                <div class="skill-code-apple">python -m skills.school-import --file data.json</div>
+            </div>
+            <div class="skill-item-apple">
+                <h4>🧹 data-cleanup</h4>
+                <p>数据清理与重复学校去重</p>
+                <div class="skill-code-apple">python -m skills.data-cleanup dedup</div>
+            </div>
+            <div class="skill-item-apple">
+                <h4>📊 stats-analyze</h4>
+                <p>生成数据统计分析报告</p>
+                <div class="skill-code-apple">python -m skills.stats-analyze</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+async function callAssistant(type, form) {
+    const resultBox = document.getElementById('result-' + type);
+    const formData = new FormData(form);
+    
+    const params = new URLSearchParams();
+    for (let [key, value] of formData.entries()) {
+        if (value) params.append(key, value);
+    }
+    
+    resultBox.innerHTML = '<p><span class="loading"></span> 思考中...</p>';
+    resultBox.classList.add('show');
+    
+    try {
+        const response = await fetch(`/api/assistant/${type}?${params}`);
+        const data = await response.json();
+        
+        if (data.error) {
+            resultBox.innerHTML = '<p style="color: #ff3b30;">❌ ' + data.error + '</p>';
+        } else if (data.message) {
+            let html = `<p>${data.message}</p>`;
+            
+            if (data.school) {
+                html += `<div class="result-school">
+                    <img src="${data.school.badge_url || '/static/images/badge-placeholder.svg'}" alt="" onerror="this.src='/static/images/badge-placeholder.svg'">
+                    <div>
+                        <strong>${data.school.name}</strong>
+                    </div>
+                </div>`;
+            } else if (data.itinerary) {
+                html += '<ul style="margin-top:12px; padding-left:20px;">';
+                data.itinerary.forEach(item => {
+                    html += `<li style="margin:8px 0; color: var(--text);">Day ${item.day}: ${item.school.name}</li>`;
+                });
+                html += '</ul>';
+            } else if (data.story) {
+                html += `<div style="white-space: pre-line; margin-top:12px;">${data.story}</div>`;
+            } else if (data.suggestions) {
+                html += '<ul style="margin-top:12px; padding-left:20px;">';
+                data.suggestions.forEach(s => {
+                    html += `<li style="margin:8px 0; color: var(--text);">${s}</li>`;
+                });
+                html += '</ul>';
+            }
+            
+            resultBox.innerHTML = html;
+        }
+    } catch (e) {
+        resultBox.innerHTML = '<p style="color: #ff3b30;">❌ 请求失败: ' + e.message + '</p>';
+    }
+}
+</script>
+{% endblock %}
