@@ -3,6 +3,101 @@ from datetime import datetime
 from flask import Flask
 from werkzeug.security import generate_password_hash, check_password_hash
 
+# 简繁转换映射表
+def traditional_to_simplified(text):
+    """繁体转简体"""
+    if not text:
+        return text
+    # 常用繁简对照表
+    mapping = {
+        '大學': '大学', '學院': '学院', '學校': '学校',
+        '北京': '北京', '清華': '清华', '交通': '交通',
+        '復旦': '复旦', '浙江': '浙江', '南京': '南京',
+        '上海': '上海', '武漢': '武汉', '成都': '成都',
+        '西安': '西安', '哈爾濱': '哈尔滨', '廣州': '广州',
+        '中山': '中山', '廈門': '厦门', '天津': '天津',
+        '蘇州': '苏州', '重慶': '重庆', '香港': '香港',
+        '澳門': '澳门', '臺灣': '台湾', '臺北': '台北',
+        '高雄': '高雄', '新竹': '新竹', '師範': '师范',
+        '工業': '工业', '科技': '科技', '醫學': '医学',
+        '農業': '农业', '海洋': '海洋', '石油': '石油',
+        '理工': '理工', '財經': '财经', '政法': '政法',
+        '外語': '外语', '語言': '语言', '音樂': '音乐',
+        '美術': '美术', '體育': '体育', '軍事': '军事',
+        '航空': '航空', '航天': '航天', '電子': '电子',
+        '機械': '机械', '化工': '化工', '建築': '建筑',
+        '水利': '水利', '電力': '电力', '鐵路': '铁路',
+        '郵電': '邮电', '林業': '林业', '畜牧': '畜牧',
+        '醫藥': '医药', '中醫': '中医', '藥學': '药学',
+        '護理': '护理', '工商': '工商', '管理': '管理',
+        '人力': '人力', '資源': '资源', '環境': '环境',
+        '材料': '材料', '能源': '能源', '動力': '动力',
+        '計算機': '计算机', '信息': '信息', '軟件': '软件',
+        '網絡': '网络', '自動化': '自动化', '光電': '光电',
+        '精密': '精密', '儀器': '仪器', '物理': '物理',
+        '化學': '化学', '數學': '数学', '生物': '生物',
+        '地理': '地理', '歷史': '历史', '哲學': '哲学',
+        '經濟': '经济', '法律': '法律', '政治': '政治',
+        '社會': '社会', '新聞': '新闻', '傳播': '传播',
+        '廣告': '广告', '設計': '设计', '藝術': '艺术',
+        '文學': '文学', '語文': '语文', '外文': '外文',
+        '國際': '国际', '對外': '对外', '留學': '留学',
+        '繼續': '继续', '職業': '职业', '成人': '成人',
+        '遠程': '远程', '網絡教育': '网络教育', '開放': '开放',
+        '研究': '研究', '研究生': '研究生', '博士': '博士',
+        '碩士': '硕士', '學士': '学士', '預科': '预科',
+        '附屬': '附属', '附中': '附中', '附小': '附小',
+        '實驗': '实验', '外國語': '外国语', '外語': '外语',
+        '第一': '第一', '第二': '第二', '第三': '第三',
+    }
+    result = text
+    for trad, simp in mapping.items():
+        result = result.replace(trad, simp)
+    return result
+
+def simplified_to_traditional(text):
+    """简体转繁体"""
+    if not text:
+        return text
+    mapping = {
+        '大学': '大學', '学院': '學院', '学校': '學校',
+        '清华': '清華', '复旦': '復旦', '师范': '師範',
+        '工业': '工業', '科技': '科技', '医学': '醫學',
+        '农业': '農業', '海洋': '海洋', '理工': '理工',
+        '财经': '財經', '政法': '政法', '外语': '外語',
+        '语言': '語言', '音乐': '音樂', '美术': '美術',
+        '体育': '體育', '军事': '軍事', '航空': '航空',
+        '航天': '航天', '电子': '電子', '机械': '機械',
+        '化工': '化工', '建筑': '建築', '水利': '水利',
+        '电力': '電力', '铁路': '鐵路', '邮电': '郵電',
+        '林业': '林業', '畜牧': '畜牧', '医药': '醫藥',
+        '中医': '中醫', '药学': '藥學', '护理': '護理',
+        '工商': '工商', '管理': '管理', '人力': '人力',
+        '资源': '資源', '环境': '環境', '材料': '材料',
+        '能源': '能源', '动力': '動力', '计算机': '計算機',
+        '信息': '信息', '软件': '軟件', '网络': '網絡',
+        '自动化': '自動化', '光电': '光電', '精密': '精密',
+        '仪器': '儀器', '物理': '物理', '化学': '化學',
+        '数学': '數學', '生物': '生物', '地理': '地理',
+        '历史': '歷史', '哲学': '哲學', '经济': '經濟',
+        '法律': '法律', '政治': '政治', '社会': '社會',
+        '新闻': '新聞', '传播': '傳播', '广告': '廣告',
+        '设计': '設計', '艺术': '藝術', '文学': '文學',
+        '语文': '語文', '外文': '外文', '国际': '國際',
+        '对外': '對外', '留学': '留學', '继续': '繼續',
+        '职业': '職業', '成人': '成人', '远程': '遠程',
+        '网络教育': '網絡教育', '开放': '開放', '研究': '研究',
+        '研究生': '研究生', '博士': '博士', '硕士': '碩士',
+        '学士': '學士', '预科': '預科', '附属': '附屬',
+        '附中': '附中', '附小': '附小', '实验': '實驗',
+        '外国语': '外國語', '第一': '第一', '第二': '第二',
+        '第三': '第三', '台湾': '臺灣', '台北': '臺北',
+    }
+    result = text
+    for simp, trad in mapping.items():
+        result = result.replace(simp, trad)
+    return result
+
 def get_db_connection():
     """Get a database connection with row factory."""
     conn = sqlite3.connect('database.db')
@@ -383,11 +478,29 @@ def get_schools_by_level(level):
     return schools
 
 def search_schools(query, region=None, level=None):
-    """Search schools by name, country, or city with optional filters."""
+    """Search schools by name, country, or city with optional filters.
+    Supports both simplified and traditional Chinese."""
     conn = get_db_connection()
     
-    sql = 'SELECT * FROM schools WHERE (name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?)'
-    params = [f'%{query}%', f'%{query}%', f'%{query}%', f'%{query}%']
+    # 生成简繁两种查询
+    query_simp = query
+    query_trad = simplified_to_traditional(query)
+    
+    # 如果简繁相同，只查一次
+    if query_simp == query_trad:
+        sql = 'SELECT * FROM schools WHERE (name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?)'
+        params = [f'%{query}%', f'%{query}%', f'%{query}%', f'%{query}%']
+    else:
+        # 简繁分开查，用UNION合并去重
+        sql = '''
+            SELECT * FROM schools WHERE (name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?)
+            UNION
+            SELECT * FROM schools WHERE (name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?)
+        '''
+        params = [
+            f'%{query_simp}%', f'%{query_simp}%', f'%{query_simp}%', f'%{query_simp}%',
+            f'%{query_trad}%', f'%{query_trad}%', f'%{query_trad}%', f'%{query_trad}%'
+        ]
     
     if region:
         sql += ' AND region = ?'

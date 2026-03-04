@@ -3060,11 +3060,27 @@ def deep_search_api():
                 conditions.append("level = ?")
                 params.append(level)
         
-        # 关键词搜索
+        # 关键词搜索 - 支持简繁
+        from models import traditional_to_simplified, simplified_to_traditional
         keyword = query.replace('找', '').replace('推荐', '').replace('的', '').strip()
+        
         if keyword and len(keyword) > 1:
-            conditions.append("(name LIKE ? OR name_cn LIKE ? OR country LIKE ?)")
-            params.extend([f'%{keyword}%', f'%{keyword}%', f'%{keyword}%'])
+            # 简繁转换
+            keyword_simp = keyword
+            keyword_trad = simplified_to_traditional(keyword)
+            
+            if keyword_simp == keyword_trad:
+                conditions.append("(name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?)")
+                params.extend([f'%{keyword_simp}%', f'%{keyword_simp}%', f'%{keyword_simp}%', f'%{keyword_simp}%'])
+            else:
+                conditions.append("""
+                    (name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?
+                     OR name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?)
+                """)
+                params.extend([
+                    f'%{keyword_simp}%', f'%{keyword_simp}%', f'%{keyword_simp}%', f'%{keyword_simp}%',
+                    f'%{keyword_trad}%', f'%{keyword_trad}%', f'%{keyword_trad}%', f'%{keyword_trad}%'
+                ])
         
         # 执行搜索
         conn = get_db_connection()
@@ -3073,12 +3089,26 @@ def deep_search_api():
             sql = "SELECT * FROM schools WHERE " + " AND ".join(conditions) + " ORDER BY name LIMIT 10"
             schools = conn.execute(sql, params).fetchall()
         else:
-            # 如果没有明确条件，进行模糊搜索
-            schools = conn.execute("""
-                SELECT * FROM schools 
-                WHERE name LIKE ? OR name_cn LIKE ?
-                ORDER BY name LIMIT 10
-            """, (f'%{query}%', f'%{query}%')).fetchall()
+            # 如果没有明确条件，进行模糊搜索（简繁都查）
+            keyword = query.replace('找', '').replace('推荐', '').replace('的', '').strip()
+            keyword_trad = traditional_to_simplified(keyword) if keyword == simplified_to_traditional(keyword) else simplified_to_traditional(keyword)
+            
+            if keyword == keyword_trad:
+                schools = conn.execute("""
+                    SELECT * FROM schools 
+                    WHERE name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?
+                    ORDER BY name LIMIT 10
+                """, (f'%{keyword}%', f'%{keyword}%', f'%{keyword}%', f'%{keyword}%')).fetchall()
+            else:
+                schools = conn.execute("""
+                    SELECT * FROM schools 
+                    WHERE name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?
+                       OR name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?
+                    ORDER BY name LIMIT 10
+                """, (
+                    f'%{keyword}%', f'%{keyword}%', f'%{keyword}%', f'%{keyword}%',
+                    f'%{keyword_trad}%', f'%{keyword_trad}%', f'%{keyword_trad}%', f'%{keyword_trad}%'
+                )).fetchall()
         
         conn.close()
         
