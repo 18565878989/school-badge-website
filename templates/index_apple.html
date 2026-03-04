@@ -63,32 +63,43 @@
     <!-- Search & Filters -->
     <section class="search-section">
         <div class="container">
-            <form class="search-form" action="{{ url_for('index') }}" method="GET">
-                <div class="search-input-wrapper">
-                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="11" cy="11" r="8"/>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            <div class="search-container">
+                <form class="search-form" action="{{ url_for('index') }}" method="GET">
+                    <div class="search-input-wrapper">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                        <input type="text" name="q" placeholder="{{ _('search_placeholder') }}" 
+                               value="{{ search_query }}">
+                        {% if selected_region %}
+                            <input type="hidden" name="region" value="{{ selected_region }}">
+                        {% endif %}
+                        {% if selected_country %}
+                            <input type="hidden" name="country" value="{{ selected_country }}">
+                        {% endif %}
+                        {% if selected_city %}
+                            <input type="hidden" name="city" value="{{ selected_city }}">
+                        {% endif %}
+                        {% if selected_district %}
+                            <input type="hidden" name="district" value="{{ selected_district }}">
+                        {% endif %}
+                        {% if selected_level %}
+                            <input type="hidden" name="level" value="{{ selected_level }}">
+                        {% endif %}
+                    </div>
+                    <button type="submit" style="display:none;">Search</button>
+                </form>
+                
+                <a href="{{ url_for('deep_search') }}" class="deep-search-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
                     </svg>
-                    <input type="text" name="q" placeholder="{{ _('search_placeholder') }}" 
-                           value="{{ search_query }}">
-                    {% if selected_region %}
-                        <input type="hidden" name="region" value="{{ selected_region }}">
-                    {% endif %}
-                    {% if selected_country %}
-                        <input type="hidden" name="country" value="{{ selected_country }}">
-                    {% endif %}
-                    {% if selected_city %}
-                        <input type="hidden" name="city" value="{{ selected_city }}">
-                    {% endif %}
-                    {% if selected_district %}
-                        <input type="hidden" name="district" value="{{ selected_district }}">
-                    {% endif %}
-                    {% if selected_level %}
-                        <input type="hidden" name="level" value="{{ selected_level }}">
-                    {% endif %}
-                </div>
-                <button type="submit" style="display:none;">Search</button>
-            </form>
+                    {{ _('deep_search') if _('deep_search') != 'deep_search' else 'AI 深度搜索' }}
+                </a>
+            </div>
 
             <!-- Filters -->
             <div class="filter-bar">

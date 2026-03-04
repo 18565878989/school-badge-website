@@ -2849,3 +2849,251 @@ def similar_schools_api(school_id):
     assistant.close()
     
     return jsonify(result)
+
+
+# ==================== Deep Search AI ====================
+
+@app.route('/deep-search')
+def deep_search():
+    """AI 深度搜索页面"""
+    return render_template('deep_search.html')
+
+
+@app.route('/api/deep-search', methods=['POST'])
+def deep_search_api():
+    """AI 深度搜索 API - 对接AI大模型进行智能搜索"""
+    import requests
+    import json
+    
+    data = request.get_json()
+    query = data.get('query', '').strip()
+    
+    if not query:
+        return jsonify({'error': '请输入搜索内容'})
+    
+    try:
+        # 构建上下文 - 从数据库获取学校信息作为参考
+        conn = get_db_connection()
+        
+        # 获取学校总数和样本
+        total_schools = conn.execute("SELECT COUNT(*) FROM schools").fetchone()[0]
+        sample_schools = conn.execute("""
+            SELECT id, name, name_cn, country, city, region, level, motto, founded, website
+            FROM schools 
+            WHERE name IS NOT NULL
+            ORDER BY RANDOM() 
+            LIMIT 100
+        """).fetchall()
+        
+        # 构建学校信息摘要
+        schools_info = []
+        for s in sample_schools:
+            schools_info.append({
+                'id': s['id'],
+                'name': s['name'],
+                'name_cn': s['name_cn'],
+                'country': s['country'],
+                'city': s['city'],
+                'region': s['region'],
+                'level': s['level'],
+                'motto': s['motto'],
+                'founded': s['founded'],
+                'website': s['website']
+            })
+        
+        conn.close()
+        
+        # 构建系统提示词
+        system_prompt = f"""你是一个专业的学校搜索助手。你的任务是根据用户的查询在数据库中搜索匹配的学校。
+
+数据库中共有 {total_schools} 所学校，包含以下字段：
+- id: 学校ID
+- name: 学校英文名
+- name_cn: 学校中文名
+- country: 国家
+- city: 城市
+- region: 地区 (Asia, North America, Europe, Oceania, Africa, South America)
+- level: 类型 (university, middle, elementary, kindergarten)
+- motto: 校训
+- founded: 建校年份
+- website: 官网
+
+请根据用户的查询意图，分析并搜索匹配的学校。返回JSON格式：
+{{
+    "analysis": "你对用户查询的分析",
+    "search_conditions": ["搜索条件描述"],
+    "school_ids": [匹配的学校ID列表，最多10个]
+}}
+
+如果用户只是闲聊或问候，请返回：
+{{
+    "analysis": "问候或闲聊",
+    "search_conditions": [],
+    "school_ids": []
+}}
+
+注意：只需要返回符合条件的学校ID列表，不要编造学校信息。"""
+
+        # 调用AI API (使用OpenAI兼容接口或MiniMax)
+        # 这里使用MiniMax API作为示例
+        try:
+            # 尝试使用 MiniMax API
+            api_url = "https://api.minimax.chat/v1/text/chatcompletion_v2"
+            api_key = os.environ.get('MINIMAX_API_KEY', '')
+            
+            if api_key:
+                headers = {
+                    'Authorization': f'Bearer {api_key}',
+                    'Content-Type': 'application/json'
+                }
+                
+                payload = {
+                    "model": "MiniMax-M2.1",
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": f"用户查询: {query}\n\n请分析并返回匹配的JSON结果。"}
+                    ],
+                    "temperature": 0.3,
+                    "max_tokens": 1000
+                }
+                
+                response = requests.post(api_url, headers=headers, json=payload, timeout=30)
+                
+                if response.status_code == 200:
+                    result = response.json()
+                    ai_response = result.get('choices', [{}])[0].get('message', {}).get('content', '')
+                    
+                    # 解析AI返回的JSON
+                    try:
+                        # 尝试提取JSON部分
+                        import re
+                        json_match = re.search(r'\{[^{}]*\}', ai_response, re.DOTALL)
+                        if json_match:
+                            parsed = json.loads(json_match.group())
+                        else:
+                            parsed = json.loads(ai_response)
+                        
+                        analysis = parsed.get('analysis', '')
+                        school_ids = parsed.get('school_ids', [])
+                        
+                        # 如果是闲聊/问候，不搜索学校
+                        if analysis in ['问候或闲聊', '闲聊', '问候'] or not school_ids:
+                            # 生成友好回复
+                            friendly_responses = [
+                                "您好！我是校徽网AI助手 🎓 请告诉我您想找什么类型的学校？",
+                                "嗨！很高兴为您服务！请描述您想找的学校，例如：'我想找日本的大学'",
+                                "您好！请告诉我您的需求，比如：'推荐几所美国的知名大学'",
+                            ]
+                            import random
+                            response_text = random.choice(friendly_responses)
+                            return jsonify({
+                                'response': response_text,
+                                'analysis': analysis,
+                                'schools': []
+                            })
+                        
+                        # 根据ID获取学校详情
+                        conn = get_db_connection()
+                        schools = []
+                        for sid in school_ids[:10]:
+                            school = conn.execute("SELECT * FROM schools WHERE id = ?", (sid,)).fetchone()
+                            if school:
+                                schools.append(dict(school))
+                        conn.close()
+                        
+                        # 生成回复
+                        response_text = f"根据您的查询「{query}」，我找到了 {len(schools)} 所匹配的学校：\n\n"
+                        response_text += analysis
+                        
+                        return jsonify({
+                            'response': response_text,
+                            'analysis': analysis,
+                            'schools': schools
+                        })
+                    except json.JSONDecodeError:
+                        pass
+        except Exception as e:
+            print(f"AI API调用失败: {e}")
+        
+        # 如果API调用失败，使用本地搜索作为后备
+        # 智能解析查询
+        query_lower = query.lower()
+        
+        # 提取搜索条件
+        conditions = []
+        params = []
+        
+        # 地区匹配
+        regions_map = {
+            '亚洲': 'Asia', '日本': 'Asia', '韩国': 'Asia', '中国': 'Asia',
+            '美国': 'North America', '加拿大': 'North America',
+            '英国': 'Europe', '德国': 'Europe', '法国': 'Europe',
+            '澳洲': 'Oceania', '澳大利亚': 'Oceania', '新西兰': 'Oceania',
+        }
+        for key, region in regions_map.items():
+            if key in query_lower:
+                conditions.append("region = ?")
+                params.append(region)
+        
+        # 国家匹配
+        countries_map = {
+            '日本': 'Japan', '韩国': 'South Korea', '中国': 'China',
+            '美国': 'United States', '加拿大': 'Canada',
+            '英国': 'United Kingdom', '德国': 'Germany', '法国': 'France',
+            '澳大利亚': 'Australia', '新加坡': 'Singapore', '香港': 'Hong Kong',
+            '台湾': 'Taiwan', '马来西亚': 'Malaysia', '泰国': 'Thailand',
+        }
+        for key, country in countries_map.items():
+            if key in query_lower:
+                conditions.append("country = ?")
+                params.append(country)
+        
+        # 类型匹配
+        level_map = {
+            '大学': 'university', '学院': 'university',
+            '高中': 'middle', '中学': 'middle',
+            '小学': 'elementary',
+            '幼儿园': 'kindergarten',
+        }
+        for key, level in level_map.items():
+            if key in query_lower:
+                conditions.append("level = ?")
+                params.append(level)
+        
+        # 关键词搜索
+        keyword = query.replace('找', '').replace('推荐', '').replace('的', '').strip()
+        if keyword and len(keyword) > 1:
+            conditions.append("(name LIKE ? OR name_cn LIKE ? OR country LIKE ?)")
+            params.extend([f'%{keyword}%', f'%{keyword}%', f'%{keyword}%'])
+        
+        # 执行搜索
+        conn = get_db_connection()
+        
+        if conditions:
+            sql = "SELECT * FROM schools WHERE " + " AND ".join(conditions) + " ORDER BY name LIMIT 10"
+            schools = conn.execute(sql, params).fetchall()
+        else:
+            # 如果没有明确条件，进行模糊搜索
+            schools = conn.execute("""
+                SELECT * FROM schools 
+                WHERE name LIKE ? OR name_cn LIKE ?
+                ORDER BY name LIMIT 10
+            """, (f'%{query}%', f'%{query}%')).fetchall()
+        
+        conn.close()
+        
+        schools = [dict(s) for s in schools]
+        
+        # 生成回复
+        if schools:
+            response_text = f"找到 {len(schools)} 所符合「{query}」的学校："
+        else:
+            response_text = f"抱歉，没有找到符合「{query}」的学校。请尝试其他关键词。"
+        
+        return jsonify({
+            'response': response_text,
+            'schools': schools
+        })
+        
+    except Exception as e:
+        return jsonify({'error': str(e)})
