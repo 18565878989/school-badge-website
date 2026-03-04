@@ -7,6 +7,13 @@ import os
 # Ensure debug mode is off
 os.environ['FLASK_DEBUG'] = '0'
 
+# Load .env file before importing app
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 from app import app
 
 if __name__ == '__main__':

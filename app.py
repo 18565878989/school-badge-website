@@ -2935,12 +2935,14 @@ def deep_search_api():
 
 如果用户只是闲聊或问候，请返回：
 {{
-    "analysis": "问候或闲聊",
-    "search_conditions": [],
-    "school_ids": []
+    "analysis": "问候",
+    "keywords": []
 }}
 
-注意：只需要返回符合条件的学校ID列表，不要编造学校信息。"""
+注意：
+1. 返回keywords（关键词）用于数据库搜索，不要返回school_ids！
+2. 例如查询"日本大学"，返回 keywords: ["日本", "大学"]
+3. school_ids通常是错的，不要返回！"""
 
         # AI Provider 选择顺序: Cloudflare -> Ollama -> MiniMax -> 本地搜索
         ai_response = None
@@ -3022,21 +3024,23 @@ def deep_search_api():
             try:
                 import re
                 # 尝试提取JSON部分
-                json_match = re.search(r'\{[^{}]*\}', ai_response, re.DOTALL)
-                if json_match:
-                    parsed = json.loads(json_match.group())
-                else:
-                    parsed = json.loads(ai_response)
+                try:
+                    json_match = re.search(r'\{[^{}]*\}', ai_response, re.DOTALL)
+                    if json_match:
+                        parsed = json.loads(json_match.group())
+                    else:
+                        parsed = json.loads(ai_response)
+                except:
+                    parsed = {}
                 
                 analysis = parsed.get('analysis', '')
-                school_ids = parsed.get('school_ids', [])
+                keywords = parsed.get('keywords', [])
                 
-                # 如果是闲聊/问候，不搜索学校
-                if analysis in ['问候或闲聊', '闲聊', '问候'] or not school_ids:
+                # 如果是闲聊/问候
+                if '问候' in analysis or '闲聊' in analysis or not keywords:
                     friendly_responses = [
                         "您好！我是校徽网AI助手 🎓 请告诉我您想找什么类型的学校？",
                         "嗨！很高兴为您服务！请描述您想找的学校，例如：'我想找日本的大学'",
-                        "您好！请告诉我您的需求，比如：'推荐几所美国的知名大学'",
                     ]
                     import random
                     response_text = random.choice(friendly_responses)
@@ -3046,14 +3050,23 @@ def deep_search_api():
                         'schools': []
                     })
                 
-                # 根据ID获取学校详情
+                # 使用AI返回的keywords搜索学校
                 conn = get_db_connection()
                 schools = []
-                for sid in school_ids[:10]:
-                    school = conn.execute("SELECT * FROM schools WHERE id = ?", (sid,)).fetchone()
-                    if school:
-                        schools.append(dict(school))
+                
+                # 对每个关键词搜索
+                for kw in keywords[:4]:
+                    results = conn.execute("""
+                        SELECT * FROM schools 
+                        WHERE (name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?)
+                        ORDER BY name LIMIT 15
+                    """, (f'%{kw}%', f'%{kw}%', f'%{kw}%', f'%{kw}%')).fetchall()
+                    for r in results:
+                        if r not in schools:
+                            schools.append(r)
+                
                 conn.close()
+                schools = [dict(s) for s in schools[:10]]
                 
                 response_text = f"根据您的查询「{query}」，我找到了 {len(schools)} 所匹配的学校：\n\n"
                 response_text += analysis
