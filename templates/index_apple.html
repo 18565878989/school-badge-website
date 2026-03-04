@@ -63,15 +63,22 @@
     <!-- Search & Filters -->
     <section class="search-section">
         <div class="container">
-            <div class="search-container">
-                <form class="search-form" action="{{ url_for('index') }}" method="GET">
+            <div class="search-wrapper">
+                <form class="search-form" id="mainSearchForm" action="{{ url_for('index') }}" method="GET">
                     <div class="search-input-wrapper">
                         <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="11" cy="11" r="8"/>
                             <line x1="21" y1="21" x2="16.65" y2="16.65"/>
                         </svg>
-                        <input type="text" name="q" placeholder="{{ _('search_placeholder') }}" 
+                        <input type="text" name="q" id="searchInput" placeholder="{{ _('search_placeholder') }}" 
                                value="{{ search_query }}">
+                        <button type="button" class="deep-search-toggle" id="deepSearchBtn" title="AI 深度搜索">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </button>
                         {% if selected_region %}
                             <input type="hidden" name="region" value="{{ selected_region }}">
                         {% endif %}
@@ -88,17 +95,7 @@
                             <input type="hidden" name="level" value="{{ selected_level }}">
                         {% endif %}
                     </div>
-                    <button type="submit" style="display:none;">Search</button>
                 </form>
-                
-                <a href="{{ url_for('deep_search') }}" class="deep-search-btn">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                        <path d="M2 17l10 5 10-5"/>
-                        <path d="M2 12l10 5 10-5"/>
-                    </svg>
-                    {{ _('deep_search') if _('deep_search') != 'deep_search' else 'AI 深度搜索' }}
-                </a>
             </div>
 
             <!-- Filters -->
@@ -494,5 +491,26 @@
     {% endif %}
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script>
+        // 深度搜索按钮 - 点击后调用AI搜索
+        document.getElementById('deepSearchBtn').addEventListener('click', function() {
+            const query = document.getElementById('searchInput').value.trim();
+            
+            if (!query) {
+                alert('请先输入搜索内容');
+                return;
+            }
+            
+            // 显示深度搜索聊天界面
+            window.location.href = '/deep-search?q=' + encodeURIComponent(query);
+        });
+        
+        // 支持回车键搜索（普通搜索）
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('mainSearchForm').submit();
+            }
+        });
+    </script>
 </body>
 </html>

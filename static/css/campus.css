@@ -418,51 +418,81 @@ body {
     margin-bottom: 32px;
 }
 
-.search-container {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    max-width: 900px;
+.search-wrapper {
+    max-width: 700px;
     margin: 0 auto 32px;
 }
 
-.search-container .search-form {
-    flex: 1;
+.search-form {
     margin-bottom: 0;
 }
 
-.deep-search-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 12px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--primary);
-    background: transparent;
-    border: 1px solid rgba(30, 58, 95, 0.2);
-    border-radius: 16px;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: all 0.25s ease;
-}
-
-.deep-search-btn:hover {
-    background: var(--primary);
-    color: #fff;
-    border-color: var(--primary);
-}
-
-.deep-search-btn:active {
-    transform: scale(0.97);
-}
-
-.deep-search-btn svg {
-    width: 16px;
-    height: 16px;
-}
-
 .search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--background);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transition: all 0.3s;
+}
+
+.search-input-wrapper:focus-within {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1), 0 0 0 4px rgba(30, 58, 95, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+.search-input-wrapper input {
+    width: 100%;
+    padding: 20px 60px 20px 52px;
+    font-size: 17px;
+    border: none;
+    border-radius: 16px;
+    background: transparent;
+}
+
+.search-input-wrapper input:focus {
+    outline: none;
+}
+
+/* 深度搜索按钮 - 在搜索框内部 */
+.deep-search-toggle {
+    position: absolute;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    color: var(--text-secondary);
+}
+
+.deep-search-toggle:hover {
+    background: rgba(30, 58, 95, 0.1);
+    color: var(--primary);
+}
+
+.deep-search-toggle:active {
+    transform: scale(0.95);
+}
+
+.deep-search-toggle svg {
+    width: 22px;
+    height: 22px;
+}
     position: relative;
     display: flex;
     align-items: center;
@@ -475,22 +505,6 @@ body {
     height: 20px;
     color: var(--text-secondary);
     opacity: 0.6;
-}
-
-.search-input-wrapper input {
-    width: 100%;
-    padding: 20px 24px 20px 56px;
-    font-size: 17px;
-    border: 2px solid transparent;
-    border-radius: 16px;
-    background: var(--background);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    transition: all 0.3s;
-}
-
-.search-input-wrapper input:focus {
-    outline: none;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.1), 0 0 0 4px rgba(30, 58, 95, 0.1);
 }
 
 /* Filter Bar */

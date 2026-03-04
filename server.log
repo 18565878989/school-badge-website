@@ -1,8 +1,13 @@
- * Serving Flask app 'app'
  * Debug mode: off
 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5001
- * Running on http://7.247.188.207:5001
 [33mPress CTRL+C to quit[0m
-127.0.0.1 - - [03/Mar/2026 14:54:19] "[33mGET /assistants HTTP/1.1[0m" 404 -
+127.0.0.1 - - [04/Mar/2026 11:53:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Mar/2026 11:53:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Mar/2026 11:53:22] "GET /static/css/campus.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Mar/2026 11:53:24] "GET /?region=Asia HTTP/1.1" 200 -
+127.0.0.1 - - [04/Mar/2026 11:53:24] "[36mGET /static/images/badges/2540.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [04/Mar/2026 11:53:24] "[36mGET /static/images/badges/10292_wiki.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [04/Mar/2026 11:53:24] "[36mGET /static/images/logo-horizontal.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [04/Mar/2026 11:53:24] "[36mGET /static/css/campus.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [04/Mar/2026 11:53:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -

@@ -102,6 +102,18 @@
         const chatForm = document.getElementById('chatForm');
         const chatInput = document.getElementById('chatInput');
         
+        // 检查URL参数，如果有搜索词则自动搜索
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialQuery = urlParams.get('q');
+        
+        if (initialQuery) {
+            chatInput.value = initialQuery;
+            // 自动提交搜索
+            setTimeout(() => {
+                chatForm.dispatchEvent(new Event('submit'));
+            }, 500);
+        }
+        
         // 添加用户消息
         function addUserMessage(text) {
             const div = document.createElement('div');
