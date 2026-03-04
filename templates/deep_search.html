@@ -210,7 +210,10 @@
         chatForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             const text = chatInput.value.trim();
-            if (!text) return;
+            if (!text) {
+                alert('请输入您想搜索的学校描述');
+                return;
+            }
             
             addUserMessage(text);
             chatInput.value = '';
@@ -235,7 +238,7 @@
                 }
             } catch (error) {
                 removeLoadingMessage();
-                addAIMessage('网络错误，请稍后重试');
+                addAIMessage('网络错误，请检查网络后重试。或者您可以尝试用更简单的关键词搜索。');
             }
         });
         

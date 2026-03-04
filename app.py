@@ -2963,7 +2963,7 @@ def deep_search_api():
                     ],
                     "max_tokens": 500
                 }
-                cf_response = requests.post(cf_url, headers=cf_headers, json=cf_payload, timeout=30)
+                cf_response = requests.post(cf_url, headers=cf_headers, json=cf_payload, timeout=60)
                 if cf_response.status_code == 200:
                     cf_result = cf_response.json()
                     ai_response = cf_result.get('result', {}).get('response', '')
