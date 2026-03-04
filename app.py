@@ -2942,88 +2942,131 @@ def deep_search_api():
 
 注意：只需要返回符合条件的学校ID列表，不要编造学校信息。"""
 
-        # 调用AI API (使用MiniMax)
-        try:
-            # 尝试使用 MiniMax API
+        # AI Provider 选择顺序: Cloudflare -> Ollama -> MiniMax -> 本地搜索
+        ai_response = None
+        
+        # 1. 尝试 Cloudflare Workers AI (推荐)
+        cf_token = os.environ.get('CF_API_TOKEN', '')
+        cf_account = os.environ.get('CF_ACCOUNT_ID', '')
+        
+        if cf_token and cf_account:
+            try:
+                cf_url = f"https://api.cloudflare.com/client/v4/accounts/{cf_account}/ai/run/@cf/meta/llama-3.1-8b-instruct"
+                cf_headers = {
+                    'Authorization': f'Bearer {cf_token}',
+                    'Content-Type': 'application/json'
+                }
+                cf_payload = {
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": f"用户查询: {query}\n\n请以JSON格式返回结果，包含analysis和school_ids字段。"}
+                    ],
+                    "max_tokens": 500
+                }
+                cf_response = requests.post(cf_url, headers=cf_headers, json=cf_payload, timeout=30)
+                if cf_response.status_code == 200:
+                    cf_result = cf_response.json()
+                    ai_response = cf_result.get('result', {}).get('response', '')
+            except Exception as e:
+                print(f"Cloudflare API error: {e}")
+        
+        # 2. 尝试 Ollama (本地)
+        if not ai_response:
+            ollama_url = os.environ.get('OLLAMA_BASE_URL', 'http://localhost:11434') + '/api/chat'
+            try:
+                ollama_payload = {
+                    "model": "llama3.2",
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": f"用户查询: {query}\n\n请以JSON格式返回结果。"}
+                    ],
+                    "stream": False
+                }
+                ollama_response = requests.post(ollama_url, json=ollama_payload, timeout=30)
+                if ollama_response.status_code == 200:
+                    ollama_result = ollama_response.json()
+                    ai_response = ollama_result.get('message', {}).get('content', '')
+            except Exception as e:
+                print(f"Ollama API error: {e}")
+        
+        # 3. 尝试 MiniMax API
+        if not ai_response:
             api_url = "https://api.minimax.chat/v1/text/chatcompletion_v2"
             api_key = os.environ.get('MINIMAX_API_KEY', '')
             model_name = os.environ.get('MINIMAX_MODEL', 'MiniMax-M2.1')
             
             if api_key:
-                headers = {
-                    'Authorization': f'Bearer {api_key}',
-                    'Content-Type': 'application/json'
-                }
-                
-                payload = {
-                    "model": model_name,
-                    "messages": [
-                        {"role": "system", "content": system_prompt},
-                        {"role": "user", "content": f"用户查询: {query}\n\n请分析并返回匹配的JSON结果。"}
-                    ],
-                    "temperature": 0.3,
-                    "max_tokens": 1000
-                }
-                
-                response = requests.post(api_url, headers=headers, json=payload, timeout=30)
-                
-                if response.status_code == 200:
-                    result = response.json()
-                    ai_response = result.get('choices', [{}])[0].get('message', {}).get('content', '')
-                    
-                    # 解析AI返回的JSON
-                    try:
-                        # 尝试提取JSON部分
-                        import re
-                        json_match = re.search(r'\{[^{}]*\}', ai_response, re.DOTALL)
-                        if json_match:
-                            parsed = json.loads(json_match.group())
-                        else:
-                            parsed = json.loads(ai_response)
-                        
-                        analysis = parsed.get('analysis', '')
-                        school_ids = parsed.get('school_ids', [])
-                        
-                        # 如果是闲聊/问候，不搜索学校
-                        if analysis in ['问候或闲聊', '闲聊', '问候'] or not school_ids:
-                            # 生成友好回复
-                            friendly_responses = [
-                                "您好！我是校徽网AI助手 🎓 请告诉我您想找什么类型的学校？",
-                                "嗨！很高兴为您服务！请描述您想找的学校，例如：'我想找日本的大学'",
-                                "您好！请告诉我您的需求，比如：'推荐几所美国的知名大学'",
-                            ]
-                            import random
-                            response_text = random.choice(friendly_responses)
-                            return jsonify({
-                                'response': response_text,
-                                'analysis': analysis,
-                                'schools': []
-                            })
-                        
-                        # 根据ID获取学校详情
-                        conn = get_db_connection()
-                        schools = []
-                        for sid in school_ids[:10]:
-                            school = conn.execute("SELECT * FROM schools WHERE id = ?", (sid,)).fetchone()
-                            if school:
-                                schools.append(dict(school))
-                        conn.close()
-                        
-                        # 生成回复
-                        response_text = f"根据您的查询「{query}」，我找到了 {len(schools)} 所匹配的学校：\n\n"
-                        response_text += analysis
-                        
-                        return jsonify({
-                            'response': response_text,
-                            'analysis': analysis,
-                            'schools': schools
-                        })
-                    except json.JSONDecodeError:
-                        pass
-        except Exception as e:
-            print(f"AI API调用失败: {e}")
+                try:
+                    headers = {
+                        'Authorization': f'Bearer {api_key}',
+                        'Content-Type': 'application/json'
+                    }
+                    payload = {
+                        "model": model_name,
+                        "messages": [
+                            {"role": "system", "content": system_prompt},
+                            {"role": "user", "content": f"用户查询: {query}\n\n请分析并返回匹配的JSON结果。"}
+                        ],
+                        "temperature": 0.3,
+                        "max_tokens": 1000
+                    }
+                    response = requests.post(api_url, headers=headers, json=payload, timeout=30)
+                    if response.status_code == 200:
+                        result = response.json()
+                        ai_response = result.get('choices', [{}])[0].get('message', {}).get('content', '')
+                except Exception as e:
+                    print(f"MiniMax API error: {e}")
         
-        # 如果API调用失败，使用本地搜索作为后备
+        # 4. 如果有AI响应，解析并处理
+        if ai_response:
+            try:
+                import re
+                # 尝试提取JSON部分
+                json_match = re.search(r'\{[^{}]*\}', ai_response, re.DOTALL)
+                if json_match:
+                    parsed = json.loads(json_match.group())
+                else:
+                    parsed = json.loads(ai_response)
+                
+                analysis = parsed.get('analysis', '')
+                school_ids = parsed.get('school_ids', [])
+                
+                # 如果是闲聊/问候，不搜索学校
+                if analysis in ['问候或闲聊', '闲聊', '问候'] or not school_ids:
+                    friendly_responses = [
+                        "您好！我是校徽网AI助手 🎓 请告诉我您想找什么类型的学校？",
+                        "嗨！很高兴为您服务！请描述您想找的学校，例如：'我想找日本的大学'",
+                        "您好！请告诉我您的需求，比如：'推荐几所美国的知名大学'",
+                    ]
+                    import random
+                    response_text = random.choice(friendly_responses)
+                    return jsonify({
+                        'response': response_text,
+                        'analysis': analysis,
+                        'schools': []
+                    })
+                
+                # 根据ID获取学校详情
+                conn = get_db_connection()
+                schools = []
+                for sid in school_ids[:10]:
+                    school = conn.execute("SELECT * FROM schools WHERE id = ?", (sid,)).fetchone()
+                    if school:
+                        schools.append(dict(school))
+                conn.close()
+                
+                response_text = f"根据您的查询「{query}」，我找到了 {len(schools)} 所匹配的学校：\n\n"
+                response_text += analysis
+                
+                return jsonify({
+                    'response': response_text,
+                    'analysis': analysis,
+                    'schools': schools
+                })
+            except Exception as e:
+                print(f"AI response parse error: {e}")
+        
+        # 如果没有AI响应或解析失败，使用本地搜索作为后备
         # 智能解析查询
         query_lower = query.lower()
         
