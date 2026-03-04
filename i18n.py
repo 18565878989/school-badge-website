@@ -588,12 +588,129 @@ TRANSLATIONS = {
         
         # Footer
         'copyright': '© 2024 校章コレクション',
+    },
+    'zh-TW': {
+        # Navigation
+        'home': '首頁',
+        'campus_gallery': '校園風光',
+        'my_likes': '我的收藏',
+        'login': '登入',
+        'register': '註冊',
+        'logout': '登出',
+        'language': '語言',
+        'admin_panel': '管理後台',
+        
+        # Home
+        'hero_title': '探索全球名校',
+        'hero_subtitle': 'Discover prestigious institutions worldwide',
+        'search_placeholder': '搜尋學校名稱、城市或國家...',
+        'all_regions': '所有地區',
+        'all_countries': '所有國家',
+        'all_cities': '所有城市',
+        'all_districts': '所有區域',
+        'all_types': '所有類型',
+        'university': '大學',
+        'middle_school': '中學',
+        'elementary_school': '小學',
+        'kindergarten': '幼兒園',
+        'clear_filters': '清除篩選',
+        'schools_count': '共 {} 所學校',
+        'no_schools': '沒有找到符合條件的學校',
+        'view_all': '查看全部學校',
+        
+        # School Card
+        'founded': '建校年份',
+        'principal': '現任校長',
+        'address': '詳細地址',
+        'location': '位置',
+        'region': '地區',
+        
+        # School Detail
+        'back': '返回學校列表',
+        'like': '收藏',
+        'liked': '已收藏',
+        'download': '下載校徽',
+        'likes_count': '{} 人收藏',
+        'motto_label': '校訓',
+        'website': '官方網站',
+        'phone': '電話',
+        'fax': '傳真',
+        'principal_label': '校長',
+        'supervisor': '校監',
+        'school_type': '學校類別',
+        'gender': '招生性別',
+        'session': '授課時間',
+        'finance_type': '辦學類型',
+        'district': '所屬區域',
+        'source': '數據來源',
+        
+        # Search Filters
+        'search': '搜尋',
+        
+        # Social
+        'posts': '貼文',
+        'create_post': '發布貼文',
+        'write_something': '寫下你的想法...',
+        'like': '按讚',
+        'comment': '評論',
+        'share': '分享',
+        'comments': '評論',
+        'no_posts': '還沒有貼文',
+        'write_first': '成為第一個發布貼文的人！',
+        
+        # Auth
+        'username': '用戶名',
+        'email': '電子郵箱',
+        'password': '密碼',
+        'confirm_password': '確認密碼',
+        'forgot_password': '忘記密碼？',
+        'no_account': '還沒有帳號？',
+        'has_account': '已經有帳號？',
+        'login_success': '登入成功',
+        'logout_success': '已登出',
+        'register_success': '註冊成功，請登入',
+        'login_failed': '用戶名或密碼錯誤',
+        'register_failed': '註冊失敗',
+        
+        # Admin
+        'dashboard': '儀表盤',
+        'users': '用戶管理',
+        'schools': '學校管理',
+        'logs': '操作日誌',
+        'permissions': '權限管理',
+        'add_school': '新增學校',
+        'edit_school': '編輯學校',
+        'delete_school': '刪除學校',
+        'confirm_delete': '確認刪除？',
+        'user_role': '用戶角色',
+        'admin': '管理員',
+        'normal_user': '普通用戶',
+        'edit': '編輯',
+        'delete': '刪除',
+        'save': '儲存',
+        'cancel': '取消',
+        
+        # Deep Search
+        'deep_search': 'AI 深度搜尋',
+        
+        # Errors
+        'error_404': '頁面不存在',
+        'error_500': '伺服器錯誤',
+        'no_permission': '您沒有權限訪問此頁面。',
+        'welcome_admin': '管理員，您好！',
+        'total_schools': '學校總數',
+        'total_users': '用戶總數',
+        'total_visits': '訪問量',
+        
+        # Footer
+        'copyright': '© 2024 校徽網 · School Badge Collection',
     }
 }
 
 # Language names for selector
 LANGUAGE_NAMES = {
-    'zh': '中文',
+    'zh': '中文简体',
+    'zh-TW': '中文繁體',
     'en': 'English',
     'fr': 'Français',
     'de': 'Deutsch',
@@ -610,6 +727,8 @@ def get_locale():
     for lang in accept_language.split(','):
         lang_code = lang.split(';')[0].strip().lower()
         if lang_code.startswith('zh'):
+            if 'tw' in lang_code or 'hk' in lang_code:
+                return 'zh-TW'
             return 'zh'
         elif lang_code.startswith('en'):
             return 'en'
@@ -625,5 +744,10 @@ def get_locale():
 def _(key):
     """Translate a key to the current language."""
     locale = get_locale()
-    translations = TRANSLATIONS.get(locale, TRANSLATIONS['zh'])
+    translations = TRANSLATIONS.get(locale)
+    
+    # 如果没有该语言的翻译，回退到简体中文
+    if not translations:
+        translations = TRANSLATIONS.get('zh', {})
+    
     return translations.get(key, TRANSLATIONS['zh'].get(key, key))
