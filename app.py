@@ -10,6 +10,14 @@ import hmac
 import time
 from datetime import datetime
 from urllib.parse import urlencode
+
+# 加载 .env 文件配置 (如果存在)
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 from models import (
     init_db, create_user, verify_password, get_user_by_id, is_admin, get_db_connection,
     get_all_users, update_user_role, delete_user,
@@ -2934,12 +2942,12 @@ def deep_search_api():
 
 注意：只需要返回符合条件的学校ID列表，不要编造学校信息。"""
 
-        # 调用AI API (使用OpenAI兼容接口或MiniMax)
-        # 这里使用MiniMax API作为示例
+        # 调用AI API (使用MiniMax)
         try:
             # 尝试使用 MiniMax API
             api_url = "https://api.minimax.chat/v1/text/chatcompletion_v2"
             api_key = os.environ.get('MINIMAX_API_KEY', '')
+            model_name = os.environ.get('MINIMAX_MODEL', 'MiniMax-M2.1')
             
             if api_key:
                 headers = {
@@ -2948,7 +2956,7 @@ def deep_search_api():
                 }
                 
                 payload = {
-                    "model": "MiniMax-M2.1",
+                    "model": model_name,
                     "messages": [
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": f"用户查询: {query}\n\n请分析并返回匹配的JSON结果。"}
