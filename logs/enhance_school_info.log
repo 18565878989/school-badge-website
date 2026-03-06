@@ -46,3 +46,246 @@ Traceback (most recent call last):
   File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/enhance_school_info.py", line 7, in <module>
     import requests
 ModuleNotFoundError: No module named 'requests'
+[2026-03-06 16:00:00] ==================================================
+[2026-03-06 16:00:00] 学校信息完善任务开始
+[2026-03-06 16:00:00] ==================================================
+[2026-03-06 16:00:00] 目标: 20 所学校
+[2026-03-06 16:00:00] 处理: Near East University (Cyprus)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.neu.edu.tr'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'neu.edu.tr'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 16:00:03]   ✗ 未找到新信息
+[2026-03-06 16:00:04] 处理: Hebrew University of Jerusalem (Israel)
+[2026-03-06 16:00:04] 解析失败: HTTPSConnectionPool(host='www.hebrewofjerusalem.edu.is', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.hebrewofjerusalem.edu.is', port=443): Failed to resolve 'www.hebrewofjerusalem.edu.is' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 16:00:04]   ✗ 未找到新信息
+[2026-03-06 16:00:05] 处理: UAE Institute of Technology 10 (UAE)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'example.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 16:00:05]   ✗ 未找到新信息
+[2026-03-06 16:00:06] 处理: Dhofar University (Oman)
+[2026-03-06 16:00:06] 解析失败: HTTPSConnectionPool(host='www.dhofar.edu.om', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.dhofar.edu.om', port=443): Failed to resolve 'www.dhofar.edu.om' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 16:00:06]   ✗ 未找到新信息
+[2026-03-06 16:00:08] 处理: Parahyangan Catholic University (Indonesia)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'unpar.ac.id'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 16:00:12]   ✗ 未找到新信息
+[2026-03-06 16:00:13] 处理: Tajik State Pedagogical University (Tajikistan)
+[2026-03-06 16:00:13] 解析失败: HTTPSConnectionPool(host='www.tajikstatepedagogical.edu.ta', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.tajikstatepedagogical.edu.ta', port=443): Failed to resolve 'www.tajikstatepedagogical.edu.ta' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 16:00:13]   ✗ 未找到新信息
+[2026-03-06 16:00:14] 处理: Mandalay Institute of Finance and Economics (Myanmar)
+[2026-03-06 16:00:14] 解析失败: HTTPSConnectionPool(host='www.mife.edu.mm', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.mife.edu.mm', port=443): Failed to resolve 'www.mife.edu.mm' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 16:00:14]   ✗ 未找到新信息
+[2026-03-06 16:00:15] 处理: State Academy of Sciences (North Korea)
+[2026-03-06 16:00:15] 解析失败: HTTPSConnectionPool(host='www.academy-science.gov.kp', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.academy-science.gov.kp', port=443): Failed to resolve 'www.academy-science.gov.kp' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 16:00:15]   ✗ 未找到新信息
+[2026-03-06 16:00:17] 处理: Pakistan Institute of Engineering (Pakistan)
+[2026-03-06 16:00:17] 解析失败: Invalid URL 'www.piet.edu.pk': No scheme supplied. Perhaps you meant https://www.piet.edu.pk?
+[2026-03-06 16:00:17]   ✗ 未找到新信息
+[2026-03-06 16:00:18] 处理: Iran Medical Center 66 (Iran)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'example.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 16:00:18]   ✗ 未找到新信息
+[2026-03-06 16:00:19] 处理: Universiti Putra Malaysia (UPM) (Malaysia)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.upm.edu.my'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 16:00:00] ==================================================
+[2026-03-06 16:00:00] 学校信息完善任务开始
+[2026-03-06 16:00:00] ==================================================
+[2026-03-06 16:00:00] 目标: 20 所学校
+[2026-03-06 16:00:00] 处理: Near East University (Cyprus)
+[2026-03-06 16:00:03]   ✗ 未找到新信息
+[2026-03-06 16:00:04] 处理: Hebrew University of Jerusalem (Israel)
+[2026-03-06 16:00:04] 解析失败: HTTPSConnectionPool(host='www.hebrewofjerusalem.edu.is', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.hebrewofjerusalem.edu.is', port=443): Failed to resolve 'www.hebrewofjerusalem.edu.is' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 16:00:04]   ✗ 未找到新信息
+[2026-03-06 16:00:05] 处理: UAE Institute of Technology 10 (UAE)
+[2026-03-06 16:00:05]   ✗ 未找到新信息
+[2026-03-06 16:00:06] 处理: Dhofar University (Oman)
+[2026-03-06 16:00:06] 解析失败: HTTPSConnectionPool(host='www.dhofar.edu.om', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.dhofar.edu.om', port=443): Failed to resolve 'www.dhofar.edu.om' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 16:00:06]   ✗ 未找到新信息
+[2026-03-06 16:00:08] 处理: Parahyangan Catholic University (Indonesia)
+[2026-03-06 16:00:12]   ✗ 未找到新信息
+[2026-03-06 16:00:13] 处理: Tajik State Pedagogical University (Tajikistan)
+[2026-03-06 16:00:13] 解析失败: HTTPSConnectionPool(host='www.tajikstatepedagogical.edu.ta', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.tajikstatepedagogical.edu.ta', port=443): Failed to resolve 'www.tajikstatepedagogical.edu.ta' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 16:00:13]   ✗ 未找到新信息
+[2026-03-06 16:00:14] 处理: Mandalay Institute of Finance and Economics (Myanmar)
+[2026-03-06 16:00:14] 解析失败: HTTPSConnectionPool(host='www.mife.edu.mm', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.mife.edu.mm', port=443): Failed to resolve 'www.mife.edu.mm' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 16:00:14]   ✗ 未找到新信息
+[2026-03-06 16:00:15] 处理: State Academy of Sciences (North Korea)
+[2026-03-06 16:00:15] 解析失败: HTTPSConnectionPool(host='www.academy-science.gov.kp', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.academy-science.gov.kp', port=443): Failed to resolve 'www.academy-science.gov.kp' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 16:00:15]   ✗ 未找到新信息
+[2026-03-06 16:00:17] 处理: Pakistan Institute of Engineering (Pakistan)
+[2026-03-06 16:00:17] 解析失败: Invalid URL 'www.piet.edu.pk': No scheme supplied. Perhaps you meant https://www.piet.edu.pk?
+[2026-03-06 16:00:17]   ✗ 未找到新信息
+[2026-03-06 16:00:18] 处理: Iran Medical Center 66 (Iran)
+[2026-03-06 16:00:18]   ✗ 未找到新信息
+[2026-03-06 16:00:19] 处理: Universiti Putra Malaysia (UPM) (Malaysia)
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/enhance_school_info.py", line 166, in <module>
+    main()
+    ~~~~^^
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/enhance_school_info.py", line 126, in main
+    update_school_info(school_id, info)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/enhance_school_info.py", line 92, in update_school_info
+    cursor.execute(f"""
+    ~~~~~~~~~~~~~~^^^^^
+        UPDATE schools
+        ^^^^^^^^^^^^^^
+        SET {', '.join(set_clauses)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        WHERE id = ?
+        ^^^^^^^^^^^^
+    """, params)
+    ^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: email
+[2026-03-06 22:00:39] ==================================================
+[2026-03-06 22:00:39] 学校信息完善任务开始
+[2026-03-06 22:00:39] ==================================================
+[2026-03-06 22:00:39] 目标: 20 所学校
+[2026-03-06 22:00:39] 处理: Laos Academy 24 (Laos)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'example.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 22:00:40]   ✗ 未找到新信息
+[2026-03-06 22:00:41] 处理: Wayamba University of Sri Lanka (Sri Lanka)
+[2026-03-06 22:00:43] 解析失败: HTTPSConnectionPool(host='www.wusl.edu.lk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.wusl.edu.lk', port=443): Failed to resolve 'www.wusl.edu.lk' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 22:00:43]   ✗ 未找到新信息
+[2026-03-06 22:00:44] 处理: Peshawar University (Pakistan)
+[2026-03-06 22:00:51] 解析失败: HTTPSConnectionPool(host='www.peshawar.edu.pa', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.peshawar.edu.pa', port=443): Failed to resolve 'www.peshawar.edu.pa' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 22:00:51]   ✗ 未找到新信息
+[2026-03-06 22:00:52] 处理: Southern Taiwan University (Taiwan)
+[2026-03-06 22:17:44] 解析失败: HTTPSConnectionPool(host='stu.edu.tw', port=443): Read timed out. (read timeout=15)
+[2026-03-06 22:17:44]   ✗ 未找到新信息
+[2026-03-06 22:17:45] 处理: Saudi Arabia Department of 58 (Saudi Arabia)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'example.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 22:17:46]   ✗ 未找到新信息
+[2026-03-06 22:17:47] 处理: De La Salle University (Philippines)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.dlsu.edu.ph'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 22:17:51]   ✗ 未找到新信息
+[2026-03-06 22:17:52] 处理: Hamad Bin Khalifa University (Qatar)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.hbku.edu.qa'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.hbku.edu.qa'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 22:17:53]   ✗ 未找到新信息
+[2026-03-06 22:17:54] 处理: Bangladesh Research Institute 28 (Bangladesh)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'example.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 22:17:55]   ✗ 未找到新信息
+[2026-03-06 22:17:56] 处理: Azerbaijan State University of Economics (Azerbaijan)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'unec.edu.az'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 22:17:57]   ✗ 未找到新信息
+[2026-03-06 22:17:58] 处理: Cambodia Research Institute 89 (Cambodia)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'example.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 22:17:59]   ✗ 未找到新信息
+[2026-03-06 22:18:00] 处理: Turkmen State Institute of Architecture and Construction (Turkmenistan)
+[2026-03-06 22:18:01] 解析失败: HTTPSConnectionPool(host='tsiac.edu.tm', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='tsiac.edu.tm', port=443): Failed to resolve 'tsiac.edu.tm' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 22:18:01]   ✗ 未找到新信息
+[2026-03-06 22:18:02] 处理: National University of Sciences (Pakistan)
+[2026-03-06 22:18:02] 解析失败: Invalid URL 'www.nust.edu.pk': No scheme supplied. Perhaps you meant https://www.nust.edu.pk?
+[2026-03-06 22:18:02]   ✗ 未找到新信息
+[2026-03-06 22:18:03] 处理: Lebanon Academy 10 (Lebanon)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'example.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 22:18:04]   ✗ 未找到新信息
+[2026-03-06 22:18:05] 处理: Royal Thimphu College (Bhutan)
+[2026-03-06 22:18:23] 解析失败: HTTPSConnectionPool(host='www.rtc.bt', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.rtc.bt', port=443) at 0x1074d0cd0>, 'Connection to www.rtc.bt timed out. (connect timeout=15)'))
+[2026-03-06 22:18:23]   ✗ 未找到新信息
+[2026-03-06 22:18:24] 处理: Kazakhstan Institute of Technology 80 (Kazakhstan)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'example.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 22:18:24]   ✗ 未找到新信息
+[2026-03-06 22:18:26] 处理: Lahore University of Management Sciences (Pakistan)
+[2026-03-06 22:18:29] 解析失败: HTTPSConnectionPool(host='www.lahoreofmanagementsciences.edu.pa', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.lahoreofmanagementsciences.edu.pa', port=443): Failed to resolve 'www.lahoreofmanagementsciences.edu.pa' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 22:18:29]   ✗ 未找到新信息
+[2026-03-06 22:18:30] 处理: Israel University 23 (Israel)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'example.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 22:18:30]   ✗ 未找到新信息
+[2026-03-06 22:18:32] 处理: Colgate University (United States)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.colgate.edu'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-06 22:18:33]   ✗ 未找到新信息
+[2026-03-06 22:18:34] 处理: National Autonomous University of Mexico (Mexico)
+[2026-03-06 22:18:34] 解析失败: Invalid URL 'www.unam.mx': No scheme supplied. Perhaps you meant https://www.unam.mx?
+[2026-03-06 22:18:34]   ✗ 未找到新信息
+[2026-03-06 22:18:35] 处理: Al-Farabi Nazarbayev University (Kazakhstan)
+[2026-03-06 22:35:28] 解析失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+[2026-03-06 22:35:28]   ✗ 未找到新信息
+[2026-03-06 22:35:29] ==================================================
+[2026-03-06 22:35:29] 任务完成 - 执行报告
+[2026-03-06 22:35:29] ==================================================
+[2026-03-06 22:35:29] 开始时间: 2026-03-06 22:00:39
+[2026-03-06 22:35:29] 结束时间: 2026-03-06 22:35:29
+[2026-03-06 22:35:29] 执行时长: 2090 秒
+[2026-03-06 22:35:29] --------------------------------------------------
+[2026-03-06 22:35:29] 处理学校: 20
+[2026-03-06 22:35:29] 更新学校: 0
+[2026-03-06 22:35:29] ==================================================
+[2026-03-06 22:00:39] ==================================================
+[2026-03-06 22:00:39] 学校信息完善任务开始
+[2026-03-06 22:00:39] ==================================================
+[2026-03-06 22:00:39] 目标: 20 所学校
+[2026-03-06 22:00:39] 处理: Laos Academy 24 (Laos)
+[2026-03-06 22:00:40]   ✗ 未找到新信息
+[2026-03-06 22:00:41] 处理: Wayamba University of Sri Lanka (Sri Lanka)
+[2026-03-06 22:00:43] 解析失败: HTTPSConnectionPool(host='www.wusl.edu.lk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.wusl.edu.lk', port=443): Failed to resolve 'www.wusl.edu.lk' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 22:00:43]   ✗ 未找到新信息
+[2026-03-06 22:00:44] 处理: Peshawar University (Pakistan)
+[2026-03-06 22:00:51] 解析失败: HTTPSConnectionPool(host='www.peshawar.edu.pa', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.peshawar.edu.pa', port=443): Failed to resolve 'www.peshawar.edu.pa' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 22:00:51]   ✗ 未找到新信息
+[2026-03-06 22:00:52] 处理: Southern Taiwan University (Taiwan)
+[2026-03-06 22:17:44] 解析失败: HTTPSConnectionPool(host='stu.edu.tw', port=443): Read timed out. (read timeout=15)
+[2026-03-06 22:17:44]   ✗ 未找到新信息
+[2026-03-06 22:17:45] 处理: Saudi Arabia Department of 58 (Saudi Arabia)
+[2026-03-06 22:17:46]   ✗ 未找到新信息
+[2026-03-06 22:17:47] 处理: De La Salle University (Philippines)
+[2026-03-06 22:17:51]   ✗ 未找到新信息
+[2026-03-06 22:17:52] 处理: Hamad Bin Khalifa University (Qatar)
+[2026-03-06 22:17:53]   ✗ 未找到新信息
+[2026-03-06 22:17:54] 处理: Bangladesh Research Institute 28 (Bangladesh)
+[2026-03-06 22:17:55]   ✗ 未找到新信息
+[2026-03-06 22:17:56] 处理: Azerbaijan State University of Economics (Azerbaijan)
+[2026-03-06 22:17:57]   ✗ 未找到新信息
+[2026-03-06 22:17:58] 处理: Cambodia Research Institute 89 (Cambodia)
+[2026-03-06 22:17:59]   ✗ 未找到新信息
+[2026-03-06 22:18:00] 处理: Turkmen State Institute of Architecture and Construction (Turkmenistan)
+[2026-03-06 22:18:01] 解析失败: HTTPSConnectionPool(host='tsiac.edu.tm', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='tsiac.edu.tm', port=443): Failed to resolve 'tsiac.edu.tm' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 22:18:01]   ✗ 未找到新信息
+[2026-03-06 22:18:02] 处理: National University of Sciences (Pakistan)
+[2026-03-06 22:18:02] 解析失败: Invalid URL 'www.nust.edu.pk': No scheme supplied. Perhaps you meant https://www.nust.edu.pk?
+[2026-03-06 22:18:02]   ✗ 未找到新信息
+[2026-03-06 22:18:03] 处理: Lebanon Academy 10 (Lebanon)
+[2026-03-06 22:18:04]   ✗ 未找到新信息
+[2026-03-06 22:18:05] 处理: Royal Thimphu College (Bhutan)
+[2026-03-06 22:18:23] 解析失败: HTTPSConnectionPool(host='www.rtc.bt', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.rtc.bt', port=443) at 0x1074d0cd0>, 'Connection to www.rtc.bt timed out. (connect timeout=15)'))
+[2026-03-06 22:18:23]   ✗ 未找到新信息
+[2026-03-06 22:18:24] 处理: Kazakhstan Institute of Technology 80 (Kazakhstan)
+[2026-03-06 22:18:24]   ✗ 未找到新信息
+[2026-03-06 22:18:26] 处理: Lahore University of Management Sciences (Pakistan)
+[2026-03-06 22:18:29] 解析失败: HTTPSConnectionPool(host='www.lahoreofmanagementsciences.edu.pa', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.lahoreofmanagementsciences.edu.pa', port=443): Failed to resolve 'www.lahoreofmanagementsciences.edu.pa' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-06 22:18:29]   ✗ 未找到新信息
+[2026-03-06 22:18:30] 处理: Israel University 23 (Israel)
+[2026-03-06 22:18:30]   ✗ 未找到新信息
+[2026-03-06 22:18:32] 处理: Colgate University (United States)
+[2026-03-06 22:18:33]   ✗ 未找到新信息
+[2026-03-06 22:18:34] 处理: National Autonomous University of Mexico (Mexico)
+[2026-03-06 22:18:34] 解析失败: Invalid URL 'www.unam.mx': No scheme supplied. Perhaps you meant https://www.unam.mx?
+[2026-03-06 22:18:34]   ✗ 未找到新信息
+[2026-03-06 22:18:35] 处理: Al-Farabi Nazarbayev University (Kazakhstan)
+[2026-03-06 22:35:28] 解析失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+[2026-03-06 22:35:28]   ✗ 未找到新信息
+[2026-03-06 22:35:29] ==================================================
+[2026-03-06 22:35:29] 任务完成 - 执行报告
+[2026-03-06 22:35:29] ==================================================
+[2026-03-06 22:35:29] 开始时间: 2026-03-06 22:00:39
+[2026-03-06 22:35:29] 结束时间: 2026-03-06 22:35:29
+[2026-03-06 22:35:29] 执行时长: 2090 秒
+[2026-03-06 22:35:29] --------------------------------------------------
+[2026-03-06 22:35:29] 处理学校: 20
+[2026-03-06 22:35:29] 更新学校: 0
+[2026-03-06 22:35:29] ==================================================
