@@ -802,3 +802,176 @@ ModuleNotFoundError: No module named 'requests'
 [2026-03-07 15:04:19] ============================================================
 [2026-03-07 15:04:19] 任务完成
 [2026-03-07 15:04:19] ============================================================
+[2026-03-07 22:00:00] ============================================================
+[2026-03-07 22:00:00] 开始学校校徽和校园风光抓取任务（优先顶尖大学）
+[2026-03-07 22:00:00] ============================================================
+[2026-03-07 22:00:00] ==================================================
+[2026-03-07 22:00:00] 开始校徽抓取任务（优先顶尖大学）
+[2026-03-07 22:00:00] ==================================================
+[2026-03-07 22:00:00] 找到 30 所需要校徽的学校
+[2026-03-07 22:00:00] 处理: Pohang University of Science and Technology (浦项工科大学) - South Korea
+[2026-03-07 22:00:04]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.postech.ac.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-07 22:00:04]   ❌ 校徽获取失败
+[2026-03-07 22:00:04] 处理: Technical University of Denmark (丹麦技术大学) - Denmark
+[2026-03-07 22:00:06]   ❌ 校徽获取失败
+[2026-03-07 22:00:07] 处理: University of Wisconsin (威斯康星大学) - United States
+[2026-03-07 22:16:28]   ⚠️ 抓取失败: ("Connection broken: ConnectionResetError(54, 'Connection reset by peer')", ConnectionResetError(54, 'Connection reset by peer'))
+[2026-03-07 22:16:28]   ❌ 校徽获取失败
+[2026-03-07 22:16:28] 处理: New York University (纽约大学) - United States
+[2026-03-07 22:16:30]   ❌ 校徽获取失败
+[2026-03-07 22:16:30] 处理: National Taiwan University (台湾大学) - Taiwan
+[2026-03-07 22:16:31]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.ntu.edu.tw', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c:1081)')))
+[2026-03-07 22:16:31]   ❌ 校徽获取失败
+[2026-03-07 22:16:32] 处理: Carnegie Mellon (卡内基梅隆大学) - United States
+[2026-03-07 22:16:42]   ❌ 校徽获取失败
+[2026-03-07 22:16:43] 处理: Johns Hopkins University (约翰霍普金斯大学) - United States
+[2026-03-07 22:16:44]   ❌ 校徽获取失败
+[2026-03-07 22:16:45] 处理: University of Washington (华盛顿大学) - United States
+[2026-03-07 22:16:47]   ❌ 校徽获取失败
+[2026-03-07 22:16:47] 处理: Korea Advanced Institute of Science and Technology (韩国科学技术院) - South Korea
+[2026-03-07 22:16:49]   ❌ 校徽获取失败
+[2026-03-07 22:16:50] 处理: École Polytechnique (巴黎综合理工学院) - France
+[2026-03-07 22:17:06]   ❌ 校徽获取失败
+[2026-03-07 22:17:07] 处理: UC Irvine (加州大学欧文分校) - United States
+[2026-03-07 22:17:12]   ❌ 校徽获取失败
+[2026-03-07 22:17:12] 处理: University of Michigan (密歇根大学) - United States
+[2026-03-07 22:17:14]   ❌ 校徽获取失败
+[2026-03-07 22:17:15] 处理: University of Science and Technology of China (中国科学技术大学) - China
+[2026-03-07 22:17:15]   ❌ 校徽获取失败
+[2026-03-07 22:17:16] 处理: McMaster University (麦克马斯特大学) - Canada
+[2026-03-07 22:33:40]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.mcmaster.ca', port=443): Read timed out. (read timeout=20)
+[2026-03-07 22:33:40]   ❌ 校徽获取失败
+[2026-03-07 22:33:41] 处理: Mandalay Institute of Technology (曼德勒技术学院) - Myanmar
+[2026-03-07 22:33:43]   ⚠️ 抓取失败: HTTPSConnectionPool(host='mit', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='mit', port=443): Failed to resolve 'mit' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 22:33:43]   ❌ 校徽获取失败
+[2026-03-07 22:33:44] 处理: Thai Nguyen University (Thai Nguyen University (Hanoi)) - Vietnam
+[2026-03-07 22:33:47]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.thainguyen.edu.vi', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.thainguyen.edu.vi', port=443): Failed to resolve 'www.thainguyen.edu.vi' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 22:33:47]   ❌ 校徽获取失败
+[2026-03-07 22:33:47] 处理: CHIU YANG POR YEN PRIMARY SCHOOL (潮陽百欣小學) - Hong Kong
+[2026-03-07 22:33:51]   ✅ 校徽已更新
+[2026-03-07 22:33:51] 处理: Bhutan Institute of Agriculture (None) - Bhutan
+[2026-03-07 22:33:52]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.bia.edu.bt', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.bia.edu.bt', port=443): Failed to resolve 'www.bia.edu.bt' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 22:33:52]   ❌ 校徽获取失败
+[2026-03-07 22:33:53] 处理: Myanmar University 7 (缅甸大学 7) - Myanmar
+[2026-03-07 22:33:53]   ⚠️ 抓取失败: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /school/14043 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-07 22:33:53]   ❌ 校徽获取失败
+[2026-03-07 22:33:54] 处理: Koh Kong University (戈公大学) - Cambodia
+[2026-03-07 22:33:54]   ⚠️ 抓取失败: HTTPSConnectionPool(host='kku', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='kku', port=443): Failed to resolve 'kku' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 22:33:54]   ❌ 校徽获取失败
+[2026-03-07 22:33:55] 处理: KWUN TONG METHODIST KINDERGARTEN (觀塘循道幼稚園) - Hong Kong
+[2026-03-07 22:34:04]   ✅ 校徽已更新
+[2026-03-07 22:34:05] 处理: Syria Department of 98 (叙利亚中心 98) - Syria
+[2026-03-07 22:34:05]   ⚠️ 抓取失败: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /school/15962 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-07 22:34:05]   ❌ 校徽获取失败
+[2026-03-07 22:34:06] 处理: HK RED CROSS MARGARET TRENCH SCHOOL (香港紅十字會瑪嘉烈戴麟趾學校) - Hong Kong
+[2026-03-07 22:34:07]   ✅ 校徽已更新
+[2026-03-07 22:34:08] 处理: Technological University Myeik (理工大学墨吉) - Myanmar
+[2026-03-07 22:34:08]   ⚠️ 抓取失败: HTTPSConnectionPool(host='tu%20myeik', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='tu%20myeik', port=443): Failed to resolve 'tu%20myeik' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 22:34:08]   ❌ 校徽获取失败
+[2026-03-07 22:34:08] 处理: Singapore Management University (Singapore Management University (Singapore)) - Singapore
+[2026-03-07 22:50:23]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.singaporemanagement.edu.si', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.singaporemanagement.edu.si', port=443): Failed to resolve 'www.singaporemanagement.edu.si' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 22:50:23]   ❌ 校徽获取失败
+[2026-03-07 22:50:24] 处理: University of Nepal (尼泊尔大学) - Nepal
+[2026-03-07 22:50:24]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.udcl.edu.np', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.udcl.edu.np', port=443): Failed to resolve 'www.udcl.edu.np' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 22:50:24]   ❌ 校徽获取失败
+[2026-03-07 22:50:25] 处理: HAN ACADEMY (漢鼎書院) - Hong Kong
+[2026-03-07 22:50:25]   ⚠️ 抓取失败: HTTPConnectionPool(host='www.hanacademy.edu.hk', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='www.hanacademy.edu.hk', port=80): Failed to resolve 'www.hanacademy.edu.hk' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 22:50:25]   ❌ 校徽获取失败
+[2026-03-07 22:50:25] 处理: Sri Lanka Academy 25 (斯里兰卡学院 25) - Sri Lanka
+[2026-03-07 22:50:27]   ⚠️ 抓取失败: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /school/14426 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-07 22:50:27]   ❌ 校徽获取失败
+[2026-03-07 22:50:27] 处理: LOK SIN TONG LEUNG KAU KUI COLLEGE (樂善堂梁銶琚書院) - Hong Kong
+[2026-03-07 22:51:04]   ❌ 校徽获取失败
+[2026-03-07 22:51:04] 处理: Politecnico de Timor (东帝汶理工学院) - Timor-Leste
+[2026-03-07 22:51:07]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.politimor.tl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.politimor.tl', port=443): Failed to resolve 'www.politimor.tl' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 22:51:07]   ❌ 校徽获取失败
+[2026-03-07 22:51:07] 校徽任务完成: 成功 3/30
+[2026-03-07 22:51:07] ==================================================
+[2026-03-07 22:51:07] 开始校园图片抓取任务（优先顶尖大学）
+[2026-03-07 22:51:07] ==================================================
+[2026-03-07 22:51:07] 找到 30 所需要校园图片的学校
+[2026-03-07 22:51:07] 处理: Chinese University of Hong Kong Faculty of Education (香港中文大学教育学院) - Hong Kong
+[2026-03-07 23:07:43]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.fed.cuhk.edu.hk', port=443): Read timed out. (read timeout=20)
+[2026-03-07 23:07:43]   ❌ 校园图片获取失败
+[2026-03-07 23:07:44] 处理: NOVA University Lisbon (里斯本新大学) - Portugal
+[2026-03-07 23:07:45]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.unl.pt', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-07 23:07:45]   ❌ 校园图片获取失败
+[2026-03-07 23:07:45] 处理: KAIST - Korea Advanced Institute of Science and Technology (韩国科学技术院) - South Korea
+[2026-03-07 23:07:46]   ❌ 校园图片获取失败
+[2026-03-07 23:07:47] 处理: Korea Advanced Institute of Science and Technology (韩国科学技术院) - South Korea
+[2026-03-07 23:07:47]   ❌ 校园图片获取失败
+[2026-03-07 23:07:48] 处理: Pohang University of Science and Technology (浦项工科大学) - South Korea
+[2026-03-07 23:07:49]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.postech.ac.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-07 23:07:49]   ❌ 校园图片获取失败
+[2026-03-07 23:07:49] 处理: Korea Advanced Institute of Science and Technology (KAIST) (韩国科学技术院) - South Korea
+[2026-03-07 23:07:56]   ❌ 校园图片获取失败
+[2026-03-07 23:07:57] 处理: Hong Kong University Faculty of Education (香港大学教育学院) - Hong Kong
+[2026-03-07 23:08:00]   ❌ 校园图片获取失败
+[2026-03-07 23:08:00] 处理: Jordan Department of 61 (约旦中心 61) - Jordan
+[2026-03-07 23:08:01]   ⚠️ 抓取失败: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /school/15185 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-07 23:08:01]   ❌ 校园图片获取失败
+[2026-03-07 23:08:01] 处理: Shenzhen Middle School (深圳中学) - China
+[2026-03-07 23:08:01]   ⚠️ 抓取失败: HTTPSConnectionPool(host='self-discipline%20and%20innovation', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='self-discipline%20and%20innovation', port=443): Failed to resolve 'self-discipline%20and%20innovation' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 23:08:01]   ❌ 校园图片获取失败
+[2026-03-07 23:08:02] 处理: Pabna University of Science and Technology (巴布纳科技大学) - Bangladesh
+[2026-03-07 23:08:03]   ⚠️ 抓取失败: HTTPSConnectionPool(host='pust', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='pust', port=443): Failed to resolve 'pust' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 23:08:03]   ❌ 校园图片获取失败
+[2026-03-07 23:08:04] 处理: Taiwan University of Arts and Design (None) - Taiwan
+[2026-03-07 23:08:04]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.tuad.edu.tw', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.tuad.edu.tw', port=443): Failed to resolve 'www.tuad.edu.tw' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 23:08:04]   ❌ 校园图片获取失败
+[2026-03-07 23:08:04] 处理: University of Petra (佩特拉大学) - Jordan
+[2026-03-07 23:24:37]   ✅ 校园图片已更新 (1 张)
+[2026-03-07 23:24:38] 处理: Suranaree University of Technology (素拉那立皇家大学) - Thailand
+[2026-03-07 23:41:55]   ❌ 校园图片获取失败
+[2026-03-07 23:41:56] 处理: Bahrain School of 73 (巴林学校 73) - Bahrain
+[2026-03-07 23:41:56]   ⚠️ 抓取失败: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /school/15435 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-07 23:41:56]   ❌ 校园图片获取失败
+[2026-03-07 23:41:57] 处理: Istanbul Technical University (Istanbul Technical University (Ankara)) - Turkey
+[2026-03-07 23:41:57]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.istanbultechnical.edu.tu', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.istanbultechnical.edu.tu', port=443): Failed to resolve 'www.istanbultechnical.edu.tu' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 23:41:57]   ❌ 校园图片获取失败
+[2026-03-07 23:41:58] 处理: ST STEPHEN'S GIRLS' PRIMARY SCHOOL (聖士提反女子中學附屬小學) - Hong Kong
+[2026-03-07 23:42:03]   ✅ 校园图片已更新 (4 张)
+[2026-03-07 23:42:03] 处理: Bangabandhu Sheikh Mujibur Rahman Agricultural University (孟加拉国谢赫穆吉布尔·拉赫曼农业大学) - Bangladesh
+[2026-03-07 23:42:03]   ⚠️ 抓取失败: HTTPSConnectionPool(host='bsmrau', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='bsmrau', port=443): Failed to resolve 'bsmrau' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 23:42:03]   ❌ 校园图片获取失败
+[2026-03-07 23:42:04] 处理: Mongolia School of 34 (蒙古学校 34) - Mongolia
+[2026-03-07 23:42:04]   ⚠️ 抓取失败: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /school/14606 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-07 23:42:04]   ❌ 校园图片获取失败
+[2026-03-07 23:42:05] 处理: Philippines University 18 (菲律宾大学 18) - Philippines
+[2026-03-07 23:42:05]   ⚠️ 抓取失败: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /school/14264 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-07 23:42:05]   ❌ 校园图片获取失败
+[2026-03-07 23:42:06] 处理: KENNEDY SCHOOL () - Hong Kong
+[2026-03-07 23:57:44]   ✅ 校园图片已更新 (2 张)
+[2026-03-07 23:57:44] 处理: Mongolia University 60 (蒙古大学 60) - Mongolia
+[2026-03-07 23:57:45]   ⚠️ 抓取失败: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /school/15166 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-07 23:57:45]   ❌ 校园图片获取失败
+[2026-03-07 23:57:45] 处理: STFA LEE KAM PRIMARY SCHOOL (順德聯誼總會李金小學) - Hong Kong
+[2026-03-07 23:58:10]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.leekamps.edu.hk', port=443): Read timed out. (read timeout=20)
+[2026-03-07 23:58:10]   ❌ 校园图片获取失败
+[2026-03-07 23:58:11] 处理: University of Karachi (University of Karachi (Peshawar)) - Pakistan
+[2026-03-07 23:58:18]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.ofkarachi.edu.pa', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.ofkarachi.edu.pa', port=443): Failed to resolve 'www.ofkarachi.edu.pa' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-07 23:58:18]   ❌ 校园图片获取失败
+[2026-03-07 23:58:19] 处理: Tishreen University (提什林大学) - Syria
+[2026-03-08 00:14:15]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.tishreen.edu.sy', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.tishreen.edu.sy', port=443): Failed to resolve 'www.tishreen.edu.sy' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-08 00:14:15]   ❌ 校园图片获取失败
+[2026-03-08 00:14:16] 处理: Saint Petersburg Mining University (圣彼得堡矿业大学) - Russia
+[2026-03-08 00:14:16]   ⚠️ 抓取失败: HTTPSConnectionPool(host='spmi.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='spmi.ru', port=443): Failed to resolve 'spmi.ru' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-08 00:14:16]   ❌ 校园图片获取失败
+[2026-03-08 00:14:17] 处理: American University of Georgia (American University of Georgia (Batumi)) - Georgia
+[2026-03-08 00:14:17]   ⚠️ 抓取失败: HTTPSConnectionPool(host='www.americanofgeorgia.edu.ge', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.americanofgeorgia.edu.ge', port=443): Failed to resolve 'www.americanofgeorgia.edu.ge' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-08 00:14:17]   ❌ 校园图片获取失败
+[2026-03-08 00:14:17] 处理: Bangladesh Department of 29 (孟加拉中心 29) - Bangladesh
+[2026-03-08 00:14:18]   ⚠️ 抓取失败: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /school/14513 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-08 00:14:18]   ❌ 校园图片获取失败
+[2026-03-08 00:14:18] 处理: Vietnam Maritime University (越南海洋大学) - Vietnam
+[2026-03-08 00:14:20]   ⚠️ 抓取失败: HTTPSConnectionPool(host='vimaru.edu.vn', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-08 00:14:20]   ❌ 校园图片获取失败
+[2026-03-08 00:14:21] 处理: Uzbekistan School of 67 (乌兹别克斯坦学校 67) - Uzbekistan
+[2026-03-08 00:14:21]   ⚠️ 抓取失败: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /school/15299 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+[2026-03-08 00:14:21]   ❌ 校园图片获取失败
+[2026-03-08 00:14:22] 处理: CARITAS JOCKEY CLUB LOK YAN SCHOOL (明愛賽馬會樂仁學校) - Hong Kong
+[2026-03-08 00:14:22]   ❌ 校园图片获取失败
+[2026-03-08 00:14:23] 校园图片任务完成: 成功 3/30
+[2026-03-08 00:14:23] ============================================================
+[2026-03-08 00:14:23] 任务完成
+[2026-03-08 00:14:23] ============================================================
