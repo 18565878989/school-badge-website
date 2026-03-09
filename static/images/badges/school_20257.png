@@ -1,0 +1,1299 @@
+ <!DOCTYPE html> <html class='no-js' lang='en'> <head> <meta charset="utf-8"><script type="text/html" id="sf-tracking-consent-manager">
+	<!--<div class="consent-container" id="tracking-consent-dialog">
+    <div class="consent-text-container">
+        <strong>&ltDialog title goes here&gt</strong>
+        <p>&ltDialog description or question goes here&gt</p>
+    </div>
+    <div class="consent-button-container">
+        <button class="btn btn--red consent-accept" id="tracking-consent-dialog-accept" type="button" onclick="TrackingConsentManager.updateUserConsent(true)">I accept</button>
+        <!--<button class="btn btn--stroke consent-reject" id="tracking-consent-dialog-reject" type="button" onclick="TrackingConsentManager.updateUserConsent(false)">I refuse</button>
+    </div>
+</div>-->
+
+<div class="consent-container" id="tracking-consent-dialog">
+    <div class="consent-text-container">
+        <strong>
+            Privacy Notice
+        </strong>
+        <p>This site uses cookies to offer you a better browsing experience. By continuing, you are agreeing to the use of cookies on your device as described in our <a href="/footer/ntu-privacy-statement" target="_blank">privacy policy</a>.</p>
+    </div>
+    <div class="consent-button-container">
+        <button class="btn btn--red consent-accept" id="tracking-consent-dialog-accept" type="button" onclick="TrackingConsentManager.updateUserConsent(true)">Close</button>
+        <!--<button class="btn btn--stroke consent-reject" id="tracking-consent-dialog-reject" type="button" onclick="TrackingConsentManager.updateUserConsent(false)">I refuse</button>-->
+    </div>
+</div>
+</script><script type="text/javascript" src="/WebResource.axd?d=DzHrpQl5URXarFHAtrmzFh-kK052iwJ80m5KSLpHNuEJE1OGza3LTWWJZDhEI6gLOEewcLbP-bPaY1EFnJ-Bhey12suEmUFhJq6SDp-kL6Cso_mLhiwuXZ0tTTm1ZmNsA_cHavEgxLflonVUIzRznruteZ-v1tTyxpm_3vPtAzDXU5f7H8Umw_P1YJsnmHXA0&amp;t=639011188680000000">
+
+</script> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">  <link href="/ResourcePackages/NTU/assets/fonts/icomoon.ttf?pek60p" as="font" crossorigin="anonymous"> <title>
+	National Institute of Education (NIE) | NTU Singapore
+</title> <meta name="theme-color" content="#d71440"> <meta name="robots" content="follow"> <style type="text/css">
+        .container {
+            position: relative;
+            max-width: 1440px;
+        }
+
+        .breadcrumbs, .notification, .site-search, .mega-menu {
+            visibility: hidden;
+        }
+
+        .mega-menu {
+            background: #fff;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
+            height: 100vh;
+            max-width: 768px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -webkit-transition: -webkit-transform .3s cubic-bezier(.75,0,0,.75);
+            transition: -webkit-transform .3s cubic-bezier(.75,0,0,.75);
+            transition: transform .3s cubic-bezier(.75,0,0,.75);
+            transition: transform .3s cubic-bezier(.75,0,0,.75),-webkit-transform .3s cubic-bezier(.75,0,0,.75);
+            width: 100%;
+            z-index: 1001
+        }
+
+            .mega-menu.opened {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+
+            .mega-menu .btn-close {
+                border: 0;
+                background: none;
+                color: #fff;
+                font-size: 2.5em;
+                outline: 0;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                -webkit-transition: color .3s cubic-bezier(.75,0,0,.75);
+                transition: color .3s cubic-bezier(.75,0,0,.75);
+                z-index: 1
+            }
+    </style> <link rel="stylesheet" href="/ResourcePackages/NTU/assets/styles/main.css?v=9"> <link href="/ResourcePackages/NTU/assets/images/favicon.png" rel="shortcut icon" type="image/x-icon"> <link href="/ResourcePackages/NTU/assets/images/favicon.png" rel="icon" type="image/x-icon"> <!-- Google Tag Manager --> <script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WHB582W');</script> <!-- End Google Tag Manager --> <!-- ShareThis script --> <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=645dd50e522c900019fc1334&product=inline-share-buttons' async='async'></script> <!-- End ShareThis script --> <meta property="og:title" content="National Institute for Education (NIE)" /><meta property="og:description" content="Discover excellence in education at NIE, fostering innovation &amp; research. Join us to shape the future of learning." /><meta property="og:image" content="https://www.ntu.edu.sg/images/nielibraries/nie-stock-images/thumbnails/national-institute-of-education-(nie).png?sfvrsn=1ea49f98_1" /><meta property="og:url" content="https://www.ntu.edu.sg/nie" /><meta property="og:type" content="website" /><meta property="og:site_name" content="National Institute of Education (NIE)" /><style type="text/css" media="all">/* For class for showing side navigation in mobile*/
+@media only screen and (max-width: 767px) {
+    .secondaryNavigationMobile {
+        display: flex !important;
+    }
+    .detail-aside .secondary-nav {
+        display: block !important;
+    }
+}
+}
+.site-footer-revamp {
+  margin-bottom: -15px;
+  bottom: 0 !important;
+}</style><style type="text/css" media="all">.carousel-banner.removeShading .carousel-banner__img:before,
+.carousel-banner-type2.removeShading .carousel-banner-type2__img:before
+{
+    background: none !important;
+}</style><style type="text/css" media="all">@media only screen and (min-width: 1024px) {
+    .site-header-revamp__controls {
+        margin-right: initial;
+    }
+    .site-header-revamp__nav {
+        margin: 0 10rem 0 0;
+    }
+    .site-header-revamp__navigation {
+        padding-inline-end: 0px;
+    }
+}
+.site-header-revamp__controls button {
+    padding: 0.2rem 0.36rem;
+}
+
+.site-header-revamp__logo {
+    margin-left: 11px;
+}
+.site-header-revamp__left {
+    margin-left: -11px;
+}
+
+body{
+    max-width: 100% !important; 
+}</style><link rel="canonical" href="https://www.ntu.edu.sg/nie" /><meta name="description" content="Discover excellence in education at NIE, fostering innovation &amp; research. Join us to shape the future of learning." /></head> <body> <!-- Google Tag Manager (noscript) --> <noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHB582W"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe> </noscript> <!-- End Google Tag Manager (noscript) -->  
+
+    <div class="notification" data-token="8/25/2025 5:34:20 AM" style="display: none;">
+        <div class="container">
+            <div class="notification__ui">
+                <button type="button"><span class="sr-only">Close</span><span class="icon icon-cross"></span></button>
+            </div>
+            <div class="notification__content">
+                    <div class="notification__item">
+                        <p>Scam Alert: <a target="_blank" href="/announcements/it-security/public-advisory-tuition-fee-payment-scam">Fake email on ‘Tuition Fee Outstanding Payment’ is circulating at other institutions</a>. Unsure?&nbsp;Call ScamShield 1799 anytime or check <a id="menur9cj" href="http://scamshield.gov.sg" rel="noreferrer noopener" target="_blank" title="http://scamshield.gov.sg/" data-sf-ec-immutable=""><span style="text-decoration: underline"></span></a><a id="menur9cl" href="http://scamshield.gov.sg" rel="noreferrer noopener" target="_blank" title="http://scamshield.gov.sg/" data-sf-ec-immutable="">scamshield.gov.sg</a> to stay safe.<a href="/life-at-ntu/internet-account-and-policy#Content_C060_Col00" target="_blank"></a></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+ <header class="site-header-revamp loading"> <div class="site-header-revamp__body"> <div class="container"> <div class="site-header-revamp__left"> <a class="site-header-revamp__logo" href="/" title="Nanyang Technological University"> <picture> <source media="(max-width: 1023px)" srcset="/ResourcePackages/NTU/assets/images/NTU_Logo.png"> <source srcset="/ResourcePackages/NTU/assets/images/NTU_Logo.png"> <img src="/ResourcePackages/NTU/assets/images/NTU_Logo.png" alt="NTU Logo"> </picture> </a> </div> <div class="site-header-revamp__right"> <div class="site-header-revamp__controls"> <button class="btn-notification" type="button"><span class="sr-only">Toggle notification</span><span class="icon icon-bell"></span></button> <button class="btn-search" type="button"><span class="sr-only">Toggle search</span><span class="icon icon-glass"></span></button> <button class="btn-menu-toggle" type="button"><span class="sr-only">Toggle menu</span><span class="line"></span><span class="line"></span><span class="line"></span></button> </div> <div class="site-header-revamp__navigation"> 
+
+<div class="site-header-revamp__nav">
+    <nav class="site-nav" aria-label="Site Navigation">
+        <ul class="site-nav__lvl1">
+            <li class="site-nav__lvl1__item has-child">
+                <a href="/nie/about-us" target="_self">About Us</a><i class="icon icon-angle-down"></i>
+                <div class="site-nav__megamenu">
+                    <div>
+                        <div class="site-nav__lvl2-back desktop-only">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                        </div>
+                        <div class="site-nav__lvl2-back no-desktop">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                            <div>About Us</div>
+                        </div>
+                        <ul class="site-nav__lvl2">
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/nie-council" target="_self"><span>NIE Council</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/nie-senior-leadership-team" target="_self"><span>NIE Senior Leadership Team</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/life@nie-sg" target="_self"><span>LIFE@NIE SG</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/programme-offices" target="_self"><span>Programme Offices</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/academic-departments" target="_self"><span>Academic Departments</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/departments" target="_self"><span>Departments</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/campus-facilities" target="_self"><span>Campus Facilities</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/visiting-nie" target="_self"><span>Visiting NIE</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/global-connections" target="_self"><span>Global Connections</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/corporate-identity" target="_self"><span>Corporate Identity</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/nie-heritage" target="_self"><span>NIE Heritage</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/nie2025-strategic-vision" target="_self"><span>NIE2025 Strategic Vision</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/careers" target="_self"><span>Careers</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/about-us/staff-portal" target="_self"><span>NIE Staff Portal</span></a>
+        </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="site-nav__lvl1__item has-child">
+                <a href="/nie/admissions" target="_self">Admissions</a><i class="icon icon-angle-down"></i>
+                <div class="site-nav__megamenu">
+                    <div>
+                        <div class="site-nav__lvl2-back desktop-only">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                        </div>
+                        <div class="site-nav__lvl2-back no-desktop">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                            <div>Admissions</div>
+                        </div>
+                        <ul class="site-nav__lvl2">
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/admissions/diploma-education-admissions" target="_self"><span>Diploma Education Admissions</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/admissions/undergraduate-education-admissions" target="_self"><span>Undergraduate Education Admissions</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/admissions/graduate-education" target="_self"><span>Graduate Education</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/admissions/professional-programmes" target="_self"><span>Professional Programmes</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/admissions/continuing-education-training" target="_self"><span>Continuing Education and Training&#160;</span></a>
+        </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="site-nav__lvl1__item has-child">
+                <a href="/nie/research" target="_self">Research</a><i class="icon icon-angle-down"></i>
+                <div class="site-nav__megamenu">
+                    <div>
+                        <div class="site-nav__lvl2-back desktop-only">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                        </div>
+                        <div class="site-nav__lvl2-back no-desktop">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                            <div>Research</div>
+                        </div>
+                        <ul class="site-nav__lvl2">
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/research/search-for-research-news" target="_self"><span>Search for Research News</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/research/research-highlights" target="_self"><span>Research Highlights</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/research/centres-and-labs" target="_self"><span>Centres and Labs</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/research/research-publications" target="_self"><span>Research Publications</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/research/student-research" target="_self"><span>Student Research</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/research/office-for-research" target="_self"><span>Office for Research</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/research/redesigning-pedagogy-international-conference-2026" target="_self"><span>Redesigning Pedagogy International Conference 2026</span></a>
+        </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="site-nav__lvl1__item has-child">
+                <a href="/nie/faculty" target="_self">Faculty</a><i class="icon icon-angle-down"></i>
+                <div class="site-nav__megamenu">
+                    <div>
+                        <div class="site-nav__lvl2-back desktop-only">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                        </div>
+                        <div class="site-nav__lvl2-back no-desktop">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                            <div>Faculty</div>
+                        </div>
+                        <ul class="site-nav__lvl2">
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/faculty/academic-department" target="_self"><span>Academic Department</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/faculty/upcoming-positions" target="_self"><span>Upcoming Positions</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/faculty/professorships" target="_self"><span>Professorships</span></a>
+        </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="site-nav__lvl1__item has-child">
+                <a href="/nie/student-life" target="_self">Student Life</a><i class="icon icon-angle-down"></i>
+                <div class="site-nav__megamenu">
+                    <div>
+                        <div class="site-nav__lvl2-back desktop-only">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                        </div>
+                        <div class="site-nav__lvl2-back no-desktop">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                            <div>Student Life</div>
+                        </div>
+                        <ul class="site-nav__lvl2">
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/student-life/student-activities" target="_self"><span>Student Activities</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/student-life/student-services-centre" target="_self"><span>Student Services Centre</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/student-life/international-students-services" target="_self"><span>International Students Services</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/student-life/graduate-students&#39;-activities" target="_self"><span>Graduate Students&#39; Activities</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/student-life/clubs" target="_self"><span>Clubs</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/student-life/youth-expedition-projects" target="_self"><span>Youth Expedition Projects</span></a>
+        </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="site-nav__lvl1__item has-child">
+                <a href="/nie/alumni" target="_self">Alumni</a><i class="icon icon-angle-down"></i>
+                <div class="site-nav__megamenu">
+                    <div>
+                        <div class="site-nav__lvl2-back desktop-only">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                        </div>
+                        <div class="site-nav__lvl2-back no-desktop">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                            <div>Alumni</div>
+                        </div>
+                        <ul class="site-nav__lvl2">
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/alumni/lifelong-learning" target="_self"><span>Lifelong Learning</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/alumni/become-a-mentor" target="_self"><span>Become a Mentor</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/alumni/giving" target="_self"><span>Giving</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/alumni/awards" target="_self"><span>Awards</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/alumni/stay-connected" target="_self"><span>Stay Connected</span></a>
+        </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="site-nav__lvl1__item has-child">
+                <a href="/nie/news-events" target="_self">News &amp; Events</a><i class="icon icon-angle-down"></i>
+                <div class="site-nav__megamenu">
+                    <div>
+                        <div class="site-nav__lvl2-back desktop-only">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                        </div>
+                        <div class="site-nav__lvl2-back no-desktop">
+                            <button type="button"><span class="icon icon-angle-left"></span><span>Back</span></button>
+                            <div>News &amp; Events</div>
+                        </div>
+                        <ul class="site-nav__lvl2">
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/news-events/news" target="_self"><span>News</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/news-events/events" target="_self"><span>Events</span></a>
+        </li>
+        <li class="site-nav__lvl2__item">
+                <a href="/nie/news-events/publications" target="_self"><span>Publications</span></a>
+        </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
+
+
+
+
+
+
+ 
+<div class="site-header-revamp__profiles">
+    <nav class="profile-selector" aria-label="Profile navigation">
+        <ul>
+
+
+        </ul>
+    </nav>
+</div> </div> </div> </div> <div class="site-header-revamp__bottom"> 
+<div class="site-search">
+    <div class="site-search__body">
+        <form class="site-search__form" action="/search-results" target="_blank"
+              data-autosuggestion="/api/suggestions/get?siteWideIndex=site-wide&programmesIndex=programmes&researchIndex=research&siteWideFields=PageTags,Title,MetaDescription,Standfirst,Summary,Overview,Content,ProfileTitle&programmeFields=Title&researchFields=Title">
+            <input class="site-search__input" id="siteSearch" type="text" placeholder="What are you looking for?" name="q">
+            <button class="btn btn--red btn-submit" type="submit">Search</button>
+        </form>
+        <div class="site-search__content"></div>
+    </div>
+</div>
+<script id="siteSearchSuggestion" type="text/x-dot-template">
+
+    <div class="site-search__suggestions">
+        <h4 class="suggestions-title">Search for</h4>
+        <ul>
+            {{? it.autocomplete.length}}
+            {{~ it.autocomplete :item}}
+            <li><a href="/search-results?q={{=item.value}}"><span class="icon icon-glass"></span><span class="label">{{=item.name}}</span></a></li>{{~}}
+            {{??}}
+            <li>
+                <p>No match. Please try another keyword.</p>
+            </li>{{?}}
+        </ul>
+    </div>
+    <div class="site-search__results-wrapper">
+        <div class="site-search__results">
+            <div class="row">
+                <div class="results__section col-md-6 col-sm-6 match-height">
+                    <div class="results__section-header">
+                        <h4 class="results-title">Programmes</h4>
+                    </div>
+                    <ul class="results-list">
+                        {{? it.programmes.length}}
+                        {{~ it.programmes :item}}
+                        <li><a href="{{= item.url }}" target="_blank">{{= item.name}}</a></li>{{~}}
+                        {{??}}
+                        <li>
+                            <p>No related programme.</p>
+                        </li>{{?}}
+                    </ul>
+                </div>
+                <div class="results__section col-md-6 col-sm-6 match-height">
+                    <div class="results__section-header">
+                        <h4 class="results-title">Research</h4>
+                    </div>
+                    <ul class="results-list">
+                        {{? it.research.length}}
+                        {{~ it.research :item}}
+                        <li><a href="{{= item.url }}" target="_blank">{{= item.name}}</a></li>{{~}}
+                        {{??}}
+                        <li>
+                            <p>No related research.</p>
+                        </li>{{?}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-search__footer">
+        <a class="btn btn--stroke btn--red" href="/search-results?q={{= it.term}}">Show me more results &gt;</a>
+    </div>
+</script> </div> </div> </header> 
+
+
+<nav class="breadcrumbs-with-dropdown loading" aria-label="Breadcrumb">
+    <div class="container">
+        <ul class="breadcrumbs-lvl1">
+                <li tabindex="0">
+                    <a href="https://www.ntu.edu.sg" title="Corporate NTU">
+                        <span class="sr-only label">Corporate NTU</span>
+                        <span class="icon icon-home"></span>
+                    </a>
+                </li>
+                    <li tabindex="0">
+                        <span>National Institute of Education (NIE)</span>
+                    </li>
+        </ul>
+    </div>
+</nav> <div class="main-content" id="top"> 
+<div class="carousel-banner-type2 bg-red">
+    <div class="carousel-banner-type2__body">
+        <div class="carousel-banner-type2__item">
+                <a class="carousel-banner-type2__url" href="https://www.ntu.edu.sg/OpenHouse" target=_blank></a>
+                            <div class="carousel-banner-type2__img">
+                    <picture>
+                        <source srcset="/images/nielibraries/nie-stock-images/nie-homepage-banners/openhouse-2026.png?sfvrsn=f10c29c0_0" media="(max-width: 1023px)">
+                        <source srcset="/images/nielibraries/nie-stock-images/nie-homepage-banners/openhouse-2026.png?sfvrsn=f10c29c0_0">
+                        <img data-src="/images/nielibraries/nie-stock-images/nie-homepage-banners/openhouse-2026.png?sfvrsn=f10c29c0_0" alt="openhouse-2026">
+                    </picture>
+                </div>
+                            <div class="carousel-banner-type2__content-wrapper container container--medium mobile-only">
+                    <div class="carousel-banner-type2__content">
+                            <a class="carousel-banner-type2__url" href="https://www.ntu.edu.sg/OpenHouse" target=_blank></a>
+
+                        <h2 class="carousel-banner-type2__title">
+                            <span>Open House 2026</span>
+                        </h2>
+                    </div>
+                </div>
+        </div>
+        <div class="carousel-banner-type2__item">
+                <a class="carousel-banner-type2__url" href="https://bff.ntu.edu.sg/signup!N0498S" target=_blank></a>
+                            <div class="carousel-banner-type2__img">
+                    <picture>
+                        <source srcset="/images/nielibraries/content-population-news-images/website-thumbail-(720x432-px).png?sfvrsn=163c8c15_2" media="(max-width: 1023px)">
+                        <source srcset="/images/nielibraries/content-population-news-images/website-thumbail-(1440x600-px).png?sfvrsn=bc200c0d_2">
+                        <img data-src="/images/nielibraries/content-population-news-images/website-thumbail-(720x432-px).png?sfvrsn=163c8c15_2" alt="Website Thumbnail (720x432 px)">
+                    </picture>
+                </div>
+                            <div class="carousel-banner-type2__content-wrapper container container--medium mobile-only">
+                    <div class="carousel-banner-type2__content">
+                            <a class="carousel-banner-type2__url" href="https://bff.ntu.edu.sg/signup!N0498S" target=_blank></a>
+
+                        <h2 class="carousel-banner-type2__title">
+                            <span>Best Foot Forward 2026</span>
+                        </h2>
+                    </div>
+                </div>
+        </div>
+        <div class="carousel-banner-type2__item">
+                <a class="carousel-banner-type2__url" href="https://www.ntu.edu.sg/nie/research/redesigning-pedagogy-international-conference-2026" target=_blank></a>
+                            <div class="carousel-banner-type2__img">
+                            <div class="carousel-banner__logo nie-pattern">
+                                <img src="/ResourcePackages/NTU/assets/images/nie-logo.png" alt="nie-logo">
+                            </div>
+                    <picture>
+                        <source srcset="/images/nielibraries/nie-stock-images/nie-homepage-banners/rpic-2026-nie-website-banner---1440-x-600px.png?sfvrsn=7db6d6d5_1" media="(max-width: 1023px)">
+                        <source srcset="/images/nielibraries/nie-stock-images/nie-homepage-banners/rpic-2026-nie-website-banner---1440-x-600px.png?sfvrsn=7db6d6d5_1">
+                        <img data-src="/images/nielibraries/nie-stock-images/nie-homepage-banners/rpic-2026-nie-website-banner---1440-x-600px.png?sfvrsn=7db6d6d5_1" alt="">
+                    </picture>
+                </div>
+                            <div class="carousel-banner-type2__content-wrapper container container--medium mobile-only">
+                    <div class="carousel-banner-type2__content">
+                            <a class="carousel-banner-type2__url" href="https://www.ntu.edu.sg/nie/research/redesigning-pedagogy-international-conference-2026" target=_blank></a>
+
+                        <h2 class="carousel-banner-type2__title">
+                            <span>RPIC 2026</span>
+                        </h2>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div><section class="eyd-section">
+    <div id="Content_C131_Col00" class="sf_colsIn container" daata-sf-element="ContainerLandingSingle" data-placeholder-label="Container Landing Single">
+<div class="rte" >
+    <div ><h1 style="text-align: center">Inspiring Learning, Transforming Teaching, Advancing Research</h1></div>    
+</div>
+    </div>
+</section>
+<section class="full-container nie-pattern long">
+    <div class="container">
+        <h3></h3>
+        <div class="rte">
+            <p>The National Institute of Education (NIE), Singapore, an autonomous institute within NTU, is the national teacher education institute and an integral part of the nation’s education system. Offering multidisciplinary undergraduate and graduate education programmes, the institute&nbsp;empowers students to analyse, tackle, and resolve challenges in various career pathways, both within and beyond the realm of education.&nbsp;The NIE's unique position within a research-intensive technological university promotes an interdisciplinary approach to research.</p>
+        </div>
+    </div>
+</section><section class="eyd-section">
+    <div id="Content_C003_Col00" class="sf_colsIn container" daata-sf-element="ContainerLandingSingle" data-placeholder-label="Container Landing Single"><header class="section-header nie-pattern" >
+    <h2 class="h3">Our Programmes</h2>
+</header><div class="row" data-sf-element="Row">
+    <div id="Content_C142_Col00" class="sf_colsIn col-md-6 col-sm-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+        <a class="img-card img-card--thumb" href="/nie/admissions/diploma-education-admissions" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/banners/male-caucasian-teacher-walking-in-main-ntu-campus-grounds-with-3-young-adult-students.jpg?sfvrsn=b886ab6b_13" alt="Male Caucasian Teacher Walking in Main NTU Campus Grounds with 3 Young Adult Students">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Diploma Programmes</h3>
+                    <p class="img-card__desc">Access programme brochures and handbooks, and refer to the admissions guidelines before submitting your application.</p>
+            </div>
+        </a>
+
+    </div>
+    <div id="Content_C142_Col01" class="sf_colsIn col-md-6 col-sm-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+        <a class="img-card img-card--thumb" href="/nie/admissions/undergraduate-education-admissions" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/banners/group-of-4-young-students-at-nie-campus.jpg?sfvrsn=17c5005a_9" alt="Group of 4 Young Students at NIE Campus Duplicate">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Undergraduate Programmes</h3>
+                    <p class="img-card__desc">Discover NIE's undergraduate programmes, combining educational excellence with innovation, character-building, and leadership skills development.</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+<div class="row" data-sf-element="Row">
+    <div id="Content_C141_Col00" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 1" data-placeholder-label="Column 1">
+        <a class="img-card img-card--thumb" href="/nie/admissions/graduate-education" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/thumbnails-(720/ipad-lecture-theatre-1-lady-in-blue-top-and-malay-girl-wearing-pink-tudung-with-senior-male-teacher-wide-(720x432px).jpg?sfvrsn=131b8b73_7" alt="iPad Lecture Theatre 1 Lady in Blue Top and Malay Girl Wearing Pink Tudung with Senior Male Teacher Wide (720x432px)">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Graduate Programmes</h3>
+                    <p class="img-card__desc">Find out about your eligibility and application processes to enroll in any graduate programmes such as Masters and PhD programmes by NIE.</p>
+            </div>
+        </a>
+
+    </div>
+    <div id="Content_C141_Col01" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
+        <a class="img-card img-card--thumb" href="/nie/admissions/professional-programmes" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/thumbnails-(720/library-shot-4-friends-malay-girl-holding-a-red-book-(720x432px).jpg?sfvrsn=4a92bfc6_7" alt="Library Shot 4 Friends Malay Girl Holding a Red Book (720x432px)">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Professional &amp; Leadership Programmes</h3>
+                    <p class="img-card__desc">Find out about NIE's professional learning programmes that support educational professionals in respect of professional development and leadership skills</p>
+            </div>
+        </a>
+
+    </div>
+    <div id="Content_C141_Col02" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 3" data-placeholder-label="Column 3">
+        <a class="img-card img-card--thumb" href="/nie/admissions/continuing-education-training" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/banners/business-conference-room-man-in-blue-shirt-holding-ipad-presenting-to-a-group-of-colleagues-having-a-discussion.jpg?sfvrsn=c3006701_7" alt="Business Conference Room Man In Blue Shirt Holding Ipad Presenting To A Group Of Colleagues Having A Discussion">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Continuing Education and Training</h3>
+                    <p class="img-card__desc">The CET Unit at NIE's GPL fosters lifelong learning in Singapore. Join us to explore public courses or create tailored learning experiences for your organisation.</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+<div class="row" data-sf-element="Row">
+    <div id="Content_C122_Col00" class="sf_colsIn col-md-6 col-sm-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/admissions" >Admissions</a>
+
+    </div>
+    <div id="Content_C122_Col01" class="sf_colsIn col-md-6 col-sm-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/admissions/graduate-education/scholarships-awards" >Scholarships &amp; Awards</a>
+
+    </div>
+</div>
+
+    </div>
+</section><section class="eyd-section">
+    <div id="Content_C147_Col00" class="sf_colsIn container" daata-sf-element="ContainerLandingSingle" data-placeholder-label="Container Landing Single"><header class="section-header nie-pattern" >
+    <h2 class="h3">Transforming Teaching</h2>
+        <a class="link link--arrow" href="/nie/about-us/departments/units-under-director&#39;s-office/centre-for-innovation-in-learning" >
+            <span class="name">Find out more</span><span class="icon icon-arrow-right"></span>
+        </a>
+</header><div class="row" data-sf-element="Row">
+    <div id="Content_C164_Col00" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+        <a class="img-card img-card--thumb" href="/nie/about-us/departments/units-under-director&#39;s-office/centre-for-innovation-in-learning/factel" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/in-learning/factel_photo0.jpeg?sfvrsn=edebcdb7_0" alt="factel_photo0">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Faculty Technology-Enabled Learning (FacTEL)</h3>
+                    <p class="img-card__desc">The Centre for Innovation in Learning (IN-Learning) supports NIE in becoming an institute of distinction by enabling future-ready teacher education through the co-creation of learner-centred, data-driven and innovative spaces and practices.</p>
+            </div>
+        </a>
+
+    </div>
+     <div id="Content_C164_Col01" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+        <a class="img-card img-card--thumb" href="/nie/about-us/departments/units-under-director&#39;s-office/centre-for-innovation-in-learning/learning-spaces" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/in-learning/learningspace-thumbnailjpg.jpg?sfvrsn=b4c60dee_2" alt="learning space thumbnail">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Learning Spaces</h3>
+                    <p class="img-card__desc">The Centre for Innovation in Learning (IN-Learning) supports NIE in becoming an institute of distinction by enabling future-ready teacher education through the co-creation of learner-centred, data-driven and innovative spaces and practices.</p>
+            </div>
+        </a>
+
+    </div>
+     <div id="Content_C164_Col02" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 3" data-placeholder-label="Column 3">
+        <a class="img-card img-card--thumb" href="/nie/about-us/departments/units-under-director&#39;s-office/centre-for-innovation-in-learning/blended-learning-nie" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/in-learning/inlearning_photo2.jpg?sfvrsn=5e220b09_0" alt="INLEARNING OFFICe">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Blended Learning @ NIE</h3>
+                    <p class="img-card__desc">The Centre for Innovation in Learning (IN-Learning) supports NIE in becoming an institute of distinction by enabling future-ready teacher education through the co-creation of learner-centred, data-driven and innovative spaces and practices.</p>
+            </div>
+        </a>
+
+    </div>
+     <div id="Content_C164_Col03" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 4" data-placeholder-label="Column 4">
+        <a class="img-card img-card--thumb" href="/nie/about-us/departments/units-under-director&#39;s-office/centre-for-innovation-in-learning/generative-artificial-intelligence-for-teaching-and-learning" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/in-learning/ai.jpg?sfvrsn=f8112b49_0" alt="AI">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Generative Artificial Intelligence for Teaching and Learning</h3>
+                    <p class="img-card__desc">The Centre for Innovation in Learning (IN-Learning) supports NIE in becoming an institute of distinction by enabling future-ready teacher education through the co-creation of learner-centred, data-driven and innovative spaces and practices.</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+<div class="row" data-sf-element="Row">
+    <div id="Content_C165_Col00" class="sf_colsIn col-md-6 col-sm-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+    <a class="btn bg-nie-blue btn--block btn--xlarge" href="https://www.ntu.edu.sg/nie/news-events/publications/learning@nie" >Learning@NIE</a>
+
+    </div>
+    <div id="Content_C165_Col01" class="sf_colsIn col-md-6 col-sm-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+    <a class="btn bg-nie-blue btn--block btn--xlarge" href="/nie/about-us/departments/units-under-director&#39;s-office/centre-for-innovation-in-learning/publications/in-scape" >IN-Scape</a>
+
+    </div>
+</div>
+
+    </div>
+</section><section class="full-container bg-nie-red">
+    <div id="Content_C154_Col00" class="sf_colsIn container" data-sf-element="ContainerLandingSingleNieRed" data-placeholder-label="Container Landing Single (NIE Red)"><header class="section-header">
+    <h2 class="h3">Advancing Research</h2>
+        <a class="link link--arrow" href="/nie/research" >
+        <span class="name">Find out more</span><span class="icon icon-arrow-right"></span>
+        </a>
+</header><div class="row" data-sf-element="Row">
+    <div id="Content_C119_Col00" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+        <a class="img-card img-card--thumb" href="/nie/research/research-publications" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/banners/in-between-shot-of-shelves-of-books-in-a-library.jpg?sfvrsn=dd509a10_5" alt="In Between Shot of Shelves of Books in a Library">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Research Publications</h3>
+                    <p class="img-card__desc">The OfR supports the translation, communication and dissemination of research findings to local stakeholders and the international research community.</p>
+            </div>
+        </a>
+
+    </div>
+     <div id="Content_C119_Col01" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+        <a class="img-card img-card--thumb" href="/nie/research/research-highlights" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/banners/ray-of-sunlight-on-nie-outdoor-tennis-courts.jpg?sfvrsn=e57db8b6_5" alt="Ray of Sunlight on NIE Outdoor Tennis Courts">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Research Highlights</h3>
+                    <p class="img-card__desc">Check out our research work in action, including research highlights on various topics such as learning assessments, multilingual proficiency and teacher education. </p>
+            </div>
+        </a>
+
+    </div>
+     <div id="Content_C119_Col02" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 3" data-placeholder-label="Column 3">
+        <a class="img-card img-card--thumb" href="/nie/research/centres-and-labs" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/banners/canopy-of-trees-from-a-low-angle-on-nie-campus-grounds.jpg?sfvrsn=435821a5_7" alt="Canopy of Trees from a Low Angle on NIE Campus Grounds">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Centres and Labs</h3>
+                    <p class="img-card__desc">NIE operates research offices and centres that delve into diverse areas of research on education including STEM, Pedagogy and Practice, Child Development and more. Explore the work of these centres here.</p>
+            </div>
+        </a>
+
+    </div>
+     <div id="Content_C119_Col03" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 4" data-placeholder-label="Column 4">
+        <a class="img-card img-card--thumb" href="/nie/research/student-research" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/thumbnails/nie-outdoor-house---thumbnail.jpg?sfvrsn=ec922817_6" alt="NIE outdoor house">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Student Research</h3>
+                    <p class="img-card__desc">Discover more about the research work NIE students do.</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+<div class="row" data-sf-element="Row">
+    <div id="Content_C127_Col00" class="sf_colsIn col-md-6 col-sm-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+    <a class="btn bg-lightgrey btn--block btn--xlarge" href="https://dr.ntu.edu.sg/search?configuration=person&amp;page=1&amp;f.school=e2952dc9-1a9e-4528-bde7-520f27d0ba7d,authority" target=_blank>Find NIE Experts</a>
+
+    </div>
+    <div id="Content_C127_Col01" class="sf_colsIn col-md-6 col-sm-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+    <a class="btn bg-lightgrey btn--block btn--xlarge" href="https://www.ntu.edu.sg/nie/admissions/graduate-education-admissions/publications-and-videos/grants-and-research-advancement-(great)-series" >Grants and REsearch AdvancemenT (GReAT) Series</a>
+
+    </div>
+</div>
+
+    </div>
+</section><section class="eyd-section">
+    <div id="Content_C035_Col00" class="sf_colsIn container" daata-sf-element="ContainerLandingSingle" data-placeholder-label="Container Landing Single"><div class="row" data-sf-element="Row">
+    <div id="Content_C051_Col00" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 1" data-placeholder-label="Column 1"><div class="row" data-sf-element="Row">
+    <div id="Content_C069_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Column 1"><header class="section-header nie-pattern" >
+    <h2 class="h3">Student Life</h2>
+</header>
+        <a class="img-card img-card--thumb" href="/nie/student-life" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/banners/group-of-4-young-students-at-nie-campus.jpg?sfvrsn=17c5005a_9" alt="Group of 4 Young Students at NIE Campus Duplicate">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Student Life</h3>
+                    <p class="img-card__desc">Explore the exciting life at NIE</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+    </div>
+    <div id="Content_C051_Col01" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 2" data-placeholder-label="Column 2"><div class="row" data-sf-element="Row">
+    <div id="Content_C070_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Column 1"><header class="section-header nie-pattern" >
+    <h2 class="h3">Faculty</h2>
+</header>
+        <a class="img-card img-card--thumb" href="/nie/faculty" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/thumbnails-(720/eeg-brain-caps-2-students-and-a-caucasian-teacher-in-grey-suit-(720x432px).jpg?sfvrsn=c964312a_7" alt="EEG Brain Caps 2 Students And A Caucasian Teacher In Grey Suit (720x432px)">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Faculty</h3>
+                    <p class="img-card__desc">Our faculty are among the world’s top education institutes, renowned for its excellence in teacher education and education research.</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+    </div>
+    <div id="Content_C051_Col02" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 3" data-placeholder-label="Column 3"><div class="row" data-sf-element="Row">
+    <div id="Content_C071_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Column 1"><header class="section-header nie-pattern" >
+    <h2 class="h3">Alumni</h2>
+</header>
+        <a class="img-card img-card--thumb" href="/nie/alumni" >
+            <div class="img-card__img">
+                    <img class="lazyload" src="/ResourcePackages/NTU/assets/images/white-dot.jpg" data-src="/images/nielibraries/nie-stock-images/banners/older-male-teacher-in-grey-blazer-ipad-with-group-of-4-young-students-in-casual-business-wear.jpg?sfvrsn=13e653b0_9" alt="Older Male Teacher in Grey Blazer iPad with Group of 4 young students in casual business wear">
+            </div>
+            <div class="img-card__body">
+                <h3 class="img-card__title">Alumni</h3>
+                    <p class="img-card__desc">NIE Alumni is a growing community of partners and like-minded educators, a vibrant, valuable network of resources that you can tap into throughout your career.</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+    </div>
+</div>
+
+    </div>
+</section><section class="eyd-section">
+    <div id="Content_C086_Col00" class="sf_colsIn container" daata-sf-element="ContainerLandingSingle" data-placeholder-label="Container Landing Single"><header class="section-header nie-pattern" >
+    <h2 class="h3">What&#39;s New at NIE</h2>
+        <a class="link link--arrow" href="/nie/news-events" >
+            <span class="name">View all news &amp; events</span><span class="icon icon-arrow-right"></span>
+        </a>
+</header>
+
+<div class="card-carousel">
+    <div class="card-carousel__body">
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/striding-forward-for-good">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/content-population-news-images/bff.tmb-listing.png?Culture=en&amp;sfvrsn=a8d4819c_1' alt='' title='BFF' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">Striding forward for good</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">09 Mar 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/why-the-screen-time-debate-misses-the-real-classroom-problem">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/faculty-profile-photos/john-wang.tmb-listing.png?Culture=en&amp;sfvrsn=5195cbbd_1' alt='' title='John Wang' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">Why the screen time debate misses the real classroom problem</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">05 Mar 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/20-questions-with-lions-head-coach-gavin-lee">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/content-population-news-images/gavin-lee.tmb-listing.png?Culture=en&amp;sfvrsn=72861848_1' alt='' title='Gavin Lee' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">20 Questions With Lions Head Coach Gavin Lee</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">03 Mar 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/wild-at-heart">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/alumni/vilma.tmb-listing.png?Culture=en&amp;sfvrsn=2b2e3cfa_1' alt='' title='Vilma' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">Wild At Heart</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">02 Mar 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/psle-science-exam--how-to-help-your-child-remember-the-concepts">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/faculty-profile-photos/meristem/tan-aik-ling-2.tmb-listing.png?Culture=en&amp;sfvrsn=f31b26b9_1' alt='' title='Tan Aik Ling 2' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">PSLE science exam: How to help your child remember the concepts</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">02 Mar 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/centre-for-assessment---evaluation-(cae)--lunar-new-year-celebration-2026">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/nie-department-images/cae/cae-logo-for-thumbnail_uploading.tmb-listing.jpg?Culture=en&amp;sfvrsn=d4e0c52_1' alt='CAE logo for thumbnail_for uploading' title='CAE logo for thumbnail_uploading' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">Centre for Assessment &amp; Evaluation (CAE): Lunar New Year Celebration 2026</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">26 Feb 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/华文补习风席卷至小学前-新加坡家长为何焦虑">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/nie-stock-images/thumbnails-(720/yong-malay-lady-teacher-with-pink-tudung-with-group-of-8-secondary-school-students-smiling-and-laughing-infront-of-art-wall-wideshot-(720x432px).tmb-listing.jpg?Culture=en&amp;sfvrsn=435f8202_1' alt='Yong Malay Lady Teacher With Pink Tudung With Group Of 8 Secondary School Students Smiling and Laughing Infront of Art Wall Wideshot (720x432px)' title='Yong Malay Lady Teacher With Pink Tudung With Group Of 8 Secondary School Students Smiling and Laughing Infront of Art Wall Wideshot (720x432px)' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">华文补习风席卷至小学前 新加坡家长为何焦虑？</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">25 Feb 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/conferment-of-jacet-honorary-membership">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/academic-group-images/nie-ell/news-events/loh-el_jacet_thumbnail.tmb-listing.jpg?Culture=en&amp;sfvrsn=7e1ee840_1' alt='' title='Loh EL_JACET_Thumbnail' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">Conferment of JACET Honorary Membership</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">24 Feb 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/&#39;aircon-weather&#39;-in-singapore--what&#39;s-behind-the-rainy--cool-week">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/content-population-news-images/znr_8191.tmb-listing.jpg?Culture=en&amp;sfvrsn=a3be03fc_1' alt='' title='ZNR_8191' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">&#39;Aircon weather&#39; in Singapore: What&#39;s behind the rainy, cool week?</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">20 Feb 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/黄龙翔-元任务觉察--人与ai-共舞探戈">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/faculty-profile-photos/dr-wong-lung-hsiang.tmb-listing.jpg?Culture=en&amp;sfvrsn=7dde16c0_1' alt='' title='Dr Wong Lung Hsiang' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">黄龙翔：元任务觉察──人与AI“共舞探戈”</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">19 Feb 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/dr.-edward-park-awarded-iag-early-career-medal-at-the-11th-international-conference-on-geomorphology">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/content-population-news-images/edward-park-iag-early-career-medal.tmb-listing.jpg?Culture=en&amp;sfvrsn=979d4f04_1' alt='' title='Edward Park IAG Early Career Medal' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">Dr. Edward Park Awarded IAG Early Career Medal at the 11th International Conference on Geomorphology</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">16 Feb 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/little-things-symposium-2026">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/academic-group-images/nie-ell/news-events/angelia-poon_little-things/angelia-little-things_picture1.tmb-listing.png?Culture=en&amp;sfvrsn=df849244_1' alt='ANGELIA-Little Things_Picture1' title='ANGELIA-Little Things_Picture1' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">Little Things Symposium 2026</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">13 Feb 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <div class="video-card video-card--box" data-video="https://youtu.be/7ZjGXuoz2Bs">
+                            <div class="video-card__img">
+                                <button class="video-card__trigger" type="button" title="Play video"><span class="sr-only">Play video</span><span class="icon icon-play"></span></button>
+                                <a href="https://www.ntu.edu.sg/nie/news-events/news/detail/sccce-launches-inaugural-insight-series-with-inaugural-issue-on-cce-in-an-ai-mediated-world">
+                                            <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/content-population-news-images/sccce-insight-series-launch.tmb-listing.jpg?Culture=en&amp;sfvrsn=7b2434dc_1' alt='' title='SCCCE Insight Series Launch' />
+                                </a>
+                            </div>
+                        <a class="video-card__body" href="https://www.ntu.edu.sg/nie/news-events/news/detail/sccce-launches-inaugural-insight-series-with-inaugural-issue-on-cce-in-an-ai-mediated-world">
+                            <h3 class="video-card__title">SCCCE Launches Inaugural Insight Series with Inaugural Issue on CCE in an AI-Mediated World</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">04 Feb 2026</span>
+                                    </span>
+                        </a>
+                    </div>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/中学全天禁用手机-学生听劝吗">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/nie-stock-images/thumbnails-(720/smiling-female-teacher-in-orange-dress-with-group-of-5-secondary-students-in-uniform-studying-with-textbooks.tmb-listing.jpg?Culture=en&amp;sfvrsn=f0d2ae72_1' alt='Smiling Female Teacher in Orange Dress with Group of 5 Secondary Students in Uniform Studying with Textbooks' title='Smiling Female Teacher in Orange Dress with Group of 5 Secondary Students in Uniform Studying with Textbooks' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">中学全天禁用手机 学生听劝吗？</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">04 Feb 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/associate-professor-edward-park-appointed-pifi-international-distinguished-scientist-by-the-chinese-academy-of-sciences">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/content-population-news-images/assoc-prof-edward-park-website.tmb-listing.png?Culture=en&amp;sfvrsn=d0d3695f_1' alt='' title='Assoc Prof Edward Park website' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">Associate Professor Edward Park Appointed PIFI International Distinguished Scientist by the Chinese Academy of Sciences</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">30 Jan 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/ntu-wuhan-university-study-redefines-global-river-channel-patterns">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/content-population-news-images/picture2bc58274b-e1a1-4e16-8dfa-b0af7d89d467.tmb-listing.png?Culture=en&amp;sfvrsn=98387e1c_1' alt='' title='Picture2' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">NTU–Wuhan University Study Redefines Global River Channel Patterns</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">28 Jan 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/still-don-t-get-it--here-s-why-teaching-doesn-t-always-lead-to-learning">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/faculty-profile-photos/prof-liu-woon-chia.tmb-listing.png?Culture=en&amp;sfvrsn=99c55008_1' alt='' title='Prof Liu Woon Chia' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">Still don’t get it? Here’s why teaching doesn’t always lead to learning</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">22 Jan 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/centre-for-assessment---evaluation-(cae)--call-for-applications-for-wera-visiting-researcher-award-2026">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/nie-department-images/cae/cae-logo-for-thumbnail_uploading.tmb-listing.jpg?Culture=en&amp;sfvrsn=d4e0c52_1' alt='CAE logo for thumbnail_for uploading' title='CAE logo for thumbnail_uploading' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">Centre for Assessment &amp; Evaluation (CAE): Call for Applications for WERA Visiting Researcher Award 2026</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">21 Jan 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/why-it-s-time-to-rethink-physical-education-in-schools">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/faculty/professorships/david-kirk.tmb-listing.jpg?Culture=en&amp;sfvrsn=a67518a8_1' alt='' title='David Kirk' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">Why it’s time to rethink physical education in schools</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">20 Jan 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+            <div class="card-carousel__item">
+                    <a class="img-card img-card--box" href="https://www.ntu.edu.sg/nie/news-events/news/detail/what-happens-when-device-hooked-preschoolers-go-on-a-3-week-screen-detox----talking-point">
+                                <div class="img-card__img">
+                                        <img class='lazyload' src='/ResourcePackages/NTU/assets/images/white-dot.jpg' data-src='/images/nielibraries/faculty-profile-photos/teo-wei-peng.tmb-listing.png?Culture=en&amp;sfvrsn=7fa9cbc5_1' alt='' title='Teo Wei Peng' />
+                                </div>
+                        <div class="img-card__body">
+                            <h3 class="img-card__title">What Happens When Device-Hooked Preschoolers Go On A 3-Week Screen Detox? | Talking Point</h3>
+                                                                <span class="date-label">
+                                        <span class="label">Published on </span>
+                                        <span class="date">19 Jan 2026</span>
+                                    </span>
+                        </div>
+                    </a>
+            </div>
+    </div>
+</div>
+    </div>
+</section><section class="full-container bg-nie-blue">
+    <div id="Content_C087_Col00" class="sf_colsIn container" data-sf-element="ContainerLandingSingleNieBlue" data-placeholder-label="Container Landing Single (NIE Blue)"><header class="section-header">
+    <h2 class="h3">Our Highlights</h2>
+</header><div class="row" data-sf-element="Row">
+    <div id="Content_C088_Col00" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 1" data-placeholder-label="Column 1"><div class="row" data-sf-element="Row">
+    <div id="Content_C090_Col00" class="sf_colsIn col-md-3 col-sm-12" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+        <img loading="lazy" src="/images/default-source/general/icons/asset-66485bf8ffc-c9d7-48cb-af2d-f6558f2bfe5a.png?sfvrsn=edb77e33_3" title="Asset 664"
+         
+          />
+
+    </div>
+    <div id="Content_C090_Col01" class="sf_colsIn col-md-9 col-sm-12" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="rte" >
+    <div ><p><strong>World's top 10 education institutions</strong></p><p><strong></strong>Based on Quacquarelli Symonds (QS) ranking by subjects</p></div>    
+</div>
+    </div>
+</div>
+
+    </div>
+    <div id="Content_C088_Col01" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 2" data-placeholder-label="Column 2"><div class="row" data-sf-element="Row">
+    <div id="Content_C091_Col00" class="sf_colsIn col-md-3 col-sm-12" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+        <img loading="lazy" src="/images/default-source/general/icons/asset-5317413cc75-59c4-4fb2-afb6-0b19c8517884.png?sfvrsn=10c18fa3_3" title="Asset 531"
+         
+          />
+
+    </div>
+    <div id="Content_C091_Col01" class="sf_colsIn col-md-9 col-sm-12" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="rte" >
+    <div ><p><strong>Asia's top 3 education institutions</strong></p><p><strong></strong>Based on Quacquarelli Symonds (QS) ranking by subjects</p></div>    
+</div>
+    </div>
+</div>
+
+    </div>
+    <div id="Content_C088_Col02" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 3" data-placeholder-label="Column 3"><div class="row" data-sf-element="Row">
+    <div id="Content_C092_Col00" class="sf_colsIn col-md-3 col-sm-12" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+        <img loading="lazy" src="/images/default-source/general/icons/asset-530fce308b4-1ae6-4d15-b696-0cb30a3d0886.png?sfvrsn=800a857a_3" title="Asset 530"
+         
+          />
+
+    </div>
+    <div id="Content_C092_Col01" class="sf_colsIn col-md-9 col-sm-12" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="rte" >
+    <div ><p><strong>10 Academic Departments focusing on academic fields</strong></p><p><strong></strong>Providing the disciplinary rigour and depth</p></div>    
+</div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+    </div>
+</section><section class="eyd-section">
+    <div id="Content_C046_Col00" class="sf_colsIn container" daata-sf-element="ContainerLandingSingle" data-placeholder-label="Container Landing Single"><header class="section-header nie-pattern" >
+    <h2 class="h3">About Us</h2>
+        <a class="link link--arrow" href="/nie/about-us" >
+            <span class="name">Get to know us</span><span class="icon icon-arrow-right"></span>
+        </a>
+</header><div class="row" data-sf-element="Row">
+    <div id="Content_C065_Col00" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/about-us" >Director&#39;s Welcome</a>
+
+    </div>
+     <div id="Content_C065_Col01" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/nie-strategic-vision-2025" >NIE Strategic Vision</a>
+
+    </div>
+     <div id="Content_C065_Col02" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 3" data-placeholder-label="Column 3">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/about-us/academic-departments" >Academic Departments</a>
+
+    </div>
+     <div id="Content_C065_Col03" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 4" data-placeholder-label="Column 4">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/about-us/programme-offices" >Programme Offices</a>
+
+    </div>
+</div>
+<div class="row" data-sf-element="Row">
+    <div id="Content_C068_Col00" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/about-us/programme-offices/office-of-teacher-education-and-undergraduate-programmes/te21" >TE&#178;&#185;: Empowering Teachers for the Future</a>
+
+    </div>
+     <div id="Content_C068_Col01" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/about-us/campus-facilities" >Campus Facilities</a>
+
+    </div>
+     <div id="Content_C068_Col02" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 3" data-placeholder-label="Column 3">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/about-us/departments" >Departments</a>
+
+    </div>
+     <div id="Content_C068_Col03" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 4" data-placeholder-label="Column 4">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/about-us/global-connections" >Global Connections</a>
+
+    </div>
+</div>
+<div class="row" data-sf-element="Row">
+    <div id="Content_C132_Col00" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/about-us/careers" >Careers</a>
+
+    </div>
+    <div id="Content_C132_Col01" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/nie-education-launchpad" >NIE Education Launchpad</a>
+
+    </div>
+    <div id="Content_C132_Col02" class="sf_colsIn col-md-4 col-sm-4" data-sf-element="Column 3" data-placeholder-label="Column 3">
+
+    <a class="btn bg-nie-yellow btn--block btn--xlarge" href="/nie/contact-us" >Contact Us</a>
+
+    </div>
+</div>
+
+    </div>
+</section> </div> <footer class="site-footer-revamp"> <a class="btn btn-scroll-top btn--grey" href="#top"><span class="icon icon-angle-up"></span></a> <div class="container"> 
+<div class="row" data-sf-element="Row">
+    <div id="Footer_T0C525A2E016_Col00" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+<div class="rte" >
+    <div ><div class="site-footer__contact"><address>Nanyang Technological University<br data-sf-ec-immutable="">50 Nanyang Avenue, Singapore 639798<br>Tel: <a href="tel:+6567911744">(65) 67911744</a></address><address>National Institute of Education<br data-sf-ec-immutable="">1 Nanyang Walk, Singapore 637616<br></address><address>Novena Campus<br data-sf-ec-immutable="">11 Mandalay Road, Singapore 308232<br>Tel: <a href="tel:+6565138572">(65) 65138572</a>
+ </address><br></div></div>    
+</div>
+    </div>
+     <div id="Footer_T0C525A2E016_Col01" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+<div class="rte" >
+    <div ><div class="rte"><h4>Quick links</h4></div><div class="site-footer__nav"><p><a target="_blank" href="/main/cn">中文</a>
+
+ </p><p><a target="_blank" href="/education/libraries">NTU Library</a>
+
+ </p><p><a target="_blank" href="/collaborate-with-us/information-for-suppliers" data-sf-ec-immutable="">Suppliers</a>
+
+ </p><p><a href="https://intranet.ntu.edu.sg" target="_blank" data-sf-ec-immutable="">Staff Intranet</a>
+
+ </p><p><a href="https://student-intranet.ntu.edu.sg" target="_blank" data-sf-ec-immutable="">Student Intranet</a></p><p><a href="/giving/home">Give to NTU</a>
+ </p><br></div></div>    
+</div>
+    </div>
+     <div id="Footer_T0C525A2E016_Col02" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 3" data-placeholder-label="Column 3">
+<div class="rte" >
+    <div ><div class="site-footer__nav"><h4>Get in touch</h4><p><a target="_self" href="/about-us/visiting-ntu">Visiting NTU</a></p><p><a target="_self" href="/about-us/build-a-career-at-ntu">Careers</a></p><p><a target="_self" href="/footer/a-z-directory">A-Z Directory</a></p><p><a target="_self" href="/about-us/contact-us">Contact Us</a></p></div></div>    
+</div>
+    </div>
+     <div id="Footer_T0C525A2E016_Col03" class="sf_colsIn col-md-3 col-sm-6" data-sf-element="Column 4" data-placeholder-label="Column 4">
+<div class="rte" >
+    <div ><div class="rte"><h4>Connect with us</h4></div><div class="site-footer__social site-footer__social--white"><ul style="padding-left: 0"><li><a class="social-btn" href="https://www.facebook.com/NTUsg/" target="_blank" rel="noopener noreferrer" data-sf-ec-immutable=""><span class="vh">Facebook</span><span class="icon-facebook"></span></a></li><li><a class="social-btn" href="https://x.com/ntusg" target="_blank" rel="noopener noreferrer" data-sf-ec-immutable=""><span class="vh">X</span><span class="icon-x"></span></a></li><li><a class="social-btn" href="https://www.instagram.com/ntu_sg/" target="_blank" rel="noopener noreferrer" data-sf-ec-immutable=""><span class="vh">Instagram</span><span class="icon-instagram"></span></a></li><li><a class="social-btn" href="https://www.linkedin.com/school/ntusg/" target="_blank" rel="noopener noreferrer" data-sf-ec-immutable=""><span class="vh">LinkedIn</span><span class="icon-linkedin"></span></a></li><li><a class="social-btn" href="https://www.youtube.com/user/NTUsg" target="_blank" rel="noopener noreferrer" data-sf-ec-immutable=""><span class="vh">YouTube</span><span class="icon-youtube"></span></a></li><li><a class="social-btn" href="https://www.tiktok.com/@ntusg" target="_blank" rel="noopener noreferrer" data-sf-ec-immutable=""><span class="vh">TikTok</span><span class="icon-tiktok"></span></a></li></ul><br><br></div></div>    
+</div>
+    </div>
+</div>
+
+<div class="rte"><small>© 2026 Nanyang Technological University</small></div>
+<div class="rte" >
+    <div ><h4><span style="font-size: small"><a href="/about-us#edi-policy">Equality, Diversity and Inclusion</a>&nbsp; |&nbsp;&nbsp; <a href="/legal">Legal</a>
+ </span></h4></div>    
+</div> </div> </footer>  <script src="/Frontend-Assembly/Telerik.Sitefinity.Frontend.Navigation/Mvc/Scripts/Navigation.min.js?package=NTU&amp;v=MTQuNC44MTUxLjA%3d" type="text/javascript"></script><script type="application/json" id="PersonalizationTracker">
+	{"IsPagePersonalizationTarget":false,"IsUrlPersonalizationTarget":false,"PageId":"d217dc00-2555-49f0-9933-6d63eb4bf27f"}
+</script><script type="text/javascript" src="/WebResource.axd?d=NjxTqR2bqTw1rewxxlkHPg7ZVWQsMPMIzXqE94cWtC3Xj65cK-PV7Yebu4oGlIIa_HQOBG1Ol5nixru_IArc8iDOIazwo6M5V3wNWPdvpHK7QFchArsluqkZteALlbaeiI90Pk77HYM6tH4VTTL4_n0rdPCfjZeqFqc8wrpPLWRQk8NypBUrU76PJGARYaw1pRteCDmK2JiFXK1iThTQLmF7smjwN5scr0V1EvI0y4w1&amp;t=639011189480000000">
+
+</script> <script src="/ResourcePackages/NTU/assets/scripts/main.js?v=3"></script> </body> </html>
