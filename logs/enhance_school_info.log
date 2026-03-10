@@ -1224,3 +1224,58 @@ Traceback (most recent call last):
     """, params)
     ^^^^^^^^^^^^
 sqlite3.OperationalError: no such column: email
+[2026-03-10 06:01:17] ==================================================
+[2026-03-10 06:01:17] 学校信息完善任务开始
+[2026-03-10 06:01:17] ==================================================
+[2026-03-10 06:01:17] 目标: 20 所学校
+[2026-03-10 06:01:17] 处理: Uzbekistan School of 57 (Uzbekistan)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'example.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-10 06:01:18]   ✗ 未找到新信息
+[2026-03-10 06:01:19] 处理: Cyprus Academy of Music (Cyprus)
+[2026-03-10 06:01:19] 解析失败: HTTPSConnectionPool(host='www.cam.edu.cy', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.cam.edu.cy', port=443): Failed to resolve 'www.cam.edu.cy' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-10 06:01:19]   ✗ 未找到新信息
+[2026-03-10 06:01:20] 处理: Istanbul Technical University (Turkey)
+[2026-03-10 06:01:21] 解析失败: HTTPSConnectionPool(host='www.istanbultechnical.edu.tu', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.istanbultechnical.edu.tu', port=443): Failed to resolve 'www.istanbultechnical.edu.tu' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-10 06:01:21]   ✗ 未找到新信息
+[2026-03-10 06:01:22] 处理: Singapore Institute of Technology 78 (Singapore)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'example.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-10 06:01:22]   ✗ 未找到新信息
+[2026-03-10 06:01:23] 处理: Sharjah University (United Arab Emirates)
+/opt/homebrew/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.sharjah.ac.ae'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[2026-03-10 06:01:17] ==================================================
+[2026-03-10 06:01:17] 学校信息完善任务开始
+[2026-03-10 06:01:17] ==================================================
+[2026-03-10 06:01:17] 目标: 20 所学校
+[2026-03-10 06:01:17] 处理: Uzbekistan School of 57 (Uzbekistan)
+[2026-03-10 06:01:18]   ✗ 未找到新信息
+[2026-03-10 06:01:19] 处理: Cyprus Academy of Music (Cyprus)
+[2026-03-10 06:01:19] 解析失败: HTTPSConnectionPool(host='www.cam.edu.cy', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.cam.edu.cy', port=443): Failed to resolve 'www.cam.edu.cy' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-10 06:01:19]   ✗ 未找到新信息
+[2026-03-10 06:01:20] 处理: Istanbul Technical University (Turkey)
+[2026-03-10 06:01:21] 解析失败: HTTPSConnectionPool(host='www.istanbultechnical.edu.tu', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.istanbultechnical.edu.tu', port=443): Failed to resolve 'www.istanbultechnical.edu.tu' ([Errno 8] nodename nor servname provided, or not known)"))
+[2026-03-10 06:01:21]   ✗ 未找到新信息
+[2026-03-10 06:01:22] 处理: Singapore Institute of Technology 78 (Singapore)
+[2026-03-10 06:01:22]   ✗ 未找到新信息
+[2026-03-10 06:01:23] 处理: Sharjah University (United Arab Emirates)
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/enhance_school_info.py", line 166, in <module>
+    main()
+    ~~~~^^
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/enhance_school_info.py", line 126, in main
+    update_school_info(school_id, info)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/enhance_school_info.py", line 92, in update_school_info
+    cursor.execute(f"""
+    ~~~~~~~~~~~~~~^^^^^
+        UPDATE schools
+        ^^^^^^^^^^^^^^
+        SET {', '.join(set_clauses)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        WHERE id = ?
+        ^^^^^^^^^^^^
+    """, params)
+    ^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: email

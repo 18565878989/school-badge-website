@@ -2912,3 +2912,563 @@ ModuleNotFoundError: No module named 'requests'
 [2026-03-09 22:00:24] 图片收集任务开始
 [2026-03-09 22:00:24] ==================================================
 [2026-03-09 22:00:24] [1/2] 收集校徽...
+[2026-03-10 00:00:23] 校徽收集完成: +0
+[2026-03-10 00:00:23] [2/2] 收集校园图片...
+[2026-03-10 01:28:22] 校园图片收集完成: +0
+[2026-03-10 01:28:22] ==================================================
+[2026-03-10 01:28:22] 任务完成 - 执行报告
+[2026-03-10 01:28:22] ==================================================
+[2026-03-10 01:28:22] 开始时间: 2026-03-09 22:00:24
+[2026-03-10 01:28:22] 结束时间: 2026-03-10 01:28:22
+[2026-03-10 01:28:22] 执行时长: 12478 秒
+[2026-03-10 01:28:22] --------------------------------------------------
+[2026-03-10 01:28:22] 校徽收集: +0
+[2026-03-10 01:28:22] 校园图片: +0
+[2026-03-10 01:28:22] 总计新增: +0
+[2026-03-10 01:28:22] ==================================================
+[2026-03-09 22:00:24] ==================================================
+[2026-03-09 22:00:24] 图片收集任务开始
+[2026-03-09 22:00:24] ==================================================
+[2026-03-09 22:00:24] [1/2] 收集校徽...
+开始收集校徽，目标: 50 所学校
+处理: Xiamen University (China)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1085b38c0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Antai College of Economics and Management Shanghai Jiao Tong University (China)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6%E5%AE%89%E6%B3%B0%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%E5%AD%A6%E9%99%A2+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66e90>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Cambodia Department of 45 (Cambodia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%9F%AC%E5%9F%94%E5%AF%A8%E4%B8%AD%E5%BF%83+45+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d67750>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: University of Macau (China)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Israel University 8 (Israel)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Israel Medical Center 55 (Israel)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Gulf Medical University (UAE)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Bu-Ali Sina University (Iran)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: University of Würzburg (Germany)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Prince Sattam bin Abdulaziz University (Saudi Arabia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: University of Crete (Greece)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Changchun University of Science and Technology (China)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Hitachi, Ltd. (Japan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: AUT (New Zealand)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Israel Medical Center 50 (Israel)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Cebu Normal University (Philippines)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%AE%BF%E5%8A%A1%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by NameResolutionError("HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ✗ 未找到校徽
+处理: Koç University (Turkey)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E7%A7%91%E5%A5%87%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by NameResolutionError("HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ✗ 未找到校徽
+处理: College of Science and Technology Bhutan (Bhutan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B8%8D%E4%B8%B9%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2+logo&format=json&utf8=1&srlimit=5 (Caused by NameResolutionError("HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ✗ 未找到校徽
+处理: Lao American College (Laos)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Islamic University of Tajikistan (Tajikistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Myanmar Faculty of 10 (Myanmar)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: University of Medicine Mandalay (Myanmar)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Zarqa University (Jordan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Zarqa+University+%28Irbid%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d65d10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Tajik State Pedagogical University (Tajikistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%A1%94%E5%90%89%E5%85%8B%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d65310>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: National Autonomous University of Mexico (Mexico)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%A2%A8%E8%A5%BF%E5%93%A5%E5%9B%BD%E7%AB%8B%E8%87%AA%E6%B2%BB%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x102a0b250>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: James Cook University (Australia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%A9%B9%E5%A7%86%E6%96%AF%E5%BA%93%E5%85%8B%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d65450>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Mongolian University of Life Sciences (Mongolia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%92%99%E5%8F%A4%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d651d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Bago University (Myanmar)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Lovely Professional University (India)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Mid-West University (Nepal)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Bangladesh Department of 94 (Bangladesh)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Swarthmore (United States)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%96%AF%E6%B2%83%E6%96%AF%E8%8E%AB%E5%B0%94+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66c10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Cambodia Department of 85 (Cambodia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%9F%AC%E5%9F%94%E5%AF%A8%E4%B8%AD%E5%BF%83+85+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66850>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Nepal Open University (Nepal)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Nepal+Open+University+%28Birgunj%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66ad0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Jawaharlal Nehru University (India)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%B4%BE%E7%93%A6%E5%93%88%E6%8B%89%E5%B0%94%E5%B0%BC%E8%B5%AB%E9%B2%81%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d67890>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Saudi Arabia College 40 (Saudi Arabia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%B2%99%E7%89%B9%E9%98%BF%E6%8B%89%E4%BC%AF%E5%AD%A6%E9%99%A2+40+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d674d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: University of Dental Medicine Mandalay (Myanmar)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%9B%BC%E5%BE%B7%E5%8B%92%E7%89%99%E7%A7%91%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d67250>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: University of Tokyo Faculty of Law (Japan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%B3%95%E5%AD%A6%E9%83%A8+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d679d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Erdenet State University (Mongolia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Erdenet+State+University+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d67b10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Pakistan Faculty of 64 (Pakistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E7%B3%BB+64+logo&format=json&utf8=1&srlimit=5 (Caused by NameResolutionError("HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ✗ 未找到校徽
+处理: Wonsan University of Agriculture (North Korea)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%85%83%E5%B1%B1%E5%86%9C%E4%B8%9A%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by NameResolutionError("HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ✗ 未找到校徽
+处理: American University of Cyprus (Cyprus)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Bumthang College (Bhutan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Yemen Faculty of 83 (Yemen)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Korea University College of Law (South Korea)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Southwest University (China)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%A5%BF%E5%8D%97%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by NameResolutionError("HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ✗ 未找到校徽
+处理: Baku State University (Azerbaijan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Nepal Center for 82 (Nepal)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Sohar University (Oman)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Canadian University of Dubai (UAE)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+
+完成! 成功收集 0/50 个校徽
+[2026-03-10 00:00:23] 校徽收集完成: +0
+[2026-03-10 00:00:23] [2/2] 收集校园图片...
+开始收集校园图片，目标: 30 所学校
+处理: Thammasat University (Thailand)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校园图
+处理: Harish-Chandra Research Institute (India)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校园图
+处理: University of Colorado (United States)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校园图
+处理: Yemen Faculty of 23 (Yemen)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校园图
+处理: King Fahd University of Petroleum (Saudi Arabia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校园图
+处理: Macquarie University (Australia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校园图
+处理: Philippines Research Institute 14 (Philippines)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%8F%B2%E5%BE%8B%E5%AE%BE%E7%A0%94%E7%A9%B6%E9%99%A2+14+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d65bd0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: University of Innsbruck (Austria)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%9B%A0%E6%96%AF%E5%B8%83%E9%B2%81%E5%85%8B%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66210>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: China University of Mining and Technology (China)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B8%AD%E5%9B%BD%E7%9F%BF%E4%B8%9A%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66d50>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Bodh Gaya University (India)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%8F%A9%E6%8F%90%E4%BC%BD%E8%80%B6%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66e90>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Beirut Arab University (Lebanon)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Beirut+Arab+University+%28Tripoli%29+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66c10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Sultan Sharif Islamic University (Brunei)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%B2%99%E9%87%8C%E5%A4%AB%E4%BC%8A%E6%96%AF%E5%85%B0%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66710>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Iraq Research Institute 51 (Iraq)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%BC%8A%E6%8B%89%E5%85%8B%E7%A0%94%E7%A9%B6%E9%99%A2+51+campus+photo&format=json&utf8=1&srlimit=5 (Caused by NameResolutionError("HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ✗ 未找到校园图
+处理: Lebanese University (Lebanon)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Lebanese+University+%28Baalbek%29+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d67750>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Georgian Technical University (Georgia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%A0%BC%E9%B2%81%E5%90%89%E4%BA%9A%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d67390>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Philippines Research Institute 24 (Philippines)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%8F%B2%E5%BE%8B%E5%AE%BE%E7%A0%94%E7%A9%B6%E9%99%A2+24+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d67110>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Tel Aviv University Faculty of Law (Israel)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E7%89%B9%E6%8B%89%E7%BB%B4%E5%A4%AB%E5%A4%A7%E5%AD%A6%E6%B3%95%E5%AD%A6%E9%99%A2+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d67c50>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Uzbekistan Medical Center 25 (Uzbekistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B9%8C%E5%85%B9%E5%88%AB%E5%85%8B%E6%96%AF%E5%9D%A6%E5%8C%BB%E7%96%97%E4%B8%AD%E5%BF%83+25+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d67b10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Uzbek State World Languages University (Uzbekistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B9%8C%E5%85%B9%E5%88%AB%E5%85%8B%E6%96%AF%E5%9D%A6%E5%9B%BD%E7%AB%8B%E4%B8%96%E7%95%8C%E8%AF%AD%E8%A8%80%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x102a0b250>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Kazakh Ablay Khan University (Kazakhstan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%93%88%E8%90%A8%E5%85%8B%E9%98%BF%E5%B8%83%E8%8E%B1%E6%B1%97%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d65310>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Uzbekistan Medical Center 45 (Uzbekistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B9%8C%E5%85%B9%E5%88%AB%E5%85%8B%E6%96%AF%E5%9D%A6%E5%8C%BB%E7%96%97%E4%B8%AD%E5%BF%83+45+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d679d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Laos Institute of Technology 62 (Laos)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%80%81%E6%8C%9D%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2+62+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d67250>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Al-Farabi Kazakh National University (Kazakhstan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Al-Farabi+Kazakh+National+University+campus+photo&format=json&utf8=1&srlimit=5 (Caused by NameResolutionError("HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ✗ 未找到校园图
+处理: Tashkent State University of Economics (Uzbekistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Tashkent+State+University+of+Economics+campus+photo&format=json&utf8=1&srlimit=5 (Caused by NameResolutionError("HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ✗ 未找到校园图
+处理: Myanmar University 17 (Myanmar)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E7%BC%85%E7%94%B8%E5%A4%A7%E5%AD%A6+17+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66ad0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Hanoi Medical University (Vietnam)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%B2%B3%E5%86%85%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66850>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Universiti Sains Malaysia (Malaysia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E7%90%86%E7%A7%91%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66990>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Jordan Research Institute 25 (Jordan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E7%BA%A6%E6%97%A6%E7%A0%94%E7%A9%B6%E9%99%A2+25+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66fd0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Dokuz Eylul University (Turkey)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B9%9D%E5%9C%9F%E8%80%B3%E5%85%B6%E4%B8%AD%E5%BA%B8%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66210>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Visayas State University (Philippines)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E7%B1%B3%E6%B2%99%E9%84%A2%E5%B7%9E%E7%AB%8B%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x108d66490>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+
+完成! 成功收集 0/30 张校园图
+[2026-03-10 01:28:22] 校园图片收集完成: +0
+[2026-03-10 01:28:22] ==================================================
+[2026-03-10 01:28:22] 任务完成 - 执行报告
+[2026-03-10 01:28:22] ==================================================
+[2026-03-10 01:28:22] 开始时间: 2026-03-09 22:00:24
+[2026-03-10 01:28:22] 结束时间: 2026-03-10 01:28:22
+[2026-03-10 01:28:22] 执行时长: 12478 秒
+[2026-03-10 01:28:22] --------------------------------------------------
+[2026-03-10 01:28:22] 校徽收集: +0
+[2026-03-10 01:28:22] 校园图片: +0
+[2026-03-10 01:28:22] 总计新增: +0
+[2026-03-10 01:28:22] ==================================================
+[2026-03-10 06:01:17] ==================================================
+[2026-03-10 06:01:17] 图片收集任务开始
+[2026-03-10 06:01:17] ==================================================
+[2026-03-10 06:01:17] [1/2] 收集校徽...
+[2026-03-10 08:18:45] 校徽收集完成: +0
+[2026-03-10 08:18:45] [2/2] 收集校园图片...
+[2026-03-10 08:43:36] 校园图片收集完成: +0
+[2026-03-10 08:43:36] ==================================================
+[2026-03-10 08:43:36] 任务完成 - 执行报告
+[2026-03-10 08:43:36] ==================================================
+[2026-03-10 08:43:36] 开始时间: 2026-03-10 06:01:17
+[2026-03-10 08:43:36] 结束时间: 2026-03-10 08:43:36
+[2026-03-10 08:43:36] 执行时长: 9738 秒
+[2026-03-10 08:43:36] --------------------------------------------------
+[2026-03-10 08:43:36] 校徽收集: +0
+[2026-03-10 08:43:36] 校园图片: +0
+[2026-03-10 08:43:36] 总计新增: +0
+[2026-03-10 08:43:36] ==================================================
+[2026-03-10 06:01:17] ==================================================
+[2026-03-10 06:01:17] 图片收集任务开始
+[2026-03-10 06:01:17] ==================================================
+[2026-03-10 06:01:17] [1/2] 收集校徽...
+开始收集校徽，目标: 50 所学校
+处理: University of Sofia (Bulgaria)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Mongolia Medical Center 97 (Mongolia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: University of Jena (Germany)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Armenian State University of Economics (Armenia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Armenian+State+University+of+Economics+%28Vagharshapat%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e79d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Girne American University (Cyprus)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Girne+American+University+%28Limassol%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7d90>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Jerash University (Jordan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Jerash+University+%28Amman%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7c50>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Saudi Arabia Academy 86 (Saudi Arabia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%B2%99%E7%89%B9%E9%98%BF%E6%8B%89%E4%BC%AF%E5%AD%A6%E9%99%A2+86+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x10679c190>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Israel Medical Center 95 (Israel)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%BB%A5%E8%89%B2%E5%88%97%E5%8C%BB%E7%96%97%E4%B8%AD%E5%BF%83+95+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x10679c410>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: UBA (Argentina)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%B8%83%E5%AE%9C%E8%AF%BA%E6%96%AF%E8%89%BE%E5%88%A9%E6%96%AF+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x10679c690>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Israel Medical Center 35 (Israel)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%BB%A5%E8%89%B2%E5%88%97%E5%8C%BB%E7%96%97%E4%B8%AD%E5%BF%83+35+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x10679c910>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Sungkyul University (South Korea)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%9C%A3%E6%B4%81%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x100467250>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: University of Buenos Aires (Argentina)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%B8%83%E5%AE%9C%E8%AF%BA%E6%96%AF%E8%89%BE%E5%88%A9%E6%96%AF%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7d90>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Hanyang University (South Korea)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%B1%89%E9%98%B3%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e79d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Israel Medical Center 75 (Israel)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%BB%A5%E8%89%B2%E5%88%97%E5%8C%BB%E7%96%97%E4%B8%AD%E5%BF%83+75+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7110>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Royal Institute of Management (Bhutan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E7%9A%87%E5%AE%B6%E7%AE%A1%E7%90%86%E5%AD%A6%E9%99%A2+logo&format=json&utf8=1&srlimit=5 (Caused by NameResolutionError("HTTPSConnection(host='en.wikipedia.org', port=443): Failed to resolve 'en.wikipedia.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ✗ 未找到校徽
+处理: Al-Balqa' Applied University (Jordan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%B7%B4%E5%8D%A2%E5%8D%A1%E5%BA%94%E7%94%A8%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7750>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Al-Balqa Applied University (Jordan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Al-Balqa+Applied+University+%28Amman%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7610>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Shiraz University (Iran)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Shiraz+University+%28Yazd%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6990>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Turkmen State Institute of Economics and Management (Turkmenistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%9C%9F%E5%BA%93%E6%9B%BC%E7%BB%8F%E6%B5%8E%E7%AE%A1%E7%90%86%E5%AD%A6%E9%99%A2+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6850>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: International University of Cambodia (Cambodia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%9F%AC%E5%9F%94%E5%AF%A8%E5%9B%BD%E9%99%85%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6e90>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Saudi Arabia Academy 51 (Saudi Arabia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%B2%99%E7%89%B9%E9%98%BF%E6%8B%89%E4%BC%AF%E5%AD%A6%E9%99%A2+51+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6d50>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Thailand Center for 17 (Thailand)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%B3%B0%E5%9B%BD%E7%A0%94%E7%A9%B6%E6%89%80+17+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6210>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Brunei International Medical University (Brunei)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%96%87%E8%8E%B1%E5%9B%BD%E9%99%85%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e5a90>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Afghanistan University 14 (Afghanistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E9%98%BF%E5%AF%8C%E6%B1%97%E5%A4%A7%E5%AD%A6+14+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e5f90>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: National Polytechnic University of Armenia (Armenia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Kim Hyong Jik University of Education (North Korea)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Yemen Faculty of 8 (Yemen)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B9%9F%E9%97%A8%E7%B3%BB+8+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e5310>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Thaksin University (Thailand)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: Dili Institute of Technology (East Timor)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=10)
+  ✗ 未找到校徽
+处理: University of Portsmouth (United Kingdom)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%9C%B4%E8%8C%A8%E8%8C%85%E6%96%AF%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6490>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Kalinga Institute of Industrial Technology (India)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%8D%A1%E6%9E%97%E5%98%8E%E5%B7%A5%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e60d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Laos Academy 4 (Laos)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%80%81%E6%8C%9D%E5%AD%A6%E9%99%A2+4+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6fd0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: College of Natural Resources (Bhutan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=College+of+Natural+Resources+%28Punakha%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6c10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Institute of Technical Education (Singapore)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%B7%A5%E8%89%BA%E6%95%99%E8%82%B2%E5%AD%A6%E9%99%A2+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6ad0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Southwest University (China)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%A5%BF%E5%8D%97%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6710>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Federal University of Minas Gerais (Brazil)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E7%B1%B3%E7%BA%B3%E6%96%AF%E8%81%94%E9%82%A6%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7890>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Gulf University of Science and Technology (Kuwait)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Gulf+University+of+Science+and+Technology+%28Hawalli%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e74d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Cyprus University of Technology (Cyprus)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Cyprus+University+of+Technology+%28Famagusta%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7250>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: University of New Mexico (United States)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%96%B0%E5%A2%A8%E8%A5%BF%E5%93%A5%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7b10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Myanmar University 97 (Myanmar)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E7%BC%85%E7%94%B8%E5%A4%A7%E5%AD%A6+97+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7ed0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Israel University 63 (Israel)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%BB%A5%E8%89%B2%E5%88%97%E5%A4%A7%E5%AD%A6+63+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e5d10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Prince Sattam bin Abdulaziz University (Saudi Arabia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%90%A8%E5%9D%A6%E9%98%BF%E5%8D%9C%E6%9D%9C%E5%8B%92%E9%98%BF%E9%BD%90%E5%85%B9%E7%8E%8B%E5%AD%90%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x100467250>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Singapore School of 19 (Singapore)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%AD%A6%E6%A0%A1+19+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7c50>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Israel Faculty of 11 (Israel)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%BB%A5%E8%89%B2%E5%88%97%E7%B3%BB+11+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7d90>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Almaty Management University (Kazakhstan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Almaty+Management+University+%28Shymkent%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e74d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Samarkand State University (Uzbekistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Samarkand+State+University+%28Fergana%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e79d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Myanmar Faculty of 80 (Myanmar)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E7%BC%85%E7%94%B8%E7%B3%BB+80+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7390>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Open University of Sri Lanka (Sri Lanka)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Open+University+of+Sri+Lanka+%28Jaffna%29+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7750>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Danang University of Science and Technology (Vietnam)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%B2%98%E6%B8%AF%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%AD%A6+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7610>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+处理: Nepal School of 50 (Nepal)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%B0%BC%E6%B3%8A%E5%B0%94%E5%AD%A6%E6%A0%A1+50+logo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6990>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校徽
+
+完成! 成功收集 0/50 个校徽
+[2026-03-10 08:18:45] 校徽收集完成: +0
+[2026-03-10 08:18:45] [2/2] 收集校园图片...
+开始收集校园图片，目标: 30 所学校
+处理: Sultan Qaboos University College of Medicine (Oman)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%8B%8F%E4%B8%B9%E5%8D%A1%E5%B8%83%E6%96%AF%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%99%A2+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6850>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Iraq Research Institute 51 (Iraq)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%BC%8A%E6%8B%89%E5%85%8B%E7%A0%94%E7%A9%B6%E9%99%A2+51+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6490>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Air University Islamabad (Pakistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%BC%8A%E6%96%AF%E5%85%B0%E5%A0%A1%E7%A9%BA%E5%86%9B%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e5950>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Yemen Faculty of 78 (Yemen)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B9%9F%E9%97%A8%E7%B3%BB+78+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e5bd0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Pontifical Catholic University of Peru (Peru)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E7%A7%98%E9%B2%81%E5%A4%A9%E4%B8%BB%E6%95%99%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e5310>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Saint Petersburg Mining University (Russia)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%9C%A3%E5%BD%BC%E5%BE%97%E5%A0%A1%E7%9F%BF%E4%B8%9A%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e51d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Pompeu Fabra University (Spain)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%BA%9E%E8%B4%9D%E6%B3%95%E5%B8%83%E6%8B%89%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x100467250>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: University of Birmingham (United Kingdom)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%BC%AF%E6%98%8E%E7%BF%B0%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e56d0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Khomeini University of Technology (Iran)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E9%9C%8D%E6%A2%85%E5%B0%BC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e5f90>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Myanmar Faculty of 80 (Myanmar)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E7%BC%85%E7%94%B8%E7%B3%BB+80+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e5a90>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: University of Dhaka (Bangladesh)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=University+of+Dhaka+%28Khulna%29+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6210>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Jahangirnagar University (Bangladesh)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%B4%BE%E6%B1%89%E5%90%89%E5%B0%94%E8%AF%BA%E5%8A%A0%E5%B0%94%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6850>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: KIMEP University (Kazakhstan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=KIMEP+University+%28Astana%29+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6d50>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Himalayan College of Agricultural Sciences (Nepal)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%86%9C%E5%AD%A6%E9%99%A2+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6fd0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Najah National University (Palestine)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%AE%89%E7%BA%B3%E8%B4%BE%E5%9B%BD%E7%AB%8B%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6c10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: UAE School of 91 (UAE)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E9%98%BF%E8%81%94%E9%85%8B%E5%AD%A6%E6%A0%A1+91+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6ad0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Tokyo University of Foreign Studies (Japan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B8%9C%E4%BA%AC%E5%A4%96%E5%9B%BD%E8%AF%AD%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6710>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Syria Department of 78 (Syria)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%8F%99%E5%88%A9%E4%BA%9A%E4%B8%AD%E5%BF%83+78+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7890>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Liwa College (UAE)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%88%A9%E7%93%A6%E5%AD%A6%E9%99%A2+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7110>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: National Yang Ming University (Taiwan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E9%98%B3%E6%98%8E%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7250>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Al-Quds University (Palestine)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Al-Quds+University+%28Jerusalem%29+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7b10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Israel University 28 (Israel)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%BB%A5%E8%89%B2%E5%88%97%E5%A4%A7%E5%AD%A6+28+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e5810>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Afghanistan Faculty of 57 (Afghanistan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E9%98%BF%E5%AF%8C%E6%B1%97%E7%B3%BB+57+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7b10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Bahrain Center for 70 (Bahrain)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%B7%B4%E6%9E%97%E7%A0%94%E7%A9%B6%E6%89%80+70+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7250>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Bangladesh Department of 29 (Bangladesh)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E5%AD%9F%E5%8A%A0%E6%8B%89%E4%B8%AD%E5%BF%83+29+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7110>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Mu'tah University (Jordan)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Mu%27tah+University+%28Zarqa%29+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7890>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Xieng Khouang University (Laos)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=Xieng+Khouang+University+%28Savannakhet%29+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6710>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: United International University (Bangladesh)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E8%81%94%E5%90%88%E5%9B%BD%E9%99%85%E5%A4%A7%E5%AD%A6+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6ad0>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Yemen Medical Center 77 (Yemen)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E4%B9%9F%E9%97%A8%E5%8C%BB%E7%96%97%E4%B8%AD%E5%BF%83+77+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e6c10>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+处理: Singapore School of 79 (Singapore)
+搜索失败: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&list=search&srsearch=%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%AD%A6%E6%A0%A1+79+campus+photo&format=json&utf8=1&srlimit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='en.wikipedia.org', port=443) at 0x1066e7610>, 'Connection to en.wikipedia.org timed out. (connect timeout=10)'))
+  ✗ 未找到校园图
+
+完成! 成功收集 0/30 张校园图
+[2026-03-10 08:43:36] 校园图片收集完成: +0
+[2026-03-10 08:43:36] ==================================================
+[2026-03-10 08:43:36] 任务完成 - 执行报告
+[2026-03-10 08:43:36] ==================================================
+[2026-03-10 08:43:36] 开始时间: 2026-03-10 06:01:17
+[2026-03-10 08:43:36] 结束时间: 2026-03-10 08:43:36
+[2026-03-10 08:43:36] 执行时长: 9738 秒
+[2026-03-10 08:43:36] --------------------------------------------------
+[2026-03-10 08:43:36] 校徽收集: +0
+[2026-03-10 08:43:36] 校园图片: +0
+[2026-03-10 08:43:36] 总计新增: +0
+[2026-03-10 08:43:36] ==================================================
