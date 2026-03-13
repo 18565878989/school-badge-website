@@ -56,9 +56,70 @@ def get_schools_need_campus(limit=50):
     conn.close()
     return schools
 
+def search_baidu_image(school_name, image_type="logo"):
+    """从百度/Bing图片搜索图片 - 优先Bing(稳定)，备用百度"""
+    if image_type == "logo":
+        search_query = f"{school_name} university logo"
+    else:
+        search_query = f"{school_name} campus photo"
+    
+    # 方法1: Bing图片搜索 (更稳定)
+    url = "https://www.bing.com/images/search"
+    params = {
+        "q": search_query,
+        "first": 0,
+        "count": 10
+    }
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    }
+    
+    try:
+        response = requests.get(url, params=params, headers=headers, timeout=15)
+        # 提取图片URL
+        img_urls = re.findall(r'mediaurl=([^&"]+)', response.text)
+        if img_urls:
+            from urllib.parse import unquote
+            return unquote(img_urls[0])
+    except Exception as e:
+        print(f"Bing搜索失败: {e}")
+    
+    # 方法2: 备用百度图片 (如Bing失败)
+    if image_type == "logo":
+        search_query = f"{school_name} 校徽 logo"
+    else:
+        search_query = f"{school_name} 校园 风景"
+    
+    url = "https://image.baidu.com/search/index"
+    params = {"word": search_query, "tn": "baiduimage", "pn": 0, "rn": 10}
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+        "Referer": "https://image.baidu.com/",
+        "Accept": "text/html,application/xhtml+xml"
+    }
+    
+    try:
+        response = requests.get(url, params=params, headers=headers, timeout=15)
+        if "安全验证" not in response.text and len(response.text) > 5000:
+            img_urls = re.findall(r'"thumbURL":"(https?://[^"]+)"', response.text)
+            if img_urls:
+                return img_urls[0]
+    except Exception as e:
+        print(f"百度图片搜索失败: {e}")
+    
+    return None
+
 def search_badge_image(school_name, country):
-    """搜索校徽图片"""
-    # 使用 Wikipedia API 搜索
+    """搜索校徽图片 - 优先百度图片，备用Wikipedia"""
+    # 1. 优先从百度图片搜索
+    print(f"  [百度] 搜索校徽: {school_name}")
+    img_url = search_baidu_image(school_name, "logo")
+    if img_url:
+        print(f"  [百度] 找到校徽!")
+        return img_url
+    
+    # 2. 百度没找到，尝试 Wikipedia
+    print(f"  [Wiki] 搜索校徽: {school_name}")
     search_url = f"https://en.wikipedia.org/w/api.php"
     params = {
         "action": "query",
@@ -75,12 +136,12 @@ def search_badge_image(school_name, country):
         
         for result in data.get("query", {}).get("search", []):
             page_title = result["title"]
-            # 获取图片
             img_url = get_wikipedia_image(page_title)
             if img_url:
+                print(f"  [Wiki] 找到校徽!")
                 return img_url
     except Exception as e:
-        print(f"搜索失败: {e}")
+        print(f"  [Wiki] 搜索失败: {e}")
     
     return None
 
@@ -109,8 +170,16 @@ def get_wikipedia_image(title):
     return None
 
 def search_campus_image(school_name, country):
-    """搜索校园图片"""
-    # 使用 Wikipedia 搜索校园图片
+    """搜索校园图片 - 优先百度图片，备用Wikipedia"""
+    # 1. 优先从百度图片搜索
+    print(f"  [百度] 搜索校园: {school_name}")
+    img_url = search_baidu_image(school_name, "campus")
+    if img_url:
+        print(f"  [百度] 找到校园图!")
+        return img_url
+    
+    # 2. 百度没找到，尝试 Wikipedia
+    print(f"  [Wiki] 搜索校园: {school_name}")
     search_url = f"https://en.wikipedia.org/w/api.php"
     params = {
         "action": "query",
@@ -127,12 +196,12 @@ def search_campus_image(school_name, country):
         
         for result in data.get("query", {}).get("search", []):
             page_title = result["title"]
-            # 获取图片
             img_url = get_wikipedia_image(page_title)
             if img_url:
+                print(f"  [Wiki] 找到校园图!")
                 return img_url
     except Exception as e:
-        print(f"搜索失败: {e}")
+        print(f"  [Wiki] 搜索失败: {e}")
     
     return None
 
