@@ -6,25 +6,3 @@ Starting Flask with debug=False
  * Running on http://127.0.0.1:5001
  * Running on http://7.247.186.79:5001
 [33mPress CTRL+C to quit[0m
-127.0.0.1 - - [17/Mar/2026 08:59:46] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [17/Mar/2026 08:59:46] "[36mGET /static/images/logo-horizontal.svg HTTP/1.1[0m" 304 -
-127.0.0.1 - - [17/Mar/2026 08:59:46] "[36mGET /static/css/campus.css HTTP/1.1[0m" 304 -
-127.0.0.1 - - [17/Mar/2026 08:59:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "[33mGET /"/static/images/campus/school_2583/school_2583_1.jpg/" HTTP/1.1[0m" 404 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "[36mGET /static/images/favicon.svg HTTP/1.1[0m" 304 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "GET /static/images/favicon.svg HTTP/1.1" 200 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "[36mGET /static/images/campus-placeholder.svg HTTP/1.1[0m" 304 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "GET /static/images/favicon.svg?v=2 HTTP/1.1" 200 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "GET /static/images/favicon.svg?v=2 HTTP/1.1" 200 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "GET /static/images/favicon.svg?v=2 HTTP/1.1" 200 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "GET /static/images/favicon.svg HTTP/1.1" 200 -
-127.0.0.1 - - [17/Mar/2026 08:59:47] "GET /static/images/favicon.svg?v=2 HTTP/1.1" 200 -
-127.0.0.1 - - [17/Mar/2026 08:59:50] "GET /social HTTP/1.1" 200 -
-127.0.0.1 - - [17/Mar/2026 08:59:50] "[36mGET /static/css/campus.css HTTP/1.1[0m" 304 -
-127.0.0.1 - - [17/Mar/2026 08:59:50] "[36mGET /static/images/logo-horizontal.svg HTTP/1.1[0m" 304 -
-127.0.0.1 - - [17/Mar/2026 08:59:50] "[36mGET /static/images/tsinghua.svg HTTP/1.1[0m" 304 -
-127.0.0.1 - - [17/Mar/2026 08:59:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-127.0.0.1 - - [17/Mar/2026 12:05:53] "[33mGET /api/schools/asia HTTP/1.1[0m" 404 -
