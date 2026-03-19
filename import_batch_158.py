@@ -1,69 +1,81 @@
 #!/usr/bin/env python3
-"""Import Batch 158 - Universities from Underrepresented Asian Regions"""
+"""
+Batch 158: Add more underrepresented Asian schools
+Countries: Russia, Kuwait, Yemen, Bahrain, Israel, Lebanon, Mongolia
+"""
 
 import sqlite3
-import json
 import os
 
-DB_PATH = os.path.expanduser("~/.openclaw/workspace/school-badge-website/database.db")
-BATCH_FILE = os.path.expanduser("~/.openclaw/workspace/school-badge-website/data/asian_schools_batch158.json")
+DB_PATH = os.path.join(os.path.dirname(__file__), 'database.db')
 
-def import_batch():
-    with open(BATCH_FILE, 'r', encoding='utf-8') as f:
-        batch_data = json.load(f)
+# Schools to add from underrepresented Asian countries
+SCHOOLS = [
+    # Russia (European & Asian regions) - need more
+    {"name": "Novosibirsk State University", "country": "Russia", "city": "Novosibirsk", "region": "Asia", "level": "University"},
+    {"name": "Moscow Institute of Physics and Technology", "country": "Russia", "city": "Moscow", "region": "Asia", "level": "University"},
+    {"name": "Saint Petersburg State University", "country": "Russia", "city": "Saint Petersburg", "region": "Asia", "level": "University"},
+    {"name": "Kazan Federal University", "country": "Russia", "city": "Kazan", "region": "Asia", "level": "University"},
+    {"name": "Siberian Federal University", "country": "Russia", "city": "Krasnoyarsk", "region": "Asia", "level": "University"},
     
-    schools = batch_data['schools']
+    # Kuwait
+    {"name": "Kuwait University", "country": "Kuwait", "city": "Kuwait City", "region": "Asia", "level": "University"},
+    {"name": "American University of Kuwait", "country": "Kuwait", "city": "Kuwait City", "region": "Asia", "level": "University"},
+    {"name": "Gulf University for Science and Technology", "country": "Kuwait", "city": "Hawally", "region": "Asia", "level": "University"},
+    
+    # Yemen
+    {"name": "Sana'a University", "country": "Yemen", "city": "Sana'a", "region": "Asia", "level": "University"},
+    {"name": "University of Aden", "country": "Yemen", "city": "Aden", "region": "Asia", "level": "University"},
+    {"name": "Taiz University", "country": "Yemen", "city": "Taiz", "region": "Asia", "level": "University"},
+    
+    # Bahrain
+    {"name": "University of Bahrain", "country": "Bahrain", "city": "Sakhir", "region": "Asia", "level": "University"},
+    {"name": "Bahrain University", "country": "Bahrain", "city": "Manama", "region": "Asia", "level": "University"},
+    {"name": "American University of Bahrain", "country": "Bahrain", "city": "Manama", "region": "Asia", "level": "University"},
+    
+    # Israel
+    {"name": "Technion - Israel Institute of Technology", "country": "Israel", "city": "Haifa", "region": "Asia", "level": "University"},
+    {"name": "Weizmann Institute of Science", "country": "Israel", "city": "Rehovot", "region": "Asia", "level": "University"},
+    {"name": "Ben-Gurion University of the Negev", "country": "Israel", "city": "Beersheba", "region": "Asia", "level": "University"},
+    
+    # Lebanon
+    {"name": "American University of Beirut", "country": "Lebanon", "city": "Beirut", "region": "Asia", "level": "University"},
+    {"name": "Lebanese American University", "country": "Lebanon", "city": "Beirut", "region": "Asia", "level": "University"},
+    {"name": "University of Balamand", "country": "Lebanon", "city": "Balamand", "region": "Asia", "level": "University"},
+    
+    # Mongolia
+    {"name": "Mongolian University of Science and Technology", "country": "Mongolia", "city": "Ulaanbaatar", "region": "Asia", "level": "University"},
+]
+
+def add_schools():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    imported = 0
+    added = 0
     skipped = 0
-    added_schools = []
     
-    for school in schools:
-        try:
-            cursor.execute('''
-                INSERT INTO schools (id, name, name_cn, region, country, city, level, website, founded)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ''', (
-                school['id'],
-                school['name'],
-                school.get('name_cn', ''),
-                school['region'],
-                school['country'],
-                school['city'],
-                school['level'],
-                school.get('website', ''),
-                school.get('founded', None)
-            ))
-            imported += 1
-            added_schools.append((school['id'], school['name'], school['country']))
-            print(f"✓ Added ID {school['id']}: {school['name']} ({school['country']})")
-        except sqlite3.IntegrityError as e:
+    for school in SCHOOLS:
+        # Check if school already exists
+        cursor.execute(
+            "SELECT id FROM schools WHERE name = ? AND country = ?",
+            (school["name"], school["country"])
+        )
+        if cursor.fetchone():
             skipped += 1
-            print(f"✗ Duplicate ID {school['id']}: {school['name']} - {e}")
             continue
+        
+        # Insert new school
+        cursor.execute("""
+            INSERT INTO schools (name, country, city, region, level, created_at)
+            VALUES (?, ?, ?, ?, ?, datetime('now'))
+        """, (school["name"], school["country"], school["city"], school["region"], school["level"]))
+        added += 1
     
     conn.commit()
-    
-    cursor.execute("SELECT COUNT(*) FROM schools WHERE region='Asia'")
-    asian_count = cursor.fetchone()[0]
-    
-    cursor.execute("SELECT COUNT(DISTINCT name) FROM schools WHERE region='Asia'")
-    unique_count = cursor.fetchone()[0]
-    
     conn.close()
     
-    print(f"\n{'='*70}")
-    print(f"✅ Batch 158 Import Complete!")
-    print(f"{'='*70}")
-    print(f"   Schools added: {imported}")
-    print(f"   Skipped (duplicates): {skipped}")
-    print(f"   Asian schools total: {asian_count}")
-    print(f"   Asian unique schools: {unique_count}")
-    print(f"{'='*70}")
-    
-    return imported, added_schools
+    print(f"Batch 158: Added {added} schools, skipped {skipped} duplicates")
+    return added
 
-if __name__ == '__main__':
-    import_batch()
+if __name__ == "__main__":
+    add_schools()
