@@ -1804,6 +1804,11 @@ def follow_user(user_id):
         conn.close()
         return jsonify({'success': False, 'error': 'Already following'}), 400
     
+    # 获取被关注用户的用户名
+    cursor = conn.execute("SELECT username FROM users WHERE id = ?", (user_id,))
+    user = cursor.fetchone()
+    following_username = user['username'] if user else '用户'
+    
     # 添加关注
     conn.execute('''
         INSERT INTO follows (follower_id, following_id)
@@ -1815,6 +1820,13 @@ def follow_user(user_id):
                  (session['user_id'],))
     conn.execute('UPDATE user_profiles SET followers_count = followers_count + 1 WHERE user_id = ?', 
                  (user_id,))
+    
+    # 创建通知
+    conn.execute(
+        "INSERT INTO notifications (user_id, type, source_type, source_id, title, content, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)",
+        (user_id, 'follow', 'user', session['user_id'], '有人关注了你', f'用户 {session.get("username")} 关注了你', datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    )
+    
     conn.commit()
     conn.close()
     
@@ -2596,10 +2608,13 @@ def create_reply(topic_id):
     
     conn = get_db_connection()
     try:
-        # 检查话题是否存在
-        cursor = conn.execute("SELECT id FROM topics WHERE id = ?", (topic_id,))
-        if not cursor.fetchone():
+        # 检查话题是否存在，获取作者ID
+        cursor = conn.execute("SELECT author_id, title FROM topics WHERE id = ?", (topic_id,))
+        topic = cursor.fetchone()
+        if not topic:
             return jsonify({'success': False, 'message': '话题不存在'})
+        
+        author_id, topic_title = topic[0], topic[1]
         
         # 添加回复
         cursor = conn.execute(
@@ -2611,6 +2626,14 @@ def create_reply(topic_id):
         # 更新话题回复数
         conn.execute("UPDATE topics SET replies_count = replies_count + 1 WHERE id = ?", (topic_id,))
         conn.commit()
+        
+        # 创建通知（不通知自己）
+        if author_id != session.get('user_id'):
+            conn.execute(
+                "INSERT INTO notifications (user_id, type, source_type, source_id, title, content, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                (author_id, 'reply_topic', 'topic', topic_id, '有人回复了你的话题', f'用户 {session.get("username")} 回复了你的话题 "{topic_title[:20]}..."', datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+            )
+            conn.commit()
         
         return jsonify({'success': True, 'message': '回复成功'})
     except Exception as e:
@@ -2635,6 +2658,14 @@ def like_topic(topic_id):
         if cursor.fetchone():
             return jsonify({'success': False, 'message': '已点赞'})
         
+        # 获取话题作者ID
+        cursor = conn.execute("SELECT author_id, title FROM topics WHERE id = ?", (topic_id,))
+        topic = cursor.fetchone()
+        if not topic:
+            return jsonify({'success': False, 'message': '话题不存在'})
+        
+        author_id, topic_title = topic[0], topic[1]
+        
         # 添加点赞
         conn.execute(
             "INSERT INTO topic_likes (topic_id, user_id, created_at) VALUES (?, ?, ?)",
@@ -2645,6 +2676,14 @@ def like_topic(topic_id):
         # 更新话题点赞数
         conn.execute("UPDATE topics SET likes_count = likes_count + 1 WHERE id = ?", (topic_id,))
         conn.commit()
+        
+        # 创建通知（不通知自己）
+        if author_id != session.get('user_id'):
+            conn.execute(
+                "INSERT INTO notifications (user_id, type, source_type, source_id, title, content, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                (author_id, 'like_topic', 'topic', topic_id, '有人赞了你的话题', f'用户 {session.get("username")} 赞了你的话题 "{topic_title[:20]}..."', datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+            )
+            conn.commit()
         
         return jsonify({'success': True, 'message': '点赞成功'})
     except Exception as e:
