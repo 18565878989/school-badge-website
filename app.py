@@ -392,6 +392,7 @@ def login():
             session['user_id'] = user['id']
             session['username'] = user['username']
             session['role'] = user['role']
+            print(f"[DEBUG] Login success - user_id: {user['id']}, username: {user['username']}")
             flash(_('welcome_back').format(user['username']), 'success')
             return redirect(url_for('index'))
         
@@ -405,6 +406,7 @@ def login():
                 session['user_id'] = user['id']
                 session['username'] = user['username']
                 session['role'] = user['role']
+                print(f"[DEBUG] Login success (password) - user_id: {user['id']}, username: {user['username']}")
                 flash(_('welcome_back').format(user['username']), 'success')
                 return redirect(url_for('index'))
             else:
@@ -1281,6 +1283,10 @@ def topic_detail(topic_id):
         conn.close()
         return redirect(url_for('social'))
     
+    # Fix missing author_name
+    if not topic.get('author_name'):
+        topic['author_name'] = '匿名用户'
+    
     # Get replies
     cursor = conn.execute('''
         SELECT r.*, u.username as author_name
@@ -1290,6 +1296,11 @@ def topic_detail(topic_id):
         ORDER BY r.created_at ASC
     ''', (topic_id,))
     replies = [dict(row) for row in cursor.fetchall()]
+    
+    # Fix missing author_name in replies
+    for reply in replies:
+        if not reply.get('author_name'):
+            reply['author_name'] = '匿名用户'
     
     conn.close()
     
@@ -2598,8 +2609,13 @@ def create_topic():
 @app.route('/topic/<int:topic_id>/reply', methods=['POST'])
 def create_reply(topic_id):
     """回复话题"""
-    if not session.get('user_id'):
-        return jsonify({'success': False, 'message': '请先登录'})
+    # Debug: log session info
+    user_id = session.get('user_id')
+    username = session.get('username')
+    print(f"[DEBUG] Reply - user_id: {user_id}, username: {username}, session_keys: {list(session.keys())}")
+    
+    if not user_id:
+        return jsonify({'success': False, 'message': '请先登录', 'debug': f'session keys: {list(session.keys())}'})
     
     content = request.form.get('content', '').strip()
     
@@ -3230,3 +3246,13 @@ def deep_search_api():
         
     except Exception as e:
         return jsonify({'error': str(e)})
+
+@app.route('/debug_session')
+def debug_session():
+    return jsonify({
+        'user_id': session.get('user_id'),
+        'username': session.get('username'),
+        'role': session.get('role'),
+        'logged_in': 'user_id' in session
+    })
+
