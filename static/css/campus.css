@@ -262,6 +262,40 @@ body {
     border-top: 1px solid var(--surface);
 }
 
+/* Multi-Image Grid */
+.multi-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.multi-image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.campus-card:hover .multi-image-grid img {
+    transform: scale(1.05);
+}
+
+/* More Images Badge */
+.more-images-badge {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 5;
+}
+
 /* Card Meta */
 .card-meta {
     display: flex;
@@ -284,6 +318,53 @@ body {
     opacity: 0.7;
 }
 
+/* Lightbox Top Bar */
+.lightbox-topbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    z-index: 10;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 100%);
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.download-btn:hover {
+    background: rgba(255,255,255,0.25);
+    border-color: rgba(255,255,255,0.5);
+    transform: translateY(-1px);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+.download-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
 /* Lightbox */
 .lightbox {
     position: fixed;
@@ -304,6 +385,7 @@ body {
 }
 
 .lightbox-content {
+    position: relative;
     max-width: 90vw;
     max-height: 90vh;
     text-align: center;

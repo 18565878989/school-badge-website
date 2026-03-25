@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="campus-page">
+<body class="campus-gallery">
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -21,6 +22,7 @@
             <div class="nav-links">
                 <a href="{{ url_for('index') }}">{{ _('home') }}</a>
                 <a href="{{ url_for('campus') }}" class="active">{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('social') }}">{{ _('social') }}</a>
                 {% if session.get('user_id') %}
                     <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
                     <span class="username">{{ session.get('username') }}</span>
@@ -48,7 +50,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero hero-campus">
+    <section class="hero">
         <div class="container">
             <h1>{{ _('Campus Gallery') }}</h1>
             <p>{{ _('Explore renowned universities from around the world') }}</p>
@@ -93,9 +95,10 @@
         </div>
     </section>
 
-    <!-- Campus Gallery Grid -->
+    <!-- Gallery Section -->
     <section class="gallery-section">
         <div class="container">
+
             <!-- North America -->
             <div class="gallery-content active" id="north-america-content">
                 {% if north_america %}
@@ -103,11 +106,19 @@
                     {% for school in north_america %}
                     <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
                         <div class="card-image">
-                            {% if school.campus_image %}
-                            <img src="{{ school.campus_image }}" 
-                                 alt="{{ school.name }}"
-                                 loading="lazy"
-                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% set images = school.campus_image.split(',') if school.campus_image else [] %}
+                            {% if images %}
+                            <div class="multi-image-grid">
+                                {% for img in images[:4] %}
+                                <img src="{{ img }}" 
+                                     alt="{{ school.name }} - {{ loop.index }}"
+                                     loading="lazy"
+                                     onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}'">
+                                {% endfor %}
+                            </div>
+                            {% if images|length > 4 %}
+                            <div class="more-images-badge">+{{ images|length - 4 }}</div>
+                            {% endif %}
                             {% else %}
                             <div class="image-placeholder">
                                 <svg viewBox="0 0 100 100" fill="none">
@@ -117,7 +128,7 @@
                             </div>
                             {% endif %}
                             <div class="image-overlay">
-                                <span class="view-label">{{ _('View Campus') }}</span>
+                                <span class="view-label">{{ _('View Campus') }} ({{ images|length }})</span>
                             </div>
                         </div>
                         <div class="card-content">
@@ -132,6 +143,9 @@
                                 </span>
                             </div>
                             <p class="english-name">{{ school.name }}</p>
+                            {% if school.campus_image_desc %}
+                            <p class="image-caption">{{ school.campus_image_desc }}</p>
+                            {% endif %}
                             <div class="card-meta">
                                 {% if school.founded %}
                                 <span class="founded">
@@ -174,11 +188,19 @@
                     {% for school in asia %}
                     <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
                         <div class="card-image">
-                            {% if school.campus_image %}
-                            <img src="{{ school.campus_image }}" 
-                                 alt="{{ school.name }}"
-                                 loading="lazy"
-                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% set images = school.campus_image.split(',') if school.campus_image else [] %}
+                            {% if images %}
+                            <div class="multi-image-grid">
+                                {% for img in images[:4] %}
+                                <img src="{{ img }}" 
+                                     alt="{{ school.name }} - {{ loop.index }}"
+                                     loading="lazy"
+                                     onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}'">
+                                {% endfor %}
+                            </div>
+                            {% if images|length > 4 %}
+                            <div class="more-images-badge">+{{ images|length - 4 }}</div>
+                            {% endif %}
                             {% else %}
                             <div class="image-placeholder">
                                 <svg viewBox="0 0 100 100" fill="none">
@@ -188,7 +210,7 @@
                             </div>
                             {% endif %}
                             <div class="image-overlay">
-                                <span class="view-label">{{ _('View Campus') }}</span>
+                                <span class="view-label">{{ _('View Campus') }} ({{ images|length }})</span>
                             </div>
                         </div>
                         <div class="card-content">
@@ -203,6 +225,9 @@
                                 </span>
                             </div>
                             <p class="english-name">{{ school.name }}</p>
+                            {% if school.campus_image_desc %}
+                            <p class="image-caption">{{ school.campus_image_desc }}</p>
+                            {% endif %}
                             <div class="card-meta">
                                 {% if school.founded %}
                                 <span class="founded">
@@ -245,11 +270,19 @@
                     {% for school in europe %}
                     <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
                         <div class="card-image">
-                            {% if school.campus_image %}
-                            <img src="{{ school.campus_image }}" 
-                                 alt="{{ school.name }}"
-                                 loading="lazy"
-                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% set images = school.campus_image.split(',') if school.campus_image else [] %}
+                            {% if images %}
+                            <div class="multi-image-grid">
+                                {% for img in images[:4] %}
+                                <img src="{{ img }}" 
+                                     alt="{{ school.name }} - {{ loop.index }}"
+                                     loading="lazy"
+                                     onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}'">
+                                {% endfor %}
+                            </div>
+                            {% if images|length > 4 %}
+                            <div class="more-images-badge">+{{ images|length - 4 }}</div>
+                            {% endif %}
                             {% else %}
                             <div class="image-placeholder">
                                 <svg viewBox="0 0 100 100" fill="none">
@@ -259,7 +292,7 @@
                             </div>
                             {% endif %}
                             <div class="image-overlay">
-                                <span class="view-label">{{ _('View Campus') }}</span>
+                                <span class="view-label">{{ _('View Campus') }} ({{ images|length }})</span>
                             </div>
                         </div>
                         <div class="card-content">
@@ -274,6 +307,9 @@
                                 </span>
                             </div>
                             <p class="english-name">{{ school.name }}</p>
+                            {% if school.campus_image_desc %}
+                            <p class="image-caption">{{ school.campus_image_desc }}</p>
+                            {% endif %}
                             <div class="card-meta">
                                 {% if school.founded %}
                                 <span class="founded">
@@ -316,11 +352,19 @@
                     {% for school in oceania %}
                     <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
                         <div class="card-image">
-                            {% if school.campus_image %}
-                            <img src="{{ school.campus_image }}" 
-                                 alt="{{ school.name }}"
-                                 loading="lazy"
-                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% set images = school.campus_image.split(',') if school.campus_image else [] %}
+                            {% if images %}
+                            <div class="multi-image-grid">
+                                {% for img in images[:4] %}
+                                <img src="{{ img }}" 
+                                     alt="{{ school.name }} - {{ loop.index }}"
+                                     loading="lazy"
+                                     onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}'">
+                                {% endfor %}
+                            </div>
+                            {% if images|length > 4 %}
+                            <div class="more-images-badge">+{{ images|length - 4 }}</div>
+                            {% endif %}
                             {% else %}
                             <div class="image-placeholder">
                                 <svg viewBox="0 0 100 100" fill="none">
@@ -330,7 +374,7 @@
                             </div>
                             {% endif %}
                             <div class="image-overlay">
-                                <span class="view-label">{{ _('View Campus') }}</span>
+                                <span class="view-label">{{ _('View Campus') }} ({{ images|length }})</span>
                             </div>
                         </div>
                         <div class="card-content">
@@ -345,6 +389,9 @@
                                 </span>
                             </div>
                             <p class="english-name">{{ school.name }}</p>
+                            {% if school.campus_image_desc %}
+                            <p class="image-caption">{{ school.campus_image_desc }}</p>
+                            {% endif %}
                             <div class="card-meta">
                                 {% if school.founded %}
                                 <span class="founded">
@@ -387,11 +434,19 @@
                     {% for school in south_america %}
                     <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
                         <div class="card-image">
-                            {% if school.campus_image %}
-                            <img src="{{ school.campus_image }}" 
-                                 alt="{{ school.name }}"
-                                 loading="lazy"
-                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% set images = school.campus_image.split(',') if school.campus_image else [] %}
+                            {% if images %}
+                            <div class="multi-image-grid">
+                                {% for img in images[:4] %}
+                                <img src="{{ img }}" 
+                                     alt="{{ school.name }} - {{ loop.index }}"
+                                     loading="lazy"
+                                     onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}'">
+                                {% endfor %}
+                            </div>
+                            {% if images|length > 4 %}
+                            <div class="more-images-badge">+{{ images|length - 4 }}</div>
+                            {% endif %}
                             {% else %}
                             <div class="image-placeholder">
                                 <svg viewBox="0 0 100 100" fill="none">
@@ -401,7 +456,7 @@
                             </div>
                             {% endif %}
                             <div class="image-overlay">
-                                <span class="view-label">{{ _('View Campus') }}</span>
+                                <span class="view-label">{{ _('View Campus') }} ({{ images|length }})</span>
                             </div>
                         </div>
                         <div class="card-content">
@@ -416,6 +471,9 @@
                                 </span>
                             </div>
                             <p class="english-name">{{ school.name }}</p>
+                            {% if school.campus_image_desc %}
+                            <p class="image-caption">{{ school.campus_image_desc }}</p>
+                            {% endif %}
                             <div class="card-meta">
                                 {% if school.founded %}
                                 <span class="founded">
@@ -458,11 +516,19 @@
                     {% for school in africa %}
                     <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
                         <div class="card-image">
-                            {% if school.campus_image %}
-                            <img src="{{ school.campus_image }}" 
-                                 alt="{{ school.name }}"
-                                 loading="lazy"
-                                 onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}">
+                            {% set images = school.campus_image.split(',') if school.campus_image else [] %}
+                            {% if images %}
+                            <div class="multi-image-grid">
+                                {% for img in images[:4] %}
+                                <img src="{{ img }}" 
+                                     alt="{{ school.name }} - {{ loop.index }}"
+                                     loading="lazy"
+                                     onerror="this.src='{{ url_for('static', filename='images/campus-placeholder.svg') }}'">
+                                {% endfor %}
+                            </div>
+                            {% if images|length > 4 %}
+                            <div class="more-images-badge">+{{ images|length - 4 }}</div>
+                            {% endif %}
                             {% else %}
                             <div class="image-placeholder">
                                 <svg viewBox="0 0 100 100" fill="none">
@@ -472,7 +538,7 @@
                             </div>
                             {% endif %}
                             <div class="image-overlay">
-                                <span class="view-label">{{ _('View Campus') }}</span>
+                                <span class="view-label">{{ _('View Campus') }} ({{ images|length }})</span>
                             </div>
                         </div>
                         <div class="card-content">
@@ -487,6 +553,9 @@
                                 </span>
                             </div>
                             <p class="english-name">{{ school.name }}</p>
+                            {% if school.campus_image_desc %}
+                            <p class="image-caption">{{ school.campus_image_desc }}</p>
+                            {% endif %}
                             <div class="card-meta">
                                 {% if school.founded %}
                                 <span class="founded">
@@ -521,8 +590,36 @@
                 </div>
                 {% endif %}
             </div>
+
         </div>
     </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-topbar">
+            <button class="download-btn" id="download-btn" aria-label="Download">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>{{ _('Download') }}</span>
+            </button>
+            <button class="close-btn" aria-label="Close">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-image">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-desc"></p>
+            </div>
+        </div>
+    </div>
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -533,18 +630,15 @@
         tabBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const region = btn.dataset.region;
-                
-                // Update active tab
                 tabBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                
-                // Show corresponding content
                 galleryContents.forEach(content => {
                     content.classList.remove('active');
                     if (content.id === region + '-content') {
                         content.classList.add('active');
                     }
                 });
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         });
 
@@ -553,10 +647,64 @@
         const region = urlParams.get('region');
         if (region) {
             const targetBtn = document.querySelector(`.tab-btn[data-region="${region}"]`);
-            if (targetBtn) {
-                targetBtn.click();
-            }
+            if (targetBtn) targetBtn.click();
         }
+
+        // Lightbox - only for images, not card clicks
+        const images = document.querySelectorAll('.card-image img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxDesc = document.getElementById('lightbox-desc');
+        const closeBtn = document.querySelector('.close-btn');
+        const downloadBtn = document.getElementById('download-btn');
+
+        images.forEach(img => {
+            img.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (img.src && !img.parentElement.classList.contains('image-placeholder')) {
+                    lightboxImage.src = img.src;
+                    const card = img.closest('.campus-card');
+                    lightboxTitle.textContent = card.querySelector('h2').textContent || '';
+                    lightboxDesc.textContent = img.alt || '';
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        downloadBtn.addEventListener('click', () => {
+            const src = lightboxImage.src;
+            const title = lightboxTitle.textContent || 'campus';
+            const ext = src.split('?')[0].split('.').pop() || 'jpg';
+            const filename = `${title.replace(/[^a-zA-Z0-9\u4e00-\u9fa5]/g, '_')}_${Date.now()}.${ext}`;
+            const link = document.createElement('a');
+            link.href = src;
+            link.download = filename;
+            link.target = '_blank';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
     });
     </script>
 </body>

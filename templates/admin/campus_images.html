@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园图片审核 - 管理后台</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% extends "admin/base.html" %}
+    
+    {% block content %}
+    <main class="admin-content">
+        <div class="content-header">
+            <h1>校园图片审核</h1>
+            <div class="header-actions">
+                <a href="{{ url_for('admin_campus_batch_approve', action='approve') }}" class="btn btn-success">
+                    批量审核通过
+                </a>
+            </div>
+        </div>
+        
+        <!-- 统计卡片 -->
+        <div class="stats-grid">
+            {% if stats %}
+            <div class="stat-card">
+                <div class="stat-number">{{ stats.unreviewed }}</div>
+                <div class="stat-label">待审核</div>
+            </div>
+            <div class="stat-card success">
+                <div class="stat-number">{{ stats.reviewed }}</div>
+                <div class="stat-label">已审核</div>
+            </div>
+            <div class="stat-card warning">
+                <div class="stat-number">{{ stats.pending }}</div>
+                <div class="stat-label">待更新</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">{{ total }}</div>
+                <div class="stat-label">有图片总数</div>
+            </div>
+            {% endif %}
+        </div>
+        
+        <!-- 筛选栏 -->
+        <div class="filter-bar">
+            <form method="get" class="filter-form">
+                <select name="filter">
+                    <option value="all" {% if filter_type=='all' %}selected{% endif %}>全部</option>
+                    <option value="unreviewed" {% if filter_type=='unreviewed' %}selected{% endif %}>待审核</option>
+                    <option value="reviewed" {% if filter_type=='reviewed' %}selected{% endif %}>已审核</option>
+                    <option value="pending" {% if filter_type=='pending' %}selected{% endif %}>待更新</option>
+                </select>
+                <select name="level">
+                    <option value="all">全部级别</option>
+                    {% for l in levels %}
+                    <option value="{{ l }}" {% if level_filter==l %}selected{% endif %}>{{ l }}</option>
+                    {% endfor %}
+                </select>
+                <select name="region">
+                    <option value="all">全部地区</option>
+                    {% for r in regions %}
+                    <option value="{{ r }}" {% if region_filter==r %}selected{% endif %}>{{ r }}</option>
+                    {% endfor %}
+                </select>
+                <input type="text" name="search" value="{{ search }}" placeholder="搜索学校名称...">
+                <button type="submit" class="btn btn-primary">筛选</button>
+                <a href="{{ url_for('admin_campus_images') }}" class="btn">重置</a>
+            </form>
+        </div>
+        
+        <!-- 批量操作 -->
+        <form method="post" action="{{ url_for('admin_campus_batch_approve') }}" id="batchForm">
+            <input type="hidden" name="action" id="batchAction" value="">
+            
+            <div class="batch-toolbar">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="selectAll" onchange="toggleAll(this)">
+                    全选
+                </label>
+                <button type="button" class="btn btn-success btn-sm" onclick="submitBatch('approve')">✓ 审核通过</button>
+                <button type="button" class="btn btn-danger btn-sm" onclick="submitBatch('reject')">✗ 驳回清空</button>
+                <button type="button" class="btn btn-warning btn-sm" onclick="submitBatch('unlock')">🔓 解除锁定</button>
+                <span class="selected-count" id="selectedCount">已选 0 所学校</span>
+            </div>
+            
+            <!-- 学校列表 -->
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="40"></th>
+                            <th width="60">ID</th>
+                            <th>学校名称</th>
+                            <th width="100">地区</th>
+                            <th width="80">级别</th>
+                            <th width="100">审核状态</th>
+                            <th width="80">图片数</th>
+                            <th width="160">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for school in schools %}
+                        {% set images = school.campus_image.split(',') if school.campus_image else [] %}
+                        <tr class="{% if school.campus_reviewed %}reviewed{% else %}unreviewed{% endif %}">
+                            <td>
+                                <input type="checkbox" name="school_ids" value="{{ school.id }}" class="row-checkbox" onchange="updateCount()">
+                            </td>
+                            <td class="id-cell">{{ school.id }}</td>
+                            <td>
+                                <div class="school-name-cell">
+                                    <span class="name-cn">{{ school.name_cn or school.name }}</span>
+                                    <span class="name-en">{{ school.name }}</span>
+                                </div>
+                            </td>
+                            <td>{{ school.region }}</td>
+                            <td>{{ school.level }}</td>
+                            <td>
+                                {% if school.campus_reviewed %}
+                                <span class="badge badge-success">已审核</span>
+                                {% else %}
+                                <span class="badge badge-warning">待审核</span>
+                                {% endif %}
+                                {% if school.campus_updated == 'Y' %}
+                                <span class="badge badge-info">待更新</span>
+                                {% endif %}
+                            </td>
+                            <td>{{ images|length }}</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <a href="{{ url_for('admin_campus_edit', school_id=school.id) }}" class="btn btn-primary btn-sm">编辑</a>
+                                    {% if not school.campus_reviewed %}
+                                    <a href="{{ url_for('admin_campus_approve', school_id=school.id) }}" class="btn btn-success btn-sm">通过</a>
+                                    <a href="{{ url_for('admin_campus_reject', school_id=school.id) }}" class="btn btn-warning btn-sm" onclick="return confirm('确定要驳回并清空该校的校园图片吗？')">驳回</a>
+                                    {% else %}
+                                    <a href="{{ url_for('admin_campus_unapprove', school_id=school.id) }}" class="btn btn-secondary btn-sm">反审核</a>
+                                    {% endif %}
+                                    <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank" class="btn btn-sm">预览</a>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </form>
+        
+        {% if total_pages > 1 %}
+        <div class="pagination">
+            {% if page > 1 %}
+            <a href="{{ url_for('admin_campus_images', page=page-1, filter=filter_type, level=level_filter, region=region_filter, search=search) }}" class="page-btn">上一页</a>
+            {% endif %}
+            <span class="page-info">第 {{ page }} / {{ total_pages }} 页，共 {{ total }} 所学校</span>
+            {% if page < total_pages %}
+            <a href="{{ url_for('admin_campus_images', page=page+1, filter=filter_type, level=level_filter, region=region_filter, search=search) }}" class="page-btn">下一页</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </main>
+    
+    <script>
+    function toggleAll(el) {
+        document.querySelectorAll('.row-checkbox').forEach(cb => cb.checked = el.checked);
+        updateCount();
+    }
+    
+    function updateCount() {
+        const checked = document.querySelectorAll('.row-checkbox:checked').length;
+        document.getElementById('selectedCount').textContent = `已选 ${checked} 所学校`;
+    }
+    
+    function submitBatch(action) {
+        const checked = document.querySelectorAll('.row-checkbox:checked');
+        if (checked.length === 0) {
+            alert('请先选择学校');
+            return;
+        }
+        if (action === 'reject' && !confirm(`确定要驳回并清空 ${checked.length} 所学校的校园图片吗？`)) return;
+        document.getElementById('batchAction').value = action;
+        document.getElementById('batchForm').submit();
+    }
+    </script>
+    {% endblock %}
+</html>

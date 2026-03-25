@@ -3247,6 +3247,410 @@ def deep_search_api():
     except Exception as e:
         return jsonify({'error': str(e)})
 
+
+# =============================================
+# 管理员 - 校园图片审核
+# =============================================
+
+@app.route('/admin/campus-images')
+@admin_required
+def admin_campus_images():
+    """管理校园图片 - 审核、编辑"""
+    conn = get_db_connection()
+    
+    # 读取筛选参数
+    filter_type = request.args.get('filter', 'all')  # all, unreviewed, reviewed
+    level_filter = request.args.get('level', 'all')
+    region_filter = request.args.get('region', 'all')
+    search = request.args.get('search', '').strip()
+    page = max(1, int(request.args.get('page', 1)))
+    per_page = 30
+    offset = (page - 1) * per_page
+    
+    # 构建查询
+    where = ['campus_image IS NOT NULL AND campus_image != ""']
+    params = []
+    
+    if filter_type == 'unreviewed':
+        where.append('campus_reviewed = 0')
+    elif filter_type == 'reviewed':
+        where.append('campus_reviewed = 1')
+    elif filter_type == 'pending':
+        where.append('campus_updated = "Y" AND campus_reviewed = 0')
+    
+    if level_filter != 'all':
+        where.append('level = ?')
+        params.append(level_filter)
+    
+    if region_filter != 'all':
+        where.append('region = ?')
+        params.append(region_filter)
+    
+    if search:
+        where.append('(name LIKE ? OR name_cn LIKE ?)')
+        params.extend([f'%{search}%', f'%{search}%'])
+    
+    where_sql = ' AND '.join(where)
+    
+    # 统计
+    total = conn.execute(f'SELECT COUNT(*) FROM schools WHERE {where_sql}', params).fetchone()[0]
+    
+    stats = {
+        'unreviewed': conn.execute('SELECT COUNT(*) FROM schools WHERE campus_reviewed=0 AND campus_image IS NOT NULL AND campus_image != ""').fetchone()[0],
+        'reviewed': conn.execute('SELECT COUNT(*) FROM schools WHERE campus_reviewed=1 AND campus_image IS NOT NULL AND campus_image != ""').fetchone()[0],
+        'pending': conn.execute('SELECT COUNT(*) FROM schools WHERE campus_updated="Y" AND campus_reviewed=0').fetchone()[0],
+    }
+    
+    # 分页数据
+    schools = conn.execute(f'''
+        SELECT id, name, name_cn, region, country, city, level,
+               campus_image, campus_image_desc, campus_updated, campus_reviewed,
+               campus_reviewed_at, badge_url, badge_reviewed
+        FROM schools
+        WHERE {where_sql}
+        ORDER BY campus_reviewed ASC, campus_updated DESC, id DESC
+        LIMIT ? OFFSET ?
+    ''', params + [per_page, offset]).fetchall()
+    
+    # 全部地区和级别（筛选器用）
+    regions = [r[0] for r in conn.execute('SELECT DISTINCT region FROM schools WHERE region IS NOT NULL ORDER BY region').fetchall()]
+    levels = [r[0] for r in conn.execute('SELECT DISTINCT level FROM schools ORDER BY level').fetchall()]
+    
+    conn.close()
+    
+    total_pages = (total + per_page - 1) // per_page
+    
+    return render_template('admin/campus_images.html',
+        schools=schools, regions=regions, levels=levels, stats=stats,
+        filter_type=filter_type, level_filter=level_filter,
+        region_filter=region_filter, search=search,
+        page=page, total_pages=total_pages, total=total,
+        per_page=per_page)
+
+
+@app.route('/admin/school/<int:school_id>/campus-edit', methods=['GET', 'POST'])
+@admin_required
+def admin_campus_edit(school_id):
+    """编辑校园图片"""
+    school = get_school_by_id(school_id)
+    if not school:
+        flash('学校不存在', 'error')
+        return redirect(url_for('admin_campus_images'))
+    
+    if request.method == 'POST':
+        campus_image = request.form.get('campus_image', '').strip()
+        campus_image_desc = request.form.get('campus_image_desc', '').strip()
+        
+        conn = get_db_connection()
+        conn.execute('''
+            UPDATE schools SET campus_image=?, campus_image_desc=?, updated_at=CURRENT_TIMESTAMP
+            WHERE id=?
+        ''', (campus_image, campus_image_desc, school_id))
+        
+        # 标记为已审核（手工编辑后审核）
+        conn.execute('''
+            UPDATE schools SET campus_reviewed=1, campus_reviewed_at=CURRENT_TIMESTAMP,
+            campus_reviewed_by=? WHERE id=?
+        ''', (session['user_id'], school_id))
+        
+        conn.commit()
+        log_admin_action(session['user_id'], 'UPDATE_CAMPUS', 'school', school_id, school['name'])
+        conn.close()
+        
+        flash('校园图片已更新', 'success')
+        return redirect(url_for('admin_campus_images'))
+    
+    return render_template('admin/campus_edit.html', school=school)
+
+
+@app.route('/admin/school/<int:school_id>/campus-approve')
+@admin_required
+def admin_campus_approve(school_id):
+    """审核通过校园图片"""
+    school = get_school_by_id(school_id)
+    if not school:
+        flash('学校不存在', 'error')
+        return redirect(url_for('admin_campus_images'))
+    
+    conn = get_db_connection()
+    conn.execute('''
+        UPDATE schools SET campus_reviewed=1, campus_reviewed_at=CURRENT_TIMESTAMP,
+        campus_reviewed_by=?, campus_updated='N' WHERE id=?
+    ''', (session['user_id'], school_id))
+    conn.commit()
+    log_admin_action(session['user_id'], 'APPROVE_CAMPUS', 'school', school_id, school['name'])
+    conn.close()
+    
+    flash(f'已审核通过: {school["name_cn"] or school["name"]}', 'success')
+    ref = request.args.get('ref', '')
+    return redirect(url_for('admin_campus_images', **(dict(x.split('=') for x in ref.split('&')) if ref else {})))
+
+
+@app.route('/admin/school/<int:school_id>/campus-reject')
+@admin_required
+def admin_campus_reject(school_id):
+    """驳回校园图片"""
+    school = get_school_by_id(school_id)
+    if not school:
+        flash('学校不存在', 'error')
+        return redirect(url_for('admin_campus_images'))
+    
+    conn = get_db_connection()
+    # 清空校园图片，重新抓取
+    conn.execute('UPDATE schools SET campus_image="", campus_image_desc="", campus_reviewed=0 WHERE id=?', (school_id,))
+    conn.commit()
+    log_admin_action(session['user_id'], 'REJECT_CAMPUS', 'school', school_id, school['name'])
+    conn.close()
+    
+    flash(f'已驳回并清空: {school["name_cn"] or school["name"]}', 'warning')
+    return redirect(url_for('admin_campus_images'))
+
+
+@app.route('/admin/school/<int:school_id>/campus-unapprove')
+@admin_required
+def admin_campus_unapprove(school_id):
+    """反审核（撤销通过，仅取消审核状态，保留图片）"""
+    school = get_school_by_id(school_id)
+    if not school:
+        flash('学校不存在', 'error')
+        return redirect(url_for('admin_campus_images'))
+    
+    conn = get_db_connection()
+    conn.execute('UPDATE schools SET campus_reviewed=0, campus_reviewed_by=NULL WHERE id=?', (school_id,))
+    conn.commit()
+    log_admin_action(session['user_id'], 'UNAPPROVE_CAMPUS', 'school', school_id, school['name'])
+    conn.close()
+    
+    flash(f'已取消审核通过: {school["name_cn"] or school["name"]}', 'info')
+    return redirect(url_for('admin_campus_images'))
+
+
+@app.route('/admin/campus-images/batch-approve', methods=['POST'])
+@admin_required
+def admin_campus_batch_approve():
+    """批量审核通过"""
+    ids = request.form.getlist('school_ids')
+    action = request.form.get('action', 'approve')
+    
+    if not ids:
+        flash('请选择学校', 'error')
+        return redirect(url_for('admin_campus_images'))
+    
+    conn = get_db_connection()
+    count = 0
+    for sid in ids:
+        sid = int(sid)
+        school = conn.execute('SELECT name FROM schools WHERE id=?', (sid,)).fetchone()
+        if action == 'approve':
+            conn.execute('''
+                UPDATE schools SET campus_reviewed=1, campus_reviewed_at=CURRENT_TIMESTAMP,
+                campus_reviewed_by=?, campus_updated='N' WHERE id=?
+            ''', (session['user_id'], sid))
+            count += 1
+        elif action == 'reject':
+            conn.execute('UPDATE schools SET campus_image="", campus_image_desc="", campus_reviewed=0 WHERE id=?', (sid,))
+            count += 1
+        elif action == 'unlock':
+            conn.execute('UPDATE schools SET campus_reviewed=0, campus_reviewed_by=NULL WHERE id=?', (sid,))
+            count += 1
+    
+    conn.commit()
+    log_admin_action(session['user_id'], f'BATCH_{action.upper()}_CAMPUS', 'school', 0, f'{count} schools')
+    conn.close()
+    
+    flash(f'批量操作完成: {count} 所学校', 'success')
+    return redirect(url_for('admin_campus_images'))
+
+
+# =============================================
+# 管理员 - 校徽图片审核
+# =============================================
+
+@app.route('/admin/badge-images')
+@admin_required
+def admin_badge_images():
+    """管理校徽图片 - 审核、编辑"""
+    conn = get_db_connection()
+    
+    filter_type = request.args.get('filter', 'all')
+    level_filter = request.args.get('level', 'all')
+    region_filter = request.args.get('region', 'all')
+    search = request.args.get('search', '').strip()
+    page = max(1, int(request.args.get('page', 1)))
+    per_page = 30
+    offset = (page - 1) * per_page
+    
+    where = []
+    params = []
+    
+    if filter_type == 'unreviewed':
+        where.append('badge_reviewed = 0')
+    elif filter_type == 'reviewed':
+        where.append('badge_reviewed = 1')
+    if level_filter != 'all':
+        where.append('level = ?')
+        params.append(level_filter)
+    if region_filter != 'all':
+        where.append('region = ?')
+        params.append(region_filter)
+    if search:
+        where.append('(name LIKE ? OR name_cn LIKE ?)')
+        params.extend([f'%{search}%', f'%{search}%'])
+    
+    where_sql = ' AND '.join(where) if where else '1=1'
+    
+    total = conn.execute(f'SELECT COUNT(*) FROM schools WHERE {where_sql}', params).fetchone()[0]
+    
+    badge_stats = {
+        'unreviewed': conn.execute('SELECT COUNT(*) FROM schools WHERE badge_reviewed=0 AND badge_url IS NOT NULL AND badge_url != ""').fetchone()[0],
+        'reviewed': conn.execute('SELECT COUNT(*) FROM schools WHERE badge_reviewed=1 AND badge_url IS NOT NULL AND badge_url != ""').fetchone()[0],
+    }
+    
+    schools = conn.execute(f'''
+        SELECT id, name, name_cn, region, country, city, level,
+               badge_url, badge_reviewed, badge_reviewed_at
+        FROM schools WHERE {where_sql}
+        ORDER BY badge_reviewed ASC, id DESC
+        LIMIT ? OFFSET ?
+    ''', params + [per_page, offset]).fetchall()
+    
+    regions = [r[0] for r in conn.execute('SELECT DISTINCT region FROM schools WHERE region IS NOT NULL ORDER BY region').fetchall()]
+    levels = [r[0] for r in conn.execute('SELECT DISTINCT level FROM schools ORDER BY level').fetchall()]
+    conn.close()
+    
+    total_pages = (total + per_page - 1) // per_page
+    
+    return render_template('admin/badge_images.html',
+        schools=schools, regions=regions, levels=levels, stats=badge_stats,
+        filter_type=filter_type, level_filter=level_filter,
+        region_filter=region_filter, search=search,
+        page=page, total_pages=total_pages, total=total, per_page=per_page)
+
+
+@app.route('/admin/school/<int:school_id>/badge-edit', methods=['GET', 'POST'])
+@admin_required
+def admin_badge_edit(school_id):
+    """编辑校徽图片"""
+    school = get_school_by_id(school_id)
+    if not school:
+        flash('学校不存在', 'error')
+        return redirect(url_for('admin_badge_images'))
+    
+    if request.method == 'POST':
+        badge_url = request.form.get('badge_url', '').strip()
+        
+        conn = get_db_connection()
+        conn.execute('UPDATE schools SET badge_url=?, updated_at=CURRENT_TIMESTAMP WHERE id=?', (badge_url, school_id))
+        conn.execute('UPDATE schools SET badge_reviewed=1, badge_reviewed_at=CURRENT_TIMESTAMP, badge_reviewed_by=? WHERE id=?', (session['user_id'], school_id))
+        conn.commit()
+        log_admin_action(session['user_id'], 'UPDATE_BADGE', 'school', school_id, school['name'])
+        conn.close()
+        
+        flash('校徽图片已更新', 'success')
+        return redirect(url_for('admin_badge_images'))
+    
+    return render_template('admin/badge_edit.html', school=school)
+
+
+@app.route('/admin/school/<int:school_id>/badge-approve')
+@admin_required
+def admin_badge_approve(school_id):
+    """审核通过校徽"""
+    school = get_school_by_id(school_id)
+    if not school:
+        flash('学校不存在', 'error')
+        return redirect(url_for('admin_badge_images'))
+    
+    conn = get_db_connection()
+    conn.execute('''
+        UPDATE schools SET badge_reviewed=1, badge_reviewed_at=CURRENT_TIMESTAMP,
+        badge_reviewed_by=? WHERE id=?
+    ''', (session['user_id'], school_id))
+    conn.commit()
+    log_admin_action(session['user_id'], 'APPROVE_BADGE', 'school', school_id, school['name'])
+    conn.close()
+    
+    flash(f'校徽已审核通过: {school["name_cn"] or school["name"]}', 'success')
+    return redirect(url_for('admin_badge_images'))
+
+
+@app.route('/admin/school/<int:school_id>/badge-reject')
+@admin_required
+def admin_badge_reject(school_id):
+    """驳回校徽图片"""
+    school = get_school_by_id(school_id)
+    if not school:
+        flash('学校不存在', 'error')
+        return redirect(url_for('admin_badge_images'))
+    
+    conn = get_db_connection()
+    # 清空校徽图片，重新抓取
+    conn.execute('UPDATE schools SET badge_url="", badge_reviewed=0, badge_updated="Y" WHERE id=?', (school_id,))
+    conn.commit()
+    log_admin_action(session['user_id'], 'REJECT_BADGE', 'school', school_id, school['name'])
+    conn.close()
+    
+    flash(f'已驳回校徽: {school["name_cn"] or school["name"]}', 'warning')
+    return redirect(url_for('admin_badge_images'))
+
+
+@app.route('/admin/school/<int:school_id>/badge-unapprove')
+@admin_required
+def admin_badge_unapprove(school_id):
+    """反审核（撤销通过，仅取消审核状态，保留图片）"""
+    school = get_school_by_id(school_id)
+    if not school:
+        flash('学校不存在', 'error')
+        return redirect(url_for('admin_badge_images'))
+    
+    conn = get_db_connection()
+    conn.execute('UPDATE schools SET badge_reviewed=0, badge_reviewed_by=NULL WHERE id=?', (school_id,))
+    conn.commit()
+    log_admin_action(session['user_id'], 'UNAPPROVE_BADGE', 'school', school_id, school['name'])
+    conn.close()
+    
+    flash(f'已取消审核通过: {school["name_cn"] or school["name"]}', 'info')
+    return redirect(url_for('admin_badge_images'))
+
+
+@app.route('/admin/badge-images/batch-approve', methods=['POST'])
+@admin_required
+def admin_badge_batch_approve():
+    """批量审核校徽"""
+    ids = request.form.getlist('school_ids')
+    action = request.form.get('action', 'approve')
+    
+    if not ids:
+        flash('请选择学校', 'error')
+        return redirect(url_for('admin_badge_images'))
+    
+    conn = get_db_connection()
+    count = 0
+    for sid in ids:
+        sid = int(sid)
+        if action == 'approve':
+            conn.execute('''
+                UPDATE schools SET badge_reviewed=1, badge_reviewed_at=CURRENT_TIMESTAMP,
+                badge_reviewed_by=? WHERE id=?
+            ''', (session['user_id'], sid))
+            count += 1
+        elif action == 'reject':
+            # 驳回：清空图片并标记为待更新
+            conn.execute('UPDATE schools SET badge_url="", badge_reviewed=0, badge_updated="Y" WHERE id=?', (sid,))
+            count += 1
+        elif action == 'unapprove':
+            # 反审核：仅取消审核状态，保留图片
+            conn.execute('UPDATE schools SET badge_reviewed=0, badge_reviewed_by=NULL WHERE id=?', (sid,))
+            count += 1
+    
+    conn.commit()
+    log_admin_action(session['user_id'], f'BATCH_{action.upper()}_BADGE', 'school', 0, f'{count} schools')
+    conn.close()
+    
+    flash(f'批量操作完成: {count} 所学校', 'success')
+    return redirect(url_for('admin_badge_images'))
+
+
 @app.route('/debug_session')
 def debug_session():
     return jsonify({

@@ -215,10 +215,11 @@ def update_campus_images():
     cursor.execute("""
         SELECT id, name, name_cn, campus_image
         FROM schools
-        WHERE campus_updated != 'Y'
+        WHERE campus_reviewed = 0
+          AND campus_updated != 'Y'
           AND (campus_image IS NULL OR campus_image = '' 
                OR (LENGTH(campus_image) - LENGTH(REPLACE(campus_image, ',', '')) + 1) < 6)
-        ORDER BY RANDOM()
+        ORDER BY is_top_university DESC, RANDOM()
         LIMIT 3
     """)
     
