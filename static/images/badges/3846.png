@@ -1,0 +1,1585 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-hk">
+<head>
+  <!-- =====================[META]====================== -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <!-- Title名稱 = 校名 + | + 頁面名稱 -->
+  <title>沙頭角中心小學 | 首頁</title>
+
+  <!-- Title for app - -->
+  <meta name="apple-mobile-web-app-title" content="沙頭角中心小學 | 首頁">
+
+  <!-- 使用ADMIN 設定修改 meta"description" 及"keyword" 內容 -->
+  <meta name="description" content="Sha Tau Kok Central Primary School | 沙頭角中心小學" />
+  <meta name="keyword" content="CMS,School, Hong Kong, Primary School, Secondary School, Education, Learning, 學校, 香港, 小學,  教育 , myIT-School, myID, 沙頭角中心小學" />
+  <!-- =====================[CSS STYLE SHEET]====================== -->
+
+  <!-- Basic Style - Bootstrap, fontawesome , main style -->
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/font.css" type="text/css" />
+
+  <link rel="stylesheet"  href="/it-school/php/webcms/theme/back/zh/css/ilightbox.css" type="text/css"/><!-- Lightbox -->
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/owl.carousel.css"><!-- carousel -->
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/cms-common.css?v=1774509364">
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/youtube.css"><!-- Youtube -->
+  
+  <!-- <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/cms-gallery.css"> -->
+  <!-- =====================[STEEING FOR MOBILE]====================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" /> 
+   
+   <!-- Hide status bar - -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes"><!-- fullscreen -->
+  <meta name="format-detection" content="telephone=no">
+   
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/it-school/php/webcms/theme/back/zh/images/ico/152.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/it-school/php/webcms/theme/back/zh/images/ico/144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/it-school/php/webcms/theme/back/zh/images/ico/114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/it-school/php/webcms/theme/back/zh/images/ico/72.png">
+  <link rel="apple-touch-icon-precomposed" href="/it-school/php/webcms/theme/back/zh/images/ico/57.png">
+  <link rel="shortcut icon" href="/it-school/php/webcms/theme/back/zh/images/ico/favicon.png">
+   
+  <!-- Prevent text size adjustment on orientation change. -->
+  <style>html { -webkit-text-size-adjust: 100%; }</style>
+
+<!-- =====================[IE Hack!!!] ===============================-->
+  <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
+
+    <!--[if lte IE 8]>
+  <script src="js/en_US.js"></script>
+  <script src="js/warning.js"></script>
+  <script>
+    window.onload=function(){
+      ie6Warning(function() {
+        var languageMap = {};
+  
+        if(window.IE6WarningLocalizations) {
+          languageMap = window.IE6WarningLocalizations;
+        }  
+        return {
+          imgPath: "images", 
+          localizations:  languageMap
+        };
+      });
+    };
+  </script>
+  <![endif]-->
+
+<!--include core js and css file-->
+
+  <!--[!] 主頁用CSS : Style for index only-->
+   <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/cms-index.css?v=1774509364" type="text/css" />
+   <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/jquery.scrollbar.css" type="text/css" />
+   
+   <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/hex.css" type="text/css" />
+   <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/js/aos/aos.css" type="text/css" />
+   
+   <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/acc_style.css" type="text/css" />
+</head>
+
+<body data-target="#Navi" class="chi homepage"><!-- [!] 中英文CSS轉換 英文版 class = eng -->
+<div id="index" class="body_wrap body_bg"><!-- [!] ID=INDEX -->
+	
+    <!-- ==========================[ HEADER]============================== --> 
+<!-- HEADER : navi and slideshow-->
+    <!-- =========================[ HEADER ]============================== -->
+<!--new banner-->
+<header class="fixed-top-bar-no" >
+	<!-- ========[MAIN NAVIGATION]======== -->
+		<div class="top_bar">
+			<div class="row">
+				
+				<div class="col-md-6">
+					<div class="top_logo">
+						<a href="/it-school/php/webcms/public/mainpage/main.php?lang=zh">
+							<img src="/it-school/php/webcms/public/data/school_logo.jpg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-6 d-none d-md-block">
+					<div class="widget login float-end">
+	<div class="login_con">
+		<div class="login_item">
+			<div class="wrap2">
+				<form name ="loginforms2" action="https://eclass.stkcps.edu.hk/login.php" target="_blank" method="post" autocomplete="off">
+					<div class="form-wrap">
+						<div class="login_field_con">
+							<div class="login_field">
+								<div class="login_field_b">
+									<div class="id-wrap">
+										<label class="" for="UserLogin2">登入名稱</label>
+										<div class="login_id_input">
+											<input type="text" id="UserLogin2" name="UserLogin" placeholder="登入名稱" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="login_field login_field2">
+								<div class="login_field_b">
+									 <div class="pw-wrap">
+										<label class="sr-only" for="UserPassword2">密碼</label>
+										<div class="login_pw_input">
+											<input type="password" id="UserPassword2" name="UserPassword" placeholder="密碼" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="login_field_btn">
+							<a href="javascript:doEClassLogins2();" class="login_btn">登入</a>
+						</div>
+					</div><!-- form-wrap-->
+				</form>
+			</div><!-- Login wrap -->
+		</div>
+	</div>
+	<div class="clear">
+		
+	</div>
+		
+        
+</div><!--end intranet login widget-->
+<!--<script language="Javascript" src="/it-school/js/md5.js"></script>-->
+ <script type="text/javascript">
+
+            document.onkeydown = function(e){
+                var e=e || event;
+                var currKey=e.keyCode||e.which||e.charCode;
+                if(currKey == 13) {
+                    doEClassLogins2();
+                }
+            };
+        function validates2()
+        {
+			thisform =	document.loginforms2;
+            v =true;
+            if (document.getElementById("UserLogin2").value == ""){
+                v = false;
+                document.getElementById("UserLogin2").focus();
+            }
+            if (v && document.getElementById("UserPassword2").value ==	""){
+                v = false;
+                document.getElementById("UserPassword2").focus();
+            }
+			
+			/*
+			if (v)
+			thisform.elements["password"].value	= MD5(thisform.elements["password"].value);
+			*/
+			
+            return v;
+        }
+
+
+        function doEClassLogins2() {
+            if (validates2() )
+            {
+                document.forms["loginforms2"].submit();
+                document.getElementById("UserLogin2").value="";
+                document.getElementById("UserPassword2").value="";
+            }
+        }
+
+
+
+
+
+
+    </script>
+				</div>
+					
+	
+				
+			</div>
+				<!--Language chooser-->
+				<!--
+				<div class="lang_pos d-none d-md-block">
+					<div class="lang_con">
+						<ul>
+							<li class="active"><a class="lang chi" href="/it-school/php/webcms/public/mainpage/main.php?x=1&lang=zh">中文</a></li>
+							<li class=" "><a class="lang eng" href="/it-school/php/webcms/public/mainpage/main.php?x=1&lang=en">English</a></li>
+						</ul>
+					</div>
+				</div>
+				-->
+		</div>
+		<div class="navigation_con">
+					<div class="navigation_wrap">
+						<!--mobile social media-->
+						<nav id="Navi">
+							<!-- <div class="affix" data-spy="affix" data-offset-top="300"><!-- data-offset-top="300" 設定離頁頂多高才sticky top -->
+								<div id="MainNav1" class="MainNav" > 
+  <!-- <div class="lang hidden-xs"><a class="chi">ENG</a></div> -->
+  <div class="MainNav_wrapper" >
+     <ul class='MainNav_menu' style='height:52px'><li class="MainNav_collapse  MainNav_collapse_noactive"><span><i class="fa fa-bars"> Menu</i></span></li><li class="divide"></li><li class="btn01"><a><span>學校資料 </span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3087&mode=published&lang=zh" >學校簡介                     </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3423&mode=published&lang=zh" >傳媒報導</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3316&mode=published&lang=zh" >保育生態園  </a></li><li class="divide"></li><li class="parent"><span>學校文件     </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3214&mode=published&lang=zh" >周年校務計劃                                                                       </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3215&mode=published&lang=zh" >周年檢討報告                                                                                       </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3216&mode=published&lang=zh" >學校政策文件    </a></li><li class="divide"></li></ul></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3124&mode=published&lang=zh" >校曆表                   </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3125&mode=published&lang=zh" >內聯網           </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3126&mode=published&lang=zh" >入學申請                          </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3127&mode=published&lang=zh" >聯絡我們   </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3440&mode=published&lang=zh" >學校概覽</a></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn02"><a><span>團隊 </span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3094&mode=published&lang=zh" >法團校董會      </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3371&mode=published&lang=zh" >校監的話     </a></li><li class="divide"></li><li class="parent"><span>校長的話</span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3447&mode=published&lang=zh" >校長家書-二零二五年八月</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3444&mode=published&lang=zh" >校長家書-二零二五年一月</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3437&mode=published&lang=zh" >三月家書</a></li><li class="divide"></li><li><span><a style="padding:0;font-weight: normal;text-decoration: none;cursor: pointer;margin-left: 0px;width:85%;float: left;"  href="/it-school/php/webcms/public/index.php?refid=3434&mode=published&lang=zh">二月家書</a></span></li><li class="divide"></li><li><span><a style="padding:0;font-weight: normal;text-decoration: none;cursor: pointer;margin-left: 0px;width:85%;float: left;"  href="/it-school/php/webcms/public/index.php?refid=3433&mode=published&lang=zh">一月家書</a></span></li><li class="divide"></li><li><span><a style="padding:0;font-weight: normal;text-decoration: none;cursor: pointer;margin-left: 0px;width:85%;float: left;"  href="/it-school/php/webcms/public/index.php?refid=3426&mode=published&lang=zh">十二月家書</a></span></li><li class="divide"></li><li><span><a style="padding:0;font-weight: normal;text-decoration: none;cursor: pointer;margin-left: 0px;width:85%;float: left;"  href="/it-school/php/webcms/public/index.php?refid=3421&mode=published&lang=zh">十一月家書</a></span></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3419&mode=published&lang=zh" >十月家書</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3418&mode=published&lang=zh" >開學致詞</a></li><li class="divide"></li></ul></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3131&mode=published&lang=zh" >教學團隊                                                                                   </a></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn03"><a><span>學與教  </span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li class="parent"><span>各科課程 </span><ul class="sub_lv"><li class="divide"></li><li class="parent"><span>中文 </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3134&mode=published&lang=zh" >宗旨及目標   </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3136&mode=published&lang=zh" >課程特色  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3452&mode=published&lang=zh" >中文科獎項</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3135&mode=published&lang=zh" >佳作</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3137&mode=published&lang=zh" >活動精華    </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3454&mode=published&lang=zh" >活動影片</a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>英文 </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3111&mode=published&lang=zh" >宗旨及目標         </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3138&mode=published&lang=zh" >課程特色    </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3139&mode=published&lang=zh" >活動相片   </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3368&mode=published&lang=zh" >活動影片  </a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>數學 </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3142&mode=published&lang=zh" >學科目標   </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3144&mode=published&lang=zh" >課程特色         </a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>常識</span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3463&mode=published&lang=zh" >宗旨及目標</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3464&mode=published&lang=zh" >課程特色</a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>音樂 </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3157&mode=published&lang=zh" >宗旨及目標  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3159&mode=published&lang=zh" >課程特色 </a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>體育 </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3167&mode=published&lang=zh" >教學目標          </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3355&mode=published&lang=zh" >課程指引  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3356&mode=published&lang=zh" >測考評估    </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3357&mode=published&lang=zh" >體育科書簽   </a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>視藝 </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3162&mode=published&lang=zh" >宗旨及目標  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3164&mode=published&lang=zh" >課程特色 </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3165&mode=published&lang=zh" >活動精華  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3457&mode=published&lang=zh" >學生作品</a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>科技 </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3152&mode=published&lang=zh" >宗旨及目標  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3154&mode=published&lang=zh" >課程特色  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3155&mode=published&lang=zh" >活動精華   </a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>人文</span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3147&mode=published&lang=zh" >宗旨及目標    </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3149&mode=published&lang=zh" >課程特色  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3150&mode=published&lang=zh" >活動精華  </a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>圖書 </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3465&mode=published&lang=zh" >宗旨及目標</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3466&mode=published&lang=zh" >課程特色</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3468&mode=published&lang=zh" >圖書閲讀獎項</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3469&mode=published&lang=zh" >學生作品</a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>科學</span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3459&mode=published&lang=zh" >宗旨及目標</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3460&mode=published&lang=zh" >課程特色</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3461&mode=published&lang=zh" >活動精華</a></li><li class="divide"></li></ul></li></ul></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3306&mode=published&lang=zh" >網上學習資源                            </a></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn04"><a><span>校風與培育</span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li class="parent"><span>學生訓輔   </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3233&mode=published&lang=zh" >目標        </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3236&mode=published&lang=zh" >風紀                      </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3303&mode=published&lang=zh" >成長課      </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3441&mode=published&lang=zh" >校服儀容</a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>學生支援     </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3227&mode=published&lang=zh" >目標            </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3228&mode=published&lang=zh" >學校支援項目         </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3232&mode=published&lang=zh" >小一及早識別     </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3230&mode=published&lang=zh" >言語治療服務    </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3410&mode=published&lang=zh" >支援資訊   </a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>公民教育  </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3237&mode=published&lang=zh" >目標  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3429&mode=published&lang=zh" >國家安全教育組</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3238&mode=published&lang=zh" >每月德育主題講座 </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3378&mode=published&lang=zh" >至營學校認證   </a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>服務學習  </span><ul class="sub_lv"><li class="divide"></li><li class="parent"><span>少年警訊  </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3283&mode=published&lang=zh" >活動精華  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3389&mode=published&lang=zh" >JPC寵愛傳校計劃報告   </a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>公益少年團  </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3285&mode=published&lang=zh" >活動精華  </a></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>小童軍  </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3286&mode=published&lang=zh" >小童軍 </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3287&mode=published&lang=zh" >活動精華  </a></li><li class="divide"></li></ul></li><li class="divide"></li></ul></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn05"><a><span>學生活動 </span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3183&mode=published&lang=zh" >活動照片                                                                              </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3187&mode=published&lang=zh" >境外交流活動      </a></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn06"><a><span>家長資訊</span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li class="parent"><span>家長教師會  </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3223&mode=published&lang=zh" >宗旨  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3224&mode=published&lang=zh" >會章  </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3262&mode=published&lang=zh" >組織架構           </a></li><li class="divide"></li></ul></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3195&mode=published&lang=zh" >家校聯絡電子平台        </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3438&mode=published&lang=zh" >家長手冊</a></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn07"><a><span>校友天地</span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li class="parent"><span>校友會      </span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3245&mode=published&lang=zh" >最新消息及申請入會表格                      </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3244&mode=published&lang=zh" >宗旨、會徽及會章        </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3246&mode=published&lang=zh" >籌委會及顧問老師    </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3247&mode=published&lang=zh" >聯絡本會  </a></li><li class="divide"></li></ul></li><li class="divide"></li><li><span><a style="padding:0;font-weight: normal;text-decoration: none;cursor: pointer;margin-left: 0px;width:85%;float: left;"  href="/it-school/php/webcms/public/index.php?refid=3425&mode=published&lang=zh">第二屆校友會常務委員會委員選舉 </a></span></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3198&mode=published&lang=zh" >校友聚會 </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3199&mode=published&lang=zh" >畢業照片           </a></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn08"><a><span>Support Provide For NCS Student</span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3450&mode=published&lang=zh" >2023-24 學年為非華語提供的教育支援學校支援摘要_STKCPS</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3451&mode=published&lang=zh" >2023-24 Education Suppot Provided for NCS Students School Support Summary_STKCPS</a></li><li class="divide"></li></ul></div></li><li class="divide"></li></ul>
+  </div><!-- / MainNav Container -->
+</div><!-- / MainNav -->
+
+<!-- 手機版語言選擇 -->
+<!-- <div class="visable-xs lang-mobile">
+  
+  <select class="form-control">
+    <option>中文</option>
+    <option>ENGLISH</option>
+  </select>
+</div> -->
+							  <!--</div>-->
+							  <!--
+							  <div class="lang_con d-block d-md-none">
+									<ul>
+										<li class="active"><a class="lang chi" href="/it-school/php/webcms/public/mainpage/main.php?x=1&lang=zh">中文</a></li>
+										<li class=" "><a class="lang eng" href="/it-school/php/webcms/public/mainpage/main.php?x=1&lang=en">English</a></li>
+									</ul>
+								</div>
+								-->
+						</nav>
+					</div>
+				</div>
+		
+</header> <!-- / header -->
+
+	
+
+
+	<!-- ========[MAIN CONTENT]======== -->
+	<div class="main_content">
+		<div class="outer_wrap">
+		
+		<!-- ========================================[ROW 1]-->
+		<div class="homebanner">
+			<div id="header_banner" class="owl-carousel">
+				
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/58.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/57.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/56.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/55.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/54.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/53.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/51.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/49.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/43.jpg">
+   </li>
+			</div>
+			<div class="banner_bottom_style">
+				<div class="banner_bottom_con">
+					<div class="new_nav">
+						
+					</div>
+					<div class="new_dot">
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="vidBox" id="vidBox">
+				<div class="video_con">
+					<div id="videCont">
+					
+						<iframe width="1024" height="500" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>	
+				</div>	
+			</div>
+		</div>
+		
+		<section class="mb4p aos-init" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500">
+			<div class="d-md-none d-sm-block">
+				<div class="widget login">
+	<div class="login_con">
+		<div class="login_item">
+			<div class="wrap2">
+				<form name ="loginforms" action="https://eclass.stkcps.edu.hk/login.php" target="_blank" method="post" autocomplete="off">
+					<div class="form-wrap row">
+						<div class="col-8">
+							<div class="login_field">
+								<div class="id-wrap">
+										<label class="" for="UserLogin">登入名稱</label>
+										<div class="login_id_input">
+											<input type="text" id="UserLogin" name="UserLogin" placeholder="登入名稱" />
+										</div>
+									</div>
+							</div>
+							<div class="login_field">
+								 <div class="pw-wrap">
+									<label class="sr-only" for="UserPassword">密碼</label>
+									<div class="login_pw_input">
+										<input type="password" id="UserPassword" name="UserPassword" placeholder="密碼" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="login_field login_field_btn">
+								<a href="javascript:doEClassLogins();" class="login_btn">登入</a>
+							</div>
+						</div>
+					</div><!-- form-wrap-->
+				</form>
+			</div><!-- Login wrap -->
+		</div>
+	</div>
+	<div class="clear">
+		
+	</div>
+		
+        
+</div><!--end intranet login widget-->
+<!--<script language="Javascript" src="/it-school/js/md5.js"></script>-->
+ <script type="text/javascript">
+
+            document.onkeydown = function(e){
+                var e=e || event;
+                var currKey=e.keyCode||e.which||e.charCode;
+                if(currKey == 13) {
+                    doEClassLogins();
+                }
+            };
+        function validates()
+        {
+			thisform =	document.loginforms;
+            v =true;
+            if (document.getElementById("UserLogin").value == ""){
+                v = false;
+                document.getElementById("UserLogin").focus();
+            }
+            if (v && document.getElementById("UserPassword").value ==	""){
+                v = false;
+                document.getElementById("UserPassword").focus();
+            }
+			
+			/*
+			if (v)
+			thisform.elements["password"].value	= MD5(thisform.elements["password"].value);
+			*/
+			
+            return v;
+        }
+
+
+        function doEClassLogins() {
+            if (validates() )
+            {
+                document.forms["loginforms"].submit();
+                document.getElementById("UserLogin").value="";
+                document.getElementById("UserPassword").value="";
+            }
+        }
+
+
+
+
+
+
+    </script>			</div>
+		</section>
+
+		<section class="mb4p ptop4 aos-init" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500">
+			<div class="widget news">
+	<div class="news_title_wrap pr">
+		<div class="div_title news-title deco_line1">&nbsp;</div>
+	  <div class="more_btn"><a href="tpl.php?refid=0&component_id=1&lang=zh">更多 ></a></div>
+	</div>
+	  
+
+ <div class="lightbox">
+	<div class="wrap_content">
+		<div class="news_content_wrap">
+		  <ul class="list owl-carousel">
+			
+				<li class="news_item_wrap">
+					
+						<div class="news_con_block">
+							<div class="thumb">
+								<div class="mdate2">2026-03-02</div>
+							</div>
+							<div class="detail">
+								<span class="title">沙頭角親子攝影比賽開鑼喇</span>
+							</div>
+							<div class="more_in_btn_con">
+								<div class="more_in_btn">
+									<a href="component/popup_news.php?type=&id=2118&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'"><img src="/it-school/php/webcms/theme/back/zh/images/readmore_btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+				</li>
+			
+				<li class="news_item_wrap">
+					
+						<div class="news_con_block">
+							<div class="thumb">
+								<div class="mdate2">2026-02-09</div>
+							</div>
+							<div class="detail">
+								<span class="title">【國際機械人賽事奪獎】2025–2026 CREATE 美國機械人公開賽（C.R.C.）亞太錦標賽-榮獲 銅牌 及 專項獎...</span>
+							</div>
+							<div class="more_in_btn_con">
+								<div class="more_in_btn">
+									<a href="component/popup_news.php?type=&id=2117&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'"><img src="/it-school/php/webcms/theme/back/zh/images/readmore_btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+				</li>
+			
+				<li class="news_item_wrap">
+					
+						<div class="news_con_block">
+							<div class="thumb">
+								<div class="mdate2">2025-11-25</div>
+							</div>
+							<div class="detail">
+								<span class="title">2026-27年度小一入學自行分配學位申請</span>
+							</div>
+							<div class="more_in_btn_con">
+								<div class="more_in_btn">
+									<a href="component/popup_news.php?type=&id=2108&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'"><img src="/it-school/php/webcms/theme/back/zh/images/readmore_btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+				</li>
+			
+				<li class="news_item_wrap">
+					
+						<div class="news_con_block">
+							<div class="thumb">
+								<div class="mdate2">2025-11-24</div>
+							</div>
+							<div class="detail">
+								<span class="title">本校同學. 李瀚祥. 李浩祥代表香港出賽！</span>
+							</div>
+							<div class="more_in_btn_con">
+								<div class="more_in_btn">
+									<a href="component/popup_news.php?type=&id=2107&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'"><img src="/it-school/php/webcms/theme/back/zh/images/readmore_btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+				</li>
+			
+				<li class="news_item_wrap">
+					
+						<div class="news_con_block">
+							<div class="thumb">
+								<div class="mdate2">2025-09-10</div>
+							</div>
+							<div class="detail">
+								<span class="title">沙頭角深度遊~~ 校長做導遊!</span>
+							</div>
+							<div class="more_in_btn_con">
+								<div class="more_in_btn">
+									<a href="component/popup_news.php?type=&id=2105&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'"><img src="/it-school/php/webcms/theme/back/zh/images/readmore_btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+				</li>
+			
+				<li class="news_item_wrap">
+					
+						<div class="news_con_block">
+							<div class="thumb">
+								<div class="mdate2">2025-09-03</div>
+							</div>
+							<div class="detail">
+								<span class="title">紀念抗戰勝利80周年</span>
+							</div>
+							<div class="more_in_btn_con">
+								<div class="more_in_btn">
+									<a href="component/popup_news.php?type=&id=2104&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'"><img src="/it-school/php/webcms/theme/back/zh/images/readmore_btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+				</li>
+			
+				<li class="news_item_wrap">
+					
+						<div class="news_con_block">
+							<div class="thumb">
+								<div class="mdate2">2025-09-02</div>
+							</div>
+							<div class="detail">
+								<span class="title">校長家書-二零二五年八月</span>
+							</div>
+							<div class="more_in_btn_con">
+								<div class="more_in_btn">
+									<a href="component/popup_news.php?type=&id=2103&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'"><img src="/it-school/php/webcms/theme/back/zh/images/readmore_btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+				</li>
+			
+				<li class="news_item_wrap">
+					
+						<div class="news_con_block">
+							<div class="thumb">
+								<div class="mdate2">2025-09-01</div>
+							</div>
+							<div class="detail">
+								<span class="title">開學啦!</span>
+							</div>
+							<div class="more_in_btn_con">
+								<div class="more_in_btn">
+									<a href="component/popup_news.php?type=&id=2102&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'"><img src="/it-school/php/webcms/theme/back/zh/images/readmore_btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+				</li>
+			
+				<li class="news_item_wrap">
+					
+						<div class="news_con_block">
+							<div class="thumb">
+								<div class="mdate2">2025-07-14</div>
+							</div>
+							<div class="detail">
+								<span class="title">北京師生協同研修營</span>
+							</div>
+							<div class="more_in_btn_con">
+								<div class="more_in_btn">
+									<a href="component/popup_news.php?type=&id=2101&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'"><img src="/it-school/php/webcms/theme/back/zh/images/readmore_btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+				</li>
+			
+				<li class="news_item_wrap">
+					
+						<div class="news_con_block">
+							<div class="thumb">
+								<div class="mdate2">2025-07-05</div>
+							</div>
+							<div class="detail">
+								<span class="title">第三十七屇畢業典禮</span>
+							</div>
+							<div class="more_in_btn_con">
+								<div class="more_in_btn">
+									<a href="component/popup_news.php?type=&id=2100&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'"><img src="/it-school/php/webcms/theme/back/zh/images/readmore_btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+				</li>
+			
+		  </ul>
+		</div>
+	</div>
+  </div><!-- wrap -->
+</div><!-- End WIDGET NEWS -->		</section>	
+		
+		<section class="mb4p aos-init" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500">
+			<div class="widget gallery">
+  <div class="gallery_title_wrap pr">
+	  <div class="div_title gallery-title deco_line1">&nbsp;</div>
+	  <div class="more_btn"><a href="/it-school/php/webcms/public/mainpage/albumindex.php?refid=&lang=zh">更多 ></a></div>
+  </div>
+
+   <div class="wrap_content">
+  <div class="row">
+		<div class="col-md-6">
+		 
+				<div class="news_content_wrap">
+					<ul class="owl-carousel">
+						
+							<li class="gallery_item_wrap">
+								<a href="album.php?album_id=494&lang=zh">
+									<div class="g_photo">
+										<img class="owl-lazy" data-src="tmp_photo/index/12083.jpg">
+									</div>
+									<div class="g_con_block" style="display:none;">
+										<div class="mdate2">2026-03-11</div>
+										<div class="detail">
+											<span class="title">2025-2026年度9月至3月活動花絮</span>
+											<span class="desc"><p>&nbsp;</p></span>
+										</div>
+									</div>
+								</a>
+							</li>
+						
+							<li class="gallery_item_wrap">
+								<a href="album.php?album_id=492&lang=zh">
+									<div class="g_photo">
+										<img class="owl-lazy" data-src="tmp_photo/index/12042.jpg">
+									</div>
+									<div class="g_con_block" style="display:none;">
+										<div class="mdate2">2026-03-11</div>
+										<div class="detail">
+											<span class="title">中華文化日</span>
+											<span class="desc"><p>&nbsp;</p></span>
+										</div>
+									</div>
+								</a>
+							</li>
+						
+							<li class="gallery_item_wrap">
+								<a href="album.php?album_id=491&lang=zh">
+									<div class="g_photo">
+										<img class="owl-lazy" data-src="tmp_photo/index/12023.jpg">
+									</div>
+									<div class="g_con_block" style="display:none;">
+										<div class="mdate2">2026-03-11</div>
+										<div class="detail">
+											<span class="title">元宵佳節_鄰舍輔導會粉嶺幼兒園到訪沙中小</span>
+											<span class="desc"><p>&nbsp;</p></span>
+										</div>
+									</div>
+								</a>
+							</li>
+						
+							<li class="gallery_item_wrap">
+								<a href="album.php?album_id=485&lang=zh">
+									<div class="g_photo">
+										<img class="owl-lazy" data-src="tmp_photo/index/11909.jpg">
+									</div>
+									<div class="g_con_block" style="display:none;">
+										<div class="mdate2">2025-11-29</div>
+										<div class="detail">
+											<span class="title">語文藝術日</span>
+											<span class="desc"><p>&nbsp;</p></span>
+										</div>
+									</div>
+								</a>
+							</li>
+						
+							<li class="gallery_item_wrap">
+								<a href="album.php?album_id=483&lang=zh">
+									<div class="g_photo">
+										<img class="owl-lazy" data-src="tmp_photo/index/11875.jpg">
+									</div>
+									<div class="g_con_block" style="display:none;">
+										<div class="mdate2">2025-11-28</div>
+										<div class="detail">
+											<span class="title">Joey教學機械人到校！AI英語學習新體驗</span>
+											<span class="desc"><p>&nbsp;</p></span>
+										</div>
+									</div>
+								</a>
+							</li>
+						
+							<li class="gallery_item_wrap">
+								<a href="album.php?album_id=480&lang=zh">
+									<div class="g_photo">
+										<img class="owl-lazy" data-src="tmp_photo/index/11841.jpg">
+									</div>
+									<div class="g_con_block" style="display:none;">
+										<div class="mdate2">2025-11-13</div>
+										<div class="detail">
+											<span class="title">學校旅行</span>
+											<span class="desc"><p>&nbsp;</p></span>
+										</div>
+									</div>
+								</a>
+							</li>
+						
+					</ul><!--carousel-->
+				</div>
+		</div>
+	
+	
+
+						<div class="col-md-6">
+				<div class="widget gallery-list">
+					<div class="slim-scroll2">
+						<div class="scrollbar-inner">
+							<div class="wrap_list">
+								<ul class="list">
+								   
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2026-03-11</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=494&lang=zh"> 
+											  <span class="title">2025-2026年度9月至3月活動花絮</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2026-03-11</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=492&lang=zh"> 
+											  <span class="title">中華文化日</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2026-03-11</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=491&lang=zh"> 
+											  <span class="title">元宵佳節_鄰舍輔導會粉嶺幼兒園到訪沙中...</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-11-29</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=485&lang=zh"> 
+											  <span class="title">語文藝術日</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-11-28</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=483&lang=zh"> 
+											  <span class="title">Joey教學機械人到校！AI英語學習新體驗...</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-11-13</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=480&lang=zh"> 
+											  <span class="title">學校旅行</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-11-10</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=479&lang=zh"> 
+											  <span class="title">第三屆VEX IQ機械人比賽_沙角盃...</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-11-05</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=476&lang=zh"> 
+											  <span class="title">沙角盃賽前工作坊</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-11-04</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=478&lang=zh"> 
+											  <span class="title">上學期課後活動</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-10-25</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=460&lang=zh"> 
+											  <span class="title">田徑訓練</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-10-24</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=459&lang=zh"> 
+											  <span class="title">匹克球同樂日</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-10-13</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=451&lang=zh"> 
+											  <span class="title">NET藝術治療课程</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-10-04</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=442&lang=zh"> 
+											  <span class="title">2526家長教師會會員大會暨中秋迎月晚會...</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-09-16</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=439&lang=zh"> 
+											  <span class="title">25/26年度運動會</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-09-13</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=441&lang=zh"> 
+											  <span class="title">學校開放日</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-09-04</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=440&lang=zh"> 
+											  <span class="title">同學挑戰夾公仔機!</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								<li>
+									  <div class="content">
+										<div class="content_left_x">
+											<small class="date">2025-09-02</small>
+										</div>
+										<div class="content_right_x">
+											<a href="album.php?refid=&albumindexPage=&album_id=437&lang=zh"> 
+											  <span class="title">製作心靈樽</span> 
+											</a>
+										</div>
+									  </div>
+								  </li>
+								 
+								  
+								</ul>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			
+</div><!-- End WIDGET NEWS -->
+
+</div>
+</div>
+ 
+
+		</section>
+
+		<section class="aos-init" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500">
+			<div class="widget video">
+	<div class="video_title_wrap pr">
+	  <div class="div_title video-title deco_line1">&nbsp;</div>
+	  <div class="more_btn"><a href="tpl.php?component_id=10&lang=zh">更多學校影片 > ></a></div>
+	</div>
+
+  <div class="wrap_content">
+    <div id="video_con">
+		<div class="owl-carousel">
+			  
+				<div class="video_item">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/6NuExtxokeE?si=adZxmfq7SQxSB_Wa" title="學生英文學習(2026-03)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>		
+			  
+				<div class="video_item">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/WCoO6GBPoKc?si=iBEZe4sMrAiKU1Q8" title="2526中華文化日" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>		
+			  
+				<div class="video_item">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/vw7diMdmp1E?si=BSXOFuM1GoTCg_kx" title="學生英文學習(2026-01)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>		
+			  
+				<div class="video_item">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7MqdjeE5jnI?si=ZbOYtcV_qLVRU2Bx" title="學生英文學習(2026-02)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>		
+			  
+		</div><!--carousel-->
+	</div>
+  </div><!-- wrap -->
+</div>		</section>
+	
+		<section class="mb4p aos-init" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500">
+			<div class="widget award">
+	<div class="award_title_wrap pr">
+		<div class="div_title award-title deco_line1">&nbsp;</div>
+	  <div class="more_btn"><a href="tpl.php?refid=-2&component_id=1&lang=zh">更多 ></a></div>
+	</div>
+
+
+ <div class="lightbox">
+	<div class="wrap_content">
+		  <ul class="list owl-carousel">
+			
+			
+			<li class="award_item_wrap">
+				<a class="award_item" href="component/popup_news.php?type=&id=2116&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'">
+					<div class="box_item">
+						<div class="thumb">
+						  <img src="/it-school/php/webcms/public/data/components/item/component_1/news_2116/thumb.jpg">
+						</div>
+						<p class="mdate2">2026-02-09</p>
+						<p class="title">2025–2026 CREATE 美國機械人公開賽（C.R.C.）亞太錦標賽榮獲 銅牌 及 專項獎</p>	
+					</div>
+				</a>
+			</li>
+			  
+			
+			<li class="award_item_wrap">
+				<a class="award_item" href="component/popup_news.php?type=&id=2115&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'">
+					<div class="box_item">
+						<div class="thumb">
+						  <img src="/it-school/php/webcms/public/data/components/item/component_1/news_2115/thumb.jpg">
+						</div>
+						<p class="mdate2">2026-02-03</p>
+						<p class="title">仁愛堂劍擊盃邀請賽」花劍－男子團體 小學五年級組亞軍</p>	
+					</div>
+				</a>
+			</li>
+			  
+			
+			<li class="award_item_wrap">
+				<a class="award_item" href="component/popup_news.php?type=&id=2114&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'">
+					<div class="box_item">
+						<div class="thumb">
+						  <img src="/it-school/php/webcms/public/data/components/item/component_1/news_2114/thumb.jpg">
+						</div>
+						<p class="mdate2">2026-01-31</p>
+						<p class="title">20260131_全港學界匹克球挑戰賽-季軍</p>	
+					</div>
+				</a>
+			</li>
+			  
+			
+			<li class="award_item_wrap">
+				<a class="award_item" href="component/popup_news.php?type=&id=2111&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'">
+					<div class="box_item">
+						<div class="thumb">
+						  <img src="/it-school/php/webcms/public/data/components/item/component_1/news_2111/thumb.jpg">
+						</div>
+						<p class="mdate2">2026-01-26</p>
+						<p class="title">2025-2026第二屆VEXIQ機械人比賽（ES）-創智盃中榮獲亞軍</p>	
+					</div>
+				</a>
+			</li>
+			  
+			
+			<li class="award_item_wrap">
+				<a class="award_item" href="component/popup_news.php?type=&id=2113&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'">
+					<div class="box_item">
+						<div class="thumb">
+						  <img src="/it-school/php/webcms/public/data/components/item/component_1/news_2113/thumb.jpg">
+						</div>
+						<p class="mdate2">2026-01-25</p>
+						<p class="title">「智慧未來・共創香港」AI X STEAM +01學生挑戰賽_「教師卓越AI應用獎」一等獎</p>	
+					</div>
+				</a>
+			</li>
+			  
+			
+			<li class="award_item_wrap">
+				<a class="award_item" href="component/popup_news.php?type=&id=2112&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'">
+					<div class="box_item">
+						<div class="thumb">
+						  <img src="/it-school/php/webcms/public/data/components/item/component_1/news_2112/thumb.jpg">
+						</div>
+						<p class="mdate2">2026-01-25</p>
+						<p class="title">「智慧未來・共創香港」AI X STEAM +01學生挑戰賽_小學組「特選一等獎」</p>	
+					</div>
+				</a>
+			</li>
+			  
+			
+			<li class="award_item_wrap">
+				<a class="award_item" href="component/popup_news.php?type=&id=2110&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'">
+					<div class="box_item">
+						<div class="thumb">
+						  <img src="/it-school/php/webcms/public/data/components/item/component_1/news_2110/thumb.jpg">
+						</div>
+						<p class="mdate2">2026-01-24</p>
+						<p class="title">25/26 上學期學業獎和學科嘉許獎</p>	
+					</div>
+				</a>
+			</li>
+			  
+			
+			<li class="award_item_wrap">
+				<a class="award_item" href="component/popup_news.php?type=&id=2109&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'">
+					<div class="box_item">
+						<div class="thumb">
+						  <img src="/it-school/php/webcms/public/data/components/item/component_1/news_2109/thumb.jpg">
+						</div>
+						<p class="mdate2">2026-01-06</p>
+						<p class="title">第二十三屆（2025-26年度）小六學術精英大挑戰</p>	
+					</div>
+				</a>
+			</li>
+			  
+			
+			<li class="award_item_wrap">
+				<a class="award_item" href="component/popup_news.php?type=&id=2106&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'">
+					<div class="box_item">
+						<div class="thumb">
+						  <img src="/it-school/php/webcms/public/data/components/item/component_1/news_2106/thumb.jpg">
+						</div>
+						<p class="mdate2">2025-11-07</p>
+						<p class="title">第八屆香港國際學生視覺藝術比賽暨展覽中獲獎</p>	
+					</div>
+				</a>
+			</li>
+			  
+			
+			<li class="award_item_wrap">
+				<a class="award_item" href="component/popup_news.php?type=&id=2089&lang=zh" tx-data="sticky" data-type="iframe" data-options="width:'90%', height:'100%'">
+					<div class="box_item">
+						<div class="thumb">
+						  <img src="/it-school/php/webcms/public/data/components/item/component_1/news_2089/thumb.jpg">
+						</div>
+						<p class="mdate2">2025-06-19</p>
+						<p class="title">第⼆⼗七屆全港中⼩學普通話演講⽐賽2025</p>	
+					</div>
+				</a>
+			</li>
+			  
+		</ul>
+	</div>
+  </div><!-- wrap -->
+</div><!-- End WIDGET NEWS -->		</section>
+		
+		<section class="aos-init" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500">
+			<div class="other_con">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="widget calendar">
+	
+  <div class="div_title calendar-title">&nbsp;</div>
+  
+  <div class="wrap_cal_table">			
+		<!-- +++ [Calendar table ] +++ -->
+		<div id="calendar">
+			<div class="row">
+				<div class="col-xl-6">
+					<div class="cal_table" id="show_cal">
+						<!-- calendar table -->
+						<div class='table_con1'><table><tr><td class='months' colspan='7'><span class='years'>2026年3月</span></span><a href='javascript:getCal("2026-2-1");' id='premonth'><i class='fa fa-angle-left'></i></a><a href='javascript:getCal("2026-4-1");' id='nextmonth'><i class='fa fa-angle-right'></i></a></td></tr></table></div><div class='table_con2'><table><tr class="weeks_bar borderb"><td class="weeks sun"><span>Sun</span></td><td class="weeks mon"><span>Mon</span></td><td class="weeks tue"><span>Tue</span></td><td class="weeks wed"><span>Wed</span></td><td class="weeks thu"><span>Thu</span></td><td class="weeks fri"><span>Fri</span></td><td class="weeks sat"><span>Sat</span></td></tr></table></div><div class='table_con3'><table><tr><td>1</td><td>2</td><td class="event"><a href="javascript:getCalDayInfo('2026-03-03','day');">3</a></td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td class="event"><a href="javascript:getCalDayInfo('2026-03-16','day');">16</a></td><td class="event"><a href="javascript:getCalDayInfo('2026-03-17','day');">17</a></td><td class="event"><a href="javascript:getCalDayInfo('2026-03-18','day');">18</a></td><td class="event"><a href="javascript:getCalDayInfo('2026-03-19','day');">19</a></td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td class="today"><a href="javascript:javascript:void(0);">26</a></td><td>27</td><td>28</td></tr><tr><td>29</td><td class="event"><a href="javascript:getCalDayInfo('2026-03-30','day');">30</a></td><td>31</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr>
+				                  <td></td>
+				                  <td></td>
+				                  <td></td>
+				                  <td></td>
+				                  <td></td>
+				                  <td></td>
+				                  <td></td>
+												 </tr></table></div>
+						<!-- end of calendar table -->
+					</div>
+				</div>
+				<div class="col-xl-6">
+					 <div class="wrap wrap_cal_list">
+					  <div class="slim-scroll2"> 
+						<div class="scrollbar-inner">
+							<div class="wrap_content">
+								<ul id="calendar_infolist" class="list lightbox">
+								  
+								  <li>
+								   <a href="component/popup_cal.php?id=388&menuid=&mode=publish" data-type="iframe" data-options="width:'90%', height:'100%'"> 
+									  <div class="mdate event">30</div>
+									  <span class="title">P1,5&6麻疹,疫苗注射 </span> 
+									</a>
+								  </li>
+								  
+								</ul>
+							</div>
+						  </div>
+					  </div>
+					</div><!-- wrap calendar_list -->
+				</div>
+			</div>	  
+			 
+		</div><!-- #calendar -->
+		<!-- ++++ [Calendar List] ++++ -->
+
+  </div><!-- wrap -->
+</div><!-- End WIDGET CALENDAR -->
+
+
+
+
+
+<script type="text/javascript">
+
+function getCal(date)
+{
+   $.get(
+      "_getCal.php",
+      {"d":date},
+      function(result){
+        $("#show_cal").html(result);
+	    getCalDayInfo(date,"month");
+	//	initCalHeight();
+	  }
+    )
+}
+
+function initCalHeight() {
+	//make sure calendar div not overflow
+	var calHeight = parseInt($('.calendar').css('height').replace('px',''));
+	var listHeight = parseInt($('#calendar_news_pane').css('height').replace('px',''));
+
+    if(calHeight > 518) {
+	     var nHeight = parseInt($('#calendar_news_pane').css('height').replace('px',''));
+	     $('#calendar_news_pane').css('height', (nHeight - (calHeight - 518)) + 'px');
+	     //$('#calendar_news_pane').css('height',(listHeight - (calHeight - 518)) + 'px');
+	} else if(listHeight < 300) {
+	     $('#calendar_news_pane').css('height', (listHeight + 518 - calHeight) + 'px');
+	}
+}
+
+function getCalDayInfo(day,type)
+{
+  $.get(
+    "_getCalDayInfo.php",
+	{"d":day,"type":type,"lang":"zh"},
+	function(data){
+	   $("#calendar_infolist").html(data);
+	   startPopup(".lightbox a");
+	   //startScrollBar(".slim-scroll");
+		if(type=='day'){
+			$(".wrap_cal_list").show();
+		}
+	}
+  );
+}
+
+function startPopup(selector) {
+	$(selector).iLightBox({
+      skin: 'metro-white',
+      path: 'horizontal',
+      mousewheel: false,
+      overlay: {
+        opacity: 0.3,
+        blur: true,
+      },
+      controls: {
+        fullscreen: false,
+        toolbar: true,
+        arrows: true,
+        mousewheel: false,
+        thumbnail: false
+      },
+    });
+}
+
+function startScrollBar(selector) {
+	$(selector).niceScroll({
+		touchbehavior:false,
+		cursorwidth:4,
+		cursorborder:"0px",
+		cursorborderradius:"5px",
+		background:"rgba(155,155,155,0.2)",
+		autohidemode:"true",
+		horizrailenabled:false,
+  });
+}
+
+</script>
+
+
+
+					</div>
+					<div class="col-md-4">
+						
+	<div class="widget links">
+		<div class="links_title_wrap pr">
+			<div class="div_title links-title">&nbsp;</div>
+		</div>
+	  <div class="wrap">
+		<div class="links_content_wrap">
+			<div class="wrap_content owl-carousel">
+			   
+			   <div class="links_item has_img">
+				   <a href="https://www.facebook.com/STKCPS.IT" target='_blank' title='Facebook'><img src="/it-school/php/webcms/public/data/banner/165.jpg" alt="Facebook"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://www.youtube.com/channel/UCrDcPNNwUMhU_SLbjeqQF2A/videos" target='_blank' title='Youtube'><img src="/it-school/php/webcms/public/data/banner/166.jpg" alt="Youtube"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://space.bilibili.com/1439795162?spm_id_from=333.788.b_765f7570696e666f.2" target='_blank' title='Bilibili'><img src="/it-school/php/webcms/public/data/banner/167.jpg" alt="Bilibili"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://portal.office.com/" target='_blank' title='Office 365'><img src="/it-school/php/webcms/public/data/banner/117.jpg" alt="Office 365"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://web.seesaw.me/" target='_blank' title='SEESAW'><img src="/it-school/php/webcms/public/data/banner/164.jpg" alt="SEESAW"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://fireflies.chiculture.org.hk/" target='_blank' title='篇篇流螢'><img src="/it-school/php/webcms/public/data/banner/168.png" alt="篇篇流螢"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://www.mers.hk/login/gateway/pchin_st.php" target='_blank' title='chinese'><img src="/it-school/php/webcms/public/data/banner/160.jpg" alt="chinese"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="http://plet.ilongman.com/" target='_blank' title='朗文電子書'><img src="/it-school/php/webcms/public/data/banner/158.jpg" alt="朗文電子書"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://www.mers.hk/login/gateway/pmath_st.php" target='_blank' title='現代數學'><img src="/it-school/php/webcms/public/data/banner/162.jpg" alt="現代數學"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://ephgs.ephhk.com/student/" target='_blank' title='今日常識'><img src="/it-school/php/webcms/public/data/banner/163.jpg" alt="今日常識"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://www.learnlex.com/mad-next/#/login" target='_blank' title='Learnlex'><img src="/it-school/php/webcms/public/data/banner/135.jpg" alt="Learnlex"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://e.star.hkedcity.net" target='_blank' title='教城STAR'><img src="/it-school/php/webcms/public/data/banner/129.jpg" alt="教城STAR"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://chinese.i-learner.com.hk/" target='_blank' title='智愛中文平台'><img src="/it-school/php/webcms/public/data/banner/169.jpg" alt="智愛中文平台"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://www.i-learner.com.hk/login2018.php" target='_blank' title='i-learner智愛英文平台'><img src="/it-school/php/webcms/public/data/banner/170.jpg" alt="i-learner智愛英文平台"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://www.hkedcity.net/ereadscheme/" target='_blank' title='e悅讀'><img src="/it-school/php/webcms/public/data/banner/157.jpg" alt="e悅讀"/></a>
+			   </div>
+			  
+			</div>
+		</div>
+	  </div><!-- wrap -->
+	</div><!-- [END LINKS] -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+	
+		<!-- =====================[ Footer ]====================== --> 
+		<section class="m_full_width">
+			<footer id="footer">
+	<div class="bg">
+		<div class="container pr"> <!-- .container if fixed width  -->
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="footer_wrap">
+						<div class="footer_logo footer_table_cell">
+							<img src="/it-school/php/webcms/public/data/school_logo_mobile.jpg" alt="logo">
+						</div>
+					</div>		
+				</div>
+				<div class="col-lg-5">
+					<div class="footer_wrap">
+						<div class="footer_logo footer_table_cell">
+							<div class="detail2">
+								<div class="schooladdress row"><a class="map col-md-6 order-md-2" href="https://goo.gl/maps/PbQZBnoGpUs" target="_blank"><img src="/it-school/php/webcms/theme/back/zh/images/map_btn.png" alt="map"></a><div class="col-md-6 order-md-1">地址：新界沙頭角沙頭角墟第四區</div> </div>
+								<div class="schooladdress">Address：Sha Tau Kok Hui, Sha Tau Kok, New Territories</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="footer_wrap">
+						<div class="footer_logo footer_table_cell">
+							<div class="detail2">
+								<div class="display_inline_block tel_block schooltel">電話：2674 9080</div>
+								<div class="display_inline_block tel_block">傳真：2659 2055</div>
+								<div class="display_inline_block_x tel_block schoolemail">電郵：<a href="mailto:office@stkcps.edu.hk" class="email">office@stkcps.edu.hk</a></div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>	
+	</div> <!-- wrap, container footer -->
+		
+
+		<div class="bottomrow">
+		  <div class="text_center">
+				<p class="copyright_text"> Copyright © by 2023 Sha Tau Kok Central Primary School. All Rights Reserved. Powered by <a class="powered" target="_blank" href="https://myid.com.hk">myID ltd</a>.</p>
+		  </div>
+		</div><!-- copyright -->
+	  
+</footer>
+
+<!-- Back to top button -->
+<div class="back-to-top">
+  <a class="go-top" href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+
+<!-- ===========Load JS at bottom====================== -->
+<script>var code="Google Anaiytics Code";</script>
+<script src="/it-school/php/webcms/theme/back/zh/js/jquery.min.js"></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/bootstrap.bundle.min.js"></script>
+<script src='/it-school/php/webcms/theme/back/zh/js/MainNav.min.js'></script><!-- Navigation -->
+  
+<!-- lightbox  -->
+<script src="/it-school/php/webcms/theme/back/zh/js/lightbox/jquery.requestAnimationFrame.js" ></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/lightbox/jquery.mousewheel.js" ></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/lightbox/ilightbox.packed.js"></script>
+
+<!--<script src="/it-school/php/webcms/theme/back/zh/js/plugin/jquery.nicescroll.min.js"></script>--><!-- Mini Scroll Bar -->
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/jquery.scrollbar.js"></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/owl.carousel.min.js"></script><!-- carousel -->
+
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/grids.min.js"></script><!-- equal height --> 
+
+<!-- scroll text  - Index only -->
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/jquery.marquee.min.js" ></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/youtube.js" ></script>
+
+<!--homepage video popup-->
+<link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/js/popup/videopopup.css?v=2" type="text/css" />
+<script src="/it-school/php/webcms/theme/back/zh/js/popup/videopopup.js?v=2"></script>
+
+<script src="/it-school/php/webcms/theme/back/zh/js/cp-lightimg.js?v=3"></script>
+
+<script type="text/javascript">
+	$(function () {
+		$(document).on("click", ".template-0 img", function () {
+			var j = $(this).parent('a').attr('href');
+			if(j==null){
+				$(this).cpLightimg();
+			}
+		});
+	});
+
+	$(document).ready(function() {	
+		$('#vidBox').VideoPopUp({
+			backgroundColor: "#17212a",
+			opener: "video1",
+			idvideo: "v1",
+			pausevideo: false
+		});
+	});
+  
+</script>
+
+
+
+<script>
+	String.prototype.endWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+			return false;
+		if(this.substring(this.length-s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+
+	String.prototype.startWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+		return false;
+		if(this.substr(0,s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+		$(document).ready(function() {
+		$('.logo img').each(function(i, item) {
+			if(item.src.endWith('/school_logo.jpg')) {
+				$(item).css('width','autopx');
+				$(item).css('height','autopx');
+			}
+		});
+	});
+	
+	$('.breadcrumb li a').each(function(){
+		if($(this).attr('href') == 'javascript:void(0);') {
+			$(this).css('cursor', 'text');
+		}
+	});
+</script>		</section>
+	
+  
+</div><!-- END index -->
+</div>
+	 </div>
+   </div> <!-- [END outer_wrapper] -->
+
+<!-- POPUP LIGHTBOX -->
+
+<!-- ===========Load JS at bottom - Index only====================== -->
+<script src="/it-school/php/webcms/theme/back/zh/js/cms-index.js?v=1774509364"></script><!-- [!] CMS index JS -->
+<script src="/it-school/php/webcms/theme/back/zh/js/cms-header.js?v=1774509364"></script><!-- CMS header JS -->
+
+<script src="/it-school/php/webcms/theme/back/zh/js/aos/aos.js?v=1774509364"></script><!-- CMS header JS -->
+<script>
+function initPassBtn(el, type)
+ {
+  if(typeof el == "string") {
+   el = document.getElementById(el)
+  }
+  
+  if(null != el && '1' == el.getAttribute('needPass'))
+  {
+   el.removeAttribute('data-toggle','');
+   // el.setAttribute('data-type','iframe');
+   // el.setAttribute('data-options','width:\'80%\', height:\'100%\'');
+   el[i].href = 'modulePass.php?passName=' + type + '&groupName=' + el[i].innerHTML;
+   // initiLightBox(el);
+  }
+ }
+
+
+ function initPassBtn_class(el, type)
+ {
+   
+  if(typeof el == "string") {
+   el = document.getElementsByClassName(el)
+  }
+  for(var i=0;i<el.length;i++){
+  if(null != el[i] && '1' == el[i].getAttribute('needPass'))
+    {
+    el[i].removeAttribute('data-toggle','');
+    // el[i].setAttribute('data-type','iframe');
+    // el[i].setAttribute('data-options','width:\'80%\', height:\'100%\'');
+    el[i].href = 'modulePass.php?passName=' + type + '&groupName=' + el[i].innerHTML;
+    // initiLightBox(el[i]);
+    }
+  }
+ }
+ 
+ var homeworkBtn = document.getElementsByClassName('btn_homework');
+ initPassBtn_class(homeworkBtn, 'homeworkPass');
+	
+
+</script>
+
+</body>
+</html>
+<script type="text/javascript">
+	String.prototype.endWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+			return false;
+		if(this.substring(this.length-s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+
+	String.prototype.startWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+		return false;
+		if(this.substr(0,s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+
+	$(document).ready(function() {
+		$('.news_list li img').each(function(i, item) {
+			if(item.src.endWith('/school_footer_logo.jpg')) {
+				$(item).css('height','86%');
+				$(item).css('margin','10px auto 0 auto');
+				$(item).css('opacity','0.5');
+			}
+		});
+			});
+</script>

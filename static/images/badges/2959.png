@@ -1,9 +1,919 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>404 Not Found</title>
-</head><body>
-<h1>Not Found</h1>
-<p>The requested URL /apple-touch-icon.png was not found on this server.</p>
-<hr>
-<address>Apache/2.2.15 (CentOS) Server at skhhcps.edu.hk Port 443</address>
-</body></html>
+
+
+
+<!DOCTYPE html>
+<html lang="zh-hk">
+<head>
+  <!-- =====================[META]====================== -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Title名稱 = 校名 + | + 頁面名稱 -->
+  <title>聖公會聖十架小學</title>
+
+  <!-- Title for app - -->
+  <meta name="apple-mobile-web-app-title" content="聖公會聖十架小學">
+
+  <!-- 使用ADMIN 設定修改 meta"description" 及"keyword" 內容 -->
+  <meta name="description" content="SKH Holy Cross Primary School | 聖公會聖十架小學" />
+  <meta name="keyword" content="CMS, School, Hong Kong, Primary School, Secondary School, Education, Learning, 學校, 香港, 小學, 教育, myIT-School, myID, 聖公會聖十架小學" />
+  <!-- =====================[CSS STYLE SHEET]====================== -->
+
+  <!-- Basic Style - Bootstrap, fontawesome , main style -->
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/font.css" type="text/css" />
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/cms-gallery.css" type="text/css" />
+  
+  <link rel="stylesheet"  href="/it-school/php/webcms/theme/back/zh/css/ilightbox.css" type="text/css"/><!-- Lightbox -->
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/owl.carousel.css"><!-- carousel -->
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/youtube.css"><!-- Youtube -->
+
+  <!-- =====================[STEEING FOR MOBILE]====================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" /> 
+   
+   <!-- Hide status bar - -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes"><!-- fullscreen -->
+  <meta name="format-detection" content="telephone=no">
+   
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/it-school/php/webcms/theme/back/zh/images/ico/152.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/it-school/php/webcms/theme/back/zh/images/ico/144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/it-school/php/webcms/theme/back/zh/images/ico/114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/it-school/php/webcms/theme/back/zh/images/ico/72.png">
+  <link rel="apple-touch-icon-precomposed" href="/it-school/php/webcms/theme/back/zh/images/ico/57.png">
+  <link rel="shortcut icon" href="/it-school/php/webcms/theme/back/zh/images/ico/favicon.png">
+   
+  <!-- Prevent text size adjustment on orientation change. -->
+  <style>html { -webkit-text-size-adjust: 100%; }</style>
+  <style>html { -webkit-text-size-adjust: 100%; }
+  #background {
+            display: none;
+            position: fixed;
+            z-index:999999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            pointer-events: all;
+        }
+
+        #div1 {
+            background:#eeeeee;
+            width: 30%;
+            z-index: 1;
+            margin: 12% auto;
+            overflow: auto;
+        }
+
+        #close span {
+            color: white;
+            cursor: pointer;
+            padding-right: 15px;
+        }
+
+        #div2 {
+            background:#eeeeee;
+            margin: auto;
+            height: 120px;
+            padding: 0 20px;
+        }
+
+        #close {
+            padding: 5px;
+            background: #97dff8;
+        }
+
+        #close-button {
+            float: right;
+            font-size: 30px;
+        }
+
+        #foot {
+            padding: 5px 0;
+            text-align: center;
+            background: #97dff8;
+            color: white;
+        }
+  </style>
+
+<!-- =====================[IE Hack!!!] ===============================-->
+  <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
+
+    <!--[if lte IE 8]>
+  <script src="js/en_US.js"></script>
+  <script src="js/warning.js"></script>
+  <script>
+    window.onload=function(){
+      ie6Warning(function() {
+        var languageMap = {};
+  
+        if(window.IE6WarningLocalizations) {
+          languageMap = window.IE6WarningLocalizations;
+        }  
+        return {
+          imgPath: "images", 
+          localizations:  languageMap
+        };
+      });
+    };
+  </script>
+  <![endif]-->
+
+<!--include core js and css file-->
+
+  <!--[!] 主頁用CSS : Style for index only-->
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/cms-index.css" type="text/css" />
+
+</head>
+
+<body data-target="#Navi" class="chi"><!-- [!] 中英文CSS轉換 英文版 class = eng -->
+    
+<div id="index" class="body_wrap body_bg"><!-- [!] ID=INDEX -->
+<div id="background" class="back">
+    <div id="div1" class="content">
+        <div id="close">
+            <span id="close-button">x</span>
+            <h4>登入失敗</h4>
+        </div>
+        <div id="div2">
+            <h5>用戶名或密碼錯誤，請重新輸入！</h5>
+        </div>
+        <div id="foot"><button id="ok-btn" style="color:black;width:80px;height:40px;">確認</button></div>
+    </div>
+</div>
+    <!-- ==========================[ HEADER]============================== --> 
+    <!-- HEADER : navi and slideshow-->
+    
+<!-- =========================[ HEADER ]============================== --> 
+<header id="header" class="header-wrap " >
+  <!-- .container =fixed w / container-fluid =Full w  -->
+
+
+
+  <div class="wrap container">
+    <!-- =========[SCHOOL LOGO] =======-->
+      <div class="logo">
+        <a href="/it-school/php/webcms/public/mainpage/main.php3?lang=zh">
+        <img class="hidden-xs" src="/it-school/php/webcms/public/data/school_logo.jpg" alt="">
+          <img class="visible-xs" src="/it-school/php/webcms/public/data/school_logo_mobile.jpg" alt=""><!-- @2x logo for mobile -->
+        </a>
+        <h4>myIT-School</h4>
+      </div><!-- LOGO -->
+
+
+    <!-- ========[Slide Banner]========= -->
+    <div id="header_banner" class="owl-carousel">
+        
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/205.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/205.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/188.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/188.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/189.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/189.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/190.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/190.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/191.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/191.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/192.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/192.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/193.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/193.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/194.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/194.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/195.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/195.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/196.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/196.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/197.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/197.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/198.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/198.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/199.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/199.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/200.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/200.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/201.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/201.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/202.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/202.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/203.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/203.jpg">
+      </a>
+   </div>
+
+   <div>
+      <a href="javascript:void(0);" style="cursor:default;" target="_self" >
+         <img class="owl-lazy"
+             data-src="/it-school/php/webcms/public/data/top_banner/204.jpg"
+             data-src-retina="/it-school/php/webcms/public/data/top_banner/204.jpg">
+      </a>
+   </div>
+
+    </div><!-- header_banner -->
+
+    <!-- ========[MAIN NAVIGATION]======== -->
+    <nav id="Navi">
+        <div id="MainNav1" class="MainNav" > 
+  <!-- <div class="lang hidden-xs"><a class="chi">ENG</a></div> -->
+  <div class="MainNav_wrapper" >
+     <ul class='MainNav_menu' style='height:52px'><li class="MainNav_collapse  MainNav_collapse_noactive"><span><i class="fa fa-bars"></i>menu</span></li><li class="btn01"><a><span>我們的學校</span></a><div class="dropdown"><ul class="sub"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2692&mode=published&lang=zh" >學校發展計劃     </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2691&mode=published&lang=zh" >校訊                  </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2697&mode=published&lang=zh" >學校周年計劃                 </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2694&mode=published&lang=zh" >綠色學校            </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2693&mode=published&lang=zh" >學校報告                 </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2781&mode=published&lang=zh" >傳媒報道           </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2879&mode=published&lang=zh" >聯絡我們  </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2892&mode=published&lang=zh" >環保活動  </a></li></ul></div></li><li class="btn02"><a><span>學生成長  </span></a><div class="dropdown"><ul class="sub"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2695&mode=published&lang=zh" >宗教組                       </a></li></ul></div></li><li class="btn03"><a><span>學生成長 </span></a><div class="dropdown"><ul class="sub"><li class="parent"><span>價值觀教育組 </span><ul class="sub_lv"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2922&mode=published&lang=zh" >德育課           </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2923&mode=published&lang=zh" >國民教育        </a></li></ul></li><li class="parent"><span>訓輔組  </span><ul class="sub_lv"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2926&mode=published&lang=zh" >「童」快樂七式   </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2927&mode=published&lang=zh" >「童」享正能量  性格強項抗疫24式  </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2928&mode=published&lang=zh" >「童」心看升中   </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2929&mode=published&lang=zh" >「童」心話你知   </a></li></ul></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2919&mode=published&lang=zh" >學生支援組    </a></li></ul></div></li><li class="btn04"><a class=""  href="/it-school/php/webcms/public/index.php3?refid=702&mode=published&lang=zh" ><span>校園相簿     </span></a></li><li class="btn05"><a><span>課外活動           </span></a><div class="dropdown"><ul class="sub"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2872&mode=published&lang=zh" >資優教育   </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2873&mode=published&lang=zh" >多元活動       </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2874&mode=published&lang=zh" >學生成就                     </a></li></ul></div></li><li class="btn06"><a><span>學科點滴  </span></a><div class="dropdown"><ul class="sub"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2704&mode=published&lang=zh" >中文科                                                        </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2705&mode=published&lang=zh" >普通話科                                         </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2706&mode=published&lang=zh" >英文科                                                                                                                          </a></li><li class="parent"><span>數學科 </span><ul class="sub_lv"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2786&mode=published&lang=zh" >數學科                             </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2939&mode=published&lang=zh" >2025-2026數學科獲獎資訊            </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2931&mode=published&lang=zh" >2024-2025數學科獲獎資訊                    </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2785&mode=published&lang=zh" >2023-2024數學科獲獎資訊                        </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2913&mode=published&lang=zh" >2022-2023數學科獲獎資訊                          </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2904&mode=published&lang=zh" >2021-2022數學科獲獎資訊                </a></li></ul></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2708&mode=published&lang=zh" >科學科      </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2714&mode=published&lang=zh" >人文科 </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2709&mode=published&lang=zh" >宗教科                                 </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2711&mode=published&lang=zh" >體育科                  </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2712&mode=published&lang=zh" >電腦科         </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2905&mode=published&lang=zh" >音樂科                    </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2713&mode=published&lang=zh" >視覺藝術科         </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2837&mode=published&lang=zh" >環保教育         </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2716&mode=published&lang=zh" >家課政策        </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2875&mode=published&lang=zh" >評估政策      </a></li></ul></div></li><li class="btn07"><a><span>十架教師  </span></a><div class="dropdown"><ul class="sub"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2717&mode=published&lang=zh" >教師團隊        </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2718&mode=published&lang=zh" >教師專業發展    </a></li></ul></div></li><li class="btn08"><a><span>十架頻道       </span></a><div class="dropdown"><ul class="sub"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2754&mode=published&lang=zh" >e-Dict                               </a></li><li class="parent"><span>校園電視台    </span><ul class="sub_lv"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2777&mode=published&lang=zh" >中文科   </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2771&mode=published&lang=zh" >數學科        </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2770&mode=published&lang=zh" >普通話科     </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2773&mode=published&lang=zh" >德育及公民教育   </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2766&mode=published&lang=zh" >Lego Stop Motion     </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2940&mode=published&lang=zh" >校園電視台       </a></li></ul></li></ul></div></li><li class="btn09 "><a><span>家長教師會</span></a><div class="dropdown"><ul class="sub"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2719&mode=published&lang=zh" >簡介及會章         </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2720&mode=published&lang=zh" >活動剪影                               </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2876&mode=published&lang=zh" >PTA會訊          </a></li></ul></div></li><li class="btn10"><a><span>校友會</span></a><div class="dropdown"><ul class="sub"><li class="parent"><span>校友會聯誼活動   </span><ul class="sub_lv"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2795&mode=published&lang=zh" >告別校園夜 2018    </a></li></ul></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2937&mode=published&lang=zh" >校友會通訊          </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2930&mode=published&lang=zh" >第一屆校友會常務委員會選舉   </a></li></ul></div></li><li class="btn11"><a><span>圖書館</span></a><div class="dropdown"><ul class="sub"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2724&mode=published&lang=zh" >開放時間及規則         </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2725&mode=published&lang=zh" >閱讀獎勵計劃                             </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2726&mode=published&lang=zh" >中文科好書推介  </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2727&mode=published&lang=zh" >英文科好書推薦  </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2728&mode=published&lang=zh" >圖書分享短片       </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2729&mode=published&lang=zh" >圖書館活動                                                                   </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2884&mode=published&lang=zh" >常用連結                                          </a></li></ul></div></li><li class="btn12"><a><span>入學須知  </span></a><div class="dropdown"><ul class="sub"><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2877&mode=published&lang=zh" >入學申請              </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2878&mode=published&lang=zh" >派位流程及Q&A                </a></li><li><a class=""  href="/it-school/php/webcms/public/index.php3?refid=2901&mode=published&lang=zh" >升小一後備生申請須知   </a></li></ul></div></li></ul>
+  </div><!-- / MainNav Container -->
+</div><!-- / MainNav -->
+
+<!-- 手機版語言選擇 -->
+<!-- <div class="visable-xs lang-mobile">
+  
+  <select class="form-control">
+    <option>中文</option>
+    <option>ENGLISH</option>
+  </select>
+</div> -->
+    </nav>
+  <div class="grass hidden-xs"></div>
+   <div class="char hidden-xs"></div>
+   <div class="rainbow hidden-xs"></div>
+  </div><!-- wrap -->
+<div class="bg">
+  <div class="tree"></div>
+</div>
+
+
+</header> <!-- / header -->
+    <!-- =======================[ Contents - Widget]======================== --> 
+    <div id="widgets" class="container"> <!-- .container if fixed width  -->
+
+      <section  class="content_wrap">
+
+        <!-- ========================================[ROW 1]-->
+        <div class="widget_wrap row row1">
+
+            <!--===== [COL1] =====-->
+            <div class="col-sm-8 Col-1">
+              
+               <!--  WIDGET - NEWS -->
+               <div class="widget news ">
+
+  <div class="div_title news-title">
+    <i></i>
+    <span></span>
+    <div class="more"><a href="tpl.php?refid=0&component_id=1&lang=zh"></a></div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="wrap wrap-news">
+    <div  class="slim-scroll"> 
+      <ul class="list lightbox">
+      <li>暫時沒有相關資料</li>
+      </ul>
+    </div>
+  </div><!-- wrap -->
+</div><!-- End WIDGET NEWS -->               <!--  WIDGET - AWARD  -->
+               <div class="widget award ">
+
+  <div class="div_title">
+    <i></i>
+    <span></span>
+    <div class="more"><a href="tpl.php?refid=-2&component_id=1&lang=zh"></a></div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="wrap wrap-news">
+    <div  class="slim-scroll"> 
+      <ul class="list lightbox">
+      <li>暫時沒有相關資料</li>
+      </ul>
+    </div>
+  </div><!-- wrap -->
+</div><!-- End WIDGET AWARD -->               <div class="col-sm-6 Col-1-1">
+                   <!--  WIDGET - MOTTO  -->
+                   
+
+<div class="widget motto">
+    <div class="div_title">
+      <i></i>
+      <span></span>
+    </div>
+    <!--<div class="motto_content">
+      <p>為信的人，一切都是可能的  . 為信的人，一切都是可能的 <br>(馬9:23)</p>
+    </div>-->
+    <div class="wrap">
+        <div class="slim-scroll">
+              <div class="content">
+              <li>暫時沒有相關資料</li>
+              </div>
+            </div>
+      </div>
+</div><!-- motto -->               </div>
+               <div class="col-sm-6 Col-1-2">
+                   <!-- WIDGET - LOGIN -->
+                   <div class="widget login  ">
+
+  <div class="div_title">
+      <i></i>
+      <span></span>
+  </div>
+
+  <div  class="wrap">
+  <form name ="loginform" action="https://eclass.skhhcps.edu.hk/login.php" method="post" target="_blank" autocomplete="off">
+      <div class="form-wrap">
+        <div class="id-wrap">
+        <label class="sr-only" for="userName">登入名稱</label>
+          <div class="login_id_input">
+          <input type="text" id="UserLogin" name="UserLogin" placeholder="登入名稱"/>
+          </div>
+        </div>
+
+        <div class="pw-wrap">
+        <label class="sr-only" for="password">登入密碼</label>
+          <div class="login_pw_input">
+          <input type="password" id="UserPassword" name="UserPassword" placeholder="登入密碼" />
+          </div>
+        </div>
+      </div><!-- form-wrap-->
+      </form>
+       <a href="javascript:doEClassLogin();" class="login_btn"><div></div></a>
+  </div><!-- Login wrap -->
+</div><!--end intranet login widget-->
+
+<script type="text/javascript" src="../../../../js/md5.js"></script>
+<script type="text/javascript">
+		document.onkeydown = function(e){
+			var e=e || event;
+			var currKey=e.keyCode||e.which||e.charCode;
+			if(currKey == 13) {
+				doEClassLogin();
+			}
+		};
+function doEClassLogin() {
+				document.forms["loginform"].submit();
+				document.loginform.UserLogin.value="";
+				document.loginform.UserPassword.value="";				
+			
+		}
+		
+</script>
+<script type="text/javascript" src="../../../../js/md5.js"></script>
+<script type="text/javascript">
+		function doLogin() {
+			if (validate()) {
+				document.forms["loginform"].submit();
+				document.loginform.userloginid.value = "";
+				document.loginform.password.value = "";
+			}
+		}
+		
+		function validate(){ 
+			thisform = document.loginform;	 
+			v =true; 
+			if (thisform.userloginid.value == ""){ 
+				v = false;	
+				thisform.userloginid.focus();
+			} 
+			if (v && thisform.password.value ==	""){ 
+				v = false;	
+				thisform.password.focus();
+			}
+			if (v) {
+				thisform.elements["password"].value = MD5(thisform.elements["password"].value);
+			}	
+			
+			return v;
+		}
+		
+		document.onkeydown = function(e){
+			var e=e || event;
+			var currKey=e.keyCode||e.which||e.charCode;
+			if(currKey == 13) {
+				doEClassLogin();
+			}
+		};
+</script>                </div>
+            </div><!-- Col1 -->
+            <!--===== [COL3] =====-->
+            <div class="col-sm-4  Col-2">
+              <!-- WIDGET - CALENDAR -->
+              <div class="widget calendar">
+
+  <div class="div_title">
+    <i></i>
+    <span></span>
+  </div>
+
+  <div class="wrap_cal_table">
+    <!-- +++ [Calendar table ] +++ -->
+    <div id="calendar">
+    <div class="cal_table" id="show_cal">
+        <!-- calendar table -->
+        <table><tr><td class='months' colspan='7'><span class='years'>March&nbsp;2026</span><a href='javascript:getCal("2026-2-1");' id='premonth'><i class='fa fa-chevron-left'></i></a><a href='javascript:getCal("2026-4-1");' id='nextmonth'><i class='fa fa-chevron-right'></i></a></td></tr><tr class="weeks_bar"><td class="weeks"> Sun</td><td class="weeks"> Mon</td><td class="weeks"> Tue</td><td class="weeks"> Wed</td><td class="weeks"> Thu</td><td class="weeks"> Fri</td><td class="weeks"> Sat</td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td class="event"><a href="javascript:getCalDayInfo('2026-03-12','day');">12</a></td><td class="event"><a href="javascript:getCalDayInfo('2026-03-13','day');">13</a></td><td class="event"><a href="javascript:getCalDayInfo('2026-03-14','day');">14</a></td></tr><tr><td class="event"><a href="javascript:getCalDayInfo('2026-03-15','day');">15</a></td><td class="event"><a href="javascript:getCalDayInfo('2026-03-16','day');">16</a></td><td class="event"><a href="javascript:getCalDayInfo('2026-03-17','day');">17</a></td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td class="event"><a href="javascript:getCalDayInfo('2026-03-23','day');">23</a></td><td class="event"><a href="javascript:getCalDayInfo('2026-03-24','day');">24</a></td><td class="event"><a href="javascript:getCalDayInfo('2026-03-25','day');">25</a></td><td class="today event"><a href="javascript:getCalDayInfo('2026-03-26','day');">26</a></td><td class="event"><a href="javascript:getCalDayInfo('2026-03-27','day');">27</a></td><td>28</td></tr><tr><td>29</td><td>30</td><td class="holiday"><a href="javascript:getCalDayInfo('2026-03-31','day');">31</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr>
+				                  <td></td>
+				                  <td></td>
+				                  <td></td>
+				                  <td></td>
+				                  <td></td>
+				                  <td></td>
+				                  <td></td>
+												 </tr></table>
+      </div>
+      <!-- end of calendar table -->
+    </div><!-- #calendar -->
+
+    <!-- ++++ [Calendar List] ++++ -->
+    <div class="wrap wrap_cal_list">
+    <div id="calendar_news_pane"  class="slim-scroll"> 
+        <ul id="calendar_infolist" class="list lightbox">
+        <li>暫時沒有相關資料</li>
+        </ul>
+      </div>
+    </div><!-- wrap calendar_list -->
+
+  </div><!-- wrap -->
+</div><!-- End WIDGET CALENDAR -->
+
+
+
+
+
+<script type="text/javascript">
+
+function getCal(date)
+{
+   $.get(
+      "_getCal.php",
+      {"d":date},
+      function(result){
+        $("#show_cal").html(result);
+	    getCalDayInfo(date,"month");
+	//	initCalHeight();
+	  }
+    )
+}
+
+function initCalHeight() {
+	//make sure calendar div not overflow
+	var calHeight = parseInt($('.calendar').css('height').replace('px',''));
+	var listHeight = parseInt($('#calendar_news_pane').css('height').replace('px',''));
+
+    if(calHeight > 518) {
+	     var nHeight = parseInt($('#calendar_news_pane').css('height').replace('px',''));
+	     $('#calendar_news_pane').css('height', (nHeight - (calHeight - 518)) + 'px');
+	     //$('#calendar_news_pane').css('height',(listHeight - (calHeight - 518)) + 'px');
+	} else if(listHeight < 300) {
+	     $('#calendar_news_pane').css('height', (listHeight + 518 - calHeight) + 'px');
+	}
+}
+
+function getCalDayInfo(day,type)
+{
+  $.get(
+    "_getCalDayInfo.php",
+	{"d":day,"type":type,"lang":"zh"},
+	function(data){
+	   $("#calendar_infolist").html(data);
+	   startPopup(".lightbox a");
+	   startScrollBar(".slim-scroll");
+	}
+  );
+}
+
+function startPopup(selector) {
+	$(selector).iLightBox({
+      skin: 'metro-white',
+      path: 'horizontal',
+      mousewheel: false,
+      overlay: {
+        opacity: 0.3,
+        blur: true,
+      },
+      controls: {
+        fullscreen: false,
+        toolbar: true,
+        arrows: true,
+        mousewheel: false,
+        thumbnail: false
+      },
+    });
+}
+
+function startScrollBar(selector) {
+	$(selector).niceScroll({
+		touchbehavior:false,
+		cursorwidth:4,
+		cursorborder:"0px",
+		cursorborderradius:"5px",
+		background:"rgba(155,155,155,0.2)",
+		autohidemode:"true",
+		horizrailenabled:false,
+  });
+}
+
+</script>
+
+
+
+              <!-- ==========[FACEBOOK]========== -->
+              
+<div class="widget facebook m-t">
+  <div class="wrap">
+  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fskhholycross&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1595900960666391" width="100%" height="411" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+  </div><!-- wrap -->
+</div><!-- END FACEBOOK-->
+            </div><!-- Col3 -->
+          
+        </div><!--ROW 01-->
+
+        
+        <!-- ========================================[ROW 2]-->
+        <div class="widget_wrap row row2">
+
+          <div class="col-sm-12 Col-1">
+
+            <!-- LINKS -->
+            <div class="widget links">
+  <div class="div_title">
+    <i></i>
+    <span></span>
+    </div>
+  <div class="wrap">
+    <div  class="slim-scroll">
+    
+    </div><!-- scroll -->
+  </div><!-- wrap -->
+</div><!-- [END LINKS] -->
+          </div><!-- COL1 -->
+
+        </div><!--ROW 02-->
+        <div class="clearfix"></div>
+      </section> <!-- [END widgets] -->
+
+    </div> <!-- wrap, container content -->
+
+
+    <!-- =====================[ Footer ]====================== --> 
+    <footer id="footer">
+  <div class="container"> <!-- .container if fixed width  -->
+ 
+    <div class="row row-footer">
+      <div class=" contact">
+        <div class="school"><strong>聖公會聖十架小學</strong></div>
+        <div class="address">
+        地址: 九龍城沐虹街9號
+          <a class="map" href="https://goo.gl/maps/Vbngym5KC9K2" target="_blank">
+            <span></span>
+          </a>
+        </div>
+        <div class="phone">
+        <span>電話：2320 4931 </span>
+          <span>傳真：2327 7104</span>
+          <span>電郵：<a href="mailto:info@skhhcps.edu.hk"> info@skhhcps.edu.hk</a></span>
+
+
+        </div>
+      </div><!-- contact -->
+
+      <div class="col-sm-8 copyright">
+        <span>Copyright © by 2018 S.K.H. Holy Cross Primary School. All Rights Reserved.</span><br>
+      </div><!-- copyright -->
+      <div class="col-sm-4 myid">
+            <span>Powered by
+               <a class="powered" href="http://myit-school.net">myID ltd.</a>
+             </span>
+      </div>
+    </div><!-- row -->
+
+  </div> <!-- wrap, container footer -->
+</footer>
+
+<!-- Back to top button -->
+<div class="back-to-top">
+  <a class="go-top" href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<!-- ===========Load JS at bottom====================== -->
+<script>var code="Google Anaiytics Code";</script>
+<script src="/it-school/php/webcms/theme/back/zh/js/jquery.min.js"></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/bootstrap.min.js"></script>
+<script src='/it-school/php/webcms/theme/back/zh/js/MainNav.min.js'></script><!-- Navigation -->
+  
+<!-- lightbox  -->
+<script src="/it-school/php/webcms/theme/back/zh/js/lightbox/jquery.requestAnimationFrame.js" ></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/lightbox/jquery.mousewheel.js" ></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/lightbox/ilightbox.packed.js"></script>
+
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/jquery.nicescroll.min.js"></script><!-- Mini Scroll Bar -->
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/owl.carousel.min.js"></script><!-- carousel -->
+
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/grids.min.js"></script><!-- equal height --> 
+
+<!-- scroll text  - Index only -->
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/jquery.marquee.min.js" ></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/youtube.js" ></script>
+<!-- <script>
+    var btn = document.getElementsByClassName("login_btn")[0];
+    var div = document.getElementById('background');
+    var close = document.getElementById('close-button');
+    var ok = document.getElementById('ok-btn');
+    btn.onclick = function show() {
+        div.style.display = "block";
+    }
+
+    close.onclick = function close() {
+        div.style.display = "none";
+    }
+    ok.onclick = function close() {
+        div.style.display = "none";
+    }
+    window.onclick = function close(e) {
+        if (e.target == div) {
+            div.style.display = "none";
+        }
+    }
+</script> -->
+
+
+<script>
+	String.prototype.endWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+			return false;
+		if(this.substring(this.length-s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+
+	String.prototype.startWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+		return false;
+		if(this.substr(0,s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+		$(document).ready(function() {
+		$('.logo img').each(function(i, item) {
+			if(item.src.endWith('/school_logo.jpg')) {
+				$(item).css('width','autopx');
+				$(item).css('height','autopx');
+			}
+		});
+	});
+	
+	$('.breadcrumb li a').each(function(){
+		if($(this).attr('href') == 'javascript:void(0);') {
+			$(this).css('cursor', 'text');
+		}
+	});
+</script>
+
+   
+</div><!-- END index -->
+<!-- ===========Load JS at bottom - Index only====================== -->
+<script src="/it-school/php/webcms/theme/back/zh/js/cms-index.js"></script><!-- [!] CMS index JS -->
+<script src="/it-school/php/webcms/theme/back/zh/js/cms-header.js"></script><!-- CMS header JS -->
+
+
+
+</body>
+</html>
+<script type="text/javascript">
+	String.prototype.endWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+			return false;
+		if(this.substring(this.length-s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+
+	String.prototype.startWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+		return false;
+		if(this.substr(0,s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+
+	$(document).ready(function() {
+		$('.news_list li img').each(function(i, item) {
+			if(item.src.endWith('/school_footer_logo.jpg')) {
+				$(item).css('height','86%');
+				$(item).css('margin','10px auto 0 auto');
+				$(item).css('opacity','0.5');
+			}
+		});
+			});
+
+
+function initiLightBox(el)
+ {
+  if(typeof el == "string") {
+   el = document.getElementById(el);
+  }
+  
+  $(el).iLightBox({
+   skin: 'metro-white',
+   path: 'horizontal',
+   mousewheel: false,
+   infinite: true,
+    overlay: {
+    opacity: 0.3,
+    blur: true,
+   },
+   controls: {
+    fullscreen: false,
+    toolbar: true,
+    arrows: false,
+    mousewheel: false,
+    thumbnail: false,
+    swipe: false
+   }
+  });
+ }
+ 
+ function initPassBtn(el, type)
+ {
+  if(typeof el == "string") {
+   el = document.getElementById(el)
+  }
+  
+  if(null != el && '1' == el.getAttribute('needPass'))
+  {
+   el.removeAttribute('data-toggle','');
+   el.setAttribute('data-type','iframe');
+   el.setAttribute('data-options','width:\'80%\', height:\'100%\'');
+   el.href = 'modulePass.php?passName=' + type;
+   initiLightBox(el);
+  }
+ }
+
+
+ function initPassBtn_class(el, type)
+ {
+	 
+  if(typeof el == "string") {
+   el = document.getElementsByClassName(el)
+  }
+	for(var i=0;i<el.length;i++){
+	if(null != el[i] && '1' == el[i].getAttribute('needPass'))
+		{
+		el[i].removeAttribute('data-toggle','');
+		el[i].setAttribute('data-type','iframe');
+		el[i].setAttribute('data-options','width:\'80%\', height:\'100%\'');
+		el[i].href = 'modulePass.php?passName=' + type;
+		initiLightBox(el[i]);
+		}
+	}
+ }
+
+
+ $(document).ready(function() {
+  $('#news_list li img').each(function(i, item) {
+   if(item.src.endWith('/school_footer_logo.jpg')) {
+    $(item).css('height','75%');
+    $(item).css('margin','10px auto 0 auto');
+    $(item).css('opacity','0.5');
+   }
+  });
+   });
+ //btn_schoolnotice_more
+ var replyslipBtn = document.getElementById('btn_replyslip');
+ var schoolnoticeBtn = document.getElementsByClassName('btn_schoolnotice');
+ var btn_schoolnotice_more = document.getElementById('btn_schoolnotice_more');
+ var btn_schoolfile_more = document.getElementById('btn_schoolfile_more');
+ initPassBtn(replyslipBtn, 'noticePass');
+ initPassBtn_class(schoolnoticeBtn, 'noticePass');
+ initPassBtn(btn_schoolnotice_more, 'noticePass');
+ initPassBtn(btn_schoolfile_more, 'noticePass');
+
+ //图片
+
+ var Gallery_pass = document.getElementsByClassName('Gallery_pass');
+ initPassBtn_class(Gallery_pass, 'albumPass');
+
+ var GalleryList_pass = document.getElementsByClassName('GalleryList_pass');
+ initPassBtn_class(GalleryList_pass, 'albumPass');
+
+ var gallerylist_more = document.getElementById('gallerylist_more');
+ initPassBtn(gallerylist_more, 'albumPass');
+
+
+//  var downloadUrl = document.getElementsByClassName('btn_schoolnotice_null');
+//  for(var i=0;i<downloadUrl.length;i++){
+// 	 downloadUrl[i].removeAttribute('href');
+//  }
+ //var handbookBtn = document.getElementById('btn_handbook');
+ //initPassBtn(handbookBtn, 'homeworkPass');
+</script>

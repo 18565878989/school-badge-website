@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>天主教聖雅各伯幼稚園 St James Catholic Kindergarten</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="St James Catholic Kindergarten" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="St James Catholic Kindergarten" />
+<meta name="viewport" content="width=device-width" />
+	<link rel="canonical" href="https://www.sjck.edu.hk/zh-hant/" /> 
+				<link rel="alternate" href="/zh-hant/" hreflang="zh-hant-hk" />
+			<link rel="alternate" href="/en/" hreflang="en-hk" />
+				<link rel="shortcut icon" href="img/favicon.ico" />
+	<link rel="apple-touch-icon" href="img/iphone-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="img/iphone-icon.png" />
+	<link rel="stylesheet" type="text/css" href="css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="css/editor.css" />
+	<link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/colorbox.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/08d0b148442093323c19c69f8aed4470" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.ellipsis.js"></script>
+	<script type="text/javascript" src="js/jquery.Slider.js"></script>
+	<script type="text/javascript" src="js/jquery.slideSubmit.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="js/colorbox.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script> 
+	<script type="text/javascript" src="js/validator.class.js"></script>
+	<script type="text/javascript" src="js/jquery.table.js"></script>
+	<script type="text/javascript" src="js/lang.js"></script>
+	<script type="text/javascript" src="js/function.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="js/html5izer_placeholder.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="body_overlay">
+		<div class="loading"></div>
+	</div>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="/zh-hant/"></a>
+			</div>
+			<div class="language"><!--
+									--><a href="/zh-hant/" class="lang current">中</a><!--
+									--><a href="/en/" class="lang ">EN</a><!--
+						--></div>
+			<div class="menu zh-hant"><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/" class="menu_title index current"><span class="menu-word">網站主頁</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/news/" class="menu_title news"><span class="menu-word">最新消息</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/about/" class="menu_title about"><span class="menu-word">學校簡介</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/facility/" class="menu_title facility"><span class="menu-word">學校設施</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/organization/" class="menu_title organization"><span class="menu-word">專業團隊</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/movie/" class="menu_title movie"><span class="menu-word">動感校園</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/school_happiness/" class="menu_title school_happiness"><span class="menu-word">校園喜訊</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/highlight/" class="menu_title highlight hasSub"><span class="menu-word">校園花絮<span class="arrow"></span></span></a>
+																<ul><!--
+																					--><a class="sub activity" href="/zh-hant/highlight/activity/"><span>活動照片</span></a><!--
+																					--><a class="sub works" href="/zh-hant/highlight/works/"><span>幼兒作品</span></a><!--
+																		--></ul>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/experiential/" class="menu_title experiential"><span class="menu-word">體驗學習</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/parent/" class="menu_title parent hasSub"><span class="menu-word">家長園地<span class="arrow"></span></span></a>
+																<ul><!--
+																					--><a class="sub pta" href="/zh-hant/parent/pta/"><span>家長教師會</span></a><!--
+																					--><a class="sub pta_doc" href="/zh-hant/parent/pta_doc/"><span>家校互動</span></a><!--
+																		--></ul>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/calendar/" class="menu_title calendar"><span class="menu-word">學校行事曆</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/allocation/" class="menu_title allocation"><span class="menu-word">派位結果</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/contact/" class="menu_title contact"><span class="menu-word">聯絡我們</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/admission/" class="menu_title admission"><span class="menu-word">入學須知</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/download/" class="menu_title download"><span class="menu-word">下載表格</span></a>
+													</div><!--
+									--><div class="menu_item">
+							<a href="/zh-hant/intranet/" class="menu_title intranet"><span class="menu-word">內聯網</span></a>
+													</div><!--
+						--></div>
+			<div class="leaf"></div>
+			<a href="#" class="menu-icon"></a>
+		</div>
+		<div class="sun"></div>
+	</header>
+	<section id="content" class="zh-hant">
+		<div class="container">
+			<div class="sky"></div>
+			<div class="left"></div>
+			<div class="right"></div><script type="text/javascript">
+	$(document).ready(function() {
+						$('.body_overlay').addClass('open');
+				$.colorbox({
+					href: "/zh-hant/index/popup/",
+					maxWidth: 960,
+					width: function() {
+						var resizeWidth = Math.floor($(window).width() * 0.85);
+						if(resizeWidth > 960) {
+							resizeWidth = 960;
+						}
+						else if(resizeWidth < 480) {
+							resizeWidth = 360;
+						}
+						return resizeWidth;
+					},
+					scrolling: false,
+					close: '',
+					onComplete: function() {
+						setTimeout(function() {
+							$.colorbox.resize();
+						}, 2000);
+						setTimeout(function() {
+							$('.body_overlay').fadeOut();
+						}, 5000);
+					}
+				});
+				
+					$('.banner').Slider({
+				slides: '.banner-item',
+				maxSlide: 1,
+				autoPlay: 5000,
+				pager: '.page',
+				skipBoundary: true
+			});
+		
+		var event = {};
+		$('#calendar').fullCalendar({
+			header: {
+				left: '',
+				center: '',
+				right: ''
+			},
+			dayNamesShort: lang.dayNames,
+			height: 290,
+			buttonIcons: false,
+			buttonText: {
+				prev: '<span class="prev-arrow"><img src="img/calendar-arrow-green.svg" alt="" width="20" height="20" /></span>',
+				next: '<span class="next-arrow"><img src="img/calendar-arrow-green.svg" alt="" width="20" height="20" /></span>',
+			},
+			editable: false,
+			eventLimit: false,
+			events: function(start, end, callback) {
+				$.ajax({
+					url: genurl('calendar', 'events'),
+					dataType: 'json',
+					data: {
+						start: Math.round(start.getTime() / 1000),
+						end: Math.round(end.getTime() / 1000)
+					},
+					success: function(response) {
+						$.each(response, function() {
+							event[this.timestamp] = [this.background, this.border, this.colour, this.tooltip];
+						});
+						callback(response);
+						$('#calendar').fullCalendar('render');
+					}
+				});		
+			},
+			dayRender: function(date, cell) {
+				date.setHours(0);
+				date.setMinutes(0);
+				date.setSeconds(0);
+				date.setMilliseconds(0);
+				if(date.getTime() in event)
+				{					
+					cell.css('backgroundColor', event[date.getTime()][0]);
+					if(event[date.getTime()][0] == "") {
+						cell.css({
+							"border-width": "2px",
+							"border-style": "solid",
+							"border-color": event[date.getTime()][1]
+						})
+					}
+					cell.find('.fc-day-number').css('color', event[date.getTime()][2]);
+					cell.find('.fc-day-number').html(cell.find('.fc-day-number').html() + '<span>' + event[date.getTime()][3] + '</span>');
+				}
+			}
+		});
+		
+		var d = new Date();
+		var m = d.getMonth() + 1;
+		$.get(genurl('calendar', 'ajax', m), function(response) {
+			$('.events-list').html(response);
+		});
+		
+		$('.fc-button span').click(function(){
+			var date = $("#calendar").fullCalendar('getDate');
+			var year = date.getFullYear();
+			var month = date.getMonth();
+			if($(this).parent().hasClass('fc-button-prev')) {
+				if(month == 0) {
+					month = 12;
+					year -= 1;
+				}
+			}
+			else {
+				month += 2;
+				if(month == 13) {
+					month = 1;
+					year += 1;
+				}
+			}
+			$.get(genurl('calendar', 'ajax', month + '/' + year), function(response) {
+				$('.events-list').html(response);
+			});
+		});
+		
+		$('.selects').selectbox();
+		
+		$('.selects').change(function() {
+			var year = $('#year').val();
+			var month = parseInt($('#month').val());
+			year = $('.selects.year').children('option[value='+year+']').html();
+			$('#calendar').fullCalendar('gotoDate', year, month, 1);
+			month += 1;
+			$.get(genurl('calendar', 'ajax', month + '/' + year), function(response) {
+				$('.events-list').html(response);
+			});
+		});
+	});
+</script>
+<div class="banner">
+			<div class="banner-wrapper"><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=ebabe3a44e575c2379de6e7555d3a216.jpg" alt="開放日「奇妙的大自然」" width="960" height="420" />					<img src="/img/?hash=7fb655ff76a2c68ace323421199848c0.jpg" alt="開放日「奇妙的大自然」" width="460" height="272" class="mobile" />									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=4a96e74e2f4d1f59368620bed6086e3d.jpg" alt="b8a84214-6bb8-45a5-84b2-54e493bd68e3" width="960" height="420" />					<img src="/img/?hash=e817628cc74f1dfacc3fa0c2e22b4fc3.jpg" alt="b8a84214-6bb8-45a5-84b2-54e493bd68e3" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">夏日Water World</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=2ad4b563a32deb21bfa6b20a7128a5f3.jpg" alt="24-25宿營" width="960" height="420" />					<img src="/img/?hash=35ff98b80ec70fb4a238ac9d2bb66e25.jpg" alt="24-25宿營" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">24-25年度 2日1夜畢業營</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=0c64f94fb6841b616466044bb2d7ff6b.jpg" alt="IMG_0481" width="960" height="420" />					<img src="/img/?hash=dee34dba7deed445bb398353c6408bd6.jpg" alt="IMG_0481" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">年宵活動</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=c9ac49f2263e93f657262b40a8fcdb23.jpg" alt="2425年宵" width="960" height="420" />					<img src="/img/?hash=9a0b70ed03f211e7bd8c770b8a3c396b.jpg" alt="2425年宵" width="460" height="272" class="mobile" />									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=18747a9b24d01443449df80f40065f54.jpg" alt="NN_07451" width="960" height="420" />					<img src="/img/?hash=46a25058484e604b31140fc0030a805d.jpg" alt="NN_07451" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">23-24 年度畢業典禮</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=675f18fca75b768af0ff639f0558b7f9.jpg" alt="NN_06220" width="960" height="420" />					<img src="/img/?hash=684272398d6f34f34706f00040ef1f2c.jpg" alt="NN_06220" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">23-24 年度幼兒班及低班結業禮</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=f0d41012bca39b2906b1ab2bbc9ce7bb.jpg" alt="IMG_8008" width="960" height="420" />					<img src="/img/?hash=89a039eed119056d896e21cb2e2d62ab.jpg" alt="IMG_8008" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">親子旅行</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=a9d0827f8bd780a3cb3f6ecc775278b5.jpeg" alt="WhatsApp Image 2025-01-11 at 13.22.11" width="960" height="420" />					<img src="/img/?hash=dc5e64a59ae7cdfa6031fbf6b52d7dfc.jpeg" alt="WhatsApp Image 2025-01-11 at 13.22.11" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">聖誕報佳音</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=814d66fe752159bfab562ea108ec8f81.jpg" alt="IMG_8162~photo-full" width="960" height="420" />					<img src="/img/?hash=c3c3b7da2ba7dccda887ea9ba051b508.jpg" alt="IMG_8162~photo-full" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">聖誕聯歡會</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=0ad8c097ca0e025e6f68c73d4f2ec78e.jpg" alt="IMG_0967" width="960" height="420" />					<img src="/img/?hash=ebb00c899ee9cfa9d0c4fd7f7a08cc1d.jpg" alt="IMG_0967" width="460" height="272" class="mobile" />									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=e3683b00c2c054d1e83d9b38e4ac177c.jpg" alt="教師專業發展" width="960" height="420" />					<img src="/img/?hash=c299170b3d241fa36606c7a6d9763f7d.jpg" alt="教師專業發展" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">教師專業發展</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=bab455779c4441a601eaaa67756aabc3.jpg" alt="宿營" width="960" height="420" />					<img src="/img/?hash=597efa63217856f2996cb770c09dfe48.jpg" alt="宿營" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">高班畢業營</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=e70048b3fd697e10029b75d737c17a2e.jpg" alt="_0ET2947" width="960" height="420" />					<img src="/img/?hash=3044a24746855bea3cc06f59889efeba.jpg" alt="_0ET2947" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">親子運動競技日</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=74c182d31c5ebb087cdc166f34f7fb34.jpg" alt="親子運動競技日" width="960" height="420" />					<img src="/img/?hash=755aa66e29ea8c51ba265b53e94e40fc.jpg" alt="親子運動競技日" width="460" height="272" class="mobile" />									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=f8841dc74ab712e9c488c79c19b4e853.jpg" alt="IMG_5093" width="960" height="420" />					<img src="/img/?hash=9920646318327d2a096c764266391c30.jpg" alt="IMG_5093" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">收割白蘿蔔</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=92740b0820bfa21709c7559d282365d8.jpg" alt="IMG_5031" width="960" height="420" />					<img src="/img/?hash=afe917055295cc5ac374d7cf452100e4.jpg" alt="IMG_5031" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">收割芥蘭</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=52f2f1938d9d08c6b02697be516ec45c.jpg" alt="IMG_1340~photo" width="960" height="420" />					<img src="/img/?hash=66e91956a0e5f9920912193e76f490ff.jpg" alt="IMG_1340~photo" width="460" height="272" class="mobile" />												<div class="slogan-area">
+								<div class="banner-curve-white"></div>
+								<div class="slogan-area-bg"></div>
+								<div class="slogan">收割通菜</div>
+								<div class="banner-curve-green"></div>
+							</div>
+									</div><!--
+						--><div class="banner-item">
+					<img src="/img/?hash=2ace7184b27bc17ace5457e90ee23f1d.jpg" alt="榮獲點滴成河" width="960" height="420" />					<img src="/img/?hash=2a493dfe73aafcf2b4ef8e37e191c7ec.jpg" alt="榮獲點滴成河" width="460" height="272" class="mobile" />									</div><!--
+				--></div>
+		<div class="page"></div>
+	</div>
+<div class="motto zh-hant"></div>
+<div class="theme-right"></div>
+<div class="news-section">
+	<div class="section-bg"></div>
+	<div class="section-title zh-hant"></div>
+	<a href="/zh-hant/news/" class="more-image zh-hant"></a>
+				<div class="news"><!--
+								--><a href="/zh-hant/news/detail/231/" class="news-item">
+						<div class="news-item-left">
+							<div class="date">
+																	<div class="year">2025年</div>
+									<div class="month-day">12月<span>19</span>日</div>
+															</div>
+							<div class="image"><img src="/img/?hash=246ce51b9a782ebdb11b27839b557d28.jpg" alt="IMG_1585" width="180" height="120" /></div>
+						</div>
+						<div class="news-item-right">
+															<div class="date">2025年12月<span>19</span>日</div>
+														<div class="news-title ellipsis" data-height="40"><span class="detail"></span>聖誕感恩祈禱會暨童聲童樂迎聖誕</div>
+							<div class="news-content ellipsis" data-height="60"><span class="detail"></span>聖誕節是慶祝耶穌的誕生的日子，我們希望把平安、喜樂、希望和愛傳送給身邊的人，透過祈禱會感謝天主的愛，更把耶穌誕生的喜訊告訴所有人。低班學生以舞蹈告訴我們耶穌誕生的故事，更有各班的表演，為大家帶來歡樂的氣氛。祝大家過一個溫暖及平安的聖誕！</div>
+						</div>
+					</a><!--
+								--><a href="/zh-hant/news/detail/229/" class="news-item">
+						<div class="news-item-left">
+							<div class="date">
+																	<div class="year">2025年</div>
+									<div class="month-day">12月<span>15</span>日</div>
+															</div>
+							<div class="image"><img src="/img/?hash=aeae71526337e6ee23eb8b5e46a12042.jpg" alt="IMG_5606" width="180" height="120" /></div>
+						</div>
+						<div class="news-item-right">
+															<div class="date">2025年12月<span>15</span>日</div>
+														<div class="news-title ellipsis" data-height="40"><span class="detail"></span>幼兒班水果巡遊</div>
+							<div class="news-content ellipsis" data-height="60"><span class="detail"></span>幼兒班兒童變成了他們喜愛的水果，進行了「水果巡遊」，還利用不同的水果來裝飾自己的水果蛋糕，真好吃！</div>
+						</div>
+					</a><!--
+								--><a href="/zh-hant/news/detail/230/" class="news-item">
+						<div class="news-item-left">
+							<div class="date">
+																	<div class="year">2025年</div>
+									<div class="month-day">12月<span>12</span>日</div>
+															</div>
+							<div class="image"><img src="/img/?hash=3abbb496de2c16f70b20d4b139ca8472.jpg" alt="IMG_1680" width="180" height="120" /></div>
+						</div>
+						<div class="news-item-right">
+															<div class="date">2025年12月<span>12</span>日</div>
+														<div class="news-title ellipsis" data-height="40"><span class="detail"></span>低班「再造紙」活動</div>
+							<div class="news-content ellipsis" data-height="60"><span class="detail"></span>低班兒童探索「再造紙」，利用廢紙打磨成紙漿後再製作成「再造紙」，學習循環再做的概念，並製作出聖誕卡送給黃校長！</div>
+						</div>
+					</a><!--
+								--><a href="/zh-hant/news/detail/228/" class="news-item">
+						<div class="news-item-left">
+							<div class="date">
+																	<div class="year">2025年</div>
+									<div class="month-day">11月<span>25</span>日</div>
+															</div>
+							<div class="image"><img src="/img/?hash=210b923a4dcf75bcd87633a91dbca634.jpg" alt="IMG K1_ (32)" width="180" height="120" /></div>
+						</div>
+						<div class="news-item-right">
+															<div class="date">2025年11月<span>25</span>日</div>
+														<div class="news-title ellipsis" data-height="40"><span class="detail"></span>幼兒班參觀佐敦谷公園</div>
+							<div class="news-content ellipsis" data-height="60"><span class="detail"></span>幼兒班到佐敦谷公園接觸天父創造的大自然，更學習去愛護環境及與同伴合作遊玩，度過了愉快的上午！</div>
+						</div>
+					</a><!--
+						--></div>
+	</div><!--
+--><div class="calendar-section">
+	<div class="section-bg"></div>
+	<div class="section-title zh-hant"></div>
+	<a href="/zh-hant/calendar/" class="more-image"></a>
+	<div class="calendar-area">
+		<div id='calendar'></div>
+		<div class="headerset">
+			<select class="selects year" name="year" id="year"><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026" selected="selected">2026</option><option value="2027">2027</option></select><!--
+		--><select class="selects month" name="month" id="month"><option value="0">1月</option><option value="1">2月</option><option value="2" selected="selected">3月</option><option value="3">4月</option><option value="4">5月</option><option value="5">6月</option><option value="6">7月</option><option value="7">8月</option><option value="8">9月</option><option value="9">10月</option><option value="10">11月</option><option value="11">12月</option></select>		</div>
+		<div class="calendar-footer"><!--
+						--><div class="label zh-hant">
+					<div class="colour colour1"></div><!--
+				--><div class="text">活動</div>
+				</div><!--
+						--><div class="label zh-hant">
+					<div class="colour colour2"></div><!--
+				--><div class="text">假期</div>
+				</div><!--
+						--><div class="label zh-hant">
+					<div class="colour colour3"></div><!--
+				--><div class="text">生日會</div>
+				</div><!--
+				--></div>
+	</div><!--
+--><div class="events-lists">
+		<div class="events-list"></div>
+	</div>
+</div><!--
+--><div class="link-section">
+		<div class="section-title zh-hant"></div>
+		<div class="links">
+							<a  href="http://stjames.catholic.org.hk/" target="_blank" class="link-item"><img src="/img/?hash=88c2046b0009780fda3995ab492168cb.jpg" alt="shortcut-1" width="220" height="80" /></a>
+							<a  href="http://www.ceo.org.hk/" target="_blank" class="link-item"><img src="/img/?hash=ae1a837f4ca1099fc9a74ba1c216e338.jpg" alt="shortcut-2" width="220" height="80" /></a>
+							<a  href="http://www.edb.gov.hk/tc/index.html" target="_blank" class="link-item"><img src="/img/?hash=a7f4b5dd1f63472c5425e4c1717f1651.jpg" alt="shortcut-3" width="220" height="80" /></a>
+							<a  href="http://catholic.org.hk/" target="_blank" class="link-item"><img src="/img/?hash=5202b06dea470ad753087af5d1f19efa.jpg" alt="shortcut-4" width="220" height="80" /></a>
+							<a  href="http://www.startsmart.gov.hk/tc/" target="_blank" class="link-item"><img src="/img/?hash=c933a6232c2afdf4d083145baa75e08f.jpg" alt="shortcut-5" width="220" height="80" /></a>
+							<a  href="http://www.hkedcity.net/" target="_blank" class="link-item"><img src="/img/?hash=d8528abfbd2e872d2216cf3c22b51dfd.jpg" alt="shortcut-6" width="220" height="80" /></a>
+							<a  href="http://www.rmeceo.org.hk/b5_index.php" target="_blank" class="link-item"><img src="/img/?hash=11e597d1306f5f5069ff8f7aa988e71f.jpg" alt="shortcut-7" width="220" height="80" /></a>
+							<a  href="http://happypama.mingpao.com/cfm/main.cfm" target="_blank" class="link-item"><img src="/img/?hash=d0e405d9fc1fc4f863fde2ab32088f7f.jpg" alt="shortcut-8" width="220" height="80" /></a>
+							<a  href="https://hk.evi.com.hk/" target="_blank" class="link-item"><img src="/img/?hash=bb8ec527fbc84aae90d7bbc11ecc8b08.jpg" alt="shortcut-9" width="220" height="80" /></a>
+							<a  href="http://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/" target="_blank" class="link-item"><img src="/img/?hash=7d85ac0b9141743e0cf67c49a64bb445.jpg" alt="shortcut-10" width="220" height="80" /></a>
+							<a  href="https://kgp2021.azurewebsites.net/edb/schoolinfo.php?schid=6165&amp;lang=tc&amp;district=kwuntong&amp;category=&amp;voucher=&amp;ctype=&amp;schoolname=聖雅各伯" target="_blank" class="link-item"><img src="/img/?hash=00567ce7f094a3cd9814a71a7fefb2b7.jpg" alt="shortcut-11" width="220" height="80" /></a>
+					</div>
+	</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="flower-left"></div>
+			<section class="footer-copyright">Copyright © St James Catholic Kindergarten. <div>Powered by <a href="http://www.anglia.com.hk" target="_blank">ANGLIA</a>.</div></section>
+			<div class="flower-right"></div>
+		</div>
+	</footer>
+</body>
+</html>

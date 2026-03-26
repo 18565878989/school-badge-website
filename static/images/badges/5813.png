@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ESF Bradbury School | IB School PYP | ESF Hong Kong</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="description" content="ESF Bradbury School provides a safe, fun environment for quality education. Using the IB PYP, we tailor learning to each child&#039;s pace for holistic development." />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="ESF Bradbury School,International School Hong Kong, English Schools Foundation,IB School Hong Kong" />
+<meta property="og:description" content="ESF Bradbury School provides a safe, fun environment for quality education. Using the IB PYP, we tailor learning to each child&#039;s pace for holistic development." />
+<meta property="og:image" content="http://bradbury.esf.edu.hk/cache/img/a981f81f1011273838b97621b0ebeb0b.jpg" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:secure_url" content="https://bradbury.esf.edu.hk/cache/img/a981f81f1011273838b97621b0ebeb0b.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta name="viewport" content="width=device-width" />
+	<link rel="canonical" href="https://bradbury.esf.edu.hk/en/" /> 
+				<link rel="alternate" href="/zh/" hreflang="zh-hk" />
+				<link rel="shortcut icon" href="/img/favicon.png" />
+	<link rel="apple-touch-icon" href="/img/iphone-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="/img/iphone-icon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/css/editor.css" />
+	<link rel="stylesheet" type="text/css" href="/en/cache/css/3e127878e4cd7b0c0af8a93a38e673d4.css" />
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/jquery-migrate.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/jquery.Slider.js"></script>
+	<script type="text/javascript" src="/js/jquery.slideSubmit.js"></script>
+	<script type="text/javascript" src="/js/jquery.table.js"></script>
+	<script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="/js/validator.class.js"></script>
+	<script type="text/javascript" src="/en/cache/js/lang.js"></script>
+	<script type="text/javascript" src="/js/function.js"></script>
+	<script type="text/javascript" src="/js/init.js"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="/js/html5izer_placeholder.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="/js/html5.js"></script>
+	<![endif]-->
+	<style>
+		.colour1,
+		a.colour1,
+		.editor a.colour1,
+		#content #history-page .years .year.current,
+		#content #history-page .years .year:hover,
+		#content #history-page .select-input,
+		#content .page-wrapper .page-container #data-list .data-item.open>.title,
+		#content #enquiry .form-container .row .checkbox-cotnainer .checkbox:after {
+			color: #3954a6 !important;
+		}
+		.colour2,
+		a.colour2,
+		.editor a.colour2,
+		#content section .tab-select .select-input,
+		#content #section3 .wrapper .tabs .tab.current,
+		#content #section3 .wrapper .tabs .tab:hover,
+		#content #section6 .wrapper .tabs .tab.current,
+		#content #section6 .wrapper .tabs .tab:hover,
+		#content #landing section.type3 .tabs .tab.current,
+		#content #landing section.type3 .tabs .tab:hover,
+		#content .page-wrapper #submenu ul li a:hover,
+		#content .page-wrapper .page-container #tabs .tab.current,
+		#content .page-wrapper .page-container #tabs .tab:hover,
+		#content .page-wrapper .page-container #tabs .select-input,
+		#content .page-wrapper .page-container .tab-select .select-input {
+			color: #00926b !important;
+		}
+		.colour3,
+		a.colour3,
+		.editor a.colour3 {
+			color: #e5f3ff !important;
+		}
+		.colour4,
+		a.colour4,
+		.editor a.colour4 {
+			color: #e5fff6 !important;
+		}
+		.bg-colour1,
+		.editor ul.colour1 li:before,
+		.editor ol.colour1 li:before,
+		.pager a.selected,
+		.pager a:hover,
+		#content #enquiry .form-container .row .radio-container2 .radio.checked,
+		#content #enquiry .form-container .row .radio-container2 .radio:after,
+		#content #enquiry .form-container .row .radio-container .radio:after,
+		#content #sitemap li:before {
+			background-color: #3954a6 !important;
+		}
+		.bg-colour2,
+		.editor ul.colour2 li:before,
+		.editor ol.colour2 li:before,
+		#floating a[href]:hover {
+			background-color: #00926b !important;
+		}
+		.bg-colour3 {
+			background-color: #e5f3ff !important;
+		}
+		.bg-colour4 {
+			background-color: #e5fff6 !important;
+		}
+		.br-colour1,
+		#content #section7 .record-slider .slider-container .post:hover {
+			border-color: #3954a6 !important;
+		}
+		.br-colour2 {
+			border-color: #00926b !important;
+		}
+		.br-colour3 {
+			border-color: #e5f3ff !important;
+		}
+		.br-colour4 {
+			border-color: #e5fff6 !important;
+		}
+	</style>
+	<script type="text/javascript">
+											if(window.location.protocol.toLowerCase().indexOf('https:') == -1)
+											{
+												window.location.href = 'https://'+ window.location.host + window.location.pathname;
+											}
+									     </script>	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DVQST6BK5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6DVQST6BK5');
+</script></head>
+<body>
+	<header>
+		<div class="container">
+			<a href="/en/" class="logo">
+				<img src="/cache/img/ba334e7c4a866632c699d1acf71cd1c1.png" alt="ESF Bradbury School" loading="lazy" height="180" />			</a>
+			<div class="menu-container">
+				<div class="top-container">
+					<nav class="lang">
+						<ul>
+							<li><a href="/zh/">繁體</a></li>						</ul>
+					</nav>
+					<div class="divider"></div>
+					<a href="/en/" class="home"></a>
+					<div class="search">
+						<button></button>
+						<div class="search-container">
+							<form action="/en/search/">
+								<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />								<button type="submit"></button>							</form>
+							<button class="close"></button>
+						</div>
+					</div>
+										<nav class="social">
+				 		<ul>
+				 							 			<li>
+				 				<a href="https://www.instagram.com/esfbradburyschool/" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 			<li>
+				 				<a href="https://www.facebook.com/BradburySchoolHK" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3e297d1.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 		</ul>
+				 	</nav>
+				 						<div class="search-responsive">
+						<form action="/en/search/">
+							<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />							<button type="submit"></button>						</form>
+					</div>
+										<div class="divider"></div>
+									 							<a href="https://bradbury.esf.edu.hk/parent/" target="_blank" class="alt-btn">Students & Parents</a>
+				 										 		<a href="https://bradbury.esf.edu.hk/en/visit_us" class="btn">Visit Us</a>
+									</div>
+				<div class="bottom-container">
+					<nav class="menu">
+						<ul>
+																						<li>
+									<a href="/en/about_us/">About Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/about_us/">About Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/about_us/marketing_family/">ESF Family</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/principals_welcome/">Principal's Welcome</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/what_we_stand_for/">What We Stand For</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/school_history/">School History</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/campus_find_us/">Campus & Find Us</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_education/">Outstanding Education</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_education/">Outstanding Education</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_education/our_approach/">Our Approach</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/curriculum/">Curriculum</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/student_support_wellbeing/">Student Support & Wellbeing</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/parent_partnership/">Parent Partnership</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/specialist_provision/">Specialist Provision</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_experiences/extra_curricular_activities/">Extra Curricular Activities</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/outdoor_learning/">Outdoor Learning</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/action_student_leadership/">Action & Student Leadership</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/speakers_visitors/">Speakers & Visitors</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_people/">Outstanding People</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_people/">Outstanding People</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_people/leadership_team/">Leadership Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/our_team/">Our Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/student_voice/">Student Voice</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/parent_teacher_association/">Parent Teacher Association</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/school_council/">School Council</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/testimonials/">Testimonials</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/admissions/">Admissions</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/admissions/">Admissions</a>
+													</li>
+																																			</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/WorkWithUs/">Work With Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/WorkWithUs/">Work With Us</a>
+													</li>
+																																			</ul>
+										</div>
+																	</li>
+													</ul>
+					</nav>
+				</div>	
+			</div>
+			<button class="nav-btn"></button>
+		</div>
+	</header>
+	<section id="content">		
+		<script type="text/javascript">
+    var timeout = [];
+
+    $(window).load(function() {
+		let animate = function() {
+			let height = $(window).scrollTop() + Math.round($(window).height() * 0.6);
+			$('#content > section').each(function() {
+				if(!$(this).hasClass('animate') && height > $(this).offset().top)
+				{
+					$(this).addClass('animate');
+                    if($(this).attr('id') == 'section2') {
+						$('li > div', '#section2').each(function(index) {
+							let item = $(this);
+							setTimeout(function() {
+								item.addClass('animate');
+							}, index * 200);
+						});
+					}
+				}
+			});
+		};
+		$(window).on('scroll', animate);
+		animate();
+	});
+</script>
+<div id="banner">
+    <div class="banner-container">
+                                                <div class="banner-item">
+                    <div class="wrapper">
+                        <img src="/cache/img/2cc06284795d9ed7f5db1da0f5c39ab4.png" alt="" loading="lazy" width="1904" height="1200" class="trans" />                        <video id="video" width="1904" height="1200" preload="none" playsinline webkit-playsinline muted loop>
+                            <source src="/upload/banner/1/banner/671e199e51c53.mp4" type="video/mp4">
+                        </video>
+                        <div class="mask"></div>
+                        <div class="container">
+                            <button class="play"></button>
+                        </div>
+                    </div>
+                                    </div>
+                        </div>
+    <div class="container">
+                <div class="scroll-icon"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let pager_click = false;
+
+            $('#banner').Slider({
+                slides: '.banner-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true,
+                pager: '.banner-pager',
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    $.each(timeout, function(index, value) {
+                        clearTimeout(value);
+                    });
+                    let videos = $('video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    $('button', slider).removeClass('play').addClass('pause');
+                    if($('.slider.current video', slider).length) {
+                                                        video = document.querySelector('#banner .slider.current video');
+                                video.play();
+                                            }
+                    else if(!pager_click) {
+                        timeout = setTimeout(function() {
+                            slider.Slider('next');
+                        }, 5000);
+                    }
+                },
+                afterResize: function(slider, slides, current_page, total_page) {
+                    if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                                            let videos = $('video', slider);
+                        videos.each(function(i, video) {
+                            video.addEventListener('ended', videoEnd, false);
+                        });
+                        if($('.slider.current video', slider).length) {
+                                                                video = document.querySelector('#banner .slider.current video');
+                                    video.play();
+                                    $('.slider.current button', slider).removeClass('play').addClass('pause');
+                                                    }
+                        else {
+                            timeout = setTimeout(function() {
+                                slider.Slider('next');
+                            }, 5000);
+                        }
+                                        if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                }
+            });
+            
+            $('.banner-item video', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                let button = $(this).parent().find('button');
+                if(button.hasClass('pause')) {
+                    video.pause();
+                    button.removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    button.removeClass('play').addClass('pause');
+                }
+            });
+            $('.banner-item button', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                if($(this).hasClass('pause')) {
+                    video.pause();
+                    $(this).removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    $(this).removeClass('play').addClass('pause');
+                }
+            });
+
+            $('body').on('click', '#banner .banner-pager a', function() {
+                pager_click = true;
+            });
+
+            function videoEnd(e) {
+                if(!pager_click) {
+                    $('#banner').Slider('next');
+                }
+                else {
+                    $('#banner .slider.current button').removeClass('pause').addClass('play');
+                }
+            }
+        });
+    </script>
+</div>
+<section id="section1">
+    <div class="container">
+                    <div class="left">
+                <article class="editor"><h3 class="homepage-title title"><span style="color: #00926b; font-size: 46px;"><strong>Inspiring Minds, </strong></span></h3>
+<h3 class="homepage-title title"><span style="color: #00926b; font-size: 46px;"><strong>Nurturing Hearts, </strong></span></h3>
+<h3 class="homepage-title title"><span style="color: #00926b; font-size: 46px;"><strong>Enriching Tomorrow</strong></span></h3></article>
+            </div>
+                            <div class="right">
+                <article class="editor"><ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Builds strong foundations for learning within a joyful, creative and challenging environment.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Develops a holistic learning community that cares for and protects all members.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Inspires and empowers responsible citizens to take action on a personal, local and global level.<br /></span></li>
+</ul>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour1"><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://bradbury.esf.edu.hk/en/about_us/what_we_stand_for/" target="_blank" rel="noopener">Discover Our Vision</a></span></p></article>
+            </div>
+                            <div class="responsive">
+                <article class="editor"><h3 class="homepage-title title"><span style="color: #00926b; font-size: 46px;"><strong>Inspiring Minds, </strong></span></h3>
+<h3 class="homepage-title title"><span style="color: #00926b; font-size: 46px;"><strong>Nurturing Hearts, </strong></span></h3>
+<h3 class="homepage-title title"><span style="color: #00926b; font-size: 46px;"><strong>Enriching Tomorrow</strong></span></h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Builds strong foundations for learning within a joyful, creative and challenging environment.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Develops a holistic learning community that cares for and protects all members.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Inspires and empowers responsible citizens to take action on a personal, local and global level.<br /></span></li>
+</ul>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour1"><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://bradbury.esf.edu.hk/en/about_us/what_we_stand_for/" target="_blank" rel="noopener">Discover Our Vision</a></span></p></article>
+            </div>
+            </div>
+</section>
+<section id="section2">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What can Bradbury School offer your family?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="wrapper bg-colour2">
+        <div class="container">
+            <ul>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/41f6d723321637028224ef42cb90b25b.png" alt="ESF_Logomark_BW_RGB" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">ESF Network</h3>
+                            <div class="overlay bg-colour1">
+                                <p>As part of the English Schools Foundation(ESF), our students are supported by the largest English-medium international school organisation in Hong Kong, providing them the resources and opportunities not found outside of ESF Schools.</p>
+                                                                    <a  href="https://bradbury.esf.edu.hk/en/about_us/marketing_family/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/b743f6e2a0308848d14af7faff91f1f5.png" alt="World-class Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Innovative Teaching Methods</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our child-centred approach harnesses the IB PYP to foster critical thinking, creativity, and 21st-century skills.</p>
+                                                                    <a  href="https://bradbury.esf.edu.hk/en/outstanding_education/curriculum/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/9b9fd04d2bd030ad988d63452f41337f.png" alt="Strong School-Family Connection" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Strong School-Family Connection</h3>
+                            <div class="overlay bg-colour1">
+                                <p>We partner with you to understand your child's unique needs and tailor our teaching accordingly.</p>
+                                                                    <a  href="https://bradbury.esf.edu.hk/en/outstanding_education/parent_partnership/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/b3c35a1196499917a49946cf2b05e12b.png" alt="Well-rounded Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Well-rounded Education</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our world-class facilities, from gymnasiums to performing arts spaces, ensure a diverse learning experience.</p>
+                                                                    <a  href="https://bradbury.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/df0b1841ff11cc4075bfbd5dc3206956.png" alt="Real-world Experience" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Real-world Experience</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Through interdisciplinary projects, your child applies their knowledge to solve authentic, engaging challenges.</p>
+                                                                    <a  href="https://bradbury.esf.edu.hk/en/outstanding_experiences/outdoor_learning/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/4edf3d4b39c0ea28925b0cbe3e58f3ea.png" alt="Comprehensive Student Support" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Comprehensive Student Support</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our dedicated staff and ample green spaces ensure your child is engaged, happy, and thriving.</p>
+                                                                    <a  href="https://bradbury.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('h3', '#section2').each(function() {
+                let img = $(this).parent().children('img');
+                if(img.length) {
+                    $(this).css('top', img.offset().top + img.height() + 25 - $(this).parent().offset().top);
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section3">
+    <img src="/cache/img/bbbff0191eebfdf409b2a96d5949cd3a.jpg" alt="DSCF8396" loading="lazy" width="1722" height="1294" />    <div class="wrapper">
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Primary Years Programme (PYP)</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="tabs">
+                            <button class="tab current" data-id="1">Years 1 - 6</button>
+                    </div>
+                            <div class="tab-content current" data-id="1">
+                                <article class="editor"><p><span style="font-weight: 400;">Bradbury School is an IB World School committed to educating open-minded seekers, supporting individual student needs, and developing the whole child's skills, attitudes, and global perspectives. The IB curriculum emphasises transdisciplinary learning, research, communication, and critical thinking to foster respect, responsibility, and meaningful action.</span></p></article>
+                                    <a href="https://bradbury.esf.edu.hk/en/outstanding_education/curriculum/">
+                        <span>Find out more</span>
+                    </a>
+                            </div>
+                <script type="text/javascript">
+            $(document).ready(function() {
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+
+                $('.tab', '#section3').click(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $(this).addClass('current');
+                    $('.tab-content[data-id=' + $(this).data('id') + ']', '#section3').addClass('current');
+                    $('select', '#section3').val($(this).data('id')).selectbox('refresh');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+
+                $('.tab-select', '#section3').change(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $('.tab[data-id=' + $(this).val() + ']').addClass('current');
+                    $('.tab-content[data-id=' + $(this).val() + ']', '#section3').addClass('current');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+            });
+        </script>
+    </div>
+</section>
+<section id="section4" data-total="2">
+    <div class="container">
+        <div class="bg bg-colour4"></div>
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">School Activities</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="record-slider">
+            <div class="slider-container">
+                                    <div class="record-item">
+                        <img src="/cache/img/e1cd8a14c204742347d5cf50e8a27990.jpg" alt="DSCF4900" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Technology in The Shed</span>
+                            </h3>
+                            <p>Bradbury actively engages students, equipping them with future-ready skills. The Shed, our maker space, fosters coding, design, and engineering through hands-on projects across the curriculum, developing essential 21st-century competencies.</p>
+                                                            <a href="https://bradbury.esf.edu.hk/en/outstanding_education/specialist_provision/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/25af669cc614cca484c2b5b0fa158836.jpeg" alt="IMG_5601" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>Performing Arts at Bradbury School</span>
+                            </h3>
+                            <p>Our school's performing arts program lets students explore music, dance, and drama, integrating with the curriculum and offering extracurricular activities for collaboration, confidence, and creativity.</p>
+                                                            <a href="https://bradbury.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                            </div>
+            <div class="btns">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section4').data('total'));
+            let slider_loop = ori_total >= 3 ? true : false;
+            $('#section4').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total * 2);
+                    }
+                    else {
+                        slider.Slider('jump', total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section6">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">Testimonials</h2>
+            <span class="bg-colour1"></span>
+        </div>
+        <div class="wrapper">
+            <div class="tabs">
+                                    <button class="tab current" data-id="1">Students</button>
+                                    <button class="tab" data-id="2">Parents</button>
+                            </div>
+            <select class="tab-select" name="tab"><option value="1">Students</option><option value="2">Parents</option></select>                            <div class="tab-content current" data-id="1">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/93337465df41a5f70f4f9232f0a56795.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">We think Bradbury School is the best school ever! <br><br>We have made some amazing friendships at Bradbury School! That is because we follow the principles of the IB/PYP Learner Profile, so our students are open-minded, caring and reflective.  Bradbury is an inclusive school, and we love to celebrate the diversity of all our students.<br><br>There are so many different fun activities, such as art, sports and many more. We also have six playgrounds in this school! That means we can play in different areas and use a variety of play equipment during our break times.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">We think Bradbury School is the best school ever! <br><br>We have made some amazing friendships at Bradbury School! That is because we follow the principles of the IB/PYP Learner Profile, so our students are open-minded, caring and reflective.  Bradbury is an inclusive school, and we love to celebrate the diversity of all our students.<br><br>There are so many different fun activities, such as art, sports and many more. We also have six playgrounds in this school! That means we can play in different areas and use a variety of play equipment during our break times.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Elsa L & Adrienne L - Year 6 Students</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/93337465df41a5f70f4f9232f0a56795.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">What I like about Bradbury School is that they make education and learning fun and easy and sometimes hard. And the teachers are not strict. The students are kind and helpful.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">What I like about Bradbury School is that they make education and learning fun and easy and sometimes hard. And the teachers are not strict. The students are kind and helpful.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Tywin - Year 5 Student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/93337465df41a5f70f4f9232f0a56795.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I think Bradbury School is a great school because you get to do fun things like being a Student Leader.  Being a Student Leader can help the school by suggesting ideas.  It can help make the school better.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I think Bradbury School is a great school because you get to do fun things like being a Student Leader.  Being a Student Leader can help the school by suggesting ideas.  It can help make the school better.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Alexis - Year 4 Student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/93337465df41a5f70f4f9232f0a56795.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>4 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I like being a student leader because we can make Bradbury more fun!</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I like being a student leader because we can make Bradbury more fun!</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Marcus - Year 3 Student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="2">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/9f3ba0839bb940266fdc752e6427ceaa.jpg" alt="PTestimonials_pic 2" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Our journey at Bradbury has been filled with wonderful memories that we will cherish forever - from exciting field trips and engaging extracurricular activities to heartwarming school events and supportive friendships. Our time here has been nothing short of magical.<br><br>Bradbury has truly become a second home for Glenys, providing not only top-notch education but also a sense of belonging. We are grateful for the positive impact the school has had on our family and look forward to creating many more cherished memories in the years to come.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Our journey at Bradbury has been filled with wonderful memories that we will cherish forever - from exciting field trips and engaging extracurricular activities to heartwarming school events and supportive friendships. Our time here has been nothing short of magical.<br><br>Bradbury has truly become a second home for Glenys, providing not only top-notch education but also a sense of belonging. We are grateful for the positive impact the school has had on our family and look forward to creating many more cherished memories in the years to come.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Jenny Lam, Parent and PTA Chairperson</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/08c305b289636c3655ee50373c6bfefb.jpg" alt="PTestimonials_pic 1" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">As parents of twins, we were keen to find a school that catered to their individual personalities and celebrated their unique bond. Our search ended at Bradbury School, where our children were nurtured to grow both as a pair and as individuals.<br><br>We were very fortunate to have some great teachers in this journey for giving them the care, support and mentorship. Our children have developed into curious and eager learners ready to take on new challenges.<br>Outside the classroom, the school’s diverse extracurricular activities have allowed our children to explore their interests, which has been instrumental in developing their social skills and self-confidence. The school has instilled values of kindness, respect, and self-advocacy. They have learnt to be compassionate friends, curious thinkers, and responsible individuals.<br><br>We are deeply grateful to the teachers, staff, and fellow parents of Bradbury School for providing an environment where our children could not only learn but also shine. We leave with hearts full of gratitude and memories that will last a lifetime.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">As parents of twins, we were keen to find a school that catered to their individual personalities and celebrated their unique bond. Our search ended at Bradbury School, where our children were nurtured to grow both as a pair and as individuals.<br><br>We were very fortunate to have some great teachers in this journey for giving them the care, support and mentorship. Our children have developed into curious and eager learners ready to take on new challenges.<br>Outside the classroom, the school’s diverse extracurricular activities have allowed our children to explore their interests, which has been instrumental in developing their social skills and self-confidence. The school has instilled values of kindness, respect, and self-advocacy. They have learnt to be compassionate friends, curious thinkers, and responsible individuals.<br><br>We are deeply grateful to the teachers, staff, and fellow parents of Bradbury School for providing an environment where our children could not only learn but also shine. We leave with hearts full of gratitude and memories that will last a lifetime.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Biraj & Murli, Parents</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/d177c49ab305f41cb5eb2f75be0f5e73.jpeg" alt="image3" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I can’t speak highly enough of the team and ethos at Bradbury. The level of care and commitment to the unique needs of individuals is second to none. The staff across the board take the time to truly get to know each child, and see how their daily school life can best provide them with the tools they need to thrive and be happy. <br><br>This is combined with a deep sense of community, based on principles of kindness, respect, positivity and encouragement. Pupils are taught through actions and examples how to be active participants in creating a harmonious school, encouraging them to be accountable and to take action to make the world a better place, on both a social and environmental level. <br><br>My daughter is leaving Bradbury as a confident, happy, well-balanced young person, who knows how to advocate for herself and others, with a belief that everyone has the power to make a difference in the world. What more could you possibly ask for?</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I can’t speak highly enough of the team and ethos at Bradbury. The level of care and commitment to the unique needs of individuals is second to none. The staff across the board take the time to truly get to know each child, and see how their daily school life can best provide them with the tools they need to thrive and be happy. <br><br>This is combined with a deep sense of community, based on principles of kindness, respect, positivity and encouragement. Pupils are taught through actions and examples how to be active participants in creating a harmonious school, encouraging them to be accountable and to take action to make the world a better place, on both a social and environmental level. <br><br>My daughter is leaving Bradbury as a confident, happy, well-balanced young person, who knows how to advocate for herself and others, with a belief that everyone has the power to make a difference in the world. What more could you possibly ask for?</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Jessica Copstone, Parent</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+            
+            $('.tab', '#section6').click(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $(this).addClass('current');
+                $('.tab-content[data-id=' + $(this).data('id') + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' + ($(this).index() + 1) + ')', '#section6').addClass('current');
+                chkContentHeight();
+            });
+
+            $('.tab-select', '#section6').change(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $('.tab[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-content[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' +  ($('.tab.current', '#section6').index() + 1) + ')', '#section6').addClass('current');
+                $('.select .select-container div', '#section6').show();
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+                chkContentHeight();
+            });
+
+            $('.record-slider', '#section6').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true
+            });
+
+            function chkContentHeight() {
+                $('p.description', '#section6').each(function() {
+                    if($(this).height() > 160) {
+                        $(this).parent().addClass('more');
+                    }
+                });
+            }
+            chkContentHeight();
+
+            $('.record-item article button.view-more', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-less').show();
+                $(this).parent().find('.description').hide();
+                $(this).parent().find('.content').show();
+            });
+            $('.record-item article button.view-less', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-more').show();
+                $(this).parent().find('.description').show();
+                $(this).parent().find('.content').hide();
+            });
+        });
+    </script>
+</section>
+<section id="section7" data-total="10">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What's New at Bradbury School?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="record-slider">
+        <div class="slider-container">
+                            <div class="post-item">
+                    <div class="post" data-id="452">
+                        <time>26/03/2026</time>
+                        <h3>Year 6 students celebrating their learning through the opening of the PYPX. They learnt to sign and delivered messages via song and in Mandarin. Very proud of our students.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/02ad9992e48095fa76f4cf40d9b5f679.jpg" alt="656734467_1490025479799762_8239633131729232219_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="451">
+                        <time>26/03/2026</time>
+                        <h3>A Beautiful dance symbolising water, earth, fire and air as part ofcthe PYPX</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/edf6dbdf5b7caae92fecdea516c0cda1.jpg" alt="659487490_1490020816466895_6228471097803227786_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="450">
+                        <time>25/03/2026</time>
+                        <h3>ESF Primary Choir and Orchestra Concert 2026: The Sky is the Limit</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/f01af94b7ea1227daba8c0050e1861d8.jpg" alt="14361349033500762746" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="449">
+                        <time>25/03/2026</time>
+                        <h3>On Monday, 23rd March, Year 1 held a Writing Celebration of Learning. It was great to welcome parents into the classroom and see each child confidently share their writing. Students demonstrated clear improvements in handwriting, more accurate spelling, and the use of adjectives. They also enjoyed playing a phonemic game, highlighting their growing reading and decoding skills. We appreciate you taking the time to celebrate your child’s achievements and to support their learning this term.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7fb46b22e59f24903302eed7f0057dea.jpg" alt="654979855_1488936423242001_3149887563980026075_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="448">
+                        <time>24/03/2026</time>
+                        <h3>The wider Bradbury community (Y1 to 5 parents) are invited to pop in and check out the Year 6 PYP Exhibition which will be happening on Wednesday and Thursday between 10.50am and 12.00 noon in the Hall. We'd love to see you!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/26d8250a034f67d8e839cf5507cc28e4.jpg" alt="655827700_1488440049958305_2204460089226335171_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="447">
+                        <time>24/03/2026</time>
+                        <h3>🎉 Huge congratulations to Jeremy P. in Year 3 for achieving his Red Belt in Taekwondo on Sunday!  We’re so proud of his hard work and dedication! Keep it up, Jeremy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/c576b7bbe3c75ce1b8a629dee6f32b5d.jpg" alt="656732807_1488213313314312_1482866205703943038_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="446">
+                        <time>23/03/2026</time>
+                        <h3>Today we are congratulating Javen Hooi for showing diligence and hard work. This weekend he took part in his taekwondo exam and graduated to a Black Belt! We are really proud of him, he was very nervous last week and we spoke a good deal about how with self belief and positivity ‘you can do hard things!’ And he absolutely can!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/b9f8e6e3bd36a0983d9531af83fc2334.jpg" alt="654783919_1487166316752345_7648282598802715382_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="445">
+                        <time>23/03/2026</time>
+                        <h3>Joey from Year 3 is sharing her artwork. On the left, "Snowflakes" ❄️ on the right, "Flowers" 🌸. <br><br>Joey drew a lot of inspiration from @the_oblivious_mind’s colourful geometric style. Drop a ❄️ for Snowflakes or a 🌸 for Flowers — tell us why!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3b5ac42b70ec3a73c330502f7d74520e.jpg" alt="657343335_1487147853420858_3858053767593756352_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="444">
+                        <time>21/03/2026</time>
+                        <h3>Eid Mubarak to our families who are celebrating.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/f233c0adf40b74713cca27e869affc04.jpg" alt="8405470974703310958" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="443">
+                        <time>20/03/2026</time>
+                        <h3>We are incredibly proud of our Year 2 students for sharing their “Sharing the Planet” learning with their parents this morning. The students presented fact books, art dioramas, virtual coded worlds and play provocations. It was a wonderful morning and we thank all the parents who joined us for our Celebration of Learning. 🐆🦓🐒🐠🦋</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1a5a48c1036f5114e1d6c14817cb5f51.jpg" alt="654212664_1484323537036623_5090440660747037021_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="452">
+                        <time>26/03/2026</time>
+                        <h3>Year 6 students celebrating their learning through the opening of the PYPX. They learnt to sign and delivered messages via song and in Mandarin. Very proud of our students.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/02ad9992e48095fa76f4cf40d9b5f679.jpg" alt="656734467_1490025479799762_8239633131729232219_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="451">
+                        <time>26/03/2026</time>
+                        <h3>A Beautiful dance symbolising water, earth, fire and air as part ofcthe PYPX</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/edf6dbdf5b7caae92fecdea516c0cda1.jpg" alt="659487490_1490020816466895_6228471097803227786_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="450">
+                        <time>25/03/2026</time>
+                        <h3>ESF Primary Choir and Orchestra Concert 2026: The Sky is the Limit</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/f01af94b7ea1227daba8c0050e1861d8.jpg" alt="14361349033500762746" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="449">
+                        <time>25/03/2026</time>
+                        <h3>On Monday, 23rd March, Year 1 held a Writing Celebration of Learning. It was great to welcome parents into the classroom and see each child confidently share their writing. Students demonstrated clear improvements in handwriting, more accurate spelling, and the use of adjectives. They also enjoyed playing a phonemic game, highlighting their growing reading and decoding skills. We appreciate you taking the time to celebrate your child’s achievements and to support their learning this term.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7fb46b22e59f24903302eed7f0057dea.jpg" alt="654979855_1488936423242001_3149887563980026075_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="448">
+                        <time>24/03/2026</time>
+                        <h3>The wider Bradbury community (Y1 to 5 parents) are invited to pop in and check out the Year 6 PYP Exhibition which will be happening on Wednesday and Thursday between 10.50am and 12.00 noon in the Hall. We'd love to see you!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/26d8250a034f67d8e839cf5507cc28e4.jpg" alt="655827700_1488440049958305_2204460089226335171_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="447">
+                        <time>24/03/2026</time>
+                        <h3>🎉 Huge congratulations to Jeremy P. in Year 3 for achieving his Red Belt in Taekwondo on Sunday!  We’re so proud of his hard work and dedication! Keep it up, Jeremy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/c576b7bbe3c75ce1b8a629dee6f32b5d.jpg" alt="656732807_1488213313314312_1482866205703943038_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="446">
+                        <time>23/03/2026</time>
+                        <h3>Today we are congratulating Javen Hooi for showing diligence and hard work. This weekend he took part in his taekwondo exam and graduated to a Black Belt! We are really proud of him, he was very nervous last week and we spoke a good deal about how with self belief and positivity ‘you can do hard things!’ And he absolutely can!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/b9f8e6e3bd36a0983d9531af83fc2334.jpg" alt="654783919_1487166316752345_7648282598802715382_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="445">
+                        <time>23/03/2026</time>
+                        <h3>Joey from Year 3 is sharing her artwork. On the left, "Snowflakes" ❄️ on the right, "Flowers" 🌸. <br><br>Joey drew a lot of inspiration from @the_oblivious_mind’s colourful geometric style. Drop a ❄️ for Snowflakes or a 🌸 for Flowers — tell us why!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3b5ac42b70ec3a73c330502f7d74520e.jpg" alt="657343335_1487147853420858_3858053767593756352_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="444">
+                        <time>21/03/2026</time>
+                        <h3>Eid Mubarak to our families who are celebrating.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/f233c0adf40b74713cca27e869affc04.jpg" alt="8405470974703310958" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="443">
+                        <time>20/03/2026</time>
+                        <h3>We are incredibly proud of our Year 2 students for sharing their “Sharing the Planet” learning with their parents this morning. The students presented fact books, art dioramas, virtual coded worlds and play provocations. It was a wonderful morning and we thank all the parents who joined us for our Celebration of Learning. 🐆🦓🐒🐠🦋</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1a5a48c1036f5114e1d6c14817cb5f51.jpg" alt="654212664_1484323537036623_5090440660747037021_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="452">
+                        <time>26/03/2026</time>
+                        <h3>Year 6 students celebrating their learning through the opening of the PYPX. They learnt to sign and delivered messages via song and in Mandarin. Very proud of our students.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/02ad9992e48095fa76f4cf40d9b5f679.jpg" alt="656734467_1490025479799762_8239633131729232219_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="451">
+                        <time>26/03/2026</time>
+                        <h3>A Beautiful dance symbolising water, earth, fire and air as part ofcthe PYPX</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/edf6dbdf5b7caae92fecdea516c0cda1.jpg" alt="659487490_1490020816466895_6228471097803227786_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="450">
+                        <time>25/03/2026</time>
+                        <h3>ESF Primary Choir and Orchestra Concert 2026: The Sky is the Limit</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/f01af94b7ea1227daba8c0050e1861d8.jpg" alt="14361349033500762746" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="449">
+                        <time>25/03/2026</time>
+                        <h3>On Monday, 23rd March, Year 1 held a Writing Celebration of Learning. It was great to welcome parents into the classroom and see each child confidently share their writing. Students demonstrated clear improvements in handwriting, more accurate spelling, and the use of adjectives. They also enjoyed playing a phonemic game, highlighting their growing reading and decoding skills. We appreciate you taking the time to celebrate your child’s achievements and to support their learning this term.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7fb46b22e59f24903302eed7f0057dea.jpg" alt="654979855_1488936423242001_3149887563980026075_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="448">
+                        <time>24/03/2026</time>
+                        <h3>The wider Bradbury community (Y1 to 5 parents) are invited to pop in and check out the Year 6 PYP Exhibition which will be happening on Wednesday and Thursday between 10.50am and 12.00 noon in the Hall. We'd love to see you!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/26d8250a034f67d8e839cf5507cc28e4.jpg" alt="655827700_1488440049958305_2204460089226335171_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="447">
+                        <time>24/03/2026</time>
+                        <h3>🎉 Huge congratulations to Jeremy P. in Year 3 for achieving his Red Belt in Taekwondo on Sunday!  We’re so proud of his hard work and dedication! Keep it up, Jeremy!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/c576b7bbe3c75ce1b8a629dee6f32b5d.jpg" alt="656732807_1488213313314312_1482866205703943038_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="446">
+                        <time>23/03/2026</time>
+                        <h3>Today we are congratulating Javen Hooi for showing diligence and hard work. This weekend he took part in his taekwondo exam and graduated to a Black Belt! We are really proud of him, he was very nervous last week and we spoke a good deal about how with self belief and positivity ‘you can do hard things!’ And he absolutely can!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/b9f8e6e3bd36a0983d9531af83fc2334.jpg" alt="654783919_1487166316752345_7648282598802715382_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="445">
+                        <time>23/03/2026</time>
+                        <h3>Joey from Year 3 is sharing her artwork. On the left, "Snowflakes" ❄️ on the right, "Flowers" 🌸. <br><br>Joey drew a lot of inspiration from @the_oblivious_mind’s colourful geometric style. Drop a ❄️ for Snowflakes or a 🌸 for Flowers — tell us why!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3b5ac42b70ec3a73c330502f7d74520e.jpg" alt="657343335_1487147853420858_3858053767593756352_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="444">
+                        <time>21/03/2026</time>
+                        <h3>Eid Mubarak to our families who are celebrating.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/f233c0adf40b74713cca27e869affc04.jpg" alt="8405470974703310958" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="443">
+                        <time>20/03/2026</time>
+                        <h3>We are incredibly proud of our Year 2 students for sharing their “Sharing the Planet” learning with their parents this morning. The students presented fact books, art dioramas, virtual coded worlds and play provocations. It was a wonderful morning and we thank all the parents who joined us for our Celebration of Learning. 🐆🦓🐒🐠🦋</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1a5a48c1036f5114e1d6c14817cb5f51.jpg" alt="654212664_1484323537036623_5090440660747037021_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                    </div>
+        <div class="btns">
+            <button class="prev"></button>
+            <button class="next"></button>
+        </div>
+    </div>
+            <div class="lightbox" data-id="452">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>26/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Year 6 students celebrating their learning through the opening of the PYPX. They learnt to sign and delivered messages via song and in Mandarin. Very proud of our students.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/02ad9992e48095fa76f4cf40d9b5f679.jpg" alt="656734467_1490025479799762_8239633131729232219_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8c871e196140d16c917636c7f787ffb4.jpg" alt="659127872_1490025553133088_6292601815587769639_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/d83bc0e201ad6a17766abe1bdd23ae23.jpg" alt="656523498_1490026739799636_8944106057245706363_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/7ba2d1e8f0a255600380d83257599f40.jpg" alt="657429259_1490029713132672_8451648985483302241_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/2f277f54d9116b9736b915895bbdd5d4.jpg" alt="657876220_1490029793132664_3484765208108261078_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/49f2391fc88d30e7383b229b2894cb45.jpg" alt="658842957_1490029876465989_4132079312440825515_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8695427ebd9816c068c1b3d39fc8864c.jpg" alt="657529826_1490029963132647_4721575871370671954_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/cdbbad962a1bc606aebbde03175344db.jpg" alt="658039343_1490030056465971_2356315431503340092_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/36ec82cb5769933e82265718bdeee2f8.jpg" alt="656207590_1490030103132633_394687090203163057_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/2d4b667c4ea87534d9f3b5b4f3ac1d7b.jpg" alt="656249434_1490030163132627_4390390544918525489_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b76e0f36e11c1fb0422b49530ffd7113.jpg" alt="656605154_1490030233132620_6504236113745569720_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/2021aeee687b4008f4b609283f7dc788.jpg" alt="656005183_1490035109798799_5582741986454753043_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/118996871992425_1490025589799751" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/118996871992425_1490025589799751" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="451">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>26/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>A Beautiful dance symbolising water, earth, fire and air as part ofcthe PYPX</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/edf6dbdf5b7caae92fecdea516c0cda1.jpg" alt="659487490_1490020816466895_6228471097803227786_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f872575188eddd87630fe403b3ffd763.jpg" alt="658242271_1490020883133555_3316904862242721014_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/06c8196acb6057e8ad367bc460cb18e3.jpg" alt="655963536_1490020913133552_5269305821965101858_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/118996871992425_1490020933133550" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/118996871992425_1490020933133550" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="450">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>25/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>ESF Primary Choir and Orchestra Concert 2026: The Sky is the Limit</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f01af94b7ea1227daba8c0050e1861d8.jpg" alt="14361349033500762746" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/118996871992425_1489038553231788" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/118996871992425_1489038553231788" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="449">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>25/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>On Monday, 23rd March, Year 1 held a Writing Celebration of Learning. It was great to welcome parents into the classroom and see each child confidently share their writing. Students demonstrated clear improvements in handwriting, more accurate spelling, and the use of adjectives. They also enjoyed playing a phonemic game, highlighting their growing reading and decoding skills. We appreciate you taking the time to celebrate your child’s achievements and to support their learning this term.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/7fb46b22e59f24903302eed7f0057dea.jpg" alt="654979855_1488936423242001_3149887563980026075_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8abcd4e33b09a6258e3a3991924db18c.jpg" alt="655665050_1488936426575334_480104792061251608_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ab7f4c66577951bcd0d92db2b7058663.jpg" alt="657381488_1488936433242000_4981251431091084606_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/17154aeb7ed2f54cfd8706d702e8ee22.jpg" alt="657182789_1488936419908668_364984468864001952_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/fd766cc8beb182cb73f8db99dc70c575.jpg" alt="658128878_1488936429908667_7690454921384149272_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/2bfbe1556e1ac9949f13d5d0efc41dfc.jpg" alt="657227819_1488936846575292_3645868878280282726_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e229580916fb14f92c358b517db75473.jpg" alt="657169466_1488936833241960_6490079498330993470_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/37c37be7ccf48cc307c01edfdd4520f7.jpg" alt="656859744_1488936793241964_2870044389371385802_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ee0045526bd23d3405d583f0355fcbf7.jpg" alt="656679393_1488936836575293_3603530201533306440_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/26b014c1a5b715840585e12d592316fc.jpg" alt="656852682_1488937553241888_6140230344723904021_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/7d367a20301420d1132ec55bdb3f9662.jpg" alt="656845125_1488937556575221_3982240346999541409_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8d24d84f48687fa58a128cd8d87868df.jpg" alt="657351094_1488937559908554_5851771495401344006_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/118996871992425_1488940819908228" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/118996871992425_1488940819908228" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="448">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>24/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>The wider Bradbury community (Y1 to 5 parents) are invited to pop in and check out the Year 6 PYP Exhibition which will be happening on Wednesday and Thursday between 10.50am and 12.00 noon in the Hall. We'd love to see you!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/26d8250a034f67d8e839cf5507cc28e4.jpg" alt="655827700_1488440049958305_2204460089226335171_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/118996871992425_1488440099958300" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/118996871992425_1488440099958300" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="447">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>24/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🎉 Huge congratulations to Jeremy P. in Year 3 for achieving his Red Belt in Taekwondo on Sunday!  We’re so proud of his hard work and dedication! Keep it up, Jeremy!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c576b7bbe3c75ce1b8a629dee6f32b5d.jpg" alt="656732807_1488213313314312_1482866205703943038_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/118996871992425_1488214423314201" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/118996871992425_1488214423314201" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="446">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>23/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Today we are congratulating Javen Hooi for showing diligence and hard work. This weekend he took part in his taekwondo exam and graduated to a Black Belt! We are really proud of him, he was very nervous last week and we spoke a good deal about how with self belief and positivity ‘you can do hard things!’ And he absolutely can!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b9f8e6e3bd36a0983d9531af83fc2334.jpg" alt="654783919_1487166316752345_7648282598802715382_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/118996871992425_1487166556752321" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/118996871992425_1487166556752321" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="445">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>23/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Joey from Year 3 is sharing her artwork. On the left, "Snowflakes" ❄️ on the right, "Flowers" 🌸. <br><br>Joey drew a lot of inspiration from @the_oblivious_mind’s colourful geometric style. Drop a ❄️ for Snowflakes or a 🌸 for Flowers — tell us why!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3b5ac42b70ec3a73c330502f7d74520e.jpg" alt="657343335_1487147853420858_3858053767593756352_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/118996871992425_1487155560086754" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/118996871992425_1487155560086754" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="444">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>21/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Eid Mubarak to our families who are celebrating.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f233c0adf40b74713cca27e869affc04.jpg" alt="8405470974703310958" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/118996871992425_1485418116927165" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/118996871992425_1485418116927165" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="443">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>20/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>We are incredibly proud of our Year 2 students for sharing their “Sharing the Planet” learning with their parents this morning. The students presented fact books, art dioramas, virtual coded worlds and play provocations. It was a wonderful morning and we thank all the parents who joined us for our Celebration of Learning. 🐆🦓🐒🐠🦋</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/1a5a48c1036f5114e1d6c14817cb5f51.jpg" alt="654212664_1484323537036623_5090440660747037021_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/6bd7d3113e45134cb1bc1f2c03c4acee.jpg" alt="653033272_1484324620369848_1379915015568142885_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/fa1d456d4b2f7ebcfc99ea2e568eb77f.jpg" alt="654402239_1484324630369847_873117471309033377_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/70ebc26ceb13bc9ab3179d2e89b3e39a.jpg" alt="654695450_1484323580369952_4007192352637248035_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/5af6af5a4479a62bfeb7e00c583e54c0.jpg" alt="654792958_1484323943703249_8590728635983118269_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/fbecf9368b15b6f362f1ffc906d3d623.jpg" alt="652957701_1484324400369870_1082956431027507923_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/99bec515735f5e2bce916e24c3a1d5b4.jpg" alt="654442671_1484318350370475_5900217417393238064_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b635cb891423741e49675f695611ecfa.jpg" alt="654239937_1484324277036549_6930500824307333240_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/710c35546d437f397dcc4ca915f4b25a.jpg" alt="654234418_1484323597036617_8561218185441948633_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/99950980636b773c4b7128f02c8e6fbe.jpg" alt="654727825_1484323663703277_4815195250430533225_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b16199f847a8021ba08d4506156ccd4a.jpg" alt="653772660_1484324127036564_5719788720082913337_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/0f041f7579640f3289129884d4c56fd6.jpg" alt="653052289_1484324480369862_2033541622135963448_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/118996871992425_1484323183703325" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/118996871992425_1484323183703325" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section7').data('total'));
+            let slider_loop = ori_total >= 5 ? true : false;
+            $('.record-slider', '#section7').Slider({
+                slides: '.post-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total + 1);
+                    }
+                }
+            });
+
+            $('.post', '#section7').click(function() {
+                $('.lightbox[data-id=' + $(this).data('id') + ']').addClass('show');
+                disableScroll();
+            });
+
+            $('.lightbox .gallery', '#section7').Slider({
+                slides: '.gallery-item',
+                fixedSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    let videos = $('.slider video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    slider.parent().find('.slider-pager').html(current_page + ' / ' + total_page);
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(total_page > 1) {
+                        slider.parent().find('.slider-pager').html('1 / ' + total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+	</section>
+	<footer>
+		<div class="top-container">
+			<div class="container">
+				<div class="up-container">
+											<a href="/en/" class="logo">
+							<img src="/cache/img/a64916100169f551520a1684d842f842.png" alt="ESF Bradbury School-rw" loading="lazy" height="140" />						</a>
+																<nav class="social">
+							<ul>
+																<li>
+									<a href="https://www.instagram.com/esfbradburyschool/" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="40" height="40" />
+									</a>
+								</li>
+																<li>
+									<a href="https://www.facebook.com/BradburySchoolHK" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3e297d1.svg" width="40" height="40" />
+									</a>
+								</li>
+															</ul>
+						</nav>
+				 					</div>
+				<div class="down-container">
+					<div class="left-container">
+													<a href="https://maps.app.goo.gl/6JvTNgbSrQQ2wzP29" target="_blank" rel="nofollow" class="map">
+								<img src="/cache/img/c8c7cf1fb6a6fc880c043a7b91e1a560.png" alt="擷取" loading="lazy" width="714" height="536" />							</a>
+												<div class="contact">
+							<h2>Contact Information</h2>
+																								<a href="https://bradbury.esf.edu.hk/en/admissions/contact_admissions/" class="tel">(+852) 2574 8249</a>
+																<div></div>
+														 							<a href="mailto:enquiries@bradbury.edu.hk" class="email">enquiries@bradbury.edu.hk</a>
+														 							<p class="address">43C Stubbs Road, Hong Kong 香港司徒拔道43號C</p>
+													</div>
+												<div class="subscribe">
+							<form action="/en/subscribe/" method="post">
+								<h2>Connect with Us</h2>
+																	<input type="text" autoComplete="off" placeHolder="Your email address" maxLength="128" class="text" name="email" value="" />									<div class="submit">
+										<a class="handler">Submit</a>
+										<span>Slide to Right</span>
+									</div>
+									<input type="hidden" name="back" value="/en/" />															</form>
+						</div>
+						<script type="text/javascript">
+							$(document).ready(function() {
+								$('form', '.subscribe').validate({
+									autoScroll: false,
+									setting: [
+										[ 'email', {
+											method: [
+												[ 'req' ],					
+												[ 'email' ]					
+											]
+										} ]
+									],
+									onError: function(form) {
+										form.slideSubmit('revert');
+									}
+								}).slideSubmit();
+
+															});
+						</script>
+											</div>
+					<div class="right-container">
+												<nav class="menu2">
+							<ul>
+								<li>
+									<h2>Navigation</h2>
+								</li>
+																	<li>
+										<a href="https://bradbury.esf.edu.hk/en/about_us/">About Us</a>
+									</li>
+																	<li>
+										<a href="https://bradbury.esf.edu.hk/en/outstanding_education/">Outstanding Education</a>
+									</li>
+																	<li>
+										<a href="https://bradbury.esf.edu.hk/en/outstanding_experiences">Outstanding Experiences</a>
+									</li>
+																	<li>
+										<a href="https://bradbury.esf.edu.hk/en/outstanding_people/">Outstanding People</a>
+									</li>
+																	<li>
+										<a href="https://bradbury.esf.edu.hk/en/admissions/">Admissions</a>
+									</li>
+																	<li>
+										<a href="https://bradbury.esf.edu.hk/en/WorkWithUs/">Work With Us</a>
+									</li>
+															</ul>
+						</nav>
+																		<nav class="menu3">
+							<ul>
+								<li>
+									<h2>Quick Links</h2>
+								</li>
+																	<li>
+										<a href="https://join-us.esf.edu.hk/" target="_blank" rel="nofollow">About ESF</a>
+									</li>
+																	<li>
+										<a href="https://www.esfexplore.org.hk/" target="_blank" rel="nofollow">ESF Explore</a>
+									</li>
+																	<li>
+										<a href="https://bradbury.esf.edu.hk/upload/files/1/file/68a57306b3e41.pdf">School Calendar</a>
+									</li>
+															</ul>
+						</nav>
+											</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-container">			
+			<div class="container">
+				<div class="wrapper">
+					<p class="copyright">Copyright © English Schools Foundation. Powered by <a href="//www.anglia.com.hk" target="_blank">ANGLIA</a>.</p>
+					<a href="/en/sitemap/" class="sitemap">Sitemap</a>
+				</div>
+								<nav class="logo">
+			 		<ul>
+			 						 			<li>
+			 				<a href="http://esf.edu.hk/" target="_blank" rel="nofollow">
+								<img src="/upload/files/1/logo4/6736a4894fa60.png" height="131" />
+							</a>
+			 			</li>
+			 						 			<li>
+			 				<a>
+								<img src="/upload/files/1/logo4/6736a737552a5.png" height="131" />
+							</a>
+			 			</li>
+			 						 			<li>
+			 				<a href="https://www.ibo.org/" target="_blank" rel="nofollow">
+								<img src="/upload/files/1/logo4/660fd31d2b17e.png" height="131" />
+							</a>
+			 			</li>
+			 						 		</ul>
+			 	</nav>
+							</div>
+		</div>
+	</footer>
+	<button id="back-to-top"></button>
+			<div id="floating">
+							<a class="logo">
+					<img src="/cache/img/d7929fd5b9bf3ec34aae4e14f96ab318.jpg" alt="Bradbury-new-logo" loading="lazy" width="62" height="53" />				</a>
+																				<a class="bg-colour1"  href="https://join-us.esf.edu.hk/admissions-primary-secondary/" target="_blank" rel="nofollow">
+													<img src="/upload/shortcut/1/icon/660fd9ba6ff5d.svg" width="60" height="60" />
+												<span>Apply</span>
+					</a>
+														<a class="bg-colour1"  href="tel:85225748249">
+													<img src="/upload/shortcut/2/icon/660fd9ca7b6eb.svg" width="60" height="60" />
+												<span>Call</span>
+					</a>
+														<a class="bg-colour1"  href="https://bradbury.esf.edu.hk/en/enquiry/?SchoolCode=BS">
+													<img src="/upload/shortcut/3/icon/660fd9db298ad.svg" width="60" height="60" />
+												<span>Enquire</span>
+					</a>
+									</div>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#floating').addClass('animate');
+			});
+		</script>
+				<div id="accept-cookies">
+			<article class="editor"><p>Welcome and please be advised that ESF uses cookies. By accessing an ESF, ESL or PTA web site and other online ESF services, such as ESF&rsquo;s mobile app, users agree that ESF can store and access cookies, IP addresses and use other methods in order to collect website usage data, and improve user&rsquo;s online experience. By continuing to access this web site, users agree to the use of cookies, which is handled in accordance to the ESF Data Privacy Policy. Information collected via cookies is handled in accordance with the ESF Personal Data Handling Policy and its related Personal Information Collection Statements (&ldquo;PICS&rdquo;). A copy of the PICS can be found on the ESF web site.</p></article>
+			<div class="buttons">
+				<button type="" class="accept">Accept</button>			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('button', '#accept-cookies').click(function() {
+					$('#accept-cookies').remove();
+					$.ajax({
+						url: genurl('cookies', 'main'),
+						type: 'post',
+						data: {
+							accept: 'y'
+						},
+						success: function(response) {
+						},
+						async: false
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

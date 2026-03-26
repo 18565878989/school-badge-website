@@ -63,49 +63,49 @@ img.emoji {
 <script type='text/javascript' src='https://www.ktak.edu.hk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var ECLASS_LATEST_NEWS_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"500722dd59","page_url":"https:\/\/www.ktak.edu.hk\/latest-new\/","eClassURL":"https:\/\/ktak.eclass.hk"};
+var ECLASS_LATEST_NEWS_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"49d6c0f4a2","page_url":"https:\/\/www.ktak.edu.hk\/latest-new\/","eClassURL":"https:\/\/ktak.eclass.hk"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-latest-news-api.js?ver=2.0.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var ECLASS_ENOTICE_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"22cf2fecd4","page_url":""};
+var ECLASS_ENOTICE_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"0b00d7d36c","page_url":""};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-enotice-api.js?ver=2.0.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var ECLASS_CALENDAR_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"c20aa0a368","school_type":"KIS","LANG":{"SCHOOL_EVENT":"\u5b78\u6821\u4e8b\u9805","ACADEMIC_EVENT":"\u6559\u5b78\u4e8b\u9805","GROUP_EVENT":"\u5c0f\u7d44\u4e8b\u9805","PUBLIC_HOLIDAY_EVENT":"\u516c\u773e\u5047\u671f","SCHOOL_HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f","HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f"}};
+var ECLASS_CALENDAR_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"10a59cf42b","school_type":"KIS","LANG":{"SCHOOL_EVENT":"\u5b78\u6821\u4e8b\u9805","ACADEMIC_EVENT":"\u6559\u5b78\u4e8b\u9805","GROUP_EVENT":"\u5c0f\u7d44\u4e8b\u9805","PUBLIC_HOLIDAY_EVENT":"\u516c\u773e\u5047\u671f","SCHOOL_HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f","HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f"}};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-calendar-api.js?ver=2.0.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var ECLASS_DIGITAL_CHANNELS_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"31b3f35f60","TYPE_CATEGORY":"1","TYPE_ALBUM":"2","TYPE_HIGHLIGHT":"3"};
+var ECLASS_DIGITAL_CHANNELS_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"c4196f059e","TYPE_CATEGORY":"1","TYPE_ALBUM":"2","TYPE_HIGHLIGHT":"3"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-digital-channels-api.js?ver=2.0.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var ECLASS_ACADEMIC_YEAR_TERM_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"13c2666189"};
+var ECLASS_ACADEMIC_YEAR_TERM_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"14ec296573"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-academic-year-term-api.js?ver=2.0.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var ECLASS_SUBJECT_GROUP_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"44c1353f84"};
+var ECLASS_SUBJECT_GROUP_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"2d097d6009"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-subject-group-api.js?ver=2.0.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var ECLASS_YEAR_CLASS_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"5b833ac491"};
+var ECLASS_YEAR_CLASS_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"bf977ff574"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-year-class-api.js?ver=2.0.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"34b453ffaa","school_type":"KIS"};
+var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"abf58ce43d","school_type":"KIS"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://www.ktak.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-homework-api.js?ver=2.0.0'></script>
@@ -319,7 +319,7 @@ var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-aja
 <div id="headerSpace"></div>
 <div id="slideshowArea">
     <div id="slideshowWrap">
-        <div id="gallery-carousel-69a53231d871c" class=" huge-it-slider owl-carousel">
+        <div id="gallery-carousel-69c4f03a2b362" class=" huge-it-slider owl-carousel">
     
                     <div class="item">
                                     <span class="link">
@@ -444,35 +444,28 @@ var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-aja
                                     <a href="https://www.ktak.edu.hk/latest-new/%e5%81%87%e6%9c%9f/">
                         <li class="">
                             <h2 class="newsTitle">
-                                假期                                                            </h2>
-                                                                                    <span class="newsDate">2026-01-01</span>
-                        </li>
-                    </a>
-                                    <a href="https://www.ktak.edu.hk/latest-new/%e6%a0%a1%e5%85%a7%e6%a8%a1%e6%93%ac%e5%b9%b4%e5%ae%b5%e6%b4%bb%e5%8b%95/">
-                        <li class="">
-                            <h2 class="newsTitle">
-                                校內模擬年宵活動                                                            </h2>
-                                                                                    <span class="newsDate">2026-01-01</span>
-                        </li>
-                    </a>
-                                    <a href="https://www.ktak.edu.hk/latest-new/%e4%b8%8a%e5%ad%b8%e6%9c%9f%e5%ae%b6%e9%95%b7%e6%95%99%e5%b8%ab%e9%9d%a2%e8%ab%87%e6%97%a5/">
-                        <li class="">
-                            <h2 class="newsTitle">
-                                上學期家長教師面談日                                                            </h2>
-                                                                                    <span class="newsDate">2026-01-01</span>
-                        </li>
-                    </a>
-                                    <a href="https://www.ktak.edu.hk/latest-new/%e5%91%a8%e6%97%a5%e5%ae%b6%e9%95%b7%e7%8f%ad%e5%8f%8aktac-kids/">
-                        <li class="">
-                            <h2 class="newsTitle">
-                                周日家長班及KTAC Kids                                                            </h2>
-                                                                                    <span class="newsDate">2026-01-01</span>
+                                K2家長觀課日                                                            </h2>
+                                                                                    <span class="newsDate">2026-03-01</span>
                         </li>
                     </a>
                                     <a href="https://www.ktak.edu.hk/latest-new/%e7%94%9f%e6%97%a5%e6%9c%83/">
                         <li class="">
                             <h2 class="newsTitle">
                                 生日會                                                            </h2>
+                                                                                    <span class="newsDate">2026-03-01</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ktak.edu.hk/latest-new/%e7%92%b0%e7%90%83%e5%ae%a3%e6%84%9b%e5%8d%94%e6%9c%83%e3%80%8c%e6%84%9b%e5%bf%83%e5%88%a9%e6%98%af%e6%8d%90%e7%8d%bb%e5%a4%a7%e8%a1%8c%e5%8b%95%e3%80%8d/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                環球宣愛協會「愛心利是捐獻大行動」                                                            </h2>
+                                                                                    <span class="newsDate">2026-03-01</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ktak.edu.hk/latest-new/%e5%91%a8%e6%97%a5%e5%ae%b6%e9%95%b7%e7%8f%ad%e5%8f%8aktac-kids/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                周日家長班及KTAC Kids                                                            </h2>
                                                                                     <span class="newsDate">2026-01-01</span>
                         </li>
                     </a>
@@ -567,7 +560,7 @@ var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.ktak.edu.hk\/wp-admin\/admin-aja
 
                 
 <div id="photoSlideShowWrap" class="modules-fullWidth">
-    <div id="gallery-carousel-69a53231dda75" class="autoWidth huge-it-slider owl-carousel">
+    <div id="gallery-carousel-69c4f03a2f6e0" class="autoWidth huge-it-slider owl-carousel">
     
                     <div class="item">
                                     <span class="link">

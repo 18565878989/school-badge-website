@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>仁濟醫院永隆幼稚園/幼兒中心</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+
+            <link rel="icon" href="https://www.ychwl.org.hk/wp-content/uploads/2021/10/首頁-5.png">
+        <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="referrer" content="origin">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/js/jquery.dotdotdot.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/js/moment.js"></script>
+            <script type="text/javascript" src="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/js/zh-hk.js"></script>
+        <script type="text/javascript" src="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700|Varela+Round" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/css/gallery-images-cust-t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/css/t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/css/t5_page_color.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/css/t5_s5.css"/>
+    <script type="text/javascript" src="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/js/t5.js"></script>
+    <script type="text/javascript" src="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/js/back_to_top.js"></script>
+
+    <link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ychwl.org.hk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.ychwl.org.hk/wp-includes/css/dist/block-library/style.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-style-css'  href='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-style-css'  href='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='blueimp-style-css'  href='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/css/blueimp-gallery.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/css/custom-style.css?ver=5.1.19' type='text/css' media='all' />
+<style id='custom-background-header-inline-css' type='text/css'>
+header.ul_image {background: url(https://www.ychwl.org.hk/wp-content/uploads/2022/01/首頁.jpg) center top no-repeat; background-size: auto 100%, auto 100%;}
+</style>
+<style id='custom-background-footer-inline-css' type='text/css'>
+footer #schInfo {background: url(https://www.ychwl.org.hk/wp-content/uploads/2021/12/頁尾_4.jpg) center top no-repeat; background-size: auto 100%, auto 100%;}
+</style>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_LATEST_NEWS_API = {"url":"https:\/\/www.ychwl.org.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"49d6c0f4a2","page_url":"https:\/\/www.ychwl.org.hk\/latest-new\/","eClassURL":"https:\/\/ychwl.eclass.hk"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-latest-news-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ENOTICE_API = {"url":"https:\/\/www.ychwl.org.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"0b00d7d36c","page_url":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-enotice-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_CALENDAR_API = {"url":"https:\/\/www.ychwl.org.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"10a59cf42b","school_type":"KIS","LANG":{"SCHOOL_EVENT":"\u5b78\u6821\u4e8b\u9805","ACADEMIC_EVENT":"\u6559\u5b78\u4e8b\u9805","GROUP_EVENT":"\u5c0f\u7d44\u4e8b\u9805","PUBLIC_HOLIDAY_EVENT":"\u516c\u773e\u5047\u671f","SCHOOL_HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f","HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-calendar-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_DIGITAL_CHANNELS_API = {"url":"https:\/\/www.ychwl.org.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"c4196f059e","TYPE_CATEGORY":"1","TYPE_ALBUM":"2","TYPE_HIGHLIGHT":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-digital-channels-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ACADEMIC_YEAR_TERM_API = {"url":"https:\/\/www.ychwl.org.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"14ec296573"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-academic-year-term-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_SUBJECT_GROUP_API = {"url":"https:\/\/www.ychwl.org.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"2d097d6009"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-subject-group-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_YEAR_CLASS_API = {"url":"https:\/\/www.ychwl.org.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"bf977ff574"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-year-class-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.ychwl.org.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"abf58ce43d","school_type":"KIS"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-homework-api.js?ver=2.0.0'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/third-party/jquery.dotdotdot.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/owl.carousel.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-video.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-youtube.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-vimeo.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/jquery.blueimp-gallery.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/third-party/twbs-pagination/jquery.twbsPagination.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/plugins/gallery-images-cust/assets/gallery-images-cust.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/assets/js/basic-script.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/assets/js/homepage-slideshow.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/assets/js/homepage-calendar.js?ver=5.1.19'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.ychwl.org.hk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.19" />
+
+<link rel="stylesheet" href="https://www.ychwl.org.hk/wp-content/plugins/count-per-day/counter.css" type="text/css" />
+<link rel="alternate" href="https://www.ychwl.org.hk/" hreflang="zh" />
+<link rel="alternate" href="https://www.ychwl.org.hk/en/" hreflang="en" />
+
+</head>
+
+<body class="home blog zh">
+
+<header id="header" class="ul_image">
+    <div class="container">
+        <div class="row">
+            <div id="schLogo" class="col-xs-12 col-md-6 col-lg-7">
+                <div class="schLogoContainer">
+                    <a href="https://www.ychwl.org.hk/">
+                        <img src="https://www.ychwl.org.hk/wp-content/uploads/2021/09/Logo-150x150.png" alt="schoolLogo" class="schLogo"/>
+                        <div class="schName">
+                            <span class="schName_ch">仁濟醫院永隆幼稚園/幼兒中心</span>
+                            <span class="schName_en">Yan Chai Hospital Wing Lung Kindergarten / Child Care Centre</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button id="mmBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="login" class="col-md-6 col-lg-5">
+        <form id="loginForm" action="https://ychwl.eclass.hk/login.php" method="POST" target="_blank">
+        <a href="https://ychwl.eclass.hk" target="_blank"><img
+                    src="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/images/eclassLogo.png" alt="schoolLogo" class="logo"/></a>
+        <div class="input">
+            <input name="UserLogin" class="form-control" type="text" placeholder="登入名稱"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+            <input name="UserPassword" class="form-control" type="password" placeholder="密碼"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+        </div>
+        <a class="btn_login" href="https://ychwl.eclass.hk/login.php" onclick="$('#loginForm').submit(); return false;"></a>
+
+                    <a class="btn_lang" href="https://www.ychwl.org.hk/en/">Eng</a>
+            </form>
+    </div>        </div>
+    </div>
+</header>
+
+<nav class="navbar" id="mainMenu">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                    <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.ychwl.org.hk/eclass-%e4%bb%81%e5%be%b7%e6%95%99%e8%82%b2/" class="" style="">
+                            <img src="http://www.ychwl.org.hk/wp-content/uploads/2021/10/幼教天地-02-1-180x160.png" />
+                        仁德教育        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ychwl.org.hk/eclass-%e4%bb%81%e5%be%b7%e6%95%99%e8%82%b2/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/" class="" style="">
+                        學校簡介        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/eclass-%e4%bb%81%e5%be%b7%e6%95%99%e8%82%b2/%e8%a1%8c%e6%94%bf%e6%9e%b6%e6%a7%8b-2/" class="" style="">
+                        行政架構        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/eclass-%e4%bb%81%e5%be%b7%e6%95%99%e8%82%b2/%e8%be%a6%e5%ad%b8%e4%bf%a1%e5%bf%b5/" class="" style="">
+                        辦學信念        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/eclass-%e4%bb%81%e5%be%b7%e6%95%99%e8%82%b2/%e8%be%a6%e5%ad%b8%e5%ae%97%e6%97%a8-2/" class="" style="">
+                        辦學宗旨        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/eclass-%e4%bb%81%e5%be%b7%e6%95%99%e8%82%b2/%e5%ae%a3%e8%a8%80%e5%8f%8a%e5%8f%a3%e8%99%9f/" class="" style="">
+                        宣言及口號        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/eclass-%e4%bb%81%e5%be%b7%e6%95%99%e8%82%b2/%e6%95%99%e5%ad%b8%e7%9b%ae%e6%a8%99/" class="" style="">
+                        教學目標        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/eclass-%e4%bb%81%e5%be%b7%e6%95%99%e8%82%b2/%e8%b3%aa%e7%b4%a0%e8%a9%95%e6%a0%b8/" class="" style="">
+                        質素評核        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c11">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/" class="" style="">
+                            <img src="https://www.ychwl.org.hk/wp-content/uploads/2021/10/濟濟一堂-180x160.png" />
+                        濟濟一堂        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e5%ae%b6%e6%a0%a1%e5%8d%94%e4%bd%9c/" class="" style="">
+                        家校協作        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e7%a4%be%e5%8d%80%e5%8f%8a%e5%b0%88%e6%a5%ad%e5%8d%94%e4%bd%9c/" class="" style="">
+                        社區及專業協作        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e6%95%99%e8%82%b2%e5%b0%88%e6%a5%ad%e7%99%bc%e5%b1%95/" class="" style="">
+                        教育專業發展        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e6%88%91%e5%80%91%e7%9a%84%e6%a6%ae%e8%80%80/" class="" style="">
+                        我們的榮耀        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e6%b0%b8%e9%9a%8640%e5%91%a8%e5%b9%b4%e6%a0%a1%e6%85%b6%e7%89%b9%e5%88%8a/" class="" style="">
+                        40周年校慶特刊        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/35%e5%91%a8%e5%b9%b4%e6%a0%a1%e6%85%b6%e7%89%b9%e5%88%8a/" class="" style="">
+                        35周年校慶特刊        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c14">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e8%88%87%e6%95%99/" class="" style="">
+                            <img src="https://www.ychwl.org.hk/wp-content/plugins/eclass-integration/public/images/menu/064.png" />
+                        稚童樂園        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e8%87%aa%e7%94%b1%e9%81%8a%e6%88%b2/" class="" style="">
+                        自由遊戲        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e7%b9%bd%e7%b4%9b%e8%8b%b1%e8%aa%9e%e6%b4%bb%e5%8b%95/" class="" style="">
+                        繽紛英語活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%bf%ab%e6%a8%82%e5%b0%8f%e8%9c%9c%e8%9c%82%e9%9a%8a/" class="" style="">
+                        快樂小蜜蜂隊        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e9%9b%99%e8%aa%9e%e5%85%a8%e8%83%bd%e5%b0%8f%e8%a8%98%e8%80%85/" class="" style="">
+                        雙語全能小記者        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c02">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/" class="" style="">
+                            <img src="https://www.ychwl.org.hk/wp-content/plugins/eclass-integration/public/images/menu/019.png" />
+                        幼教天地        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e8%aa%b2%e7%a8%8b%e7%90%86%e5%bf%b5/" class="" style="">
+                        課程理念        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e7%8f%ad%e7%b4%9a%e6%b4%bb%e5%8b%95/" class="" style="">
+                        班級活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e5%85%a8%e6%96%b9%e4%bd%8d%e5%ad%b8%e7%bf%92/" class="" style="">
+                        全方位學習        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e5%8d%87%e5%b0%8f%e6%a6%82%e6%b3%81/" class="" style="">
+                        升小支援        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e5%89%b5%e8%97%9d%e5%bb%8a/" class="" style="">
+                        創藝廊        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb/" class="" style="">
+                        中華文化校本學習活動        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb/2024-2025%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        2024-2025年度        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb/2023-2024%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        2023-2024年度        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb/2022-2023%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        2022-2023年度        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e5%b9%bc%e7%a8%9a%e5%9c%92%e6%b4%bb%e5%8b%95%e6%b4%a5%e8%b2%bc%e8%a8%88%e5%8a%83/" class="" style="">
+                        幼稚園活動津貼計劃        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e5%b9%bc%e7%a8%9a%e5%9c%92%e6%b4%bb%e5%8b%95%e6%b4%a5%e8%b2%bc%e8%a8%88%e5%8a%83/2024-2025%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        2024-2025年度        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e5%b9%bc%e7%a8%9a%e5%9c%92%e6%b4%bb%e5%8b%95%e6%b4%a5%e8%b2%bc%e8%a8%88%e5%8a%83/2023-2024%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        2023-2024年度        </a>
+
+            </li>
+                </ul>
+            </li>
+                </ul>
+            </li>
+        <li class="page_item c01">
+        <a href="https://www.ychwl.org.hk/%e5%ae%b6%e9%95%b7%e5%9c%92%e5%9c%b0/" class="" style="">
+                            <img src="https://www.ychwl.org.hk/wp-content/plugins/eclass-integration/public/images/menu/009.png" />
+                        家長園地        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.ychwl.org.hk/%e9%9b%bb%e5%ad%90%e7%9b%b8%e7%b0%bf/" class="" style="">
+                            <img src="https://www.ychwl.org.hk/wp-content/uploads/2021/10/園地資訊-180x160.png" />
+                        園地資訊        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e9%9b%bb%e5%ad%90%e7%9b%b8%e7%b0%bf/%e6%a0%a1%e5%9c%92%e7%92%b0%e5%a2%83/" class="" style="">
+                        校園環境        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e9%9b%bb%e5%ad%90%e7%9b%b8%e7%b0%bf/%e6%a8%82%e8%8b%97/" class="" style="">
+                        家校通訊刊物《樂苗》        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e9%9b%bb%e5%ad%90%e7%9b%b8%e7%b0%bf/%e6%9c%8d%e5%8b%99%e4%bb%8b%e7%b4%b9/" class="" style="">
+                        服務介紹        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e9%9b%bb%e5%ad%90%e7%9b%b8%e7%b0%bf/%e7%87%9f%e9%a4%8a%e8%88%87%e8%86%b3%e9%a3%9f/" class="" style="">
+                        營養與膳食        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e9%9b%bb%e5%ad%90%e7%9b%b8%e7%b0%bf/%e8%a1%9b%e7%94%9f%e6%8e%aa%e6%96%bd/" class="" style="">
+                        衛生措施        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e9%9b%bb%e5%ad%90%e7%9b%b8%e7%b0%bf/%e5%8f%8b%e6%a0%a1%e9%80%a3%e7%b5%90/" class="" style="">
+                        友校連結        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e9%9b%bb%e5%ad%90%e7%9b%b8%e7%b0%bf/%e5%ad%b8%e6%a0%a1%e9%80%9a%e8%a8%8a/" class="" style="">
+                        聯絡我們        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e9%9b%bb%e5%ad%90%e7%9b%b8%e7%b0%bf/%e6%a0%a1%e6%ad%8c/" class="" style="">
+                        校歌        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c10">
+        <a href="https://www.ychwl.org.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/" class="" style="">
+                            <img src="http://www.ychwl.org.hk/wp-content/uploads/2025/08/新生入學需知_2-180x160.png" />
+                        新生入學需知        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/%e6%94%b6%e7%94%9f%e6%ba%96%e5%89%87%e5%8f%8a%e7%a8%8b%e5%ba%8f/" class="" style="">
+                        收生準則及程序        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/%e5%85%a8%e5%b9%b4%e5%ad%b8%e8%b2%bb/" class="" style="">
+                        全年學費        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/%e4%bb%a3%e8%be%a6%e9%a0%85%e7%9b%ae/" class="" style="">
+                        代辦項目        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/%e4%b8%8b%e8%bc%89%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b%e8%a1%a8/" class="" style="">
+                        下載入學申請表        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/%e4%b8%8b%e8%bc%89%e5%ad%b8%e6%a0%a1%e7%b0%a1%e7%ab%a0/" class="" style="">
+                        下載學校簡章        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ychwl.org.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/%e6%95%99%e8%82%b2%e5%b1%80%e6%94%b6%e7%94%9f%e5%ae%89%e6%8e%92%e9%80%a3%e7%b5%90/" class="" style="">
+                        教育局收生安排連結        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item c01">
+        <a href="https://www.ychwl.org.hk/facebook/" class="" style="">
+                            <img src="http://www.ychwl.org.hk/wp-content/uploads/2023/10/facebook_icon-160x160.png" />
+                        FaceBook        </a>
+
+            </li>
+                                        <li class="login page_item">
+                        <a href="https://ychwl.eclass.hk" target="_blank">eClass 登入</a>
+                    </li>
+                
+                <li class="lang page_item" style="">
+                    <a href="https://www.ychwl.org.hk/en/">English</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div id="headerSpace"></div>        <div id="alertMsg" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                          class="icon"></span>
+                        </button>
+                        <h4 class="modal-title">本院全年接受報名</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content">
+                            <p><img class="aligncenter" src="http://www.ychwl.org.hk/wp-content/uploads/2022/10/學校網頁招生告示-中文-02.jpg" alt="" width="400" height="283" /></p>
+<p style="text-align: center;"><a href="http://www.ychwl.org.hk/wp-content/uploads/2025/09/WL_2026-27_K1-收生程序.中.pdf" target="_blank" rel="noopener"><img class="alignnone" src="http://www.ychwl.org.hk/wp-content/uploads/2021/02/收生準則及程序-1.png" alt="" width="160" height="57" /></a> <a href="http://www.ychwl.org.hk/wp-content/uploads/2026/01/17_入學申請表1.2026更新版.pdf" target="_blank" rel="noopener"><img class="alignnone" src="http://www.ychwl.org.hk/wp-content/uploads/2019/02/下載入學申請表.png" alt="" width="160" height="57" /></a></p>                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+        <script type="text/javascript">
+            $(window).on('load', function () {
+                $('#alertMsg').modal('show');
+            });
+            $("#alertMsg .close").click(function () {
+                $("body").removeClass("alertBox");
+            });
+        </script>
+        
+<div id="slideshowArea">
+    <div id="slideshowWrap">
+        <div id="gallery-carousel-69c4e63b0c5be" class=" huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2026/03/2667x1042px-1278x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2025/11/2667x1042px_守護兒童啟動學校-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <a href="https://youtu.be/pgD0a0wPJ0k" target="_blank" >
+                            <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2025/09/2667x1042px_run-Recovered_2-1280x500.jpg">
+
+                            <div class="hidden-xs content" style="display:none;">
+                                                                                            </div>
+                        </a>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2025/06/2667x1042px_run-2-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2025/06/2667x1042px_run-3-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2024/12/2667x1042px_run-Recovered-2-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2023/03/214_2667x1042_banner-1-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <a href="https://chat.whatsapp.com/LDa9IWjDaUe2lUP0sjz5Sz" target="_blank" >
+                            <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2022/10/網頁Banner-1280x500.jpg">
+
+                            <div class="hidden-xs content" style="display:none;">
+                                                                                            </div>
+                        </a>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <a href="http://www.ychwl.org.hk/中華文化校本學習活動/中華文化校本學習活/" target="_blank" >
+                            <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2023/08/8290_2667x1042_banner-1280x500.jpg">
+
+                            <div class="hidden-xs content" style="display:none;">
+                                                                                            </div>
+                        </a>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2025/09/2667x1042px_run-Recovered-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>
+    <div class="container">
+        <div class="row">
+
+            <div id="latestNews" class="col-xs-12 col-md-6">
+    <h1 class="title">最新消息</h1>
+            <a href="https://www.ychwl.org.hk/latest-new/" class="moreBtn">更多</a>
+    
+    <div class="newsFrame">
+                    <ul id="newsList">
+                                    <a href="https://www.ychwl.org.hk/latest-new/2026%e5%b9%b43%e6%9c%8816%e6%97%a5%ef%bc%88%e6%98%9f%e6%9c%9f%e4%b8%80%ef%bc%89%e8%88%89%e8%a1%8cn%e7%8f%ad%e5%88%b0%e6%a0%a1%e6%b4%bb%e5%8b%95%e3%80%8a%e5%85%a8%e6%b8%af%e6%8c%ba%e7%9b%b4%e8%ad%b7/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2026年3月16日（星期一）舉行N班到校活動《全港挺直護脊校園計劃：[誰的脊骨?]音樂故事共享活動》                                                            </h2>
+                                                                                    <span class="newsDate">2026-02-13</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ychwl.org.hk/latest-new/2026%e5%b9%b43%e6%9c%8816%e6%97%a5%ef%bc%88%e6%98%9f%e6%9c%9f%e4%b8%80%ef%bc%89%e8%88%89%e8%a1%8ck1%e5%88%b0%e6%a0%a1%e6%b4%bb%e5%8b%95%e3%80%8a%e5%85%a8%e6%b8%af%e6%8c%ba%e7%9b%b4%e8%ad%b7%e8%84%8a/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2026年3月16日（星期一）舉行K1到校活動《全港挺直護脊校園計劃：[直直的脊骨不見了!!]音樂故事共享活動》                                                            </h2>
+                                                                                    <span class="newsDate">2026-02-13</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ychwl.org.hk/latest-new/2026%e5%b9%b43%e6%9c%8813%e6%97%a5%ef%bc%88%e6%98%9f%e6%9c%9f%e4%ba%94%ef%bc%89%e8%88%89%e8%be%a6%e3%80%8c3%e5%8f%8a4%e6%9c%88%e9%9b%99%e6%9c%88%e7%94%9f%e6%97%a5%e6%9c%83%e3%80%8d/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2026年3月13日（星期五）舉辦「3及4月雙月生日會」                                                            </h2>
+                                                                                    <span class="newsDate">2026-02-13</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ychwl.org.hk/latest-new/2026%e5%b9%b42%e6%9c%8823%e6%97%a5%ef%bc%88%e6%98%9f%e6%9c%9f%e4%b8%80%ef%bc%89%e7%82%ba%e8%81%af%e6%a0%a1%e6%95%99%e5%b8%ab%e5%b0%88%e6%a5%ad%e7%99%bc%e5%b1%95%e6%b4%bb%e5%8b%95%ef%bc%88%e5%a2%83/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2026年2月23日（星期一）為聯校教師專業發展活動（境外交流）                                                            </h2>
+                                                                                    <span class="newsDate">2026-01-25</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ychwl.org.hk/latest-new/2026%e5%b9%b42%e6%9c%8816%e6%97%a5%e8%87%b32%e6%9c%8822%e6%97%a5%e7%82%ba%e8%be%b2%e6%9b%86%e6%96%b0%e5%b9%b4%e5%81%87%e6%9c%9f/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2026年2月16日至2月22日為農曆新年假期                                                            </h2>
+                                                                                    <span class="newsDate">2026-01-25</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ychwl.org.hk/latest-new/2026%e5%b9%b42%e6%9c%8813%e6%97%a5%e4%ba%94%e8%88%89%e8%be%a6%e3%80%8c%e8%bf%8e%e6%98%a5%e7%af%80%e6%b4%bb%e5%8b%95%e3%80%8d/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2026年2月13日(五)舉辦「迎春節活動」                                                            </h2>
+                                                                                    <span class="newsDate">2026-01-25</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ychwl.org.hk/latest-new/2026%e5%b9%b42%e6%9c%887%e6%97%a5%ef%bc%88%e6%98%9f%e6%9c%9f%e5%85%ad%ef%bc%89%e7%82%ba%e3%80%8c%e4%bb%81%e6%bf%9f%e5%89%b5%e6%84%8f%e7%a7%91%e6%8a%80%e5%98%89%e5%b9%b4%e8%8f%af2026%e3%80%8d/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2026年2月7日（星期六）為「仁濟創意科技嘉年華2026」                                                            </h2>
+                                                                                    <span class="newsDate">2026-01-25</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ychwl.org.hk/latest-new/2026%e5%b9%b42%e6%9c%887%e6%97%a5%ef%bc%88%e6%98%9f%e6%9c%9f%e5%85%ad%ef%bc%89%e7%82%ba%e4%b8%8a%e5%ad%b8%e6%9c%9f%e5%ae%b6%e9%95%b7%e6%97%a5/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2026年2月7日（星期六）為上學期家長日                                                            </h2>
+                                                                                    <span class="newsDate">2026-01-25</span>
+                        </li>
+                    </a>
+                            </ul>
+            </div>
+
+</div>
+
+            <div id="notice" class="col-xs-12 col-md-6">
+    <h1 class="title"> 收生資訊</h1>
+            <a href="https://www.ychwl.org.hk/school-notice/" class="moreBtn">更多</a>
+    
+    <div class="noticeFrame">
+                    <ul id="noticeList">
+                                    <a href="https://www.ychwl.org.hk/school-notice/2026%e5%b9%b41%e6%9c%888%e8%87%b310%e6%97%a5%ef%bc%88%e6%98%9f%e6%9c%9f%e5%9b%9b%e8%87%b3%e5%85%ad%ef%bc%89%e7%82%ba%e3%80%8c2026%e8%87%b327%e5%ad%b8%e5%b9%b4k1%e7%8f%ad%e8%a8%bb%e5%86%8a%e6%97%a5/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                2026年1月8至10日（星期四至六）為「2026至27學年K1班註冊日」                                                            </h2>
+                                                        <span class="noticeDate">2026-01-03</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ychwl.org.hk/school-notice/2025%e5%b9%b411%e6%9c%881%e6%97%a5%ef%bc%88%e6%98%9f%e6%9c%9f%e5%85%ad%ef%bc%89%e7%82%ba%e3%80%8ck1%e7%8f%ad%e9%9d%a2%e8%a9%a6%e6%97%a5%e3%80%8d-2/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                2025年11月1日（星期六）為「K1班面試日」                                                            </h2>
+                                                        <span class="noticeDate">2025-11-18</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ychwl.org.hk/school-notice/2026-2027%e5%b9%b4%e5%ba%a6-k%e7%8f%ad%e6%8e%a5%e8%a6%8b%e6%97%a5%e5%ae%89%e6%8e%92%f0%9f%91%8b%f0%9f%8f%bb/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                2026-2027年度 K班接見日安排👋🏻                                                            </h2>
+                                                        <span class="noticeDate">2025-10-14</span>
+                        </li>
+                    </a>
+                            </ul>
+            </div>
+
+</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            
+            
+<div id="calendar" class="col-xs-12">
+    <h1 class="title">學校行事曆</h1>
+
+
+
+    <div class="calendarWrap">
+        <div class="calendarFrame">
+            <div class="loading" v-show="isLoading">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <div class="year_month" v-show="!isLoading" style="display:none;">
+                <a class="btn_lastmonth" @click="changeSelectedMonth(-1)"></a>
+                <span class="year">{{ currentSelectedDate.format('YYYY') }}</span>
+                <span class="month">{{ currentSelectedDate.format('MMMM') }}</span>
+                <a class="btn_nextmonth" @click="changeSelectedMonth(1)"></a>
+            </div>
+            <ul v-show="!isLoading" style="display:none;">
+                <li class="cal_head">日</li>
+                <li class="cal_head">一</li>
+                <li class="cal_head">二</li>
+                <li class="cal_head">三</li>
+                <li class="cal_head">四</li>
+                <li class="cal_head">五</li>
+                <li class="cal_head">六</li>
+
+                <li class="blank_date" v-for="n in blankDayCount">
+                    <div></div>
+                </li>
+
+                <template v-for="day in monthDayCount">
+                    <li :class="getDayClass(day)">
+                        <div><a @click="showDayDetails(day)">
+                            <span class="date">{{day}}</span>
+                            <span class="cycle" v-if="getDayCycle(day)">{{getDayCycle(day)}}</span>
+                        </a></div>
+                    </li>
+                </template>
+
+                <p class="spacer"></p>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="calendarDetails" tabindex="-1" role="dialog" aria-labelledby="calendarDetails"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" v-html="selectedEvent.dateHtml"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="icon"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tbl_events">
+                        <tr v-for="event in selectedEvent.events">
+                            <td :class="event.CssClass">{{ event.TypeText }}</td>
+                            <td>{{ event.Title }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+
+
+    <div id="photoSlideShow">
+        <div class="container">
+            <div class="row">
+
+                
+<div id="photoSlideShowWrap" class="modules-fullWidth">
+    <div id="gallery-carousel-69c4e63b183fc" class="autoWidth huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2022/07/360-01-383x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <a href="https://app.dreality.hk/virtual-tour/ychwl" target="_blank" >
+                            <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2022/07/360-399x266.png">
+
+                            <div class="hidden-xs content" style="display:none;">
+                                                                                            </div>
+                        </a>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ychwl.org.hk/wp-content/uploads/2022/07/360-02-384x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="modules-break"></div>
+
+<div id="usefulLinks">
+    <div class="container">
+        <div class="row">
+            <div class="modules-fullWidth" id="usefulLinksWrap">
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.facebook.com/profile.php?id=100086626990726" target="_blank">
+                                <img src="https://www.ychwl.org.hk/wp-content/uploads/2023/10/facebook_link3-e1755651488254.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.instagram.com/ychwinglungkindergarten/" target="_blank">
+                                <img src="https://www.ychwl.org.hk/wp-content/uploads/2022/09/ig_link_2.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ychwl.org.hk/wp-content/uploads/2022/09/ig_link_2.png 292w, https://www.ychwl.org.hk/wp-content/uploads/2022/09/ig_link_2-167x160.png 167w, https://www.ychwl.org.hk/wp-content/uploads/2022/09/ig_link_2-277x266.png 277w" sizes="(max-width: 292px) 100vw, 292px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://chat.whatsapp.com/LDa9IWjDaUe2lUP0sjz5Sz" target="_blank">
+                                <img src="https://www.ychwl.org.hk/wp-content/uploads/2019/02/新生群組_link.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ychwl.org.hk/wp-content/uploads/2019/02/新生群組_link.png 292w, https://www.ychwl.org.hk/wp-content/uploads/2019/02/新生群組_link-167x160.png 167w, https://www.ychwl.org.hk/wp-content/uploads/2019/02/新生群組_link-277x266.png 277w" sizes="(max-width: 292px) 100vw, 292px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.xiaohongshu.com/user/profile/66d58f57000000001d03008f?xsec_token=ABagWuveFOwcOrRS76H8H95Y2iXLZrrdtVg3z11CWm3yM=&xsec_source=pc_note" target="_blank">
+                                <img src="https://www.ychwl.org.hk/wp-content/uploads/2018/08/小紅書_link.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ychwl.org.hk/wp-content/uploads/2018/08/小紅書_link.png 292w, https://www.ychwl.org.hk/wp-content/uploads/2018/08/小紅書_link-167x160.png 167w, https://www.ychwl.org.hk/wp-content/uploads/2018/08/小紅書_link-277x266.png 277w" sizes="(max-width: 292px) 100vw, 292px" />                            </a>
+                                            </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modules-break"></div>
+<div id="backToTop" onclick="topFunction()" style="display: none;">
+    <div>
+    </div>
+</div>
+
+<footer class="ul_image">
+    <div id="schInfo">
+        <div class="container">
+            <div class="row">
+                <div class="schName_ch col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">仁濟醫院永隆幼稚園/幼兒中心</div>
+                <div class="schName_en col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">Yan Chai Hospital Wing Lung Kindergarten / Child Care Centre</div>
+                <div class="infoList col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
+                                            <span class="address">
+                            新界上水彩園邨彩玉樓地下107-120，122及124室                            <a class="map" href="https://goo.gl/maps/uKDyW8TPmZTiLCgTA" target="_blank"></a>
+                        </span>
+                    
+                                            <span class="tel">(852) 2679 7337</span>
+                    
+                                            <span class="fax">(852) 2673 3743</span>
+                    
+                                            <span class="mail"><a href="mailto:wl@ychkg.org.hk">wl@ychkg.org.hk</a></span>
+                    
+                                            <span class="web"><a href="www.ychkg.org.hk"
+                                             target="_blank">www.ychkg.org.hk</a></span>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <span class="col-xs-12 col-sm-6">版權所有 &copy; 仁濟醫院永隆幼稚園/幼兒中心</span>
+                <span class="col-xs-12 col-sm-6">Powered by <a href="http://www.eclass.com.hk/" target="_blank"><span
+                                class="logo"/></span></a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    /* Moved into homepage-homework.js
+    $(function () {
+        $('.datetimepicker').datetimepicker({
+            format: 'YYYY-MM-DD',
+            ignoreReadonly: true,
+            locale: 'zh-HK'
+        });
+    });
+    $('.datetimepicker-time').datetimepicker({
+        sideBySide: true
+    });
+    $(function () {
+        $('.datetimepicker').datetimepicker();
+
+        $('.datetimepicker-addon').on('click', function () {
+            $(this).prev('input.datetimepicker').data('DateTimePicker').toggle();
+        });
+    });
+    */
+    $(function () {
+        // Add slideDown animation to Bootstrap dropdown when expanding.
+        $('.dropdown').on('show.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+        });
+
+        // Add slideUp animation to Bootstrap dropdown when collapsing.
+        $('.dropdown').on('hide.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+        });
+    });
+</script>
+<script type="text/javascript" src="https://www.ychwl.org.hk/wp-content/themes/theme5_style_1/js/bootstrap_fix.js"></script>
+<div id="mmBg" class="mmOpen bg"></div>
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-preload-range="0">
+        <div class="slides"></div>
+
+        <div class="photoInfo">
+            <h3 class="title"></h3>
+            <p class="description"></p>
+            <span class="more"><a class="showMoreDescription" href="javascript:void(0);">（顯示更多…）</a></span>
+        </div>
+
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="popup" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+
+        <ol class="indicator"></ol>
+        <div class="indicatorControl">
+	    	<span class="leftBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+	    	</span>
+            <span class="rightBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+			</span>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://www.ychwl.org.hk/wp-includes/js/wp-embed.min.js?ver=5.1.19'></script>
+</body>
+</html>

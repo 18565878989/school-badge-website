@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>明愛樂進學校 </title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+
+            <link rel="icon" href="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/校徽高清版_640.png">
+        <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+            <meta name="referrer" content="origin">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/js/jquery.dotdotdot.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/js/moment.js"></script>
+            <script type="text/javascript" src="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/js/zh-hk.js"></script>
+        <script type="text/javascript" src="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700|Varela+Round" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/css/gallery-images-cust-t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/css/t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/css/t5_page_color.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/css/t5_s2.css"/>
+    <script type="text/javascript" src="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/js/t5.js"></script>
+    <script type="text/javascript" src="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/js/back_to_top.js"></script>
+
+    <link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.lokjun.edu.hk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.lokjun.edu.hk/wp-includes/css/dist/block-library/style.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-style-css'  href='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-style-css'  href='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='blueimp-style-css'  href='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/css/blueimp-gallery.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/css/custom-style.css?ver=5.1.19' type='text/css' media='all' />
+<style id='custom-background-header-inline-css' type='text/css'>
+header.ul_image {background: url(https://www.lokjun.edu.hk/wp-content/uploads/2025/09/2025網頁首頁Banner.png) center top no-repeat; background-size: auto 100%, auto 100%;}
+</style>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_LATEST_NEWS_API = {"url":"https:\/\/www.lokjun.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"49d6c0f4a2","page_url":"https:\/\/www.lokjun.edu.hk\/latest-new\/","eClassURL":"https:\/\/lokjun.eclasscloud.hk"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-latest-news-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ENOTICE_API = {"url":"https:\/\/www.lokjun.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"0b00d7d36c","page_url":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-enotice-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_CALENDAR_API = {"url":"https:\/\/www.lokjun.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"10a59cf42b","school_type":"IP25","LANG":{"SCHOOL_EVENT":"\u5b78\u6821\u4e8b\u9805","ACADEMIC_EVENT":"\u6559\u5b78\u4e8b\u9805","GROUP_EVENT":"\u5c0f\u7d44\u4e8b\u9805","PUBLIC_HOLIDAY_EVENT":"\u516c\u773e\u5047\u671f","SCHOOL_HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f","HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-calendar-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_DIGITAL_CHANNELS_API = {"url":"https:\/\/www.lokjun.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"c4196f059e","TYPE_CATEGORY":"1","TYPE_ALBUM":"2","TYPE_HIGHLIGHT":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-digital-channels-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ACADEMIC_YEAR_TERM_API = {"url":"https:\/\/www.lokjun.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"14ec296573"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-academic-year-term-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_SUBJECT_GROUP_API = {"url":"https:\/\/www.lokjun.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"2d097d6009"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-subject-group-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_YEAR_CLASS_API = {"url":"https:\/\/www.lokjun.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"bf977ff574"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-year-class-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.lokjun.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"abf58ce43d","school_type":"IP25"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-homework-api.js?ver=2.0.0'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/jquery.dotdotdot.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/owl.carousel.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-video.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-youtube.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-vimeo.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/jquery.blueimp-gallery.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/twbs-pagination/jquery.twbsPagination.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/plugins/gallery-images-cust/assets/gallery-images-cust.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/assets/js/basic-script.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-slideshow.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-calendar.js?ver=5.1.19'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.lokjun.edu.hk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.19" />
+
+<link rel="stylesheet" href="https://www.lokjun.edu.hk/wp-content/plugins/count-per-day/counter.css" type="text/css" />
+<link rel="alternate" href="https://www.lokjun.edu.hk/" hreflang="zh" />
+<link rel="alternate" href="https://www.lokjun.edu.hk/en/" hreflang="en" />
+
+</head>
+
+<body class="home blog zh">
+
+<header id="header" class="ul_image">
+    <div class="container">
+        <div class="row">
+            <div id="schLogo" class="col-xs-12 col-md-6 col-lg-7">
+                <div class="schLogoContainer">
+                    <a href="https://www.lokjun.edu.hk/">
+                        <img src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/校徽高清版_640-150x150.png" alt="schoolLogo" class="schLogo"/>
+                        <div class="schName">
+                            <span class="schName_ch">明愛樂進學校 </span>
+                            <span class="schName_en">Caritas Lok Jun School    </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button id="mmBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="login" class="col-md-6 col-lg-5">
+        <form id="loginForm" action="https://lokjun.eclasscloud.hk/login.php" method="POST" target="_blank">
+        <a href="https://lokjun.eclasscloud.hk" target="_blank"><img
+                    src="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/images/eclassLogo.png" alt="schoolLogo" class="logo"/></a>
+        <div class="input">
+            <input name="UserLogin" class="form-control" type="text" placeholder="登入名稱"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+            <input name="UserPassword" class="form-control" type="password" placeholder="密碼"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+        </div>
+        <a class="btn_login" href="https://lokjun.eclasscloud.hk/login.php" onclick="$('#loginForm').submit(); return false;"></a>
+
+                    <a class="btn_lang" href="https://www.lokjun.edu.hk/en/">Eng</a>
+            </form>
+    </div>        </div>
+    </div>
+</header>
+
+<nav class="navbar" id="mainMenu">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                    <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e6%a0%a1%e6%a6%82%e8%a6%bd/" class="" style="">
+                            <img src="https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/002.png" />
+                        學校資訊        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e6%a0%a1%e6%a6%82%e8%a6%bd/%e5%ad%b8%e6%a0%a1%e5%85%a8%e8%b2%8c%e5%8f%8a%e6%a0%a1%e8%88%8d%e8%a8%ad%e6%96%bd/" class="" style="">
+                        學校全貌及校舍設施        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e6%a0%a1%e6%a6%82%e8%a6%bd/%e8%be%a6%e5%ad%b8%e4%bf%a1%e5%bf%b5%e5%8f%8a%e5%ae%97%e6%97%a8/" class="" style="">
+                        辦學信念及宗旨        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e6%a0%a1%e6%a6%82%e8%a6%bd/%e6%a0%a1%e8%a8%93/" class="" style="">
+                        校訓        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e6%a0%a1%e6%a6%82%e8%a6%bd/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/" class="" style="">
+                        學校簡介        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e6%a0%a1%e6%a6%82%e8%a6%bd/%e6%b3%95%e5%9c%98%e6%a0%a1%e8%91%a3%e6%9c%83/" class="" style="">
+                        法團校董會        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e6%a0%a1%e6%a6%82%e8%a6%bd/%e5%ad%b8%e6%a0%a1%e7%89%b9%e8%89%b2/" class="" style="">
+                        學校特色        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e6%a0%a1%e6%a6%82%e8%a6%bd/%e6%95%99%e8%81%b7%e5%93%a1%e5%9c%98%e9%9a%8a/" class="" style="">
+                        教職員團隊        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e6%a0%a1%e6%a6%82%e8%a6%bd/%e5%88%b0%e8%a8%aa/" class="" style="">
+                        到訪        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e6%a0%a1%e6%a6%82%e8%a6%bd/%e7%be%a9%e5%b7%a5%e6%8b%9b%e5%8b%9f/" class="" style="">
+                        義工招募        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e6%a0%a1%e6%a6%82%e8%a6%bd/%e6%8b%9b%e6%a8%99/" class="" style="">
+                        招標        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/" class="" style="">
+                            <img src="https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/015.png" />
+                        管理與組織        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e7%ae%a1%e7%90%86%e7%b2%be%e7%a5%9e/" class="" style="">
+                        管理精神        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e5%ad%b8%e6%a0%a1%e6%9e%b6%e6%a7%8b/" class="" style="">
+                        學校架構        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e5%ad%b8%e6%a0%a1%e8%a8%88%e5%8a%83%e8%88%87%e5%a0%b1%e5%91%8a/" class="" style="">
+                        學校計劃與報告        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e5%ad%b8%e6%a0%a1%e5%88%8a%e7%89%a9/" class="" style="">
+                        學校刊物        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e5%ad%b8%e6%a0%a1%e5%88%8a%e7%89%a9/%e5%ad%b8%e6%a0%a1%e6%96%b0%e5%8b%95%e6%85%8b/" class="" style="">
+                        學校新動態        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e5%ad%b8%e6%a0%a1%e5%88%8a%e7%89%a9/%e6%a0%a1%e8%a8%8a/" class="" style="">
+                        校訊        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e5%ad%b8%e6%a0%a1%e5%88%8a%e7%89%a9/%e7%89%b9%e5%88%8a/" class="" style="">
+                        特刊        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e6%95%99%e8%82%b2%e5%88%8a%e7%89%a9/" class="" style="">
+                        教育刊物        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e6%95%99%e8%82%b2%e5%88%8a%e7%89%a9/%e8%aa%9e%e6%96%87%e7%a7%91%e7%b9%aa%e6%9c%ac%e6%95%85%e4%ba%8b/" class="" style="">
+                        語文科繪本故事        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e6%95%99%e8%82%b2%e5%88%8a%e7%89%a9/%e9%ab%94%e9%81%a9%e8%83%bd%e6%b8%ac%e8%a9%a6%e9%9b%bb%e5%ad%90%e5%b9%b3%e5%8f%b0/" class="" style="">
+                        體適能測試電子平台        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e6%95%99%e8%82%b2%e5%88%8a%e7%89%a9/%e7%a4%be%e4%ba%a4%e4%b8%80%e9%bb%9e%e9%80%9a/" class="" style="">
+                        「社交一點通」        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e6%95%99%e8%82%b2%e5%88%8a%e7%89%a9/%e7%85%a7%e9%a1%a7%e8%80%85%e5%af%a6%e5%8b%99%e6%89%8b%e5%86%8a/" class="" style="">
+                        「照顧者實務手冊」(住宿部)        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e6%95%99%e8%82%b2%e5%88%8a%e7%89%a9/%e7%ab%a5%e8%a9%b1%e6%a8%82%e8%a8%80%e7%b9%aa%e6%9c%ac/" class="" style="">
+                        童話樂言繪本（住宿部）        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e6%95%99%e8%82%b2%e5%88%8a%e7%89%a9/%e8%a6%aa%e5%ad%90%e5%81%a5%e8%a1%8c%e7%a7%98%e7%ac%88/" class="" style="">
+                        親子健行秘笈（住宿部）        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%ae%a1%e7%90%86%e8%88%87%e7%b5%84%e7%b9%94/%e5%ad%b8%e6%a0%a1%e6%8c%87%e5%bc%95/" class="" style="">
+                        學校指引        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/" class="" style="">
+                            <img src="https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/028.png" />
+                        學與教        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e8%aa%b2%e7%a8%8b%e6%9e%b6%e6%a7%8b%e5%8f%8a%e8%aa%b2%e6%99%82%e6%af%94%e4%be%8b/" class="" style="">
+                        課程架構及課時比例        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/" class="" style="">
+                        學科天地        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e8%aa%9e%e6%96%87%e7%a7%91/" class="" style="">
+                        語文科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e6%95%b8%e5%ad%b8%e7%a7%91/" class="" style="">
+                        數學科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e4%ba%ba%e6%96%87%e7%a7%91/" class="" style="">
+                        人文科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e7%a7%91%e5%ad%b8%e7%a7%91/" class="" style="">
+                        科學科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e5%85%ac%e6%b0%91%e8%88%87%e7%a4%be%e6%9c%83%e7%99%bc%e5%b1%95%e7%a7%91/" class="" style="">
+                        公民與社會發展科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e7%8d%a8%e7%ab%8b%e7%94%9f%e6%b4%bb%e7%a7%91/" class="" style="">
+                        獨立生活科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e8%81%b7%e6%a5%ad%e6%95%99%e8%82%b2%e7%a7%91/" class="" style="">
+                        職業教育科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e9%9b%bb%e8%85%a6%e7%a7%91/" class="" style="">
+                        電腦科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e8%b3%87%e8%a8%8a%e5%8f%8a%e9%80%9a%e8%a8%8a%e7%a7%91%e6%8a%80%e7%a7%91/" class="" style="">
+                        資訊及通訊科技科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e7%a7%91%e6%8a%80%e8%88%87%e7%94%9f%e6%b4%bb%e7%a7%91/" class="" style="">
+                        科技與生活科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e9%9f%b3%e6%a8%82%e7%a7%91/" class="" style="">
+                        音樂科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e8%a6%96%e8%a6%ba%e8%97%9d%e8%a1%93%e7%a7%91/" class="" style="">
+                        視覺藝術科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e9%ab%94%e8%82%b2%e7%a7%91/" class="" style="">
+                        體育科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e5%be%b7%e8%82%b2%e5%8f%8a%e5%ae%97%e6%95%99%e6%95%99%e8%82%b2%e7%a7%91/" class="" style="">
+                        德育及宗教教育科        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%a7%91%e5%a4%a9%e5%9c%b0/%e5%9c%96%e6%9b%b8%e7%a7%91/" class="" style="">
+                        圖書科        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e6%95%99%e5%ad%b8%e7%89%b9%e8%89%b2/" class="" style="">
+                        教學特色        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e6%95%99%e5%ad%b8%e7%89%b9%e8%89%b2/%e6%95%99%e5%ad%b8%e7%89%b9%e8%89%b2/" class="" style="">
+                        教學特色        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e7%94%9f%e6%b6%af%e8%a6%8f%e5%8a%83%e6%95%99%e8%82%b2/" class="" style="">
+                        生涯規劃教育        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e7%92%b0%e5%a2%83%e6%95%99%e8%82%b2/" class="" style="">
+                        環境教育        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/stem%e6%95%99%e8%82%b2/" class="" style="">
+                        STREAM教育        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%81%a5%e5%ba%b7%e6%95%99%e8%82%b2/" class="" style="">
+                        健康教育        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e8%87%aa%e9%96%89%e7%97%87%e6%95%99%e8%82%b2/" class="" style="">
+                        自閉症教育        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%9c%8b%e6%b0%91%e6%95%99%e8%82%b2%e5%8f%8a%e5%9c%8b%e5%ae%b6%e5%ae%89%e5%85%a8%e6%95%99%e8%82%b2%e5%ad%b8%e8%88%87%e6%95%99%e8%b3%87%e6%ba%90/" class="" style="">
+                        國民教育及國家安全教育學與教資源        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/" class="" style="">
+                            <img src="https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/030.png" />
+                        校風及學生支援        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e6%ad%a3%e5%90%91%e6%a0%a1%e5%9c%92%e6%96%87%e5%8c%96/" class="" style="">
+                        正向校園文化        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e5%81%a5%e5%ba%b7%e6%95%99%e8%82%b2/" class="" style="">
+                        健康教育        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e5%83%b9%e5%80%bc%e8%a7%80%e6%95%99%e8%82%b2/" class="" style="">
+                        價值觀教育        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/" class="" style="">
+                        學生支援        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e7%8d%8e%e5%8b%b5%e8%a8%88%e5%8a%83/" class="" style="">
+                        獎勵計劃        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e6%96%b0%e7%94%9f%e6%94%af%e6%8f%b4/" class="" style="">
+                        新生支援        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e9%9d%9e%e8%8f%af%e8%aa%9e%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/" class="" style="">
+                        非華語學生支援        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e7%8f%ad%e9%95%b7%e5%8f%8a%e9%a2%a8%e7%b4%80%e9%9a%8a/" class="" style="">
+                        班長及風紀隊        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e5%93%81%e5%be%b7%e6%95%99%e8%82%b2/" class="" style="">
+                        品德教育        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e8%a8%80%e8%aa%9e%e6%b2%bb%e7%99%82/" class="" style="">
+                        言語治療        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e8%81%b7%e6%a5%ad%e6%b2%bb%e7%99%82/" class="" style="">
+                        職業治療        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e7%89%a9%e7%90%86%e6%b2%bb%e7%99%82/" class="" style="">
+                        物理治療        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e5%ae%97%e6%95%99%e6%95%99%e8%82%b2/" class="" style="">
+                        宗教教育        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e8%ad%b7%e7%90%86%e6%9c%8d%e5%8b%99/" class="" style="">
+                        護理服務        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e7%a4%be%e5%b7%a5%e6%9c%8d%e5%8b%99/" class="" style="">
+                        社工服務        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e6%a0%a1%e9%a2%a8%e5%8f%8a%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/%e6%95%99%e8%82%b2%e5%bf%83%e7%90%86/" class="" style="">
+                        教育心理        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/" class="" style="">
+                            <img src="https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/006.png" />
+                        學習經歷        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e5%ad%b8%e7%94%9f%e6%88%90%e5%b0%b1/" class="" style="">
+                        學生成就        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/" class="" style="">
+                        學習活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e6%a0%a1%e5%85%a7%e5%a4%96%e5%af%a6%e7%bf%92/" class="" style="">
+                        校內外實習        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e5%85%b1%e8%9e%8d%e6%b4%bb%e5%8b%95/" class="" style="">
+                        共融活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e8%aa%b2%e5%be%8c%e6%b4%bb%e5%8b%95/" class="" style="">
+                        課後活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e7%af%80%e6%97%a5%e6%85%b6%e7%a5%9d/" class="" style="">
+                        節日慶祝        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e4%bc%91%e9%96%92%e6%b4%bb%e5%8b%95/" class="" style="">
+                        休閒活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e7%a4%be%e5%8d%80%e5%af%a6%e8%b8%90/" class="" style="">
+                        社區實踐        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e5%a2%83%e5%a4%96%e9%81%8a/" class="" style="">
+                        境外遊/內地考察        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e5%a4%9a%e5%85%83%e9%ab%94%e8%82%b2/" class="" style="">
+                        多元體育        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e7%b6%9c%e5%90%88%e8%97%9d%e8%a1%93/" class="" style="">
+                        綜合藝術        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e7%b6%9c%e5%90%88%e8%97%9d%e8%a1%93/%e8%a6%96%e8%97%9d%e5%89%b5%e4%bd%9c%e5%8f%8a%e8%a9%95%e8%b3%9e%e8%b3%87%e6%ba%90%e5%ba%ab/" class="" style="">
+                        視藝創作及評賞資源庫        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e7%b6%9c%e5%90%88%e8%97%9d%e8%a1%93/%e6%ad%a3%e5%90%91%e7%94%9f%e5%91%bd%e6%95%99%e8%82%b2%e8%97%9d%e8%a1%93%e5%85%b1%e8%9e%8d%e8%a8%88%e5%8a%83/" class="" style="">
+                        正向生命教育藝術共融計劃        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ad%b8%e7%bf%92%e7%b6%93%e6%ad%b7/%e7%b6%9c%e5%90%88%e8%97%9d%e8%a1%93/%e3%80%8c%e9%97%9c%e6%84%9b%e5%90%8c%e8%a1%8c%e2%80%a2%e5%be%9e%e5%bf%83%e5%87%ba%e7%99%bc%e3%80%8d%e8%97%9d%e8%a1%93%e5%b1%95/" class="" style="">
+                        「 關愛同行 • 從心出發 」藝術展        </a>
+
+            </li>
+                </ul>
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%b6%e9%95%b7%e8%b3%87%e8%a8%8a/" class="" style="">
+                            <img src="https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/044.png" />
+                        家長資訊        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%b6%e9%95%b7%e8%b3%87%e8%a8%8a/%e8%b3%87%e8%a8%8a/" class="" style="">
+                        資訊        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%b6%e9%95%b7%e8%b3%87%e8%a8%8a/%e6%a0%a1%e6%9c%8d%e6%a8%a3%e5%bc%8f/" class="" style="">
+                        校服樣式        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%b6%e9%95%b7%e8%b3%87%e8%a8%8a/%e5%ae%b6%e9%95%b7%e6%95%99%e8%81%b7%e5%93%a1%e6%9c%83/" class="" style="">
+                        家長教職員會        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%b6%e9%95%b7%e8%b3%87%e8%a8%8a/%e5%a5%bd%e5%ad%b8%e5%ae%b6%e5%ba%ad%e4%bc%b4%e6%88%90%e9%95%b7%e8%a8%88%e5%8a%83/" class="" style="">
+                        好學家庭伴成長計劃        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%b6%e9%95%b7%e8%b3%87%e8%a8%8a/%e5%ae%b6%e9%95%b7%e7%be%a9%e5%b7%a5/" class="" style="">
+                        家長義工        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%b6%e9%95%b7%e8%b3%87%e8%a8%8a/%e5%ae%b6%e9%95%b7%e6%95%99%e8%82%b2/" class="" style="">
+                        家長教育        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%b6%e9%95%b7%e8%b3%87%e8%a8%8a/%e6%a8%82%e9%80%b2%e5%a4%9a%e5%aa%92%e9%ab%94/" class="" style="">
+                        樂進多媒體        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99/" class="" style="">
+                            <img src="https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/011.png" />
+                        宿舍服務        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99/%e6%9c%8d%e5%8b%99%e7%b0%a1%e4%bb%8b/" class="" style="">
+                        服務簡介        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99/%e5%ae%bf%e8%88%8d%e8%a8%ad%e6%96%bd/" class="" style="">
+                        宿舍設施        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99/%e5%b0%88%e6%a5%ad%e6%9e%b6%e6%a7%8b/" class="" style="">
+                        專業架構        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99/%e8%a8%93%e7%b7%b4/" class="" style="">
+                        訓練        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99/%e8%a8%93%e7%b7%b4/%e8%87%aa%e7%90%86%e8%a8%93%e7%b7%b4/" class="" style="">
+                        自理訓練        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99/%e8%a8%93%e7%b7%b4/%e5%be%b7%e8%82%b2%e8%a8%93%e7%b7%b4/" class="" style="">
+                        德育訓練        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99/%e8%a8%93%e7%b7%b4/%e5%ae%b6%e5%b1%85%e8%a8%93%e7%b7%b4/" class="" style="">
+                        家居訓練        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99/%e8%a8%93%e7%b7%b4/%e5%bb%b6%e4%bc%b8%e8%a8%93%e7%b7%b4%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99_%e8%a8%93%e7%b7%b4_%e5%bb%b6%e4%bc%b8%e8%a8%93%e7%b7%b4/" class="" style="">
+                        延伸訓練        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99/%e7%94%9f%e6%b4%bb%e6%b5%81%e7%a8%8b/" class="" style="">
+                        生活流程        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e5%ae%bf%e8%88%8d%e6%9c%8d%e5%8b%99/%e5%ae%bf%e8%88%8d%e6%b4%bb%e5%8b%95/" class="" style="">
+                        宿舍活動        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.lokjun.edu.hk/%e7%a4%be%e5%8d%80%e5%8d%94%e4%bd%9c/" class="" style="">
+                            <img src="https://www.lokjun.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/025.png" />
+                        對外交流        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%a4%be%e5%8d%80%e5%8d%94%e4%bd%9c/%e8%a1%a8%e6%8f%9a%e6%95%99%e5%b8%ab/" class="" style="">
+                        表揚教師        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%a4%be%e5%8d%80%e5%8d%94%e4%bd%9c/%e7%a4%be%e5%8d%80%e5%8d%94%e4%bd%9c/" class="" style="">
+                        社區協作        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%a4%be%e5%8d%80%e5%8d%94%e4%bd%9c/%e5%b0%88%e6%a5%ad%e4%ba%a4%e6%b5%81/" class="" style="">
+                        專業交流        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.lokjun.edu.hk/%e7%a4%be%e5%8d%80%e5%8d%94%e4%bd%9c/%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4%e6%a0%a1%e6%85%b6%e5%b0%88%e9%a0%81/" class="" style="">
+                        三十周年校慶專頁        </a>
+
+            </li>
+                </ul>
+            </li>
+                                        <li class="login page_item">
+                        <a href="https://lokjun.eclasscloud.hk" target="_blank">eClass 登入</a>
+                    </li>
+                
+                <li class="lang page_item" style="">
+                    <a href="https://www.lokjun.edu.hk/en/">English</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div id="headerSpace"></div>
+<div id="slideshowArea">
+    <div id="slideshowWrap">
+        <div id="gallery-carousel-69c4ea284fa7c" class=" huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2023/10/School-Banner_01_2310-921x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/School-Banner_02-1-866x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/School-Banner_04-1-919x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2023/01/School-Banner_05-1-860x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>
+    <div class="container">
+        <div class="row">
+
+            <div id="latestNews" class="col-xs-12 col-md-6">
+    <h1 class="title">最新消息 </h1>
+            <a href="https://www.lokjun.edu.hk/latest-new/" class="moreBtn">更多</a>
+    
+    <div class="newsFrame">
+                    <ul id="newsList">
+                                    <a href="https://www.lokjun.edu.hk/latest-new/%e5%b0%8f%e5%ad%b8%e5%85%a8%e6%96%b9%e4%bd%8d%e5%ad%b8%e7%bf%92%e6%97%a5/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                小學全方位學習日                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot">2026年3月5日（星期四）
+當天是小學全方位學習日，是次活動配合總體國家安全觀中的資源安全，讓學生認識自然資源，培養其珍惜資源的意識，學習在日常生活中實踐珍惜資源的方法。師生與家長於上午到荃灣如心園木化石公園參觀，認識和欣賞木化石，並運用五感探索香港的自然歷史遺產。學生於下午參與綠惜地球《山嶺朋友變了樣？》繪本故事工作坊，認識「無痕山林」七大原則，並學習進入大自然的正確禮儀！
+2026年3月12日(星期四)
+於「智」趣星期四延伸學習中，學生透過影片、網上遊戲等，認識節約能源的方法，期望他們能在衣食住行各方面中實踐，珍惜地球資源。
+&nbsp;
+                  
+&nbsp;
+                                                                             
+&nbsp;
+                  </span>
+                                                        <span class="newsDate">2026-03-19</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/latest-new/%e6%98%8e%e6%84%9b%e6%a8%82%e6%81%a9%e5%ad%b8%e6%a0%a1%e3%80%8c%e9%80%81%e4%b8%8a%e6%98%a5%e6%97%a5%e6%9a%96%e6%84%8f%e3%80%8d%e6%a0%a1%e5%a4%96%e7%be%a9%e5%b7%a5%e6%b4%bb%e5%8b%95/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                明愛樂恩學校「送上春日暖意」校外義工活動                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot">2026年3月11日（星期三）
+明愛樂恩學校學生義工，到訪明愛樂進學校宿舍部，為學生安排春日主題的活動，以輕鬆的遊戲、藝術活動、齊唱兒歌等，營造輕鬆愉快的氛圍，促進兩校學生共融交流。
+ 
+ </span>
+                                                        <span class="newsDate">2026-03-12</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/latest-new/%e5%9b%9b%e6%97%ac%e6%9c%9f%e3%80%8c%e6%84%9b%e5%bf%83%e5%8d%88%e9%a4%90%e3%80%8d%e6%b4%bb%e5%8b%95/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                四旬期「愛心午餐」活動                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot">2026年3月10日（星期二） 天主教四旬期是復活節前的準備期，大家透過禁食、祈禱及捐獻等多元方式，感受天主對自己的恩典，並關注貧困的人。本校部分風紀隊學生參與由明愛馬鞍山中學主辦的四旬期「愛心午餐」活動，讓同學感受及體會四旬期的意義，更教育同學學習珍惜食物的重要。
+ 
+ 
+
+</span>
+                                                        <span class="newsDate">2026-03-11</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/latest-new/%e7%ab%a5%e8%bb%8d%e3%80%8c%e5%b1%95%e8%83%bd%e5%85%b1%e8%9e%8d%e7%9b%83%e3%80%8d%e5%9c%b0%e5%a3%ba%e7%90%83%e6%af%94%e8%b3%bd/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                童軍「展能共融盃」地壺球比賽                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot">2026年3月7日（星期六）
+本校旅團獲邀參與香港童軍總會新界東地域舉辦的共融遊樂場服務計劃暨遊樂日「展能共融盃」地壺球比賽。本團成員憑著團隊合作與童軍精神，於比賽中表現出色，並榮獲展能共融碟賽冠軍。是次活動讓隊員發揮運動潛能，與不同旅團的童軍切磋交流，並在過程中建立友誼，實踐關愛與團結的價值。
+ 
+ 
+ </span>
+                                                        <span class="newsDate">2026-03-08</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/latest-new/%e5%8b%95%e7%89%a9%e6%8e%a2%e7%b4%a2%e7%b2%be%e7%a5%9e%e5%81%a5%e5%ba%b7%e5%90%8c%e6%a8%82%e6%97%a5/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                動物探索精神健康同樂日                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot">  本校同學於2026年3月4日參與了《4Rs精神健康約章 × 香港海洋公園》「動物探索」精神健康同樂日。活動期間，學生透過了解不同動物（如金剛鸚鵡及貓頭鷹等）的生活習性及特徵，進一步認識4Rs（休息、放鬆、人際關係和抗逆力）這四個精神健康的關鍵要素，從而加強對精神健康的重要性的關注與重視。
+   
+    
+ </span>
+                                                        <span class="newsDate">2026-03-06</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/latest-new/%e7%ac%ac%e4%ba%8c%e5%b1%86%e3%80%8c%e6%84%9b%e8%88%87%e5%85%b1%e8%9e%8d%e6%bc%94%e5%94%b1%e6%9c%83%e3%80%8d/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                第二屆「愛與共融演唱會」                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot">2026年2月28日（星期六）
+本校學生獲邀參與第二屆「愛與共融演唱會」，於香港故宮文化博物館賽馬會演奏廳與專業樂團共同演出。同學透過努力練習發展音樂潛能，於本次演唱會舞台上展示努力的成果，亦與不同參與之表演團體互相觀摩交流。此外，當天有不少學生和家長到場支持表演學生，建立學生之間的友好關係，呼應互愛的精神。
+                        
+&nbsp;
+
+&nbsp;
+</span>
+                                                        <span class="newsDate">2026-03-06</span>
+                        </li>
+                    </a>
+                            </ul>
+            </div>
+
+</div>
+
+            <div id="notice" class="col-xs-12 col-md-6">
+    <h1 class="title">電子通告標題 (內容見eclass通告/實體通告)</h1>
+            <a href="https://www.lokjun.edu.hk/school-notice/" class="moreBtn">更多</a>
+    
+    <div class="noticeFrame">
+                    <ul id="noticeList">
+                                    <a href="https://www.lokjun.edu.hk/school-notice/168_2526_%e5%9b%9b%e6%9c%88%e5%ad%b8%e7%94%9f%e9%a4%90%e5%96%ae%e9%80%9a%e5%91%8a%ef%bc%88%e5%85%a8%e6%a0%a1eclass%e9%80%9a%e5%91%8a%ef%bc%89/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                168_2526_四月學生餐單通告（全校eclass通告）                                                            </h2>
+                                                            <span class="noticeDes dotdotdot"></span>
+                                                        <span class="noticeDate">2026-03-25</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/school-notice/167_2526_%e5%ae%b6%e8%81%b7%e6%9c%83%e5%8f%ac%e5%8b%9f%e6%96%b0%e4%b8%80%e5%b1%86%e5%ae%b6%e9%95%b7%e5%b9%b9%e4%ba%8b_psa%ef%bc%88%e5%85%a8%e6%a0%a1eclass%e9%80%9a%e5%91%8a%ef%bc%89/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                167_2526_家職會召募新一屆家長幹事_PSA（全校實體通告）                                                            </h2>
+                                                            <span class="noticeDes dotdotdot"></span>
+                                                        <span class="noticeDate">2026-03-23</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/school-notice/166_2526_%e8%a6%aa%e5%ad%90%e6%ad%b7%e5%a5%87%e6%b4%bb%e5%8b%95_%e9%80%9a%e5%91%8a%ef%bc%88%e5%85%a8%e6%a0%a1eclass%e9%80%9a%e5%91%8a%ef%bc%89/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                166_2526_親子歷奇活動_通告（全校eclass通告）                                                            </h2>
+                                                            <span class="noticeDes dotdotdot"></span>
+                                                        <span class="noticeDate">2026-03-19</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/school-notice/165_2526_%e7%ac%ac%e4%b8%83%e5%b1%86%e8%81%af%e6%a0%a1%e6%a9%9f%e6%a2%b0%e4%ba%ba%e5%a4%a7%e8%b3%bd_%e9%80%9a%e5%91%8a%ef%bc%88%e7%9b%b8%e9%97%9c%e5%ad%b8%e7%94%9feclass%e9%80%9a%e5%91%8a%ef%bc%89/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                165_2526_第七屆聯校機械人大賽_通告（相關學生eclass通告）                                                            </h2>
+                                                            <span class="noticeDes dotdotdot"></span>
+                                                        <span class="noticeDate">2026-03-19</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/school-notice/164_25-26_%e5%8f%83%e8%a7%80%e7%8e%a9%e5%85%b7%e5%9c%96%e6%9b%b8%e9%a4%a8%ef%bc%88%e4%bf%a1%e5%96%84%e7%8f%ad%ef%bc%89%e9%80%9a%e5%91%8a%ef%bc%88%e7%9b%b8%e9%97%9c%e5%ad%b8%e7%94%9feclass%e9%80%9a/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                164_25/26_參觀玩具圖書館（信善班）通告（相關學生eclass通告）                                                            </h2>
+                                                            <span class="noticeDes dotdotdot"></span>
+                                                        <span class="noticeDate">2026-03-18</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/school-notice/163_2526_%e8%b3%bd%e9%a6%ac%e6%9c%83%e6%99%ba%e5%95%9f%e6%bd%9b%e8%83%bd%e5%ad%b8%e7%bf%92%e8%a8%88%e5%8a%83_%e5%a4%9a%e5%85%83%e5%87%ba%e8%b7%af%e8%b3%87%e8%a8%8a%e6%97%a5%ef%bc%88%e7%9b%b8%e9%97%9c/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                163_2526_賽馬會智啟潛能學習計劃_多元出路資訊日（相關學生eclass通告）                                                            </h2>
+                                                            <span class="noticeDes dotdotdot"></span>
+                                                        <span class="noticeDate">2026-03-11</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/school-notice/162_2526_%e4%b8%8b%e5%ad%b8%e6%9c%9f_%e8%aa%b2%e5%be%8c%e6%b4%bb%e5%8b%95_%e9%80%9a%e5%91%8a%ef%bc%88%e5%85%a8%e6%a0%a1%e5%af%a6%e9%ab%94%e9%80%9a%e5%91%8a%ef%bc%89/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                162_2526_下學期_課後活動_通告（全校實體通告）                                                            </h2>
+                                                            <span class="noticeDes dotdotdot"></span>
+                                                        <span class="noticeDate">2026-03-11</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/school-notice/161_2526_%e5%ae%b6%e9%95%b7%e6%8c%81%e5%88%86%e8%80%85%e5%95%8f%e5%8d%b7%ef%bc%88%e5%85%a8%e6%a0%a1eclass%e9%80%9a%e5%91%8a%ef%bc%89/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                161_2526_家長持分者問卷（全校eclass通告）                                                            </h2>
+                                                            <span class="noticeDes dotdotdot"></span>
+                                                        <span class="noticeDate">2026-03-09</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/school-notice/160_2526_%e3%80%8c%e8%a7%a3%e9%96%8b%e7%99%bc%e5%b1%95%e9%9a%9c%e7%a4%99%e7%9a%84%e5%af%86%e7%a2%bc%ef%bc%9a%e5%9f%ba%e5%9b%a0%e7%b5%84%e9%86%ab%e5%ad%b8%e7%b2%be%e6%ba%96%e6%96%b0%e8%a6%96%e9%87%8e/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                160_2526_「解開發展障礙的密碼：基因組醫學精準新視野」講座暨現場諮詢日（全校eclass通告）                                                            </h2>
+                                                            <span class="noticeDes dotdotdot"></span>
+                                                        <span class="noticeDate">2026-03-06</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.lokjun.edu.hk/school-notice/159_2526_%e8%81%af%e6%a0%a1%e9%9f%b3%e6%a8%82%e5%a4%a7%e8%b3%bd%e9%80%9a%e5%91%8a%ef%bc%88%e7%9b%b8%e9%97%9c%e5%ad%b8%e7%94%9feclass%e9%80%9a%e5%91%8a%ef%bc%89/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                159_2526_聯校音樂大賽通告（相關學生eclass通告）                                                            </h2>
+                                                            <span class="noticeDes dotdotdot"></span>
+                                                        <span class="noticeDate">2026-03-06</span>
+                        </li>
+                    </a>
+                            </ul>
+            </div>
+
+</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            
+            
+<div id="calendar" class="col-xs-12">
+    <h1 class="title">學校行事曆</h1>
+
+
+
+    <div class="calendarWrap">
+        <div class="calendarFrame">
+            <div class="loading" v-show="isLoading">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <div class="year_month" v-show="!isLoading" style="display:none;">
+                <a class="btn_lastmonth" @click="changeSelectedMonth(-1)"></a>
+                <span class="year">{{ currentSelectedDate.format('YYYY') }}</span>
+                <span class="month">{{ currentSelectedDate.format('MMMM') }}</span>
+                <a class="btn_nextmonth" @click="changeSelectedMonth(1)"></a>
+            </div>
+            <ul v-show="!isLoading" style="display:none;">
+                <li class="cal_head">日</li>
+                <li class="cal_head">一</li>
+                <li class="cal_head">二</li>
+                <li class="cal_head">三</li>
+                <li class="cal_head">四</li>
+                <li class="cal_head">五</li>
+                <li class="cal_head">六</li>
+
+                <li class="blank_date" v-for="n in blankDayCount">
+                    <div></div>
+                </li>
+
+                <template v-for="day in monthDayCount">
+                    <li :class="getDayClass(day)">
+                        <div><a @click="showDayDetails(day)">
+                            <span class="date">{{day}}</span>
+                            <span class="cycle" v-if="getDayCycle(day)">{{getDayCycle(day)}}</span>
+                        </a></div>
+                    </li>
+                </template>
+
+                <p class="spacer"></p>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="calendarDetails" tabindex="-1" role="dialog" aria-labelledby="calendarDetails"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" v-html="selectedEvent.dateHtml"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="icon"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tbl_events">
+                        <tr v-for="event in selectedEvent.events">
+                            <td :class="event.CssClass">{{ event.TypeText }}</td>
+                            <td>{{ event.Title }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+
+
+    <div id="photoSlideShow">
+        <div class="container">
+            <div class="row">
+
+                
+<div id="photoSlideShowWrap" class="modules-fullWidth">
+    <div id="gallery-carousel-69c4ea2867736" class="autoWidth huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/Gallery_banner_01-384x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/Gallery_banner_02-386x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/Gallery_banner_03-386x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/Gallery_banner_04-384x266.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2022/09/最新消息_2209_正向生命教育藝術共融計劃_相片01_220802_正向生命活動-420x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2023/02/Gallery_2223_新春聯歡會_CNY_01-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2023/02/Gallery_2223_關愛同行從心出發藝術展_01-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2023/02/Gallery_2223_聖誕聯歡會_ChristmasParty_01-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/Gallery_2122_中秋慶祝會_MidAutumnFestival_02-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/Gallery_2021_暑假活動_SummerActivity_01-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="modules-break"></div>
+
+<div id="usefulLinks">
+    <div class="container">
+        <div class="row">
+            <div class="modules-fullWidth" id="usefulLinksWrap">
+                
+                    <div class="ulBanner">
+                                                    <a href="https://edcitysch-my.sharepoint.com/:f:/g/personal/cljsdms_school_edcity_hk/Eh09R2fqCiZInQh9cv4ZZdcBGwLkJ8SLx1jnzooqQx_D9A?e=21fbif" target="_blank">
+                                <img src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_02_校內學習資源庫.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_02_校內學習資源庫.jpg 1228w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_02_校內學習資源庫-300x100.jpg 300w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_02_校內學習資源庫-768x255.jpg 768w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_02_校內學習資源庫-1024x340.jpg 1024w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_02_校內學習資源庫-180x60.jpg 180w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_02_校內學習資源庫-801x266.jpg 801w" sizes="(max-width: 1228px) 100vw, 1228px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://www.caritas.org.hk/zh" target="_blank">
+                                <img src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_03_香港明愛CaritasHK_778x280px.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_03_香港明愛CaritasHK_778x280px.png 778w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_03_香港明愛CaritasHK_778x280px-300x108.png 300w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_03_香港明愛CaritasHK_778x280px-768x276.png 768w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_03_香港明愛CaritasHK_778x280px-180x65.png 180w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_03_香港明愛CaritasHK_778x280px-739x266.png 739w" sizes="(max-width: 778px) 100vw, 778px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.edb.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://www.lokjun.edu.hk/wp-content/uploads/2018/08/edb.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.youtube.com/channel/UCGZLMOq3lAiuN1mHzVNRarw" target="_blank">
+                                <img src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_05_我的學習頻道-e1656491278283.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.hkedcity.net/" target="_blank">
+                                <img src="https://www.lokjun.edu.hk/wp-content/uploads/2018/08/HKedCity-1.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://edcitysch-my.sharepoint.com/:f:/g/personal/cljsdms_school_edcity_hk/EoxgW4vKup9AjfiwzWq8IwsBL63cKtkLZDC5xQeN-IQhmA?e=4K7zsa" target="_blank">
+                                <img src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_07_社交一點通.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_07_社交一點通.png 350w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_07_社交一點通-300x94.png 300w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_07_社交一點通-180x57.png 180w" sizes="(max-width: 350px) 100vw, 350px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://www.hkfew.org.hk/" target="_blank">
+                                <img src="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_09_香港教育工作者聯會_HKFEW_778x280px.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_09_香港教育工作者聯會_HKFEW_778x280px.png 778w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_09_香港教育工作者聯會_HKFEW_778x280px-300x108.png 300w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_09_香港教育工作者聯會_HKFEW_778x280px-768x276.png 768w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_09_香港教育工作者聯會_HKFEW_778x280px-180x65.png 180w, https://www.lokjun.edu.hk/wp-content/uploads/2022/06/首頁_常用連結_09_香港教育工作者聯會_HKFEW_778x280px-739x266.png 739w" sizes="(max-width: 778px) 100vw, 778px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.hko.gov.hk/tc/" target="_blank">
+                                <img src="https://www.lokjun.edu.hk/wp-content/uploads/2019/02/hko.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modules-break"></div>
+<div id="backToTop" onclick="topFunction()" style="display: none;">
+    <div>
+    </div>
+</div>
+
+<footer class="t_image">
+    <div id="schInfo">
+        <div class="container">
+            <div class="row">
+                <div class="schName_ch col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">明愛樂進學校 </div>
+                <div class="schName_en col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">Caritas Lok Jun School    </div>
+                <div class="infoList col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
+                                            <span class="address">
+                            新界沙田大圍文禮路39號  (日校部)    <br />
+新界沙田大圍文禮路30號  (住宿部)                            <a class="map" href="https://www.google.com.hk/maps/place/%E5%A4%A7%E5%9C%8D%E6%96%87%E7%A6%AE%E8%B7%AF39%E8%99%9F%E6%98%8E%E6%84%9B%E6%A8%82%E9%80%B2%E5%AD%B8%E6%A0%A1/@22.3756404,114.1805519,17z/data=!3m1!4b1!4m5!3m4!1s0x340407a9b3765287:0xe81b56c866d4c4e4!8m2!3d22.3756404!4d114.1827406?hl=zh-TW" target="_blank"></a>
+                        </span>
+                    
+                                            <span class="tel">(852) 2609 1111 (日校部)       ,      (852) 2609 2344(住宿部)</span>
+                    
+                                            <span class="fax">(852) 2601 9236 (日校部)     ,      (852) 2609 1194(住宿部)</span>
+                    
+                                            <span class="mail"><a href="mailto:cljs@caritaslokjun.edu.hk">cljs@caritaslokjun.edu.hk</a></span>
+                    
+                                            <span class="web"><a href="https://www.lokjun.edu.hk/"
+                                             target="_blank">https://www.lokjun.edu.hk/</a></span>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <span class="col-xs-12 col-sm-6">版權所有 &copy; 明愛樂進學校</span>
+                <span class="col-xs-12 col-sm-6">Powered by <a href="http://www.eclass.com.hk/" target="_blank"><span
+                                class="logo"/></span></a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    /* Moved into homepage-homework.js
+    $(function () {
+        $('.datetimepicker').datetimepicker({
+            format: 'YYYY-MM-DD',
+            ignoreReadonly: true,
+            locale: 'zh-HK'
+        });
+    });
+    $('.datetimepicker-time').datetimepicker({
+        sideBySide: true
+    });
+    $(function () {
+        $('.datetimepicker').datetimepicker();
+
+        $('.datetimepicker-addon').on('click', function () {
+            $(this).prev('input.datetimepicker').data('DateTimePicker').toggle();
+        });
+    });
+    */
+    $(function () {
+        // Add slideDown animation to Bootstrap dropdown when expanding.
+        $('.dropdown').on('show.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+        });
+
+        // Add slideUp animation to Bootstrap dropdown when collapsing.
+        $('.dropdown').on('hide.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+        });
+    });
+</script>
+<script type="text/javascript" src="https://www.lokjun.edu.hk/wp-content/themes/theme5_style_1/js/bootstrap_fix.js"></script>
+<div id="mmBg" class="mmOpen bg"></div>
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-preload-range="0">
+        <div class="slides"></div>
+
+        <div class="photoInfo">
+            <h3 class="title"></h3>
+            <p class="description"></p>
+            <span class="more"><a class="showMoreDescription" href="javascript:void(0);">（顯示更多…）</a></span>
+        </div>
+
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="popup" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+
+        <ol class="indicator"></ol>
+        <div class="indicatorControl">
+	    	<span class="leftBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+	    	</span>
+            <span class="rightBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+			</span>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://www.lokjun.edu.hk/wp-includes/js/wp-embed.min.js?ver=5.1.19'></script>
+</body>
+</html>

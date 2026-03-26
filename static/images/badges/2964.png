@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ESF Beacon Hill School | IB School PYP |  ESF Hong Kong</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="description" content="ESF Beacon Hill School tailors teaching to each child and spark curiosity. Our flexible environment fosters learning and skill development through the IB PYP." />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="ESF Beacon Hill School, International School Hong Kong, English Schools Foundation,IB School Hong Kong" />
+<meta property="og:description" content="ESF Beacon Hill School tailors teaching to each child and spark curiosity. Our flexible environment fosters learning and skill development through the IB PYP." />
+<meta property="og:image" content="http://beaconhill.esf.edu.hk/cache/img/4bd14a71ec6d820434e2652ba05c1004.jpg" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:secure_url" content="https://beaconhill.esf.edu.hk/cache/img/4bd14a71ec6d820434e2652ba05c1004.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta name="viewport" content="width=device-width" />
+	<link rel="canonical" href="https://beaconhill.esf.edu.hk/en/" /> 
+				<link rel="alternate" href="/zh/" hreflang="zh-hk" />
+				<link rel="shortcut icon" href="/img/favicon.png" />
+	<link rel="apple-touch-icon" href="/img/iphone-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="/img/iphone-icon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/css/editor.css" />
+	<link rel="stylesheet" type="text/css" href="/en/cache/css/3e127878e4cd7b0c0af8a93a38e673d4.css" />
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/jquery-migrate.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/jquery.Slider.js"></script>
+	<script type="text/javascript" src="/js/jquery.slideSubmit.js"></script>
+	<script type="text/javascript" src="/js/jquery.table.js"></script>
+	<script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="/js/validator.class.js"></script>
+	<script type="text/javascript" src="/en/cache/js/lang.js"></script>
+	<script type="text/javascript" src="/js/function.js"></script>
+	<script type="text/javascript" src="/js/init.js"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="/js/html5izer_placeholder.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="/js/html5.js"></script>
+	<![endif]-->
+	<style>
+		.colour1,
+		a.colour1,
+		.editor a.colour1,
+		#content #history-page .years .year.current,
+		#content #history-page .years .year:hover,
+		#content #history-page .select-input,
+		#content .page-wrapper .page-container #data-list .data-item.open>.title,
+		#content #enquiry .form-container .row .checkbox-cotnainer .checkbox:after {
+			color: #000000 !important;
+		}
+		.colour2,
+		a.colour2,
+		.editor a.colour2,
+		#content section .tab-select .select-input,
+		#content #section3 .wrapper .tabs .tab.current,
+		#content #section3 .wrapper .tabs .tab:hover,
+		#content #section6 .wrapper .tabs .tab.current,
+		#content #section6 .wrapper .tabs .tab:hover,
+		#content #landing section.type3 .tabs .tab.current,
+		#content #landing section.type3 .tabs .tab:hover,
+		#content .page-wrapper #submenu ul li a:hover,
+		#content .page-wrapper .page-container #tabs .tab.current,
+		#content .page-wrapper .page-container #tabs .tab:hover,
+		#content .page-wrapper .page-container #tabs .select-input,
+		#content .page-wrapper .page-container .tab-select .select-input {
+			color: #4a3785 !important;
+		}
+		.colour3,
+		a.colour3,
+		.editor a.colour3 {
+			color: #f2f2f2 !important;
+		}
+		.colour4,
+		a.colour4,
+		.editor a.colour4 {
+			color: #dfdded !important;
+		}
+		.bg-colour1,
+		.editor ul.colour1 li:before,
+		.editor ol.colour1 li:before,
+		.pager a.selected,
+		.pager a:hover,
+		#content #enquiry .form-container .row .radio-container2 .radio.checked,
+		#content #enquiry .form-container .row .radio-container2 .radio:after,
+		#content #enquiry .form-container .row .radio-container .radio:after,
+		#content #sitemap li:before {
+			background-color: #000000 !important;
+		}
+		.bg-colour2,
+		.editor ul.colour2 li:before,
+		.editor ol.colour2 li:before,
+		#floating a[href]:hover {
+			background-color: #4a3785 !important;
+		}
+		.bg-colour3 {
+			background-color: #f2f2f2 !important;
+		}
+		.bg-colour4 {
+			background-color: #dfdded !important;
+		}
+		.br-colour1,
+		#content #section7 .record-slider .slider-container .post:hover {
+			border-color: #000000 !important;
+		}
+		.br-colour2 {
+			border-color: #4a3785 !important;
+		}
+		.br-colour3 {
+			border-color: #f2f2f2 !important;
+		}
+		.br-colour4 {
+			border-color: #dfdded !important;
+		}
+	</style>
+	<script type="text/javascript">
+											if(window.location.protocol.toLowerCase().indexOf('https:') == -1)
+											{
+												window.location.href = 'https://'+ window.location.host + window.location.pathname;
+											}
+									     </script>	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TJDTRJPPRS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TJDTRJPPRS');
+</script></head>
+<body>
+	<header>
+		<div class="container">
+			<a href="/en/" class="logo">
+				<img src="/cache/img/9212300a85ce1a5ad7423202d6219a73.png" alt="ESF Beacon Hill School_E+C_crop2" loading="lazy" height="180" />			</a>
+			<div class="menu-container">
+				<div class="top-container">
+					<nav class="lang">
+						<ul>
+							<li><a href="/zh/">繁體</a></li>						</ul>
+					</nav>
+					<div class="divider"></div>
+					<a href="/en/" class="home"></a>
+					<div class="search">
+						<button></button>
+						<div class="search-container">
+							<form action="/en/search/">
+								<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />								<button type="submit"></button>							</form>
+							<button class="close"></button>
+						</div>
+					</div>
+										<nav class="social">
+				 		<ul>
+				 							 			<li>
+				 				<a href="https://www.instagram.com/beaconhillschool_hk/" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 			<li>
+				 				<a href="https://www.facebook.com/BeaconHillSchool" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3e297d1.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 		</ul>
+				 	</nav>
+				 						<div class="search-responsive">
+						<form action="/en/search/">
+							<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />							<button type="submit"></button>						</form>
+					</div>
+										<div class="divider"></div>
+									 							<a href="https://parents.beaconhill.edu.hk/home" target="_blank" class="alt-btn">Students & Parents</a>
+				 										 		<a href="https://beaconhill.esf.edu.hk/en/visit_us" class="btn">Visit Us</a>
+									</div>
+				<div class="bottom-container">
+					<nav class="menu">
+						<ul>
+																						<li>
+									<a href="/en/about_us/">About Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/about_us/">About Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/about_us/marketing_family/">ESF Family</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/principals_welcome/">Principal's Welcome</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/what_we_stand_for/">What We Stand For</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/school_history/">School History</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/campus_find_us/">Campus & Find Us</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_education/">Outstanding Education</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_education/">Outstanding Education</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_education/our_approach/">Our Approach</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/curriculum/">Curriculum</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/student_support_wellbeing/">Student Support & Wellbeing</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/parent_partnership/">Parent Partnership</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/specialist_provision/">Specialist Provision</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_experiences/extra_curricular_activities/">Extra Curricular Activities</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/outdoor_learning/">Outdoor Learning</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/action_student_leadership/">Action & Student Leadership</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_people/">Outstanding People</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_people/">Outstanding People</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_people/leadership_team/">Leadership Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/our_team/">Our Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/student_voice/">Student Voice</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/parent_teacher_association/">Parent Teacher Association</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/school_council/">School Council</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/testimonials/">Testimonials</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/admissions/">Admissions</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/admissions/">Admissions</a>
+													</li>
+																																			</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/WorkWithUs/">Work With Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/WorkWithUs/">Work With Us</a>
+													</li>
+																																			</ul>
+										</div>
+																	</li>
+													</ul>
+					</nav>
+				</div>	
+			</div>
+			<button class="nav-btn"></button>
+		</div>
+	</header>
+	<section id="content">		
+		<script type="text/javascript">
+    var timeout = [];
+
+    $(window).load(function() {
+		let animate = function() {
+			let height = $(window).scrollTop() + Math.round($(window).height() * 0.6);
+			$('#content > section').each(function() {
+				if(!$(this).hasClass('animate') && height > $(this).offset().top)
+				{
+					$(this).addClass('animate');
+                    if($(this).attr('id') == 'section2') {
+						$('li > div', '#section2').each(function(index) {
+							let item = $(this);
+							setTimeout(function() {
+								item.addClass('animate');
+							}, index * 200);
+						});
+					}
+				}
+			});
+		};
+		$(window).on('scroll', animate);
+		animate();
+	});
+</script>
+<div id="banner">
+    <div class="banner-container">
+                                                <div class="banner-item">
+                    <div class="wrapper">
+                        <img src="/cache/img/af18795cb16b900fdff93500c86936ba.png" alt="" loading="lazy" width="1904" height="1200" class="trans" />                        <video id="video" width="1904" height="1200" preload="none" playsinline webkit-playsinline muted loop>
+                            <source src="/upload/banner/1/banner/671e1720f3723.mp4" type="video/mp4">
+                        </video>
+                        <div class="mask"></div>
+                        <div class="container">
+                            <button class="play"></button>
+                        </div>
+                    </div>
+                                    </div>
+                        </div>
+    <div class="container">
+                <div class="scroll-icon"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let pager_click = false;
+
+            $('#banner').Slider({
+                slides: '.banner-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true,
+                pager: '.banner-pager',
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    $.each(timeout, function(index, value) {
+                        clearTimeout(value);
+                    });
+                    let videos = $('video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    $('button', slider).removeClass('play').addClass('pause');
+                    if($('.slider.current video', slider).length) {
+                                                        video = document.querySelector('#banner .slider.current video');
+                                video.play();
+                                            }
+                    else if(!pager_click) {
+                        timeout = setTimeout(function() {
+                            slider.Slider('next');
+                        }, 5000);
+                    }
+                },
+                afterResize: function(slider, slides, current_page, total_page) {
+                    if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                                            let videos = $('video', slider);
+                        videos.each(function(i, video) {
+                            video.addEventListener('ended', videoEnd, false);
+                        });
+                        if($('.slider.current video', slider).length) {
+                                                                video = document.querySelector('#banner .slider.current video');
+                                    video.play();
+                                    $('.slider.current button', slider).removeClass('play').addClass('pause');
+                                                    }
+                        else {
+                            timeout = setTimeout(function() {
+                                slider.Slider('next');
+                            }, 5000);
+                        }
+                                        if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                }
+            });
+            
+            $('.banner-item video', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                let button = $(this).parent().find('button');
+                if(button.hasClass('pause')) {
+                    video.pause();
+                    button.removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    button.removeClass('play').addClass('pause');
+                }
+            });
+            $('.banner-item button', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                if($(this).hasClass('pause')) {
+                    video.pause();
+                    $(this).removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    $(this).removeClass('play').addClass('pause');
+                }
+            });
+
+            $('body').on('click', '#banner .banner-pager a', function() {
+                pager_click = true;
+            });
+
+            function videoEnd(e) {
+                if(!pager_click) {
+                    $('#banner').Slider('next');
+                }
+                else {
+                    $('#banner .slider.current button').removeClass('pause').addClass('play');
+                }
+            }
+        });
+    </script>
+</div>
+<section id="section1">
+    <div class="container">
+                    <div class="left">
+                <article class="editor"><h3 class="homepage-title title">Be the best you can be, now and in the future.</h3></article>
+            </div>
+                            <div class="right">
+                <article class="editor"><p><img class="round-border" src="/upload/page/35/self/66f6af289ea4d.jpg" alt="Self Photos / Files - beaconhill_2557" width="602" height="452" /></p></article>
+            </div>
+                            <div class="responsive">
+                <article class="editor"><p><img class="round-border" src="/upload/page/35/self/66f6af289ea4d.jpg" alt="Self Photos / Files - beaconhill_2557" width="602" height="452" /></p>
+<p>&nbsp;</p>
+<h3 class="homepage-title title">Be the best you can be, now and in the future.</h3></article>
+            </div>
+            </div>
+</section>
+<section id="section2">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What can Beacon Hill School offer your family?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="wrapper bg-colour2">
+        <div class="container">
+            <ul>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/42b4d7896de1c68b5ae3d7ccb499b14d.png" alt="ESF_Logomark_BW_RGB" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">ESF Network</h3>
+                            <div class="overlay bg-colour1">
+                                <p>As part of the English Schools Foundation(ESF), our students are supported by the largest English-medium international school organisation in Hong Kong, providing them the resources and opportunities not found outside of ESF Schools.</p>
+                                                                    <a  href="https://beaconhill.esf.edu.hk/en/about_us/marketing_family/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/43714c3649cc5c1736aaca151e47d03f.png" alt="Strong School-Family Connection" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Strong School-Family Connection</h3>
+                            <div class="overlay bg-colour1">
+                                <p>We believe in fostering a strong partnership between schools and families. We actively encourage parental involvement and maintain open lines of communication to ensure that parents are fully engaged in their child's educational journey.</p>
+                                                                    <a  href="https://beaconhill.esf.edu.hk/en/outstanding_education/parent_partnership/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/f516bccd5c38c9980ed9369cd977ee27.png" alt="Comprehensive Student Support" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Comprehensive Student Support</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our schools offer comprehensive support systems, including personalised guidance, pastoral care, and counselling services, to help students thrive academically, emotionally, and socially.</p>
+                                                                    <a  href="https://beaconhill.esf.edu.hk/en/about_us/what_we_stand_for/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/98a0f52813fa5c3d87fa5c11b18c2c75.png" alt="Well-rounded Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Well-rounded Education</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Alongside academic excellence, our well-rounded education cultivates talents, interests, and character through diverse co-curricular activities in sports, arts, music, and community service.</p>
+                                                                    <a  href="https://beaconhill.esf.edu.hk/en/outstanding_education/our_approach/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/b76814538835b0739a48892213915752.png" alt="Real-world Experience" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Student Agency and Action</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Nurturing student agency and action empowers learners to take ownership, apply knowledge, and become agents of positive change in their communities.</p>
+                                                                    <a  href="https://beaconhill.esf.edu.hk/en/outstanding_experiences/action_student_leadership/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/660cc3ca13253265900cfb7fb159a807.png" alt="World-class Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Student Well-Being</h3>
+                            <div class="overlay bg-colour1">
+                                <p>We foster students' social-emotional learning through assemblies, classroom integration, and cultivating respectful school relationships - empowering well-being and academic achievement.</p>
+                                                                    <a  href="https://beaconhill.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('h3', '#section2').each(function() {
+                let img = $(this).parent().children('img');
+                if(img.length) {
+                    $(this).css('top', img.offset().top + img.height() + 25 - $(this).parent().offset().top);
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section3">
+    <img src="/cache/img/0b199e413913061f0aeadac3d10834d7.jpg" alt="beaconhill_2862" loading="lazy" width="1722" height="1294" />    <div class="wrapper">
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Primary Years Programme (PYP)</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="tabs">
+                            <button class="tab current" data-id="1">Years 1 - 6</button>
+                    </div>
+                            <div class="tab-content current" data-id="1">
+                                <article class="editor"><p><span style="font-weight: 400;">Beacon Hill School is an IB World School committed to educating open-minded seekers, supporting individual student needs, and developing the whole child's skills, attitudes, and global perspectives. The IB curriculum emphasises transdisciplinary learning, research, communication, and critical thinking to foster respect, responsibility, and meaningful action.</span></p></article>
+                                    <a href="https://beaconhill.esf.edu.hk/en/outstanding_education/curriculum/">
+                        <span>Find out more</span>
+                    </a>
+                            </div>
+                <script type="text/javascript">
+            $(document).ready(function() {
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+
+                $('.tab', '#section3').click(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $(this).addClass('current');
+                    $('.tab-content[data-id=' + $(this).data('id') + ']', '#section3').addClass('current');
+                    $('select', '#section3').val($(this).data('id')).selectbox('refresh');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+
+                $('.tab-select', '#section3').change(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $('.tab[data-id=' + $(this).val() + ']').addClass('current');
+                    $('.tab-content[data-id=' + $(this).val() + ']', '#section3').addClass('current');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+            });
+        </script>
+    </div>
+</section>
+<section id="section4" data-total="4">
+    <div class="container">
+        <div class="bg bg-colour4"></div>
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">BHS Experience</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="record-slider">
+            <div class="slider-container">
+                                    <div class="record-item">
+                        <img src="/cache/img/03353ccb49b56319bdebd2c0a9eec2cd.jpg" alt="1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>STUDENT COUNCIL</span>
+                            </h3>
+                            <p>The Student Council at Beacon Hill School serves as a vital platform for student leadership development. This inclusive opportunity provides students with opportunities to engage in meaningful discussions, express their perspectives, and contribute to the enhancement of our school community.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_people/student_voice/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/302389bfd59304624fd268fccd58e823.jpg" alt="2" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPORTS</span>
+                            </h3>
+                            <p>Our vibrant sports programme offers a gateway to unleashing the champion within every student. From football to basketball, netball to swimming, we provide a diverse range of sports to ignite their passion and nurture their skills.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/609f6f155c1fd9fd0fd5f2b53c6d0279.jpg" alt="3" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>OUTDOOR EDUCATION</span>
+                            </h3>
+                            <p>Our students take a step into the immersive education in the great outdoors, where curiosity thrives and learning comes alive. They enjoy connecting with the natural world and nurturing a deep appreciation for the environment.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_experiences/outdoor_learning">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/3118fec885b86b4c100d3a2f75608454.jpg" alt="4" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ARTS</span>
+                            </h3>
+                            <p>BHS students can explore the captivating world of expressive and visual arts. Imagination is ignited as our students embark on transformative journeys, discovering the power of self-expression through various artistic mediums.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/03353ccb49b56319bdebd2c0a9eec2cd.jpg" alt="1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>STUDENT COUNCIL</span>
+                            </h3>
+                            <p>The Student Council at Beacon Hill School serves as a vital platform for student leadership development. This inclusive opportunity provides students with opportunities to engage in meaningful discussions, express their perspectives, and contribute to the enhancement of our school community.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_people/student_voice/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/302389bfd59304624fd268fccd58e823.jpg" alt="2" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPORTS</span>
+                            </h3>
+                            <p>Our vibrant sports programme offers a gateway to unleashing the champion within every student. From football to basketball, netball to swimming, we provide a diverse range of sports to ignite their passion and nurture their skills.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/609f6f155c1fd9fd0fd5f2b53c6d0279.jpg" alt="3" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>OUTDOOR EDUCATION</span>
+                            </h3>
+                            <p>Our students take a step into the immersive education in the great outdoors, where curiosity thrives and learning comes alive. They enjoy connecting with the natural world and nurturing a deep appreciation for the environment.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_experiences/outdoor_learning">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/3118fec885b86b4c100d3a2f75608454.jpg" alt="4" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ARTS</span>
+                            </h3>
+                            <p>BHS students can explore the captivating world of expressive and visual arts. Imagination is ignited as our students embark on transformative journeys, discovering the power of self-expression through various artistic mediums.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/03353ccb49b56319bdebd2c0a9eec2cd.jpg" alt="1" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>STUDENT COUNCIL</span>
+                            </h3>
+                            <p>The Student Council at Beacon Hill School serves as a vital platform for student leadership development. This inclusive opportunity provides students with opportunities to engage in meaningful discussions, express their perspectives, and contribute to the enhancement of our school community.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_people/student_voice/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/302389bfd59304624fd268fccd58e823.jpg" alt="2" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPORTS</span>
+                            </h3>
+                            <p>Our vibrant sports programme offers a gateway to unleashing the champion within every student. From football to basketball, netball to swimming, we provide a diverse range of sports to ignite their passion and nurture their skills.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/609f6f155c1fd9fd0fd5f2b53c6d0279.jpg" alt="3" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>OUTDOOR EDUCATION</span>
+                            </h3>
+                            <p>Our students take a step into the immersive education in the great outdoors, where curiosity thrives and learning comes alive. They enjoy connecting with the natural world and nurturing a deep appreciation for the environment.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_experiences/outdoor_learning">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/3118fec885b86b4c100d3a2f75608454.jpg" alt="4" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ARTS</span>
+                            </h3>
+                            <p>BHS students can explore the captivating world of expressive and visual arts. Imagination is ignited as our students embark on transformative journeys, discovering the power of self-expression through various artistic mediums.</p>
+                                                            <a href="https://beaconhill.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                            </div>
+            <div class="btns">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section4').data('total'));
+            let slider_loop = ori_total >= 3 ? true : false;
+            $('#section4').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total * 2);
+                    }
+                    else {
+                        slider.Slider('jump', total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section6">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">Testimonials</h2>
+            <span class="bg-colour1"></span>
+        </div>
+        <div class="wrapper">
+            <div class="tabs">
+                                    <button class="tab current" data-id="1">Students</button>
+                                    <button class="tab" data-id="2">Parents</button>
+                                    <button class="tab" data-id="3">Alumni</button>
+                            </div>
+            <select class="tab-select" name="tab"><option value="1">Students</option><option value="2">Parents</option><option value="3">Alumni</option></select>                            <div class="tab-content current" data-id="1">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/6abbf0f06f65ed7f0597dc7153054936.jpg" alt="Student_Kaylee LUI" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I think BHS is an amazing school because they provide us with useful education. There is a nice balance between playtime and learning time. All the adults are nice to us and will always help us when we need help.<br>BHS makes me feel unique. Everyone is friendly and supportive and I feel it’s okay to be different, it’s okay to just be me.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I think BHS is an amazing school because they provide us with useful education. There is a nice balance between playtime and learning time. All the adults are nice to us and will always help us when we need help.<br>BHS makes me feel unique. Everyone is friendly and supportive and I feel it’s okay to be different, it’s okay to just be me.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Kaylee Lui - Class of 2024</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/4bbffb862db49939b06a0d3820319747.jpg" alt="Student_Yoon Ah LEE" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Teachers are fun and understanding. They understand and support children’s feelings and will always try to make the best situation for everyone. BHS makes me feel safe because there are lots of people I can trust.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Teachers are fun and understanding. They understand and support children’s feelings and will always try to make the best situation for everyone. BHS makes me feel safe because there are lots of people I can trust.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Yoon Ah Lee - Class of 2026</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/3e371ddda201076283bea82d9b2dbc4c.jpg" alt="Student_Abby AU-YEUNG" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">BHS makes me happy. I like coming to school because I can sing and play with my friends. Teachers help me learn and I can learn lots of things like maths.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">BHS makes me happy. I like coming to school because I can sing and play with my friends. Teachers help me learn and I can learn lots of things like maths.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Abby Au-Yeung - Class of 2028</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="2">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/e93d8dd99e904c49eab4acc8a9501e2c.jpg" alt="Parent_Paul" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">It has been two years since my three sons moved from a prestigious local school to be part of the Beacon Hill School family. I like what I have seen but I will stop short of saying it is the best decision; I would rather say this is a great educational program and an amazing environment to foster a positive learning attitude that would be helpful for their long-term development in this ever-changing world. My appreciation to the teachers for their continuous hard work, support and care!</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">It has been two years since my three sons moved from a prestigious local school to be part of the Beacon Hill School family. I like what I have seen but I will stop short of saying it is the best decision; I would rather say this is a great educational program and an amazing environment to foster a positive learning attitude that would be helpful for their long-term development in this ever-changing world. My appreciation to the teachers for their continuous hard work, support and care!</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Paul - Father of Jotham, Nathan, Ashton, Class of 2025 and 2027</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/0f623cf4faac8d628efeb228a261ce23.jpg" alt="Parent_Andrew" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Beacon Hill School has exceptional teachers, visionary leadership, and a strong sense of community. It has been a pleasure becoming part of this nurturing environment that fosters a love for learning.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Beacon Hill School has exceptional teachers, visionary leadership, and a strong sense of community. It has been a pleasure becoming part of this nurturing environment that fosters a love for learning.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Andrew - Father of Gemma, Y4 student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/43c781526ba23438772e4902bc24e4fa.jpeg" alt="Parent_Usha" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">My son’s growth in BHS has been truly rewarding in terms of learning, culture, and being part of the global community. The transformation has been evident in the thought process, analytical thinking and problem-solving. His learning experience has been elevated by the wonderful team at BHS. Proud to be part of this community.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">My son’s growth in BHS has been truly rewarding in terms of learning, culture, and being part of the global community. The transformation has been evident in the thought process, analytical thinking and problem-solving. His learning experience has been elevated by the wonderful team at BHS. Proud to be part of this community.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Usha - Mother of Aryan, Y4 student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="3">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/881d9240d48108730176a4c866ca4e42.jpg" alt="Alumni_Justin LEE" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Going to Beacon Hill School was the highlight of my childhood, I wouldn’t swap those 6 years for anything! Terrific teachers and amazing people - they shaped who I am today.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Going to Beacon Hill School was the highlight of my childhood, I wouldn’t swap those 6 years for anything! Terrific teachers and amazing people - they shaped who I am today.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Justin Lee - Class of 2018</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/69400e63fd381a65928e204d486734ee.jpg" alt="Alumni_Joan CHAN" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I’m thankful to be an alumni of BHS where the caring and attentive teachers provide an exceptional learning environment. They not only provide a comprehensive curriculum, but also an extensive range of extra curricular activities from sports to creative arts. Undoubtedly, the school has played a huge part in shaping me into a well-rounded individual, supporting both my academic and personal growth.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I’m thankful to be an alumni of BHS where the caring and attentive teachers provide an exceptional learning environment. They not only provide a comprehensive curriculum, but also an extensive range of extra curricular activities from sports to creative arts. Undoubtedly, the school has played a huge part in shaping me into a well-rounded individual, supporting both my academic and personal growth.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Joan Chan - Class of 2016</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/baaae395a56917b67f4bea6fa66d63cf.jpg" alt="Alumni_Mohit Chainani" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I couldn’t be more delighted with the high-quality education I received at BHS. My teachers’ dedication and the supportive environment truly made such a positive impact on me in so many ways.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I couldn’t be more delighted with the high-quality education I received at BHS. My teachers’ dedication and the supportive environment truly made such a positive impact on me in so many ways.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Mohit Chainani - Class of 2005</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+            
+            $('.tab', '#section6').click(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $(this).addClass('current');
+                $('.tab-content[data-id=' + $(this).data('id') + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' + ($(this).index() + 1) + ')', '#section6').addClass('current');
+                chkContentHeight();
+            });
+
+            $('.tab-select', '#section6').change(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $('.tab[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-content[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' +  ($('.tab.current', '#section6').index() + 1) + ')', '#section6').addClass('current');
+                $('.select .select-container div', '#section6').show();
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+                chkContentHeight();
+            });
+
+            $('.record-slider', '#section6').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true
+            });
+
+            function chkContentHeight() {
+                $('p.description', '#section6').each(function() {
+                    if($(this).height() > 160) {
+                        $(this).parent().addClass('more');
+                    }
+                });
+            }
+            chkContentHeight();
+
+            $('.record-item article button.view-more', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-less').show();
+                $(this).parent().find('.description').hide();
+                $(this).parent().find('.content').show();
+            });
+            $('.record-item article button.view-less', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-more').show();
+                $(this).parent().find('.description').show();
+                $(this).parent().find('.content').hide();
+            });
+        });
+    </script>
+</section>
+<section id="section7" data-total="10">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What's New at BHS?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="record-slider">
+        <div class="slider-container">
+                            <div class="post-item">
+                    <div class="post" data-id="633">
+                        <time>26/03/2026</time>
+                        <h3>🏷: Student Achievement: Charlotte<br>.<br>📅: 16 March 2026<br>.<br>🖊: Charlotte recently participated in the 78th Hong Kong Schools Music Festival. She was awarded first place in the Graded Piano Solo (Grade 5) category and second place in the Piano Duet (Junior) category.<br>Well done, Charlotte!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3c17d7f87e4a3ad79f834f338169341c.jpg" alt="652684730_1409416551199529_6205082678235800980_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="632">
+                        <time>25/03/2026</time>
+                        <h3>🏷: BHS: Student-Led Conference<br>.<br>📅: 19 March 2025<br>.<br>🖊: The Student‑Led Conferences were a celebration of learning across the school. Students led the conversations, explaining their learning with an emphasis on progress rather than simple achievement.<br>They demonstrated a clear understanding of their strengths and challenges and described how they use those strengths to advance their learning. This is learning how to learn - developing the habits and mindset of lifelong learners who value the journey of growth as the foundation for a meaningful life.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/5cb3950504fe446dfc22769015492dbb.jpg" alt="653987844_1410350847772766_5150344897040940342_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="631">
+                        <time>24/03/2026</time>
+                        <h3>🏷: Student Achievement: Inez<br>.<br>📅: 16 March 2026<br>.<br>🖊: Inez took part in the Global Drawing Contest and won the silver award in the "Flavors of Home" drawing competition.<br>Well done, Inez!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/88e7188ba4109dc59caf786d432a6c45.jpg" alt="651304746_1409415224532995_2122975736646503945_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="630">
+                        <time>23/03/2026</time>
+                        <h3>🏷: Y6: PYPX<br>.<br>📅: 18 March 2025<br>.<br>🖊: The Year 6 students hosted their PYPX, and as part of Student‑Led Conference day, they welcomed families of Years 1–5 for Community Sharing. Both events were filled with positive energy, thoughtful sharing, and engaging questions.<br>Adults who attended were greatly encouraged by what was heard and observed. The Year 6 students spoke confidently about their enquiries, the progress they have made, and the actions they are taking. They explained their processes, reflected on challenges, and described how feedback helped them improve.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/fa60ba9ff9cd7a90764f22f0fcd6ad2f.jpg" alt="653031894_1410346721106512_3716187730131317748_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="629">
+                        <time>22/03/2026</time>
+                        <h3>🏷: Student Achievement: Wallace<br>.<br>📅: 17 March 2026<br>.<br>🖊: Wallace joined his mum’s company volunteer team in early March to visit elderly residents of Kwong Fuk Estate, next to Wang Fuk Court in Tai Po, where recovery after the recent fire is still difficult, and many feel anxious. Together with the volunteers, Wallace helped distribute warm CNY goodie bags and spent time chatting with residents, offering comfort and assessing their needs. Their visit helped ease fears and enabled the Tsung Tsin Mission of Hong Kong Social Service -  Fuk Hong Neighbourhood Elderly Centre to provide timely support.<br>Keep it up, Wallace!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/8438284326b40335ca9b86361a3d0533.jpg" alt="651757649_1409472064527311_5600509022869417471_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="628">
+                        <time>21/03/2026</time>
+                        <h3>🏷: Student Achievement: Isabelle<br>.<br>📅: 10 March 2026<br>.<br>🖊: Isabelle took part in her Jazz exam and achieved Honours with Distinction. She loves Jazz dance and works very hard in her practice. Recently, she performed two dances at the AIA Carnival and had a great time.<br>Well done, Isabelle!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0a656a2ddd20d102dccb4f7d453b2ece.jpg" alt="649266631_1402859331855251_7488740880761020089_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="627">
+                        <time>20/03/2026</time>
+                        <h3>🏷: Basketball Club: HKPSSA Kowloon Basketball Championship<br>.<br>📅: 12 February 2026<br>.<br>🖊: The girls' team excelled throughout the tournament and were crowned champions in a thrilling 10-8 victory against AISHK. This was the only game where a basket was scored against them, which highlighted how strong they were on defence. This was the girls' best result ever, having previously finished 2nd and 3rd.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/ed5df07ec3685c20f17b7095083b89af.jpg" alt="655009494_18096065684066704_541956377241357902_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="626">
+                        <time>20/03/2026</time>
+                        <h3>🏷: Tag Rugby Club: HKPSSA Tag Rugby Championships<br>.<br>📅: 16 March 2025<br>.<br>🖊: It was an action-packed day of sport as both the Boys and Girls Tag Rugby teams competed in the HKPSSA Tag Rugby Championships. Both squads displayed excellent rugby and immense spirit throughout the tournament, and while we were unlucky that some results did not go our way, the quality of play was outstanding. The boys showcased strong attacking rugby and excellent support play, while the girls excelled in their passing and communication, scoring spectacular tries. A major highlight for the boys was successfully retaining the Lion Rock in their match against Shatin Junior, while the girls showed incredible grit by coming back from two tries down to draw against a strong Harrow team. Congratulations to Klaus and Tia, who were selected by their peers as the Most Valuable Players.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/efcb1b068a66219a99fe57bf7c81f636.jpg" alt="651883726_1410343127773538_6769161130775954511_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="625">
+                        <time>19/03/2026</time>
+                        <h3>🏷: Student Achievement: Navya<br>.<br>📅: 7 March 2026<br>.<br>🖊: Navya participated in the Kowloon Cricket Club Match Play Series for 6–8-year-olds, where she emerged as the top player and won the gold medal.<br>Well done, Navya!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/c0300b89b8423c356dac0bd4cddfa6a1.jpg" alt="649092974_1401949361946248_7740065389139299592_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="624">
+                        <time>18/03/2026</time>
+                        <h3>🏷: BHS: BHS School Fair..See You There!<br>.<br>📅: 13 March 2026<br>.<br>🖊: Get ready for an unforgettable evening at our School Fair on 𝗙𝗿𝗶𝗱𝗮𝘆, 𝟮𝟬 𝗠𝗮𝗿𝗰𝗵 | 𝟱–𝟴 𝗣𝗠!<br><br>💫 𝗛𝗶𝗴𝗵𝗹𝗶𝗴𝗵𝘁𝘀:<br><br>🖼️ 𝙎𝙞𝙡𝙚𝙣𝙩 𝘼𝙪𝙘𝙩𝙞𝙤𝙣 — Support our Artist-in-Residence Project and bid for your child’s class artwork!<br>🎶 𝙇𝙞𝙫𝙚 𝙋𝙚𝙧𝙛𝙤𝙧𝙢𝙖𝙣𝙘𝙚𝙨 — Enjoy music by our talented students and friends from ESF Schools.<br>🍿 𝙁𝙤𝙤𝙙 & 𝙁𝙪𝙣 — Delicious bites, bounce castles, pre-loved stalls, popcorn, cotton candy & more!<br><br>🎟️ 𝗧𝗶𝗰𝗸𝗲𝘁𝘀 & 𝗢𝗳𝗳𝗲𝗿𝘀:<br><br>🐦 𝙀𝙖𝙧𝙡𝙮 𝘽𝙞𝙧𝙙 — $25 (more details next week)<br>🎫 𝙍𝙚𝙜𝙪𝙡𝙖𝙧 — $30 on event day | Kids under 3 enter free!<br>🎟️ 𝘾𝙤𝙪𝙥𝙤𝙣𝙨 — 10 for $100 (buy early!)<br><br>🌿 To promote sustainable living among our students, please bring or use reusable plates and cutlery. Thank you for supporting our green initiatives! ♻️<br><br>🚐 We’ve got you covered with a free shuttle bus from Kowloon Tong MTR — schedule coming soon. Stay tuned!<br><br>Mark your calendars and join us for a night full of fun, food, and community spirit! 💙<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/e148c2fe6e939f053d3543790cf6fdab.jpg" alt="652739521_18095809118066704_7988487563410858986_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="633">
+                        <time>26/03/2026</time>
+                        <h3>🏷: Student Achievement: Charlotte<br>.<br>📅: 16 March 2026<br>.<br>🖊: Charlotte recently participated in the 78th Hong Kong Schools Music Festival. She was awarded first place in the Graded Piano Solo (Grade 5) category and second place in the Piano Duet (Junior) category.<br>Well done, Charlotte!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3c17d7f87e4a3ad79f834f338169341c.jpg" alt="652684730_1409416551199529_6205082678235800980_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="632">
+                        <time>25/03/2026</time>
+                        <h3>🏷: BHS: Student-Led Conference<br>.<br>📅: 19 March 2025<br>.<br>🖊: The Student‑Led Conferences were a celebration of learning across the school. Students led the conversations, explaining their learning with an emphasis on progress rather than simple achievement.<br>They demonstrated a clear understanding of their strengths and challenges and described how they use those strengths to advance their learning. This is learning how to learn - developing the habits and mindset of lifelong learners who value the journey of growth as the foundation for a meaningful life.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/5cb3950504fe446dfc22769015492dbb.jpg" alt="653987844_1410350847772766_5150344897040940342_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="631">
+                        <time>24/03/2026</time>
+                        <h3>🏷: Student Achievement: Inez<br>.<br>📅: 16 March 2026<br>.<br>🖊: Inez took part in the Global Drawing Contest and won the silver award in the "Flavors of Home" drawing competition.<br>Well done, Inez!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/88e7188ba4109dc59caf786d432a6c45.jpg" alt="651304746_1409415224532995_2122975736646503945_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="630">
+                        <time>23/03/2026</time>
+                        <h3>🏷: Y6: PYPX<br>.<br>📅: 18 March 2025<br>.<br>🖊: The Year 6 students hosted their PYPX, and as part of Student‑Led Conference day, they welcomed families of Years 1–5 for Community Sharing. Both events were filled with positive energy, thoughtful sharing, and engaging questions.<br>Adults who attended were greatly encouraged by what was heard and observed. The Year 6 students spoke confidently about their enquiries, the progress they have made, and the actions they are taking. They explained their processes, reflected on challenges, and described how feedback helped them improve.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/fa60ba9ff9cd7a90764f22f0fcd6ad2f.jpg" alt="653031894_1410346721106512_3716187730131317748_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="629">
+                        <time>22/03/2026</time>
+                        <h3>🏷: Student Achievement: Wallace<br>.<br>📅: 17 March 2026<br>.<br>🖊: Wallace joined his mum’s company volunteer team in early March to visit elderly residents of Kwong Fuk Estate, next to Wang Fuk Court in Tai Po, where recovery after the recent fire is still difficult, and many feel anxious. Together with the volunteers, Wallace helped distribute warm CNY goodie bags and spent time chatting with residents, offering comfort and assessing their needs. Their visit helped ease fears and enabled the Tsung Tsin Mission of Hong Kong Social Service -  Fuk Hong Neighbourhood Elderly Centre to provide timely support.<br>Keep it up, Wallace!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/8438284326b40335ca9b86361a3d0533.jpg" alt="651757649_1409472064527311_5600509022869417471_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="628">
+                        <time>21/03/2026</time>
+                        <h3>🏷: Student Achievement: Isabelle<br>.<br>📅: 10 March 2026<br>.<br>🖊: Isabelle took part in her Jazz exam and achieved Honours with Distinction. She loves Jazz dance and works very hard in her practice. Recently, she performed two dances at the AIA Carnival and had a great time.<br>Well done, Isabelle!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0a656a2ddd20d102dccb4f7d453b2ece.jpg" alt="649266631_1402859331855251_7488740880761020089_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="627">
+                        <time>20/03/2026</time>
+                        <h3>🏷: Basketball Club: HKPSSA Kowloon Basketball Championship<br>.<br>📅: 12 February 2026<br>.<br>🖊: The girls' team excelled throughout the tournament and were crowned champions in a thrilling 10-8 victory against AISHK. This was the only game where a basket was scored against them, which highlighted how strong they were on defence. This was the girls' best result ever, having previously finished 2nd and 3rd.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/ed5df07ec3685c20f17b7095083b89af.jpg" alt="655009494_18096065684066704_541956377241357902_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="626">
+                        <time>20/03/2026</time>
+                        <h3>🏷: Tag Rugby Club: HKPSSA Tag Rugby Championships<br>.<br>📅: 16 March 2025<br>.<br>🖊: It was an action-packed day of sport as both the Boys and Girls Tag Rugby teams competed in the HKPSSA Tag Rugby Championships. Both squads displayed excellent rugby and immense spirit throughout the tournament, and while we were unlucky that some results did not go our way, the quality of play was outstanding. The boys showcased strong attacking rugby and excellent support play, while the girls excelled in their passing and communication, scoring spectacular tries. A major highlight for the boys was successfully retaining the Lion Rock in their match against Shatin Junior, while the girls showed incredible grit by coming back from two tries down to draw against a strong Harrow team. Congratulations to Klaus and Tia, who were selected by their peers as the Most Valuable Players.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/efcb1b068a66219a99fe57bf7c81f636.jpg" alt="651883726_1410343127773538_6769161130775954511_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="625">
+                        <time>19/03/2026</time>
+                        <h3>🏷: Student Achievement: Navya<br>.<br>📅: 7 March 2026<br>.<br>🖊: Navya participated in the Kowloon Cricket Club Match Play Series for 6–8-year-olds, where she emerged as the top player and won the gold medal.<br>Well done, Navya!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/c0300b89b8423c356dac0bd4cddfa6a1.jpg" alt="649092974_1401949361946248_7740065389139299592_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="624">
+                        <time>18/03/2026</time>
+                        <h3>🏷: BHS: BHS School Fair..See You There!<br>.<br>📅: 13 March 2026<br>.<br>🖊: Get ready for an unforgettable evening at our School Fair on 𝗙𝗿𝗶𝗱𝗮𝘆, 𝟮𝟬 𝗠𝗮𝗿𝗰𝗵 | 𝟱–𝟴 𝗣𝗠!<br><br>💫 𝗛𝗶𝗴𝗵𝗹𝗶𝗴𝗵𝘁𝘀:<br><br>🖼️ 𝙎𝙞𝙡𝙚𝙣𝙩 𝘼𝙪𝙘𝙩𝙞𝙤𝙣 — Support our Artist-in-Residence Project and bid for your child’s class artwork!<br>🎶 𝙇𝙞𝙫𝙚 𝙋𝙚𝙧𝙛𝙤𝙧𝙢𝙖𝙣𝙘𝙚𝙨 — Enjoy music by our talented students and friends from ESF Schools.<br>🍿 𝙁𝙤𝙤𝙙 & 𝙁𝙪𝙣 — Delicious bites, bounce castles, pre-loved stalls, popcorn, cotton candy & more!<br><br>🎟️ 𝗧𝗶𝗰𝗸𝗲𝘁𝘀 & 𝗢𝗳𝗳𝗲𝗿𝘀:<br><br>🐦 𝙀𝙖𝙧𝙡𝙮 𝘽𝙞𝙧𝙙 — $25 (more details next week)<br>🎫 𝙍𝙚𝙜𝙪𝙡𝙖𝙧 — $30 on event day | Kids under 3 enter free!<br>🎟️ 𝘾𝙤𝙪𝙥𝙤𝙣𝙨 — 10 for $100 (buy early!)<br><br>🌿 To promote sustainable living among our students, please bring or use reusable plates and cutlery. Thank you for supporting our green initiatives! ♻️<br><br>🚐 We’ve got you covered with a free shuttle bus from Kowloon Tong MTR — schedule coming soon. Stay tuned!<br><br>Mark your calendars and join us for a night full of fun, food, and community spirit! 💙<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/e148c2fe6e939f053d3543790cf6fdab.jpg" alt="652739521_18095809118066704_7988487563410858986_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="633">
+                        <time>26/03/2026</time>
+                        <h3>🏷: Student Achievement: Charlotte<br>.<br>📅: 16 March 2026<br>.<br>🖊: Charlotte recently participated in the 78th Hong Kong Schools Music Festival. She was awarded first place in the Graded Piano Solo (Grade 5) category and second place in the Piano Duet (Junior) category.<br>Well done, Charlotte!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3c17d7f87e4a3ad79f834f338169341c.jpg" alt="652684730_1409416551199529_6205082678235800980_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="632">
+                        <time>25/03/2026</time>
+                        <h3>🏷: BHS: Student-Led Conference<br>.<br>📅: 19 March 2025<br>.<br>🖊: The Student‑Led Conferences were a celebration of learning across the school. Students led the conversations, explaining their learning with an emphasis on progress rather than simple achievement.<br>They demonstrated a clear understanding of their strengths and challenges and described how they use those strengths to advance their learning. This is learning how to learn - developing the habits and mindset of lifelong learners who value the journey of growth as the foundation for a meaningful life.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/5cb3950504fe446dfc22769015492dbb.jpg" alt="653987844_1410350847772766_5150344897040940342_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="631">
+                        <time>24/03/2026</time>
+                        <h3>🏷: Student Achievement: Inez<br>.<br>📅: 16 March 2026<br>.<br>🖊: Inez took part in the Global Drawing Contest and won the silver award in the "Flavors of Home" drawing competition.<br>Well done, Inez!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/88e7188ba4109dc59caf786d432a6c45.jpg" alt="651304746_1409415224532995_2122975736646503945_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="630">
+                        <time>23/03/2026</time>
+                        <h3>🏷: Y6: PYPX<br>.<br>📅: 18 March 2025<br>.<br>🖊: The Year 6 students hosted their PYPX, and as part of Student‑Led Conference day, they welcomed families of Years 1–5 for Community Sharing. Both events were filled with positive energy, thoughtful sharing, and engaging questions.<br>Adults who attended were greatly encouraged by what was heard and observed. The Year 6 students spoke confidently about their enquiries, the progress they have made, and the actions they are taking. They explained their processes, reflected on challenges, and described how feedback helped them improve.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/fa60ba9ff9cd7a90764f22f0fcd6ad2f.jpg" alt="653031894_1410346721106512_3716187730131317748_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="629">
+                        <time>22/03/2026</time>
+                        <h3>🏷: Student Achievement: Wallace<br>.<br>📅: 17 March 2026<br>.<br>🖊: Wallace joined his mum’s company volunteer team in early March to visit elderly residents of Kwong Fuk Estate, next to Wang Fuk Court in Tai Po, where recovery after the recent fire is still difficult, and many feel anxious. Together with the volunteers, Wallace helped distribute warm CNY goodie bags and spent time chatting with residents, offering comfort and assessing their needs. Their visit helped ease fears and enabled the Tsung Tsin Mission of Hong Kong Social Service -  Fuk Hong Neighbourhood Elderly Centre to provide timely support.<br>Keep it up, Wallace!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/8438284326b40335ca9b86361a3d0533.jpg" alt="651757649_1409472064527311_5600509022869417471_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="628">
+                        <time>21/03/2026</time>
+                        <h3>🏷: Student Achievement: Isabelle<br>.<br>📅: 10 March 2026<br>.<br>🖊: Isabelle took part in her Jazz exam and achieved Honours with Distinction. She loves Jazz dance and works very hard in her practice. Recently, she performed two dances at the AIA Carnival and had a great time.<br>Well done, Isabelle!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0a656a2ddd20d102dccb4f7d453b2ece.jpg" alt="649266631_1402859331855251_7488740880761020089_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="627">
+                        <time>20/03/2026</time>
+                        <h3>🏷: Basketball Club: HKPSSA Kowloon Basketball Championship<br>.<br>📅: 12 February 2026<br>.<br>🖊: The girls' team excelled throughout the tournament and were crowned champions in a thrilling 10-8 victory against AISHK. This was the only game where a basket was scored against them, which highlighted how strong they were on defence. This was the girls' best result ever, having previously finished 2nd and 3rd.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/ed5df07ec3685c20f17b7095083b89af.jpg" alt="655009494_18096065684066704_541956377241357902_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="626">
+                        <time>20/03/2026</time>
+                        <h3>🏷: Tag Rugby Club: HKPSSA Tag Rugby Championships<br>.<br>📅: 16 March 2025<br>.<br>🖊: It was an action-packed day of sport as both the Boys and Girls Tag Rugby teams competed in the HKPSSA Tag Rugby Championships. Both squads displayed excellent rugby and immense spirit throughout the tournament, and while we were unlucky that some results did not go our way, the quality of play was outstanding. The boys showcased strong attacking rugby and excellent support play, while the girls excelled in their passing and communication, scoring spectacular tries. A major highlight for the boys was successfully retaining the Lion Rock in their match against Shatin Junior, while the girls showed incredible grit by coming back from two tries down to draw against a strong Harrow team. Congratulations to Klaus and Tia, who were selected by their peers as the Most Valuable Players.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/efcb1b068a66219a99fe57bf7c81f636.jpg" alt="651883726_1410343127773538_6769161130775954511_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="625">
+                        <time>19/03/2026</time>
+                        <h3>🏷: Student Achievement: Navya<br>.<br>📅: 7 March 2026<br>.<br>🖊: Navya participated in the Kowloon Cricket Club Match Play Series for 6–8-year-olds, where she emerged as the top player and won the gold medal.<br>Well done, Navya!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/c0300b89b8423c356dac0bd4cddfa6a1.jpg" alt="649092974_1401949361946248_7740065389139299592_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="624">
+                        <time>18/03/2026</time>
+                        <h3>🏷: BHS: BHS School Fair..See You There!<br>.<br>📅: 13 March 2026<br>.<br>🖊: Get ready for an unforgettable evening at our School Fair on 𝗙𝗿𝗶𝗱𝗮𝘆, 𝟮𝟬 𝗠𝗮𝗿𝗰𝗵 | 𝟱–𝟴 𝗣𝗠!<br><br>💫 𝗛𝗶𝗴𝗵𝗹𝗶𝗴𝗵𝘁𝘀:<br><br>🖼️ 𝙎𝙞𝙡𝙚𝙣𝙩 𝘼𝙪𝙘𝙩𝙞𝙤𝙣 — Support our Artist-in-Residence Project and bid for your child’s class artwork!<br>🎶 𝙇𝙞𝙫𝙚 𝙋𝙚𝙧𝙛𝙤𝙧𝙢𝙖𝙣𝙘𝙚𝙨 — Enjoy music by our talented students and friends from ESF Schools.<br>🍿 𝙁𝙤𝙤𝙙 & 𝙁𝙪𝙣 — Delicious bites, bounce castles, pre-loved stalls, popcorn, cotton candy & more!<br><br>🎟️ 𝗧𝗶𝗰𝗸𝗲𝘁𝘀 & 𝗢𝗳𝗳𝗲𝗿𝘀:<br><br>🐦 𝙀𝙖𝙧𝙡𝙮 𝘽𝙞𝙧𝙙 — $25 (more details next week)<br>🎫 𝙍𝙚𝙜𝙪𝙡𝙖𝙧 — $30 on event day | Kids under 3 enter free!<br>🎟️ 𝘾𝙤𝙪𝙥𝙤𝙣𝙨 — 10 for $100 (buy early!)<br><br>🌿 To promote sustainable living among our students, please bring or use reusable plates and cutlery. Thank you for supporting our green initiatives! ♻️<br><br>🚐 We’ve got you covered with a free shuttle bus from Kowloon Tong MTR — schedule coming soon. Stay tuned!<br><br>Mark your calendars and join us for a night full of fun, food, and community spirit! 💙<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/e148c2fe6e939f053d3543790cf6fdab.jpg" alt="652739521_18095809118066704_7988487563410858986_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                    </div>
+        <div class="btns">
+            <button class="prev"></button>
+            <button class="next"></button>
+        </div>
+    </div>
+            <div class="lightbox" data-id="633">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>26/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🏷: Student Achievement: Charlotte<br>.<br>📅: 16 March 2026<br>.<br>🖊: Charlotte recently participated in the 78th Hong Kong Schools Music Festival. She was awarded first place in the Graded Piano Solo (Grade 5) category and second place in the Piano Duet (Junior) category.<br>Well done, Charlotte!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3c17d7f87e4a3ad79f834f338169341c.jpg" alt="652684730_1409416551199529_6205082678235800980_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/adf1ba94bb543c26df726c99753fa1a9.jpg" alt="653053208_1409416534532864_6994420709236678156_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DWVxeCQjKe9/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DWVxeCQjKe9/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="632">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>25/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🏷: BHS: Student-Led Conference<br>.<br>📅: 19 March 2025<br>.<br>🖊: The Student‑Led Conferences were a celebration of learning across the school. Students led the conversations, explaining their learning with an emphasis on progress rather than simple achievement.<br>They demonstrated a clear understanding of their strengths and challenges and described how they use those strengths to advance their learning. This is learning how to learn - developing the habits and mindset of lifelong learners who value the journey of growth as the foundation for a meaningful life.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/5cb3950504fe446dfc22769015492dbb.jpg" alt="653987844_1410350847772766_5150344897040940342_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/d8fc401797c1c4007e59e2019ad38940.jpg" alt="654259467_1410350681106116_6856538179274542603_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/bd1971308901a9dae12e72bd93f62159.jpg" alt="653963945_1410350704439447_2912702156389897954_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f1e9484f6428603bc632e88e49889df1.jpg" alt="652260017_1410350781106106_7999517549814982592_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/408eb7c6d7a1759e0fdb8ba76bbde1a1.jpg" alt="654211660_1410350787772772_1107115867699896538_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e80496fa9a0631313d61148c691f3ae1.jpg" alt="652865531_1410350721106112_459000375533956712_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/912bd1e45a22f1a59ecff0e7aec0ba14.jpg" alt="654296356_1410350714439446_1111185848365095108_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ae1403333307bb510f21edd19848fbf0.jpg" alt="655158453_1410350784439439_4889743106519809811_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/96762f7ebdeb83ac45295c876cedcb6b.jpg" alt="653399869_1410350791106105_1874138518815773109_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/0e48eb44aa1f86e7129c58f8b071bf79.jpg" alt="654796800_1410350724439445_128104563040030091_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DWTMmVngWOz/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DWTMmVngWOz/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="631">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>24/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🏷: Student Achievement: Inez<br>.<br>📅: 16 March 2026<br>.<br>🖊: Inez took part in the Global Drawing Contest and won the silver award in the "Flavors of Home" drawing competition.<br>Well done, Inez!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/88e7188ba4109dc59caf786d432a6c45.jpg" alt="651304746_1409415224532995_2122975736646503945_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DWQnxjgjzRq/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DWQnxjgjzRq/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="630">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>23/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🏷: Y6: PYPX<br>.<br>📅: 18 March 2025<br>.<br>🖊: The Year 6 students hosted their PYPX, and as part of Student‑Led Conference day, they welcomed families of Years 1–5 for Community Sharing. Both events were filled with positive energy, thoughtful sharing, and engaging questions.<br>Adults who attended were greatly encouraged by what was heard and observed. The Year 6 students spoke confidently about their enquiries, the progress they have made, and the actions they are taking. They explained their processes, reflected on challenges, and described how feedback helped them improve.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/fa60ba9ff9cd7a90764f22f0fcd6ad2f.jpg" alt="653031894_1410346721106512_3716187730131317748_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/9e15bb4bfb7c33dc35aeaff8a573a025.jpg" alt="654727295_1410346694439848_6295109607366402203_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/bfe2ec2a6d3c68c4d29b02e3f8e6ca20.jpg" alt="651749475_1410346744439843_7333750264420715045_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b8df0f9cc321a8f77fd1795bc8e71640.jpg" alt="652124211_1410346701106514_1256972986465743221_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/bd9d2eb9f3349293faed8be91cf0abee.jpg" alt="654695343_1410346691106515_1963478607276592365_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/99b8eff1de20ff0d9e53a43cbb2a4757.jpg" alt="652679000_1410346697773181_3677616173751020740_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8688a83213059bfef76005896658ef2b.jpg" alt="653038260_1410346647773186_2395213526868790323_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/6030bcaedd839aef9106d543c0ed2f3e.jpg" alt="655123931_1410346711106513_892967447189254793_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/2d12f6eee78d233dea139c2513312575.jpg" alt="653388196_1410346767773174_3859617240977453575_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/04d08f7204d0e0f693d3ab291a64e8fe.jpg" alt="651709747_1410346714439846_5031949853900958996_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DWODDPtktFB/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DWODDPtktFB/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="629">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>22/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🏷: Student Achievement: Wallace<br>.<br>📅: 17 March 2026<br>.<br>🖊: Wallace joined his mum’s company volunteer team in early March to visit elderly residents of Kwong Fuk Estate, next to Wang Fuk Court in Tai Po, where recovery after the recent fire is still difficult, and many feel anxious. Together with the volunteers, Wallace helped distribute warm CNY goodie bags and spent time chatting with residents, offering comfort and assessing their needs. Their visit helped ease fears and enabled the Tsung Tsin Mission of Hong Kong Social Service -  Fuk Hong Neighbourhood Elderly Centre to provide timely support.<br>Keep it up, Wallace!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8438284326b40335ca9b86361a3d0533.jpg" alt="651757649_1409472064527311_5600509022869417471_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b7b307f0d6a4f8b9a61953ec13a6a692.jpg" alt="653454335_1409472067860644_4185954569137391137_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DWLeMn0D_eB/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DWLeMn0D_eB/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="628">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>21/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🏷: Student Achievement: Isabelle<br>.<br>📅: 10 March 2026<br>.<br>🖊: Isabelle took part in her Jazz exam and achieved Honours with Distinction. She loves Jazz dance and works very hard in her practice. Recently, she performed two dances at the AIA Carnival and had a great time.<br>Well done, Isabelle!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/0a656a2ddd20d102dccb4f7d453b2ece.jpg" alt="649266631_1402859331855251_7488740880761020089_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8eb2a555af826f79ef860abb293fd15d.jpg" alt="650371956_1402859348521916_8286210476421882199_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/41d53187903d405fcf95be88d2681148.jpg" alt="648475434_1402859315188586_8494869266971971151_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DWJU1ICGbp0/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DWJU1ICGbp0/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="627">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>20/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🏷: Basketball Club: HKPSSA Kowloon Basketball Championship<br>.<br>📅: 12 February 2026<br>.<br>🖊: The girls' team excelled throughout the tournament and were crowned champions in a thrilling 10-8 victory against AISHK. This was the only game where a basket was scored against them, which highlighted how strong they were on defence. This was the girls' best result ever, having previously finished 2nd and 3rd.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <a href="https://www.instagram.com/reel/DWGv_78j9qC/" target="_blank" rel="nofollow">
+                                                    <img src="/cache/img/ed5df07ec3685c20f17b7095083b89af.jpg" alt="655009494_18096065684066704_541956377241357902_n" loading="lazy" width="682" height="682" />                                                </a>
+                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/reel/DWGv_78j9qC/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/reel/DWGv_78j9qC/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="626">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>20/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🏷: Tag Rugby Club: HKPSSA Tag Rugby Championships<br>.<br>📅: 16 March 2025<br>.<br>🖊: It was an action-packed day of sport as both the Boys and Girls Tag Rugby teams competed in the HKPSSA Tag Rugby Championships. Both squads displayed excellent rugby and immense spirit throughout the tournament, and while we were unlucky that some results did not go our way, the quality of play was outstanding. The boys showcased strong attacking rugby and excellent support play, while the girls excelled in their passing and communication, scoring spectacular tries. A major highlight for the boys was successfully retaining the Lion Rock in their match against Shatin Junior, while the girls showed incredible grit by coming back from two tries down to draw against a strong Harrow team. Congratulations to Klaus and Tia, who were selected by their peers as the Most Valuable Players.<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/efcb1b068a66219a99fe57bf7c81f636.jpg" alt="651883726_1410343127773538_6769161130775954511_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/85f9db12c3a7d7ff1d92e6c23c7e3ef3.jpg" alt="653506064_1410343064440211_8084506498229872361_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/91a35dfa399ee887d626ec819700963a.jpg" alt="653123995_1410343121106872_1885800453349152253_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/bb7cdda03be008437dacb9a20953baaa.jpg" alt="653914634_1410343004440217_3457574884350310003_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/1f2cd64b2add981774317b8c15f58747.jpg" alt="653960429_1410343081106876_3674653432991116912_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/9cc33330ab9205ac84fd2e46920218b0.jpg" alt="653707909_1410343061106878_6449745777711409080_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/cf1e0dd8d59c0e05078a70331e0fb6ae.jpg" alt="654303997_1410342967773554_7253919917124979451_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/aca0c1f94185efde5ea498a6943095a3.jpg" alt="652118657_1410342971106887_7775469037400306718_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ed6a9353c85ad82f25cccf1a0a0600ef.jpg" alt="652655379_1410343094440208_9177765022131668304_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/aab41cbca32bbd3be0638d9784961f57.jpg" alt="653706911_1410343007773550_7797359783472660092_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DWGUow-j1jW/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DWGUow-j1jW/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="625">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>19/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🏷: Student Achievement: Navya<br>.<br>📅: 7 March 2026<br>.<br>🖊: Navya participated in the Kowloon Cricket Club Match Play Series for 6–8-year-olds, where she emerged as the top player and won the gold medal.<br>Well done, Navya!<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c0300b89b8423c356dac0bd4cddfa6a1.jpg" alt="649092974_1401949361946248_7740065389139299592_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ff03b7361c2ec2df4eeae2022c4195a0.jpg" alt="649030317_1401949321946252_7255231216172421132_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/91ef7dd65e2758776fbd2f61ab73c411.jpg" alt="649049786_1401949341946250_6870421524788614586_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/p/DWDvzQ2E6IQ/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/p/DWDvzQ2E6IQ/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="624">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>18/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>🏷: BHS: BHS School Fair..See You There!<br>.<br>📅: 13 March 2026<br>.<br>🖊: Get ready for an unforgettable evening at our School Fair on 𝗙𝗿𝗶𝗱𝗮𝘆, 𝟮𝟬 𝗠𝗮𝗿𝗰𝗵 | 𝟱–𝟴 𝗣𝗠!<br><br>💫 𝗛𝗶𝗴𝗵𝗹𝗶𝗴𝗵𝘁𝘀:<br><br>🖼️ 𝙎𝙞𝙡𝙚𝙣𝙩 𝘼𝙪𝙘𝙩𝙞𝙤𝙣 — Support our Artist-in-Residence Project and bid for your child’s class artwork!<br>🎶 𝙇𝙞𝙫𝙚 𝙋𝙚𝙧𝙛𝙤𝙧𝙢𝙖𝙣𝙘𝙚𝙨 — Enjoy music by our talented students and friends from ESF Schools.<br>🍿 𝙁𝙤𝙤𝙙 & 𝙁𝙪𝙣 — Delicious bites, bounce castles, pre-loved stalls, popcorn, cotton candy & more!<br><br>🎟️ 𝗧𝗶𝗰𝗸𝗲𝘁𝘀 & 𝗢𝗳𝗳𝗲𝗿𝘀:<br><br>🐦 𝙀𝙖𝙧𝙡𝙮 𝘽𝙞𝙧𝙙 — $25 (more details next week)<br>🎫 𝙍𝙚𝙜𝙪𝙡𝙖𝙧 — $30 on event day | Kids under 3 enter free!<br>🎟️ 𝘾𝙤𝙪𝙥𝙤𝙣𝙨 — 10 for $100 (buy early!)<br><br>🌿 To promote sustainable living among our students, please bring or use reusable plates and cutlery. Thank you for supporting our green initiatives! ♻️<br><br>🚐 We’ve got you covered with a free shuttle bus from Kowloon Tong MTR — schedule coming soon. Stay tuned!<br><br>Mark your calendars and join us for a night full of fun, food, and community spirit! 💙<br>.<br>💬: #esfbeaconhillschool #beaconhillschoolhk #bhs #bhsig</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <a href="https://www.instagram.com/reel/DWBK-npE02t/" target="_blank" rel="nofollow">
+                                                    <img src="/cache/img/e148c2fe6e939f053d3543790cf6fdab.jpg" alt="652739521_18095809118066704_7988487563410858986_n" loading="lazy" width="682" height="682" />                                                </a>
+                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.instagram.com/reel/DWBK-npE02t/" target="_blank" class="like">Like</a>
+                        <a href="https://www.instagram.com/reel/DWBK-npE02t/" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section7').data('total'));
+            let slider_loop = ori_total >= 5 ? true : false;
+            $('.record-slider', '#section7').Slider({
+                slides: '.post-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total + 1);
+                    }
+                }
+            });
+
+            $('.post', '#section7').click(function() {
+                $('.lightbox[data-id=' + $(this).data('id') + ']').addClass('show');
+                disableScroll();
+            });
+
+            $('.lightbox .gallery', '#section7').Slider({
+                slides: '.gallery-item',
+                fixedSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    let videos = $('.slider video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    slider.parent().find('.slider-pager').html(current_page + ' / ' + total_page);
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(total_page > 1) {
+                        slider.parent().find('.slider-pager').html('1 / ' + total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+	</section>
+	<footer>
+		<div class="top-container">
+			<div class="container">
+				<div class="up-container">
+											<a href="/en/" class="logo">
+							<img src="/cache/img/fcdbe46da13d3419363484de40acee34.png" alt="ESF Beacon Hill School_RW_E+C-transparent" loading="lazy" height="140" />						</a>
+																<nav class="social">
+							<ul>
+																<li>
+									<a href="https://www.instagram.com/beaconhillschool_hk/" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="40" height="40" />
+									</a>
+								</li>
+																<li>
+									<a href="https://www.facebook.com/BeaconHillSchool" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3e297d1.svg" width="40" height="40" />
+									</a>
+								</li>
+															</ul>
+						</nav>
+				 					</div>
+				<div class="down-container">
+					<div class="left-container">
+													<a href="https://maps.app.goo.gl/hhTL2D1RNMWtyg8L9" target="_blank" rel="nofollow" class="map">
+								<img src="/cache/img/4350a7127823da1ecd9739c820fe1eee.png" alt="擷取" loading="lazy" width="714" height="536" />							</a>
+												<div class="contact">
+							<h2>Contact Information</h2>
+																								<a href="https://beaconhill.esf.edu.hk/en/admissions/contact_admissions/" class="tel">(+852) 2336 5221</a>
+																<div></div>
+														 							<a href="mailto:bhs@bhs.edu.hk" class="email">bhs@bhs.edu.hk</a>
+														 							<p class="address">23 Ede Road, Kowloon Tong 香港九龍塘義德道23號</p>
+													</div>
+												<div class="subscribe">
+							<form action="/en/subscribe/" method="post">
+								<h2>Connect with Us</h2>
+																	<input type="text" autoComplete="off" placeHolder="Your email address" maxLength="128" class="text" name="email" value="" />									<div class="submit">
+										<a class="handler">Submit</a>
+										<span>Slide to Right</span>
+									</div>
+									<input type="hidden" name="back" value="/en/" />															</form>
+						</div>
+						<script type="text/javascript">
+							$(document).ready(function() {
+								$('form', '.subscribe').validate({
+									autoScroll: false,
+									setting: [
+										[ 'email', {
+											method: [
+												[ 'req' ],					
+												[ 'email' ]					
+											]
+										} ]
+									],
+									onError: function(form) {
+										form.slideSubmit('revert');
+									}
+								}).slideSubmit();
+
+															});
+						</script>
+											</div>
+					<div class="right-container">
+												<nav class="menu2">
+							<ul>
+								<li>
+									<h2>Navigation</h2>
+								</li>
+																	<li>
+										<a href="https://beaconhill.esf.edu.hk/en/about_us/">About Us</a>
+									</li>
+																	<li>
+										<a href="https://beaconhill.esf.edu.hk/en/outstanding_education/">Outstanding Education</a>
+									</li>
+																	<li>
+										<a href="https://beaconhill.esf.edu.hk/en/outstanding_experiences/">Outstanding Experiences</a>
+									</li>
+																	<li>
+										<a href="https://beaconhill.esf.edu.hk/en/outstanding_people/">Outstanding People</a>
+									</li>
+																	<li>
+										<a href="https://beaconhill.esf.edu.hk/en/admissions/">Admissions</a>
+									</li>
+																	<li>
+										<a href="https://beaconhill.esf.edu.hk/en/WorkWithUs/">Work With Us</a>
+									</li>
+															</ul>
+						</nav>
+																		<nav class="menu3">
+							<ul>
+								<li>
+									<h2>Quick Links</h2>
+								</li>
+																	<li>
+										<a href="https://join-us.esf.edu.hk/" target="_blank" rel="nofollow">About ESF</a>
+									</li>
+																	<li>
+										<a href="https://www.esfexplore.org.hk/" target="_blank" rel="nofollow">ESF Explore</a>
+									</li>
+																	<li>
+										<a href="https://drive.google.com/file/d/1KN2H76sQpdnfOb9eL87hHR2W7v1UklXL/view?usp=drive_link" target="_blank" rel="nofollow">School Calendar</a>
+									</li>
+															</ul>
+						</nav>
+											</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-container">			
+			<div class="container">
+				<div class="wrapper">
+					<p class="copyright">Copyright © English Schools Foundation. Powered by <a href="//www.anglia.com.hk" target="_blank">ANGLIA</a>.</p>
+					<a href="/en/sitemap/" class="sitemap">Sitemap</a>
+				</div>
+								<nav class="logo">
+			 		<ul>
+			 						 			<li>
+			 				<a>
+								<img src="/upload/files/1/logo4/660fd31d2b17e.png" height="131" />
+							</a>
+			 			</li>
+			 						 		</ul>
+			 	</nav>
+							</div>
+		</div>
+	</footer>
+	<button id="back-to-top"></button>
+			<div id="floating">
+							<a class="logo">
+					<img src="/cache/img/9486afadbde1f2ff1ce0985a02ff173c.jpg" alt="Beacon Hill School logo" loading="lazy" width="62" height="53" />				</a>
+																				<a class="bg-colour1"  href="https://join-us.esf.edu.hk/admissions-primary-secondary/" target="_blank" rel="nofollow">
+													<img src="/upload/shortcut/1/icon/660fd9ba6ff5d.svg" width="60" height="60" />
+												<span>Apply</span>
+					</a>
+														<a class="bg-colour1"  href="tel:85223365221">
+													<img src="/upload/shortcut/2/icon/660fd9ca7b6eb.svg" width="60" height="60" />
+												<span>Call</span>
+					</a>
+														<a class="bg-colour1"  href="https://beaconhill.esf.edu.hk/en/enquiry/?SchoolCode=BHS">
+													<img src="/upload/shortcut/3/icon/660fd9db298ad.svg" width="60" height="60" />
+												<span>Enquire</span>
+					</a>
+									</div>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#floating').addClass('animate');
+			});
+		</script>
+				<div id="accept-cookies">
+			<article class="editor"><p>Welcome and please be advised that ESF uses cookies. By accessing an ESF, ESL or PTA web site and other online ESF services, such as ESF&rsquo;s mobile app, users agree that ESF can store and access cookies, IP addresses and use other methods in order to collect website usage data, and improve user&rsquo;s online experience. By continuing to access this web site, users agree to the use of cookies, which is handled in accordance to the ESF Data Privacy Policy. Information collected via cookies is handled in accordance with the ESF Personal Data Handling Policy and its related Personal Information Collection Statements (&ldquo;PICS&rdquo;). A copy of the PICS can be found on the ESF web site.</p></article>
+			<div class="buttons">
+				<button type="" class="accept">Accept</button>			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('button', '#accept-cookies').click(function() {
+					$('#accept-cookies').remove();
+					$.ajax({
+						url: genurl('cookies', 'main'),
+						type: 'post',
+						data: {
+							accept: 'y'
+						},
+						success: function(response) {
+						},
+						async: false
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
