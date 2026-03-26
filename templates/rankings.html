@@ -4,66 +4,45 @@
 
 {% block extra_css %}
 <style>
-/* ===== Rankings Hero Section ===== */
-.rankings-hero {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-    padding: 80px 0 60px;
+/* ===== Rankings Hero - Match Homepage Style ===== */
+.hero {
     text-align: center;
-    position: relative;
-    overflow: hidden;
+    padding: 60px 0 40px;
 }
 
-.rankings-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.5;
-}
-
-.rankings-hero h1 {
+.hero h1 {
     font-size: 3rem;
-    font-weight: 800;
-    color: #fff;
-    margin-bottom: 16px;
+    font-weight: 700;
     letter-spacing: -0.02em;
-    position: relative;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.rankings-hero p {
-    font-size: 1.2rem;
-    color: rgba(255,255,255,0.8);
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
+.hero p {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 32px;
 }
 
 /* ===== Ranking Tabs ===== */
 .ranking-tabs {
     display: flex;
-    gap: 8px;
-    padding: 24px 0;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    flex-wrap: wrap;
+    gap: 12px;
     justify-content: center;
-}
-
-.ranking-tabs::-webkit-scrollbar {
-    display: none;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
 }
 
 .ranking-tab {
     padding: 12px 24px;
     border-radius: 50px;
-    border: 2px solid #e5e7eb;
-    background: #fff;
+    border: 2px solid var(--border);
+    background: var(--background);
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     font-weight: 600;
     font-size: 0.95rem;
     white-space: nowrap;
@@ -73,49 +52,123 @@
 }
 
 .ranking-tab:hover {
-    border-color: #0f3460;
+    border-color: var(--primary);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(15, 52, 96, 0.15);
 }
 
 .ranking-tab.active {
-    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: #fff;
     border-color: transparent;
-    box-shadow: 0 4px 20px rgba(15, 52, 96, 0.3);
+    box-shadow: 0 4px 16px rgba(30, 58, 95, 0.3);
 }
 
-.ranking-tab .tab-rank {
+.ranking-tab .tab-year {
     font-size: 0.75rem;
     padding: 2px 8px;
     border-radius: 20px;
     background: rgba(255,255,255,0.2);
 }
 
-/* ===== Ranking Cards Grid ===== */
-.ranking-grid {
+/* ===== Stats Row ===== */
+.ranking-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.stat-card {
+    background: var(--background);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-card .stat-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+/* ===== Ranking Legend ===== */
+.ranking-legend {
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
     gap: 24px;
-    padding: 32px 0;
+    flex-wrap: wrap;
+}
+
+.ranking-legend h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0;
+}
+
+.legend-items {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.legend-color {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+}
+
+/* ===== Ranking Cards - Match Homepage School Cards ===== */
+.rankings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 32px;
+    padding: 24px 0 80px;
 }
 
 .ranking-card {
-    background: #fff;
+    background: var(--background);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.02);
+    transition: all 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
 
 .ranking-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.04);
 }
 
 .ranking-card .card-image {
-    height: 180px;
+    height: 160px;
     overflow: hidden;
     position: relative;
     background: linear-gradient(135deg, #f8fafc, #e2e8f0);
@@ -139,53 +192,60 @@
     position: absolute;
     top: 16px;
     left: 16px;
-    width: 56px;
-    height: 56px;
-    border-radius: 16px;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 800;
     color: #fff;
     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     z-index: 10;
 }
 
-.ranking-card .rank-badge.top-10 {
+.rank-badge.top-10 {
     background: linear-gradient(135deg, #ffd700, #ffb800);
     color: #1a1a2e;
 }
 
-.ranking-card .rank-badge.top-50 {
+.rank-badge.top-50 {
     background: linear-gradient(135deg, #c0c0c0, #a8a8a8);
     color: #1a1a2e;
 }
 
-.ranking-card .rank-badge.top-100 {
+.rank-badge.top-100 {
     background: linear-gradient(135deg, #cd7f32, #b87333);
     color: #fff;
 }
 
-.ranking-card .rank-badge.default {
-    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+.rank-badge.default {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
 }
 
 .ranking-card .card-content {
-    padding: 24px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .ranking-card .school-name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text);
     margin-bottom: 4px;
     line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .ranking-card .school-name-cn {
-    font-size: 0.95rem;
-    color: #6b7280;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
     margin-bottom: 12px;
 }
 
@@ -193,47 +253,29 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
-.ranking-card .rank-tag {
+.rank-tag {
     padding: 4px 10px;
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 600;
 }
 
-.ranking-card .rank-tag.qs {
-    background: rgba(16, 185, 129, 0.1);
-    color: #059669;
-}
-
-.ranking-card .rank-tag.usnews {
-    background: rgba(59, 130, 246, 0.1);
-    color: #2563eb;
-}
-
-.ranking-card .rank-tag.the {
-    background: rgba(139, 92, 246, 0.1);
-    color: #7c3aed;
-}
-
-.ranking-card .rank-tag.arwu {
-    background: rgba(236, 72, 153, 0.1);
-    color: #db2777;
-}
-
-.ranking-card .rank-tag.cwur {
-    background: rgba(245, 158, 11, 0.1);
-    color: #d97706;
-}
+.rank-tag.qs { background: rgba(16, 185, 129, 0.1); color: #059669; }
+.rank-tag.usnews { background: rgba(59, 130, 246, 0.1); color: #2563eb; }
+.rank-tag.the { background: rgba(139, 92, 246, 0.1); color: #7c3aed; }
+.rank-tag.arwu { background: rgba(236, 72, 153, 0.1); color: #db2777; }
+.rank-tag.cwur { background: rgba(245, 158, 11, 0.1); color: #d97706; }
 
 .ranking-card .card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
-    border-top: 1px solid #f1f5f9;
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
 }
 
 .ranking-card .country-badge {
@@ -241,13 +283,13 @@
     align-items: center;
     gap: 6px;
     font-size: 0.85rem;
-    color: #6b7280;
+    color: var(--text-secondary);
 }
 
 .ranking-card .view-btn {
     padding: 8px 16px;
     border-radius: 10px;
-    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     color: #fff;
     text-decoration: none;
     font-size: 0.85rem;
@@ -257,121 +299,38 @@
 
 .ranking-card .view-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(15, 52, 96, 0.3);
-}
-
-/* ===== Ranking Legend ===== */
-.ranking-legend {
-    background: #f8fafc;
-    border-radius: 16px;
-    padding: 24px;
-    margin: 32px 0;
-}
-
-.ranking-legend h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #1a1a2e;
-    margin-bottom: 16px;
-}
-
-.legend-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.legend-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.9rem;
-    color: #4b5563;
-}
-
-.legend-color {
-    width: 16px;
-    height: 16px;
-    border-radius: 4px;
-}
-
-/* ===== Stats Row ===== */
-.ranking-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 16px;
-    margin: 24px 0;
-}
-
-.stat-card {
-    background: linear-gradient(135deg, #fff, #f8fafc);
-    border-radius: 16px;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #e5e7eb;
-}
-
-.stat-card .stat-value {
-    font-size: 2rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #1a1a2e, #0f3460);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.stat-card .stat-label {
-    font-size: 0.85rem;
-    color: #6b7280;
-    margin-top: 4px;
+    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
 }
 
 /* ===== Empty State ===== */
 .empty-rankings {
     text-align: center;
     padding: 80px 20px;
-    color: #6b7280;
+    color: var(--text-secondary);
 }
 
 .empty-rankings h3 {
     font-size: 1.5rem;
-    color: #1a1a2e;
+    color: var(--text);
     margin-bottom: 12px;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-    .rankings-hero h1 {
-        font-size: 2rem;
-    }
-    
-    .rankings-hero p {
-        font-size: 1rem;
-    }
-    
-    .ranking-tabs {
-        justify-content: flex-start;
-        padding: 16px 0;
-    }
-    
-    .ranking-tab {
-        padding: 10px 16px;
-        font-size: 0.85rem;
-    }
-    
-    .ranking-grid {
-        grid-template-columns: 1fr;
-    }
+    .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 1rem; }
+    .ranking-tabs { justify-content: flex-start; overflow-x: auto; }
+    .ranking-tab { padding: 10px 16px; font-size: 0.85rem; }
+    .rankings-grid { grid-template-columns: 1fr; }
+    .ranking-legend { flex-direction: column; align-items: flex-start; gap: 12px; }
 }
 </style>
 {% endblock %}
 
 {% block content %}
-<section class="rankings-hero">
-    <div class="container">
-        <h1>🏆 {{ _('world_university_rankings') }}</h1>
-        <p>{{ _('rankings_subtitle') }}</p>
-    </div>
+<section class="hero">
+    <h1>🏆 {{ _('world_university_rankings') }}</h1>
+    <p>{{ _('rankings_subtitle') }}</p>
 </section>
 
 <div class="container">
@@ -405,7 +364,7 @@
             {% if ranking.id == 'qs' %}📊{% elif ranking.id == 'usnews' %}🇺🇸{% elif ranking.id == 'the' %}📰{% elif ranking.id == 'arwu' %}🇨🇳{% else %}🌍{% endif %}
             {{ ranking.name }}
             {% if ranking.year %}
-            <span class="tab-rank">{{ ranking.year }}</span>
+            <span class="tab-year">{{ ranking.year }}</span>
             {% endif %}
         </button>
         {% endfor %}
@@ -413,7 +372,7 @@
 
     <!-- Ranking Legend -->
     <div class="ranking-legend">
-        <h3>{{ _('ranking_color_legend') }}</h3>
+        <h3>{{ _('ranking_color_legend') }}:</h3>
         <div class="legend-items">
             <div class="legend-item">
                 <div class="legend-color" style="background: linear-gradient(135deg, #ffd700, #ffb800);"></div>
@@ -428,7 +387,7 @@
                 <span>{{ _('top_100') }}</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background: linear-gradient(135deg, #1a1a2e, #0f3460);"></div>
+                <div class="legend-color" style="background: linear-gradient(135deg, var(--primary), var(--primary-dark));"></div>
                 <span>{{ _('top_200') }}</span>
             </div>
         </div>
@@ -436,16 +395,16 @@
 
     <!-- Schools Grid -->
     {% if top_schools %}
-    <div class="ranking-grid" id="rankingGrid">
+    <div class="rankings-grid" id="rankingGrid">
         {% for school in top_schools %}
-        <div class="ranking-card" data-rankings="{% for r in school.rankings %}{{ r.id }}{% if not loop.last %},{% endif %}{% endfor %}">
+        <a href="{{ url_for('school_detail', school_id=school.id) }}" class="ranking-card" data-rankings="{% for r in school.rankings %}{{ r.id }}{% if not loop.last %},{% endif %}{% endfor %}">
             <div class="card-image">
                 {% if school.badge_url %}
                     <img src="{{ school.badge_url }}" alt="{{ school.name }}">
                 {% elif school.campus_image %}
                     <img src="{{ school.campus_image }}" alt="{{ school.name }}">
                 {% else %}
-                    <div style="font-size: 4rem; opacity: 0.3;">🎓</div>
+                    <div style="font-size: 3.5rem; opacity: 0.3;">🎓</div>
                 {% endif %}
                 <div class="rank-badge {{ school.rank_class }}">
                     #{{ school.display_rank }}
@@ -459,7 +418,7 @@
                 
                 <div class="ranking-tags">
                     {% for r in school.rankings %}
-                    <span class="rank-tag {{ r.id }}">{{ r.name }}: #{{ r.rank }}</span>
+                    <span class="rank-tag {{ r.id }}">{{ r.name }} #{{ r.rank }}</span>
                     {% endfor %}
                 </div>
                 
@@ -467,12 +426,10 @@
                     <div class="country-badge">
                         🏳️ {{ school.country }}
                     </div>
-                    <a href="{{ url_for('school_detail', school_id=school.id) }}" class="view-btn">
-                        {{ _('view_details') }} →
-                    </a>
+                    <span class="view-btn">{{ _('view_details') }} →</span>
                 </div>
             </div>
-        </div>
+        </a>
         {% endfor %}
     </div>
     {% else %}
@@ -495,10 +452,10 @@ document.querySelectorAll('.ranking-tab').forEach(tab => {
         
         cards.forEach(card => {
             if (ranking === 'all') {
-                card.style.display = 'block';
+                card.style.display = 'flex';
             } else {
                 const rankings = card.dataset.rankings.split(',');
-                card.style.display = rankings.includes(ranking) ? 'block' : 'none';
+                card.style.display = rankings.includes(ranking) ? 'flex' : 'none';
             }
         });
     });
