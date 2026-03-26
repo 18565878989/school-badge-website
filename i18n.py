@@ -126,6 +126,7 @@ TRANSLATIONS = {
         'rankings_title': '世界大学排行榜',
         'world_university_rankings': '🏆 世界大学排行榜',
         'rankings_subtitle': '汇集QS、U.S. News、THE、ARWU、CWUR五大权威排名',
+        'rankings_stats': '共 {} 所上榜学校 · 5 大排名机构',
         'all_rankings': '综合排名',
         'ranking_systems': '排名系统',
         'schools_with_rankings': '上榜学校',

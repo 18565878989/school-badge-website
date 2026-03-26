@@ -268,13 +268,13 @@
 
 {% block content %}
 <section class="hero">
-    <h1>🏆 {{ _('world_university_rankings') }}</h1>
+    <h1>{{ _('world_university_rankings') }}</h1>
     <p>{{ _('rankings_subtitle') }}</p>
 </section>
 
 <div class="container">
     <!-- Stats -->
-    <p class="stats">{{ top_schools|length }} {{ _('top_200_schools') }} · {{ schools_with_rank }} {{ _('schools_with_rankings') }} · 5 {{ _('ranking_systems') }}</p>
+    <p class="stats">{{ _('rankings_stats').format(schools_with_rank) }}</p>
 
     <!-- Ranking Tabs -->
     <div class="ranking-tabs">
