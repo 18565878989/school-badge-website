@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>天主教聖雲先幼兒學校</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+
+            <link rel="icon" href="https://www.svpdn.edu.hk/wp-content/uploads/2021/09/螢幕擷取畫面-2021-09-08-170107已去底.png">
+        <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="referrer" content="origin">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/js/jquery.dotdotdot.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/js/moment.js"></script>
+            <script type="text/javascript" src="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/js/zh-hk.js"></script>
+        <script type="text/javascript" src="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700|Varela+Round" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/css/gallery-images-cust-t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/css/t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/css/t5_page_color.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/css/t5_s3.css"/>
+    <script type="text/javascript" src="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/js/t5.js"></script>
+    <script type="text/javascript" src="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/js/back_to_top.js"></script>
+
+    <link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.svpdn.edu.hk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.svpdn.edu.hk/wp-includes/css/dist/block-library/style.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-style-css'  href='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-style-css'  href='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='blueimp-style-css'  href='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/css/blueimp-gallery.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/css/custom-style.css?ver=5.1.19' type='text/css' media='all' />
+<style id='custom-background-header-inline-css' type='text/css'>
+header.ul_image {background: url(https://www.svpdn.edu.hk/wp-content/uploads/2021/09/new-banner.png) center top no-repeat; background-size: auto 100%, auto 100%;}
+</style>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_LATEST_NEWS_API = {"url":"https:\/\/www.svpdn.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"49d6c0f4a2","page_url":"https:\/\/www.svpdn.edu.hk\/latest-new\/","eClassURL":"https:\/\/svpdn.eclass.hk\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-latest-news-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ENOTICE_API = {"url":"https:\/\/www.svpdn.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"0b00d7d36c","page_url":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-enotice-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_CALENDAR_API = {"url":"https:\/\/www.svpdn.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"10a59cf42b","school_type":"KIS","LANG":{"SCHOOL_EVENT":"\u5b78\u6821\u4e8b\u9805","ACADEMIC_EVENT":"\u6559\u5b78\u4e8b\u9805","GROUP_EVENT":"\u5c0f\u7d44\u4e8b\u9805","PUBLIC_HOLIDAY_EVENT":"\u516c\u773e\u5047\u671f","SCHOOL_HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f","HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-calendar-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_DIGITAL_CHANNELS_API = {"url":"https:\/\/www.svpdn.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"c4196f059e","TYPE_CATEGORY":"1","TYPE_ALBUM":"2","TYPE_HIGHLIGHT":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-digital-channels-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ACADEMIC_YEAR_TERM_API = {"url":"https:\/\/www.svpdn.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"14ec296573"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-academic-year-term-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_SUBJECT_GROUP_API = {"url":"https:\/\/www.svpdn.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"2d097d6009"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-subject-group-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_YEAR_CLASS_API = {"url":"https:\/\/www.svpdn.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"bf977ff574"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-year-class-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.svpdn.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"abf58ce43d","school_type":"KIS"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-homework-api.js?ver=2.0.0'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/jquery.dotdotdot.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/owl.carousel.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-video.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-youtube.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-vimeo.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/jquery.blueimp-gallery.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/twbs-pagination/jquery.twbsPagination.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/plugins/gallery-images-cust/assets/gallery-images-cust.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/assets/js/basic-script.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-slideshow.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-latest-new.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-calendar.js?ver=5.1.19'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.svpdn.edu.hk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.19" />
+
+<link rel="stylesheet" href="https://www.svpdn.edu.hk/wp-content/plugins/count-per-day/counter.css" type="text/css" />
+<link rel="alternate" href="https://www.svpdn.edu.hk/" hreflang="zh" />
+<link rel="alternate" href="https://www.svpdn.edu.hk/en/" hreflang="en" />
+
+</head>
+
+<body class="home blog zh">
+
+<header id="header" class="ul_image">
+    <div class="container">
+        <div class="row">
+            <div id="schLogo" class="col-xs-12 col-md-6 col-lg-7">
+                <div class="schLogoContainer">
+                    <a href="https://www.svpdn.edu.hk/">
+                        <img src="https://www.svpdn.edu.hk/wp-content/uploads/2021/09/螢幕擷取畫面-2021-09-08-170107已去底-150x150.png" alt="schoolLogo" class="schLogo"/>
+                        <div class="schName">
+                            <span class="schName_ch">天主教聖雲先幼兒學校</span>
+                            <span class="schName_en">St Vincent De Paul Nursery School</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button id="mmBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="login" class="col-md-6 col-lg-5">
+        <form id="loginForm" action="https://svpdn.eclass.hk//login.php" method="POST" target="_blank">
+        <a href="https://svpdn.eclass.hk/" target="_blank"><img
+                    src="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/images/eclassLogo.png" alt="schoolLogo" class="logo"/></a>
+        <div class="input">
+            <input name="UserLogin" class="form-control" type="text" placeholder="登入名稱"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+            <input name="UserPassword" class="form-control" type="password" placeholder="密碼"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+        </div>
+        <a class="btn_login" href="https://svpdn.eclass.hk//login.php" onclick="$('#loginForm').submit(); return false;"></a>
+
+                    <a class="btn_lang" href="https://www.svpdn.edu.hk/en/">Eng</a>
+            </form>
+    </div>        </div>
+    </div>
+</header>
+
+<nav class="navbar" id="mainMenu">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                    <li class="dropdown page_item page_item_has_children c11">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/" class="" style="">
+                            <img src="https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/005.png" />
+                        學校簡介        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/3d-mapps/" class="" style="">
+                        學校歷史        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/3d-maps/" class="" style="">
+                        辦學團體        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e8%be%a6%e5%ad%b8%e5%ae%97%e6%97%a8/" class="" style="">
+                        辦學宗旨        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e6%95%99%e8%81%b7%e5%93%a1%e5%9c%98%e9%ab%94/" class="" style="">
+                        教職員架構        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e5%ae%b6%e9%95%b7%e5%bf%83%e8%81%b2/" class="" style="">
+                        家長心聲        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e8%b3%aa%e6%95%b8%e8%a9%95%e6%a0%b8%e5%a0%b1%e5%91%8a/" class="" style="">
+                        質素評核報告        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e5%91%a8%e5%b9%b4%e8%a8%88%e5%8a%83/" class="" style="">
+                        週年計劃        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e3%80%8a%e5%b9%bc%e7%a8%9a%e5%9c%92%e5%8f%8a%e5%b9%bc%e7%a8%9a%e5%9c%92%e6%9a%a8%e5%b9%bc%e5%85%92%e4%b8%ad%e5%bf%83%e6%a6%82%e8%a6%bd%e3%80%8b%e6%9c%ac%e6%a0%a1%e8%b3%87%e6%96%99/" class="" style="">
+                        幼椎園及幼稚園暨幼兒中心概覽        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e6%a0%a1%e5%9c%92%e7%92%b0%e5%a2%83/" class="" style="">
+                        校園環境        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/" class="" style="">
+                            <img src="https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/078.png" />
+                        學與教        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e6%b4%bb%e5%8b%95/" class="" style="">
+                        中華文化校本活動        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e6%b4%bb%e5%8b%95/2022-2023%e5%ad%b8%e5%b9%b4/" class="" style="">
+                        2022-2023學年        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e6%b4%bb%e5%8b%95/2023-2024%e5%ad%b8%e5%b9%b4/" class="" style="">
+                        2023-2024學年        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e6%b4%bb%e5%8b%95/2024-2025%e5%ad%b8%e5%b9%b4/" class="" style="">
+                        2024-2025學年        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e6%b4%bb%e5%8b%95/2025-2026%e5%ad%b8%e5%b9%b4/" class="" style="">
+                        2025-2026學年        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/" class="" style="">
+                        校本課程        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/%e5%b0%88%e7%a7%91%e6%95%99%e5%ad%b8/" class="" style="">
+                        專科專教        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/%e5%b0%88%e7%a7%91%e6%95%99%e5%ad%b8/%e5%b0%8f%e7%b5%84%e6%95%99%e5%ad%b8/" class="" style="">
+                        小組教學        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/%e5%b0%88%e7%a7%91%e6%95%99%e5%ad%b8/%e5%89%b5%e6%84%8f%e8%97%9d%e8%a1%93/" class="" style="">
+                        創意藝術        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/%e5%b0%88%e7%a7%91%e6%95%99%e5%ad%b8/%e5%a4%a9%e4%b8%bb%e6%95%99%e5%8f%8a%e5%93%81%e5%be%b7%e8%aa%b2%e7%a8%8b/" class="" style="">
+                        天主教及品德課程        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/%e5%85%a9%e6%96%87%e4%b8%89%e8%aa%9e/" class="" style="">
+                        兩文三語        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%b0%88%e9%a1%8c%e7%a0%94%e7%bf%92/" class="" style="">
+                        專題研習        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ae%97%e6%95%99%e5%8f%8a%e5%93%81%e5%be%b7%e8%aa%b2%e7%a8%8b/" class="" style="">
+                        天主教及品德課程        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e7%92%b0%e4%bf%9d%e6%95%99%e8%82%b2/" class="" style="">
+                        環保教育        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%ad%b8%e7%bf%92%e9%ab%94%e9%a9%97%e6%b4%bb%e5%8b%95/" class="" style="">
+                        戶外學習活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e8%8b%b1%e8%aa%9e%e5%b0%8f%e5%ad%b8%e5%a0%82/" class="" style="">
+                        英語小學堂        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        活動花絮        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e5%9c%8b%e5%ae%b6%e5%ae%89%e5%85%a8%e6%95%99%e8%82%b2/" class="" style="">
+                        國家安全教育        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e8%81%96%e9%9b%b2%e5%85%88%e6%a0%a1%e6%9c%ac%e5%a2%9e%e6%bd%a4%e8%aa%b2%e7%a8%8b/" class="" style="">
+                        聖雲先校本增潤課程        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%ad%b8%e8%88%87%e6%95%99/%e8%81%96%e9%9b%b2%e5%85%88%e6%a0%a1%e6%9c%ac%e5%a2%9e%e6%bd%a4%e8%aa%b2%e7%a8%8b/%e4%bd%9c%e5%93%81%e6%ac%a3%e8%b3%9e/" class="" style="">
+                        課堂剪影        </a>
+
+            </li>
+                </ul>
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.svpdn.edu.hk/%e6%94%af%e6%8f%b4%e6%9c%8d%e5%8b%99/" class="" style="">
+                            <img src="https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/040.png" />
+                        專業支援        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e6%94%af%e6%8f%b4%e6%9c%8d%e5%8b%99/%e9%a7%90%e6%95%99%e7%a4%be%e5%b7%a5/" class="" style="">
+                        駐校社工        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e6%94%af%e6%8f%b4%e6%9c%8d%e5%8b%99/%e5%88%b0%e6%a0%a1%e5%ad%b8%e5%89%8d%e5%ba%b7%e5%be%a9%e6%9c%8d%e5%8b%99/" class="" style="">
+                        到校學前康復服務        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e6%94%af%e6%8f%b4%e6%9c%8d%e5%8b%99/%e6%a0%a1%e6%9c%ac%e5%80%8b%e5%88%a5%e8%a8%93%e7%b7%b4%e6%9c%8d%e5%8b%99/" class="" style="">
+                        校本學生學習支援計劃        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.svpdn.edu.hk/%e6%9c%8d%e5%8b%99%e7%b0%a1%e4%bb%8b/" class="" style="">
+                            <img src="https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/008.png" />
+                        服務簡介        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e6%9c%8d%e5%8b%99%e7%b0%a1%e4%bb%8b/%e5%85%a8%e6%97%a5%e6%9c%8d%e5%8b%99/" class="" style="">
+                        全日服務        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e6%9c%8d%e5%8b%99%e7%b0%a1%e4%bb%8b/%e5%b9%bc%e7%a8%9a%e5%9c%92%e6%9a%a8%e5%b9%bc%e5%85%92%e4%b8%ad%e5%bf%83%e5%85%bc%e6%94%b6%e8%a8%88%e5%8a%83/" class="" style="">
+                        幼稚園暨幼兒中心兼收服務        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e6%9c%8d%e5%8b%99%e7%b0%a1%e4%bb%8b/%e6%9a%ab%e8%a8%97%e5%a5%b6%e5%85%92%e6%9c%8d%e5%8b%99/" class="" style="">
+                        暫託幼兒服務        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e6%9c%8d%e5%8b%99%e7%b0%a1%e4%bb%8b/%e5%bb%b6%e9%95%b7%e6%99%82%e9%96%93%e6%9c%8d%e5%8b%99/" class="" style="">
+                        延展服務        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.svpdn.edu.hk/%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b/" class="" style="">
+                            <img src="https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/053.png" />
+                        入學申請        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b/%e6%94%b6%e7%94%9f%e5%ae%89%e6%8e%92/" class="" style="">
+                        幼兒班入學申請資料        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b/%e7%b6%b2%e4%b8%8a%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b%e7%b3%bb%e7%b5%b1/" class="" style="">
+                        網上入學申請系統        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b/2025-2026-%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b%e8%a1%a8/" class="" style="">
+                        2025/2026 入學申請表        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.svpdn.edu.hk/%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b/2026-2027-%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b%e8%a1%a8/" class="" style="">
+                        2026/2027 入學申請表        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item c01">
+        <a href="https://www.svpdn.edu.hk/%e5%ae%b6%e9%95%b7%e5%9c%92%e5%9c%b0/" class="" style="">
+                            <img src="https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/009.png" />
+                        家長園地        </a>
+
+            </li>
+        <li class="page_item c01">
+        <a href="https://www.svpdn.edu.hk/%e8%81%af%e7%b5%a1%e6%88%91%e5%80%91/" class="" style="">
+                            <img src="https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/047.png" />
+                        聯絡我們        </a>
+
+            </li>
+        <li class="page_item c01">
+        <a href="https://www.svpdn.edu.hk/%e5%8d%87%e8%ae%80%e5%b0%8f%e4%b8%80%e8%b3%87%e8%a8%8a/" class="" style="">
+                            <img src="https://www.svpdn.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/001.png" />
+                        升讀小一資訊        </a>
+
+            </li>
+                                        <li class="login page_item">
+                        <a href="https://svpdn.eclass.hk/" target="_blank">eClass 登入</a>
+                    </li>
+                
+                <li class="lang page_item" style="">
+                    <a href="https://www.svpdn.edu.hk/en/">English</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div id="headerSpace"></div>        <div id="alertMsg" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                          class="icon"></span>
+                        </button>
+                        <h4 class="modal-title">2025-2026 及 2026-2027 學年入學申請</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content">
+                            <p><span style="font-size: 24pt;"><strong>本校於2025年9月1日起接受 2025-2026</strong></span></p>
+<p><span style="font-size: 24pt;"><strong>及 2026-2027 學年新生入學申請。</strong></span></p>                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+        <script type="text/javascript">
+            $(window).on('load', function () {
+                $('#alertMsg').modal('show');
+            });
+            $("#alertMsg .close").click(function () {
+                $("body").removeClass("alertBox");
+            });
+        </script>
+        
+<div id="slideshowArea">
+    <div id="slideshowWrap">
+        <div id="gallery-carousel-69c4f58037b42" class=" huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.svpdn.edu.hk/wp-content/uploads/2025/07/20250724150653254_0001-354x500.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">恭賀歷屆畢業生在 2024-2025學年獲取佳績</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="恭賀歷屆畢業生在 2024-2025學年獲取佳績" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <a href="https://youtu.be/8M6y7sKyl3A" target="_blank" >
+                            <img class="image" src="http://img.youtube.com/vi/8M6y7sKyl3A/hqdefault.jpg">
+
+                            <div class="hidden-xs content" style="">
+                                                                    <p class="title">逾萬人跳繩籌款 齊建眾家之家</p>
+                                                                                            </div>
+                        </a>
+                    </span>
+                                                <a data-title="逾萬人跳繩籌款 齊建眾家之家" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.svpdn.edu.hk/wp-content/uploads/2024/06/20240628_145434-copy-667x500.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">恭賀所有小朋友順利完成「建堂耀主 百校繩飛同心齊創 SDG 世界紀錄活動」</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="恭賀所有小朋友順利完成「建堂耀主 百校繩飛同心齊創 SDG 世界紀錄活動」" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.svpdn.edu.hk/wp-content/uploads/2024/06/Doc4_page-0001-252x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.svpdn.edu.hk/wp-content/uploads/2024/05/DSC00366-750x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.svpdn.edu.hk/wp-content/uploads/2024/05/DSC07447-750x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.svpdn.edu.hk/wp-content/uploads/2024/05/DSC01781-759x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.svpdn.edu.hk/wp-content/uploads/2024/05/DSC05739-750x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.svpdn.edu.hk/wp-content/uploads/2024/05/DSC06972-750x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.svpdn.edu.hk/wp-content/uploads/2024/05/DSC09889-750x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>
+    <div class="container">
+        <div class="row">
+
+            <div id="latestNews" class="col-xs-12" data-base-href="https://www.svpdn.edu.hk/latest-new/?id=%id%"
+     data-limit="7">
+    <h1 class="title">最新消息</h1>
+    <a href="https://www.svpdn.edu.hk/latest-new/" class="moreBtn" v-if="!isLoading" v-show="dataList.length">更多</a>
+
+    <div class="newsFrame">
+        <div class="loading" v-show="isLoading">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+
+        <div v-if="!isLoading" v-show="dataList.length == 0" class="noRecord">
+            <span>暫時沒有紀錄</span>
+        </div>
+
+        <ul id="newsList" v-if="!isLoading" v-show="dataList.length">
+            <a v-for="data in dataList" :href="getLink(data)">
+                <li>
+                    <h2 class="newsTitle">
+                        {{ data.Title }}
+                        <span class="attIcon" v-if="data.Attachments.Attachment.length"></span>
+                    </h2>
+
+                    <!--<span class="newsImg"><img/></span>-->
+
+                                            <span class="newsDes dotdotdot">{{ strip_tags(data.Description) }}</span>
+                                        <span class="newsDate">{{ data.AnnouncementDate }}</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+
+</div>
+
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            
+            
+<div id="calendar" class="col-xs-12">
+    <h1 class="title">學校行事曆</h1>
+
+
+
+    <div class="calendarWrap">
+        <div class="calendarFrame">
+            <div class="loading" v-show="isLoading">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <div class="year_month" v-show="!isLoading" style="display:none;">
+                <a class="btn_lastmonth" @click="changeSelectedMonth(-1)"></a>
+                <span class="year">{{ currentSelectedDate.format('YYYY') }}</span>
+                <span class="month">{{ currentSelectedDate.format('MMMM') }}</span>
+                <a class="btn_nextmonth" @click="changeSelectedMonth(1)"></a>
+            </div>
+            <ul v-show="!isLoading" style="display:none;">
+                <li class="cal_head">日</li>
+                <li class="cal_head">一</li>
+                <li class="cal_head">二</li>
+                <li class="cal_head">三</li>
+                <li class="cal_head">四</li>
+                <li class="cal_head">五</li>
+                <li class="cal_head">六</li>
+
+                <li class="blank_date" v-for="n in blankDayCount">
+                    <div></div>
+                </li>
+
+                <template v-for="day in monthDayCount">
+                    <li :class="getDayClass(day)">
+                        <div><a @click="showDayDetails(day)">
+                            <span class="date">{{day}}</span>
+                            <span class="cycle" v-if="getDayCycle(day)">{{getDayCycle(day)}}</span>
+                        </a></div>
+                    </li>
+                </template>
+
+                <p class="spacer"></p>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="calendarDetails" tabindex="-1" role="dialog" aria-labelledby="calendarDetails"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" v-html="selectedEvent.dateHtml"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="icon"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tbl_events">
+                        <tr v-for="event in selectedEvent.events">
+                            <td :class="event.CssClass">{{ event.TypeText }}</td>
+                            <td>{{ event.Title }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+
+
+    <div id="photoSlideShow">
+        <div class="container">
+            <div class="row">
+
+                
+<div id="photoSlideShowWrap" class="modules-fullWidth">
+    <div id="gallery-carousel-69c4f5803840d" class="autoWidth huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <a href="https://www.youtube.com/watch?v=ILVRqwpJPQY" target="_blank" >
+                            <img class="image" src="http://img.youtube.com/vi/ILVRqwpJPQY/hqdefault.jpg">
+
+                            <div class="hidden-xs content" style="display:none;">
+                                                                                            </div>
+                        </a>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <a href="https://www.youtube.com/watch?v=Hb9aFFpTtV0" target="_blank" >
+                            <img class="image" src="http://img.youtube.com/vi/Hb9aFFpTtV0/hqdefault.jpg">
+
+                            <div class="hidden-xs content" style="display:none;">
+                                                                                            </div>
+                        </a>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <a href="https://www.youtube.com/watch?v=8kukIp1d1xc" target="_blank" >
+                            <img class="image" src="http://img.youtube.com/vi/8kukIp1d1xc/hqdefault.jpg">
+
+                            <div class="hidden-xs content" style="display:none;">
+                                                                                            </div>
+                        </a>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <a href="https://www.youtube.com/watch?v=wqGJVNbeErM" target="_blank" >
+                            <img class="image" src="http://img.youtube.com/vi/wqGJVNbeErM/hqdefault.jpg">
+
+                            <div class="hidden-xs content" style="display:none;">
+                                                                                            </div>
+                        </a>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <a href="https://www.youtube.com/watch?v=uohB8EZFw2w" target="_blank" >
+                            <img class="image" src="http://img.youtube.com/vi/uohB8EZFw2w/hqdefault.jpg">
+
+                            <div class="hidden-xs content" style="">
+                                                                    <p class="title">體感遊戲</p>
+                                                                                            </div>
+                        </a>
+                    </span>
+                                                <a data-title="體感遊戲" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <a href="https://youtu.be/ubMUCBFHyrY" target="_blank" >
+                            <img class="image" src="http://img.youtube.com/vi/ubMUCBFHyrY/hqdefault.jpg">
+
+                            <div class="hidden-xs content" style="display:none;">
+                                                                                            </div>
+                        </a>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="modules-break"></div>
+
+<div id="usefulLinks">
+    <div class="container">
+        <div class="row">
+            <div class="modules-fullWidth" id="usefulLinksWrap">
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.edb.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://www.svpdn.edu.hk/wp-content/uploads/2019/02/edb.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.svpdn.edu.hk/wp-content/uploads/2019/02/edb.jpg 600w, https://www.svpdn.edu.hk/wp-content/uploads/2019/02/edb-300x99.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.facebook.com/profile.php?id=100089388308894" target="_blank">
+                                <img src="https://www.svpdn.edu.hk/wp-content/uploads/2023/11/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb-複製.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.svpdn.edu.hk/wp-content/uploads/2023/11/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb-複製.jpg 448w, https://www.svpdn.edu.hk/wp-content/uploads/2023/11/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb-複製-300x241.jpg 300w, https://www.svpdn.edu.hk/wp-content/uploads/2023/11/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb-複製-180x145.jpg 180w, https://www.svpdn.edu.hk/wp-content/uploads/2023/11/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb-複製-331x266.jpg 331w" sizes="(max-width: 448px) 100vw, 448px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.instagram.com/svpdn/" target="_blank">
+                                <img src="https://www.svpdn.edu.hk/wp-content/uploads/2023/11/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.svpdn.edu.hk/wp-content/uploads/2023/11/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb.jpg 431w, https://www.svpdn.edu.hk/wp-content/uploads/2023/11/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb-300x251.jpg 300w, https://www.svpdn.edu.hk/wp-content/uploads/2023/11/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb-180x150.jpg 180w, https://www.svpdn.edu.hk/wp-content/uploads/2023/11/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb-318x266.jpg 318w" sizes="(max-width: 431px) 100vw, 431px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.parent.edu.hk/" target="_blank">
+                                <img src="https://www.svpdn.edu.hk/wp-content/uploads/2021/09/LINE_P2018228_164854.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.svpdn.edu.hk/wp-content/uploads/2021/09/LINE_P2018228_164854.jpg 266w, https://www.svpdn.edu.hk/wp-content/uploads/2021/09/LINE_P2018228_164854-180x55.jpg 180w" sizes="(max-width: 266px) 100vw, 266px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.chp.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://www.svpdn.edu.hk/wp-content/uploads/2019/02/logo_chp_tc.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.svpdn.edu.hk/wp-content/uploads/2019/02/logo_chp_tc.png 335w, https://www.svpdn.edu.hk/wp-content/uploads/2019/02/logo_chp_tc-300x79.png 300w" sizes="(max-width: 335px) 100vw, 335px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.hko.gov.hk/contentc.htm" target="_blank">
+                                <img src="https://www.svpdn.edu.hk/wp-content/uploads/2018/08/hko.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.chp.gov.hk/tc/features/14843.html" target="_blank">
+                                <img src="https://www.svpdn.edu.hk/wp-content/uploads/2021/02/79.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modules-break"></div>
+<div id="backToTop" onclick="topFunction()" style="display: none;">
+    <div>
+    </div>
+</div>
+
+<footer class="t_image">
+    <div id="schInfo">
+        <div class="container">
+            <div class="row">
+                <div class="schName_ch col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">天主教聖雲先幼兒學校</div>
+                <div class="schName_en col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">St Vincent De Paul Nursery School</div>
+                <div class="infoList col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
+                                            <span class="address">
+                            九龍觀塘馬蹄徑5號寶峰大廈2樓 2/F                            <a class="map" href="https://goo.gl/maps/Qt4EDv1VUZuY2srq9" target="_blank"></a>
+                        </span>
+                    
+                                            <span class="tel">(852) 23893228         https://wa.me/message/QJO5HANFK2UAG1</span>
+                    
+                                            <span class="fax">(852) 23897610</span>
+                    
+                                            <span class="mail"><a href="mailto:info@svpdn.edu.hk">info@svpdn.edu.hk</a></span>
+                    
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <span class="col-xs-12 col-sm-6">版權所有 &copy; 天主教聖雲先幼兒學校</span>
+                <span class="col-xs-12 col-sm-6">Powered by <a href="http://www.eclass.com.hk/" target="_blank"><span
+                                class="logo"/></span></a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    /* Moved into homepage-homework.js
+    $(function () {
+        $('.datetimepicker').datetimepicker({
+            format: 'YYYY-MM-DD',
+            ignoreReadonly: true,
+            locale: 'zh-HK'
+        });
+    });
+    $('.datetimepicker-time').datetimepicker({
+        sideBySide: true
+    });
+    $(function () {
+        $('.datetimepicker').datetimepicker();
+
+        $('.datetimepicker-addon').on('click', function () {
+            $(this).prev('input.datetimepicker').data('DateTimePicker').toggle();
+        });
+    });
+    */
+    $(function () {
+        // Add slideDown animation to Bootstrap dropdown when expanding.
+        $('.dropdown').on('show.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+        });
+
+        // Add slideUp animation to Bootstrap dropdown when collapsing.
+        $('.dropdown').on('hide.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+        });
+    });
+</script>
+<script type="text/javascript" src="https://www.svpdn.edu.hk/wp-content/themes/theme5_style_1/js/bootstrap_fix.js"></script>
+<div id="mmBg" class="mmOpen bg"></div>
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-preload-range="0">
+        <div class="slides"></div>
+
+        <div class="photoInfo">
+            <h3 class="title"></h3>
+            <p class="description"></p>
+            <span class="more"><a class="showMoreDescription" href="javascript:void(0);">（顯示更多…）</a></span>
+        </div>
+
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="popup" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+
+        <ol class="indicator"></ol>
+        <div class="indicatorControl">
+	    	<span class="leftBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+	    	</span>
+            <span class="rightBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+			</span>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://www.svpdn.edu.hk/wp-includes/js/wp-embed.min.js?ver=5.1.19'></script>
+</body>
+</html>

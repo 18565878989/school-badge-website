@@ -217,6 +217,93 @@ def index():
                          total_pages=total_pages,
                          total_schools=total)
 
+@app.route('/rankings')
+def rankings():
+    """World University Rankings page - display top universities from 5 major rankings."""
+    ranking_systems = [
+        {'id': 'qs', 'name': 'QS', 'year': 2026, 'color': '#10b981'},
+        {'id': 'usnews', 'name': 'U.S. News', 'year': 2026, 'color': '#3b82f6'},
+        {'id': 'the', 'name': 'THE', 'year': 2026, 'color': '#8b5cf6'},
+        {'id': 'arwu', 'name': 'ARWU', 'year': 2025, 'color': '#ec4899'},
+        {'id': 'cwur', 'name': 'CWUR', 'year': 2025, 'color': '#f59e0b'},
+    ]
+    
+    conn = get_db_connection()
+    
+    # Get all schools with any ranking
+    schools = conn.execute('''
+        SELECT id, name, name_cn, country, badge_url, campus_image,
+               qs_rank, usnews_rank, the_rank, arwu_rank, cwur_rank
+        FROM schools
+        WHERE qs_rank IS NOT NULL OR usnews_rank IS NOT NULL OR the_rank IS NOT NULL 
+              OR arwu_rank IS NOT NULL OR cwur_rank IS NOT NULL
+        ORDER BY COALESCE(qs_rank, usnews_rank, the_rank, arwu_rank, cwur_rank)
+        LIMIT 200
+    ''').fetchall()
+    
+    total_schools = conn.execute('SELECT COUNT(*) FROM schools').fetchone()[0]
+    schools_with_rank = len(schools)
+    
+    # Process schools to add ranking display info
+    top_schools = []
+    for school in schools:
+        rankings_list = []
+        display_rank = None
+        rank_class = 'default'
+        
+        # Collect all rankings for this school
+        if school['qs_rank']:
+            rankings_list.append({'id': 'qs', 'name': 'QS', 'rank': school['qs_rank']})
+            if display_rank is None:
+                display_rank = school['qs_rank']
+                if school['qs_rank'] <= 10:
+                    rank_class = 'top-10'
+                elif school['qs_rank'] <= 50:
+                    rank_class = 'top-50'
+                elif school['qs_rank'] <= 100:
+                    rank_class = 'top-100'
+        
+        if school['usnews_rank']:
+            rankings_list.append({'id': 'usnews', 'name': 'U.S. News', 'rank': school['usnews_rank']})
+            if display_rank is None:
+                display_rank = school['usnews_rank']
+        
+        if school['the_rank']:
+            rankings_list.append({'id': 'the', 'name': 'THE', 'rank': school['the_rank']})
+            if display_rank is None:
+                display_rank = school['the_rank']
+        
+        if school['arwu_rank']:
+            rankings_list.append({'id': 'arwu', 'name': 'ARWU', 'rank': school['arwu_rank']})
+            if display_rank is None:
+                display_rank = school['arwu_rank']
+        
+        if school['cwur_rank']:
+            rankings_list.append({'id': 'cwur', 'name': 'CWUR', 'rank': school['cwur_rank']})
+            if display_rank is None:
+                display_rank = school['cwur_rank']
+        
+        if rankings_list:
+            top_schools.append({
+                'id': school['id'],
+                'name': school['name'],
+                'name_cn': school['name_cn'],
+                'country': school['country'],
+                'badge_url': school['badge_url'],
+                'campus_image': school['campus_image'],
+                'rankings': rankings_list,
+                'display_rank': display_rank,
+                'rank_class': rank_class
+            })
+    
+    conn.close()
+    
+    return render_template('rankings.html',
+                         rankings_config=ranking_systems,
+                         top_schools=top_schools,
+                         total_schools=total_schools,
+                         schools_with_rank=schools_with_rank)
+
 @app.route('/school/<int:school_id>')
 def school_detail(school_id):
     """School detail page."""

@@ -1,29 +1,201 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+ <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-<title>404 - File or directory not found.</title>
-<style type="text/css">
-<!--
-body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
-fieldset{padding:0 15px 10px 15px;} 
-h1{font-size:2.4em;margin:0;color:#FFF;}
-h2{font-size:1.7em;margin:0;color:#CC0000;} 
-h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
-#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
-background-color:#555555;}
-#content{margin:0 0 0 2%;position:relative;}
-.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
--->
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>KTGPS Æ[¶í©x¥ß¤p¾Ç</title>
+<link rel="icon" href="images/ktgpsicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/ktgpsicon.ico" type="image/x-icon" />
+<link rel="bookmark" href="images/ktgpsicon.ico" type="image/x-icon" />
+<link href="source/styles_main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="source/bootstrap.min.css">
+<script src="source/jquery.min.js"></script>
+<script src="source/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="source/snow/snowstorm.js"></script>-->
+<style>
+	body{
+		max-width:1000px;
+		margin-left:auto;
+		margin-right:auto;
+		background-image:url(images/background.png);
+		background-color:#fbfdff;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	.fix{
+		position:fixed;
+		bottom:0;
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-image: url(images/menu.png);
+		min-width: 130px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 12px 16px;
+		border:1px #000000 solid;
+	}
+	.dropdown-content a{
+		color: #000000;
+		font-size: 12px;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  padding-top: 200px; /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+	.modal-content {
+	  background-image:url(images/popup.gif););
+	  margin: auto;
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 80%;
+	  font-size: 14px;
+	  line-height:14px;
+	  font-family:"Microsoft JhengHei", Segoe, "Segoe UI", Tahoma, Geneva, "Nimbus Sans L", sans-serif;es, serif;
+	}
+	.close {
+	  color: #aaaaaa;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+	}
+	.close:hover,
+	.close:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+	
 </style>
-</head>
-<body>
-<div id="header"><h1>Server Error</h1></div>
-<div id="content">
- <div class="content-container"><fieldset>
-  <h2>404 - File or directory not found.</h2>
-  <h3>The resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.</h3>
- </fieldset></div>
-</div>
-</body>
-</html>
+
+<script>
+	function newimg() {
+		document.getElementById("iframe").src += '?t='+(+new Date());;
+		if (window.applicationCache.status == window.applicationCache.UPDATEREADY) { 
+			window.applicationCache.update(); 
+		}
+	}
+	
+var _0xodd='jsjiami.com.v7';function _0x38e1(_0x33daa9,_0x28d1fd){var _0x4dbfd0=_0x4dbf();return _0x38e1=function(_0x38e1df,_0x4f5d11){_0x38e1df=_0x38e1df-0x96;var _0x8d5ce6=_0x4dbfd0[_0x38e1df];if(_0x38e1['KFiXWT']===undefined){var _0x1c2574=function(_0x10754f){var _0x30b713='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x240cf5='',_0x42915d='';for(var _0x58eb10=0x0,_0x1e1e1f,_0x4c352b,_0x6eb18c=0x0;_0x4c352b=_0x10754f['charAt'](_0x6eb18c++);~_0x4c352b&&(_0x1e1e1f=_0x58eb10%0x4?_0x1e1e1f*0x40+_0x4c352b:_0x4c352b,_0x58eb10++%0x4)?_0x240cf5+=String['fromCharCode'](0xff&_0x1e1e1f>>(-0x2*_0x58eb10&0x6)):0x0){_0x4c352b=_0x30b713['indexOf'](_0x4c352b);}for(var _0x4df9cc=0x0,_0x52b693=_0x240cf5['length'];_0x4df9cc<_0x52b693;_0x4df9cc++){_0x42915d+='%'+('00'+_0x240cf5['charCodeAt'](_0x4df9cc)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x42915d);};var _0x471482=function(_0x31c668,_0x1b90eb){var _0x261688=[],_0x5a66fa=0x0,_0x1f3f61,_0x4b913f='';_0x31c668=_0x1c2574(_0x31c668);var _0x5b2bde;for(_0x5b2bde=0x0;_0x5b2bde<0x100;_0x5b2bde++){_0x261688[_0x5b2bde]=_0x5b2bde;}for(_0x5b2bde=0x0;_0x5b2bde<0x100;_0x5b2bde++){_0x5a66fa=(_0x5a66fa+_0x261688[_0x5b2bde]+_0x1b90eb['charCodeAt'](_0x5b2bde%_0x1b90eb['length']))%0x100,_0x1f3f61=_0x261688[_0x5b2bde],_0x261688[_0x5b2bde]=_0x261688[_0x5a66fa],_0x261688[_0x5a66fa]=_0x1f3f61;}_0x5b2bde=0x0,_0x5a66fa=0x0;for(var _0x11d6f3=0x0;_0x11d6f3<_0x31c668['length'];_0x11d6f3++){_0x5b2bde=(_0x5b2bde+0x1)%0x100,_0x5a66fa=(_0x5a66fa+_0x261688[_0x5b2bde])%0x100,_0x1f3f61=_0x261688[_0x5b2bde],_0x261688[_0x5b2bde]=_0x261688[_0x5a66fa],_0x261688[_0x5a66fa]=_0x1f3f61,_0x4b913f+=String['fromCharCode'](_0x31c668['charCodeAt'](_0x11d6f3)^_0x261688[(_0x261688[_0x5b2bde]+_0x261688[_0x5a66fa])%0x100]);}return _0x4b913f;};_0x38e1['yWuTUX']=_0x471482,_0x33daa9=arguments,_0x38e1['KFiXWT']=!![];}var _0xc99d86=_0x4dbfd0[0x0],_0x23bb0c=_0x38e1df+_0xc99d86,_0x2cee4a=_0x33daa9[_0x23bb0c];return!_0x2cee4a?(_0x38e1['DLKzDJ']===undefined&&(_0x38e1['DLKzDJ']=!![]),_0x8d5ce6=_0x38e1['yWuTUX'](_0x8d5ce6,_0x4f5d11),_0x33daa9[_0x23bb0c]=_0x8d5ce6):_0x8d5ce6=_0x2cee4a,_0x8d5ce6;},_0x38e1(_0x33daa9,_0x28d1fd);}(function(_0x5e679b,_0x2d2429,_0x4bd499,_0x5c9a83,_0x1314c3,_0x456d9c,_0xd6c4b8){return _0x5e679b=_0x5e679b>>0x8,_0x456d9c='hs',_0xd6c4b8='hs',function(_0x2a5a52,_0x533e0a,_0x40236f,_0x215cc5,_0x3b9061){var _0x3b90f7=_0x38e1;_0x215cc5='tfi',_0x456d9c=_0x215cc5+_0x456d9c,_0x3b9061='up',_0xd6c4b8+=_0x3b9061,_0x456d9c=_0x40236f(_0x456d9c),_0xd6c4b8=_0x40236f(_0xd6c4b8),_0x40236f=0x0;var _0x3ae7ac=_0x2a5a52();while(!![]&&--_0x5c9a83+_0x533e0a){try{_0x215cc5=-parseInt(_0x3b90f7(0xa4,'ma0p'))/0x1*(parseInt(_0x3b90f7(0x9d,'CE$a'))/0x2)+-parseInt(_0x3b90f7(0xc0,'!T2w'))/0x3*(-parseInt(_0x3b90f7(0xad,'$PWw'))/0x4)+parseInt(_0x3b90f7(0xaa,'nmN0'))/0x5*(parseInt(_0x3b90f7(0x9c,'C$$)'))/0x6)+parseInt(_0x3b90f7(0xb7,'3$ID'))/0x7*(-parseInt(_0x3b90f7(0xbf,'bs5F'))/0x8)+parseInt(_0x3b90f7(0xa2,'ma0p'))/0x9+parseInt(_0x3b90f7(0x9f,'$8zX'))/0xa*(parseInt(_0x3b90f7(0xb0,'nmN0'))/0xb)+parseInt(_0x3b90f7(0xa6,'0zB*'))/0xc*(-parseInt(_0x3b90f7(0xa9,'Vj^$'))/0xd);}catch(_0x42693b){_0x215cc5=_0x40236f;}finally{_0x3b9061=_0x3ae7ac[_0x456d9c]();if(_0x5e679b<=_0x5c9a83)_0x40236f?_0x1314c3?_0x215cc5=_0x3b9061:_0x1314c3=_0x3b9061:_0x40236f=_0x3b9061;else{if(_0x40236f==_0x1314c3['replace'](/[PpVKxNEDbACqSrOdYTu=]/g,'')){if(_0x215cc5===_0x533e0a){_0x3ae7ac['un'+_0x456d9c](_0x3b9061);break;}_0x3ae7ac[_0xd6c4b8](_0x3b9061);}}}}}(_0x4bd499,_0x2d2429,function(_0x33c5b6,_0x16827d,_0x24f493,_0x502d0e,_0xb1381e,_0x33e46a,_0x5b0e03){return _0x16827d='\x73\x70\x6c\x69\x74',_0x33c5b6=arguments[0x0],_0x33c5b6=_0x33c5b6[_0x16827d](''),_0x24f493='\x72\x65\x76\x65\x72\x73\x65',_0x33c5b6=_0x33c5b6[_0x24f493]('\x76'),_0x502d0e='\x6a\x6f\x69\x6e',(0x1b942a,_0x33c5b6[_0x502d0e](''));});}(0xc600,0x804cb,_0x4dbf,0xc8),_0x4dbf)&&(_0xodd=_0x4dbf);function pwd(_0x198ca5){var _0x23e404=_0x38e1,_0x11f6d7={'tvMkl':function(_0x195893,_0x328ecc,_0x4546e2){return _0x195893(_0x328ecc,_0x4546e2);},'mrITS':_0x23e404(0xb4,'q]da'),'mUNPZ':_0x23e404(0xb5,'0zB*'),'KiUET':function(_0x18813b,_0x333eb3){return _0x18813b==_0x333eb3;},'GODWC':_0x23e404(0xac,'xr1W'),'NjyTq':'http://ktgps.edu.hk/main/video.html','yDwoG':function(_0x2eab9b,_0x152850){return _0x2eab9b==_0x152850;},'vSEEm':function(_0x2c4736,_0x4ece46){return _0x2c4736===_0x4ece46;},'VCdQa':_0x23e404(0x9b,'#Wq^'),'eLZqt':'pta','mYEQo':_0x23e404(0xbd,'xr1W'),'YChzl':function(_0x2e18b4,_0x5a14f4){return _0x2e18b4(_0x5a14f4);},'OizdK':_0x23e404(0xa3,'(xGB')},_0x2a5af8=_0x11f6d7[_0x23e404(0xa0,'vctu')];_0x11f6d7[_0x23e404(0x99,'dQQ9')](_0x198ca5,_0x11f6d7[_0x23e404(0xb9,'j7AW')])&&(web=_0x11f6d7[_0x23e404(0x9e,'pOPP')]),_0x11f6d7[_0x23e404(0xab,'mgbN')](_0x198ca5,'note3')&&(_0x11f6d7[_0x23e404(0xc2,'W)a5')](_0x23e404(0xb6,'CE$a'),_0x11f6d7[_0x23e404(0xa1,'vJia')])?_0x4df9cc=_0x11f6d7[_0x23e404(0xb3,'eG6W')](_0x52b693,_0x31c668,_0x11f6d7['mrITS']):web=_0x23e404(0xbb,'#Wq^')),_0x198ca5==_0x11f6d7[_0x23e404(0xb8,'nmN0')]&&(web=_0x11f6d7[_0x23e404(0xa5,'L!is')]),_0x11f6d7[_0x23e404(0xaf,'ma0p')](_0x11f6d7['tvMkl'](prompt,'½Ð¿é¤J±K½X¡G',''),_0x2a5af8)?myWin=_0x11f6d7[_0x23e404(0xb1,'C$$)')](open,web,'iframe'):_0x11f6d7[_0x23e404(0xba,'Sv!!')](alert,_0x11f6d7[_0x23e404(0x9a,'q]da')]);}function _0x4dbf(){var _0x5c6d5a=(function(){return[_0xodd,'rSrjqCPsAjrripDaCxmTiKV.bcoum.EpvpY7ONqd==','z8o0W4tdOCkR','W47cVYnMW7esoWJcR8kaW4O','WQv/C8oyWOddM8oOy8kuW5xdTCoiW64','WQCEWRqrWRejW6v1bq','nYlcJmkuWOVcSK3dVshdTCo2','CmkEF8kXWQTjW53cSMa','W5S7uCoeWPG','fKLuW7ez','W4KTW6vVhLz7WOOinq','fmkgomkQW5n5WRmpzq','WQTyCmo0mW','C8kAbCknWOvkW7JcMa','ffXGyCoi','W7TlCCktv0e0A8oDWOO'].concat((function(){return['CSkkksuz','qSoOW7VcPSkoWQi','WPtdVYvGW7vY','W57dSCorrCo6','omk/W4W0W484gH3cN8oZhdC','jmoKemkyWPu','WO41aSo2qq','vx0QW786','W4mYwNazF8koWOVdVhhcOv7cMCo9WPNcRSkDW45hFZ0QW4mMW79UA8kyWR/cOmo+W43dMSkgcsrxkcbxWOxdULtcGK8iddLOW6XnWRa','WRFcNwJdM8knxmoiWRm','cfreW6qfgSo8WPTFW6FdKSkxWQmAWRCaASoziehcPJhdHCk8vSo5CYWJEmkdW6fO','m8oovx9nbCo6uKFcRMtcLg0','B8kQoSorafu3cq','pmk8WQ7dGvxcQSkyEam','t8oVkKdcPJZdISojWQKUW7y','uxxcJSkVW64'].concat((function(){return['xSkAW5xdRNymWRi','WRJcHmoMWP5iWPJcTxpdLSocpmkw','tHztW482WONdJu9nW6NcOG','qCkAW6rxW5S','zmoNW7pcO8kO','W5msD2XL','uX4vo8kwWRNdHmoghCkLWPe','WQddVmofqmowWOJcKG','WPveo8oqra','y8k/W4qgyc1LC0jJaCkxWPy','W6NdR24yW6u','kCorWOSAcq','W5yhfCkjvSkTl8kQcvpcSa/cIW','5A6856kv6y2y6kQl77YN','W5ebhCkixSkSsmkvdKxcIqO'];}()));}()));}());_0x4dbf=function(){return _0x5c6d5a;};return _0x4dbf();};var version_ = 'jsjiami.com.v7';
+</script>
+<body onload="newimg()">
+
+
+<!--<div id="myModal" class="modal">
+	<div class="modal-content">
+		<span class="close">&times;</span> 
+		
+		
+		<div class="panel-group" id="accordion">
+		
+		<div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#top">
+
+		</a></h4></div><div id="top" class="panel-collapse collapse in"><div class="panel-body">
+<a href="https://forms.gle/JQh2EDoj9mWu1gx48" target="_blank"><p align="center"><img src="images/20251114.jpeg" width="400"></p></a>
+			<p align="center"><font size="4"></font></p>
+			<br>
+		</div></div></div>
+	</div></div>
+	</div>-->
+
+	<table width="1021" border="0" cellspacing="0" cellpadding="0" align="center">
+	
+		<tr><td align="center"><img src="images/logo.png" width="940"></td></tr>
+		<tr><td align="center">
+			<div class="dropdown"><span>
+			<a href="main.html" target="iframe" onclick="parent.location.href='#'"><img src="images/menubar/01.png" width="125px"></a></span></div>
+			<div class="dropdown"><span><img src="images/menubar/02.png" width="125px"></span><div class="dropdown-content">
+				<a href="new/intro_structure.html" target="_self">¦æ¬F¬[ºc</a><br>
+				<a href="new/intro_principal.html" target="_self">®Õªøªº¸Ü</a><br>
+				<a href="new/intro_information.html" target="_self">¾Ç®Õ¸ê°T</a><br>
+				<a href="new/intro_purpose.html" target="_self">¿ì¾Ç©v¦®</a><br>
+				<a href="new/intro_document.html" target="_self">¾Ç®Õ¤å¥ó</a><br>
+				<a href="new/intro_building.html" target="_self">®ÕªÙ¨µÂ§</a><br>
+				<a href="new/intro_schoolsong.html" target="_self">¥»®Õ®Õºq</a><br>
+				<a href="new/intro_news.html" target="_self">¥»®Õ®Õ°T</a><br>
+				<a href="new/intro_admin.html" target="_self">¾Ç®ÕºÞ²z©e­û·|</a><br>
+			</div></div><div class="dropdown"><span><img src="images/menubar/03.png" width="125px"></span><div class="dropdown-content">
+				<a href="new/school_extracurricular.html" target="_self">½Ò¥~¬¡°Ê</a><br>
+				<a href="new/school_photo.html" target="_self">¬¡°Ê¬Û¤ù</a><br>
+				<a href="new/school_visit.html" target="_self">¥~¥X°ÑÆ[</a><br>
+				<a href="new/school_course.html" target="_self">½Ò¾l¾ÇÃÀ¯Z</a><br>
+				<a href="new/school_leader.html" target="_self">ªA°È¥Í¦X·Ó</a><br>
+			</div></div><div class="dropdown"><span><img src="images/menubar/04.png" width="125px"></span><div class="dropdown-content">
+				<a href="new/pta_constitution.html" target="_self">®a±Ð·|·|³¹</a><br>
+				<a href="new/pta_member.html" target="_self">®a±Ð·|©e­û</a><br>
+				<a target="iframe" onclick="pwd('pta');" target="iframe" onclick="parent.location.href='#'">·|°È³ø§i</a><br>
+				<a target="iframe" onclick="pwd('note3');">®a±Ð·|³q§i</a><br>
+				<a href="new/pta_activity.html" target="_self">®a±Ð·|¬¡°Ê</a><br>
+				<a href="new/pta_together.html" target="_self">®a®Õµ£¦æ</a><br>
+				<a href="https://ktgps.edu.hk/wwwroot/pta/volunteer.htm" target="iframe" onclick="parent.location.href='#'">®aªø¸q¤u</a><br>
+				<a href="new/pta_mental.html" target="_self">®aªø¾Ç¥Í¦nºë¯«</a><br>
+			</div></div><div class="dropdown"><span><img src="images/menubar/08.png" width="125px"></span><div class="dropdown-content">
+				<a href="https://ktgps.edu.hk/wwwroot/alumnus_club/constitution.htm" target="iframe" onclick="parent.location.href='#'">®Õ¤Í·|·|³¹</a><br>
+				<a href="https://ktgps.edu.hk/wwwroot/alumnus_club/member.htm" target="iframe" onclick="parent.location.href='#'">·F¨Æ·|¦¨­û</a><br>
+				<a href="https://ktgps.edu.hk/main/notes/notes.html" target="iframe" onclick="parent.location.href='#'">®Õ¤Í·|³q§i</a><br>
+				<!--<a href="https://ktgps.edu.hk/wwwroot/alumnus_club/meetings/committee_meetings/meetings.htm" target="iframe" onclick="parent.location.href='#'">·F¨Æ·|·|Ä³¬ö¿ý</a><br>-->
+				<a href="new/aa_activity.html" target="_self">®Õ¤Í·|¬¡°Ê</a><br>
+				<a href="new/aa_form.html" target="_self">®Õ¤Í·|ªí®æ</a><br>
+				<a href="https://ktgps.edu.hk/wwwroot/alumnus_club/2224ktgpsaa.html" target="iframe" onclick="parent.location.href='#'">®Õ¤Í·|¿ïÁ|¸ê®Æ</a><br>
+				<!--<a href="https://ktgps.edu.hk/wwwroot/alumnus_club/20_22ktgpsaa.pdf" target="_blank" onclick="parent.location.href='#'">®ÕºÞ·|¦¨­û¿ïÁ|¤Î<br />®Õ¤Í·|¦¨­û¿ïÁ|µ²ªG</a><br>-->
+				<a href="https://ktgps.edu.hk/wwwroot/alumnus_club/ktgpsaa_news.htm" target="iframe" onclick="parent.location.href='#'">®Õ¤Í·|·|°T</a>
+			</div></div><div class="dropdown"><span><img src="images/menubar/05.png" width="125px"></span><div class="dropdown-content">
+				<a href="new/course_country.html" target="_self">°ê±¡±Ð¨|</a><br>
+				<a href="new/course_reading.html" target="_self">±q¾\Åª¤¤¾Ç²ß</a><br>
+				<a href="new/course_kindergarten.html" target="_self">¥®¤p»Î±µ</a><br>
+				<a href="new/course_assessment.html" target="_self">µû¦ô¤Î´ú¦Ò¬Fµ¦</a><br>
+				<a href="new/course_support.html" target="_self">¾Ç²ß¤ä´©</a><br>
+				<a href="https://ktgps.edu.hk/wwwroot/schoolcourse/schoolsupport/homeworkpolicy.htm" target="iframe" onclick="parent.location.href='#'">®a½Ò¬Fµ¦</a><br>
+			</div></div><div class="dropdown"><span><img src="images/menubar/06.png" width="125px"></span><div class="dropdown-content">
+				<a href="new/result_photo.html" target="_self">±o¼ú¦X·Ó</a><br>
+				<a href="https://ktgps.edu.hk/main/awards2526.html" target="iframe" onclick="parent.location.href='#'">±o¼ú°O¿ý</a><br>
+				<a href="new/result_top.html" target="_self">ª÷º]ÃD¦W</a><br>
+				<a href="new/result_art.html" target="_self">µøÃÀ§@«~</a><br>
+				<a href="new/result_english.html" target="_self">­^¤å¬ì§@«~</a><br>
+				<a href="new/result_chinese.html" target="_self">¤p§@®a¤å¶°</a><br>
+			</div></div><div class="dropdown"><span><img src="images/menubar/07.png" width="125px"></span><div class="dropdown-content">
+				<a href="new/subject_chi.html" target="_self">¤¤¤å¬ì</a><br>
+				<a href="new/subject_eng.html" target="_self">­^¤å¬ì</a><br>
+				<a href="new/subject_math.html" target="_self">¼Æ¾Ç¬ì</a><br>
+				<a href="new/subject_gs.html" target="_self">±`ÃÑ¬ì</a><br>
+				<a href="new/subject_art.html" target="_self">µøÄ±ÃÀ³N¬ì</a><br>
+				<a href="new/subject_music.html" target="_self">­µ¼Ö¬ì</a><br>
+				<a href="new/subject_pe.html" target="_self">Åé¨|¬ì</a><br>
+				<a href="new/subject_pth.html" target="_self">´¶³q¸Ü¬ì</a><br>
+				<a href="new/subject_it.html" target="_self">¸ê°T¬ì§Þ¬ì</a><br>
+				<a href="new/subject_hum.html" target="_self">¤H¤å¬ì</a><br>
+				<a href="new/subject_sci.html" target="_self">¬ì¾Ç¬ì</a><br>
+			</div></div>
+	</table>
+
+	<iframe src="main.html" id="iframe" name="iframe" frameborder="0" width="1015" height="3000" scrolling="yes"></iframe>
+
+	<script>
+	var modal = document.getElementById("myModal");
+	modal.style.display = "block";
+	var btn = document.getElementById("myBtn");
+	var span = document.getElementsByClassName("close")[0];
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+	</script>
+</body></html>

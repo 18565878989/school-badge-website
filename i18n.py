@@ -120,6 +120,24 @@ TRANSLATIONS = {
         
         # Footer
         'copyright': '© 2024 校徽网 · School Badge Collection',
+        
+        # Rankings
+        'rankings': '排行榜',
+        'rankings_title': '世界大学排行榜',
+        'world_university_rankings': '🏆 世界大学排行榜',
+        'rankings_subtitle': '汇集QS、U.S. News、THE、ARWU、CWUR五大权威排名',
+        'all_rankings': '综合排名',
+        'ranking_systems': '排名系统',
+        'schools_with_rankings': '上榜学校',
+        'top_200_schools': 'Top 200 学校',
+        'view_details': '查看详情',
+        'no_rankings_yet': '排名数据加载中',
+        'rankings_coming_soon': '正在整理五大排名的顶尖学校数据...',
+        'ranking_color_legend': '排名颜色说明',
+        'top_10': 'Top 10',
+        'top_50': 'Top 50',
+        'top_100': 'Top 100',
+        'top_200': 'Top 200',
     },
     'en': {
         # Navigation
@@ -237,6 +255,24 @@ TRANSLATIONS = {
         
         # Footer
         'copyright': '© 2024 School Badge Collection',
+        
+        # Rankings
+        'rankings': 'Rankings',
+        'rankings_title': 'World University Rankings',
+        'world_university_rankings': '🏆 World University Rankings',
+        'rankings_subtitle': 'Comprehensive coverage of QS, U.S. News, THE, ARWU, and CWUR rankings',
+        'all_rankings': 'All Rankings',
+        'ranking_systems': 'Ranking Systems',
+        'schools_with_rankings': 'Ranked Schools',
+        'top_200_schools': 'Top 200 Schools',
+        'view_details': 'View Details',
+        'no_rankings_yet': 'Loading Rankings',
+        'rankings_coming_soon': 'Compiling top universities from five major rankings...',
+        'ranking_color_legend': 'Ranking Color Guide',
+        'top_10': 'Top 10',
+        'top_50': 'Top 50',
+        'top_100': 'Top 100',
+        'top_200': 'Top 200',
     },
     'fr': {
         # Navigation

@@ -1,0 +1,1134 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-hk">
+<head>
+  <!-- =====================[META]====================== -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <!-- Title名稱 = 校名 + | + 頁面名稱 -->
+  <title>保良局朱敬文中學</title>
+
+  <!-- Title for app - -->
+  <meta name="apple-mobile-web-app-title" content="保良局朱敬文中學">
+
+  <!-- 使用ADMIN 設定修改 meta"description" 及"keyword" 內容 -->
+  <meta name="description" content="PLKCWC | PLK C W Chu College | 保良局朱敬文中學" />
+  <meta name="keyword" content="CMS,School, Hong Kong, Secondary School, Education, Learning, 學校, 香港, 中學,  教育 , myIT-School, myID, plkcwc, 保良局朱敬文中學" />
+  <!-- =====================[CSS STYLE SHEET]====================== -->
+
+  <!-- Basic Style - Bootstrap, fontawesome , main style -->
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/font.css" type="text/css" />
+
+  <link rel="stylesheet"  href="/it-school/php/webcms/theme/back/zh/css/ilightbox.css" type="text/css"/><!-- Lightbox -->
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/owl.carousel.css"><!-- carousel -->
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/cms-common.css?v=1774516102">
+  <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/youtube.css"><!-- Youtube -->
+  
+  <!-- <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/cms-gallery.css"> -->
+  <!-- =====================[STEEING FOR MOBILE]====================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" /> 
+   
+   <!-- Hide status bar - -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes"><!-- fullscreen -->
+  <meta name="format-detection" content="telephone=no">
+   
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/it-school/php/webcms/theme/back/zh/images/ico/152.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/it-school/php/webcms/theme/back/zh/images/ico/144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/it-school/php/webcms/theme/back/zh/images/ico/114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/it-school/php/webcms/theme/back/zh/images/ico/72.png">
+  <link rel="apple-touch-icon-precomposed" href="/it-school/php/webcms/theme/back/zh/images/ico/57.png">
+  <link rel="shortcut icon" href="/it-school/php/webcms/theme/back/zh/images/ico/favicon.png">
+   
+  <!-- Prevent text size adjustment on orientation change. -->
+  <style>html { -webkit-text-size-adjust: 100%; }</style>
+
+<!-- =====================[IE Hack!!!] ===============================-->
+  <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
+
+    <!--[if lte IE 8]>
+  <script src="js/en_US.js"></script>
+  <script src="js/warning.js"></script>
+  <script>
+    window.onload=function(){
+      ie6Warning(function() {
+        var languageMap = {};
+  
+        if(window.IE6WarningLocalizations) {
+          languageMap = window.IE6WarningLocalizations;
+        }  
+        return {
+          imgPath: "images", 
+          localizations:  languageMap
+        };
+      });
+    };
+  </script>
+  <![endif]-->
+
+<!--include core js and css file-->
+
+  <!--[!] 主頁用CSS : Style for index only-->
+   <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/cms-index.css?v=1774516102" type="text/css" />
+   <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/jquery.scrollbar.css" type="text/css" />
+   
+   <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/hex.css" type="text/css" />
+   <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/js/aos/aos.css" type="text/css" />
+   
+   <link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/css/acc_style.css" type="text/css" />
+</head>
+
+<body data-target="#Navi" class="chi homepage"><!-- [!] 中英文CSS轉換 英文版 class = eng -->
+<div id="index" class="body_wrap body_bg"><!-- [!] ID=INDEX -->
+	
+    <!-- ==========================[ HEADER]============================== --> 
+<!-- HEADER : navi and slideshow-->
+    <!-- =========================[ HEADER ]============================== -->
+<!--new banner-->
+<header class="fixed-top-bar" >
+	
+		<!-- ========[MAIN NAVIGATION]======== -->
+	<div class="row margin0">
+		<div class="navigation_con order-md-2">
+			<div class="social_media_con social_media float-end social_media_mobile">
+				<ul>
+					<li class="social_media fb"><a href="https://www.facebook.com/plkcwcfb?locale=zh_HK" target="_blank">&nbsp;</a></li>
+					<li class="social_media yt"><a href="https://www.youtube.com/user/PLKCWChu" target="_blank">&nbsp;</a></li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="navigation_wrap">
+					<!--mobile social media-->
+					<nav id="Navi">
+						<!-- <div class="affix" data-spy="affix" data-offset-top="300"><!-- data-offset-top="300" 設定離頁頂多高才sticky top -->
+							<div id="MainNav1" class="MainNav" > 
+  <!-- <div class="lang hidden-xs"><a class="chi">ENG</a></div> -->
+  <div class="MainNav_wrapper" >
+     <div class="MainNav_collapse  MainNav_collapse_noactive"><i class="fa fa-bars"> Menu</i></div><ul class='MainNav_menu'><li class="divide"></li><li class="btn01"><a><span>學校概覽</span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3290&mode=published&lang=zh" >基本資訊</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3291&mode=published&lang=zh" >使命與目標</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3292&mode=published&lang=zh" >校歌</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3293&mode=published&lang=zh" >校長的話</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3294&mode=published&lang=zh" >組織與架構</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3332&mode=published&lang=zh" >學校管理文件</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3333&mode=published&lang=zh" >收集個人資料聲明</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3296&mode=published&lang=zh" >交通資訊</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3355&mode=published&lang=zh" >傳媒報導</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3389&mode=published&lang=zh" >保良局守護兒童政策</a></li><li class="divide"></li><li><span><a style="padding:0;font-weight: normal;text-decoration: none;cursor: pointer;margin-left: 0px;width:85%;float: left;"  href="/it-school/php/webcms/public/index.php?refid=3390&mode=published&lang=zh">重啟校友會及收集校友資料聲明</a></span></li></ul></div></li><li class="divide"></li><li class="btn02"><a><span>入學資訊</span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3387&mode=published&lang=zh" >2026-2027 年度中一自行分配學位（中）</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3388&mode=published&lang=zh" >2026-2027年度中一自行分配學位（英）</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3364&mode=published&lang=zh" >各級插班入學申請 </a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3299&mode=published&lang=zh" >學校刊物</a></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn03"><a><span>學與教</span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3354&mode=published&lang=zh" >課程規劃</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3282&mode=published&lang=zh" >科目結構</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3301&mode=published&lang=zh" >家課政策</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3361&mode=published&lang=zh" >英語學習及支援</a></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn04"><a><span>學生發展</span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li class="parent"><span>訓育</span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3339&mode=published&lang=zh" >訓育部目標及原則</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3340&mode=published&lang=zh" >訓育部組織</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3341&mode=published&lang=zh" >獎懲程序及準則、自新計劃</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3342&mode=published&lang=zh" >領袖生組織及職責</a></li><li class="divide"></li></ul></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3304&mode=published&lang=zh" >輔導</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3305&mode=published&lang=zh" >學生支援</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3306&mode=published&lang=zh" >課外活動</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3337&mode=published&lang=zh" >生涯規劃</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3308&mode=published&lang=zh" >德育、公民及國民教育</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3374&mode=published&lang=zh" >校園相簿</a></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn05"><a><span>學生成就</span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3309&mode=published&lang=zh" >校外獎項</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3310&mode=published&lang=zh" >校內獎項</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3314&mode=published&lang=zh" >獎學金</a></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn06"><a><span>家長專欄</span><i class="fa icon fa-caret-down"></i></a><div class="dropdown"><ul class="sub"><li class="divide"></li><li class="parent"><span>家長教育</span><ul class="sub_lv"><li class="divide"></li><li><span><a style="padding:0;font-weight: normal;text-decoration: none;cursor: pointer;margin-left: 0px;width:85%;float: left;"  href="/it-school/php/webcms/public/index.php?refid=3382&mode=published&lang=zh">正向教育發展計劃</a></span></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3383&mode=published&lang=zh" >關愛心靈 陪伴成長</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3384&mode=published&lang=zh" >「同你・同理・同行」中學家長教育課程</a></li><li class="divide"></li><li><span><a style="padding:0;font-weight: normal;text-decoration: none;cursor: pointer;margin-left: 0px;width:85%;float: left;"  href="/it-school/php/webcms/public/index.php?refid=3385&mode=published&lang=zh">衞生署「全校園健康計劃」</a></span></li><li class="divide"></li><li><span><a style="padding:0;font-weight: normal;text-decoration: none;cursor: pointer;margin-left: 0px;width:85%;float: left;"  href="/it-school/php/webcms/public/index.php?refid=3386&mode=published&lang=zh">沙田區禁毒工作坊</a></span></li><li class="divide"></li></ul></li><li class="divide"></li><li class="parent"><span>家長教師會</span><ul class="sub_lv"><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3351&mode=published&lang=zh" >介紹</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3349&mode=published&lang=zh" >家長教師會報告</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3350&mode=published&lang=zh" >家校合作</a></li><li class="divide"></li></ul></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3316&mode=published&lang=zh" >家教會活動</a></li><li class="divide"></li><li><a class=""  href="/it-school/php/webcms/public/index.php?refid=3317&mode=published&lang=zh" >學校通告</a></li><li class="divide"></li><li><a class="" target="_blank" href="/it-school/php/webcms/public/index.php?refid=3318&mode=published&lang=zh" >eClass 登入</a></li><li class="divide"></li></ul></div></li><li class="divide"></li><li class="btn07"><a class=""  href="/it-school/php/webcms/public/index.php?refid=3116&mode=published&lang=zh" ><span>有用連結</span></a></li><li class="divide"></li><li class="btn08"><a class=""  href="/it-school/php/webcms/public/index.php?refid=3287&mode=published&lang=zh" ><span>聯絡我們</span></a></li><li class="divide"></li></ul>
+  </div><!-- / MainNav Container -->
+</div><!-- / MainNav -->
+
+<!-- 手機版語言選擇 -->
+<!-- <div class="visable-xs lang-mobile">
+  
+  <select class="form-control">
+    <option>中文</option>
+    <option>ENGLISH</option>
+  </select>
+</div> -->
+						  <!--</div>-->
+						  <!--
+						  <div class="lang_con d-block d-md-none">
+								<ul>
+									<li class="active"><a class="lang chi" href="/it-school/php/webcms/public/mainpage/main.php/favicon.ico?x=1&lang=zh">中文</a></li>
+									<li class=" "><a class="lang eng" href="/it-school/php/webcms/public/mainpage/main.php/favicon.ico?x=1&lang=en">English</a></li>
+								</ul>
+							</div>
+							-->
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="top_bar order-md-1">
+			<div class="container padding_50">
+				<div class="row">
+					
+					<div class="col-md-6">
+						<div class="top_logo">
+							<a href="/it-school/php/webcms/public/mainpage/main.php?lang=zh">
+								<img src="/it-school/php/webcms/public/data/school_logo.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-6">
+						<!--social media-->
+						<div class="d-none d-md-block">
+							<div class="clear_both"></div>
+							<div class="social_media_con social_media">
+								<ul>
+									<li class="social_media fb"><a href="https://www.facebook.com/plkcwcfb?locale=zh_HK" target="_blank">&nbsp;</a></li>
+									<li class="social_media yt"><a href="https://www.youtube.com/user/PLKCWChu" target="_blank">&nbsp;</a></li>
+								</ul>
+							</div>
+							<div class="widget login float-end">
+	<div class="login_con">
+		<div class="login_item">
+			<div class="wrap2">
+				<form name ="loginforms2" action="https://eclass.plkcwc.edu.hk/login.php" target="_blank" method="post" autocomplete="off">
+					<div class="form-wrap">
+						<div class="login_field_con">
+							<div class="login_field_icon">&nbsp;</div>
+							<div class="row">	
+								<div class="col-md-6">
+									<div class="login_field">
+										<div class="login_field_b">
+											<div class="id-wrap">
+												<label class="" for="UserLogin2">登入名稱</label>
+												<div class="login_id_input">
+													<input type="text" id="UserLogin2" name="UserLogin" placeholder="登入名稱" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="login_field login_field2">
+										<div class="login_field_b">
+											 <div class="pw-wrap">
+												<label class="sr-only" for="UserPassword2">登入密碼</label>
+												<div class="login_pw_input">
+													<input type="password" id="UserPassword2" name="UserPassword" placeholder="登入密碼" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="login_field_btn">
+							<a href="javascript:doEClassLogins2();" class="login_btn">登入</a>
+						</div>
+					</div><!-- form-wrap-->
+				</form>
+			</div><!-- Login wrap -->
+		</div>
+	</div>
+	<div class="clear">
+		
+	</div>
+		
+        
+</div><!--end intranet login widget-->
+<!--<script language="Javascript" src="/it-school/js/md5.js"></script>-->
+ <script type="text/javascript">
+
+            document.onkeydown = function(e){
+                var e=e || event;
+                var currKey=e.keyCode||e.which||e.charCode;
+                if(currKey == 13) {
+                    doEClassLogins2();
+                }
+            };
+        function validates2()
+        {
+			thisform =	document.loginforms2;
+            v =true;
+            if (document.getElementById("UserLogin2").value == ""){
+                v = false;
+                document.getElementById("UserLogin2").focus();
+            }
+            if (v && document.getElementById("UserPassword2").value ==	""){
+                v = false;
+                document.getElementById("UserPassword2").focus();
+            }
+			
+			/*
+			if (v)
+			thisform.elements["password"].value	= MD5(thisform.elements["password"].value);
+			*/
+			
+            return v;
+        }
+
+
+        function doEClassLogins2() {
+            if (validates2() )
+            {
+                document.forms["loginforms2"].submit();
+                document.getElementById("UserLogin2").value="";
+                document.getElementById("UserPassword2").value="";
+            }
+        }
+
+
+
+
+
+
+    </script>
+						</div>	
+					</div>
+						
+		
+					
+				</div>
+					<!--Language chooser-->
+					<!--
+					<div class="lang_pos d-none d-md-block">
+						<div class="lang_con">
+							<ul>
+								<li class="active"><a class="lang chi" href="/it-school/php/webcms/public/mainpage/main.php/favicon.ico?x=1&lang=zh">中文</a></li>
+								<li class=" "><a class="lang eng" href="/it-school/php/webcms/public/mainpage/main.php/favicon.ico?x=1&lang=en">English</a></li>
+							</ul>
+						</div>
+					</div>
+					-->
+			</div>
+		</div>
+	</div>
+		
+</header> <!-- / header -->
+
+	
+
+
+	<!-- ========[MAIN CONTENT]======== -->
+	<div class="main_content">
+		<div class="outer_wrap">
+		
+		<!-- ========================================[ROW 1]-->
+		<div class="container">
+			<div class="box_style">
+				<section>
+					<div class="d-md-none d-sm-block">
+						<div class="widget login">
+	<div class="login_con">
+		<div class="login_item">
+			<div class="wrap2">
+				<form name ="loginforms" action="https://eclass.plkcwc.edu.hk/login.php" target="_blank" method="post" autocomplete="off">
+					<div class="form-wrap">
+						<div class="login_field_icon">&nbsp;</div>
+						<div class="login_field_con">
+							<div class="row">	
+								<div class="col-6 padding_right5">
+									<div class="login_field">
+										<div class="login_field_b">
+											<div class="id-wrap">
+												<label class="" for="UserLogin">登入名稱</label>
+												<div class="login_id_input">
+													<input type="text" id="UserLogin" name="UserLogin" placeholder="登入名稱" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 padding_left5">
+									<div class="login_field login_field2">
+										<div class="login_field_b">
+											 <div class="pw-wrap">
+												<label class="sr-only" for="UserPassword">密碼</label>
+												<div class="login_pw_input">
+													<input type="password" id="UserPassword" name="UserPassword" placeholder="密碼" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="login_field_btn">
+							<a href="javascript:doEClassLogins();" class="login_btn">登入</a>
+						</div>
+					</div><!-- form-wrap-->
+				</form>
+			</div><!-- Login wrap -->
+		</div>
+	</div>
+	<div class="clear">
+		
+	</div>
+		
+        
+</div><!--end intranet login widget-->
+<!--<script language="Javascript" src="/it-school/js/md5.js"></script>-->
+ <script type="text/javascript">
+
+            document.onkeydown = function(e){
+                var e=e || event;
+                var currKey=e.keyCode||e.which||e.charCode;
+                if(currKey == 13) {
+                    doEClassLogins();
+                }
+            };
+        function validates()
+        {
+			thisform =	document.loginforms;
+            v =true;
+            if (document.getElementById("UserLogin").value == ""){
+                v = false;
+                document.getElementById("UserLogin").focus();
+            }
+            if (v && document.getElementById("UserPassword").value ==	""){
+                v = false;
+                document.getElementById("UserPassword").focus();
+            }
+			
+			/*
+			if (v)
+			thisform.elements["password"].value	= MD5(thisform.elements["password"].value);
+			*/
+			
+            return v;
+        }
+
+
+        function doEClassLogins() {
+            if (validates() )
+            {
+                document.forms["loginforms"].submit();
+                document.getElementById("UserLogin").value="";
+                document.getElementById("UserPassword").value="";
+            }
+        }
+
+
+
+
+
+
+    </script>					</div>
+				</section>
+			
+				<div class="homebanner">
+					<div id="header_banner" class="owl-carousel">
+						
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/159.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/173.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/175.png">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/176.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/169.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/164.jpg">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/163.png">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/168.png">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/167.png">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/166.png">
+   </li>
+
+   <li class="single_item">
+		<img class="owl-lazy" src="/it-school/php/webcms/public/data/top_banner/165.png">
+   </li>
+					</div>
+					<!--
+					<div class="banner_bottom_style">
+						<div class="banner_bottom_con">
+							<div class="new_nav">
+								
+							</div>
+							<div class="new_dot">
+								
+							</div>
+						</div>
+					</div>
+					-->
+				
+					<div class="vidBox" id="vidBox">
+						<div class="video_con">
+							<div id="videCont">
+							
+								<iframe width="1024" height="500" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>	
+						</div>	
+					</div>
+					<div class="banner_nav_con">
+						<div class="new_nav">
+							
+						</div>
+					</div>
+				</div>
+			
+		
+				<div class="box_wrap">
+					<section class="news_box_style mb4p aos-init" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500">
+							<div class="widget news">
+	<div class="news_title_wrap pr">
+		<div class="div_title news-title deco_line1">&nbsp;</div>
+	  <div class="more_btn"><a href="tpl.php?refid=0&component_id=1&lang=zh">更多 ></a></div>
+	</div>
+	  
+
+ <div class="lightbox">
+	<div class="wrap_content">
+		<div class="news_content_wrap">
+		  <ul class="list owl-carousel">
+			<li>暫時沒有相關資料</li>
+		  </ul>
+		</div>
+	</div>
+  </div><!-- wrap -->
+</div><!-- End WIDGET NEWS -->					</section>
+				</div>
+				
+				<section class="mb4p aos-init" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500">
+					<div class="widget gallery">
+	<div class="pattern_line"></div>
+	<ul class="owl-carousel">
+		<li>暫時沒有相關資料</li>
+	</ul><!--carousel-->
+	<div class="pattern_line"></div>
+</div>
+	
+	
+	
+
+				</section>
+				
+				<div class="box_wrap">
+					<section class="mb4p aos-init" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500">
+						<div class="widget gallery-list">
+	<div class="gallery_title_wrap pr">
+		<div class="div_title gallery-title">&nbsp;</div>
+	  <div class="more_btn"><a href="/it-school/php/webcms/public/mainpage/albumindex.php">更多 ></a></div>
+	</div>
+	
+	<ul class="owl-carousel">
+	   
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=188&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5706.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-10-08</div>
+					</div>
+					<div class="title">全港學界精英乒乓球比賽（初賽）...</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=187&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5695.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-10-06</div>
+					</div>
+					<div class="title">學生會就職暨領袖生授章禮</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=186&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5686.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-10-05</div>
+					</div>
+					<div class="title">NNO4LIFE創意文化及科技創新展覽...</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=185&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5682.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-10-04</div>
+					</div>
+					<div class="title">模擬法庭@正向思維計劃 開展禮 及 聯校賽...</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=184&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5674.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-10-04</div>
+					</div>
+					<div class="title">保良局聯校水運會</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=183&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5671.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-10-03</div>
+					</div>
+					<div class="title">一人一體藝活動起動</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=182&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5660.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-29</div>
+					</div>
+					<div class="title">「榜樣力量 點亮學途」——中國語文文憑...</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=181&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5652.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-29</div>
+					</div>
+					<div class="title">感恩惜福——中秋燈籠工作坊 ...</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=180&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5648.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-27</div>
+					</div>
+					<div class="title">理工大學參觀</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=179&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5641.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-27</div>
+					</div>
+					<div class="title">AMIGO「化蝶為友」日營</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=178&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5633.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-27</div>
+					</div>
+					<div class="title">「微光行動」義工計劃（I）一幼稚園開放...</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=176&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5621.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-26</div>
+					</div>
+					<div class="title">中一家校合作親子工作坊</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=175&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5611.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-26</div>
+					</div>
+					<div class="title">沙田及西貢區男子甲組學界籃球比賽(初賽)...</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=177&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5627.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-25</div>
+					</div>
+					<div class="title">學生會選舉投票</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=174&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5601.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-22</div>
+					</div>
+					<div class="title">單車校隊訓練</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=173&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5597.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-11</div>
+					</div>
+					<div class="title">社員大會</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=172&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5589.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-05</div>
+					</div>
+					<div class="title">生物科考察</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=169&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5555.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-09-01</div>
+					</div>
+					<div class="title">開學日</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=170&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5569.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-08-29</div>
+					</div>
+					<div class="title">新園新景象</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		
+		<li class="gallery_list_item">
+			<a href="album.php?refid=&albumindexPage=&album_id=171&lang=zh"> 
+			  <div class="content">
+				<div class="album_cover">
+					<img src="tmp_photo/album_cover/5577.png" alt="photo">
+				</div>
+				<div class="padding_box">
+					<div class="content_right_x">
+						<div class="mdate2">2025-08-25</div>
+					</div>
+					<div class="title">日本大阪世博與京都文化體驗之旅...</div> 
+				</div>	
+			  </div>
+			</a>
+		</li>
+		 
+	</ul>
+</div>
+
+ 
+
+					</section>
+				</div>
+				<section>
+					<div class="other_con">
+						<div class="middle_banner mb4p">&nbsp;</div>
+						<div class="box_wrap">
+								<div class="widget links">
+	  <div class="wrap">
+		<div class="links_content_wrap">
+			<div class="wrap_content owl-carousel">
+			   
+			   <div class="links_item has_img">
+				   <a href="https://drive.google.com/file/d/1_krXoQbcjB4Fetygb81tSYMCvwreRTDj/view?usp=sharing" target='_blank' title='NCS SUPPORT'><img src="/it-school/php/webcms/public/data/banner/168.png" alt="NCS SUPPORT"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://cyberdefender.hk/scameter/" target='_blank' title='防騙視伏器'><img src="/it-school/php/webcms/public/data/banner/167.png" alt="防騙視伏器"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://sites.google.com/plkcwc.edu.hk/aug28site/%E9%A6%96%E9%A0%81" target='_blank' title='學生專區'><img src="/it-school/php/webcms/public/data/banner/157.png" alt="學生專區"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="http://fsps.plkcwc.edu.hk/Login/index.aspx" target='_blank' title='功課系統'><img src="/it-school/php/webcms/public/data/banner/165.png" alt="功課系統"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://drive.google.com/drive/folders/10Nn_9eRAO0S7kXmZry81AIQF1JAEc7tw?usp=sharing" target='_blank' title='評估及考試範圍'><img src="/it-school/php/webcms/public/data/banner/166.png" alt="評估及考試範圍"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://drive.google.com/file/d/1leNuZYH2tciYgwZph5nFcayAcDUJjx9O/view?usp=sharing" target='_blank' title='校曆表'><img src="/it-school/php/webcms/public/data/banner/164.png" alt="校曆表"/></a>
+			   </div>
+			  
+			   <div class="links_item has_img">
+				   <a href="https://sites.google.com/plkcwc.edu.hk/teacherzone/%E9%A6%96%E9%A0%81" target='_blank' title='教師專區'><img src="/it-school/php/webcms/public/data/banner/158.png" alt="教師專區"/></a>
+			   </div>
+			  
+			</div>
+		</div>
+	  </div><!-- wrap -->
+	</div><!-- [END LINKS] -->
+						</div>
+					</div>
+				</section>
+				</div>
+			</div>
+		</div>
+		<!-- =====================[ Footer ]====================== --> 
+		<section class="m_full_width">
+			<footer id="footer">
+	<div class="bg2">
+		<div class="bg">
+			<div class="container pr"> <!-- .container if fixed width  -->
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="footer_wrap">
+							<div class="footer_logo footer_table_cell">
+								<img src="/it-school/php/webcms/public/data/school_logo_mobile.jpg" alt="logo">
+							</div>
+						</div>		
+					</div>
+					<div class="col-lg-7">
+						<div class="footer_wrap">
+							<div class="footer_logo footer_table_cell">
+								<div class="detail2">
+									<div class="schooladdress row"><div class="col-xl-6 col-lg-8">» 地址：新界沙田大圍田心街 1 號 (隆亨邨)</div><a class="map col-xl-6 col-lg-4" href="https://maps.app.goo.gl/KXgrxQivV4NiFbfK9" target="_blank"><img src="/it-school/php/webcms/theme/back/zh/images/map_btn.png" alt="map"></a> </div>
+									<div class="detail2">
+										<div class="display_inline_block tel_block schooltel">» 電話：2699 1031</div>
+										<div class="display_inline_block tel_block">» 傳真：2603 0743</div>
+										<div class="display_inline_block tel_block schoolemail">» 電郵：<a href="mailto:master@plkcwc.edu.hk" class="email">master@plkcwc.edu.hk</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-1">
+						<div class="d-none d-md-block">
+							<div class="footer_wrap">
+								<div class="footer_logo footer_table_cell">
+									<!--social media-->
+									<div class="social_media_con social_media float-end">
+										<ul>
+											<li class="social_media fb"><a href="https://www.facebook.com/plkcwcfb?locale=zh_HK" target="_blank">&nbsp;</a></li>
+											<li class="social_media yt"><a href="https://www.youtube.com/user/PLKCWChu" target="_blank">&nbsp;</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>	
+		</div> <!-- wrap, container footer -->
+	</div>
+		
+
+		<div class="bottomrow">
+		  <div class="text_center">
+				<p class="copyright_text"> Copyright © 2024 PLK C W Chu College. All Rights Reserved. Powered by <a class="powered" target="_blank" href="https://myid.com.hk">myID ltd</a>.</p>
+		  </div>
+		</div><!-- copyright -->
+	  
+</footer>
+
+<!-- Back to top button -->
+<div class="back-to-top">
+  <a class="go-top" href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+
+<!-- ===========Load JS at bottom====================== -->
+<script>var code="Google Anaiytics Code";</script>
+<style>
+body {
+    
+}
+</style>
+<script src="/it-school/php/webcms/theme/back/zh/js/jquery.min.js"></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/bootstrap.bundle.min.js"></script>
+<script src='/it-school/php/webcms/theme/back/zh/js/MainNav.min.js'></script><!-- Navigation -->
+  
+<!-- lightbox  -->
+<script src="/it-school/php/webcms/theme/back/zh/js/lightbox/jquery.requestAnimationFrame.js" ></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/lightbox/jquery.mousewheel.js" ></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/lightbox/ilightbox.packed.js"></script>
+
+<!--<script src="/it-school/php/webcms/theme/back/zh/js/plugin/jquery.nicescroll.min.js"></script>--><!-- Mini Scroll Bar -->
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/jquery.scrollbar.js"></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/owl.carousel.min.js"></script><!-- carousel -->
+
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/grids.min.js"></script><!-- equal height --> 
+
+<!-- scroll text  - Index only -->
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/jquery.marquee.min.js" ></script>
+<script src="/it-school/php/webcms/theme/back/zh/js/plugin/youtube.js" ></script>
+
+<!--homepage video popup-->
+<link rel="stylesheet" href="/it-school/php/webcms/theme/back/zh/js/popup/videopopup.css?v=2" type="text/css" />
+<script src="/it-school/php/webcms/theme/back/zh/js/popup/videopopup.js?v=2"></script>
+
+<script src="/it-school/php/webcms/theme/back/zh/js/cp-lightimg.js?v=3"></script>
+
+<script type="text/javascript">
+	$(function () {
+		$(document).on("click", ".template-0 img", function () {
+			var j = $(this).parent('a').attr('href');
+			if(j==null){
+				$(this).cpLightimg();
+			}
+		});
+	});
+
+	$(document).ready(function() {	
+		$('#vidBox').VideoPopUp({
+			backgroundColor: "#17212a",
+			opener: "video1",
+			idvideo: "v1",
+			pausevideo: false
+		});
+	});
+  
+</script>
+
+
+
+<script>
+	String.prototype.endWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+			return false;
+		if(this.substring(this.length-s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+
+	String.prototype.startWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+		return false;
+		if(this.substr(0,s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+		$(document).ready(function() {
+		$('.logo img').each(function(i, item) {
+			if(item.src.endWith('/school_logo.jpg')) {
+				$(item).css('width','autopx');
+				$(item).css('height','autopx');
+			}
+		});
+	});
+	
+	$('.breadcrumb li a').each(function(){
+		if($(this).attr('href') == 'javascript:void(0);') {
+			$(this).css('cursor', 'text');
+		}
+	});
+</script>		</section>
+	
+  
+</div><!-- END index -->
+</div>
+	 </div>
+   </div> <!-- [END outer_wrapper] -->
+
+<!-- POPUP LIGHTBOX -->
+
+<!-- ===========Load JS at bottom - Index only====================== -->
+<script src="/it-school/php/webcms/theme/back/zh/js/cms-index.js?v=1774516102"></script><!-- [!] CMS index JS -->
+<script src="/it-school/php/webcms/theme/back/zh/js/cms-header.js?v=1774516102"></script><!-- CMS header JS -->
+
+<script src="/it-school/php/webcms/theme/back/zh/js/aos/aos.js?v=1774516102"></script><!-- CMS header JS -->
+<script>
+function initPassBtn(el, type)
+ {
+  if(typeof el == "string") {
+   el = document.getElementById(el)
+  }
+  
+  if(null != el && '1' == el.getAttribute('needPass'))
+  {
+   el.removeAttribute('data-toggle','');
+   // el.setAttribute('data-type','iframe');
+   // el.setAttribute('data-options','width:\'80%\', height:\'100%\'');
+   el[i].href = 'modulePass.php?passName=' + type + '&groupName=' + el[i].innerHTML;
+   // initiLightBox(el);
+  }
+ }
+
+
+ function initPassBtn_class(el, type)
+ {
+   
+  if(typeof el == "string") {
+   el = document.getElementsByClassName(el)
+  }
+  for(var i=0;i<el.length;i++){
+  if(null != el[i] && '1' == el[i].getAttribute('needPass'))
+    {
+    el[i].removeAttribute('data-toggle','');
+    // el[i].setAttribute('data-type','iframe');
+    // el[i].setAttribute('data-options','width:\'80%\', height:\'100%\'');
+    el[i].href = 'modulePass.php?passName=' + type + '&groupName=' + el[i].innerHTML;
+    // initiLightBox(el[i]);
+    }
+  }
+ }
+ 
+ var homeworkBtn = document.getElementsByClassName('btn_homework');
+ initPassBtn_class(homeworkBtn, 'homeworkPass');
+	
+
+</script>
+
+</body>
+</html>
+<script type="text/javascript">
+	String.prototype.endWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+			return false;
+		if(this.substring(this.length-s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+
+	String.prototype.startWith=function(s){
+		if(s==null||s==""||this.length==0||s.length>this.length)
+		return false;
+		if(this.substr(0,s.length)==s)
+			return true;
+		else
+			return false;
+		return true;
+	}
+
+	$(document).ready(function() {
+		$('.news_list li img').each(function(i, item) {
+			if(item.src.endWith('/school_footer_logo.jpg')) {
+				$(item).css('height','86%');
+				$(item).css('margin','10px auto 0 auto');
+				$(item).css('opacity','0.5');
+			}
+		});
+			});
+</script>

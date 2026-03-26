@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>元朗三育幼稚園</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+
+            <link rel="icon" href="https://www.ylsyk.edu.hk/wp-content/uploads/2021/03/學校校徽.jpg">
+        <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="referrer" content="origin">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/js/jquery.dotdotdot.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/js/moment.js"></script>
+            <script type="text/javascript" src="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/js/zh-hk.js"></script>
+        <script type="text/javascript" src="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700|Varela+Round" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/css/gallery-images-cust-t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/css/t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/css/t5_page_color.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/css/t5_s8.css"/>
+    <script type="text/javascript" src="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/js/t5.js"></script>
+    <script type="text/javascript" src="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/js/back_to_top.js"></script>
+
+    <link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ylsyk.edu.hk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.ylsyk.edu.hk/wp-includes/css/dist/block-library/style.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-style-css'  href='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-style-css'  href='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='blueimp-style-css'  href='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/css/blueimp-gallery.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/css/custom-style.css?ver=5.1.19' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_LATEST_NEWS_API = {"url":"https:\/\/www.ylsyk.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"49d6c0f4a2","page_url":"https:\/\/www.ylsyk.edu.hk\/latest-new\/","eClassURL":"https:\/\/ylsyk.eclass.hk"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-latest-news-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ENOTICE_API = {"url":"https:\/\/www.ylsyk.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"0b00d7d36c","page_url":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-enotice-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_CALENDAR_API = {"url":"https:\/\/www.ylsyk.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"10a59cf42b","school_type":"KIS","LANG":{"SCHOOL_EVENT":"\u5b78\u6821\u4e8b\u9805","ACADEMIC_EVENT":"\u6559\u5b78\u4e8b\u9805","GROUP_EVENT":"\u5c0f\u7d44\u4e8b\u9805","PUBLIC_HOLIDAY_EVENT":"\u516c\u773e\u5047\u671f","SCHOOL_HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f","HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-calendar-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_DIGITAL_CHANNELS_API = {"url":"https:\/\/www.ylsyk.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"c4196f059e","TYPE_CATEGORY":"1","TYPE_ALBUM":"2","TYPE_HIGHLIGHT":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-digital-channels-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ACADEMIC_YEAR_TERM_API = {"url":"https:\/\/www.ylsyk.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"14ec296573"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-academic-year-term-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_SUBJECT_GROUP_API = {"url":"https:\/\/www.ylsyk.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"2d097d6009"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-subject-group-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_YEAR_CLASS_API = {"url":"https:\/\/www.ylsyk.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"bf977ff574"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-year-class-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.ylsyk.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"abf58ce43d","school_type":"KIS"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-homework-api.js?ver=2.0.0'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/jquery.dotdotdot.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/owl.carousel.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-video.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-youtube.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-vimeo.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/jquery.blueimp-gallery.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/twbs-pagination/jquery.twbsPagination.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/plugins/gallery-images-cust/assets/gallery-images-cust.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/assets/js/basic-script.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-slideshow.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-calendar.js?ver=5.1.19'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.ylsyk.edu.hk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.19" />
+
+<link rel="stylesheet" href="https://www.ylsyk.edu.hk/wp-content/plugins/count-per-day/counter.css" type="text/css" />
+<link rel="alternate" href="https://www.ylsyk.edu.hk/" hreflang="zh" />
+<link rel="alternate" href="https://www.ylsyk.edu.hk/en/" hreflang="en" />
+
+</head>
+
+<body class="home blog zh">
+
+<header id="header" class="t_image">
+    <div class="container">
+        <div class="row">
+            <div id="schLogo" class="col-xs-12 col-md-6 col-lg-7">
+                <div class="schLogoContainer">
+                    <a href="https://www.ylsyk.edu.hk/">
+                        <img src="https://www.ylsyk.edu.hk/wp-content/uploads/2021/03/學校校徽-150x150.jpg" alt="schoolLogo" class="schLogo"/>
+                        <div class="schName">
+                            <span class="schName_ch">元朗三育幼稚園</span>
+                            <span class="schName_en">Yuen Long Sam Yuk Kindergarten</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button id="mmBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="login" class="col-md-6 col-lg-5">
+        <form id="loginForm" action="https://ylsyk.eclass.hk/login.php" method="POST" target="_blank">
+        <a href="https://ylsyk.eclass.hk" target="_blank"><img
+                    src="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/images/eclassLogo.png" alt="schoolLogo" class="logo"/></a>
+        <div class="input">
+            <input name="UserLogin" class="form-control" type="text" placeholder="登入名稱"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+            <input name="UserPassword" class="form-control" type="password" placeholder="密碼"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+        </div>
+        <a class="btn_login" href="https://ylsyk.eclass.hk/login.php" onclick="$('#loginForm').submit(); return false;"></a>
+
+                    <a class="btn_lang" href="https://www.ylsyk.edu.hk/en/">Eng</a>
+            </form>
+    </div>        </div>
+    </div>
+</header>
+
+<nav class="navbar" id="mainMenu">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                    <li class="dropdown page_item page_item_has_children c13">
+        <a href="https://www.ylsyk.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/" class="" style="">
+                            <img src="https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/002.png" />
+                        學校概覽        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ylsyk.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/" class="" style="">
+                        辦學宗旨        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/%e5%ad%b8%e6%a0%a1%e8%83%8c%e6%99%af/" class="" style="">
+                        學校背景        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/%e8%be%a6%e5%ad%b8%e4%bd%bf%e5%91%bd/" class="" style="">
+                        辦學使命        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/%e6%a0%a1%e8%91%a3%e6%88%90%e5%93%a1school-board/" class="" style="">
+                        校董成員        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/%e5%b8%ab%e8%b3%87/" class="" style="">
+                        師資        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c05">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/" class="" style="">
+                            <img src="https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/068.png" />
+                        課程特色        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e5%ad%b8%e6%a0%a1%e7%99%bc%e5%b1%95%e8%a8%88%e5%8a%83/" class="" style="">
+                        學校發展計劃        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e5%ad%b8%e6%a0%a1%e7%99%bc%e5%b1%95%e8%a8%88%e5%8a%83/2025-26%e5%ba%a6/" class="" style="">
+                        2025-26年度        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e5%ad%b8%e6%a0%a1%e7%99%bc%e5%b1%95%e8%a8%88%e5%8a%83/2024-25%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        2024-25年度        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e5%ad%b8%e6%a0%a1%e7%99%bc%e5%b1%95%e8%a8%88%e5%8a%83/2023-24%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        2023-24年度        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e5%be%b7%e8%82%b2%e5%9f%b9%e9%a4%8a/" class="" style="">
+                        德育培養        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e5%b9%bc%e5%85%92%e6%95%b8%e5%ad%b8/" class="" style="">
+                        腦基礎教學法        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e5%b0%8f%e5%b0%8f%e9%a0%98%e8%a2%96/" class="" style="">
+                        繪本教學        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0-2/" class="" style="">
+                        體驗式學習活動天地(2025-26今度)        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0-2/2024-25%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        課室外的體驗式學習活動天地(高班)        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0-2/%e8%aa%b2%e5%ae%a4%e5%a4%96%e7%9a%84%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0%e4%bd%8e%e7%8f%ad/" class="" style="">
+                        課室外的體驗式學習活動天地(低班)        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b02024-25%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        體驗式學習活動天地(2024-25年度)        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b02024-25%e5%b9%b4%e5%ba%a6/%e8%aa%b2%e5%ae%a4%e5%a4%96%e7%9a%84%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0%e4%bd%8e%e7%8f%ad/" class="" style="">
+                        課室外的體驗式學習活動天地(低班)        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b02024-25%e5%b9%b4%e5%ba%a6/%e8%aa%b2%e5%ae%a4%e5%a4%96%e7%9a%84%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0%e5%b9%bc%e5%85%92%e7%8f%ad/" class="" style="">
+                        課室外的體驗式學習活動天地(幼兒班)        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b02024-25%e5%b9%b4%e5%ba%a6/%e8%aa%b2%e5%ae%a4%e5%a4%96%e7%9a%84%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0%e9%ab%98%e7%8f%ad/" class="" style="">
+                        課室外的體驗式學習活動天地(高班)        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0/" class="" style="">
+                        體驗式學習活動天地(2023-24年度)        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0/%e8%aa%b2%e5%ae%a4%e5%a4%96%e7%9a%84%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0%e5%b9%bc%e5%85%92%e7%8f%ad/" class="" style="">
+                        課室外的體驗式學習活動天地(幼兒班)        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0/%e8%aa%b2%e5%ae%a4%e5%a4%96%e7%9a%84%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0%e4%bd%8e%e7%8f%ad/" class="" style="">
+                        課室外的體驗式學習活動天地(低班)        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0/%e8%aa%b2%e5%ae%a4%e5%a4%96%e7%9a%84%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e5%a4%a9%e5%9c%b0%e9%ab%98%e7%8f%ad/" class="" style="">
+                        課室外的體驗式學習活動天地        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e9%ab%94%e9%a9%97%e5%bc%8f%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95%e8%b2%a1%e5%8b%99%e5%a0%b1%e5%91%8a/" class="" style="">
+                        體驗式學習活動財務報告        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/" class="" style="">
+                        中華文化校本學習活動        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/5366-2/" class="" style="">
+                        2025-26年度        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/2023-24-%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        2023-24 年度        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/2024-25%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        2024-25年度        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e8%aa%b2%e7%a8%8b%e4%bb%8b%e7%b4%b9/%e5%81%a5%e5%ba%b7%e6%a0%a1%e5%9c%92/" class="" style="">
+                        健康校園        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c04">
+        <a href="https://www.ylsyk.edu.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/" class="" style="">
+                            <img src="https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/009.png" />
+                        家校合作        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/%e5%ae%b6%e9%95%b7%e7%be%a9%e5%b7%a5/" class="" style="">
+                        家長義工        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/%e9%9d%9e%e8%8f%af%e8%aa%9e%e5%ad%b8%e7%94%9f%e5%8f%8a%e5%ae%b6%e5%ba%ad/" class="" style="">
+                        非華語學生及家庭        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%ae%b6%e6%a0%a1%e5%90%88%e4%bd%9c/%e5%ae%b6%e9%95%b7%e5%9c%92%e5%9c%b0/" class="" style="">
+                        家長園地        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item c11">
+        <a href="https://www.ylsyk.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/" class="" style="">
+                            <img src="https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/007.png" />
+                        校舍        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children c13">
+        <a href="https://www.ylsyk.edu.hk/%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b/" class="" style="">
+                            <img src="https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/016.png" />
+                        入學申請        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b/2025-2026%e5%b9%b4%e5%ba%a6%e5%b9%bc%e5%85%92%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b%e6%91%98%e8%a6%81/" class="" style="">
+                        2026-2027年度幼兒入學申請摘要        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b/%e6%8f%92%e7%8f%ad%e7%94%b3%e8%ab%8b%e8%a1%a8/" class="" style="">
+                        插班生申請表        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b/https-www-edb-gov-hk-tc-edu-system-preprimary-kindergarten-kindergarten-k1-admission-arrangements-index-2324-html/" class="" style="">
+                        教育局2026/27學年幼稚園幼兒班（K1）收生安排 (中文)        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b/%e5%b9%bc%e7%a8%9a%e5%9c%92%e5%8f%8a%e5%b9%bc%e7%a8%9a%e5%9c%92%e6%9a%a8%e5%b9%bc%e5%85%92%e4%b8%ad%e5%bf%83%e6%a6%82%e8%a6%bd/" class="" style="">
+                        幼稚園及幼稚園暨幼兒中心概覽        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.ylsyk.edu.hk/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af/" class="" style="">
+                            <img src="https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/029.png" />
+                        校園資訊        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af/%e5%ad%b8%e5%89%8d%e6%a9%9f%e6%a7%8b%e8%b3%aa%e7%b4%a0%e8%a9%95%e6%a0%b8%e5%a0%b1%e5%91%8a/" class="" style="">
+                        學前機構質素評核報告        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af/2024-2025%e5%b9%b4%e5%ba%a6%e5%8d%87%e5%b0%8f%e4%b8%80%e5%85%a5%e5%ad%b8%e5%ae%b6%e9%95%b7%e6%9c%83/" class="" style="">
+                        2025-2026年度升小一入學家長會講座        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af/2023-2024%e5%b9%b4%e5%ba%a6%e8%aa%b2%e7%a8%8b%e7%b0%a1%e4%bb%8b%e6%9c%83/" class="" style="">
+                        2025-2026年課程簡介會        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af/%e6%a0%a1%e6%9c%8d%e5%bc%8f%e6%a8%a3-%e5%a4%8f%e5%ad%a3-%e5%86%ac%e5%ad%a3/" class="" style="">
+                        校服式樣-夏季/冬季        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af/%e4%b8%8b%e8%bc%89%e6%96%87%e4%bb%b6/" class="" style="">
+                        下載文件        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af/%e6%9b%b8%e7%b0%bf%e9%9b%9c%e8%b2%bb%e8%b3%87%e6%96%99/" class="" style="">
+                        書簿雜費資料        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af/%e5%b0%8f%e4%b8%80%e6%b4%be%e4%bd%8d/" class="" style="">
+                        小一派位        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/" class="" style="">
+                            <img src="https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/034.png" />
+                        活動相片        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2025-26%e5%b9%b4%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        2025-26年活動花絮        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2025-26%e5%b9%b4%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e5%b9%bc%e5%85%92%e7%8f%ad%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        幼兒班活動花絮        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2025-26%e5%b9%b4%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e4%bd%8e%e7%8f%ad%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        低班活動花絮        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2025-26%e5%b9%b4%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e9%ab%98%e7%8f%ad%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        高班活動花絮        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2025-26%e5%b9%b4%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e5%85%a8%e6%a0%a1%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae-2/" class="" style="">
+                        全校活動花絮        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2024-25-%e5%b9%b4%e5%ba%a6-%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        2024-25 年度 活動花絮        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2024-25-%e5%b9%b4%e5%ba%a6-%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e5%b9%bc%e5%85%92%e7%8f%ad%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        幼兒班活動花絮        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2024-25-%e5%b9%b4%e5%ba%a6-%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e4%bd%8e%e7%8f%ad%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae-2/" class="" style="">
+                        低班活動花絮        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2024-25-%e5%b9%b4%e5%ba%a6-%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e9%ab%98%e7%8f%ad%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        高班活動花絮        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2024-25-%e5%b9%b4%e5%ba%a6-%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e5%85%a8%e6%a0%a1%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        全校活動花絮        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2023-24-%e5%b9%b4%e5%ba%a6%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        2023-24 年度 活動花絮        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2023-24-%e5%b9%b4%e5%ba%a6%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e5%b9%bc%e5%85%92%e7%8f%ad%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        幼兒班活動花絮        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2023-24-%e5%b9%b4%e5%ba%a6%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e4%bd%8e%e7%8f%ad%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        低班活動花絮        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2023-24-%e5%b9%b4%e5%ba%a6%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e9%ab%98%e7%8f%ad%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        高班活動花絮        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2023-24-%e5%b9%b4%e5%ba%a6%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e5%85%a8%e6%a0%a1%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        全校活動花絮        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/2023-24-%e5%b9%b4%e5%ba%a6%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/%e5%ae%b6%e9%95%b7%e6%b4%bb%e5%8b%95%e8%8a%b1%e7%b5%ae/" class="" style="">
+                        家長活動花絮        </a>
+
+            </li>
+                </ul>
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c02">
+        <a href="https://www.ylsyk.edu.hk/%e5%aa%92%e9%ab%94%e5%b0%88%e8%a8%aa%e6%88%96%e5%a0%b1%e5%b0%8e/" class="" style="">
+                            <img src="https://www.ylsyk.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/051.png" />
+                        我們的成就        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%aa%92%e9%ab%94%e5%b0%88%e8%a8%aa%e6%88%96%e5%a0%b1%e5%b0%8e/%e6%88%91%e5%80%91%e7%9a%84%e6%88%90%e5%b0%b1/" class="" style="">
+                        我們的成就        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%aa%92%e9%ab%94%e5%b0%88%e8%a8%aa%e6%88%96%e5%a0%b1%e5%b0%8e/%e6%a0%a1%e5%88%8a/" class="" style="">
+                        校刊        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.ylsyk.edu.hk/%e5%aa%92%e9%ab%94%e5%b0%88%e8%a8%aa%e6%88%96%e5%a0%b1%e5%b0%8e/%e5%aa%92%e9%ab%94%e5%b0%88%e8%a8%aa/" class="" style="">
+                        媒體專訪        </a>
+
+            </li>
+                </ul>
+            </li>
+                                        <li class="login page_item">
+                        <a href="https://ylsyk.eclass.hk" target="_blank">eClass 登入</a>
+                    </li>
+                
+                <li class="lang page_item" style="">
+                    <a href="https://www.ylsyk.edu.hk/en/">English</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div id="headerSpace"></div>        <div id="alertMsg" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                          class="icon"></span>
+                        </button>
+                        <h4 class="modal-title">報名入讀申請</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content">
+                            <p><a href="/wp-content/uploads/2026/03/英語親子遊戲班.jpg"><img class="wp-image-6040 alignright" src="/wp-content/uploads/2026/03/英語親子遊戲班.jpg" alt="" width="207" height="295" /></a><a href="https://www.ylsyk.edu.hk/%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b/2025-2026%e5%b9%b4%e5%ba%a6%e5%b9%bc%e5%85%92%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b%e6%91%98%e8%a6%81/"><img class="alignleft wp-image-5639" src="/wp-content/uploads/2025/11/Colorful-Playful-Thank-You-Card-1-1024x726.jpg" alt="" width="466" height="331" /></a></p>                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+        <script type="text/javascript">
+            $(window).on('load', function () {
+                $('#alertMsg').modal('show');
+            });
+            $("#alertMsg .close").click(function () {
+                $("body").removeClass("alertBox");
+            });
+        </script>
+        
+<div id="slideshowArea">
+    <div id="slideshowWrap">
+        <div id="gallery-carousel-69c4f962e5c7e" class=" huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/03/IMG_5291-1500x1000.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">低班表演日</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="低班表演日" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/03/IMG_8672-1333x1000.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">主題體驗活動-竹</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="主題體驗活動-竹" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/02/IMG_2775-1-1500x1000.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">「歡樂迎新春」年宵攤位活動</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="「歡樂迎新春」年宵攤位活動" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/01/IMG_0224-1500x1000.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">高班-親子燒烤</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="高班-親子燒烤" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/01/IMG_1014-1500x1000.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">幼班-超級市場</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="幼班-超級市場" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2025/12/DSC06805-1500x1000.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">高班-親子海洋學園</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="高班-親子海洋學園" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2025/12/IMG_6936-1500x1000.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">高班-「小小建築師工作坊」</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="高班-「小小建築師工作坊」" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2025/12/IMG_7961-1500x1000.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">幼班-野餐</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="幼班-野餐" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2025/12/IMG_8022-1500x1000.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2025/12/IMG_5582-1500x1000.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">參觀農莊</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="參觀農莊" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>
+    <div class="container">
+        <div class="row">
+
+            <div id="latestNews" class="col-xs-12">
+    <h1 class="title">最新消息</h1>
+            <a href="https://www.ylsyk.edu.hk/latest-new/" class="moreBtn">更多</a>
+    
+    <div class="newsFrame">
+                    <ul id="newsList">
+                                    <a href="https://www.ylsyk.edu.hk/latest-new/2025-2026%e5%b9%b4%e5%ba%a6-3%e6%9c%88%e4%bb%bd%e8%8c%b6%e9%bb%9e/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2025-2026年度 3月份茶點                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot">
+</span>
+                                                        <span class="newsDate">2026-03-18</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ylsyk.edu.hk/latest-new/2025-2026%e5%b9%b4%e5%ba%a6-2%e6%9c%88%e4%bb%bd%e8%8c%b6%e9%bb%9e-2/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2025-2026年度 2月份茶點                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot"></span>
+                                                        <span class="newsDate">2026-01-30</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ylsyk.edu.hk/latest-new/2025-2026%e5%b9%b4%e5%ba%a6-1%e6%9c%88%e4%bb%bd%e8%8c%b6%e9%bb%9e/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2025-2026年度  1月份茶點                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot"></span>
+                                                        <span class="newsDate">2026-01-30</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ylsyk.edu.hk/latest-new/2026-2027%e5%b9%b4%e5%b9%bc%e5%85%92%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b%e6%91%98%e8%a6%81/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2026-2027年幼兒入學申請摘要                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot"></span>
+                                                        <span class="newsDate">2025-09-01</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.ylsyk.edu.hk/latest-new/%e6%9c%89%e9%97%9c%e8%bd%89%e8%ae%80%e4%b8%8a-%e4%b8%8b%e5%8d%88%e7%8f%ad%e7%94%b3%e8%ab%8b%e4%ba%8b%e5%ae%9c/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                有關轉讀上/下午班申請事宜                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot">收到新生家長有關轉讀上/下午班的查詢，回覆如下：
+&nbsp;
+1）轉讀上/下午班之申請，必須向學校提交「轉讀上/下午班申請表」，交回學校按程序處理。本園不會處理口頭申請。(請於以下連結下載：轉讀上下午班申請表)
+&nbsp;
+2）現階段，本園正處理備取生（上午班/下午班）之取錄通知，暫未處理轉讀上/下午班之申請。(本園沒有通知任何家長轉讀上/下午班之結果)
+&nbsp;
+3）如成功轉讀，本園將於2024年2月至8月期間個別通知。
+&nbsp;
+家長如有任何查詢，歡迎致電2476 3356與本園聯絡。謝謝。</span>
+                                                        <span class="newsDate">2024-01-09</span>
+                        </li>
+                    </a>
+                            </ul>
+            </div>
+
+</div>
+
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            
+            
+<div id="calendar" class="col-xs-12">
+    <h1 class="title">學校行事曆</h1>
+
+
+
+    <div class="calendarWrap">
+        <div class="calendarFrame">
+            <div class="loading" v-show="isLoading">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <div class="year_month" v-show="!isLoading" style="display:none;">
+                <a class="btn_lastmonth" @click="changeSelectedMonth(-1)"></a>
+                <span class="year">{{ currentSelectedDate.format('YYYY') }}</span>
+                <span class="month">{{ currentSelectedDate.format('MMMM') }}</span>
+                <a class="btn_nextmonth" @click="changeSelectedMonth(1)"></a>
+            </div>
+            <ul v-show="!isLoading" style="display:none;">
+                <li class="cal_head">日</li>
+                <li class="cal_head">一</li>
+                <li class="cal_head">二</li>
+                <li class="cal_head">三</li>
+                <li class="cal_head">四</li>
+                <li class="cal_head">五</li>
+                <li class="cal_head">六</li>
+
+                <li class="blank_date" v-for="n in blankDayCount">
+                    <div></div>
+                </li>
+
+                <template v-for="day in monthDayCount">
+                    <li :class="getDayClass(day)">
+                        <div><a @click="showDayDetails(day)">
+                            <span class="date">{{day}}</span>
+                            <span class="cycle" v-if="getDayCycle(day)">{{getDayCycle(day)}}</span>
+                        </a></div>
+                    </li>
+                </template>
+
+                <p class="spacer"></p>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="calendarDetails" tabindex="-1" role="dialog" aria-labelledby="calendarDetails"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" v-html="selectedEvent.dateHtml"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="icon"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tbl_events">
+                        <tr v-for="event in selectedEvent.events">
+                            <td :class="event.CssClass">{{ event.TypeText }}</td>
+                            <td>{{ event.Title }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+
+
+    <div id="photoSlideShow">
+        <div class="container">
+            <div class="row">
+
+                
+<div id="photoSlideShowWrap" class="modules-fullWidth">
+    <div id="gallery-carousel-69c4f962ec2c6" class="autoWidth huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/02/IMG_2775-1-798x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/01/IMG_1020-798x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/01/IMG_0347-709x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/01/IMG_2065-709x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/01/IMG_8372-798x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/01/IMG_8658-709x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2026/01/IMG_3577-709x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2025/10/上高一1-798x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2025/10/下高二-798x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.ylsyk.edu.hk/wp-content/uploads/2025/10/上高一2-798x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="modules-break"></div>
+
+<div id="usefulLinks">
+    <div class="container">
+        <div class="row">
+            <div class="modules-fullWidth" id="usefulLinksWrap">
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.edb.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://www.ylsyk.edu.hk/wp-content/uploads/2019/02/edb.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ylsyk.edu.hk/wp-content/uploads/2019/02/edb.jpg 600w, https://www.ylsyk.edu.hk/wp-content/uploads/2019/02/edb-300x99.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.chp.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://www.ylsyk.edu.hk/wp-content/uploads/2019/02/logo_chp_tc.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ylsyk.edu.hk/wp-content/uploads/2019/02/logo_chp_tc.png 335w, https://www.ylsyk.edu.hk/wp-content/uploads/2019/02/logo_chp_tc-300x79.png 300w" sizes="(max-width: 335px) 100vw, 335px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.hko.gov.hk/contentc.htm" target="_blank">
+                                <img src="https://www.ylsyk.edu.hk/wp-content/uploads/2018/08/hko.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.chp.gov.hk/tc/features/14843.html" target="_blank">
+                                <img src="https://www.ylsyk.edu.hk/wp-content/uploads/2021/02/79.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modules-break"></div>
+<div id="backToTop" onclick="topFunction()" style="display: none;">
+    <div>
+    </div>
+</div>
+
+<footer class="t_image">
+    <div id="schInfo">
+        <div class="container">
+            <div class="row">
+                <div class="schName_ch col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">元朗三育幼稚園</div>
+                <div class="schName_en col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">Yuen Long Sam Yuk Kindergarten</div>
+                <div class="infoList col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
+                                            <span class="address">
+                            元朗青山公路元朗段265-267號                            <a class="map" href="https://www.google.com.hk/maps/place/%E5%85%83%E6%9C%97%E9%9D%92%E5%B1%B1%E5%85%AC%E8%B7%AF%E5%85%83%E6%9C%97%E6%AE%B5256%E8%99%9F%E5%85%83%E6%9C%97%E4%B8%89%E8%82%B2%E5%B9%BC%E7%A8%9A%E5%9C%92/@22.4451533,114.0210366,17z/data=!3m1!4b1!4m5!3m4!1s0x3403f09fbf4ee76f:0xb06611b9dcb61dac!8m2!3d22.4451484!4d114.0232253" target="_blank"></a>
+                        </span>
+                    
+                                            <span class="tel">(852) 2476 3356</span>
+                    
+                                            <span class="fax">(852) 2478 9952</span>
+                    
+                                            <span class="mail"><a href="mailto:principal@ylsyk.edu.hk">principal@ylsyk.edu.hk</a></span>
+                    
+                                            <span class="web"><a href="https://www.ylsyk.edu.hk"
+                                             target="_blank">https://www.ylsyk.edu.hk</a></span>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <span class="col-xs-12 col-sm-6">版權所有 &copy; 元朗三育幼稚園</span>
+                <span class="col-xs-12 col-sm-6">Powered by <a href="http://www.eclass.com.hk/" target="_blank"><span
+                                class="logo"/></span></a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    /* Moved into homepage-homework.js
+    $(function () {
+        $('.datetimepicker').datetimepicker({
+            format: 'YYYY-MM-DD',
+            ignoreReadonly: true,
+            locale: 'zh-HK'
+        });
+    });
+    $('.datetimepicker-time').datetimepicker({
+        sideBySide: true
+    });
+    $(function () {
+        $('.datetimepicker').datetimepicker();
+
+        $('.datetimepicker-addon').on('click', function () {
+            $(this).prev('input.datetimepicker').data('DateTimePicker').toggle();
+        });
+    });
+    */
+    $(function () {
+        // Add slideDown animation to Bootstrap dropdown when expanding.
+        $('.dropdown').on('show.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+        });
+
+        // Add slideUp animation to Bootstrap dropdown when collapsing.
+        $('.dropdown').on('hide.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+        });
+    });
+</script>
+<script type="text/javascript" src="https://www.ylsyk.edu.hk/wp-content/themes/theme5_style_1/js/bootstrap_fix.js"></script>
+<div id="mmBg" class="mmOpen bg"></div>
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-preload-range="0">
+        <div class="slides"></div>
+
+        <div class="photoInfo">
+            <h3 class="title"></h3>
+            <p class="description"></p>
+            <span class="more"><a class="showMoreDescription" href="javascript:void(0);">（顯示更多…）</a></span>
+        </div>
+
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="popup" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+
+        <ol class="indicator"></ol>
+        <div class="indicatorControl">
+	    	<span class="leftBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+	    	</span>
+            <span class="rightBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+			</span>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://www.ylsyk.edu.hk/wp-includes/js/wp-embed.min.js?ver=5.1.19'></script>
+</body>
+</html>
