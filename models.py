@@ -523,6 +523,90 @@ def get_regions():
     conn.close()
     return [r['region'] for r in regions]
 
+def get_region_stats():
+    """Get all regions with school counts."""
+    conn = get_db_connection()
+    rows = conn.execute('''
+        SELECT region, COUNT(*) as count
+        FROM schools
+        WHERE region IS NOT NULL AND region != ""
+        GROUP BY region
+        ORDER BY count DESC
+    ''').fetchall()
+    conn.close()
+    return [dict(r) for r in rows]
+
+def get_schools_paginated(page=1, per_page=20, region=None, level=None, query=None, sort='name'):
+    """Get schools with pagination and filtering."""
+    conn = get_db_connection()
+    
+    where_clauses = []
+    params = []
+    
+    if region and region != 'all':
+        where_clauses.append('region = ?')
+        params.append(region)
+    
+    if level and level != 'all':
+        where_clauses.append('level = ?')
+        params.append(level)
+    
+    if query:
+        query_simp = query
+        query_trad = simplified_to_traditional(query)
+        if query_simp == query_trad:
+            where_clauses.append('(name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?)')
+            params.extend([f'%{query}%', f'%{query}%', f'%{query}%', f'%{query}%'])
+        else:
+            where_clauses.append('((name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?) OR (name LIKE ? OR name_cn LIKE ? OR country LIKE ? OR city LIKE ?))')
+            params.extend([
+                f'%{query_simp}%', f'%{query_simp}%', f'%{query_simp}%', f'%{query_simp}%',
+                f'%{query_trad}%', f'%{query_trad}%', f'%{query_trad}%', f'%{query_trad}%'
+            ])
+    
+    where_sql = ' AND '.join(where_clauses) if where_clauses else '1=1'
+    
+    # Count total
+    total = conn.execute(f'SELECT COUNT(*) FROM schools WHERE {where_sql}', params).fetchone()[0]
+    
+    # Order
+    if sort == 'qs_rank':
+        order_sql = 'qs_rank ASC NULLS LAST'
+    elif sort == 'usnews_rank':
+        order_sql = 'usnews_rank ASC NULLS LAST'
+    elif sort == 'the_rank':
+        order_sql = 'the_rank ASC NULLS LAST'
+    elif sort == 'recent':
+        order_sql = 'updated_at DESC NULLS LAST, created_at DESC'
+    else:
+        order_sql = 'name ASC'
+    
+    offset = (page - 1) * per_page
+    schools = conn.execute(f'''
+        SELECT id, name, name_cn, region, country, city, level,
+               badge_url, badge_reviewed, motto, founded, website,
+               qs_rank, usnews_rank, the_rank, arwu_rank, cwur_rank,
+               qs_year, usnews_year, the_year, description
+        FROM schools
+        WHERE {where_sql}
+        ORDER BY {order_sql}
+        LIMIT ? OFFSET ?
+    ''', params + [per_page, offset]).fetchall()
+    
+    conn.close()
+    return [dict(s) for s in schools], total
+
+def get_school_rankings(school_id):
+    """Get all rankings for a school."""
+    conn = get_db_connection()
+    row = conn.execute('''
+        SELECT qs_rank, usnews_rank, the_rank, arwu_rank, cwur_rank,
+               qs_year, usnews_year, the_year, arwu_year, cwur_year
+        FROM schools WHERE id = ?
+    ''', (school_id,)).fetchone()
+    conn.close()
+    return dict(row) if row else None
+
 def get_schools_by_source(source):
     """Get schools by data source."""
     conn = get_db_connection()
