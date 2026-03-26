@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ESF Sha Tin College | Hong Kong IB School | ESF Hong Kong</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="description" content="ESF Sha Tin College excels in academics and experiential learning. Our inclusive culture encourages contributions. We offer IBMYP, IGCSE, and IB programmes." />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="ESF Sha Tin College, International School Hong Kong, English Schools Foundation, IB School Hong Kong" />
+<meta property="og:description" content="ESF Sha Tin College excels in academics and experiential learning. Our inclusive culture encourages contributions. We offer IBMYP, IGCSE, and IB programmes." />
+<meta property="og:image" content="http://shatincollege.esf.edu.hk/cache/img/d18658e75ef1dcedbe34fcd9435858f5.jpg" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:secure_url" content="https://shatincollege.esf.edu.hk/cache/img/d18658e75ef1dcedbe34fcd9435858f5.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta name="viewport" content="width=device-width" />
+	<link rel="canonical" href="https://shatincollege.esf.edu.hk/en/" /> 
+				<link rel="alternate" href="/zh/" hreflang="zh-hk" />
+				<link rel="shortcut icon" href="/img/favicon.png" />
+	<link rel="apple-touch-icon" href="/img/iphone-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="/img/iphone-icon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/css/editor.css" />
+	<link rel="stylesheet" type="text/css" href="/en/cache/css/3e127878e4cd7b0c0af8a93a38e673d4.css" />
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/jquery-migrate.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/jquery.Slider.js"></script>
+	<script type="text/javascript" src="/js/jquery.slideSubmit.js"></script>
+	<script type="text/javascript" src="/js/jquery.table.js"></script>
+	<script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="/js/validator.class.js"></script>
+	<script type="text/javascript" src="/en/cache/js/lang.js"></script>
+	<script type="text/javascript" src="/js/function.js"></script>
+	<script type="text/javascript" src="/js/init.js"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="/js/html5izer_placeholder.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="/js/html5.js"></script>
+	<![endif]-->
+	<style>
+		.colour1,
+		a.colour1,
+		.editor a.colour1,
+		#content #history-page .years .year.current,
+		#content #history-page .years .year:hover,
+		#content #history-page .select-input,
+		#content .page-wrapper .page-container #data-list .data-item.open>.title,
+		#content #enquiry .form-container .row .checkbox-cotnainer .checkbox:after {
+			color: #7db3e2 !important;
+		}
+		.colour2,
+		a.colour2,
+		.editor a.colour2,
+		#content section .tab-select .select-input,
+		#content #section3 .wrapper .tabs .tab.current,
+		#content #section3 .wrapper .tabs .tab:hover,
+		#content #section6 .wrapper .tabs .tab.current,
+		#content #section6 .wrapper .tabs .tab:hover,
+		#content #landing section.type3 .tabs .tab.current,
+		#content #landing section.type3 .tabs .tab:hover,
+		#content .page-wrapper #submenu ul li a:hover,
+		#content .page-wrapper .page-container #tabs .tab.current,
+		#content .page-wrapper .page-container #tabs .tab:hover,
+		#content .page-wrapper .page-container #tabs .select-input,
+		#content .page-wrapper .page-container .tab-select .select-input {
+			color: #456e8f !important;
+		}
+		.colour3,
+		a.colour3,
+		.editor a.colour3 {
+			color: #dceeff !important;
+		}
+		.colour4,
+		a.colour4,
+		.editor a.colour4 {
+			color: #e7e7e7 !important;
+		}
+		.bg-colour1,
+		.editor ul.colour1 li:before,
+		.editor ol.colour1 li:before,
+		.pager a.selected,
+		.pager a:hover,
+		#content #enquiry .form-container .row .radio-container2 .radio.checked,
+		#content #enquiry .form-container .row .radio-container2 .radio:after,
+		#content #enquiry .form-container .row .radio-container .radio:after,
+		#content #sitemap li:before {
+			background-color: #7db3e2 !important;
+		}
+		.bg-colour2,
+		.editor ul.colour2 li:before,
+		.editor ol.colour2 li:before,
+		#floating a[href]:hover {
+			background-color: #456e8f !important;
+		}
+		.bg-colour3 {
+			background-color: #dceeff !important;
+		}
+		.bg-colour4 {
+			background-color: #e7e7e7 !important;
+		}
+		.br-colour1,
+		#content #section7 .record-slider .slider-container .post:hover {
+			border-color: #7db3e2 !important;
+		}
+		.br-colour2 {
+			border-color: #456e8f !important;
+		}
+		.br-colour3 {
+			border-color: #dceeff !important;
+		}
+		.br-colour4 {
+			border-color: #e7e7e7 !important;
+		}
+	</style>
+	<script type="text/javascript">
+											if(window.location.protocol.toLowerCase().indexOf('https:') == -1)
+											{
+												window.location.href = 'https://'+ window.location.host + window.location.pathname;
+											}
+									     </script>	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YY355BEKS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4YY355BEKS');
+</script></head>
+<body>
+	<header>
+		<div class="container">
+			<a href="/en/" class="logo">
+				<img src="/cache/img/2375a70c585d719a418d4efdf304c6d7.png" alt="ESF Sha Tin College" loading="lazy" height="180" />			</a>
+			<div class="menu-container">
+				<div class="top-container">
+					<nav class="lang">
+						<ul>
+							<li><a href="/zh/">繁體</a></li>						</ul>
+					</nav>
+					<div class="divider"></div>
+					<a href="/en/" class="home"></a>
+					<div class="search">
+						<button></button>
+						<div class="search-container">
+							<form action="/en/search/">
+								<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />								<button type="submit"></button>							</form>
+							<button class="close"></button>
+						</div>
+					</div>
+										<nav class="social">
+				 		<ul>
+				 							 			<li>
+				 				<a href="https://www.instagram.com/shatincollege_hk/" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 			<li>
+				 				<a href="https://www.facebook.com/ESFShaTinCollege" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3e297d1.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 			<li>
+				 				<a href="https://www.linkedin.com/company/sha-tin-college" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/6791007ad97e2.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 		</ul>
+				 	</nav>
+				 						<div class="search-responsive">
+						<form action="/en/search/">
+							<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />							<button type="submit"></button>						</form>
+					</div>
+										<div class="divider"></div>
+									 							<a href="https://shatincollege.esf.edu.hk/parent/" target="_blank" class="alt-btn">Students & Parents</a>
+				 										 		<a href="https://forms.gle/gT1Um8xk6WVp9EgBA" target="_blank" rel="nofollow" class="btn">Visit Us</a>
+									</div>
+				<div class="bottom-container">
+					<nav class="menu">
+						<ul>
+																						<li>
+									<a href="/en/about_us/">About Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/about_us/">About Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/about_us/principals_welcome/">Principal's Welcome</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/purpose_and_values/">Purpose and Values</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/strategic_priorities/">Strategic Priorities</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/ESF_family/">ESF Family</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/our_campus/">Our Campus</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_education/">Outstanding Education</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_education/">Outstanding Education</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_education/learning_environment/">Learning Environment</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/curriculum/">Curriculum</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/he_careers/">Higher Education (HE) & Careers</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/student_success_and_examination_results/">Student Success & Examination Results</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/university_destinations/">University Destinations</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+													</li>
+																																																			<li>
+															<a href="https://shatincollege.esf.edu.hk/parent/life_at_STC/wellbeing_STC/">Wellbeing @STC</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/our_houses/">Our Houses</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/experiential_learning/">Experiential Learning</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/student_leadership/">Student Leadership</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/explorer_week/">Explorer Week</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/activities_programme/">Activities Programme</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/student_support_and_wellbeing/">Student Support & Wellbeing</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_people/">Outstanding People</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_people/">Outstanding People</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_people/senior_leadership_team/">Senior Leadership Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/school_council/">School Council</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/parent-teacher-student_association/">Parent-Teacher-Student Association</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/admissions/">Admissions</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/admissions/">Admissions</a>
+													</li>
+																																			</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/WorkWithUs/">Work With Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/WorkWithUs/">Work With Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/WorkWithUs/ESF_Recruitment/">ESF Recruitment</a>
+														</li>
+																											<li>
+															<a href="/en/WorkWithUs/hiring_facilities/">Hiring Facilities</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+													</ul>
+					</nav>
+				</div>	
+			</div>
+			<button class="nav-btn"></button>
+		</div>
+	</header>
+	<section id="content">		
+		<script type="text/javascript">
+    var timeout = [];
+
+    $(window).load(function() {
+		let animate = function() {
+			let height = $(window).scrollTop() + Math.round($(window).height() * 0.6);
+			$('#content > section').each(function() {
+				if(!$(this).hasClass('animate') && height > $(this).offset().top)
+				{
+					$(this).addClass('animate');
+                    if($(this).attr('id') == 'section2') {
+						$('li > div', '#section2').each(function(index) {
+							let item = $(this);
+							setTimeout(function() {
+								item.addClass('animate');
+							}, index * 200);
+						});
+					}
+				}
+			});
+		};
+		$(window).on('scroll', animate);
+		animate();
+	});
+</script>
+<div id="banner">
+    <div class="banner-container">
+                                                <div class="banner-item">
+                    <div class="wrapper">
+                        <img src="/cache/img/75e0c3648314f2e45713d17b2e20acda.png" alt="" loading="lazy" width="1904" height="1200" class="trans" />                        <video id="video" width="1904" height="1200" preload="none" playsinline webkit-playsinline muted loop>
+                            <source src="/upload/banner/3/banner/67924f87eab1e.mp4" type="video/mp4">
+                        </video>
+                        <div class="mask"></div>
+                        <div class="container">
+                            <button class="play"></button>
+                        </div>
+                    </div>
+                                    </div>
+                        </div>
+    <div class="container">
+                <div class="scroll-icon"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let pager_click = false;
+
+            $('#banner').Slider({
+                slides: '.banner-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true,
+                pager: '.banner-pager',
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    $.each(timeout, function(index, value) {
+                        clearTimeout(value);
+                    });
+                    let videos = $('video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    $('button', slider).removeClass('play').addClass('pause');
+                    if($('.slider.current video', slider).length) {
+                                                        video = document.querySelector('#banner .slider.current video');
+                                video.play();
+                                            }
+                    else if(!pager_click) {
+                        timeout = setTimeout(function() {
+                            slider.Slider('next');
+                        }, 5000);
+                    }
+                },
+                afterResize: function(slider, slides, current_page, total_page) {
+                    if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                                            let videos = $('video', slider);
+                        videos.each(function(i, video) {
+                            video.addEventListener('ended', videoEnd, false);
+                        });
+                        if($('.slider.current video', slider).length) {
+                                                                video = document.querySelector('#banner .slider.current video');
+                                    video.play();
+                                    $('.slider.current button', slider).removeClass('play').addClass('pause');
+                                                    }
+                        else {
+                            timeout = setTimeout(function() {
+                                slider.Slider('next');
+                            }, 5000);
+                        }
+                                        if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                }
+            });
+            
+            $('.banner-item video', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                let button = $(this).parent().find('button');
+                if(button.hasClass('pause')) {
+                    video.pause();
+                    button.removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    button.removeClass('play').addClass('pause');
+                }
+            });
+            $('.banner-item button', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                if($(this).hasClass('pause')) {
+                    video.pause();
+                    $(this).removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    $(this).removeClass('play').addClass('pause');
+                }
+            });
+
+            $('body').on('click', '#banner .banner-pager a', function() {
+                pager_click = true;
+            });
+
+            function videoEnd(e) {
+                if(!pager_click) {
+                    $('#banner').Slider('next');
+                }
+                else {
+                    $('#banner .slider.current button').removeClass('pause').addClass('play');
+                }
+            }
+        });
+    </script>
+</div>
+<section id="section1">
+    <div class="container">
+                    <div class="left">
+                <article class="editor"><p><span style="font-size: 30px;"><strong>Be CURIOUS </strong></span></p>
+<p><span style="font-size: 30px;"><strong>Be INCLUSIVE </strong></span></p>
+<p><span style="font-size: 30px;"><strong>Be GENEROUS </strong></span></p>
+<p><span style="font-size: 30px;"><strong>Be RESPONSIBLE</strong></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 16px;"><strong>We challenge our students to make meaningful contributions to the world.</strong></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour1"><a href="https://shatincollege.esf.edu.hk/en/about_us/" target="_blank" rel="noopener"><span style="color: #ffffff;">Discover Our Vision</span></a></p></article>
+            </div>
+                            <div class="right">
+                <article class="editor"><p><img src="/upload/page/35/self/6729d894d52e8.png" alt="Self Photos / Files - Values_red_text onright_horizontal" width="795" height="171" /></p></article>
+            </div>
+                            <div class="responsive">
+                <article class="editor"><p><span style="font-size: 30px;"><strong>Be CURIOUS </strong></span></p>
+<p><span style="font-size: 30px;"><strong>Be INCLUSIVE </strong></span></p>
+<p><span style="font-size: 30px;"><strong>Be GENEROUS </strong></span></p>
+<p><span style="font-size: 30px;"><strong>Be RESPONSIBLE</strong></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 16px;"><strong>We challenge our students to make meaningful contributions to the world.</strong></span></p>
+<p>&nbsp;</p>
+<p><img src="/upload/page/35/self/6729d894d52e8.png" alt="Self Photos / Files - Values_red_text onright_horizontal" width="795" height="171" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour1"><a href="https://shatincollege.esf.edu.hk/en/about_us/" target="_blank" rel="noopener"><span style="color: #ffffff;">Discover Our Vision</span></a></p></article>
+            </div>
+            </div>
+</section>
+<section id="section2">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What can STC offer your family?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="wrapper bg-colour2">
+        <div class="container">
+            <ul>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/151b687489d05c163b29139dc46c5c89.png" alt="SIS offers icon-6" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">ESF Network</h3>
+                            <div class="overlay bg-colour1">
+                                <p>As part of the English Schools Foundation(ESF), our students are supported by the largest English-medium international school organisation in Hong Kong, providing them the resources and opportunities not found outside of ESF Schools.</p>
+                                                                    <a  href="https://www.esf.edu.hk/" target="_blank" rel="nofollow">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/1a5f35c8585bf186b06fb0cf0eea7ad4.png" alt="World-class Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Cohesive STC Community</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Diversity, equity and inclusion are at the centre of who we are at ESF Sha Tin College. We challenge our students to make meaningful contributions to the world. We aim to sustain an inclusive culture where every voice contributes to school life, where students can lead their own learning and engage with challenging ideas.</p>
+                                                                    <a  href="https://shatincollege.esf.edu.hk/en/about_us/purpose_values_and_priorities/">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/251f6028781478daf323bcb91a57d419.png" alt="Incredible Results" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Academic Success</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our students' outstanding achievements reflect their hard work, dedication, and resilience and the unwavering support of our dedicated staff and the wider community.</p>
+                                                                    <a  href="https://shatincollege.esf.edu.hk/en/outstanding_education/student_success_and_examination_results/">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/b0519238b897755332e0557a99cfcc6b.png" alt="Real-world Experience" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Experiential Learning</h3>
+                            <div class="overlay bg-colour1">
+                                <p>The Sha Tin College approach to experiential learning empowers our students to explore beyond and discover themselves and others, and the world around them. With a focus on building a strong sense of community, where students can develop essential life skills and demonstrate sustainable practices, our holistic approach aims to nurture well-rounded individuals who are well-equipped for life and intent on making a meaningful impact on the world.</p>
+                                                                    <a  href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/experiential_learning/">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/8ad90bd873b707b1fefc3f10c0db3842.png" alt="SIS offers icon-2" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Student Wellbeing</h3>
+                            <div class="overlay bg-colour1">
+                                <p>We are committed to providing a safe and nurturing environment for all students. Our student support and wellbeing systems include Peer Supporters, Heads and Deputy Heads of Year, Wellbeing Counsellors, Social Workers and Child Protection officers. Our explicit wellbeing curriculum empowers students to take responsibility for their own well-being and contribute positively to our community.</p>
+                                                                    <a  href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/student_support_and_wellbeing/">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/c7b01bd190b9a205cea68a46f4bb75a0.png" alt="Strong School-Family Connection" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Parent Engagement</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Sha Tin College embarks on initiatives to underscore our commitment to fostering a supportive and engaged school community, addressing the wellbeing needs of students and parents through strong family engagement.</p>
+                                                                    <a  href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/parent_engagement/">
+                                        <span>Learn More</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('h3', '#section2').each(function() {
+                let img = $(this).parent().children('img');
+                if(img.length) {
+                    $(this).css('top', img.offset().top + img.height() + 25 - $(this).parent().offset().top);
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section3">
+    <img src="/cache/img/4c78005e999473be0259939b4aa852ac.jpg" alt="esf_stc_0990" loading="lazy" width="1722" height="1294" />    <div class="wrapper">
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">International Curriculum</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="tabs">
+                            <button class="tab current" data-id="1">Years 7-9</button>
+                            <button class="tab" data-id="2">Years 10-11</button>
+                            <button class="tab" data-id="3">Years 12-13</button>
+                    </div>
+        <select class="tab-select" name="tab"><option value="1">Years 7-9</option><option value="2">Years 10-11</option><option value="3">Years 12-13</option></select>                    <div class="tab-content current" data-id="1">
+                                    <div class="title">
+                        <span class="bg-colour1"></span>
+                        <h3 class="colour1">IB MYP</h3>
+                    </div>
+                                <article class="editor"><p><span style="font-weight: 400;">Our Years 7 to 9 students follow the</span><strong> IB Middle Years Programme (MYP)</strong><span style="font-weight: 400;">, offering a challenging and practical learning framework that supports students' transition and integration into the secondary school community, building a solid foundation of critical thinking and global mindedness for the middle and senior years.</span></p></article>
+                                    <a href="https://shatincollege.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview/years-7-9/">
+                        <span>Learn More</span>
+                    </a>
+                            </div>
+                    <div class="tab-content" data-id="2">
+                                    <div class="title">
+                        <span class="bg-colour1"></span>
+                        <h3 class="colour1">I/GCSE</h3>
+                    </div>
+                                <article class="editor"><p><span style="font-weight: 400;">In Years 10 and 11, the curriculum is designed to provide a dynamic and inclusive educational experience, with the aim of preparing students for success in a rapidly changing world. Rooted in academic excellence and enriched by our core values of curiosity, generosity, responsibility, and inclusivity, our program fosters intellectual growth, emotional resilience, physical well-being, and social development. We aim to ensure that when students leave us, they are well-rounded individuals ready to contribute as active members of a global society.</span></p></article>
+                                    <a href="https://shatincollege.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview/years-10-11/">
+                        <span>Learn More</span>
+                    </a>
+                            </div>
+                    <div class="tab-content" data-id="3">
+                                    <div class="title">
+                        <span class="bg-colour1"></span>
+                        <h3 class="colour1">IB DP & IB CP</h3>
+                    </div>
+                                <article class="editor"><p><span style="font-weight: 400;">The main programme for Years 12 and 13 study is the </span><strong>International Baccalaureate Diploma Programme (DP)</strong><span style="font-weight: 400;">, where students can follow the full DP or choose individual DP courses at Higher or Standard Level. For those with defined career aspirations, we proudly offer the </span><strong>IB Careers-related Programme (CP)</strong><span style="font-weight: 400;">, providing an alternative pathway tailored to their future goals.</span></p></article>
+                                    <a href="https://shatincollege.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview/years-12-13/">
+                        <span>Learn More</span>
+                    </a>
+                            </div>
+                <script type="text/javascript">
+            $(document).ready(function() {
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+
+                $('.tab', '#section3').click(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $(this).addClass('current');
+                    $('.tab-content[data-id=' + $(this).data('id') + ']', '#section3').addClass('current');
+                    $('select', '#section3').val($(this).data('id')).selectbox('refresh');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+
+                $('.tab-select', '#section3').change(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $('.tab[data-id=' + $(this).val() + ']').addClass('current');
+                    $('.tab-content[data-id=' + $(this).val() + ']', '#section3').addClass('current');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+            });
+        </script>
+    </div>
+</section>
+<section id="section4" data-total="2">
+    <div class="container">
+        <div class="bg bg-colour4"></div>
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Student Support & Wellbeing</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="record-slider">
+            <div class="slider-container">
+                                    <div class="record-item">
+                        <img src="/cache/img/c1f0a610ae1fb54940f2e71b556784db.jpg" alt="IMG_6441" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>STUDENT SUPPORT & WELLBEING</span>
+                            </h3>
+                            <p>We are committed to providing a safe and nurturing environment for all students. Our child protection officers are dedicated to addressing any concerns promptly. Our supportive learning environment empowers students to take responsibility for their own well-being and contribute positively to our community.</p>
+                                                            <a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/student_support_and_wellbeing/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/53aabb114523eccc246c73d9ffb4f20c.jpg" alt="3. IMG_0070" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>HOUSES</span>
+                            </h3>
+                            <p>Our House system is a vibrant and inclusive community that fosters leadership, collaboration, and engagement among students of all ages. One of the hallmarks of the House system at STC is the emphasis on leadership development. The House system has been instrumental in creating a sense of belonging and community among students.</p>
+                                                            <a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/our_houses/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                            </div>
+            <div class="btns">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section4').data('total'));
+            let slider_loop = ori_total >= 3 ? true : false;
+            $('#section4').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total * 2);
+                    }
+                    else {
+                        slider.Slider('jump', total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section5" data-total="3">
+    <div class="container">
+        <div class="bg bg-colour3"></div>
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Experiential Learning</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="record-slider">
+            <div class="slider-container">
+                                    <div class="record-item">
+                        <img src="/cache/img/b0d951f7c6bfb84267458f65b2c65f02.jpg" alt="20241113_094816" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>EXPLORER WEEK</span>
+                            </h3>
+                            <p>Explorer Week is an opportunity to stop our normal routines and value the learning experience that can be made outside the classroom. During Explorer Week, lessons are suspended for five days and students can participate in a broad range of activities that are not normally available through the regular timetable.  Explorer Week is one of the highlights of the experiential learning opportunities at Sha Tin College.</p>
+                                                            <a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/explorer_week/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/a1ef1525adfcd9609c2e56fbcd39f93e.png" alt="DSC08350" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ACTIVITIES PROGRAMME</span>
+                            </h3>
+                            <p>The Activities Programme is a key part of our experiential learning approach to empowering students to pursue their passions, explore new interests, and make new friendships. We aim to ensure a balanced range of activities for students allowing them to ‘Discover Themselves and Others’, ‘Build Community’, ‘Develop Skills for Life’, and ‘Demonstrate Sustainability’.</p>
+                                                            <a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/activities_programme/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/08bf1a36ec58c9a70ab23bb1190ec221.jpg" alt="IMG_5172" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>STUDENT LEADERSHIP</span>
+                            </h3>
+                            <p>At Sha Tin College we encourage every student to make a positive difference to our community. As exemplified in our leadership model, we believe that leadership is a choice, can be developed and practised, and that everyone has the potential to be a leader. Our approach to student leadership is supported by clear structures, offering a range of opportunities for students across all year levels to lead.</p>
+                                                            <a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/student_leadership/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/b0d951f7c6bfb84267458f65b2c65f02.jpg" alt="20241113_094816" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>EXPLORER WEEK</span>
+                            </h3>
+                            <p>Explorer Week is an opportunity to stop our normal routines and value the learning experience that can be made outside the classroom. During Explorer Week, lessons are suspended for five days and students can participate in a broad range of activities that are not normally available through the regular timetable.  Explorer Week is one of the highlights of the experiential learning opportunities at Sha Tin College.</p>
+                                                            <a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/explorer_week/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/a1ef1525adfcd9609c2e56fbcd39f93e.png" alt="DSC08350" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ACTIVITIES PROGRAMME</span>
+                            </h3>
+                            <p>The Activities Programme is a key part of our experiential learning approach to empowering students to pursue their passions, explore new interests, and make new friendships. We aim to ensure a balanced range of activities for students allowing them to ‘Discover Themselves and Others’, ‘Build Community’, ‘Develop Skills for Life’, and ‘Demonstrate Sustainability’.</p>
+                                                            <a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/activities_programme/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/08bf1a36ec58c9a70ab23bb1190ec221.jpg" alt="IMG_5172" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>STUDENT LEADERSHIP</span>
+                            </h3>
+                            <p>At Sha Tin College we encourage every student to make a positive difference to our community. As exemplified in our leadership model, we believe that leadership is a choice, can be developed and practised, and that everyone has the potential to be a leader. Our approach to student leadership is supported by clear structures, offering a range of opportunities for students across all year levels to lead.</p>
+                                                            <a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/student_leadership/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/b0d951f7c6bfb84267458f65b2c65f02.jpg" alt="20241113_094816" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>EXPLORER WEEK</span>
+                            </h3>
+                            <p>Explorer Week is an opportunity to stop our normal routines and value the learning experience that can be made outside the classroom. During Explorer Week, lessons are suspended for five days and students can participate in a broad range of activities that are not normally available through the regular timetable.  Explorer Week is one of the highlights of the experiential learning opportunities at Sha Tin College.</p>
+                                                            <a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/explorer_week/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/a1ef1525adfcd9609c2e56fbcd39f93e.png" alt="DSC08350" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ACTIVITIES PROGRAMME</span>
+                            </h3>
+                            <p>The Activities Programme is a key part of our experiential learning approach to empowering students to pursue their passions, explore new interests, and make new friendships. We aim to ensure a balanced range of activities for students allowing them to ‘Discover Themselves and Others’, ‘Build Community’, ‘Develop Skills for Life’, and ‘Demonstrate Sustainability’.</p>
+                                                            <a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/activities_programme/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/08bf1a36ec58c9a70ab23bb1190ec221.jpg" alt="IMG_5172" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>STUDENT LEADERSHIP</span>
+                            </h3>
+                            <p>At Sha Tin College we encourage every student to make a positive difference to our community. As exemplified in our leadership model, we believe that leadership is a choice, can be developed and practised, and that everyone has the potential to be a leader. Our approach to student leadership is supported by clear structures, offering a range of opportunities for students across all year levels to lead.</p>
+                                                            <a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/student_leadership/">
+                                    <span>Learn More</span>
+                                </a>
+                                                    </div>
+                    </div>
+                            </div>
+            <div class="btns">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section5').data('total'));
+            let slider_loop = ori_total >= 3 ? true : false;
+            $('#section5').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total + 1);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section6">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">Testimonials</h2>
+            <span class="bg-colour1"></span>
+        </div>
+        <div class="wrapper">
+            <div class="tabs">
+                                    <button class="tab current" data-id="1">Students</button>
+                                    <button class="tab" data-id="2">Parents</button>
+                                    <button class="tab" data-id="3">Alumni</button>
+                            </div>
+            <select class="tab-select" name="tab"><option value="1">Students</option><option value="2">Parents</option><option value="3">Alumni</option></select>                            <div class="tab-content current" data-id="1">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/b809af357e097e946b80ed29c7ee9b32.png" alt="ESF Sha Tin College_E-transparent (1)" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">The Higher Education events were highly rewarding experiences for me as I was able to gain valuable insight into what campus life and the application process were like at different universities.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">The Higher Education events were highly rewarding experiences for me as I was able to gain valuable insight into what campus life and the application process were like at different universities.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Molly, Year 13 Student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/02ed6f9cf64e2b61bc9dc6999067fed4.png" alt="ESF Sha Tin College_E-transparent (1)" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">I love Sha Tin College because there’s a lot of freedom to be independent</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">I love Sha Tin College because there’s a lot of freedom to be independent</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Alec, Year 8 Student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/3661aa154d78f9b75f3d03e51d83a70f.png" alt="ESF Sha Tin College_E-transparent (1)" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">While participating in international school competitions, I enjoyed working together with my friends and getting to know other students across multiple year groups.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">While participating in international school competitions, I enjoyed working together with my friends and getting to know other students across multiple year groups.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Isaiah, Year 11 Student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/1399e008a1e304ecb35bbc5505b326ab.png" alt="ESF Sha Tin College_E-transparent (1)" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>4 / 4</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">In the Activities Programme, I was able to challenge myself and improve my skills. I was glad to be able to share my passion with other students and inspire them to enjoy it as much as I do.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">In the Activities Programme, I was able to challenge myself and improve my skills. I was glad to be able to share my passion with other students and inspire them to enjoy it as much as I do.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Eugenia, Year 13 Student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="2">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/6a5f40f626113e94f7f2d5081388d71f.png" alt="ESF Sha Tin College_E-transparent (1)" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">The well-rounded curriculum and nurturing learning environment at the school have played a crucial role in my child's academic achievements. The rigorous coursework and committed teachers have equipped her with vital knowledge while fostering critical thinking and problem-solving skills. Furthermore, the focus on holistic development has enabled her to thrive not only academically but also as a well-rounded individual. I find the parent engagement events to be incredibly beneficial. Coffee mornings and Back to School information evenings have given me valuable insights into my child's school experience and academic progress. These gatherings promote open communication with teachers and other parents, allowing me to stay informed and actively involved in her educational journey. The sense of community created by these events is both reassuring and supportive.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">The well-rounded curriculum and nurturing learning environment at the school have played a crucial role in my child's academic achievements. The rigorous coursework and committed teachers have equipped her with vital knowledge while fostering critical thinking and problem-solving skills. Furthermore, the focus on holistic development has enabled her to thrive not only academically but also as a well-rounded individual. I find the parent engagement events to be incredibly beneficial. Coffee mornings and Back to School information evenings have given me valuable insights into my child's school experience and academic progress. These gatherings promote open communication with teachers and other parents, allowing me to stay informed and actively involved in her educational journey. The sense of community created by these events is both reassuring and supportive.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Samson, Parent of a Year 10 student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="3">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/0291fc57e8e47e2829756b00a4e55897.png" alt="ESF Sha Tin College_E-transparent (1)" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Theory of Knowledge (TOK) was an incredibly inspiring journey that nurtured my intellectual curiosity and developed crucial skills that extend beyond the boundaries of the IB DP.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Theory of Knowledge (TOK) was an incredibly inspiring journey that nurtured my intellectual curiosity and developed crucial skills that extend beyond the boundaries of the IB DP.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Adelaide, Class of 2024</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/55a47e808e486f33449f93f156ec64a1.png" alt="ESF Sha Tin College_E-transparent (1)" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Seeing my name on the student leader list was my dream come true. I was so excited to finally be able to lead House events and foster House spirit.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Seeing my name on the student leader list was my dream come true. I was so excited to finally be able to lead House events and foster House spirit.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Irene, Class of 2024</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/6b1bc2c4dc6a8dfc1fc1b7bb4ca940a9.png" alt="ESF Sha Tin College_E-transparent (1)" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Studying International Sports Management in the IB CP has been a pleasure. It allowed me to have a good balance between my personal/athletic lifestyle and school life.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Studying International Sports Management in the IB CP has been a pleasure. It allowed me to have a good balance between my personal/athletic lifestyle and school life.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Luke, Class of 2024</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+            
+            $('.tab', '#section6').click(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $(this).addClass('current');
+                $('.tab-content[data-id=' + $(this).data('id') + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' + ($(this).index() + 1) + ')', '#section6').addClass('current');
+                chkContentHeight();
+            });
+
+            $('.tab-select', '#section6').change(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $('.tab[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-content[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' +  ($('.tab.current', '#section6').index() + 1) + ')', '#section6').addClass('current');
+                $('.select .select-container div', '#section6').show();
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+                chkContentHeight();
+            });
+
+            $('.record-slider', '#section6').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true
+            });
+
+            function chkContentHeight() {
+                $('p.description', '#section6').each(function() {
+                    if($(this).height() > 160) {
+                        $(this).parent().addClass('more');
+                    }
+                });
+            }
+            chkContentHeight();
+
+            $('.record-item article button.view-more', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-less').show();
+                $(this).parent().find('.description').hide();
+                $(this).parent().find('.content').show();
+            });
+            $('.record-item article button.view-less', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-more').show();
+                $(this).parent().find('.description').show();
+                $(this).parent().find('.content').hide();
+            });
+        });
+    </script>
+</section>
+<section id="section7" data-total="10">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What's New at STC?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="record-slider">
+        <div class="slider-container">
+                            <div class="post-item">
+                    <div class="post" data-id="364">
+                        <time>26/03/2026</time>
+                        <h3>We recently had the incredible opportunity to invite Dr. Marvin Chung from HKU for a Cast-Making Workshop!👨‍⚕<br><br>This was a "first-time" experience for most of the participants, and it was just as challenging as it was fun! The hands-on experience gave participants a glimpse into real orthopedic medical practice, aiming to guide those interested in a future medical career, whilst fostering laughter amongst themselves - especially seeing everyone walk away with their own casts. 🦾<br><br>A huge thank you to Dr. Marvin for inspiring our future medical professionals.✨</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/369a9146ce0f6189b984a9f4e8747738.jpg" alt="657144143_1404524175021002_4514909901035018431_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="363">
+                        <time>26/03/2026</time>
+                        <h3>𝗢𝘂𝘁𝘀𝘁𝗮𝗻𝗱𝗶𝗻𝗴 𝗔𝗰𝗵𝗶𝗲𝘃𝗲𝗺𝗲𝗻𝘁𝘀 𝗶𝗻 𝘁𝗵𝗲 𝗕𝗿𝗶𝘁𝗶𝘀𝗵 𝗣𝗵𝘆𝘀𝗶𝗰𝘀 𝗢𝗹𝘆𝗺𝗽𝗶𝗮𝗱 𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝗼𝗻𝘀<br><br>Our students recently participated in the Intermediate Physics Challenge (IPC) and Senior Physics Challenge (SPC) organised by the British Physics Olympiad. These rigorous competitions test fundamental physics principles and real-world applications, aiming to enhance students' lateral thinking skills and help them reach their full potential in physics.⚛<br><br>We are proud to announce that our students achieved the following awards:<br><br>🏅Gold Awards: Katherine Wen and Aaron Wang<br>🏅Silver Awards: Hayden Leung <br>🏅Bronze Awards: Isaiah Liu, Adam Pan, Jovan Wong, Purple Lau, Erin Cho, Iris Shi, and Ted Lo<br>Congratulations to all participants for their exceptional achievements and dedication!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7ceb3d254d08fa0c546b65a4dfcf1857.jpg" alt="655689537_1404389971701089_1688721808163289155_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="362">
+                        <time>25/03/2026</time>
+                        <h3>Our students recently represented STC at the CDNIS SDG Summit, centered on the theme: “Accelerate Your Action.” ✨<br><br>From the participants to the Impact Fair to the Organising Committee (shoutout to Cathy Yang, Isaiah Liu, Nikki Moy, and Zihan Liu), our community’s presence was felt throughout. <br><br>We are also incredibly proud of our student filmmakers🎬👏. Two projects exploring food insecurity (by Angela Mak, Hazel Lam, Themis Ho, Tiffany Zhong, and Grace Chung, Kari Wan, Rosanne Wong, Tabitha Tay) were shortlisted for the Docathon showcase, while a third documentary by Gabrielle Lee, Scarlett Man, and Teresa Rana provided a powerful lens on domestic labour during the summit’s workshops.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/4fadacdc8f1330d1d6e861597d5ef010.jpg" alt="658373204_1403511671788919_7511151309511047281_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="361">
+                        <time>24/03/2026</time>
+                        <h3>Sha Tin College had a spooky week with their production of The Addams Family👪.<br><br>The strong cast and crew of 40 have been working hard all year on the dark comic musical based on the much loved characters from the US TV show📺. The show deals with what it is like to be different in a world where this is frowned upon - although to the Addams it's everyone else who seem a little peculiar! The focus of this much loved Broadway hit, focusses on the mismatched alliance of Wednesday Addams and her new love - Lucas, who struggles to be accepted. <br><br>Well done to everyone involved for entertaining us - and embracing the ethos of the quirky crew that are the Addams! 🔥🔥🔥</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0b3f5f785749cf49f348a8fce0fc47af.jpg" alt="656291880_1402729268533826_3990527078838707402_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="360">
+                        <time>23/03/2026</time>
+                        <h3>Eight year 11 students competed in the City University of Hong Kong  Science Patent Challenge, and on Saturday 13 March, they made their final pitch and prototype demonstration in front of the judges. 👏<br><br>Congratulations on winning 1st place🏆! The students will now have a patent attorney register their invention of a smart helmet for firefighter safety. <br><br>✨Well done to Janey XING, Jolly WONG, Jodi LEUNG, Nicholas LEE, Suan LEE, Feifan ZHANG, Purple LAU, Andy PAN.👏👏👏</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/87a7ada89cc74d53f9ea3007ca599db9.jpg" alt="654976006_1401748371965249_3036649769058985449_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="359">
+                        <time>23/03/2026</time>
+                        <h3>On Thursday, 19 March, STC HE team hosted a Higher Education Q&A session for Year 12 parents and guardians, following the success of our recent HE Virtual Evening.🧑‍🏫<br><br>The morning session provided a valuable opportunity for attendees to ask follow-up questions about university applications in a more intimate setting. Participants came prepared after reviewing our comprehensive FAQs, with many submitting specific queries in advance to ensure detailed responses.🗣<br><br>We were delighted to welcome a representative from a Hong Kong university, who shared expert guidance on the HK application landscape—an increasingly popular pathway for our students. The insights into admissions processes complemented the broader application advice discussed.<br><br>The session reinforced our commitment to supporting families as they navigate the early stages of higher education research, ensuring everyone leaves with clearer next steps for the journey ahead.🛣</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/584d603a861662fdf349d042ad6add5a.jpg" alt="654807975_1401709235302496_487214562623967288_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="358">
+                        <time>21/03/2026</time>
+                        <h3>Kids’ Lit Quiz Champions!🏆<br><br>What a day of book‑loving brilliance!<br>🔹23 teams from Hong Kong and Macau battled it out in the morning heats.<br>🔹The top 6 teams faced off in a nail‑biting afternoon final.<br>🔹Our school entered 4 teams - and two made it all the way to the national<br>finals!<br><br>1st place: Lucas Hin (Y8); Lizzie Chiu (Y8); Jake Kim (Y7); and Ryan Zhou (Y7)<br>3rd place: William Chan, 8G1; Kairvi Kataria, 8D1; Christine Shi, 8P1; and Jayden Ng,<br>7D2.<br><br>Participating teams:<br>Abigail Tse (Y8); Celina Xue (Y8); Alva Lam (Y8); and Sophie Yip (Y7).<br>Veronica Lau (Y8); Jake Lam (Y8); Emma Yip (Y7); and Tyler Ding (Y7).<br><br>Now, our winning team is invited to New Zealand 🇳🇿 in July to represent Hong Kong<br>SAR at the World Championship, competing against the best from around the<br>world.<br>A huge shout‑out to all our winners and participants - you’ve made us so proud🔥!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/9af3b358fd41a5c86c44b3ea4a77d427.jpg" alt="654944185_1398990322241054_4831206154142097621_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="357">
+                        <time>20/03/2026</time>
+                        <h3>From 3D printing waste to New Design Frontiers🌟<br><br>Our Year 12 Design students are closing the loop on 3D printing waste! By shredding PLA waste into small chips and leveraging its thermo-softening properties, we are transforming "single-use" plastic into high-quality 3mm recycled sheets. <br><br>This inquiry unit blends material science with hands-on processing, challenging students to treat recycled plastic with the same technical rigor as industrial composites. With our new material we have called SHRED X, ready, we are moving into a material-led innovation project asking:  "What are the design opportunities that this newly developed material presents us with now?"💫</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7a3012fed5bbd17dab7958c1a8c3aa37.jpg" alt="654648654_1398960365577383_6709993888437049145_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="356">
+                        <time>19/03/2026</time>
+                        <h3>Big congratulations to our chess teams!🥳🥳<br><br>🎖U12 Section: Our Year 7 students took 2nd place!<br>🎖U18 Section: Year 8 and 9 students took 1st place!<br><br>Special mention to Lucas Leung (Y8) for placing 6th, Austin Tsui (Y9) 7th, Charles Tan (Y9) 8th, and Alwyn Liu (Y9) 15th in the U18 section.<br><br>Together with SJS, we proudly brought home the Dr. R. Lister Cup🏆, awarded based on results across all sections. <br><br>Well done to everyone who competed - your hard work and teamwork made us proud!💪</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/a349ff8a11e431a23157097d47329dfc.jpg" alt="653908623_1398181782321908_2427711344166466141_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="355">
+                        <time>18/03/2026</time>
+                        <h3>𝗜𝗕𝗗𝗣 𝗩𝗶𝘀𝘂𝗮𝗹 𝗔𝗿𝘁 𝗦𝗟/𝗛𝗟 𝗔𝗿𝘁 𝗘𝘅𝗵𝗶𝗯𝗶𝘁𝗶𝗼𝗻🎨<br><br>The IBDP Visual Art SL/HL Art Exhibition showcases a year and a half of dedicated effort by our talented students✨. This ambitious event features a variety of techniques and materials, highlighting each student's unique line of inquiry.🖌<br><br>Each exhibition space reflects remarkable independence, with students exploring their themes deeply. Accounting for 40% of their final grade, this exhibition not only showcases creativity but also celebrates their hard work.<br><br>Last Tuesday’s opening was a fantastic opportunity to honor their achievements and appreciate the vibrant range of artistic expressions on display.🎖</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/8fb11e81e3af339c5c16e15bc4b5edcb.jpg" alt="655237598_1397515629055190_3918284864960919126_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="364">
+                        <time>26/03/2026</time>
+                        <h3>We recently had the incredible opportunity to invite Dr. Marvin Chung from HKU for a Cast-Making Workshop!👨‍⚕<br><br>This was a "first-time" experience for most of the participants, and it was just as challenging as it was fun! The hands-on experience gave participants a glimpse into real orthopedic medical practice, aiming to guide those interested in a future medical career, whilst fostering laughter amongst themselves - especially seeing everyone walk away with their own casts. 🦾<br><br>A huge thank you to Dr. Marvin for inspiring our future medical professionals.✨</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/369a9146ce0f6189b984a9f4e8747738.jpg" alt="657144143_1404524175021002_4514909901035018431_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="363">
+                        <time>26/03/2026</time>
+                        <h3>𝗢𝘂𝘁𝘀𝘁𝗮𝗻𝗱𝗶𝗻𝗴 𝗔𝗰𝗵𝗶𝗲𝘃𝗲𝗺𝗲𝗻𝘁𝘀 𝗶𝗻 𝘁𝗵𝗲 𝗕𝗿𝗶𝘁𝗶𝘀𝗵 𝗣𝗵𝘆𝘀𝗶𝗰𝘀 𝗢𝗹𝘆𝗺𝗽𝗶𝗮𝗱 𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝗼𝗻𝘀<br><br>Our students recently participated in the Intermediate Physics Challenge (IPC) and Senior Physics Challenge (SPC) organised by the British Physics Olympiad. These rigorous competitions test fundamental physics principles and real-world applications, aiming to enhance students' lateral thinking skills and help them reach their full potential in physics.⚛<br><br>We are proud to announce that our students achieved the following awards:<br><br>🏅Gold Awards: Katherine Wen and Aaron Wang<br>🏅Silver Awards: Hayden Leung <br>🏅Bronze Awards: Isaiah Liu, Adam Pan, Jovan Wong, Purple Lau, Erin Cho, Iris Shi, and Ted Lo<br>Congratulations to all participants for their exceptional achievements and dedication!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7ceb3d254d08fa0c546b65a4dfcf1857.jpg" alt="655689537_1404389971701089_1688721808163289155_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="362">
+                        <time>25/03/2026</time>
+                        <h3>Our students recently represented STC at the CDNIS SDG Summit, centered on the theme: “Accelerate Your Action.” ✨<br><br>From the participants to the Impact Fair to the Organising Committee (shoutout to Cathy Yang, Isaiah Liu, Nikki Moy, and Zihan Liu), our community’s presence was felt throughout. <br><br>We are also incredibly proud of our student filmmakers🎬👏. Two projects exploring food insecurity (by Angela Mak, Hazel Lam, Themis Ho, Tiffany Zhong, and Grace Chung, Kari Wan, Rosanne Wong, Tabitha Tay) were shortlisted for the Docathon showcase, while a third documentary by Gabrielle Lee, Scarlett Man, and Teresa Rana provided a powerful lens on domestic labour during the summit’s workshops.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/4fadacdc8f1330d1d6e861597d5ef010.jpg" alt="658373204_1403511671788919_7511151309511047281_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="361">
+                        <time>24/03/2026</time>
+                        <h3>Sha Tin College had a spooky week with their production of The Addams Family👪.<br><br>The strong cast and crew of 40 have been working hard all year on the dark comic musical based on the much loved characters from the US TV show📺. The show deals with what it is like to be different in a world where this is frowned upon - although to the Addams it's everyone else who seem a little peculiar! The focus of this much loved Broadway hit, focusses on the mismatched alliance of Wednesday Addams and her new love - Lucas, who struggles to be accepted. <br><br>Well done to everyone involved for entertaining us - and embracing the ethos of the quirky crew that are the Addams! 🔥🔥🔥</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0b3f5f785749cf49f348a8fce0fc47af.jpg" alt="656291880_1402729268533826_3990527078838707402_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="360">
+                        <time>23/03/2026</time>
+                        <h3>Eight year 11 students competed in the City University of Hong Kong  Science Patent Challenge, and on Saturday 13 March, they made their final pitch and prototype demonstration in front of the judges. 👏<br><br>Congratulations on winning 1st place🏆! The students will now have a patent attorney register their invention of a smart helmet for firefighter safety. <br><br>✨Well done to Janey XING, Jolly WONG, Jodi LEUNG, Nicholas LEE, Suan LEE, Feifan ZHANG, Purple LAU, Andy PAN.👏👏👏</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/87a7ada89cc74d53f9ea3007ca599db9.jpg" alt="654976006_1401748371965249_3036649769058985449_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="359">
+                        <time>23/03/2026</time>
+                        <h3>On Thursday, 19 March, STC HE team hosted a Higher Education Q&A session for Year 12 parents and guardians, following the success of our recent HE Virtual Evening.🧑‍🏫<br><br>The morning session provided a valuable opportunity for attendees to ask follow-up questions about university applications in a more intimate setting. Participants came prepared after reviewing our comprehensive FAQs, with many submitting specific queries in advance to ensure detailed responses.🗣<br><br>We were delighted to welcome a representative from a Hong Kong university, who shared expert guidance on the HK application landscape—an increasingly popular pathway for our students. The insights into admissions processes complemented the broader application advice discussed.<br><br>The session reinforced our commitment to supporting families as they navigate the early stages of higher education research, ensuring everyone leaves with clearer next steps for the journey ahead.🛣</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/584d603a861662fdf349d042ad6add5a.jpg" alt="654807975_1401709235302496_487214562623967288_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="358">
+                        <time>21/03/2026</time>
+                        <h3>Kids’ Lit Quiz Champions!🏆<br><br>What a day of book‑loving brilliance!<br>🔹23 teams from Hong Kong and Macau battled it out in the morning heats.<br>🔹The top 6 teams faced off in a nail‑biting afternoon final.<br>🔹Our school entered 4 teams - and two made it all the way to the national<br>finals!<br><br>1st place: Lucas Hin (Y8); Lizzie Chiu (Y8); Jake Kim (Y7); and Ryan Zhou (Y7)<br>3rd place: William Chan, 8G1; Kairvi Kataria, 8D1; Christine Shi, 8P1; and Jayden Ng,<br>7D2.<br><br>Participating teams:<br>Abigail Tse (Y8); Celina Xue (Y8); Alva Lam (Y8); and Sophie Yip (Y7).<br>Veronica Lau (Y8); Jake Lam (Y8); Emma Yip (Y7); and Tyler Ding (Y7).<br><br>Now, our winning team is invited to New Zealand 🇳🇿 in July to represent Hong Kong<br>SAR at the World Championship, competing against the best from around the<br>world.<br>A huge shout‑out to all our winners and participants - you’ve made us so proud🔥!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/9af3b358fd41a5c86c44b3ea4a77d427.jpg" alt="654944185_1398990322241054_4831206154142097621_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="357">
+                        <time>20/03/2026</time>
+                        <h3>From 3D printing waste to New Design Frontiers🌟<br><br>Our Year 12 Design students are closing the loop on 3D printing waste! By shredding PLA waste into small chips and leveraging its thermo-softening properties, we are transforming "single-use" plastic into high-quality 3mm recycled sheets. <br><br>This inquiry unit blends material science with hands-on processing, challenging students to treat recycled plastic with the same technical rigor as industrial composites. With our new material we have called SHRED X, ready, we are moving into a material-led innovation project asking:  "What are the design opportunities that this newly developed material presents us with now?"💫</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7a3012fed5bbd17dab7958c1a8c3aa37.jpg" alt="654648654_1398960365577383_6709993888437049145_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="356">
+                        <time>19/03/2026</time>
+                        <h3>Big congratulations to our chess teams!🥳🥳<br><br>🎖U12 Section: Our Year 7 students took 2nd place!<br>🎖U18 Section: Year 8 and 9 students took 1st place!<br><br>Special mention to Lucas Leung (Y8) for placing 6th, Austin Tsui (Y9) 7th, Charles Tan (Y9) 8th, and Alwyn Liu (Y9) 15th in the U18 section.<br><br>Together with SJS, we proudly brought home the Dr. R. Lister Cup🏆, awarded based on results across all sections. <br><br>Well done to everyone who competed - your hard work and teamwork made us proud!💪</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/a349ff8a11e431a23157097d47329dfc.jpg" alt="653908623_1398181782321908_2427711344166466141_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="355">
+                        <time>18/03/2026</time>
+                        <h3>𝗜𝗕𝗗𝗣 𝗩𝗶𝘀𝘂𝗮𝗹 𝗔𝗿𝘁 𝗦𝗟/𝗛𝗟 𝗔𝗿𝘁 𝗘𝘅𝗵𝗶𝗯𝗶𝘁𝗶𝗼𝗻🎨<br><br>The IBDP Visual Art SL/HL Art Exhibition showcases a year and a half of dedicated effort by our talented students✨. This ambitious event features a variety of techniques and materials, highlighting each student's unique line of inquiry.🖌<br><br>Each exhibition space reflects remarkable independence, with students exploring their themes deeply. Accounting for 40% of their final grade, this exhibition not only showcases creativity but also celebrates their hard work.<br><br>Last Tuesday’s opening was a fantastic opportunity to honor their achievements and appreciate the vibrant range of artistic expressions on display.🎖</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/8fb11e81e3af339c5c16e15bc4b5edcb.jpg" alt="655237598_1397515629055190_3918284864960919126_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="364">
+                        <time>26/03/2026</time>
+                        <h3>We recently had the incredible opportunity to invite Dr. Marvin Chung from HKU for a Cast-Making Workshop!👨‍⚕<br><br>This was a "first-time" experience for most of the participants, and it was just as challenging as it was fun! The hands-on experience gave participants a glimpse into real orthopedic medical practice, aiming to guide those interested in a future medical career, whilst fostering laughter amongst themselves - especially seeing everyone walk away with their own casts. 🦾<br><br>A huge thank you to Dr. Marvin for inspiring our future medical professionals.✨</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/369a9146ce0f6189b984a9f4e8747738.jpg" alt="657144143_1404524175021002_4514909901035018431_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="363">
+                        <time>26/03/2026</time>
+                        <h3>𝗢𝘂𝘁𝘀𝘁𝗮𝗻𝗱𝗶𝗻𝗴 𝗔𝗰𝗵𝗶𝗲𝘃𝗲𝗺𝗲𝗻𝘁𝘀 𝗶𝗻 𝘁𝗵𝗲 𝗕𝗿𝗶𝘁𝗶𝘀𝗵 𝗣𝗵𝘆𝘀𝗶𝗰𝘀 𝗢𝗹𝘆𝗺𝗽𝗶𝗮𝗱 𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝗼𝗻𝘀<br><br>Our students recently participated in the Intermediate Physics Challenge (IPC) and Senior Physics Challenge (SPC) organised by the British Physics Olympiad. These rigorous competitions test fundamental physics principles and real-world applications, aiming to enhance students' lateral thinking skills and help them reach their full potential in physics.⚛<br><br>We are proud to announce that our students achieved the following awards:<br><br>🏅Gold Awards: Katherine Wen and Aaron Wang<br>🏅Silver Awards: Hayden Leung <br>🏅Bronze Awards: Isaiah Liu, Adam Pan, Jovan Wong, Purple Lau, Erin Cho, Iris Shi, and Ted Lo<br>Congratulations to all participants for their exceptional achievements and dedication!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7ceb3d254d08fa0c546b65a4dfcf1857.jpg" alt="655689537_1404389971701089_1688721808163289155_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="362">
+                        <time>25/03/2026</time>
+                        <h3>Our students recently represented STC at the CDNIS SDG Summit, centered on the theme: “Accelerate Your Action.” ✨<br><br>From the participants to the Impact Fair to the Organising Committee (shoutout to Cathy Yang, Isaiah Liu, Nikki Moy, and Zihan Liu), our community’s presence was felt throughout. <br><br>We are also incredibly proud of our student filmmakers🎬👏. Two projects exploring food insecurity (by Angela Mak, Hazel Lam, Themis Ho, Tiffany Zhong, and Grace Chung, Kari Wan, Rosanne Wong, Tabitha Tay) were shortlisted for the Docathon showcase, while a third documentary by Gabrielle Lee, Scarlett Man, and Teresa Rana provided a powerful lens on domestic labour during the summit’s workshops.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/4fadacdc8f1330d1d6e861597d5ef010.jpg" alt="658373204_1403511671788919_7511151309511047281_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="361">
+                        <time>24/03/2026</time>
+                        <h3>Sha Tin College had a spooky week with their production of The Addams Family👪.<br><br>The strong cast and crew of 40 have been working hard all year on the dark comic musical based on the much loved characters from the US TV show📺. The show deals with what it is like to be different in a world where this is frowned upon - although to the Addams it's everyone else who seem a little peculiar! The focus of this much loved Broadway hit, focusses on the mismatched alliance of Wednesday Addams and her new love - Lucas, who struggles to be accepted. <br><br>Well done to everyone involved for entertaining us - and embracing the ethos of the quirky crew that are the Addams! 🔥🔥🔥</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0b3f5f785749cf49f348a8fce0fc47af.jpg" alt="656291880_1402729268533826_3990527078838707402_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="360">
+                        <time>23/03/2026</time>
+                        <h3>Eight year 11 students competed in the City University of Hong Kong  Science Patent Challenge, and on Saturday 13 March, they made their final pitch and prototype demonstration in front of the judges. 👏<br><br>Congratulations on winning 1st place🏆! The students will now have a patent attorney register their invention of a smart helmet for firefighter safety. <br><br>✨Well done to Janey XING, Jolly WONG, Jodi LEUNG, Nicholas LEE, Suan LEE, Feifan ZHANG, Purple LAU, Andy PAN.👏👏👏</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/87a7ada89cc74d53f9ea3007ca599db9.jpg" alt="654976006_1401748371965249_3036649769058985449_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="359">
+                        <time>23/03/2026</time>
+                        <h3>On Thursday, 19 March, STC HE team hosted a Higher Education Q&A session for Year 12 parents and guardians, following the success of our recent HE Virtual Evening.🧑‍🏫<br><br>The morning session provided a valuable opportunity for attendees to ask follow-up questions about university applications in a more intimate setting. Participants came prepared after reviewing our comprehensive FAQs, with many submitting specific queries in advance to ensure detailed responses.🗣<br><br>We were delighted to welcome a representative from a Hong Kong university, who shared expert guidance on the HK application landscape—an increasingly popular pathway for our students. The insights into admissions processes complemented the broader application advice discussed.<br><br>The session reinforced our commitment to supporting families as they navigate the early stages of higher education research, ensuring everyone leaves with clearer next steps for the journey ahead.🛣</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/584d603a861662fdf349d042ad6add5a.jpg" alt="654807975_1401709235302496_487214562623967288_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="358">
+                        <time>21/03/2026</time>
+                        <h3>Kids’ Lit Quiz Champions!🏆<br><br>What a day of book‑loving brilliance!<br>🔹23 teams from Hong Kong and Macau battled it out in the morning heats.<br>🔹The top 6 teams faced off in a nail‑biting afternoon final.<br>🔹Our school entered 4 teams - and two made it all the way to the national<br>finals!<br><br>1st place: Lucas Hin (Y8); Lizzie Chiu (Y8); Jake Kim (Y7); and Ryan Zhou (Y7)<br>3rd place: William Chan, 8G1; Kairvi Kataria, 8D1; Christine Shi, 8P1; and Jayden Ng,<br>7D2.<br><br>Participating teams:<br>Abigail Tse (Y8); Celina Xue (Y8); Alva Lam (Y8); and Sophie Yip (Y7).<br>Veronica Lau (Y8); Jake Lam (Y8); Emma Yip (Y7); and Tyler Ding (Y7).<br><br>Now, our winning team is invited to New Zealand 🇳🇿 in July to represent Hong Kong<br>SAR at the World Championship, competing against the best from around the<br>world.<br>A huge shout‑out to all our winners and participants - you’ve made us so proud🔥!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/9af3b358fd41a5c86c44b3ea4a77d427.jpg" alt="654944185_1398990322241054_4831206154142097621_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="357">
+                        <time>20/03/2026</time>
+                        <h3>From 3D printing waste to New Design Frontiers🌟<br><br>Our Year 12 Design students are closing the loop on 3D printing waste! By shredding PLA waste into small chips and leveraging its thermo-softening properties, we are transforming "single-use" plastic into high-quality 3mm recycled sheets. <br><br>This inquiry unit blends material science with hands-on processing, challenging students to treat recycled plastic with the same technical rigor as industrial composites. With our new material we have called SHRED X, ready, we are moving into a material-led innovation project asking:  "What are the design opportunities that this newly developed material presents us with now?"💫</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7a3012fed5bbd17dab7958c1a8c3aa37.jpg" alt="654648654_1398960365577383_6709993888437049145_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="356">
+                        <time>19/03/2026</time>
+                        <h3>Big congratulations to our chess teams!🥳🥳<br><br>🎖U12 Section: Our Year 7 students took 2nd place!<br>🎖U18 Section: Year 8 and 9 students took 1st place!<br><br>Special mention to Lucas Leung (Y8) for placing 6th, Austin Tsui (Y9) 7th, Charles Tan (Y9) 8th, and Alwyn Liu (Y9) 15th in the U18 section.<br><br>Together with SJS, we proudly brought home the Dr. R. Lister Cup🏆, awarded based on results across all sections. <br><br>Well done to everyone who competed - your hard work and teamwork made us proud!💪</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/a349ff8a11e431a23157097d47329dfc.jpg" alt="653908623_1398181782321908_2427711344166466141_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="355">
+                        <time>18/03/2026</time>
+                        <h3>𝗜𝗕𝗗𝗣 𝗩𝗶𝘀𝘂𝗮𝗹 𝗔𝗿𝘁 𝗦𝗟/𝗛𝗟 𝗔𝗿𝘁 𝗘𝘅𝗵𝗶𝗯𝗶𝘁𝗶𝗼𝗻🎨<br><br>The IBDP Visual Art SL/HL Art Exhibition showcases a year and a half of dedicated effort by our talented students✨. This ambitious event features a variety of techniques and materials, highlighting each student's unique line of inquiry.🖌<br><br>Each exhibition space reflects remarkable independence, with students exploring their themes deeply. Accounting for 40% of their final grade, this exhibition not only showcases creativity but also celebrates their hard work.<br><br>Last Tuesday’s opening was a fantastic opportunity to honor their achievements and appreciate the vibrant range of artistic expressions on display.🎖</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/8fb11e81e3af339c5c16e15bc4b5edcb.jpg" alt="655237598_1397515629055190_3918284864960919126_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                    </div>
+        <div class="btns">
+            <button class="prev"></button>
+            <button class="next"></button>
+        </div>
+    </div>
+            <div class="lightbox" data-id="364">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>26/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>We recently had the incredible opportunity to invite Dr. Marvin Chung from HKU for a Cast-Making Workshop!👨‍⚕<br><br>This was a "first-time" experience for most of the participants, and it was just as challenging as it was fun! The hands-on experience gave participants a glimpse into real orthopedic medical practice, aiming to guide those interested in a future medical career, whilst fostering laughter amongst themselves - especially seeing everyone walk away with their own casts. 🦾<br><br>A huge thank you to Dr. Marvin for inspiring our future medical professionals.✨</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/369a9146ce0f6189b984a9f4e8747738.jpg" alt="657144143_1404524175021002_4514909901035018431_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/15fb8591dc9430170b136ea20db15f9c.jpg" alt="657379530_1404524208354332_6896292595558324541_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/33e0ed3ea2b80b20e46b309422b8f286.jpg" alt="657063235_1404524315020988_8815215127145040701_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/29b4cebef5538f60aa83733ee39a616e.jpg" alt="658876448_1404524148354338_4479238728661883650_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/1cd2888a4dfad76c1c7089bca2742191.jpg" alt="656922140_1404524238354329_8514175474461399595_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8f4f38c77cde185115caeb6ee3d30ab0.jpg" alt="658430301_1404524298354323_1275252221937368279_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/b6c64f80e1b85e6ed91d0103397216a0.jpg" alt="658906262_1404524335020986_1651712624344147075_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/6b2282a63d7ea24d98d0fb416f7f0385.jpg" alt="658164241_1404524295020990_5704662376423329422_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1422225421328788_1404559068350846" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1422225421328788_1404559068350846" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="363">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>26/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>𝗢𝘂𝘁𝘀𝘁𝗮𝗻𝗱𝗶𝗻𝗴 𝗔𝗰𝗵𝗶𝗲𝘃𝗲𝗺𝗲𝗻𝘁𝘀 𝗶𝗻 𝘁𝗵𝗲 𝗕𝗿𝗶𝘁𝗶𝘀𝗵 𝗣𝗵𝘆𝘀𝗶𝗰𝘀 𝗢𝗹𝘆𝗺𝗽𝗶𝗮𝗱 𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝗼𝗻𝘀<br><br>Our students recently participated in the Intermediate Physics Challenge (IPC) and Senior Physics Challenge (SPC) organised by the British Physics Olympiad. These rigorous competitions test fundamental physics principles and real-world applications, aiming to enhance students' lateral thinking skills and help them reach their full potential in physics.⚛<br><br>We are proud to announce that our students achieved the following awards:<br><br>🏅Gold Awards: Katherine Wen and Aaron Wang<br>🏅Silver Awards: Hayden Leung <br>🏅Bronze Awards: Isaiah Liu, Adam Pan, Jovan Wong, Purple Lau, Erin Cho, Iris Shi, and Ted Lo<br>Congratulations to all participants for their exceptional achievements and dedication!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/7ceb3d254d08fa0c546b65a4dfcf1857.jpg" alt="655689537_1404389971701089_1688721808163289155_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1422225421328788_1404457268361026" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1422225421328788_1404457268361026" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="362">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>25/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Our students recently represented STC at the CDNIS SDG Summit, centered on the theme: “Accelerate Your Action.” ✨<br><br>From the participants to the Impact Fair to the Organising Committee (shoutout to Cathy Yang, Isaiah Liu, Nikki Moy, and Zihan Liu), our community’s presence was felt throughout. <br><br>We are also incredibly proud of our student filmmakers🎬👏. Two projects exploring food insecurity (by Angela Mak, Hazel Lam, Themis Ho, Tiffany Zhong, and Grace Chung, Kari Wan, Rosanne Wong, Tabitha Tay) were shortlisted for the Docathon showcase, while a third documentary by Gabrielle Lee, Scarlett Man, and Teresa Rana provided a powerful lens on domestic labour during the summit’s workshops.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/4fadacdc8f1330d1d6e861597d5ef010.jpg" alt="658373204_1403511671788919_7511151309511047281_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8885ddd9a0e56d794d60eeece9c83fc7.jpg" alt="657754043_1403513195122100_1798982226819610946_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/1e4712ccae25a46d40481060550080c6.jpg" alt="656394225_1403513165122103_2962157094190469173_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/bb8ccb7fc5f4dc439ef5ea67f9ff5c35.jpg" alt="657157106_1403514161788670_3202523121069019421_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/bc88d337ac567e74b7ce5e768da7d28f.jpg" alt="656840961_1403514041788682_4329175140800231733_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1422225421328788_1403564761783610" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1422225421328788_1403564761783610" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="361">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>24/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Sha Tin College had a spooky week with their production of The Addams Family👪.<br><br>The strong cast and crew of 40 have been working hard all year on the dark comic musical based on the much loved characters from the US TV show📺. The show deals with what it is like to be different in a world where this is frowned upon - although to the Addams it's everyone else who seem a little peculiar! The focus of this much loved Broadway hit, focusses on the mismatched alliance of Wednesday Addams and her new love - Lucas, who struggles to be accepted. <br><br>Well done to everyone involved for entertaining us - and embracing the ethos of the quirky crew that are the Addams! 🔥🔥🔥</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/0b3f5f785749cf49f348a8fce0fc47af.jpg" alt="656291880_1402729268533826_3990527078838707402_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/82495abaa130667ff96b20c026b94500.jpg" alt="658420029_1402728305200589_2630708804507754234_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/908d8ba2f1a2306d8f4be857f9b380d5.jpg" alt="656688795_1402728965200523_3722912150480939171_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/48ec70ab09b33f1b40617b38cad95172.jpg" alt="656262393_1402728428533910_1768218060882685265_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/2c836144231e6d00d95d79eb70b12ae9.jpg" alt="656727179_1402727818533971_3398436623932648882_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c6d5c0bb0c91603afb8d0ae29fbec9de.jpg" alt="656779000_1402727785200641_2656392401662463629_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/08f01d76f4cafb04b16b436f0c7efd94.jpg" alt="656413052_1402727788533974_7888868649923068940_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/aeb1366d00e5f2126ba5aee7977e3035.jpg" alt="656930203_1402727941867292_1002430767446994812_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f1e365cc6b92d28fa3dc8ddf9c5d70a2.jpg" alt="657067228_1402727895200630_3472661540348423797_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c40b342789afae2271f0e272e1c9e287.jpg" alt="657048966_1402728401867246_1317924872082239411_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/364c350c2ed3bd871af4a60e8f2ad8b6.jpg" alt="657424474_1402728275200592_1900510113808553294_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/bb94d9c01ce75f1c5b166d9da7ffe402.jpg" alt="656487380_1402728105200609_7089341871896155943_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1422225421328788_1402730445200375" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1422225421328788_1402730445200375" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="360">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>23/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Eight year 11 students competed in the City University of Hong Kong  Science Patent Challenge, and on Saturday 13 March, they made their final pitch and prototype demonstration in front of the judges. 👏<br><br>Congratulations on winning 1st place🏆! The students will now have a patent attorney register their invention of a smart helmet for firefighter safety. <br><br>✨Well done to Janey XING, Jolly WONG, Jodi LEUNG, Nicholas LEE, Suan LEE, Feifan ZHANG, Purple LAU, Andy PAN.👏👏👏</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/87a7ada89cc74d53f9ea3007ca599db9.jpg" alt="654976006_1401748371965249_3036649769058985449_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1422225421328788_1401880985285321" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1422225421328788_1401880985285321" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="359">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>23/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>On Thursday, 19 March, STC HE team hosted a Higher Education Q&A session for Year 12 parents and guardians, following the success of our recent HE Virtual Evening.🧑‍🏫<br><br>The morning session provided a valuable opportunity for attendees to ask follow-up questions about university applications in a more intimate setting. Participants came prepared after reviewing our comprehensive FAQs, with many submitting specific queries in advance to ensure detailed responses.🗣<br><br>We were delighted to welcome a representative from a Hong Kong university, who shared expert guidance on the HK application landscape—an increasingly popular pathway for our students. The insights into admissions processes complemented the broader application advice discussed.<br><br>The session reinforced our commitment to supporting families as they navigate the early stages of higher education research, ensuring everyone leaves with clearer next steps for the journey ahead.🛣</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/584d603a861662fdf349d042ad6add5a.jpg" alt="654807975_1401709235302496_487214562623967288_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ae89343bd004ad32d66fc79e245fead0.jpg" alt="655728450_1401710261969060_6056392215586680167_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/7eaa88fe6069542b4b8985eb2a66b583.jpg" alt="657043049_1401711555302264_1814155616051030953_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1422225421328788_1401780351962051" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1422225421328788_1401780351962051" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="358">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>21/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Kids’ Lit Quiz Champions!🏆<br><br>What a day of book‑loving brilliance!<br>🔹23 teams from Hong Kong and Macau battled it out in the morning heats.<br>🔹The top 6 teams faced off in a nail‑biting afternoon final.<br>🔹Our school entered 4 teams - and two made it all the way to the national<br>finals!<br><br>1st place: Lucas Hin (Y8); Lizzie Chiu (Y8); Jake Kim (Y7); and Ryan Zhou (Y7)<br>3rd place: William Chan, 8G1; Kairvi Kataria, 8D1; Christine Shi, 8P1; and Jayden Ng,<br>7D2.<br><br>Participating teams:<br>Abigail Tse (Y8); Celina Xue (Y8); Alva Lam (Y8); and Sophie Yip (Y7).<br>Veronica Lau (Y8); Jake Lam (Y8); Emma Yip (Y7); and Tyler Ding (Y7).<br><br>Now, our winning team is invited to New Zealand 🇳🇿 in July to represent Hong Kong<br>SAR at the World Championship, competing against the best from around the<br>world.<br>A huge shout‑out to all our winners and participants - you’ve made us so proud🔥!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/9af3b358fd41a5c86c44b3ea4a77d427.jpg" alt="654944185_1398990322241054_4831206154142097621_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f737ac94e648ff9b36a0d38f21ea9609.jpg" alt="654840012_1398991398907613_2299725287368873184_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e98ff4b1f7ff60bcd8ca747bfc051126.jpg" alt="655278804_1398990452241041_1233594104137805892_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e369bb8f040fbec2ab14907a774413b0.jpg" alt="655235462_1398990435574376_8415555227227965599_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1422225421328788_1400030098803743" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1422225421328788_1400030098803743" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="357">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>20/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>From 3D printing waste to New Design Frontiers🌟<br><br>Our Year 12 Design students are closing the loop on 3D printing waste! By shredding PLA waste into small chips and leveraging its thermo-softening properties, we are transforming "single-use" plastic into high-quality 3mm recycled sheets. <br><br>This inquiry unit blends material science with hands-on processing, challenging students to treat recycled plastic with the same technical rigor as industrial composites. With our new material we have called SHRED X, ready, we are moving into a material-led innovation project asking:  "What are the design opportunities that this newly developed material presents us with now?"💫</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/7a3012fed5bbd17dab7958c1a8c3aa37.jpg" alt="654648654_1398960365577383_6709993888437049145_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/d11abc7ee89d064666f9fdace135fd3c.jpg" alt="655348566_1398960295577390_2620453641381108636_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/65092e65cb34c2a37909fa3c83faf135.jpg" alt="654783600_1398960342244052_2578324666267041356_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/2ab3f5a5a76bcc1c9d992e3a54f96ca2.jpg" alt="654997929_1398960488910704_731984478886205365_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c7d568ad60de53bfc55636e02742a7b7.jpg" alt="655955735_1398960338910719_815179935813356783_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ce095140ea023e452952016102c872fc.jpg" alt="654202399_1398960398910713_114019567004063999_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/fd7cd4baa2aa5d4143ce1fdd405a7947.jpg" alt="654732620_1398961575577262_7747245237993383129_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e244dd7b9bf53985d5a6c6b345b19a98.jpg" alt="654202837_1398961632243923_765446232835931902_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c188d159f26f15d955f3c14a599ba218.jpg" alt="654437587_1398961628910590_1734787169810225247_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/24c1d52e54d7491e452e656d424948ec.jpg" alt="654713265_1398961625577257_2106595766079627547_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1422225421328788_1399036312236455" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1422225421328788_1399036312236455" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="356">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>19/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>Big congratulations to our chess teams!🥳🥳<br><br>🎖U12 Section: Our Year 7 students took 2nd place!<br>🎖U18 Section: Year 8 and 9 students took 1st place!<br><br>Special mention to Lucas Leung (Y8) for placing 6th, Austin Tsui (Y9) 7th, Charles Tan (Y9) 8th, and Alwyn Liu (Y9) 15th in the U18 section.<br><br>Together with SJS, we proudly brought home the Dr. R. Lister Cup🏆, awarded based on results across all sections. <br><br>Well done to everyone who competed - your hard work and teamwork made us proud!💪</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/a349ff8a11e431a23157097d47329dfc.jpg" alt="653908623_1398181782321908_2427711344166466141_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1422225421328788_1398182572321829" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1422225421328788_1398182572321829" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="355">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>18/03/2026</time>
+                    <div class="lightbox-content">
+                                                    <h3>𝗜𝗕𝗗𝗣 𝗩𝗶𝘀𝘂𝗮𝗹 𝗔𝗿𝘁 𝗦𝗟/𝗛𝗟 𝗔𝗿𝘁 𝗘𝘅𝗵𝗶𝗯𝗶𝘁𝗶𝗼𝗻🎨<br><br>The IBDP Visual Art SL/HL Art Exhibition showcases a year and a half of dedicated effort by our talented students✨. This ambitious event features a variety of techniques and materials, highlighting each student's unique line of inquiry.🖌<br><br>Each exhibition space reflects remarkable independence, with students exploring their themes deeply. Accounting for 40% of their final grade, this exhibition not only showcases creativity but also celebrates their hard work.<br><br>Last Tuesday’s opening was a fantastic opportunity to honor their achievements and appreciate the vibrant range of artistic expressions on display.🎖</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/8fb11e81e3af339c5c16e15bc4b5edcb.jpg" alt="655237598_1397515629055190_3918284864960919126_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/6b98b52d292b925a3156be78c7d1ab51.jpg" alt="654292334_1397515799055173_6891502790742057433_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/9db56be610c29d4d73a45c92cba4c803.jpg" alt="653160652_1397517292388357_4331268733669629829_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/904cb06c4a8a2647178074ad26d69f8e.jpg" alt="654438355_1397516972388389_5430214683754451990_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3b62fa749a16959411f237217a05fd72.jpg" alt="654425127_1397515899055163_8100042734448023257_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/76aa825811ad8fc2394b42b7e06d6932.jpg" alt="654192976_1397515972388489_5724172263777079540_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/695ea1694192e4a0cd6552311483e47b.jpg" alt="653701305_1397517035721716_990744399114087286_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3ef89987e010d8c474e63841f25c0cc9.jpg" alt="654070760_1397517009055052_636403158712666424_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/78f2cc0fde0fa1a9540acf8236038ede.jpg" alt="653655050_1397517069055046_2747941657044667454_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/e90d3da00e95a662d086d7a70cc15a39.jpg" alt="653020476_1397515925721827_5789210680335437727_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/1c1c518b7f4d6cfc960aa525747d9d82.jpg" alt="654859429_1397517139055039_4358875869020146263_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/59e9aaffbbf98c41eaaa6c1685132b82.jpg" alt="653389669_1397516942388392_3980887922946983660_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1422225421328788_1397517775721642" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1422225421328788_1397517775721642" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section7').data('total'));
+            let slider_loop = ori_total >= 5 ? true : false;
+            $('.record-slider', '#section7').Slider({
+                slides: '.post-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total + 1);
+                    }
+                }
+            });
+
+            $('.post', '#section7').click(function() {
+                $('.lightbox[data-id=' + $(this).data('id') + ']').addClass('show');
+                disableScroll();
+            });
+
+            $('.lightbox .gallery', '#section7').Slider({
+                slides: '.gallery-item',
+                fixedSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    let videos = $('.slider video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    slider.parent().find('.slider-pager').html(current_page + ' / ' + total_page);
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(total_page > 1) {
+                        slider.parent().find('.slider-pager').html('1 / ' + total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+	</section>
+	<footer>
+		<div class="top-container">
+			<div class="container">
+				<div class="up-container">
+											<a href="/en/" class="logo">
+							<img src="/cache/img/311667929c16b554a6b88345a499acbc.png" alt="ESF Sha Tin College-rw" loading="lazy" height="140" />						</a>
+																<nav class="social">
+							<ul>
+																<li>
+									<a href="https://www.instagram.com/shatincollege_hk/" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3a3b7e3.svg" width="40" height="40" />
+									</a>
+								</li>
+																<li>
+									<a href="https://www.facebook.com/ESFShaTinCollege" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3e297d1.svg" width="40" height="40" />
+									</a>
+								</li>
+																<li>
+									<a href="https://www.linkedin.com/company/sha-tin-college" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/6791007ad97e2.svg" width="40" height="40" />
+									</a>
+								</li>
+															</ul>
+						</nav>
+				 					</div>
+				<div class="down-container">
+					<div class="left-container">
+													<a href="https://maps.app.goo.gl/AxaNLW41Wcjot6iD7" target="_blank" rel="nofollow" class="map">
+								<img src="/cache/img/d3bb0fb6bbecdff65cd550b5e5737091.png" alt="擷取" loading="lazy" width="714" height="536" />							</a>
+												<div class="contact">
+							<h2>Contact Information</h2>
+																								<a href="https://shatincollege.esf.edu.hk/en/admissions/contact_admissions/" class="tel">(+852) 2699 1811</a>
+																<div></div>
+														 							<a href="mailto:info@shatincollege.edu.hk" class="email">info@shatincollege.edu.hk</a>
+														 							<p class="address">No. 3 Lai Wo Lane, Fo Tan, Sha Tin, New Territories, Hong Kong 香港沙田穗禾路麗禾里3號</p>
+													</div>
+											</div>
+					<div class="right-container">
+												<nav class="menu2">
+							<ul>
+								<li>
+									<h2>Navigation</h2>
+								</li>
+																	<li>
+										<a href="https://shatincollege.esf.edu.hk/en/about_us/principals_welcome/">About Us</a>
+									</li>
+																	<li>
+										<a href="https://shatincollege.esf.edu.hk/en/outstanding_education/academic_curriculum/academic_pathway/">Outstanding Education</a>
+									</li>
+																	<li>
+										<a href="https://shatincollege.esf.edu.hk/en/outstanding_experiences/campus/">Outstanding Experiences</a>
+									</li>
+																	<li>
+										<a href="https://shatincollege.esf.edu.hk/en/outstanding_people/leadership_team/">Outstanding People</a>
+									</li>
+																	<li>
+										<a href="https://shatincollege.esf.edu.hk/en/admissions/admissions_overview/">Admissions</a>
+									</li>
+																	<li>
+										<a href="https://shatincollege.esf.edu.hk/en/WorkWithUs/">Work With Us</a>
+									</li>
+															</ul>
+						</nav>
+																		<nav class="menu3">
+							<ul>
+								<li>
+									<h2>Quick Links</h2>
+								</li>
+																	<li>
+										<a href="https://join-us.esf.edu.hk/" target="_blank" rel="nofollow">About ESF</a>
+									</li>
+																	<li>
+										<a href="https://www.esfexplore.org.hk/" target="_blank" rel="nofollow">ESF Explore</a>
+									</li>
+																	<li>
+										<a href="https://shatincollege.esf.edu.hk/upload/files/1/file/67bc3909001d9.pdf">School Calendar</a>
+									</li>
+															</ul>
+						</nav>
+											</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-container">			
+			<div class="container">
+				<div class="wrapper">
+					<p class="copyright">Copyright © English Schools Foundation. Powered by <a href="//www.anglia.com.hk" target="_blank">ANGLIA</a>.</p>
+					<a href="/en/sitemap/" class="sitemap">Sitemap</a>
+				</div>
+								<nav class="logo">
+			 		<ul>
+			 						 			<li>
+			 				<a>
+								<img src="/upload/files/1/logo4/660fd31d2b17e.png" height="131" />
+							</a>
+			 			</li>
+			 						 			<li>
+			 				<a>
+								<img src="/upload/files/1/logo4/660fd31f274d4.png" height="131" />
+							</a>
+			 			</li>
+			 						 			<li>
+			 				<a>
+								<img src="/upload/files/1/logo4/6792510c95adc.png" height="131" />
+							</a>
+			 			</li>
+			 						 		</ul>
+			 	</nav>
+							</div>
+		</div>
+	</footer>
+	<button id="back-to-top"></button>
+			<div id="floating">
+							<a class="logo">
+					<img src="/cache/img/af4cb5f7323a620a1f2eb4a279c94146.png" alt="Sha Tin College" loading="lazy" width="62" height="53" />				</a>
+																				<a class="bg-colour1"  href="https://join-us.esf.edu.hk/admissions-primary-secondary/" target="_blank" rel="nofollow">
+													<img src="/upload/shortcut/1/icon/660fd9ba6ff5d.svg" width="60" height="60" />
+												<span>Apply</span>
+					</a>
+														<a class="bg-colour1"  href="tel:85226991811">
+													<img src="/upload/shortcut/2/icon/660fd9ca7b6eb.svg" width="60" height="60" />
+												<span>Call</span>
+					</a>
+														<a class="bg-colour1"  href="https://shatincollege.esf.edu.hk/en/enquiry/?SchoolCode=SC">
+													<img src="/upload/shortcut/3/icon/660fd9db298ad.svg" width="60" height="60" />
+												<span>Enquire</span>
+					</a>
+									</div>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#floating').addClass('animate');
+			});
+		</script>
+				<div id="accept-cookies">
+			<article class="editor"><p>Welcome and please be advised that ESF uses cookies. By accessing an ESF, ESL or PTA web site and other online ESF services, such as ESF&rsquo;s mobile app, users agree that ESF can store and access cookies, IP addresses and use other methods in order to collect website usage data, and improve user&rsquo;s online experience. By continuing to access this web site, users agree to the use of cookies, which is handled in accordance to the ESF Data Privacy Policy. Information collected via cookies is handled in accordance with the ESF Personal Data Handling Policy and its related Personal Information Collection Statements (&ldquo;PICS&rdquo;). A copy of the PICS can be found on the ESF web site.</p></article>
+			<div class="buttons">
+				<button type="" class="accept">Accept</button>			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('button', '#accept-cookies').click(function() {
+					$('#accept-cookies').remove();
+					$.ajax({
+						url: genurl('cookies', 'main'),
+						type: 'post',
+						data: {
+							accept: 'y'
+						},
+						success: function(response) {
+						},
+						async: false
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1362 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <title>David Li Kwok Po</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!--   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ -->
+    <meta http-equiv="imagetoolbar" content="no" />
+
+    <meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width" />
+
+    <meta name="google-site-verification" content="qIRw6GKIxtDhXo9Hu6LQ47L3fki7rHXLjuGkBcNytQY" />
+
+    <link rel="canonical" href="http://www.hkmadavidli.edu.hk/favicon.ico" /> 
+
+    
+    
+    <link rel="alternate" href="http://www.hkmadavidli.edu.hk/en/favicon.ico/" hreflang="en-hk" />
+
+    
+    
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <link rel="apple-touch-icon" href="img/iphone-icon.png" />
+
+    <link rel="apple-touch-icon-precomposed" href="img/iphone-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/myajaxFrom.css" />   
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.restable.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/colorbox.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/jquery-confirm.css" />
+
+    
+    <link rel="stylesheet" type="text/css" href="css/favicon.ico/main" />
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.restable.js"></script>
+
+    <script type="text/javascript" src="js/form.min.js"></script>
+
+    <script type="text/javascript" src="js/colorbox.js"></script>
+
+    <script type="text/javascript" src="js/jquery-confirm.js"></script>
+
+    <script type="text/javascript" src="js/lang.js"></script>
+
+    <script type="text/javascript" src="js/function.js"></script>
+
+    
+    <script type="text/javascript" src="js/init.js?t=90c1d1627ef07bc004adf6b88b52eae6"></script>
+
+    <!--[if lte IE 8]>
+
+    <script type="text/javascript" src="js/html5.js"></script>
+
+    <![endif]-->
+
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJBXFGHGQ6"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-CJBXFGHGQ6'); </script>
+	<script>
+		$(document).ready(function(){
+			$('.pulldown .links_container .link_cell .arrow').on('click', function(){
+				$(this).parents('.link_cell').toggleClass('open');
+			})
+			$('#header2 .menu').on('click', function(){
+				$('#header2').addClass('open');
+				$('html').addClass('noscroll')
+			});
+			$('.pulldown .close_but').on('click', function(){
+				$('#header2').removeClass('open');
+				$('html').removeClass('noscroll')
+			});
+		})
+		$(window).on('resize', function(){
+				$('#header2').removeClass('open');
+				$('html').removeClass('noscroll')
+
+		})
+	</script>
+
+</head>
+
+<body>
+
+    <div id="device-menu-container">
+
+        <ul id="device-menu">
+
+            <li class="device-menu-item">
+
+                
+            </li>
+
+            
+
+            
+            <li class="device-menu-item">
+
+                
+                <a class="device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/home/">
+
+                    <span>Home</span>
+
+                </a>
+
+                
+
+
+                
+            </li>
+
+            
+            <li class="device-menu-item">
+
+                
+                <a class="device-menu-item-link device-menu-item-link-2">
+
+                    <span>About DLKP</span>
+
+                    <div class="device-menu-item-arrow">
+
+                        <img src="img/header/arrow_menu.png"/>
+
+                    </div>
+
+                </a>
+
+                
+
+
+                
+                <ul class="sub-device-menu">
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/our_college/principals_words/">
+
+                        <span>Principal’s Words</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/our_college/mission_and_vision/">
+
+                        <span>Mission and Vision</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/our_college/imc/">
+
+                        <span>IMC</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/our_college/organization_chart/">
+
+                        <span>Organization Chart</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/our_college/school_documents/">
+
+                        <span>School Documents</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/our_college/school_calendar/">
+
+                        <span>School Calendar</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/our_college/school_song/">
+
+                        <span>School Song</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/our_college/parent_resources/">
+
+                        <span>Parent Resources</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://hkmadlkpcpta.wixsite.com/lkppta13" target="_blank">
+
+                        <span>Parent-Teacher Association</span>
+
+                    </a>
+
+                </li>
+
+                
+                </ul>
+
+                
+            </li>
+
+            
+            <li class="device-menu-item">
+
+                
+                <a class="device-menu-item-link device-menu-item-link-2">
+
+                    <span>Academic</span>
+
+                    <div class="device-menu-item-arrow">
+
+                        <img src="img/header/arrow_menu.png"/>
+
+                    </div>
+
+                </a>
+
+                
+
+
+                
+                <ul class="sub-device-menu">
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/academic/curriculum/">
+
+                        <span>Curriculum</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/academic/key_learning_areas/">
+
+                        <span>Key Learning Areas</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/academic/enrichment_programme/">
+
+                        <span>Enrichment Programme</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/academic/dear/">
+
+                        <span>DEAR</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="https://libraryhkmadavidli.weebly.com/" target="_blank">
+
+                        <span>School Library</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/academic/class_structure/">
+
+                        <span>Class Structure</span>
+
+                    </a>
+
+                </li>
+
+                
+                </ul>
+
+                
+            </li>
+
+            
+            <li class="device-menu-item">
+
+                
+                <a class="device-menu-item-link device-menu-item-link-2">
+
+                    <span>Personal Development</span>
+
+                    <div class="device-menu-item-arrow">
+
+                        <img src="img/header/arrow_menu.png"/>
+
+                    </div>
+
+                </a>
+
+                
+
+
+                
+                <ul class="sub-device-menu">
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/personal_development/guidance_counseling/">
+
+                        <span>Guidance & Counseling</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/personal_development/discipline/">
+
+                        <span>Discipline</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/personal_development/extra_curricular_activities/">
+
+                        <span>Extra Curricular Activities</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://careers.hkmadavidli.edu.hk/en/" target="_blank">
+
+                        <span>Careers</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/personal_development/community_service/">
+
+                        <span>Community Service</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/personal_development/study_tours/">
+
+                        <span>Study Tours</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/personal_development/school_counselor/">
+
+                        <span>School Counselor</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/personal_development/student_council/">
+
+                        <span>Student Council</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/personal_development/green_education/">
+
+                        <span>Green Education</span>
+
+                    </a>
+
+                </li>
+
+                
+                </ul>
+
+                
+            </li>
+
+            
+            <li class="device-menu-item">
+
+                
+                <a class="device-menu-item-link device-menu-item-link-2">
+
+                    <span>Admission</span>
+
+                    <div class="device-menu-item-arrow">
+
+                        <img src="img/header/arrow_menu.png"/>
+
+                    </div>
+
+                </a>
+
+                
+
+
+                
+                <ul class="sub-device-menu">
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/admission/s1_admission/">
+
+                        <span>S1 Admission</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/admission/admission_to_other_forms/">
+
+                        <span>Admission to Other Forms</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/admission/school_fees/">
+
+                        <span>School Fees</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/admission/scholarships/">
+
+                        <span>Scholarships</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/admission/financial_assistance_scheme/">
+
+                        <span>Financial Assistance Scheme</span>
+
+                    </a>
+
+                </li>
+
+                
+                </ul>
+
+                
+            </li>
+
+            
+            <li class="device-menu-item">
+
+                
+                <a class="device-menu-item-link device-menu-item-link-2">
+
+                    <span>Achievements</span>
+
+                    <div class="device-menu-item-arrow">
+
+                        <img src="img/header/arrow_menu.png"/>
+
+                    </div>
+
+                </a>
+
+                
+
+
+                
+                <ul class="sub-device-menu">
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/achievements/students_achievements/">
+
+                        <span>Students' Achievements</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/achievements/public_examination_results/">
+
+                        <span>Public Examination Results</span>
+
+                    </a>
+
+                </li>
+
+                
+                </ul>
+
+                
+            </li>
+
+            
+            <li class="device-menu-item">
+
+                
+                <a class="device-menu-item-link device-menu-item-link-2">
+
+                    <span>Latest News</span>
+
+                    <div class="device-menu-item-arrow">
+
+                        <img src="img/header/arrow_menu.png"/>
+
+                    </div>
+
+                </a>
+
+                
+
+
+                
+                <ul class="sub-device-menu">
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/news/hot_news/">
+
+                        <span>Hot News</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/news/media_coverage/">
+
+                        <span>Media Coverage</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/news/photo/">
+
+                        <span>Photo</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/news/video/">
+
+                        <span>Video</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/news/college_publications/">
+
+                        <span>College Publications</span>
+
+                    </a>
+
+                </li>
+
+                
+                </ul>
+
+                
+            </li>
+
+            
+            <li class="device-menu-item">
+
+                
+                <a class="device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/gallery/">
+
+                    <span>Gallery</span>
+
+                </a>
+
+                
+
+
+                
+            </li>
+
+            
+            <li class="device-menu-item">
+
+                
+                <a class="device-menu-item-link device-menu-item-link-2">
+
+                    <span>Contact</span>
+
+                    <div class="device-menu-item-arrow">
+
+                        <img src="img/header/arrow_menu.png"/>
+
+                    </div>
+
+                </a>
+
+                
+
+
+                
+                <ul class="sub-device-menu">
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/contact/school_information/">
+
+                        <span>School Information</span>
+
+                    </a>
+
+                </li>
+
+                
+                <li class="sub-device-menu-item">
+
+                    
+                    <div class="sub-device-menu-item-line"></div>
+
+                    
+                    <a class="sub-device-menu-item-link"  href="http://www.hkmadavidli.edu.hk/contact/complaints_handling_mechanism/">
+
+                        <span>Complaints Handling Mechanism</span>
+
+                    </a>
+
+                </li>
+
+                
+                </ul>
+
+                
+            </li>
+
+                    </ul>
+    </div>
+    <div id="wrapper">
+
+        <div id="header2">
+			<div class="container">
+				<div class="left">
+					<a href="http://www.hkmadavidli.edu.hk/" class="logo">
+													<img src="img/?hash=c6657df0a208732f4ca6f0a25c248b77.png" alt="" width="380" height="133" />											</a>
+				</div><div class="right">
+					<div class="top">
+						<div class="top_wrapper">
+							<div class="links_container">
+								<div class="link_cell ">
+									<a href="http://www.hkmadavidli.edu.hk/" class="link ">Home</a>
+								</div>
+																<div class="link_cell">
+									<a  href="http://eclass2.hkmadavidli.edu.hk/templates/" target="_blank" class="link" target="_blank">eClass</a>
+								</div>
+																								<div class="link_cell">
+									<a  href="https://classroom.google.com/" target="_blank" class="link">Google Classroom</a>
+								</div>
+															</div><div class="social">
+																	<a class="social_link" href="https://www.facebook.com" target="_blank" style="background-image:url('/upload/page/1/social2/68f75e0d7249d.png')"></a>
+															</div>
+						</div>
+					</div>
+					<div class="bot">
+						<div class="bot_wrapper">
+							<div class="links_container">
+																<div class="link_cell ">
+
+									<a href="http://www.hkmadavidli.edu.hk/our_college/principals_words/" class="link">About DLKP</a>
+																			<div class="child_container">
+											<div class="child_wrapper">
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/our_college/principals_words/" class="child_link">Principal’s Words</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/our_college/mission_and_vision/" class="child_link">Mission and Vision</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/our_college/imc/" class="child_link">IMC</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/our_college/organization_chart/" class="child_link">Organization Chart</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/our_college/school_documents/" class="child_link">School Documents</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/our_college/school_calendar/" class="child_link">School Calendar</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/our_college/school_song/" class="child_link">School Song</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/our_college/parent_resources/" class="child_link">Parent Resources</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://hkmadlkpcpta.wixsite.com/lkppta13" target="_blank" class="child_link">Parent-Teacher Association</a>
+													</div>
+																							</div>
+										</div>
+																	</div>
+																<div class="link_cell ">
+
+									<a href="http://www.hkmadavidli.edu.hk/admission/s1_admission/" class="link">Admission</a>
+																			<div class="child_container">
+											<div class="child_wrapper">
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/admission/s1_admission/" class="child_link">S1 Admission</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/admission/admission_to_other_forms/" class="child_link">Admission to Other Forms</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/admission/school_fees/" class="child_link">School Fees</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/admission/scholarships/" class="child_link">Scholarships</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/admission/financial_assistance_scheme/" class="child_link">Financial Assistance Scheme</a>
+													</div>
+																							</div>
+										</div>
+																	</div>
+																<div class="link_cell ">
+
+									<a href="http://www.hkmadavidli.edu.hk/academic/curriculum/" class="link">Academic</a>
+																			<div class="child_container">
+											<div class="child_wrapper">
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/academic/curriculum/" class="child_link">Curriculum</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/academic/key_learning_areas/" class="child_link">Key Learning Areas</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/academic/enrichment_programme/" class="child_link">Enrichment Programme</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/academic/dear/" class="child_link">DEAR</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="https://libraryhkmadavidli.weebly.com/" target="_blank" class="child_link">School Library</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/academic/class_structure/" class="child_link">Class Structure</a>
+													</div>
+																							</div>
+										</div>
+																	</div>
+																<div class="link_cell ">
+
+									<a href="http://www.hkmadavidli.edu.hk/personal_development/guidance_counseling/" class="link">Personal Development</a>
+																			<div class="child_container">
+											<div class="child_wrapper">
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/personal_development/guidance_counseling/" class="child_link">Guidance & Counseling</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/personal_development/discipline/" class="child_link">Discipline</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/personal_development/extra_curricular_activities/" class="child_link">Extra Curricular Activities</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://careers.hkmadavidli.edu.hk/en/" target="_blank" class="child_link">Careers</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/personal_development/community_service/" class="child_link">Community Service</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/personal_development/study_tours/" class="child_link">Study Tours</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/personal_development/school_counselor/" class="child_link">School Counselor</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/personal_development/student_council/" class="child_link">Student Council</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/personal_development/green_education/" class="child_link">Green Education</a>
+													</div>
+																							</div>
+										</div>
+																	</div>
+																<div class="link_cell ">
+
+									<a href="http://www.hkmadavidli.edu.hk/news/hot_news/" class="link">Latest News</a>
+																			<div class="child_container">
+											<div class="child_wrapper">
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/news/hot_news/" class="child_link">Hot News</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/news/photo/" class="child_link">Photo</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/news/video/" class="child_link">Video</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/news/college_publications/" class="child_link">College Publications</a>
+													</div>
+																							</div>
+										</div>
+																	</div>
+																<div class="link_cell ">
+
+									<a href="http://www.hkmadavidli.edu.hk/achievements/students_achievements/" class="link">Achievements</a>
+																			<div class="child_container">
+											<div class="child_wrapper">
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/achievements/students_achievements/" class="child_link">Students' Achievements</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/achievements/public_examination_results/" class="child_link">Public Examination Results</a>
+													</div>
+																							</div>
+										</div>
+																	</div>
+																<div class="link_cell ">
+
+									<a href="http://www.hkmadavidli.edu.hk/contact/school_information/" class="link">Contact</a>
+																			<div class="child_container">
+											<div class="child_wrapper">
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/contact/school_information/" class="child_link">School Information</a>
+													</div>
+																									<div class="child_link_cell">
+														<a  href="http://www.hkmadavidli.edu.hk/contact/complaints_handling_mechanism/" class="child_link">Complaints Handling Mechanism</a>
+													</div>
+																							</div>
+										</div>
+																	</div>
+															</div>
+						</div>
+					</div>
+				</div><a href="javascript:void(0)" class="menu"></a>
+			</div>
+        </div>
+		<div class="pulldown">
+			<div class="pulldown_head">
+				<a href="http://www.hkmadavidli.edu.hk/" class="logo"><img src="img/?hash=e66c554b8257e1faaa4e53f5ea0fd6df.png" alt="" width="380" height="133" /></a>
+				<a href="javascript:void(0)" class="close_but"></a>
+			</div>
+			<div class="extra_link">
+								<div class="link_cell">
+					<a  href="http://eclass2.hkmadavidli.edu.hk/templates/" target="_blank" class="link">eClass</a>
+				</div>
+												<div class="link_cell">
+					<a  href="https://classroom.google.com/" target="_blank" class="link">Google Classroom</a>
+				</div>
+							</div>
+			<div class="links_container">
+								<div class="link_cell ">
+					<a href="http://www.hkmadavidli.edu.hk/" class="link 1 0">Home</a>
+									</div>
+								<div class="link_cell ">
+					<a href="http://www.hkmadavidli.edu.hk/our_college/principals_words/" class="link 2 0">About DLKP</a>
+											<a href="javascript:void(0)" class="arrow"></a>
+						<div class="child_container">
+							<div class="child_wrapper">
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/our_college/principals_words/"  class="child_link ">Principal’s Words</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/our_college/mission_and_vision/"  class="child_link ">Mission and Vision</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/our_college/imc/"  class="child_link ">IMC</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/our_college/organization_chart/"  class="child_link ">Organization Chart</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/our_college/school_documents/"  class="child_link ">School Documents</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/our_college/school_calendar/"  class="child_link ">School Calendar</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/our_college/school_song/"  class="child_link ">School Song</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/our_college/parent_resources/"  class="child_link ">Parent Resources</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://hkmadlkpcpta.wixsite.com/lkppta13" target="_blank"  class="child_link ">Parent-Teacher Association</a>
+									</div>
+															</div>
+						</div>
+									</div>
+								<div class="link_cell ">
+					<a href="http://www.hkmadavidli.edu.hk/admission/s1_admission/" class="link 5 0">Admission</a>
+											<a href="javascript:void(0)" class="arrow"></a>
+						<div class="child_container">
+							<div class="child_wrapper">
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/admission/s1_admission/"  class="child_link ">S1 Admission</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/admission/admission_to_other_forms/"  class="child_link ">Admission to Other Forms</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/admission/school_fees/"  class="child_link ">School Fees</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/admission/scholarships/"  class="child_link ">Scholarships</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/admission/financial_assistance_scheme/"  class="child_link ">Financial Assistance Scheme</a>
+									</div>
+															</div>
+						</div>
+									</div>
+								<div class="link_cell ">
+					<a href="http://www.hkmadavidli.edu.hk/academic/curriculum/" class="link 3 0">Academic</a>
+											<a href="javascript:void(0)" class="arrow"></a>
+						<div class="child_container">
+							<div class="child_wrapper">
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/academic/curriculum/"  class="child_link ">Curriculum</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/academic/key_learning_areas/"  class="child_link ">Key Learning Areas</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/academic/enrichment_programme/"  class="child_link ">Enrichment Programme</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/academic/dear/"  class="child_link ">DEAR</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="https://libraryhkmadavidli.weebly.com/" target="_blank"  class="child_link ">School Library</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/academic/class_structure/"  class="child_link ">Class Structure</a>
+									</div>
+															</div>
+						</div>
+									</div>
+								<div class="link_cell ">
+					<a href="http://www.hkmadavidli.edu.hk/personal_development/guidance_counseling/" class="link 4 0">Personal Development</a>
+											<a href="javascript:void(0)" class="arrow"></a>
+						<div class="child_container">
+							<div class="child_wrapper">
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/personal_development/guidance_counseling/"  class="child_link ">Guidance & Counseling</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/personal_development/discipline/"  class="child_link ">Discipline</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/personal_development/extra_curricular_activities/"  class="child_link ">Extra Curricular Activities</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://careers.hkmadavidli.edu.hk/en/" target="_blank"  class="child_link ">Careers</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/personal_development/community_service/"  class="child_link ">Community Service</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/personal_development/study_tours/"  class="child_link ">Study Tours</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/personal_development/school_counselor/"  class="child_link ">School Counselor</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/personal_development/student_council/"  class="child_link ">Student Council</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/personal_development/green_education/"  class="child_link ">Green Education</a>
+									</div>
+															</div>
+						</div>
+									</div>
+								<div class="link_cell ">
+					<a href="http://www.hkmadavidli.edu.hk/news/hot_news/" class="link 7 0">Latest News</a>
+											<a href="javascript:void(0)" class="arrow"></a>
+						<div class="child_container">
+							<div class="child_wrapper">
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/news/hot_news/"  class="child_link ">Hot News</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/news/photo/"  class="child_link ">Photo</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/news/video/"  class="child_link ">Video</a>
+									</div>
+															</div>
+						</div>
+									</div>
+								<div class="link_cell ">
+					<a href="http://www.hkmadavidli.edu.hk/achievements/students_achievements/" class="link 6 0">Achievements</a>
+											<a href="javascript:void(0)" class="arrow"></a>
+						<div class="child_container">
+							<div class="child_wrapper">
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/achievements/students_achievements/"  class="child_link ">Students' Achievements</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/achievements/public_examination_results/"  class="child_link ">Public Examination Results</a>
+									</div>
+															</div>
+						</div>
+									</div>
+								<div class="link_cell ">
+					<a href="http://www.hkmadavidli.edu.hk/contact/school_information/" class="link 9 0">Contact</a>
+											<a href="javascript:void(0)" class="arrow"></a>
+						<div class="child_container">
+							<div class="child_wrapper">
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/contact/school_information/"  class="child_link ">School Information</a>
+									</div>
+																	<div class="child_link_cell ">
+										<a  href="http://www.hkmadavidli.edu.hk/contact/complaints_handling_mechanism/"  class="child_link ">Complaints Handling Mechanism</a>
+									</div>
+															</div>
+						</div>
+									</div>
+							</div>
+			<div class="social">
+									<a class="social_link" href="https://www.facebook.com" target="_blank" style="background-image:url('/upload/page/1/social1/68f75e10ada81.png')"></a>
+							</div>
+		</div>
+        <div id="content" ><div id="page-path">
+    <div id="page-path-inner">
+        <a href="http://www.hkmadavidli.edu.hk/">Home</a>    </div>
+</div>	</div>
+	<div class="backtoTop_container">
+		<div class="container">
+			<a href="javascript:void(0)" class="backtoTop"></a>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$('.backtoTop').on('click', function(){
+				$('html, body').animate({
+					scrollTop: 0
+				}, 1000)
+			})
+		})
+	</script>
+	<div id="footer2">
+		<div class="footer_wrapper">
+			<div class="top">
+				<div class="container">
+					<div class="left">
+						<div class="logo">
+							<img src="img/logo_footer.png">
+						</div>
+												<div class="info_wrapper">
+														<div class="info_cell">
+								<a class="info tel" href="tel:+85226269100"><span class="icon"></span>(852) 2626 9100</a>
+							</div>
+																					<div class="info_cell">
+								<p class="info address"><span class="icon"></span>8 Hoi Wang Road, Mong Kok (West), Kowloon</p>
+							</div>
+																					<div class="info_cell">
+								<a class="info email" href="/cdn-cgi/l/email-protection#3d5e525151585a587d5556505c595c4b5459515413585948135556"><span class="icon"></span><span class="__cf_email__" data-cfemail="beddd1d2d2dbd9dbfed6d5d3dfdadfc8d7dad2d790dbdacb90d6d5">[email&#160;protected]</span></a>
+							</div>
+																					<div class="info_cell">
+								<a class="info website"  href="http://www.hkmadavidli.edu.hk" target="_blank"><span class="icon"></span>http://www.hkmadavidli.edu.hk</a>
+							</div>
+																					<div class="info_cell">
+								<p class="info fax"><span class="icon"></span>(852) 2626 9311</p>
+							</div>
+													</div>
+					</div><div class="right">
+						<div class="links_container">
+														<div class="link_cell ">
+								<a href="http://www.hkmadavidli.edu.hk/home/" class="link 1 0">Home</a>
+							</div>
+														<div class="link_cell ">
+								<a href="http://www.hkmadavidli.edu.hk/our_college/principals_words/" class="link 2 0">About DLKP</a>
+							</div>
+														<div class="link_cell ">
+								<a href="http://www.hkmadavidli.edu.hk/admission/s1_admission/" class="link 5 0">Admission</a>
+							</div>
+														<div class="link_cell ">
+								<a href="http://www.hkmadavidli.edu.hk/academic/curriculum/" class="link 3 0">Academic</a>
+							</div>
+														<div class="link_cell ">
+								<a href="http://www.hkmadavidli.edu.hk/personal_development/guidance_counseling/" class="link 4 0">Personal Development</a>
+							</div>
+														<div class="link_cell ">
+								<a href="http://www.hkmadavidli.edu.hk/news/hot_news/" class="link 7 0">Latest News</a>
+							</div>
+														<div class="link_cell ">
+								<a href="http://www.hkmadavidli.edu.hk/achievements/students_achievements/" class="link 6 0">Achievements</a>
+							</div>
+														<div class="link_cell ">
+								<a href="http://www.hkmadavidli.edu.hk/contact/school_information/" class="link 9 0">Contact</a>
+							</div>
+													</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="container">
+					<p>Copyright © HKMA David Li Kwok Po College. <span>Powered by <a href="http://www.anglia.com.hk" target="_blank">ANGLIA</a></span></p><div class="social">
+													<a class="social_link" href="https://www.facebook.com" target="_blank" style="background-image:url('/upload/page/1/social1/68f75e10ada81.png')"></a>
+											</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"31fa56e874ea45f19a46dc6d270fdb2a","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

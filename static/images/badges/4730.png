@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>培僑書院 Pui Kiu College</title>
+    <meta name="keyword" content="培僑書院 Pui Kiu College">
+    <meta name="description" content="秉承一九四六年培僑中學建校以來誠心誠意為香港的進步、為中國的富強培養人才的教育精神，我們於二零零五年在香港沙田開辦一所培僑書院，決心在為社會、為國家培育新生代方面作出進一步的承擔。
+In 1946, our first school in Hong Kong, Pui Kiu Middle School, was founded. Our mission is to nurture outstanding young people for the ever improving Hong Kong society, as well as to contribute to China's growth. In 2005, we established Pui Kiu College in the Shatin District, further committing ourselves to the nurturing of the younger generation for the society as well as the nation.">
+    <!--meta http-equiv="refresh" content="0; url=https://admission.puikiucollege.edu.hk/admission/"-->
+    <!--meta http-equiv="refresh" content="0; url=https://application.puikiucollege.edu.hk/"-->
+
+<script type="5af95a5a31fb51a6333097ee-text/javascript">
+window.fwSettings={
+'widget_id':150000003021
+};
+!function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
+</script>
+<script type="5af95a5a31fb51a6333097ee-text/javascript" src='https://widget.freshworks.com/widgets/150000003021.js' async defer></script>
+
+<script data-cfasync="false" nonce="50b975fc-701a-4eb3-b4c4-85f886abf231">try{(function(w,d){!function(bH,bI,bJ,bK){if(bH.zaraz)console.error("zaraz is loaded twice");else{bH[bJ]=bH[bJ]||{};bH[bJ].executed=[];bH.zaraz={deferred:[],listeners:[]};bH.zaraz._v="5876";bH.zaraz._n="50b975fc-701a-4eb3-b4c4-85f886abf231";bH.zaraz.q=[];bH.zaraz._f=function(bL){return async function(){var bM=Array.prototype.slice.call(arguments);bH.zaraz.q.push({m:bL,a:bM})}};for(const bN of["track","set","debug"])bH.zaraz[bN]=bH.zaraz._f(bN);bH.zaraz.init=()=>{var bO=bI.getElementsByTagName(bK)[0],bP=bI.createElement(bK),bQ=bI.getElementsByTagName("title")[0];bQ&&(bH[bJ].t=bI.getElementsByTagName("title")[0].text);bH[bJ].x=Math.random();bH[bJ].w=bH.screen.width;bH[bJ].h=bH.screen.height;bH[bJ].j=bH.innerHeight;bH[bJ].e=bH.innerWidth;bH[bJ].l=bH.location.href;bH[bJ].r=bI.referrer;bH[bJ].k=bH.screen.colorDepth;bH[bJ].n=bI.characterSet;bH[bJ].o=(new Date).getTimezoneOffset();if(bH.dataLayer)for(const bR of Object.entries(Object.entries(dataLayer).reduce((bS,bT)=>({...bS[1],...bT[1]}),{})))zaraz.set(bR[0],bR[1],{scope:"page"});bH[bJ].q=[];for(;bH.zaraz.q.length;){const bU=bH.zaraz.q.shift();bH[bJ].q.push(bU)}bP.defer=!0;for(const bV of[localStorage,sessionStorage])Object.keys(bV||{}).filter(bX=>bX.startsWith("_zaraz_")).forEach(bW=>{try{bH[bJ]["z_"+bW.slice(7)]=JSON.parse(bV.getItem(bW))}catch{bH[bJ]["z_"+bW.slice(7)]=bV.getItem(bW)}});bP.referrerPolicy="origin";bP.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(bH[bJ])));bO.parentNode.insertBefore(bP,bO)};["complete","interactive"].includes(bI.readyState)?zaraz.init():bH.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");window.zaraz._p=async bc=>new Promise(bd=>{if(bc){bc.e&&bc.e.forEach(be=>{try{const bf=d.querySelector("script[nonce]"),bg=bf?.nonce||bf?.getAttribute("nonce"),bh=d.createElement("script");bg&&(bh.nonce=bg);bh.innerHTML=be;bh.onload=()=>{d.head.removeChild(bh)};d.head.appendChild(bh)}catch(bi){console.error(`Error executing script: ${be}\n`,bi)}});Promise.allSettled((bc.f||[]).map(bj=>fetch(bj[0],bj[1])))}bd()});zaraz._p({"e":["(function(w,d){})(window,document)"]});})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head>
+<style>
+    .home_lan {
+        text-align: right;
+        height: 29px;
+    }
+</style>
+
+<body style=" background-color:#ffffff; background-image:none;">
+    
+    <form id="form1" runat="server">
+        <div class="main">
+            <div style=" display:none;">
+                <uc1:WebHead ID="WebHead1" runat="server" />
+            </div>
+            <br>
+            <div style='max-width:980px;margin-left:auto;margin-right:auto;'>
+                <div>
+                    <img src="img/home_logo.png">
+                </div>
+
+                <div class="home_lan" >
+                    <img src="img/home_lan_admission.gif" usemap="#Map">
+                    <map name="Map">
+                        <area shape="rect" coords="40,4,123,25" href="en/index.php">
+                        <area shape="rect" coords="168,4,215,26" href="tc/index.php">
+                        <!-- area shape="rect" coords="390,4,245,26" href="https://admission.puikiucollege.edu.hk/admission/" -->
+                        <!-- <area shape="rect" coords="390,4,245,26" href="https://application.puikiucollege.edu.hk/"> -->
+                        <area shape="rect" coords="390,4,245,26" href="https://application.puikiucollege.edu.hk/">
+                    </map>
+                </div>
+                <div >
+                    <img src="img/home_bg_admission_20th.jpg">
+                </div>
+                
+            </div>
+
+        </div>
+        <!--center>
+	培僑書院五年級年度演出 2018：<br>
+惡劣天氣下的安排<br>
+1.	如香港天文台於今天(6月23日)下午5時前發出八號或以上熱帶氣旋警告信號或紅色 / 黑色暴雨警告信號，晚上7時舉行的五年級話劇表演將會取消並將不另作補演安排。家長須儘快自行到校接回子女。<br>
+ 
+2.	*如有查詢，可與本校校務處職員聯絡 (電話：2602 3166)。<br><br>
+Pui Kiu College Grade 5 Annual Performance 2018:<br>
+Arrangements under Adverse Weather Conditions<br>
+1.	If Tropical Cyclone Warning Signal No. 8 or above or RED / BLACK Rainstorm Warning Signal is hoisted before 5:00 p.m. today (23 June), the Grade 5 Annual Performance at 7 p.m. will be cancelled, no make-up performance will be arranged. Parents are required to pick up their children from school as soon as possible.<br>
+
+2.	* For enquiries, please contact staff of our General Office (Tel. No.: 26023166).<br>
+</center-->
+        <!--center>
+插班生入學網上申請系統維護進行中<br>
+系統會於2019年7月3日(星期三)上午10時恢復運作<br><br>
+Transfer Admission Online Application System Maintenance in Progress<br>
+System will resume operation at 10:00 a.m., 3 July 2019 (Wednesday)<br>
+</center-->
+        <!--center>
+<p style="color:#781819;"><u>2020-2021小一新生入學第二次面見改期安排</u><br>
+<br><br>
+鑑於現時社會的不穩定情況,<br> 原訂於2019年11月16日(星期六)及17日(星期日)的第二次小一面見日期將延後至2019年12月7日(星期六)進行，<br>
+考生的面試時間將重新编排，請家長於2019年11月22日下午6時登入小一報名系統查閲面試時間。<br>
+<br>
+如有查詢，可與本校校務處職員聯絡 (電話：2602 3166)。 ** 由於面見日程緊湊，故面見日期及時間不能更改，敬請見諒。 <br>
+</p>
+</center-->
+    </form>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="5af95a5a31fb51a6333097ee-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"21e052f8309f4e9c9ba0caafc075ab28","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e23df828b985d7d',t:'MTc3NDUwNDE3Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
+

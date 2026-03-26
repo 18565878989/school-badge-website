@@ -1,0 +1,2171 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>香港管理專業協會羅桂祥中學</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+
+            <link rel="icon" href="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/07/NewSchoolLogo2013.jpg">
+        <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="referrer" content="origin">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/js/jquery.dotdotdot.min.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js" integrity="sha256-/GKyJ0BQJD8c8UYgf7ziBrs/QgcikS7Fv/SaArgBcEI=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/js/moment.js"></script>
+            <script type="text/javascript" src="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/js/zh-hk.js"></script>
+        <script type="text/javascript" src="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/css/gallery-images-cust-template3.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/css/template_3_style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/css/t3_darkBlue_theme.css"/>
+    <script type="text/javascript" src="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/js/template_3.js"></script>
+    <script type="text/javascript" src="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/js/back_to_top.js"></script>
+
+    <link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.hkmakslo.edu.hk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.hkmakslo.edu.hk/wp-includes/css/dist/block-library/style.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-style-css'  href='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-style-css'  href='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='blueimp-style-css'  href='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/css/blueimp-gallery.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/css/custom-style.css?ver=5.1.19' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_LATEST_NEWS_API = {"url":"https:\/\/www.hkmakslo.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"49d6c0f4a2","page_url":"https:\/\/www.hkmakslo.edu.hk\/latest-new\/","eClassURL":"https:\/\/eclass.hkmakslo.edu.hk"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-latest-news-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ENOTICE_API = {"url":"https:\/\/www.hkmakslo.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"0b00d7d36c","page_url":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-enotice-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_CALENDAR_API = {"url":"https:\/\/www.hkmakslo.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"10a59cf42b","school_type":"IP25","LANG":{"SCHOOL_EVENT":"\u5b78\u6821\u4e8b\u9805","ACADEMIC_EVENT":"\u6559\u5b78\u4e8b\u9805","GROUP_EVENT":"\u5c0f\u7d44\u4e8b\u9805","PUBLIC_HOLIDAY_EVENT":"\u516c\u773e\u5047\u671f","SCHOOL_HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f","HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-calendar-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_DIGITAL_CHANNELS_API = {"url":"https:\/\/www.hkmakslo.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"c4196f059e","TYPE_CATEGORY":"1","TYPE_ALBUM":"2","TYPE_HIGHLIGHT":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-digital-channels-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ACADEMIC_YEAR_TERM_API = {"url":"https:\/\/www.hkmakslo.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"14ec296573"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-academic-year-term-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_SUBJECT_GROUP_API = {"url":"https:\/\/www.hkmakslo.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"2d097d6009"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-subject-group-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_YEAR_CLASS_API = {"url":"https:\/\/www.hkmakslo.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"bf977ff574"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-year-class-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.hkmakslo.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"abf58ce43d","school_type":"IP25"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-homework-api.js?ver=2.0.0'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/jquery.dotdotdot.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/owl.carousel.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-video.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-youtube.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-vimeo.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/jquery.blueimp-gallery.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/twbs-pagination/jquery.twbsPagination.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/plugins/gallery-images-cust/assets/gallery-images-cust.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/assets/js/basic-script.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/assets/js/homepage-slideshow.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/assets/js/homepage-latest-new.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/assets/js/homepage-calendar.js?ver=5.1.19'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.hkmakslo.edu.hk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.19" />
+
+<link rel="stylesheet" href="https://www.hkmakslo.edu.hk/wp-content/plugins/count-per-day/counter.css" type="text/css" />
+<link rel="alternate" href="https://www.hkmakslo.edu.hk/" hreflang="zh" />
+<link rel="alternate" href="https://www.hkmakslo.edu.hk/en/" hreflang="en" />
+</head>
+
+<body class="home blog zh">
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div id="schLogo" class="col-xs-12 col-md-6 col-lg-7">
+                <div class="schLogoContainer">
+                    <a href="https://www.hkmakslo.edu.hk/">
+                        <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/07/NewSchoolLogo2013-150x150.jpg" alt="schoolLogo" class="schLogo"/>
+                        <div class="schName">
+                            <span class="schName_ch">香港管理專業協會羅桂祥中學</span>
+                            <span class="schName_en">The Hong Kong Management Association K S Lo College</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar"
+                    data-toggle="collapse" type="button" id="mmBtn"><span class="sr-only">Toggle navigation</span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+
+            <div id="login" class="col-md-6 col-lg-5">
+        <form id="loginForm" action="https://eclass.hkmakslo.edu.hk/login.php" method="POST" target="_blank">
+        <a href="https://eclass.hkmakslo.edu.hk" class="loginLogo" target="_blank"><img
+                    src="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/images/eclassLogo.png" alt="schoolLogo" class="logo"/></a>
+        <div class="input">
+            <input name="UserLogin" class="form-control" type="text" placeholder="登入名稱"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+            <input name="UserPassword" class="form-control" type="password" placeholder="密碼"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+        </div>
+        <a class="btn_login" href="https://eclass.hkmakslo.edu.hk/login.php" onclick="$('#loginForm').submit(); return false;">登入</a>
+    </form>
+                <div class="lang">
+            <a href="https://www.hkmakslo.edu.hk/en/">Eng</a>
+        </div>
+    </div>
+
+        </div>
+    </div>
+</header>
+<nav class="navbar" id="mainMenu">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+				    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			學校簡介        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/school-information/" class="" style="">
+			學校資訊        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/principals-message/" class="" style="">
+			校長的話        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/incorporated-management-committee/" class="" style="">
+			法團校董會        </a>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			學校計劃與報告        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/school-plan-and-reports/school-development-plan/" class="" style="">
+			學校發展計劃書        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/school-plan-and-reports/annual-school-plan/" class="" style="">
+			周年校務計劃書        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/school-plan-and-reports/annual-school-budget/" class="" style="">
+			科組工作計劃及財政預算        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/school-plan-and-reports/annual-report/" class="" style="">
+			周年報告        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/school-plan-and-reports/%e5%a7%8a%e5%a6%b9%e5%ad%b8%e6%a0%a1%e4%ba%a4%e6%b5%81%e8%a8%88%e5%8a%83%e6%9b%b8/" class="" style="">
+			姊妹學校交流計劃及報告        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/school-plan-and-reports/%e7%82%ba%e9%9d%9e%e8%8f%af%e8%aa%9e%e5%ad%b8%e7%94%9f%e6%8f%90%e4%be%9b%e7%9a%84%e6%95%99%e8%82%b2%e6%94%af%e6%8f%b4/" class="" style="">
+			為非華語學生提供的教育支援        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/school-plan-and-reports/%e5%85%a8%e6%96%b9%e4%bd%8d%e5%ad%b8%e7%bf%92%e5%8f%8a%e5%a7%8a%e5%a6%b9%e5%ad%b8%e6%a0%a1%e6%b4%a5%e8%b2%bc%e8%a8%88%e5%8a%83%e5%8f%8a%e5%a0%b1%e5%91%8a/" class="" style="">
+			全方位學習及姊妹學校津貼計劃及報告        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			重要文件        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/important-document/guideline-for-handling-school-complaints/" class="" style="">
+			處理投訴指引        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/important-document/privacy-policy-statement/" class="" style="">
+			私隱政策及收集個人資料聲明        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/important-document/2017-school-assessment-report/" class="" style="">
+			2017 校外評核報告        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/school-motto/" class="" style="">
+			校訓        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/school-facilities/" class="" style="">
+			學校設施        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/about-us_c/campus-map/" class="" style="">
+			本校地圖        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			學生事務        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/student-activities-team/" class="" style="">
+			學生活動組        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/%e5%ad%b8%e7%94%9f%e4%b8%80%e8%88%ac%e5%ae%88%e5%89%87/" class="" style="">
+			學生一般守則        </a>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			訓導組        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/discipline-team/principle-on-discipline/" class="" style="">
+			訓導精神        </a>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			學生須知及守則        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/discipline-team/rules-and-regulations/rules-of-using-mobile-phone/" class="" style="">
+			手機使用守則        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/discipline-team/rules-and-regulations/rules-of-school-uniform/" class="" style="">
+			校服儀容準則        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/discipline-team/rules-and-regulations/%e5%ad%b8%e7%94%9f%e6%96%bc%e6%a0%a1%e5%a4%96%e7%9a%84%e4%b8%80%e8%88%ac%e5%ae%88%e5%89%87/" class="" style="">
+			學生於校外的一般守則        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/discipline-team/rules-and-regulations/dress-code-for-attending-school-activity-or-program/" class="" style="">
+			參與學校活動服飾準則        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			日常學校安排        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/discipline-team/daily-school-arrangement/lunch-time/" class="" style="">
+			留校午膳        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/discipline-team/daily-school-arrangement/morning-assembly/" class="" style="">
+			早會        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/discipline-team/daily-school-arrangement/late/" class="" style="">
+			遲到        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/discipline-team/daily-school-arrangement/application-for-leave/" class="" style="">
+			請假手續        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/discipline-team/daily-school-arrangement/lost-items/" class="" style="">
+			失物處理        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/discipline-team/daily-school-arrangement/violation-of-school-rules-and-regulations/" class="" style="">
+			違規紀錄及處分        </a>
+		    </li>
+	            </ul>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/career-and-life-planning-team/" class="" style="">
+			生涯規劃及升學輔導組        </a>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/guidance-and-discipline-section/" class="" style="">
+			輔導組        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/guidance-and-discipline-section/%e8%bc%94%e5%b0%8e%e6%9c%8d%e5%8b%99%e7%9b%ae%e6%a8%99/" class="" style="">
+			輔導服務目標        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/guidance-and-discipline-section/%e8%bc%94%e5%b0%8e%e6%9c%8d%e5%8b%99%e7%ad%96%e7%95%a5/" class="" style="">
+			輔導服務策略        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/guidance-and-discipline-section/%e8%bc%94%e5%b0%8e%e6%b4%bb%e5%8b%95%e7%b0%a1%e4%bb%8b/" class="" style="">
+			輔導活動簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/guidance-and-discipline-section/%e8%bc%94%e5%b0%8e%e6%b4%bb%e5%8b%95%e5%89%aa%e5%bd%b1/" class="" style="">
+			輔導活動剪影        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/emergency-procedure-for-rainstorm-and-typhoon/" class="" style="">
+			暴雨颱風應變措施        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/healthy-school-programme/" class="" style="">
+			健康校園計劃        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/%e9%87%8d%e8%a8%ad%e5%ad%b8%e7%94%9f%e7%94%a8%e6%88%b6%e5%90%8d%e7%a8%b1%e6%88%96%e5%af%86%e7%a2%bc/" class="" style="">
+			重設學生/家長用戶名稱或密碼        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/student-affairs_c/%e9%ab%98%e4%b8%ad%e5%ad%b8%e7%94%9f%e8%aa%b2%e5%a0%82%e4%bb%a5%e5%a4%96%e6%99%82%e9%96%93%e4%bd%bf%e7%94%a8%e5%b9%b3%e6%9d%bf%e9%9b%bb%e8%85%a6%e7%94%b3%e8%ab%8b%e8%a1%a8%e6%a0%bc/" class="" style="">
+			高中學生課堂以外時間使用平板電腦申請表格        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			學與教        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/%e6%97%a5%e5%b8%b8%e6%b8%ac%e9%a9%97%e7%b8%bd%e8%a1%a8/" class="" style="">
+			日常測驗總表        </a>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			課程        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			中文科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chinese-language/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chinese-language/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chinese-language/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chinese-language/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chinese-language/activities/" class="" style="">
+			學科活動        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chinese-language/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			英文科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/english-language/introduction/" class="" style="">
+			Introduction        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/english-language/curriculum/" class="" style="">
+			Curriculum        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/english-language/learning/" class="" style="">
+			Learning Strategy        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/english-language/assessment/" class="" style="">
+			Assessment        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/english-language/resources/" class="" style="">
+			Resources        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			數學科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/mathematics/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/mathematics/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/mathematics/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/mathematics/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/mathematics/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			科學科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/science/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/science/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/science/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/science/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/science/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			中國歷史科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chinese-history/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chinese-history/curriculum-2/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chinese-history/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chinese-history/assessment-2/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chinese-history/resources-2/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			歷史科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/%e6%ad%b7%e5%8f%b2%e7%a7%91/%e7%a7%91%e7%9b%ae%e7%b0%a1%e4%bb%8b/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/%e6%ad%b7%e5%8f%b2%e7%a7%91/%e8%aa%b2%e7%a8%8b/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/%e6%ad%b7%e5%8f%b2%e7%a7%91/%e7%a0%94%e7%bf%92%e6%96%b9%e6%b3%95/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/%e6%ad%b7%e5%8f%b2%e7%a7%91/%e8%a9%95%e6%a0%b8%e6%96%b9%e6%b3%95/" class="" style="">
+			評核方法        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			地理科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/geography/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/geography/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/geography/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/geography/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/geography/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			電腦科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/computing/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/computing/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/computing/curriculum-2/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/computing/assessment-2/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/computing/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			視覺藝術科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/visual-arts/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/visual-arts/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/visual-arts/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/visual-arts/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/visual-arts/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			科技與生活科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/technology-living/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/technology-living/assessment-2/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/technology-living/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/technology-living/assessment-2/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/technology-living/resources-2/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			設計與科技科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/design-technology/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/design-technology/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/design-technology/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/design-technology/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/design-technology/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			音樂科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/music/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/music/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/music/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/music/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/music/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			體育科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/physical-education/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/physical-education/%e8%aa%b2%e7%a8%8b/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/physical-education/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/physical-education/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/physical-education/balanced-diet/" class="" style="">
+			均衡飲食        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/physical-education/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			物理科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/physics/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/physics/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/physics/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/physics/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/physics/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			化學科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chemistry/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chemistry/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chemistry/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chemistry/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chemistry/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/chemistry/activities/" class="" style="">
+			本科活動        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			生物科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/biology/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/biology/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/biology/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/biology/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/biology/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			公民、經濟與社會科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/life-and-society/introduction-2/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/life-and-society/curriculum-2/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/life-and-society/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/life-and-society/assessment-2/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/life-and-society/resources-2/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			公民與社會發展科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/citizenship-and-social-development/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/citizenship-and-social-development/learning-strategy/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/citizenship-and-social-development/assessment-2/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/citizenship-and-social-development/resources-2/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			綜合商業科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/integrated-business-studies/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/integrated-business-studies/curriculum-2/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/integrated-business-studies/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/integrated-business-studies/assessment-2/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/integrated-business-studies/resources-2/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			經濟科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/economics/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/economics/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/economics/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/economics/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/economics/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			旅遊與款待科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/tourism-and-hospitality-studies/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/tourism-and-hospitality-studies/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/tourism-and-hospitality-studies/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/tourism-and-hospitality-studies/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/tourism-and-hospitality-studies/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/tourism-and-hospitality-studies/%e6%9c%ac%e7%a7%91%e6%b4%bb%e5%8b%95/" class="" style="">
+			本科活動        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			企業、會計與財務概論 (選修單元：商業管理)科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/business-accounting-and-financial-studiesbusiness-management-elective/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/business-accounting-and-financial-studiesbusiness-management-elective/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/business-accounting-and-financial-studiesbusiness-management-elective/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/business-accounting-and-financial-studiesbusiness-management-elective/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/business-accounting-and-financial-studiesbusiness-management-elective/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			企業、會計與財務概論 (選修單元：會計)科        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/business-accounting-and-financial-studiesaccounting-elective/introduction/" class="" style="">
+			科目簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/business-accounting-and-financial-studiesaccounting-elective/curriculum/" class="" style="">
+			課程        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/business-accounting-and-financial-studiesaccounting-elective/learning/" class="" style="">
+			研習方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/business-accounting-and-financial-studiesaccounting-elective/assessment/" class="" style="">
+			評核方法        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/subject-offered/business-accounting-and-financial-studiesaccounting-elective/resources/" class="" style="">
+			網上資源        </a>
+		    </li>
+	            </ul>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/assignment-policy/" class="" style="">
+			課業政策        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/senior-secondary-curriculum-guide/" class="" style="">
+			高中學校資訊站        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/outstanding-performance-in-2022-hkdse/" class="" style="">
+			公開試成績        </a>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			圖書館        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/library/introduction/" class="" style="">
+			簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/library/%e6%9c%8d%e5%8b%99/" class="" style="">
+			服務        </a>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			閱讀計劃        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/library/reading-activities/%e6%a0%a1%e6%9c%ac%e9%96%b1%e8%ae%80%e8%a8%88%e5%8a%83/" class="" style="">
+			校本閱讀計劃        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/library/reading-activities/%e5%bb%a3%e6%b3%9b%e9%96%b1%e8%ae%80%e8%a8%88%e5%8a%83/" class="" style="">
+			廣泛閱讀計劃        </a>
+		    </li>
+	            </ul>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/%e6%b5%81%e5%8b%95%e8%a3%9d%e7%bd%ae%e4%bd%bf%e7%94%a8%e6%94%bf%e7%ad%96/" class="" style="">
+			流動裝置使用政策        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/learning-and-teaching_c/vle%e5%b9%b3%e5%8f%b0/" class="" style="">
+			VLE平台        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			團體組織        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			家長教師會        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/parent-teacher-association/main-page/" class="" style="">
+			主頁        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/parent-teacher-association/chairmans-message/" class="" style="">
+			主席的話        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/parent-teacher-association/introduction/" class="" style="">
+			簡介        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/parent-teacher-association/list-of-members-of-the-executive-committee/" class="" style="">
+			家長教師會執委會會員名單        </a>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			活動點滴        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/parent-teacher-association/gallery/%e6%9c%ac%e5%ad%b8%e5%b9%b4%e7%9b%b8%e7%b0%bf/" class="" style="">
+			本學年相簿        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/parent-teacher-association/gallery/%e4%bb%a5%e5%be%80%e5%ad%b8%e5%b9%b4%e7%9b%b8%e7%b0%bf/" class="" style="">
+			以往學年相簿        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/parent-teacher-association/minutes/" class="" style="">
+			會議記錄        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/parent-teacher-association/constitution-of-pta/" class="" style="">
+			家教會會章        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/parent-teacher-association/blog/" class="" style="">
+			家長教師會網誌        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/parent-teacher-association/resources/" class="" style="">
+			有關資訊        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/parent-teacher-association/shopping-discount-agreement-2021/" class="" style="">
+			優惠協議名單        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			校友會        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/alumni-association/main-page/" class="" style="">
+			主頁        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/alumni-association/list-of-committees/" class="" style="">
+			委員名單        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/alumni-association/activities/" class="" style="">
+			活動點滴        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/alumni-association/minutes/" class="" style="">
+			會議記錄        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/alumni-association/constitution-of-alumni-association/" class="" style="">
+			校友會會章        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/alumni-association/%e8%81%af%e7%b5%a1%e6%88%91%e5%80%91/" class="" style="">
+			聯絡我們        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-organization_c/%e6%95%99%e5%b8%ab%e7%99%bc%e5%b1%95%e7%b5%84/" class="" style="">
+			教師發展組        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			校園點滴        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/gallery/" class="" style="">
+			校園相簿        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/gallery/previous-school-years/" class="" style="">
+			以往學年相簿        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/gallery/current-school-year/" class="" style="">
+			本學年相簿        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/%e7%be%85%e6%a1%82%e7%a5%a5%e4%b8%ad%e5%ad%b8%e7%9f%ad%e7%89%87%e9%a0%bb%e9%81%93/" class="" style="">
+			Youtube影片頻道        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/video/" class="" style="">
+			校園影片        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/%e5%82%b3%e5%aa%92%e5%a0%b1%e5%b0%8e/" class="" style="">
+			傳媒報導        </a>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			我校二十五年        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/25th-anniversary/history/" class="" style="">
+			二十五年－歷史        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/25th-anniversary/activities/" class="" style="">
+			二十五年－校慶活動        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			校慶三十周年        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/%e6%a0%a1%e6%85%b6%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4/%e3%80%8c%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4%e5%95%8f%e7%ad%94%e6%af%94%e8%b3%bd%e3%80%8d/" class="" style="">
+			「三十周年問答比賽」        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/%e6%a0%a1%e6%85%b6%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4/%e3%80%8c%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4%e6%a0%a1%e6%85%b6%e6%94%9d%e5%bd%b1%e6%af%94%e8%b3%bd%e3%80%8d/" class="" style="">
+			「三十周年校慶攝影比賽」        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/%e6%a0%a1%e6%85%b6%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4/%e3%80%8c%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4%e6%a0%a1%e6%85%b6%e5%a1%ab%e8%89%b2%e6%af%94%e8%b3%bd%e3%80%8d/" class="" style="">
+			「三十周年校慶填色比賽」        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/%e6%a0%a1%e6%85%b6%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4/%e3%80%8c%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4%e6%a0%a1%e6%85%b6%e5%be%b5%e6%96%87%e6%af%94%e8%b3%bd%e3%80%8d/" class="" style="">
+			「三十周年校慶徵文比賽」        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/%e6%a0%a1%e6%85%b6%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4/%e3%80%8c%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4%e8%8b%b1%e6%96%87%e6%8b%bc%e5%ad%97%e9%81%8a%e6%88%b2%e6%af%94%e8%b3%bd%e3%80%8d/" class="" style="">
+			「三十周年英文拼字遊戲比賽」        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/%e6%a0%a1%e6%85%b6%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4/%e3%80%8c%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4%e6%a0%a1%e6%85%b6%e5%b0%84%e7%ae%ad%e9%8c%a6%e6%a8%99%e8%b3%bd%e3%80%8d/" class="" style="">
+			「三十周年校慶射箭錦標賽」        </a>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			「周年匯演暨三十周年開幕典禮」        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/%e6%a0%a1%e6%85%b6%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4/%e3%80%8c%e5%91%a8%e5%b9%b4%e5%8c%af%e6%bc%94%e6%9a%a8%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4%e9%96%8b%e5%b9%95%e5%85%b8%e7%a6%ae%e3%80%8d/%e7%b2%be%e9%81%b8%e7%9b%b8%e7%89%87/" class="" style="">
+			精選相片        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/%e6%a0%a1%e6%85%b6%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4/%e3%80%8c%e5%91%a8%e5%b9%b4%e5%8c%af%e6%bc%94%e6%9a%a8%e4%b8%89%e5%8d%81%e5%91%a8%e5%b9%b4%e9%96%8b%e5%b9%95%e5%85%b8%e7%a6%ae%e3%80%8d/%e7%b2%be%e5%bd%a9%e7%89%87%e6%ae%b5/" class="" style="">
+			精彩片段        </a>
+		    </li>
+	            </ul>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-life_c/hkma-k-s-lo-college-x-hong-kong-shifts-storytelling-exhibition/" class="" style="">
+			HKMA K S Lo College X Hong Kong Shifts : Storytelling Exhibition        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			校刊        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2025%ef%bc%8d2026%e5%b9%b4%e5%ba%a6/" class="" style="">
+			2025－2026年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2024%ef%bc%8d2025%e5%b9%b4%e5%ba%a6/" class="" style="">
+			2024－2025年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2023-2024%e5%b9%b4%e5%ba%a6/" class="" style="">
+			2023－2024年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2022%ef%bc%8d2023%e5%b9%b4%e5%ba%a6/" class="" style="">
+			2022－2023年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2021-2022/" class="" style="">
+			2021－2022年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2016-2017/" class="" style="">
+			2016－2017年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2019-2020/" class="" style="">
+			2019－2020年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2018%ef%bc%8d2019%e5%b9%b4%e5%ba%a6/" class="" style="">
+			2018－2019年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2017-2018/" class="" style="">
+			2017－2018年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2020-2021/" class="" style="">
+			2020－2021年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2015-2016/" class="" style="">
+			2015－2016年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2014-2015/" class="" style="">
+			2014－2015年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2013-2014/" class="" style="">
+			2013－2014年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2012-2013/" class="" style="">
+			2012－2013年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2011-2012/" class="" style="">
+			2011－2012年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2010-2011/" class="" style="">
+			2010－2011年度        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/school-magazine_c/2009-2010/" class="" style="">
+			2009－2010年度        </a>
+		    </li>
+	            </ul>
+		    </li>
+	    <li class="dropdown page_item page_item_has_children">
+        <a href="javascript:void(0);" class=" menu-toggle " style="cursor: default;">
+			中一入學資訊        </a>
+		            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+				    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/s-1-discretionary-places/2025%e8%b3%87%e8%a8%8a%e6%97%a5/" class="" style="">
+			2025資訊日        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/s-1-discretionary-places/%e8%87%aa%e8%a1%8c%e6%94%b6%e7%94%9f%e9%9d%a2%e8%a9%a6%e8%a1%a8%e6%a0%bc%e4%b8%8b%e8%bc%89/" class="" style="">
+			中一自行分配學位申請        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/s-1-discretionary-places/%e5%8d%87%e4%b8%ad%e5%b0%8f%e5%86%8a%e5%ad%90%e4%b8%8b%e8%bc%89/" class="" style="">
+			升中小冊子下載        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/s-1-discretionary-places/%e6%94%b6%e9%9b%86%e5%85%a5%e5%ad%b8%e7%94%b3%e8%ab%8b%e8%80%85%e5%80%8b%e4%ba%ba%e8%b3%87%e6%96%99%e8%81%b2%e6%98%8e/" class="" style="">
+			收集入學申請者個人資料聲明        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/s-1-discretionary-places/%e4%b8%ad%e4%b8%80%e8%87%aa%e8%a1%8c%e6%94%b6%e7%94%9f%e7%b0%a1%e4%bb%8b%e6%9c%83/" class="" style="">
+			中一自行收生簡介會        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/s-1-discretionary-places/2023-2024-%e4%b8%ad%e4%b8%80%e7%94%9f%e5%8f%a9%e9%96%80%e5%ae%89%e6%8e%92/" class="" style="">
+			2025-2026 中一生叩門申請        </a>
+		    </li>
+	    <li class="page_item">
+        <a href="https://www.hkmakslo.edu.hk/s-1-discretionary-places/2023-2024-%e4%b8%ad%e4%b8%80%e6%96%b0%e7%94%9f%e8%a8%bb%e5%86%8a%e9%a0%88%e7%9f%a5/" class="" style="">
+			2025-2026 中一新生註冊須知        </a>
+		    </li>
+	            </ul>
+		    </li>
+	                                    <li class="login page_item">
+                        <a href="https://eclass.hkmakslo.edu.hk" target="_blank">eClass 登入</a>
+                    </li>
+                
+				                    <li class="lang page_item">
+                        <a href="https://www.hkmakslo.edu.hk/en/">English</a>
+                    </li>
+				            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div id="headerSpace"></div>
+
+<div id="slideshowArea">
+    <div id="slideshowWrap">
+        <div id="gallery-carousel-69c4c7c426a03" class=" huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/08/School-Campus-__-In-Search-of-Excellence_01-1400x500.jpg">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">K S Lo College</p>
+                                                                                </div>
+                    </span>
+                                                <a data-title="K S Lo College" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2024/10/Journey-Through-Time-1400x500.png">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">Journey Through Time </p>
+                                                                                        <p class="description">Celebrating 30 years of Excellence.</p>
+                                                    </div>
+                    </span>
+                                                <a data-title="Journey Through Time " data-description="Celebrating 30 years of Excellence."
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2024/10/DANCE-TEAM-1400x500.png">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">Dance Team</p>
+                                                                                        <p class="description">Dance is the hidden language of the soul.</p>
+                                                    </div>
+                    </span>
+                                                <a data-title="Dance Team" data-description="Dance is the hidden language of the soul."
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2024/10/ENGLISH-ACTIVITIES-1400x500.png">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">English Café</p>
+                                                                                        <p class="description">Let the stress go at the English Café.</p>
+                                                    </div>
+                    </span>
+                                                <a data-title="English Café" data-description="Let the stress go at the English Café."
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2024/10/ARCHERY-TEAM-1400x500.png">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">Archery Team</p>
+                                                                                        <p class="description">Archery is the art of discipline, focus and mental fortitude.</p>
+                                                    </div>
+                    </span>
+                                                <a data-title="Archery Team" data-description="Archery is the art of discipline, focus and mental fortitude."
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2024/10/ENGLISH-DRAMA-1400x500.png">
+
+                        <div class="hidden-xs content" style="">
+                                                            <p class="title">English Drama</p>
+                                                                                        <p class="description">Conflict is what creates drama.</p>
+                                                    </div>
+                    </span>
+                                                <a data-title="English Drama" data-description="Conflict is what creates drama."
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>
+
+    <div class="modules-break"></div>
+    <div class="container">
+        <div class="row">
+            <div id="latestNews" class="col-xs-12" data-base-href="https://www.hkmakslo.edu.hk/latest-new/?id=%id%"
+     data-limit="6">
+    <h1 class="title">最新消息</h1>
+    <a href="https://www.hkmakslo.edu.hk/latest-new/" class="moreBtn" v-if="!isLoading" v-show="dataList.length">更多</a>
+    <hr>
+
+    <div class="loading" v-show="isLoading">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
+
+    <div v-if="!isLoading" v-show="dataList.length == 0" class="noRecord">
+        暫時沒有紀錄    </div>
+
+    <ul id="newsList" v-if="!isLoading" v-show="dataList.length">
+        <a v-for="data in dataList" :href="getLink(data)">
+            <li>
+                <h2 class="newsTitle">
+                    {{ data.Title }}
+                    <span class="attIcon" v-if="data.Attachments.Attachment.length"></span>
+                </h2>
+
+                <!--<span class="newsImg"><img/></span>-->
+
+                                    <span class="newsDes dotdotdot">{{ strip_tags(data.Description) }}</span>
+                                <span class="newsDate">{{ data.AnnouncementDate }}</span>
+            </li>
+        </a>
+    </ul>
+
+</div>
+        </div>
+    </div>
+
+    <div class="modules-break"></div>
+    <div class="container">
+        <div class="row">
+
+            <div id="notice" class="col-xs-12 md-modules-left col-sm-6 col-md-6 col-lg-6">
+    <h1 class="title">
+        學校通告                    <a href="https://www.hkmakslo.edu.hk/school-notice/" class="moreBtn">更多</a>
+            </h1>
+
+            <ul id="noticeList">
+                            <a href="https://www.hkmakslo.edu.hk/school-notice/2025-2026-%e4%b8%89%e6%9c%88%e4%bb%bd%e6%a0%a1%e5%8b%99%e9%80%9a%e5%91%8a/">
+                    <li>
+                        <h2 class="noticeTitle">
+                            2025-2026 三月份校務通告                                                            <span class="attIcon"></span>
+                                                    </h2>
+                                                    <span class="noticeDes dotdotdot"></span>
+                                                <span class="noticeDate">2026-03-02</span>
+                    </li>
+                </a>
+                            <a href="https://www.hkmakslo.edu.hk/school-notice/2025-2026-%e4%ba%8c%e6%9c%88%e4%bb%bd%e6%a0%a1%e5%8b%99%e9%80%9a%e5%91%8a/">
+                    <li>
+                        <h2 class="noticeTitle">
+                            2025-2026 二月份校務通告                                                            <span class="attIcon"></span>
+                                                    </h2>
+                                                    <span class="noticeDes dotdotdot"></span>
+                                                <span class="noticeDate">2026-01-28</span>
+                    </li>
+                </a>
+                            <a href="https://www.hkmakslo.edu.hk/school-notice/2025-2026-%e5%8d%81%e4%ba%8c%e6%9c%88%e8%87%b3%e4%b8%80%e6%9c%88%e4%bb%bd%e6%a0%a1%e5%8b%99%e9%80%9a%e5%91%8a/">
+                    <li>
+                        <h2 class="noticeTitle">
+                            2025-2026 十二月至一月份校務通告                                                            <span class="attIcon"></span>
+                                                    </h2>
+                                                    <span class="noticeDes dotdotdot"></span>
+                                                <span class="noticeDate">2025-12-01</span>
+                    </li>
+                </a>
+                            <a href="https://www.hkmakslo.edu.hk/school-notice/2025-2026-%e5%8d%81%e4%b8%80%e6%9c%88%e4%bb%bd%e6%a0%a1%e5%8b%99%e9%80%9a%e5%91%8a/">
+                    <li>
+                        <h2 class="noticeTitle">
+                            2025-2026 十一月份校務通告                                                            <span class="attIcon"></span>
+                                                    </h2>
+                                                    <span class="noticeDes dotdotdot"></span>
+                                                <span class="noticeDate">2025-11-17</span>
+                    </li>
+                </a>
+                            <a href="https://www.hkmakslo.edu.hk/school-notice/2025-2026-%e5%8d%81%e6%9c%88%e4%bb%bd%e6%a0%a1%e5%8b%99%e9%80%9a%e5%91%8a/">
+                    <li>
+                        <h2 class="noticeTitle">
+                            2025-2026 十月份校務通告                                                            <span class="attIcon"></span>
+                                                    </h2>
+                                                    <span class="noticeDes dotdotdot"></span>
+                                                <span class="noticeDate">2025-10-14</span>
+                    </li>
+                </a>
+                    </ul>
+    </div>
+            
+            <div id="calendar" class="col-xs-12 md-modules-right col-sm-6">
+    <h1 class="title">學校行事曆</h1>
+
+    <div class="loading" v-show="isLoading">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
+
+    <div class="calendarWrap" v-show="!isLoading" style="display:none;">
+        <div class="year_month">
+            <a class="btn_lastmonth" @click="changeSelectedMonth(-1)"></a>
+            <span class="year">{{ currentSelectedDate.format('YYYY') }}</span>
+            <span class="month">{{ currentSelectedDate.format('MMMM') }}</span>
+            <a class="btn_nextmonth" @click="changeSelectedMonth(1)"></a>
+        </div>
+        <ul>
+            <li class="cal_head">日</li>
+            <li class="cal_head">一</li>
+            <li class="cal_head">二</li>
+            <li class="cal_head">三</li>
+            <li class="cal_head">四</li>
+            <li class="cal_head">五</li>
+            <li class="cal_head">六</li>
+
+            <li class="blank_date" v-for="n in blankDayCount">
+                <div></div>
+            </li>
+
+            <template v-for="day in monthDayCount">
+                <li :class="getDayClass(day)">
+                    <div><a @click="showDayDetails(day)">
+                        <span class="date">{{day}}</span>
+                        <span class="cycle" v-if="getDayCycle(day)">{{getDayCycle(day)}}</span>
+                    </a></div>
+                </li>
+            </template>
+
+            <p class="spacer"></p>
+        </ul>
+    </div>
+
+
+    <div class="modal fade" id="calendarDetails" tabindex="-1" role="dialog" aria-labelledby="calendarDetails"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" v-html="selectedEvent.dateHtml"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="icon"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tbl_events">
+                        <tr v-for="event in selectedEvent.events">
+                            <td :class="event.CssClass">{{ event.TypeText }}</td>
+                            <td>{{ event.Title }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <div class="modules-break"></div>
+    <div class="container">
+        <div class="row">
+            
+<div id="photoSlideShow">
+    <div id="photoSlideShowWrap" class="modules-fullWidth">
+        <div id="gallery-carousel-69c4c7c42bbce" class="autoWidth huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/IMG_6245.JPG_8133-474x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/IMG_2358.JPG_8025-355x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/OW5A3189.jpg_7712-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/OW5A3292.jpg_7714-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/OW5A3326.jpg_7715-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <a href="https://www.hkmakslo.edu.hk/%e6%a0%a1%e5%9c%92%e9%bb%9e%e6%bb%b4/%e6%a0%a1%e5%9c%92%e7%9b%b8%e7%b0%bf/" target="_blank" >
+                            <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/OW5A0408.jpg_7625-399x266.jpg">
+
+                            <div class="hidden-xs content" style="">
+                                                                    <p class="title">2019 Sports Day</p>
+                                                                                            </div>
+                        </a>
+                    </span>
+                                                <a data-title="2019 Sports Day" data-description=""
+                   class="btn sliderDetails animation hidden-sm hidden-md hidden-lg"><i
+                            class="fas fa-info-circle"></i> 資訊</a>
+
+                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/27.jpg_7361-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/37.jpg_7372-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/3.jpg_7364-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/012.jpg_7617-399x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>        </div>
+    </div>
+
+    <div class="modules-break"></div>
+    <div class="container">
+        <div class="row">
+            <hr class="divider"/>
+        </div>
+    </div>
+    <div class="modules-break"></div>
+
+<div id="usefulLinks">
+    <div class="container">
+        <div class="row">
+            <div class="modules-fullWidth" id="usefulLinksWrap">
+                
+                    <div class="ulBanner">
+                                                    <a href="https://sjrc.club" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2025/11/sjrc.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.hkmakslo.edu.hk/wp-content/uploads/2025/11/sjrc.jpg 250w, https://www.hkmakslo.edu.hk/wp-content/uploads/2025/11/sjrc-180x65.jpg 180w" sizes="(max-width: 250px) 100vw, 250px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://hkmakslo.hyread.hk/" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2022/12/HYREAD.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.hkmakslo.edu.hk/wp-content/uploads/2022/12/HYREAD.jpg 250w, https://www.hkmakslo.edu.hk/wp-content/uploads/2022/12/HYREAD-180x65.jpg 180w" sizes="(max-width: 250px) 100vw, 250px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://reading.hk/" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2022/12/readinghk_logo.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.hkmakslo.edu.hk/wp-content/uploads/2022/12/readinghk_logo.png 424w, https://www.hkmakslo.edu.hk/wp-content/uploads/2022/12/readinghk_logo-300x69.png 300w, https://www.hkmakslo.edu.hk/wp-content/uploads/2022/12/readinghk_logo-180x41.png 180w" sizes="(max-width: 424px) 100vw, 424px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://lm.hkmakslo.edu.hk/Pages/Index.aspx" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/08/圖書館管理系統.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://kslolib.hkmachinese.com/blog/" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/08/圖書館網誌.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://www.hkmachinese.com/blog/" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/08/博之以文.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://english.kslo.hk/" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/K-S-Lo-English-School-Web-Icon.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/K-S-Lo-English-School-Web-Icon.jpg 480w, https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/K-S-Lo-English-School-Web-Icon-300x100.jpg 300w" sizes="(max-width: 480px) 100vw, 480px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://kslopta.hkmachinese.com/" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/08/家長教師會網誌.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.youtube.com/c/kslotv/featured" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/HKMA.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/HKMA.png 480w, https://www.hkmakslo.edu.hk/wp-content/uploads/2021/09/HKMA-300x100.png 300w" sizes="(max-width: 480px) 100vw, 480px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://www.hkedcity.net/english/" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/08/英語校園.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://www.hkma.org.hk/" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/08/香港管理專業協會.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://www.hkmadavidli.edu.hk/" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/08/香港管理專業協會李國寶中學.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.edb.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2019/02/edb.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.hkmakslo.edu.hk/wp-content/uploads/2019/02/edb.jpg 600w, https://www.hkmakslo.edu.hk/wp-content/uploads/2019/02/edb-300x99.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.chp.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2019/02/logo_chp_tc.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.hkmakslo.edu.hk/wp-content/uploads/2019/02/logo_chp_tc.png 335w, https://www.hkmakslo.edu.hk/wp-content/uploads/2019/02/logo_chp_tc-300x79.png 300w" sizes="(max-width: 335px) 100vw, 335px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://www.hkeaa.edu.hk/tc/" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2018/08/hkeaa-2.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.hkedcity.net/" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2018/08/HKedCity-1.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.hko.gov.hk/contentc.htm" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2018/08/hko.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.chp.gov.hk/tc/features/14843.html" target="_blank">
+                                <img src="https://www.hkmakslo.edu.hk/wp-content/uploads/2021/02/79.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modules-break"></div>
+<div id="backToTop" onclick="topFunction()" style="display: none;">
+    <div>
+    </div>
+</div>
+
+<footer>
+    <div id="schInfo">
+        <div class="container">
+            <div class="row">
+                <div class="schName_ch col-xs-12">香港管理專業協會羅桂祥中學</div>
+                <div class="schName_en col-xs-12">The Hong Kong Management Association K S Lo College</div>
+                <div class="col-xs-12">
+                    <div class="row">
+                        <hr>
+                    </div>
+                </div>
+                <div class="infoList col-xs-12">
+                    <span class="address">
+                        <a href="#map" target="_self">
+                                                    <span class="address">
+                                <a href="https://www.google.com.hk/maps/place/%E9%A6%99%E6%B8%AF%E7%AE%A1%E7%90%86%E5%B0%88%E6%A5%AD%E5%8D%94%E6%9C%83%E7%BE%85%E6%A1%82%E7%A5%A5%E4%B8%AD%E5%AD%B8/@22.4577059,114.0062507,19z/data=!4m5!3m4!1s0x3403f088af34bd95:0x57b7b6c900b5a44!8m2!3d22.457706!4d114.0067108" target="_blank">新界天水圍天柏路26號</a>
+                            </span>
+                                                </a>
+                    </span>
+                </div>
+                <div class="infoList col-xs-12 col-sm-6">
+                                            <span class="tel">電話　(852) 2470 3363</span>
+                    
+                                            <span class="fax">傳真　(852) 2470 1106</span>
+                                    </div>
+                <div class="infoList col-xs-12 col-sm-6">
+                                            <span class="mail">
+                            電郵　
+                            <a href="mailto:college@hkmakslo.edu.hk">college@hkmakslo.edu.hk</a>
+                        </span>
+                    
+                                            <span class="web">
+                            網址　
+                            <a href="https://www.hkmakslo.edu.hk" target="_blank">https://www.hkmakslo.edu.hk</a>
+                        </span>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 modules-left">版權所有 &copy; Copyright © by The Hong Kong Management Association K S Lo College. All Rights Reserved.</div>
+                <div class="col-xs-12 col-sm-3 modules-right">Powered by
+                    <a href="http://www.eclass.com.hk/" target="_blank">
+                        <img src="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/images/eclassLogo_w.png" alt="schoolLogo"
+                             class="logo"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript">
+    $(function () {
+        // Add slideDown animation to Bootstrap dropdown when expanding.
+        $('.dropdown').on('show.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+        });
+
+        // Add slideUp animation to Bootstrap dropdown when collapsing.
+        $('.dropdown').on('hide.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+        });
+    });
+</script>
+<script type="text/javascript" src="https://www.hkmakslo.edu.hk/wp-content/themes/theme3_dark_blue/js/bootstrap_fix.js"></script>
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-preload-range="0">
+        <div class="slides"></div>
+
+        <div class="photoInfo">
+            <h3 class="title"></h3>
+            <p class="description"></p>
+            <span class="more"><a class="showMoreDescription" href="javascript:void(0);">（顯示更多…）</a></span>
+        </div>
+
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="popup" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+
+        <ol class="indicator"></ol>
+        <div class="indicatorControl">
+	    	<span class="leftBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+	    	</span>
+            <span class="rightBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+			</span>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://www.hkmakslo.edu.hk/wp-includes/js/wp-embed.min.js?ver=5.1.19'></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+<meta name="theme-color" content="#ffd640" />
+<meta name="color-scheme" content="light">
+
+<title>Sunkids Kindergarten</title>
+<meta name="description" content="We See the World through the Eyes of Your Child. Welcome to Sunkids Kindergarten, a place where rays of sunshine and boundless enthusiasm infuse every learning experience." />
+<meta property="og:title" content="Sunkids Kindergarten" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://sunids.edu.hk//favicon.ico" />
+<meta property="og:image" content="https://sunkids.edu.hk/image/home-top-vector.jpg" />
+<meta property="og:description" content="We See the World through the Eyes of Your Child. Welcome to Sunkids Kindergarten, a place where rays of sunshine and boundless enthusiasm infuse every learning experience." />
+
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+<link rel="manifest" href="favicon/manifest.json" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" />
+<meta name="theme-color" content="#ffffff" />
+<link rel="stylesheet" href="/style.css" />
+
+<style>
+  [data-content] {
+    opacity: 0;
+  }
+  undefined
+</style>
+
+<!-- Google reCaptcha -->
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+
+<!-- Google tag (gtag.js)
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M712BCTWJ5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M712BCTWJ5');
+</script> -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11002614129"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11002614129');
+</script>
+</head>
+
+<body>
+  <div class="notification-bar" style="display: none;">
+    <div class="close"></div>
+    <div class="icon"></div>
+    <div class="text"></div>
+  </div>
+  <nav class="menu">
+    <div class="container">
+      <div class="logo">
+        <a href="/home"><img src="image/logo.png" /></a>
+      </div>
+      <div class="menu-container">
+        <div class="menu-item" data-val="about-us" data-content="about-us" data-href="/about">About Us</div>
+        <div class="menu-item" data-val="admissions" data-content="admissions" data-href="/admissions">Admissions</div>
+        <div class="menu-item" data-val="belief" data-content="belief" data-href="/belief">Belief</div>
+        <div class="menu-item" data-val="curriculum" data-content="curriculum" data-href="/curriculum">Curriculum</div>
+        <div class="menu-item" data-val="achievement" data-content="achievement" data-href="/achievement">Acheivement</div>
+        <div class="menu-item" data-val="gallery" data-content="gallery" data-href="/activities">Gallery</div>
+        <div class="menu-item" data-val="contact-us" data-content="contact-us" data-href="/contact-us">Contact Us</div>
+        <!-- <div class="action-list">
+        <div name="search" class="action-item"></div>
+        <div name="profile" class="action-item"></div>
+        <div name="lang" class="action-item" tabindex="-1">
+          <div class="lang-menu">
+            <div class="option" data-val="en_US">🇬🇧 &nbsp;&nbsp;English</div>
+            <div class="option" data-val="zh_HK">🇭🇰 &nbsp;&nbsp;繁體中文</div>
+            <div class="option" data-val="zh_CN">🇨🇳 &nbsp;&nbsp;簡體中文</div>
+          </div>
+        </div>
+      </div> -->
+      </div>
+    </div>
+    <div class="dropdown-container">
+      <div class="dropdown" name="admissions">
+        <div class="dropdown-item" data-val="admission-form" data-content="admissions-forum" data-href="https://admissions.sunkids.edu.hk/?page=forum-home">Admission Forum</div>
+        <div class="dropdown-item" data-val="admission-form" data-content="admissions-application" data-href="/admissions#application">Application</div>
+        <div class="dropdown-item" data-val="school-fees" data-content="admissions-openday" data-href="/admissions#openday">Open Day</div>
+        <div class="dropdown-item" data-val="school-fees" data-content="admissions-interviews" data-href="/admissions#interview">Interview</div>
+        <div class="dropdown-item" data-val="school-fees" data-content="admissions-results" data-href="/admissions#result">Result</div>
+        <div class="dropdown-item" data-val="school-fees" data-content="admissions-school-fees" data-href="/admissions#fee">School Fees</div>
+        <div class="dropdown-item" data-val="school-fees" data-content="admissions-faq" data-href="/admissions#faq">School Fees</div>
+      </div>
+      <div class="dropdown" name="belief">
+        <div class="dropdown-item" data-val="play-based" data-content="belief-play-based" data-href="/belief#play-based">Play Based</div>
+        <div class="dropdown-item" data-val="performing-arts" data-content="belief-performing-arts" data-href="/belief#performing-arts">Performing Arts</div>
+        <div class="dropdown-item" data-val="character-building" data-content="belief-charter-building" data-href="/belief#character-building">Character Building</div>
+      </div>
+      <div class="dropdown" name="curriculum">
+        <div class="dropdown-item" data-val="english" data-content="curriculum-english" data-href="/curriculum#english">English</div>
+        <div class="dropdown-item" data-val="putonghua" data-content="curriculum-putonghua" data-href="/curriculum#putonghua">Putonghua</div>
+        <div class="dropdown-item" data-val="eye-level-math" data-content="curriculum-math" data-href="/curriculum#eye-level-math">Eye Level Math</div>
+      </div>
+      <div class="dropdown" name="gallery">
+        <div class="dropdown-item" data-val="school-facilities" data-content="gallery-activities" data-href="/activities">Activities</div>
+        <div class="dropdown-item" data-val="school-facilities" data-content="gallery-facilities" data-href="/school-facilities">Facilities</div>
+      </div>
+      <!-- <div class="dropdown" name="contact-us">
+        <div class="dropdown-item" data-val="faq" data-content="faq" data-href="/faq">FAQ</div>
+      </div> -->
+    </div>
+  </nav>
+
+  <nav class="menu-mobile">
+    <div class="container">
+      <div>
+        <a href="/home"><img class="logo" src="image/logo.png" /></a>
+      </div>
+      <div class="menu-control row">
+        <div class="search"></div>
+        <div class="close control" data-val="close"></div>
+        <div class="open control active" data-val="open"></div>
+      </div>
+    </div>
+    <div class="menu-item column">
+      <div class="item" data-content="about-us" data-href="/about">About Us</div>
+      <div class="item" data-href="/admissions">
+        <div class="tab row">
+          <div class="text" data-content="admissions">Admissions</div>
+          <div class="control expand">+</div>
+          <div class="control collapse">-</div>
+        </div>
+        <div class="dropdown">
+          <div class="item" data-content="admissions-forum" data-href="https://admissions.sunkids.edu.hk/?page=forum-home" data-type="scroll">Admission Forum</div>
+          <div class="item" data-content="admissions-application" data-href="/admissions#application" data-type="scroll">Online Application</div>
+          <div class="item" data-content="admissions-openday" data-href="/admissions#openday" data-type="scroll">Open Day</div>
+          <div class="item" data-content="admissions-interviews" data-href="/admissions#interview" data-type="scroll">Interview</div>
+          <div class="item" data-content="admissions-results" data-href="/admissions#result" data-type="scroll">Result</div>
+          <div class="item" data-content="admissions-school-fees" data-href="/admissions#fee" data-type="scroll">School Fees</div>
+          <div class="item" data-content="admissions-faq" data-href="/admissions#faq" data-type="scroll">FAQ</div>
+        </div>
+      </div>
+      <div class="item" data-href="/belief">
+        <div class="tab row">
+          <div class="text" data-content="belief">Belief</div>
+          <div class="control expand">+</div>
+          <div class="control collapse">-</div>
+        </div>
+        <div class="dropdown">
+          <div class="item" data-content="belief-play-based" data-href="/belief#play-based" data-type="scroll">Play Based</div>
+          <div class="item" data-content="belief-performing-arts" data-href="/belief#performing-arts" data-type="scroll">Performing Arts</div>
+          <div class="item" data-content="belief-charter-building" data-href="/belief#character-building" data-type="scroll">Character Building</div>
+        </div>
+      </div>
+      <div class="item" data-href="/curriculum">
+        <div class="tab row">
+          <div class="text" data-content="curriculum">Curriculum</div>
+          <div class="control expand">+</div>
+          <div class="control collapse">-</div>
+        </div>
+        <div class="dropdown">
+          <div class="item" data-content="curriculum-english" data-href="/curriculum#english" data-type="scroll">English</div>
+          <div class="item" data-content="curriculum-putonghua" data-href="/curriculum#putonghua" data-type="scroll">Putonghua</div>
+          <div class="item" data-content="curriculum-math" data-href="/curriculum#eye-level-math" data-type="scroll">Eye Level Math</div>
+        </div>
+      </div>
+      <div class="item" data-content="achievement" data-href="/achievement">Achievement</div>
+      <div class="item" data-href="/activities">
+        <div class="tab row">
+          <div class="text" data-content="gallery">Gallery</div>
+          <div class="control expand">+</div>
+          <div class="control collapse">-</div>
+        </div>
+        <div class="dropdown">
+          <div class="item" data-content="gallery-activities" data-href="/activities" data-type="scroll">Activities</div>
+          <div class="item" data-content="gallery-facilities" data-href="/school-facilities" data-type="scroll">Facilities</div>
+        </div>
+      </div>
+      <div class="item" data-content="contact-us" data-href="/contact-us">Contact Us</div>
+      <!--
+      <div class="item">
+        <select name="lang">
+          <option value="en_US">🇬🇧 &nbsp;&nbsp;English</option>
+          <option value="zh_HK">🇭🇰 &nbsp;&nbsp;繁體中文</option>
+          <option value="zh_CN">🇨🇳 &nbsp;&nbsp;簡體中文</option>
+        </select>
+      </div>
+      -->
+    </div>
+    <div class="follow-us column">
+      <div class="title">Follow Us</div>
+      <div class="social-container">
+        <div class="social-item" data-val="facebook">
+          <a href="https://www.facebook.com/WeAreSunkids/" target="_blank">
+            <img src="/image/icon-fb.png" alt="facebook" />
+          </a>
+        </div>
+        <div class="social-item" data-val="instagram">
+          <a href="https://www.instagram.com/sunkidshk/" target="_blank">
+            <img src="/image/icon-ig.png" alt="instagram" />
+          </a>
+        </div>
+        <div class="social-item" data-val="whatsapp">
+          <a href="https://wa.me/85290192066" target="_blank">
+            <img src="/image/icon-wts.png" alt="whatsapp" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright column">
+      <div class="image">
+        <img src="/image/logo-solid.png" />
+      </div>
+      <div class="text">Copyright
+        <script>
+          document.write("2008-" + new Date().getFullYear());
+        </script>
+        &copy; Sunkids Kindergarten.
+      </div>
+      <div class="text">All rights reserved</div>
+      <br><br>
+      <div class="text">Version: 20251002</div>
+    </div>
+  </nav>
+
+  <div class="navigator"></div>
+
+  <!-- Dynamic Content -->
+  <div class="page"></div>
+
+  <div class="back-to-top"></div>
+
+  <footer>
+    <div class="container">
+      <div class="top-container">
+        <div class="left-container">
+          <div class="logo">
+            <img src="/image/logo.png" alt="" />
+          </div>
+          <div class="title" data-content="contact-title">Contact Us</div>
+          <div class="social-container">
+            <a href="https://www.facebook.com/WeAreSunkids/" target="_blank">
+              <div class="social-item" data-val="facebook">
+                <img src="/image/icon-fb.png" alt="facebook" />
+              </div>
+            </a>
+            <a href="https://www.instagram.com/sunkidshk/" target="_blank">
+              <div class="social-item" data-val="instagram">
+                <img src="/image/icon-ig.png" alt="instagram" />
+              </div>
+            </a>
+            <a href="https://wa.me/85290192066" target="_blank">
+              <div class="social-item" data-val="whatsapp">
+                <img src="/image/icon-wts.png" alt="whatsapp" />
+              </div>
+            </a>
+            <!--
+            <a href="mailto:info@sunkids.edu.hk" target="_blank">
+              <div class="social-item" data-val="email">
+                <img src="/image/icon-email.png" alt="email" />
+              </div>
+            </a>
+            -->
+            <a href="https://admissions.sunkids.edu.hk/?page=forum-home" target="_blank">
+              <div class="social-item" data-val="forum">
+                <img src="/image/icon-forum.png" alt="forum" />
+              </div>
+            </a>
+          </div>
+          <!--<div class="forum-button">Discussion Board 討論區</div>-->
+        </div>
+        <div class="right-container">
+          <div class="contact-container">
+            <!-- <div class="title">Contact</div> -->
+            <a href="https://goo.gl/maps/tPAkGLQqeVPaDgCe9" target="_blank">
+              <div class="address"><img src="image/icon-address.png" alt="address" /><span data-content="address-en">Kindergarten, G/F, 2 Wu Sau Street, Yuet Wu Villa, Tuen Mun</span></div>
+              <div class="address"><img src="image/icon-address.png" alt="address" /><span data-content="address-zh">加州天地 幼稚園/幼兒院, 屯門湖秀街2號 悅湖山莊地下2A</span></div>
+            </a>
+            <div class="tel-container">
+              <img src="image/icon-email.png" alt="email" />
+              <a href="mailto:info@sunkids.edu.hk" target="_blank">
+                <div class="tel" data-content="email">info@sunkids.edu.hk</div>
+              </a>
+            </div>
+            <div class="tel-container">
+              <img src="image/icon-tel.png" alt="tel" />
+              <a href="tel:+85224403088" target="_blank">
+                <div class="tel" data-content="phone">(852) 2440 3088</div>
+              </a>
+            </div>
+            <div class="wts-container">
+              <img src="image/icon-wts.png" alt="wts" />
+              <a href="https://wa.me/85290192066" target="_blank">
+                <div class="wts" data-content="whatsapp">(852) 9019 2066</div>
+              </a>
+            </div>
+            <div class="wts-container">
+              <img src="image/icon-forum.png" alt="discussion" />
+              <a href="https://admissions.sunkids.edu.hk/?page=forum-home" target="_blank">
+                <div class="wts" data-content="forum">
+                  <span data-lang="en_US">Discussion Group</span>
+                  <span data-lang="zh_HK">討論區</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <img class="mobile-logo" src="/image/logo.png" alt="" />
+      </div>
+      <div class="bottom-container">
+        <div class="legal-container">
+          <div class="legal-item">
+            <a href="/recruitment" data-content="recruitment">Recruitment</a>
+          </div>
+          <div class="legal-item">
+            <a href="/privacy" data-content="privacy">Privacy</a>
+          </div>
+          <div class="legal-item">
+            <a href="/disclaimer" data-content="disclaimer">Disclaimer</a>
+          </div>
+        </div>
+        <div class="copyright">
+          Copyright
+          <script>
+            document.write("2008-" + new Date().getFullYear());
+          </script>
+          &copy; Sunkids Kindergarten. All Rights Reserved.
+          <br><br>
+          Latest Version: 20240826
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script type="text/javascript" src="/js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="/js/instafeed.js"></script>
+
+<script type="text/javascript" src="/script/config.js"></script>
+
+<script type="text/javascript" src="/script/webappfoundation.js"></script>
+<script type="text/javascript" src="/script/URL.js"></script>
+<script type="text/javascript" src="/script/Cookie.js"></script>
+<script type="text/javascript" src="/script/urlconnection.js"></script>
+<script type="text/javascript" src="/script/ImageProcessor.js"></script>
+<script type="text/javascript" src="/script/KDate.js"></script>
+
+<!-- Start -->
+<script src="/index.js?t=1000"></script>
+<script>
+var onloadCallback = function() {
+  console.log("grecaptcha is ready!");
+  try {
+    grecaptcha.render('g-recaptcha', {
+      'sitekey' : '6LerFQ0oAAAAAGjEgXSoad4j0rEoABMVI3a-LDB5'
+    });
+  } catch (e) {
+    
+  }
+};
+</script>
+<script type="text/javascript" src="/module/page-favicon.ico/page-favicon.ico.js?t=1774505144168"></script>
+<script>
+$(document).ready(function() {
+  let currPage = URL.get("page") || "home";
+  pageApp = new MyActivity({ dom: $('.page').eq(0), content: $('.page').eq(0) });
+});
+</script>
+</body>
+
+</html>

@@ -129,6 +129,8 @@
             <div class="badge-container">
                 {% if school.badge_url %}
                     <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="badge-image">
+                {% elif school.campus_image %}
+                    <img src="{{ school.campus_image }}" alt="{{ school.name }} campus" class="badge-image campus-fallback">
                 {% else %}
                     <div class="badge-placeholder">🎓</div>
                 {% endif %}

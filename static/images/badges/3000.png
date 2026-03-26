@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="google-site-verification" content="Cb5iKnm2qvo8i5GlqdvUYiWQPtA5wbYN0kHhestv74I" />
+<title>OpenLearn 互動校園</title>
+<link rel="stylesheet" href="./template-theme/styles.php?dir=./&charset=big5&netroom_id=1&channel=campus" type="text/css">
+
+<script language="JavaScript">
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+
+MM_reloadPage(true);
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  newWin = window.open(theURL,winName,features);
+  newWin.focus();
+}
+</script><script type="text/javascript" src="./js/form.js"></script>
+<script type="text/javascript" src="./js/layer.js"></script>
+<script type="text/javascript" src="./js/swfobject.js"></script>
+<body leftmargin="10" topmargin="10" marginwidth="10" marginheight="10">
+
+<table width="775" height="240" border="0" cellpadding="5" cellspacing="0" class="tooltable" align="center" valign="center">
+	<tr class="tooltitle" height="25"> 
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td valign="center">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+				<tr>
+					<td align="center">你瀏覽的園地可能不存在或不公開!<br><br>請用先在學校園地登入, 然後連結到你要瀏覽的園地。</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<br>
+						<input type="button" value="學校登入" onclick="window.location.href='./login.php?charset=&netroom_id=1';">
+						<input type="button" value="返回" onclick="window.history.back();">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
+<script language="Javascript">
+<!--
+
+
+
+
+
+		if(window.name=="netschoolLoginPage") {
+			window.onunload = function(){
+				if(self.screenTop>9000) {
+					MM_openBrWindow('./logout.php?ACTION_ID=LOGOUT&charset=big5&netroom_id=1&channel=campus&close=1','logout','scrollbars=no,resizable=no,width=150,height=100,left=3000,top=3000');
+				}
+			}
+		}
+
+window.status='Page loaded in 0.239s';
+
+
+//-->
+</script>

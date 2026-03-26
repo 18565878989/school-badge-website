@@ -1,0 +1,3490 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="九龍塘學校(小學部)">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/hls.js"></script>
+	<script src="js/weather.js"></script>
+	<script>
+		$(document).ready(function() {
+			// breakpoint and up
+			$(window).resize(function() {
+				if ($(window).width() >= 980) {
+
+					// when you hover a toggle show its dropdown menu
+					$(".navbar .dropdown-toggle").hover(function() {
+						$(this).parent().toggleClass("show");
+						$(this).parent().find(".dropdown-menu").toggleClass("show");
+					});
+
+					// hide the menu when the mouse leaves the dropdown
+					$(".navbar .dropdown-menu").mouseleave(function() {
+						$(this).removeClass("show");
+					});
+
+					// do something here
+				}
+			});
+
+		});
+
+	</script>
+	<style>
+		/* noto-sans-tc-regular - latin_chinese-traditional */
+		@font-face {
+			font-family: 'Noto Sans TC';
+			font-style: normal;
+			font-weight: 400;
+			src: url('fonts/noto-sans-tc-v10-latin_chinese-traditional-regular.eot');
+			/* IE9 Compat Modes */
+			src: local('Noto Sans TC Regular'), local('NotoSansTC-Regular'), url('fonts/noto-sans-tc-v10-latin_chinese-traditional-regular.eot?#iefix') format('embedded-opentype'),
+				/* IE6-IE8 */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-regular.woff2') format('woff2'),
+				/* Super Modern Browsers */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-regular.woff') format('woff'),
+				/* Modern Browsers */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-regular.ttf') format('truetype'),
+				/* Safari, Android, iOS */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-regular.svg#NotoSansTC') format('svg');
+			/* Legacy iOS */
+		}
+
+		/* noto-sans-tc-500 - latin_chinese-traditional */
+		@font-face {
+			font-family: 'Noto Sans TC';
+			font-style: normal;
+			font-weight: 500;
+			src: url('fonts/noto-sans-tc-v10-latin_chinese-traditional-500.eot');
+			/* IE9 Compat Modes */
+			src: local('Noto Sans TC Medium'), local('NotoSansTC-Medium'), url('fonts/noto-sans-tc-v10-latin_chinese-traditional-500.eot?#iefix') format('embedded-opentype'),
+				/* IE6-IE8 */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-500.woff2') format('woff2'),
+				/* Super Modern Browsers */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-500.woff') format('woff'),
+				/* Modern Browsers */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-500.ttf') format('truetype'),
+				/* Safari, Android, iOS */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-500.svg#NotoSansTC') format('svg');
+			/* Legacy iOS */
+		}
+
+		/* noto-sans-tc-700 - latin_chinese-traditional */
+		@font-face {
+			font-family: 'Noto Sans TC';
+			font-style: normal;
+			font-weight: 700;
+			src: url('fonts/noto-sans-tc-v10-latin_chinese-traditional-700.eot');
+			/* IE9 Compat Modes */
+			src: local('Noto Sans TC Bold'), local('NotoSansTC-Bold'), url('fonts/noto-sans-tc-v10-latin_chinese-traditional-700.eot?#iefix') format('embedded-opentype'),
+				/* IE6-IE8 */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-700.woff2') format('woff2'),
+				/* Super Modern Browsers */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-700.woff') format('woff'),
+				/* Modern Browsers */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-700.ttf') format('truetype'),
+				/* Safari, Android, iOS */
+				url('fonts/noto-sans-tc-v10-latin_chinese-traditional-700.svg#NotoSansTC') format('svg');
+			/* Legacy iOS */
+		}
+
+		.table-td td {
+			padding-left: 5px;
+			line-height: 20px;
+		}
+
+		.text-5 {
+			text-decoration: none;
+			border-bottom: 1px solid;
+			padding-bottom: 0px;
+
+		}
+
+		a:link {
+			text-decoration: none;
+		}
+
+		a:visited {
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		a:active {
+			text-decoration: none;
+		}
+
+		/*modal img size */
+		.modal-body img {
+			width: 100%;
+		}
+
+		.mySlides {
+			display: none;
+		}
+
+		.button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 5px 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+		}
+
+		a:hover {
+			color: green;
+			background-color: transparent;
+		}
+
+		@media only screen and (max-width: 575px) {
+			#tb01 {
+				width: 100%;
+			}
+		}
+
+		.carousel-container {
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+			margin: 20px 0;
+		}
+
+		.carousel-track {
+			display: flex;
+			animation: scroll 60s linear infinite;
+			width: calc(200px * 5);
+		}
+
+		.carousel-item2 {
+
+			width: 150px;
+			height: 100px;
+			margin: 0 10px;
+			flex-shrink: 0;
+		}
+
+		.carousel-item2 img {
+
+			width: 62%;
+			height: 90%;
+			object-fit: cover;
+			border-radius: 5px;
+
+		}
+
+		@keyframes scroll {
+			0% {
+				transform: translateX(0);
+			}
+
+			100% {
+				transform: translateX(-50%);
+			}
+		}
+
+		.carousel-container:hover .carousel-track {
+			animation-play-state: paused;
+		}
+
+	</style>
+	<style>
+		.marquee-wrapper {
+			position: relative;
+			max-width: 850px;
+			width: 100%;
+			overflow: hidden;
+
+
+		}
+
+		.marquee-container {
+			display: flex;
+			width: 100%;
+			height: 150px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.marquee-group {
+			display: flex;
+			animation: marquee-scroll 60s linear infinite;
+		}
+
+		.marquee-wrapper:hover .marquee-group {
+			animation-play-state: paused;
+		}
+
+		.marquee-item {
+			width: auto;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+			margin: 0 0px;
+			transition: all .5s ease .1s;
+		}
+
+		.marquee-item:hover {
+			transform: scale(1.05);
+			z-index: 10;
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+		}
+
+		.marquee-item img {
+			width: auto;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+
+		@keyframes marquee-scroll {
+			0% {
+				transform: translateX(0);
+			}
+
+			100% {
+				transform: translateX(-100%);
+			}
+		}
+
+		@media (max-width: 576px) {
+
+			.marquee-container {
+				display: flex;
+				width: 100%;
+				height: 80px;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.marquee-item {
+				width: auto;
+				margin: 0 0px;
+			}
+
+			.marquee-item img {
+				height: 80px;
+			}
+		}
+
+
+		.photoalign {
+
+			text-align: center;
+
+		}
+
+		.divcenter {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+	</style>
+	<link rel="stylesheet" href="css/ktsps_cht.css">
+	<title>九龍塘學校(小學部)</title>
+
+</head>
+
+<body oncontextmenu="return false;" onload="myFunction()">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6"><img src="pic/logo.jpg" class="img-fluid"></div>
+			<div class="col-sm-3 offset-sm-3">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb breadcrumb-lang" style="background-color: white;">
+						<li class="breadcrumb-item ml-auto"><a href="index.html">繁</a></li>
+						<li class="breadcrumb-item"><a href="gb/index.html">簡</a></li>
+						<li class="breadcrumb-item"><a href="eng/index.html">Eng</a></li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-sm navbar-light bg-light bg-custom-2">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav justify-content-between w-100">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle mainmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							學校簡介
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													我們的學校
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="1/01_6.html">校董會及教師團隊</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="1/01_1.html">辦學宗旨與使命</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="1/01_7.html">校風、願景與目標</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="1/01_4.html">學校歷史</a></li>
+													</ul>
+												</li>
+												<li style="margin-top:10px">
+													校長的話
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="1/07_1.html">校長的話</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="1/07_2.html">KTS 家訊</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													學校概覽
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="1/02_9.html">學校資料</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="1/02_2.html">校歌</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="1/02_3.html">班級結構</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="1/02_4.html">上課時間表</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="1/02_7.html">學費及其他費用</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="1/04_1.html">校園設施</a></li>
+												<li style="margin-top:10px"><a href="1/05_1.html">媒體報道</a></li>
+												<li style="margin-top:10px"><a href="1/06_1.html">學校刊物</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle mainmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							課程及獎勵計劃
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="2/01.html">學習特色</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="2/08.html">課程及課外活動</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="2/03_1.html">對學生的支援</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="2/06.html">獎勵計劃</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="2/07.html">本年度活動</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle mainmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							學生成就
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="3/01.html">歷年佳績</a></li>
+												<li style="margin-top:10px"><a href="3/02_4.html">升中派位</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													校內外比賽
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="3/03_in2024_1.html">2024年度校內比賽獲獎名單</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="3/03_ex2024_3.html">2024年度校外比賽獲獎名單</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="3/03_in2025_1.html">2025年度校內比賽獲獎名單</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="3/03_ex2025_3.html">2025年度校外比賽獲獎名單</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle mainmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							資優教育
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="4/01.html">何謂資優</a></li>
+												<li style="margin-top:10px">
+													本校資優教育計劃
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_1.html">本校資優教育簡介</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_2.html">中文科及普通話科校本資優課程</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_3.html">英文科校本資優課程</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_4.html">數學科校本資優課程</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_5.html">常識科及科學研習課校本資優課程</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_6.html">德育科校本情意教育課程</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-down" style="padding-right:10px;"></i>綜合藝術校本資優課程</li>
+														<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_7.html">視覺藝術科校本資優課程</a></li>
+														<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_8.html">音樂科校本資優課程 </a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_9.html">體育課校本資優課程</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_10.html">校本領袖資優課程:KTS領袖及KTS大使培訓計劃</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_14.html">世界公民組</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_11.html">友輩教學計劃</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="4/02_12.html">校外資優課程</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="4/04_1.html">網上資源</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle mainmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							健康學校
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													健康學校
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/01_1.html">健康學校目標</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/11_5.html">各項健康政策及指引</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/11_2.html">管理架構</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/11_3.html">健康學校活動</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/11_6.html">健康家庭手冊</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/11_7.html">健康活動行事曆</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													綠色校園
+													<div class="row">
+														<div class="col-auto">
+															<ul>
+																<li class="li-padding-left"><i class="fas fa-caret-down" style="padding-right:10px;"></i>環保教育及政策</li>
+																<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/01_3.html">目標</a></li>
+																<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/01_2.html">環保政策</a></li>
+																<li class="li-padding-left"><i class="fas fa-caret-down" style="padding-right:10px;"></i>環保管理及活動架構</li>
+																<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/02_1.html">管理架構</a></li>
+																<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/02_2.html">可持續發展教育架構圖</a></li>
+																<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/03_3.html">環保活動</a></li>
+																<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/04.html">校園樹木品種名錄</a></li>
+																<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/05.html">環保之旅</a></li>
+															</ul>
+														</div>
+														<div class="col-auto">
+															<ul>
+																<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/05_1.html">環保小貼士</a></li>
+																<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="5/12.html">環保資訊</a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle mainmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							藝術教育
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="10/01.html">課程理念與願景</a></li>
+												<li style="margin-top:10px">
+													音樂科
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="10/02.html">核心課程</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="10/02_1.html">課外活動</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="10/02_2.html">近年比賽成績</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													視覺藝術科
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="10/03.html">核心課程</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="10/03_1.html">課外活動</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="10/03_2.html">近年比賽成績</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle mainmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							學生園地
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													優秀學生作品
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/02_16_02.html">中文科</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/02_16_03.html">英文科</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/02_3_13_1.html">視藝科</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/02_15_17.html">數碼作品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													電子圖書館
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/06_11.html">圖書館守則</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-down" style="padding-right:10px;"></i>好書推介</li>
+														<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/06_10_1.html">中文圖書</a></li>
+														<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/06_10_2.html">英文圖書</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/06_4.html">借書龍虎榜</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/06_5.html">閱讀活動簡介</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/06_6.html">圖書檢索</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/06_7.html">書類指引</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="6/06_9_1.html">最新消息</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle mainmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							家長天地
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													學校政策
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/05_1_1.html">學校政策</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/02_3.html">校車、校服及午膳安排</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/02_7.html">表格下載區</a></li>
+													</ul>
+												</li>
+												<li style="margin-top:10px">
+													家長錦囊
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/03_2.html">對家長的支援</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/05_1_2.html">協助小一學生適應校園生活</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/05_1_3.html">小一主要學科必備能力</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/02_5.html">管教有妙法</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-down" style="padding-right:10px;"></i>有關特殊教育需要</li>
+														<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/02_6_1.html">認識各類學習障礙</a></li>
+														<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/02_6/org.pdf" target="_blank">評估機構資料</a></li>
+														<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/02_6_4.html">有關章程或報章資料</a></li>
+														<li class="li-padding-left-40"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/02_6/website.pdf" target="_blank">相關網址</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													升中錦囊
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/06_5.html">中學學位分配辦法</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/06_1.html">非派位直資中學資料</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/06_3.html">中學簡介會及升中講座</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/06_2.html">有關報章剪報</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/06_4.html">其他資料</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													家長教師會
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/01_1_4.html">成立</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/01_1_3.html">架構</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="7/01_1_1.html">會章</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle mainmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							校友資訊
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="8/08.html">主席的話</a></li>
+												<li style="margin-top:10px"><a href="8/09.html">校友會委員名單</a></li>
+												<li style="margin-top:10px"><a href="8/10.html">會章</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px"><a href="8/01.html">登記加入校友會</a></li>
+												<li style="margin-top:10px"><a href="8/11.html">校友會會訊</a></li>
+												<li style="margin-top:10px"><a href="8/12.html">過去活動</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													傑出校友/學生
+													<ul>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="8/04.html">傑出校友</a></li>
+														<li class="li-padding-left"><i class="fas fa-caret-right" style="padding-right:10px;"></i><a href="8/04_1.html">傑出學生</a></li>
+													</ul>
+												</li>
+												<li style="margin-top:10px"><a href="8/05.html">歷屆畢業生名單及合照 </a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle mainmenu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							入學申請
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													<a href="9/01.html">小一入學申請</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="nav-submenu">
+											<ul>
+												<li style="margin-top:10px">
+													<a href="9/02.html">各級插班生入學申請</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="container pt-2">
+		<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="7000" data-ride="carousel">
+
+			<div class="carousel-inner">
+				<div class="carousel-item active"> <img class="d-block w-100" src="pic/1.jpg" alt=""> </div>
+				<div class="carousel-item"> <img class="d-block w-100" src="pic/2.jpg" alt=""> </div>
+				<div class="carousel-item"> <img class="d-block w-100" src="pic/3.jpg" alt=""> </div>
+				<div class="carousel-item"> <img class="d-block w-100" src="pic/4.jpg" alt=""> </div>
+				<div class="carousel-item"> <img class="d-block w-100" src="pic/5.jpg" alt=""> </div>
+				<div class="carousel-item"> <img class="d-block w-100" src="pic/6.jpg" alt=""> </div>
+				<div class="carousel-item"> <img class="d-block w-100" src="pic/7.jpg" alt=""> </div>
+				<div class="carousel-item"> <img class="d-block w-100" src="pic/8.jpg" alt=""> </div>
+				<div class="carousel-item"> <img class="d-block w-100" src="pic/9.jpg" alt=""> </div>
+				<div class="carousel-item"> <img class="d-block w-100" src="pic/10.jpg" alt=""> </div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+		</div>
+	</div>
+
+	<div class="container pt-2">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="card border-0">
+							<img src="pic/title1.png" class="card-img-top rounded shadow-sm" alt="...">
+							<div class="card-body" style="padding:20px;">
+								<h5 class="card-title"><i class="fas fa-info-circle"></i> 最新消息</h5>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item" style="padding:5px;"><a href="https://www.ktsps.edu.hk/steam/voting2025_90s.aspx" class="card-link" target="_blank">90周年校慶KTS創意發明比賽--「最受歡迎作品獎」投票</a><img src="pic/new1.gif"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="card border-0">
+							<img src="pic/titlefor2425.png" class="card-img-top rounded shadow-sm" alt="...">
+							<div class="card-body" style="padding:20px;">
+								<h5 class="card-title"><i class="fas fa-school"></i> 入學申請</h5>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item" style="padding:5px;"><a href="9/01.html" class="card-link">2026/2027年度 小一入學申請<br class="d-none d-sm-block">(2026年9月入學)</a><img src="pic/new1.gif"></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="card border-0">
+							<div class="row">
+								<div class="col-sm-12">
+									<img src="pic/title4.png" class="card-img-top rounded shadow-sm" alt="...">
+									<div class="card-body">
+										<h5 class="card-title"><i class="far fa-sun"></i> 氣象站</h5>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="card-body pt-0" style="font-size:12px">
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="row">
+													<div class="col">&#28201;度 :</div>
+													<div class="col-6">
+														<div id="weatherdata0" style="text-align:left">--</div>
+													</div>
+													<div class="w-100"></div>
+													<div class="col">氣壓 :</div>
+													<div class="col-6">
+														<div id="weatherdata1" style="text-align:left">--</div>
+													</div>
+													<div class="w-100"></div>
+													<div class="col">濕度 :</div>
+													<div class="col-6">
+														<div id="weatherdata2" style="text-align:left">--</div>
+													</div>
+													<div class="w-100"></div>
+													<div class="col">風速 :</div>
+													<div class="col-6">
+														<div id="weatherdata3" style="text-align:left">--</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-12">
+												<div class="row">
+													<div class="col">降雨量 (今日) :</div>
+													<div class="col-6">
+														<div id="weatherdata4" style="text-align:left">--</div>
+													</div>
+													<div class="w-100"></div>
+													<div class="col">紫外線指數 :</div>
+													<div class="col-6">
+														<div id="weatherdata5" style="text-align:left">--</div>
+													</div>
+													<div class="w-100"></div>
+													<div class="col">太陽輻射指數 :</div>
+													<div class="col-6">
+														<div id="weatherdata6" style="text-align:left">--</div>
+													</div>
+													<div class="w-100"></div>
+													<div class="col">空氣質素指數 :</div>
+													<div class="col-6">
+														<div class="mypanel">--</div>
+													</div>
+												</div>
+											</div>
+											<div class="w-100"></div>
+											<div class="col-sm-12 pt-3">
+												<div class="row">
+													<div class="col" style="color:blue">氣象站的數據是來自本校安裝的氣象站，主要顯示本校區域的天氣情況。</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<div class="row">
+					<div class="col-sm-6 d-block d-sm-none" style="padding-bottom: 6px;">
+						<a href="90s/90s.html" class="card-link" target="_blank"><img class="card-img-top rounded shadow-sm" src="90s/pic/Smallbanner.gif" width="100%"></a>
+					</div>
+					<div class="col-sm-6 d-none d-sm-block" style="padding:0px 3px 7px 15px;">
+						<a href="90s/90s.html" class="card-link" target="_blank"><img class="card-img-top rounded shadow-sm" src="90s/pic/SMALLBANNER.gif" width="100%"></a>
+					</div>
+					<div class="col-sm-6 d-block d-sm-none" style="padding-bottom: 7px;">
+						<a href="fundraising/fundraising.html" class="card-link" target="_blank"><img class="card-img-top rounded shadow-sm" src="fundraising/pic/Smallbanner.gif" width="100%"></a>
+					</div>
+					<div class="col-sm-6 d-none d-sm-block" style="padding:0px 15px 8px 3px;">
+						<a href="fundraising/fundraising.html" class="card-link" target="_blank"><img class="card-img-top rounded shadow-sm" src="fundraising/pic/Smallbanner.gif" width="100%"></a>
+					</div>
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title"><i class="fas fa-tv"></i> 校園電視台</h5>
+								<div class="text-center">
+									<video width="450" autoplay controls controlsList="nodownload" oncontextmenu="return false;">
+										<source src="movie/themesong2025.mp4" type="video/mp4" />
+									</video>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="card border-0 pt-3">
+							<div class="row no-gutters">
+								<div class="col-auto">
+									<img src="pic/title2for2425.png" class="card-img-top rounded shadow-sm" style="max-width: 100px;height: auto;">
+								</div>
+								<div class="col">
+									<div class="card-body">
+										<h5 class="card-title"><i class="fas fa-trophy"></i>以你為榮</h5>
+										<!-- list-group-->
+										<ul class="list-group list-group-flush">
+
+
+
+
+
+
+
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong2026030302">2025-2026年度九龍城區傑出學生選舉</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong2026030302" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2025-2026年度九龍城區傑出學生選舉</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小學組傑出學生獎</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>6A 王靖彤</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong2026030301">香港校際合唱節2026比賽暨大師班</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong2026030301" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">香港校際合唱節2026比賽暨大師班</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小學高級N組—金獎</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小學初級K組—金獎</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20260209">2025第八屆全港青少年進步獎</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20260209" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2025第八屆全港青少年進步獎</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">青少年進步獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 6C </td>
+																				<td> 姚善桸 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">進步嘉許獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 6A </td>
+																				<td> 楊欣桐 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 阮烙心 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20260129">第五屆香港大中小學中英文硬筆書法比賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20260129" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">第五屆香港大中小學中英文硬筆書法比賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td rowspan="2" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">小學中文組初級（小一至小二）</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 2B </td>
+																				<td> 李汶禧 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">卓越獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 2A </td>
+																				<td> 張遠寜 </td>
+																			</tr>
+																			<tr>
+																				<td> 2C </td>
+																				<td> 鄒晉麒 </td>
+																			</tr>
+
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td rowspan="3" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">小學中文組中級（小三至小四）</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 4C </td>
+																				<td> 葉麗儀 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">亞軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 4D </td>
+																				<td> 林子朗 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">卓越獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 3C </td>
+																				<td> 劉逸橋 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">小學中文組高級（小五至小六）</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">優異獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 5A </td>
+																				<td> 張凱喬 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 謝林軒 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20260126">2025-2026年度九龍西區小學校際田徑比賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20260126" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2025-2026年度九龍西區小學校際田徑比賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">女子乙組團體冠軍</td>
+																</tr>
+																<tr>
+																	<td colspan="3" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">男子乙組團體殿軍</td>
+																</tr>
+																<tr>
+																	<td colspan="3" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">男子丙組團體冠軍</td>
+																</tr>
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">女子甲組擲壘球</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 6A </td>
+																				<td> 張梧漾 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">女子乙組100米</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">季軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 5A </td>
+																				<td> 葉海琳 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">女子乙組200米</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 5B </td>
+																				<td> 張詩朗 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">女子乙組跳遠</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 5A </td>
+																				<td> 布海澄 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">女子乙組4x100米接力</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">季軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 5A </td>
+																				<td> 布海澄 </td>
+																			</tr>
+																			<tr>
+																				<td> 5A </td>
+																				<td> 葉海琳 </td>
+																			</tr>
+																			<tr>
+																				<td> 5B </td>
+																				<td> 張愷晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 5B </td>
+																				<td> 張詩朗 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 張梓玥 </td>
+																			</tr>
+																			<tr>
+																				<td> 5D </td>
+																				<td> 王銥笑 </td>
+																			</tr>
+
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">男子乙組100米</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">季軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 4D </td>
+																				<td> 馬文翰 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">男子乙組200米</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 5A </td>
+																				<td> 林觀淇 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">男子乙組擲壘球</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 5C </td>
+																				<td> 劉睿龍 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">男子丙組100米</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 4B </td>
+																				<td> 黃浚琋 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">男子丙組60米</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">亞軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 3B </td>
+																				<td> 李祖安 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">男子丙組跳遠</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">殿軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 4E </td>
+																				<td> 黎一言 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="center" bgcolor="#AAEEAA" style="border:2px solid white">男子丙組4x100米接力</td>
+																	<td width="60" valign="center" bgcolor="#AAEEAA" style="border:2px solid white">冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 3A </td>
+																				<td> 黃敬皓 </td>
+																			</tr>
+																			<tr>
+																				<td> 3B </td>
+																				<td> 李祖安 </td>
+																			</tr>
+																			<tr>
+																				<td> 3D </td>
+																				<td> 蔡溢謙 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 黃浚琋 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 姚沛言 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 黎一言 </td>
+																			</tr>
+
+																		</table>
+																	</td>
+																</tr>
+
+
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20260105">香港青年音樂匯演2025管樂團比賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20260105" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">香港青年音樂匯演2025管樂團比賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小學中級組 - 金獎</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20251021">2024-2025年度全港小學學界電影節短片比賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20251021" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2024-2025年度全港小學學界電影節短片比賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">Best Short Film</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 2C </td>
+																				<td> 陳允賢 </td>
+																			</tr>
+																			<tr>
+																				<td> 4A </td>
+																				<td> 朱芷瑩 </td>
+																			</tr>
+																			<tr>
+																				<td> 4A </td>
+																				<td> 高司哲 </td>
+																			</tr>
+																			<tr>
+																				<td> 4A </td>
+																				<td> 林雅嵐 </td>
+																			</tr>
+																			<tr>
+																				<td> 4A </td>
+																				<td> 羅伊晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 4A </td>
+																				<td> 李洛言 </td>
+																			</tr>
+																			<tr>
+																				<td> 4A </td>
+																				<td> 黃允妤 </td>
+																			</tr>
+																			<tr>
+																				<td> 4A </td>
+																				<td> 黃逸群 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 陳子蕎 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 陳允祈 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 張芷瑜 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 藍阡鋒 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 梁諾希 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 李懿嘉 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 吳芊璕 </td>
+																			</tr>
+																			<tr>
+																				<td> 4C </td>
+																				<td> 莊舜軒 </td>
+																			</tr>
+																			<tr>
+																				<td> 4C </td>
+																				<td> 范凱嵐 </td>
+																			</tr>
+																			<tr>
+																				<td> 4C </td>
+																				<td> 梁詩咏 </td>
+																			</tr>
+																			<tr>
+																				<td> 4D </td>
+																				<td> 許芷喬 </td>
+																			</tr>
+																			<tr>
+																				<td> 4D </td>
+																				<td> 賴承志 </td>
+																			</tr>
+																			<tr>
+																				<td> 4D </td>
+																				<td> 林子朗 </td>
+																			</tr>
+																			<tr>
+																				<td> 4D </td>
+																				<td> 梁素心 </td>
+																			</tr>
+																			<tr>
+																				<td> 4D </td>
+																				<td> 梁悦翹 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 區樂之 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 陳約言 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 鄭語嫣 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 張珈悠 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 張憬儁 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 李柏賢 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 彭博衍 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 蟻珮泉 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 包杏千 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 楊昊洺 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 章依晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 譚景丰 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">Best Production</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 4A </td>
+																				<td> 羅伊晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 陳子蕎 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 陳允祈 </td>
+																			</tr>
+																			<tr>
+																				<td> 4E </td>
+																				<td> 陳約言 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 章依晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 譚景丰 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">Best Acting</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 4B </td>
+																				<td> 陳允祈 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+
+
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250912">中國語文菁英計劃 2024-2025小學組寫作比賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250912" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">中國語文菁英計劃 2024-2025小學組寫作比賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">冠軍</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 畢業生 </td>
+																				<td> 孫林曦 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250905">全港小學學界三項潛能傑出學生選拔2025</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250905" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">全港小學學界三項潛能傑出學生選拔2025</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">B.O.B.傑出潛能學生獎</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 畢業生 </td>
+																				<td> 余文韜 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">潛能學生獎</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 4A </td>
+																				<td> 黃允妤 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 李睿晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 劉曉薈 </td>
+																			</tr>
+																			<tr>
+																				<td> 畢業生 </td>
+																				<td> 劉千嵐 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250829">兒童飛龍大使選舉2025暨第37屆亞太區兒童交流大會<br class="d-none d-sm-block">（香港區選拔）</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250829" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">兒童飛龍大使選舉2025暨第37屆亞太區兒童交流大會<br class="d-none d-sm-block">（香港區選拔）</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">兒童交流大使暨兒童飛龍大使<br class="d-none d-sm-block">(1位亞太兒童交流大使、<br class="d-none d-sm-block">2位馬來西亞兒童交流大使)</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 6A </td>
+																				<td> 趙子寧 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 麥珀豪 </td>
+																			</tr>
+																			<tr>
+																				<td> 畢業生 </td>
+																				<td> 黃祉媛 </td>
+																			</tr>
+
+
+
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250820">第十屆《基本法》多面體——全港小學生辯論賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250820" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">第十屆《基本法》多面體——全港小學生辯論賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">團體冠軍</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 4B </td>
+																				<td> 潘文樸 </td>
+																			</tr>
+																			<tr>
+																				<td> 5A </td>
+																				<td> 王靖彤 </td>
+																			</tr>
+																			<tr>
+																				<td> 5A </td>
+																				<td> 孫諾恩 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 潘殷嬈 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 吳芊語 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 鄧皓允 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250819">傑出公民學生獎勵計劃2024/25</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250819" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">傑出公民學生獎勵計劃2024/25</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">和富香港學生十優公民大使</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 5B </td>
+																				<td> 張凱霖 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250711">星島第三屆全港華文雙語菁英問答比賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250711" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">星島第三屆全港華文雙語菁英問答比賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">高小組 亞軍</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 5A </td>
+																				<td> 章依晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 5B </td>
+																				<td> 陳諾瑤 </td>
+																			</tr>
+																			<tr>
+																				<td> 5B </td>
+																				<td> 裘詩涵 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 許詩涵 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 張銘筠 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 鄺傲翔 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 孫林曦 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 賴沛生 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 鄭達欣 </td>
+																			</tr>
+
+
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250709">2024/25種族友善校園嘉許計劃</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250709" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2024/25種族友善校園嘉許計劃</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">支持種族友善星級校園獎</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250619">2024 香港義工獎</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250619" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2024 香港義工獎</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">賽馬會眾心行善愛心學校</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250527">第三屆思行盃聯校小學普通話辯論賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250527" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">第三屆思行盃聯校小學普通話辯論賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">冠軍</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 5A </td>
+																				<td> 章依晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 5A </td>
+																				<td> 陳衍誠 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 孫林曦 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 范殷慆 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 黃旭曦 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 余文韜 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 黃海晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 鄭伊曼 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 柳汝羲 </td>
+																			</tr>
+
+
+																		</table>
+																	</td>
+																</tr>
+
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250514">2024-2025 香港課外活動優秀學生表揚獎</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250514" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2024-2025 香港課外活動優秀學生表揚獎</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">得獎者</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>6C 侯嘉翹</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250410">廿五周年校慶德信盃數學邀請賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250410" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">廿五周年校慶德信盃數學邀請賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">團體獎冠軍</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250407">The 7<sup>th</sup> Hong Kong Inter-Primary School Spelling Competition</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250407" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">The 7<sup>th</sup> Hong Kong Inter-Primary School Spelling Competition</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">Primary 2 Level Competition - Champion</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>2A 黎天行</td>
+																			</tr>
+																			<tr>
+																				<td>2C 賴星宇</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250402">第77屆香港學校音樂節（團體）</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250402" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">第77屆香港學校音樂節（團體）</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">教堂音樂 - 中文歌曲 - 小學合唱團 - 9歲或以下 冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 1A </td>
+																				<td> 鍾汶睎 </td>
+																			</tr>
+																			<tr>
+																				<td> 1A </td>
+																				<td> 何天誦 </td>
+																			</tr>
+																			<tr>
+																				<td> 1A </td>
+																				<td> 甘子樂 </td>
+																			</tr>
+																			<tr>
+																				<td> 1A </td>
+																				<td> 郭澄欣 </td>
+																			</tr>
+																			<tr>
+																				<td> 1A </td>
+																				<td> 吳栩玥 </td>
+																			</tr>
+																			<tr>
+																				<td> 1B </td>
+																				<td> 郭幸柰 </td>
+																			</tr>
+																			<tr>
+																				<td> 1B </td>
+																				<td> 林靖杰 </td>
+																			</tr>
+																			<tr>
+																				<td> 1C </td>
+																				<td> 陳芷澄 </td>
+																			</tr>
+																			<tr>
+																				<td> 1C </td>
+																				<td> 張逸韜 </td>
+																			</tr>
+																			<tr>
+																				<td> 1C </td>
+																				<td> 區珈琳 </td>
+																			</tr>
+																			<tr>
+																				<td> 1C </td>
+																				<td> 尚 清 </td>
+																			</tr>
+																			<tr>
+																				<td> 1C </td>
+																				<td> 謝凱婷 </td>
+																			</tr>
+																			<tr>
+																				<td> 1C </td>
+																				<td> 阮浠藍 </td>
+																			</tr>
+																			<tr>
+																				<td> 1C </td>
+																				<td> 容書翹 </td>
+																			</tr>
+																			<tr>
+																				<td> 1C </td>
+																				<td> 張遠寜 </td>
+																			</tr>
+																			<tr>
+																				<td> 1D </td>
+																				<td> 涂家卿 </td>
+																			</tr>
+																			<tr>
+																				<td> 1D </td>
+																				<td> 黃芊語 </td>
+																			</tr>
+																			<tr>
+																				<td> 1E </td>
+																				<td> 周梓靖 </td>
+																			</tr>
+																			<tr>
+																				<td> 1E </td>
+																				<td> 黎臻霖 </td>
+																			</tr>
+																			<tr>
+																				<td> 1E </td>
+																				<td> 梁傲齊 </td>
+																			</tr>
+																			<tr>
+																				<td> 1E </td>
+																				<td> 丘曉旻 </td>
+																			</tr>
+																			<tr>
+																				<td> 2A </td>
+																				<td> 馮煒珀 </td>
+																			</tr>
+																			<tr>
+																				<td> 2A </td>
+																				<td> 林愛詩 </td>
+																			</tr>
+																			<tr>
+																				<td> 2A </td>
+																				<td> 廖心瑜 </td>
+																			</tr>
+																			<tr>
+																				<td> 2A </td>
+																				<td> 潘建豐 </td>
+																			</tr>
+																			<tr>
+																				<td> 2A </td>
+																				<td> 曾詠恩 </td>
+																			</tr>
+																			<tr>
+																				<td> 2A </td>
+																				<td> 王心悠 </td>
+																			</tr>
+																			<tr>
+																				<td> 2A </td>
+																				<td> 胡詠文 </td>
+																			</tr>
+																			<tr>
+																				<td> 2A </td>
+																				<td> 楊樂程 </td>
+																			</tr>
+																			<tr>
+																				<td> 2A </td>
+																				<td> 姚君蔚 </td>
+																			</tr>
+																			<tr>
+																				<td> 2B </td>
+																				<td> 張心媃 </td>
+																			</tr>
+																			<tr>
+																				<td> 2B </td>
+																				<td> 趙得得 </td>
+																			</tr>
+																			<tr>
+																				<td> 2B </td>
+																				<td> 徐嘉顥 </td>
+																			</tr>
+																			<tr>
+																				<td> 2B </td>
+																				<td> 韓子定 </td>
+																			</tr>
+																			<tr>
+																				<td> 2B </td>
+																				<td> 賴希宜 </td>
+																			</tr>
+																			<tr>
+																				<td> 2B </td>
+																				<td> 梁梓謙 </td>
+																			</tr>
+																			<tr>
+																				<td> 2B </td>
+																				<td> 黃致譽 </td>
+																			</tr>
+																			<tr>
+																				<td> 2C </td>
+																				<td> 張宸說 </td>
+																			</tr>
+																			<tr>
+																				<td> 2C </td>
+																				<td> 雷幸瑜 </td>
+																			</tr>
+																			<tr>
+																				<td> 2C </td>
+																				<td> 黃心悅 </td>
+																			</tr>
+																			<tr>
+																				<td> 2D </td>
+																				<td> 陳圓圓 </td>
+																			</tr>
+																			<tr>
+																				<td> 2D </td>
+																				<td> 林熙怡 </td>
+																			</tr>
+																			<tr>
+																				<td> 2D </td>
+																				<td> 孫諾行 </td>
+																			</tr>
+																			<tr>
+																				<td> 2D </td>
+																				<td> 王湛通 </td>
+																			</tr>
+																			<tr>
+																				<td> 3A </td>
+																				<td> 李睿朗 </td>
+																			</tr>
+																			<tr>
+																				<td> 3A </td>
+																				<td> 鄧竣升 </td>
+																			</tr>
+																			<tr>
+																				<td> 3A </td>
+																				<td> 温雋皓 </td>
+																			</tr>
+																			<tr>
+																				<td> 3B </td>
+																				<td> 許嫝晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 3B </td>
+																				<td> 李千睿 </td>
+																			</tr>
+																			<tr>
+																				<td> 3B </td>
+																				<td> 黃恒熙 </td>
+																			</tr>
+																			<tr>
+																				<td> 3C </td>
+																				<td> 朱婉桐 </td>
+																			</tr>
+																			<tr>
+																				<td> 3C </td>
+																				<td> 劉彥琋 </td>
+																			</tr>
+																			<tr>
+																				<td> 3D </td>
+																				<td> 張珈悠 </td>
+																			</tr>
+																			<tr>
+																				<td> 3D </td>
+																				<td> 蔡汶汐 </td>
+																			</tr>
+																			<tr>
+																				<td> 3D </td>
+																				<td> 許芷喬 </td>
+																			</tr>
+																			<tr>
+																				<td> 3D </td>
+																				<td> 李倬毅 </td>
+																			</tr>
+																			<tr>
+																				<td> 3D </td>
+																				<td> 羅倩珩 </td>
+																			</tr>
+																			<tr>
+																				<td> 3E </td>
+																				<td> 張恩霖 </td>
+																			</tr>
+																			<tr>
+																				<td> 3E </td>
+																				<td> 蘇比 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="top" bgcolor="#AAEEAA" style="border:2px solid white">教堂音樂 － 外文歌曲 － 小學合唱團 － 13歲或以下 季軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 3A </td>
+																				<td> 溫樂琪 </td>
+																			</tr>
+																			<tr>
+																				<td> 3B </td>
+																				<td> 羅柏喬 </td>
+																			</tr>
+																			<tr>
+																				<td> 3D </td>
+																				<td> 張睿恩 </td>
+																			</tr>
+																			<tr>
+																				<td> 3E </td>
+																				<td> 梁諾希 </td>
+																			</tr>
+																			<tr>
+																				<td> 4A </td>
+																				<td> 鍾浠庭 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 陳悦瞳 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 張靖琳 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 許樂晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 劉睿涵 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 王銥笑 </td>
+																			</tr>
+																			<tr>
+																				<td> 4C </td>
+																				<td> 張凱喬 </td>
+																			</tr>
+																			<tr>
+																				<td> 4C </td>
+																				<td> 馬載言 </td>
+																			</tr>
+																			<tr>
+																				<td> 4D </td>
+																				<td> 張梓玥 </td>
+																			</tr>
+																			<tr>
+																				<td> 4D </td>
+																				<td> 馮梓瑜 </td>
+																			</tr>
+																			<tr>
+																				<td> 4D </td>
+																				<td> 屈子皓 </td>
+																			</tr>
+																			<tr>
+																				<td> 5A </td>
+																				<td> 周芷慧 </td>
+																			</tr>
+																			<tr>
+																				<td> 5A </td>
+																				<td> 孫諾恩 </td>
+																			</tr>
+																			<tr>
+																				<td> 5A </td>
+																				<td> 胡心悠 </td>
+																			</tr>
+																			<tr>
+																				<td> 5B </td>
+																				<td> 蔡依妮 </td>
+																			</tr>
+																			<tr>
+																				<td> 5B </td>
+																				<td> 文雯 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 張銘筠 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 崔朗勤 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 孫梓軒 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 黃梓妤 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 姚善桸 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 吳昕蕎 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 潘殷嬈 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 謝尚倫 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 黃心穎 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 郭若頤 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 何沚穎 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 黃奕舜 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 文啟彥 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 黃海晴 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 黃旭曦 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 殷聲原 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 柳汝羲 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 尹悦思 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250325">第六十一屆學校舞蹈節</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250325" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">第六十一屆學校舞蹈節</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="3" valign="top" bgcolor="#AAEEAA" style="border:2px solid white">當代舞小學組 團體 冠軍</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">當代舞高級組(群舞) 優等獎 & 編舞獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 4A </td>
+																				<td> 趙欣悅 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 蔡允芮 </td>
+																			</tr>
+																			<tr>
+																				<td> 4C </td>
+																				<td> 陳日嘉 </td>
+																			</tr>
+																			<tr>
+																				<td> 4C </td>
+																				<td> 李梓萾 </td>
+																			</tr>
+																			<tr>
+																				<td> 4D </td>
+																				<td> 趙潁桐 </td>
+																			</tr>
+																			<tr>
+																				<td> 5A </td>
+																				<td> 楊曉悠 </td>
+																			</tr>
+																			<tr>
+																				<td> 5A </td>
+																				<td> 楊欣桐 </td>
+																			</tr>
+																			<tr>
+																				<td> 5B </td>
+																				<td> 陳雨萱 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 姚善桸 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 邱熹彤 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 陳雅妍 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 黎溵喬 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 柳汝羲 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 蔡悦呈 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">當代舞初級組(群舞) 優等獎 & 編舞獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 2A </td>
+																				<td> 黃早苗 </td>
+																			</tr>
+																			<tr>
+																				<td> 2B </td>
+																				<td> 陳藝菁 </td>
+																			</tr>
+																			<tr>
+																				<td> 2B </td>
+																				<td> 陳千游 </td>
+																			</tr>
+																			<tr>
+																				<td> 2B </td>
+																				<td> 穆琇瑩 </td>
+																			</tr>
+																			<tr>
+																				<td> 2C </td>
+																				<td> 何婉瑜 </td>
+																			</tr>
+																			<tr>
+																				<td> 2C </td>
+																				<td> 李語炘 </td>
+																			</tr>
+																			<tr>
+																				<td> 2C </td>
+																				<td> 沈悠 </td>
+																			</tr>
+																			<tr>
+																				<td> 2C </td>
+																				<td> 黃心悅 </td>
+																			</tr>
+																			<tr>
+																				<td> 3B </td>
+																				<td> 鄧樂君 </td>
+																			</tr>
+																			<tr>
+																				<td> 3C </td>
+																				<td> 朱婉桐 </td>
+																			</tr>
+																			<tr>
+																				<td> 3C </td>
+																				<td> 吳瑾瑜 </td>
+																			</tr>
+																			<tr>
+																				<td> 3C </td>
+																				<td> 鄧琋遙 </td>
+																			</tr>
+																			<tr>
+																				<td> 3E </td>
+																				<td> 蘇比 </td>
+																			</tr>
+																			<tr>
+																				<td> 3E </td>
+																				<td> 譚詠穎 </td>
+																			</tr>
+
+
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">當代舞(初級組三人舞) 優等獎 & 編舞獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>2B </td>
+																				<td> 陳千游</td>
+																			</tr>
+																			<tr>
+																				<td>3B </td>
+																				<td> 鄧樂君</td>
+																			</tr>
+																			<tr>
+																				<td>3C </td>
+																				<td> 吳瑾瑜</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">當代舞(高級組三人舞) 優等獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>5A </td>
+																				<td> 楊欣桐</td>
+																			</tr>
+																			<tr>
+																				<td>5A </td>
+																				<td> 楊曉悠</td>
+																			</tr>
+																			<tr>
+																				<td>5B </td>
+																				<td> 陳雨萱</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">當代舞(高級組雙人舞) 優等獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>6B </td>
+																				<td> 陳雅妍</td>
+																			</tr>
+																			<tr>
+																				<td>6A </td>
+																				<td> 邱熹彤</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250317">大埔三育中學主辦第二十屆小學生現場中英寫作比賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250317" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">大埔三育中學主辦第二十屆小學生現場中英寫作比賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td colspan="2" valign="top" bgcolor="#AAEEAA" style="border:2px solid white">學校團體獎</td>
+																	<td style="border:2px solid white" valign="top" bgcolor="#E3FFE3" width="120">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>一等獎</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td rowspan="3" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小六英文組</td>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA" width="80">冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>6C 柳汝羲</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA" width="80">季軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>6A 賴沛生</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA" width="100">特級優異獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>6A 江昭盈</td>
+																			</tr>
+																			<tr>
+																				<td>6A 賴沛生</td>
+																			</tr>
+																			<tr>
+																				<td>6A 吳政衡</td>
+																			</tr>
+																			<tr>
+																				<td>6A 吳昕蕎</td>
+																			</tr>
+																			<tr>
+																				<td>6A 黃心穎</td>
+																			</tr>
+																			<tr>
+																				<td>6A 胡善瑜</td>
+																			</tr>
+																			<tr>
+																				<td>6B 何沚穎</td>
+																			</tr>
+																			<tr>
+																				<td>6B 余文韜</td>
+																			</tr>
+																			<tr>
+																				<td>6C 鄭伊曼</td>
+																			</tr>
+																			<tr>
+																				<td>6C柳汝羲</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小六中文組</td>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA" width="80">特級優異獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>6B 黎溵喬</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td rowspan="2" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小五英文組</td>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA" width="80">亞軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>5A 鄭子昂</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA" width="80">特級優異獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>5A 鄭子昂</td>
+																			</tr>
+																			<tr>
+																				<td>5A 趙子寧</td>
+																			</tr>
+																			<tr>
+																				<td>5A 麥珀豪</td>
+																			</tr>
+																			<tr>
+																				<td>5A 毛童睿</td>
+																			</tr>
+																			<tr>
+																				<td>5A 陳衍誠</td>
+																			</tr>
+																			<tr>
+																				<td>5B 阮烙心</td>
+																			</tr>
+																			<tr>
+																				<td>5C 崔朗勤</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td rowspan="2" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小五中文組</td>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA" width="80">冠軍</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>5B 裘詩涵</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA" width="80">特級優異獎</td>
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>5B 裘詩涵</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250305">2024-2025年度九龍城區傑出學生選舉</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250305" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2024-2025年度九龍城區傑出學生選舉</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小學組傑出學生獎</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>6A 高樂熙</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250304">2024-25九龍西區小學校際乒乓球比賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250304" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2024-25九龍西區小學校際乒乓球比賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td rowspan="2" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">女子甲組</td>
+																	<td style="border:2px solid white" valign="top" width="110" bgcolor="#AAEEAA">冠軍</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 4D </td>
+																				<td> 葉一諾 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 黃熙淳 </td>
+																			</tr>
+																			<tr>
+																				<td> 6B </td>
+																				<td> 李立宜 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 何芊予 </td>
+																			</tr>
+																			<tr>
+																				<td> 6C </td>
+																				<td> 鄧皓允 </td>
+																			</tr>
+
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" width="60" bgcolor="#AAEEAA">傑出運動員</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+
+																			<tr>
+																				<td> 6B </td>
+																				<td> 李立宜 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td rowspan="2" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">男子乙組</td>
+																	<td style="border:2px solid white" valign="top" width="60" bgcolor="#AAEEAA">季軍</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 3B </td>
+																				<td> 李翰張 </td>
+																			</tr>
+																			<tr>
+																				<td> 4A </td>
+																				<td> 莫子桓 </td>
+																			</tr>
+																			<tr>
+																				<td> 4C </td>
+																				<td> 屈子力 </td>
+																			</tr>
+																			<tr>
+																				<td> 5A </td>
+																				<td> 黃時雨 </td>
+																			</tr>
+																			<tr>
+																				<td> 5B </td>
+																				<td> 張民樂 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" width="60" bgcolor="#AAEEAA">傑出運動員</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+
+																			<tr>
+																				<td> 4C </td>
+																				<td> 屈子力 </td>
+																			</tr>
+
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td rowspan="2" style="border:2px solid white" valign="top" bgcolor="#AAEEAA">男子甲組</td>
+																	<td style="border:2px solid white" valign="top" width="60" bgcolor="#AAEEAA">殿軍</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 3C </td>
+																				<td> 周思遠 </td>
+																			</tr>
+																			<tr>
+																				<td> 4A </td>
+																				<td> 林慶然 </td>
+																			</tr>
+																			<tr>
+																				<td> 4B </td>
+																				<td> 林晉熙 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 蔡易謙 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A </td>
+																				<td> 高樂熙 </td>
+																			</tr>
+
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" width="60" bgcolor="#AAEEAA">傑出運動員</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+
+																			<tr>
+																				<td> 6A </td>
+																				<td> 高樂熙 </td>
+																			</tr>
+
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">女子乙組</td>
+																	<td style="border:2px solid white" valign="top" width="60" bgcolor="#AAEEAA">優異獎</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 3D </td>
+																				<td> 包杏千 </td>
+																			</tr>
+																			<tr>
+																				<td> 4A </td>
+																				<td> 程子芮 </td>
+																			</tr>
+																			<tr>
+																				<td> 5B </td>
+																				<td> 張凱霖 </td>
+																			</tr>
+																			<tr>
+																				<td> 5B </td>
+																				<td> 文雯 </td>
+																			</tr>
+																			<tr>
+																				<td> 5C </td>
+																				<td> 劉曉薈 </td>
+																			</tr>
+
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250228">第十二屆全港小學校際網球比賽 2024-2025</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250228" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">第十二屆全港小學校際網球比賽 2024-2025</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">女子甲組單打</td>
+																	<td style="border:2px solid white" valign="top" width="60" bgcolor="#AAEEAA">冠軍</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>6B 劉千嵐</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">男子甲組單打</td>
+																	<td style="border:2px solid white" valign="top" width="60" bgcolor="#AAEEAA">亞軍</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>6C 蔡淏鋒</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">男子甲組團體</td>
+																	<td style="border:2px solid white" valign="top" width="60" bgcolor="#AAEEAA">亞軍</td>
+																	<td style="border:2px solid white" valign="top" width="120px" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td>6B 鍾亦然</td>
+																			</tr>
+																			<tr>
+																				<td>6C 蔡淏鋒</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250220">香港校際合唱節2025比賽暨大師班</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250220" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">香港校際合唱節2025比賽暨大師班</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小學高級D組—金獎</td>
+																</tr>
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小學初級K組—金獎</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20250103">2024 年第四屆全港青年 STEAM 比賽暨展覽 (由 AI 到 SI)及人工智能素養推廣比賽——人工智能素養推廣創意影片設計比賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20250103" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2024 年第四屆全港青年 STEAM 比賽暨展覽 (由 AI 到 SI)及人工智能素養推廣比賽——人工智能素養推廣創意影片設計比賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">小學組 冠軍</td>
+
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 6A 熊梓睿 </td>
+																			</tr>
+																			<tr>
+																				<td> 6A 林銘琛 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20241214">第76屆香港學校朗誦節</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20241214" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">第76屆香港學校朗誦節</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td valign="top" bgcolor="#AAEEAA" style="border:2px solid white">Choral Speaking Primary 1 to 3 - Mixed Voice - 3<sup>rd</sup> place</td>
+																</tr>
+																<tr>
+																	<td valign="top" bgcolor="#AAEEAA" style="border:2px solid white">詩詞集誦-普通話小學三、四年級-男子或女子或男女合誦 - 亞軍
+																	</td>
+																</tr>
+															</table>
+														</div>
+
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20241210">2024香港青年音樂匯演管樂團比賽</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20241210" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2024香港青年音樂匯演管樂團比賽</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td valign="top" bgcolor="#AAEEAA" style="border:2px solid white">小學中級組 - 金獎</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20241104">2023香港環境卓越大獎（學校界別）</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20241104" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">2023香港環境卓越大獎（學校界別）</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td valign="top" bgcolor="#AAEEAA" style="border:2px solid white">小學組銀獎</td>
+																</tr>
+																<tr>
+																	<td valign="top" bgcolor="#AAEEAA" style="border:2px solid white">「2023最佳環境教育大獎」傑出獎</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+											<li class="list-group-item py-1"><a href="#" class="card-link" data-toggle="modal" data-target="#ModalLong20240925">兒童飛龍大使選舉2024暨第36屆亞太區兒童交流大會<br class="d-none d-sm-block">（香港區選拔）</a></li>
+											<!-- Modal -->
+											<div class="modal fade" id="ModalLong20240925" tabindex="-1" role="dialog" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h6 class="modal-title" id="ModalLongTitle1" style="color: #048103">兒童飛龍大使選舉2024暨第36屆亞太區兒童交流大會<br class="d-none d-sm-block">（香港區選拔）</h6>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<table width="100%" cellspacing="0" cellpadding="5">
+																<tr>
+																	<td style="border:2px solid white" valign="top" bgcolor="#AAEEAA">馬來西亞兒童交流大使暨兒童飛龍大使</td>
+
+																	<td style="border:2px solid white" valign="center" width="120" bgcolor="#E3FFE3">
+																		<table cellspacing="0" cellpadding="0" class="table-td">
+																			<tr>
+																				<td> 6C 朱朗昕 </td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Modal End-->
+
+
+
+
+										</ul>
+										<!-- list-group End-->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+
+
+
+		</div>
+	</div>
+
+	<!-- popup -->
+
+	
+	
+<div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<table width="100%">
+						<tr>
+							<td>
+								<div>
+									<a href="90s/90s.html" class="card-link" target="_blank"><img src="pic/popuppic/90sopenday.jpg" width="100%">
+									</a>
+								</div>
+							</td>
+							
+						</tr>
+					</table>
+
+
+
+				</div>
+				
+				<div class="modal-header border-0" style="position: absolute; top: 7px; right: 15px; z-index: 10; padding: 0;">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 0.7; font-size: 2.1rem; color: #333; border: none; background: none; padding: 0; line-height: 1; outline: none; transition: all 0.3s ease;">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade bd-example-modal-lg" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<table width="100%">
+						<tr>
+							<td width="57.4%">
+
+
+								<div id="carouselExampleIndicators2" class="carousel slide carousel-fade" data-interval="4000" data-ride="carousel">
+
+									<div class="carousel-inner">
+										<div class="carousel-item active"> <img class="d-block w-100" src="pic/20260321/0.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/1.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/2.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/3.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/4.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/5.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/6.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/7.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/8.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/9.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/10.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/11.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/12.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/13.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/14.jpg" alt=""> </div>
+										<div class="carousel-item"> <img class="d-block w-100" src="pic/20260321/15.jpg" alt=""> </div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+								</div>
+
+							</td>
+						</tr>
+					</table>
+
+
+
+				</div>
+				<div class="modal-header border-0" style="position: absolute; top: 7px; right: 15px; z-index: 10; padding: 0;">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 0.7; font-size: 2.1rem; color: #333; border: none; background: none; padding: 0; line-height: 1; outline: none; transition: all 0.3s ease;">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<script>
+  $(document).ready(function() {
+    $('#myModal').on('hidden.bs.modal', function () {
+      $('#myModal2').modal('show');
+    });
+  });
+
+  function myFunction() {
+    $("#myModal").modal('show');
+  }
+</script>
+
+
+
+
+
+
+	<!--
+		<div class="container pt-2">
+			<div class="page-footer text-center pt-3" style="border-radius: 15px 15px 0px 0px">
+				<div class="row">
+					<div class="col-sm-2 offset-sm-1 pt-3 offset-xl-0 col-xl-2">
+						<h6 style="font-weight: 500; color:#000;"><span class="text-5"><i class="fas fa-link"></i>常用連結</span></h6>
+						<ul class="list-unstyled">
+							<li>
+								<a href="https://eclass.ktsps.edu.hk" target="_blank">
+									<h6>內聯網系統</h6>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.edb.gov.hk/tc/index.html" target="_blank">
+									<h6>教育局</h6>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.hkedcity.net/home/" target="_blank">
+									<h6>香港教育城</h6>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-4 col-xl-6">
+                        <p><img src="pic/Hkv2024.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"></p>
+						<p class="d-block d-sm-none"><img src="pic/Hkv2023.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/Hkv.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/HSA.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/wnl.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"></p>
+                    </div>	
+					<div class="col-sm-4 col-xl-4">
+                        九龍九龍塘金巴倫道2721地段 <a href="../contact1.html"><i class="fas fa-map-marked"></i></a><br />
+                        電話 : 23363802<br />
+                        傳真 : 23371692<br />
+                        電郵 : info@ktsps.edu.hk
+                    </div>
+                </div>
+				<div class="row">
+				 <div class="col-sm-12 col-xl-12 d-none d-sm-block">
+                        <p><img src="pic/Hkv2023.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/Hkv.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/HSA.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/wnl.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"></p>
+                    </div>
+				</div>
+				
+			</div>
+		</div>
+-->
+	<div class="container pt-2">
+		<div class="page-footer text-center pt-3" style="border-radius: 15px 15px 0px 0px">
+			<div class="row">
+				<div class="col-sm-2 offset-sm-1 pt-3 offset-xl-0 col-xl-2">
+					<h6 style="font-weight: 500; color:#000;"><span class="text-5"><i class="fas fa-link"></i>常用連結</span></h6>
+					<ul class="list-unstyled">
+						<li>
+							<a href="https://eclass.ktsps.edu.hk" target="_blank">
+								<h6>內聯網系統</h6>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.edb.gov.hk/tc/index.html" target="_blank">
+								<h6>教育局</h6>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.hkedcity.net/home/" target="_blank">
+								<h6>香港教育城</h6>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-xl-6">
+					<p><img src="pic/love20.jpg" width="314" class="img-fluid" style="padding: 18px 10px 0px 10px;"></p>
+					<p class="d-block d-sm-none"><img src="pic/Hkv2024.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/Hkv2023.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/Hkv.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/HSA.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/wnl.jpg" class="img-fluid" style="padding: 10px 10px 0px 10px;"></p>
+				</div>
+				<div class="col-sm-4 col-xl-4">
+					九龍九龍塘金巴倫道2721地段 <a href="contact1.html"><i class="fas fa-map-marked"></i></a><br />
+					電話 : 23363802<br />
+					傳真 : 23371692<br />
+					電郵 : info@ktsps.edu.hk
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-xl-12 d-none d-sm-block">
+					<p><img src="pic/Hkv2024.jpg" width="250" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/Hkv2023.jpg" width="250" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/Hkv.jpg" width="96" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/HSA.jpg" width="96" class="img-fluid" style="padding: 10px 10px 0px 10px;"><img src="pic/wnl.jpg" width="96" class="img-fluid" style="padding: 10px 10px 0px 10px;"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="footer-copyright text-center py-1">
+			<div class="row">
+				<div class="col">
+					© Kowloon Tong School (Primary Section). All rights reserved. | <a href="rights.html">版權聲明</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

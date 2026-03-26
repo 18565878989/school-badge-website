@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ESF Sha Tin Junior School | IB School PYP | ESF Hong Kong</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="description" content="ESF Sha Tin Junior School fosters lifelong learning. Our inclusive environment values effort and creativity. The IB PYP curriculum supports inquiry and transitions." />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="ESF Sha Tin Junior  School,International School Hong Kong, English Schools Foundation,IB School Hong Kong" />
+<meta property="og:description" content="ESF Sha Tin Junior School fosters lifelong learning. Our inclusive environment values effort and creativity. The IB PYP curriculum supports inquiry and transitions." />
+<meta property="og:image" content="http://sjs.esf.edu.hk/cache/img/662fb961a036aa81080cd9da6ec2ea60.jpg" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:secure_url" content="https://sjs.esf.edu.hk/cache/img/662fb961a036aa81080cd9da6ec2ea60.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta name="viewport" content="width=device-width" />
+	<link rel="canonical" href="https://sjs.esf.edu.hk/en/" /> 
+				<link rel="alternate" href="/zh/" hreflang="zh-hk" />
+				<link rel="shortcut icon" href="/img/favicon.png" />
+	<link rel="apple-touch-icon" href="/img/iphone-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="/img/iphone-icon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/css/editor.css" />
+	<link rel="stylesheet" type="text/css" href="/en/cache/css/3e127878e4cd7b0c0af8a93a38e673d4.css" />
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/jquery-migrate.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/jquery.Slider.js"></script>
+	<script type="text/javascript" src="/js/jquery.slideSubmit.js"></script>
+	<script type="text/javascript" src="/js/jquery.table.js"></script>
+	<script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="/js/validator.class.js"></script>
+	<script type="text/javascript" src="/en/cache/js/lang.js"></script>
+	<script type="text/javascript" src="/js/function.js"></script>
+	<script type="text/javascript" src="/js/init.js"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="/js/html5izer_placeholder.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="/js/html5.js"></script>
+	<![endif]-->
+	<style>
+		.colour1,
+		a.colour1,
+		.editor a.colour1,
+		#content #history-page .years .year.current,
+		#content #history-page .years .year:hover,
+		#content #history-page .select-input,
+		#content .page-wrapper .page-container #data-list .data-item.open>.title,
+		#content #enquiry .form-container .row .checkbox-cotnainer .checkbox:after {
+			color: #c54147 !important;
+		}
+		.colour2,
+		a.colour2,
+		.editor a.colour2,
+		#content section .tab-select .select-input,
+		#content #section3 .wrapper .tabs .tab.current,
+		#content #section3 .wrapper .tabs .tab:hover,
+		#content #section6 .wrapper .tabs .tab.current,
+		#content #section6 .wrapper .tabs .tab:hover,
+		#content #landing section.type3 .tabs .tab.current,
+		#content #landing section.type3 .tabs .tab:hover,
+		#content .page-wrapper #submenu ul li a:hover,
+		#content .page-wrapper .page-container #tabs .tab.current,
+		#content .page-wrapper .page-container #tabs .tab:hover,
+		#content .page-wrapper .page-container #tabs .select-input,
+		#content .page-wrapper .page-container .tab-select .select-input {
+			color: #454545 !important;
+		}
+		.colour3,
+		a.colour3,
+		.editor a.colour3 {
+			color: #fdcaca !important;
+		}
+		.colour4,
+		a.colour4,
+		.editor a.colour4 {
+			color: #cdcdcd !important;
+		}
+		.bg-colour1,
+		.editor ul.colour1 li:before,
+		.editor ol.colour1 li:before,
+		.pager a.selected,
+		.pager a:hover,
+		#content #enquiry .form-container .row .radio-container2 .radio.checked,
+		#content #enquiry .form-container .row .radio-container2 .radio:after,
+		#content #enquiry .form-container .row .radio-container .radio:after,
+		#content #sitemap li:before {
+			background-color: #c54147 !important;
+		}
+		.bg-colour2,
+		.editor ul.colour2 li:before,
+		.editor ol.colour2 li:before,
+		#floating a[href]:hover {
+			background-color: #454545 !important;
+		}
+		.bg-colour3 {
+			background-color: #fdcaca !important;
+		}
+		.bg-colour4 {
+			background-color: #cdcdcd !important;
+		}
+		.br-colour1,
+		#content #section7 .record-slider .slider-container .post:hover {
+			border-color: #c54147 !important;
+		}
+		.br-colour2 {
+			border-color: #454545 !important;
+		}
+		.br-colour3 {
+			border-color: #fdcaca !important;
+		}
+		.br-colour4 {
+			border-color: #cdcdcd !important;
+		}
+	</style>
+	<script type="text/javascript">
+											if(window.location.protocol.toLowerCase().indexOf('https:') == -1)
+											{
+												window.location.href = 'https://'+ window.location.host + window.location.pathname;
+											}
+									     </script>	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKWY47HGFR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FKWY47HGFR');
+</script></head>
+<body>
+	<header>
+		<div class="container">
+			<a href="/en/" class="logo">
+				<img src="/cache/img/e726ac10b59c671395e0ed68a4e29174.png" alt="ESF Sha Tin Junior School" loading="lazy" height="180" />			</a>
+			<div class="menu-container">
+				<div class="top-container">
+					<nav class="lang">
+						<ul>
+							<li><a href="/zh/">繁體</a></li>						</ul>
+					</nav>
+					<div class="divider"></div>
+					<a href="/en/" class="home"></a>
+					<div class="search">
+						<button></button>
+						<div class="search-container">
+							<form action="/en/search/">
+								<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />								<button type="submit"></button>							</form>
+							<button class="close"></button>
+						</div>
+					</div>
+										<nav class="social">
+				 		<ul>
+				 							 			<li>
+				 				<a href="https://www.facebook.com/ESFShaTinJuniorSchool" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/660fcd3e297d1.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 			<li>
+				 				<a href="https://x.com/sjsesf/" target="_blank" rel="nofollow">
+									<img src="/upload/files/1/social/671fbff25f4e6.svg" width="38" height="38" />
+								</a>
+				 			</li>
+				 							 		</ul>
+				 	</nav>
+				 						<div class="search-responsive">
+						<form action="/en/search/">
+							<input type="text" placeholder="Search" autocomplete="off" name="keywords" value="" />							<button type="submit"></button>						</form>
+					</div>
+										<div class="divider"></div>
+									 							<a href="https://velocity.sjs.edu.hk/" target="_blank" class="alt-btn">Students & Parents</a>
+				 										 		<a href="https://sjs.esf.edu.hk/en/visit_us" class="btn">Visit Us</a>
+									</div>
+				<div class="bottom-container">
+					<nav class="menu">
+						<ul>
+																						<li>
+									<a href="/en/about_us/">About Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/about_us/">About Us</a>
+													</li>
+																																																			<li>
+															<a href="/en/about_us/marketing_family/">ESF Family</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/principals_welcome/">Principal's Welcome</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/what_we_stand_for/">What We Stand For</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/school_history/">School History</a>
+														</li>
+																											<li>
+															<a href="/en/about_us/campus_find_us/">Campus & Find Us</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_education/">Outstanding Education</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_education/">Outstanding Education</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_education/our_approach/">Our Approach</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/curriculum/">Curriculum</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/student_support_wellbeing/">Student Support & Wellbeing</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/parent_partnership/">Parent Partnership</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_education/specialist_provision/">Specialist Provision</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_experiences/">Outstanding Experiences</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_experiences/extra_curricular_activities/">Extra Curricular Activities</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/outdoor_learning/">Outdoor Learning</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/action_student_leadership/">Action & Student Leadership</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_experiences/speakers_visitors/">Speakers & Visitors</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/outstanding_people/">Outstanding People</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/outstanding_people/">Outstanding People</a>
+													</li>
+																																																			<li>
+															<a href="/en/outstanding_people/leadership_team/">Leadership Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/CPO/">Child Protection Officers</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/our_team/">Our Team</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/student_voice/">Student Voice</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/parent_teacher_association/">Parent Teacher Association</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/school_council/">School Council</a>
+														</li>
+																											<li>
+															<a href="/en/outstanding_people/testimonials/">Testimonials</a>
+														</li>
+																																				</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/admissions/">Admissions</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/admissions/">Admissions</a>
+													</li>
+																																			</ul>
+										</div>
+																	</li>
+															<li>
+									<a href="/en/WorkWithUs/">Work With Us</a>
+																			<div class="submenu">
+											<ul>
+																									<li class="landing">
+														<a href="/en/WorkWithUs/">Work With Us</a>
+													</li>
+																																			</ul>
+										</div>
+																	</li>
+													</ul>
+					</nav>
+				</div>	
+			</div>
+			<button class="nav-btn"></button>
+		</div>
+	</header>
+	<section id="content">		
+		<script type="text/javascript">
+    var timeout = [];
+
+    $(window).load(function() {
+		let animate = function() {
+			let height = $(window).scrollTop() + Math.round($(window).height() * 0.6);
+			$('#content > section').each(function() {
+				if(!$(this).hasClass('animate') && height > $(this).offset().top)
+				{
+					$(this).addClass('animate');
+                    if($(this).attr('id') == 'section2') {
+						$('li > div', '#section2').each(function(index) {
+							let item = $(this);
+							setTimeout(function() {
+								item.addClass('animate');
+							}, index * 200);
+						});
+					}
+				}
+			});
+		};
+		$(window).on('scroll', animate);
+		animate();
+	});
+</script>
+<div id="banner">
+    <div class="banner-container">
+                                                <div class="banner-item">
+                    <div class="wrapper">
+                        <img src="/cache/img/5023e5c373884d7f0c5f49f66cf5bbe5.png" alt="" loading="lazy" width="1904" height="1200" class="trans" />                        <video id="video" width="1904" height="1200" preload="none" playsinline webkit-playsinline muted loop>
+                            <source src="/upload/banner/1/banner/671e2a5173928.mp4" type="video/mp4">
+                        </video>
+                        <div class="mask"></div>
+                        <div class="container">
+                            <button class="play"></button>
+                        </div>
+                    </div>
+                                    </div>
+                        </div>
+    <div class="container">
+                <div class="scroll-icon"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let pager_click = false;
+
+            $('#banner').Slider({
+                slides: '.banner-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true,
+                pager: '.banner-pager',
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    $.each(timeout, function(index, value) {
+                        clearTimeout(value);
+                    });
+                    let videos = $('video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    $('button', slider).removeClass('play').addClass('pause');
+                    if($('.slider.current video', slider).length) {
+                                                        video = document.querySelector('#banner .slider.current video');
+                                video.play();
+                                            }
+                    else if(!pager_click) {
+                        timeout = setTimeout(function() {
+                            slider.Slider('next');
+                        }, 5000);
+                    }
+                },
+                afterResize: function(slider, slides, current_page, total_page) {
+                    if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                                            let videos = $('video', slider);
+                        videos.each(function(i, video) {
+                            video.addEventListener('ended', videoEnd, false);
+                        });
+                        if($('.slider.current video', slider).length) {
+                                                                video = document.querySelector('#banner .slider.current video');
+                                    video.play();
+                                    $('.slider.current button', slider).removeClass('play').addClass('pause');
+                                                    }
+                        else {
+                            timeout = setTimeout(function() {
+                                slider.Slider('next');
+                            }, 5000);
+                        }
+                                        if(slider.width() < 768) {
+                        $('.banner-pager', slider).css('bottom', slider.height() - $('img', slider).height() + 15);
+                    }
+                    else {
+                        $('.banner-pager, .scroll-icon', slider).removeAttr('style');
+                    }
+                }
+            });
+            
+            $('.banner-item video', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                let button = $(this).parent().find('button');
+                if(button.hasClass('pause')) {
+                    video.pause();
+                    button.removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    button.removeClass('play').addClass('pause');
+                }
+            });
+            $('.banner-item button', '#banner').click(function() {
+                var video = document.querySelector('#banner .slider.current video');
+                if($(this).hasClass('pause')) {
+                    video.pause();
+                    $(this).removeClass('pause').addClass('play');
+                }
+                else {
+                    video.play();
+                    $(this).removeClass('play').addClass('pause');
+                }
+            });
+
+            $('body').on('click', '#banner .banner-pager a', function() {
+                pager_click = true;
+            });
+
+            function videoEnd(e) {
+                if(!pager_click) {
+                    $('#banner').Slider('next');
+                }
+                else {
+                    $('#banner .slider.current button').removeClass('pause').addClass('play');
+                }
+            }
+        });
+    </script>
+</div>
+<section id="section1">
+    <div class="container">
+                    <div class="left">
+                <article class="editor"><h3 class="homepage-title title"><strong><span style="font-size: 40px;">Learning for Life</span><br /></strong></h3>
+<p><span style="font-size: 19px;"><span style="font-weight: 400;">Everything we do at SJS guides our communit<span style="font-size: 19px;">y to </span></span></span><span style="font-weight: 400; font-size: 19px;">a love of </span><strong style="font-size: 19px;">&lsquo;learning for life'</strong><span style="font-weight: 400;">.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400; font-size: 19px;">SJS is an inspiring learning community. We provide an inclusive environment where effort is valued, learning is engaging and creativity is fostered.</span></p>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour1"><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://sjs.esf.edu.hk/en/about_us/what_we_stand_for/">Discover our vision</a></span></p>
+<p>&nbsp;</p></article>
+            </div>
+                            <div class="right">
+                <article class="editor"><p><img class="round-border" src="https://sjs.esf.edu.hk/upload/page/35/self/675fa774d9b4d.jpg" alt="" width="580" height="435" /></p></article>
+            </div>
+                            <div class="responsive">
+                <article class="editor"><h3 class="homepage-title title"><strong><span style="font-size: 40px;">Learning for Life</span><br /></strong></h3>
+<p>&nbsp;</p>
+<p><span style="font-size: 16px;"><span style="font-weight: 400;">Everything we do at SJS guides our community to a love of </span><strong>&lsquo;learning for life'</strong><span style="font-weight: 400;">.</span></span></p>
+<p><span style="font-weight: 400; font-size: 16px;">SJS is an inspiring learning community. We provide an inclusive environment where effort is valued, learning is engaging and creativity is fostered.</span></p>
+<p>&nbsp;</p>
+<p><img class="round-border" src="https://sjs.esf.edu.hk/upload/page/35/self/675fa774d9b4d.jpg" alt="" width="580" height="435" /></p>
+<p>&nbsp;</p>
+<p class="rounded_title bg-colour1"><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://sjs.esf.edu.hk/en/about_us/what_we_stand_for/">Discover our vision</a></span></p>
+<p>&nbsp;</p></article>
+            </div>
+            </div>
+</section>
+<section id="section2">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What can Sha Tin Junior School offer your family?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="wrapper bg-colour2">
+        <div class="container">
+            <ul>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/d01025f8303292ca023ba75190823298.png" alt="ESF_Logomark_BW_RGB" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">ESF Network</h3>
+                            <div class="overlay bg-colour1">
+                                <p>As part of the English Schools Foundation(ESF), our students are supported by the largest English-medium international school organisation in Hong Kong, providing them the resources and opportunities not found outside of ESF Schools.</p>
+                                                                    <a  href="https://sjs.esf.edu.hk/en/about_us/marketing_family/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/0a7a41bea958df69cfa11e642948a1e6.png" alt="Strong School-Family Connection" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Strong School-Family Connection</h3>
+                            <div class="overlay bg-colour1">
+                                <p>We believe in fostering a strong partnership between schools and families. We actively encourage parental involvement and maintain open lines of communication to ensure that parents are fully engaged in their child's educational journey.</p>
+                                                                    <a  href="https://sjs.esf.edu.hk/en/outstanding_education/parent_partnership/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/9e292d9c7034bb1362249b4db8b9ca3b.png" alt="Comprehensive Student Support" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Comprehensive Student Support</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Our schools offer comprehensive support systems, including personalised guidance, pastoral care, and counselling services, to help students thrive academically, emotionally, and socially.</p>
+                                                                    <a  href="https://sjs.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/af0f868fb8fa59950a088e01da0dec43.png" alt="Well-rounded Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Well-rounded Education</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Alongside academic excellence, our well-rounded education cultivates talents, interests, and character through diverse co-curricular activities in sports, arts, music, and community service.</p>
+                                                                    <a  href="https://sjs.esf.edu.hk/en/outstanding_education/our_approach/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/5d511f7a8bf931c24d2ad98fafb7e966.png" alt="Real-world Experience" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Student Agency and Action</h3>
+                            <div class="overlay bg-colour1">
+                                <p>Nurturing student agency and action empowers learners to take ownership, apply knowledge, and become agents of positive change in their communities.</p>
+                                                                    <a  href="https://sjs.esf.edu.hk/en/outstanding_experiences/action_student_leadership/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <div class="bg-colour3">
+                                                            <img src="/cache/img/e141bd91f8085a9618ec6ef2cebc19ee.png" alt="World-class Education" loading="lazy" width="270" height="270" />                             
+                            <h3 class="colour1">Student Well-Being</h3>
+                            <div class="overlay bg-colour1">
+                                <p>We foster students' social-emotional learning through assemblies, classroom integration, and cultivating respectful school relationships - empowering well-being and academic achievement.</p>
+                                                                    <a  href="https://sjs.esf.edu.hk/en/outstanding_education/student_support_wellbeing/">
+                                        <span>Find out more</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('h3', '#section2').each(function() {
+                let img = $(this).parent().children('img');
+                if(img.length) {
+                    $(this).css('top', img.offset().top + img.height() + 25 - $(this).parent().offset().top);
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section3">
+    <img src="/cache/img/4d54942cd1a69e4513ffef53ba4951ca.jpg" alt="shatinjunior_esf_7066" loading="lazy" width="1722" height="1294" />    <div class="wrapper">
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">Primary Years Programme (PYP)</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="tabs">
+                            <button class="tab current" data-id="1">Years 1 - 6</button>
+                    </div>
+                            <div class="tab-content current" data-id="1">
+                                <article class="editor"><p><strong>SJS can offer you a world-class education that nurtures your child's holistic development</strong><span style="font-weight: 400;">.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">At SJS, our students follow a curriculum inspired by the International Baccalaureate Primary Years Programme (PYP). This international, transdisciplinary framework fosters the development of the whole child, encompassing academic, social, physical, emotional, and cultural growth.</span></p></article>
+                                    <a href="https://sjs.esf.edu.hk/en/outstanding_education/curriculum/">
+                        <span>Find out more</span>
+                    </a>
+                            </div>
+                <script type="text/javascript">
+            $(document).ready(function() {
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+
+                $('.tab', '#section3').click(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $(this).addClass('current');
+                    $('.tab-content[data-id=' + $(this).data('id') + ']', '#section3').addClass('current');
+                    $('select', '#section3').val($(this).data('id')).selectbox('refresh');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+
+                $('.tab-select', '#section3').change(function() {
+                    $('.tab, .tab-content', '#section3').removeClass('current');
+                    $('.tab[data-id=' + $(this).val() + ']').addClass('current');
+                    $('.tab-content[data-id=' + $(this).val() + ']', '#section3').addClass('current');
+                    $('.select .select-container div', '#section3').show();
+                    $('.select .select-container div:nth-child(' + ($('.tab.current', '#section3').index() + 1) + ')', '#section3').hide();
+                });
+            });
+        </script>
+    </div>
+</section>
+<section id="section4" data-total="4">
+    <div class="container">
+        <div class="bg bg-colour4"></div>
+        <div class="section-title-container">
+            <div class="section-title">
+                <h2 class="colour2">SJS Experience</h2>
+                <span class="bg-colour1"></span>
+            </div>
+        </div>
+        <div class="record-slider">
+            <div class="slider-container">
+                                    <div class="record-item">
+                        <img src="/cache/img/b842d2f1026c8d8c38876e47bc0082fd.jpg" alt="00006387 copy web" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ACTIVITIES</span>
+                            </h3>
+                            <p>Students at SJS express themselves through the Student Council, House Captains, CARE Reps, and Environmental Reps, promoting leadership, inclusivity, and sustainability while actively participating in school life.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/d324f1845aa01cec7d13b3cbfd63f01f.jpg" alt="00000621" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPORTS</span>
+                            </h3>
+                            <p>Sport and physical activity are vital to school life at Sha Tin Junior School, offering diverse opportunities for student wellbeing and allowing participation in local, national, and global competitions.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/70a0bae8bda1bc013f84bd866df3e4af.jpg" alt="IMG_0159" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>OUTDOOR EDUCATION</span>
+                            </h3>
+                            <p>At Sha Tin Junior School, we ensure learning extends beyond the classroom, providing students with opportunities to explore Hong Kong through trips, excursions, and dedicated camps.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/outdoor_learning">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/4af553e81936418195bcfe446f6978d2.jpg" alt="00000989" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPEAKERS & VISITORS</span>
+                            </h3>
+                            <p>Making sure that our students gain from the experience of others is an important part of what we do here at Sha Tin Junior School. We have a regular programme of expert speakers, visitors and even alumni coming into the school to pass on their knowledge and allow the students to learn from them. This is not only great for the young people, it builds and strengthens our school community.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/speakers_visitors/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/b842d2f1026c8d8c38876e47bc0082fd.jpg" alt="00006387 copy web" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ACTIVITIES</span>
+                            </h3>
+                            <p>Students at SJS express themselves through the Student Council, House Captains, CARE Reps, and Environmental Reps, promoting leadership, inclusivity, and sustainability while actively participating in school life.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/d324f1845aa01cec7d13b3cbfd63f01f.jpg" alt="00000621" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPORTS</span>
+                            </h3>
+                            <p>Sport and physical activity are vital to school life at Sha Tin Junior School, offering diverse opportunities for student wellbeing and allowing participation in local, national, and global competitions.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/70a0bae8bda1bc013f84bd866df3e4af.jpg" alt="IMG_0159" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>OUTDOOR EDUCATION</span>
+                            </h3>
+                            <p>At Sha Tin Junior School, we ensure learning extends beyond the classroom, providing students with opportunities to explore Hong Kong through trips, excursions, and dedicated camps.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/outdoor_learning">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/4af553e81936418195bcfe446f6978d2.jpg" alt="00000989" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPEAKERS & VISITORS</span>
+                            </h3>
+                            <p>Making sure that our students gain from the experience of others is an important part of what we do here at Sha Tin Junior School. We have a regular programme of expert speakers, visitors and even alumni coming into the school to pass on their knowledge and allow the students to learn from them. This is not only great for the young people, it builds and strengthens our school community.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/speakers_visitors/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/b842d2f1026c8d8c38876e47bc0082fd.jpg" alt="00006387 copy web" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>ACTIVITIES</span>
+                            </h3>
+                            <p>Students at SJS express themselves through the Student Council, House Captains, CARE Reps, and Environmental Reps, promoting leadership, inclusivity, and sustainability while actively participating in school life.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/d324f1845aa01cec7d13b3cbfd63f01f.jpg" alt="00000621" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPORTS</span>
+                            </h3>
+                            <p>Sport and physical activity are vital to school life at Sha Tin Junior School, offering diverse opportunities for student wellbeing and allowing participation in local, national, and global competitions.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/extra_curricular_activities/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/70a0bae8bda1bc013f84bd866df3e4af.jpg" alt="IMG_0159" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>OUTDOOR EDUCATION</span>
+                            </h3>
+                            <p>At Sha Tin Junior School, we ensure learning extends beyond the classroom, providing students with opportunities to explore Hong Kong through trips, excursions, and dedicated camps.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/outdoor_learning">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                                    <div class="record-item">
+                        <img src="/cache/img/4af553e81936418195bcfe446f6978d2.jpg" alt="00000989" loading="lazy" width="1070" height="802" />                        <div class="overlay">
+                            <div class="bg-colour2"></div>
+                            <h3>
+                                <span>SPEAKERS & VISITORS</span>
+                            </h3>
+                            <p>Making sure that our students gain from the experience of others is an important part of what we do here at Sha Tin Junior School. We have a regular programme of expert speakers, visitors and even alumni coming into the school to pass on their knowledge and allow the students to learn from them. This is not only great for the young people, it builds and strengthens our school community.</p>
+                                                            <a href="https://sjs.esf.edu.hk/en/outstanding_experiences/speakers_visitors/">
+                                    <span>Find out more</span>
+                                </a>
+                                                    </div>
+                    </div>
+                            </div>
+            <div class="btns">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section4').data('total'));
+            let slider_loop = ori_total >= 3 ? true : false;
+            $('#section4').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total * 2);
+                    }
+                    else {
+                        slider.Slider('jump', total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+<section id="section6">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">Testimonials</h2>
+            <span class="bg-colour1"></span>
+        </div>
+        <div class="wrapper">
+            <div class="tabs">
+                                    <button class="tab current" data-id="1">Students</button>
+                                    <button class="tab" data-id="2">Parents</button>
+                                    <button class="tab" data-id="3">IBO Evaluation Team</button>
+                            </div>
+            <select class="tab-select" name="tab"><option value="1">Students</option><option value="2">Parents</option><option value="3">IBO Evaluation Team</option></select>                            <div class="tab-content current" data-id="1">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/8b6f2fe0e9cfea2d3b1c1c966e58ae8c.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 2</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">It has been a fun journey because it has taught me how to organise my time better, and go to meetings on time, as well as being responsible. I hope in the future we can do more activities and make the school a place for people who are from different places to feel like they are home.  I also hope future house captains can be as responsible as us this year.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">It has been a fun journey because it has taught me how to organise my time better, and go to meetings on time, as well as being responsible. I hope in the future we can do more activities and make the school a place for people who are from different places to feel like they are home.  I also hope future house captains can be as responsible as us this year.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Ethan W - Y6 Student, Class of 2024</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/8b6f2fe0e9cfea2d3b1c1c966e58ae8c.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 2</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Being a House Captain has given me many great opportunities and helped me grow throughout Year 6. If you want to know what it’s like, you should know that it is a lot of fun! However, responsibility comes along with it as well. I learned how to manage myself, work with deadlines and manage time as well. Being a House Captain is amazing and a rewarding experience. I feel very grateful to be able to give back to this school that has helped me grow over the last 5 years.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Being a House Captain has given me many great opportunities and helped me grow throughout Year 6. If you want to know what it’s like, you should know that it is a lot of fun! However, responsibility comes along with it as well. I learned how to manage myself, work with deadlines and manage time as well. Being a House Captain is amazing and a rewarding experience. I feel very grateful to be able to give back to this school that has helped me grow over the last 5 years.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Kairvia K - Y6 Student, Banyan House Captain, Class of 2023</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="2">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/18886fedec8e1a56ee46e3c846c7f6df.jpg" alt="Parent_Paul" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>1 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Seeing my children’s happy faces at pick-up time has become one of the best moments of my everyday routine. I love how SJS has cultivated a culture of kindness and respect, and a friendly atmosphere that encourages every student to thrive.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Seeing my children’s happy faces at pick-up time has become one of the best moments of my everyday routine. I love how SJS has cultivated a culture of kindness and respect, and a friendly atmosphere that encourages every student to thrive.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Mother of Y1 & Y3</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/8b6f2fe0e9cfea2d3b1c1c966e58ae8c.jpg" alt="" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>2 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">The values taught at SJS go beyond the classroom. My child has not only excelled academically but has also learned compassion, kindness, and responsibility.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">The values taught at SJS go beyond the classroom. My child has not only excelled academically but has also learned compassion, kindness, and responsibility.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Father of Y6 Student</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/b326879e0be6e2ba15d419e3b313c493.jpeg" alt="Parent_Usha" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                            <div class="slider-pager">
+                                                    <button class="prev"></button>
+                                                    <span>3 / 3</span>
+                                                    <button class="next"></button>
+                                                </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">We particularly enjoy sports day where the spirit of the community joins together.<br><br>When everyone is cheering for their houses and friends, the atmosphere and applause from the stadium were simply electrifying!<br><br>My son enjoys his enrichment reading club, where he is given the opportunity to collaborate in a team and has different roles each week; his favourite so far is being an illustrator.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">We particularly enjoy sports day where the spirit of the community joins together.<br><br>When everyone is cheering for their houses and friends, the atmosphere and applause from the stadium were simply electrifying!<br><br>My son enjoys his enrichment reading club, where he is given the opportunity to collaborate in a team and has different roles each week; his favourite so far is being an illustrator.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                            <div class="title">
+                                                    <span></span>
+                                                    <h3>Parent of Y3 & Y5</h3>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                            <div class="tab-content" data-id="3">
+                                            <div class="record-slider">
+                            <div class="slider-container">
+                                                                    <div class="record-item">
+                                        <div class="left">
+                                            <div class="thumbnail bg-colour1">
+                                                <span></span>
+                                                <img src="/cache/img/3e9d9ab2012480b5ab11beab4ec3b8ad.png" alt="faaea4915b3a00041c7f6ca0a8b59694" loading="lazy" width="548" height="548" />                                            </div>
+                                                                                    </div>
+                                        <div class="right">
+                                            <article>
+                                                                                                    <div class="content">
+                                                        <p class="description">Sha Tin Junior School (SJS) is a dynamic and inclusive community dedicated to providing a holistic IB education. The school provides opportunities for student agency, global citizenship, and strong parent-teacher partnerships. <br><br>Key achievements include the implementation of the Global Goals Award Scheme and increased student engagement. SJS is committed to fostering a positive learning environment where students can thrive and reach their full potential.</p>
+                                                        <button class="view-more">
+                                                            <span>View More</span>
+                                                        </button>
+                                                        <p class="content">Sha Tin Junior School (SJS) is a dynamic and inclusive community dedicated to providing a holistic IB education. The school provides opportunities for student agency, global citizenship, and strong parent-teacher partnerships. <br><br>Key achievements include the implementation of the Global Goals Award Scheme and increased student engagement. SJS is committed to fostering a positive learning environment where students can thrive and reach their full potential.</p>
+                                                        <button class="view-less">
+                                                            <span>View Less</span>
+                                                        </button>
+                                                    </div>
+                                                                                            </article>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+            
+            $('.tab', '#section6').click(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $(this).addClass('current');
+                $('.tab-content[data-id=' + $(this).data('id') + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' + ($(this).index() + 1) + ')', '#section6').addClass('current');
+                chkContentHeight();
+            });
+
+            $('.tab-select', '#section6').change(function() {
+                $('.tab, .tab-content', '#section6').removeClass('current');
+                $('.tab[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-content[data-id=' + $(this).val() + ']', '#section6').addClass('current');
+                $('.tab-select .select-container div', '#section6').removeClass('current');
+                $('.tab-select .select-container div:nth-child(' +  ($('.tab.current', '#section6').index() + 1) + ')', '#section6').addClass('current');
+                $('.select .select-container div', '#section6').show();
+                $('.select .select-container div:nth-child(' + ($('.tab.current', '#section6').index() + 1) + ')', '#section6').hide();
+                chkContentHeight();
+            });
+
+            $('.record-slider', '#section6').Slider({
+                slides: '.record-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: true
+            });
+
+            function chkContentHeight() {
+                $('p.description', '#section6').each(function() {
+                    if($(this).height() > 160) {
+                        $(this).parent().addClass('more');
+                    }
+                });
+            }
+            chkContentHeight();
+
+            $('.record-item article button.view-more', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-less').show();
+                $(this).parent().find('.description').hide();
+                $(this).parent().find('.content').show();
+            });
+            $('.record-item article button.view-less', '#section6').click(function() {
+                $(this).hide();
+                $(this).parent().find('.view-more').show();
+                $(this).parent().find('.description').show();
+                $(this).parent().find('.content').hide();
+            });
+        });
+    </script>
+</section>
+<section id="section7" data-total="10">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="colour2">What's New at SJS?</h2>
+            <span class="bg-colour1"></span>
+        </div>
+    </div>
+    <div class="record-slider">
+        <div class="slider-container">
+                            <div class="post-item">
+                    <div class="post" data-id="95">
+                        <time>15/02/2023</time>
+                        <h3>SJS Donation to Turkey and Syria ✈️<br><br>64 boxes 📦📦📦📦📦📦<br>- Children & Adults Winter Clothing<br>- Sleeping Bags & Blankets<br>- Infant Diapers & Sanitary Napkins<br>- also Thermos Water Bottles, Headlights, Boots, Scarves, etc.<br><br>We appreciate all the donations, which come from our SJS families and neighborhoods. We are incredibly appreciative of your warmth and generosity.<br><br>Support Turkey and Syria</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/fd6c9f5d5455d6a71c9c0bcbf2cff398.jpg" alt="329972909_1824391501279206_2014607427122955753_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="101">
+                        <time>09/09/2022</time>
+                        <h3>https://youtu.be/-N7lRYMmbXU<br><br>What is digital citizenship? <br>Digital citizenship is the responsible use of technology to learn, create and participate.<br><br>PAUSE & THINK online 🌐</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3a7335f707683701f3dd6b504f6756b6.jpg" alt="10899342660580682317" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="100">
+                        <time>09/09/2022</time>
+                        <h3>https://youtu.be/-N7lRYMmbXU<br><br>What is digital citizenship? <br>Digital citizenship is the responsible use of technology to learn, create and participate.<br><br>PAUSE & THINK online 🌐</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/5ff4408bcd16d145772a99809d7745dd.jpg" alt="10899342660580682317" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="99">
+                        <time>25/06/2021</time>
+                        <h3>Congratulation to 2020-2021 Y6 Students🥳</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/9ead47f10ed14c936a262c1c98d04879.jpg" alt="194813964_1368614160189692_6372968138677371858_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="92">
+                        <time>21/06/2021</time>
+                        <h3>Global Goals by class 4.1 - Being Good Custodians of Earth 🌏</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7f77cf1138ad26bd7175d3f6ef72fe8b.jpg" alt="201507975_2939355536383652_5462050541210042071_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="98">
+                        <time>16/06/2021</time>
+                        <h3>School Garden 🌿 - Border for the Drains<br>Then & NOW~<br>In December 2020, a trench has been cut next to the drain and a line of bricks embedded to protect the drains and discourage traffic onto the slope.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/edb3be972a6cddb7dc44a1c5c9c86e1f.jpg" alt="194472905_764803524191241_6060869458767488833_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="90">
+                        <time>10/06/2021</time>
+                        <h3>Proud parents watching over their young. Here the baby is practising his flying moves on our climbing frame. 🐦<br><br>Our Chinese Bulbul chick has grown feathers and is ready to fly. The chicks are now fledglings. Just taking a moment to ponder how to take flight!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/bfccae723354d15d003358e9bb1899fc.jpg" alt="198435884_2931490290503510_1710970168520740159_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="89">
+                        <time>08/06/2021</time>
+                        <h3>Our playground is a bird’s paradise 🐦<br>Our Chinese Bulbul chicks are starting to grow their feathers.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/de94691f6bd0a28f644eb3acd939e609.jpg" alt="197633020_2929905960661943_6436943411523271708_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="97">
+                        <time>07/06/2021</time>
+                        <h3>Here is Shelly 🐢 the Razor Back Musk Turtle enjoying being fed. She eats mince from a chopstick 🥢 or off of the rock. She needs food every second day.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0dbb5eb27583a52bfaba30138842f359.jpg" alt="185834532_495579598353789_7351241830367757990_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="96">
+                        <time>11/12/2020</time>
+                        <h3>Look at our amazing hoops showing the children's rights.  Each class was responsible for researching and displaying a child's right.  They have then been teaching that right in assembly each week.  Their understanding and creativity is phenomenal.  Well done SJS!<br>#theRightsOfEveryChild</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1069b48d3f08f4157b0f6f530f11abd1.jpg" alt="128959228_2806148102964344_5497491263414363734_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="95">
+                        <time>15/02/2023</time>
+                        <h3>SJS Donation to Turkey and Syria ✈️<br><br>64 boxes 📦📦📦📦📦📦<br>- Children & Adults Winter Clothing<br>- Sleeping Bags & Blankets<br>- Infant Diapers & Sanitary Napkins<br>- also Thermos Water Bottles, Headlights, Boots, Scarves, etc.<br><br>We appreciate all the donations, which come from our SJS families and neighborhoods. We are incredibly appreciative of your warmth and generosity.<br><br>Support Turkey and Syria</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/fd6c9f5d5455d6a71c9c0bcbf2cff398.jpg" alt="329972909_1824391501279206_2014607427122955753_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="101">
+                        <time>09/09/2022</time>
+                        <h3>https://youtu.be/-N7lRYMmbXU<br><br>What is digital citizenship? <br>Digital citizenship is the responsible use of technology to learn, create and participate.<br><br>PAUSE & THINK online 🌐</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3a7335f707683701f3dd6b504f6756b6.jpg" alt="10899342660580682317" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="100">
+                        <time>09/09/2022</time>
+                        <h3>https://youtu.be/-N7lRYMmbXU<br><br>What is digital citizenship? <br>Digital citizenship is the responsible use of technology to learn, create and participate.<br><br>PAUSE & THINK online 🌐</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/5ff4408bcd16d145772a99809d7745dd.jpg" alt="10899342660580682317" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="99">
+                        <time>25/06/2021</time>
+                        <h3>Congratulation to 2020-2021 Y6 Students🥳</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/9ead47f10ed14c936a262c1c98d04879.jpg" alt="194813964_1368614160189692_6372968138677371858_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="92">
+                        <time>21/06/2021</time>
+                        <h3>Global Goals by class 4.1 - Being Good Custodians of Earth 🌏</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7f77cf1138ad26bd7175d3f6ef72fe8b.jpg" alt="201507975_2939355536383652_5462050541210042071_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="98">
+                        <time>16/06/2021</time>
+                        <h3>School Garden 🌿 - Border for the Drains<br>Then & NOW~<br>In December 2020, a trench has been cut next to the drain and a line of bricks embedded to protect the drains and discourage traffic onto the slope.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/edb3be972a6cddb7dc44a1c5c9c86e1f.jpg" alt="194472905_764803524191241_6060869458767488833_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="90">
+                        <time>10/06/2021</time>
+                        <h3>Proud parents watching over their young. Here the baby is practising his flying moves on our climbing frame. 🐦<br><br>Our Chinese Bulbul chick has grown feathers and is ready to fly. The chicks are now fledglings. Just taking a moment to ponder how to take flight!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/bfccae723354d15d003358e9bb1899fc.jpg" alt="198435884_2931490290503510_1710970168520740159_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="89">
+                        <time>08/06/2021</time>
+                        <h3>Our playground is a bird’s paradise 🐦<br>Our Chinese Bulbul chicks are starting to grow their feathers.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/de94691f6bd0a28f644eb3acd939e609.jpg" alt="197633020_2929905960661943_6436943411523271708_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="97">
+                        <time>07/06/2021</time>
+                        <h3>Here is Shelly 🐢 the Razor Back Musk Turtle enjoying being fed. She eats mince from a chopstick 🥢 or off of the rock. She needs food every second day.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0dbb5eb27583a52bfaba30138842f359.jpg" alt="185834532_495579598353789_7351241830367757990_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="96">
+                        <time>11/12/2020</time>
+                        <h3>Look at our amazing hoops showing the children's rights.  Each class was responsible for researching and displaying a child's right.  They have then been teaching that right in assembly each week.  Their understanding and creativity is phenomenal.  Well done SJS!<br>#theRightsOfEveryChild</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1069b48d3f08f4157b0f6f530f11abd1.jpg" alt="128959228_2806148102964344_5497491263414363734_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="95">
+                        <time>15/02/2023</time>
+                        <h3>SJS Donation to Turkey and Syria ✈️<br><br>64 boxes 📦📦📦📦📦📦<br>- Children & Adults Winter Clothing<br>- Sleeping Bags & Blankets<br>- Infant Diapers & Sanitary Napkins<br>- also Thermos Water Bottles, Headlights, Boots, Scarves, etc.<br><br>We appreciate all the donations, which come from our SJS families and neighborhoods. We are incredibly appreciative of your warmth and generosity.<br><br>Support Turkey and Syria</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/fd6c9f5d5455d6a71c9c0bcbf2cff398.jpg" alt="329972909_1824391501279206_2014607427122955753_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="101">
+                        <time>09/09/2022</time>
+                        <h3>https://youtu.be/-N7lRYMmbXU<br><br>What is digital citizenship? <br>Digital citizenship is the responsible use of technology to learn, create and participate.<br><br>PAUSE & THINK online 🌐</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/3a7335f707683701f3dd6b504f6756b6.jpg" alt="10899342660580682317" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="100">
+                        <time>09/09/2022</time>
+                        <h3>https://youtu.be/-N7lRYMmbXU<br><br>What is digital citizenship? <br>Digital citizenship is the responsible use of technology to learn, create and participate.<br><br>PAUSE & THINK online 🌐</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/5ff4408bcd16d145772a99809d7745dd.jpg" alt="10899342660580682317" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="99">
+                        <time>25/06/2021</time>
+                        <h3>Congratulation to 2020-2021 Y6 Students🥳</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/9ead47f10ed14c936a262c1c98d04879.jpg" alt="194813964_1368614160189692_6372968138677371858_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="92">
+                        <time>21/06/2021</time>
+                        <h3>Global Goals by class 4.1 - Being Good Custodians of Earth 🌏</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/7f77cf1138ad26bd7175d3f6ef72fe8b.jpg" alt="201507975_2939355536383652_5462050541210042071_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="98">
+                        <time>16/06/2021</time>
+                        <h3>School Garden 🌿 - Border for the Drains<br>Then & NOW~<br>In December 2020, a trench has been cut next to the drain and a line of bricks embedded to protect the drains and discourage traffic onto the slope.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/edb3be972a6cddb7dc44a1c5c9c86e1f.jpg" alt="194472905_764803524191241_6060869458767488833_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="90">
+                        <time>10/06/2021</time>
+                        <h3>Proud parents watching over their young. Here the baby is practising his flying moves on our climbing frame. 🐦<br><br>Our Chinese Bulbul chick has grown feathers and is ready to fly. The chicks are now fledglings. Just taking a moment to ponder how to take flight!</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/bfccae723354d15d003358e9bb1899fc.jpg" alt="198435884_2931490290503510_1710970168520740159_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="89">
+                        <time>08/06/2021</time>
+                        <h3>Our playground is a bird’s paradise 🐦<br>Our Chinese Bulbul chicks are starting to grow their feathers.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/de94691f6bd0a28f644eb3acd939e609.jpg" alt="197633020_2929905960661943_6436943411523271708_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="97">
+                        <time>07/06/2021</time>
+                        <h3>Here is Shelly 🐢 the Razor Back Musk Turtle enjoying being fed. She eats mince from a chopstick 🥢 or off of the rock. She needs food every second day.</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/0dbb5eb27583a52bfaba30138842f359.jpg" alt="185834532_495579598353789_7351241830367757990_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                            <div class="post-item">
+                    <div class="post" data-id="96">
+                        <time>11/12/2020</time>
+                        <h3>Look at our amazing hoops showing the children's rights.  Each class was responsible for researching and displaying a child's right.  They have then been teaching that right in assembly each week.  Their understanding and creativity is phenomenal.  Well done SJS!<br>#theRightsOfEveryChild</h3>
+                        <button>Read more</button>
+                        <img src="/cache/img/1069b48d3f08f4157b0f6f530f11abd1.jpg" alt="128959228_2806148102964344_5497491263414363734_n" loading="lazy" width="682" height="682" />                    </div>
+                </div>
+                    </div>
+        <div class="btns">
+            <button class="prev"></button>
+            <button class="next"></button>
+        </div>
+    </div>
+            <div class="lightbox" data-id="95">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>15/02/2023</time>
+                    <div class="lightbox-content">
+                                                    <h3>SJS Donation to Turkey and Syria ✈️<br><br>64 boxes 📦📦📦📦📦📦<br>- Children & Adults Winter Clothing<br>- Sleeping Bags & Blankets<br>- Infant Diapers & Sanitary Napkins<br>- also Thermos Water Bottles, Headlights, Boots, Scarves, etc.<br><br>We appreciate all the donations, which come from our SJS families and neighborhoods. We are incredibly appreciative of your warmth and generosity.<br><br>Support Turkey and Syria</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/fd6c9f5d5455d6a71c9c0bcbf2cff398.jpg" alt="329972909_1824391501279206_2014607427122955753_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/5bf125fa595a2c5a001546e32072bd29.jpg" alt="330965626_709588917288683_7742519375048036864_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/cf7628b737b83a09d3f14ac03c923e98.jpg" alt="329904330_758769932334436_8689592403993856562_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1867598013559415_619374893532384" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1867598013559415_619374893532384" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="101">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>09/09/2022</time>
+                    <div class="lightbox-content">
+                                                    <h3>https://youtu.be/-N7lRYMmbXU<br><br>What is digital citizenship? <br>Digital citizenship is the responsible use of technology to learn, create and participate.<br><br>PAUSE & THINK online 🌐</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/3a7335f707683701f3dd6b504f6756b6.jpg" alt="10899342660580682317" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1867598013559415_484480947021780" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1867598013559415_484480947021780" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="100">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>09/09/2022</time>
+                    <div class="lightbox-content">
+                                                    <h3>https://youtu.be/-N7lRYMmbXU<br><br>What is digital citizenship? <br>Digital citizenship is the responsible use of technology to learn, create and participate.<br><br>PAUSE & THINK online 🌐</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/5ff4408bcd16d145772a99809d7745dd.jpg" alt="10899342660580682317" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1867598013559415_484481450355063" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1867598013559415_484481450355063" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="99">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>25/06/2021</time>
+                    <div class="lightbox-content">
+                                                    <h3>Congratulation to 2020-2021 Y6 Students🥳</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <a href="https://www.facebook.com/1059396656196870/videos/212882617237976" target="_blank" rel="nofollow">
+                                                    <img src="/cache/img/9ead47f10ed14c936a262c1c98d04879.jpg" alt="194813964_1368614160189692_6372968138677371858_n" loading="lazy" width="682" height="682" />                                                </a>
+                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1867598013559415_2942463036072902" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1867598013559415_2942463036072902" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="92">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>21/06/2021</time>
+                    <div class="lightbox-content">
+                                                    <h3>Global Goals by class 4.1 - Being Good Custodians of Earth 🌏</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/7f77cf1138ad26bd7175d3f6ef72fe8b.jpg" alt="201507975_2939355536383652_5462050541210042071_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ec76b138efa066af13edb7fd81f3a054.jpg" alt="203902874_2939355496383656_9103727926206671540_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/ab46cdf5e698e5f0a13746e6b0d3a0f3.jpg" alt="201178276_2939355716383634_3642107451527070555_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/050016d01973b055827c8441c84a6d5d.jpg" alt="200367844_2939355443050328_1205628437629395582_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/372673d6253f2a7effb8892427144e18.jpg" alt="201986371_2939355679716971_4333220629383215349_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1867598013559415_2939359893049883" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1867598013559415_2939359893049883" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="98">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>16/06/2021</time>
+                    <div class="lightbox-content">
+                                                    <h3>School Garden 🌿 - Border for the Drains<br>Then & NOW~<br>In December 2020, a trench has been cut next to the drain and a line of bricks embedded to protect the drains and discourage traffic onto the slope.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <a href="https://www.facebook.com/1059396656196870/videos/312628197232745" target="_blank" rel="nofollow">
+                                                    <img src="/cache/img/edb3be972a6cddb7dc44a1c5c9c86e1f.jpg" alt="194472905_764803524191241_6060869458767488833_n" loading="lazy" width="682" height="682" />                                                </a>
+                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1867598013559415_2935868170065722" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1867598013559415_2935868170065722" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="90">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>10/06/2021</time>
+                    <div class="lightbox-content">
+                                                    <h3>Proud parents watching over their young. Here the baby is practising his flying moves on our climbing frame. 🐦<br><br>Our Chinese Bulbul chick has grown feathers and is ready to fly. The chicks are now fledglings. Just taking a moment to ponder how to take flight!</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/bfccae723354d15d003358e9bb1899fc.jpg" alt="198435884_2931490290503510_1710970168520740159_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/f34a75cb510d7cf0e2e791b4b75ed371.jpg" alt="195338519_2931490643836808_8456311798218466986_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/9441c539dbf9471e06cc336d5c44cbb1.jpg" alt="198012367_2931490330503506_3855821499504965525_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/fb256fb6bf572909504ca7de94d43ac2.jpg" alt="196748845_2931490580503481_8144813394492504881_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/2fc9341460d529d80f802ee5cdae26ec.jpg" alt="196117496_2931490470503492_2274233846365928421_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c42aab7d1a61ea0df429f2f7f1f2876d.jpg" alt="196958911_2931490500503489_967245800982640176_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/c82fb255015fa1f21d28bff0577d6b32.jpg" alt="197764011_2931490550503484_9158439264413100132_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1867598013559415_2931492857169920" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1867598013559415_2931492857169920" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="89">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>08/06/2021</time>
+                    <div class="lightbox-content">
+                                                    <h3>Our playground is a bird’s paradise 🐦<br>Our Chinese Bulbul chicks are starting to grow their feathers.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/de94691f6bd0a28f644eb3acd939e609.jpg" alt="197633020_2929905960661943_6436943411523271708_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                            <div class="gallery-item">
+                                                                                            <img src="/cache/img/6e7c4a14e412e360ea8fc7e174452a37.jpg" alt="195019582_2929907223995150_6417636270020297461_n" loading="lazy" width="682" height="682" />                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1867598013559415_2929907760661763" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1867598013559415_2929907760661763" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="97">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>07/06/2021</time>
+                    <div class="lightbox-content">
+                                                    <h3>Here is Shelly 🐢 the Razor Back Musk Turtle enjoying being fed. She eats mince from a chopstick 🥢 or off of the rock. She needs food every second day.</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <a href="https://www.facebook.com/1059396656196870/videos/495578681687214" target="_blank" rel="nofollow">
+                                                    <img src="/cache/img/0dbb5eb27583a52bfaba30138842f359.jpg" alt="185834532_495579598353789_7351241830367757990_n" loading="lazy" width="682" height="682" />                                                </a>
+                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1867598013559415_2929267967392409" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1867598013559415_2929267967392409" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="lightbox" data-id="96">
+            <div class="lightbox-wrapper">
+                <button class="close"></button>
+                <div class="lightbox-container">
+                    <time>11/12/2020</time>
+                    <div class="lightbox-content">
+                                                    <h3>Look at our amazing hoops showing the children's rights.  Each class was responsible for researching and displaying a child's right.  They have then been teaching that right in assembly each week.  Their understanding and creativity is phenomenal.  Well done SJS!<br>#theRightsOfEveryChild</h3>
+                                                                            <div class="gallery">
+                                <div class="gallery-container">
+                                                                            <div class="gallery-item">
+                                                                                            <a href="https://www.facebook.com/1059396656196870/videos/1851612731666167" target="_blank" rel="nofollow">
+                                                    <img src="/cache/img/1069b48d3f08f4157b0f6f530f11abd1.jpg" alt="128959228_2806148102964344_5497491263414363734_n" loading="lazy" width="682" height="682" />                                                </a>
+                                                                                    </div>
+                                                                    </div>
+                                <button class="prev"></button>
+                                <button class="next"></button>
+                            </div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="slider-pager"></div>
+                        <a href="https://www.facebook.com/1867598013559415_2798630200456187" target="_blank" class="like">Like</a>
+                        <a href="https://www.facebook.com/1867598013559415_2798630200456187" target="_blank" class="comment">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            const ori_total = parseInt($('#section7').data('total'));
+            let slider_loop = ori_total >= 5 ? true : false;
+            $('.record-slider', '#section7').Slider({
+                slides: '.post-item',
+                maxSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                infiniteLoop: slider_loop,
+                dummySlide: slider_loop,
+				afterSlide: function(slider, slides, current_page, total_page) {
+					if(slider_loop) {
+						if(current_page == ori_total) {
+							slider.Slider('jump', ori_total * 2).Slider('start');
+						}
+						if(current_page == ori_total * 2 + 1) {
+							slider.Slider('jump', ori_total + 1).Slider('start');
+						}
+					}
+				},
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(slider_loop) {
+                        slider.Slider('jump', ori_total + 1);
+                    }
+                }
+            });
+
+            $('.post', '#section7').click(function() {
+                $('.lightbox[data-id=' + $(this).data('id') + ']').addClass('show');
+                disableScroll();
+            });
+
+            $('.lightbox .gallery', '#section7').Slider({
+                slides: '.gallery-item',
+                fixedSlide: 1,
+                swipeControl: true,
+                skipBoundary: true,
+                afterSlide: function(slider, slides, current_page, total_page) {
+                    let videos = $('.slider video', slider);
+                    videos.each(function(i, video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                    slider.parent().find('.slider-pager').html(current_page + ' / ' + total_page);
+                },
+                afterInit: function(slider, slides, current_page, total_page) {
+                    if(total_page > 1) {
+                        slider.parent().find('.slider-pager').html('1 / ' + total_page);
+                    }
+                }
+            });
+        });
+    </script>
+</section>
+	</section>
+	<footer>
+		<div class="top-container">
+			<div class="container">
+				<div class="up-container">
+											<a href="/en/" class="logo">
+							<img src="/cache/img/237c489cf8d96e6eb024a085e9c74375.png" alt="ESF Sha Tin Junior School-rw" loading="lazy" height="140" />						</a>
+																<nav class="social">
+							<ul>
+																<li>
+									<a href="https://www.facebook.com/ESFShaTinJuniorSchool" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/660fcd3e297d1.svg" width="40" height="40" />
+									</a>
+								</li>
+																<li>
+									<a href="https://x.com/sjsesf/" target="_blank" rel="nofollow">
+										<img src="/upload/files/1/social/671fbff25f4e6.svg" width="40" height="40" />
+									</a>
+								</li>
+															</ul>
+						</nav>
+				 					</div>
+				<div class="down-container">
+					<div class="left-container">
+													<a href="https://maps.app.goo.gl/rksfx3yJbTpHjURF9" target="_blank" rel="nofollow" class="map">
+								<img src="/cache/img/15823c6ee9ea2dbc6a4cdd63a90a0e10.png" alt="擷取" loading="lazy" width="714" height="536" />							</a>
+												<div class="contact">
+							<h2>Contact Information</h2>
+																								<a href="https://sjs.esf.edu.hk/en/admissions/contact_admissions/" class="tel">(+852) 2692 2721</a>
+																<div></div>
+														 							<a href="mailto:info@sjs.esf.edu.hk" class="email">info@sjs.esf.edu.hk</a>
+														 							<p class="address">3A Lai Wo Lane, Fo Tan Sha Tin, New Territories 沙田火炭麗禾里3A號</p>
+													</div>
+												<div class="subscribe">
+							<form action="/en/subscribe/" method="post">
+								<h2>Connect with Us</h2>
+																	<input type="text" autoComplete="off" placeHolder="Your email address" maxLength="128" class="text" name="email" value="" />									<div class="submit">
+										<a class="handler">Submit</a>
+										<span>Slide to Right</span>
+									</div>
+									<input type="hidden" name="back" value="/en/" />															</form>
+						</div>
+						<script type="text/javascript">
+							$(document).ready(function() {
+								$('form', '.subscribe').validate({
+									autoScroll: false,
+									setting: [
+										[ 'email', {
+											method: [
+												[ 'req' ],					
+												[ 'email' ]					
+											]
+										} ]
+									],
+									onError: function(form) {
+										form.slideSubmit('revert');
+									}
+								}).slideSubmit();
+
+															});
+						</script>
+											</div>
+					<div class="right-container">
+												<nav class="menu2">
+							<ul>
+								<li>
+									<h2>Navigation</h2>
+								</li>
+																	<li>
+										<a href="https://sjs.esf.edu.hk/en/about_us/">About Us</a>
+									</li>
+																	<li>
+										<a href="https://sjs.esf.edu.hk/en/outstanding_education/academic_curriculum/academic_pathway/">Outstanding Education</a>
+									</li>
+																	<li>
+										<a href="https://sjs.esf.edu.hk/en/outstanding_experiences/campus/">Outstanding Experiences</a>
+									</li>
+																	<li>
+										<a href="https://sjs.esf.edu.hk/en/outstanding_people/">Outstanding People</a>
+									</li>
+																	<li>
+										<a href="https://sjs.esf.edu.hk/en/admissions/admissions_overview/">Admissions</a>
+									</li>
+																	<li>
+										<a href="https://sjs.esf.edu.hk/en/WorkWithUs/">Work With Us</a>
+									</li>
+															</ul>
+						</nav>
+																		<nav class="menu3">
+							<ul>
+								<li>
+									<h2>Quick Links</h2>
+								</li>
+																	<li>
+										<a href="https://join-us.esf.edu.hk/" target="_blank" rel="nofollow">About ESF</a>
+									</li>
+																	<li>
+										<a href="https://www.esfexplore.org.hk/" target="_blank" rel="nofollow">ESF Explore</a>
+									</li>
+																	<li>
+										<a href="https://sjs.esf.edu.hk/upload/files/1/file/69c0aad7db6a8.pdf">School Calendar 2026-27 (Version 2)</a>
+									</li>
+																	<li>
+										<a href="https://sjs.esf.edu.hk/upload/files/1/file/699bf389a2ddc.pdf">School Calendar 2025-26</a>
+									</li>
+															</ul>
+						</nav>
+											</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-container">			
+			<div class="container">
+				<div class="wrapper">
+					<p class="copyright">Copyright © English Schools Foundation. Powered by <a href="//www.anglia.com.hk" target="_blank">ANGLIA</a>.</p>
+					<a href="/en/sitemap/" class="sitemap">Sitemap</a>
+				</div>
+								<nav class="logo">
+			 		<ul>
+			 						 			<li>
+			 				<a>
+								<img src="/upload/files/1/logo4/660fd31d2b17e.png" height="131" />
+							</a>
+			 			</li>
+			 						 		</ul>
+			 	</nav>
+							</div>
+		</div>
+	</footer>
+	<button id="back-to-top"></button>
+			<div id="floating">
+							<a class="logo">
+					<img src="/cache/img/06b6c7122ff014f6fc01c3c285eab1c6.png" alt="Sha-Tin-Junior" loading="lazy" width="62" height="53" />				</a>
+																				<a class="bg-colour1"  href="https://join-us.esf.edu.hk/admissions-primary-secondary/" target="_blank" rel="nofollow">
+													<img src="/upload/shortcut/1/icon/660fd9ba6ff5d.svg" width="60" height="60" />
+												<span>Apply</span>
+					</a>
+														<a class="bg-colour1"  href="tel:85226922721">
+													<img src="/upload/shortcut/2/icon/660fd9ca7b6eb.svg" width="60" height="60" />
+												<span>Call</span>
+					</a>
+														<a class="bg-colour1"  href="https://sjs.esf.edu.hk/en/enquiry/?SchoolCode=SJS">
+													<img src="/upload/shortcut/3/icon/660fd9db298ad.svg" width="60" height="60" />
+												<span>Enquire</span>
+					</a>
+									</div>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#floating').addClass('animate');
+			});
+		</script>
+				<div id="accept-cookies">
+			<article class="editor"><p>Welcome and please be advised that ESF uses cookies. By accessing an ESF, ESL or PTA web site and other online ESF services, such as ESF&rsquo;s mobile app, users agree that ESF can store and access cookies, IP addresses and use other methods in order to collect website usage data, and improve user&rsquo;s online experience. By continuing to access this web site, users agree to the use of cookies, which is handled in accordance to the ESF Data Privacy Policy. Information collected via cookies is handled in accordance with the ESF Personal Data Handling Policy and its related Personal Information Collection Statements (&ldquo;PICS&rdquo;). A copy of the PICS can be found on the ESF web site.</p></article>
+			<div class="buttons">
+				<button type="" class="accept">Accept</button>			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('button', '#accept-cookies').click(function() {
+					$('#accept-cookies').remove();
+					$.ajax({
+						url: genurl('cookies', 'main'),
+						type: 'post',
+						data: {
+							accept: 'y'
+						},
+						success: function(response) {
+						},
+						async: false
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

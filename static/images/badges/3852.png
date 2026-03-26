@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <base url="https://www.tmms.edu.hk/" />
+
+    <link rel="shortcut icon" href="upload/images/tmms-icon.png" />
+
+    <title>曾梅千禧學校</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="system/libraries/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+    <!-- JQuery v1.12.4 -->
+    <script src="system/javascript/JQuery/jquery-1.12.4.min.js"></script>
+    <!-- JQuery UI v1.12.1 -->
+    <script src="system/javascript/JQuery-UI/jquery-ui.js"></script>
+    <link rel="stylesheet" href="system/javascript/JQuery-UI/jquery-ui.css" />
+
+    <link rel="stylesheet" href="app/views/default/css/stylesheet.css?1774505317" />
+    <script src="system/javascript/common.js?1774505317"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="box">
+
+        <div id="menu-burger" class="visible-mobile float-right">
+          <span></span>
+          <span></span>
+        </div>
+        <div id="logo">
+          <ul>
+            <li><a href="?route=common/home"><img src="upload/images/logo/logo-tmms.png" /></a></li>
+            <li><a href="?route=common/home"><h1>曾梅千禧學校</h1></a></li>
+          </ul>
+        </div>
+        <div class="short-cut float-right">
+          <div id="search">
+            <div><a role="button" id="btn-search-open" class="btn btn-default btn-sm">
+              <i class="fa fa-search"></i><span class="hidden-mobile hidden-tablet"> 搜尋</span>
+            </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <nav id="menu">
+        <div class="box">
+          <ul>
+
+                                    <li>
+                            <a class="k-dropdown">學校簡介<i class="fa fa-angle-down"></i></a>
+                                            <ol class="k-dropdown-list">
+                                                      <li><a href="https://www.tmms.edu.hk/?route=about/school" >學校發展</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=about/facility" >校舍設備</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=about/feature" >教學理念</a></li>
+                                                    </ol>
+                          </li>
+                                                <li>
+                            <a class="k-dropdown">校園生活<i class="fa fa-angle-down"></i></a>
+                                            <ol class="k-dropdown-list">
+                                                      <li><a href="https://www.tmms.edu.hk/?route=community/schoollife#travel" >圖情萬里遊學課程</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/schoollife#legion" >曾梅軍團</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/schoollife#gifted" >資優計劃</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/schoollife#drama" >曾梅劇團</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/schoollife#talent" >才藝表演</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/schoollife#plum" >梅花頻道</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/schoollife#stars" >曾梅之星</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=media/album&amp;t=uniform" >校服之星</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=media/album&t=photo" >校園點滴</a></li>
+                                                    </ol>
+                          </li>
+                                                <li>
+                            <a class="k-dropdown">閱書樂<i class="fa fa-angle-down"></i></a>
+                                            <ol class="k-dropdown-list">
+                                                      <li><a href="https://www.tmms.edu.hk/?route=community/reading" >喜閱計劃</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/reading#英文讀書會" >英文讀書會</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/reading#PLPR" >PLPR</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/reading#文化日" >文化日</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/reading#閱讀獎賞卡" >閱讀獎賞卡</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/reading#書中尋寶" >書中尋寶</a></li>
+                                                    </ol>
+                          </li>
+                                                <li>
+                            <a class="k-dropdown">創科學習<i class="fa fa-angle-down"></i></a>
+                                            <ol class="k-dropdown-list">
+                                                      <li><a href="https://www.tmms.edu.hk/?route=community/innovation" >電子學習</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/innovation#Stem課程" >STEM課程</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/innovation#機械人課程" >機械人課程</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/innovation#奇趣IT課程" >奇趣IT課程</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=community/innovation#Steam-Day" >STEAM DAY</a></li>
+                                                    </ol>
+                          </li>
+                                                <li>
+                            <a class="k-dropdown">校內家長專區<i class="fa fa-angle-down"></i></a>
+                                            <ol class="k-dropdown-list">
+                                                      <li><a href="https://www.tmms.edu.hk/?route=media/news" >最新消息</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=media/news&t=homework" >小一及小二家課</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=media/news/calendar" >校曆表</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=media/timetable" >時間表</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=information/ppshk" >繳費靈使用方法</a></li>
+                                                    </ol>
+                          </li>
+                                                <li>
+                            <a class="k-dropdown">學校榮譽<i class="fa fa-angle-down"></i></a>
+                                            <ol class="k-dropdown-list">
+                                                      <li><a href="https://www.tmms.edu.hk/?route=about/awards" >我們的驕傲</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=cooperate/testimonial" >專業讚賞</a></li>
+                                                    </ol>
+                          </li>
+                                                <li>
+                            <a class="k-dropdown">園內通訊<i class="fa fa-angle-down"></i></a>
+                                            <ol class="k-dropdown-list">
+                                                      <li><a href="https://www.tmms.edu.hk/?route=media/news&t=president" >校長之聲</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=media/journal" >陽光通訊</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=pta/news" >家教會通訊</a></li>
+                                                                        <li><a href="https://www.facebook.com/tmmsalumni" >校友會</a></li>
+                                                    </ol>
+                          </li>
+                                                <li>
+                            <a class="k-dropdown">小六升中<i class="fa fa-angle-down"></i></a>
+                                            <ol class="k-dropdown-list">
+                                                      <li><a href="https://www.tmms.edu.hk/?route=secondary/information" >升中資訊</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=secondary/information#校內支援" >校內支援</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=secondary/information#歷年派位結果" >歷年派位</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=secondary/graduate" >畢業生心聲</a></li>
+                                                    </ol>
+                          </li>
+                                                <li>
+                            <a class="k-dropdown">小一入學<i class="fa fa-angle-down"></i></a>
+                                            <ol class="k-dropdown-list">
+                                                      <li><a href="https://www.tmms.edu.hk/?route=primary/information" >入學資訊</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=primary/information#小一適應課程" >小一適應課程</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=primary/information#小一家長支援" >小一家長支援</a></li>
+                                                    </ol>
+                          </li>
+                                                <li>
+                            <a class="k-dropdown">其他資訊(NCS)<i class="fa fa-angle-down"></i></a>
+                                            <ol class="k-dropdown-list">
+                                                      <li><a href="https://www.tmms.edu.hk/?route=information/report" >計劃及報告(NCS)</a></li>
+                                                                        <li><a href="https://www.tmms.edu.hk/?route=healthy/food" >校園健康</a></li>
+                                                    </ol>
+                          </li>
+                        
+        </div>
+
+      </nav>
+    </header>
+
+    <div id="wrapper">
+
+<div id="home">
+
+  <div id="kurosus-slider">
+    <div class="cover-bar"></div>
+    <div class="box">
+
+      <div class="slider-frame">
+                <div class="slider-item active">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (1).JPG');">
+              <article class="hidden slider-description">
+                <h2>-</h2>
+                                <p>-</p>
+                                                <p class="buttons"><a href="-" class="btn btn-tran-white">繼續閱讀</a></p>
+                
+              </article>
+          </div>
+
+        </div>
+                <div class="slider-item">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (2).JPG');">
+              <article class="hidden slider-description">
+                <h2>-</h2>
+                                <p>-</p>
+                                                <p class="buttons"><a href="-" class="btn btn-tran-white">繼續閱讀</a></p>
+                
+              </article>
+          </div>
+
+        </div>
+                <div class="slider-item">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (3).JPG');">
+              <article class="hidden slider-description">
+                <h2></h2>
+                                
+              </article>
+          </div>
+
+        </div>
+                <div class="slider-item">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (4).JPG');">
+              <article class="hidden slider-description">
+                <h2></h2>
+                                
+              </article>
+          </div>
+
+        </div>
+                <div class="slider-item">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (5).JPG');">
+              <article class="hidden slider-description">
+                <h2></h2>
+                                
+              </article>
+          </div>
+
+        </div>
+                <div class="slider-item">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (6).JPG');">
+              <article class="hidden slider-description">
+                <h2></h2>
+                                
+              </article>
+          </div>
+
+        </div>
+                <div class="slider-item">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (7).JPG');">
+              <article class="hidden slider-description">
+                <h2></h2>
+                                
+              </article>
+          </div>
+
+        </div>
+                <div class="slider-item">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (8).JPG');">
+              <article class="hidden slider-description">
+                <h2></h2>
+                                
+              </article>
+          </div>
+
+        </div>
+                <div class="slider-item">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (9).JPG');">
+              <article class="hidden slider-description">
+                <h2></h2>
+                                
+              </article>
+          </div>
+
+        </div>
+                <div class="slider-item">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (10).JPG');">
+              <article class="hidden slider-description">
+                <h2></h2>
+                                
+              </article>
+          </div>
+
+        </div>
+                <div class="slider-item">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (11).JPG');">
+              <article class="hidden slider-description">
+                <h2></h2>
+                                
+              </article>
+          </div>
+
+        </div>
+                <div class="slider-item">
+          <div class="slider-banner" style="background-image: url('upload/images/banner/20230831/BANNER_HOME_ (13).JPG');">
+              <article class="hidden slider-description">
+                <h2></h2>
+                                
+              </article>
+          </div>
+
+        </div>
+        
+      </div>
+
+
+      <div class="slider-control">
+        <ul id="slider-button"></ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="philosophy">
+    <div class="box">
+      <h2>教學特色</h2>
+
+      <div class="block">
+        <figure>
+          <img src="upload/images/default/icon-sound2.jpg" class="img-responsive">
+        </figure>
+        <article>
+          <h3>聲情教育</h3>
+          <p>以人本教育為基礎，強調學生需愉快學習，透過多元感官吸收所學</p>
+        </article>
+      </div>
+      <div class="block">
+        <figure>
+          <img src="upload/images/default/icon-exp2.jpg" class="img-responsive">
+        </figure>
+        <article>
+          <h3>經歷為本</h3>
+          <p>經歷為本的課堂著重生活經歷，能帶導學生將知識連繫到生活中，運用多向思維的方法促導學生思考。</p>
+        </article>
+      </div>
+      <div class="block">
+        <figure>
+          <img src="upload/images/default/icon-join2.jpg" class="img-responsive">
+        </figure>
+        <article>
+          <h3>學生培育</h3>
+          <p>「陽光教育」建基於自強不息、與時並進、勇於開拓、精益求精。</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div id="environment">
+    <div class="block">
+      <article>
+        <h2>校園設施</h2>
+        <p>&nbsp;</p>
+        <p class="text-center buttons"><a href="http://staging.tmms.edu.hk/?route=about/facility" class="btn btn-tran-white">閱讀更多</a></p>
+      </article>
+    </div>
+    <div class="block">
+      <article>
+        <h2>小一入學</h2>
+        <p>&nbsp;</p>
+        <p class="text-center buttons"><a href="?route=primary/information" class="btn btn-tran-white">閱讀更多</a></p>
+      </article>
+    </div>
+    <div class="block">
+      <article>
+        <h2>升中支援</h2>
+        <p>&nbsp;</p>
+        <p class="text-center buttons"><a href="?route=secondary/information" class="btn btn-tran-white">閱讀更多</a></p>
+      </article>
+    </div>
+  </div>
+
+  <div id="associations">
+    <div class="block">
+      <article>
+        <h2>曾梅軍團</h2>
+        <p>曾梅軍團是體現「經歷為本」的學習型學生領袖組織，初期由老師建立系統架構，鋪設晉升階梯，組織培訓課程，安排實戰工作，讓擁有不同潛能的學生參與軍團活動。</p>
+        <p class="text-center buttons"><a href="?route=community/schoollife#legion" class="btn btn-tran-white">閱讀更多</a></p>
+      </article>
+    </div>
+    <div class="block">
+      <article>
+        <h2>曾梅今夜陽光燦爛系列</h2>
+        <p>每年曾梅劇團百多位同學經四個月的刻苦訓練，都會在地區大會堂公開演出舞台劇&lt;&lt;今夜陽光燦爛&gt;&gt;，為觀眾帶來精彩繽紛，充滿歡樂的一夜。</p>
+        <p class="text-center buttons"><a href="?route=media/album&amp;t=sun-shine" class="btn btn-tran-white">閱讀更多</a></p>
+      </article>
+    </div>
+    <div class="block">
+      <article>
+        <h2>閱書樂</h2>
+        <p>閱讀是陪伴孩子終身的好習慣，在博雅教育的氛圍底下，從書海中他們找到自己喜愛的名著，細味當中精彩處。</p>
+        <p class="text-center buttons"><a href="?route=community/reading" class="btn btn-tran-white">閱讀更多</a></p>
+      </article>
+    </div>
+  </div>
+  <div id="news">
+    <div class="box">
+      <h2>每日資訊</h2>
+
+      <ul class="time-line">
+                <li> <!-- loop max. 4 latest news here -->
+          <ul>
+            <li class="cats-date">
+              <div class="news-category news-violet">
+                圖情萬里              </div>
+              <span>26-03 / 26</span>
+            </li>
+
+            <li class="news-content">
+              <figure><a href="index.php?route=media/album/info&article=2296"><img src="upload/images/banner/article/2026/03/2026-03-26-23-1180475415---cover.jpg" class="img-round img-responsive" /></a></figure>
+              <article>
+                <h3><a href="index.php?route=media/album/info&article=2296">25-26年度三年級遊學第三天(25/3)</a></h3>
+                <p></p>
+              </article>
+            </li>
+          </ul>
+        </li>
+                <li> <!-- loop max. 4 latest news here -->
+          <ul>
+            <li class="cats-date">
+              <div class="news-category news-brown">
+                相片集              </div>
+              <span>26-03 / 26</span>
+            </li>
+
+            <li class="news-content">
+              <figure><a href="index.php?route=media/album/info&article=2297"><img src="upload/images/banner/article/2026/03/2026-03-26-2-1323071536---cover.JPG" class="img-round img-responsive" /></a></figure>
+              <article>
+                <h3><a href="index.php?route=media/album/info&article=2297">一年級Busking跳舞表演</a></h3>
+                <p></p>
+              </article>
+            </li>
+          </ul>
+        </li>
+                <li> <!-- loop max. 4 latest news here -->
+          <ul>
+            <li class="cats-date">
+              <div class="news-category news-brown">
+                相片集              </div>
+              <span>26-03 / 26</span>
+            </li>
+
+            <li class="news-content">
+              <figure><a href="index.php?route=media/album/info&article=2298"><img src="upload/images/banner/article/2026/03/2026-03-26-10-1715783692---cover.JPG" class="img-round img-responsive" /></a></figure>
+              <article>
+                <h3><a href="index.php?route=media/album/info&article=2298">曾梅巨SING唱歌比賽</a></h3>
+                <p></p>
+              </article>
+            </li>
+          </ul>
+        </li>
+                <li> <!-- loop max. 4 latest news here -->
+          <ul>
+            <li class="cats-date">
+              <div class="news-category news-brown">
+                相片集              </div>
+              <span>26-03 / 26</span>
+            </li>
+
+            <li class="news-content">
+              <figure><a href="index.php?route=media/album/info&article=2299"><img src="upload/images/banner/article/2026/03/2026-03-26-6-0374541864---cover.JPG" class="img-round img-responsive" /></a></figure>
+              <article>
+                <h3><a href="index.php?route=media/album/info&article=2299">毅力十二愛心跑 2026 小學組</a></h3>
+                <p></p>
+              </article>
+            </li>
+          </ul>
+        </li>
+        
+      </ul>
+
+      <p class="buttons text-center">
+        <a href="index.php?route=media/news" class="btn btn-tran-black">
+          閱讀更多
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div id="testimonial">
+    <div class="box">
+      <h2>同行心聲</h2>
+      <!-- max. latest 3 in this section -->
+      <div class="block-inline">
+                  <div class="block block-33">
+            <article>
+              <h3>
+                葉淑婷校長                <br/><small>
+                  閩僑小學                </small></h3>
+              <p><p class="MsoNormal">謝謝鄧校長及團隊們的熱情款待，本校老師在貴校獲益良多。由秩序管理、觀課、學校管理、班級、合作學習…貴校的出色表現令我們團...</p>
+
+            </article>
+          </div>
+                  <div class="block block-33">
+            <article>
+              <h3>
+                羅宇彤校長                <br/><small>
+                  潮陽百欣小學                </small></h3>
+              <p>學生積極參與的態度，校園整潔舒適，處處顯示簡潔樸實的校風，值得借鏡。</p>
+
+            </article>
+          </div>
+                  <div class="block block-33">
+            <article>
+              <h3>
+                陳寶玲校長                <br/><small>
+                  保良局田家炳千禧小學                </small></h3>
+              <p>校園充滿歡樂的學習氣氛；老師專業的教學能令學生享受學習的樂趣；熱心的家長為學校及孩子們抽空到校協助，讓我感到全校關愛的文化。</p>
+
+            </article>
+          </div>
+              </div>
+
+      <p class="buttons text-center">
+        <a href="index.php?route=cooperate/testimonial" class="btn btn-tran-black">
+          閱讀更多
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div id="media">
+    <div class="album-desc">
+      <div class="box">
+        <h2>校園點滴</h2>
+        <p>相簿、我們的驕傲、回憶集。</p>
+        <p class="buttons">
+          <a href="?route=media/album" class="btn btn-tran-white">
+            閱讀更多
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="album-wall">
+      <ul>
+                <li><img src="upload/images/article/2018/12/20181217_SING06.jpg" /></li>
+                <li><img src="upload/images/article/2019/04/P6tripday3_047.jpg" /></li>
+                <li><img src="upload/images/article/2018/12/christmas123.jpg" /></li>
+                <li><img src="upload/images/article/2324/travel/P6-3/64.jpg" /></li>
+                <li><img src="upload/images/article/2019/02/20190227_30.jpg" /></li>
+                <li><img src="upload/images/article/2018/12/christmas129.jpg" /></li>
+                <li><img src="upload/images/article/2019/06/1819Sichuan/Sichuanday2(138).jpeg" /></li>
+                <li><img src="upload/images/article/2018/01/Photo_P4_Day5/13.JPG" /></li>
+                <li><img src="upload/images/article/2425/20241129/06.jpg" /></li>
+                <li><img src="upload/images/article/2019/02/p4day2116.jpg" /></li>
+                <li><img src="upload/images/article/2425/20241024/093.jpg" /></li>
+                <li><img src="upload/images/article/2324/travel/P5-2/192.jpg" /></li>
+                <li><img src="upload/images/article/2019/01/P5trip/day3/p5day201.jpg" /></li>
+                <li><img src="upload/images/article/2018/01/day2_-38-640x427.jpg" /></li>
+                <li><img src="upload/images/article/2425/20250107/097.jpg" /></li>
+                <li><img src="upload/images/article/2223/2223P4trip/P4d1 (40).JPG" /></li>
+                <li><img src="upload/images/article/2025/12/2025-12-18-06-0391561051.jpg" /></li>
+                <li><img src="upload/images/article/2425/20241024/023.jpg" /></li>
+                <li><img src="upload/images/article/2026/03/2026-03-26-8-1837269660.JPG" /></li>
+                <li><img src="upload/images/article/2019/10/20191023 (9).JPG" /></li>
+                <li><img src="upload/images/article/2122/2122Hallween153.jpg" /></li>
+                <li><img src="upload/images/article/2025/07/2425_下學期交齊功課計劃_3A.jpeg" /></li>
+                <li><img src="upload/images/article/2018/04/p6day2_044.jpg" /></li>
+                <li><img src="upload/images/article/2019/01/P5trip/day3/p5day288.jpg" /></li>
+                <li><img src="upload/images/article/2025/03/2425_P5_亮星環導賞活字_35.jpeg" /></li>
+                <li><img src="upload/images/article/2019/06/1819Sichuan/Sichuanday3 (53).jpeg" /></li>
+                <li><img src="upload/images/article/2019/06/1819Sichuan/Sichuantrip (1).jpeg" /></li>
+                <li><img src="upload/images/article/2018/01/IMG-20170109-WA0055-640x480.jpg" /></li>
+                <li><img src="upload/images/article/2026/01/2026-01-09-14-0409934681.JPG" /></li>
+                <li><img src="upload/images/article/2024/04/WhatsApp Image 2024-04-11 at 9.45.43 PM.jpeg" /></li>
+                <li><img src="upload/images/article/2425/20250109/054.jpg" /></li>
+                <li><img src="upload/images/article/2324/travel/P5-2/185.jpg" /></li>
+                <li><img src="upload/images/article/2019/03/20190315_WL_VISIT07.jpg" /></li>
+                <li><img src="upload/images/article/2223/20230613singcomp/03.jpg" /></li>
+                <li><img src="upload/images/article/2019/01/P5trip/day3/p5day205.jpg" /></li>
+                <li><img src="upload/images/article/2425/20250108/058.jpg" /></li>
+                <li><img src="upload/images/article/2019/02/p4day446.jpg" /></li>
+                <li><img src="upload/images/article/2018/10/1819pinic/1819pinic_016.jpg" /></li>
+                <li><img src="upload/images/article/2018/06/Sichuantripday3-14..jpg" /></li>
+                <li><img src="upload/images/article/2019/02/P4day5_124.jpg" /></li>
+                <li><img src="upload/images/article/2324/travel/P5-1/034.jpg" /></li>
+                <li><img src="upload/images/article/2026/02/2026-02-20-30-1160703978.JPG" /></li>
+                <li><img src="upload/images/article/2018/03/img_c0040.jpg" /></li>
+                <li><img src="upload/images/article/2026/03/2026-03-26-28-1475631764.jpg" /></li>
+                <li><img src="upload/images/article/2019/10/30-10-2019/103083.jpg" /></li>
+                <li><img src="upload/images/article/2019/01/P5trip/day5/p5day528.jpg" /></li>
+                <li><img src="upload/images/article/2324/travel/P4-3/058.jpg" /></li>
+                <li><img src="upload/images/article/2122/2122Hallween105.jpg" /></li>
+                <li><img src="upload/images/article/2223/2223sportday/80.jpg" /></li>
+                <li><img src="upload/images/article/2425/20250108/175.jpg" /></li>
+                <li><img src="upload/images/article/2019/01/SportsDay/20190122_SportsDaySP30.jpg" /></li>
+                <li><img src="upload/images/article/2020/P5trip/P5tripday4 (6).jpeg" /></li>
+                <li><img src="upload/images/article/2026/03/2026-03-10-13-1650905549.jpeg" /></li>
+                <li><img src="upload/images/article/2324/travel/P6-5/062.jpg" /></li>
+                <li><img src="upload/images/article/2018/01/IMG_5204.JPG" /></li>
+                <li><img src="upload/images/article/2017/08/IMG_1122-2.jpg" /></li>
+                <li><img src="upload/images/article/2019/01/P5trip/day2/p5day2033.jpg" /></li>
+                <li><img src="upload/images/article/2324/travel/P6-4/079.jpg" /></li>
+                <li><img src="upload/images/article/2018/06/Sichuantripday2_009.jpg" /></li>
+                <li><img src="upload/images/article/2223/2223P4trip/P4d2 (38).JPG" /></li>
+              </ul>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="dark-block"></div>
+
+    </div>
+
+    <footer>
+      <div class="box">
+        <div id="sitemap">
+                        <div >
+                            <div class="block block-25">
+                <h5>資訊及資源</h5>
+                <ul>
+                  <li><a href="?route=information/report">計劃及報告</a></li>
+                  <li><a href="http://eclass.tmms.edu.hk/templates/">內聯網(e-class)</a></li>
+                </ul>
+              </div>
+              <div class="block block-25">
+                <h5>聯絡我們</h5>
+                <ul>
+                  <li class="static">上水清城路一號</li>
+                  <li class="static">電話：+852 2670 3111</li>
+                  <li class="static">傳真：+852 2670 7117</li>
+                  <li class="static">繳費靈商戶編號：9607</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div id="copyright">2026 &copy; 曾梅千禧學校 All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <div id="search-box">
+      <div class="box">
+        <form id="form-search" action="?route=common/search" method="post">
+          <div class="input-group">
+            <input type="text" name="keyword" placeholder="搜尋" class="form-control" />
+            <span class="input-group-button">
+              <button type="button" id="btn-search" class="btn btn-primary"><i class="fa fa-search"></i></button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"272f0108fbbe47bf81f74c6f4d4787df","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

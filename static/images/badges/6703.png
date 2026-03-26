@@ -1,0 +1,235 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Parkview International Pre-School"/>
+<meta property="og:url" content="https://www.pips.edu.hk"/>
+<meta property="og:description" content="International kindergarten"/>
+<meta property="og:image" content="https://www.pips.edu.hk/images/logo250.jpg" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/site.webmanifest">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#f9f6f0">
+
+<meta name="keywords" content="PIPS, Parkview Pre-School (Lohas), Parkview International Pre-School (Hong Kong), Parkview International Pre-School (Kowloon), Playgroup, Pre-Nursery, Nursery, Lower Kindergarten, Upper Kindergarten" />
+<meta name="description" content="PIPS is an international kindergarten with two locations offering the IB Primary Years Programme (PYP), one in Kowloon and one on Hong Kong Island. Our campuses cater to children aged 1 to 6. Our highly qualified teachers have extensive experience in early childhood education and strive to create a safe, nurturing, and engaging environment to develop internationally minded children. PIPS at LOHAS Park, our fifth kindergarten, represents the latest chapter in our legacy." />
+
+<link rel="stylesheet" href="/css/bootstrap.css"  type="text/css">
+<link rel="stylesheet" href="/css/font-awesome.all.min.css"  type="text/css">
+<link rel="stylesheet" href="/css/style.css">
+
+<script type="text/javascript" src="/js/jquery-3.3.1.slim.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+
+<title>Parkview International Pre-School</title>
+
+ 
+
+
+  
+</head>
+<body>
+
+  <!--div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content">
+        <div class="modal-body">
+		<center>
+	<img src="images/popup.jpg"><br><br>
+	<b>New PIPS Campus Opening in LOHAS Park This Summer!</b><br><br>
+
+Celebrating 35 years of excellence in early years education, we’re excited to announce our new kindergarten campus in LOHAS Park! Opening this Summer, it will follow our renowned IB Primary Years Programme, fostering curiosity and growth in a vibrant setting.<br><br>
+
+Join us in shaping bright futures! Contact our admissions team for details:<br>
+<a href="mailto:pipsinfo-lohas@pips.edu.hk">pipsinfo-lohas@pips.edu.hk</a> / (852) 2812 6801
+
+		</center>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+	  
+    </div>
+  </div-->
+
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+</script>
+
+<div class="bg-light">
+    <div class="container">
+	    <div class="row">
+		<div class="col d-lg-flex text-center">
+			<a href="/index.asp"><img src="/images/logo.png"></a>
+			<span class="School_name align-self-center d-none d-lg-block pl-4">PARKVIEW INTERNATIONAL PRE-SCHOOL<br>栢基國際幼稚園</span>
+		</div>
+		</div>		
+	</div>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+  </ol>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">   
+    <div class="carousel-item active">
+      <a href="#"><img class="d-block w-100" src="/images/home_banner_05.jpg"></a>
+	<div class="carousel-caption">
+    </div>
+ </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-responsive" src="/images/home_banner_07.jpg">
+		<div class="carousel-caption">
+    </div>
+  </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-responsive" src="/images/home_banner_03.jpg">
+  	<div class="carousel-caption">
+    </div>  
+  </div>  
+    <div class="carousel-item">
+      <img class="d-block w-100 img-responsive" src="/images/home_banner_04.jpg">
+		<div class="carousel-caption">
+    </div>
+  </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-responsive" src="/images/home_banner_01.jpg">
+  	<div class="carousel-caption">
+    </div>  
+  </div> 
+      <div class="carousel-item">
+      <img class="d-block w-100 img-responsive" src="/images/home_banner_06.jpg">
+		<div class="carousel-caption">
+    </div>
+  </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-responsive" src="/images/home_banner_02.jpg">
+  	<div class="carousel-caption">
+    </div>  
+  </div> 
+  
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="clearfix"></div>
+
+<!--div>
+  <div class="parallax parallax-1">
+    <div class="parallax-caption">
+      <h3>Where Early Years Matter</h3>
+      <p>PIPS is an international kindergarten with five campuses across Hong Kong. Our <a href="/HK/index.asp">Hong Kong Island</a>, <a href="/kln/index.asp">Kowloon</a> and <a href="/lohas/index.asp">LOHAS campuses</a> teach the IB Primary Years Programme (PYP)</p>
+    </div>
+  </div>
+
+  <div class="container py-3"> <!--style="background-color: #ccffe2"      -->
+  	    <!--div class="row"--> <!--style="background-color: #ccffe2"      -->
+    <!--       p> <!--style="text-align: left;"           >while our <a href="https://www.pipsrg.edu.hk/rg/index.asp">Rhine Garden campuses</a> follow local curriculum, catering to the diverse needs of families in Hong Kong.</p>
+		<!--/div              >
+  </div>
+
+  <div class="parallax parallax-2">
+    <div class="parallax-caption">
+      <h3>At PIPS</h3>
+      <p>our classes provide children with the opportunity to engage in a bilingual/trilingual environment, guided by two classroom teachers who instruct in their native languages.</p>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <p>Additionally, we nurture children’s appreciation for the arts through sessions led by our music specialists,</p>
+  </div>
+
+  <div class="parallax parallax-3">
+    <div class="parallax-caption">
+      <h3>PIPS adopts an inquiry-and play-based approach</h3>
+      <p>We firmly believe that children thrive through meaningful interactions and practical experiences. </p>
+    </div>
+  </div>
+
+</div-->
+
+		    <div class="container text-center py-4"><h2><b>Where Early Years Matter</b></h2></div>
+			
+    <div class="container-fluid">
+	    <div class="row">
+		<div class="col-xl-1"></div>
+		<div class="col-lg-5 col-xl-4 pb-4">
+
+			PIPS is an international kindergarten with five campuses across Hong Kong. Our Hong Kong Island,  Kowloon and LOHAS campuses teach the IB Primary Years Programme (PYP), while our Rhine Garden campuses follow local curriculum, catering to the diverse needs of families in Hong Kong. Our facilities serve children aged 1 to 6. Our team of highly qualified educators, possessing extensive expertise in early childhood education, is dedicated to fostering a secure, nurturing, and stimulating environment that cultivates globally aware young learners.<br><br>
+ 
+At PIPS, our classes provide children with the opportunity to engage in a bilingual/trilingual environment, guided by two classroom teachers who instruct in their native languages. Additionally, we nurture children’s appreciation for the arts through sessions led by our music specialists, enhance early literacy development in our well-equipped library, and promote physical development through activities in our spacious outdoor playground.<br><br> 
+ 
+PIPS adopts an inquiry- and play-based approach to education. We firmly believe that children thrive through meaningful interactions and practical experiences. This dynamic curriculum is supported by our innovative learning environment and the integration of information and communication technology (ICT). 
+		</div>
+	
+	
+    <div class="col-lg-7 col-xl-7 align-self-center text-center pb-4 home-map">
+      <div class="home-map-hk">
+        <a href="/HK/index.asp"><img src="/images/Map-hk.png" class="home-school-icon"></a>
+      </div>
+      <div class="home-map-kln">
+        <a href="/kln/index.asp"><img src="/images/Map-kln.png" class="home-school-icon"></a>
+      </div>
+      <div class="home-map-lohas">
+        <a href="/lohas/index.asp"><img src="/images/Map-lohas.png" class="home-school-icon"></a>
+      </div>	  
+      <div class="home-map-rg">
+        <a href="https://www.pipsrg.edu.hk/rg/index.asp"><img src="/images/Map-rg.png" class="home-school-icon"></a>
+      </div>
+    </div>
+
+		</div>		
+	</div>
+
+
+<footer>
+	<div class="container-fluid p-3 text-center"  style="background-color:#29B3CF">
+	© Parkview International Pre-School. All Rights Reserved.
+	</div>
+
+<div  class="container-fluid" style="background-color:#EFEFEF;">
+<div class="container" align="center" style="padding: 5px 0">
+	<font color="#666666" style="font-size:12px;">Developed and Hosting by: </font><a href="http://www.topcat.hk" target="_blank" style="text-decoration: none;"><font color="#666666" style="font-size:14px;">Topcat Teamwork</font></a> 
+</div>
+</div>	
+	
+<footer>
+	
+	
+</body>
+</html>

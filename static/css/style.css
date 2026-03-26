@@ -361,6 +361,12 @@ main {
     z-index: 1;
 }
 
+.badge-image.campus-fallback {
+    max-width: 80%;
+    max-height: 80%;
+    filter: drop-shadow(0 4px 20px rgba(0,0,0,0.15));
+}
+
 .school-card:hover .badge-image {
     transform: scale(1.12) rotate(1deg);
 }
