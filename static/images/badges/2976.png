@@ -1,9 +1,557 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>404 Not Found</title>
-</head><body>
-<h1>Not Found</h1>
-<p>The requested URL /apple-touch-icon.png was not found on this server.</p>
-<hr>
-<address>Apache/2.2.15 (CentOS) Server at primary.munsang.edu.hk Port 80</address>
-</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="zh-hk">
+<head>
+  <!-- =====================[META]====================== -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Title名稱 = 校名 + | + 頁面名稱 -->
+  <title>民生書院小學</title>
+
+  <!-- Title for app - -->
+  <meta name="apple-mobile-web-app-title" content="Munsang College Primary School">
+
+  <!-- 使用ADMIN 設定修改 meta"description" 及"keyword" 內容 -->
+  <meta name="description" content="Munsang College Primary School | 民生書院小學
+www.munsang.edu.hk/primary/" />
+  <meta name="keyword" content="CMS,School, Hong Kong, Primary School, Secondary School, Education, Learning, 學校, 香港, 中學,  教育 , myIT-School, myID, Munsang College Primary School, www.munsang.edu.hk/primary/, primary.munsang.edu.hk" />
+
+  <!-- =====================[CSS STYLE SHEET]====================== -->
+  <!-- Basic Style - Bootstrap, fontawesome , main style -->
+  <link rel="stylesheet" href="zh/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="zh/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="zh/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="zh/css/font.css" type="text/css" />
+
+  <link rel="stylesheet"  href="zh/css/ilightbox.css" type="text/css"/><!-- Lightbox -->
+  <link rel="stylesheet" href="zh/css/owl.carousel.css"><!-- carousel -->
+
+  <!-- =====================[STEEING FOR MOBILE]====================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" /> 
+   
+   <!-- Hide status bar - -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes"><!-- fullscreen -->
+  <meta name="format-detection" content="telephone=no">
+   
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="zh/images/ico/152.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="zh/images/ico/144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="zh/images/ico/114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="zh/images/ico/72.png">
+  <link rel="apple-touch-icon-precomposed" href="zh/images/ico/57.png">
+  <link rel="shortcut icon" href="zh/images/ico/favicon.png">
+   
+  <!-- Prevent text size adjustment on orientation change. -->
+  <style>html { -webkit-text-size-adjust: 100%; }</style>
+
+<!-- =====================[IE Hack!!!] ===============================-->
+  <!--[if lt IE 9]>
+    <script src="zh/js/ie/html5shiv.js"></script>
+    <script src="zh/js/ie/respond.min.js"></script>
+    <script src="zh/js/ie/excanvas.js"></script>
+  <![endif]-->
+
+    <!--[if lte IE 8]>
+  <script src="zh/js/en_US.js"></script>
+  <script src="zh/js/warning.js"></script>
+  <script>
+    window.onload=function(){
+      ie6Warning(function() {
+        var languageMap = {};
+  
+        if(window.IE6WarningLocalizations) {
+          languageMap = window.IE6WarningLocalizations;
+        }  
+        return {
+          imgPath: "images", 
+          localizations:  languageMap
+        };
+      });
+    };
+  </script>
+  <![endif]-->
+
+<!--include core js and css file-->
+
+  <!--[!] 主頁用CSS : Style for index only-->
+  <link rel="stylesheet" href="zh/css/cms-index.css?v=1774518531" type="text/css" />
+
+</head>
+
+<body data-target="#Navi" class="chi"><!-- [!] 中英文CSS轉換 英文版 class = eng -->
+    
+<div id="index" class="body_wrap body_bg"><!-- [!] ID=INDEX -->
+
+    <!-- ==========================[ HEADER]============================== --> 
+    <!-- HEADER : navi and slideshow-->
+    <!-- =========================[Top thin bar]============================== -->
+<div id="header_bar" class="hidden-xs">
+  <div class="container">
+    <!-- Float left block -->
+
+    <!-- Float right block -->
+    <div class="f-right"> 
+    </div> <!-- float-right -->
+
+    <div class="clearfix"></div>
+  </div><!-- container-->
+</div><!-- header_bar -->
+
+<!-- =========================[bg_slide]============================== --> 
+<!-- +class= hidden-xs : dont show at mobile view -->
+<!-- 
+<div id="bg-slide"> 
+  <div class="mask"></div>
+  <div class="slide_content">
+    <div class="owl-carousel">
+      <div><img class="lazyOwl" data-src="images/slideshow/bg01.jpg"></div>
+      <div><img class="lazyOwl" data-src="images/slideshow/bg02.jpg"></div>
+      <div><img class="lazyOwl" data-src="images/slideshow/bg03.jpg"></div> 
+    </div>
+  </div>
+</div> 
+--> 
+<!--bg-slide -->
+
+<!-- =========================[ HEADER ]============================== --> 
+<html>
+<head>
+  <style>
+    /* 桌面視圖 Logo 並排顯示 */
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo1, .logo2 {
+      width: auto; /* 保持寬度自動調整以維持比例 */
+      margin: 10px; /* 添加間距 */
+    }
+    /* 桌面版高度 */
+    @media (min-width: 768px) {
+      .logo1.hidden-xs, .logo2.hidden-xs {
+        height: 76px;
+      }
+    }
+    /* 手機版調整 */
+    @media (max-width: 767px) {
+      .logo-container {
+        display: flex; /* 手機版並排顯示 */
+        flex-wrap: wrap; /* 防止溢出 */
+        justify-content: left; /* 左對齊 */
+      }
+      .logo1.visible-xs, .logo2.visible-xs {
+        height: 67px; /* 手機版指定高度，可調整為67px */
+        width: auto;
+        margin: 5px; /* 手機版減小間距，避免過寬 */
+      }
+      .spacer.visible-xs {
+        display: block;
+        height: 20px; /* 手機視圖間距 */
+      }
+      #header_banner {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        clear: both;
+      }
+      #header_banner img.visible-xs {
+        width: 100%;
+        height: auto;
+        max-width: 640px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header id="header" class="header-wrap container">
+  <div class="wrap">
+    <!-- =========[SCHOOL LOGO] =======-->
+    <div class="logo-container">
+      <a href="index.php">
+        <img class="logo1 hidden-xs" src="zh/images/school-logo.png" alt="Logo1">
+        <img class="logo1 visible-xs" src="zh/images/school-logo@2x.png" alt="Logo1">
+      </a>
+      <a href="https://www.munsang.edu.hk/secondary/centenary.php"> <!-- 對應Logo2的連結 -->
+        <img class="logo2 hidden-xs" src="zh/images/100.png" alt="Logo2">
+        <img class="logo2 visible-xs" src="zh/images/100.png" alt="Logo2">
+      </a>
+    </div><!-- LOGO -->
+
+    <!-- 添加手機視圖間距 -->
+    <div class="spacer visible-xs"></div>
+
+    <!-- ========[MAIN NAVIGATION]======== -->
+    <nav id="Navi">
+      <div><!-- data-offset-top="300" 設定離頁頂多高才sticky top -->
+        <div id="MainNav1" class="MainNav" > 
+  <div class="MainNav_wrapper" >
+      <ul class="MainNav_menu"><li class="MainNav_collapse"><span><i class="fa fa-bars"></i>menu</span></li><li class="btn00"><a href="https://www.munsang.edu.hk/secondary/centenary.php">Centenary (1926-2026)</a></li><li class="btn01"><span>About Us </span><div class="dropdown"><ul class="sub"><li><a  href="/primary/php/webcms/public/index.php3?refid=1373&mode=published" >School Profile                         </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1096&mode=published" >Vision & Mission                 </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1097&mode=published" >Emblem & Motto        </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1098&mode=published" >School Song        </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1530&mode=published" >Facilities        </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1386&mode=published" >School Venue Booking     </a></li><li class="parent"><span>News </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1611&mode=published" >2025-2026                                                            </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1604&mode=published" >2024-2025                                                                               </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1581&mode=published" >2023-2024                                                        </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1551&mode=published" >2022-2023                                                         </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1535&mode=published" >2021-2022                     </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1505&mode=published" >2020-2021              </a></li></ul></li><li class="parent"><span>Publication </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1622&mode=published" >2025-2026  </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1591&mode=published" >2023-2024    </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1563&mode=published" >2022-2023            </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1531&mode=published" >2021-2022      </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1452&mode=published" >2019-2020    </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1435&mode=published" >2018-2019  </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1415&mode=published" >2017-2018       </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1396&mode=published" >2016-2017             </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1371&mode=published" >2015-2016                                                    </a></li></ul></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1332&mode=published" >Scholarships                                       </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1333&mode=published" >Fee Remission                           </a></li><li class="parent"><span>Alumni </span><ul class="sub_lv"><li><a target="_blank" href="/primary/php/webcms/public/index.php3?refid=1319&mode=published" >Munsang College Alumni Association Limited </a></li></ul></li></ul></div></li><li class="btn02"><span>Administration  </span><div class="dropdown"><ul class="sub"><li><a  href="/primary/php/webcms/public/index.php3?refid=1375&mode=published" >School Sponsoring Body (SSB)                    </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1192&mode=published" >Principal's Message              </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1376&mode=published" >Teachers & Staff                                                   </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1423&mode=published" >Working Committees                       </a></li><li class="parent"><span>Teachers' Photos  </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1618&mode=published" >2025-2026   </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1607&mode=published" >2024-2025 </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1585&mode=published" >2023-2024   </a></li></ul></li></ul></div></li><li class="btn03"><span>Learning & Teaching </span><div class="dropdown"><ul class="sub"><li><a  href="/primary/php/webcms/public/index.php3?refid=1374&mode=published" >School Calendar                  </a></li><li class="parent"><span>Subjects </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1608&mode=published" >Assessment     </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1202&mode=published" >Chinese                                             </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1236&mode=published" >English                                          </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1237&mode=published" >Mathematics                                                </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1238&mode=published" >General Studies                                </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1612&mode=published" >Primary Humanities    </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1613&mode=published" >Primary Science    </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1239&mode=published" >Putonghua                                   </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1240&mode=published" >Visual Arts                                            </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1241&mode=published" >Music                             </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1242&mode=published" >Computer Studies                     </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1243&mode=published" >Physical Education                           </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1244&mode=published" >Biblical Studies               </a></li></ul></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1152&mode=published" >Discipline & Guidance                                 </a></li></ul></div></li><li class="btn04"><span>Students' Corner </span><div class="dropdown"><ul class="sub"><li class="parent"><span>Photo Albums  </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1614&mode=published" >2025-2026 </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1601&mode=published" >2024-2025  </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1578&mode=published" >2023-2024   </a></li></ul></li><li class="parent"><span>Class Photos   </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1619&mode=published" >2025-2026    </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1606&mode=published" >2024-2025   </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1584&mode=published" >2023-2024    </a></li></ul></li></ul></div></li><li class="btn05"><span>Parents' Corner </span><div class="dropdown"><ul class="sub"><li class="parent"><span>News                                </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1615&mode=published" >2025-2026                            </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1600&mode=published" >2024-2025                                  </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1577&mode=published" >2023-2024                                                                </a></li></ul></li><li class="parent"><span>Event Photos </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1616&mode=published" >2025-2026  </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1603&mode=published" >2024-2025   </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1586&mode=published" >2023-2024   </a></li></ul></li><li class="parent"><span>Acknowledgements                     </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1621&mode=published" >2025-2026        </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1609&mode=published" >2024-2025             </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1587&mode=published" >2023-2024     </a></li></ul></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1398&mode=published" >eClass Parent App                   </a></li></ul></div></li><li class="btn06"><span>Student Achievements </span><div class="dropdown"><ul class="sub"><li class="parent"><span>External Competitions    </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1620&mode=published" >2025-2026                                     </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1602&mode=published" >2024-2025                                                                                                                                                                                                                                              </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1579&mode=published" >2023-2024                                                                                                                                                                                                                    </a></li></ul></li><li class="parent"><span>Internal Competitions   </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1617&mode=published" >2025-2026                    </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1605&mode=published" >2024-2025                            </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1580&mode=published" >2023-2024                                    </a></li></ul></li><li class="parent"><span>Internal Awards  </span><ul class="sub_lv"><li><a  href="/primary/php/webcms/public/index.php3?refid=1610&mode=published" >2024-2025                </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1590&mode=published" >2023-2024                  </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1566&mode=published" >2022-2023               </a></li></ul></li></ul></div></li><li class="btn07"><span>For Public </span><div class="dropdown"><ul class="sub"><li><a  href="/primary/php/webcms/public/index.php3?refid=1540&mode=published" >Admissions  </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1475&mode=published" >Tender                                                                                                                                                                                                                                 </a></li><li><a  href="/primary/php/webcms/public/index.php3?refid=1498&mode=published" >Written Quotation                                                                                                 </a></li></ul></div></li></ul>	  <!-- / MainNav (left part) -->
+
+  </div><!-- / MainNav Container -->
+</div><!-- / MainNav -->
+<!-- 
+  <div class="visable-xs lang-mobile">
+     手機版語言選擇
+    <select class="form-control">
+      <option>中文</option>
+      <option>ENGLISH</option>
+    </select>
+  </div>
+ -->      </div>
+    </nav>
+
+    <!-- ========[Slide Banner]========= -->
+    <div id="header_banner" class="owl-carousel">
+      <div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1618.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1618m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div><div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1622.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1622m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div><div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1623.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1623m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div><div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1624.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1624m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div><div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1625.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1625m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div><div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1626.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1626m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div><div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1627.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1627m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div><div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1628.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1628m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div><div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1629.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1629m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div><div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1630.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1630m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div><div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1631.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1631m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div><div><a href="javascript:void(0)" ><img class="hidden-xs lazyOwl" src="/primary/php/webcms/public/data/top_banner/1632.jpg"  width="940" style="cursor: default ;" alt="Banner"/></a><a href="javascript:void(0)"><img class="visiable-xs" src="/primary/php/webcms/public/data/top_banner/1632m.jpg" width="640" style="cursor: default ;" alt="Banner"/></a></div>    
+    </div><!-- wrap -->
+  </div>
+</header> <!-- / header -->
+
+<script>(function(){var s = document.createElement("script");s.setAttribute("data-account","7WTVfS1g7U");s.setAttribute("src","https://cdn.userway.org/widget.js");document.body.appendChild(s);})();</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"5722c760ee6348378cbfcf858298b53f","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+    <!-- =======================[ Contents - Widget]======================== --> 
+    <div id="widgets" class="container"> <!-- .container if fixed width  -->
+
+      <section  class="content_wrap">
+
+        <!-- ========================================[ROW 1]-->
+        <div class="widget_wrap row row1">
+
+          <div class="col-sm-12 Col-1">
+            
+            <!-- LINKS -->
+            
+          </div><!-- COL1 -->
+
+        </div><!--ROW 01-->
+
+        <!-- ========================================[ROW 2]-->
+        <div class="widget_wrap row row2">         
+
+            <!--===== [COL1] =====-->
+            <div class="col-sm-3 Col-1">
+              
+              <!-- ===== WIDGET - CALENDAR ====== --> 
+              <div class="widget calendar">
+
+  <div class="div_title">School Events</div>
+
+  <div class="wrap_cal_table">
+    <!-- +++ [Calendar table ] +++ -->
+    <div id="calendar">
+      <div class="cal_table">
+        <!-- calendar table -->
+        <table width="100%">
+			<tr>
+				<td class="months" colspan="7">
+					<a href="?ym=1980-1#calendar" id="premonth"><i class="fa fa-chevron-left"></i></a>
+					<span class="years">Dec 1980</span>					                            
+					<a href="?ym=19801#calendar" id="nextmonth"><i class="fa fa-chevron-right"></i></a>
+				</td>
+			</tr>
+			<tr class="weeks_bar">
+				<td class="weeks">S</td>
+				<td class="weeks">M</td>
+				<td class="weeks">T</td>
+				<td class="weeks">W</td>
+				<td class="weeks">T</td>
+				<td class="weeks">F</td>
+				<td class="weeks">S</td>
+			</tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td class=''>1</a></td></tr><tr><td class=''>2</a></td><td class=''>3</a></td><td class=''>4</a></td><td class=''>5</a></td><td class=''>6</a></td><td class=''>7</a></td><td class=''>8</a></td></tr><tr><td class=''>9</a></td><td class=''>10</a></td><td class=''>11</a></td><td class=''>12</a></td><td class=''>13</a></td><td class=''>14</a></td><td class=''>15</a></td></tr><tr><td class=''>16</a></td><td class=''>17</a></td><td class=''>18</a></td><td class=''>19</a></td><td class=''>20</a></td><td class=''>21</a></td><td class=''>22</a></td></tr><tr><td class=''>23</a></td><td class=''>24</a></td><td class=''>25</a></td><td class=''>26</a></td><td class=''>27</a></td><td class=''>28</a></td><td class=''>29</a></td></tr><tr><td class=''>30</a></td><td class=''>31</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></table>      </div>
+      <!-- end of calendar table -->
+    </div><!-- #calendar -->
+
+    <!-- ++++ [Calendar List] ++++ -->
+    <div class="wrap wrap_cal_list">
+      <div  class="slim-scroll"> 
+        <ul class="list lightbox"><li>No record</li></ul>      </div>
+    </div><!-- wrap calendar_list -->
+
+  </div><!-- wrap -->
+</div><!-- End WIDGET CALENDAR -->
+
+
+
+
+
+              <!--  WIDGET - Intranet --> 
+              <div class="widget login hidden-xs ">
+
+  <div class="div_title"></div>
+
+  <div  class="wrap">
+      <a href="javascript:doLogin();" class="login_btn"> 登入 </a>
+
+      <div class="form-wrap">
+		<form name="login_user" action="https://eclassp.munsang.edu.hk/login.php" method="POST">
+        <div class="id-wrap">
+          <label >eClass Junior Login</label>
+          <div class="login_id_input">
+            <input type="text" name="UserLogin" placeholder="eClass Junior Login" />
+          </div>
+        </div>
+
+        <div class="pw-wrap">
+          <label for="">Password</label>
+          <div class="login_pw_input">
+            <input type="password" name="UserPassword" placeholder="Password" />
+          </div>
+        </div>
+		</form>
+      </div><!-- form-wrap-->
+  </div><!-- Login wrap -->
+</div><!--end intranet login widget-->
+
+
+<script>
+	function doLogin() 
+	{
+		document.login_user.submit();
+	}
+	document.onkeydown = function(e){
+                var e=e || event;
+                var currKey=e.keyCode||e.which||e.charCode;
+                if(currKey == 13) {
+                        doLogin();
+                }
+		}
+</script>
+
+            </div><!-- Col1 -->
+
+            <!--===== [COL2]=====-->
+            <div class="col-sm-5 Col-2 ">
+                
+              <!--  WIDGET - NEWS --> 
+              <div class="widget news">
+  <div class="news_bg">
+    <div class="div_title news-title">School News</div>
+    <div class="flag"></div>
+    <div class="clearfix"></div>
+
+    <div class="wrap wrap-news">
+
+    <div  class="slim-scroll" > 
+		<ul class="list lightbox"><li >暫無資料</li></ul> 
+    </div>
+  </div><!-- wrap -->
+  </div>
+</div><!-- End WIDGET NEWS -->            
+              <!--  WIDGET - SLIDESHOW --> 
+              <div class="widget gallery">
+  <div class="gallery_bg">
+
+  <div class="div_title">校園剪影</div>
+  <div class="more"><a href="">MORE</a></div>
+  <div class="clearfix"></div>
+  <div class="wrap">
+    <div class="owl-carousel">
+	      
+    </div><!--carousel-->
+  </div><!-- wrap -->
+  </div>
+</div><!-- Gallery -->
+
+            </div><!-- Col2 -->
+
+
+            <!--===== [COL3] =====-->
+            <div class="col-sm-4  Col-3">
+
+              <!--  WIDGET - Circulars --> 
+              <div class="widget circulars">
+  <div class="circulars_bg">
+  <div class="div_title circulars-title">External Achievements</div>
+  <div class="flag"></div>
+  <div class="clearfix"></div>
+
+  <div class="wrap wrap-circulars">
+    <div class="slim-scroll"> 
+        <ul class='list lightbox'><li >暫無資料</li></ul> 
+    </div>
+  </div><!-- wrap -->
+  </div>
+</div><!-- End WIDGET NEWS -->
+                
+              <!--  WIDGET - Achievements --> 
+              <div class="award-wrap">
+                <div class="award_bg">
+                  <div class="div_title"></div>
+
+                  <div class="tabs-wrap">
+                    <ul class="tab-list">
+                      <li class="tab1 active">
+                        <a href="#tab1" data-toggle="tab">Competitions</a>
+                      </li>
+                      <li class="tab2">
+                        <a href="#tab2" data-toggle="tab">Awards</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                      <!-- WIDGET - Custom HTML3 -->   
+                      <div class="widget internal">
+  <div class="clearfix"></div>
+  <div class="wrap">
+    <div  class="slim-scroll"> 
+        <ul class='list lightbox'><li >暫無資料</li></ul>    </div>
+  </div><!-- wrap -->
+</div><!-- End WIDGET NEWS -->
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                      <!-- WIDGET - NEWS --> 
+                      <div class="widget internal_awards">
+  <div class="clearfix"></div>
+  <div class="wrap">
+    <div  class="slim-scroll"> 
+        <ul class='list lightbox'><li >暫無資料</li></ul>    </div>
+  </div><!-- wrap -->
+</div><!-- End WIDGET NEWS -->
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                      <div class="widget external">
+  <div class="clearfix"></div>
+  <div class="wrap">
+    <div  class="slim-scroll"> 
+        <ul class='list lightbox'><li >暫無資料</li></ul>    </div>
+  </div><!-- wrap -->
+</div><!-- End WIDGET NEWS -->
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div><!-- Col3 -->   
+          
+        </div><!--ROW 02-->
+
+
+        <div class="clearfix"></div>
+
+        <!-- ========================================[ROW 3]-->
+        <div class="widget_wrap row row3">
+
+          <div class="col-sm-12 Col-1">
+            
+            <!-- LINKS -->
+            <div class="widget links m-b-xl">
+  <div class="div_title">常用連結</div>
+  <div class="wrap">
+    <ul class="intranet col-sm-4"> 
+    	<span>Intranet</span>    	
+    	<li><a href="javascript:void(0);" style="cursor:default;">暫無資料</a></li>    </ul>
+    <!-- end of Intranet Block -->
+
+    <ul class="olp col-sm-4"> 
+    	<span>OLP</span>
+    	<li><a href="javascript:void(0);" style="cursor:default;">暫無資料</a></li>    </ul>
+    <!-- end of Online Learning Platforms -->
+
+    <ul class="er col-sm-4"> 
+    	<span>ER</span>
+    	<li><a href="javascript:void(0);" style="cursor:default;">暫無資料</a></li>    </ul>
+    <!-- end of External Resources -->
+
+  </div><!-- wrap -->
+  <div class="bottom"></div>
+</div><!-- [END LINKS] -->
+          </div><!-- COL1 -->
+
+        </div><!--ROW 03-->
+      </section> <!-- [END widgets] -->
+
+    </div> <!-- wrap, container content -->
+
+
+    <!-- =====================[ Footer ]====================== --> 
+    <footer id="footer">
+  <div class="container"> <!-- .container if fixed width  --> 
+    <div class="row row-footer">
+      <div class="col-sm-7 contact">
+        <div class="address">
+          <p><strong>Address: 8 Dumbarton Road, Kowloon, Hong Kong</strong>&nbsp;<a class="map" href="https://www.google.com.hk/maps/place/%E6%B0%91%E7%94%9F%E6%9B%B8%E9%99%A2%E5%B0%8F%E5%AD%B8/@22.3323498,114.1860977,18z/data=!4m5!3m4!1s0x3404072b8d00a31f:0x78044b4a344401e7!8m2!3d22.332712!4d114.186126" target="_blank"><span>Location</span></a></p>        </div>
+        <div class="phone">
+          <span>Tel：3655 3400 </span>
+			<span>Fax：2337 2041 </span>
+			<span>Email：<a href="/cdn-cgi/l/email-protection#84f4f6ede9e5f6fdc4e9f1eaf7e5eae3aae1e0f1aaecef"><span class="__cf_email__" data-cfemail="85f5f7ece8e4f7fcc5e8f0ebf6e4ebe2abe0e1f0abedee">[email&#160;protected]</span></a></span>
+		</div>
+        <div class="best-view hidden-xs">
+		  Copyright &copy; 2014 Munsang College Primary School. All rights reserved        </div>
+      </div><!-- contact -->
+
+      <div class="col-sm-5 copyright">
+        <span>Best view in 1024x768 resolution or higher</span><br>
+      </div><!-- copyright -->
+    </div><!-- row -->
+
+  </div> <!-- wrap, container footer -->
+</footer>
+
+<!-- Back to top button -->
+<div class="back-to-top">
+  <a class="go-top" href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+
+<!-- ===========Load JS at bottom====================== -->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="zh/js/jquery.min.js"></script>
+<script src="zh/js/bootstrap.min.js"></script>
+<script src='zh/js/MainNav.min.js'></script><!-- Navigation -->
+  
+<!-- lightbox  -->
+<script src="zh/js/lightbox/jquery.requestAnimationFrame.js" ></script>
+<script src="zh/js/lightbox/jquery.mousewheel.js" ></script>
+<script src="zh/js/lightbox/ilightbox.packed.js"></script>
+
+<script src="zh/js/plugin/jquery.nicescroll.min.js"></script><!-- Mini Scroll Bar -->
+<script src="zh/js/plugin/owl.carousel.min.js"></script><!-- carousel -->
+
+<script src="zh/js/plugin/grids.min.js"></script><!-- equal height --> 
+
+<!-- scroll text  - Index only -->
+<script src="zh/js/plugin/jquery.marquee.min.js" ></script>
+  
+
+   
+</div><!-- END index -->
+
+<!-- ===========Load JS at bottom - Index only====================== -->
+<script src="zh/js/cms-index.js"></script><!-- [!] CMS index JS -->
+<script src="zh/js/cms-header.js"></script><!-- CMS header JS -->
+
+
+</body>
+</html>

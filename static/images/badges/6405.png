@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>元朗信義會生命幼稚園</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+
+            <link rel="icon" href="https://lifekg.edu.hk/wp-content/uploads/2021/07/logo.gif">
+        <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="referrer" content="origin">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/js/jquery.dotdotdot.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/js/moment.js"></script>
+            <script type="text/javascript" src="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/js/zh-hk.js"></script>
+        <script type="text/javascript" src="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700|Varela+Round" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/css/gallery-images-cust-t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/css/t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/css/t5_page_color.css"/>
+    <link rel="stylesheet" type="text/css" href="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/css/t5_s3.css"/>
+    <script type="text/javascript" src="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/js/t5.js"></script>
+    <script type="text/javascript" src="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/js/back_to_top.js"></script>
+
+    <link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/lifekg.edu.hk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://lifekg.edu.hk/wp-includes/css/dist/block-library/style.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-style-css'  href='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-style-css'  href='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='blueimp-style-css'  href='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/css/blueimp-gallery.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='https://lifekg.edu.hk/wp-content/themes/theme5_style_1/css/custom-style.css?ver=5.1.19' type='text/css' media='all' />
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_LATEST_NEWS_API = {"url":"https:\/\/lifekg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"49d6c0f4a2","page_url":"https:\/\/lifekg.edu.hk\/latest-new\/","eClassURL":"https:\/\/lifekg.eclass.hk"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-latest-news-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ENOTICE_API = {"url":"https:\/\/lifekg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"0b00d7d36c","page_url":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-enotice-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_CALENDAR_API = {"url":"https:\/\/lifekg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"10a59cf42b","school_type":"KIS","LANG":{"SCHOOL_EVENT":"\u5b78\u6821\u4e8b\u9805","ACADEMIC_EVENT":"\u6559\u5b78\u4e8b\u9805","GROUP_EVENT":"\u5c0f\u7d44\u4e8b\u9805","PUBLIC_HOLIDAY_EVENT":"\u516c\u773e\u5047\u671f","SCHOOL_HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f","HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-calendar-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_DIGITAL_CHANNELS_API = {"url":"https:\/\/lifekg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"c4196f059e","TYPE_CATEGORY":"1","TYPE_ALBUM":"2","TYPE_HIGHLIGHT":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-digital-channels-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ACADEMIC_YEAR_TERM_API = {"url":"https:\/\/lifekg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"14ec296573"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-academic-year-term-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_SUBJECT_GROUP_API = {"url":"https:\/\/lifekg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"2d097d6009"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-subject-group-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_YEAR_CLASS_API = {"url":"https:\/\/lifekg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"bf977ff574"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-year-class-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_HOMEWORK_API = {"url":"https:\/\/lifekg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"abf58ce43d","school_type":"KIS"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-homework-api.js?ver=2.0.0'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/jquery.dotdotdot.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/owl.carousel.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-video.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-youtube.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-vimeo.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/jquery.blueimp-gallery.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/twbs-pagination/jquery.twbsPagination.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/plugins/gallery-images-cust/assets/gallery-images-cust.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/themes/theme5_style_1/assets/js/basic-script.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-slideshow.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://lifekg.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-calendar.js?ver=5.1.19'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://lifekg.edu.hk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.19" />
+
+<link rel="stylesheet" href="https://lifekg.edu.hk/wp-content/plugins/count-per-day/counter.css" type="text/css" />
+
+</head>
+
+<body class="home blog zh">
+
+<header id="header" class="t_image">
+    <div class="container">
+        <div class="row">
+            <div id="schLogo" class="col-xs-12 col-md-6 col-lg-7">
+                <div class="schLogoContainer">
+                    <a href="https://lifekg.edu.hk/">
+                        <img src="https://lifekg.edu.hk/wp-content/uploads/2021/07/logo-150x150.gif" alt="schoolLogo" class="schLogo"/>
+                        <div class="schName">
+                            <span class="schName_ch">元朗信義會生命幼稚園</span>
+                            <span class="schName_en">Yuen Long Lutheran Life Kindergarten</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button id="mmBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="login" class="col-md-6 col-lg-5">
+        <form id="loginForm" action="https://lifekg.eclass.hk/login.php" method="POST" target="_blank">
+        <a href="https://lifekg.eclass.hk" target="_blank"><img
+                    src="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/images/eclassLogo.png" alt="schoolLogo" class="logo"/></a>
+        <div class="input">
+            <input name="UserLogin" class="form-control" type="text" placeholder="登入名稱"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+            <input name="UserPassword" class="form-control" type="password" placeholder="密碼"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+        </div>
+        <a class="btn_login" href="https://lifekg.eclass.hk/login.php" onclick="$('#loginForm').submit(); return false;"></a>
+
+            </form>
+    </div>        </div>
+    </div>
+</header>
+
+<nav class="navbar" id="mainMenu">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                    <li class="dropdown page_item page_item_has_children c05">
+        <a href="https://lifekg.edu.hk/%e7%94%b3%e8%ab%8b%e5%85%a5%e5%ad%b8/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/027.png" />
+                        申請入學 Admission        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e7%94%b3%e8%ab%8b%e5%85%a5%e5%ad%b8/%e5%ad%b8%e8%b2%bb%e8%b3%87%e6%96%99/" class="" style="">
+                        學費資料 School Fee        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e7%94%b3%e8%ab%8b%e5%85%a5%e5%ad%b8/%e6%8b%9b%e6%94%b6-2023-2024-%e5%b9%b4%e5%ba%a6%e5%b9%bc%e5%85%92%e7%8f%ad%ef%bc%88k1%ef%bc%89/" class="" style="">
+                        招收 2026-2027 年度幼兒班（K1）        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e7%94%b3%e8%ab%8b%e5%85%a5%e5%ad%b8/%e6%8f%92%e7%8f%ad%e7%94%9f%e7%94%b3%e8%ab%8b-transfer-students-admission/" class="" style="">
+                        插班生申請 Transfer Students Admission        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e7%94%b3%e8%ab%8b%e5%85%a5%e5%ad%b8/%e5%88%9d%e7%8f%ad%e6%94%be%e6%a6%9c%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a0%85-new-student-registration-arrangements/" class="" style="">
+                        初班(K1)取錄結果公佈及安排 New Student Registration Arrangements        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c02">
+        <a href="https://lifekg.edu.hk/%e8%83%8c%e6%99%af/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/072.png" />
+                        學校概覽 Overview        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e8%83%8c%e6%99%af/%e8%be%a6%e5%ad%b8%e7%90%86%e5%bf%b5-school-background/" class="" style="">
+                        辦學理念 School Background        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e8%83%8c%e6%99%af/%e5%ad%b8%e6%a0%a1%e7%99%bc%e5%b1%95-school-development/" class="" style="">
+                        學校發展 School Development        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item c13">
+        <a href="https://lifekg.edu.hk/%e5%ad%b8%e6%a0%a1%e6%9e%b6%e6%a7%8b/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/043.png" />
+                        學校架構 School Organization        </a>
+
+            </li>
+        <li class="page_item c03">
+        <a href="https://lifekg.edu.hk/%e6%a0%a1%e5%85%a7%e8%a8%ad%e5%82%99/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/002.png" />
+                        校內設備 School Environment        </a>
+
+            </li>
+        <li class="page_item c10">
+        <a href="https://lifekg.edu.hk/%e5%b9%bc%e5%b0%8f%e9%8a%9c%e6%8e%a5/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/007.png" />
+                        幼小銜接 Interface Between Kindergarten and Primary School        </a>
+
+            </li>
+        <li class="page_item c07">
+        <a href="https://lifekg.edu.hk/test/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/009.png" />
+                        對兒童的支援 Students Support        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children c12">
+        <a href="https://lifekg.edu.hk/%e5%ae%b6%e9%95%b7%e5%9c%92%e5%9c%b0/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/041.png" />
+                        家長園地 Parents Zone        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e5%ae%b6%e9%95%b7%e5%9c%92%e5%9c%b0/%e8%82%b2%e5%85%92%e8%b3%87%e8%a8%8a/" class="" style="">
+                        育兒資訊 Parenting Information        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e5%ae%b6%e9%95%b7%e5%9c%92%e5%9c%b0/%e5%ae%b6%e6%95%99%e6%9c%83%e7%b0%a1%e4%bb%8b/" class="" style="">
+                        家教會簡介 Introduction of PTA        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e5%ae%b6%e9%95%b7%e5%9c%92%e5%9c%b0/%e5%ae%b6%e6%95%99%e6%9c%83%e6%9e%b6%e6%a7%8b/" class="" style="">
+                        家教會架構 Organization of PTA        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e5%ae%b6%e9%95%b7%e5%9c%92%e5%9c%b0/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/" class="" style="">
+                        活動相片 Photos Gallery        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e5%ae%b6%e9%95%b7%e5%9c%92%e5%9c%b0/%e8%81%af%e7%b5%a1%e6%96%b9%e6%b3%95-2/" class="" style="">
+                        聯絡方法 Contact us        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c11">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/058.png" />
+                        學校活動 School activities        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/%e6%95%99%e5%ad%b8%e6%a8%a1%e5%bc%8f-3/" class="" style="">
+                        課堂活動 Learning activities        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/%e6%a0%a1%e5%85%a7%e6%b4%bb%e5%8b%95-2/" class="" style="">
+                        校內活動 School activities        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/" class="" style="">
+                        中華文化校本學習活動        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/22-23%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/" class="" style="">
+                        22-23中華文化校本學習活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%952023-2024%e5%b9%b4%e5%ba%a6/" class="" style="">
+                        23-24中華文化校本學習活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/24-25%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/" class="" style="">
+                        24-25中華文化校本學習活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/25-26%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/" class="" style="">
+                        25-26中華文化校本學習活動        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/%e6%88%b6%e5%a4%96%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95-outing/" class="" style="">
+                        戶外學習活動 Outing        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/%e6%88%b6%e5%a4%96%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95-outing/%e6%88%b6%e5%a4%96%e5%8f%83%e8%a7%80-2/" class="" style="">
+                        24-25年度戶外學習活動 Outing        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/%e6%88%b6%e5%a4%96%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95-outing/25-26%e5%b9%b4%e5%ba%a6%e6%88%b6%e5%a4%96%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95-outing/" class="" style="">
+                        25-26年度戶外學習活動 Outing        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87/%e5%b9%bc%e7%a8%9a%e5%9c%92%e6%b4%bb%e5%8b%95%e6%b4%a5%e8%b2%bckindergarten-activity-grant/" class="" style="">
+                        幼稚園活動津貼Kindergarten Activity Grant        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c09">
+        <a href="https://lifekg.edu.hk/test-2/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/038.png" />
+                        校外活動 Extra Curriculum        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://lifekg.edu.hk/test-2/%e6%a0%a1%e5%a4%96%e6%af%94%e8%b3%bd-external-competitions/" class="" style="">
+                        校外比賽 External Competitions        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://lifekg.edu.hk/%e7%94%9f%e5%91%bd%e9%bb%9e%e6%bb%b4-sharing-lifes/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/062.png" />
+                        生命點滴 Sharing Life Sharing Love        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="dropdown page_item page_item_has_children">
+        <a href="https://lifekg.edu.hk/%e7%94%9f%e5%91%bd%e9%bb%9e%e6%bb%b4-sharing-lifes/%e7%94%9f%e5%91%bd%e5%ae%b6%e6%9b%b8/" class="" style="">
+                        生命家書        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e7%94%9f%e5%91%bd%e9%bb%9e%e6%bb%b4-sharing-lifes/%e7%94%9f%e5%91%bd%e5%ae%b6%e6%9b%b8/%e7%94%9f%e5%91%bd%e5%ae%b6%e6%9b%b8-letters-from-llk/" class="" style="">
+                        2023年10月 生命家書 Letters from LLK        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e7%94%9f%e5%91%bd%e9%bb%9e%e6%bb%b4-sharing-lifes/%e7%94%9f%e5%91%bd%e5%ae%b6%e6%9b%b8/2024%e5%b9%b42%e6%9c%88-%e7%94%9f%e5%91%bd%e5%ae%b6%e6%9b%b8-letters-from-llk/" class="" style="">
+                        2024年2月 生命家書 Letters from LLK        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e7%94%9f%e5%91%bd%e9%bb%9e%e6%bb%b4-sharing-lifes/%e7%94%9f%e5%91%bd%e5%ae%b6%e6%9b%b8/2025%e5%b9%b41%e6%9c%88-%e7%94%9f%e5%91%bd%e5%ae%b6%e6%9b%b8-letters-from-llk/" class="" style="">
+                        2025年1月 生命家書 Letters from LLK        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://lifekg.edu.hk/%e7%94%9f%e5%91%bd%e9%bb%9e%e6%bb%b4-sharing-lifes/%e7%94%9f%e5%91%bd%e5%ae%b6%e6%9b%b8/2025%e5%b9%b412%e6%9c%88-%e7%94%9f%e5%91%bd%e5%ae%b6%e6%9b%b8-letters-from-llk/" class="" style="">
+                        2025年12月 生命家書 Letters from LLK        </a>
+
+            </li>
+                </ul>
+            </li>
+                </ul>
+            </li>
+        <li class="page_item c01">
+        <a href="https://lifekg.edu.hk/50-2/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/001.png" />
+                        50周年校慶活動回顧區 Golden Jubliee Activities Area        </a>
+
+            </li>
+        <li class="page_item c08">
+        <a href="https://lifekg.edu.hk/%e5%ad%b8%e6%a0%a1%e8%8c%b6%e9%bb%9e/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/016.png" />
+                        學校茶點 Snack Arrangement        </a>
+
+            </li>
+        <li class="page_item c15">
+        <a href="https://lifekg.edu.hk/%e8%81%af%e7%b5%a1%e6%88%91%e5%80%91/" class="" style="">
+                            <img src="https://lifekg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/046.png" />
+                        聯絡我們 Contact Us        </a>
+
+            </li>
+                                        <li class="login page_item">
+                        <a href="https://lifekg.eclass.hk" target="_blank">eClass 登入</a>
+                    </li>
+                
+                <li class="lang page_item" style="display: none;">
+                    <a href="">English</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div id="headerSpace"></div>
+<div id="slideshowArea">
+    <div id="slideshowWrap">
+        <div id="gallery-carousel-69c5026a4a9c1" class=" huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2026/03/DSC00410-889x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2026/03/2025-2026相_頁面_05_影像_0001-715x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2026/03/DSC00442-1-889x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2026/03/2025-2026相_頁面_04_影像_0001-1-711x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2026/03/2025-2026相_頁面_01_影像_0001-712x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2026/03/IMG_97791OK-667x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2026/03/IMG_9677OK-667x500.png">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2026/03/IMG_9631OK-667x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2026/03/IMG_3888-750x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2026/03/2025-2026相_頁面_02_影像_0001-712x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>
+    <div class="container">
+        <div class="row">
+
+            <div id="latestNews" class="col-xs-12">
+    <h1 class="title">最新消息</h1>
+            <a href="https://lifekg.edu.hk/latest-new/" class="moreBtn">更多</a>
+    
+    <div class="newsFrame">
+                    <ul id="newsList">
+                                    <a href="https://lifekg.edu.hk/latest-new/25-26%e5%b9%b4%e5%ba%a6%e3%80%8c%e5%be%a9%e6%b4%bb%e7%af%80%e8%a6%aa%e5%ad%90%e7%b1%83%e5%ad%90%e8%a8%ad%e8%a8%88%e5%8f%8a%e5%b0%8b%e8%9b%8b%e6%b4%be%e5%b0%8d%e3%80%8d/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                25-26年度「復活節親子籃子設計及尋蛋派對」                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot"></span>
+                                                        <span class="newsDate">2026-03-25</span>
+                        </li>
+                    </a>
+                                    <a href="https://lifekg.edu.hk/latest-new/2-3%e6%9c%88%e4%bb%bd%e7%94%9f%e6%97%a5%e6%9c%83/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2-3月份生日會                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot"></span>
+                                                        <span class="newsDate">2026-02-06</span>
+                        </li>
+                    </a>
+                                    <a href="https://lifekg.edu.hk/latest-new/2-3%e6%9c%88%e4%bb%bd%e7%82%ba%e9%ab%98%e7%8f%ad%e5%ad%b8%e7%94%9f%e6%93%94%e4%bb%bb%e9%97%9c%e6%84%9b%e5%a4%a7%e4%bd%bf%ef%bc%8c%e7%95%b6%e5%80%bc%e8%a1%a8%e5%a6%82%e4%b8%8b%ef%b8%b0/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                2-3月份為高班學生擔任關愛大使，當值表如下︰                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot">            </span>
+                                                        <span class="newsDate">2026-01-30</span>
+                        </li>
+                    </a>
+                                    <a href="https://lifekg.edu.hk/latest-new/12-1%e6%9c%88%e4%bb%bd%e7%94%9f%e6%97%a5%e6%9c%83/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                12-1月份生日會                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot"></span>
+                                                        <span class="newsDate">2026-01-06</span>
+                        </li>
+                    </a>
+                                    <a href="https://lifekg.edu.hk/latest-new/1%e6%9c%88%e4%bb%bd%e7%82%ba%e5%88%9d%e7%8f%ad%e5%ad%b8%e7%94%9f%e6%93%94%e4%bb%bb%e9%97%9c%e6%84%9b%e5%a4%a7%e4%bd%bf%ef%bc%8c%e7%95%b6%e5%80%bc%e8%a1%a8%e5%a6%82%e4%b8%8b%ef%b8%b0/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                1月份為初班學生擔任關愛大使，當值表如下︰                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot">
+
+
+
+
+
+
+
+
+</span>
+                                                        <span class="newsDate">2025-12-30</span>
+                        </li>
+                    </a>
+                            </ul>
+            </div>
+
+</div>
+
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            
+            
+<div id="calendar" class="col-xs-12">
+    <h1 class="title">行事曆</h1>
+
+
+
+    <div class="calendarWrap">
+        <div class="calendarFrame">
+            <div class="loading" v-show="isLoading">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <div class="year_month" v-show="!isLoading" style="display:none;">
+                <a class="btn_lastmonth" @click="changeSelectedMonth(-1)"></a>
+                <span class="year">{{ currentSelectedDate.format('YYYY') }}</span>
+                <span class="month">{{ currentSelectedDate.format('MMMM') }}</span>
+                <a class="btn_nextmonth" @click="changeSelectedMonth(1)"></a>
+            </div>
+            <ul v-show="!isLoading" style="display:none;">
+                <li class="cal_head">日</li>
+                <li class="cal_head">一</li>
+                <li class="cal_head">二</li>
+                <li class="cal_head">三</li>
+                <li class="cal_head">四</li>
+                <li class="cal_head">五</li>
+                <li class="cal_head">六</li>
+
+                <li class="blank_date" v-for="n in blankDayCount">
+                    <div></div>
+                </li>
+
+                <template v-for="day in monthDayCount">
+                    <li :class="getDayClass(day)">
+                        <div><a @click="showDayDetails(day)">
+                            <span class="date">{{day}}</span>
+                            <span class="cycle" v-if="getDayCycle(day)">{{getDayCycle(day)}}</span>
+                        </a></div>
+                    </li>
+                </template>
+
+                <p class="spacer"></p>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="calendarDetails" tabindex="-1" role="dialog" aria-labelledby="calendarDetails"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" v-html="selectedEvent.dateHtml"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="icon"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tbl_events">
+                        <tr v-for="event in selectedEvent.events">
+                            <td :class="event.CssClass">{{ event.TypeText }}</td>
+                            <td>{{ event.Title }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+
+
+    <div id="photoSlideShow">
+        <div class="container">
+            <div class="row">
+
+                
+<div id="photoSlideShowWrap" class="modules-fullWidth">
+    <div id="gallery-carousel-69c5026a4efa6" class="autoWidth huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2025/10/2025-2026相_頁面_04_影像_0001-378x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2025/10/2025-2026相_頁面_05_影像_0001-380x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2025/10/2025-2026相_頁面_06_影像_0001-378x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2025/10/2025-2026相_頁面_09_影像_0001-379x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2025/10/2025-2026相_頁面_08_影像_0001-372x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2025/10/2025-2026相_頁面_07_影像_0001-378x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2025/10/2025-2026相_頁面_03_影像_0001-381x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2025/10/2025-2026相_頁面_02_影像_0001-379x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2025/10/2025-2026相_頁面_10_影像_0001-378x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://lifekg.edu.hk/wp-content/uploads/2025/10/2025-2026相_頁面_01_影像_0001-379x266.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="modules-break"></div>
+
+<div id="usefulLinks">
+    <div class="container">
+        <div class="row">
+            <div class="modules-fullWidth" id="usefulLinksWrap">
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/index-2627.html" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖1-1.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖1-1.png 2000w, https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖1-1-300x90.png 300w, https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖1-1-768x230.png 768w, https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖1-1-1024x307.png 1024w, https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖1-1-180x54.png 180w, https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖1-1-887x266.png 887w" sizes="(max-width: 2000px) 100vw, 2000px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://kgp2024.azurewebsites.net/edb/index.php?lang=en" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2024/10/2new-4.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2024/10/2new-4.png 3267w, https://lifekg.edu.hk/wp-content/uploads/2024/10/2new-4-300x50.png 300w, https://lifekg.edu.hk/wp-content/uploads/2024/10/2new-4-768x128.png 768w, https://lifekg.edu.hk/wp-content/uploads/2024/10/2new-4-1024x171.png 1024w, https://lifekg.edu.hk/wp-content/uploads/2024/10/2new-4-180x30.png 180w, https://lifekg.edu.hk/wp-content/uploads/2024/10/2new-4-1000x167.png 1000w" sizes="(max-width: 3267px) 100vw, 3267px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.edb.gov.hk/en/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/index-2627.html" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖2.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖2.png 2000w, https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖2-300x90.png 300w, https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖2-768x230.png 768w, https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖2-1024x307.png 1024w, https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖2-180x54.png 180w, https://lifekg.edu.hk/wp-content/uploads/2021/08/縮圖2-887x266.png 887w" sizes="(max-width: 2000px) 100vw, 2000px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://www.lifekg.edu.hk/wp-content/uploads/2021/08/20180912.pdf" target="_self">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2021/08/20180912.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2021/08/20180912.jpg 454w, https://lifekg.edu.hk/wp-content/uploads/2021/08/20180912-300x89.jpg 300w" sizes="(max-width: 454px) 100vw, 454px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://kgp2024.azurewebsites.net/edb/index.php?lang=tc" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2024/10/1new-7.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2024/10/1new-7.png 3267w, https://lifekg.edu.hk/wp-content/uploads/2024/10/1new-7-300x50.png 300w, https://lifekg.edu.hk/wp-content/uploads/2024/10/1new-7-768x128.png 768w, https://lifekg.edu.hk/wp-content/uploads/2024/10/1new-7-1024x171.png 1024w, https://lifekg.edu.hk/wp-content/uploads/2024/10/1new-7-180x30.png 180w, https://lifekg.edu.hk/wp-content/uploads/2024/10/1new-7-1000x167.png 1000w" sizes="(max-width: 3267px) 100vw, 3267px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.chsc.hk/main.php?lang_id=2" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-162748.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-162748.png 470w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-162748-300x75.png 300w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-162748-180x45.png 180w" sizes="(max-width: 470px) 100vw, 470px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://eform.one.gov.hk/form/edb005/tc/" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2022/10/og_20210906_k1_v1-03-700x700-e1665388087360.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2022/10/og_20210906_k1_v1-03-700x700-e1665388087360.png 484w, https://lifekg.edu.hk/wp-content/uploads/2022/10/og_20210906_k1_v1-03-700x700-e1665388087360-300x83.png 300w, https://lifekg.edu.hk/wp-content/uploads/2022/10/og_20210906_k1_v1-03-700x700-e1665388087360-180x50.png 180w" sizes="(max-width: 484px) 100vw, 484px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://lifekg.eclass.hk/kis/" target="_self">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2021/08/eclass_logo.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2021/08/eclass_logo.jpg 454w, https://lifekg.edu.hk/wp-content/uploads/2021/08/eclass_logo-300x89.jpg 300w" sizes="(max-width: 454px) 100vw, 454px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://www.lifekg.edu.hk/wp-content/uploads/2021/08/eClassApp_KIS_UG_Parent_ZH.pptx" target="_self">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2021/08/parent-app.gif" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.parent.edu.hk/" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-155918.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-155918.png 340w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-155918-300x88.png 300w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-155918-180x53.png 180w" sizes="(max-width: 340px) 100vw, 340px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.chp.gov.hk/tc/" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-160117-e1665389013491.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-160117-e1665389013491.png 353w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-160117-e1665389013491-300x89.png 300w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-160117-e1665389013491-180x54.png 180w" sizes="(max-width: 353px) 100vw, 353px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.edcity.hk/home/" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-160727-e1665389320496.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-160727-e1665389320496.png 249w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-160727-e1665389320496-180x56.png 180w" sizes="(max-width: 249px) 100vw, 249px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.hkpl.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-161321.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-161321.png 255w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-161321-180x54.png 180w" sizes="(max-width: 255px) 100vw, 255px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-162251.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-162251.png 362w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-162251-300x88.png 300w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-162251-180x53.png 180w" sizes="(max-width: 362px) 100vw, 362px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.fhs.gov.hk/tc_chi/" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164448.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164448.png 309w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164448-300x84.png 300w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164448-180x51.png 180w" sizes="(max-width: 309px) 100vw, 309px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/preprimary-voucher/background-and-concept.html" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164648.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164648.png 305w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164648-300x90.png 300w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164648-180x54.png 180w" sizes="(max-width: 305px) 100vw, 305px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.bringmeabook.org.hk/zh-hant/" target="_blank">
+                                <img src="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164803.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164803.png 303w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164803-300x97.png 300w, https://lifekg.edu.hk/wp-content/uploads/2022/10/螢幕擷取畫面-2022-10-10-164803-180x58.png 180w" sizes="(max-width: 303px) 100vw, 303px" />                            </a>
+                                            </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modules-break"></div>
+<div id="backToTop" onclick="topFunction()" style="display: none;">
+    <div>
+    </div>
+</div>
+
+<footer class="t_image">
+    <div id="schInfo">
+        <div class="container">
+            <div class="row">
+                <div class="schName_ch col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">元朗信義會生命幼稚園</div>
+                <div class="schName_en col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">Yuen Long Lutheran Life Kindergarten</div>
+                <div class="infoList col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
+                                            <span class="address">
+                            元朗安信街<br />
+On Shun Street, Yuen Long, N.T.                            <a class="map" href="https://www.google.com.hk/maps/place/%E5%85%83%E6%9C%97%E4%BF%A1%E7%BE%A9%E6%9C%83%E7%94%9F%E5%91%BD%E5%B9%BC%E7%A8%9A%E5%9C%92/@22.4452038,114.0241535,19z/data=!4m5!3m4!1s0x3403f09f99d81871:0xcede40ab66713ea4!8m2!3d22.4453712!4d114.0237673" target="_blank"></a>
+                        </span>
+                    
+                                            <span class="tel">(852) 2476 9363</span>
+                    
+                                            <span class="fax">(852) 2479 3005</span>
+                    
+                                            <span class="mail"><a href="mailto:info@lifekg.edu.hk">info@lifekg.edu.hk</a></span>
+                    
+                                            <span class="web"><a href="http://www.lifekg.edu.hk/"
+                                             target="_blank">http://www.lifekg.edu.hk/</a></span>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <span class="col-xs-12 col-sm-6">版權所有 &copy; 元朗信義會生命幼稚園</span>
+                <span class="col-xs-12 col-sm-6">Powered by <a href="http://www.eclass.com.hk/" target="_blank"><span
+                                class="logo"/></span></a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    /* Moved into homepage-homework.js
+    $(function () {
+        $('.datetimepicker').datetimepicker({
+            format: 'YYYY-MM-DD',
+            ignoreReadonly: true,
+            locale: 'zh-HK'
+        });
+    });
+    $('.datetimepicker-time').datetimepicker({
+        sideBySide: true
+    });
+    $(function () {
+        $('.datetimepicker').datetimepicker();
+
+        $('.datetimepicker-addon').on('click', function () {
+            $(this).prev('input.datetimepicker').data('DateTimePicker').toggle();
+        });
+    });
+    */
+    $(function () {
+        // Add slideDown animation to Bootstrap dropdown when expanding.
+        $('.dropdown').on('show.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+        });
+
+        // Add slideUp animation to Bootstrap dropdown when collapsing.
+        $('.dropdown').on('hide.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+        });
+    });
+</script>
+<script type="text/javascript" src="https://lifekg.edu.hk/wp-content/themes/theme5_style_1/js/bootstrap_fix.js"></script>
+<div id="mmBg" class="mmOpen bg"></div>
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-preload-range="0">
+        <div class="slides"></div>
+
+        <div class="photoInfo">
+            <h3 class="title"></h3>
+            <p class="description"></p>
+            <span class="more"><a class="showMoreDescription" href="javascript:void(0);">（Show More…）</a></span>
+        </div>
+
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="popup" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+
+        <ol class="indicator"></ol>
+        <div class="indicatorControl">
+	    	<span class="leftBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+	    	</span>
+            <span class="rightBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+			</span>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://lifekg.edu.hk/wp-includes/js/wp-embed.min.js?ver=5.1.19'></script>
+</body>
+</html>
