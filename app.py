@@ -231,7 +231,14 @@ def rankings():
     
     conn = get_db_connection()
     
-    # Get all schools with any ranking
+    # Get ranking counts for stats
+    ranking_counts = {}
+    for col, name in [('qs_rank','qs'), ('usnews_rank','usnews'), ('the_rank','the'), ('arwu_rank','arwu'), ('cwur_rank','cwur')]:
+        ranking_counts[name] = conn.execute(f'SELECT COUNT(*) FROM schools WHERE {col} IS NOT NULL').fetchone()[0]
+    
+    total_schools = conn.execute('SELECT COUNT(*) FROM schools').fetchone()[0]
+    
+    # Get all schools with any ranking (for "All" view)
     schools = conn.execute('''
         SELECT id, name, name_cn, country, badge_url, campus_image,
                qs_rank, usnews_rank, the_rank, arwu_rank, cwur_rank
@@ -242,7 +249,6 @@ def rankings():
         LIMIT 200
     ''').fetchall()
     
-    total_schools = conn.execute('SELECT COUNT(*) FROM schools').fetchone()[0]
     schools_with_rank = len(schools)
     
     # Process schools to add ranking display info
@@ -294,7 +300,12 @@ def rankings():
                 'campus_image': school['campus_image'],
                 'rankings': rankings_list,
                 'display_rank': display_rank,
-                'rank_class': rank_class
+                'rank_class': rank_class,
+                'qs_rank': school['qs_rank'],
+                'usnews_rank': school['usnews_rank'],
+                'the_rank': school['the_rank'],
+                'arwu_rank': school['arwu_rank'],
+                'cwur_rank': school['cwur_rank']
             })
     
     conn.close()
@@ -304,6 +315,7 @@ def rankings():
                          top_schools=top_schools,
                          total_schools=total_schools,
                          schools_with_rank=schools_with_rank,
+                         ranking_counts=ranking_counts,
                          page='rankings')
 
 @app.route('/school/<int:school_id>')
