@@ -21,9 +21,10 @@ except ImportError:
 from models import (
     init_db, create_user, verify_password, get_user_by_id, is_admin, get_db_connection,
     get_all_users, update_user_role, delete_user,
-    get_all_schools, get_school_by_id, get_regions,
+    get_all_schools, get_school_by_id, get_regions, get_region_stats,
     get_schools_by_region, get_schools_by_level, get_schools_by_region_and_level,
     get_schools_by_source, get_source_stats, update_school_source,
+    get_schools_paginated, get_school_rankings,
     search_schools,
     create_school, update_school, delete_school,
     get_like, get_likes_count, like_school,
@@ -2652,6 +2653,188 @@ def shop_page():
 def social_v2_page():
     """新版社交页面（Apple风格）"""
     return render_template('social_v2.html')
+
+
+# ==================== Schools REST API ====================
+
+@app.route('/api/schools')
+def api_schools():
+    """REST API: 获取学校列表（分页、过滤、搜索）"""
+    page = request.args.get('page', 1, type=int)
+    per_page = min(request.args.get('per_page', 20, type=int), 100)
+    region = request.args.get('region', '')
+    level = request.args.get('level', '')
+    query = request.args.get('q', '').strip()
+    sort = request.args.get('sort', 'name')
+
+    schools, total = get_schools_paginated(
+        page=page, per_page=per_page,
+        region=region or None,
+        level=level or None,
+        query=query or None,
+        sort=sort
+    )
+
+    # 补充点赞数
+    conn = get_db_connection()
+    for school in schools:
+        school['likes_count'] = conn.execute(
+            'SELECT COUNT(*) FROM likes WHERE school_id = ?', (school['id'],)
+        ).fetchone()[0]
+    conn.close()
+
+    return jsonify({
+        'success': True,
+        'data': schools,
+        'pagination': {
+            'page': page,
+            'per_page': per_page,
+            'total': total,
+            'total_pages': (total + per_page - 1) // per_page
+        }
+    })
+
+
+@app.route('/api/schools/regions')
+def api_schools_regions():
+    """REST API: 获取所有地区及学校数量"""
+    regions = get_region_stats()
+    return jsonify({'success': True, 'data': regions})
+
+
+@app.route('/api/schools/<int:school_id>')
+def api_school_detail(school_id):
+    """REST API: 获取学校详情"""
+    school = get_school_by_id(school_id)
+    if not school:
+        return jsonify({'success': False, 'error': '学校不存在'}), 404
+
+    likes_count = get_likes_count(school_id)
+    user_liked = False
+    if 'user_id' in session:
+        user_liked = get_like(session['user_id'], school_id) is not None
+
+    rankings = get_school_rankings(school_id)
+
+    conn = get_db_connection()
+    badge_history = [dict(r) for r in conn.execute(
+        'SELECT * FROM badge_history WHERE school_id = ? ORDER BY year_start ASC', (school_id,)
+    ).fetchall()]
+    events = [dict(r) for r in conn.execute(
+        'SELECT * FROM school_events WHERE school_id = ? ORDER BY year ASC', (school_id,)
+    ).fetchall()]
+    conn.close()
+
+    return jsonify({
+        'success': True,
+        'data': {
+            **dict(school),
+            'likes_count': likes_count,
+            'user_liked': user_liked,
+            'rankings': rankings,
+            'badge_history': badge_history,
+            'events': events
+        }
+    })
+
+
+@app.route('/api/schools/search')
+def api_schools_search():
+    """REST API: 搜索学校（兼容简繁）"""
+    query = request.args.get('q', '').strip()
+    region = request.args.get('region', '')
+    level = request.args.get('level', '')
+    limit = min(request.args.get('limit', 20, type=int), 100)
+
+    if not query:
+        return jsonify({'success': False, 'error': '请输入搜索关键词'}), 400
+
+    schools, total = get_schools_paginated(
+        page=1, per_page=limit,
+        region=region or None,
+        level=level or None,
+        query=query,
+        sort='name'
+    )
+
+    return jsonify({'success': True, 'data': schools, 'total': total})
+
+
+@app.route('/api/schools/<int:school_id>/like', methods=['POST'])
+def api_school_like(school_id):
+    """REST API: 收藏/点赞学校"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': '请先登录'}), 401
+
+    school = get_school_by_id(school_id)
+    if not school:
+        return jsonify({'success': False, 'error': '学校不存在'}), 404
+
+    existing = get_like(session['user_id'], school_id)
+    if existing:
+        unlike_school(session['user_id'], school_id)
+        action = 'unliked'
+    else:
+        like_school(session['user_id'], school_id)
+        action = 'liked'
+
+    new_count = get_likes_count(school_id)
+    return jsonify({
+        'success': True,
+        'action': action,
+        'likes_count': new_count,
+        'user_liked': action == 'liked'
+    })
+
+
+@app.route('/api/schools/<int:school_id>/like', methods=['DELETE'])
+def api_school_unlike(school_id):
+    """REST API: 取消收藏/点赞学校"""
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'error': '请先登录'}), 401
+
+    unlike_school(session['user_id'], school_id)
+    new_count = get_likes_count(school_id)
+    return jsonify({'success': True, 'likes_count': new_count, 'user_liked': False})
+
+
+@app.route('/api/schools/rankings')
+def api_schools_rankings():
+    """REST API: 获取学校排行榜"""
+    ranking_type = request.args.get('type', 'qs')
+    region = request.args.get('region', '')
+    limit = min(request.args.get('limit', 50, type=int), 200)
+
+    conn = get_db_connection()
+    rank_col = f'{ranking_type}_rank'
+    year_col = f'{ranking_type}_year'
+
+    where_clauses = [f'{rank_col} IS NOT NULL AND {rank_col} > 0']
+    params = []
+    if region and region != 'all':
+        where_clauses.append('region = ?')
+        params.append(region)
+
+    schools = conn.execute(f'''
+        SELECT id, name, name_cn, region, country, city, level, badge_url,
+               {rank_col} as rank_value, {year_col} as rank_year
+        FROM schools WHERE {" AND ".join(where_clauses)}
+        ORDER BY {rank_col} ASC LIMIT ?
+    ''', params + [limit]).fetchall()
+    conn.close()
+
+    return jsonify({'success': True, 'data': [dict(s) for s in schools], 'ranking_type': ranking_type})
+
+
+@app.route('/api/schools/levels')
+def api_schools_levels():
+    """REST API: 获取所有学校类型"""
+    conn = get_db_connection()
+    levels = [r[0] for r in conn.execute(
+        'SELECT DISTINCT level FROM schools WHERE level IS NOT NULL ORDER BY level'
+    ).fetchall()]
+    conn.close()
+    return jsonify({'success': True, 'data': levels})
 
 # Run without debug mode and without reloader
 if __name__ == '__main__':
