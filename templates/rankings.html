@@ -1,217 +1,255 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('rankings_title') }} - {{ _('School Badge Network') }}</title>
+    
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="campus-gallery">
 
-{% block title %}{{ _('rankings_title') }}{% endblock %}
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="{{ url_for('index') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网">
+            </a>
+            <div class="nav-links">
+                <a href="{{ url_for('index') }}">{{ _('home') }}</a>
+                <a href="{{ url_for('rankings') }}" class="active">🏆 {{ _('rankings') }}</a>
+                <a href="{{ url_for('campus') }}">{{ _('campus_gallery') }}</a>
+                {% if session.get('user_id') %}
+                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
+                    {% if is_admin() %}
+                        <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
+                    {% endif %}
+                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}">{{ _('login') }}</a>
+                    <a href="{{ url_for('register') }}">{{ _('register') }}</a>
+                {% endif %}
+                
+                <div class="lang-switcher">
+                    <select onchange="window.location.href=this.value">
+                        {% for code, name in LANGUAGE_NAMES.items() %}
+                            <option value="{{ url_for('set_language', lang=code) }}" 
+                                    {% if current_lang == code %}selected{% endif %}>
+                                {{ name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-{% block extra_css %}
-<style>
-/* Rankings-specific overrides - minimal, just for ranking tabs */
-.ranking-tabs {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    margin-bottom: 32px;
-    flex-wrap: wrap;
-}
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>{{ _('world_university_rankings') }}</h1>
+            <p>{{ _('rankings_subtitle') }}</p>
+        </div>
+    </section>
 
-.ranking-tab {
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: 2px solid var(--border);
-    background: var(--background);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 600;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.ranking-tab:hover {
-    border-color: var(--primary);
-    transform: translateY(-2px);
-}
-
-.ranking-tab.active {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    color: #fff;
-    border-color: transparent;
-    box-shadow: 0 4px 16px rgba(30, 58, 95, 0.3);
-}
-
-.ranking-tab .tab-year {
-    font-size: 0.7rem;
-    padding: 2px 6px;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.2);
-}
-
-/* Ranking badge on cards - keep existing badge-container structure */
-.rank-badge {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    width: 52px;
-    height: 52px;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    font-weight: 800;
-    color: #fff;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-    z-index: 10;
-}
-
-.rank-badge.top-10 {
-    background: linear-gradient(135deg, #ffd700, #ffb800);
-    color: #1a1a2e;
-}
-
-.rank-badge.top-50 {
-    background: linear-gradient(135deg, #c0c0c0, #a8a8a8);
-    color: #1a1a2e;
-}
-
-.rank-badge.top-100 {
-    background: linear-gradient(135deg, #cd7f32, #b87333);
-    color: #fff;
-}
-
-.rank-badge.default {
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-}
-
-/* Ranking tags */
-.ranking-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 8px;
-}
-
-.rank-tag {
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-}
-
-.rank-tag.qs { background: rgba(16, 185, 129, 0.1); color: #059669; }
-.rank-tag.usnews { background: rgba(59, 130, 246, 0.1); color: #2563eb; }
-.rank-tag.the { background: rgba(139, 92, 246, 0.1); color: #7c3aed; }
-.rank-tag.arwu { background: rgba(236, 72, 153, 0.1); color: #db2777; }
-.rank-tag.cwur { background: rgba(245, 158, 11, 0.1); color: #d97706; }
-
-.school-name-cn {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    margin-bottom: 8px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .ranking-tabs { justify-content: flex-start; overflow-x: auto; }
-    .ranking-tab { padding: 10px 16px; font-size: 0.85rem; }
-}
-</style>
-{% endblock %}
-
-{% block content %}
-<!-- Hero Section - same structure as homepage -->
-<section class="hero">
-    <div class="container">
-        <h1>{{ _('world_university_rankings') }}</h1>
-        <p>{{ _('rankings_subtitle') }}</p>
-    </div>
-</section>
-
-<!-- Stats Bar - similar to homepage stats -->
-<section class="search-section">
-    <div class="container">
-        <p class="stats">{{ _('rankings_stats').format(schools_with_rank) }}</p>
-        
-        <!-- Ranking Tabs - same style as filter-bar -->
-        <div class="filter-bar" style="justify-content: center;">
-            <div class="ranking-tabs">
-                <button class="ranking-tab active" data-ranking="all">
-                    🌐 {{ _('all_rankings') }}
+    <!-- Ranking Tabs -->
+    <section class="tabs-section">
+        <div class="container">
+            <div class="region-tabs">
+                <button class="tab-btn active" data-ranking="all">
+                    <span class="tab-icon">🌐</span>
+                    <span class="tab-name">{{ _('all_rankings') }}</span>
+                    <span class="tab-count">{{ schools_with_rank }}</span>
                 </button>
                 {% for ranking in rankings_config %}
-                <button class="ranking-tab" data-ranking="{{ ranking.id }}">
-                    {% if ranking.id == 'qs' %}📊{% elif ranking.id == 'usnews' %}🇺🇸{% elif ranking.id == 'the' %}📰{% elif ranking.id == 'arwu' %}🇨🇳{% else %}🌍{% endif %}
-                    {{ ranking.name }}
-                    {% if ranking.year %}
-                    <span class="tab-year">{{ ranking.year }}</span>
-                    {% endif %}
+                <button class="tab-btn" data-ranking="{{ ranking.id }}">
+                    <span class="tab-icon">{% if ranking.id == 'qs' %}📊{% elif ranking.id == 'usnews' %}🇺🇸{% elif ranking.id == 'the' %}📰{% elif ranking.id == 'arwu' %}🇨🇳{% else %}🌍{% endif %}</span>
+                    <span class="tab-name">{{ ranking.name }}</span>
+                    <span class="tab-count">{{ ranking.year }}</span>
                 </button>
                 {% endfor %}
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Schools Grid - same structure as homepage -->
-<main class="container">
-    <div class="schools-grid" id="rankingGrid">
-        {% for school in top_schools %}
-        <a href="{{ url_for('school_detail', school_id=school.id) }}" class="school-card" data-rankings="{% for r in school.rankings %}{{ r.id }}{% if not loop.last %},{% endif %}{% endfor %}">
-            <div class="badge-container">
-                {% if school.badge_url %}
-                    <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="badge-image" 
-                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    <div class="badge-placeholder" style="display:none;">🎓</div>
-                {% elif school.campus_image %}
-                    <img src="{{ school.campus_image }}" alt="{{ school.name }} campus" class="badge-image campus-fallback"
-                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    <div class="badge-placeholder" style="display:none;">🎓</div>
-                {% else %}
-                    <div class="badge-placeholder">🎓</div>
-                {% endif %}
-                <div class="rank-badge {{ school.rank_class }}">
-                    #{{ school.display_rank }}
-                </div>
-            </div>
-            <div class="school-info">
-                <h3>{{ school.name }}</h3>
-                {% if school.name_cn %}
-                <p class="school-name-cn">{{ school.name_cn }}</p>
-                {% endif %}
-                
-                <div class="ranking-tags">
-                    {% for r in school.rankings %}
-                    <span class="rank-tag {{ r.id }}">{{ r.name }} #{{ r.rank }}</span>
+    <!-- Rankings Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-content active" id="all-content">
+                {% if top_schools %}
+                <div class="gallery-grid">
+                    {% for school in top_schools %}
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                        <div class="card-image">
+                            {% if school.badge_url %}
+                            <img src="{{ school.badge_url }}" 
+                                 alt="{{ school.name }}"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="image-placeholder" style="display:none;">
+                                <svg viewBox="0 0 100 100" fill="none">
+                                    <rect fill="#f5f5f7" width="100" height="100"/>
+                                    <path d="M45 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 17.5c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5 7.5 3.4 7.5 7.5-3.4 7.5-7.5 7.5zM70 65H30c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h40c2.8 0 5 2.2 5 5v2c0 2.8-2.2 5-5 5z" fill="#86868b"/>
+                                </svg>
+                            </div>
+                            {% elif school.campus_image %}
+                            <img src="{{ school.campus_image }}" 
+                                 alt="{{ school.name }}"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="image-placeholder" style="display:none;">
+                                <svg viewBox="0 0 100 100" fill="none">
+                                    <rect fill="#f5f5f7" width="100" height="100"/>
+                                    <path d="M45 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 17.5c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5 7.5 3.4 7.5 7.5-3.4 7.5-7.5 7.5zM70 65H30c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h40c2.8 0 5 2.2 5 5v2c0 2.8-2.2 5-5 5z" fill="#86868b"/>
+                                </svg>
+                            </div>
+                            {% else %}
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 100 100" fill="none">
+                                    <rect fill="#f5f5f7" width="100" height="100"/>
+                                    <path d="M45 35c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 17.5c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5 7.5 3.4 7.5 7.5-3.4 7.5-7.5 7.5zM70 65H30c-2.8 0-5-2.2-5-5v-2c0-2.8 2.2-5 5-5h40c2.8 0 5 2.2 5 5v2c0 2.8-2.2 5-5 5z" fill="#86868b"/>
+                                </svg>
+                            </div>
+                            {% endif %}
+                            <div class="rank-badge {{ school.rank_class }}">
+                                #{{ school.display_rank }}
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h2>{{ school.name_cn or school.name }}</h2>
+                                <span class="location">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    {{ school.country }}
+                                </span>
+                            </div>
+                            <p class="english-name">{{ school.name }}</p>
+                            
+                            <div class="card-meta ranking-tags">
+                                {% for r in school.rankings %}
+                                <span class="rank-tag {{ r.id }}">{{ r.name }} #{{ r.rank }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </article>
                     {% endfor %}
                 </div>
-                
-                <p class="location">{{ school.country }}</p>
+                {% else %}
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">🏆</div>
+                    <h3>{{ _('no_rankings_yet') }}</h3>
+                    <p>{{ _('rankings_coming_soon') }}</p>
+                </div>
+                {% endif %}
             </div>
-        </a>
-        {% endfor %}
-    </div>
-</main>
+        </div>
+    </section>
 
-<script>
-// Tab switching - same pattern as filter dropdowns
-document.querySelectorAll('.ranking-tab').forEach(tab => {
-    tab.addEventListener('click', function() {
-        document.querySelectorAll('.ranking-tab').forEach(t => t.classList.remove('active'));
-        this.classList.add('active');
-        
-        const ranking = this.dataset.ranking;
-        const cards = document.querySelectorAll('.school-card');
-        
-        cards.forEach(card => {
-            if (ranking === 'all') {
-                card.style.display = 'flex';
-            } else {
-                const rankings = card.dataset.rankings.split(',');
-                card.style.display = rankings.includes(ranking) ? 'flex' : 'none';
-            }
+    <style>
+    /* Rankings-specific badge styles */
+    .rank-badge {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        font-weight: 800;
+        color: #fff;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        z-index: 10;
+    }
+    
+    .rank-badge.top-10 {
+        background: linear-gradient(135deg, #ffd700, #ffb800);
+        color: #1a1a2e;
+    }
+    
+    .rank-badge.top-50 {
+        background: linear-gradient(135deg, #c0c0c0, #a8a8a8);
+        color: #1a1a2e;
+    }
+    
+    .rank-badge.top-100 {
+        background: linear-gradient(135deg, #cd7f32, #b87333);
+        color: #fff;
+    }
+    
+    .rank-badge.default {
+        background: linear-gradient(135deg, #1E3A5F, #0D2137);
+    }
+    
+    .ranking-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 8px;
+    }
+    
+    .rank-tag {
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+    
+    .rank-tag.qs { background: rgba(16, 185, 129, 0.1); color: #059669; }
+    .rank-tag.usnews { background: rgba(59, 130, 246, 0.1); color: #2563eb; }
+    .rank-tag.the { background: rgba(139, 92, 246, 0.1); color: #7c3aed; }
+    .rank-tag.arwu { background: rgba(236, 72, 153, 0.1); color: #db2777; }
+    .rank-tag.cwur { background: rgba(245, 158, 11, 0.1); color: #d97706; }
+    
+    .gallery-content[data-rankings] {
+        display: none;
+    }
+    
+    .gallery-content.active {
+        display: block;
+    }
+    
+    .gallery-content[data-rankings].active {
+        display: block;
+    }
+    </style>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Tab switching
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const galleryContents = document.querySelectorAll('.gallery-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const ranking = btn.dataset.ranking;
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Show/hide cards based on ranking
+                const cards = document.querySelectorAll('.campus-card');
+                cards.forEach(card => {
+                    if (ranking === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const rankings = card.dataset.rankings ? card.dataset.rankings.split(',') : [];
+                        card.style.display = rankings.includes(ranking) ? 'block' : 'none';
+                    }
+                });
+                
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
         });
     });
-});
-</script>
-{% endblock %}
+    </script>
+</body>
+</html>
