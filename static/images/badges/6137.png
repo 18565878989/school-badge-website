@@ -1,0 +1,678 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" 22
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" /><title>
+	明愛啟幼幼兒學校網頁
+</title><link rel="stylesheet" href="../Styles/site_style.css?t=202303131822" type="text/css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" /><link rel="shortcut icon" href="../images/favicon.ico" /><link href="../Scripts/jplayer/dist/skin/blue.monday/css/jplayer.blue.monday.min.css?t=202303131822" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./Scripts/jplayer/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="./Scripts/jplayer/dist/jplayer/jquery.jplayer.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+    <style type="text/css"> 
+        .Menu {
+            z-index: 25000 !important;
+        }
+
+        .audio::-webkit-media-controls-timeline {
+            display: none !important;
+        }
+
+        .t-container.t-container-fluid.background_image {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+    </style>
+    <script type="text/javascript">        
+        function openLyric() {
+            window.open()
+        }
+
+        function playMusic() {
+            $('#jquery_jplayer_1').jPlayer("play");
+        }
+
+        function pauseMusic() {
+            $('#jquery_jplayer_1').jPlayer("pause");
+        }
+
+        function endMusic() {
+            $('.btn_link_clicked').removeClass('btn_link_clicked');
+            $('.btn_txt').addClass('btn_link');
+        }
+
+        function OnClientItemClicking(sender, args) {
+            if (args.get_item().get_navigateUrl() == "#") {
+                args.get_item().open();
+                args.set_cancel(true);
+            }
+        }
+
+        function ExpandOpenedItem(sender, args) {
+            var rmGroup = args.get_item().get_childListElement();
+            //var item_color = rmGroup.item_color();
+            var item = args.get_item();
+            //console.log(item.get_attributes().getAttribute("item_color"));
+            setSlideHeight(rmGroup);
+        }
+
+        function ExpandClosedItem(sender, args) {
+            var rmGroup = $(args.get_item().get_element()).parent();
+            setSlideHeight(rmGroup);
+        }
+
+        function setSlideHeight(rmGroup) {
+            var rmGroupHeight = $(rmGroup).height();
+            $(".rmSlide").height(rmGroupHeight);
+            $(".rmSlide").css("max-height", rmGroupHeight)
+        }
+
+        $(function () {
+            $('.btn_txt.btn_link, .btn_txt.btn_link_clicked').click(function () {
+                var wasPlay = $(this).hasClass('btn_txt btn_link');
+                var clicked_class = wasPlay ? 'btn_txt btn_link' : 'btn_txt btn_link_clicked';
+                var other_class = wasPlay ? 'btn_txt btn_link_clicked' : 'btn_txt btn_link';
+                $(this).removeClass(clicked_class);
+                $(this).addClass(other_class);                
+                if (wasPlay) {
+                    playMusic();
+                    $('#jquery_jplayer_1').bind($.jPlayer.event.ended + ".jp-repeat", function (event) { // Using ".jp-repeat" namespace so we can easily remove this event
+                        playMusic();
+                    });
+                } else {
+                    pauseMusic();
+                    $("#jquery_jplayer_1").unbind($.jPlayer.event.ended + ".jp-repeat");
+                }                    
+            });                      
+        });
+    </script>
+        
+    <style type="text/css">
+        .auto-style1 {
+            /*width: 350px;*/
+        }
+
+        .rigDotList {
+            display: none;
+        }
+
+        .title_style {
+            font-size: 20px;
+        }
+
+        .auto-style2 {
+            height: 25px;
+        }
+
+        .rainbow_text {
+            background: linear-gradient(to right, orange, gold, green, cyan, blue, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .purple_text {
+            color: #5a16c8;
+        }
+
+        .rigActionButton  {
+            color: #000000;
+        }
+
+        .MediaPlayer {
+            z-index: 20000;
+        }
+
+        .rmpToolbarWrapper {
+            display: block !important;
+        }
+
+        .rmpTitleBar, #ctl00_ContentPlaceHolder1_RadMediaPlayer1_Toolbar_SubtitlesButton, #ctl00_ContentPlaceHolder1_RadMediaPlayer1_Toolbar_HDButton {
+            display: none !important;
+        }
+
+        /*.rigActiveImage {
+            cursor: pointer;
+        }*/
+    </style>
+    <script type="text/javascript">        
+        function play_slide_show() {
+            $find("ctl00_ContentPlaceHolder1_RadImageGallery1").playSlideshow();
+        }
+
+        function imageLoaded(sender, args) {
+            var image = args.get_image(),
+            imageItem = args.get_item();
+            var lang = $find('ctl00_ContentPlaceHolder1_RadImageGallery1').get_element().getAttribute("lang");
+            var str_length = 13;
+            var str_split = 17;
+
+            if (lang == "en-US") {
+                str_length = 35;
+                str_split = 35;
+            }
+
+            $('#ctl00_ContentPlaceHolder1_lbl_banner_name').fadeOut(500, function () {
+                var str = imageItem.get_title();
+                if (str.length >= str_length) {
+                    var desc = imageItem.get_title();
+
+                    $(this).css('font-size', '15px');
+                    $(this).css('color', 'black');
+                    $(this).css('overflow-wrap', 'normal');
+                    $(this).html(desc).fadeIn(500);
+                } else {
+                    $(this).css('font-size', '22px');
+                    $(this).css('color', 'black');
+                    $(this).css('overflow-wrap', 'normal');
+                    $(this).text(imageItem.get_title()).fadeIn(500);
+                }
+            });
+        }
+
+        function rdpVideo_Play(sender, args) {
+            var mp = $("#ctl00_ContentPlaceHolder1_RadMediaPlayer1_Toolbar_Wrapper");
+            //console.log(mp);
+        }
+
+        function rdpVideo_Ended(sender, args) {
+            $find('ctl00_ContentPlaceHolder1_RadMediaPlayer1').play();
+        }
+
+        function OnClientShow(sender, args) {
+            $("#ctl00_ContentPlaceHolder1_popup_window_C").attr("class", "");
+            sender.add_close(OnClientClose);
+        }
+
+        function OnClientClose(oWnd) {
+            //player.pauseVideo();
+            console.log("Close")
+            $("#ctl00_ContentPlaceHolder1_popup_window_C").html("");
+        }
+    </script>
+<style type='text/css'> .menu_item_style_1, .menu_item_style_1 > * {background-color: #54BCBF !important; line-height: 1; word-break: keep-all !important;}  .menu_item_style_1 .rmLink:hover {background-color: #12E6F4 ! important;}  .menu_sub_item_style_1 {background-color: #09969F !important;}  .menu_sub_item_style_1 .rmLink:hover {background-color:  ! important;}  .menu_item_style_2, .menu_item_style_2 > * {background-color: #F7BF8C !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_2 .rmLink:hover {background-color: #B9600D ! important;}  .menu_sub_item_style_2 {background-color: #F58319 !important;}  .menu_sub_item_style_2 .rmLink:hover {background-color:  ! important;}  .menu_item_style_3, .menu_item_style_3 > * {background-color: #F7ABB9 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_3 .rmLink:hover {background-color: #DA3754 ! important;}  .menu_sub_item_style_3 {background-color: #DD3654 !important;}  .menu_sub_item_style_3 .rmLink:hover {background-color:  ! important;}  .menu_item_style_4, .menu_item_style_4 > * {background-color: #9AD5C3 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_4 .rmLink:hover {background-color: #ACE5D4 ! important;}  .menu_sub_item_style_4 {background-color: #0D8561 !important;}  .menu_sub_item_style_4 .rmLink:hover {background-color: #206450 ! important;}  .menu_item_style_5, .menu_item_style_5 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_5 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_5 {background-color: #ECCE32 !important;}  .menu_sub_item_style_5 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_6, .menu_item_style_6 > * {background-color: #E4B5E1 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_6 .rmLink:hover {background-color: #E2D0E1 ! important;}  .menu_sub_item_style_6 {background-color: #AB69A9 !important;}  .menu_sub_item_style_6 .rmLink:hover {background-color: #82407F ! important;}  .menu_item_style_7, .menu_item_style_7 > * {background-color: #87C4FA !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_7 .rmLink:hover {background-color: #5E93C4 ! important;}  .menu_sub_item_style_7 {background-color: #086FCF !important;}  .menu_sub_item_style_7 .rmLink:hover {background-color: #A4C8E9 ! important;}  .menu_item_style_8, .menu_item_style_8 > * {background-color: #EB7B67 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_8 .rmLink:hover {background-color: #E5ADA1 ! important;}  .menu_sub_item_style_8 {background-color: #CA6B56 !important;}  .menu_sub_item_style_8 .rmLink:hover {background-color: #A35948 ! important;}  .menu_item_style_9, .menu_item_style_9 > * {background-color: #A2B5F9 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_9 .rmLink:hover {background-color: #B7C0E2 ! important;}  .menu_sub_item_style_9 {background-color: #8296DC !important;}  .menu_sub_item_style_9 .rmLink:hover {background-color: #697BBC ! important;}  .menu_item_style_10, .menu_item_style_10 > * {background-color: #D2A2EC !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_10 .rmLink:hover {background-color: #B99CC7 ! important;}  .menu_sub_item_style_10 {background-color: #A146CB !important;}  .menu_sub_item_style_10 .rmLink:hover {background-color: #C5A4D4 ! important;}  .menu_item_style_11, .menu_item_style_11 > * {background-color: #DF7C94 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_11 .rmLink:hover {background-color: #E2AFBE ! important;}  .menu_sub_item_style_11 {background-color: #AB7D8B !important;}  .menu_sub_item_style_11 .rmLink:hover {background-color: #C68699 ! important;}  .menu_item_style_12, .menu_item_style_12 > * {background-color: #9AD5C3 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_12 .rmLink:hover {background-color: #ACE5D4 ! important;}  .menu_sub_item_style_12 {background-color: #0D8561 !important;}  .menu_sub_item_style_12 .rmLink:hover {background-color: #206450 ! important;}  .menu_item_style_13, .menu_item_style_13 > * {background-color: #9AD5C3 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_13 .rmLink:hover {background-color: #ACE5D4 ! important;}  .menu_sub_item_style_13 {background-color: #0D8561 !important;}  .menu_sub_item_style_13 .rmLink:hover {background-color: #206450 ! important;}  .menu_item_style_14, .menu_item_style_14 > * {background-color: #9AD5C3 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_14 .rmLink:hover {background-color: #ACE5D4 ! important;}  .menu_sub_item_style_14 {background-color: #0D8561 !important;}  .menu_sub_item_style_14 .rmLink:hover {background-color: #206450 ! important;}  .menu_item_style_15, .menu_item_style_15 > * {background-color: #9AD5C3 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_15 .rmLink:hover {background-color: #ACE5D4 ! important;}  .menu_sub_item_style_15 {background-color: #0D8561 !important;}  .menu_sub_item_style_15 .rmLink:hover {background-color: #206450 ! important;}  .menu_item_style_16, .menu_item_style_16 > * {background-color: #9AD5C3 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_16 .rmLink:hover {background-color: #ACE5D4 ! important;}  .menu_sub_item_style_16 {background-color: #0D8561 !important;}  .menu_sub_item_style_16 .rmLink:hover {background-color: #206450 ! important;}  .menu_item_style_59, .menu_item_style_59 > * {background-color: #9AD5C3 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_59 .rmLink:hover {background-color: #ACE5D4 ! important;}  .menu_sub_item_style_59 {background-color: #0D8561 !important;}  .menu_sub_item_style_59 .rmLink:hover {background-color: #206450 ! important;}  .menu_item_style_17, .menu_item_style_17 > * {background-color: #9AD5C3 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_17 .rmLink:hover {background-color: #ACE5D4 ! important;}  .menu_sub_item_style_17 {background-color: #0D8561 !important;}  .menu_sub_item_style_17 .rmLink:hover {background-color: #206450 ! important;}  .menu_item_style_18, .menu_item_style_18 > * {background-color: #9AD5C3 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_18 .rmLink:hover {background-color: #ACE5D4 ! important;}  .menu_sub_item_style_18 {background-color: #0D8561 !important;}  .menu_sub_item_style_18 .rmLink:hover {background-color: #206450 ! important;}  .menu_item_style_19, .menu_item_style_19 > * {background-color: #9AD5C3 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_19 .rmLink:hover {background-color: #ACE5D4 ! important;}  .menu_sub_item_style_19 {background-color: #0D8561 !important;}  .menu_sub_item_style_19 .rmLink:hover {background-color: #206450 ! important;}  .menu_item_style_20, .menu_item_style_20 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_20 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_20 {background-color: #ECCE32 !important;}  .menu_sub_item_style_20 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_21, .menu_item_style_21 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_21 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_21 {background-color: #ECCE32 !important;}  .menu_sub_item_style_21 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_22, .menu_item_style_22 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_22 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_22 {background-color: #ECCE32 !important;}  .menu_sub_item_style_22 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_70, .menu_item_style_70 > * {background-color: #E4B5E1 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_70 .rmLink:hover {background-color: #E2D0E1 ! important;}  .menu_sub_item_style_70 {background-color: #AB69A9 !important;}  .menu_sub_item_style_70 .rmLink:hover {background-color: #82407F ! important;}  .menu_item_style_71, .menu_item_style_71 > * {background-color: #E4B5E1 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_71 .rmLink:hover {background-color: #E2D0E1 ! important;}  .menu_sub_item_style_71 {background-color: #AB69A9 !important;}  .menu_sub_item_style_71 .rmLink:hover {background-color: #82407F ! important;}  .menu_item_style_72, .menu_item_style_72 > * {background-color: #E4B5E1 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_72 .rmLink:hover {background-color: #E2D0E1 ! important;}  .menu_sub_item_style_72 {background-color: #AB69A9 !important;}  .menu_sub_item_style_72 .rmLink:hover {background-color: #82407F ! important;}  .menu_item_style_77, .menu_item_style_77 > * {background-color: #E4B5E1 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_77 .rmLink:hover {background-color: #E2D0E1 ! important;}  .menu_sub_item_style_77 {background-color: #AB69A9 !important;}  .menu_sub_item_style_77 .rmLink:hover {background-color: #82407F ! important;}  .menu_item_style_29, .menu_item_style_29 > * {background-color: #87C4FA !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_29 .rmLink:hover {background-color: #5E93C4 ! important;}  .menu_sub_item_style_29 {background-color: #086FCF !important;}  .menu_sub_item_style_29 .rmLink:hover {background-color: #A4C8E9 ! important;}  .menu_item_style_28, .menu_item_style_28 > * {background-color: #87C4FA !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_28 .rmLink:hover {background-color: #5E93C4 ! important;}  .menu_sub_item_style_28 {background-color: #086FCF !important;}  .menu_sub_item_style_28 .rmLink:hover {background-color: #A4C8E9 ! important;}  .menu_item_style_30, .menu_item_style_30 > * {background-color: #87C4FA !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_30 .rmLink:hover {background-color: #5E93C4 ! important;}  .menu_sub_item_style_30 {background-color: #086FCF !important;}  .menu_sub_item_style_30 .rmLink:hover {background-color: #A4C8E9 ! important;}  .menu_item_style_75, .menu_item_style_75 > * {background-color: #87C4FA !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_75 .rmLink:hover {background-color: #5E93C4 ! important;}  .menu_sub_item_style_75 {background-color: #086FCF !important;}  .menu_sub_item_style_75 .rmLink:hover {background-color: #A4C8E9 ! important;}  .menu_item_style_32, .menu_item_style_32 > * {background-color: #EB7B67 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_32 .rmLink:hover {background-color: #E5ADA1 ! important;}  .menu_sub_item_style_32 {background-color: #CA6B56 !important;}  .menu_sub_item_style_32 .rmLink:hover {background-color: #A35948 ! important;}  .menu_item_style_31, .menu_item_style_31 > * {background-color: #EB7B67 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_31 .rmLink:hover {background-color: #E5ADA1 ! important;}  .menu_sub_item_style_31 {background-color: #CA6B56 !important;}  .menu_sub_item_style_31 .rmLink:hover {background-color: #A35948 ! important;}  .menu_item_style_33, .menu_item_style_33 > * {background-color: #EB7B67 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_33 .rmLink:hover {background-color: #E5ADA1 ! important;}  .menu_sub_item_style_33 {background-color: #CA6B56 !important;}  .menu_sub_item_style_33 .rmLink:hover {background-color: #A35948 ! important;}  .menu_item_style_63, .menu_item_style_63 > * {background-color: #EB7B67 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_63 .rmLink:hover {background-color: #E5ADA1 ! important;}  .menu_sub_item_style_63 {background-color: #CA6B56 !important;}  .menu_sub_item_style_63 .rmLink:hover {background-color: #A35948 ! important;}  .menu_item_style_34, .menu_item_style_34 > * {background-color: #EB7B67 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_34 .rmLink:hover {background-color: #E5ADA1 ! important;}  .menu_sub_item_style_34 {background-color: #CA6B56 !important;}  .menu_sub_item_style_34 .rmLink:hover {background-color: #A35948 ! important;}  .menu_item_style_35, .menu_item_style_35 > * {background-color: #EB7B67 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_35 .rmLink:hover {background-color: #E5ADA1 ! important;}  .menu_sub_item_style_35 {background-color: #CA6B56 !important;}  .menu_sub_item_style_35 .rmLink:hover {background-color: #A35948 ! important;}  .menu_item_style_56, .menu_item_style_56 > * {background-color: #EB7B67 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_56 .rmLink:hover {background-color: #E5ADA1 ! important;}  .menu_sub_item_style_56 {background-color: #CA6B56 !important;}  .menu_sub_item_style_56 .rmLink:hover {background-color: #A35948 ! important;}  .menu_item_style_36, .menu_item_style_36 > * {background-color: #A2B5F9 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_36 .rmLink:hover {background-color: #B7C0E2 ! important;}  .menu_sub_item_style_36 {background-color: #8296DC !important;}  .menu_sub_item_style_36 .rmLink:hover {background-color: #697BBC ! important;}  .menu_item_style_37, .menu_item_style_37 > * {background-color: #A2B5F9 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_37 .rmLink:hover {background-color: #B7C0E2 ! important;}  .menu_sub_item_style_37 {background-color: #8296DC !important;}  .menu_sub_item_style_37 .rmLink:hover {background-color: #697BBC ! important;}  .menu_item_style_38, .menu_item_style_38 > * {background-color: #D2A2EC !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_38 .rmLink:hover {background-color: #B99CC7 ! important;}  .menu_sub_item_style_38 {background-color: #A146CB !important;}  .menu_sub_item_style_38 .rmLink:hover {background-color: #C5A4D4 ! important;}  .menu_item_style_39, .menu_item_style_39 > * {background-color: #D2A2EC !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_39 .rmLink:hover {background-color: #B99CC7 ! important;}  .menu_sub_item_style_39 {background-color: #A146CB !important;}  .menu_sub_item_style_39 .rmLink:hover {background-color: #C5A4D4 ! important;}  .menu_item_style_40, .menu_item_style_40 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_40 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_40 {background-color: #ECCE32 !important;}  .menu_sub_item_style_40 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_41, .menu_item_style_41 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_41 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_41 {background-color: #ECCE32 !important;}  .menu_sub_item_style_41 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_42, .menu_item_style_42 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_42 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_42 {background-color: #ECCE32 !important;}  .menu_sub_item_style_42 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_43, .menu_item_style_43 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_43 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_43 {background-color: #ECCE32 !important;}  .menu_sub_item_style_43 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_44, .menu_item_style_44 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_44 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_44 {background-color: #ECCE32 !important;}  .menu_sub_item_style_44 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_45, .menu_item_style_45 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_45 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_45 {background-color: #ECCE32 !important;}  .menu_sub_item_style_45 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_66, .menu_item_style_66 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_66 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_66 {background-color: #ECCE32 !important;}  .menu_sub_item_style_66 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_67, .menu_item_style_67 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_67 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_67 {background-color: #ECCE32 !important;}  .menu_sub_item_style_67 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_46, .menu_item_style_46 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_46 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_46 {background-color: #ECCE32 !important;}  .menu_sub_item_style_46 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_47, .menu_item_style_47 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_47 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_47 {background-color: #ECCE32 !important;}  .menu_sub_item_style_47 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_60, .menu_item_style_60 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_60 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_60 {background-color: #ECCE32 !important;}  .menu_sub_item_style_60 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_61, .menu_item_style_61 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_61 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_61 {background-color: #ECCE32 !important;}  .menu_sub_item_style_61 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_54, .menu_item_style_54 > * {background-color: #A2B5F9 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_54 .rmLink:hover {background-color: #B7C0E2 ! important;}  .menu_sub_item_style_54 {background-color: #8296DC !important;}  .menu_sub_item_style_54 .rmLink:hover {background-color: #697BBC ! important;}  .menu_item_style_55, .menu_item_style_55 > * {background-color: #A2B5F9 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_55 .rmLink:hover {background-color: #B7C0E2 ! important;}  .menu_sub_item_style_55 {background-color: #8296DC !important;}  .menu_sub_item_style_55 .rmLink:hover {background-color: #697BBC ! important;}  .menu_item_style_74, .menu_item_style_74 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_74 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_74 {background-color: #ECCE32 !important;}  .menu_sub_item_style_74 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_73, .menu_item_style_73 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_73 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_73 {background-color: #ECCE32 !important;}  .menu_sub_item_style_73 .rmLink:hover {background-color: #A89010 ! important;}  .menu_item_style_76, .menu_item_style_76 > * {background-color: #FFE471 !important; line-height: 1.3; word-break: keep-all !important;}  .menu_item_style_76 .rmLink:hover {background-color: #F7D20E ! important;}  .menu_sub_item_style_76 {background-color: #ECCE32 !important;}  .menu_sub_item_style_76 .rmLink:hover {background-color: #A89010 ! important;} </style><link href="/WebResource.axd?d=rhRRvYQTYv6mNRHqzCKJ7v8UqgdmPyRquGZqyQKBIyGGJYkX798FD6oa0JqGcxyyhW29HXCOmegEeiYy-3wmPDa6kYni_sPkDLt3F2Qy2gqGVgZtzlwnvA2gOnmFZKo7KPp7eM8zpYcy4FychXB6Lw2&amp;t=638671894180000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=VdPoLqp1pEU6N0-IfFplZKCfpbHJ8eC_kYwZEoShhxJT45oY0yx9O0dmlhdh0EIm6Hwhk5UnnWjbPcPBblrLF8CRiG-SDqvl64Z951T7BCl_KJDPK8096mIl6ICfio2sf94FD2QCU-k46o6GS8qK9Q2&amp;t=638671894180000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=6d0ORl_GDQ8il0vfaye5Ycp6RbBTr3SEDTGyGzqhJp-Haomh-lkz99Ic5vwZkIEW1Pw8kREJjDL7LK1135BJrOs9rYvOsSpqqIoN1PQiNn47-OusRsKDnykvMxWAI3smzYlhkMx-hu0wmsqKFN-MxA2&amp;t=638671894180000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=oO40Bmgl131nVzNYSi8Tp4wCycAxUpd1S3qsaDpdi0iDieeFKQCU5KWgh6AjkPl16B3Oa8egw0UZdgh30wRKVtRQM9J7AqKm6kMNhwdxIDcgo2K5larw7fVcrZRs0sRqlL8yg_ekogwRdgWw7KPvDA2&amp;t=638671894180000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=W8qvukx6kCw1VXLMdldNW405lZ49TOdNr1_hVkm6I4dQlg_DeDrOPR761nm59bbKXqwF7bBrVi14d3gl-MdtJzGq6ZkDttDa3GCONQgoXQtlREg9X7sAUwUh02mjErGyenApUmTzJzA9LB_KXvJanA2&amp;t=638671894180000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=4HpuxyEkv3yoCTlljgThgvh2_UkLCWapbOTBJGdhMWInL4CYiY-viiVSIXFw8OexYURvAiv5g_Vpr9zhJ_Beo1SoyUrR3VxsHfbhV_qZLMmlqNvshMCYSvdjQABXnrRe3HHQ9gNEcKPndzt3sDWfBkDSCSHEHuVUa0YClRw2Rfk1&amp;t=638671894180000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=gRutl40BZEN9wCbULNea5KM1jdx7IJp5UwTmeEH2UwoaA4V_9ihFd7x09d8ZqwfuQEg-vhEwjU8uGMfmS1i-nZmmcMpx8ElhnIGe2jYh77ILK_jZX4QtAPjUSnHlvrMT8cQkInzjLArxJeZ8ql7LSQ2&amp;t=638671894180000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=sMeJjr1eiOzPP0GzsITrs-wsa_77rbkeVlTdi_QWyxspjvyPhXpEOO9WL3L7PHpGekgGyB3CK0DLpv0psUc4oR-7xSGM2fSjo9OZFn7WdSfQuNHmiBgnevCbh9ocUexQXsBNoziaCTf7nHNTIzIPvS8cWdcFho50qgVeEl1fjCY1&amp;t=638671894180000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=QKX1AO1vX8ebWKfbb4eOTHv6nJVUBj9--jESgN3GJd-19avJ23ipiiJpUv9F0yp4wUSwNLXREb0d0B6sp9NhYiDUWrEP_4Zl29tiFZ3XmITsV0gq8Uozon3NZQpgDRNE0&amp;t=638671894180000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=abSXP-RgNuAsfhlSYpnpbOlGoTnVFNS8X0kL8UpiQczFEdLlEh2y1pqq6BATKoHRuPszR3eepybfrSaHVWpumbCgRowrAaPzmORj15ZfrbIBs-trFkeP_cS0RdNQyqdWBf_j4e2rfA7Ncebw377UMQ2&amp;t=638671894180000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+<body bgcolor="#FFFFFF" class="custom-sans-serif font_color">
+    <form method="post" action="./favicon.ico" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl00_RadScriptManager1_TSM" id="ctl00_RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZK74wWXLFfIAy5qXYRM54jPMSn2aS6_8YsQWgdNKMiP9g04Q52wncrwW1ooA9EjSlw2&amp;t=638628495619783110" type="text/javascript"></script>
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3azh-HK%3a95047a2c-8908-49e3-b68e-d249be89f134%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%2c+Version%3d2024.4.1114.462%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3azh-HK%3a42e81fc8-fd4f-4245-a781-ced17fd56910%3a16e4e7cd%3a33715776%3af7645509%3a24ee1bba%3ae330518b%3a2003d0b8%3ac128760b%3a1e771326%3a88144a7a%3ac8618e41%3a1a73651d%3a16d8629e%3aed16cbdc%3ac1602281%3a56e9f55f%3a9aa5a03f%3aa47717cc%3a567f529f%3addbfcb67%3a19620875%3a874f8ea2%3ab2e06756%3af46195d3%3a92fe8ea0%3afa31b949%3a4877f69a%3a490a9d4e" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="5CWmOaRBqrjtPUyjUASRu71X1jQjJFgVbQva9EIYC1YmNTdIQLzCEEtWJJYIhu6tKqf/DOxvoJlhAInpYvaZq2EFcUhI2O1cJIclAgRaLlC8zP3671VYQj9s9WjeO7Bwb35ANNO/QFQDqREberjPhuZHnYRzGvgJ4oV1SxsVvs4O+SWtosLHS/MkktMQ+KKa" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$RadScriptManager1', 'aspnetForm', ['tctl00$ContentPlaceHolder1$ctl00$ContentPlaceHolder1$RadAjaxPanel1Panel',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <input type="hidden" name="ctl00$txt_hidden_banner_show_type" id="ctl00_txt_hidden_banner_show_type" value="1" />
+        <div class="center_item pageLayout" style="min-width: 320px; max-width: 1024px;"> <!--class="center_item" style="min-width: 320px; max-width: 1024px; min-height: 768px;"-->
+            <div>
+	<div class="content">
+		<div class="t-row-wrap">
+			<div class="t-container t-container-fluid background_image">
+				<div class="t-col t-col-8 t-col-xs-12 t-col-sm-12 t-col-md-8">
+					
+                                            <div class="TopRow">
+                                                <div style="float: left;">
+                                                    <img src="./images/logo.png" alt="" style="height: 65px; width: 70px; padding-top: 10px;" />
+                                                </div>                                                
+                                                <div style="padding-left: 80px;">
+                                                    <span style="color: rgb(125, 1, 1); font-weight: 600;">
+                                                        <span class="HomeChiName">
+                                                            <span id="ctl00_lbl_chi_name">明愛啟幼幼兒學校</span></span><br />
+                                                        <span class="HomeEngName">
+                                                            <span id="ctl00_lbl_eng_name">Caritas Kai Yau Nursery School</span></span>
+                                                    </span>
+                                                </div>
+                                            </div>                                            
+                                        
+				</div><div class="t-col t-col-4 t-col-xs-12 t-col-sm-12 t-col-md-4">
+					
+                                            <div class="dv_login_info TopRow" >
+                                                <div style="margin-top: 5px;">                                                    
+                                                    <div id="ctl00_tr_music" style="float: right !important;">
+                                                        <a id="ctl00_btn_home" class="btn_link" href="../index.aspx?73%2feWedQ4wfiXYTn3%2fhlDw%3d%3d" style="font-size:X-Large;"> <i class="fas fa-home"><span id="ctl00_btn_home_txt" class="btn_txt"> 首頁</span>&nbsp;&nbsp;</i></a>                                                        
+                                                        <a id="ctl00_btn_login" class="btn_link" href="../intranet_login.aspx?73%2feWedQ4wfiXYTn3%2fhlDw%3d%3d" style="font-size:X-Large;"> <i class="fas fa-user"><span id="ctl00_btn_login_txt" class="btn_txt"> 登入</span>&nbsp;&nbsp;</i></a>                            
+                                                        <span id="ctl00_btn_music" class="btn_txt btn_link" style="font-size: 24px; line-height: 1; vertical-align: top;">𝄞&nbsp;</span>
+                                                        <span id="ctl00_btn_lyric" style="cursor: pointer;" class="btn_link" onClick="window.open(&#39;lyric.aspx&#39;,&#39;popupwindow&#39;, &#39;width=500,height=700,left=200,top=5,scrollbars,toolbar=0,resizable&#39;); return false;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-music" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-list-music fa-w-16 fa-fw" style="font-size: large;"><path fill="currentColor" d="M16 256h256a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16zm0-128h256a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16H16A16 16 0 0 0 0 80v32a16 16 0 0 0 16 16zm128 192H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM470.94 1.33l-96.53 28.51A32 32 0 0 0 352 60.34V360a148.76 148.76 0 0 0-48-8c-61.86 0-112 35.82-112 80s50.14 80 112 80 112-35.82 112-80V148.15l73-21.39a32 32 0 0 0 23-30.71V32a32 32 0 0 0-41.06-30.67z" class=""></path></svg>&nbsp;&nbsp;</span>                                                        
+                                                        
+<style>
+    #ctl00_audio_player_dv_audio_player {
+        float: right !important;
+        display: none;
+    }
+</style>
+
+<script type="text/javascript">
+    //<![CDATA[
+
+    $(function() {
+        var stream = {
+            title: '明愛人心韻',
+            mp3: 'music/background/music.mp3?t=20211126042834'
+        },
+            ready = false;
+
+        $("#jquery_jplayer_1").jPlayer({
+            ready: function (event) {
+                ready = true;
+                $(this).jPlayer("setMedia", stream);
+            },
+            pause: function () {
+                $(this).jPlayer("pause");
+            },
+
+            error: function (event) {
+                if (ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
+                    // Setup the media stream again and play it.
+                    $(this).jPlayer("setMedia", stream).jPlayer("play");
+                }
+            },
+            swfPath: "../Scripts/jplayer/dist/jplayer",
+            supplied: "mp3",
+            preload: "none",
+            wmode: "window",
+            useStateClassSkin: true,
+            autoBlur: false,
+            keyEnabled: true
+        });
+    });
+    //]]>
+    </script>
+
+<input type="hidden" name="ctl00$audio_player$hf_audio_title" id="ctl00_audio_player_hf_audio_title" value="明愛人心韻" />
+<input type="hidden" name="ctl00$audio_player$hf_audio_source" id="ctl00_audio_player_hf_audio_source" value="music/background/music.mp3?t=20211126042834" />
+<input type="hidden" name="ctl00$audio_player$hf_audio_visible" id="ctl00_audio_player_hf_audio_visible" value="True" />
+<div id="ctl00_audio_player_dv_audio_player">
+    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+    <div id="jp_container_1" class="jp-audio-stream" role="application" aria-label="media player">
+        <div class="jp-type-single">
+            <div class="jp-gui jp-interface">
+                <div class="jp-controls">
+                    <button class="jp-play" role="button" tabindex="0">play</button>
+                </div>
+                
+            </div>
+            
+            <div class="jp-no-solution">
+                <span>Update Required</span>
+                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.		       
+            </div>
+        </div>
+    </div>
+</div>		                           
+                                                        <a id="ctl00_btn_cn" class="btn_link" href="https://kyns.caritas.org.hk/index.aspx/favicon.ico?yI8SSJwqS49FuJb13R08Dw%3d%3d" style="font-size:X-Large;text-decoration:none;"> <span class="btn_txt">繁</span>&nbsp;&nbsp;</a>                                                        
+                                                        <a id="ctl00_btn_en" class="btn_link" href="https://kyns.caritas.org.hk/index.aspx/favicon.ico?yI8SSJwqS49Du4LRNtRiFQ%3d%3d" style="font-size:X-Large;text-decoration:none;"> <span class="btn_txt">EN</span>&nbsp;&nbsp;</a>
+                                                    </div>                    
+                                                </div>                                                
+                                                
+                                            </div>                                               
+                                        
+				</div>
+			</div>
+		</div>
+	</div><div>
+		<div class="t-row-wrap">
+			<div class="t-container t-container-fluid MenuRow">
+				<div class="t-col t-col-12 t-col-xs-12 t-col-sm-12 t-col-md-12 MenuWidth">
+					
+                                            <div id="ctl00_dv_menu" class="background_color" style="padding-left: 50px; padding-right: 35px; color: #000; font-size: 14px; max-width: 1024px;">
+                                                <div tabindex="0" id="ctl00_RadMenu1" class="RadMenu RadMenu_Default Menu">
+						<!-- 2024.4.1114.462 --><ul class="rmRootGroup rmHorizontal">
+							<li class="rmItem rmFirst menu_item_style_1" style="width:84px;"><a class="rmLink rmRootLink" target="_blank" href="http://cc.caritas.org.hk/index.html" style="background-color:#54BCBF;border-width:0px;height:48px;width:84px;">服務首頁</a></li><li class="rmItem  menu_item_style_2" style="width:84px;"><a class="rmLink rmRootLink" href="../index.aspx?" style="background-color:#F7BF8C;border-width:0px;height:48px;width:84px;">學校首頁</a></li><li class="rmItem  menu_item_style_3" style="width:84px;"><a class="rmLink rmRootLink" href="../news.aspx?BavdqGEpW8k%3d" style="background-color:#F7ABB9;border-width:0px;height:48px;width:84px;">最新消息</a></li><li class="rmItem  menu_item_style_4" style="width:84px;"><a class="rmLink rmRootLink" href="../#" style="background-color:#9AD5C3;border-width:0px;height:48px;width:84px;">學校概覽</a><div class="rmSlide">
+								<ul class="rmVertical rmGroup rmLevel1">
+									<li class="rmItem rmFirst menu_item_style_4"><a class="rmLink" href="../page.aspx?73%2feWedQ4wfJPs1ntz3q8w%3d%3d" style="background-color:#9AD5C3;">學校簡介</a></li><li class="rmItem  menu_item_style_4"><a class="rmLink" href="../page.aspx?73%2feWedQ4wcPGvJq3w7UQQ%3d%3d" style="background-color:#9AD5C3;">使命與宗旨</a></li><li class="rmItem  menu_item_style_4"><a class="rmLink" href="../page.aspx?73%2feWedQ4wchfBeXs90gGg%3d%3d" style="background-color:#9AD5C3;">校訓及培育目標</a></li><li class="rmItem  menu_item_style_4"><a class="rmLink" href="../page.aspx?73%2feWedQ4wcOH5%2byoCy0YQ%3d%3d" style="background-color:#9AD5C3;">校園設施</a></li><li class="rmItem  menu_item_style_4"><a class="rmLink" href="../page.aspx?73%2feWedQ4wcRadD6YpqM%2fg%3d%3d" style="background-color:#9AD5C3;">教學團隊</a></li><li class="rmItem  menu_item_style_4"><a class="rmLink" href="../page.aspx?73%2feWedQ4wfoNwYxiA%2fUZA%3d%3d" style="background-color:#9AD5C3;">學校對非華語兒童的支援措施</a></li><li class="rmItem  menu_item_style_4"><a class="rmLink" href="../page.aspx?73%2feWedQ4weZdzqNcPgNiA%3d%3d" style="background-color:#9AD5C3;">小一派位</a></li><li class="rmItem  menu_item_style_4"><a class="rmLink" href="../page.aspx?73%2feWedQ4wfJD7KF5PWjmg%3d%3d" style="background-color:#9AD5C3;">學校發展計劃</a></li><li class="rmItem rmLast menu_item_style_4"><a class="rmLink" href="../page.aspx?73%2feWedQ4weOQm2tvnysKw%3d%3d" style="background-color:#9AD5C3;">質素評核報告</a></li>
+								</ul>
+							</div></li><li class="rmItem  menu_item_style_5" style="width:84px;"><a class="rmLink rmRootLink" href="../#" style="background-color:#FFE471;border-width:0px;height:48px;width:84px;">兒童課程</a><div class="rmSlide">
+								<ul class="rmVertical rmGroup rmLevel1">
+									<li class="rmItem rmFirst menu_item_style_5"><a class="rmLink" href="../page.aspx?73%2feWedQ4wdNPVQJ4Y3ICw%3d%3d" style="background-color:#FFE471;">課程理念</a></li><li class="rmItem  menu_item_style_5"><a class="rmLink" href="../page.aspx?73%2feWedQ4wcDoQwGYSi1cA%3d%3d" style="background-color:#FFE471;">課程特色</a><div class="rmSlide">
+										<ul class="rmVertical rmGroup rmLevel2">
+											<li class="rmItem rmFirst menu_sub_item_style_21"><a class="rmLink" href="../page.aspx?73%2feWedQ4weVU4%2b6KIf7uQ%3d%3d" style="background-color:#ECCE32;">思言起行</a></li><li class="rmItem  menu_sub_item_style_21"><a class="rmLink" href="../page.aspx?73%2feWedQ4wcFu833KE31tA%3d%3d" style="background-color:#ECCE32;">語文學習</a></li><li class="rmItem  menu_sub_item_style_21"><a class="rmLink" href="../page.aspx?73%2feWedQ4weDqDorkx2NNg%3d%3d" style="background-color:#ECCE32;">English Learning</a></li><li class="rmItem  menu_sub_item_style_21"><a class="rmLink" href="../page.aspx?73%2feWedQ4wcP1HnllE4OVg%3d%3d" style="background-color:#ECCE32;">遊戲學習</a></li><li class="rmItem  menu_sub_item_style_21"><a class="rmLink" href="../page.aspx?73%2feWedQ4we4fvbz6hsyTw%3d%3d" style="background-color:#ECCE32;">宗教、道德及品格教育課程</a></li><li class="rmItem  menu_sub_item_style_21"><a class="rmLink" href="../page.aspx?73%2feWedQ4wcw7CUsdi%2b4Qg%3d%3d" style="background-color:#ECCE32;">校本課程</a></li><li class="rmItem  menu_sub_item_style_21"><a class="rmLink" href="../page.aspx?73%2feWedQ4wd3gq1LkCGrUg%3d%3d" style="background-color:#ECCE32;">中華文化活動</a><div class="rmSlide">
+												<ul class="rmVertical rmGroup rmLevel3">
+													<li class="rmItem rmFirst menu_sub_item_style_66"><a class="rmLink" href="../page.aspx?73%2feWedQ4wdNp6%2fi%2b48D5A%3d%3d" style="background-color:#ECCE32;">2022-2023年度</a></li><li class="rmItem  menu_sub_item_style_66"><a class="rmLink" href="../page.aspx?73%2feWedQ4wenFgKJk%2bC8Og%3d%3d" style="background-color:#ECCE32;">2023-2024年度</a></li><li class="rmItem rmLast menu_sub_item_style_66"><a class="rmLink" href="../page.aspx?73%2feWedQ4wdeVMSWj%2bb2JA%3d%3d" style="background-color:#ECCE32;">2024-2025年度</a></li>
+												</ul>
+											</div></li><li class="rmItem rmLast menu_sub_item_style_21"><a class="rmLink" href="../page.aspx?73%2feWedQ4wcswNFzBKnptw%3d%3d" style="background-color:#ECCE32;">課室外進行的體驗式學習活動天地</a></li>
+										</ul>
+									</div></li><li class="rmItem rmLast menu_item_style_5"><a class="rmLink" href="../page.aspx?73%2feWedQ4wcRmkUuJITqqA%3d%3d" style="background-color:#FFE471;">學得精彩</a><div class="rmSlide">
+										<ul class="rmVertical rmGroup rmLevel2">
+											<li class="rmItem rmFirst menu_sub_item_style_22"><a class="rmLink" href="../page.aspx?73%2feWedQ4wfrD8uTdsrZDw%3d%3d" style="background-color:#ECCE32;">兒童作品</a></li><li class="rmItem  menu_sub_item_style_22"><a class="rmLink" href="../page.aspx?73%2feWedQ4wdfdD8xpz850A%3d%3d" style="background-color:#ECCE32;">兒童心聲</a></li><li class="rmItem  menu_sub_item_style_22"><a class="rmLink" href="../page.aspx?73%2feWedQ4wfxSaXtkChfcw%3d%3d" style="background-color:#ECCE32;">愛心與關懷活動</a></li><li class="rmItem rmLast menu_sub_item_style_22"><a class="rmLink" href="../page.aspx?73%2feWedQ4wczDaEwvlbjGw%3d%3d" style="background-color:#ECCE32;">兒童月活動</a></li>
+										</ul>
+									</div></li>
+								</ul>
+							</div></li><li class="rmItem  menu_item_style_6" style="width:84px;"><a class="rmLink rmRootLink" href="../#" style="background-color:#E4B5E1;border-width:0px;height:48px;width:84px;">聯校活動</a><div class="rmSlide">
+								<ul class="rmVertical rmGroup rmLevel1">
+									<li class="rmItem rmFirst menu_item_style_6"><a class="rmLink" href="../page.aspx?73%2feWedQ4we5xcr7ot%2b9CA%3d%3d" style="background-color:#E4B5E1;">2021-2022年度</a></li><li class="rmItem  menu_item_style_6"><a class="rmLink" href="../page.aspx?73%2feWedQ4wfyzgFPZ%2bJmFw%3d%3d" style="background-color:#E4B5E1;">2022-2023年度</a></li><li class="rmItem  menu_item_style_6"><a class="rmLink" href="../page.aspx?73%2feWedQ4wfbGhPqayV6tg%3d%3d" style="background-color:#E4B5E1;">2023-2024年度</a></li><li class="rmItem rmLast menu_item_style_6"><a class="rmLink" href="../page.aspx?73%2feWedQ4wehn7jjcGL2fA%3d%3d" style="background-color:#E4B5E1;">2024-2025年度</a></li>
+								</ul>
+							</div></li><li class="rmItem  menu_item_style_7" style="width:84px;"><a class="rmLink rmRootLink" href="../#" style="background-color:#87C4FA;border-width:0px;height:48px;width:84px;">家長園地</a><div class="rmSlide">
+								<ul class="rmVertical rmGroup rmLevel1">
+									<li class="rmItem rmFirst menu_item_style_7"><a class="rmLink" href="../page.aspx?73%2feWedQ4wduj8jkydsnLQ%3d%3d" style="background-color:#87C4FA;">家教會活動</a></li><li class="rmItem  menu_item_style_7"><a class="rmLink" href="../page.aspx?73%2feWedQ4wcN19XpsFCNNA%3d%3d" style="background-color:#87C4FA;">親職教育</a></li><li class="rmItem  menu_item_style_7"><a class="rmLink" href="../page.aspx?73%2feWedQ4wckUji1BMU9EQ%3d%3d" style="background-color:#87C4FA;">家長心聲</a></li><li class="rmItem rmLast menu_item_style_7"><a class="rmLink" href="../page.aspx?73%2feWedQ4wcGBLYoQTzalg%3d%3d" style="background-color:#87C4FA;">家長教育園地文章</a></li>
+								</ul>
+							</div></li><li class="rmItem  menu_item_style_8" style="width:84px;"><a class="rmLink rmRootLink" href="../#" style="background-color:#EB7B67;border-width:0px;height:48px;width:84px;">家長平台</a><div class="rmSlide">
+								<ul class="rmVertical rmGroup rmLevel1">
+									<li class="rmItem rmFirst menu_item_style_8"><a class="rmLink" href="../page.aspx?73%2feWedQ4wc6KOz2M2SHcA%3d%3d" style="background-color:#EB7B67;">兒童餐單</a></li><li class="rmItem  menu_item_style_8"><a class="rmLink" href="../page.aspx?73%2feWedQ4wfJcqRzH%2b%2b5tw%3d%3d" style="background-color:#EB7B67;">學校行事曆(校曆表)</a></li><li class="rmItem  menu_item_style_8"><a class="rmLink" href="../page.aspx?73%2feWedQ4wesoS%2f0bYNMlg%3d%3d" style="background-color:#EB7B67;">家長通訊</a></li><li class="rmItem rmLast menu_item_style_8"><a class="rmLink" href="../intranet_login.aspx?wdCKo6IXOfQ%3d" style="background-color:#EB7B67;">登入學校內聯網</a></li>
+								</ul>
+							</div></li><li class="rmItem  menu_item_style_9" style="width:84px;"><a class="rmLink rmRootLink" href="../#" style="background-color:#A2B5F9;border-width:0px;height:48px;width:84px;">新生入學</a><div class="rmSlide">
+								<ul class="rmVertical rmGroup rmLevel1">
+									<li class="rmItem rmFirst menu_item_style_9"><a class="rmLink" href="../page.aspx?73%2feWedQ4we%2bmjni1wjzsA%3d%3d" style="background-color:#A2B5F9;">入學申請</a><div class="rmSlide">
+										<ul class="rmVertical rmGroup rmLevel2">
+											<li class="rmItem rmFirst menu_sub_item_style_36"><a class="rmLink" href="../page.aspx?73%2feWedQ4wdJt1aSfe4viA%3d%3d" style="background-color:#8296DC;">申請表下載(中文)</a></li><li class="rmItem rmLast menu_sub_item_style_36"><a class="rmLink" href="../page.aspx?73%2feWedQ4wfJhnHqGia3Yg%3d%3d" style="background-color:#8296DC;">Application Form</a></li>
+										</ul>
+									</div></li><li class="rmItem rmLast menu_item_style_9"><a class="rmLink" href="../page.aspx?73%2feWedQ4weBE5WPNs1cpw%3d%3d" style="background-color:#A2B5F9;">新生適應活動</a></li>
+								</ul>
+							</div></li><li class="rmItem  menu_item_style_10" style="width:84px;"><a class="rmLink rmRootLink" href="../#" style="background-color:#D2A2EC;border-width:0px;height:48px;width:84px;">網站連結</a><div class="rmSlide">
+								<ul class="rmVertical rmGroup rmLevel1">
+									<li class="rmItem rmFirst menu_item_style_10"><a class="rmLink" href="../page.aspx?73%2feWedQ4wf5OZ8PuAfuYQ%3d%3d" style="background-color:#D2A2EC;">友校連結</a></li><li class="rmItem rmLast menu_item_style_10"><a class="rmLink" href="../page.aspx?73%2feWedQ4we3iyL3CyupQA%3d%3d" style="background-color:#D2A2EC;">相關網站</a></li>
+								</ul>
+							</div></li><li class="rmItem rmLast menu_item_style_11" style="width:84px;"><a class="rmLink rmRootLink" href="../page.aspx?73%2feWedQ4wfiXYTn3%2fhlDw%3d%3d" style="background-color:#DF7C94;border-width:0px;height:48px;width:84px;">聯絡我們</a></li>
+						</ul><input id="ctl00_RadMenu1_ClientState" name="ctl00_RadMenu1_ClientState" type="hidden" />
+					</div> 
+                                            </div>                                            
+                                        
+				</div>
+			</div>
+		</div>
+	</div><div>
+		<div class="t-row-wrap">
+			<div class="t-container t-container-fluid">
+				<div class="t-col t-col-12 t-col-xs-12 t-col-sm-12 t-col-md-12">
+					
+                                            <div">
+                                                
+    
+    <div>
+        <div>
+						<div class="content">
+							<div class="t-row-wrap">
+								<div class="t-container t-container-fluid">
+									<div class="t-col t-col-6 t-col-xs-6 t-col-sm-6 t-col-md-6 LeftBanner">
+										
+                                        <div style="max-width: 420px; display: inline">
+                                            <div id="ctl00_ContentPlaceHolder1_dv_cn_school_motto" style="width: 270px; height: 200px; font-size: 24px; padding: 20px 40px 0px 40px; text-align: center; display: inline-block">
+                                                <span class="purple_text">不要強我所難</span><br />
+                                                <span class="purple_text">不要加我重擔</span><br />
+                                                <span class="purple_text">給我適當自由</span><br />
+                                                <span class="purple_text">我要開心旦旦</span><br />
+                                                <span style="color: red;">校訓：<span style="color: red;">忠誠勤樸 敬主愛人</span></span>
+                                            </div>
+                                            
+                                            <div style="position: relative; top: 0px; left: 0px; border: 0px solid; z-index: 1; display: block;">
+                                                <table style="background-image: url('./images/silder_titile_2.png'); background-repeat:no-repeat; min-width: 320px; padding-left: 50px;" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td height="73px" width="331px" valign="middle">
+                                                            <table style="float: left; font-weight: 800; padding-right: 15px;" cellpadding="0" cellspacing="0">
+                                                                <tr>
+                                                                    <td valign="middle" style="text-align: left;">
+                                                                        <span><span id="ctl00_ContentPlaceHolder1_lbl_banner_name" style="color:Transparent;">有趣地學習顏色概念！</span></span>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        
+                                                    </tr>
+                                                    
+                                                </table>
+                                            </div>                                            
+                                        </div>
+                                    
+									</div><div class="t-col t-col-6 t-col-xs-6 t-col-sm-6 t-col-md-6 RightBanner">
+										
+                                        <div style="display: inline-block">
+                                            <div class="RadAjaxPanel" id="ctl00_ContentPlaceHolder1_ctl00_ContentPlaceHolder1_RadAjaxPanel1Panel">
+											<div id="ctl00_ContentPlaceHolder1_RadAjaxPanel1">
+												
+                                                <div id="ctl00_ContentPlaceHolder1_RadImageGallery1" class="RadImageGallery RadImageGallery_Default BannerDisplay" lang="" style="background-color:White;height:293px;">
+													<div id="ctl00_ContentPlaceHolder1_RadImageGallery1_ImageArea" class="rigItemBox" style="height:293px;">
+														<div id="ctl00_ContentPlaceHolder1_RadImageGallery1_ImageArea_ImageWrapper" class="rigActiveImage"><img id="ctl00_ContentPlaceHolder1_RadImageGallery1_ImageArea_Image" src="../upload_banner/banner/img191.jpg?t=20260326183551" alt="Main Image" /><div class="rigToolsWrapper"><div class="rigDotList"><a href="#" class="rigCurrentItem"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a></div></div></div>
+													</div><div id="ctl00_ContentPlaceHolder1_RadImageGallery1_ThumbnailsArea" style="width:100%;height:100px;display:none;">
+														<input id="ctl00_ContentPlaceHolder1_RadImageGallery1_ThumbnailsArea_ctl00_ClientState" name="ctl00_ContentPlaceHolder1_RadImageGallery1_ThumbnailsArea_ctl00_ClientState" type="hidden" /><span id="ctl00_ContentPlaceHolder1_RadImageGallery1_ThumbnailsArea_ctl00" style="display:none;"></span>
+													</div><input id="ctl00_ContentPlaceHolder1_RadImageGallery1_ClientState" name="ctl00_ContentPlaceHolder1_RadImageGallery1_ClientState" type="hidden" />
+												</div>
+                                                
+                                                
+                                                
+                                            
+											</div>
+										</div>
+                                        </div>
+                                    
+									</div>
+								</div>
+							</div><div>
+								<div class="t-row-wrap">
+									<div class="t-container t-container-fluid">
+										<div class="t-col t-col-12 t-col-xs-12 t-col-sm-12 t-col-md-12 PaddingZero">
+											
+                                                <div style="background-color: #E0EC89; border: 0px solid #38761d; width: 100%; margin: 0 auto;">
+                                                    <p style="padding-top: 10px; padding-bottom: 10px; margin-top: 0; margin-bottom: 0;"></p>
+                                                </div>
+                                            
+										</div>
+									</div>
+								</div>
+							</div><div>
+								<div class="t-row-wrap">
+									<div class="t-container t-container-fluid">
+										<div id="ctl00_ContentPlaceHolder1_lc_left_col" class="t-col t-col-6 t-col-xs-12 t-col-sm-12 t-col-md-6 LeftIndex">
+											
+                                                <table width="100%" cellpadding="0" cellspacing="0">
+                                                    <tr class="background_color" style="height: 45px;">
+                                                        <td>
+                                                            <span id="ctl00_ContentPlaceHolder1_lbl_philosophy_title" class="index_header_title">教育理念及校訓</span>
+                                                        </td>       
+                                                    </tr>
+                                                    <tr style="height: 264px;">
+                                                        <td class="auto-style1" style="background-color: #E3ECBE;">
+                                                            <div>
+                                                                <span id="ctl00_ContentPlaceHolder1_lbl_philosophy" class="lbl_philosophy"><p><span style="font-size: 20px;"><span style="text-align: justify; font-size: 20px;"><strong>本校的課程以兒童為本，<br />
+</strong></span><strong><span style="text-align: justify;">培育兒童</span><span style="text-align: justify; color: #ff0000;">德</span><span style="text-align: justify;">、</span><span style="text-align: justify; color: #e36c09;">智</span><span style="text-align: justify;">、</span><span style="text-align: justify; color: #76923c;">體</span><span style="text-align: justify;">、</span><span style="text-align: justify; color: #00b0f0;">群</span><span style="text-align: justify;">、</span><span style="text-align: justify; color: #0070c0;">美</span><span style="text-align: justify;">、</span><span style="text-align: justify; color: #7030a0;">靈<br />
+</span><span style="text-align: justify;">六育均衡發展。</span></strong></span></p>
+<p><span style="font-size: 20px;"><strong>
+<span style="text-align: justify;">除主題教學法外，並融入兒童設計活動，<br />
+啟動幼兒創意思考及培育多元智能的發展。<br />
+</span>
+<br />
+<span style="text-align: justify;">校訓：我們要彼此相愛</span></strong></span></p></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>                                           
+                                            
+										</div><div id="ctl00_ContentPlaceHolder1_lc_right_col" class="t-col t-col-6 t-col-xs-12 t-col-sm-12 t-col-md-6 RightIndex">
+											
+                                                <table width="100%" cellpadding="0" cellspacing="0">
+                                                    <tr class="background_color" style="height: 45px;">                                                        
+                                                        <td>
+                                                            <span id="ctl00_ContentPlaceHolder1_lbl_news_title" class="index_header_title">News</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="height: 264px;">                                                        
+                                                        <td valign="top" style="background-color: #f1f9e4;">
+                                                            <div>
+                                                                <ul>
+                                                                    
+                                                                    
+                                                                            
+                                                                            <li>
+                                                                                <a id="ctl00_ContentPlaceHolder1_lv_news_ctrl0_news_link" class="news_link" href="../news_detail.aspx?e1h03eDk9bqm3iA%2bXbDWi3%2fRYdWGv9An">2025/26新學年</a>
+                                                                            </li>
+                                                                        
+                                                                            <li>
+                                                                                <a id="ctl00_ContentPlaceHolder1_lv_news_ctrl1_news_link" class="news_link" href="../news_detail.aspx?e1h03eDk9bqm3iA%2bXbDWi%2floxFNdzPuV">幼稚園幼兒班（K1）收生安排 - 教育局</a>
+                                                                            </li>
+                                                                        
+                                                                            <li>
+                                                                                <a id="ctl00_ContentPlaceHolder1_lv_news_ctrl2_news_link" class="news_link" href="../news_detail.aspx?e1h03eDk9bqqmqvZy2GhTPtfm%2fupXXl2">招收2025/2026學年各班插班生</a>
+                                                                            </li>
+                                                                        
+                                                                            <li>
+                                                                                <a id="ctl00_ContentPlaceHolder1_lv_news_ctrl3_news_link" class="news_link" href="../news_detail.aspx?e1h03eDk9bqm3iA%2bXbDWi5gbM952oUho">學校概覽2025/26學年</a>
+                                                                            </li>
+                                                                        
+                                                                            <li>
+                                                                                <a id="ctl00_ContentPlaceHolder1_lv_news_ctrl4_news_link" class="news_link" href="../news_detail.aspx?e1h03eDk9bqm3iA%2bXbDWi8s%2bmDmHTS%2by">扶幼服務介紹短片</a>
+                                                                            </li>
+                                                                        
+                                                                        <input id="ctl00_ContentPlaceHolder1_lv_news_ClientState" name="ctl00_ContentPlaceHolder1_lv_news_ClientState" type="hidden" /><span id="ctl00_ContentPlaceHolder1_lv_news" style="display:none;"></span>
+                                                                </ul>
+                                                                <div style="float: right;" class="padding_style_20">
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>                                           
+                                            
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+    </div>
+
+    <div style="background-color: white;">  
+        <div id="ctl00_ContentPlaceHolder1_popup_window" class="PopWindow" style="display:none;">
+						<div id="ctl00_ContentPlaceHolder1_popup_window_C" style="display:none;">
+							
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            
+                            <div id="ctl00_ContentPlaceHolder1_popup_window_C_dv_display" class="content_page">
+                                <span id="ctl00_ContentPlaceHolder1_popup_window_C_lbl_content"></span>
+                            </div>  
+                        </td>
+                    </tr>
+                </table>
+            
+						</div><input id="ctl00_ContentPlaceHolder1_popup_window_ClientState" name="ctl00_ContentPlaceHolder1_popup_window_ClientState" type="hidden" />
+					</div>      
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="width: 384px ! important;">
+                    
+                </td>
+                <td rowspan="2" valign="top">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    
+                </td>
+            </tr>
+        </table>
+    </div>    
+
+                                            </div>                                            
+                                        
+				</div>
+			</div>
+		</div>
+	</div><div class="footer">
+		<div class="t-row-wrap">
+			<div class="t-container t-container-fluid">
+				<div class="t-col t-col-12 t-col-xs-12 t-col-sm-12 t-col-md-12">
+					
+                                            <div>
+                                                <img alt="" src="./images/grass.png" style="max-width: 100%;" />
+                                            </div>
+                                            <div class="footer_text_style footer_padding_style_left background_color" style="padding-top: 10px; padding-bottom: 10px;">
+                                                <span>
+                                                    <span id="ctl00_lbl_footer_name">明愛啟幼幼兒學校</span>&nbsp;&nbsp;
+                                                    <span id="ctl00_lbl_phone_title">電話：</span><span id="ctl00_lbl_phone">23822660</span>&nbsp;&nbsp;
+                                                    <span id="ctl00_lbl_fax_title">傳真：</span><span id="ctl00_lbl_fax">23827590</span>&nbsp;&nbsp;
+                                                    <span id="ctl00_lbl_email_title">電郵：</span><a id="ctl00_lbl_email" href="/cdn-cgi/l/email-protection#3053535b4970535142594451434347431e5f42571e585b"><span class="__cf_email__" data-cfemail="422121293b022123302b3623313135316c2d30256c2a29">[email&#160;protected]</span></a>
+                                                </span>
+                                            </div>
+                                        
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        </div>
+        
+        
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-7873820-15"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-7873820-15');
+</script>
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl00_RadScriptManager1_TSM');Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_renderMode":2,"_skin":"Default","clientStateFieldID":"ctl00_RadMenu1_ClientState","collapseAnimation":"{\"duration\":450}","enableOverlay":false,"expandAnimation":"{\"duration\":450}","itemData":[{"attributes":{"item_color":"#54BCBF"},"value":"1","navigateUrl":"http://cc.caritas.org.hk/index.html","target":"_blank","cssClass":"menu_item_style_1"},{"attributes":{"item_color":"#F7BF8C"},"value":"2","navigateUrl":"~/index.aspx?","cssClass":"menu_item_style_2"},{"attributes":{"item_color":"#F7ABB9"},"value":"3","navigateUrl":"~/news.aspx?BavdqGEpW8k%3d","cssClass":"menu_item_style_3"},{"attributes":{"item_color":"#9AD5C3"},"items":[{"attributes":{"item_color":"#9AD5C3"},"value":"12","navigateUrl":"~/page.aspx?73%2feWedQ4wfJPs1ntz3q8w%3d%3d","cssClass":"menu_item_style_4"},{"attributes":{"item_color":"#9AD5C3"},"value":"13","navigateUrl":"~/page.aspx?73%2feWedQ4wcPGvJq3w7UQQ%3d%3d","cssClass":"menu_item_style_4"},{"attributes":{"item_color":"#9AD5C3"},"value":"14","navigateUrl":"~/page.aspx?73%2feWedQ4wchfBeXs90gGg%3d%3d","cssClass":"menu_item_style_4"},{"attributes":{"item_color":"#9AD5C3"},"value":"15","navigateUrl":"~/page.aspx?73%2feWedQ4wcOH5%2byoCy0YQ%3d%3d","cssClass":"menu_item_style_4"},{"attributes":{"item_color":"#9AD5C3"},"value":"16","navigateUrl":"~/page.aspx?73%2feWedQ4wcRadD6YpqM%2fg%3d%3d","cssClass":"menu_item_style_4"},{"attributes":{"item_color":"#9AD5C3"},"value":"59","navigateUrl":"~/page.aspx?73%2feWedQ4wfoNwYxiA%2fUZA%3d%3d","cssClass":"menu_item_style_4"},{"attributes":{"item_color":"#9AD5C3"},"value":"17","navigateUrl":"~/page.aspx?73%2feWedQ4weZdzqNcPgNiA%3d%3d","cssClass":"menu_item_style_4"},{"attributes":{"item_color":"#9AD5C3"},"value":"18","navigateUrl":"~/page.aspx?73%2feWedQ4wfJD7KF5PWjmg%3d%3d","cssClass":"menu_item_style_4"},{"attributes":{"item_color":"#9AD5C3"},"value":"19","navigateUrl":"~/page.aspx?73%2feWedQ4weOQm2tvnysKw%3d%3d","cssClass":"menu_item_style_4"}],"value":"4","navigateUrl":"#","cssClass":"menu_item_style_4"},{"attributes":{"item_color":"#FFE471"},"items":[{"attributes":{"item_color":"#FFE471"},"value":"20","navigateUrl":"~/page.aspx?73%2feWedQ4wdNPVQJ4Y3ICw%3d%3d","cssClass":"menu_item_style_5"},{"attributes":{"item_color":"#FFE471"},"items":[{"attributes":{"item_color":"#ECCE32"},"value":"40","navigateUrl":"~/page.aspx?73%2feWedQ4weVU4%2b6KIf7uQ%3d%3d","cssClass":"menu_sub_item_style_21"},{"attributes":{"item_color":"#ECCE32"},"value":"41","navigateUrl":"~/page.aspx?73%2feWedQ4wcFu833KE31tA%3d%3d","cssClass":"menu_sub_item_style_21"},{"attributes":{"item_color":"#ECCE32"},"value":"42","navigateUrl":"~/page.aspx?73%2feWedQ4weDqDorkx2NNg%3d%3d","cssClass":"menu_sub_item_style_21"},{"attributes":{"item_color":"#ECCE32"},"value":"43","navigateUrl":"~/page.aspx?73%2feWedQ4wcP1HnllE4OVg%3d%3d","cssClass":"menu_sub_item_style_21"},{"attributes":{"item_color":"#ECCE32"},"value":"44","navigateUrl":"~/page.aspx?73%2feWedQ4we4fvbz6hsyTw%3d%3d","cssClass":"menu_sub_item_style_21"},{"attributes":{"item_color":"#ECCE32"},"value":"45","navigateUrl":"~/page.aspx?73%2feWedQ4wcw7CUsdi%2b4Qg%3d%3d","cssClass":"menu_sub_item_style_21"},{"attributes":{"item_color":"#ECCE32"},"items":[{"attributes":{"item_color":"#ECCE32"},"value":"74","navigateUrl":"~/page.aspx?73%2feWedQ4wdNp6%2fi%2b48D5A%3d%3d","cssClass":"menu_sub_item_style_66"},{"attributes":{"item_color":"#ECCE32"},"value":"73","navigateUrl":"~/page.aspx?73%2feWedQ4wenFgKJk%2bC8Og%3d%3d","cssClass":"menu_sub_item_style_66"},{"attributes":{"item_color":"#ECCE32"},"value":"76","navigateUrl":"~/page.aspx?73%2feWedQ4wdeVMSWj%2bb2JA%3d%3d","cssClass":"menu_sub_item_style_66"}],"value":"66","navigateUrl":"~/page.aspx?73%2feWedQ4wd3gq1LkCGrUg%3d%3d","cssClass":"menu_sub_item_style_21"},{"attributes":{"item_color":"#ECCE32"},"value":"67","navigateUrl":"~/page.aspx?73%2feWedQ4wcswNFzBKnptw%3d%3d","cssClass":"menu_sub_item_style_21"}],"value":"21","navigateUrl":"~/page.aspx?73%2feWedQ4wcDoQwGYSi1cA%3d%3d","cssClass":"menu_item_style_5"},{"attributes":{"item_color":"#FFE471"},"items":[{"attributes":{"item_color":"#ECCE32"},"value":"46","navigateUrl":"~/page.aspx?73%2feWedQ4wfrD8uTdsrZDw%3d%3d","cssClass":"menu_sub_item_style_22"},{"attributes":{"item_color":"#ECCE32"},"value":"47","navigateUrl":"~/page.aspx?73%2feWedQ4wdfdD8xpz850A%3d%3d","cssClass":"menu_sub_item_style_22"},{"attributes":{"item_color":"#ECCE32"},"value":"60","navigateUrl":"~/page.aspx?73%2feWedQ4wfxSaXtkChfcw%3d%3d","cssClass":"menu_sub_item_style_22"},{"attributes":{"item_color":"#ECCE32"},"value":"61","navigateUrl":"~/page.aspx?73%2feWedQ4wczDaEwvlbjGw%3d%3d","cssClass":"menu_sub_item_style_22"}],"value":"22","navigateUrl":"~/page.aspx?73%2feWedQ4wcRmkUuJITqqA%3d%3d","cssClass":"menu_item_style_5"}],"value":"5","navigateUrl":"#","cssClass":"menu_item_style_5"},{"attributes":{"item_color":"#E4B5E1"},"items":[{"attributes":{"item_color":"#E4B5E1"},"value":"70","navigateUrl":"~/page.aspx?73%2feWedQ4we5xcr7ot%2b9CA%3d%3d","cssClass":"menu_item_style_6"},{"attributes":{"item_color":"#E4B5E1"},"value":"71","navigateUrl":"~/page.aspx?73%2feWedQ4wfyzgFPZ%2bJmFw%3d%3d","cssClass":"menu_item_style_6"},{"attributes":{"item_color":"#E4B5E1"},"value":"72","navigateUrl":"~/page.aspx?73%2feWedQ4wfbGhPqayV6tg%3d%3d","cssClass":"menu_item_style_6"},{"attributes":{"item_color":"#E4B5E1"},"value":"77","navigateUrl":"~/page.aspx?73%2feWedQ4wehn7jjcGL2fA%3d%3d","cssClass":"menu_item_style_6"}],"value":"6","navigateUrl":"#","cssClass":"menu_item_style_6"},{"attributes":{"item_color":"#87C4FA"},"items":[{"attributes":{"item_color":"#87C4FA"},"value":"29","navigateUrl":"~/page.aspx?73%2feWedQ4wduj8jkydsnLQ%3d%3d","cssClass":"menu_item_style_7"},{"attributes":{"item_color":"#87C4FA"},"value":"28","navigateUrl":"~/page.aspx?73%2feWedQ4wcN19XpsFCNNA%3d%3d","cssClass":"menu_item_style_7"},{"attributes":{"item_color":"#87C4FA"},"value":"30","navigateUrl":"~/page.aspx?73%2feWedQ4wckUji1BMU9EQ%3d%3d","cssClass":"menu_item_style_7"},{"attributes":{"item_color":"#87C4FA"},"value":"75","navigateUrl":"~/page.aspx?73%2feWedQ4wcGBLYoQTzalg%3d%3d","cssClass":"menu_item_style_7"}],"value":"7","navigateUrl":"#","cssClass":"menu_item_style_7"},{"attributes":{"item_color":"#EB7B67"},"items":[{"attributes":{"item_color":"#EB7B67"},"value":"32","navigateUrl":"~/page.aspx?73%2feWedQ4wc6KOz2M2SHcA%3d%3d","cssClass":"menu_item_style_8"},{"attributes":{"item_color":"#EB7B67"},"value":"31","navigateUrl":"~/page.aspx?73%2feWedQ4wfJcqRzH%2b%2b5tw%3d%3d","cssClass":"menu_item_style_8"},{"attributes":{"item_color":"#EB7B67"},"value":"33","navigateUrl":"~/page.aspx?73%2feWedQ4wesoS%2f0bYNMlg%3d%3d","cssClass":"menu_item_style_8"},{"attributes":{"item_color":"#EB7B67"},"value":"63","navigateUrl":"~/intranet_login.aspx?wdCKo6IXOfQ%3d","cssClass":"menu_item_style_8"}],"value":"8","navigateUrl":"#","cssClass":"menu_item_style_8"},{"attributes":{"item_color":"#A2B5F9"},"items":[{"attributes":{"item_color":"#A2B5F9"},"items":[{"attributes":{"item_color":"#8296DC"},"value":"54","navigateUrl":"~/page.aspx?73%2feWedQ4wdJt1aSfe4viA%3d%3d","cssClass":"menu_sub_item_style_36"},{"attributes":{"item_color":"#8296DC"},"value":"55","navigateUrl":"~/page.aspx?73%2feWedQ4wfJhnHqGia3Yg%3d%3d","cssClass":"menu_sub_item_style_36"}],"value":"36","navigateUrl":"~/page.aspx?73%2feWedQ4we%2bmjni1wjzsA%3d%3d","cssClass":"menu_item_style_9"},{"attributes":{"item_color":"#A2B5F9"},"value":"37","navigateUrl":"~/page.aspx?73%2feWedQ4weBE5WPNs1cpw%3d%3d","cssClass":"menu_item_style_9"}],"value":"9","navigateUrl":"#","cssClass":"menu_item_style_9"},{"attributes":{"item_color":"#D2A2EC"},"items":[{"attributes":{"item_color":"#D2A2EC"},"value":"38","navigateUrl":"~/page.aspx?73%2feWedQ4wf5OZ8PuAfuYQ%3d%3d","cssClass":"menu_item_style_10"},{"attributes":{"item_color":"#D2A2EC"},"value":"39","navigateUrl":"~/page.aspx?73%2feWedQ4we3iyL3CyupQA%3d%3d","cssClass":"menu_item_style_10"}],"value":"10","navigateUrl":"#","cssClass":"menu_item_style_10"},{"attributes":{"item_color":"#DF7C94"},"value":"11","navigateUrl":"~/page.aspx?73%2feWedQ4wfiXYTn3%2fhlDw%3d%3d","cssClass":"menu_item_style_11"}]}, {"itemClicking":OnClientItemClicking,"itemClosed":ExpandClosedItem,"itemOpened":ExpandOpenedItem}, null, $get("ctl00_RadMenu1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$ContentPlaceHolder1$RadImageGallery1$ThumbnailsArea$ctl00","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_ContentPlaceHolder1_RadImageGallery1_ThumbnailsArea_ctl00_itemPlaceholder","DataService":{}}},"_virtualItemCount":20,"clientStateFieldID":"ctl00_ContentPlaceHolder1_RadImageGallery1_ThumbnailsArea_ctl00_ClientState","renderMode":1}, null, null, $get("ctl00_ContentPlaceHolder1_RadImageGallery1_ThumbnailsArea_ctl00"));
+});
+
+var callBackFrameUrl='/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdfPbkUCuKNULuDG2Mx2aCm84Pog9T51bKetOiamaoO72KLZAwQ5A2J72zRnKyDAtNg2&t=638628495619783110';
+WebForm_InitCallback();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadImageGallery, {"_animationSettings":{"slideDuration":10000,"nextImagesAnimation":{"type":"Fade","speed":1500,"easing":"easeIn"},"prevImagesAnimation":{"type":"Fade","speed":1500,"easing":"easeIn"}},"_imageAreaSettings":{"width":0,"height":600},"_itemsData":[{"title":"有趣地學習顏色概念！","thumbnailUrl":"../upload_banner/thumbnails/img191.jpg","imageUrl":"../upload_banner/banner/img191.jpg?t=20260326183551"},{"title":"最喜歡到啟幼超市購物！","thumbnailUrl":"../upload_banner/thumbnails/img192.jpg","imageUrl":"../upload_banner/banner/img192.jpg?t=20260326183551"},{"title":"體能活動真好玩！","thumbnailUrl":"../upload_banner/thumbnails/img193.jpg","imageUrl":"../upload_banner/banner/img193.jpg?t=20260326183551"},{"title":"滑梯刺激又好玩！","thumbnailUrl":"../upload_banner/thumbnails/img195.jpg","imageUrl":"../upload_banner/banner/img195.jpg?t=20260326183551"},{"title":"家長也積極參與家長會。","thumbnailUrl":"../upload_banner/thumbnails/img197.jpg","imageUrl":"../upload_banner/banner/img197.jpg?t=20260326183551"},{"title":"一起製作小食!J FOR JELLY~","thumbnailUrl":"../upload_banner/thumbnails/img199.jpg","imageUrl":"../upload_banner/banner/img199.jpg?t=20260326183551"},{"title":"為學校花圃製作標示。","thumbnailUrl":"../upload_banner/thumbnails/img200.jpg","imageUrl":"../upload_banner/banner/img200.jpg?t=20260326183551"},{"title":"我會做個愛德的好孩子~","thumbnailUrl":"../upload_banner/thumbnails/img202.jpg","imageUrl":"../upload_banner/banner/img202.jpg?t=20260326183551"},{"title":"一起向天父承諾！","thumbnailUrl":"../upload_banner/thumbnails/img203.jpg","imageUrl":"../upload_banner/banner/img203.jpg?t=20260326183551"},{"title":"為啟幼花圃淋水~","thumbnailUrl":"../upload_banner/thumbnails/img204.jpg","imageUrl":"../upload_banner/banner/img204.jpg?t=20260326183551"},{"title":"G FOR Giraffe!","thumbnailUrl":"../upload_banner/thumbnails/img212.jpg","imageUrl":"../upload_banner/banner/img212.jpg?t=20260326183551"},{"title":"試吃秋天的水果。","thumbnailUrl":"../upload_banner/thumbnails/img213.jpg","imageUrl":"../upload_banner/banner/img213.jpg?t=20260326183551"},{"title":"以行動答謝幫助自己的人。","thumbnailUrl":"../upload_banner/thumbnails/img214.jpg","imageUrl":"../upload_banner/banner/img214.jpg?t=20260326183551"},{"title":"一起找找秋天的色彩！","thumbnailUrl":"../upload_banner/thumbnails/img207.jpeg","imageUrl":"../upload_banner/banner/img207.jpeg?t=20260326183551"},{"title":"充滿趣味性的英文活動！","thumbnailUrl":"../upload_banner/thumbnails/img208.jpg","imageUrl":"../upload_banner/banner/img208.jpg?t=20260326183551"},{"title":"到陽光笑容小樂園參觀！","thumbnailUrl":"../upload_banner/thumbnails/img215.jpg","imageUrl":"../upload_banner/banner/img215.jpg?t=20260326183551"},{"title":"把漂亮的小花送給好友。","thumbnailUrl":"../upload_banner/thumbnails/img216.jpg","imageUrl":"../upload_banner/banner/img216.jpg?t=20260326183551"},{"title":"扮演傷健人仕作體驗。","thumbnailUrl":"../upload_banner/thumbnails/img217.jpg","imageUrl":"../upload_banner/banner/img217.jpg?t=20260326183551"},{"title":"你不方便，我幫你穿鞋子吧!","thumbnailUrl":"../upload_banner/thumbnails/img210.jpeg","imageUrl":"../upload_banner/banner/img210.jpeg?t=20260326183551"},{"title":"郊野公園講座真有趣!","thumbnailUrl":"../upload_banner/thumbnails/img211.jpg","imageUrl":"../upload_banner/banner/img211.jpg?t=20260326183551"}],"_loopItems":true,"_thumbnailsSettings":{"width":"100%","height":"100px","thumbnailWidth":"100px","thumbnailHeight":"100px","mode":2},"_toolbarSettings":{},"_uniqueID":"ctl00$ContentPlaceHolder1$RadImageGallery1","clientStateFieldID":"ctl00_ContentPlaceHolder1_RadImageGallery1_ClientState","renderMode":2}, {"imageLoaded":imageLoaded}, null, $get("ctl00_ContentPlaceHolder1_RadImageGallery1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxPanel, {"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"enableAJAX":true,"enableHistory":false,"links":[],"loadingPanelID":"","styles":[],"uniqueID":"ctl00$ContentPlaceHolder1$RadAjaxPanel1"}, null, null, $get("ctl00_ContentPlaceHolder1_RadAjaxPanel1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$ContentPlaceHolder1$lv_news","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_ContentPlaceHolder1_lv_news_NewsContainer","DataService":{}}},"_virtualItemCount":5,"clientStateFieldID":"ctl00_ContentPlaceHolder1_lv_news_ClientState","renderMode":1}, null, null, $get("ctl00_ContentPlaceHolder1_lv_news"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"_dockMode":true,"behaviors":4,"clientStateFieldID":"ctl00_ContentPlaceHolder1_popup_window_ClientState","destroyOnClose":true,"formID":"aspnetForm","iconUrl":"","minimizeIconUrl":"","modal":true,"name":"popup_window","overlay":true,"restrictionZoneID":"trContent","showContentDuringLoad":false,"skin":"Default","visibleStatusbar":false}, {"show":OnClientShow}, null, $get("ctl00_ContentPlaceHolder1_popup_window"));
+});
+//]]>
+</script>
+</form>
+    <script type="text/javascript">
+        var t = $telerik.$;
+
+        function pageLoad() {
+            if (typeof play_slide_show != 'undefined' && t.isFunction(play_slide_show) && t('#ctl00_txt_hidden_banner_show_type').val() == 1) {
+                play_slide_show();
+            }
+        }        
+    </script>    
+</body>
+</html>
