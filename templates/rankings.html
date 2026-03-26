@@ -27,7 +27,37 @@
     margin-bottom: 32px;
 }
 
-/* ===== Ranking Tabs ===== */
+/* Stats Row */
+.stats {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 32px;
+}
+
+/* Ranking Tabs - Match Homepage Filters Style */
+.filters {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.filter-group select {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-group select:hover {
+    border-color: var(--gold);
+}
+
 .ranking-tabs {
     display: flex;
     gap: 12px;
@@ -37,14 +67,14 @@
 }
 
 .ranking-tab {
-    padding: 12px 24px;
+    padding: 10px 20px;
     border-radius: 50px;
     border: 2px solid var(--border);
     background: var(--background);
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     white-space: nowrap;
     display: flex;
     align-items: center;
@@ -70,78 +100,7 @@
     background: rgba(255,255,255,0.2);
 }
 
-/* ===== Stats Row ===== */
-.ranking-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 16px;
-    margin-bottom: 32px;
-}
-
-.stat-card {
-    background: var(--background);
-    border-radius: 16px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    border: 1px solid rgba(0,0,0,0.04);
-}
-
-.stat-card .stat-value {
-    font-size: 2rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.stat-card .stat-label {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin-top: 4px;
-}
-
-/* ===== Ranking Legend ===== */
-.ranking-legend {
-    background: var(--surface);
-    border-radius: 16px;
-    padding: 20px 24px;
-    margin-bottom: 32px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    flex-wrap: wrap;
-}
-
-.ranking-legend h3 {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--text);
-    margin: 0;
-}
-
-.legend-items {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-.legend-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-}
-
-.legend-color {
-    width: 14px;
-    height: 14px;
-    border-radius: 4px;
-}
-
-/* ===== Ranking Cards - Match Homepage School Cards ===== */
+/* Ranking Cards - Match Homepage School Cards */
 .rankings-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -149,7 +108,7 @@
     padding: 24px 0 80px;
 }
 
-.ranking-card {
+.school-card {
     background: var(--background);
     border-radius: 20px;
     overflow: hidden;
@@ -162,12 +121,12 @@
     position: relative;
 }
 
-.ranking-card:hover {
+.school-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.04);
 }
 
-.ranking-card .card-image {
+.school-card .badge-container {
     height: 160px;
     overflow: hidden;
     position: relative;
@@ -177,18 +136,18 @@
     justify-content: center;
 }
 
-.ranking-card .card-image img {
+.school-card .badge-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.6s ease;
 }
 
-.ranking-card:hover .card-image img {
+.school-card:hover .badge-container img {
     transform: scale(1.08);
 }
 
-.ranking-card .rank-badge {
+.school-card .rank-badge {
     position: absolute;
     top: 16px;
     left: 16px;
@@ -224,36 +183,32 @@
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
 }
 
-.ranking-card .card-content {
+.school-card .school-info {
     padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.ranking-card .school-name {
+.school-card h3 {
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--text);
     margin-bottom: 4px;
     line-height: 1.3;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 
-.ranking-card .school-name-cn {
+.school-card .school-name-cn {
     font-size: 0.9rem;
     color: var(--text-secondary);
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
-.ranking-card .ranking-tags {
+.school-card .ranking-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .rank-tag {
@@ -269,37 +224,22 @@
 .rank-tag.arwu { background: rgba(236, 72, 153, 0.1); color: #db2777; }
 .rank-tag.cwur { background: rgba(245, 158, 11, 0.1); color: #d97706; }
 
-.ranking-card .card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
-    padding-top: 12px;
-    border-top: 1px solid var(--border);
-}
-
-.ranking-card .country-badge {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+.school-card .location {
     font-size: 0.85rem;
     color: var(--text-secondary);
+    margin-top: auto;
 }
 
-.ranking-card .view-btn {
-    padding: 8px 16px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.85rem;
+.school-card .level-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
     font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.ranking-card .view-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
+    background: rgba(30, 58, 95, 0.1);
+    color: var(--primary);
+    margin-top: 8px;
+    width: fit-content;
 }
 
 /* ===== Empty State ===== */
@@ -322,7 +262,6 @@
     .ranking-tabs { justify-content: flex-start; overflow-x: auto; }
     .ranking-tab { padding: 10px 16px; font-size: 0.85rem; }
     .rankings-grid { grid-template-columns: 1fr; }
-    .ranking-legend { flex-direction: column; align-items: flex-start; gap: 12px; }
 }
 </style>
 {% endblock %}
@@ -334,25 +273,8 @@
 </section>
 
 <div class="container">
-    <!-- Stats Row -->
-    <div class="ranking-stats">
-        <div class="stat-card">
-            <div class="stat-value">{{ total_schools }}</div>
-            <div class="stat-label">{{ _('total_schools') }}</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-value">{{ schools_with_rank }}</div>
-            <div class="stat-label">{{ _('schools_with_rankings') }}</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-value">{{ rankings_config|length }}</div>
-            <div class="stat-label">{{ _('ranking_systems') }}</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-value">{{ top_schools|length }}</div>
-            <div class="stat-label">{{ _('top_200_schools') }}</div>
-        </div>
-    </div>
+    <!-- Stats -->
+    <p class="stats">{{ top_schools|length }} {{ _('top_200_schools') }} · {{ schools_with_rank }} {{ _('schools_with_rankings') }} · 5 {{ _('ranking_systems') }}</p>
 
     <!-- Ranking Tabs -->
     <div class="ranking-tabs">
@@ -370,48 +292,25 @@
         {% endfor %}
     </div>
 
-    <!-- Ranking Legend -->
-    <div class="ranking-legend">
-        <h3>{{ _('ranking_color_legend') }}:</h3>
-        <div class="legend-items">
-            <div class="legend-item">
-                <div class="legend-color" style="background: linear-gradient(135deg, #ffd700, #ffb800);"></div>
-                <span>{{ _('top_10') }}</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: linear-gradient(135deg, #c0c0c0, #a8a8a8);"></div>
-                <span>{{ _('top_50') }}</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: linear-gradient(135deg, #cd7f32, #b87333);"></div>
-                <span>{{ _('top_100') }}</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: linear-gradient(135deg, var(--primary), var(--primary-dark));"></div>
-                <span>{{ _('top_200') }}</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Schools Grid -->
+    <!-- Schools Grid - Match Homepage Structure -->
     {% if top_schools %}
     <div class="rankings-grid" id="rankingGrid">
         {% for school in top_schools %}
-        <a href="{{ url_for('school_detail', school_id=school.id) }}" class="ranking-card" data-rankings="{% for r in school.rankings %}{{ r.id }}{% if not loop.last %},{% endif %}{% endfor %}">
-            <div class="card-image">
+        <a href="{{ url_for('school_detail', school_id=school.id) }}" class="school-card" data-rankings="{% for r in school.rankings %}{{ r.id }}{% if not loop.last %},{% endif %}{% endfor %}">
+            <div class="badge-container">
                 {% if school.badge_url %}
-                    <img src="{{ school.badge_url }}" alt="{{ school.name }}">
+                    <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="badge-image">
                 {% elif school.campus_image %}
-                    <img src="{{ school.campus_image }}" alt="{{ school.name }}">
+                    <img src="{{ school.campus_image }}" alt="{{ school.name }} campus" class="badge-image campus-fallback">
                 {% else %}
-                    <div style="font-size: 3.5rem; opacity: 0.3;">🎓</div>
+                    <div class="badge-placeholder">🎓</div>
                 {% endif %}
                 <div class="rank-badge {{ school.rank_class }}">
                     #{{ school.display_rank }}
                 </div>
             </div>
-            <div class="card-content">
-                <h3 class="school-name">{{ school.name }}</h3>
+            <div class="school-info">
+                <h3>{{ school.name }}</h3>
                 {% if school.name_cn %}
                 <p class="school-name-cn">{{ school.name_cn }}</p>
                 {% endif %}
@@ -422,12 +321,8 @@
                     {% endfor %}
                 </div>
                 
-                <div class="card-footer">
-                    <div class="country-badge">
-                        🏳️ {{ school.country }}
-                    </div>
-                    <span class="view-btn">{{ _('view_details') }} →</span>
-                </div>
+                <p class="location">{{ school.country }}</p>
+                <span class="level-badge">🏆 Top {{ school.display_rank }}</span>
             </div>
         </a>
         {% endfor %}
@@ -448,7 +343,7 @@ document.querySelectorAll('.ranking-tab').forEach(tab => {
         this.classList.add('active');
         
         const ranking = this.dataset.ranking;
-        const cards = document.querySelectorAll('.ranking-card');
+        const cards = document.querySelectorAll('.school-card');
         
         cards.forEach(card => {
             if (ranking === 'all') {
