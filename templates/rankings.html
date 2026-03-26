@@ -4,60 +4,7 @@
 
 {% block extra_css %}
 <style>
-/* ===== Rankings Hero - Match Homepage Style ===== */
-.hero {
-    text-align: center;
-    padding: 60px 0 40px;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin-bottom: 12px;
-    background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.hero p {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    margin-bottom: 32px;
-}
-
-/* Stats Row */
-.stats {
-    text-align: center;
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    margin-bottom: 32px;
-}
-
-/* Ranking Tabs - Match Homepage Filters Style */
-.filters {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    margin-bottom: 32px;
-    flex-wrap: wrap;
-}
-
-.filter-group select {
-    padding: 10px 16px;
-    font-size: 0.9rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--background);
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.filter-group select:hover {
-    border-color: var(--gold);
-}
-
+/* Rankings-specific overrides - minimal, just for ranking tabs */
 .ranking-tabs {
     display: flex;
     gap: 12px;
@@ -94,60 +41,14 @@
 }
 
 .ranking-tab .tab-year {
-    font-size: 0.75rem;
-    padding: 2px 8px;
+    font-size: 0.7rem;
+    padding: 2px 6px;
     border-radius: 20px;
     background: rgba(255,255,255,0.2);
 }
 
-/* Ranking Cards - Match Homepage School Cards */
-.rankings-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 32px;
-    padding: 24px 0 80px;
-}
-
-.school-card {
-    background: var(--background);
-    border-radius: 20px;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.02);
-    transition: all 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.school-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.04);
-}
-
-.school-card .badge-container {
-    height: 160px;
-    overflow: hidden;
-    position: relative;
-    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.school-card .badge-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-
-.school-card:hover .badge-container img {
-    transform: scale(1.08);
-}
-
-.school-card .rank-badge {
+/* Ranking badge on cards - keep existing badge-container structure */
+.rank-badge {
     position: absolute;
     top: 16px;
     left: 16px;
@@ -183,28 +84,8 @@
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
 }
 
-.school-card .school-info {
-    padding: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.school-card h3 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 4px;
-    line-height: 1.3;
-}
-
-.school-card .school-name-cn {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    margin-bottom: 8px;
-}
-
-.school-card .ranking-tags {
+/* Ranking tags */
+.ranking-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
@@ -224,84 +105,68 @@
 .rank-tag.arwu { background: rgba(236, 72, 153, 0.1); color: #db2777; }
 .rank-tag.cwur { background: rgba(245, 158, 11, 0.1); color: #d97706; }
 
-.school-card .location {
-    font-size: 0.85rem;
+.school-name-cn {
+    font-size: 0.9rem;
     color: var(--text-secondary);
-    margin-top: auto;
+    margin-bottom: 8px;
 }
 
-.school-card .level-badge {
-    display: inline-block;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    background: rgba(30, 58, 95, 0.1);
-    color: var(--primary);
-    margin-top: 8px;
-    width: fit-content;
-}
-
-/* ===== Empty State ===== */
-.empty-rankings {
-    text-align: center;
-    padding: 80px 20px;
-    color: var(--text-secondary);
-}
-
-.empty-rankings h3 {
-    font-size: 1.5rem;
-    color: var(--text);
-    margin-bottom: 12px;
-}
-
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 768px) {
-    .hero h1 { font-size: 2rem; }
-    .hero p { font-size: 1rem; }
     .ranking-tabs { justify-content: flex-start; overflow-x: auto; }
     .ranking-tab { padding: 10px 16px; font-size: 0.85rem; }
-    .rankings-grid { grid-template-columns: 1fr; }
 }
 </style>
 {% endblock %}
 
 {% block content %}
+<!-- Hero Section - same structure as homepage -->
 <section class="hero">
-    <h1>{{ _('world_university_rankings') }}</h1>
-    <p>{{ _('rankings_subtitle') }}</p>
+    <div class="container">
+        <h1>{{ _('world_university_rankings') }}</h1>
+        <p>{{ _('rankings_subtitle') }}</p>
+    </div>
 </section>
 
-<div class="container">
-    <!-- Stats -->
-    <p class="stats">{{ _('rankings_stats').format(schools_with_rank) }}</p>
-
-    <!-- Ranking Tabs -->
-    <div class="ranking-tabs">
-        <button class="ranking-tab active" data-ranking="all">
-            🌐 {{ _('all_rankings') }}
-        </button>
-        {% for ranking in rankings_config %}
-        <button class="ranking-tab" data-ranking="{{ ranking.id }}">
-            {% if ranking.id == 'qs' %}📊{% elif ranking.id == 'usnews' %}🇺🇸{% elif ranking.id == 'the' %}📰{% elif ranking.id == 'arwu' %}🇨🇳{% else %}🌍{% endif %}
-            {{ ranking.name }}
-            {% if ranking.year %}
-            <span class="tab-year">{{ ranking.year }}</span>
-            {% endif %}
-        </button>
-        {% endfor %}
+<!-- Stats Bar - similar to homepage stats -->
+<section class="search-section">
+    <div class="container">
+        <p class="stats">{{ _('rankings_stats').format(schools_with_rank) }}</p>
+        
+        <!-- Ranking Tabs - same style as filter-bar -->
+        <div class="filter-bar" style="justify-content: center;">
+            <div class="ranking-tabs">
+                <button class="ranking-tab active" data-ranking="all">
+                    🌐 {{ _('all_rankings') }}
+                </button>
+                {% for ranking in rankings_config %}
+                <button class="ranking-tab" data-ranking="{{ ranking.id }}">
+                    {% if ranking.id == 'qs' %}📊{% elif ranking.id == 'usnews' %}🇺🇸{% elif ranking.id == 'the' %}📰{% elif ranking.id == 'arwu' %}🇨🇳{% else %}🌍{% endif %}
+                    {{ ranking.name }}
+                    {% if ranking.year %}
+                    <span class="tab-year">{{ ranking.year }}</span>
+                    {% endif %}
+                </button>
+                {% endfor %}
+            </div>
+        </div>
     </div>
+</section>
 
-    <!-- Schools Grid - Match Homepage Structure -->
-    {% if top_schools %}
-    <div class="rankings-grid" id="rankingGrid">
+<!-- Schools Grid - same structure as homepage -->
+<main class="container">
+    <div class="schools-grid" id="rankingGrid">
         {% for school in top_schools %}
         <a href="{{ url_for('school_detail', school_id=school.id) }}" class="school-card" data-rankings="{% for r in school.rankings %}{{ r.id }}{% if not loop.last %},{% endif %}{% endfor %}">
             <div class="badge-container">
                 {% if school.badge_url %}
-                    <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="badge-image">
+                    <img src="{{ school.badge_url }}" alt="{{ school.name }} badge" class="badge-image" 
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="badge-placeholder" style="display:none;">🎓</div>
                 {% elif school.campus_image %}
-                    <img src="{{ school.campus_image }}" alt="{{ school.name }} campus" class="badge-image campus-fallback">
+                    <img src="{{ school.campus_image }}" alt="{{ school.name }} campus" class="badge-image campus-fallback"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="badge-placeholder" style="display:none;">🎓</div>
                 {% else %}
                     <div class="badge-placeholder">🎓</div>
                 {% endif %}
@@ -322,21 +187,14 @@
                 </div>
                 
                 <p class="location">{{ school.country }}</p>
-                <span class="level-badge">🏆 Top {{ school.display_rank }}</span>
             </div>
         </a>
         {% endfor %}
     </div>
-    {% else %}
-    <div class="empty-rankings">
-        <h3>🚧 {{ _('no_rankings_yet') }}</h3>
-        <p>{{ _('rankings_coming_soon') }}</p>
-    </div>
-    {% endif %}
-</div>
+</main>
 
 <script>
-// Tab switching
+// Tab switching - same pattern as filter dropdowns
 document.querySelectorAll('.ranking-tab').forEach(tab => {
     tab.addEventListener('click', function() {
         document.querySelectorAll('.ranking-tab').forEach(t => t.classList.remove('active'));
