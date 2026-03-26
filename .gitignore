@@ -36,3 +36,5 @@ build/
 
 # Database - include school data
 !database.db
+database.db-wal
+database.db-shm
