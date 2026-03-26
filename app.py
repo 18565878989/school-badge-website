@@ -302,7 +302,8 @@ def rankings():
                          rankings_config=ranking_systems,
                          top_schools=top_schools,
                          total_schools=total_schools,
-                         schools_with_rank=schools_with_rank)
+                         schools_with_rank=schools_with_rank,
+                         page='rankings')
 
 @app.route('/school/<int:school_id>')
 def school_detail(school_id):

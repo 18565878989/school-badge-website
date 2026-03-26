@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html class="wide wow-animation scrollTo" lang="en">
+
+<head>
+<title>St. Stephen's College Preparatory School</title>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="keywords" content="intense web design multipurpose template">
+<meta name="date" content="Dec 26">
+<link rel="icon" href="https://www.sscps.edu.hk//images/favicon.ico" type="image/x-icon">
+<!-- Stylesheets-->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,700%7CMerriweather:400,300,300italic,400italic,700,700italic">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/custom.css">
+<!--[if lt IE 10]>
+<div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="https://www.sscps.edu.hk/images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+<script src="https://www.sscps.edu.hk/js/html5shiv.min.js"></script>
+<![endif]-->	</head>
+
+<body>
+<!-- Page-->
+<div class="page text-center">
+  <!-- Page Header-->
+<header class="page-head header-panel-absolute">
+  <!-- RD Navbar Transparent-->
+  <div class="rd-navbar-wrap">
+    <nav class="rd-navbar rd-navbar-default" data-md-device-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-stick-up-offset="210" data-xl-stick-up-offset="85" data-lg-auto-height="true" data-auto-height="false" data-md-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
+      <div class="rd-navbar-inner">
+        <!-- RD Navbar Panel-->
+        <div class="rd-navbar-panel">
+          <!-- RD Navbar Toggle-->
+          <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
+          <h4 class="panel-title veil-md">Home</h4>
+          <!-- RD Navbar Right Side Toggle-->
+                  <div class="rd-navbar-menu-wrap clearfix">
+          <!--Navbar Brand-->
+          <div class="rd-navbar-brand"><a class="reveal-inline-block" href="https://www.sscps.edu.hk/">
+              <div class="unit unit-xs-middle unit-xl unit-xl-horizontal unit-spacing-xxs">
+                <div class="unit-left"><img width='170' height='172' src='images/logo-170x172.png' alt=''/>
+                </div>
+              </div></a></div>
+          <div class="rd-navbar-nav-wrap">
+            <div class="rd-navbar-mobile-scroll">
+              <div class="rd-navbar-mobile-header-wrap">
+                <!--Navbar Brand Mobile-->
+                <div class="rd-navbar-mobile-brand"><a href="https://www.sscps.edu.hk/"><img width='136' height='138' src='images/logo-170x172.png' alt=''/></a></div>
+              </div>
+              <!-- RD Navbar Nav-->
+              <ul class="rd-navbar-nav">
+                <li><a href="https://www.sscps.edu.hk/">Home</a></li>
+                <li><a href="https://www.sscps.edu.hk/news">School News</a></li>
+                
+                <li><a href="#">School Profile</a>
+                  <ul class="rd-navbar-dropdown" data-group="schoolprofile">
+                    <li><a href="https://www.sscps.edu.hk/schoolprofile">Principal's Message</a></li>
+                    <li><a href="https://www.sscps.edu.hk/schoolprofile#2">History</a></li>
+                    <li><a href="https://www.sscps.edu.hk/schoolprofile#3">School Song</a></li>
+                    <li><a href="https://www.sscps.edu.hk/schoolprofile#4">Preparatory School Committee</a></li>
+                    <li><a href="https://www.sscps.edu.hk/schoolprofile#5">Teachers</a></li>
+                    <li><a href="https://www.sscps.edu.hk/schoolprofile#6">Visiting Instructors</a></li>
+                    <li><a href="https://www.sscps.edu.hk/schoolprofile#7">Facilities</a></li>
+                    <li><a href="https://www.sscps.edu.hk/schoolprofile#8">Principal's Report</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Curriculum</a>
+                  <ul class="rd-navbar-dropdown" data-group="curriculum">
+                    <li><a href="https://www.sscps.edu.hk/curriculum">Curriculum</a></li>
+                    <li><a href="https://www.sscps.edu.hk/curriculum#2">Boarding Programme</a></li>
+                    <li><a href="https://www.sscps.edu.hk/curriculum#3">Ethics Education Programme</a></li>
+				    <li><a href="http://www.sscps.edu.hk/library2">Library</a></li>
+                  
+                  </ul>
+                </li>
+
+                <li><a href="#">Admission</a>
+                  <ul class="rd-navbar-dropdown" data-group="admission">
+                   
+                        <li><a href="https://www.sscps.edu.hk/admission">Grade One Admission Briefing</a></li>
+                      
+				       <li><a href="https://www.sscps.edu.hk/admission#2">Primary One Application</a></li>
+					   <li><a href="https://www.sscps.edu.hk/admission#3">Primary Two to Six Application</a></li>
+					 
+				       
+					  
+					                  </ul>
+                </li>
+                               
+                
+                
+
+                <li><a href="#">Achievements</a>
+                  <ul class="rd-navbar-dropdown" data-group="achievements">
+                    <li><a href="https://www.sscps.edu.hk/achievements">Awards</a></li>
+                    <li><a href="https://www.sscps.edu.hk/achievements#2">Students Work</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">General Information</a>
+                  <ul class="rd-navbar-dropdown" data-group="generalinfo">
+                    <li><a href="https://www.sscps.edu.hk/generalinfo">Menu of The Week</a></li>
+                    <li><a href="https://www.sscps.edu.hk/generalinfo#2">Time Table</a></li>
+                    <li><a href="https://www.sscps.edu.hk/generalinfo#3">School Bus Routes</a></li>
+                   
+                  </ul>
+                </li>
+				  
+				                <li><a href="https://www.sscps.edu.hk/photoalbum">Photo Album</a></li>
+                <li><a href="https://www.sscps.edu.hk/contactus">Contact Us</a></li>
+                <li><a href="http://eclass.sscps.edu.hk">eClass</a></li>
+                
+                <li><a href="http://www.sscps.edu.hk/pta2">PTA</a></li>
+                
+                <li><a href="https://www.facebook.com/share/g/1BDJArcep7/?mibextid=wwXIfr">Friends of SSCPS</a></li>
+                
+
+                
+                <li><a href="https://www.sscps.edu.hk/zh/404">語言: 中文</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>  <!-- Page Content-->
+  <main class="page-content">
+    <div class="section-50">
+      <div class="shell">
+        <div>
+          <h1 class="font-default"><span class="big text-light text-bold">404</span></h1>
+        </div>
+        <div class="offset-top-10">
+          <h2 class="text-bold">Sorry, the page was not found</h2>
+        </div>
+        <div class="offset-top-15 offset-lg-top-30">
+          <hr class="divider bg-madison">
+        </div>
+        <div class="offset-top-30 offset-lg-top-60">
+          <p>You may have mistyped the address or the page may have moved.</p>
+        </div>
+        <div class="offset-top-15 offset-lg-top-30">
+          <div class="group group-xl"><a class="btn btn-primary btn-icon btn-icon btn-icon-left" href="./"><span class="icon fa-arrow-left"></span><span>Back to Home Page</span></a><a class="btn btn-default btn-icon btn-icon btn-icon-left" href="contactus"><span class="icon fa-envelope"></span><span>Contact Us</span></a></div>
+        </div>
+      </div>
+    </div>
+	</main>
+  <footer class="page-footer">
+  <div class="bg-madison context-dark">
+    <div class="shell text-md-left section-5">
+      <p class="footer-copyright">Copyright &copy; St. Stephen's College Preparatory School 2019. All rights reserved.</p>
+    </div>
+  </div>
+</footer></div>
+<!-- Global Mailform Output-->
+<div class="snackbars" id="form-output-global"></div>
+<!-- PhotoSwipe Gallery-->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--share" title="Share"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Java script-->
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script></body>
+
+</html>
