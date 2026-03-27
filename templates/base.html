@@ -16,7 +16,12 @@
             <a href="{{ url_for('index') }}" class="logo">
                 <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网" class="logo-img">
             </a>
-            <div class="nav-links">
+            <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-links" id="navLinks">
                 <a href="{{ url_for('index') }}" {% if page=='index' or not page %}class="active"{% endif %}>{{ _('home') }}</a>
                 <a href="{{ url_for('rankings') }}" {% if page=='rankings' %}class="active"{% endif %}>🏆 {{ _('rankings') }}</a>
                 <a href="{{ url_for('campus') }}" {% if page=='campus' %}class="active"{% endif %}>{{ _('campus_gallery') }}</a>

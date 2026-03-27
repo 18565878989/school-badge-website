@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PHD7X6R9');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#D95B2B">
+  <meta name="description" content="一个懂留学的AI Agent，帮你看排名、查院校、比专业、理清申请思路；直连海外招生官，获取一手信息。">
+  <meta property="og:title" content="xuanxiao.org - 留学选校，不再盲猜">
+  <meta property="og:description" content="一个懂留学的AI Agent，帮你看排名、查院校、比专业、理清申请思路；直连海外招生官，获取一手信息。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xuanxiao.org">
+  <title>xuanxiao.org - 留学选校，不再盲猜</title>
+
+  <script type="module" crossorigin src="/assets/index-Bb98nrxw.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DXdBHXey.css">
+</head>
+<body class="bg-page-bg text-text-deep font-sans antialiased">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHD7X6R9"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- decorative glow -->
+  <div class="pointer-events-none fixed inset-0 overflow-hidden" aria-hidden="true">
+    <div class="absolute -top-32 -right-32 h-[28rem] w-[28rem] rounded-full bg-brand-glow opacity-25 blur-[100px] sm:h-[36rem] sm:w-[36rem]"></div>
+    <div class="absolute -bottom-40 -left-40 h-[22rem] w-[22rem] rounded-full bg-brand-light opacity-30 blur-[80px]"></div>
+  </div>
+
+  <main class="relative flex min-h-dvh items-center justify-center px-6 py-12">
+    <div class="w-full max-w-2xl"
+         x-data="{
+           email: '',
+           state: 'idle',
+           message: '',
+           emailTouched: false,
+           get emailError() {
+             if (!this.emailTouched || !this.email.trim()) return '';
+             return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.email.trim()) ? '' : '邮箱格式有误，示例：name@example.com';
+           },
+           msgMap: {
+             'You have been added to the waitlist!': '已加入内测名单。',
+             'You are already on the waitlist!': '该邮箱已在名单中。',
+             'Invalid email address': '邮箱格式不正确，请检查后重试。',
+             'Something went wrong': '服务暂时不可用，请稍后再试。',
+           },
+           async submit() {
+             this.emailTouched = true;
+             const trimmed = this.email.trim();
+             if (!trimmed || this.emailError) return;
+             if (this.state === 'submitting') return;
+             this.state = 'submitting';
+             this.message = '';
+             try {
+               const controller = new AbortController();
+               const timeout = setTimeout(() => controller.abort(), 10000);
+               const res = await fetch('/api/submit', {
+                 method: 'POST',
+                 body: new URLSearchParams({ email: trimmed, url: window.location.href }),
+                 signal: controller.signal,
+               });
+               clearTimeout(timeout);
+               const data = await res.json();
+               this.message = this.msgMap[data.message] || data.message;
+               this.state = data.ok ? 'success' : 'error';
+               if (data.ok) this.email = '';
+             } catch (e) {
+               this.message = e.name === 'AbortError'
+                 ? '请求超时，请检查网络后重试。'
+                 : '网络连接失败，请检查网络后重试。';
+               this.state = 'error';
+             }
+           },
+           reset() {
+             this.state = 'idle';
+             this.message = '';
+             this.emailTouched = false;
+           }
+         }">
+
+      <!-- badge -->
+      <div class="animate-in delay-1">
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-brand-light px-3.5 py-1 text-sm font-medium tracking-wide text-brand">
+          <span class="relative flex h-2 w-2">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand opacity-40"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-brand"></span>
+          </span>
+          内测开放中
+        </span>
+      </div>
+
+      <!-- headline -->
+      <h1 class="animate-in delay-2 mt-6 text-4xl font-black leading-tight tracking-tight sm:text-5xl md:text-6xl">
+        留学<span class="text-brand">选校</span>，<br class="sm:hidden">不再盲猜
+      </h1>
+
+      <!-- subtitle -->
+      <p class="animate-in delay-3 mt-5 text-lg leading-relaxed text-text-mid sm:text-xl">
+        一个懂留学的 AI Agent，帮你看排名、查院校、比专业、理清申请思路；<br>
+        关键问题直连海外招生官，获取一手项目申请与奖学金信息。
+      </p>
+
+      <!-- value prop -->
+      <p class="animate-in delay-3 mt-2 text-base text-text-muted">
+        告别信息焦虑，让每一个留学决定都有据可依
+      </p>
+
+      <!-- form / success -->
+      <div class="animate-in delay-4 mt-8">
+
+        <!-- success state -->
+        <template x-if="state === 'success'">
+          <div class="mx-auto max-w-md rounded-xl border border-success/20 bg-success/5 px-6 py-5 text-center"
+               x-transition:enter="transition ease-out duration-200"
+               x-transition:enter-start="opacity-0 scale-95"
+               x-transition:enter-end="opacity-100 scale-100">
+            <div class="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-success/10">
+              <svg class="h-5 w-5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <p class="mt-3 text-base font-medium text-text-deep" x-text="message"></p>
+            <p class="mt-1 text-sm text-text-muted">您已加入队列，届时将通过邮件发送邀请</p>
+            <button @click="reset()" class="mt-3 text-sm text-brand hover:text-brand-hover transition-colors duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+              使用其他邮箱
+            </button>
+          </div>
+        </template>
+
+        <!-- form state -->
+        <template x-if="state !== 'success'">
+          <form @submit.prevent="submit()" class="space-y-3" novalidate>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <label for="email" class="sr-only">邮箱地址</label>
+              <div class="relative flex-1">
+                <input
+                  id="email"
+                  type="email"
+                  required
+                  x-model="email"
+                  @blur="emailTouched = true"
+                  @input="if (state === 'error') { state = 'idle'; message = ''; }"
+                  placeholder="你的邮箱地址"
+                  autocomplete="email"
+                  inputmode="email"
+                  :disabled="state === 'submitting'"
+                  :aria-invalid="emailError ? 'true' : undefined"
+                  :aria-describedby="emailError ? 'email-error' : undefined"
+                  :class="emailError ? 'border-error/50 focus:ring-error/20 focus:border-error/40' : 'border-input-border focus:ring-brand/20 focus:border-brand/40'"
+                  class="w-full rounded-xl border bg-input-bg px-5 py-3.5 text-base text-text-deep placeholder:text-text-muted/60 transition-colors duration-200 focus:outline-none focus:ring-2 disabled:opacity-60"
+                >
+                <p x-show="emailError" x-transition.opacity
+                   id="email-error" role="alert"
+                   class="mt-1.5 text-sm text-error"
+                   x-text="emailError"></p>
+              </div>
+              <button
+                type="submit"
+                :disabled="state === 'submitting' || emailError !== ''"
+                class="cursor-pointer whitespace-nowrap rounded-xl bg-brand px-7 py-3.5 text-base font-semibold text-white transition-colors duration-200 hover:bg-brand-hover active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                <span x-show="state !== 'submitting'">获取内测资格</span>
+                <span x-show="state === 'submitting'" x-cloak class="inline-flex items-center gap-2">
+                  <svg class="h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/>
+                  </svg>
+                  提交中...
+                </span>
+              </button>
+            </div>
+
+            <!-- server error message -->
+            <p x-show="state === 'error'" x-transition
+               class="text-sm text-error" role="alert"
+               x-text="message"></p>
+          </form>
+        </template>
+      </div>
+
+      <!-- trust signals -->
+      <div class="animate-in delay-5 mt-5 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm text-text-muted sm:justify-start">
+        <span>免费申请</span>
+        <span class="text-text-muted/40">&middot;</span>
+        <span>分批开放</span>
+        <span class="text-text-muted/40">&middot;</span>
+        <span>隐私安全</span>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="fixed bottom-0 inset-x-0 pb-4 text-center text-sm text-text-muted/70 pointer-events-none">
+    <span>© 2026</span>
+    <span class="mx-1.5">&middot;</span>
+    <a href="/cdn-cgi/l/email-protection#fc9499908cbc84899d9284959d93d2938e9b" class="pointer-events-auto transition-colors duration-200 hover:text-brand"><span class="__cf_email__" data-cfemail="fc9499908cbc84899d9284959d93d2938e9b">[email&#160;protected]</span></a>
+  </footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"d5175f60326d464cb9a14c2ee6892953","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

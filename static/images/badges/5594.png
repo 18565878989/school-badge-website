@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>荃灣浸信會幼稚園</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+
+            <link rel="icon" href="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/校徽彩色PNG檔-e1623465693438.png">
+        <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="referrer" content="origin">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/js/jquery.dotdotdot.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/js/moment.js"></script>
+            <script type="text/javascript" src="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/js/zh-hk.js"></script>
+        <script type="text/javascript" src="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700|Varela+Round" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/css/gallery-images-cust-t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/css/t5.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/css/t5_page_color.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/css/t5_s6.css"/>
+    <script type="text/javascript" src="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/js/t5.js"></script>
+    <script type="text/javascript" src="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/js/back_to_top.js"></script>
+
+    <link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.tsuenwanbckg.edu.hk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.tsuenwanbckg.edu.hk/wp-includes/css/dist/block-library/style.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-style-css'  href='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-style-css'  href='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='blueimp-style-css'  href='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/css/blueimp-gallery.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/css/custom-style.css?ver=5.1.19' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_LATEST_NEWS_API = {"url":"https:\/\/www.tsuenwanbckg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"0141dc6725","page_url":"https:\/\/www.tsuenwanbckg.edu.hk\/latest-new\/","eClassURL":"https:\/\/tsuenwanbckg.eclass.hk"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-latest-news-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ENOTICE_API = {"url":"https:\/\/www.tsuenwanbckg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"6b6cb42bef","page_url":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-enotice-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_CALENDAR_API = {"url":"https:\/\/www.tsuenwanbckg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"2b9973f644","school_type":"IP25","LANG":{"SCHOOL_EVENT":"\u5b78\u6821\u4e8b\u9805","ACADEMIC_EVENT":"\u6559\u5b78\u4e8b\u9805","GROUP_EVENT":"\u5c0f\u7d44\u4e8b\u9805","PUBLIC_HOLIDAY_EVENT":"\u516c\u773e\u5047\u671f","SCHOOL_HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f","HOLIDAY_EVENT":"\u5b78\u6821\u5047\u671f"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-calendar-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_DIGITAL_CHANNELS_API = {"url":"https:\/\/www.tsuenwanbckg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"fc0c4d4c81","TYPE_CATEGORY":"1","TYPE_ALBUM":"2","TYPE_HIGHLIGHT":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-digital-channels-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_ACADEMIC_YEAR_TERM_API = {"url":"https:\/\/www.tsuenwanbckg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"d01f740379"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-academic-year-term-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_SUBJECT_GROUP_API = {"url":"https:\/\/www.tsuenwanbckg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"a1231c28e8"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-subject-group-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_YEAR_CLASS_API = {"url":"https:\/\/www.tsuenwanbckg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"e4e6e282c1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-year-class-api.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ECLASS_HOMEWORK_API = {"url":"https:\/\/www.tsuenwanbckg.edu.hk\/wp-admin\/admin-ajax.php","_ajax_nonce":"1ad0b26ef4","school_type":"IP25"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/js/shortcode/eclass-integration-homework-api.js?ver=2.0.0'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/jquery.dotdotdot.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/OwlCarousel2-2.3.4/dist/owl.carousel.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-video.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-youtube.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/blueimp-gallery-vimeo.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/blueimp/js/jquery.blueimp-gallery.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/third-party/twbs-pagination/jquery.twbsPagination.min.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/plugins/gallery-images-cust/assets/gallery-images-cust.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/assets/js/basic-script.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-slideshow.js?ver=5.1.19'></script>
+<script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/assets/js/homepage-calendar.js?ver=5.1.19'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.tsuenwanbckg.edu.hk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.19" />
+
+<link rel="stylesheet" href="https://www.tsuenwanbckg.edu.hk/wp-content/plugins/count-per-day/counter.css" type="text/css" />
+<link rel="alternate" href="https://www.tsuenwanbckg.edu.hk/" hreflang="zh" />
+<link rel="alternate" href="https://www.tsuenwanbckg.edu.hk/en/" hreflang="en" />
+
+</head>
+
+<body class="home blog zh">
+
+<header id="header" class="t_image">
+    <div class="container">
+        <div class="row">
+            <div id="schLogo" class="col-xs-12 col-md-6 col-lg-7">
+                <div class="schLogoContainer">
+                    <a href="https://www.tsuenwanbckg.edu.hk/">
+                        <img src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/校徽彩色PNG檔-e1623465693438-150x150.png" alt="schoolLogo" class="schLogo"/>
+                        <div class="schName">
+                            <span class="schName_ch">荃灣浸信會幼稚園</span>
+                            <span class="schName_en">Tsuen Wan Baptist Church Kindergarten</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button id="mmBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="login" class="col-md-6 col-lg-5">
+        <form id="loginForm" action="https://tsuenwanbckg.eclass.hk/login.php" method="POST" target="_blank">
+        <a href="https://tsuenwanbckg.eclass.hk" target="_blank"><img
+                    src="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/images/eclassLogo.png" alt="schoolLogo" class="logo"/></a>
+        <div class="input">
+            <input name="UserLogin" class="form-control" type="text" placeholder="登入名稱"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+            <input name="UserPassword" class="form-control" type="password" placeholder="密碼"
+                   onkeypress="if(event.keyCode == 13) {$('#loginForm').submit();}"/>
+        </div>
+        <a class="btn_login" href="https://tsuenwanbckg.eclass.hk/login.php" onclick="$('#loginForm').submit(); return false;"></a>
+
+                    <a class="btn_lang" href="https://www.tsuenwanbckg.edu.hk/en/">Eng</a>
+            </form>
+    </div>        </div>
+    </div>
+</header>
+
+<nav class="navbar" id="mainMenu">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                    <li class="page_item c01">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e4%b8%bb%e9%a0%81/" class="" style="">
+                            <img src="https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/011.png" />
+                        主頁        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children c01">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/" class="" style="">
+                            <img src="https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/002.png" />
+                        學校概覽        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/%e8%be%a6%e5%ad%b8%e4%bd%bf%e5%91%bd/" class="" style="">
+                        辦學使命        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/%e8%be%a6%e5%ad%b8%e7%9b%ae%e6%a8%99/" class="" style="">
+                        辦學目標        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/%e6%a0%a1%e8%a8%932/" class="" style="">
+                        學校校訓        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/%e6%95%99%e5%ad%b8%e7%90%86%e5%bf%b5/" class="" style="">
+                        教學理念        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/%e6%a0%a1%e9%95%b7%e7%9a%84%e8%a9%b1/" class="" style="">
+                        校長的話        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b-2/%e6%95%99%e5%ad%b8%e5%9c%98%e9%9a%8a/" class="" style="">
+                        教學團隊        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c13">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/" class="" style="">
+                            <img src="https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/019.png" />
+                        我們的課程        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/%e8%aa%b2%e7%a8%8b%e7%89%b9%e8%89%b2/" class="" style="">
+                        課程特色        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/%e8%aa%b2%e7%a8%8b%e7%89%b9%e8%89%b2/%e8%aa%b2%e7%a8%8b%e7%b7%a8%e6%8e%92/" class="" style="">
+                        課程編排        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/%e8%aa%b2%e7%a8%8b%e7%89%b9%e8%89%b2/%e5%ad%b8%e7%94%9f%e6%94%af%e6%8f%b4/" class="" style="">
+                        學生支援        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/" class="" style="">
+                        校本課程        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/%e5%9f%ba%e7%9d%a3%e6%95%99%e6%95%99%e8%82%b2/" class="" style="">
+                        基督教教育及德育課程        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/%e5%b0%8f%e8%b7%b3%e8%b1%86%e8%82%a2%e9%ab%94%e5%8d%94%e8%aa%bf%e6%b4%bb%e5%8b%95/" class="" style="">
+                        小跳豆肢體協調活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/%e6%88%b2%e5%8a%87%e6%95%99%e8%82%b2/" class="" style="">
+                        戲劇教育        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/%e8%87%aa%e7%94%b1%e9%81%8a%e6%88%b2/" class="" style="">
+                        自由遊戲        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/%e6%a0%a1%e6%9c%ac%e8%aa%b2%e7%a8%8b/%e9%96%b1%e8%ae%80%e8%a8%88%e5%8a%83/" class="" style="">
+                        閱讀計劃        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/%e4%b8%ad%e8%8f%af%e6%96%87%e5%8c%96%e6%a0%a1%e6%9c%ac%e5%ad%b8%e7%bf%92%e6%b4%bb%e5%8b%95/" class="" style="">
+                        中華文化校本學習活動        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b/%e6%88%b6%e5%a4%96%e9%ab%94%e9%a9%97%e6%b4%bb%e5%8b%95/" class="" style="">
+                        戶外體驗活動        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c11">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/" class="" style="">
+                            <img src="https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/021.png" />
+                        校園資訊        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e9%a7%90%e6%a0%a1%e7%a4%be%e5%b7%a5/" class="" style="">
+                        駐校社工        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e9%9d%9e%e8%8f%af%e8%aa%9e%e5%85%92%e7%ab%a5%e6%94%af%e6%8f%b4%e6%8e%aa%e6%96%bd/" class="" style="">
+                        非華語兒童支援措施        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e8%a6%96%e5%ad%b8%e5%a0%b1%e5%91%8a/" class="" style="">
+                        質素評核報告        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e5%ad%b8%e6%a0%a1%e7%92%b0%e5%a2%83/" class="" style="">
+                        學校環境        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e7%8f%ad%e7%b4%9a%e7%b7%a8%e5%88%b6/" class="" style="">
+                        班級編制        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e6%a0%a1%e6%9c%8d%e6%a8%a3%e5%bc%8f/" class="" style="">
+                        校服樣式        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e5%90%84%e9%a0%85%e6%94%b6%e8%b2%bb/" class="" style="">
+                        各項收費        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e5%ad%b8%e6%a0%a1%e7%b0%a1%e4%bb%8b/%e4%bf%9d%e5%a7%86%e8%bb%8a%e8%b7%af%e7%b7%9a/" class="" style="">
+                        保姆車路線        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="dropdown page_item page_item_has_children c02">
+        <a href="https://www.tsuenwanbckg.edu.hk/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/" class="" style="">
+                            <img src="https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/043.png" />
+                        家長園地        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/%e5%ae%b6%e9%95%b7%e5%b7%a5%e4%bd%9c/" class="" style="">
+                        家長工作        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/%e5%bd%a9%e8%99%b9%e6%99%82%e5%88%bb/" class="" style="">
+                        彩虹時刻        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/%e8%8d%83%e6%b5%b8%e6%83%85%e5%85%b1%e8%81%9a/" class="" style="">
+                        荃浸情共聚        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children">
+        <a href="https://www.tsuenwanbckg.edu.hk/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/%e5%ae%b6%e9%95%b7%e6%95%99%e5%b8%ab%e6%9c%83/" class="" style="">
+                        家長教師會        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/%e5%ae%b6%e9%95%b7%e6%95%99%e5%b8%ab%e6%9c%83/%e7%b0%a1%e4%bb%8b/" class="" style="">
+                        簡介        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/%e5%ae%b6%e9%95%b7%e6%95%99%e5%b8%ab%e6%9c%83/%e6%9c%83%e7%ab%a0/" class="" style="">
+                        會章        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/%e5%ae%b6%e9%95%b7%e6%95%99%e5%b8%ab%e6%9c%83/%e6%9c%83%e8%a8%8a/" class="" style="">
+                        會訊        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/%e5%ae%b6%e9%95%b7%e6%95%99%e5%b8%ab%e6%9c%83/%e7%ac%ac26%e5%b1%86%e5%9f%b7%e5%a7%94%e8%81%b7%e4%bd%8d/" class="" style="">
+                        第31屆執委職位        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/eclass-%e4%b8%ad%e5%ad%b8%e6%a6%82%e5%bf%b5/%e5%ae%b6%e9%95%b7%e8%ac%9b%e5%ba%a7/" class="" style="">
+                        家長講座        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item c01">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%b4%bb%e5%8b%95%e7%9b%b8%e7%89%87-2/" class="" style="">
+                            <img src="https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/001.png" />
+                        活動相片        </a>
+
+            </li>
+        <li class="dropdown page_item page_item_has_children c15">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%94%b6%e7%94%9f%e7%b0%a1%e4%bb%8b/" class="" style="">
+                            <img src="https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/053.png" />
+                        入學申請        </a>
+
+                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true"
+               aria-expanded="false">
+                <span class="dropdown-icon"></span>
+            </a>
+            <ul class="dropdown-menu sub-level children">
+                    <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%94%b6%e7%94%9f%e7%b0%a1%e4%bb%8b/%e7%94%b3%e8%ab%8b%e8%a9%b3%e8%ab%8b/" class="" style="">
+                        申請詳情        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%94%b6%e7%94%9f%e7%b0%a1%e4%bb%8b/%e5%85%a5%e5%ad%b8%e6%b5%81%e7%a8%8b/" class="" style="">
+                        入學流程        </a>
+
+            </li>
+        <li class="page_item">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%94%b6%e7%94%9f%e7%b0%a1%e4%bb%8b/%e5%b9%bc%e7%a8%9a%e5%9c%92%e7%b0%a1%e4%bb%8b%e6%9c%83/" class="" style="">
+                        幼稚園簡介會        </a>
+
+            </li>
+                </ul>
+            </li>
+        <li class="page_item c07">
+        <a href="https://www.tsuenwanbckg.edu.hk/%e6%84%8f%e8%a6%8b%e5%88%86%e4%ba%ab/" class="" style="">
+                            <img src="https://www.tsuenwanbckg.edu.hk/wp-content/plugins/eclass-integration/public/images/menu/016.png" />
+                        意見分享        </a>
+
+            </li>
+                                        <li class="login page_item">
+                        <a href="https://tsuenwanbckg.eclass.hk" target="_blank">eClass 登入</a>
+                    </li>
+                
+                <li class="lang page_item" style="">
+                    <a href="https://www.tsuenwanbckg.edu.hk/en/">English</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div id="headerSpace"></div>        <div id="alertMsg" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                          class="icon"></span>
+                        </button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content">
+                            <p style="text-align: center;"><img class="aligncenter size-full wp-image-3891" src="/wp-content/uploads/2025/09/荃灣浸信會幼稚園-297-x-210-毫米沒有簡介會.png" alt="" width="650" /></p>                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+        <script type="text/javascript">
+            $(window).on('load', function () {
+                $('#alertMsg').modal('show');
+            });
+            $("#alertMsg .close").click(function () {
+                $("body").removeClass("alertBox");
+            });
+        </script>
+        
+<div id="slideshowArea">
+    <div id="slideshowWrap">
+        <div id="gallery-carousel-69c66e544429b" class=" huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/03/敬拜-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/03/禱告-拷貝-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/03/同行-拷貝-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/03/堅毅-拷貝-1-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/03/嘗試-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/03/創意-拷貝-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/03/團結-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/03/扶持-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/03/表達-拷貝-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/03/發現-1280x500.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>
+    <div class="container">
+        <div class="row">
+
+            <div id="latestNews" class="col-xs-12 col-md-6">
+    <h1 class="title">校園生活</h1>
+            <a href="https://www.tsuenwanbckg.edu.hk/latest-new/" class="moreBtn">更多</a>
+    
+    <div class="newsFrame">
+                    <ul id="newsList">
+                                    <a href="https://www.tsuenwanbckg.edu.hk/latest-new/%e6%88%91%e5%80%91%e7%9a%84%e8%aa%b2%e7%a8%8b_%e5%bf%ab%e5%bf%ab%e6%a8%82%e6%a8%82%e7%9a%84%e4%b8%80%e5%a4%a9/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                影片:我們的課程_快快樂樂的一天                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot"></span>
+                                                        <span class="newsDate">2025-07-22</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.tsuenwanbckg.edu.hk/latest-new/%e8%8d%83%e7%81%a3%e6%b5%b8%e4%bf%a1%e6%9c%83%e5%b9%bc%e7%a8%9a%e5%9c%92facebook/">
+                        <li class="">
+                            <h2 class="newsTitle">
+                                荃灣浸信會幼稚園Facebook及Instagram                                                            </h2>
+                                                                                        <span class="newsDes dotdotdot">本園新增 Facebook 和 Instagram 平台，方便家長了解本園動態及孩子校園生活，歡迎瀏覽。
+&nbsp;
+荃灣浸信會幼稚園FACEBOOK(請按連結)<br />
+
+&nbsp;
+荃灣浸信會幼稚園Instagram(請按連結)<br />
+<br />
+
+ </span>
+                                                        <span class="newsDate">2026-02-09</span>
+                        </li>
+                    </a>
+                            </ul>
+            </div>
+
+</div>
+
+            <div id="notice" class="col-xs-12 col-md-6">
+    <h1 class="title">最新消息</h1>
+            <a href="https://www.tsuenwanbckg.edu.hk/school-notice/" class="moreBtn">更多</a>
+    
+    <div class="noticeFrame">
+                    <ul id="noticeList">
+                                    <a href="https://www.tsuenwanbckg.edu.hk/school-notice/1883/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                                                                            </h2>
+                                                            <span class="noticeDes dotdotdot">&nbsp;
+♦ 如為孩子報讀各級插班之家長，請致電本園查詢。
+
+</span>
+                                                        <span class="noticeDate">2026-02-08</span>
+                        </li>
+                    </a>
+                                    <a href="https://www.tsuenwanbckg.edu.hk/school-notice/3135/">
+                        <li>
+                            <h2 class="noticeTitle">
+                                26-27年度幼兒班入學申請                                                            </h2>
+                                                            <span class="noticeDes dotdotdot">26-27年度幼兒班入學申請已於本網頁公布，若有查詢歡迎致電本園或按此連結
+&nbsp;
+ </span>
+                                                        <span class="noticeDate">2025-09-11</span>
+                        </li>
+                    </a>
+                            </ul>
+            </div>
+
+</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            
+            
+        </div>
+    </div>
+
+
+
+    <div id="photoSlideShow">
+        <div class="container">
+            <div class="row">
+
+                
+<div id="photoSlideShowWrap" class="modules-fullWidth">
+    <div id="gallery-carousel-69c66e5449f32" class="autoWidth huge-it-slider owl-carousel">
+    
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/02/IMG_8715-1-709x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/02/IMG_4628-1-802x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/02/IMG_20230215_134043-1-946x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/02/IMG_20230703_132831-1-709x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/02/IMG_20230915_133415-1-709x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/02/158-2-945x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/02/20231101_121420-1-709x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/02/20231013_103508-1-709x532.jpg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+                    <div class="item">
+                                    <span class="link">
+                        <img class="image" src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2024/02/IMG_3142-1-709x532.jpeg">
+
+                        <div class="hidden-xs content" style="display:none;">
+                                                                                </div>
+                    </span>
+                                
+            </div>
+        
+    </div>
+
+<div class="modal fade" id="sliderDetails" tabindex="-1" role="dialog" aria-labelledby="sliderDetail"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-info-circle"></i> 資訊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                                                                                  class="icon"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="title"></h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="modules-break"></div>
+
+<div id="usefulLinks">
+    <div class="container">
+        <div class="row">
+            <div class="modules-fullWidth" id="usefulLinksWrap">
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.twbc.org.hk/" target="_blank">
+                                <img src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/荃灣浸信會.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/荃灣浸信會.jpg 452w, https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/荃灣浸信會-300x84.jpg 300w" sizes="(max-width: 452px) 100vw, 452px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="http://www.twbcslk.edu.hk/tc/index.php" target="_blank">
+                                <img src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/荃浸石籬幼稚園.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/荃浸石籬幼稚園.jpg 707w, https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/荃浸石籬幼稚園-300x66.jpg 300w" sizes="(max-width: 707px) 100vw, 707px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.edb.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2019/02/edb.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2019/02/edb.jpg 600w, https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2019/02/edb-300x99.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://eform.one.gov.hk/form/edb005/tc/" target="_blank">
+                                <img src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/幼稚園入學註冊證申請表格.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/幼稚園入學註冊證申請表格.jpg 315w, https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/幼稚園入學註冊證申請表格-300x143.jpg 300w" sizes="(max-width: 315px) 100vw, 315px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.hko.gov.hk/contentc.htm" target="_blank">
+                                <img src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2018/08/hko.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.chp.gov.hk/tc/index.html" target="_blank">
+                                <img src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2019/02/logo_chp_tc.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2019/02/logo_chp_tc.png 335w, https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2019/02/logo_chp_tc-300x79.png 300w" sizes="(max-width: 335px) 100vw, 335px" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.swd.gov.hk/tc/index/" target="_blank">
+                                <img src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/社會福利署.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                            </a>
+                                            </div>
+
+                
+                    <div class="ulBanner">
+                                                    <a href="https://www.aca.org.hk/index.php#.YNMaMegzZPY" target="_blank">
+                                <img src="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/ACA-logo-2013-322x61.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/ACA-logo-2013-322x61.png 322w, https://www.tsuenwanbckg.edu.hk/wp-content/uploads/2021/06/ACA-logo-2013-322x61-300x57.png 300w" sizes="(max-width: 322px) 100vw, 322px" />                            </a>
+                                            </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modules-break"></div>
+<div id="backToTop" onclick="topFunction()" style="display: none;">
+    <div>
+    </div>
+</div>
+
+<footer class="t_image">
+    <div id="schInfo">
+        <div class="container">
+            <div class="row">
+                <div class="schName_ch col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">荃灣浸信會幼稚園</div>
+                <div class="schName_en col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">Tsuen Wan Baptist Church Kindergarten</div>
+                <div class="infoList col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
+                                            <span class="address">
+                            荃灣青山公路荃灣段99-113號                            <a class="map" href="https://www.google.com/maps?q=%E8%8D%83%E7%81%A3%E6%B5%B8%E4%BF%A1%E6%9C%83%E5%B9%BC%E7%A8%9A%E5%9C%92&rlz=1C1GCEU_enHK901HK901&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiMjreVgI_xAhVkIqYKHdxCDHkQ_AUoAXoECAEQAw" target="_blank"></a>
+                        </span>
+                    
+                                            <span class="tel">(852) 2413 3819</span>
+                    
+                                            <span class="fax">(852) 2419 0808</span>
+                    
+                                            <span class="mail"><a href="mailto:twbckg@twbc.org.hk">twbckg@twbc.org.hk</a></span>
+                    
+                                            <span class="web"><a href="http://www.tsuenwanbckg.edu.hk/"
+                                             target="_blank">http://www.tsuenwanbckg.edu.hk/</a></span>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <span class="col-xs-12 col-sm-6">版權所有 &copy; 荃灣浸信會幼稚園</span>
+                <span class="col-xs-12 col-sm-6">Powered by <a href="http://www.eclass.com.hk/" target="_blank"><span
+                                class="logo"/></span></a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    /* Moved into homepage-homework.js
+    $(function () {
+        $('.datetimepicker').datetimepicker({
+            format: 'YYYY-MM-DD',
+            ignoreReadonly: true,
+            locale: 'zh-HK'
+        });
+    });
+    $('.datetimepicker-time').datetimepicker({
+        sideBySide: true
+    });
+    $(function () {
+        $('.datetimepicker').datetimepicker();
+
+        $('.datetimepicker-addon').on('click', function () {
+            $(this).prev('input.datetimepicker').data('DateTimePicker').toggle();
+        });
+    });
+    */
+    $(function () {
+        // Add slideDown animation to Bootstrap dropdown when expanding.
+        $('.dropdown').on('show.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+        });
+
+        // Add slideUp animation to Bootstrap dropdown when collapsing.
+        $('.dropdown').on('hide.bs.dropdown', function () {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+        });
+    });
+</script>
+<script type="text/javascript" src="https://www.tsuenwanbckg.edu.hk/wp-content/themes/theme5_style_1/js/bootstrap_fix.js"></script>
+<div id="mmBg" class="mmOpen bg"></div>
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-preload-range="0">
+        <div class="slides"></div>
+
+        <div class="photoInfo">
+            <h3 class="title"></h3>
+            <p class="description"></p>
+            <span class="more"><a class="showMoreDescription" href="javascript:void(0);">（顯示更多…）</a></span>
+        </div>
+
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="popup" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+
+        <ol class="indicator"></ol>
+        <div class="indicatorControl">
+	    	<span class="leftBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+	    	</span>
+            <span class="rightBtn">
+	    		<a href="javascript:void(0);"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+			</span>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://www.tsuenwanbckg.edu.hk/wp-includes/js/wp-embed.min.js?ver=5.1.19'></script>
+</body>
+</html>

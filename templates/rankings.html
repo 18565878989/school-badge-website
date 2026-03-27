@@ -41,7 +41,7 @@
     <section class="hero">
         <div class="container">
             <h1>{{ _('world_university_rankings') }}</h1>
-            <p>{{ _('rankings_subtitle') }}</p>
+            <p>{% for r in rankings_config %}{% if r.id == active_ranking %}{{ r.name }} {{ r.year }}{% endif %}{% endfor %}</p>
         </div>
     </section>
 
@@ -49,17 +49,12 @@
     <section class="tabs-section">
         <div class="container">
             <div class="region-tabs">
-                <button class="tab-btn active" data-ranking="all" data-count="{{ schools_with_rank }}">
-                    <span class="tab-icon">🌐</span>
-                    <span class="tab-name">{{ _('all_rankings') }}</span>
-                    <span class="tab-count">{{ schools_with_rank }}</span>
-                </button>
                 {% for ranking in rankings_config %}
-                <button class="tab-btn" data-ranking="{{ ranking.id }}" data-count="{{ ranking_counts[ranking.id] }}">
+                <a href="{{ url_for('rankings', tab=ranking.id) }}" class="tab-btn{% if ranking.id == active_ranking %} active{% endif %}" data-ranking="{{ ranking.id }}">
                     <span class="tab-icon">{% if ranking.id == 'qs' %}📊{% elif ranking.id == 'usnews' %}🇺🇸{% elif ranking.id == 'the' %}📰{% elif ranking.id == 'arwu' %}🇨🇳{% else %}🌍{% endif %}</span>
-                    <span class="tab-name">{{ ranking.name }}</span>
+                    <span class="tab-name">{{ ranking.name }} {{ ranking.year }}</span>
                     <span class="tab-count">{{ ranking_counts[ranking.id] or 0 }}</span>
-                </button>
+                </a>
                 {% endfor %}
             </div>
         </div>
@@ -250,58 +245,29 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Tab switching
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        const cards = document.querySelectorAll('.campus-card');
-
-        tabBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Update active tab
-                tabBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                const ranking = btn.dataset.ranking;
-                let visibleCount = 0;
-                
-                cards.forEach(card => {
-                    let show = false;
-                    
-                    if (ranking === 'all') {
-                        show = true;
-                    } else {
-                        const rankValue = card.getAttribute('data-' + ranking);
-                        show = rankValue && rankValue !== '';
-                        
-                        // Also update the badge display for the selected ranking
-                        const badge = card.querySelector('.rank-badge');
-                        if (badge && show) {
-                            const rankText = getRankText(ranking, rankValue);
-                            badge.innerHTML = '<span class="rank-text">' + rankText + '</span>';
-                            
-                            // Update badge class based on rank
-                            badge.className = 'rank-badge ' + getRankClass(parseInt(rankValue));
-                        }
-                    }
-                    
-                    card.style.display = show ? 'block' : 'none';
-                    if (show) visibleCount++;
-                });
-                
-                // Scroll to top of gallery
-                document.querySelector('.gallery-section').scrollIntoView({ behavior: 'smooth' });
-            });
-        });
+        // 获取当前激活的tab
+        const activeTab = document.querySelector('.tab-btn.active');
+        const activeRanking = activeTab?.dataset.ranking || 'qs';
         
-        function getRankText(ranking, value) {
-            const names = {
-                'qs': 'QS',
-                'usnews': 'US News',
-                'the': 'THE',
-                'arwu': 'ARWU',
-                'cwur': 'CWUR'
-            };
-            return names[ranking] + ' #' + value;
-        }
+        const rankNames = {
+            'qs': 'QS',
+            'usnews': 'US News',
+            'the': 'THE',
+            'arwu': 'ARWU',
+            'cwur': 'CWUR'
+        };
+        
+        // 为所有卡片添加正确的徽章（按当前榜单的顺序显示 #1、#2、#3...）
+        const cards = document.querySelectorAll('.campus-card');
+        cards.forEach((card, index) => {
+            const badge = card.querySelector('.rank-badge');
+            if (badge) {
+                const rankName = rankNames[activeRanking] || activeRanking.toUpperCase();
+                // 显示 #1、#2、#3... 即该校在该榜单中的名次位置
+                badge.innerHTML = '<span class="rank-text">' + rankName + ' #' + (index + 1) + '</span>';
+                badge.className = 'rank-badge ' + getRankClass(index + 1);
+            }
+        });
         
         function getRankClass(rank) {
             if (rank <= 10) return 'top-10';

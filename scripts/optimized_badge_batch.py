@@ -313,7 +313,7 @@ def update_school_badge(school_id, badge_url):
     try:
         conn = sqlite3.connect(DB_PATH, timeout=10)
         c = conn.cursor()
-        c.execute("UPDATE schools SET badge_url = ? WHERE id = ?", (badge_url, school_id))
+        c.execute("UPDATE schools SET badge_url = ? WHERE id = ? AND (badge_reviewed IS NULL OR badge_reviewed = 0)", (badge_url, school_id))
         conn.commit()
         conn.close()
     except sqlite3.OperationalError as e:
@@ -321,7 +321,7 @@ def update_school_badge(school_id, badge_url):
             time.sleep(1)
             conn = sqlite3.connect(DB_PATH, timeout=15)
             c = conn.cursor()
-            c.execute("UPDATE schools SET badge_url = ? WHERE id = ?", (badge_url, school_id))
+            c.execute("UPDATE schools SET badge_url = ? WHERE id = ? AND (badge_reviewed IS NULL OR badge_reviewed = 0)", (badge_url, school_id))
             conn.commit()
             conn.close()
 
@@ -349,7 +349,7 @@ def main(limit=200, verify_only=False):
         cursor.execute("""
             SELECT id, name, name_cn, country, website, source
             FROM schools 
-            WHERE (badge_url IS NULL OR badge_url = '')
+            WHERE (badge_url IS NULL OR badge_url = '') AND (badge_reviewed IS NULL OR badge_reviewed = 0)
             AND website IS NOT NULL AND website != ''
             AND website LIKE 'http%%'
             ORDER BY 

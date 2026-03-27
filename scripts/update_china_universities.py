@@ -50,6 +50,7 @@ def update_badges():
         WHERE badge_url IS NOT NULL 
           AND badge_url != '' 
           AND badge_updated = 'N'
+          AND (badge_reviewed IS NULL OR badge_reviewed = 0)
     """)
     existing_updated = cursor.rowcount
     conn.commit()
@@ -107,12 +108,18 @@ def update_badges():
                 shutil.copy2(source_path, dest_path)
                 badge_url = f"/static/badges/{dest_filename}"
                 
-                # 更新数据库
+                # 更新数据库（只更新未审核的）
                 cursor.execute("""
                     UPDATE schools 
                     SET badge_url = ?, badge_updated = 'Y', updated_at = CURRENT_TIMESTAMP
-                    WHERE id = ?
+                    WHERE id = ? AND (badge_reviewed IS NULL OR badge_reviewed = 0)
                 """, (badge_url, school_id))
+                
+                if cursor.rowcount > 0:
+                    updated += 1
+                else:
+                    skipped += 1
+                    continue
                 
                 updated += 1
             except Exception as e:

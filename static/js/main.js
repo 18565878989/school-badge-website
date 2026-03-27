@@ -1,5 +1,16 @@
 // School Badge Website - Main JavaScript
 
+// Global toggle function for mobile menu
+function toggleMenu() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const nav = document.getElementById('navLinks');
+    if (hamburger && nav) {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+        document.body.classList.toggle('nav-open');
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Auto-hide alerts after 5 seconds
     const alerts = document.querySelectorAll('.alert');

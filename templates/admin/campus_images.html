@@ -6,6 +6,72 @@
     <title>校园图片审核 - 管理后台</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+        .thumbnail-preview {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+        .thumb-img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 1px solid #e5e5e5;
+            transition: transform 0.2s;
+        }
+        .thumb-img:hover {
+            transform: scale(1.1);
+            border-color: #007AFF;
+        }
+        .thumb-more {
+            font-size: 11px;
+            color: #86868b;
+        }
+        .image-preview-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .image-preview-modal.active {
+            display: flex;
+        }
+        .image-preview-modal img {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 12px;
+        }
+        .image-preview-modal .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .image-preview-modal .all-images {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 90%;
+        }
+        .image-preview-modal .all-images img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     {% extends "admin/base.html" %}
@@ -97,6 +163,7 @@
                             <th width="80">级别</th>
                             <th width="100">审核状态</th>
                             <th width="80">图片数</th>
+                            <th width="120">缩略图</th>
                             <th width="160">操作</th>
                         </tr>
                     </thead>
@@ -127,6 +194,16 @@
                                 {% endif %}
                             </td>
                             <td>{{ images|length }}</td>
+                            <td>
+                                <div class="thumbnail-preview">
+                                    {% for img in images[:3] %}
+                                    <img src="{{ img }}" class="thumb-img" onclick="previewImage('{{ img }}','{{ school.campus_image }}')">
+                                    {% endfor %}
+                                    {% if images|length > 3 %}
+                                    <span class="thumb-more">+{{ images|length - 3 }}</span>
+                                    {% endif %}
+                                </div>
+                            </td>
                             <td>
                                 <div class="action-buttons">
                                     <a href="{{ url_for('admin_campus_edit', school_id=school.id) }}" class="btn btn-primary btn-sm">编辑</a>
@@ -180,6 +257,37 @@
         document.getElementById('batchAction').value = action;
         document.getElementById('batchForm').submit();
     }
+    
+    function previewImage(imgUrl, allUrls) {
+        document.getElementById('previewMainImg').src = imgUrl;
+        // Show all images below
+        const allImgDiv = document.getElementById('allImages');
+        allImgDiv.innerHTML = '';
+        if (allUrls) {
+            allUrls.split(',').forEach(url => {
+                const img = document.createElement('img');
+                img.src = url.trim();
+                img.onclick = function() { document.getElementById('previewMainImg').src = url.trim(); };
+                allImgDiv.appendChild(img);
+            });
+        }
+        document.getElementById('previewModal').classList.add('active');
+    }
+    
+    function closePreview() {
+        document.getElementById('previewModal').classList.remove('active');
+    }
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closePreview();
+    });
     </script>
-    {% endblock %}
+    
+    <!-- 图片预览弹窗 -->
+    <div class="image-preview-modal" id="previewModal">
+        <span class="close-btn" onclick="closePreview()">&times;</span>
+        <img id="previewMainImg" src="">
+        <div class="all-images" id="allImages"></div>
+    </div>
+{% endblock %}
 </html>

@@ -116,7 +116,8 @@ def index():
     selected_region = request.args.get('region', '')
     selected_country = request.args.get('country', '')
     selected_city = request.args.get('city', '')
-    selected_level = request.args.get('level', '')
+    # Default to university if no level specified
+    selected_level = request.args.get('level', 'university')
     page = request.args.get('page', 1, type=int)
     per_page = 21  # 21 schools per page
     
