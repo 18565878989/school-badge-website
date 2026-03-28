@@ -15,8 +15,6 @@ schools_bp = Blueprint('schools', __name__)
 @schools_bp.route('/school/<int:school_id>')
 def school_detail(school_id):
     """School detail page."""
-    from app import app
-    
     school = get_school_by_id(school_id)
     if not school:
         return render_template('404.html'), 404
@@ -81,7 +79,7 @@ def toggle_like(school_id):
 def my_likes():
     """My liked schools."""
     if 'user_id' not in session:
-        return redirect(url_for('login'))
+        return redirect(url_for('auth.login'))
     
     user_id = session['user_id']
     liked_schools = get_user_liked_schools(user_id)

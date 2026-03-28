@@ -46,8 +46,8 @@ def index():
 @main_bp.route('/lang/<lang>')
 def set_language(lang):
     """Set language."""
-    from i18n import SUPPORTED_LANGUAGES
-    if lang in SUPPORTED_LANGUAGES:
+    from i18n import LANGUAGE_NAMES
+    if lang in LANGUAGE_NAMES:
         session['lang'] = lang
     return redirect(request.referrer or url_for('index'))
 

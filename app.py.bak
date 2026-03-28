@@ -40,16 +40,6 @@ from i18n import _, LANGUAGE_NAMES, get_locale
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
 
-# 注册蓝图路由 (模块化重构)
-# 注意: 由于蓝图路由简化，暂保持原始app.py路由
-# 蓝图注册已准备但未激活，待后续完整迁移
-# try:
-#     from routes import register_all_routes
-#     register_all_routes(app)
-#     print("[Routes] Blueprint registration successful")
-# except Exception as e:
-#     print(f"[Routes] Blueprint registration skipped: {e}")
-
 # OAuth Configuration - 需要在环境变量中设置
 OAUTH_CONFIG = {
     'wechat': {

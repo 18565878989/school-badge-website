@@ -8,6 +8,7 @@ import sqlite3
 import secrets
 from werkzeug.security import generate_password_hash, check_password_hash
 from models import get_user_by_id, is_admin, get_db_connection
+from i18n import _
 
 auth_bp = Blueprint('auth', __name__)
 
@@ -17,7 +18,7 @@ def login_required(f):
     def decorated_function(*args, **kwargs):
         if 'user_id' not in session:
             flash(_('please_login'), 'warning')
-            return redirect(url_for('login'))
+            return redirect(url_for('auth.login'))
         return f(*args, **kwargs)
     return decorated_function
 

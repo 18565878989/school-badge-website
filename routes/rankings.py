@@ -35,9 +35,9 @@ def rankings():
     
     # Get ranking counts
     ranking_counts = {}
-    for col, name in RANK_COLUMNS.items():
-        count = conn.execute(f'SELECT COUNT(*) FROM schools WHERE {col} IS NOT NULL').fetchone()[0]
-        ranking_counts[name] = count
+    for ranking_id, col_name in RANK_COLUMNS.items():
+        count = conn.execute(f'SELECT COUNT(*) FROM schools WHERE {col_name} IS NOT NULL').fetchone()[0]
+        ranking_counts[ranking_id] = count
     
     # Get rank column
     rank_col = RANK_COLUMNS.get(active_ranking, 'qs_rank')
