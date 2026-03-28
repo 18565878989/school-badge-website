@@ -157,6 +157,9 @@ class TestLikeIntegration:
     
     def test_like_requires_auth(self, app):
         """点赞需要认证"""
+        # Clear session to ensure clean state
+        with app.session_transaction() as sess:
+            sess.clear()
         response = app.post('/like/1')
         # 未登录返回JSON错误
         assert response.status_code == 401 or response.status_code == 302

@@ -2,7 +2,7 @@
 Schools routes module
 """
 
-from flask import Blueprint, render_template, request, redirect, url_for, session, jsonify
+from flask import Blueprint, render_template, request, redirect, url_for, session, jsonify, abort
 import sqlite3
 from models import (
     get_school_by_id, get_schools_paginated, get_school_rankings,
@@ -17,11 +17,10 @@ def school_detail(school_id):
     """School detail page."""
     school = get_school_by_id(school_id)
     if not school:
-        return render_template('404.html'), 404
+        abort(404)
     
     rankings = get_school_rankings(school_id)
     
-    # Get like status
     liked = False
     likes_count = get_likes_count(school_id)
     
@@ -29,7 +28,6 @@ def school_detail(school_id):
         like = get_like(session['user_id'], school_id)
         liked = like is not None
     
-    # Get badge URL
     badge_url = school.get('badge_url', '')
     if badge_url and not badge_url.startswith(('http://', 'https://')):
         badge_url = url_for('static', filename=f'images/{badge_url}')
@@ -46,7 +44,7 @@ def badge_history(school_id):
     """Badge history page."""
     school = get_school_by_id(school_id)
     if not school:
-        return render_template('404.html'), 404
+        abort(404)
     
     return render_template('badge_history.html', school=school)
 
@@ -54,7 +52,7 @@ def badge_history(school_id):
 def toggle_like(school_id):
     """Toggle like for a school."""
     if 'user_id' not in session:
-        return jsonify({'success': False, 'message': 'Please login first'})
+        return redirect(url_for('auth.login'))
     
     user_id = session['user_id']
     
@@ -88,5 +86,5 @@ def my_likes():
 
 
 def register_routes(app):
-    """Register schools routes with the Flask app."""
+    """Register schools routes with the app."""
     app.register_blueprint(schools_bp)

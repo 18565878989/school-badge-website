@@ -41,13 +41,17 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
 
 # 注册蓝图路由 (模块化重构)
-# 注意: 由于蓝图路由简化，暂保持原始app.py路由
-# try:
-#     from routes import register_all_routes
-#     register_all_routes(app)
-#     print("[Routes] Blueprint registration successful")
-# except Exception as e:
-#     print(f"[Routes] Blueprint registration skipped: {e}")
+# 已启用: auth, schools
+try:
+    from routes.auth import auth_bp
+    app.register_blueprint(auth_bp)
+    print("[Routes] auth blueprint registered")
+    
+    from routes.schools import schools_bp
+    app.register_blueprint(schools_bp)
+    print("[Routes] schools blueprint registered")
+except Exception as e:
+    print(f"[Routes] blueprint skipped: {e}")
 
 # OAuth Configuration - 需要在环境变量中设置
 OAUTH_CONFIG = {
@@ -438,24 +442,24 @@ def badge_history(school_id):
                          events=events,
                          likes_count=likes_count,
                          user_liked=user_liked)
-
-@app.route('/like/<int:school_id>', methods=['POST'])
-@login_required
-def toggle_like(school_id):
-    """Toggle like on a school."""
-    school = get_school_by_id(school_id)
-    if not school:
-        flash(_('no_schools'), 'error')
-        return redirect(url_for('index'))
-    
-    existing_like = get_like(session['user_id'], school_id)
-    if existing_like:
-        unlike_school(session['user_id'], school_id)
-        flash(_('liked'), 'info')
-    else:
-        like_school(session['user_id'], school_id)
-        flash(_('like'), 'success')
-    
+#
+#@app.route('/like/<int:school_id>', methods=['POST'])
+#@login_required
+#def toggle_like(school_id):
+#    """Toggle like on a school."""
+#    school = get_school_by_id(school_id)
+#    if not school:
+#        flash(_('no_schools'), 'error')
+#        return redirect(url_for('index'))
+#    
+#    existing_like = get_like(session['user_id'], school_id)
+#    if existing_like:
+#        unlike_school(session['user_id'], school_id)
+#        flash(_('liked'), 'info')
+#    else:
+#        like_school(session['user_id'], school_id)
+#        flash(_('like'), 'success')
+#    
     return redirect(url_for('school_detail', school_id=school_id))
 
 @app.route('/my-likes')
