@@ -31,7 +31,7 @@
                 <a href="{{ url_for('index') }}" class="active">{{ _('home') }}</a>
                 <a href="{{ url_for('rankings') }}">🏆 {{ _('rankings') }}</a>
                 <a href="{{ url_for('campus') }}">{{ _('campus_gallery') }}</a>
-                <a href="{{ url_for('social') }}" style="color: #1E3A5F; font-weight: 600;">社交</a>
+                <a href="{{ url_for('social') }}" style="color: #1E3A5F; font-weight: 600;">{{ _('social') }}</a>
                 {% if session.get('user_id') %}
                     <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
                     <span class="username">{{ session.get('username') }}</span>
@@ -71,16 +71,16 @@
         <div class="container">
             <div class="region-tabs">
                 <a href="{{ url_for('index', level='university', region=selected_region, country=selected_country, city=selected_city, district=selected_district, q=search_query) }}" class="tab-btn{% if selected_level == 'university' %} active{% endif %}">
-                    🎓 大学
+                    🎓 {{ _('university') }}
                 </a>
                 <a href="{{ url_for('index', level='middle', region=selected_region, country=selected_country, city=selected_city, district=selected_district, q=search_query) }}" class="tab-btn{% if selected_level == 'middle' %} active{% endif %}">
-                    🏫 中学
+                    🏫 {{ _('middle_school') }}
                 </a>
                 <a href="{{ url_for('index', level='elementary', region=selected_region, country=selected_country, city=selected_city, district=selected_district, q=search_query) }}" class="tab-btn{% if selected_level == 'elementary' %} active{% endif %}">
-                    📚 小学
+                    📚 {{ _('elementary_school') }}
                 </a>
                 <a href="{{ url_for('index', level='kindergarten', region=selected_region, country=selected_country, city=selected_city, district=selected_district, q=search_query) }}" class="tab-btn{% if selected_level == 'kindergarten' %} active{% endif %}">
-                    🧸 幼儿园
+                    🧸 {{ _('kindergarten') }}
                 </a>
             </div>
         </div>

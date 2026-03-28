@@ -116,7 +116,13 @@
             {% if selected_country %}· {{ selected_country }}{% endif %}
             {% if selected_city %}· {{ selected_city }}{% endif %}
             {% if selected_district %}· {{ selected_district }}{% endif %}
-            {% if selected_level %}· {{ _(selected_level) }}{% endif %}
+            {% if selected_level %}· 
+                {% if selected_level == 'university' %}{{ _('university') }}
+                {% elif selected_level == 'middle' %}{{ _('middle_school') }}
+                {% elif selected_level == 'elementary' %}{{ _('elementary_school') }}
+                {% elif selected_level == 'kindergarten' %}{{ _('kindergarten') }}
+                {% endif %}
+            {% endif %}
             {% if search_query %}· "{{ search_query }}"{% endif %}
         </span>
     {% endif %}
