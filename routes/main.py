@@ -8,7 +8,7 @@ import sqlite3
 import os
 from models import (
     get_all_schools, get_schools_by_region, get_schools_by_level,
-    get_regions, get_school_by_id, get_db_connection
+    get_regions, get_school_by_id, get_db_connection, search_schools
 )
 from i18n import _, LANGUAGE_NAMES, get_locale
 

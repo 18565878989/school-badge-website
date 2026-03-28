@@ -747,6 +747,10 @@ body {
     top: 16px;
     right: 16px;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
 }
 
 .card-badge .level-badge {
@@ -761,6 +765,27 @@ body {
     color: white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
+
+.card-badge .ranking-badge {
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+@keyframes pulse-subtle {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+.ranking-qs { background: linear-gradient(135deg, #10b981 0%, #34d399 100%); }
+.ranking-the { background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%); }
+.ranking-usnews { background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%); }
+.ranking-arwu { background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%); }
+.ranking-cwur { background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); }
 
 .level-university { background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); }
 .level-middle { background: linear-gradient(135deg, #5C3D6E 0%, #7B5D9E 100%); }
@@ -836,15 +861,27 @@ body {
 .no-results {
     text-align: center;
     padding: 100px 20px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .no-results-icon {
-    font-size: 64px;
+    font-size: 80px;
     margin-bottom: 24px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 .no-results h2 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     color: var(--text);
     margin-bottom: 12px;
@@ -854,6 +891,20 @@ body {
     font-size: 16px;
     color: var(--text-secondary);
     margin-bottom: 32px;
+}
+
+.no-results .btn {
+    background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.no-results .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(30, 58, 95, 0.3);
 }
 
 /* Buttons */

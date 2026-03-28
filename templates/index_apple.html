@@ -352,6 +352,13 @@
                                 {% elif school['level'] == 'elementary' %}{{ _('elementary_school') }}
                                 {% else %}{{ _('kindergarten') }}{% endif %}
                             </span>
+                            {% if school['qs_rank'] %}
+                            <span class="ranking-badge ranking-qs" title="QS World University Rankings">QS #{{ school['qs_rank'] }}</span>
+                            {% elif school['the_rank'] %}
+                            <span class="ranking-badge ranking-the" title="Times Higher Education">THE #{{ school['the_rank'] }}</span>
+                            {% elif school['usnews_rank'] %}
+                            <span class="ranking-badge ranking-usnews" title="U.S. News Best Global Universities">US #{{ school['usnews_rank'] }}</span>
+                            {% endif %}
                         </div>
                     </div>
                     <div class="card-content">
