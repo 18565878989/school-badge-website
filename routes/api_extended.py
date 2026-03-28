@@ -126,18 +126,270 @@ def similar_schools(school_id):
 
 @api_ext_bp.route('/api/deep-search', methods=['POST'])
 def deep_search():
-    """Deep search API - AI powered search"""
+    """Deep search API - AI powered search with local DB + LLM
+    AI Provider 优先级: MiniMax -> Ollama -> Cloudflare -> Local Search
+    """
     data = request.get_json()
     query = data.get('query', '')
+    use_ai = data.get('use_ai', True)  # 是否使用AI
     
     if not query:
         return jsonify({'error': 'Query is required'}), 400
     
-    # 模拟深度搜索响应
+    conn = get_db_connection()
+    
+    # 获取学校总数用于系统提示
+    total_schools = conn.execute('SELECT COUNT(*) FROM schools').fetchone()[0]
+    
+    # 构建系统提示词
+    system_prompt = f"""你是校徽网的智能搜索助手。数据库中共有 {total_schools} 所学校，包含以下字段：
+- id: 学校ID
+- name: 学校英文名  
+- name_cn: 学校中文名
+- country: 国家
+- city: 城市
+- region: 地区 (Asia, North America, Europe, Oceania, Africa, South America)
+- level: 类型 (university, middle, elementary, kindergarten)
+- motto: 校训
+- founded: 建校年份
+- website: 官网
+- qs_rank: QS世界大学排名
+- the_rank: THE世界大学排名
+- usnews_rank: US News排名
+
+请分析用户查询，返回匹配的JSON格式：
+{{
+    "analysis": "你对用户查询的分析",
+    "search_type": "university/middle/elementary/country/region/ranking/all",
+    "keywords": ["关键词1", "关键词2"],
+    "filters": {{"region": "Asia", "level": "university"}}
+}}
+
+注意：
+- 只返回keywords用于搜索，不要返回school_ids
+- 如果是闲聊/问候，analysis应包含"闲聊"
+- search_type: university(大学), middle(中学), elementary(小学), kindergarten(幼儿园), country(国家), region(地区), ranking(排名), all(全部)
+"""
+    
+    ai_response = None
+    
+    # 1. 尝试 MiniMax API
+    if use_ai and not ai_response:
+        try:
+            import requests
+            api_url = "https://api.minimax.chat/v1/text/chatcompletion_v2"
+            api_key = os.environ.get('MINIMAX_API_KEY', '')
+            model_name = os.environ.get('MINIMAX_MODEL', 'MiniMax-M2.1')
+            
+            if api_key:
+                headers = {
+                    'Authorization': f'Bearer {api_key}',
+                    'Content-Type': 'application/json'
+                }
+                payload = {
+                    "model": model_name,
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": f"用户查询: {query}\n\n请分析并返回JSON结果。"}
+                    ],
+                    "temperature": 0.3,
+                    "max_tokens": 500
+                }
+                response = requests.post(api_url, headers=headers, json=payload, timeout=30)
+                if response.status_code == 200:
+                    result = response.json()
+                    ai_response = result.get('choices', [{}])[0].get('message', {}).get('content', '')
+                    print(f"[DeepSearch] MiniMax response: {ai_response[:100]}...")
+        except Exception as e:
+            print(f"[DeepSearch] MiniMax error: {e}")
+    
+    # 2. 尝试 Ollama (本地)
+    if use_ai and not ai_response:
+        try:
+            import requests
+            ollama_url = os.environ.get('OLLAMA_BASE_URL', 'http://localhost:11434') + '/api/chat'
+            ollama_payload = {
+                "model": os.environ.get('OLLAMA_MODEL', 'llama3.2'),
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": f"用户查询: {query}\n\n请分析并返回JSON结果。"}
+                ],
+                "stream": False
+            }
+            ollama_response = requests.post(ollama_url, json=ollama_payload, timeout=30)
+            if ollama_response.status_code == 200:
+                ollama_result = ollama_response.json()
+                ai_response = ollama_result.get('message', {}).get('content', '')
+                print(f"[DeepSearch] Ollama response: {ai_response[:100]}...")
+        except Exception as e:
+            print(f"[DeepSearch] Ollama error: {e}")
+    
+    # 3. 尝试 Cloudflare Workers AI
+    if use_ai and not ai_response:
+        try:
+            import requests
+            cf_token = os.environ.get('CF_API_TOKEN', '')
+            cf_account = os.environ.get('CF_ACCOUNT_ID', '')
+            
+            if cf_token and cf_account:
+                cf_url = f"https://api.cloudflare.com/client/v4/accounts/{cf_account}/ai/run/@cf/meta/llama-3.1-8b-instruct"
+                cf_headers = {
+                    'Authorization': f'Bearer {cf_token}',
+                    'Content-Type': 'application/json'
+                }
+                cf_payload = {
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": f"用户查询: {query}\n\n请分析并返回JSON结果。"}
+                    ],
+                    "max_tokens": 500
+                }
+                cf_response = requests.post(cf_url, headers=cf_headers, json=cf_payload, timeout=60)
+                if cf_response.status_code == 200:
+                    cf_result = cf_response.json()
+                    ai_response = cf_result.get('result', {}).get('response', '')
+                    print(f"[DeepSearch] Cloudflare response: {ai_response[:100]}...")
+        except Exception as e:
+            print(f"[DeepSearch] Cloudflare error: {e}")
+    
+    # 解析AI响应或使用本地搜索
+    search_type = 'all'
+    keywords = []
+    filters = {}
+    
+    if ai_response:
+        try:
+            import re
+            import json as json_lib
+            
+            # 尝试提取JSON部分
+            json_match = re.search(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', ai_response, re.DOTALL)
+            if json_match:
+                parsed = json_lib.loads(json_match.group())
+                analysis = parsed.get('analysis', '')
+                search_type = parsed.get('search_type', 'all')
+                keywords = parsed.get('keywords', [])
+                filters = parsed.get('filters', {})
+                
+                # 如果是闲聊
+                if '闲聊' in analysis or '问候' in analysis:
+                    conn.close()
+                    return jsonify({
+                        'success': True,
+                        'is_chat': True,
+                        'analysis': analysis,
+                        'message': '你好！我是校徽网的智能搜索助手。请问您在找什么学校？'
+                    })
+        except Exception as e:
+            print(f"[DeepSearch] Parse error: {e}")
+            keywords = query.split()
+    else:
+        # 本地搜索：基于关键词分割
+        keywords = query.replace('大学', 'university').replace('学院', 'college').split()
+    
+    # 本地数据库搜索 - 使用优先级匹配
+    # 先尝试精确匹配，再模糊匹配
+    search_results = []
+    
+    # 国家/地区名称映射（中文 -> 英文）
+    country_map = {
+        '日本': 'Japan', '中国': 'China', '美国': 'United States', 
+        '英国': 'United Kingdom', '德国': 'Germany', '法国': 'France',
+        '加拿大': 'Canada', '澳大利亚': 'Australia', '韩国': 'South Korea',
+        '新加坡': 'Singapore', '香港': 'Hong Kong', '台湾': 'Taiwan',
+        '欧洲': 'Europe', '亚洲': 'Asia', '北美': 'North America'
+    }
+    
+    # 类型名称映射
+    level_map = {
+        '大学': 'university', '学院': 'college', '中学': 'middle', 
+        '高中': 'middle', '小学': 'elementary', '幼儿园': 'kindergarten'
+    }
+    
+    # 处理关键词
+    processed_keywords = []
+    for kw in keywords:
+        kw_lower = kw.lower()
+        # 检查是否是国家
+        if kw in country_map:
+            processed_keywords.append(('country', country_map[kw]))
+        elif kw_lower in [c.lower() for c in country_map.values()]:
+            for cn, en in country_map.items():
+                if en.lower() == kw_lower:
+                    processed_keywords.append(('country', en))
+                    break
+        # 检查是否是类型
+        elif kw in level_map:
+            processed_keywords.append(('level', level_map[kw]))
+        elif kw_lower in ['university', 'college', 'middle', 'elementary', 'kindergarten']:
+            processed_keywords.append(('level', kw_lower))
+        else:
+            processed_keywords.append(('keyword', kw))
+    
+    # 构建多条件查询
+    base_sql = '''
+        SELECT *, 
+            CASE 
+                WHEN qs_rank IS NOT NULL THEN qs_rank 
+                WHEN the_rank IS NOT NULL THEN the_rank 
+                WHEN usnews_rank IS NOT NULL THEN usnews_rank 
+                ELSE 99999 
+            END as ranking_score
+        FROM schools WHERE 1=1
+    '''
+    params = []
+    
+    for kw_type, kw_value in processed_keywords:
+        if kw_type == 'country':
+            base_sql += ' AND (country LIKE ? OR name_cn LIKE ?)'
+            params.extend([f'%{kw_value}%', f'%{kw}%'])
+        elif kw_type == 'level':
+            base_sql += ' AND level = ?'
+            params.append(kw_value)
+        else:
+            base_sql += ' AND (name LIKE ? OR name_cn LIKE ? OR motto LIKE ? OR city LIKE ?)'
+            params.extend([f'%{kw}%', f'%{kw}%', f'%{kw}%', f'%{kw}%'])
+    
+    # 如果有特定关键词，优先显示匹配度高的
+    if any(k[0] == 'keyword' for k in processed_keywords):
+        base_sql += ' ORDER BY ranking_score LIMIT 30'
+    else:
+        base_sql += ' ORDER BY ranking_score LIMIT 30'
+    
+    results = conn.execute(base_sql, params).fetchall()
+    conn.close()
+    
+    # 构建响应
+    school_results = []
+    for school in results:
+        school_dict = dict(school)
+        # 清理badge_url
+        if school_dict.get('badge_url') and not school_dict['badge_url'].startswith(('http://', 'https://')):
+            school_dict['badge_url'] = f"/static/images/{school_dict['badge_url']}"
+        # 移除内部字段
+        school_dict.pop('ranking_score', None)
+        school_results.append(school_dict)
+    
+    ai_provider = 'none'
+    if ai_response:
+        if os.environ.get('MINIMAX_API_KEY'):
+            ai_provider = 'minimax'
+        elif os.environ.get('OLLAMA_BASE_URL'):
+            ai_provider = 'ollama'
+        elif os.environ.get('CF_API_TOKEN'):
+            ai_provider = 'cloudflare'
+    
     return jsonify({
         'success': True,
-        'results': [],
-        'message': 'Deep search requires AI service integration'
+        'query': query,
+        'ai_provider': ai_provider,
+        'results': school_results,
+        'total': len(school_results),
+        'analysis': {
+            'keywords': keywords,
+            'search_type': search_type,
+            'filters': filters
+        }
     })
 
 
