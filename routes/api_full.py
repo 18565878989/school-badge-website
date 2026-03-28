@@ -23,7 +23,7 @@ def posts():
         posts = conn.execute('''
             SELECT p.*, u.username as author_name
             FROM posts p
-            LEFT JOIN users u ON p.user_id = u.id
+            LEFT JOIN users u ON p.author_id = u.id
             ORDER BY p.created_at DESC
             LIMIT 50
         ''').fetchall()
@@ -60,7 +60,7 @@ def post_detail(post_id):
         post = conn.execute('''
             SELECT p.*, u.username as author_name
             FROM posts p
-            LEFT JOIN users u ON p.user_id = u.id
+            LEFT JOIN users u ON p.author_id = u.id
             WHERE p.id = ?
         ''', (post_id,)).fetchone()
         conn.close()

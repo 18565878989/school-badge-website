@@ -41,7 +41,8 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
 
 # 注册蓝图路由 (模块化重构)
-# 已启用: auth, schools, rankings, api, api_ext, social, shop
+# 已启用: auth, schools, rankings, api, api_ext, social, shop, misc, admin_ext, api_full
+# 待解决: main_bp, admin_bp (复杂模板/权限)
 try:
     from routes.auth import auth_bp
     app.register_blueprint(auth_bp)
@@ -70,6 +71,18 @@ try:
     from routes.shop_membership import shop_bp
     app.register_blueprint(shop_bp)
     print("[Routes] shop blueprint registered")
+    
+    from routes.misc import misc_bp
+    app.register_blueprint(misc_bp)
+    print("[Routes] misc blueprint registered")
+    
+    from routes.admin_extended import admin_ext_bp
+    app.register_blueprint(admin_ext_bp)
+    print("[Routes] admin_ext blueprint registered")
+    
+    from routes.api_full import api_full_bp
+    app.register_blueprint(api_full_bp)
+    print("[Routes] api_full blueprint registered")
 except Exception as e:
     print(f"[Routes] blueprint skipped: {e}")
 
