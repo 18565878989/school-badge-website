@@ -42,7 +42,7 @@ app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-producti
 
 # 注册蓝图路由 (模块化重构)
 # 已启用: auth, schools, rankings, api, api_ext, social, shop, misc, admin_ext, api_full
-# 待解决: main_bp, admin_bp (复杂模板/权限)
+# 待解决: main_bp (index路由不完整), admin_bp (复杂权限)
 try:
     from routes.auth import auth_bp
     app.register_blueprint(auth_bp)

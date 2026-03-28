@@ -10,8 +10,21 @@ from models import (
     get_all_schools, get_schools_by_region, get_schools_by_level,
     get_regions, get_school_by_id, get_db_connection
 )
+from i18n import _, LANGUAGE_NAMES, get_locale
 
 main_bp = Blueprint('main', __name__)
+
+@main_bp.context_processor
+def inject_globals():
+    """Inject global variables into templates."""
+    from app import is_admin, OAUTH_CONFIG
+    return {
+        '_': _,
+        'LANGUAGE_NAMES': LANGUAGE_NAMES,
+        'current_lang': get_locale(),
+        'is_admin': lambda: 'user_id' in session and is_admin(session.get('user_id')),
+        'oauth_configured': {k: bool(v.get('appid') or v.get('client_key')) for k, v in OAUTH_CONFIG.items()}
+    }
 
 @main_bp.route('/')
 def index():
