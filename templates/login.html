@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}登录 - 校徽网{% endblock %}</title>
+    <title>{% block title %}{{ _('page_title_login') }}{% endblock %}</title>
     
     <link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg">
     <link rel="icon" href="/static/images/favicon.svg">
@@ -43,7 +43,7 @@
         <div class="auth-card">
             <div class="auth-tabs">
                 <button class="auth-tab active" onclick="showLoginTab('password')">{{ _('login') }}</button>
-                <button class="auth-tab" onclick="showLoginTab('phone')">📱 手机登录</button>
+                <button class="auth-tab" onclick="showLoginTab('phone')">📱 {{ _('phone_login') }}</button>
             </div>
             
             <!-- Password Login -->
@@ -71,8 +71,8 @@
             
             <!-- Phone Login -->
             <div id="login-phone" class="auth-form" style="display:none;">
-                <h1>手机号登录</h1>
-                <p class="subtitle">输入手机号获取验证码</p>
+                <h1>{{ _('phone_login') }}</h1>
+                <p class="subtitle">{{ _('enter_code') }}</p>
                 
                 <form method="POST" onsubmit="return sendSMSCode(event)">
                     <input type="hidden" name="type" value="phone">

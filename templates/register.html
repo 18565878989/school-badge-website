@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}注册 - 校徽网{% endblock %}</title>
+    <title>{% block title %}{{ _('page_title_register') }}{% endblock %}</title>
     
     <link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg">
     <link rel="icon" href="/static/images/favicon.svg">
@@ -42,7 +42,7 @@
     <main class="auth-container">
         <div class="auth-card">
             <h1>{{ _('register') }}</h1>
-            <p class="subtitle">创建您的账户</p>
+            <p class="subtitle">{{ _('create_account') }}</p>
             
             {% with messages = get_flashed_messages(with_categories=true) %}
                 {% if messages %}
