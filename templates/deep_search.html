@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 深度搜索 - 校徽网</title>
+    <title>{{ _('page_title_deep_search') }}</title>
     
     <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
@@ -32,7 +32,7 @@
                         <path d="M2 17l10 5 10-5"/>
                         <path d="M2 12l10 5 10-5"/>
                     </svg>
-                    AI 深度搜索
+                    {{ _('deep_search') }}
                 </a>
                 {% if session.get('user_id') %}
                     <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
@@ -56,9 +56,9 @@
                     <path d="M2 17l10 5 10-5"/>
                     <path d="M2 12l10 5 10-5"/>
                 </svg>
-                AI 深度搜索
+                {{ _('deep_search') }}
             </h1>
-            <p>用自然语言描述您想要的学校，AI帮您智能匹配</p>
+            <p>{{ _('deep_search_desc') }}</p>
         </div>
     </section>
 
@@ -74,13 +74,13 @@
                     </svg>
                 </div>
                 <div class="message-content">
-                    <p>您好！我是校徽网AI助手 🎓</p>
-                    <p>请用自然语言描述您想找的学校，例如：</p>
+                    <p>{{ _('ai_helper_greeting') }}</p>
+                    <p>{{ _('try_examples') }}</p>
                     <ul>
-                        <li>"我想找日本的大学，偏差值在60以上"</li>
-                        <li>"推荐几所香港的英文授课国际学校"</li>
-                        <li>"查找美国常春藤盟校"</li>
-                        <li>"中国有哪些985高校？"</li>
+                        <li>"{{ _('search_japan_university') | default('我想找日本的大学，偏差值在60以上') }}"</li>
+                        <li>"{{ _('search_hk_international') | default('推荐几所香港的英文授课国际学校') }}"</li>
+                        <li>"{{ _('search_ivy_league') | default('查找美国常春藤盟校') }}"</li>
+                        <li>"{{ _('search_china_985') | default('中国有哪些985高校？') }}"</li>
                     </ul>
                 </div>
             </div>
@@ -89,7 +89,7 @@
         <div class="chat-input-area">
             <form class="chat-input-form" id="chatForm">
                 <div class="input-wrapper">
-                    <input type="text" id="chatInput" placeholder="描述您想找的学校..." autocomplete="off">
+                    <input type="text" id="chatInput" placeholder="{{ _('search_placeholder_deep') }}" autocomplete="off">
                     <button type="submit" class="send-btn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="22" y1="2" x2="11" y2="13"/>
@@ -98,7 +98,7 @@
                     </button>
                 </div>
             </form>
-            <p class="input-hint">按 Enter 发送，Shift + Enter 换行</p>
+            <p class="input-hint">{{ _('enter_send_hint') }}</p>
         </div>
     </main>
 
