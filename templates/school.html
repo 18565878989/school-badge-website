@@ -7,9 +7,9 @@
     
     <!-- Breadcrumb -->
     <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 24px; font-size: 0.9rem;">
-        <a href="{{ url_for('index') }}" style="color: #1E3A5F; text-decoration: none;">首页</a>
+        <a href="{{ url_for('main.index') }}" style="color: #1E3A5F; text-decoration: none;">首页</a>
         <span style="color: #86868b;">/</span>
-        <a href="{{ url_for('index') }}?country={{ school.country }}" style="color: #1E3A5F; text-decoration: none;">{{ school.country }}</a>
+        <a href="{{ url_for('main.index') }}?country={{ school.country }}" style="color: #1E3A5F; text-decoration: none;">{{ school.country }}</a>
         <span style="color: #86868b;">/</span>
         <span style="color: #1d1d1f;">{{ school.name }}</span>
     </div>

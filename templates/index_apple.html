@@ -19,7 +19,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="{{ url_for('index') }}" class="logo">
+            <a href="{{ url_for('main.index') }}" class="logo">
                 <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网">
             </a>
             <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
@@ -28,20 +28,20 @@
                 <span class="hamburger-line"></span>
             </button>
             <div class="nav-links" id="navLinks">
-                <a href="{{ url_for('index') }}" class="active">{{ _('home') }}</a>
-                <a href="{{ url_for('rankings') }}">🏆 {{ _('rankings') }}</a>
-                <a href="{{ url_for('campus') }}">{{ _('campus_gallery') }}</a>
-                <a href="{{ url_for('social') }}" style="color: #1E3A5F; font-weight: 600;">{{ _('social') }}</a>
+                <a href="{{ url_for('main.index') }}" class="active">{{ _('home') }}</a>
+                <a href="{{ url_for('rankings.rankings') }}">🏆 {{ _('rankings') }}</a>
+                <a href="{{ url_for('main.campus') }}">{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('main.social') }}" style="color: #1E3A5F; font-weight: 600;">{{ _('social') }}</a>
                 {% if session.get('user_id') %}
-                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
+                    <a href="{{ url_for('schools.my_likes') }}">{{ _('my_likes') }}</a>
                     <span class="username">{{ session.get('username') }}</span>
                     {% if is_admin() %}
                         <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
                     {% endif %}
-                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
+                    <a href="{{ url_for('auth.logout') }}">{{ _('logout') }}</a>
                 {% else %}
-                    <a href="{{ url_for('login') }}">{{ _('login') }}</a>
-                    <a href="{{ url_for('register') }}">{{ _('register') }}</a>
+                    <a href="{{ url_for('auth.login') }}">{{ _('login') }}</a>
+                    <a href="{{ url_for('auth.register') }}">{{ _('register') }}</a>
                 {% endif %}
                 
                 <div class="lang-switcher">
@@ -90,7 +90,7 @@
     <section class="search-section">
         <div class="container">
             <div class="search-wrapper">
-                <form class="search-form" id="mainSearchForm" action="{{ url_for('index') }}" method="GET">
+                <form class="search-form" id="mainSearchForm" action="{{ url_for('main.index') }}" method="GET">
                     <input type="hidden" name="level" value="{{ selected_level }}">
                     <div class="search-input-wrapper">
                         <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -126,7 +126,7 @@
             <div class="filter-bar">
                 <div class="filter-group">
                     <select onchange="window.location.href=this.value">
-                        <option value="{{ url_for('index') }}" {% if not selected_region %}selected{% endif %}>
+                        <option value="{{ url_for('main.index') }}" {% if not selected_region %}selected{% endif %}>
                             {{ _('all_regions') }}
                         </option>
                         {% for region in regions %}
@@ -253,7 +253,7 @@
                             {{ _('kindergarten') }}
                         </option>
                         {% else %}
-                        <option value="{{ url_for('index') }}" {% if not selected_level %}selected{% endif %}>
+                        <option value="{{ url_for('main.index') }}" {% if not selected_level %}selected{% endif %}>
                             {{ _('all_types') }}
                         </option>
                         <option value="{{ url_for('index', level='university') }}" {% if selected_level == 'university' %}selected{% endif %}>
@@ -273,7 +273,7 @@
                 </div>
                 
                 {% if selected_region or selected_country or selected_city or selected_district or selected_level or search_query %}
-                    <a href="{{ url_for('index') }}" class="clear-filters">
+                    <a href="{{ url_for('main.index') }}" class="clear-filters">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="18" y1="6" x2="6" y2="18"/>
                             <line x1="6" y1="6" x2="18" y2="18"/>
@@ -442,7 +442,7 @@
                 <div class="no-results-icon">🎓</div>
                 <h2>{{ _('no_schools') }}</h2>
                 <p>Try adjusting your filters or search query</p>
-                <a href="{{ url_for('index') }}" class="btn btn-primary">{{ _('view_all') }}</a>
+                <a href="{{ url_for('main.index') }}" class="btn btn-primary">{{ _('view_all') }}</a>
             </div>
             {% endif %}
 
@@ -486,7 +486,7 @@
             <div>
                 <h2 style="font-size: 1.8rem; font-weight: 700; color: white; margin-bottom: 12px;">{{ _('share_and_discover') }}</h2>
                 <p style="font-size: 1.1rem; color: rgba(255,255,255,0.8); margin-bottom: 24px;">{{ _('connect_with_alumni') }}</p>
-                <a href="{{ url_for('social') }}" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: white; color: #1E3A5F; border-radius: 14px; font-weight: 600; text-decoration: none; transition: all 0.2s ease;">
+                <a href="{{ url_for('main.social') }}" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: white; color: #1E3A5F; border-radius: 14px; font-weight: 600; text-decoration: none; transition: all 0.2s ease;">
                     {{ _('enter_social') }}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
                 </a>
@@ -504,7 +504,7 @@
                     <div style="font-size: 2rem; font-weight: 700; color: white;">{{ _('active') if session.get('user_id') else _('visitor') }}</div>
                     <div style="font-size: 0.85rem; color: rgba(255,255,255,0.7);">{{ _('your_status') }}</div>
                 </div>
-                <a href="{{ url_for('social') }}" style="background: rgba(255,255,255,0.2); border-radius: 16px; padding: 20px; text-align: center; text-decoration: none; transition: all 0.2s ease;">
+                <a href="{{ url_for('main.social') }}" style="background: rgba(255,255,255,0.2); border-radius: 16px; padding: 20px; text-align: center; text-decoration: none; transition: all 0.2s ease;">
                     <div style="font-size: 1.5rem;">→</div>
                     <div style="font-size: 0.85rem; color: white;">{{ _('explore_more') }}</div>
                 </a>

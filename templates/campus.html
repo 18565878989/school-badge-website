@@ -16,23 +16,23 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="{{ url_for('index') }}" class="logo">
+            <a href="{{ url_for('main.index') }}" class="logo">
                 <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网">
             </a>
             <div class="nav-links">
-                <a href="{{ url_for('index') }}">{{ _('home') }}</a>
-                <a href="{{ url_for('campus') }}" class="active">{{ _('campus_gallery') }}</a>
-                <a href="{{ url_for('social') }}">{{ _('social') }}</a>
+                <a href="{{ url_for('main.index') }}">{{ _('home') }}</a>
+                <a href="{{ url_for('main.campus') }}" class="active">{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('main.social') }}">{{ _('social') }}</a>
                 {% if session.get('user_id') %}
-                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
+                    <a href="{{ url_for('schools.my_likes') }}">{{ _('my_likes') }}</a>
                     <span class="username">{{ session.get('username') }}</span>
                     {% if is_admin() %}
                         <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
                     {% endif %}
-                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
+                    <a href="{{ url_for('auth.logout') }}">{{ _('logout') }}</a>
                 {% else %}
-                    <a href="{{ url_for('login') }}">{{ _('login') }}</a>
-                    <a href="{{ url_for('register') }}">{{ _('register') }}</a>
+                    <a href="{{ url_for('auth.login') }}">{{ _('login') }}</a>
+                    <a href="{{ url_for('auth.register') }}">{{ _('register') }}</a>
                 {% endif %}
                 
                 <div class="lang-switcher">

@@ -19,7 +19,7 @@
         <!-- Sidebar -->
         <aside class="admin-sidebar">
             <div class="sidebar-header">
-                <a href="{{ url_for('index') }}" class="sidebar-logo">
+                <a href="{{ url_for('main.index') }}" class="sidebar-logo">
                     <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网">
                     <span>校徽网</span>
                 </a>
@@ -39,7 +39,7 @@
                         <span>仪表盘</span>
                     </a>
                     
-                    <a href="{{ url_for('admin_schools') }}" class="nav-item {% if 'school' in request.endpoint %}active{% endif %}">
+                    <a href="{{ url_for('admin.admin_schools') }}" class="nav-item {% if 'school' in request.endpoint %}active{% endif %}">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
                             <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
@@ -99,7 +99,7 @@
                 </div>
                 
                 <div class="sidebar-footer">
-                    <a href="{{ url_for('index') }}" class="nav-item">
+                    <a href="{{ url_for('main.index') }}" class="nav-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"/>
                             <line x1="2" y1="12" x2="22" y2="12"/>

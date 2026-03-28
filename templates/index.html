@@ -7,7 +7,7 @@
     <h1>{{ _('hero_title') }}</h1>
     <p>{{ _('hero_subtitle') }}</p>
     
-    <form class="search-form" action="{{ url_for('index') }}" method="GET">
+    <form class="search-form" action="{{ url_for('main.index') }}" method="GET">
         <input type="text" name="q" placeholder="{{ _('search_placeholder') }}" 
                value="{{ search_query }}">
         {% if selected_region %}
@@ -32,7 +32,7 @@
 <div class="filters">
     <div class="filter-group">
         <select onchange="window.location.href=this.value">
-            <option value="{{ url_for('index') }}" {% if not selected_region %}selected{% endif %}>{{ _('all_regions') }}</option>
+            <option value="{{ url_for('main.index') }}" {% if not selected_region %}selected{% endif %}>{{ _('all_regions') }}</option>
             {% for region in regions %}
                 <option value="{{ url_for('index', region=region) }}" 
                         {% if selected_region == region %}selected{% endif %}>
@@ -103,7 +103,7 @@
     </div>
     
     {% if selected_region or selected_country or selected_city or selected_district or selected_level or search_query %}
-        <a href="{{ url_for('index') }}" class="clear-filters">{{ _('clear_filters') }}</a>
+        <a href="{{ url_for('main.index') }}" class="clear-filters">{{ _('clear_filters') }}</a>
     {% endif %}
 </div>
 
@@ -292,7 +292,7 @@
     {% else %}
         <div class="no-results">
             <p>{{ _('no_schools') }}</p>
-            <a href="{{ url_for('index') }}" class="btn btn-primary">{{ _('view_all') }}</a>
+            <a href="{{ url_for('main.index') }}" class="btn btn-primary">{{ _('view_all') }}</a>
         </div>
     {% endfor %}
 </div>

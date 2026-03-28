@@ -28,33 +28,103 @@ def inject_globals():
 
 @main_bp.route('/')
 def index():
-    """Home page."""
+    """Homepage - list schools by region with pagination."""
+    search_query = request.args.get('q', '')
+    selected_region = request.args.get('region', '')
+    selected_country = request.args.get('country', '')
+    selected_city = request.args.get('city', '')
+    selected_level = request.args.get('level', 'university')
+    page = request.args.get('page', 1, type=int)
+    per_page = 21
+    
     conn = get_db_connection()
     
-    # Get stats
-    total_schools = conn.execute('SELECT COUNT(*) FROM schools').fetchone()[0]
-    total_universities = conn.execute('SELECT COUNT(*) FROM schools WHERE level = "university"').fetchone()[0]
-    total_with_badges = conn.execute('SELECT COUNT(*) FROM schools WHERE badge_url IS NOT NULL AND badge_url != ""').fetchone()[0]
+    # Get country list
+    countries = []
+    if selected_region:
+        countries = conn.execute("SELECT DISTINCT country FROM schools WHERE region = ? ORDER BY country", 
+                                  (selected_region,)).fetchall()
+        countries = [c[0] for c in countries]
     
-    # Get recent schools
-    recent_schools = conn.execute('''
-        SELECT * FROM schools 
-        ORDER BY created_at DESC 
-        LIMIT 12
-    ''').fetchall()
+    # Get city list
+    cities = []
+    if selected_country:
+        cities = conn.execute("SELECT DISTINCT city FROM schools WHERE country = ? AND city IS NOT NULL AND city != '' ORDER BY city", 
+                              (selected_country,)).fetchall()
+        cities = [c[0] for c in cities]
     
-    # Get regions
-    regions = get_regions()
+    # Get HK district list
+    hk_districts = []
+    if selected_country == 'Hong Kong':
+        hk_districts = conn.execute("SELECT DISTINCT district FROM schools WHERE country = 'Hong Kong' AND district IS NOT NULL AND district != '' ORDER BY district").fetchall()
+        hk_districts = [d[0] for d in hk_districts]
+    
+    selected_district = request.args.get('district', '')
+    
+    # Build query based on filters
+    if search_query:
+        schools = search_schools(search_query, selected_region, selected_level)
+    elif selected_country and selected_level and selected_region and selected_district:
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND district = ? AND level = ? ORDER BY name", 
+                               (selected_region, selected_country, selected_district, selected_level)).fetchall()
+    elif selected_country and selected_level and selected_region and selected_city:
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND city = ? AND level = ? ORDER BY name", 
+                               (selected_region, selected_country, selected_city, selected_level)).fetchall()
+    elif selected_country and selected_level and selected_region:
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND level = ? ORDER BY name", 
+                               (selected_region, selected_country, selected_level)).fetchall()
+    elif selected_region and selected_country and selected_city:
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND city = ? ORDER BY name", 
+                               (selected_region, selected_country, selected_city)).fetchall()
+    elif selected_region and selected_country and selected_district:
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND district = ? ORDER BY name", 
+                               (selected_region, selected_country, selected_district)).fetchall()
+    elif selected_region and selected_country:
+        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? ORDER BY name", 
+                               (selected_region, selected_country)).fetchall()
+    elif selected_country and selected_level:
+        schools = conn.execute("SELECT * FROM schools WHERE country = ? AND level = ? ORDER BY name", 
+                               (selected_country, selected_level)).fetchall()
+    elif selected_country:
+        schools = conn.execute("SELECT * FROM schools WHERE country = ? ORDER BY name", 
+                               (selected_country,)).fetchall()
+    elif selected_region and selected_level:
+        schools = get_schools_by_region_and_level(selected_region, selected_level)
+    elif selected_region:
+        schools = get_schools_by_region(selected_region)
+    elif selected_level:
+        schools = get_schools_by_level(selected_level)
+    else:
+        schools = get_all_schools()
+    
+    regions = ['Asia', 'North America', 'Europe', 'Oceania', 'Africa', 'South America']
+    levels = ['university', 'middle', 'elementary', 'kindergarten']
     
     conn.close()
     
-    return render_template('index.html',
-                         total_schools=total_schools,
-                         total_universities=total_universities,
-                         total_with_badges=total_with_badges,
-                         recent_schools=[dict(s) for s in recent_schools],
-                         regions=regions,
-                         page='home')
+    # Pagination
+    total = len(schools)
+    total_pages = (total + per_page - 1) // per_page
+    start = (page - 1) * per_page
+    end = start + per_page
+    paginated_schools = schools[start:end]
+    
+    return render_template('index_apple.html', 
+                         schools=paginated_schools, 
+                         regions=regions, 
+                         levels=levels,
+                         countries=countries,
+                         cities=cities,
+                         hk_districts=hk_districts,
+                         search_query=search_query,
+                         selected_region=selected_region,
+                         selected_country=selected_country,
+                         selected_city=selected_city,
+                         selected_district=selected_district,
+                         selected_level=selected_level,
+                         page=page,
+                         total_pages=total_pages,
+                         total_schools=total)
 
 @main_bp.route('/lang/<lang>')
 def set_language(lang):
@@ -110,23 +180,56 @@ def campus_region(region):
 
 @main_bp.route('/social')
 def social():
-    """Social features page."""
+    """Social hub page - topics and discussions."""
     conn = get_db_connection()
     
-    # Get active schools (with recent updates)
-    schools = conn.execute('''
-        SELECT s.*, COUNT(l.id) as likes
-        FROM schools s
-        LEFT JOIN likes l ON s.id = l.school_id
-        GROUP BY s.id
-        ORDER BY likes DESC, s.updated_at DESC
-        LIMIT 50
-    ''').fetchall()
+    # Get topics
+    tab = request.args.get('tab', 'hot')
+    if tab == 'hot':
+        cursor = conn.execute("""
+            SELECT t.*, u.username as author_name, s.name as school_name, s.badge_url as school_badge
+            FROM topics t
+            LEFT JOIN users u ON t.author_id = u.id
+            LEFT JOIN schools s ON t.school_id = s.id
+            ORDER BY t.is_hot DESC, t.likes_count DESC, t.created_at DESC
+            LIMIT 20
+        """)
+    else:
+        cursor = conn.execute("""
+            SELECT t.*, u.username as author_name, s.name as school_name, s.badge_url as school_badge
+            FROM topics t
+            LEFT JOIN users u ON t.author_id = u.id
+            LEFT JOIN schools s ON t.school_id = s.id
+            ORDER BY t.created_at DESC
+            LIMIT 20
+        """)
+    
+    topics = [dict(row) for row in cursor.fetchall()]
+    
+    # Get hot topics for sidebar
+    cursor = conn.execute("""
+        SELECT t.*, u.username as author_name
+        FROM topics t
+        LEFT JOIN users u ON t.author_id = u.id
+        WHERE t.is_hot = 1
+        ORDER BY t.likes_count DESC
+        LIMIT 5
+    """)
+    hot_topics = [dict(row) for row in cursor.fetchall()]
+    
+    # Get replies count
+    cursor = conn.execute('SELECT COUNT(*) FROM topic_replies')
+    replies_count = cursor.fetchone()[0]
     
     conn.close()
     
-    return render_template('social.html', schools=[dict(s) for s in schools])
-
+    return render_template('social.html', 
+                          topics=topics, 
+                          hot_topics=hot_topics,
+                          replies_count=replies_count,
+                          tab=tab,
+                          online_count=128,
+                          breadcrumb='social')
 @main_bp.route('/deep-search')
 def deep_search():
     """Deep search page."""

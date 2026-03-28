@@ -20,23 +20,23 @@
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
-            <a href="{{ url_for('index') }}" class="logo">
+            <a href="{{ url_for('main.index') }}" class="logo">
                 <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网">
             </a>
             <div class="nav-links" id="navLinks">
-                <a href="{{ url_for('index') }}">{{ _('home') }}</a>
-                <a href="{{ url_for('campus') }}">{{ _('campus_gallery') }}</a>
-                <a href="{{ url_for('social') }}">社交</a>
+                <a href="{{ url_for('main.index') }}">{{ _('home') }}</a>
+                <a href="{{ url_for('main.campus') }}">{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('main.social') }}">社交</a>
                 {% if session.get('user_id') %}
-                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
+                    <a href="{{ url_for('schools.my_likes') }}">{{ _('my_likes') }}</a>
                     <span class="username">{{ session.get('username') }}</span>
                     {% if is_admin() %}
                         <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
                     {% endif %}
-                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
+                    <a href="{{ url_for('auth.logout') }}">{{ _('logout') }}</a>
                 {% else %}
-                    <a href="{{ url_for('login') }}">{{ _('login') }}</a>
-                    <a href="{{ url_for('register') }}">{{ _('register') }}</a>
+                    <a href="{{ url_for('auth.login') }}">{{ _('login') }}</a>
+                    <a href="{{ url_for('auth.register') }}">{{ _('register') }}</a>
                 {% endif %}
                 
                 <div class="lang-switcher">
@@ -143,7 +143,7 @@
                 <div class="no-results-icon">🏛️</div>
                 <h2>{{ _('Coming Soon') }}</h2>
                 <p>{{ _('European universities campus photos are being prepared.') }}</p>
-                <a href="{{ url_for('campus') }}" class="btn btn-primary">
+                <a href="{{ url_for('main.campus') }}" class="btn btn-primary">
                     {{ _('Back to Campus Gallery') }}
                 </a>
             </div>

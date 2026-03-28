@@ -83,6 +83,10 @@ try:
     from routes.api_full import api_full_bp
     app.register_blueprint(api_full_bp)
     print("[Routes] api_full blueprint registered")
+    
+    from routes.main import main_bp
+    app.register_blueprint(main_bp)
+    print("[Routes] main blueprint registered")
 except Exception as e:
     print(f"[Routes] blueprint skipped: {e}")
 

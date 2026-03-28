@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="{{ url_for('index') }}" class="logo">
+            <a href="{{ url_for('main.index') }}" class="logo">
                 <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网" class="logo-img">
             </a>
             <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()">
@@ -22,20 +22,20 @@
                 <span class="hamburger-line"></span>
             </button>
             <div class="nav-links" id="navLinks">
-                <a href="{{ url_for('index') }}" {% if page=='index' or not page %}class="active"{% endif %}>{{ _('home') }}</a>
-                <a href="{{ url_for('rankings') }}" {% if page=='rankings' %}class="active"{% endif %}>🏆 {{ _('rankings') }}</a>
-                <a href="{{ url_for('campus') }}" {% if page=='campus' %}class="active"{% endif %}>{{ _('campus_gallery') }}</a>
-                <a href="{{ url_for('social') }}" {% if page=='social' %}class="active"{% endif %} style="color: #1E3A5F; font-weight: 600;">{{ _('social') }}</a>
+                <a href="{{ url_for('main.index') }}" {% if page=='index' or not page %}class="active"{% endif %}>{{ _('home') }}</a>
+                <a href="{{ url_for('rankings.rankings') }}" {% if page=='rankings' %}class="active"{% endif %}>🏆 {{ _('rankings') }}</a>
+                <a href="{{ url_for('main.campus') }}" {% if page=='campus' %}class="active"{% endif %}>{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('main.social') }}" {% if page=='social' %}class="active"{% endif %} style="color: #1E3A5F; font-weight: 600;">{{ _('social') }}</a>
                 {% if session.get('user_id') %}
-                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
+                    <a href="{{ url_for('schools.my_likes') }}">{{ _('my_likes') }}</a>
                     <span class="username">{{ session.get('username') }}</span>
                     {% if is_admin() %}
                         <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
                     {% endif %}
-                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
+                    <a href="{{ url_for('auth.logout') }}">{{ _('logout') }}</a>
                 {% else %}
-                    <a href="{{ url_for('login') }}">{{ _('login') }}</a>
-                    <a href="{{ url_for('register') }}">{{ _('register') }}</a>
+                    <a href="{{ url_for('auth.login') }}">{{ _('login') }}</a>
+                    <a href="{{ url_for('auth.register') }}">{{ _('register') }}</a>
                 {% endif %}
                 
                 {% block breadcrumb %}{% endblock %}

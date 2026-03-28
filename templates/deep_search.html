@@ -20,13 +20,13 @@
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
-            <a href="{{ url_for('index') }}" class="logo">
+            <a href="{{ url_for('main.index') }}" class="logo">
                 <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网">
             </a>
             <div class="nav-links" id="navLinks">
-                <a href="{{ url_for('index') }}">{{ _('home') }}</a>
-                <a href="{{ url_for('campus') }}">{{ _('campus_gallery') }}</a>
-                <a href="{{ url_for('deep_search') }}" class="active" style="color: var(--primary);">
+                <a href="{{ url_for('main.index') }}">{{ _('home') }}</a>
+                <a href="{{ url_for('main.campus') }}">{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('main.deep_search') }}" class="active" style="color: var(--primary);">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;margin-right:4px;">
                         <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                         <path d="M2 17l10 5 10-5"/>
@@ -35,13 +35,13 @@
                     {{ _('deep_search') }}
                 </a>
                 {% if session.get('user_id') %}
-                    <a href="{{ url_for('my_likes') }}">{{ _('my_likes') }}</a>
+                    <a href="{{ url_for('schools.my_likes') }}">{{ _('my_likes') }}</a>
                     {% if is_admin() %}
                         <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
                     {% endif %}
-                    <a href="{{ url_for('logout') }}">{{ _('logout') }}</a>
+                    <a href="{{ url_for('auth.logout') }}">{{ _('logout') }}</a>
                 {% else %}
-                    <a href="{{ url_for('login') }}">{{ _('login') }}</a>
+                    <a href="{{ url_for('auth.login') }}">{{ _('login') }}</a>
                 {% endif %}
             </div>
         </div>
