@@ -8,6 +8,7 @@ from .schools import schools_bp, register_routes as register_schools
 from .rankings import rankings_bp, register_routes as register_rankings
 from .api import api_bp, register_routes as register_api
 from .main import main_bp, register_routes as register_main
+from .api_extended import api_ext_bp, register_routes as register_api_ext
 
 def register_all_routes(app):
     """Register all route blueprints with the Flask app."""
@@ -16,6 +17,7 @@ def register_all_routes(app):
     register_schools(app)
     register_rankings(app)
     register_api(app)
+    register_api_ext(app)  # 注册扩展API路由
     register_main(app)
 
 __all__ = ['register_all_routes']

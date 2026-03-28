@@ -42,7 +42,6 @@ app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-producti
 
 # 注册蓝图路由 (模块化重构)
 # 注意: 由于蓝图路由简化，暂保持原始app.py路由
-# 蓝图注册已准备但未激活，待后续完整迁移
 # try:
 #     from routes import register_all_routes
 #     register_all_routes(app)
