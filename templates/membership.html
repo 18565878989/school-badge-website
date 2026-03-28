@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>会员中心 - 校徽网</title>
+    <title>{{ _('page_title_membership') }}</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; }
@@ -32,7 +32,7 @@
         .level-card:hover { border-color: #667eea; transform: translateY(-2px); }
         .level-card.active { border-color: #667eea; background: #f8f7ff; }
         .level-card.featured { border-color: #ffd700; position: relative; }
-        .level-card.featured::before { content: '推荐'; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #ffd700; color: #333; padding: 2px 12px; border-radius: 10px; font-size: 12px; }
+        .level-card.featured::before { content: '{{ _('recommended') }}'; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #ffd700; color: #333; padding: 2px 12px; border-radius: 10px; font-size: 12px; }
         
         .level-name { font-size: 16px; font-weight: 600; color: #333; margin-bottom: 10px; }
         .level-price { font-size: 24px; font-weight: 700; color: #667eea; }
@@ -66,8 +66,8 @@
 </head>
 <body>
     <div class="header">
-        <h1>🎓 会员中心</h1>
-        <p>解锁更多特权，享受专属服务</p>
+        <h1>🎓 {{ _('membership_center') }}</h1>
+        <p>{{ _('membership_unlock') }}</p>
     </div>
     
     <div class="container">
@@ -75,21 +75,21 @@
         <div class="user-card">
             <div class="user-avatar">👤</div>
             <div class="user-info">
-                <div class="user-name" id="userName">请登录</div>
-                <div class="user-level" id="userLevel">开通会员享专属特权</div>
+                <div class="user-name" id="userName">{{ _('please_login') }}</div>
+                <div class="user-level" id="userLevel">{{ _('open_vip_privilege') }}</div>
             </div>
         </div>
         
         <!-- 当前会员状态 -->
         <div class="current-plan" id="currentPlan" style="display: none;">
-            <h2>当前会员</h2>
-            <div class="plan-badge" id="currentLevelBadge">青铜会员</div>
-            <p style="color: #666; font-size: 14px;">有效期至：<span id="expireDate">2026-12-31</span></p>
+            <h2>{{ _('current_membership') }}</h2>
+            <div class="plan-badge" id="currentLevelBadge">{{ _('bronze_member') }}</div>
+            <p style="color: #666; font-size: 14px;">{{ _('valid_until') }}：<span id="expireDate">2026-12-31</span></p>
         </div>
         
         <!-- 会员等级 -->
         <div class="section">
-            <h2>选择会员等级</h2>
+            <h2>{{ _('select_membership_level') }}</h2>
             <div class="level-grid" id="levelGrid">
                 <!-- 会员等级将通过JS加载 -->
             </div>
@@ -97,47 +97,47 @@
         
         <!-- 会员权益 -->
         <div class="section">
-            <h2>会员专属权益</h2>
+            <h2>{{ _('membership_benefits') }}</h2>
             <div class="benefits-list">
                 <div class="benefit-item">
                     <div class="benefit-icon">♾️</div>
-                    <div class="benefit-name">无限分享</div>
+                    <div class="benefit-name">{{ _('unlimited_sharing') }}</div>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-icon">🚫</div>
-                    <div class="benefit-name">去广告</div>
+                    <div class="benefit-name">{{ _('remove_ads') }}</div>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-icon">🏆</div>
-                    <div class="benefit-name">专属徽章</div>
+                    <div class="benefit-name">{{ _('exclusive_badge') }}</div>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-icon">📥</div>
-                    <div class="benefit-name">高清下载</div>
+                    <div class="benefit-name">{{ _('hd_download') }}</div>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-icon">🎁</div>
-                    <div class="benefit-name">优先活动</div>
+                    <div class="benefit-name">{{ _('priority_activities') }}</div>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-icon">💬</div>
-                    <div class="benefit-name">专属客服</div>
+                    <div class="benefit-name">{{ _('exclusive_support') }}</div>
                 </div>
             </div>
         </div>
         
         <!-- 订单记录 -->
         <div class="section">
-            <h2>我的订单</h2>
+            <h2>{{ _('my_orders') }}</h2>
             <div class="tab-nav">
-                <div class="tab-item active" data-tab="membership">会员订单</div>
-                <div class="tab-item" data-tab="shop">商城订单</div>
+                <div class="tab-item active" data-tab="membership">{{ _('member_orders') }}</div>
+                <div class="tab-item" data-tab="shop">{{ _('shop_orders') }}</div>
             </div>
             <div class="tab-content active" id="membershipOrders">
-                <p style="color: #999; text-align: center; padding: 30px;">暂无订单</p>
+                <p style="color: #999; text-align: center; padding: 30px;">{{ _('no_orders_yet') }}</p>
             </div>
             <div class="tab-content" id="shopOrders">
-                <p style="color: #999; text-align: center; padding: 30px;">暂无订单</p>
+                <p style="color: #999; text-align: center; padding: 30px;">{{ _('no_orders_yet') }}</p>
             </div>
         </div>
     </div>

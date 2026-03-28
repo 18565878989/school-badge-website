@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>分享 - 校徽网</title>
+    <title>{{ _('page_title_share') }}</title>
     <style>
         * {
             margin: 0;
@@ -311,8 +311,8 @@
 <body>
     <div class="share-container">
         <div class="share-header">
-            <h2>分享到社交平台</h2>
-            <p>分享校徽网精彩内容</p>
+            <h2>{{ _('share_to_social') }}</h2>
+            <p>{{ _('share_wonderful_content') }}</p>
         </div>
         
         <div class="share-preview">
@@ -320,30 +320,30 @@
                 <span class="badge-icon">🎓</span>
             </div>
             <div class="share-preview-content">
-                <div class="share-preview-title" id="shareTitle">加载中...</div>
-                <div class="share-preview-desc" id="shareDesc">请稍候...</div>
-                <div class="share-preview-source" id="shareSource">来自 校徽网</div>
+                <div class="share-preview-title" id="shareTitle">{{ _('loading') }}</div>
+                <div class="share-preview-desc" id="shareDesc">{{ _('please_wait') }}</div>
+                <div class="share-preview-source" id="shareSource">{{ _('from_schoolbadge') }}</div>
             </div>
         </div>
         
         <div class="share-platforms">
-            <div class="share-platforms-title">分享到</div>
+            <div class="share-platforms-title">{{ _('share_to') }}</div>
             <div class="platform-grid">
                 <button class="platform-item" onclick="shareTo('wechat')">
                     <div class="platform-icon wechat">💬</div>
-                    <span class="platform-name">微信</span>
+                    <span class="platform-name">{{ _('wechat') }}</span>
                 </button>
                 <button class="platform-item" onclick="shareTo('weibo')">
                     <div class="platform-icon weibo">📱</div>
-                    <span class="platform-name">微博</span>
+                    <span class="platform-name">{{ _('weibo') }}</span>
                 </button>
                 <button class="platform-item" onclick="shareTo('douyin')">
                     <div class="platform-icon douyin">📱</div>
-                    <span class="platform-name">抖音</span>
+                    <span class="platform-name">{{ _('douyin') }}</span>
                 </button>
                 <button class="platform-item" onclick="shareTo('xiaohongshu')">
                     <div class="platform-icon xiaohongshu">📕</div>
-                    <span class="platform-name">小红书</span>
+                    <span class="platform-name">{{ _('xiaohongshu') }}</span>
                 </button>
                 <button class="platform-item" onclick="shareTo('twitter')">
                     <div class="platform-icon twitter">🐦</div>
@@ -367,13 +367,13 @@
         <div class="share-link-section">
             <div class="share-link-box">
                 <input type="text" class="share-link-input" id="shareUrl" readonly>
-                <button class="share-copy-btn" id="copyBtn" onclick="copyLink()">复制链接</button>
+                <button class="share-copy-btn" id="copyBtn" onclick="copyLink()">{{ _('copy_link') }}</button>
             </div>
         </div>
         
         <div class="share-qr-section">
             <button class="share-qr-btn" onclick="showQRCode()">
-                📱 生成二维码分享
+                📱 {{ _('generate_qr') }}
             </button>
         </div>
     </div>
@@ -381,12 +381,12 @@
     <!-- QR Code Modal -->
     <div class="share-qr-modal" id="qrModal">
         <div class="share-qr-content">
-            <h3>扫码分享</h3>
+            <h3>{{ _('scan_qr_share') }}</h3>
             <div class="share-qr-code" id="qrCode">
                 <span class="loading"></span>
             </div>
-            <p style="color: #666; font-size: 13px; margin-bottom: 16px;">扫码二维码打开链接</p>
-            <button class="share-qr-close" onclick="closeQRModal()">关闭</button>
+            <p style="color: #666; font-size: 13px; margin-bottom: 16px;">{{ _('scan_qr_desc') }}</p>
+            <button class="share-qr-close" onclick="closeQRModal()">{{ _('close') }}</button>
         </div>
     </div>
     

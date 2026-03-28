@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>校友商城 - 校徽网</title>
+    <title>{{ _('page_title_shop') }}</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; }
@@ -69,11 +69,11 @@
 </head>
 <body>
     <div class="header">
-        <h1>🎓 校友商城</h1>
+        <h1>🎓 {{ _('alumni_shop') }}</h1>
         <div class="header-right">
-            <button class="header-btn" onclick="showTab('home')">首页</button>
-            <button class="header-btn" onclick="showTab('orders')">我的订单</button>
-            <button class="header-btn" onclick="toggleCart()">🛒 购物车 (<span id="cartCount">0</span>)</button>
+            <button class="header-btn" onclick="showTab('home')">{{ _('home_tab') }}</button>
+            <button class="header-btn" onclick="showTab('orders')">{{ _('my_orders_tab') }}</button>
+            <button class="header-btn" onclick="toggleCart()">🛒 {{ _('shopping_cart') }} (<span id="cartCount">0</span>)</button>
         </div>
     </div>
     
@@ -81,15 +81,15 @@
         <!-- Banner -->
         <div class="banner">
             <div class="banner-text">
-                <h2>🎓 校友专属优惠</h2>
-                <p>精选校徽、文创产品，限时折扣中！</p>
+                <h2>🎓 {{ _('alumni_discount') }}</h2>
+                <p>{{ _('shop_products') }}</p>
             </div>
-            <button class="banner-btn" onclick="scrollToProducts()">立即选购</button>
+            <button class="banner-btn" onclick="scrollToProducts()">{{ _('buy_now') }}</button>
         </div>
         
         <!-- 分类 -->
         <div class="category-nav" id="categoryNav">
-            <button class="category-item active" data-category="">全部</button>
+            <button class="category-item active" data-category="">{{ _('all_categories') }}</button>
         </div>
         
         <!-- 商品列表 -->
@@ -99,9 +99,9 @@
     </div>
     
     <div class="container" id="ordersTab" style="display: none;">
-        <h2 style="margin-bottom: 20px; font-size: 18px;">我的订单</h2>
+        <h2 style="margin-bottom: 20px; font-size: 18px;">{{ _('my_orders') }}</h2>
         <div id="ordersList">
-            <p style="color: #999; text-align: center; padding: 50px;">暂无订单</p>
+            <p style="color: #999; text-align: center; padding: 50px;">{{ _('no_orders_yet') }}</p>
         </div>
     </div>
     
@@ -109,18 +109,18 @@
     <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
     <div class="cart-sidebar" id="cartSidebar">
         <div class="cart-header">
-            <h3>🛒 购物车</h3>
+            <h3>🛒 {{ _('shopping_cart') }}</h3>
             <button class="cart-close" onclick="toggleCart()">×</button>
         </div>
         <div class="cart-items" id="cartItems">
-            <p style="color: #999; text-align: center; padding: 50px;">购物车是空的</p>
+            <p style="color: #999; text-align: center; padding: 50px;">{{ _('cart_empty') }}</p>
         </div>
         <div class="cart-footer">
             <div class="cart-total">
-                <span class="cart-total-label">合计</span>
+                <span class="cart-total-label">{{ _('total_amount') }}</span>
                 <span class="cart-total-price">¥<span id="cartTotal">0</span></span>
             </div>
-            <button class="checkout-btn" onclick="checkout()">立即结算</button>
+            <button class="checkout-btn" onclick="checkout()">{{ _('checkout_now') }}</button>
         </div>
     </div>
     
