@@ -326,7 +326,37 @@ def deep_search():
         else:
             processed_keywords.append(('keyword', kw))
     
-    # 构建多条件查询
+    # 构建多条件查询 - 分离核心过滤和关键词
+    core_filters = []
+    core_params = []
+    keyword_filters = []
+    keyword_params = []
+    
+    # 过滤词（严格匹配）
+    for kw_type, kw_value in processed_keywords:
+        if kw_type == 'country':
+            core_filters.append('(country LIKE ? OR name_cn LIKE ?)')
+            core_params.extend([f'%{kw_value}%', f'%{kw_value}%'])
+        elif kw_type == 'level':
+            core_filters.append('level = ?')
+            core_params.append(kw_value)
+        elif kw_type == 'keyword' and kw.lower() not in ['top', 'ranking', 'best', '最好', '前五', '前10', '排名']:
+            # 排除过于泛化的关键词
+            keyword_filters.append('(name LIKE ? OR name_cn LIKE ? OR motto LIKE ? OR city LIKE ?)')
+            keyword_params.extend([f'%{kw}%', f'%{kw}%', f'%{kw}%', f'%{kw}%'])
+    
+    # 处理 filters
+    if filters.get('country'):
+        core_filters.append('country LIKE ?')
+        core_params.append(f'%{filters["country"]}%')
+    if filters.get('level'):
+        core_filters.append('level = ?')
+        core_params.append(filters['level'])
+    if filters.get('region'):
+        core_filters.append('region = ?')
+        core_params.append(filters['region'])
+    
+    # 构建 SQL
     base_sql = '''
         SELECT *, 
             CASE 
@@ -337,18 +367,16 @@ def deep_search():
             END as ranking_score
         FROM schools WHERE 1=1
     '''
-    params = []
     
-    for kw_type, kw_value in processed_keywords:
-        if kw_type == 'country':
-            base_sql += ' AND (country LIKE ? OR name_cn LIKE ?)'
-            params.extend([f'%{kw_value}%', f'%{kw}%'])
-        elif kw_type == 'level':
-            base_sql += ' AND level = ?'
-            params.append(kw_value)
-        else:
-            base_sql += ' AND (name LIKE ? OR name_cn LIKE ? OR motto LIKE ? OR city LIKE ?)'
-            params.extend([f'%{kw}%', f'%{kw}%', f'%{kw}%', f'%{kw}%'])
+    # 添加核心过滤
+    if core_filters:
+        base_sql += ' AND ' + ' AND '.join(core_filters)
+    
+    # 添加关键词搜索（OR 关系，拓宽搜索）
+    if keyword_filters:
+        base_sql += ' AND (' + ' OR '.join(keyword_filters) + ')'
+    
+    params = core_params + keyword_params
     
     # 如果有特定关键词，优先显示匹配度高的
     if any(k[0] == 'keyword' for k in processed_keywords):
