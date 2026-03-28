@@ -46,7 +46,7 @@ def badges():
         LIMIT 100
     ''').fetchall()
     conn.close()
-    return render_template('badges.html', schools=[dict(s) for s in schools])
+    return render_template('badge_hub.html', schools=[dict(s) for s in schools])
 
 @social_bp.route('/social-v2')
 def social_v2():

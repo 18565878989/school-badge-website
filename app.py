@@ -41,7 +41,7 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
 
 # 注册蓝图路由 (模块化重构)
-# 已启用: auth, schools
+# 已启用: auth, schools, rankings, api, api_ext, social, shop
 try:
     from routes.auth import auth_bp
     app.register_blueprint(auth_bp)
@@ -50,6 +50,26 @@ try:
     from routes.schools import schools_bp
     app.register_blueprint(schools_bp)
     print("[Routes] schools blueprint registered")
+    
+    from routes.rankings import rankings_bp
+    app.register_blueprint(rankings_bp)
+    print("[Routes] rankings blueprint registered")
+    
+    from routes.api import api_bp
+    app.register_blueprint(api_bp)
+    print("[Routes] api blueprint registered")
+    
+    from routes.api_extended import api_ext_bp
+    app.register_blueprint(api_ext_bp)
+    print("[Routes] api_ext blueprint registered")
+    
+    from routes.social import social_bp
+    app.register_blueprint(social_bp)
+    print("[Routes] social blueprint registered")
+    
+    from routes.shop_membership import shop_bp
+    app.register_blueprint(shop_bp)
+    print("[Routes] shop blueprint registered")
 except Exception as e:
     print(f"[Routes] blueprint skipped: {e}")
 
