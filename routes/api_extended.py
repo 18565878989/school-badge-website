@@ -4,6 +4,10 @@ Extended API Routes - 额外的API路由
 from flask import Blueprint, request, jsonify, session
 import sqlite3
 import os
+import re
+import json as json_lib
+
+from services.search_service import search_schools as local_search_schools
 
 api_ext_bp = Blueprint('api_ext', __name__)
 
