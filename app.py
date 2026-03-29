@@ -1915,7 +1915,42 @@ def admin_permissions():
                          role_stats=role_stats,
                          role_perms=role_perms,
                          role_names=role_names,
-                         category_names=category_names)
+                         category_names=category_names,
+                         all_perms=all_perms)
+
+@app.route('/api/admin/roles')
+@admin_required
+def api_admin_roles():
+    """API: List all roles with permissions."""
+    roles = get_all_roles()
+    role_data = []
+    for r in roles:
+        perms = get_role_permissions_db(r)
+        role_data.append({
+            'name': r,
+            'permissions': perms
+        })
+    return jsonify({'roles': role_data})
+
+@app.route('/api/admin/permissions')
+@admin_required
+def api_admin_permissions():
+    """API: List all permission definitions."""
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT code, name, category FROM permission_definitions ORDER BY category, name')
+    perms = cursor.fetchall()
+    conn.close()
+    
+    # 按分类组织
+    categories = {}
+    for p in perms:
+        cat = p[2] or 'other'
+        if cat not in categories:
+            categories[cat] = []
+        categories[cat].append({'code': p[0], 'name': p[1]})
+    
+    return jsonify({'permissions': categories})
 
 @app.route('/admin/role/<role>/permissions', methods=['POST'])
 @admin_required
@@ -1924,6 +1959,7 @@ def admin_update_role_permissions(role):
     data = request.get_json()
     permissions = data.get('permissions', [])
     update_role_permissions(role, permissions)
+    log_admin_action(session['user_id'], 'UPDATE_ROLE_PERMISSIONS', 'role', 0, f'{role}: {len(permissions)} permissions')
     return jsonify({'success': True})
 
 @app.route('/admin/user/<int:user_id>/role', methods=['POST'])
