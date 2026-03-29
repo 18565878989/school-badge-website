@@ -1307,6 +1307,193 @@ def admin_users():
     users = get_all_users()
     return render_template('admin/users.html', users=users)
 
+@app.route('/api/admin/users')
+@admin_required
+def api_admin_users():
+    """API: List all users with pagination and search."""
+    page = request.args.get('page', 1, type=int)
+    per_page = request.args.get('per_page', 20, type=int)
+    search = request.args.get('search', '')
+    role = request.args.get('role', '')
+    status = request.args.get('status', '')
+    oauth_bound = request.args.get('oauth_bound', '')  # 'true' or 'false'
+    
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    
+    # 构建查询
+    sql = 'SELECT id, username, email, phone, role, status, oauth_provider, created_at, last_login, membership_tier FROM users WHERE 1=1'
+    params = []
+    
+    if search:
+        sql += ' AND (username LIKE ? OR email LIKE ? OR phone LIKE ?)'
+        search_pattern = f'%{search}%'
+        params.extend([search_pattern, search_pattern, search_pattern])
+    
+    if role:
+        sql += ' AND role = ?'
+        params.append(role)
+    
+    if status:
+        sql += ' AND status = ?'
+        params.append(status)
+    
+    if oauth_bound == 'true':
+        sql += ' AND oauth_provider IS NOT NULL AND oauth_provider != ""'
+    elif oauth_bound == 'false':
+        sql += ' AND (oauth_provider IS NULL OR oauth_provider = "")'
+    
+    # 获取总数
+    count_sql = sql.replace('SELECT id, username, email, phone, role, status, oauth_provider, created_at, last_login, membership_tier', 'SELECT COUNT(*)')
+    cursor.execute(count_sql, params)
+    total = cursor.fetchone()[0]
+    
+    # 分页
+    sql += ' ORDER BY created_at DESC LIMIT ? OFFSET ?'
+    params.extend([per_page, (page - 1) * per_page])
+    
+    cursor.execute(sql, params)
+    users = cursor.fetchall()
+    conn.close()
+    
+    return jsonify({
+        'users': [{
+            'id': u[0], 'username': u[1], 'email': u[2], 'phone': u[3],
+            'role': u[4], 'status': u[5], 'oauth_provider': u[6],
+            'created_at': u[7], 'last_login': u[8], 'membership_tier': u[9]
+        } for u in users],
+        'total': total,
+        'page': page,
+        'per_page': per_page,
+        'pages': (total + per_page - 1) // per_page
+    })
+
+@app.route('/api/admin/user/<int:user_id>')
+@admin_required
+def api_admin_get_user(user_id):
+    """API: Get single user detail."""
+    user = get_user_by_id(user_id)
+    if not user:
+        return jsonify({'error': 'User not found'}), 404
+    
+    # 获取用户统计
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    
+    cursor.execute('SELECT COUNT(*) FROM likes WHERE user_id = ?', (user_id,))
+    likes_count = cursor.fetchone()[0]
+    
+    cursor.execute('SELECT COUNT(*) FROM comments WHERE author_id = ?', (user_id,))
+    comments_count = cursor.fetchone()[0]
+    
+    conn.close()
+    
+    return jsonify({
+        'user': {
+            'id': user['id'],
+            'username': user['username'],
+            'email': user['email'],
+            'phone': user['phone'],
+            'role': user['role'],
+            'status': user['status'],
+            'oauth_provider': user['oauth_provider'],
+            'oauth_id': user['oauth_id'],
+            'avatar_url': user['avatar_url'],
+            'created_at': user['created_at'],
+            'last_login': user['last_login'],
+            'login_count': user['login_count'],
+            'membership_tier': user['membership_tier'],
+            'membership_expires': user['membership_expires'],
+            'membership_auto_renew': user['membership_auto_renew']
+        },
+        'stats': {
+            'likes_count': likes_count,
+            'comments_count': comments_count
+        }
+    })
+
+@app.route('/api/admin/user/<int:user_id>/update', methods=['POST'])
+@admin_required
+def api_admin_update_user(user_id):
+    """API: Update user."""
+    user = get_user_by_id(user_id)
+    if not user:
+        return jsonify({'error': 'User not found'}), 404
+    
+    data = request.get_json()
+    
+    # 构建更新SQL
+    allowed_fields = ['username', 'email', 'phone', 'role', 'status', 'membership_tier', 'membership_auto_renew']
+    updates = []
+    params = []
+    
+    for field in allowed_fields:
+        if field in data:
+            updates.append(f'{field} = ?')
+            params.append(data[field])
+    
+    if updates:
+        sql = f"UPDATE users SET {', '.join(updates)} WHERE id = ?"
+        params.append(user_id)
+        
+        conn = sqlite3.connect('database.db')
+        cursor = conn.cursor()
+        cursor.execute(sql, params)
+        conn.commit()
+        conn.close()
+        
+        log_admin_action(session['user_id'], 'API_UPDATE_USER', 'user', user_id, user['username'])
+    
+    return jsonify({'success': True})
+
+@app.route('/api/admin/users/batch-action', methods=['POST'])
+@admin_required
+def api_admin_batch_action():
+    """API: Batch action on users."""
+    data = request.get_json()
+    user_ids = data.get('user_ids', [])
+    action = data.get('action')  # 'delete', 'ban', 'unban', 'set_role'
+    role = data.get('role', 'user')
+    
+    if not user_ids or not action:
+        return jsonify({'error': 'Missing parameters'}), 400
+    
+    # 不能对自己操作
+    if session['user_id'] in user_ids:
+        return jsonify({'error': 'Cannot perform action on yourself'}), 400
+    
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    
+    success_count = 0
+    for user_id in user_ids:
+        try:
+            if action == 'delete':
+                cursor.execute('DELETE FROM users WHERE id = ? AND id != ?', (user_id, session['user_id']))
+                log_admin_action(session['user_id'], 'BATCH_DELETE_USER', 'user', user_id, f'user_{user_id}')
+            elif action == 'ban':
+                cursor.execute('UPDATE users SET status = ? WHERE id = ?', ('banned', user_id))
+                log_admin_action(session['user_id'], 'BATCH_BAN_USER', 'user', user_id, f'user_{user_id}')
+            elif action == 'unban':
+                cursor.execute('UPDATE users SET status = ? WHERE id = ?', ('active', user_id))
+                log_admin_action(session['user_id'], 'BATCH_UNBAN_USER', 'user', user_id, f'user_{user_id}')
+            elif action == 'set_role':
+                cursor.execute('UPDATE users SET role = ? WHERE id = ?', (role, user_id))
+                log_admin_action(session['user_id'], 'BATCH_SET_ROLE', 'user', user_id, f'user_{user_id}')
+            
+            success_count += 1
+        except Exception as e:
+            print(f"Error processing user {user_id}: {e}")
+    
+    conn.commit()
+    conn.close()
+    
+    return jsonify({
+        'success': True,
+        'processed': success_count,
+        'total': len(user_ids)
+    })
+
 @app.route('/admin/user/create', methods=['POST'])
 @admin_required
 def admin_create_user():
@@ -1398,6 +1585,216 @@ def admin_delete_user(user_id):
     else:
         flash(_('error'), 'error')
     return redirect(url_for('admin_users'))
+
+@app.route('/admin/user/<int:user_id>/detail')
+@admin_required
+def admin_user_detail(user_id):
+    """View user detail."""
+    user = get_user_by_id(user_id)
+    if not user:
+        flash('用户不存在', 'error')
+        return redirect(url_for('admin_users'))
+    
+    # 获取用户统计
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    
+    # 点赞数
+    cursor.execute('SELECT COUNT(*) FROM likes WHERE user_id = ?', (user_id,))
+    likes_count = cursor.fetchone()[0]
+    
+    # 评论数
+    cursor.execute('SELECT COUNT(*) FROM comments WHERE author_id = ?', (user_id,))
+    comments_count = cursor.fetchone()[0]
+    
+    # 浏览数 (如果有views表)
+    try:
+        cursor.execute('SELECT COUNT(*) FROM views WHERE user_id = ?', (user_id,))
+        views_count = cursor.fetchone()[0]
+    except:
+        views_count = 0
+    
+    conn.close()
+    
+    stats = {
+        'likes_count': likes_count,
+        'comments_count': comments_count,
+        'views_count': views_count
+    }
+    
+    # 生成CSRF令牌
+    csrf_token = security_service.generate_csrf_token()
+    
+    return render_template('admin/user_detail.html', user=user, stats=stats, csrf_token=csrf_token)
+
+@app.route('/admin/user/<int:user_id>/edit')
+@admin_required
+def admin_edit_user(user_id):
+    """Edit user page."""
+    user = get_user_by_id(user_id)
+    if not user:
+        flash('用户不存在', 'error')
+        return redirect(url_for('admin_users'))
+    
+    # 生成CSRF令牌
+    csrf_token = security_service.generate_csrf_token()
+    
+    return render_template('admin/user_edit.html', user=user, csrf_token=csrf_token)
+
+@app.route('/admin/user/<int:user_id>/update', methods=['POST'])
+@admin_required
+def admin_update_user(user_id):
+    """Update user."""
+    user = get_user_by_id(user_id)
+    if not user:
+        flash('用户不存在', 'error')
+        return redirect(url_for('admin_users'))
+    
+    username = request.form.get('username', '').strip()
+    email = request.form.get('email', '').strip()
+    phone = request.form.get('phone', '').strip()
+    role = request.form.get('role', 'user')
+    status = request.form.get('status', 'active')
+    new_password = request.form.get('new_password', '')
+    membership_tier = request.form.get('membership_tier', 'free')
+    membership_expires = request.form.get('membership_expires', '')
+    membership_auto_renew = 1 if request.form.get('membership_auto_renew') else 0
+    
+    # 验证
+    if not username or not email:
+        flash('用户名和邮箱不能为空', 'error')
+        return redirect(url_for('admin_edit_user', user_id=user_id))
+    
+    # 处理社交账号绑定
+    oauth_provider = None
+    oauth_id = None
+    oauth_fields = ['wechat', 'qq', 'weibo', 'facebook', 'google', 'twitter', 'xiaohongshu', 'taobao', 'alipay']
+    for field in oauth_fields:
+        val = request.form.get(f'oauth_{field}', '').strip()
+        if val:
+            oauth_provider = field
+            oauth_id = val
+            break
+    
+    # 更新用户
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    
+    try:
+        if new_password:
+            # 需要修改密码
+            password_hash = generate_password_hash(new_password)
+            cursor.execute('''
+                UPDATE users SET username = ?, email = ?, phone = ?, role = ?, status = ?, 
+                password_hash = ?, oauth_provider = ?, oauth_id = ?,
+                membership_tier = ?, membership_expires = ?, membership_auto_renew = ?
+                WHERE id = ?
+            ''', (username, email, phone, role, status, password_hash, oauth_provider, oauth_id,
+                  membership_tier, membership_expires if membership_expires else None, membership_auto_renew, user_id))
+        else:
+            cursor.execute('''
+                UPDATE users SET username = ?, email = ?, phone = ?, role = ?, status = ?,
+                oauth_provider = ?, oauth_id = ?,
+                membership_tier = ?, membership_expires = ?, membership_auto_renew = ?
+                WHERE id = ?
+            ''', (username, email, phone, role, status, oauth_provider, oauth_id,
+                  membership_tier, membership_expires if membership_expires else None, membership_auto_renew, user_id))
+        
+        conn.commit()
+        log_admin_action(session['user_id'], 'UPDATE_USER', 'user', user_id, username)
+        flash('用户更新成功', 'success')
+    except Exception as e:
+        conn.rollback()
+        flash(f'更新失败: {str(e)}', 'error')
+    finally:
+        conn.close()
+    
+    return redirect(url_for('admin_user_detail', user_id=user_id))
+
+@app.route('/admin/user/<int:user_id>/ban')
+@admin_required
+def admin_ban_user(user_id):
+    """Ban user."""
+    user = get_user_by_id(user_id)
+    if not user:
+        flash('用户不存在', 'error')
+        return redirect(url_for('admin_users'))
+    
+    if user_id == session['user_id']:
+        flash('不能封禁自己', 'error')
+        return redirect(url_for('admin_user_detail', user_id=user_id))
+    
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    cursor.execute('UPDATE users SET status = ? WHERE id = ?', ('banned', user_id))
+    conn.commit()
+    conn.close()
+    
+    log_admin_action(session['user_id'], 'BAN_USER', 'user', user_id, user['username'])
+    flash('用户已封禁', 'success')
+    return redirect(url_for('admin_user_detail', user_id=user_id))
+
+@app.route('/admin/user/<int:user_id>/unban')
+@admin_required
+def admin_unban_user(user_id):
+    """Unban user."""
+    user = get_user_by_id(user_id)
+    if not user:
+        flash('用户不存在', 'error')
+        return redirect(url_for('admin_users'))
+    
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    cursor.execute('UPDATE users SET status = ? WHERE id = ?', ('active', user_id))
+    conn.commit()
+    conn.close()
+    
+    log_admin_action(session['user_id'], 'UNBAN_USER', 'user', user_id, user['username'])
+    flash('用户已解封', 'success')
+    return redirect(url_for('admin_user_detail', user_id=user_id))
+
+@app.route('/admin/user/<int:user_id>/reset-password')
+@admin_required
+def admin_reset_password(user_id):
+    """Reset user password page."""
+    user = get_user_by_id(user_id)
+    if not user:
+        flash('用户不存在', 'error')
+        return redirect(url_for('admin_users'))
+    
+    # 生成随机密码
+    import secrets
+    new_password = secrets.token_urlsafe(12)
+    
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    cursor.execute('UPDATE users SET password_hash = ? WHERE id = ?', 
+                   (generate_password_hash(new_password), user_id))
+    conn.commit()
+    conn.close()
+    
+    log_admin_action(session['user_id'], 'RESET_PASSWORD', 'user', user_id, user['username'])
+    
+    # 显示新密码（实际应用中应该通过安全方式发送）
+    flash(f'新密码: {new_password}（请告知用户）', 'success')
+    return redirect(url_for('admin_user_detail', user_id=user_id))
+
+@app.route('/admin/user/<int:user_id>/oauth/unbind')
+@admin_required
+def admin_unbind_oauth(user_id):
+    """Unbind user OAuth."""
+    user = get_user_by_id(user_id)
+    if not user:
+        return jsonify({'success': False, 'error': '用户不存在'})
+    
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    cursor.execute('UPDATE users SET oauth_provider = NULL, oauth_id = NULL WHERE id = ?', (user_id,))
+    conn.commit()
+    conn.close()
+    
+    log_admin_action(session['user_id'], 'UNBIND_OAUTH', 'user', user_id, user['username'])
+    return jsonify({'success': True})
 
 @app.route('/admin/logs')
 @admin_required
