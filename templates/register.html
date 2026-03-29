@@ -31,7 +31,7 @@
                 <div class="lang-switcher">
                     <select onchange="window.location.href=this.value">
                         {% for code, name in LANGUAGE_NAMES.items() %}
-                            <option value="{{ url_for('set_language', lang=code) }}" {% if current_lang == code %}selected{% endif %}>{{ name }}</option>
+                            <option value="{{ url_for('main.set_language', lang=code) }}" {% if current_lang == code %}selected{% endif %}>{{ name }}</option>
                         {% endfor %}
                     </select>
                 </div>

@@ -26,7 +26,7 @@
                 {% if session.get('user_id') %}
                     <a href="{{ url_for('schools.my_likes') }}">{{ _('my_likes') }}</a>
                     {% if is_admin() %}
-                        <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
+                        <a href="{{ url_for('admin.dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
                     {% endif %}
                     <a href="{{ url_for('auth.logout') }}">{{ _('logout') }}</a>
                 {% else %}
@@ -50,7 +50,7 @@
         <div class="container">
             <div class="region-tabs">
                 {% for ranking in rankings_config %}
-                <a href="{{ url_for('rankings', tab=ranking.id) }}" class="tab-btn{% if ranking.id == active_ranking %} active{% endif %}" data-ranking="{{ ranking.id }}">
+                <a href="{{ url_for('rankings.rankings', tab=ranking.id) }}" class="tab-btn{% if ranking.id == active_ranking %} active{% endif %}" data-ranking="{{ ranking.id }}">
                     <span class="tab-icon">{% if ranking.id == 'qs' %}📊{% elif ranking.id == 'usnews' %}🇺🇸{% elif ranking.id == 'the' %}📰{% elif ranking.id == 'arwu' %}🇨🇳{% else %}🌍{% endif %}</span>
                     <span class="tab-name">{{ ranking.name }} {{ ranking.year }}</span>
                     <span class="tab-count">{{ ranking_counts[ranking.id] or 0 }}</span>
@@ -73,7 +73,7 @@
                          data-the="{{ school.the_rank or '' }}"
                          data-arwu="{{ school.arwu_rank or '' }}"
                          data-cwur="{{ school.cwur_rank or '' }}"
-                         onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                         onclick="window.location.href='{{ url_for('schools.school_detail', school_id=school.id) }}'">
                     <div class="card-image">
                         {% if school.badge_url %}
                         <img src="{{ school.badge_url }}" 

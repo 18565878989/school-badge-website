@@ -151,7 +151,7 @@
                     <tr>
                         <td>{{ school.id }}</td>
                         <td>
-                            <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank">
+                            <a href="{{ url_for('schools.school_detail', school_id=school.id) }}" target="_blank">
                                 {{ school.name[:35] }}{% if school.name|length > 35 %}...{% endif %}
                             </a>
                         </td>

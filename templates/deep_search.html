@@ -37,7 +37,7 @@
                 {% if session.get('user_id') %}
                     <a href="{{ url_for('schools.my_likes') }}">{{ _('my_likes') }}</a>
                     {% if is_admin() %}
-                        <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
+                        <a href="{{ url_for('admin.dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
                     {% endif %}
                     <a href="{{ url_for('auth.logout') }}">{{ _('logout') }}</a>
                 {% else %}

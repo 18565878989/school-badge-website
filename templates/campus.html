@@ -27,7 +27,7 @@
                     <a href="{{ url_for('schools.my_likes') }}">{{ _('my_likes') }}</a>
                     <span class="username">{{ session.get('username') }}</span>
                     {% if is_admin() %}
-                        <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
+                        <a href="{{ url_for('admin.dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
                     {% endif %}
                     <a href="{{ url_for('auth.logout') }}">{{ _('logout') }}</a>
                 {% else %}
@@ -38,7 +38,7 @@
                 <div class="lang-switcher">
                     <select onchange="window.location.href=this.value">
                         {% for code, name in LANGUAGE_NAMES.items() %}
-                            <option value="{{ url_for('set_language', lang=code) }}" 
+                            <option value="{{ url_for('main.set_language', lang=code) }}" 
                                     {% if current_lang == code %}selected{% endif %}>
                                 {{ name }}
                             </option>
@@ -104,7 +104,7 @@
                 {% if north_america %}
                 <div class="gallery-grid">
                     {% for school in north_america %}
-                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('schools.school_detail', school_id=school.id) }}'">
                         <div class="card-image">
                             {% set images = school.campus_image.split(',') if school.campus_image else [] %}
                             {% if images %}
@@ -186,7 +186,7 @@
                 {% if asia %}
                 <div class="gallery-grid">
                     {% for school in asia %}
-                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('schools.school_detail', school_id=school.id) }}'">
                         <div class="card-image">
                             {% set images = school.campus_image.split(',') if school.campus_image else [] %}
                             {% if images %}
@@ -268,7 +268,7 @@
                 {% if europe %}
                 <div class="gallery-grid">
                     {% for school in europe %}
-                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('schools.school_detail', school_id=school.id) }}'">
                         <div class="card-image">
                             {% set images = school.campus_image.split(',') if school.campus_image else [] %}
                             {% if images %}
@@ -350,7 +350,7 @@
                 {% if oceania %}
                 <div class="gallery-grid">
                     {% for school in oceania %}
-                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('schools.school_detail', school_id=school.id) }}'">
                         <div class="card-image">
                             {% set images = school.campus_image.split(',') if school.campus_image else [] %}
                             {% if images %}
@@ -432,7 +432,7 @@
                 {% if south_america %}
                 <div class="gallery-grid">
                     {% for school in south_america %}
-                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('schools.school_detail', school_id=school.id) }}'">
                         <div class="card-image">
                             {% set images = school.campus_image.split(',') if school.campus_image else [] %}
                             {% if images %}
@@ -514,7 +514,7 @@
                 {% if africa %}
                 <div class="gallery-grid">
                     {% for school in africa %}
-                    <article class="campus-card" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'">
+                    <article class="campus-card" onclick="window.location.href='{{ url_for('schools.school_detail', school_id=school.id) }}'">
                         <div class="card-image">
                             {% set images = school.campus_image.split(',') if school.campus_image else [] %}
                             {% if images %}

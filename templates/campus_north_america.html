@@ -36,7 +36,7 @@
                     <a href="{{ url_for('schools.my_likes') }}">{{ _('my_likes') }}</a>
                     <span class="username">{{ session.get('username') }}</span>
                     {% if is_admin() %}
-                        <a href="{{ url_for('admin_dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
+                        <a href="{{ url_for('admin.dashboard') }}" class="admin-link">{{ _('admin_panel') }}</a>
                     {% endif %}
                     <a href="{{ url_for('auth.logout') }}">{{ _('logout') }}</a>
                 {% else %}
@@ -47,7 +47,7 @@
                 <div class="lang-switcher">
                     <select onchange="window.location.href=this.value">
                         {% for code, name in LANGUAGE_NAMES.items() %}
-                            <option value="{{ url_for('set_language', lang=code) }}" 
+                            <option value="{{ url_for('main.set_language', lang=code) }}" 
                                     {% if current_lang == code %}selected{% endif %}>
                                 {{ name }}
                             </option>
@@ -71,7 +71,7 @@
         <div class="container">
             <div class="gallery-grid">
                 {% for school in schools %}
-                <article class="campus-card" data-university="{{ school.name }}" onclick="window.location.href='{{ url_for('school_detail', school_id=school.id) }}'" style="cursor: pointer;">
+                <article class="campus-card" data-university="{{ school.name }}" onclick="window.location.href='{{ url_for('schools.school_detail', school_id=school.id) }}'" style="cursor: pointer;">
                     <div class="card-image">
                         {% set images = school.campus_image.split(',') if school.campus_image else [] %}
                         {% if images %}

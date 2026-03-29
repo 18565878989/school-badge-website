@@ -213,7 +213,7 @@
                                     {% else %}
                                     <a href="{{ url_for('admin_campus_unapprove', school_id=school.id) }}" class="btn btn-secondary btn-sm">反审核</a>
                                     {% endif %}
-                                    <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank" class="btn btn-sm">预览</a>
+                                    <a href="{{ url_for('schools.school_detail', school_id=school.id) }}" target="_blank" class="btn btn-sm">预览</a>
                                 </div>
                             </td>
                         </tr>

@@ -194,7 +194,7 @@
                         {% endif %}
                     </td>
                     <td>
-                        <a href="{{ url_for('school_detail', school_id=school.id) }}" target="_blank" style="font-weight: 500;">
+                        <a href="{{ url_for('schools.school_detail', school_id=school.id) }}" target="_blank" style="font-weight: 500;">
                             {{ school.name[:40] }}{% if school.name|length > 40 %}...{% endif %}
                         </a>
                     </td>
@@ -249,7 +249,7 @@
                                     <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
                                 </svg>
                             </a>
-                            <a href="{{ url_for('school_detail', school_id=school.id) }}" class="btn btn-secondary btn-sm action-btn" target="_blank" title="查看">
+                            <a href="{{ url_for('schools.school_detail', school_id=school.id) }}" class="btn btn-secondary btn-sm action-btn" target="_blank" title="查看">
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                                     <circle cx="12" cy="12" r="3"/>

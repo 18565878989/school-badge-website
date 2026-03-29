@@ -27,7 +27,7 @@
 <!-- Schools Grid -->
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px;">
     {% for school in schools %}
-    <a href="{{ url_for('school_detail', school_id=school.id) }}" style="display: block; background: #fff; border-radius: 24px; overflow: hidden; text-decoration: none; box-shadow: 0 2px 12px rgba(0,0,0,0.04); transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.04);">
+    <a href="{{ url_for('schools.school_detail', school_id=school.id) }}" style="display: block; background: #fff; border-radius: 24px; overflow: hidden; text-decoration: none; box-shadow: 0 2px 12px rgba(0,0,0,0.04); transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.04);">
         <!-- Badge Area -->
         <div style="background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%); padding: 48px; display: flex; justify-content: center; align-items: center; min-height: 180px; position: relative;">
             {% if school.badge_url %}
