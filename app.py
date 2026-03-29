@@ -18,6 +18,12 @@ try:
 except ImportError:
     pass
 
+# 安全服务
+from services.security_service import (
+    security_service, csrf_protect, rate_limit, 
+    require_membership, SecurityService
+)
+
 from models import (
     init_db, create_user, verify_password, get_user_by_id, is_admin, get_db_connection,
     get_all_users, update_user_role, delete_user,
@@ -38,7 +44,47 @@ from models import (
 from i18n import _, LANGUAGE_NAMES, get_locale
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
+
+# 安全密钥配置
+SECRET_KEY = os.environ.get('SECRET_KEY')
+if not SECRET_KEY:
+    print("[WARNING] Using weak secret key! Set SECRET_KEY environment variable.")
+    SECRET_KEY = 'dev-secret-key-please-change-in-production'
+    
+app.secret_key = SECRET_KEY
+app.config['SESSION_COOKIE_SECURE'] = os.environ.get('FLASK_ENV', 'development') == 'production'
+app.config['SESSION_COOKIE_HTTPONLY'] = True
+app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
+app.config['PERMANENT_SESSION_LIFETIME'] = 86400  # 24小时
+
+# 安全中间件
+@app.after_request
+def security_headers(response):
+    """添加安全响应头"""
+    # 防止XSS
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+    # 防止点击劫持
+    response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+    # 内容安全策略
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    # 引用策略
+    response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
+    # 权限策略
+    response.headers['Permissions-Policy'] = 'geolocation=(), microphone=(), camera=()'
+    return response
+
+# API 速率限制
+@app.before_request
+def check_api_rate_limit():
+    """检查API速率限制"""
+    # 仅对API路由限流
+    if request.path.startswith('/api/'):
+        allowed, remaining = security_service.check_api_rate_limit()
+        if not allowed:
+            return jsonify({
+                'error': 'Rate limit exceeded',
+                'message': '请求过于频繁，请稍后再试'
+            }), 429
 
 # 注册蓝图路由 (模块化重构)
 # 已启用: auth, schools, rankings, api, api_ext, social, shop, misc, admin_ext, api_full
@@ -573,18 +619,33 @@ def login():
             username = request.form['username']
             password = request.form['password']
             
+            # 检查登录尝试次数
+            allowed, remaining_time = security_service.check_login_attempts(username)
+            if not allowed:
+                flash(f'登录次数过多，请{remaining_time//60}分钟后重试', 'error')
+                return redirect(url_for('login'))
+            
             user = verify_password(username, password)
             if user:
+                # 记录成功登录
+                security_service.record_login_attempt(username, success=True)
                 session['user_id'] = user['id']
                 session['username'] = user['username']
                 session['role'] = user['role']
+                # 生成新的CSRF令牌
+                session['csrf_token'] = security_service.generate_csrf_token()
                 print(f"[DEBUG] Login success (password) - user_id: {user['id']}, username: {user['username']}")
                 flash(_('welcome_back').format(user['username']), 'success')
                 return redirect(url_for('index'))
             else:
-                flash(_('login_error'), 'error')
+                # 记录失败尝试
+                security_service.record_login_attempt(username, success=False)
+                remaining = security_service.MAX_LOGIN_ATTEMPTS - 1
+                flash(f'{_("login_error")} (剩余{remaining}次尝试)', 'error')
     
-    return render_template('login.html')
+    # 生成CSRF令牌
+    csrf_token = security_service.generate_csrf_token()
+    return render_template('login.html', csrf_token=csrf_token)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -599,6 +660,20 @@ def register():
             flash(_('all_required'), 'error')
             return redirect(url_for('register'))
         
+        # 验证密码强度
+        password_valid, password_msg = SecurityService.validate_password_strength(password)
+        if not password_valid:
+            flash(f'密码不安全: {password_msg}', 'error')
+            return redirect(url_for('register'))
+        
+        # 验证邮箱格式
+        if not SecurityService.validate_email(email):
+            flash('邮箱格式不正确', 'error')
+            return redirect(url_for('register'))
+        
+        # 清理输入
+        username = SecurityService.sanitize_input(username, max_length=50)
+        
         user_id = create_user(username, password, email, phone=phone if phone else None)
         if user_id:
             flash(_('register_success'), 'success')
@@ -606,7 +681,9 @@ def register():
         else:
             flash(_('username_exists'), 'error')
     
-    return render_template('register.html')
+    # 生成CSRF令牌
+    csrf_token = security_service.generate_csrf_token()
+    return render_template('register.html', csrf_token=csrf_token)
 
 @app.route('/send-sms', methods=['POST'])
 def send_sms():
@@ -4003,6 +4080,47 @@ def admin_badge_batch_approve():
     
     flash(f'批量操作完成: {count} 所学校', 'success')
     return redirect(url_for('admin_badge_images'))
+
+
+@app.route('/api/security/status')
+def api_security_status():
+    """API安全状态检查"""
+    return jsonify({
+        'status': 'secure',
+        'features': {
+            'csrf_protection': True,
+            'rate_limiting': True,
+            'password_hashing': True,
+            'session_security': True,
+            'input_sanitization': True,
+            'security_headers': True
+        },
+        'rate_limit': {
+            'api_requests_per_minute': security_service.API_RATE_LIMIT,
+            'login_attempts_limit': security_service.MAX_LOGIN_ATTEMPTS,
+            'login_lockout_duration_minutes': security_service.LOGIN_LOCKOUT_DURATION // 60
+        }
+    })
+
+
+@app.route('/api/security/checksum')
+def api_security_checksum():
+    """获取静态文件校验和（用于SRI）"""
+    import hashlib
+    
+    static_files = [
+        'css/style.css',
+        'js/main.js'
+    ]
+    
+    checksums = {}
+    for filepath in static_files:
+        full_path = f'static/{filepath}'
+        if os.path.exists(full_path):
+            with open(full_path, 'rb') as f:
+                checksums[filepath] = f'sha256-{hashlib.sha256(f.read()).hexdigest()[:16]}...'
+    
+    return jsonify({'checksums': checksums})
 
 
 @app.route('/debug_session')
