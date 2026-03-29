@@ -332,6 +332,10 @@ def deep_search():
     keyword_filters = []
     keyword_params = []
     
+    # 排除的关键词（排名系统、泛化词）
+    excluded_keywords = {'top', 'ranking', 'best', 'qs', 'the', 'usnews', 'arwu', 'cwur',
+                        '最好', '前五', '前10', '前20', '排名', 'world', 'global', 'international'}
+    
     # 过滤词（严格匹配）
     for kw_type, kw_value in processed_keywords:
         if kw_type == 'country':
@@ -340,8 +344,8 @@ def deep_search():
         elif kw_type == 'level':
             core_filters.append('level = ?')
             core_params.append(kw_value)
-        elif kw_type == 'keyword' and kw.lower() not in ['top', 'ranking', 'best', '最好', '前五', '前10', '排名']:
-            # 排除过于泛化的关键词
+        elif kw_type == 'keyword' and kw.lower() not in excluded_keywords:
+            # 排除过于泛化的关键词和排名系统名称
             keyword_filters.append('(name LIKE ? OR name_cn LIKE ? OR motto LIKE ? OR city LIKE ?)')
             keyword_params.extend([f'%{kw}%', f'%{kw}%', f'%{kw}%', f'%{kw}%'])
     
