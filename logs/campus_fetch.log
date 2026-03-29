@@ -17543,3 +17543,78 @@
 === 完成 ===
 成功: 29
 失败: 21
+=== 多来源校园图片抓取 ===
+待处理学校: 50 所
+
+
+[12188] China University of Mining and Technology
+  [学校官网] China University of Mining and Technology
+  [Bing图片] China University of Mining and Technology
+    ✓ 下载成功: school_12188_bing.jpg (193.2KB)
+
+[21751] Case Western Reserve University
+  [学校官网] Case Western Reserve University
+  [Bing图片] Case Western Reserve University
+    ✓ 下载成功: school_21751_bing.jpg (413.8KB)
+
+[19381] Kabul University of Medical Sciences
+  [学校官网] Kabul University of Medical Sciences
+  [Bing图片] Kabul University of Medical Sciences
+  [留学平台] Kabul University of Medical Sciences
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Kabul University of Medical Sciences
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Kabul University of Medical Sciences
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[20903] Azerbaijan Institute of Languages
+  [学校官网] Azerbaijan Institute of Languages
+  [Bing图片] Azerbaijan Institute of Languages
+    ✓ 下载成功: school_20903_bing.jpg (123.3KB)
+
+[4028] LOK SIN TONG LAU TAK PRIMARY SCHOOL
+  [学校官网] LOK SIN TONG LAU TAK PRIMARY SCHOOL
+  [Bing图片] LOK SIN TONG LAU TAK PRIMARY SCHOOL
+    ✗ 下载失败: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'lautak.goodschool.hk'. (_ssl.c:1129)>
+    ✗ 下载失败: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'lautak.goodschool.hk'. (_ssl.c:1129)>
+    ✗ 下载失败: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'lautak.goodschool.hk'. (_ssl.c:1129)>
+  [留学平台] LOK SIN TONG LAU TAK PRIMARY SCHOOL
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] LOK SIN TONG LAU TAK PRIMARY SCHOOL
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] LOK SIN TONG LAU TAK PRIMARY SCHOOL
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[17102] International Turkmen University of Technology
+  [学校官网] International Turkmen University of Technology
+  [Bing图片] International Turkmen University of Technology
+  [留学平台] International Turkmen University of Technology
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] International Turkmen University of Technology
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] International Turkmen University of Technology
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[19237] Indian Institute of Technology Delhi
+  [学校官网] Indian Institute of Technology Delhi
+  [Bing图片] Indian Institute of Technology Delhi
+    ✗ 下载失败: HTTP Error 403: Forbidden
+    ✗ 下载失败: HTTP Error 403: Forbidden
+    ✗ 下载失败: HTTP Error 403: Forbidden
+  [留学平台] Indian Institute of Technology Delhi
+    ✗ 留学平台失败: <urlopen error timed out>
+  [高考帮] Indian Institute of Technology Delhi
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Indian Institute of Technology Delhi
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[18818] Taylor's University
+  [学校官网] Taylor's University
+  [Bing图片] Taylor's University
+    ✓ 下载成功: school_18818_bing.jpg (74.9KB)
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 278, in <module>
+    main()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 257, in main
+    cursor.execute(
+sqlite3.OperationalError: database is locked
