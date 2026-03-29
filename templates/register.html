@@ -96,6 +96,37 @@
                     <input type="password" id="confirm_password" name="confirm_password" required>
                 </div>
                 
+                <!-- Membership Selection -->
+                <div class="membership-selection">
+                    <label>选择会员套餐（注册优惠）</label>
+                    <div class="membership-options">
+                        <label class="membership-option">
+                            <input type="radio" name="membership" value="free" checked>
+                            <div class="membership-card">
+                                <div class="membership-name">免费会员</div>
+                                <div class="membership-price">¥0</div>
+                                <div class="membership-features">浏览、收藏</div>
+                            </div>
+                        </label>
+                        <label class="membership-option">
+                            <input type="radio" name="membership" value="basic">
+                            <div class="membership-card">
+                                <div class="membership-name">基础会员</div>
+                                <div class="membership-price">¥99/年</div>
+                                <div class="membership-features">浏览、收藏、评论</div>
+                            </div>
+                        </label>
+                        <label class="membership-option">
+                            <input type="radio" name="membership" value="pro">
+                            <div class="membership-card">
+                                <div class="membership-name">专业会员</div>
+                                <div class="membership-price">¥299/年</div>
+                                <div class="membership-features">全部功能、下载、导出</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
                 <button type="submit" class="btn btn-primary btn-block">{{ _('register') }}</button>
             </form>
             

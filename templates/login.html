@@ -51,6 +51,11 @@
                 <h1>{{ _('login') }}</h1>
                 <p class="subtitle">{{ _('welcome_back').format('') }}</p>
                 
+                <div class="membership-benefits">
+                    <span class="benefit-badge">🎁 新用户首月会员5折</span>
+                    <a href="{{ url_for('shop.membership') }}">了解会员特权</a>
+                </div>
+                
                 <form method="POST">
                     <input type="hidden" name="type" value="password">
                     <div class="form-group">
