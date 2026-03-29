@@ -26,13 +26,20 @@
     margin: 4px 0 0 0;
 }
 
-/* Key Stats - Compact Grid */
-.stats-row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+/* Key Stats - 3 Row Grid */
+.stats-section {
     margin-bottom: 24px;
 }
+
+.stats-row {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.stats-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.stats-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.stats-row.cols-5 { grid-template-columns: repeat(5, 1fr); }
 
 .stat-box {
     background: white;
@@ -46,7 +53,7 @@
 }
 
 .stat-box .stat-num {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary);
     line-height: 1;
@@ -57,6 +64,16 @@
     color: var(--text-secondary);
     margin-top: 4px;
 }
+
+.stat-box .stat-trend {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.stat-trend.up { background: rgba(52,199,89,0.1); color: #34C759; }
+.stat-trend.down { background: rgba(255,59,48,0.1); color: #FF3B30; }
 
 .stat-box .stat-icon {
     width: 44px;
@@ -77,6 +94,20 @@
 .stat-box.green .stat-icon { background: rgba(52,199,89,0.1); color: #34C759; }
 .stat-box.orange .stat-icon { background: rgba(255,149,0,0.1); color: #FF9500; }
 .stat-box.purple .stat-icon { background: rgba(175,82,222,0.1); color: #AF52DE; }
+.stat-box.red .stat-icon { background: rgba(255,59,48,0.1); color: #FF3B30; }
+.stat-box.teal .stat-icon { background: rgba(90,200,180,0.1); color: #5AC8B4; }
+.stat-box.gold .stat-icon { background: rgba(212,175,55,0.1); color: #D4AF37; }
+
+.stat-label-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.stat-label-row .stat-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
 
 /* Content Grid */
 .content-grid {
@@ -182,6 +213,40 @@
 .badge-user { background: rgba(0,122,255,0.1); color: #007AFF; }
 .badge-vip { background: rgba(175,82,222,0.1); color: #AF52DE; }
 
+/* Page Views List */
+.page-view-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-view-item:last-child {
+    border-bottom: none;
+}
+
+.page-view-item .page-name {
+    flex: 1;
+    font-size: 0.85rem;
+    color: var(--text);
+}
+
+.page-view-item .page-stats {
+    display: flex;
+    gap: 16px;
+    font-size: 0.8rem;
+}
+
+.page-view-item .pv {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.page-view-item .uv {
+    color: var(--text-secondary);
+}
+
 /* Quick Actions */
 .quick-actions {
     display: grid;
@@ -221,13 +286,23 @@
     font-size: 0.85rem;
 }
 
+/* Section Title */
+.section-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 1200px) {
+    .stats-row.cols-4, .stats-row.cols-5 { grid-template-columns: repeat(2, 1fr); }
+    .stats-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 1024px) {
-    .stats-row {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .content-grid {
-        grid-template-columns: 1fr;
-    }
+    .content-grid { grid-template-columns: 1fr; }
 }
 </style>
 
@@ -245,62 +320,143 @@
         </div>
     </div>
 
-    <!-- Key Stats -->
-    <div class="stats-row">
-        <div class="stat-box blue">
-            <div class="stat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                    <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
-                </svg>
+    <!-- Today PV/UV Stats -->
+    <div class="stats-section">
+        <div class="section-title">📊 今日访问</div>
+        <div class="stats-row cols-3">
+            <div class="stat-box blue">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="stat-num">{{ "{:,}".format(stats.today_pv or 0) }}</div>
+                    <div class="stat-label">页面浏览 (PV)</div>
+                </div>
             </div>
-            <div>
-                <div class="stat-num">{{ stats.total_schools or 0 }}</div>
-                <div class="stat-unit">学校总数</div>
+            
+            <div class="stat-box green">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="stat-num">{{ "{:,}".format(stats.today_uv or 0) }}</div>
+                    <div class="stat-label">独立访客 (UV)</div>
+                </div>
+            </div>
+            
+            <div class="stat-box teal">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="stat-num">{{ "{:,}".format(stats.active_users or 0) }}</div>
+                    <div class="stat-label">周活跃用户</div>
+                </div>
             </div>
         </div>
-        
-        <div class="stat-box green">
-            <div class="stat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                    <circle cx="9" cy="7" r="4"/>
-                </svg>
+    </div>
+
+    <!-- User & School Stats -->
+    <div class="stats-section">
+        <div class="section-title">👥 用户 & 学校</div>
+        <div class="stats-row cols-5">
+            <div class="stat-box purple">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="stat-num">{{ "{:,}".format(stats.total_users or 0) }}</div>
+                    <div class="stat-label">总用户</div>
+                </div>
+                <span class="stat-trend up">+{{ stats.new_users_today or 0 }} 今日</span>
             </div>
-            <div>
-                <div class="stat-num">{{ stats.total_users or 0 }}</div>
-                <div class="stat-unit">注册用户</div>
+            
+            <div class="stat-box green">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="stat-num">{{ "{:,}".format(stats.total_schools or 0) }}</div>
+                    <div class="stat-label">学校总数</div>
+                </div>
             </div>
-        </div>
-        
-        <div class="stat-box orange">
-            <div class="stat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
+            
+            <div class="stat-box orange">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="stat-num">{{ "{:,}".format(stats.hk_schools or 0) }}</div>
+                    <div class="stat-label">香港学校</div>
+                </div>
             </div>
-            <div>
-                <div class="stat-num">{{ stats.hk_schools or 0 }}</div>
-                <div class="stat-unit">香港学校</div>
+            
+            <div class="stat-box gold">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="stat-num">{{ stats.pro_users or 0 }}</div>
+                    <div class="stat-label">专业会员</div>
+                </div>
             </div>
-        </div>
-        
-        <div class="stat-box purple">
-            <div class="stat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"/>
-                    <polyline points="12 6 12 12 16 14"/>
-                </svg>
-            </div>
-            <div>
-                <div class="stat-num">{{ stats.last_updated or '—' }}</div>
-                <div class="stat-unit">最后更新</div>
+            
+            <div class="stat-box blue">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="stat-num">{{ stats.oauth_users or 0 }}</div>
+                    <div class="stat-label">社交绑定</div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Content Grid -->
     <div class="content-grid">
+        <!-- Top Pages -->
+        <div class="section-card">
+            <div class="section-header">
+                <h3>🔥 热门页面 (7日)</h3>
+            </div>
+            <div class="page-views-list">
+                {% for page in page_views %}
+                <div class="page-view-item">
+                    <span class="page-name">{{ page.name }}</span>
+                    <div class="page-stats">
+                        <span class="pv">{{ "{:,}".format(page.pv) }} PV</span>
+                        <span class="uv">{{ "{:,}".format(page.uv) }} UV</span>
+                    </div>
+                </div>
+                {% else %}
+                <div class="empty-state">暂无页面访问数据</div>
+                {% endfor %}
+            </div>
+        </div>
+
         <!-- Recent Schools -->
         <div class="section-card">
             <div class="section-header">
@@ -308,12 +464,12 @@
                 <a href="{{ url_for('admin_schools') }}" class="link">查看全部 →</a>
             </div>
             <ul class="data-list">
-                {% for school in recent_schools[:6] %}
+                {% for school in recent_schools[:5] %}
                 <li>
                     <div class="data-item">
                         <div class="avatar">🏫</div>
                         <div>
-                            <div class="name">{{ school.name[:30] }}{% if school.name|length > 30 %}...{% endif %}</div>
+                            <div class="name">{{ school.name[:28] }}{% if school.name|length > 28 %}...{% endif %}</div>
                             <div class="sub">{{ school.region }} · {{ school.country }}</div>
                         </div>
                     </div>
@@ -324,34 +480,6 @@
                 {% else %}
                 <li>
                     <div class="empty-state">暂无学校数据</div>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-
-        <!-- Recent Users -->
-        <div class="section-card">
-            <div class="section-header">
-                <h3>👥 最近注册的用户</h3>
-                <a href="{{ url_for('admin_users') }}" class="link">管理用户 →</a>
-            </div>
-            <ul class="data-list">
-                {% for user in recent_users[:6] %}
-                <li>
-                    <div class="data-item">
-                        <div class="avatar">{{ user.username[0].upper() if user.username else '?' }}</div>
-                        <div>
-                            <div class="name">{{ user.username }}</div>
-                            <div class="sub">{{ user.email[:25] }}{% if user.email|length > 25 %}...{% endif %}</div>
-                        </div>
-                    </div>
-                    <span class="badge badge-{% if user.role == 'admin' %}admin{% else %}user{% endif %}">
-                        {% if user.role == 'admin' %}管理员{% else %}用户{% endif %}
-                    </span>
-                </li>
-                {% else %}
-                <li>
-                    <div class="empty-state">暂无用户数据</div>
                 </li>
                 {% endfor %}
             </ul>

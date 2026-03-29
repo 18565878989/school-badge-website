@@ -1147,6 +1147,20 @@ def admin_dashboard():
                 last_updated = s['updated_at'][:10]
                 break
     
+    # 加载分析服务
+    try:
+        from services.analytics_service import analytics_service
+        today_stats = analytics_service.get_today_stats()
+        user_stats = analytics_service.get_user_stats()
+        page_views = analytics_service.get_page_views_stats(7)
+        daily_trend = analytics_service.get_daily_stats(7)
+    except Exception as e:
+        print(f"Analytics error: {e}")
+        today_stats = {'pv': 0, 'uv': 0, 'new_users': 0}
+        user_stats = {'total': len(users), 'today_new': 0, 'active_7d': 0, 'pro': 0, 'basic': 0, 'oauth': 0}
+        page_views = []
+        daily_trend = []
+    
     stats = {
         'total_schools': len(schools),
         'total_users': len(users),
@@ -1154,16 +1168,26 @@ def admin_dashboard():
         'hk_schools': hk_count,
         'schooland_count': schooland_count,
         'manual_count': manual_count,
-        'last_updated': last_updated
+        'last_updated': last_updated,
+        # 今日运营数据
+        'today_pv': today_stats.get('pv', 0),
+        'today_uv': today_stats.get('uv', 0),
+        'new_users_today': user_stats.get('today_new', 0),
+        'active_users': user_stats.get('active_7d', 0),
+        'pro_users': user_stats.get('pro', 0),
+        'basic_users': user_stats.get('basic', 0),
+        'oauth_users': user_stats.get('oauth', 0),
     }
     
     # 按更新时间排序的学校
     sorted_schools = sorted(schools, key=lambda x: x['updated_at'] if x['updated_at'] else x['created_at'] if x['created_at'] else '', reverse=True)
     
-    return render_template('admin/dashboard.html', 
+    return render_template('admin/dashboard.html',
                          stats=stats,
-                         recent_schools=sorted_schools[:5],
-                         recent_users=users[:5])
+                         recent_schools=sorted_schools[:6],
+                         recent_users=users[:6],
+                         page_views=page_views[:6],
+                         daily_trend=daily_trend)
 
 @app.route('/admin/schools')
 @admin_required
