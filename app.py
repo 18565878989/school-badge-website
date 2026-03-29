@@ -138,6 +138,18 @@ try:
     app.register_blueprint(user_api_bp)
     print("[Routes] user_api blueprint registered")
     
+    from routes.content_api import content_api_bp
+    app.register_blueprint(content_api_bp)
+    print("[Routes] content_api blueprint registered")
+    
+    from routes.message_api import message_api_bp
+    app.register_blueprint(message_api_bp)
+    print("[Routes] message_api blueprint registered")
+    
+    from routes.recommendation_api import recommendation_api_bp
+    app.register_blueprint(recommendation_api_bp)
+    print("[Routes] recommendation_api blueprint registered")
+    
     from routes.main import main_bp
     app.register_blueprint(main_bp)
     print("[Routes] main blueprint registered")

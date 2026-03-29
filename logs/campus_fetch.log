@@ -17618,3 +17618,442 @@ Traceback (most recent call last):
   File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 257, in main
     cursor.execute(
 sqlite3.OperationalError: database is locked
+======================================================================
+批量获取学校校园照片 - 从Wikipedia下载到本地
+======================================================================
+需要获取校园照片的学校: 200
+
+完成! 耗时: 4234.8秒
+成功: 0, 跳过/失败: 200
+有校园照片的学校总数: 1981
+=== 多来源校园图片抓取 ===
+待处理学校: 50 所
+
+
+[19955] Baalbaki College
+  [学校官网] Baalbaki College
+  [Bing图片] Baalbaki College
+  [留学平台] Baalbaki College
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Baalbaki College
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Baalbaki College
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[18586] Bishkek Humanities University
+  [学校官网] Bishkek Humanities University
+  [Bing图片] Bishkek Humanities University
+    ✓ 下载成功: school_18586_bing.jpg (65.0KB)
+
+[13465] Institut Teknologi Bandung
+  [学校官网] Institut Teknologi Bandung
+  [Bing图片] Institut Teknologi Bandung
+  [留学平台] Institut Teknologi Bandung
+    ✗ 留学平台失败: <urlopen error timed out>
+  [高考帮] Institut Teknologi Bandung
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Institut Teknologi Bandung
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[18601] Pyongyang University of Science and Technology
+  [学校官网] Pyongyang University of Science and Technology
+  [Bing图片] Pyongyang University of Science and Technology
+  [留学平台] Pyongyang University of Science and Technology
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Pyongyang University of Science and Technology
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Pyongyang University of Science and Technology
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[2512] HKUGA PRIMARY SCHOOL
+  [学校官网] HKUGA PRIMARY SCHOOL
+  [Bing图片] HKUGA PRIMARY SCHOOL
+  [留学平台] HKUGA PRIMARY SCHOOL
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] HKUGA PRIMARY SCHOOL
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] HKUGA PRIMARY SCHOOL
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[13358] Sanata Dharma University
+  [学校官网] Sanata Dharma University
+  [Bing图片] Sanata Dharma University
+  [留学平台] Sanata Dharma University
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Sanata Dharma University
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Sanata Dharma University
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[2215] HONG KONG CHINESE WOMEN'S CLUB COLLEGE
+  [学校官网] HONG KONG CHINESE WOMEN'S CLUB COLLEGE
+  [Bing图片] HONG KONG CHINESE WOMEN'S CLUB COLLEGE
+  [留学平台] HONG KONG CHINESE WOMEN'S CLUB COLLEGE
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] HONG KONG CHINESE WOMEN'S CLUB COLLEGE
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] HONG KONG CHINESE WOMEN'S CLUB COLLEGE
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[5117] TSUNG TSIN COLLEGE
+  [学校官网] TSUNG TSIN COLLEGE
+  [Bing图片] TSUNG TSIN COLLEGE
+    ✗ 下载失败: HTTP Error 403: Forbidden
+    ✗ 下载失败: HTTP Error 403: Forbidden
+    ✗ 下载失败: HTTP Error 403: Forbidden
+  [留学平台] TSUNG TSIN COLLEGE
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] TSUNG TSIN COLLEGE
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] TSUNG TSIN COLLEGE
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[19926] Indian Institute of Technology Delhi
+  [学校官网] Indian Institute of Technology Delhi
+  [Bing图片] Indian Institute of Technology Delhi
+    ✗ 下载失败: HTTP Error 403: Forbidden
+    ✗ 下载失败: <urlopen error _ssl.c:1112: The handshake operation timed out>
+    ✗ 下载失败: HTTP Error 403: Forbidden
+  [留学平台] Indian Institute of Technology Delhi
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Indian Institute of Technology Delhi
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Indian Institute of Technology Delhi
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[13372] Nong Lam University
+  [学校官网] Nong Lam University
+  [Bing图片] Nong Lam University
+  [留学平台] Nong Lam University
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Nong Lam University
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Nong Lam University
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[13910] Bangalore Institute of Engineering
+  [学校官网] Bangalore Institute of Engineering
+  [Bing图片] Bangalore Institute of Engineering
+  [留学平台] Bangalore Institute of Engineering
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Bangalore Institute of Engineering
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Bangalore Institute of Engineering
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[49] Tsinghua University High School
+  [学校官网] Tsinghua University High School
+  [Bing图片] Tsinghua University High School
+    ✓ 下载成功: school_49_bing.jpg (751.9KB)
+
+[17354] University of Transport and Communications
+  [学校官网] University of Transport and Communications
+  [Bing图片] University of Transport and Communications
+    ✗ 下载失败: <urlopen error timed out>
+    ✓ 下载成功: school_17354_bing.jpg (754.4KB)
+
+[9045] Sciences Po
+  [学校官网] Sciences Po
+  [Bing图片] Sciences Po
+  [留学平台] Sciences Po
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Sciences Po
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Sciences Po
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[16028] Tezpur University
+  [学校官网] Tezpur University
+  [Bing图片] Tezpur University
+  [留学平台] Tezpur University
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Tezpur University
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Tezpur University
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[17090] Khulna University of Engineering and Technology
+  [学校官网] Khulna University of Engineering and Technology
+  [Bing图片] Khulna University of Engineering and Technology
+    ✗ 下载失败: HTTP Error 404: Not Found
+    ✗ 下载失败: HTTP Error 404: Not Found
+    ✗ 下载失败: HTTP Error 404: Not Found
+  [留学平台] Khulna University of Engineering and Technology
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Khulna University of Engineering and Technology
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Khulna University of Engineering and Technology
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[12849] Birla Institute of Technology and Science
+  [学校官网] Birla Institute of Technology and Science
+  [Bing图片] Birla Institute of Technology and Science
+  [留学平台] Birla Institute of Technology and Science
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Birla Institute of Technology and Science
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Birla Institute of Technology and Science
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[21234] Pyongyang Medical University
+  [学校官网] Pyongyang Medical University
+  [Bing图片] Pyongyang Medical University
+  [留学平台] Pyongyang Medical University
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Pyongyang Medical University
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Pyongyang Medical University
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[32777] Heriot-Watt University Dubai
+  [学校官网] Heriot-Watt University Dubai
+  [Bing图片] Heriot-Watt University Dubai
+    ✓ 下载成功: school_32777_bing.jpg (69.0KB)
+
+[13118] Milan University
+  [学校官网] Milan University
+  [Bing图片] Milan University
+    ✓ 下载成功: school_13118_bing.jpg (134.8KB)
+
+[9351] Yangtze University
+  [学校官网] Yangtze University
+  [Bing图片] Yangtze University
+  [留学平台] Yangtze University
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Yangtze University
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Yangtze University
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[2294] ST PAUL'S CO-EDUCATIONAL COLLEGE
+  [学校官网] ST PAUL'S CO-EDUCATIONAL COLLEGE
+  [Bing图片] ST PAUL'S CO-EDUCATIONAL COLLEGE
+  [留学平台] ST PAUL'S CO-EDUCATIONAL COLLEGE
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] ST PAUL'S CO-EDUCATIONAL COLLEGE
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] ST PAUL'S CO-EDUCATIONAL COLLEGE
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[6064] CCC HEEP WOH COLLEGE
+  [学校官网] CCC HEEP WOH COLLEGE
+  [Bing图片] CCC HEEP WOH COLLEGE
+  [留学平台] CCC HEEP WOH COLLEGE
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] CCC HEEP WOH COLLEGE
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] CCC HEEP WOH COLLEGE
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[19535] Mahidol University
+  [学校官网] Mahidol University
+  [Bing图片] Mahidol University
+  [留学平台] Mahidol University
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Mahidol University
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Mahidol University
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[17664] University of Karachi
+  [学校官网] University of Karachi
+  [Bing图片] University of Karachi
+  [留学平台] University of Karachi
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] University of Karachi
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] University of Karachi
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[12369] Kuwait University
+  [学校官网] Kuwait University
+  [Bing图片] Kuwait University
+    ✓ 下载成功: school_12369_bing.jpg (170.0KB)
+
+[3359] ST ANTONIUS KINDERGARTEN
+  [学校官网] ST ANTONIUS KINDERGARTEN
+  [Bing图片] ST ANTONIUS KINDERGARTEN
+    ✓ 下载成功: school_3359_bing.webp (183.9KB)
+
+[18366] Tribhuvan University
+  [学校官网] Tribhuvan University
+  [Bing图片] Tribhuvan University
+  [留学平台] Tribhuvan University
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Tribhuvan University
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Tribhuvan University
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[21475] Royal University of Bhutan College of Science
+  [学校官网] Royal University of Bhutan College of Science
+  [Bing图片] Royal University of Bhutan College of Science
+    ✓ 下载成功: school_21475_bing.jpg (15.5KB)
+
+[10103] Erasmus University Rotterdam
+  [学校官网] Erasmus University Rotterdam
+  [Bing图片] Erasmus University Rotterdam
+    ✓ 下载成功: school_10103_bing.jpg (355.5KB)
+
+[20996] Bhutan Agriculture College
+  [学校官网] Bhutan Agriculture College
+  [Bing图片] Bhutan Agriculture College
+    ✓ 下载成功: school_20996_bing.jpg (443.9KB)
+
+[21323] Beltei International University
+  [学校官网] Beltei International University
+  [Bing图片] Beltei International University
+  [留学平台] Beltei International University
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Beltei International University
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Beltei International University
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[5141] PLK FONG WONG KAM CHUEN PRIMARY SCHOOL
+  [学校官网] PLK FONG WONG KAM CHUEN PRIMARY SCHOOL
+  [Bing图片] PLK FONG WONG KAM CHUEN PRIMARY SCHOOL
+  [留学平台] PLK FONG WONG KAM CHUEN PRIMARY SCHOOL
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] PLK FONG WONG KAM CHUEN PRIMARY SCHOOL
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] PLK FONG WONG KAM CHUEN PRIMARY SCHOOL
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[12146] Mongolian University of Science and Technology
+  [学校官网] Mongolian University of Science and Technology
+  [Bing图片] Mongolian University of Science and Technology
+    ✓ 下载成功: school_12146_bing.jpg (391.4KB)
+
+[13339] Brunei Shell Petroleum University Centre
+  [学校官网] Brunei Shell Petroleum University Centre
+  [Bing图片] Brunei Shell Petroleum University Centre
+    ✓ 下载成功: school_13339_bing.jpg (1838.2KB)
+
+[13765] Ameer Ahmed College
+  [学校官网] Ameer Ahmed College
+  [Bing图片] Ameer Ahmed College
+    ✗ 下载失败: HTTP Error 403: Forbidden
+    ✗ 下载失败: HTTP Error 403: Forbidden
+    ✗ 下载失败: HTTP Error 403: Forbidden
+  [留学平台] Ameer Ahmed College
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Ameer Ahmed College
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Ameer Ahmed College
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[16089] Mohanlal Sukhadia University
+  [学校官网] Mohanlal Sukhadia University
+  [Bing图片] Mohanlal Sukhadia University
+  [留学平台] Mohanlal Sukhadia University
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Mohanlal Sukhadia University
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Mohanlal Sukhadia University
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[8096] Hamilton College
+  [学校官网] Hamilton College
+  [Bing图片] Hamilton College
+    ✓ 下载成功: school_8096_bing.jpg (148.1KB)
+
+[13806] University of Santo Tomas
+  [学校官网] University of Santo Tomas
+  [Bing图片] University of Santo Tomas
+    ✓ 下载成功: school_13806_bing.jpg (554.8KB)
+
+[13633] Vietnam National University Ho Chi Minh City
+  [学校官网] Vietnam National University Ho Chi Minh City
+  [Bing图片] Vietnam National University Ho Chi Minh City
+    ✓ 下载成功: school_13633_bing.webp (68.6KB)
+
+[9493] City University London
+  [学校官网] City University London
+  [Bing图片] City University London
+    ✓ 下载成功: school_9493_bing.jpg (112.2KB)
+
+[17871] Ateneo de Manila University
+  [学校官网] Ateneo de Manila University
+  [Bing图片] Ateneo de Manila University
+  [留学平台] Ateneo de Manila University
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Ateneo de Manila University
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Ateneo de Manila University
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[21244] Kazan Institute of Federal Tax Service
+  [学校官网] Kazan Institute of Federal Tax Service
+  [Bing图片] Kazan Institute of Federal Tax Service
+    ✗ 下载失败: 'ascii' codec can't encode characters in position 32-36: ordinal not in range(128)
+    ✗ 下载失败: 'ascii' codec can't encode characters in position 32-36: ordinal not in range(128)
+    ✗ 下载失败: 'ascii' codec can't encode characters in position 32-36: ordinal not in range(128)
+  [留学平台] Kazan Institute of Federal Tax Service
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Kazan Institute of Federal Tax Service
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Kazan Institute of Federal Tax Service
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[13757] Bumthang College
+  [学校官网] Bumthang College
+  [Bing图片] Bumthang College
+  [留学平台] Bumthang College
+    ✗ 留学平台失败: <urlopen error timed out>
+  [高考帮] Bumthang College
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Bumthang College
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[19735] Kazakh-British Technical University
+  [学校官网] Kazakh-British Technical University
+  [Bing图片] Kazakh-British Technical University
+    ✓ 下载成功: school_19735_bing.jpg (219.5KB)
+
+[16423] Imam Abdulrahman Bin Faisal University
+  [学校官网] Imam Abdulrahman Bin Faisal University
+  [Bing图片] Imam Abdulrahman Bin Faisal University
+  [留学平台] Imam Abdulrahman Bin Faisal University
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Imam Abdulrahman Bin Faisal University
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Imam Abdulrahman Bin Faisal University
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[21768] Christo Rei Institute of Technology
+  [学校官网] Christo Rei Institute of Technology
+  [Bing图片] Christo Rei Institute of Technology
+    ✗ 下载失败: The read operation timed out
+    ✗ 下载失败: The read operation timed out
+    ✗ 下载失败: The read operation timed out
+  [留学平台] Christo Rei Institute of Technology
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] Christo Rei Institute of Technology
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] Christo Rei Institute of Technology
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[22097] American University in Dubai
+  [学校官网] American University in Dubai
+  [Bing图片] American University in Dubai
+  [留学平台] American University in Dubai
+    ✗ 留学平台失败: HTTP Error 404: Not Found
+  [高考帮] American University in Dubai
+    ✗ 高考帮失败: HTTP Error 404: Not Found
+  [Flickr] American University in Dubai
+    ✗ Flickr 失败: <urlopen error timed out>
+
+[21579] Charles University
+  [学校官网] Charles University
+  [Bing图片] Charles University
+    ✓ 下载成功: school_21579_bing.webp (145.7KB)
+
+[2270] HO MAN TIN GOVERNMENT SECONDARY SCHOOL
+  [学校官网] HO MAN TIN GOVERNMENT SECONDARY SCHOOL
+  [Bing图片] HO MAN TIN GOVERNMENT SECONDARY SCHOOL
+    ✓ 下载成功: school_2270_bing.webp (324.0KB)
+
+=== 完成 ===
+成功: 19
+失败: 31
