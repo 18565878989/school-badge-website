@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}社交广场{% endblock %}</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1E3A5F;
+            --accent: #007AFF;
+            --success: #34C759;
+            --warning: #FF9500;
+            --danger: #FF3B30;
+            --gold: #D4AF37;
+            --text: #1d1d1f;
+            --text-secondary: #86868b;
+            --bg: #ffffff;
+            --bg-secondary: #f5f5f7;
+            --bg-tertiary: #e8e8ed;
+            --border: #d2d2d7;
+            --radius: 16px;
+            --radius-sm: 10px;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-secondary);
+            color: var(--text);
+            line-height: 1.5;
+        }
+        
+        /* Layout */
+        .social-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr 320px;
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 24px;
+            height: fit-content;
+        }
+        
+        .nav-card {
+            background: var(--bg);
+            border-radius: var(--radius);
+            padding: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: var(--radius-sm);
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .nav-item:hover {
+            background: var(--bg-secondary);
+        }
+        
+        .nav-item.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .nav-item svg {
+            width: 22px;
+            height: 22px;
+        }
+        
+        .nav-item .badge {
+            margin-left: auto;
+            background: var(--danger);
+            color: white;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+        
+        /* Main Content */
+        .main-content {
+            background: var(--bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        /* Header */
+        .content-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .content-header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        /* Post Composer */
+        .composer {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .composer-input {
+            display: flex;
+            gap: 16px;
+        }
+        
+        .composer-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        
+        .composer-body {
+            flex: 1;
+        }
+        
+        .composer-body textarea {
+            width: 100%;
+            border: none;
+            resize: none;
+            font-size: 1rem;
+            font-family: inherit;
+            min-height: 60px;
+            outline: none;
+        }
+        
+        .composer-body textarea::placeholder {
+            color: var(--text-secondary);
+        }
+        
+        .composer-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .composer-tools {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .composer-tool {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            transition: all 0.2s;
+        }
+        
+        .composer-tool:hover {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .btn-post {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .btn-post:hover {
+            background: #0066d6;
+        }
+        
+        .btn-post:disabled {
+            background: var(--bg-tertiary);
+            cursor: not-allowed;
+        }
+        
+        /* Filter Tabs */
+        .filter-tabs {
+            display: flex;
+            padding: 0 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .filter-tab {
+            padding: 16px 20px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        .filter-tab:hover {
+            color: var(--text);
+        }
+        
+        .filter-tab.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+        
+        /* Posts Feed */
+        .posts-feed {
+            padding: 0;
+        }
+        
+        .post-card {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            transition: background 0.2s;
+        }
+        
+        .post-card:hover {
+            background: var(--bg-secondary);
+        }
+        
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        
+        .post-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .post-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .post-author-info .name {
+            font-weight: 600;
+            color: var(--text);
+        }
+        
+        .post-author-info .meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        
+        .post-menu {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+        }
+        
+        .post-menu:hover {
+            background: var(--bg-secondary);
+        }
+        
+        .post-content {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            white-space: pre-wrap;
+        }
+        
+        .post-media {
+            margin-bottom: 16px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+        
+        .post-media img {
+            width: 100%;
+            display: block;
+        }
+        
+        .post-actions {
+            display: flex;
+            gap: 24px;
+        }
+        
+        .post-action {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 20px;
+            transition: all 0.2s;
+        }
+        
+        .post-action:hover {
+            background: var(--bg-secondary);
+        }
+        
+        .post-action.liked {
+            color: var(--danger);
+        }
+        
+        .post-action svg {
+            width: 20px;
+            height: 20px;
+        }
+        
+        /* Right Sidebar */
+        .right-sidebar {
+            position: sticky;
+            top: 24px;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .widget {
+            background: var(--bg);
+            border-radius: var(--radius);
+            padding: 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .widget-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .topic-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .topic-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 14px;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s;
+        }
+        
+        .topic-item:hover {
+            background: var(--bg-tertiary);
+        }
+        
+        .topic-name {
+            font-weight: 500;
+        }
+        
+        .topic-count {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        
+        /* User Stats */
+        .user-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            text-align: center;
+        }
+        
+        .user-stat-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .user-stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Loading */
+        .loading {
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+        
+        .loading-spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+        
+        .empty-state svg {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .social-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar, .right-sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="social-layout">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <nav class="nav-card">
+                <a href="#" class="nav-item active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    首页
+                </a>
+                <a href="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                    </svg>
+                    消息
+                    <span class="badge">3</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                        <path d="M13.73 21a2 2 0 01-3.46 0"/>
+                    </svg>
+                    通知
+                </a>
+                <a href="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    个人主页
+                </a>
+                <a href="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                    收藏
+                </a>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <div class="content-header">
+                <h1>社交广场</h1>
+                <button class="btn-post" onclick="openComposer()">
+                    发布动态
+                </button>
+            </div>
+            
+            <!-- Post Composer -->
+            <div class="composer" id="composer" style="display: none;">
+                <div class="composer-input">
+                    <div class="composer-avatar">U</div>
+                    <div class="composer-body">
+                        <textarea id="postContent" placeholder="分享你的想法..." rows="3"></textarea>
+                        <div class="composer-actions">
+                            <div class="composer-tools">
+                                <button class="composer-tool" title="图片">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <polyline points="21 15 16 10 5 21"/>
+                                    </svg>
+                                </button>
+                                <button class="composer-tool" title="话题">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                        <line x1="4" y1="9" x2="20" y2="9"/>
+                                        <line x1="4" y1="15" x2="20" y2="15"/>
+                                        <line x1="10" y1="3" x2="8" y2="21"/>
+                                        <line x1="16" y1="3" x2="14" y2="21"/>
+                                    </svg>
+                                </button>
+                                <button class="composer-tool" title="位置">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="btn-post" onclick="createPost()">发布</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <a href="#" class="filter-tab active" data-sort="new">最新</a>
+                <a href="#" class="filter-tab" data-sort="hot">热门</a>
+                <a href="#" class="filter-tab" data-sort="following">关注</a>
+            </div>
+            
+            <!-- Posts Feed -->
+            <div class="posts-feed" id="postsFeed">
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <!-- User Card -->
+            <div class="widget">
+                <div style="text-align: center; padding: 10px 0;">
+                    <div class="post-avatar" style="width: 64px; height: 64px; margin: 0 auto 12px; font-size: 1.5rem;">U</div>
+                    <div style="font-weight: 600; font-size: 1.1rem;">用户名</div>
+                    <div style="color: var(--text-secondary); font-size: 0.9rem;">@username</div>
+                </div>
+                <div class="user-stats">
+                    <div>
+                        <div class="user-stat-value">0</div>
+                        <div class="user-stat-label">发帖</div>
+                    </div>
+                    <div>
+                        <div class="user-stat-value">0</div>
+                        <div class="user-stat-label">粉丝</div>
+                    </div>
+                    <div>
+                        <div class="user-stat-value">0</div>
+                        <div class="user-stat-label">关注</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trending Topics -->
+            <div class="widget">
+                <h3 class="widget-title">🔥 热门话题</h3>
+                <div class="topic-list">
+                    <a href="#" class="topic-item">
+                        <span class="topic-name">#2024大学排名</span>
+                    </a>
+                    <a href="#" class="topic-item">
+                        <span class="topic-name">#校园生活</span>
+                    </a>
+                    <a href="#" class="topic-item">
+                        <span class="topic-name">#留学申请</span>
+                    </a>
+                    <a href="#" class="topic-item">
+                        <span class="topic-name">#学长学姐说</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div style="font-size: 0.8rem; color: var(--text-secondary); text-align: center;">
+                <p>校徽网 © 2026</p>
+                <p style="margin-top: 4px;">
+                    <a href="#" style="color: var(--accent);">关于我们</a> ·
+                    <a href="#" style="color: var(--accent);">隐私政策</a> ·
+                    <a href="#" style="color: var(--accent);">用户协议</a>
+                </p>
+            </div>
+        </aside>
+    </div>
+    
+    <script>
+        // Load posts
+        async function loadPosts(sort = 'new') {
+            const feed = document.getElementById('postsFeed');
+            feed.innerHTML = '<div class="loading"><div class="loading-spinner"></div></div>';
+            
+            try {
+                const resp = await fetch(`/api/social/posts?sort=${sort}&limit=20`);
+                const data = await resp.json();
+                
+                if (data.success && data.posts.length > 0) {
+                    feed.innerHTML = data.posts.map(post => renderPost(post)).join('');
+                } else {
+                    feed.innerHTML = `
+                        <div class="empty-state">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                            </svg>
+                            <h3>暂无动态</h3>
+                            <p>成为第一个发布的人吧！</p>
+                        </div>
+                    `;
+                }
+            } catch (err) {
+                feed.innerHTML = '<div class="empty-state">加载失败</div>';
+            }
+        }
+        
+        // Render single post
+        function renderPost(post) {
+            const avatar = post.author_name ? post.author_name[0].toUpperCase() : 'U';
+            const time = formatTime(post.created_at);
+            
+            return `
+                <div class="post-card" data-id="${post.id}">
+                    <div class="post-header">
+                        <div class="post-author">
+                            <div class="post-avatar">${avatar}</div>
+                            <div class="post-author-info">
+                                <div class="name">${post.author_name || '匿名用户'}</div>
+                                <div class="meta">${time} · ${post.school_name || '校徽网'}</div>
+                            </div>
+                        </div>
+                        <button class="post-menu" onclick="togglePostMenu(this)">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                <circle cx="12" cy="6" r="2"/>
+                                <circle cx="12" cy="12" r="2"/>
+                                <circle cx="12" cy="18" r="2"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="post-content">${escapeHtml(post.content)}</div>
+                    ${post.media_urls ? `<div class="post-media"><img src="${post.media_urls}" alt=""></div>` : ''}
+                    <div class="post-actions">
+                        <button class="post-action ${post.is_liked ? 'liked' : ''}" onclick="toggleLike(${post.id})">
+                            <svg viewBox="0 0 24 24" fill="${post.is_liked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                            </svg>
+                            <span>${post.like_count || 0}</span>
+                        </button>
+                        <button class="post-action" onclick="openComments(${post.id})">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                            </svg>
+                            <span>${post.comment_count || 0}</span>
+                        </button>
+                        <button class="post-action" onclick="sharePost(${post.id})">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/>
+                                <polyline points="16 6 12 2 8 6"/>
+                                <line x1="12" y1="2" x2="12" y2="15"/>
+                            </svg>
+                            <span>分享</span>
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Helper functions
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function formatTime(timestamp) {
+            if (!timestamp) return '';
+            const date = new Date(timestamp.replace(' ', 'T'));
+            const now = new Date();
+            const diff = (now - date) / 1000;
+            
+            if (diff < 60) return '刚刚';
+            if (diff < 3600) return Math.floor(diff / 60) + '分钟前';
+            if (diff < 86400) return Math.floor(diff / 3600) + '小时前';
+            if (diff < 604800) return Math.floor(diff / 86400) + '天前';
+            return timestamp.substring(0, 10);
+        }
+        
+        function openComposer() {
+            document.getElementById('composer').style.display = 'block';
+            document.getElementById('postContent').focus();
+        }
+        
+        async function createPost() {
+            const content = document.getElementById('postContent').value.trim();
+            if (!content) return;
+            
+            try {
+                const resp = await fetch('/api/social/posts', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ content })
+                });
+                const data = await resp.json();
+                
+                if (data.success) {
+                    document.getElementById('postContent').value = '';
+                    document.getElementById('composer').style.display = 'none';
+                    loadPosts();
+                }
+            } catch (err) {
+                alert('发布失败');
+            }
+        }
+        
+        async function toggleLike(postId) {
+            try {
+                const resp = await fetch(`/api/social/posts/${postId}/like`, { method: 'POST' });
+                const data = await resp.json();
+                if (data.success) {
+                    loadPosts();
+                }
+            } catch (err) {
+                console.error(err);
+            }
+        }
+        
+        // Tab switching
+        document.querySelectorAll('.filter-tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                loadPosts(tab.dataset.sort);
+            });
+        });
+        
+        // Initial load
+        loadPosts();
+    </script>
+</body>
+</html>

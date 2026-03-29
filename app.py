@@ -130,6 +130,10 @@ try:
     app.register_blueprint(api_full_bp)
     print("[Routes] api_full blueprint registered")
     
+    from routes.social_api import social_api_bp
+    app.register_blueprint(social_api_bp)
+    print("[Routes] social_api blueprint registered")
+    
     from routes.main import main_bp
     app.register_blueprint(main_bp)
     print("[Routes] main blueprint registered")
