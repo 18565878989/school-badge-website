@@ -1142,3 +1142,24 @@ main {
 .membership-benefits a:hover {
     text-decoration: underline;
 }
+
+/* Social Login Buttons Extended */
+.social-btn.google {
+    background: linear-gradient(135deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%);
+}
+
+.social-btn.qq {
+    background: linear-gradient(135deg, #12B7F5 0%, #1DB8F5 100%);
+}
+
+.social-btn.taobao {
+    background: linear-gradient(135deg, #FF5000 0%, #FF6A00 100%);
+}
+
+.social-btn.xiaohongshu {
+    background: linear-gradient(135deg, #FF2442 0%, #FF6B6B 100%);
+}
+
+.social-btn.qq:hover:not(.disabled) { background: linear-gradient(135deg, #00A5E5 0%, #0095D5 100%); }
+.social-btn.taobao:hover:not(.disabled) { background: linear-gradient(135deg, #FF6600 0%, #FF7700 100%); }
+.social-btn.xiaohongshu:hover:not(.disabled) { background: linear-gradient(135deg, #FF0033 0%, #FF3355 100%); }

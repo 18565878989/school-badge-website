@@ -153,9 +153,49 @@
                         <span>Facebook</span>
                     </button>
                     {% endif %}
+                    
+                    {% if oauth_configured.google %}
+                    <a href="{{ url_for('oauth_login', provider='google') }}" class="social-btn google">
+                        <span>Google</span>
+                    </a>
+                    {% else %}
+                    <button class="social-btn google disabled" disabled>
+                        <span>Google</span>
+                    </button>
+                    {% endif %}
+                    
+                    {% if oauth_configured.qq %}
+                    <a href="{{ url_for('oauth_login', provider='qq') }}" class="social-btn qq">
+                        <span>QQ</span>
+                    </a>
+                    {% else %}
+                    <button class="social-btn qq disabled" disabled>
+                        <span>QQ</span>
+                    </button>
+                    {% endif %}
+                    
+                    {% if oauth_configured.taobao %}
+                    <a href="{{ url_for('oauth_login', provider='taobao') }}" class="social-btn taobao">
+                        <span>淘宝</span>
+                    </a>
+                    {% else %}
+                    <button class="social-btn taobao disabled" disabled>
+                        <span>淘宝</span>
+                    </button>
+                    {% endif %}
+                    
+                    {% if oauth_configured.xiaohongshu %}
+                    <a href="{{ url_for('oauth_login', provider='xiaohongshu') }}" class="social-btn xiaohongshu">
+                        <span>小红书</span>
+                    </a>
+                    {% else %}
+                    <button class="social-btn xiaohongshu disabled" disabled>
+                        <span>小红书</span>
+                    </button>
+                    {% endif %}
                 </div>
                 <p class="oauth-notice">
-                    {% if not oauth_configured.wechat and not oauth_configured.alipay and not oauth_configured.twitter and not oauth_configured.facebook %}
+                    {% if not oauth_configured.wechat and not oauth_configured.alipay and not oauth_configured.twitter and not oauth_configured.facebook and not oauth_configured.google and not oauth_configured.qq and not oauth_configured.taobao and not oauth_configured.xiaohongshu %}
                     <small>第三方登录配置未完成，请联系管理员配置API密钥</small>
                     {% endif %}
                 </p>

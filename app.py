@@ -112,6 +112,26 @@ OAUTH_CONFIG = {
         'appid': os.environ.get('FACEBOOK_APPID', ''),
         'appsecret': os.environ.get('FACEBOOK_APPSECRET', ''),
         'redirect_uri': os.environ.get('FACEBOOK_REDIRECT_URI', 'http://127.0.0.1:5001/auth/facebook/callback'),
+    },
+    'google': {
+        'client_id': os.environ.get('GOOGLE_CLIENT_ID', ''),
+        'client_secret': os.environ.get('GOOGLE_CLIENT_SECRET', ''),
+        'redirect_uri': os.environ.get('GOOGLE_REDIRECT_URI', 'http://127.0.0.1:5001/auth/google/callback'),
+    },
+    'qq': {
+        'appid': os.environ.get('QQ_APPID', ''),
+        'appsecret': os.environ.get('QQ_APPSECRET', ''),
+        'redirect_uri': os.environ.get('QQ_REDIRECT_URI', 'http://127.0.0.1:5001/auth/qq/callback'),
+    },
+    'taobao': {
+        'appkey': os.environ.get('TAOBAO_APPKEY', ''),
+        'appsecret': os.environ.get('TAOBAO_APPSECRET', ''),
+        'redirect_uri': os.environ.get('TAOBAO_REDIRECT_URI', 'http://127.0.0.1:5001/auth/taobao/callback'),
+    },
+    'xiaohongshu': {
+        'client_id': os.environ.get('XHS_CLIENT_ID', ''),
+        'client_secret': os.environ.get('XHS_CLIENT_SECRET', ''),
+        'redirect_uri': os.environ.get('XHS_REDIRECT_URI', 'http://127.0.0.1:5001/auth/xiaohongshu/callback'),
     }
 }
 
