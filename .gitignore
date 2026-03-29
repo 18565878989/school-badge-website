@@ -38,3 +38,8 @@ build/
 !database.db
 database.db-wal
 database.db-shm
+*.log
+*.db
+*.jpg
+*.webp
+*.png
