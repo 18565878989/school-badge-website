@@ -134,6 +134,10 @@ try:
     app.register_blueprint(social_api_bp)
     print("[Routes] social_api blueprint registered")
     
+    from routes.user_api import user_api_bp
+    app.register_blueprint(user_api_bp)
+    print("[Routes] user_api blueprint registered")
+    
     from routes.main import main_bp
     app.register_blueprint(main_bp)
     print("[Routes] main blueprint registered")

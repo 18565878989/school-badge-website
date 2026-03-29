@@ -49,9 +49,9 @@ def badges():
     return render_template('badge_hub.html', schools=[dict(s) for s in schools])
 
 @social_bp.route('/social-v2')
-def social_v2():
+def social_v3():
     """社交V2"""
-    return render_template('social_v2.html')
+    return render_template('social_v3.html')
 
 @social_bp.route('/create_topic', methods=['POST'])
 def create_topic():
