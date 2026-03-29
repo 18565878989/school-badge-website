@@ -9,7 +9,7 @@
         <p>{{ '编辑学校信息' if school else '添加新学校' }}</p>
     </div>
     <div class="admin-header-actions">
-        <a href="{{ url_for('admin.admin_schools') }}" class="btn btn-secondary">
+        <a href="{{ url_for('admin_schools') }}" class="btn btn-secondary">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="19" y1="12" x2="5" y2="12"/>
                 <polyline points="12 19 5 12 12 5"/>
@@ -126,7 +126,7 @@
                 </svg>
                 {{ '保存修改' if school else '添加学校' }}
             </button>
-            <a href="{{ url_for('admin.admin_schools') }}" class="btn btn-secondary">取消</a>
+            <a href="{{ url_for('admin_schools') }}" class="btn btn-secondary">取消</a>
         </div>
     </div>
 </form>

@@ -3,6 +3,7 @@ Admin Extended Routes - 管理后台扩展路由
 """
 from flask import Blueprint, render_template, request, redirect, url_for, session, jsonify, send_from_directory
 import os
+import sqlite3
 
 admin_ext_bp = Blueprint('admin_ext', __name__, url_prefix='/admin')
 
@@ -22,7 +23,23 @@ def admin_required(f):
 @admin_required
 def campus_images():
     """校园图片管理"""
-    return render_template('admin/campus_images.html')
+    page = request.args.get('page', 1, type=int)
+    per_page = 20
+    
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    
+    # 获取总数
+    cursor.execute('SELECT COUNT(*) FROM schools WHERE badge_url IS NOT NULL AND badge_url != ""')
+    total = cursor.fetchone()[0]
+    
+    conn.close()
+    
+    total_pages = max(1, (total + per_page - 1) // per_page)
+    
+    return render_template('admin/campus_images.html', 
+                         page=page, per_page=per_page, 
+                         total=total, total_pages=total_pages)
 
 @admin_ext_bp.route('/school/<int:school_id>/campus-edit', methods=['GET', 'POST'])
 @admin_required
@@ -63,7 +80,23 @@ def batch_approve_campus():
 @admin_required
 def badge_images():
     """校徽图片管理"""
-    return render_template('admin/badge_images.html')
+    page = request.args.get('page', 1, type=int)
+    per_page = 20
+    
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    
+    # 获取总数
+    cursor.execute('SELECT COUNT(*) FROM schools WHERE badge_url IS NOT NULL AND badge_url != ""')
+    total = cursor.fetchone()[0]
+    
+    conn.close()
+    
+    total_pages = max(1, (total + per_page - 1) // per_page)
+    
+    return render_template('admin/badge_images.html',
+                         page=page, per_page=per_page,
+                         total=total, total_pages=total_pages)
 
 @admin_ext_bp.route('/school/<int:school_id>/badge-edit', methods=['GET', 'POST'])
 @admin_required

@@ -1368,6 +1368,56 @@ def api_admin_users():
         'pages': (total + per_page - 1) // per_page
     })
 
+@app.route('/api/admin/stats')
+@admin_required
+def api_admin_stats():
+    """API: Get admin dashboard stats."""
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    
+    # 用户统计
+    cursor.execute('SELECT COUNT(*) FROM users')
+    total_users = cursor.fetchone()[0]
+    
+    cursor.execute("SELECT COUNT(*) FROM users WHERE status = 'banned'")
+    banned_users = cursor.fetchone()[0]
+    
+    cursor.execute("SELECT COUNT(*) FROM users WHERE oauth_provider IS NOT NULL AND oauth_provider != ''")
+    oauth_users = cursor.fetchone()[0]
+    
+    # 学校统计
+    cursor.execute('SELECT COUNT(*) FROM schools')
+    total_schools = cursor.fetchone()[0]
+    
+    cursor.execute("SELECT COUNT(*) FROM schools WHERE badge_url IS NOT NULL AND badge_url != ''")
+    schools_with_badge = cursor.fetchone()[0]
+    
+    # 会员统计
+    cursor.execute("SELECT COUNT(*) FROM users WHERE membership_tier = 'pro'")
+    pro_users = cursor.fetchone()[0]
+    
+    cursor.execute("SELECT COUNT(*) FROM users WHERE membership_tier = 'basic'")
+    basic_users = cursor.fetchone()[0]
+    
+    conn.close()
+    
+    return jsonify({
+        'users': {
+            'total': total_users,
+            'banned': banned_users,
+            'oauth_bound': oauth_users
+        },
+        'schools': {
+            'total': total_schools,
+            'with_badge': schools_with_badge
+        },
+        'membership': {
+            'pro': pro_users,
+            'basic': basic_users,
+            'free': total_users - pro_users - basic_users
+        }
+    })
+
 @app.route('/api/admin/user/<int:user_id>')
 @admin_required
 def api_admin_get_user(user_id):
@@ -1820,7 +1870,7 @@ def admin_permissions():
     role_perms = {}
     for r in roles:
         perms = get_role_permissions_db(r)
-        role_perms[r] = [p['code'] for p in perms]
+        role_perms[r] = perms
     
     role_names = {
         'admin': '管理员',
