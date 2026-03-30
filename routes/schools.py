@@ -55,13 +55,28 @@ def school_detail(school_id):
     else:
         map_query = ""
     
+    # Get related schools for Hong Kong schools (same district or feeder/linked schools)
+    related_schools = []
+    if school_dict.get('country') == 'Hong Kong' and school_dict.get('district'):
+        # Find schools in same district
+        related = conn.execute("""
+            SELECT id, name, name_cn, badge_url, district, school_type, level 
+            FROM schools 
+            WHERE country = 'Hong Kong' 
+            AND district = ? 
+            AND id != ?
+            LIMIT 6
+        """, (school_dict.get('district'), school_id)).fetchall()
+        related_schools = [dict(row) for row in related]
+    
     return render_template('school.html',
                          school=school,
                          rankings=rankings,
                          liked=liked,
                          likes_count=likes_count,
                          badge_url=badge_url,
-                         map_query=map_query)
+                         map_query=map_query,
+                         related_schools=related_schools)
 
 @schools_bp.route('/badge-history/<int:school_id>')
 def badge_history(school_id):

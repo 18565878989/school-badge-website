@@ -205,6 +205,22 @@
                 </div>
                 {% endif %}
                 
+                {% if school.session_type %}
+                <div class="info-card" style="background: #fff4e5; padding: 16px; border-radius: 14px;">
+                    <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #FF9500; margin-bottom: 6px; font-weight: 600;">授课时段</p>
+                    <p style="font-size: 0.9rem; color: #1d1d1f; font-weight: 600;">
+                        {% if school.session_type == 'AM' %}上午班{% elif school.session_type == 'PM' %}下午班{% elif school.session_type == 'WD' %}全日班{% else %}{{ school.session_type }}{% endif %}
+                    </p>
+                </div>
+                {% endif %}
+                
+                {% if school.school_type and school.school_type != school.finance_type %}
+                <div class="info-card" style="background: #f0e8ff; padding: 16px; border-radius: 14px;">
+                    <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #AF52DE; margin-bottom: 6px; font-weight: 600;">学校类别</p>
+                    <p style="font-size: 0.9rem; color: #1d1d1f; font-weight: 600;">{{ school.school_type }}</p>
+                </div>
+                {% endif %}
+                
                 {% if school.website %}
                 <div class="info-card" style="background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 100%); padding: 16px; border-radius: 14px;">
                     <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.8); margin-bottom: 6px; font-weight: 600;">官网</p>
@@ -218,6 +234,40 @@
         </div>
     </div>
 
+    {% if school.country == 'Hong Kong' %}
+    <!-- Related Schools Section -->
+    {% if related_schools %}
+    <div style="margin-top: 40px;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+            <div style="width: 4px; height: 24px; background: linear-gradient(180deg, #34C759, #30D158); border-radius: 2px;"></div>
+            <h2 style="font-size: 1.4rem; font-weight: 600; color: #1d1d1f; margin: 0;">🔗 相关学校</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
+            {% for rel in related_schools %}
+            <a href="/school/{{ rel.id }}" style="background: white; border-radius: 20px; padding: 20px; text-decoration: none; color: inherit; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: all 0.2s; display: flex; align-items: center; gap: 14px;"
+               onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.1)';"
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)';">
+                <div style="width: 50px; height: 50px; border-radius: 12px; background: #f5f5f7; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
+                    {% if rel.badge_url %}
+                    <img src="{{ rel.badge_url }}" alt="{{ rel.name }}" style="width: 100%; height: 100%; object-fit: contain;">
+                    {% else %}
+                    <span style="font-size: 1.5rem;">🎓</span>
+                    {% endif %}
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                    <div style="font-weight: 600; font-size: 0.95rem; color: #1d1d1f; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ rel.name }}</div>
+                    {% if rel.name_cn %}
+                    <div style="font-size: 0.85rem; color: #86868b; margin-bottom: 4px;">{{ rel.name_cn }}</div>
+                    {% endif %}
+                    <div style="font-size: 0.75rem; color: #007AFF; font-weight: 500;">{{ rel.school_type or rel.level }}</div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    {% endif %}
+    
     {% if map_query %}
     <div style="margin-top: 40px;">
         <!-- Section Title -->
