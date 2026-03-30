@@ -32,12 +32,36 @@ def school_detail(school_id):
     if badge_url and not badge_url.startswith(('http://', 'https://')):
         badge_url = url_for('static', filename=f'images/{badge_url}')
     
+    # Build map query string
+    school_dict = dict(school)
+    addr = school_dict.get('address', '')
+    name = school_dict.get('name', '')
+    city = school_dict.get('city', '')
+    country = school_dict.get('country', '')
+    district = school_dict.get('district', '')
+    
+    if addr:
+        map_query = addr
+        if country and country.lower() not in addr.lower():
+            map_query += ',' + country
+    elif name:
+        map_query = name
+        if district:
+            map_query += ',' + district
+        elif city:
+            map_query += ',' + city
+        if country:
+            map_query += ',' + country
+    else:
+        map_query = ""
+    
     return render_template('school.html',
                          school=school,
                          rankings=rankings,
                          liked=liked,
                          likes_count=likes_count,
-                         badge_url=badge_url)
+                         badge_url=badge_url,
+                         map_query=map_query)
 
 @schools_bp.route('/badge-history/<int:school_id>')
 def badge_history(school_id):
