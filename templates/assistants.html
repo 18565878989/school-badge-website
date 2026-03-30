@@ -4,6 +4,7 @@
 
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
+<script src="https://unpkg.com/@chenglou/pretext@latest/dist/index.js"></script>
 
 <style>
 /* Hero Section - Apple Style */
@@ -514,6 +515,47 @@
 </section>
 
 <script>
+// Pretext 流式文本渲染
+const { prepare, layout } = window.Pretext || {};
+
+function streamText(element, text, callback) {
+    let index = 0;
+    let currentText = '';
+    const containerWidth = 500; // 容器宽度
+    
+    function typeChar() {
+        if (index < text.length) {
+            currentText += text[index];
+            
+            // 如果有 Pretext，使用它来预计算布局
+            if (typeof layout === 'function') {
+                try {
+                    const prepared = prepare(currentText, '15px Inter, sans-serif', { lineHeight: 1.6 });
+                    const { height, lineCount } = layout(prepared, containerWidth);
+                    // Pretext 计算结果可用于精确高度控制
+                } catch (e) {
+                    // Pretext 可能不支持某些字符，跳过
+                }
+            }
+            
+            element.innerHTML = currentText;
+            index++;
+            
+            // 动态调整打字速度
+            let delay = 15 + Math.random() * 15;
+            if (text[index - 1] === '\n') delay = 150;
+            else if (['。', '！', '？', '！', '.', '?', '!'].includes(text[index - 1])) delay = 120;
+            else if (['，', ',', ';', '；'].includes(text[index - 1])) delay = 80;
+            
+            setTimeout(typeChar, delay);
+        } else {
+            if (callback) callback();
+        }
+    }
+    
+    typeChar();
+}
+
 async function callAssistant(type, form) {
     const resultBox = document.getElementById('result-' + type);
     const formData = new FormData(form);
@@ -523,7 +565,8 @@ async function callAssistant(type, form) {
         if (value) params.append(key, value);
     }
     
-    resultBox.innerHTML = '<p><span class="loading"></span> 思考中...</p>';
+    // 显示加载状态
+    resultBox.innerHTML = '<p class="typing-text"><span class="loading"></span> <span class="typing-dots">思考中</span></p>';
     resultBox.classList.add('show');
     
     try {
@@ -533,36 +576,74 @@ async function callAssistant(type, form) {
         if (data.error) {
             resultBox.innerHTML = '<p style="color: #ff3b30;">❌ ' + data.error + '</p>';
         } else if (data.message) {
-            let html = `<p>${data.message}</p>`;
+            // 创建流式文本容器
+            let html = '<div class="stream-content"></div>';
             
+            // 添加学校卡片（如果有）
             if (data.school) {
-                html += `<div class="result-school">
+                html = `<div class="result-school">
                     <img src="${data.school.badge_url || '/static/images/badge-placeholder.svg'}" alt="" onerror="this.src='/static/images/badge-placeholder.svg'">
                     <div>
                         <strong>${data.school.name}</strong>
                     </div>
-                </div>`;
+                </div>` + html;
             } else if (data.itinerary) {
-                html += '<ul style="margin-top:12px; padding-left:20px;">';
+                let listHtml = '<ul style="margin-top:12px; padding-left:20px;">';
                 data.itinerary.forEach(item => {
-                    html += `<li style="margin:8px 0; color: var(--text);">Day ${item.day}: ${item.school.name}</li>`;
+                    listHtml += `<li style="margin:8px 0; color: var(--text);">Day ${item.day}: ${item.school.name}</li>`;
                 });
-                html += '</ul>';
+                listHtml += '</ul>';
+                html = listHtml + html;
             } else if (data.story) {
-                html += `<div style="white-space: pre-line; margin-top:12px;">${data.story}</div>`;
+                // 历史故事直接显示
+                html = `<div class="story-content" style="white-space: pre-line; margin-top:12px;">${data.story}</div>`;
             } else if (data.suggestions) {
-                html += '<ul style="margin-top:12px; padding-left:20px;">';
+                let listHtml = '<ul style="margin-top:12px; padding-left:20px;">';
                 data.suggestions.forEach(s => {
-                    html += `<li style="margin:8px 0; color: var(--text);">${s}</li>`;
+                    listHtml += `<li style="margin:8px 0; color: var(--text);">${s}</li>`;
                 });
-                html += '</ul>';
+                listHtml += '</ul>';
+                html = listHtml + html;
             }
             
             resultBox.innerHTML = html;
+            
+            // 对长文本使用流式渲染
+            const streamContent = resultBox.querySelector('.stream-content');
+            if (streamContent && data.message.length > 50) {
+                streamText(streamContent, data.message);
+            } else if (streamContent) {
+                streamContent.textContent = data.message;
+            }
         }
     } catch (e) {
         resultBox.innerHTML = '<p style="color: #ff3b30;">❌ 请求失败: ' + e.message + '</p>';
     }
 }
 </script>
+
+<style>
+.typing-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.typing-dots::after {
+    content: '';
+    animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60%, 100% { content: '...'; }
+}
+
+.stream-content {
+    line-height: 1.6;
+    word-break: break-word;
+    min-height: 24px;
+}
+</style>
 {% endblock %}
