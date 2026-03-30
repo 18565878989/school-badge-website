@@ -1,0 +1,251 @@
+{% extends "base_apple.html" %}
+
+{% block title %}AI 选校建议 - 校徽网{% endblock %}
+
+{% block content %}
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px 40px 60px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;">
+    
+    <!-- Header -->
+    <div style="margin-bottom: 40px;">
+        <h1 style="font-size: 2.2rem; font-weight: 700; color: #1d1d1f; margin: 0 0 12px 0;">
+            ✨ AI 智能选校建议
+        </h1>
+        <p style="font-size: 1.1rem; color: #86868b; margin: 0;">
+            告诉 AI 您的需求，获得个性化的学校推荐
+        </p>
+    </div>
+    
+    <!-- Preference Form -->
+    <div style="background: white; border-radius: 28px; padding: 36px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); margin-bottom: 32px;">
+        <h2 style="font-size: 1.2rem; font-weight: 600; color: #1d1d1f; margin: 0 0 24px 0;">
+            🎯 告诉我您的需求
+        </h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 24px;">
+            
+            <!-- District -->
+            <div>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; color: #86868b; margin-bottom: 8px;">
+                    📍 所在区域
+                </label>
+                <select id="district" style="width: 100%; padding: 14px 16px; border-radius: 14px; border: 2px solid #e5e5e7; font-size: 1rem; background: white;">
+                    <option value="">不限</option>
+                    <option value="Central & Western">中西区</option>
+                    <option value="Eastern">东区</option>
+                    <option value="Southern">南区</option>
+                    <option value="Wan Chai">湾仔区</option>
+                    <option value="Sham Shui Po">深水埗区</option>
+                    <option value="Kowloon City">九龙城区</option>
+                    <option value="Yau Tsim Mong">油尖旺区</option>
+                    <option value="Sha Tin">沙田区</option>
+                    <option value="Kwun Tong">观塘区</option>
+                    <option value="Tsuen Wan">荃湾区</option>
+                    <option value="Tuen Mun">屯门区</option>
+                    <option value="Yuen Long">元朗区</option>
+                    <option value="Sai Kung">西贡区</option>
+                    <option value="Islands">离岛区</option>
+                    <option value="Kwai Tsing">葵青区</option>
+                    <option value="North">北区</option>
+                    <option value="Tai Po">大埔区</option>
+                </select>
+            </div>
+            
+            <!-- Gender -->
+            <div>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; color: #86868b; margin-bottom: 8px;">
+                    👥 性别要求
+                </label>
+                <select id="gender" style="width: 100%; padding: 14px 16px; border-radius: 14px; border: 2px solid #e5e5e7; font-size: 1rem; background: white;">
+                    <option value="">不限</option>
+                    <option value="CO-ED">男女校</option>
+                    <option value="BOYS">男校</option>
+                    <option value="GIRLS">女校</option>
+                </select>
+            </div>
+            
+            <!-- Finance Type -->
+            <div>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; color: #86868b; margin-bottom: 8px;">
+                    💰 办学类型
+                </label>
+                <select id="finance_type" style="width: 100%; padding: 14px 16px; border-radius: 14px; border: 2px solid #e5e5e7; font-size: 1rem; background: white;">
+                    <option value="">不限</option>
+                    <option value="Government">官立</option>
+                    <option value="Aided">资助</option>
+                    <option value="Direct">直资</option>
+                    <option value="Private">私立</option>
+                    <option value="ESF">英基</option>
+                </select>
+            </div>
+            
+            <!-- Level -->
+            <div>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; color: #86868b; margin-bottom: 8px;">
+                    🎓 学校类型
+                </label>
+                <select id="level" style="width: 100%; padding: 14px 16px; border-radius: 14px; border: 2px solid #e5e5e7; font-size: 1rem; background: white;">
+                    <option value="">不限</option>
+                    <option value="secondary">中学</option>
+                    <option value="primary">小学</option>
+                    <option value="kindergarten">幼儿园</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Other Preferences -->
+        <div style="margin-bottom: 28px;">
+            <label style="display: block; font-size: 0.85rem; font-weight: 600; color: #86868b; margin-bottom: 8px;">
+                📝 其他需求（可选）
+            </label>
+            <textarea id="other" rows="3" placeholder="例如：希望学校有良好的英语教学传统、有宗教背景、靠近地铁站..."
+                      style="width: 100%; padding: 14px 16px; border-radius: 14px; border: 2px solid #e5e5e7; font-size: 1rem; resize: vertical; font-family: inherit;"></textarea>
+        </div>
+        
+        <!-- Submit Button -->
+        <button onclick="getRecommendation()" id="submit-btn" style="width: 100%; padding: 18px; background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%); color: white; border: none; border-radius: 16px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.2s;">
+            ✨ 获取 AI 推荐
+        </button>
+    </div>
+    
+    <!-- Loading State -->
+    <div id="loading" style="display: none; text-align: center; padding: 60px 20px;">
+        <div style="display: inline-block; width: 60px; height: 60px; border: 4px solid #e5e5e7; border-top-color: #007AFF; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+        <p style="margin-top: 24px; font-size: 1.1rem; color: #86868b;">AI 正在分析您的需求...</p>
+    </div>
+    
+    <style>
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+    
+    <!-- Results -->
+    <div id="results" style="display: none;">
+        
+        <!-- Summary -->
+        <div id="summary-card" style="background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); border-radius: 28px; padding: 32px; color: white; margin-bottom: 32px;">
+            <h2 style="font-size: 1.3rem; font-weight: 600; margin: 0 0 16px 0; display: flex; align-items: center; gap: 8px;">
+                💡 AI 建议
+            </h2>
+            <p id="summary-text" style="font-size: 1.05rem; line-height: 1.7; margin: 0;"></p>
+        </div>
+        
+        <!-- Recommended Schools -->
+        <h2 style="font-size: 1.3rem; font-weight: 600; color: #1d1d1f; margin: 0 0 20px 0;">
+            🏆 为您推荐以下学校
+        </h2>
+        
+        <div id="schools-list" style="display: grid; gap: 20px;">
+            <!-- 动态填充 -->
+        </div>
+    </div>
+    
+    <!-- Error State -->
+    <div id="error" style="display: none; background: #FFF5F5; border-radius: 20px; padding: 24px; text-align: center;">
+        <p style="color: #FF3B30; margin: 0;">😔 暂时无法获取推荐，请稍后重试</p>
+    </div>
+    
+</div>
+
+<script>
+async function getRecommendation() {
+    const btn = document.getElementById('submit-btn');
+    const loading = document.getElementById('loading');
+    const results = document.getElementById('results');
+    const error = document.getElementById('error');
+    
+    // Get preferences
+    const preferences = {
+        district: document.getElementById('district').value,
+        gender: document.getElementById('gender').value,
+        finance_type: document.getElementById('finance_type').value,
+        level: document.getElementById('level').value,
+        other: document.getElementById('other').value
+    };
+    
+    // Show loading
+    btn.disabled = true;
+    btn.innerHTML = '⏳ 分析中...';
+    loading.style.display = 'block';
+    results.style.display = 'none';
+    error.style.display = 'none';
+    
+    try {
+        const response = await fetch('/api/ai-recommend', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ preferences })
+        });
+        
+        const data = await response.json();
+        
+        loading.style.display = 'none';
+        
+        if (data.error) {
+            error.style.display = 'block';
+            return;
+        }
+        
+        // Show results
+        document.getElementById('summary-text').textContent = data.summary || '根据您的需求，为您推荐以下学校：';
+        
+        const schoolsList = document.getElementById('schools-list');
+        
+        if (data.schools && data.schools.length > 0) {
+            schoolsList.innerHTML = data.schools.map((school, index) => `
+                <div style="background: white; border-radius: 24px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); display: flex; gap: 24px; align-items: flex-start;"
+                     onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.1)';"
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.06)';"
+                     transition: transform 0.2s, box-shadow 0.2s;>
+                    
+                    <!-- Rank -->
+                    <div style="width: 48px; height: 48px; background: ${index === 0 ? 'linear-gradient(135deg, #FFD700, #FFA500)' : index === 1 ? 'linear-gradient(135deg, #C0C0C0, #A0A0A0)' : index === 2 ? 'linear-gradient(135deg, #CD7F32, #B87333)' : 'linear-gradient(135deg, #f5f5f7, #e5e5e7)'}; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 700; color: ${index < 3 ? 'white' : '#86868b'}; flex-shrink: 0;">
+                        ${index + 1}
+                    </div>
+                    
+                    <!-- Badge -->
+                    <div style="width: 80px; height: 80px; background: #f5f5f7; border-radius: 18px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
+                        ${school.badge_url ? `<img src="${school.badge_url}" style="width: 60px; height: 60px; object-fit: contain;">` : '🎓'}
+                    </div>
+                    
+                    <!-- Info -->
+                    <div style="flex: 1; min-width: 0;">
+                        <h3 style="font-size: 1.2rem; font-weight: 600; color: #1d1d1f; margin: 0 0 8px 0;">
+                            ${school.name}
+                            ${school.name_cn ? `<span style="font-size: 0.9rem; color: #86868b; font-weight: 400;">(${school.name_cn})</span>` : ''}
+                        </h3>
+                        
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+                            <span style="background: #f5f5f7; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; color: #1d1d1f;">📍 ${school.district || '-'}</span>
+                            <span style="background: #f5f5f7; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; color: #1d1d1f;">👥 ${school.gender || '-'}</span>
+                            <span style="background: #f5f5f7; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; color: #1d1d1f;">💰 ${school.finance_type || '-'}</span>
+                            ${school.ai_score ? `<span style="background: linear-gradient(135deg, #007AFF, #5856D6); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; color: white;">🏆 ${school.ai_score}分</span>` : ''}
+                        </div>
+                        
+                        ${school.reason ? `<p style="font-size: 0.95rem; color: #007AFF; margin: 0; line-height: 1.5;">💡 ${school.reason}</p>` : ''}
+                    </div>
+                    
+                    <!-- Actions -->
+                    <div style="display: flex; flex-direction: column; gap: 8px; flex-shrink: 0;">
+                        <a href="/school/${school.id}" style="padding: 10px 20px; background: #007AFF; color: white; border-radius: 12px; text-decoration: none; font-size: 0.85rem; font-weight: 600; text-align: center;">
+                            查看详情
+                        </a>
+                        ${school.phone ? `<p style="font-size: 0.8rem; color: #86868b; margin: 0; text-align: center;">📞 ${school.phone}</p>` : ''}
+                    </div>
+                </div>
+            `).join('');
+        } else {
+            schoolsList.innerHTML = '<p style="text-align: center; color: #86868b; padding: 40px;">没有找到符合条件的学校</p>';
+        }
+        
+        results.style.display = 'block';
+        
+    } catch (err) {
+        loading.style.display = 'none';
+        error.style.display = 'block';
+    }
+    
+    btn.disabled = false;
+    btn.innerHTML = '✨ 获取 AI 推荐';
+}
+</script>
+
+{% endblock %}

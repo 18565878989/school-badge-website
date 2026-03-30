@@ -158,6 +158,10 @@ try:
     app.register_blueprint(compare_bp)
     print("[Routes] compare blueprint registered")
     
+    from routes.ai_recommend import ai_recommend_bp
+    app.register_blueprint(ai_recommend_bp)
+    print("[Routes] ai_recommend blueprint registered")
+    
     from routes.main import main_bp
     app.register_blueprint(main_bp)
     print("[Routes] main blueprint registered")
