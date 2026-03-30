@@ -162,6 +162,10 @@ try:
     app.register_blueprint(ai_recommend_bp)
     print("[Routes] ai_recommend blueprint registered")
     
+    from routes.news import news_bp
+    app.register_blueprint(news_bp)
+    print("[Routes] news blueprint registered")
+    
     from routes.main import main_bp
     app.register_blueprint(main_bp)
     print("[Routes] main blueprint registered")

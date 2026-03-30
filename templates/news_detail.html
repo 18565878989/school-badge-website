@@ -1,0 +1,115 @@
+{% extends "base_apple.html" %}
+
+{% block title %}{{ news.title }} - 校徽网{% endblock %}
+
+{% block content %}
+<div style="max-width: 900px; margin: 0 auto; padding: 32px 40px 60px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;">
+    
+    <!-- Breadcrumb -->
+    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 24px; font-size: 0.9rem;">
+        <a href="/news" style="color: #1E3A5F; text-decoration: none;">升学资讯</a>
+        <span style="color: #86868b;">/</span>
+        <span style="color: #86868b;">{{ news.category }}</span>
+    </div>
+    
+    <!-- Article -->
+    <article style="background: white; border-radius: 28px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.06);">
+        
+        <!-- Header Image -->
+        <div style="height: 300px; background: linear-gradient(135deg, #1E3A5F 0%, #0D2137 100%); display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 6rem; opacity: 0.3;">
+                {{ '📋' if news.category == 'policy' else '📅' if news.category == 'event' else '📊' if news.category == 'analysis' else '📖' if news.category == 'guide' else '📝' if news.category == 'exam' else '📰' }}
+            </span>
+        </div>
+        
+        <!-- Content -->
+        <div style="padding: 40px;">
+            
+            <!-- Category & Meta -->
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px; flex-wrap: wrap;">
+                <span style="background: {{ '#007AFF' if news.category == 'policy' else '#FF9500' if news.category == 'event' else '#34C759' if news.category == 'analysis' else '#AF52DE' if news.category == 'guide' else '#FF3B30' if news.category == 'exam' else '#86868b' }}; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">
+                    {{ {'policy': '政策', 'event': '活动', 'analysis': '分析', 'guide': '指南', 'exam': '考试'}.get(news.category, '资讯') }}
+                </span>
+                <span style="font-size: 0.9rem; color: #86868b;">来源: {{ news.source or '未知' }}</span>
+                <span style="font-size: 0.9rem; color: #86868b;">👁️ {{ news.view_count or 0 }} 阅读</span>
+                <span style="font-size: 0.9rem; color: #86868b;">📅 {{ news.published_at[:10] if news.published_at else '' }}</span>
+            </div>
+            
+            <!-- Title -->
+            <h1 style="font-size: 2rem; font-weight: 700; color: #1d1d1f; margin: 0 0 20px 0; line-height: 1.3;">
+                {{ news.title }}
+            </h1>
+            
+            {% if news.title_cn and news.title_cn != news.title %}
+            <h2 style="font-size: 1.2rem; font-weight: 400; color: #86868b; margin: 0 0 24px 0;">
+                {{ news.title_cn }}
+            </h2>
+            {% endif %}
+            
+            <!-- Summary -->
+            {% if news.summary %}
+            <div style="background: linear-gradient(135deg, #f8f9fa 0%, #f0f0f0 100%); border-radius: 16px; padding: 24px; margin-bottom: 28px; border-left: 4px solid #007AFF;">
+                <p style="font-size: 1.05rem; color: #1d1d1f; margin: 0; line-height: 1.7; font-style: italic;">
+                    {{ news.summary }}
+                </p>
+            </div>
+            {% endif %}
+            
+            <!-- Content -->
+            <div style="font-size: 1.05rem; color: #1d1d1f; line-height: 1.9;">
+                {{ news.content or '<p>暂无详细内容</p>' }}
+            </div>
+            
+            <!-- Tags -->
+            {% if news.tags %}
+            <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e5e7;">
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                    <span style="font-size: 0.85rem; color: #86868b; font-weight: 600;">标签：</span>
+                    {% for tag in news.tags.split(',') %}
+                    <span style="background: #f5f5f7; padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; color: #1d1d1f;">{{ tag.strip() }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            
+            <!-- Actions -->
+            <div style="margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap;">
+                {% if news.source_url %}
+                <a href="{{ news.source_url }}" target="_blank" style="padding: 12px 24px; background: #007AFF; color: white; border-radius: 14px; text-decoration: none; font-weight: 600;">
+                    🔗 访问原文
+                </a>
+                {% endif %}
+                <a href="/news" style="padding: 12px 24px; background: #f5f5f7; color: #1d1d1f; border-radius: 14px; text-decoration: none; font-weight: 600;">
+                    ← 返回资讯
+                </a>
+            </div>
+        </div>
+    </article>
+    
+    <!-- Related Articles -->
+    {% if related %}
+    <div style="margin-top: 48px;">
+        <h2 style="font-size: 1.4rem; font-weight: 600; color: #1d1d1f; margin: 0 0 20px 0;">
+            📌 相关资讯
+        </h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
+            {% for r in related %}
+            <a href="/news/{{ r.id }}" style="background: white; border-radius: 20px; padding: 20px; text-decoration: none; color: inherit; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: all 0.2s;"
+               onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.1Trust/';"
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)';">
+                <span style="background: {{ '#007AFF' if r.category == 'policy' else '#FF9500' if r.category == 'event' else '#34C759' if r.category == 'analysis' else '#AF52DE' if r.category == 'guide' else '#FF3B30' if r.category == 'exam' else '#86868b' }}; color: white; padding: 3px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 600;">
+                    {{ r.category }}
+                </span>
+                <h4 style="font-size: 0.95rem; font-weight: 600; color: #1d1d1f; margin: 12px 0 8px 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                    {{ r.title }}
+                </h4>
+                <p style="font-size: 0.8rem; color: #86868b; margin: 0;">{{ r.published_at[:10] if r.published_at else '' }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    
+</div>
+{% endblock %}
