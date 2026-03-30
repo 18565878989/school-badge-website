@@ -119,6 +119,10 @@ try:
     print("[Routes] shop blueprint registered")
     
     from routes.misc import misc_bp
+
+    from routes.hk_schools import hk_bp
+    app.register_blueprint(hk_bp)
+    print("[Routes] hk blueprint registered")
     app.register_blueprint(misc_bp)
     print("[Routes] misc blueprint registered")
     

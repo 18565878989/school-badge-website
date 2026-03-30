@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港学校专区 - 校徽网</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1E3A5F;
+            --accent: #007AFF;
+            --success: #34C759;
+            --warning: #FF9500;
+            --danger: #FF3B30;
+            --text: #1d1d1f;
+            --text-secondary: #86868b;
+            --bg: #ffffff;
+            --surface: #f5f5f7;
+            --radius: 20px;
+            --radius-sm: 14px;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+            background: var(--surface);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Hero */
+        .hk-hero {
+            background: linear-gradient(135deg, #1E3A5F 0%, #2E5A8F 50%, #007AFF 100%);
+            color: white;
+            padding: 80px 20px 60px;
+            text-align: center;
+        }
+        
+        .hk-hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+        
+        .hk-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .hk-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .hk-stat {
+            text-align: center;
+        }
+        
+        .hk-stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        .hk-stat-label {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        
+        /* Filter Section */
+        .filter-section {
+            background: white;
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        
+        .filter-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .filter-group label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        .filter-group select {
+            padding: 10px 14px;
+            border: 1px solid #e5e5e7;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+        
+        .filter-group select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        
+        .filter-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+            justify-content: flex-end;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #0D2137;
+        }
+        
+        .btn-secondary {
+            background: var(--surface);
+            color: var(--text);
+        }
+        
+        .btn-secondary:hover {
+            background: #e5e5e7;
+        }
+        
+        /* Schools Grid */
+        .schools-section {
+            margin-top: 30px;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .results-count {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .schools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        /* School Card */
+        .school-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .school-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        
+        .card-header {
+            display: flex;
+            gap: 16px;
+            padding: 20px;
+            align-items: center;
+        }
+        
+        .card-badge {
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            background: var(--surface);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        
+        .card-badge img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .badge-placeholder {
+            font-size: 2rem;
+        }
+        
+        .card-info {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .card-name {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .card-name-cn {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+        
+        .card-location {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        /* Card Tags */
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 0 20px 16px;
+        }
+        
+        .tag {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+        
+        .tag-district {
+            background: #e8f4ff;
+            color: #007AFF;
+        }
+        
+        .tag-type {
+            background: #f0e8ff;
+            color: #AF52DE;
+        }
+        
+        .tag-gender {
+            background: #ffe8f0;
+            color: #FF2D55;
+        }
+        
+        .tag-finance {
+            background: #e8f0ff;
+            color: #5856D6;
+        }
+        
+        .tag-session {
+            background: #fff0e8;
+            color: #FF9500;
+        }
+        
+        /* Card Footer */
+        .card-footer {
+            background: var(--surface);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Quick Links */
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 30px;
+        }
+        
+        .quick-link {
+            background: white;
+            border-radius: var(--radius);
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            transition: all 0.2s;
+        }
+        
+        .quick-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .quick-link-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: var(--surface);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .quick-link-text h4 {
+            margin: 0 0 4px;
+            font-size: 0.95rem;
+        }
+        
+        .quick-link-text p {
+            margin: 0;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 40px;
+        }
+        
+        .page-btn {
+            padding: 10px 16px;
+            border-radius: var(--radius-sm);
+            background: white;
+            border: 1px solid #e5e5e7;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--text);
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        .page-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        
+        .page-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            border-radius: var(--radius);
+        }
+        
+        .empty-state-icon {
+            font-size: 4rem;
+            margin-bottom: 16px;
+        }
+        
+        .empty-state h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .empty-state p {
+            color: var(--text-secondary);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hk-stats {
+                gap: 20px;
+            }
+            
+            .schools-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-nav">
+            <a href="/" class="logo">
+                <img src="{{ url_for('static', filename='images/logo-horizontal.svg') }}" alt="校徽网">
+            </a>
+            <div class="nav-links">
+                <a href="/">首页</a>
+                <a href="/hk" class="active">🇭🇰 香港学校</a>
+                <a href="/rankings">排行榜</a>
+                {% if session.get('user_id') %}
+                    <a href="/my-likes">我的收藏</a>
+                    <a href="/logout">退出</a>
+                {% else %}
+                    <a href="/login">登录</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero -->
+    <section class="hk-hero">
+        <h1>🇭🇰 香港学校专区</h1>
+        <p>探索香港中小学、幼儿园、国际学校信息</p>
+        <div class="hk-stats">
+            <div class="hk-stat">
+                <div class="hk-stat-value">{{ hk_stats.total }}</div>
+                <div class="hk-stat-label">学校总数</div>
+            </div>
+            <div class="hk-stat">
+                <div class="hk-stat-value">{{ hk_stats.with_badge }}</div>
+                <div class="hk-stat-label">已收录校徽</div>
+            </div>
+            <div class="hk-stat">
+                <div class="hk-stat-value">{{ hk_stats.districts }}</div>
+                <div class="hk-stat-label">覆盖区域</div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container">
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <a href="/hk?type=university" class="quick-link">
+                <div class="quick-link-icon">🎓</div>
+                <div class="quick-link-text">
+                    <h4>大专院校</h4>
+                    <p>大学、学院</p>
+                </div>
+            </a>
+            <a href="/hk?type=middle" class="quick-link">
+                <div class="quick-link-icon">🏫</div>
+                <div class="quick-link-text">
+                    <h4>中学</h4>
+                    <p>资助/直资/私立</p>
+                </div>
+            </a>
+            <a href="/hk?type=elementary" class="quick-link">
+                <div class="quick-link-icon">📚</div>
+                <div class="quick-link-text">
+                    <h4>小学</h4>
+                    <p>官立/资助/私立</p>
+                </div>
+            </a>
+            <a href="/hk?type=kindergarten" class="quick-link">
+                <div class="quick-link-icon">🧸</div>
+                <div class="quick-link-text">
+                    <h4>幼儿园</h4>
+                    <p>幼稚园幼儿班</p>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <div class="filter-title">
+                🔍 筛选学校
+            </div>
+            <form method="GET" action="/hk">
+                <div class="filter-grid">
+                    <div class="filter-group">
+                        <label>学校类型</label>
+                        <select name="level">
+                            <option value="">全部类型</option>
+                            <option value="university" {% if selected_level == 'university' %}selected{% endif %}>大专院校</option>
+                            <option value="middle" {% if selected_level == 'middle' %}selected{% endif %}>中学</option>
+                            <option value="elementary" {% if selected_level == 'elementary' %}selected{% endif %}>小学</option>
+                            <option value="kindergarten" {% if selected_level == 'kindergarten' %}selected{% endif %}>幼儿园</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>所在区域</label>
+                        <select name="district">
+                            <option value="">全部区域</option>
+                            {% for d in districts %}
+                            <option value="{{ d }}" {% if selected_district == d %}selected{% endif %}>{{ d }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>性别限制</label>
+                        <select name="gender">
+                            <option value="">全部</option>
+                            <option value="BOYS" {% if selected_gender == 'BOYS' %}selected{% endif %}>男校</option>
+                            <option value="GIRLS" {% if selected_gender == 'GIRLS' %}selected{% endif %}>女校</option>
+                            <option value="CO-ED" {% if selected_gender == 'CO-ED' %}selected{% endif %}>男女校</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>办学类型</label>
+                        <select name="finance">
+                            <option value="">全部</option>
+                            <option value="官立" {% if selected_finance == '官立' %}selected{% endif %}>官立</option>
+                            <option value="资助" {% if selected_finance == '资助' %}selected{% endif %}>资助</option>
+                            <option value="直资" {% if selected_finance == '直资' %}selected{% endif %}>直资</option>
+                            <option value="私立" {% if selected_finance == '私立' %}selected{% endif %}>私立</option>
+                            <option value="国际" {% if selected_finance == '国际' %}selected{% endif %}>国际学校</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-actions">
+                    <a href="/hk" class="btn btn-secondary">清除筛选</a>
+                    <button type="submit" class="btn btn-primary">应用筛选</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Schools Section -->
+        <div class="schools-section">
+            <div class="section-header">
+                <h2 class="section-title">学校列表</h2>
+                <span class="results-count">共 {{ schools|length }} 所学校</span>
+            </div>
+            
+            {% if schools %}
+            <div class="schools-grid">
+                {% for school in schools %}
+                <a href="/school/{{ school.id }}" class="school-card">
+                    <div class="card-header">
+                        <div class="card-badge">
+                            {% if school.badge_url %}
+                            <img src="{{ school.badge_url }}" alt="{{ school.name }}">
+                            {% else %}
+                            <span class="badge-placeholder">🎓</span>
+                            {% endif %}
+                        </div>
+                        <div class="card-info">
+                            <div class="card-name">{{ school.name }}</div>
+                            {% if school.name_cn %}
+                            <div class="card-name-cn">{{ school.name_cn }}</div>
+                            {% endif %}
+                            <div class="card-location">
+                                📍 {{ school.district or school.city or '香港' }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-tags">
+                        {% if school.district %}
+                        <span class="tag tag-district">{{ school.district }}</span>
+                        {% endif %}
+                        {% if school.school_type %}
+                        <span class="tag tag-type">{{ school.school_type }}</span>
+                        {% endif %}
+                        {% if school.gender %}
+                        <span class="tag tag-gender">
+                            {% if school.gender == 'BOYS' %}男校{% elif school.gender == 'GIRLS' %}女校{% else %}{{ school.gender }}{% endif %}
+                        </span>
+                        {% endif %}
+                        {% if school.finance_type %}
+                        <span class="tag tag-finance">{{ school.finance_type }}</span>
+                        {% endif %}
+                        {% if school.session_type %}
+                        <span class="tag tag-session">{{ school.session_type }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="card-footer">
+                        <span>{% if school.founded %}{{ school.founded }}年创立{% endif %}</span>
+                        <span>{% if school.badge_url %}✅ 已收录校徽{% else %}⏳ 等待补充{% endif %}</span>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="empty-state">
+                <div class="empty-state-icon">🔍</div>
+                <h3>没有找到符合条件的学校</h3>
+                <p>请尝试调整筛选条件</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
