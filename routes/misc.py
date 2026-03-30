@@ -16,6 +16,11 @@ def assistants():
     """AI助手页"""
     return render_template('assistants.html')
 
+@misc_bp.route('/pretext-demo')
+def pretext_demo():
+    """Pretext 丝滑文本排版 Demo"""
+    return render_template('pretext_demo.html')
+
 @misc_bp.route('/init-db')
 def init_db():
     """初始化数据库"""
