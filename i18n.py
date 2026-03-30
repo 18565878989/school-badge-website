@@ -17,6 +17,7 @@ TRANSLATIONS = {
         
         # Home
         'hero_title': '探索全球名校',
+        'page_title_home': '首页',
         'hero_subtitle': 'Discover prestigious institutions worldwide',
         'search_placeholder': '搜索学校名称、城市或国家...',
         'all_regions': '所有地区',
@@ -135,6 +136,7 @@ TRANSLATIONS = {
         'no_rankings_yet': '排名数据加载中',
         'rankings_coming_soon': '正在整理五大排名的顶尖学校数据...',
         'social': '社交',
+        'page_title_social': '社交',
         'ranking_color_legend': '排名颜色说明',
         'top_10': 'Top 10',
         'top_50': 'Top 50',
@@ -244,6 +246,7 @@ TRANSLATIONS = {
         
         # Home
         'hero_title': 'Explore Global Universities',
+        'page_title_home': 'Home',
         'hero_subtitle': 'Discover prestigious institutions worldwide',
         'search_placeholder': 'Search by school name, city or country...',
         'all_regions': 'All Regions',
@@ -361,6 +364,7 @@ TRANSLATIONS = {
         'no_rankings_yet': 'Loading Rankings',
         'rankings_coming_soon': 'Compiling top universities from five major rankings...',
         'social': 'Social',
+        'page_title_social': 'Social',
         'ranking_color_legend': 'Ranking Color Guide',
         'top_10': 'Top 10',
         'top_50': 'Top 50',
@@ -456,6 +460,7 @@ TRANSLATIONS = {
         
         # Home
         'hero_title': 'Explorer les universités mondiales',
+        'page_title_home': 'Accueil',
         'membership_unlock': 'Unlock more privileges and enjoy exclusive services',
         'open_vip_privilege': 'Upgrade for VIP privileges',
         'valid_until': 'Valid until',
@@ -587,6 +592,7 @@ TRANSLATIONS = {
         
         # Home
         'hero_title': 'Weltweite Universitäten erkunden',
+        'page_title_home': 'Startseite',
         'hero_subtitle': 'Entdecken Sie prestigeträchtige Institutionen weltweit',
         'search_placeholder': 'Suchen nach Name, Stadt oder Land...',
         'all_regions': 'Alle Regionen',
@@ -704,6 +710,7 @@ TRANSLATIONS = {
         
         # Home
         'hero_title': '世界の名門大学を探す',
+        'page_title_home': 'ホーム',
         'hero_subtitle': '世界の名門校を探ろう',
         'search_placeholder': '学校名、都市、国で検索...',
         'all_regions': 'すべての地域',
@@ -821,6 +828,7 @@ TRANSLATIONS = {
         
         # Home
         'hero_title': '探索全球名校',
+        'page_title_home': '首頁',
         'hero_subtitle': 'Discover prestigious institutions worldwide',
         'search_placeholder': '搜尋學校名稱、城市或國家...',
         'all_regions': '所有地區',
