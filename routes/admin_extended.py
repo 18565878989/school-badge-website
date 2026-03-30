@@ -421,6 +421,194 @@ def auto_review_campus():
         'message': f'自动审核完成: 批准 {auto_approved}, 驳回 {auto_rejected}, 待审核 {len(pending) - auto_approved - auto_rejected}'
     })
 
+# ============ AI智能审核 ============
+
+@admin_ext_bp.route('/ai-audit')
+@admin_required
+def ai_audit_page():
+    """AI审核页面"""
+    return render_template('admin/ai_audit.html')
+
+@admin_ext_bp.route('/ai-audit/batch', methods=['POST'])
+@admin_required
+def ai_batch_audit():
+    """AI批量审核校徽/校园图片"""
+    import sys
+    sys.path.insert(0, '/Users/wangfeng/.openclaw/workspace/school-badge-website')
+    from assistants.ai_audit import AIAuditAssistant
+    
+    data = request.get_json()
+    item_type = data.get('type', 'badge')  # 'badge' or 'campus'
+    limit = min(data.get('limit', 20), 50)  # 限制批量处理数量
+    
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    
+    if item_type == 'badge':
+        cursor.execute('''
+            SELECT id, name, badge_url FROM schools 
+            WHERE badge_url IS NOT NULL AND badge_url != "" AND badge_reviewed = 0
+            LIMIT ?
+        ''', (limit,))
+        field = 'badge_reviewed'
+    else:
+        cursor.execute('''
+            SELECT id, name, campus_image FROM schools 
+            WHERE campus_image IS NOT NULL AND campus_image != "" AND campus_reviewed = 0
+            LIMIT ?
+        ''', (limit,))
+        field = 'campus_reviewed'
+    
+    pending = cursor.fetchall()
+    conn.close()
+    
+    if not pending:
+        return jsonify({
+            'success': True,
+            'processed': 0,
+            'message': '没有待审核的内容'
+        })
+    
+    # 初始化AI审核助手
+    assistant = AIAuditAssistant()
+    
+    results = {
+        'approved': 0,
+        'rejected': 0,
+        'needs_review': 0,
+        'errors': 0,
+        'details': []
+    }
+    
+    for school_id, name, image_url in pending:
+        try:
+            if item_type == 'badge':
+                audit_result = assistant.audit_badge(image_url, name)
+            else:
+                audit_result = assistant.audit_campus(image_url, name)
+            
+            # 根据AI审核结果更新数据库
+            conn = sqlite3.connect('database.db')
+            cursor = conn.cursor()
+            
+            if audit_result.get('is_valid') is True and audit_result.get('confidence', 0) >= 0.8:
+                # 高置信度通过
+                cursor.execute(f'''
+                    UPDATE schools SET {field}=1, {field}_at=datetime('now'), {field}_by=?
+                    WHERE id=? AND {field}=0
+                ''', (session['user_id'], school_id))
+                log_admin_action(session['user_id'], f'AI_APPROVE_{item_type.upper()}', 'school', school_id, 
+                               f"confidence:{audit_result.get('confidence', 0)}")
+                results['approved'] += 1
+                
+            elif audit_result.get('is_valid') is False and audit_result.get('confidence', 0) >= 0.8:
+                # 高置信度拒绝
+                if item_type == 'badge':
+                    cursor.execute('''
+                        UPDATE schools SET badge_url="", badge_reviewed=0, badge_updated="Y"
+                        WHERE id=?
+                    ''', (school_id,))
+                else:
+                    cursor.execute('''
+                        UPDATE schools SET campus_image="", campus_reviewed=0, campus_updated="Y"
+                        WHERE id=?
+                    ''', (school_id,))
+                log_admin_action(session['user_id'], f'AI_REJECT_{item_type.upper()}', 'school', school_id,
+                               audit_result.get('summary', ''))
+                results['rejected'] += 1
+                
+            else:
+                # 需要人工审核
+                results['needs_review'] += 1
+            
+            conn.commit()
+            conn.close()
+            
+            results['details'].append({
+                'school_id': school_id,
+                'name': name,
+                'is_valid': audit_result.get('is_valid'),
+                'confidence': audit_result.get('confidence', 0),
+                'summary': audit_result.get('summary', ''),
+                'issues': audit_result.get('issues', [])
+            })
+            
+        except Exception as e:
+            results['errors'] += 1
+            results['details'].append({
+                'school_id': school_id,
+                'name': name,
+                'error': str(e)
+            })
+        
+        # 避免API限流
+        import time
+        time.sleep(0.3)
+    
+    return jsonify({
+        'success': True,
+        'processed': len(pending),
+        **results,
+        'message': f"AI审核完成: 通过 {results['approved']}, 拒绝 {results['rejected']}, 待人工 {results['needs_review']}, 错误 {results['errors']}"
+    })
+
+@admin_ext_bp.route('/ai-audit/single', methods=['POST'])
+@admin_required
+def ai_single_audit():
+    """AI单条审核"""
+    import sys
+    sys.path.insert(0, '/Users/wangfeng/.openclaw/workspace/school-badge-website')
+    from assistants.ai_audit import AIAuditAssistant
+    
+    data = request.get_json()
+    school_id = data.get('school_id')
+    item_type = data.get('type', 'badge')
+    
+    if not school_id:
+        return jsonify({'success': False, 'error': '缺少school_id'})
+    
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    
+    if item_type == 'badge':
+        cursor.execute('SELECT name, badge_url FROM schools WHERE id=?', (school_id,))
+    else:
+        cursor.execute('SELECT name, campus_image FROM schools WHERE id=?', (school_id,))
+    
+    school = cursor.fetchone()
+    conn.close()
+    
+    if not school:
+        return jsonify({'success': False, 'error': '学校不存在'})
+    
+    name, image_url = school
+    
+    assistant = AIAuditAssistant()
+    
+    if item_type == 'badge':
+        result = assistant.audit_badge(image_url, name)
+    else:
+        result = assistant.audit_campus(image_url, name)
+    
+    return jsonify({
+        'success': True,
+        'audit_result': result
+    })
+
+@admin_ext_bp.route('/ai-audit/stats')
+@admin_required
+def ai_audit_stats():
+    """获取AI审核统计"""
+    import sys
+    sys.path.insert(0, '/Users/wangfeng/.openclaw/workspace/school-badge-website')
+    from assistants.ai_audit import get_audit_stats
+    
+    stats = get_audit_stats()
+    return jsonify({
+        'success': True,
+        'stats': stats
+    })
+
 def register_routes(app):
     """注册扩展管理路由"""
     app.register_blueprint(admin_ext_bp)

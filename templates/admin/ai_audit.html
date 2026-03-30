@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI智能审核 - 管理后台</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+    <style>
+        .audit-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        
+        .audit-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        
+        .audit-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+        
+        .audit-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .stat-card .label {
+            font-size: 12px;
+            color: #86868b;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .stat-card .value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-top: 4px;
+        }
+        
+        .stat-card.pending .value {
+            color: #FF9500;
+        }
+        
+        .stat-card.reviewed .value {
+            color: #34C759;
+        }
+        
+        .audit-actions {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #007AFF, #0055cc);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,122,255,0.3);
+        }
+        
+        .btn-secondary {
+            background: #f5f5f7;
+            color: #1d1d1f;
+        }
+        
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .audit-results {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .result-item {
+            border: 1px solid #e5e5e7;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        
+        .result-item.approved {
+            border-left: 4px solid #34C759;
+        }
+        
+        .result-item.rejected {
+            border-left: 4px solid #FF3B30;
+        }
+        
+        .result-item.pending {
+            border-left: 4px solid #FF9500;
+        }
+        
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .result-name {
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+        
+        .result-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .result-badge.approved {
+            background: #e8f8ea;
+            color: #34C759;
+        }
+        
+        .result-badge.rejected {
+            background: #ffeaea;
+            color: #FF3B30;
+        }
+        
+        .result-badge.pending {
+            background: #fff4e5;
+            color: #FF9500;
+        }
+        
+        .result-confidence {
+            font-size: 12px;
+            color: #86868b;
+            margin-bottom: 8px;
+        }
+        
+        .result-summary {
+            font-size: 14px;
+            color: #1d1d1f;
+        }
+        
+        .result-issues {
+            margin-top: 8px;
+            padding: 8px 12px;
+            background: #f5f5f7;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #86868b;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #86868b;
+        }
+        
+        .loading::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #e5e5e7;
+            border-top-color: #007AFF;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    {% extends "admin/base.html" %}
+    
+    {% block content %}
+    <div class="audit-container">
+        <div class="audit-header">
+            <h1 class="audit-title">🤖 AI智能审核</h1>
+            <div class="lang-switcher">
+                <select id="langSelect">
+                    <option value="badge" selected>校徽审核</option>
+                    <option value="campus">校园图审核</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="audit-stats" id="auditStats">
+            <div class="stat-card">
+                <div class="label">待审核</div>
+                <div class="value pending" id="pendingCount">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">已审核</div>
+                <div class="value reviewed" id="reviewedCount">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">总计</div>
+                <div class="value" id="totalCount">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">审核率</div>
+                <div class="value" id="reviewRate">-</div>
+            </div>
+        </div>
+        
+        <div class="audit-actions">
+            <button class="btn btn-primary" id="aiBatchAudit" onclick="startBatchAudit()">
+                🚀 AI批量审核 (20条)
+            </button>
+            <button class="btn btn-secondary" id="ruleBatchAudit" onclick="startRuleAudit()">
+                📋 规则审核 (100条)
+            </button>
+            <button class="btn btn-secondary" onclick="refreshStats()">
+                🔄 刷新统计
+            </button>
+        </div>
+        
+        <div class="audit-results" id="auditResults">
+            <p style="color: #86868b; text-align: center; padding: 20px;">
+                点击上方按钮开始AI审核，系统将自动处理待审核内容
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        let currentType = 'badge';
+        
+        // 加载统计
+        async function loadStats() {
+            try {
+                const response = await fetch(`/admin/ai-audit/stats`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    const stats = currentType === 'badge' ? data.stats.badge : data.stats.campus;
+                    document.getElementById('pendingCount').textContent = stats.pending;
+                    document.getElementById('reviewedCount').textContent = stats.reviewed;
+                    document.getElementById('totalCount').textContent = stats.total;
+                    document.getElementById('reviewRate').textContent = stats.review_rate + '%';
+                }
+            } catch (error) {
+                console.error('加载统计失败:', error);
+            }
+        }
+        
+        // 切换类型
+        document.getElementById('langSelect').addEventListener('change', (e) => {
+            currentType = e.target.value;
+            loadStats();
+        });
+        
+        // AI批量审核
+        async function startBatchAudit() {
+            const btn = document.getElementById('aiBatchAudit');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="loading">AI审核中...</span>';
+            
+            document.getElementById('auditResults').innerHTML = '<div class="loading">正在调用AI审核，请稍候...</div>';
+            
+            try {
+                const response = await fetch('/admin/ai-audit/batch', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({type: currentType, limit: 20})
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    let html = `<h3 style="margin-bottom: 16px;">审核结果: ${data.message}</h3>`;
+                    
+                    if (data.details && data.details.length > 0) {
+                        data.details.forEach(item => {
+                            const status = item.is_valid === true ? 'approved' : 
+                                         item.is_valid === false ? 'rejected' : 'pending';
+                            const badge = status === 'approved' ? '通过' : 
+                                         status === 'rejected' ? '拒绝' : '待审核';
+                            
+                            html += `
+                                <div class="result-item ${status}">
+                                    <div class="result-header">
+                                        <span class="result-name">${item.name || 'ID:' + item.school_id}</span>
+                                        <span class="result-badge ${status}">${badge}</span>
+                                    </div>
+                                    <div class="result-confidence">置信度: ${(item.confidence * 100).toFixed(0)}%</div>
+                                    <div class="result-summary">${item.summary || ''}</div>
+                                    ${item.issues && item.issues.length > 0 ? 
+                                      `<div class="result-issues">问题: ${item.issues.join(', ')}</div>` : ''}
+                                </div>
+                            `;
+                        });
+                    }
+                    
+                    document.getElementById('auditResults').innerHTML = html;
+                    loadStats();
+                } else {
+                    document.getElementById('auditResults').innerHTML = 
+                        `<p style="color: #FF3B30; text-align: center;">审核失败: ${data.error || data.message}</p>`;
+                }
+            } catch (error) {
+                document.getElementById('auditResults').innerHTML = 
+                    `<p style="color: #FF3B30; text-align: center;">请求失败: ${error.message}</p>`;
+            }
+            
+            btn.disabled = false;
+            btn.innerHTML = '🚀 AI批量审核 (20条)';
+        }
+        
+        // 规则审核
+        async function startRuleAudit() {
+            const btn = document.getElementById('ruleBatchAudit');
+            btn.disabled = true;
+            btn.innerHTML = '规则审核中...';
+            
+            const endpoint = currentType === 'badge' ? '/badge-images/auto-review' : '/campus-images/auto-review';
+            
+            try {
+                const response = await fetch(`/admin${endpoint}`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    document.getElementById('auditResults').innerHTML = `
+                        <div style="text-align: center; padding: 40px;">
+                            <h3 style="color: #34C759;">规则审核完成</h3>
+                            <p>${data.message}</p>
+                        </div>
+                    `;
+                    loadStats();
+                }
+            } catch (error) {
+                alert('规则审核失败: ' + error.message);
+            }
+            
+            btn.disabled = false;
+            btn.innerHTML = '📋 规则审核 (100条)';
+        }
+        
+        // 刷新统计
+        function refreshStats() {
+            loadStats();
+        }
+        
+        // 初始化
+        loadStats();
+    </script>
+    {% endblock %}
+</body>
+</html>
