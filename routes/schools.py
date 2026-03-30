@@ -57,6 +57,7 @@ def school_detail(school_id):
     
     # Get related schools for Hong Kong schools (same district or feeder/linked schools)
     related_schools = []
+    yearly_stats = []
     if school_dict.get('country') == 'Hong Kong' and school_dict.get('district'):
         # Find schools in same district
         related = conn.execute("""
@@ -68,6 +69,16 @@ def school_detail(school_id):
             LIMIT 6
         """, (school_dict.get('district'), school_id)).fetchall()
         related_schools = [dict(row) for row in related]
+        
+        # Get yearly stats for Hong Kong schools
+        stats = conn.execute("""
+            SELECT year, student_count, teacher_count, class_s1, class_s2, class_s3
+            FROM school_yearly_stats
+            WHERE school_id = ?
+            ORDER BY year DESC
+            LIMIT 7
+        """, (school_id,)).fetchall()
+        yearly_stats = [dict(row) for row in stats]
     
     return render_template('school.html',
                          school=school,
@@ -76,7 +87,8 @@ def school_detail(school_id):
                          likes_count=likes_count,
                          badge_url=badge_url,
                          map_query=map_query,
-                         related_schools=related_schools)
+                         related_schools=related_schools,
+                         yearly_stats=yearly_stats)
 
 @schools_bp.route('/badge-history/<int:school_id>')
 def badge_history(school_id):

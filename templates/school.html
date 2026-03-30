@@ -235,6 +235,144 @@
     </div>
 
     {% if school.country == 'Hong Kong' %}
+    <!-- Yearly Stats Trend Charts -->
+    {% if yearly_stats %}
+    <div style="margin-top: 40px;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+            <div style="width: 4px; height: 24px; background: linear-gradient(180deg, #FF9500, #FF6B00); border-radius: 2px;"></div>
+            <h2 style="font-size: 1.4rem; font-weight: 600; color: #1d1d1f; margin: 0;">📊 历年数据趋势</h2>
+        </div>
+        
+        <!-- Stats Summary Cards -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 24px;">
+            <div style="background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%); color: white; padding: 20px; border-radius: 16px; text-align: center;">
+                <div style="font-size: 2rem; font-weight: 700;">{{ yearly_stats[0].student_count if yearly_stats else '-' }}</div>
+                <div style="font-size: 0.75rem; opacity: 0.8; margin-top: 4px;">学生人数</div>
+            </div>
+            <div style="background: linear-gradient(135deg, #34C759 0%, #30D158 100%); color: white; padding: 20px; border-radius: 16px; text-align: center;">
+                <div style="font-size: 2rem; font-weight: 700;">{{ yearly_stats[0].teacher_count if yearly_stats else '-' }}</div>
+                <div style="font-size: 0.75rem; opacity: 0.8; margin-top: 4px;">教师人数</div>
+            </div>
+            <div style="background: linear-gradient(135deg, #FF9500 0%, #FF6B00 100%); color: white; padding: 20px; border-radius: 16px; text-align: center;">
+                <div style="font-size: 2rem; font-weight: 700;">{{ yearly_stats[0].class_s1 if yearly_stats else '-' }}</div>
+                <div style="font-size: 0.75rem; opacity: 0.8; margin-top: 4px;">中一班数</div>
+            </div>
+            <div style="background: linear-gradient(135deg, #AF52DE 0%, #AF52FF 100%); color: white; padding: 20px; border-radius: 16px; text-align: center;">
+                <div style="font-size: 2rem; font-weight: 700;">{{ (yearly_stats[0].student_count / yearly_stats[0].teacher_count)|round(1) if yearly_stats and yearly_stats[0].teacher_count else '-' }}</div>
+                <div style="font-size: 0.75rem; opacity: 0.8; margin-top: 4px;">师生比</div>
+            </div>
+        </div>
+        
+        <!-- Charts Container -->
+        <div style="background: white; border-radius: 24px; padding: 24px; box-shadow: 0 2px 16px rgba(0,0,0,0.06);">
+            <div style="display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap;">
+                <button onclick="showChart('student')" id="btn-student" style="padding: 8px 16px; border-radius: 20px; border: none; background: #007AFF; color: white; font-size: 0.85rem; font-weight: 600; cursor: pointer;">👥 学生人数</button>
+                <button onclick="showChart('teacher')" id="btn-teacher" style="padding: 8px 16px; border-radius: 20px; border: none; background: #f5f5f7; color: #1d1d1f; font-size: 0.85rem; font-weight: 600; cursor: pointer;">👨‍🏫 教师人数</button>
+                <button onclick="showChart('class')" id="btn-class" style="padding: 8px 16px; border-radius: 20px; border: none; background: #f5f5f7; color: #1d1d1f; font-size: 0.85rem; font-weight: 600; cursor: pointer;">🏫 班级分布</button>
+            </div>
+            
+            <div style="position: relative; height: 300px;">
+                <canvas id="trendChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    const yearlyData = {{ yearly_stats | tojson }};
+    let currentChart = null;
+    
+    function showChart(type) {
+        document.querySelectorAll('[id^="btn-"]').forEach(btn => {
+            btn.style.background = '#f5f5f7';
+            btn.style.color = '#1d1d1f';
+        });
+        document.getElementById('btn-' + type).style.background = '#007AFF';
+        document.getElementById('btn-' + type).style.color = 'white';
+        
+        const labels = yearlyData.map(d => d.year);
+        const years = labels.reverse();
+        
+        if (currentChart) currentChart.destroy();
+        
+        const ctx = document.getElementById('trendChart').getContext('2d');
+        
+        if (type === 'student') {
+            currentChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: years,
+                    datasets: [{
+                        label: '学生人数',
+                        data: yearlyData.map(d => d.student_count).reverse(),
+                        borderColor: '#007AFF',
+                        backgroundColor: 'rgba(0, 122, 255, 0.1)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 6,
+                        pointHoverRadius: 8,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: false, grid: { color: '#f0f0f0' } },
+                        x: { grid: { display: false } }
+                    }
+                }
+            });
+        } else if (type === 'teacher') {
+            currentChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: years,
+                    datasets: [{
+                        label: '教师人数',
+                        data: yearlyData.map(d => d.teacher_count).reverse(),
+                        backgroundColor: '#34C759',
+                        borderRadius: 8,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: false, grid: { color: '#f0f0f0' } },
+                        x: { grid: { display: false } }
+                    }
+                }
+            });
+        } else if (type === 'class') {
+            currentChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: years,
+                    datasets: [
+                        { label: '中一', data: yearlyData.map(d => d.class_s1 || 0).reverse(), backgroundColor: '#007AFF', borderRadius: 4 },
+                        { label: '中二', data: yearlyData.map(d => d.class_s2 || 0).reverse(), backgroundColor: '#5856D6', borderRadius: 4 },
+                        { label: '中三', data: yearlyData.map(d => d.class_s3 || 0).reverse(), backgroundColor: '#AF52DE', borderRadius: 4 }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { position: 'bottom' } },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: '#f0f0f0' } },
+                        x: { grid: { display: false } }
+                    }
+                }
+            });
+        }
+    }
+    
+    showChart('student');
+    </script>
+    {% endif %}
+    
     <!-- Related Schools Section -->
     {% if related_schools %}
     <div style="margin-top: 40px;">
