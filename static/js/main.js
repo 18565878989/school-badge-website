@@ -87,4 +87,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     console.log('校徽网 - School Badge Collection loaded successfully!');
+    
+    // Dropdown menus hover behavior
+    const dropdowns = document.querySelectorAll('.nav-dropdown');
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+        const menu = dropdown.querySelector('.nav-dropdown-menu');
+        
+        if (toggle && menu) {
+            // Show menu on hover
+            dropdown.addEventListener('mouseenter', function() {
+                menu.style.display = 'block';
+            });
+            
+            dropdown.addEventListener('mouseleave', function() {
+                menu.style.display = 'none';
+            });
+            
+            // Toggle on click (for mobile)
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                const currentDisplay = menu.style.display;
+                menu.style.display = currentDisplay === 'block' ? 'none' : 'block';
+            });
+        }
+    });
 });

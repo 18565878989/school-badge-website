@@ -463,6 +463,8 @@ def main(limit=200, verify_only=False):
 
 if __name__ == '__main__':
     import sys
-    limit = int(sys.argv[1]) if len(sys.argv) > 1 else 200
+    # 默认每批50所（减少单次运行时长，降低SIGTERM风险）
+    # crontab调用时传入批次大小，建议值: 50-100
+    limit = int(sys.argv[1]) if len(sys.argv) > 1 else 50
     verify = '--verify' in sys.argv
     main(limit=limit, verify_only=verify)

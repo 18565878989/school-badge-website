@@ -108,16 +108,19 @@
         const chatInput = document.getElementById('chatInput');
         
         // 检查URL参数，如果有搜索词则自动搜索
-        const urlParams = new URLSearchParams(window.location.search);
-        const initialQuery = urlParams.get('q');
-        
-        if (initialQuery) {
-            chatInput.value = initialQuery;
-            // 自动提交搜索
-            setTimeout(() => {
-                chatForm.dispatchEvent(new Event('submit'));
-            }, 500);
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const initialQuery = urlParams.get('q');
+            
+            if (initialQuery) {
+                if (chatInput && chatForm) {
+                    chatInput.value = initialQuery;
+                    setTimeout(() => {
+                        chatForm.dispatchEvent(new Event('submit'));
+                    }, 500);
+                }
+            }
+        });
         
         // 添加用户消息
         function addUserMessage(text) {
@@ -225,13 +228,18 @@
             addLoadingMessage();
             
             try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 60000);
+                
                 const response = await fetch('/api/deep-search', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ query: text })
+                    body: JSON.stringify({ query: text }),
+                    signal: controller.signal
                 });
+                clearTimeout(timeoutId);
                 
                 const data = await response.json();
                 removeLoadingMessage();
@@ -239,7 +247,7 @@
                 if (data.error) {
                     addAIMessage('抱歉，发生了错误: ' + data.error);
                 } else {
-                    addAIMessage(data.response, data.schools);
+                    addAIMessage(data.analysis || '搜索完成', data.results);
                 }
             } catch (error) {
                 removeLoadingMessage();

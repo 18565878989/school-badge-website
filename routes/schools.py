@@ -58,7 +58,10 @@ def school_detail(school_id):
     # Get related schools for Hong Kong schools (same district or feeder/linked schools)
     related_schools = []
     yearly_stats = []
+    conn = None
     if school_dict.get('country') == 'Hong Kong' and school_dict.get('district'):
+        from models.school import get_db_connection
+        conn = get_db_connection()
         # Find schools in same district
         related = conn.execute("""
             SELECT id, name, name_cn, badge_url, district, school_type, level 
@@ -79,6 +82,9 @@ def school_detail(school_id):
             LIMIT 7
         """, (school_id,)).fetchall()
         yearly_stats = [dict(row) for row in stats]
+    
+    if conn:
+        conn.close()
     
     return render_template('school.html',
                          school=school,
