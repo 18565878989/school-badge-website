@@ -3,7 +3,7 @@ API routes module
 """
 
 from flask import Blueprint, request, jsonify
-from models import get_schools_paginated, search_schools, get_regions, get_region_stats
+from models import get_schools_paginated, search_schools, get_regions, get_region_stats, get_db_connection
 
 api_bp = Blueprint('api', __name__, url_prefix='/api')
 
@@ -46,6 +46,51 @@ def region_stats():
     """Get region statistics."""
     stats = get_region_stats()
     return jsonify({'stats': stats})
+
+@api_bp.route('/countries')
+def countries():
+    """Get countries by region."""
+    region = request.args.get('region', '')
+    conn = get_db_connection()
+    if region:
+        rows = conn.execute(
+            "SELECT DISTINCT country, COUNT(*) as cnt FROM schools WHERE region = ? GROUP BY country ORDER BY cnt DESC",
+            (region,)
+        ).fetchall()
+    else:
+        rows = conn.execute(
+            "SELECT DISTINCT country, COUNT(*) as cnt FROM schools GROUP BY country ORDER BY cnt DESC"
+        ).fetchall()
+    conn.close()
+    return jsonify({'countries': [{'name': r['country'], 'count': r['cnt']} for r in rows]})
+
+@api_bp.route('/cities')
+def cities():
+    """Get cities by country."""
+    country = request.args.get('country', '')
+    if not country:
+        return jsonify({'cities': []})
+    conn = get_db_connection()
+    rows = conn.execute(
+        "SELECT DISTINCT city FROM schools WHERE country = ? AND city IS NOT NULL AND city != '' ORDER BY city",
+        (country,)
+    ).fetchall()
+    conn.close()
+    return jsonify({'cities': [r['city'] for r in rows if r['city']]})
+
+@api_bp.route('/districts')
+def districts():
+    """Get HK districts by country."""
+    country = request.args.get('country', '')
+    if not country:
+        return jsonify({'districts': []})
+    conn = get_db_connection()
+    rows = conn.execute(
+        "SELECT DISTINCT district FROM schools WHERE country = ? AND district IS NOT NULL AND district != '' ORDER BY district",
+        (country,)
+    ).fetchall()
+    conn.close()
+    return jsonify({'districts': [r['district'] for r in rows if r['district']]})
 
 
 def register_routes(app):

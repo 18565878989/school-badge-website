@@ -17,12 +17,20 @@
     <style>
     .region-nav { position: relative; display: inline-block; cursor: pointer; }
     .region-nav-toggle { color: #1d1d1f; font-weight: 500; white-space: nowrap; }
-    .region-nav-menu { display: none; position: absolute; top: 100%; right: 0; background: #fff; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.18); padding: 12px; min-width: 160px; z-index: 9999; }
+    .region-nav-menu { display: none; position: absolute; top: calc(100% + 8px); right: 0; background: #fff; border-radius: 16px; box-shadow: 0 8px 40px rgba(0,0,0,0.18); padding: 16px; min-width: 260px; z-index: 9999; }
     .region-nav:hover .region-nav-menu { display: block; }
     .region-nav-section { padding: 8px 10px 4px; font-size: 0.7rem; color: #86868b; font-weight: 600; text-transform: uppercase; }
     .region-nav-menu a { display: flex; align-items: center; gap: 8px; padding: 8px 10px; font-size: 0.85rem; color: #1d1d1f; text-decoration: none; border-radius: 6px; }
     .region-nav-menu a:hover { background: #f5f5f7; }
     .region-nav-menu em { font-style: normal; color: #86868b; font-size: 0.75rem; margin-left: auto; }
+    .region-select-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
+    .region-select-group label { font-size: 0.7rem; color: #86868b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding-left: 2px; }
+    .region-select-group select { width: 100%; padding: 8px 12px; border: 1.5px solid #e5e5e7; border-radius: 10px; font-size: 0.85rem; color: #1d1d1f; background: #fff; cursor: pointer; outline: none; transition: border-color 0.2s; }
+    .region-select-group select:focus { border-color: #007AFF; }
+    .region-select-group select:disabled { background: #f5f5f7; color: #86868b; }
+    .region-go-btn { width: 100%; margin-top: 4px; padding: 9px; background: linear-gradient(135deg, #1E3A5F, #0D2137); color: #fff; border: none; border-radius: 10px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: opacity 0.2s; }
+    .region-go-btn:hover { opacity: 0.85; }
+    .region-divider { height: 1px; background: #f0f0f2; margin: 10px 0; }
     </style>
 </head>
 <body class="school-gallery">
@@ -53,16 +61,33 @@
                         全部地区 ▾
                     </span>
                     <div class="region-nav-menu">
-                        <div class="region-nav-section">🌏 亚洲</div>
-                        <a href="{{ url_for('main.index') }}?country=Hong+Kong">🇭🇰 香港 <em>(1590)</em></a>
-                        <a href="{{ url_for('main.index') }}?country=China">🇨🇳 中国 <em>(310)</em></a>
-                        <a href="{{ url_for('main.index') }}?country=Japan">🇯🇵 日本 <em>(137)</em></a>
-                        <a href="{{ url_for('main.index') }}?country=South+Korea">🇰🇷 韩国 <em>(123)</em></a>
-                        <a href="{{ url_for('main.index') }}?country=India">🇮🇳 印度 <em>(249)</em></a>
-                        <a href="{{ url_for('main.index') }}?country=Thailand">🇹🇭 泰国 <em>(161)</em></a>
-                        <div class="region-nav-section">🌍 其他</div>
-                        <a href="{{ url_for('main.index') }}?country=United+States">🇺🇸 美国 <em>(169)</em></a>
-                        <a href="{{ url_for('main.index') }}?country=United+Kingdom">🇬🇧 英国 <em>(57)</em></a>
+                        <div class="region-select-group">
+                            <label>洲际</label>
+                            <select id="regionSelect" onchange="onRegionChange()">
+                                <option value="">全部地区</option>
+                                <option value="Asia">🌏 亚洲</option>
+                                <option value="Europe">🌍 欧洲</option>
+                                <option value="North America">🌎 北美洲</option>
+                                <option value="South America">🌎 南美洲</option>
+                                <option value="Africa">🌍 非洲</option>
+                                <option value="Oceania">🌏 大洋洲</option>
+                            </select>
+                        </div>
+                        <div class="region-select-group">
+                            <label>国家</label>
+                            <select id="countrySelect" onchange="onCountryChange()" disabled>
+                                <option value="">— 先选洲际 —</option>
+                            </select>
+                        </div>
+                        <div class="region-select-group" id="cityGroup" style="display:none;">
+                            <label id="cityLabel">城市</label>
+                            <select id="citySelect" onchange="onCityChange()" disabled>
+                                <option value="">— 先选国家 —</option>
+                            </select>
+                        </div>
+                        <button class="region-go-btn" id="regionGoBtn" onclick="goToRegion()" disabled>🔍 搜索</button>
+                        <div class="region-divider"></div>
+                        <a href="{{ url_for('main.index') }}">🌐 全部学校</a>
                     </div>
                 </div>
                 
@@ -562,22 +587,74 @@
         // 深度搜索按钮 - 点击后调用AI搜索
         document.getElementById('deepSearchBtn').addEventListener('click', function() {
             const query = document.getElementById('searchInput').value.trim();
-            
-            if (!query) {
-                alert('请先输入搜索内容');
-                return;
-            }
-            
-            // 显示深度搜索聊天界面
+            if (!query) { alert('请先输入搜索内容'); return; }
             window.location.href = '/deep-search?q=' + encodeURIComponent(query);
         });
-        
-        // 支持回车键搜索（普通搜索）
         document.getElementById('searchInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                document.getElementById('mainSearchForm').submit();
-            }
+            if (e.key === 'Enter') document.getElementById('mainSearchForm').submit();
         });
+
+        // 地区导航三级联动
+        const HK_COUNTRIES = ['Hong Kong'];
+        function $(id) { return document.getElementById(id); }
+        function onRegionChange() {
+            const region = $('regionSelect').value;
+            const countrySel = $('countrySelect');
+            const cityGroup = $('cityGroup');
+            const citySel = $('citySelect');
+            const btn = $('regionGoBtn');
+            citySel.innerHTML = '<option value="">— 先选国家 —</option>';
+            citySel.disabled = true;
+            cityGroup.style.display = 'none';
+            if (!region) {
+                countrySel.innerHTML = '<option value="">— 先选洲际 —</option>';
+                countrySel.disabled = true;
+                btn.disabled = true;
+                return;
+            }
+            countrySel.innerHTML = '<option value="">加载中...</option>';
+            fetch(`/api/countries?region=${encodeURIComponent(region)}`)
+                .then(r => r.json())
+                .then(data => {
+                    let html = '<option value="">全部国家</option>';
+                    data.countries.forEach(c => { html += `<option value="${c.name}">${c.name} (${c.count})</option>`; });
+                    countrySel.innerHTML = html;
+                    countrySel.disabled = false;
+                    btn.disabled = false;
+                });
+        }
+        function onCountryChange() {
+            const country = $('countrySelect').value;
+            const cityGroup = $('cityGroup');
+            const cityLabel = $('cityLabel');
+            const citySel = $('citySelect');
+            if (!country) { citySel.innerHTML = '<option value="">— 先选国家 —</option>'; citySel.disabled = true; return; }
+            const isHK = HK_COUNTRIES.includes(country);
+            cityLabel.textContent = isHK ? '区域' : '城市';
+            citySel.innerHTML = '<option value="">加载中...</option>';
+            const endpoint = isHK ? '/api/districts' : '/api/cities';
+            fetch(`${endpoint}?country=${encodeURIComponent(country)}`)
+                .then(r => r.json())
+                .then(data => {
+                    const key = isHK ? 'districts' : 'cities';
+                    let html = `<option value="">${isHK ? '全部区域' : '全部城市'}</option>`;
+                    (data[key] || []).forEach(v => { html += `<option value="${v}">${v}</option>`; });
+                    citySel.innerHTML = html;
+                    citySel.disabled = false;
+                    cityGroup.style.display = '';
+                });
+        }
+        function onCityChange() {}
+        function goToRegion() {
+            const region = $('regionSelect').value;
+            const country = $('countrySelect').value;
+            const city = $('citySelect').value;
+            const params = new URLSearchParams();
+            if (region) params.set('region', region);
+            if (country) params.set('country', country);
+            if (city) params.set('district', city);
+            window.location.href = '{{ url_for("main.index") }}?' + params.toString();
+        }
     </script>
 </body>
 </html>
