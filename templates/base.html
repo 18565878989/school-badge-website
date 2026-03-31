@@ -46,6 +46,7 @@
                     {{ _('rankings') }}
                 </a>
                 <a href="{{ url_for('main.campus') }}" {% if page=='campus' %}class="active"{% endif %}>{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('main.social') }}" {% if page=='social' %}class="active"{% endif %} style="color: #1E3A5F; font-weight: 600;">{{ _('social') }}</a>
                 
                 <!-- 地区/国家导航 -->
                 <div class="region-nav">

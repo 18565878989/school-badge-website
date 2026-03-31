@@ -28,6 +28,7 @@
             <div class="nav-links" id="navLinks">
                 <a href="{{ url_for('main.index') }}" class="{% if not breadcrumb %}active{% endif %}">{{ _('home') }}</a>
                 <a href="{{ url_for('main.campus') }}">{{ _('campus_gallery') }}</a>
+                <a href="{{ url_for('main.social') }}" class="{% if breadcrumb == 'social' %}active{% endif %}">社交</a>
                 
                 <!-- 地区/国家导航 -->
                 <div class="nav-dropdown">
