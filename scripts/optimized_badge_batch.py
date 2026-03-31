@@ -29,12 +29,13 @@ HEADERS = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'Accept-Language': 'en-US,en;q=0.5',
 }
-TIMEOUT = 8
-MAX_WORKERS = 8
+TIMEOUT = 15
+MAX_WORKERS = 6
 
 os.makedirs(BADGES_DIR, exist_ok=True)
 
 log_file = '/Users/wangfeng/.openclaw/workspace/school-badge-website/logs/badge_batch.log'
+CHECKPOINT_FILE = '/Users/wangfeng/.openclaw/workspace/school-badge-website/logs/badge_batch_checkpoint.json'
 
 def log(msg):
     ts = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -42,6 +43,23 @@ def log(msg):
     print(line)
     with open(log_file, 'a') as f:
         f.write(line + '\n')
+
+def load_checkpoint():
+    try:
+        with open(CHECKPOINT_FILE, 'r') as f:
+            return json.load(f)
+    except:
+        return {'processed': [], 'last_run': None}
+
+def save_checkpoint(processed_ids):
+    with open(CHECKPOINT_FILE, 'w') as f:
+        json.dump({'processed': processed_ids, 'last_run': datetime.now().isoformat()}, f)
+
+def clear_checkpoint():
+    try:
+        os.remove(CHECKPOINT_FILE)
+    except:
+        pass
 
 
 # ========== 策略1: 学校官网抓取 ==========
@@ -345,20 +363,20 @@ def main(limit=200, verify_only=False):
             LIMIT ?
         """, (limit,))
     else:
-        # 获取需要抓取校徽的学校（优先有官网的）
+        # 获取需要抓取校徽的学校（优先大学，跳过香港幼教/中小学）
         cursor.execute("""
             SELECT id, name, name_cn, country, website, source
             FROM schools 
             WHERE (badge_url IS NULL OR badge_url = '') AND (badge_reviewed IS NULL OR badge_reviewed = 0)
             AND website IS NOT NULL AND website != ''
             AND website LIKE 'http%%'
+            -- 跳过香港幼教/中小学（基本无校徽资源）
+            AND NOT (country = 'Hong Kong' AND level IN ('kindergarten', 'elementary', 'Primary', 'middle', 'Middle', 'Secondary'))
             ORDER BY 
-                CASE WHEN country = 'Hong Kong' THEN 0 
-                     WHEN country = 'Japan' THEN 1 
-                     WHEN country = 'Singapore' THEN 2 
-                     WHEN country = 'South Korea' THEN 3 
-                     WHEN country = 'Taiwan' THEN 4 
-                     ELSE 5 END,
+                -- 优先处理大学（校徽资源丰富）
+                CASE WHEN level IN ('university', 'University', 'Institute', 'College', 'college', 'Academy', 'academy', 'high_school', 'high') THEN 0
+                     WHEN country IN ('United States', 'United Kingdom', 'Canada', 'Australia', 'Germany', 'France', 'Japan', 'South Korea', 'China') THEN 1
+                     ELSE 2 END,
                 RANDOM()
             LIMIT ?
         """, (limit,))
@@ -370,6 +388,8 @@ def main(limit=200, verify_only=False):
     
     success_by_method = {'website': 0, 'schooland': 0, 'wikipedia': 0, 'verified': 0}
     failed = 0
+    processed_ids = []
+    checkpoint_interval = 10  # 每10个学校保存一次断点
     
     for i, school_data in enumerate(schools):
         school_id = school_data[0]
@@ -408,7 +428,14 @@ def main(limit=200, verify_only=False):
                 failed += 1
                 log(f"[{i+1}/{len(schools)}] ✗ {school_data[1][:40]}")
         
-        if (i + 1) % 20 == 0:
+        # 每10个学校保存一次断点
+        if (i + 1) % checkpoint_interval == 0:
+            log(f"--- 进度: {i+1}/{len(schools)} (已保存断点) ---")
+        
+        # 每次处理完都更新已处理ID列表
+        processed_ids.append(school_id)
+        if (i + 1) % checkpoint_interval == 0:
+            save_checkpoint(processed_ids)
             log(f"--- 进度: {i+1}/{len(schools)} ---")
     
     log("=" * 60)
@@ -430,6 +457,7 @@ def main(limit=200, verify_only=False):
     total = c.fetchone()[0]
     conn.close()
     log(f"总计: {total_with_badge}/{total} 已有校徽 ({100*total_with_badge/total:.1f}%)")
+    clear_checkpoint()  # 完成后清除断点
     log("=" * 60)
 
 
