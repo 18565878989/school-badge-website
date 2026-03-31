@@ -12,20 +12,19 @@
     <style>
     .region-nav { position: relative; display: inline-block; cursor: pointer; }
     .region-nav-toggle { color: #fff; font-weight: 500; white-space: nowrap; }
-    .region-nav-menu { display: none; position: absolute; top: calc(100% + 8px); right: 0; background: #fff; border-radius: 16px; box-shadow: 0 8px 40px rgba(0,0,0,0.18); padding: 16px; min-width: 260px; z-index: 9999; }
-    .region-nav:hover .region-nav-menu { display: block; }
-    .region-nav-section { padding: 8px 10px 4px; font-size: 0.7rem; color: #86868b; font-weight: 600; text-transform: uppercase; }
-    .region-nav-menu a { display: flex; align-items: center; gap: 8px; padding: 8px 10px; font-size: 0.85rem; color: #1d1d1f; text-decoration: none; border-radius: 6px; }
-    .region-nav-menu a:hover { background: #f5f5f7; }
-    .region-nav-menu em { font-style: normal; color: #86868b; font-size: 0.75rem; margin-left: auto; }
-    .region-select-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
-    .region-select-group label { font-size: 0.7rem; color: #86868b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding-left: 2px; }
-    .region-select-group select { width: 100%; padding: 8px 12px; border: 1.5px solid #e5e5e7; border-radius: 10px; font-size: 0.85rem; color: #1d1d1f; background: #fff; cursor: pointer; outline: none; transition: border-color 0.2s; }
-    .region-select-group select:focus { border-color: #007AFF; }
-    .region-select-group select:disabled { background: #f5f5f7; color: #86868b; }
-    .region-go-btn { width: 100%; margin-top: 4px; padding: 9px; background: linear-gradient(135deg, #1E3A5F, #0D2137); color: #fff; border: none; border-radius: 10px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: opacity 0.2s; }
-    .region-go-btn:hover { opacity: 0.85; }
-    .region-divider { height: 1px; background: #f0f0f2; margin: 10px 0; }
+    .region-nav-menu { display: none; position: absolute; top: calc(100% + 12px); right: 0; background: rgba(255,255,255,0.96); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 20px; box-shadow: 0 8px 40px rgba(0,0,0,0.15), 0 0 0 0.5px rgba(0,0,0,0.05); padding: 20px; z-index: 9999; min-width: 580px; }
+    .region-nav:hover .region-nav-menu { display: flex; }
+    .region-panel { display: flex; gap: 16px; align-items: flex-start; }
+    .region-col { flex: 1; min-width: 0; }
+    .region-col-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600; margin-bottom: 10px; padding: 0 4px; }
+    .region-item { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 10px; font-size: 0.85rem; color: #1d1d1f; cursor: pointer; transition: all 0.15s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-decoration: none; }
+    .region-item:hover { background: #f5f5f7; }
+    .region-item.active { background: linear-gradient(135deg, #1E3A5F, #0D2137); color: #fff; font-weight: 600; }
+    .region-item .count { margin-left: auto; font-size: 0.72rem; color: #86868b; }
+    .region-item.active .count { color: rgba(255,255,255,0.65); }
+    .region-divider { width: 1px; background: #f0f0f2; align-self: stretch; margin: 0 4px; }
+    .region-all-link { display: block; padding: 10px 16px; background: #f5f5f7; border-radius: 12px; font-size: 0.85rem; color: #1d1d1f; font-weight: 600; text-align: center; transition: all 0.2s; text-decoration: none; margin-top: 12px; }
+    .region-all-link:hover { background: #e8e8ed; }
     </style>
 </head>
 <body>
@@ -54,34 +53,32 @@
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: -3px; margin-right: 4px;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                         {{  _('all_regions')  }} ▾
                     </span>
-                    <div class="region-nav-menu">
-                        <div class="region-select-group">
-                            <label>洲际</label>
-                            <select id="regionSelect" onchange="onRegionChange()">
-                                <option value="">{{  _('all_regions') }}</option>
-                                <option value="Asia">🌏 亚洲</option>
-                                <option value="Europe">🌍 欧洲</option>
-                                <option value="North America">🌎 北美洲</option>
-                                <option value="South America">🌎 南美洲</option>
-                                <option value="Africa">🌍 非洲</option>
-                                <option value="Oceania">🌏 大洋洲</option>
-                            </select>
+                    <div class="region-nav-menu" id="regionNavMenu" style="display:none;">
+                        <div class="region-panel">
+                            <!-- 洲际列 -->
+                            <div class="region-col">
+                                <div class="region-col-label">洲际</div>
+                                <div class="region-item" onclick="selectContinent('')" id="contAll">🌐 全部</div>
+                                <div class="region-item" onclick="selectContinent('Asia')" id="contAsia">🌏 亚洲</div>
+                                <div class="region-item" onclick="selectContinent('Europe')" id="contEurope">🌍 欧洲</div>
+                                <div class="region-item" onclick="selectContinent('North America')" id="contNA">🌎 北美洲</div>
+                                <div class="region-item" onclick="selectContinent('South America')" id="contSA">🌎 南美洲</div>
+                                <div class="region-item" onclick="selectContinent('Africa')" id="contAfrica">🌍 非洲</div>
+                                <div class="region-item" onclick="selectContinent('Oceania')" id="contOceania">🌏 大洋洲</div>
+                            </div>
+                            <div class="region-divider"></div>
+                            <!-- 国家列 -->
+                            <div class="region-col">
+                                <div class="region-col-label">国家</div>
+                                <div id="countryList" style="color:#86868b;font-size:0.82rem;padding:8px 4px;">← 请先选择洲际</div>
+                            </div>
+                            <!-- 城市/区列 -->
+                            <div class="region-col" id="cityCol" style="display:none;">
+                                <div class="region-col-label" id="cityColLabel">城市</div>
+                                <div id="cityList" style="color:#86868b;font-size:0.82rem;padding:8px 4px;">← 请先选择国家</div>
+                            </div>
                         </div>
-                        <div class="region-select-group">
-                            <label>国家</label>
-                            <select id="countrySelect" onchange="onCountryChange()" disabled>
-                                <option value="">— 先选洲际 —</option>
-                            </select>
-                        </div>
-                        <div class="region-select-group" id="cityGroup" style="display:none;">
-                            <label id="cityLabel">城市</label>
-                            <select id="citySelect" onchange="onCityChange()" disabled>
-                                <option value="">— 先选国家 —</option>
-                            </select>
-                        </div>
-                        <button class="region-go-btn" id="regionGoBtn" onclick="goToRegion()" disabled>🔍 搜索</button>
-                        <div class="region-divider"></div>
-                        <a href="{{ url_for('main.index') }}">🌐 全部学校</a>
+                        <a href="{{ url_for('main.index') }}" class="region-all-link">🌐 全部学校</a>
                     </div>
                 </div>
                 
@@ -133,88 +130,81 @@
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script>
-    // 地区导航三级联动
+    // 地区导航三级联动 - Apple卡片风格
     const HK_COUNTRIES = ['Hong Kong'];
+    const CONT_MAP = {'':'', 'Asia':'contAsia', 'Europe':'contEurope', 'North America':'contNA', 'South America':'contSA', 'Africa':'contAfrica', 'Oceania':'contOceania'};
 
-    function $(id) { return document.getElementById(id); }
+    function showNav() { var el = document.getElementById('regionNavMenu'); if(el) el.style.display = 'flex'; }
+    function hideNav() { var el = document.getElementById('regionNavMenu'); if(el) el.style.display = 'none'; }
 
-    function onRegionChange() {
-        const region = $('regionSelect').value;
-        const countrySel = $('countrySelect');
-        const cityGroup = $('cityGroup');
-        const citySel = $('citySelect');
-        const btn = $('regionGoBtn');
-
-        // Reset city
-        citySel.innerHTML = '<option value="">— 先选国家 —</option>';
-        citySel.disabled = true;
-        cityGroup.style.display = 'none';
-
+    function selectContinent(region) {
+        document.querySelectorAll('.region-item').forEach(function(el){ el.classList.remove('active'); });
+        if (region) {
+            var el = document.getElementById(CONT_MAP[region]);
+            if (el) el.classList.add('active');
+        }
+        var cityCol = document.getElementById('cityCol');
+        if (cityCol) cityCol.style.display = 'none';
         if (!region) {
-            countrySel.innerHTML = '<option value="">— 先选洲际 —</option>';
-            countrySel.disabled = true;
-            btn.disabled = true;
+            var cl = document.getElementById('countryList');
+            if (cl) cl.innerHTML = '<span style="color:#86868b;font-size:0.82rem;padding:8px 4px;">← 请先选择洲际</span>';
             return;
         }
-
-        countrySel.innerHTML = '<option value="">加载中...</option>';
-        fetch(`/api/countries?region=${encodeURIComponent(region)}`)
-            .then(r => r.json())
-            .then(data => {
-                let html = '<option value="">全部国家</option>';
-                data.countries.forEach(c => {
-                    html += `<option value="${c.name}">${c.name} (${c.count})</option>`;
-                });
-                countrySel.innerHTML = html;
-                countrySel.disabled = false;
-                btn.disabled = false;
+        var cl = document.getElementById('countryList');
+        if (cl) cl.innerHTML = '<span style="color:#86868b;font-size:0.82rem;padding:8px 4px;">加载中...</span>';
+        fetch('/api/countries?region=' + encodeURIComponent(region))
+            .then(function(r){ return r.json(); })
+            .then(function(data) {
+                var html = '';
+                if (!data.countries || data.countries.length === 0) {
+                    html = '<span style="color:#86868b;font-size:0.82rem;padding:8px 4px;">暂无数据</span>';
+                } else {
+                    data.countries.forEach(function(c) {
+                        html += '<div class="region-item" onclick="selectCountry(\'' + c.name.replace(/'/g,"\\'") + '\', \'' + region + '\')">' + c.name + '<em class="count">' + c.count + '</em></div>';
+                    });
+                }
+                var cel = document.getElementById('countryList');
+                if (cel) cel.innerHTML = html;
             });
     }
 
-    function onCountryChange() {
-        const country = $('countrySelect').value;
-        const cityGroup = $('cityGroup');
-        const cityLabel = $('cityLabel');
-        const citySel = $('citySelect');
-
-        if (!country) {
-            citySel.innerHTML = '<option value="">— 先选国家 —</option>';
-            citySel.disabled = true;
-            return;
-        }
-
-        // 香港特殊：用 district；其他国家：用 city
-        const isHK = HK_COUNTRIES.includes(country);
-        cityLabel.textContent = isHK ? '区域' : '城市';
-        citySel.innerHTML = '<option value="">加载中...</option>';
-        const endpoint = isHK ? '/api/districts' : '/api/cities';
-        fetch(`${endpoint}?country=${encodeURIComponent(country)}`)
-            .then(r => r.json())
-            .then(data => {
-                const key = isHK ? 'districts' : 'cities';
-                let html = `<option value="">${isHK ? '全部区域' : '全部城市'}</option>`;
-                (data[key] || []).forEach(v => {
-                    html += `<option value="${v}">${v}</option>`;
+    function selectCountry(country, region) {
+        document.querySelectorAll('#countryList .region-item').forEach(function(el){ el.classList.remove('active'); });
+        if (event && event.currentTarget) event.currentTarget.classList.add('active');
+        var cityCol = document.getElementById('cityCol');
+        if (cityCol) cityCol.style.display = '';
+        var isHK = HK_COUNTRIES.indexOf(country) !== -1;
+        var lbl = document.getElementById('cityColLabel');
+        if (lbl) lbl.textContent = isHK ? '区域' : '城市';
+        var cityListEl = document.getElementById('cityList');
+        if (cityListEl) cityListEl.innerHTML = '<span style="color:#86868b;font-size:0.82rem;padding:8px 4px;">加载中...</span>';
+        var endpoint = isHK ? '/api/districts' : '/api/cities';
+        fetch(endpoint + '?country=' + encodeURIComponent(country))
+            .then(function(r){ return r.json(); })
+            .then(function(data) {
+                var key = isHK ? 'districts' : 'cities';
+                var items = data[key] || [];
+                var html = '<div class="region-item" onclick="goRegion(\'' + region + '\', \'' + country.replace(/'/g,"\\'") + '\', \'\')" style="color:#86868b;">' + (isHK ? '全部区域' : '全部城市') + '</div>';
+                items.slice(0, 12).forEach(function(v) {
+                    html += '<div class="region-item" onclick="goRegion(\'' + region + '\', \'' + country.replace(/'/g,"\\'") + '\', \'' + v.replace(/'/g,"\\'") + '\')">' + v + '</div>';
                 });
-                citySel.innerHTML = html;
-                citySel.disabled = false;
-                cityGroup.style.display = '';
+                if (items.length > 12) {
+                    html += '<div class="region-item" style="color:#86868b;font-size:0.78rem;cursor:default;">还有 ' + (items.length - 12) + ' 个...</div>';
+                }
+                var cel = document.getElementById('cityList');
+                if (cel) cel.innerHTML = html;
             });
     }
 
-    function onCityChange() {
-        // 选完城市后按钮状态已由select处理
-    }
-
-    function goToRegion() {
-        const region = $('regionSelect').value;
-        const country = $('countrySelect').value;
-        const city = $('citySelect').value;
-        const params = new URLSearchParams();
-        if (region) params.set('region', region);
-        if (country) params.set('country', country);
-        if (city) params.set('district', city);
-        window.location.href = '{{ url_for("main.index") }}?' + params.toString();
+    function goRegion(region, country, city) {
+        var params = [];
+        if (region) params.push('region=' + encodeURIComponent(region));
+        if (country) params.push('country=' + encodeURIComponent(country));
+        if (city) {
+            var isHK = HK_COUNTRIES.indexOf(country) !== -1;
+            params.push((isHK ? 'district' : 'city') + '=' + encodeURIComponent(city));
+        }
+        window.location.href = '{{ url_for("main.index") }}?' + params.join('&');
     }
     </script>
 </body>
