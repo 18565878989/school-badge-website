@@ -87,13 +87,13 @@
                         <!-- 大洲选择 -->
                         <div class="filter-select-wrapper">
                             <select name="region" class="filter-select" id="regionSelect" onchange="onRegionChange(this.value)">
-                                <option value="">🌐 {{ _('all_continents') | default('全部大洲') }}</option>
-                                <option value="Asia" {% if selected_region=='Asia' %}selected{% endif %}>🌏 {{ _('asia') | default('亚洲') }}</option>
-                                <option value="Europe" {% if selected_region=='Europe' %}selected{% endif %}>🌍 {{ _('europe') | default('欧洲') }}</option>
-                                <option value="North America" {% if selected_region=='North America' %}selected{% endif %}>🌎 {{ _('north_america') | default('北美洲') }}</option>
-                                <option value="South America" {% if selected_region=='South America' %}selected{% endif %}>🌎 {{ _('south_america') | default('南美洲') }}</option>
-                                <option value="Africa" {% if selected_region=='Africa' %}selected{% endif %}>🌍 {{ _('africa') | default('非洲') }}</option>
-                                <option value="Oceania" {% if selected_region=='Oceania' %}selected{% endif %}>🏝️ {{ _('oceania') | default('大洋洲') }}</option>
+                                <option value="">{{ _('all_continents') }}</option>
+                                <option value="Asia" {% if selected_region=='Asia' %}selected{% endif %}>{{ _('asia') }}</option>
+                                <option value="Europe" {% if selected_region=='Europe' %}selected{% endif %}>{{ _('europe') }}</option>
+                                <option value="North America" {% if selected_region=='North America' %}selected{% endif %}>{{ _('north_america') }}</option>
+                                <option value="South America" {% if selected_region=='South America' %}selected{% endif %}>{{ _('south_america') }}</option>
+                                <option value="Africa" {% if selected_region=='Africa' %}selected{% endif %}>{{ _('africa') }}</option>
+                                <option value="Oceania" {% if selected_region=='Oceania' %}selected{% endif %}>{{ _('oceania') }}</option>
                             </select>
                             <svg class="select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="m6 9 6 6 6-6"/>
@@ -103,7 +103,7 @@
                         <!-- 国家选择 -->
                         <div class="filter-select-wrapper {% if not selected_region %}disabled{% endif %}" id="countryWrapper">
                             <select name="country" class="filter-select" id="countrySelect" onchange="onCountryChange(this.value)" {% if not selected_region %}disabled{% endif %}>
-                                <option value="">🏳 {{ _('all_countries') | default('全部国家') }}</option>
+                                <option value="">{{ _('all_countries') }}</option>
                                 {% if countries %}
                                     {% for c in countries %}
                                     <option value="{{ c }}" {% if selected_country==c %}selected{% endif %}>{{ c }}</option>
@@ -118,7 +118,7 @@
                         <!-- 城市选择 -->
                         <div class="filter-select-wrapper {% if not selected_country %}disabled{% endif %}" id="cityWrapper">
                             <select name="city" class="filter-select" id="citySelect">
-                                <option value="">📍 {{ _('all_cities') | default('全部城市') }}</option>
+                                <option value="">{{ _('all_cities') }}</option>
                                 {% if cities %}
                                     {% for c in cities %}
                                     <option value="{{ c }}" {% if selected_city==c %}selected{% endif %}>{{ c }}</option>
@@ -133,11 +133,11 @@
                         <!-- 学校类型 -->
                         <div class="filter-select-wrapper">
                             <select name="level" class="filter-select" onchange="document.getElementById('searchForm').submit()">
-                                <option value="">🏫 {{ _('all_schools') | default('全部') }}</option>
-                                <option value="university" {% if selected_level=='university' %}selected{% endif %}>🎓 {{ _('university') | default('大学') }}</option>
-                                <option value="middle" {% if selected_level=='middle' %}selected{% endif %}>🏫 {{ _('middle_school') | default('中学') }}</option>
-                                <option value="elementary" {% if selected_level=='elementary' %}selected{% endif %}>📚 {{ _('elementary_school') | default('小学') }}</option>
-                                <option value="kindergarten" {% if selected_level=='kindergarten' %}selected{% endif %}>🧸 {{ _('kindergarten') | default('幼儿园') }}</option>
+                                <option value="">{{ _('all_schools') }}</option>
+                                <option value="university" {% if selected_level=='university' %}selected{% endif %}>{{ _('university') }}</option>
+                                <option value="middle" {% if selected_level=='middle' %}selected{% endif %}>{{ _('middle_school') }}</option>
+                                <option value="elementary" {% if selected_level=='elementary' %}selected{% endif %}>{{ _('elementary_school') }}</option>
+                                <option value="kindergarten" {% if selected_level=='kindergarten' %}selected{% endif %}>{{ _('kindergarten') }}</option>
                             </select>
                             <svg class="select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="m6 9 6 6 6-6"/>
@@ -155,14 +155,20 @@
                     </div>
                 </form>
                 
-                <!-- 清除筛选 -->
+                <!-- 清除筛选 - 与搜索栏同行 -->
                 {% if selected_region or selected_country or selected_city or selected_district or selected_level or search_query %}
                 <div class="active-filters">
+                    <span class="filter-tag">
+                        {% if selected_region %}{{ _('all_continents') }}{% endif %}
+                        {% if selected_country %} → {{ selected_country }}{% endif %}
+                        {% if selected_city %} → {{ selected_city }}{% endif %}
+                        {% if search_query %} → "{{ search_query }}"{% endif %}
+                    </span>
                     <a href="{{ url_for('index') }}" class="clear-all-filters">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M18 6 6 18M6 6l12 12"/>
                         </svg>
-                        {{ _('clear_all') | default('清除全部筛选') }}
+                        {{ _('clear_all') }}
                     </a>
                 </div>
                 {% endif %}

@@ -324,9 +324,14 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 16px;
-    padding-top: 16px;
+    margin-top: 12px;
+    padding-top: 12px;
     border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.filter-tag {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
 }
 
 .clear-all-filters {
@@ -341,6 +346,7 @@ body {
     border-radius: 20px;
     text-decoration: none;
     transition: all 0.2s;
+    margin-left: auto;
 }
 
 .clear-all-filters:hover {
