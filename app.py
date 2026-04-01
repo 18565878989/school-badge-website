@@ -268,8 +268,9 @@ def index():
     selected_region = request.args.get('region', '')
     selected_country = request.args.get('country', '')
     selected_city = request.args.get('city', '')
-    # Default to university if no level specified
-    selected_level = request.args.get('level', 'university')
+    selected_district = request.args.get('district', '')
+    # No default level - show all school types
+    selected_level = request.args.get('level', '')
     page = request.args.get('page', 1, type=int)
     per_page = 21  # 21 schools per page
     
@@ -295,50 +296,47 @@ def index():
         hk_districts = conn.execute("SELECT DISTINCT district FROM schools WHERE country = 'Hong Kong' AND district IS NOT NULL AND district != '' ORDER BY district").fetchall()
         hk_districts = [d[0] for d in hk_districts]
     
-    selected_district = request.args.get('district', '')
-    
     # 组合查询：支持搜索 + 地区 + 国家 + 城市 + 区域 + 类型 同时筛选
+    def add_level_condition(sql, params, level):
+        """Add level condition to SQL query"""
+        if level:
+            return sql + " AND level = ?", params + [level]
+        return sql, params
+
     if search_query:
         schools = search_schools(search_query, selected_region, selected_level)
-    elif selected_country and selected_level and selected_region and selected_district:
-        # 完整筛选：地区 + 国家 + 区域 + 类型
-        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND district = ? AND level = ? ORDER BY name", 
-                               (selected_region, selected_country, selected_district, selected_level)).fetchall()
-    elif selected_country and selected_level and selected_region and selected_city:
-        # 完整筛选：地区 + 国家 + 城市 + 类型
-        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND city = ? AND level = ? ORDER BY name", 
-                               (selected_region, selected_country, selected_city, selected_level)).fetchall()
-    elif selected_country and selected_level and selected_region:
-        # 完整筛选：地区 + 国家 + 类型
-        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND level = ? ORDER BY name", 
-                               (selected_region, selected_country, selected_level)).fetchall()
+    elif selected_region and selected_country and selected_city and selected_district:
+        # 完整筛选：地区 + 国家 + 城市 + 区域
+        sql = "SELECT * FROM schools WHERE region = ? AND country = ? AND city = ? AND district = ?"
+        sql, params = add_level_condition(sql, [selected_region, selected_country, selected_city, selected_district], selected_level)
+        schools = conn.execute(sql + " ORDER BY name", params).fetchall()
     elif selected_region and selected_country and selected_city:
         # 地区 + 国家 + 城市
-        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND city = ? ORDER BY name", 
-                               (selected_region, selected_country, selected_city)).fetchall()
+        sql = "SELECT * FROM schools WHERE region = ? AND country = ? AND city = ?"
+        sql, params = add_level_condition(sql, [selected_region, selected_country, selected_city], selected_level)
+        schools = conn.execute(sql + " ORDER BY name", params).fetchall()
     elif selected_region and selected_country and selected_district:
         # 地区 + 国家 + 区域
-        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? AND district = ? ORDER BY name", 
-                               (selected_region, selected_country, selected_district)).fetchall()
+        sql = "SELECT * FROM schools WHERE region = ? AND country = ? AND district = ?"
+        sql, params = add_level_condition(sql, [selected_region, selected_country, selected_district], selected_level)
+        schools = conn.execute(sql + " ORDER BY name", params).fetchall()
     elif selected_region and selected_country:
         # 地区 + 国家
-        schools = conn.execute("SELECT * FROM schools WHERE region = ? AND country = ? ORDER BY name", 
-                               (selected_region, selected_country)).fetchall()
-    elif selected_country and selected_level:
-        # 国家 + 类型（无地区时）
-        schools = conn.execute("SELECT * FROM schools WHERE country = ? AND level = ? ORDER BY name", 
-                               (selected_country, selected_level)).fetchall()
+        sql = "SELECT * FROM schools WHERE region = ? AND country = ?"
+        sql, params = add_level_condition(sql, [selected_region, selected_country], selected_level)
+        schools = conn.execute(sql + " ORDER BY name", params).fetchall()
     elif selected_country:
         # 仅国家
-        schools = conn.execute("SELECT * FROM schools WHERE country = ? ORDER BY name", 
-                               (selected_country,)).fetchall()
-    elif selected_region and selected_level:
-        schools = get_schools_by_region_and_level(selected_region, selected_level)
+        sql = "SELECT * FROM schools WHERE country = ?"
+        sql, params = add_level_condition(sql, [selected_country], selected_level)
+        schools = conn.execute(sql + " ORDER BY name", params).fetchall()
     elif selected_region:
-        schools = get_schools_by_region(selected_region)
-    elif selected_level:
-        schools = get_schools_by_level(selected_level)
+        # 仅地区
+        sql = "SELECT * FROM schools WHERE region = ?"
+        sql, params = add_level_condition(sql, [selected_region], selected_level)
+        schools = conn.execute(sql + " ORDER BY name", params).fetchall()
     else:
+        # 全部学校
         schools = get_all_schools()
     
     # 地区选项列表

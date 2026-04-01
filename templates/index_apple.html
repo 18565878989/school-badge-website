@@ -5,32 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ _('page_title_home') }} - {{ _('hero_title') }}</title>
     
-    <link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=2">
-    <link rel="icon" href="/static/images/favicon.svg?v=2">
-    <link rel="apple-touch-icon" href="/static/images/favicon.svg?v=2">
-    <link rel="shortcut icon" href="/static/images/favicon.svg?v=2">
-    <meta name="theme-color" content="#FF3B30">
     <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <meta name="theme-color" content="#FF3B30">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-    .region-nav { position: relative; display: inline-block; cursor: pointer; }
-    .region-nav-toggle { color: #1d1d1f; font-weight: 500; white-space: nowrap; }
-    .region-nav-menu { display: none; position: absolute; top: calc(100% + 12px); right: 0; background: rgba(255,255,255,0.96); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 20px; box-shadow: 0 8px 40px rgba(0,0,0,0.15), 0 0 0 0.5px rgba(0,0,0,0.05); padding: 20px; z-index: 9999; min-width: 580px; }
-    .region-nav:hover .region-nav-menu { display: flex; flex-direction: column; }
-    .region-panel { display: flex; gap: 16px; align-items: flex-start; }
-    .region-col { flex: 1; min-width: 0; }
-    .region-col-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #86868b; font-weight: 600; margin-bottom: 10px; padding: 0 4px; }
-    .region-item { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 10px; font-size: 0.85rem; color: #1d1d1f; cursor: pointer; transition: all 0.15s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .region-item:hover { background: #f5f5f7; }
-    .region-item.active { background: linear-gradient(135deg, #1E3A5F, #0D2137); color: #fff; font-weight: 600; }
-    .region-item .count { margin-left: auto; font-size: 0.72rem; color: #86868b; }
-    .region-item.active .count { color: rgba(255,255,255,0.65); }
-    .region-sdivider { width: 1px; background: #f0f0f2; align-self: stretch; margin: 0 4px; }
-    .region-all-link { display: block; padding: 10px 16px; background: #f5f5f7; border-radius: 12px; font-size: 0.85rem; color: #1d1d1f; font-weight: 600; text-align: center; transition: all 0.2s; text-decoration: none; margin-top: 12px; }
-    .region-all-link:hover { background: #e8e8ed; }
-    </style>
 </head>
 <body class="school-gallery">
     <!-- Navigation -->
@@ -46,44 +26,9 @@
             </button>
             <div class="nav-links" id="navLinks">
                 <a href="{{ url_for('main.index') }}" class="active">{{ _('home') }}</a>
-                <a href="{{ url_for('rankings.rankings') }}">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: -3px; margin-right: 4px;"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
-                    {{ _('rankings') }}
-                </a>
+                <a href="{{ url_for('rankings.rankings') }}">{{ _('rankings') }}</a>
                 <a href="{{ url_for('main.campus') }}">{{ _('campus_gallery') }}</a>
                 <a href="{{ url_for('main.social') }}" style="color: #1E3A5F; font-weight: 600;">{{ _('social') }}</a>
-                
-                <!-- 地区/国家导航 -->
-                <div class="region-nav">
-                    <span class="region-nav-toggle">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: -3px; margin-right: 4px;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                        {{  _('all_regions')  }} ▾
-                    </span>
-                    <div class="region-nav-menu" id="regionNavMenu">
-                        <div class="region-panel">
-                            <div class="region-col">
-                                <div class="region-col-label">洲际</div>
-                                <div class="region-item" onclick="selectContinent('')" id="contAll">🌐 全部</div>
-                                <div class="region-item" onclick="selectContinent('Asia')" id="contAsia">🌏 亚洲</div>
-                                <div class="region-item" onclick="selectContinent('Europe')" id="contEurope">🌍 欧洲</div>
-                                <div class="region-item" onclick="selectContinent('North America')" id="contNA">🌎 北美洲</div>
-                                <div class="region-item" onclick="selectContinent('South America')" id="contSA">🌎 南美洲</div>
-                                <div class="region-item" onclick="selectContinent('Africa')" id="contAfrica">🌍 非洲</div>
-                                <div class="region-item" onclick="selectContinent('Oceania')" id="contOceania">🌏 大洋洲</div>
-                            </div>
-                            <div class="region-sdivider"></div>
-                            <div class="region-col">
-                                <div class="region-col-label">国家</div>
-                                <div id="countryList" style="color:#86868b;font-size:0.82rem;padding:8px 4px;">← 请先选择洲际</div>
-                            </div>
-                            <div class="region-col" id="cityCol" style="display:none;">
-                                <div class="region-col-label" id="cityColLabel">城市</div>
-                                <div id="cityList" style="color:#86868b;font-size:0.82rem;padding:8px 4px;">← 请先选择国家</div>
-                            </div>
-                        </div>
-                        <a href="{{ url_for('main.index') }}" class="region-all-link">🌐 全部学校</a>
-                    </div>
-                </div>
                 
                 {% if session.get('user_id') %}
                     <a href="{{ url_for('schools.my_likes') }}">{{ _('my_likes') }}</a>
@@ -116,95 +61,133 @@
         <div class="container">
             <h1>{{ _('hero_title') }}</h1>
             <p>{{ _('hero_subtitle') }}</p>
-        </div>
-    </section>
-
-    <!-- School Level Tabs -->
-    <section class="tabs-section">
-        <div class="container">
-            <div class="region-tabs">
-                <a href="{{ url_for('index', level='university', region=selected_region, country=selected_country, city=selected_city, district=selected_district, q=search_query) }}" class="tab-btn{% if selected_level == 'university' %} active{% endif %}">
-                    🎓 {{ _('university') }}
-                </a>
-                <a href="{{ url_for('index', level='middle', region=selected_region, country=selected_country, city=selected_city, district=selected_district, q=search_query) }}" class="tab-btn{% if selected_level == 'middle' %} active{% endif %}">
-                    🏫 {{ _('middle_school') }}
-                </a>
-                <a href="{{ url_for('index', level='elementary', region=selected_region, country=selected_country, city=selected_city, district=selected_district, q=search_query) }}" class="tab-btn{% if selected_level == 'elementary' %} active{% endif %}">
-                    📚 {{ _('elementary_school') }}
-                </a>
-                <a href="{{ url_for('index', level='kindergarten', region=selected_region, country=selected_country, city=selected_city, district=selected_district, q=search_query) }}" class="tab-btn{% if selected_level == 'kindergarten' %} active{% endif %}">
-                    🧸 {{ _('kindergarten') }}
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Search & Filters -->
-    <section class="search-section">
-        <div class="container">
-            <div class="search-wrapper">
-                <form class="search-form" id="mainSearchForm" action="{{ url_for('main.index') }}" method="GET">
-                    <input type="hidden" name="level" value="{{ selected_level }}">
+            
+            <!-- 苹果风格搜索筛选栏 -->
+            <div class="apple-search-bar">
+                <form class="search-form" action="{{ url_for('index') }}" method="GET" id="searchForm">
+                    <!-- 文字搜索 -->
                     <div class="search-input-wrapper">
-                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="11" cy="11" r="8"/>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            <path d="m21 21-4.35-4.35"/>
                         </svg>
-                        <input type="text" name="q" id="searchInput" placeholder="{{ _('search_placeholder') }}" 
-                               value="{{ search_query }}">
-                        <button type="button" class="deep-search-toggle" id="deepSearchBtn" title="AI 深度搜索">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                <path d="M2 17l10 5 10-5"/>
-                                <path d="M2 12l10 5 10-5"/>
+                        <input type="text" name="q" placeholder="{{ _('search_placeholder') }}" 
+                               value="{{ search_query }}" class="search-input" id="searchInput">
+                        {% if search_query %}
+                        <button type="button" class="search-clear" onclick="clearSearch()">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 6 6 18M6 6l12 12"/>
                             </svg>
                         </button>
-                        {% if selected_region %}
-                            <input type="hidden" name="region" value="{{ selected_region }}">
-                        {% endif %}
-                        {% if selected_country %}
-                            <input type="hidden" name="country" value="{{ selected_country }}">
-                        {% endif %}
-                        {% if selected_city %}
-                            <input type="hidden" name="city" value="{{ selected_city }}">
-                        {% endif %}
-                        {% if selected_district %}
-                            <input type="hidden" name="district" value="{{ selected_district }}">
                         {% endif %}
                     </div>
+                    
+                    <!-- 筛选下拉选项 -->
+                    <div class="filter-dropdowns">
+                        <!-- 大洲选择 -->
+                        <div class="filter-select-wrapper">
+                            <select name="region" class="filter-select" id="regionSelect" onchange="onRegionChange(this.value)">
+                                <option value="">🌐 {{ _('all_continents') | default('全部大洲') }}</option>
+                                <option value="Asia" {% if selected_region=='Asia' %}selected{% endif %}>🌏 {{ _('asia') | default('亚洲') }}</option>
+                                <option value="Europe" {% if selected_region=='Europe' %}selected{% endif %}>🌍 {{ _('europe') | default('欧洲') }}</option>
+                                <option value="North America" {% if selected_region=='North America' %}selected{% endif %}>🌎 {{ _('north_america') | default('北美洲') }}</option>
+                                <option value="South America" {% if selected_region=='South America' %}selected{% endif %}>🌎 {{ _('south_america') | default('南美洲') }}</option>
+                                <option value="Africa" {% if selected_region=='Africa' %}selected{% endif %}>🌍 {{ _('africa') | default('非洲') }}</option>
+                                <option value="Oceania" {% if selected_region=='Oceania' %}selected{% endif %}>🏝️ {{ _('oceania') | default('大洋洲') }}</option>
+                            </select>
+                            <svg class="select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </div>
+                        
+                        <!-- 国家选择 -->
+                        <div class="filter-select-wrapper {% if not selected_region %}disabled{% endif %}" id="countryWrapper">
+                            <select name="country" class="filter-select" id="countrySelect" onchange="onCountryChange(this.value)" {% if not selected_region %}disabled{% endif %}>
+                                <option value="">🏳 {{ _('all_countries') | default('全部国家') }}</option>
+                                {% if countries %}
+                                    {% for c in countries %}
+                                    <option value="{{ c }}" {% if selected_country==c %}selected{% endif %}>{{ c }}</option>
+                                    {% endfor %}
+                                {% endif %}
+                            </select>
+                            <svg class="select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </div>
+                        
+                        <!-- 城市选择 -->
+                        <div class="filter-select-wrapper {% if not selected_country %}disabled{% endif %}" id="cityWrapper">
+                            <select name="city" class="filter-select" id="citySelect">
+                                <option value="">📍 {{ _('all_cities') | default('全部城市') }}</option>
+                                {% if cities %}
+                                    {% for c in cities %}
+                                    <option value="{{ c }}" {% if selected_city==c %}selected{% endif %}>{{ c }}</option>
+                                    {% endfor %}
+                                {% endif %}
+                            </select>
+                            <svg class="select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </div>
+                        
+                        <!-- 学校类型 -->
+                        <div class="filter-select-wrapper">
+                            <select name="level" class="filter-select" onchange="document.getElementById('searchForm').submit()">
+                                <option value="">🏫 {{ _('all_schools') | default('全部') }}</option>
+                                <option value="university" {% if selected_level=='university' %}selected{% endif %}>🎓 {{ _('university') | default('大学') }}</option>
+                                <option value="middle" {% if selected_level=='middle' %}selected{% endif %}>🏫 {{ _('middle_school') | default('中学') }}</option>
+                                <option value="elementary" {% if selected_level=='elementary' %}selected{% endif %}>📚 {{ _('elementary_school') | default('小学') }}</option>
+                                <option value="kindergarten" {% if selected_level=='kindergarten' %}selected{% endif %}>🧸 {{ _('kindergarten') | default('幼儿园') }}</option>
+                            </select>
+                            <svg class="select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </div>
+                        
+                        <!-- 搜索按钮 -->
+                        <button type="submit" class="search-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            {{ _('search') | default('搜索') }}
+                        </button>
+                    </div>
                 </form>
-            </div>
-
-            <!-- Filters -->
                 
+                <!-- 清除筛选 -->
                 {% if selected_region or selected_country or selected_city or selected_district or selected_level or search_query %}
-                    <a href="{{ url_for('main.index') }}" class="clear-filters">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="18" y1="6" x2="6" y2="18"/>
-                            <line x1="6" y1="6" x2="18" y2="18"/>
+                <div class="active-filters">
+                    <a href="{{ url_for('index') }}" class="clear-all-filters">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 6 6 18M6 6l12 12"/>
                         </svg>
-                        {{ _('clear_filters') }}
+                        {{ _('clear_all') | default('清除全部筛选') }}
                     </a>
+                </div>
                 {% endif %}
             </div>
-
-            {% if total_schools > 0 %}
-            <div class="stats-bar">
-                <span class="stats-count">{{ _('schools_count').format(total_schools) }}</span>
-                {% if selected_region or selected_country or selected_city or selected_district or selected_level or search_query %}
-                    <span class="filter-info">
-                        {% if selected_region %}· {{ selected_region }}{% endif %}
-                        {% if selected_country %}· {{ selected_country }}{% endif %}
-                        {% if selected_city %}· {{ selected_city }}{% endif %}
-                        {% if selected_district %}· {{ selected_district }}{% endif %}
-                        {% if selected_level %}· {{ _(selected_level) }}{% endif %}
-                        {% if search_query %}· "{{ search_query }}"{% endif %}
-                    </span>
-                {% endif %}
-            </div>
-            {% endif %}
         </div>
     </section>
+
+    <!-- Stats Bar -->
+    {% if total_schools > 0 %}
+    <div class="stats-bar">
+        <div class="container">
+            <span class="stats-count">{{ _('schools_count').format(total_schools) }}</span>
+            {% if selected_region or selected_country or selected_city or selected_district or selected_level or search_query %}
+                <span class="filter-info">
+                    {% if selected_region %}· {{ selected_region }}{% endif %}
+                    {% if selected_country %}· {{ selected_country }}{% endif %}
+                    {% if selected_city %}· {{ selected_city }}{% endif %}
+                    {% if selected_district %}· {{ selected_district }}{% endif %}
+                    {% if selected_level %}· {{ _(selected_level) }}{% endif %}
+                    {% if search_query %}· "{{ search_query }}"{% endif %}
+                </span>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
 
     <!-- Messages -->
     {% with messages = get_flashed_messages(with_categories=true) %}
@@ -231,17 +214,11 @@
                                  alt="{{ school['name'] }} badge"
                                  loading="lazy"
                                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                            <div class="image-overlay">
-                                <span class="view-label">{{ _('View Campus') }}</span>
-                            </div>
                         {% elif school['campus_image'] %}
                             <img src="{{ school['campus_image'] }}" 
                                  alt="{{ school['name'] }} campus"
                                  loading="lazy"
                                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                            <div class="image-overlay">
-                                <span class="view-label">{{ _('View Campus') }}</span>
-                            </div>
                         {% else %}
                         <div class="image-placeholder">
                             <svg viewBox="0 0 100 100" fill="none">
@@ -250,97 +227,43 @@
                             </svg>
                         </div>
                         {% endif %}
-                        <div class="card-badge">
-                            <span class="level-badge level-{{ school['level'] }}">
-                                {% if school['level'] == 'university' %}{{ _('university') }}
-                                {% elif school['level'] == 'middle' %}{{ _('middle_school') }}
-                                {% elif school['level'] == 'elementary' %}{{ _('elementary_school') }}
-                                {% else %}{{ _('kindergarten') }}{% endif %}
-                            </span>
-                            {% if school['qs_rank'] %}
-                            <span class="ranking-badge ranking-qs" title="QS World University Rankings">QS #{{ school['qs_rank'] }}</span>
-                            {% elif school['the_rank'] %}
-                            <span class="ranking-badge ranking-the" title="Times Higher Education">THE #{{ school['the_rank'] }}</span>
-                            {% elif school['usnews_rank'] %}
-                            <span class="ranking-badge ranking-usnews" title="U.S. News Best Global Universities">US #{{ school['usnews_rank'] }}</span>
-                            {% endif %}
-                        </div>
                     </div>
                     <div class="card-content">
-                        <div class="card-header">
-                            <h2>{{ school['name'] }}</h2>
-                            <span class="location">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
-                                </svg>
-                                {{ school['city'] }}, {{ school['country'] }}
-                            </span>
-                        </div>
+                        <h3>{{ school['name'] }}</h3>
                         {% if school['name_cn'] %}
-                        <p class="english-name">{{ school['name_cn'] }}</p>
+                        <p class="subtitle">{{ school['name_cn'] }}</p>
                         {% endif %}
-                        {# 校训始终显示 #}
                         {% if school['motto'] %}
-                        <p class="image-caption motto-text">"{{ school['motto'] }}"</p>
+                        <p class="motto">"{{ school['motto'] }}"</p>
                         {% endif %}
                         <div class="card-meta">
-                            {% if school['founded'] %}
-                            <span class="founded">
+                            <span class="location">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                                    <line x1="16" y1="2" x2="16" y2="6"/>
-                                    <line x1="8" y1="2" x2="8" y2="6"/>
-                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
                                 </svg>
-                                {{ school['founded'] }}
+                                {{ school['city'] or school['district'] or school['country'] }}
                             </span>
-                            {% endif %}
+                            <span class="badge-level badge-{{ school['level'] }}">
+                                {% if school['level'] == 'university' %}🎓
+                                {% elif school['level'] == 'middle' %}🏫
+                                {% elif school['level'] == 'elementary' %}📚
+                                {% else %}🧸{% endif %}
+                            </span>
                             <span class="country-flag">
                                 {% set country_flags = {
-                                    'China': '🇨🇳',
-                                    'Hong Kong': '🇭🇰',
-                                    'United Kingdom': '🇬🇧',
-                                    'United States': '🇺🇸',
-                                    'Canada': '🇨🇦',
-                                    'Australia': '🇦🇺',
-                                    'Japan': '🇯🇵',
-                                    'South Korea': '🇰🇷',
-                                    'Singapore': '🇸🇬',
-                                    'Malaysia': '🇲🇾',
-                                    'Germany': '🇩🇪',
-                                    'France': '🇫🇷',
-                                    'Italy': '🇮🇹',
-                                    'Spain': '🇪🇸',
-                                    'Netherlands': '🇳🇱',
-                                    'Switzerland': '🇨🇭',
-                                    'Sweden': '🇸🇪',
-                                    'Belgium': '🇧🇪',
-                                    'Austria': '🇦🇹',
-                                    'Denmark': '🇩🇰',
-                                    'Finland': '🇫🇮',
-                                    'Norway': '🇳🇴',
-                                    'Ireland': '🇮🇪',
-                                    'Poland': '🇵🇱',
-                                    'Russia': '🇷🇺',
-                                    'Ukraine': '🇺🇦',
-                                    'Czech Republic': '🇨🇿',
-                                    'Hungary': '🇭🇺',
-                                    'Greece': '🇬🇷',
-                                    'Portugal': '🇵🇹',
-                                    'New Zealand': '🇳🇿',
-                                    'Taiwan': '🇹🇼',
-                                    'India': '🇮🇳',
-                                    'Pakistan': '🇵🇰',
-                                    'Bangladesh': '🇧🇩',
-                                    'Thailand': '🇹🇭',
-                                    'Vietnam': '🇻🇳',
-                                    'Indonesia': '🇮🇩',
-                                    'Philippines': '🇵🇭',
-                                    'Brazil': '🇧🇷',
-                                    'Argentina': '🇦🇷',
-                                    'South Africa': '🇿🇦',
-                                    'Egypt': '🇪🇬'
+                                    'China': '🇨🇳', 'Hong Kong': '🇭🇰', 'United Kingdom': '🇬🇧',
+                                    'United States': '🇺🇸', 'Canada': '🇨🇦', 'Australia': '🇦🇺',
+                                    'Japan': '🇯🇵', 'South Korea': '🇰🇷', 'Singapore': '🇸🇬',
+                                    'Malaysia': '🇲🇾', 'Germany': '🇩🇪', 'France': '🇫🇷',
+                                    'Italy': '🇮🇹', 'Spain': '🇪🇸', 'Netherlands': '🇳🇱',
+                                    'Switzerland': '🇨🇭', 'Sweden': '🇸🇪', 'Belgium': '🇧🇪',
+                                    'Austria': '🇦🇹', 'Denmark': '🇩🇰', 'Finland': '🇫🇮',
+                                    'Norway': '🇳🇴', 'Ireland': '🇮🇪', 'Poland': '🇵🇱',
+                                    'Russia': '🇷🇺', 'Taiwan': '🇹🇼', 'India': '🇮🇳',
+                                    'New Zealand': '🇳🇿', 'Thailand': '🇹🇭', 'Vietnam': '🇻🇳',
+                                    'Indonesia': '🇮🇩', 'Philippines': '🇵🇭', 'Brazil': '🇧🇷',
+                                    'Argentina': '🇦🇷', 'South Africa': '🇿🇦', 'Egypt': '🇪🇬'
                                 } %}
                                 {{ country_flags.get(school['country'], '🏳') }}
                             </span>
@@ -354,7 +277,7 @@
                 <div class="no-results-icon">🎓</div>
                 <h2>{{ _('no_schools') }}</h2>
                 <p>Try adjusting your filters or search query</p>
-                <a href="{{ url_for('main.index') }}" class="btn btn-primary">{{ _('view_all') }}</a>
+                <a href="{{ url_for('index') }}" class="btn btn-primary">{{ _('view_all') }}</a>
             </div>
             {% endif %}
 
@@ -398,84 +321,87 @@
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script>
-        // 深度搜索按钮 - 点击后调用AI搜索
-        document.getElementById('deepSearchBtn').addEventListener('click', function() {
-            const query = document.getElementById('searchInput').value.trim();
-            if (!query) { alert('请先输入搜索内容'); return; }
-            window.location.href = '/deep-search?q=' + encodeURIComponent(query);
-        });
-        document.getElementById('searchInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') document.getElementById('mainSearchForm').submit();
-        });
+        // 苹果风格搜索筛选逻辑
+        const HK_COUNTRIES = ['Hong Kong'];
 
-        // 地区导航三级联动
-        var HK_COUNTRIES = ['Hong Kong'];
-        var CONT_MAP = {'':'', 'Asia':'contAsia', 'Europe':'contEurope', 'North America':'contNA', 'South America':'contSA', 'Africa':'contAfrica', 'Oceania':'contOceania'};
-        function selectContinent(region) {
-            document.querySelectorAll('.region-item').forEach(function(el){ el.classList.remove('active'); });
-            if (region) {
-                var el = document.getElementById(CONT_MAP[region]);
-                if (el) el.classList.add('active');
-            }
-            var cityCol = document.getElementById('cityCol');
-            if (cityCol) cityCol.style.display = 'none';
+        function onRegionChange(region) {
+            const countrySelect = document.getElementById('countrySelect');
+            const citySelect = document.getElementById('citySelect');
+            const countryWrapper = document.getElementById('countryWrapper');
+            const cityWrapper = document.getElementById('cityWrapper');
+            
             if (!region) {
-                var cel = document.getElementById('countryList');
-                if (cel) cel.innerHTML = '<span style="color:#86868b;font-size:0.82rem;padding:8px 4px;">← 请先选择洲际</span>';
+                countrySelect.disabled = true;
+                countrySelect.innerHTML = '<option value="">🏳 {{ _("all_countries") }}</option>';
+                countryWrapper.classList.add('disabled');
+                citySelect.disabled = true;
+                citySelect.innerHTML = '<option value="">📍 {{ _("all_cities") }}</option>';
+                cityWrapper.classList.add('disabled');
                 return;
             }
-            var cel = document.getElementById('countryList');
-            if (cel) cel.innerHTML = '<span style="color:#86868b;font-size:0.82rem;padding:8px 4px;">加载中...</span>';
+            
+            countryWrapper.classList.remove('disabled');
+            countrySelect.disabled = false;
+            countrySelect.innerHTML = '<option value="">🏳 加载中...</option>';
+            citySelect.disabled = true;
+            citySelect.innerHTML = '<option value="">📍 {{ _("all_cities") }}</option>';
+            cityWrapper.classList.add('disabled');
+            
             fetch('/api/countries?region=' + encodeURIComponent(region))
-                .then(function(r){ return r.json(); })
-                .then(function(data) {
-                    var html = '';
-                    if (!data.countries || data.countries.length === 0) {
-                        html = '<span style="color:#86868b;font-size:0.82rem;padding:8px 4px;">暂无数据</span>';
-                    } else {
-                        data.countries.forEach(function(c) {
-                            html += '<div class="region-item" onclick="selectCountry(\'' + c.name.replace(/'/g,"\\'") + '\', \'' + region + '\')">' + c.name + '<em class="count">' + c.count + '</em></div>';
-                        });
-                    }
-                    var c = document.getElementById('countryList');
-                    if (c) c.innerHTML = html;
-                });
-        }
-        function selectCountry(country, region) {
-            document.querySelectorAll('#countryList .region-item').forEach(function(el){ el.classList.remove('active'); });
-            if (event && event.currentTarget) event.currentTarget.classList.add('active');
-            var cityCol = document.getElementById('cityCol');
-            if (cityCol) cityCol.style.display = '';
-            var isHK = HK_COUNTRIES.indexOf(country) !== -1;
-            var lbl = document.getElementById('cityColLabel');
-            if (lbl) lbl.textContent = isHK ? '区域' : '城市';
-            var cityListEl = document.getElementById('cityList');
-            if (cityListEl) cityListEl.innerHTML = '<span style="color:#86868b;font-size:0.82rem;padding:8px 4px;">加载中...</span>';
-            var endpoint = isHK ? '/api/districts' : '/api/cities';
-            fetch(endpoint + '?country=' + encodeURIComponent(country))
-                .then(function(r){ return r.json(); })
-                .then(function(data) {
-                    var key = isHK ? 'districts' : 'cities';
-                    var items = data[key] || [];
-                    var html = '<div class="region-item" onclick="goRegion(\'' + region + '\',\'' + country.replace(/'/g,"\\'") + '\',\'\')" style="color:#86868b;">' + (isHK ? '全部区域' : '全部城市') + '</div>';
-                    items.slice(0, 12).forEach(function(v) {
-                        html += '<div class="region-item" onclick="goRegion(\'' + region + '\',\'' + country.replace(/'/g,"\\'") + '\',\'' + v.replace(/'/g,"\\'") + '\')">' + v + '</div>';
+                .then(r => r.json())
+                .then(data => {
+                    let html = '<option value="">🏳 {{ _("all_countries") }}</option>';
+                    (data.countries || []).forEach(c => {
+                        html += `<option value="${c.name}">${c.name}</option>`;
                     });
-                    if (items.length > 12) html += '<div class="region-item" style="color:#86868b;font-size:0.78rem;cursor:default;">还有 ' + (items.length - 12) + ' 个...</div>';
-                    var c = document.getElementById('cityList');
-                    if (c) c.innerHTML = html;
+                    countrySelect.innerHTML = html;
                 });
         }
-        function goRegion(region, country, city) {
-            var params = [];
-            if (region) params.push('region=' + encodeURIComponent(region));
-            if (country) params.push('country=' + encodeURIComponent(country));
-            if (city) {
-                var isHK = HK_COUNTRIES.indexOf(country) !== -1;
-                params.push((isHK ? 'district' : 'city') + '=' + encodeURIComponent(city));
+
+        function onCountryChange(country) {
+            const citySelect = document.getElementById('citySelect');
+            const cityWrapper = document.getElementById('cityWrapper');
+            
+            if (!country) {
+                citySelect.disabled = true;
+                citySelect.innerHTML = '<option value="">📍 {{ _("all_cities") }}</option>';
+                cityWrapper.classList.add('disabled');
+                return;
             }
-            window.location.href = '{{ url_for("main.index") }}?' + params.join('&');
+            
+            cityWrapper.classList.remove('disabled');
+            citySelect.disabled = false;
+            citySelect.innerHTML = '<option value="">📍 加载中...</option>';
+            
+            const isHK = HK_COUNTRIES.includes(country);
+            const endpoint = isHK ? '/api/districts' : '/api/cities';
+            const paramName = 'country';
+            
+            fetch(endpoint + '?' + paramName + '=' + encodeURIComponent(country))
+                .then(r => r.json())
+                .then(data => {
+                    const key = isHK ? 'districts' : 'cities';
+                    const items = data[key] || [];
+                    let html = `<option value="">📍 ${isHK ? '{{ _("all_districts") }}' : '{{ _("all_cities") }}'}</option>`;
+                    items.forEach(c => {
+                        html += `<option value="${c}">${c}</option>`;
+                    });
+                    citySelect.innerHTML = html;
+                });
         }
+
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('searchForm').submit();
+        }
+
+        // 键盘Enter提交搜索
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                document.getElementById('searchForm').submit();
+            }
+        });
     </script>
 </body>
 </html>

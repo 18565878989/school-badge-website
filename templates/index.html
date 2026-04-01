@@ -7,11 +7,98 @@
     <h1>{{ _('hero_title') }}</h1>
     <p>{{ _('hero_subtitle') }}</p>
     
-    <form class="search-form" action="{{ url_for('main.index') }}" method="GET">
-        <input type="text" name="q" placeholder="{{ _('search_placeholder') }}" 
-               value="{{ search_query }}">
-        <button type="submit" style="display:none;">Search</button>
-    </form>
+    <!-- 苹果风格搜索筛选栏 -->
+    <div class="apple-search-bar">
+        <form class="search-form" action="{{ url_for('main.index') }}" method="GET" id="searchForm">
+            <!-- 文字搜索 -->
+            <div class="search-input-wrapper">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.35-4.35"/>
+                </svg>
+                <input type="text" name="q" placeholder="{{ _('search_placeholder') }}" 
+                       value="{{ search_query }}" class="search-input" id="searchInput">
+                {% if search_query %}
+                <button type="button" class="search-clear" onclick="clearSearch()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6 6 18M6 6l12 12"/>
+                    </svg>
+                </button>
+                {% endif %}
+            </div>
+            
+            <!-- 筛选选项 -->
+            <div class="filter-dropdowns">
+                <!-- 大洲选择 -->
+                <div class="filter-select-wrapper">
+                    <select name="region" class="filter-select" id="regionSelect" onchange="onRegionChange(this.value)">
+                        <option value="">🌐 {{ _('all_continents') }}</option>
+                        <option value="Asia" {% if selected_region=='Asia' %}selected{% endif %}>🌏 {{ _('asia') }}</option>
+                        <option value="Europe" {% if selected_region=='Europe' %}selected{% endif %}>🌍 {{ _('europe') }}</option>
+                        <option value="North America" {% if selected_region=='North America' %}selected{% endif %}>🌎 {{ _('north_america') }}</option>
+                        <option value="South America" {% if selected_region=='South America' %}selected{% endif %}>🌎 {{ _('south_america') }}</option>
+                        <option value="Africa" {% if selected_region=='Africa' %}selected{% endif %}>🌍 {{ _('africa') }}</option>
+                        <option value="Oceania" {% if selected_region=='Oceania' %}selected{% endif %}>🌏 {{ _('oceania') }}</option>
+                    </select>
+                    <svg class="select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                </div>
+                
+                <!-- 国家选择 -->
+                <div class="filter-select-wrapper {% if not selected_region %}disabled{% endif %}" id="countryWrapper">
+                    <select name="country" class="filter-select" id="countrySelect" onchange="onCountryChange(this.value)" {% if not selected_region %}disabled{% endif %}>
+                        <option value="">🏳 {{ _('all_countries') }}</option>
+                        {% if countries %}
+                            {% for c in countries %}
+                            <option value="{{ c }}" {% if selected_country==c %}selected{% endif %}>{{ c }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                    <svg class="select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                </div>
+                
+                <!-- 城市/区域选择 -->
+                <div class="filter-select-wrapper {% if not selected_country %}disabled{% endif %}" id="cityWrapper">
+                    <select name="city" class="filter-select" id="citySelect" {% if not selected_country %}disabled{% endif %}>
+                        <option value="">📍 {{ _('all_cities') }}</option>
+                        {% if cities %}
+                            {% for c in cities %}
+                            <option value="{{ c }}" {% if selected_city==c %}selected{% endif %}>{{ c }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                    <svg class="select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                </div>
+                
+                <!-- 搜索按钮 -->
+                <button type="submit" class="search-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    {{ _('search') }}
+                </button>
+            </div>
+        </form>
+        
+        <!-- 清除筛选 -->
+        {% if selected_region or selected_country or selected_city or selected_district or selected_level or search_query %}
+        <div class="active-filters">
+            <span class="filter-tag" id="filterTags"></span>
+            <a href="{{ url_for('main.index') }}" class="clear-all-filters">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6 6 18M6 6l12 12"/>
+                </svg>
+                {{ _('clear_all') }}
+            </a>
+        </div>
+        {% endif %}
+    </div>
 </div>
 
 {% if total_schools > 0 %}
@@ -225,4 +312,88 @@
     {% endif %}
 </div>
 {% endif %}
+
+<script>
+// 苹果风格搜索筛选逻辑
+const HK_COUNTRIES = ['Hong Kong'];
+
+function onRegionChange(region) {
+    const countrySelect = document.getElementById('countrySelect');
+    const citySelect = document.getElementById('citySelect');
+    const countryWrapper = document.getElementById('countryWrapper');
+    const cityWrapper = document.getElementById('cityWrapper');
+    
+    if (!region) {
+        countrySelect.disabled = true;
+        countrySelect.innerHTML = '<option value="">🏳 {{ _("all_countries") }}</option>';
+        countryWrapper.classList.add('disabled');
+        citySelect.disabled = true;
+        citySelect.innerHTML = '<option value="">📍 {{ _("all_cities") }}</option>';
+        cityWrapper.classList.add('disabled');
+        return;
+    }
+    
+    countryWrapper.classList.remove('disabled');
+    countrySelect.disabled = false;
+    countrySelect.innerHTML = '<option value="">🏳 加载中...</option>';
+    citySelect.disabled = true;
+    citySelect.innerHTML = '<option value="">📍 {{ _("all_cities") }}</option>';
+    cityWrapper.classList.add('disabled');
+    
+    fetch('/api/countries?region=' + encodeURIComponent(region))
+        .then(r => r.json())
+        .then(data => {
+            let html = '<option value="">🏳 {{ _("all_countries") }}</option>';
+            (data.countries || []).forEach(c => {
+                html += `<option value="${c.name}">${c.name} <span class="opt-count">(${c.count})</span></option>`;
+            });
+            countrySelect.innerHTML = html;
+        });
+}
+
+function onCountryChange(country) {
+    const citySelect = document.getElementById('citySelect');
+    const cityWrapper = document.getElementById('cityWrapper');
+    
+    if (!country) {
+        citySelect.disabled = true;
+        citySelect.innerHTML = '<option value="">📍 {{ _("all_cities") }}</option>';
+        cityWrapper.classList.add('disabled');
+        return;
+    }
+    
+    cityWrapper.classList.remove('disabled');
+    citySelect.disabled = false;
+    citySelect.innerHTML = '<option value="">📍 加载中...</option>';
+    
+    const isHK = HK_COUNTRIES.includes(country);
+    const endpoint = isHK ? '/api/districts' : '/api/cities';
+    const paramName = isHK ? 'country' : 'country';
+    
+    fetch(endpoint + '?' + paramName + '=' + encodeURIComponent(country))
+        .then(r => r.json())
+        .then(data => {
+            const key = isHK ? 'districts' : 'cities';
+            const items = data[key] || [];
+            let html = `<option value="">📍 ${isHK ? '{{ _("all_districts") }}' : '{{ _("all_cities") }}'}</option>`;
+            items.forEach(c => {
+                html += `<option value="${c}">${c}</option>`;
+            });
+            citySelect.innerHTML = html;
+        });
+}
+
+function clearSearch() {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('searchForm').submit();
+}
+
+// 键盘Enter提交搜索
+document.getElementById('searchInput').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        document.getElementById('searchForm').submit();
+    }
+});
+</script>
 {% endblock %}
