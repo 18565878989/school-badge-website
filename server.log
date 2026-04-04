@@ -6,3 +6,266 @@ Starting Flask with debug=False
  * Running on http://127.0.0.1:5001
  * Running on http://7.247.186.79:5001
 [33mPress CTRL+C to quit[0m
+[WARNING] Using weak secret key! Set SECRET_KEY environment variable.
+[Routes] auth blueprint registered
+[Routes] schools blueprint registered
+[Routes] rankings blueprint registered
+[Routes] api blueprint registered
+[Routes] api_ext blueprint registered
+[Routes] social blueprint registered
+[Routes] shop blueprint registered
+[Routes] hk blueprint registered
+[Routes] misc blueprint registered
+[Routes] admin_ext blueprint registered
+[Routes] api_full blueprint registered
+[Routes] social_api blueprint registered
+[Routes] user_api blueprint registered
+[Routes] content_api blueprint registered
+[Routes] message_api blueprint registered
+[Routes] recommendation_api blueprint registered
+[Routes] compare blueprint registered
+[Routes] ai_recommend blueprint registered
+[Routes] news blueprint registered
+[Routes] main blueprint registered
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://7.247.188.13:5001
+[33mPress CTRL+C to quit[0m
+[2026-04-03 09:10:02,190] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/routes/main.py", line 96, in index
+    schools = get_schools_by_level(selected_level)
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/models/school.py", line 46, in get_schools_by_level
+    ).fetchall()
+      ~~~~~~~~^^
+sqlite3.DatabaseError: database disk image is malformed
+127.0.0.1 - - [03/Apr/2026 09:10:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2026-04-03 09:10:25,170] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/routes/main.py", line 96, in index
+    schools = get_schools_by_level(selected_level)
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/models/school.py", line 46, in get_schools_by_level
+    ).fetchall()
+      ~~~~~~~~^^
+sqlite3.DatabaseError: database disk image is malformed
+127.0.0.1 - - [03/Apr/2026 09:10:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[WARNING] Using weak secret key! Set SECRET_KEY environment variable.
+[Routes] auth blueprint registered
+[Routes] schools blueprint registered
+[Routes] rankings blueprint registered
+[Routes] api blueprint registered
+[Routes] api_ext blueprint registered
+[Routes] social blueprint registered
+[Routes] shop blueprint registered
+[Routes] hk blueprint registered
+[Routes] misc blueprint registered
+[Routes] admin_ext blueprint registered
+[Routes] api_full blueprint registered
+[Routes] social_api blueprint registered
+[Routes] user_api blueprint registered
+[Routes] content_api blueprint registered
+[Routes] message_api blueprint registered
+[Routes] recommendation_api blueprint registered
+[Routes] compare blueprint registered
+[Routes] ai_recommend blueprint registered
+[Routes] news blueprint registered
+[Routes] main blueprint registered
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://7.247.188.13:5001
+[33mPress CTRL+C to quit[0m
+[2026-04-03 09:10:34,178] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/routes/main.py", line 96, in index
+    schools = get_schools_by_level(selected_level)
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/models/school.py", line 46, in get_schools_by_level
+    ).fetchall()
+      ~~~~~~~~^^
+sqlite3.DatabaseError: database disk image is malformed
+127.0.0.1 - - [03/Apr/2026 09:10:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[WARNING] Using weak secret key! Set SECRET_KEY environment variable.
+[Routes] auth blueprint registered
+[Routes] schools blueprint registered
+[Routes] rankings blueprint registered
+[Routes] api blueprint registered
+[Routes] api_ext blueprint registered
+[Routes] social blueprint registered
+[Routes] shop blueprint registered
+[Routes] hk blueprint registered
+[Routes] misc blueprint registered
+[Routes] admin_ext blueprint registered
+[Routes] api_full blueprint registered
+[Routes] social_api blueprint registered
+[Routes] user_api blueprint registered
+[Routes] content_api blueprint registered
+[Routes] message_api blueprint registered
+[Routes] recommendation_api blueprint registered
+[Routes] compare blueprint registered
+[Routes] ai_recommend blueprint registered
+[Routes] news blueprint registered
+[Routes] main blueprint registered
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://7.247.188.13:5001
+[33mPress CTRL+C to quit[0m
+[2026-04-03 09:10:55,484] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.14/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/routes/main.py", line 96, in index
+    schools = get_schools_by_level(selected_level)
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/models/school.py", line 46, in get_schools_by_level
+    ).fetchall()
+      ~~~~~~~~^^
+sqlite3.DatabaseError: database disk image is malformed
+127.0.0.1 - - [03/Apr/2026 09:10:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[WARNING] Using weak secret key! Set SECRET_KEY environment variable.
+[Routes] auth blueprint registered
+[Routes] schools blueprint registered
+[Routes] rankings blueprint registered
+[Routes] api blueprint registered
+[Routes] api_ext blueprint registered
+[Routes] social blueprint registered
+[Routes] shop blueprint registered
+[Routes] hk blueprint registered
+[Routes] misc blueprint registered
+[Routes] admin_ext blueprint registered
+[Routes] api_full blueprint registered
+[Routes] social_api blueprint registered
+[Routes] user_api blueprint registered
+[Routes] content_api blueprint registered
+[Routes] message_api blueprint registered
+[Routes] recommendation_api blueprint registered
+[Routes] compare blueprint registered
+[Routes] ai_recommend blueprint registered
+[Routes] news blueprint registered
+[Routes] main blueprint registered
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://7.247.188.13:5001
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [03/Apr/2026 09:12:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Apr/2026 09:12:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/images/badges/12383.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/images/campus/school_16103_bing.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/images/campus/school_11374_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/images/badges/16416.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/images/badges/17519_wiki.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/images/campus/school_17440_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/images/badges/10338.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/images/badges/20487.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/images/campus/school_9543/school_9543_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/images/campus/school_9089_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/images/logo-horizontal.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "GET /static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Apr/2026 09:12:31] "GET /static/css/campus.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/images/campus/school_11374_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/images/badges/12383.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/images/badges/16416.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/images/badges/10338.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/images/badges/20487.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/images/campus/school_17440_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/images/campus/school_16103_bing.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/images/campus/school_9089_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/images/badges/17519_wiki.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/images/campus/school_9543/school_9543_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/css/campus.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:38] "[36mGET /static/images/logo-horizontal.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "GET /rankings HTTP/1.1" 200 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "[36mGET /static/images/badges/9002.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "[36mGET /static/images/badges/8004.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "[36mGET /static/images/badges/8003.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "[36mGET /static/images/badges/20168.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "[36mGET /static/images/badges/8006.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "[36mGET /static/images/badges/school_8016.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "[36mGET /static/images/badges/8005.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "[36mGET /static/images/badges/8002.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "[36mGET /static/css/campus.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:39] "[36mGET /static/images/logo-horizontal.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/images/badges/12383.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/images/campus/school_11374_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/images/badges/16416.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/images/badges/20487.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/images/badges/10338.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/images/campus/school_16103_bing.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/images/campus/school_17440_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/images/campus/school_9089_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/images/badges/17519_wiki.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/images/campus/school_9543/school_9543_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/images/logo-horizontal.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:42] "[36mGET /static/css/campus.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:44] "GET /social HTTP/1.1" 200 -
+127.0.0.1 - - [03/Apr/2026 09:12:44] "[36mGET /static/images/tsinghua.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:44] "[36mGET /static/images/logo-horizontal.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:44] "[36mGET /static/css/campus.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/images/badges/12383.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/images/campus/school_11374_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/images/badges/16416.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/images/badges/20487.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/images/badges/10338.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/images/campus/school_16103_bing.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/images/campus/school_17440_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/images/badges/17519_wiki.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/images/campus/school_9089_bing.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/images/campus/school_9543/school_9543_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/images/logo-horizontal.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [03/Apr/2026 09:12:49] "[36mGET /static/css/campus.css HTTP/1.1[0m" 304 -
