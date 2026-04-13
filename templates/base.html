@@ -131,8 +131,15 @@
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script>
     // 地区导航三级联动 - Apple卡片风格
-    const HK_COUNTRIES = ['Hong Kong'];
+    const HK_COUNTRIES = ['Hong Kong', 'Macau'];
     const CONT_MAP = {'':'', 'Asia':'contAsia', 'Europe':'contEurope', 'North America':'contNA', 'South America':'contSA', 'Africa':'contAfrica', 'Oceania':'contOceania'};
+    const COUNTRY_DISPLAY_MAP = {
+        'Hong Kong': '中国香港',
+        'Macau': '中国澳门'
+    };
+    function getDisplayName(name) {
+        return COUNTRY_DISPLAY_MAP[name] || name;
+    }
 
     function showNav() { var el = document.getElementById('regionNavMenu'); if(el) el.style.display = 'flex'; }
     function hideNav() { var el = document.getElementById('regionNavMenu'); if(el) el.style.display = 'none'; }
@@ -160,7 +167,7 @@
                     html = '<span style="color:#86868b;font-size:0.82rem;padding:8px 4px;">暂无数据</span>';
                 } else {
                     data.countries.forEach(function(c) {
-                        html += '<div class="region-item" onclick="selectCountry(\'' + c.name.replace(/'/g,"\\'") + '\', \'' + region + '\')">' + c.name + '<em class="count">' + c.count + '</em></div>';
+                        html += '<div class="region-item" onclick="selectCountry(\'' + c.name.replace(/'/g,"\\'") + '\', \'' + region + '\')">' + getDisplayName(c.name) + '<em class="count">' + c.count + '</em></div>';
                     });
                 }
                 var cel = document.getElementById('countryList');

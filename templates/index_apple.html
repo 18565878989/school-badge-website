@@ -115,16 +115,27 @@
                             </svg>
                         </div>
                         
-                        <!-- 城市选择 -->
+                        <!-- 城市/区域选择 -->
                         <div class="filter-select-wrapper {% if not selected_country %}disabled{% endif %}" id="cityWrapper">
-                            <select name="city" class="filter-select" id="citySelect">
-                                <option value="">{{ _('all_cities') }}</option>
+                            {% if selected_country == 'Hong Kong' %}
+                            <select name="district" class="filter-select" id="districtSelect" onchange="document.getElementById('searchForm').submit()">
+                                <option value="">📍 {{ _('all_districts') }}</option>
+                                {% if hk_districts %}
+                                    {% for d in hk_districts %}
+                                    <option value="{{ d }}" {% if selected_district==d %}selected{% endif %}>{{ d }}</option>
+                                    {% endfor %}
+                                {% endif %}
+                            </select>
+                            {% else %}
+                            <select name="city" class="filter-select" id="citySelect" onchange="document.getElementById('searchForm').submit()">
+                                <option value="">📍 {{ _('all_cities') }}</option>
                                 {% if cities %}
                                     {% for c in cities %}
                                     <option value="{{ c }}" {% if selected_city==c %}selected{% endif %}>{{ c }}</option>
                                     {% endfor %}
                                 {% endif %}
                             </select>
+                            {% endif %}
                             <svg class="select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="m6 9 6 6 6-6"/>
                             </svg>
@@ -258,7 +269,7 @@
                             </span>
                             <span class="country-flag">
                                 {% set country_flags = {
-                                    'China': '🇨🇳', 'Hong Kong': '🇭🇰', 'United Kingdom': '🇬🇧',
+                                    'China': '🇨🇳', 'Hong Kong': '🇭🇰', 'Macau': '🇲🇴', 'United Kingdom': '🇬🇧',
                                     'United States': '🇺🇸', 'Canada': '🇨🇦', 'Australia': '🇦🇺',
                                     'Japan': '🇯🇵', 'South Korea': '🇰🇷', 'Singapore': '🇸🇬',
                                     'Malaysia': '🇲🇾', 'Germany': '🇩🇪', 'France': '🇫🇷',
@@ -328,7 +339,14 @@
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script>
         // 苹果风格搜索筛选逻辑
-        const HK_COUNTRIES = ['Hong Kong'];
+        const HK_COUNTRIES = ['Hong Kong', 'Macau'];
+        const COUNTRY_DISPLAY_MAP = {
+            'Hong Kong': '中国香港',
+            'Macau': '中国澳门'
+        };
+        function getDisplayName(name) {
+            return COUNTRY_DISPLAY_MAP[name] || name;
+        }
 
         function onRegionChange(region) {
             const countrySelect = document.getElementById('countrySelect');
@@ -358,41 +376,51 @@
                 .then(data => {
                     let html = '<option value="">🏳 {{ _("all_countries") }}</option>';
                     (data.countries || []).forEach(c => {
-                        html += `<option value="${c.name}">${c.name}</option>`;
+                        html += `<option value="${c.name}">${getDisplayName(c.name)}</option>`;
                     });
                     countrySelect.innerHTML = html;
                 });
         }
 
         function onCountryChange(country) {
-            const citySelect = document.getElementById('citySelect');
             const cityWrapper = document.getElementById('cityWrapper');
+            const isHK = HK_COUNTRIES.includes(country);
             
             if (!country) {
-                citySelect.disabled = true;
-                citySelect.innerHTML = '<option value="">📍 {{ _("all_cities") }}</option>';
                 cityWrapper.classList.add('disabled');
+                cityWrapper.innerHTML = '<select class="filter-select" disabled><option value="">📍 -</option></select>';
                 return;
             }
             
             cityWrapper.classList.remove('disabled');
-            citySelect.disabled = false;
-            citySelect.innerHTML = '<option value="">📍 加载中...</option>';
             
-            const isHK = HK_COUNTRIES.includes(country);
             const endpoint = isHK ? '/api/districts' : '/api/cities';
-            const paramName = 'country';
+            const selectId = isHK ? 'districtSelect' : 'citySelect';
+            const selectName = isHK ? 'district' : 'city';
+            const labelText = isHK ? '{{ _("all_districts") }}' : '{{ _("all_cities") }}';
             
-            fetch(endpoint + '?' + paramName + '=' + encodeURIComponent(country))
+            // Replace the select element dynamically
+            cityWrapper.innerHTML = `
+                <select name="${selectName}" class="filter-select" id="${selectId}" onchange="document.getElementById('searchForm').submit()">
+                    <option value="">📍 ${labelText}</option>
+                    <option value="">📍 加载中...</option>
+                </select>
+                <svg class="select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m6 9 6 6 6-6"/>
+                </svg>
+            `;
+            
+            fetch(endpoint + '?country=' + encodeURIComponent(country))
                 .then(r => r.json())
                 .then(data => {
                     const key = isHK ? 'districts' : 'cities';
                     const items = data[key] || [];
-                    let html = `<option value="">📍 ${isHK ? '{{ _("all_districts") }}' : '{{ _("all_cities") }}'}</option>`;
+                    const selectEl = document.getElementById(selectId);
+                    let html = `<option value="">📍 ${labelText}</option>`;
                     items.forEach(c => {
                         html += `<option value="${c}">${c}</option>`;
                     });
-                    citySelect.innerHTML = html;
+                    selectEl.innerHTML = html;
                 });
         }
 

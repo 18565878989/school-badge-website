@@ -269,7 +269,6 @@ def index():
     selected_country = request.args.get('country', '')
     selected_city = request.args.get('city', '')
     selected_district = request.args.get('district', '')
-    # No default level - show all school types
     selected_level = request.args.get('level', '')
     page = request.args.get('page', 1, type=int)
     per_page = 21  # 21 schools per page
