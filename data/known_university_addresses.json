@@ -1,0 +1,26 @@
+{
+  "description": "知名大学地址数据集 - 手动整理",
+  "source": "公开信息整理",
+  "universities": {
+    "UC Berkeley": {"address": "Berkeley, CA 94720, United States", "city": "Berkeley", "state": "California", "country": "United States"},
+    "UCLA": {"address": "Los Angeles, CA 90095, United States", "city": "Los Angeles", "state": "California", "country": "United States"},
+    "UC San Diego": {"address": "La Jolla, CA 92093, United States", "city": "La Jolla", "state": "California", "country": "United States"},
+    "UC Davis": {"address": "Davis, CA 95616, United States", "city": "Davis", "state": "California", "country": "United States"},
+    "UC Santa Barbara": {"address": "Santa Barbara, CA 93106, United States", "city": "Santa Barbara", "state": "California", "country": "United States"},
+    "UC Irvine": {"address": "Irvine, CA 92697, United States", "city": "Irvine", "state": "California", "country": "United States"},
+    "Carnegie Mellon": {"address": "5000 Forbes Ave, Pittsburgh, PA 15213, United States", "city": "Pittsburgh", "state": "Pennsylvania", "country": "United States"},
+    "Nankai University": {"address": "94 Weijin Road, Nankai District, Tianjin 300071, China", "city": "Tianjin", "district": "Nankai", "country": "China"},
+    "Xiamen University": {"address": "422 Siming South Road, Xiamen, Fujian 361005, China", "city": "Xiamen", "district": "Siming", "country": "China"},
+    "Harvard University": {"address": "Cambridge, MA 02138, United States", "city": "Cambridge", "state": "Massachusetts", "country": "United States"},
+    "MIT": {"address": "77 Massachusetts Ave, Cambridge, MA 02139, United States", "city": "Cambridge", "state": "Massachusetts", "country": "United States"},
+    "Stanford University": {"address": "Stanford, CA 94305, United States", "city": "Stanford", "state": "California", "country": "United States"},
+    "Yale University": {"address": "New Haven, CT 06511, United States", "city": "New Haven", "state": "Connecticut", "country": "United States"},
+    "Princeton University": {"address": "Princeton, NJ 08544, United States", "city": "Princeton", "state": "New Jersey", "country": "United States"},
+    "Columbia University": {"address": "New York, NY 10027, United States", "city": "New York", "state": "New York", "country": "United States"},
+    "University of Tokyo": {"address": "7-3-1 Hongo, Bunkyo-ku, Tokyo 113-8654, Japan", "city": "Tokyo", "district": "Bunkyo", "country": "Japan"},
+    "Peking University": {"address": "5 Yiheyuan Road, Haidian District, Beijing 100871, China", "city": "Beijing", "district": "Haidian", "country": "China"},
+    "Tsinghua University": {"address": "30 Shuangqing Road, Haidian District, Beijing 100084, China", "city": "Beijing", "district": "Haidian", "country": "China"},
+    "Fudan University": {"address": "220 Handan Road, Yangpu District, Shanghai 200433, China", "city": "Shanghai", "district": "Yangpu", "country": "China"},
+    "Zhejiang University": {"address": "38 Zheda Road, Xihu District, Hangzhou, Zhejiang 310027, China", "city": "Hangzhou", "district": "Xihu", "country": "China"}
+  }
+}
