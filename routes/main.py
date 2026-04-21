@@ -276,6 +276,11 @@ def assistants():
     """AI Assistants page."""
     return render_template('assistants.html')
 
+@main_bp.route('/partners')
+def partners():
+    """Partners / Friendly Links page."""
+    return render_template('partners.html')
+
 
 def register_routes(app):
     """Register main routes with the Flask app."""

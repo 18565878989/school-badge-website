@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合作伙伴 - 校徽网</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+        }
+        .page-header p {
+            font-size: 1.1rem;
+            color: #86868b;
+        }
+        .section {
+            background: white;
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+        }
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+        .link-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+            background: #f5f5f7;
+            border-radius: 14px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+        .link-card:hover {
+            background: #e8e8ed;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .link-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        .link-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .link-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 4px;
+        }
+        .link-desc {
+            font-size: 0.85rem;
+            color: #86868b;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: #1E3A5F;
+            color: white;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 32px;
+            transition: all 0.2s;
+        }
+        .back-btn:hover {
+            background: #0D2137;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>🤝 合作伙伴</h1>
+            <p>我们致力于连接全球教育机构，共同推动教育事业发展</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🌐 国际组织</div>
+            <div class="link-grid">
+                <a href="https://www.unesco.org/" target="_blank" class="link-card">
+                    <div class="link-icon" style="background: #0066CC;">🌍</div>
+                    <div class="link-info">
+                        <div class="link-name">联合国教科文组织 UNESCO</div>
+                        <div class="link-desc">联合国教育基金会</div>
+                    </div>
+                </a>
+                <a href="https://www.unhcr.org/" target="_blank" class="link-card">
+                    <div class="link-icon" style="background: #0072BC;">🏠</div>
+                    <div class="link-info">
+                        <div class="link-name">联合国难民署 UNHCR</div>
+                        <div class="link-desc">联合国难民署</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📚 教育资源</div>
+            <div class="link-grid">
+                <a href="https://www.worldbank.org/" target="_blank" class="link-card">
+                    <div class="link-icon" style="background: #FF6B00;">🏦</div>
+                    <div class="link-info">
+                        <div class="link-name">世界银行</div>
+                        <div class="link-desc">国际金融机构</div>
+                    </div>
+                </a>
+                <a href="https://www.oecd.org/" target="_blank" class="link-card">
+                    <div class="link-icon" style="background: #005792;">📊</div>
+                    <div class="link-info">
+                        <div class="link-name">经合组织 OECD</div>
+                        <div class="link-desc">经济合作与发展组织</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="{{ url_for('main.index') }}" class="back-btn">
+                ← 返回首页
+            </a>
+        </div>
+    </div>
+</body>
+</html>
