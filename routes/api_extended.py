@@ -145,6 +145,19 @@ def deep_search():
     # 获取学校总数用于系统提示
     total_schools = conn.execute('SELECT COUNT(*) FROM schools').fetchone()[0]
     
+    # 张雪峰报考知识库
+    zhangxuefeng_knowledge = """
+【张雪峰报考观点】
+1. 城市选择：大城市优先，北上广深 > 二线城市
+2. 专业选择：计算机、电子信息、口腔医学、电气工程、师范类优先；生化环材、市场营销谨慎
+3. 考研建议：985/211优先，技术能力 > 学校牌子
+4. 报考策略：冲(排名+10-20%)、稳(相当)、保(排名-10-20%)、垫(排名-30%+)
+5. 就业导向：选专业要看就业，不是看名字好听
+6. 医学/法律：必须考研
+7. 师范类：稳定但薪资有限
+8. 计算机：就业好、薪资高、转行容易
+"""
+    
     # 构建系统提示词
     system_prompt = f"""你是校徽网的智能搜索助手。数据库中共有 {total_schools} 所学校，包含以下字段：
 - id: 学校ID
@@ -161,15 +174,19 @@ def deep_search():
 - the_rank: THE世界大学排名
 - usnews_rank: US News排名
 
+{zhangxuefeng_knowledge}
+
 请分析用户查询，返回匹配的JSON格式：
 {{
     "analysis": "你对用户查询的分析",
     "search_type": "university/middle/elementary/country/region/ranking/all",
     "keywords": ["关键词1", "关键词2"],
-    "filters": {{"region": "Asia", "level": "university"}}
+    "filters": {{"region": "Asia", "level": "university"}},
+    "is_baokao_query": true/false  // 是否是高考/志愿/报考相关问题
 }}
 
 注意：
+- 如果是高考/志愿/报考相关问题，is_baokao_query设为true
 - 只返回keywords用于搜索，不要返回school_ids
 - 如果是闲聊/问候，analysis应包含"闲聊"
 - search_type: university(大学), middle(中学), elementary(小学), kindergarten(幼儿园), country(国家), region(地区), ranking(排名), all(全部)
@@ -415,12 +432,32 @@ def deep_search():
         elif os.environ.get('CF_API_TOKEN'):
             ai_provider = 'cloudflare'
     
+    # 判断是否是报考相关问题
+    is_baokao = any(kw in query.lower() for kw in ['高考', '志愿', '报考', '专业', '就业', '考研', '选学校', '选专业', '大学怎么选'])
+    
+    # 张雪峰报考建议
+    zhangxuefeng_tip = None
+    if is_baokao:
+        zhangxuefeng_tip = {
+            'title': '💡 张雪峰报考建议',
+            'tips': [
+                '能去大城市就去大城市，北上广深优先',
+                '计算机、电子信息、口腔医学就业好',
+                '生化环材天坑专业，谨慎选择',
+                '理工科专业优先，文科学校优先',
+                '医学、法律必须考研，考虑清楚',
+                '师范类稳定但薪资有限',
+                '看就业选专业，不是看名字好听'
+            ]
+        }
+    
     return jsonify({
         'success': True,
         'query': query,
         'ai_provider': ai_provider,
         'results': school_results,
         'total': len(school_results),
+        'zhangxuefeng_tip': zhangxuefeng_tip,
         'analysis': {
             'keywords': keywords,
             'search_type': search_type,

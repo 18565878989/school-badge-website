@@ -142,11 +142,23 @@
         }
         
         // 添加AI消息
-        function addAIMessage(text, schools = null) {
+        function addAIMessage(text, schools = null, zhangxuefeng_tip = null) {
             const div = document.createElement('div');
             div.className = 'message ai-message';
             
             let content = `<div class="message-content"><p>${escapeHtml(text)}</p>`;
+            
+            // 张雪峰报考建议
+            if (zhangxuefeng_tip) {
+                content += `
+                    <div class="zhangxuefeng-tip">
+                        <h4>${zhangxuefeng_tip.title}</h4>
+                        <ul>
+                            ${zhangxuefeng_tip.tips.map(tip => `<li>${escapeHtml(tip)}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
             
             if (schools && schools.length > 0) {
                 content += `<div class="school-results">`;
@@ -247,7 +259,7 @@
                 if (data.error) {
                     addAIMessage('抱歉，发生了错误: ' + data.error);
                 } else {
-                    addAIMessage(data.analysis || '搜索完成', data.results);
+                    addAIMessage(data.analysis || '搜索完成', data.results, data.zhangxuefeng_tip);
                 }
             } catch (error) {
                 removeLoadingMessage();
