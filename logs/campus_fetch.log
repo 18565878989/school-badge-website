@@ -190879,3 +190879,187 @@ Traceback (most recent call last):
   File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/batch_fetch_campus.py", line 159, in update_campus_images
     cursor.execute("""
 sqlite3.OperationalError: disk I/O error
+=== 多来源校园图片抓取 ===
+待处理学校: 0 所
+
+
+=== 完成 ===
+成功: 0
+失败: 0
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 278, in <module>
+    main()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 223, in main
+    cursor.execute("""
+sqlite3.OperationalError: disk I/O error
+======================================================================
+批量获取学校校园照片 - 从Wikipedia下载到本地
+======================================================================
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/batch_fetch_campus.py", line 212, in <module>
+    update_campus_images(limit=200)
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/batch_fetch_campus.py", line 159, in update_campus_images
+    cursor.execute("""
+sqlite3.OperationalError: disk I/O error
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 278, in <module>
+    main()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 223, in main
+    cursor.execute("""
+sqlite3.OperationalError: disk I/O error
+=== 多来源校园图片抓取 ===
+待处理学校: 0 所
+
+
+=== 完成 ===
+成功: 0
+失败: 0
+======================================================================
+批量获取学校校园照片 - 从Wikipedia下载到本地
+======================================================================
+需要获取校园照片的学校: 0
+
+完成! 耗时: 0.0秒
+成功: 0, 跳过/失败: 0
+有校园照片的学校总数: 7313
+=== 多来源校园图片抓取 ===
+待处理学校: 0 所
+
+
+=== 完成 ===
+成功: 0
+失败: 0
+=== 多来源校园图片抓取 ===
+待处理学校: 0 所
+
+
+=== 完成 ===
+成功: 0
+失败: 0
+======================================================================
+批量获取学校校园照片 - 从Wikipedia下载到本地
+======================================================================
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/batch_fetch_campus.py", line 212, in <module>
+    update_campus_images(limit=200)
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/batch_fetch_campus.py", line 159, in update_campus_images
+    cursor.execute("""
+sqlite3.OperationalError: disk I/O error
+=== 多来源校园图片抓取 ===
+待处理学校: 0 所
+
+
+=== 完成 ===
+成功: 0
+失败: 0
+=== 多来源校园图片抓取 ===
+待处理学校: 0 所
+
+
+=== 完成 ===
+成功: 0
+失败: 0
+======================================================================
+批量获取学校校园照片 - 从Wikipedia下载到本地
+======================================================================
+需要获取校园照片的学校: 0
+
+完成! 耗时: 0.0秒
+成功: 0, 跳过/失败: 0
+有校园照片的学校总数: 7313
+=== 多来源校园图片抓取 ===
+待处理学校: 0 所
+
+
+=== 完成 ===
+成功: 0
+失败: 0
+=== 多来源校园图片抓取 ===
+待处理学校: 0 所
+
+
+=== 完成 ===
+成功: 0
+失败: 0
+Traceback (most recent call last):
+Traceback (most recent call last):
+=== 多来源校园图片抓取 ===
+待处理学校: 0 所
+
+
+=== 完成 ===
+成功: 0
+失败: 0
+======================================================================
+批量获取学校校园照片 - 从Wikipedia下载到本地
+======================================================================
+需要获取校园照片的学校: 0
+
+完成! 耗时: 0.0秒
+成功: 0, 跳过/失败: 0
+有校园照片的学校总数: 7313
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 278, in <module>
+    main()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 223, in main
+    cursor.execute("""
+sqlite3.OperationalError: disk I/O error
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 278, in <module>
+    main()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 223, in main
+    cursor.execute("""
+sqlite3.OperationalError: unable to open database file
+======================================================================
+批量获取学校校园照片 - 从Wikipedia下载到本地
+======================================================================
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/batch_fetch_campus.py", line 212, in <module>
+    update_campus_images(limit=200)
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/batch_fetch_campus.py", line 159, in update_campus_images
+    cursor.execute("""
+sqlite3.OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 278, in <module>
+    main()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 223, in main
+    cursor.execute("""
+sqlite3.OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 278, in <module>
+    main()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 223, in main
+    cursor.execute("""
+sqlite3.OperationalError: unable to open database file
+======================================================================
+批量获取学校校园照片 - 从Wikipedia下载到本地
+======================================================================
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/batch_fetch_campus.py", line 212, in <module>
+    update_campus_images(limit=200)
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/batch_fetch_campus.py", line 159, in update_campus_images
+    cursor.execute("""
+sqlite3.OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 278, in <module>
+    main()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 223, in main
+    cursor.execute("""
+sqlite3.OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 278, in <module>
+    main()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/multi_source_campus_fetch.py", line 223, in main
+    cursor.execute("""
+sqlite3.OperationalError: unable to open database file
+======================================================================
+批量获取学校校园照片 - 从Wikipedia下载到本地
+======================================================================
+Traceback (most recent call last):
+=== 多来源校园图片抓取 ===
+待处理学校: 0 所
+
+
+=== 完成 ===
+成功: 0
+失败: 0

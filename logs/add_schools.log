@@ -5754,3 +5754,104 @@ sqlite3.OperationalError: disk I/O error
 [2026-09-22 20:00:00.759281] 添加了 0 所学校
 添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
 添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-22 21:00:00.278419] 开始添加学校...
+[2026-09-22 21:00:00.319906] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-22 22:00:00.770259] 开始添加学校...
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 104, in <module>
+    before = get_current_stats()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 15, in get_current_stats
+    cursor.execute("""SELECT region, COUNT(*) FROM schools WHERE region IN ('Europe','North America','South America') GROUP BY region""")
+sqlite3.OperationalError: disk I/O error
+[2026-09-22 23:00:00.566176] 开始添加学校...
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 106, in <module>
+    after = get_current_stats()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 15, in get_current_stats
+    cursor.execute("""SELECT region, COUNT(*) FROM schools WHERE region IN ('Europe','North America','South America') GROUP BY region""")
+sqlite3.OperationalError: disk I/O error
+[2026-09-23 00:00:00.614892] 开始添加学校...
+[2026-09-23 00:00:00.665372] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-23 01:00:00.920874] 开始添加学校...
+[2026-09-23 01:00:00.962521] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-23 02:00:01.140206] 开始添加学校...
+[2026-09-23 02:00:01.180769] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-23 03:00:00.867991] 开始添加学校...
+[2026-09-23 03:00:00.951792] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-23 04:00:00.918760] 开始添加学校...
+[2026-09-23 04:00:00.956390] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-23 05:00:00.528996] 开始添加学校...
+[2026-09-23 05:00:00.567302] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-23 06:00:00.468628] 开始添加学校...
+[2026-09-23 06:00:00.513346] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-23 07:00:00.874823] 开始添加学校...
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 104, in <module>
+    before = get_current_stats()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 15, in get_current_stats
+    cursor.execute("""SELECT region, COUNT(*) FROM schools WHERE region IN ('Europe','North America','South America') GROUP BY region""")
+sqlite3.OperationalError: disk I/O error
+[2026-09-23 08:00:00.146518] 开始添加学校...
+[2026-09-23 08:00:00.187521] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-23 09:00:00.881060] 开始添加学校...
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 104, in <module>
+    before = get_current_stats()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 15, in get_current_stats
+    cursor.execute("""SELECT region, COUNT(*) FROM schools WHERE region IN ('Europe','North America','South America') GROUP BY region""")
+sqlite3.OperationalError: disk I/O error
+[2026-09-23 10:00:01.175722] 开始添加学校...
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 104, in <module>
+    before = get_current_stats()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 15, in get_current_stats
+    cursor.execute("""SELECT region, COUNT(*) FROM schools WHERE region IN ('Europe','North America','South America') GROUP BY region""")
+sqlite3.OperationalError: unable to open database file
+[2026-09-23 11:00:00.837906] 开始添加学校...
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 104, in <module>
+    before = get_current_stats()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 15, in get_current_stats
+    cursor.execute("""SELECT region, COUNT(*) FROM schools WHERE region IN ('Europe','North America','South America') GROUP BY region""")
+sqlite3.OperationalError: unable to open database file
+[2026-09-23 12:00:00.308086] 开始添加学校...
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 104, in <module>
+    before = get_current_stats()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 15, in get_current_stats
+    cursor.execute("""SELECT region, COUNT(*) FROM schools WHERE region IN ('Europe','North America','South America') GROUP BY region""")
+sqlite3.OperationalError: unable to open database file
+[2026-09-23 13:00:00.370778] 开始添加学校...
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 104, in <module>
+    before = get_current_stats()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 15, in get_current_stats
+    cursor.execute("""SELECT region, COUNT(*) FROM schools WHERE region IN ('Europe','North America','South America') GROUP BY region""")
+sqlite3.OperationalError: unable to open database file
+[2026-09-23 14:00:00.934178] 开始添加学校...
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 104, in <module>
+    before = get_current_stats()
+[2026-09-23 15:00:01.072591] 开始添加学校...
+[2026-09-23 23:00:01.046444] 开始添加学校...
+[2026-09-23 23:00:01.085983] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
