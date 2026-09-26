@@ -6040,3 +6040,86 @@ Traceback (most recent call last):
   File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 15, in get_current_stats
 [2026-09-25 20:00:00.365035] 开始添加学校...
 Traceback (most recent call last):
+[2026-09-26 04:00:01.176885] 开始添加学校...
+[2026-09-26 04:00:01.224359] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 05:00:00.776742] 开始添加学校...
+Traceback (most recent call last):
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 104, in <module>
+    before = get_current_stats()
+  File "/Users/wangfeng/.openclaw/workspace/school-badge-website/scripts/add_europe_america_schools.py", line 15, in get_current_stats
+    cursor.execute("""SELECT region, COUNT(*) FROM schools WHERE region IN ('Europe','North America','South America') GROUP BY region""")
+sqlite3.OperationalError: disk I/O error
+[2026-09-26 06:00:00.910603] 开始添加学校...
+[2026-09-26 06:00:00.960824] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 07:00:00.475458] 开始添加学校...
+[2026-09-26 07:00:00.492372] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 08:00:00.377566] 开始添加学校...
+[2026-09-26 08:00:00.418456] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 09:00:00.698184] 开始添加学校...
+[2026-09-26 09:00:00.737875] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 10:00:00.527000] 开始添加学校...
+[2026-09-26 10:00:00.568764] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 11:00:00.916912] 开始添加学校...
+[2026-09-26 11:00:00.952408] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 12:00:00.670085] 开始添加学校...
+[2026-09-26 12:00:00.705287] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 13:00:01.063767] 开始添加学校...
+[2026-09-26 13:00:01.113164] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 14:00:00.416372] 开始添加学校...
+[2026-09-26 14:00:00.453071] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 15:00:00.624328] 开始添加学校...
+[2026-09-26 15:00:00.658532] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 16:00:00.947314] 开始添加学校...
+[2026-09-26 16:00:00.982160] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 17:00:00.498489] 开始添加学校...
+[2026-09-26 17:00:00.533061] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 18:00:00.702401] 开始添加学校...
+[2026-09-26 18:00:00.737890] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 19:00:00.527481] 开始添加学校...
+[2026-09-26 19:00:00.563121] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 20:00:01.011135] 开始添加学校...
+[2026-09-26 20:00:01.048999] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 21:00:01.153460] 开始添加学校...
+[2026-09-26 21:00:01.187895] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 22:00:00.838842] 开始添加学校...
+[2026-09-26 22:00:00.878286] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
+[2026-09-26 23:00:00.478819] 开始添加学校...
+[2026-09-26 23:00:00.494770] 添加了 0 所学校
+添加前: {'Europe': 370, 'North America': 224, 'South America': 84}
+添加后: {'Europe': 370, 'North America': 224, 'South America': 84}
